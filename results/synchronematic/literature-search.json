@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "scope": "Targeted check for deterministic chaos in the exact published reduced synchronematic model; not an exhaustive novelty certification.",
+  "queries": [
+    "\"synchronematic\" chaos",
+    "\"synchronematic\" chaotic Lyapunov",
+    "\"synchronematic\" Lyapunov attractor",
+    "\"Leyva\" \"Zhang\" \"Bishop\" chaos colloids",
+    "\"phase\" \"orientation\" \"oscillators\" chaos nonreciprocal colloids",
+    "\"swarmalator\" \"four\" chaos orientation"
+  ],
+  "primary_sources": [
+    "https://doi.org/10.1038/s41467-026-68552-8",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12920913/",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-026-68552-8/MediaObjects/41467_2026_68552_MOESM1_ESM.pdf",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-026-68552-8/MediaObjects/41467_2026_68552_MOESM15_ESM.pdf",
+    "https://bishop.cheme.columbia.edu/research-projects/active-oscillatory-matter-active",
+    "https://doi.org/10.1103/PhysRevE.107.054603",
+    "https://doi.org/10.7916/0pgk-pw45"
+  ],
+  "checks": [
+    "Main text and equations inspected. Supplementary PDF text searched throughout; relevant model/decomposition pages rendered and inspected. Peer review text checked. No explicit chaos or Lyapunov result for this model identified. The occurrence of Chaos in the supplement is a journal title in a citation, not a model result.",
+    "The author simulation repository source was inspected after our independent implementation and checks. A sign disagreement was found for the orientation sin(3 Delta) coefficient; source-audit.json pins the exact commit and records both variants. No author simulation source was copied or executed.",
+    "The OpenAlex snapshot returned one citing work, Particle-Induced Electroconvection in Nonpolar Liquids, doi:10.1021/acs.langmuir.6c02032. Its publisher abstract concerns EHD flow and self-assembly, not this phase-orientation chaos question.",
+    "Zhengyan Zhang 2023 dissertation downloaded from Columbia Academic Commons. Text searched throughout185pages; relevant Chapter3 and AppendixB pages read and rendered. Printed pp33-34 and FigB.3 p132 explicitly report single-particle chaos in the underlying charge-moment model. This is closer prior art than the 2005 inertial Quincke result."
+  ],
+  "known_related_chaos": [
+    "Quincke rotor Lorenz chaos was reported in 2005: doi:10.1063/1.1827411. Broad Quincke-chaos novelty is excluded.",
+    "Self-propulsion in the 1D swarmalator model, arXiv:2606.10282, reports chaos in a different model. Broad swarmalator-chaos novelty is excluded.",
+    "Zhang2023 dissertation doi:10.7916/0pgk-pw45: single-particle strange attractor at Ee2.5,gamma1.2,eps_p1.5,kappa_p0; other nonsymmetric strange attractor at Ee6,gamma1. This excludes first-chaos claims for the underlying physical model."
+  ],
+  "limits": [
+    "Only indexed/retrievable literature and the explicit sources above were checked. Equivalent equations under another name, dissertations, private/in-press work and missing citation-index records remain possible.",
+    "No authors were contacted.",
+    "Our positive numerical evidence is for the noiseless fixed-position Fourier approximation. It is not proof for the full physical model or an experimental observation."
+  ],
+  "conclusion": "A matching collective-chaos result for the exact reduced coupled phase/orientation equations was not located. Single-particle chaos in the underlying physical model is already reported. Any possible novelty is narrower and remains provisional."
+}

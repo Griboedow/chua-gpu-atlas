@@ -1,0 +1,88 @@
+{
+  "settings": {
+    "dt": 0.005,
+    "transient": 1000,
+    "duration": 2000
+  },
+  "timing": {
+    "wall_seconds": 103.7296609999994,
+    "gpu_seconds": 102.63351766400004
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "precision": "float64",
+    "integrator": "RK4",
+    "fast_math": false,
+    "oscillators": 4,
+    "model": "Leyva et al. 2026 Eqs 10-12, deterministic Fourier approximation, global phase removed",
+    "coefficients": [
+      [
+        2.921,
+        2.07,
+        -0.781,
+        0.312
+      ],
+      [
+        -5.351,
+        0.223,
+        3.009,
+        -1.359
+      ]
+    ],
+    "time": "s=t/L^3; actual positions L*normalized_positions; L=10 gives far-field separation if normalized minimum>=1"
+  },
+  "experiment": {
+    "mode": "nonreciprocity",
+    "seed": 2026102904,
+    "source_index": 43,
+    "changes_equations": true,
+    "note": "Coefficient jitter is a sensitivity test, not a bound on omitted Fourier harmonics."
+  },
+  "trajectories": 488,
+  "valid": 488,
+  "candidate_indices": [
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359
+  ],
+  "max_lle": 0.28913764469818287,
+  "criterion": "mean > .002 and all four windows > .001; late flow speed > 1e-5; status 0",
+  "interpretation": "Finite-time candidates in the published truncated deterministic phase model, not proof of novelty or physical chaos."
+}

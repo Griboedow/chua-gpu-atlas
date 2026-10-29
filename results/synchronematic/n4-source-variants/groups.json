@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "article-rounded-negative",
+    "count": 128,
+    "retained": 128,
+    "mean_lle": 0.20589056217300028,
+    "min_lle": 0.17539191784246894,
+    "max_lle": 0.245118984210512
+  },
+  {
+    "variant": "repository-precision-negative",
+    "count": 128,
+    "retained": 128,
+    "mean_lle": 0.2272282221545785,
+    "min_lle": 0.1946180002905601,
+    "max_lle": 0.25389437024001443
+  },
+  {
+    "variant": "repository-numpy-positive",
+    "count": 128,
+    "retained": 124,
+    "mean_lle": 0.18946611358400156,
+    "min_lle": -7.081628128855875e-05,
+    "max_lle": 0.23442494908293113
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "settings": {
+    "transient": 2000.0,
+    "duration": 4000.0,
+    "rtol": 1e-09,
+    "atol": 1e-12
+  },
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Phenomenological finite-photoresponse extension; not a fitted hardware model",
+    "integrator": "Dormand-Prince 5(4)"
+  },
+  "timing": {
+    "wall_seconds": 111.96273950000068,
+    "gpu_seconds": 109.12966060800052
+  },
+  "trajectories": 12,
+  "status_counts": {
+    "0": 11,
+    "1": 1
+  },
+  "candidate_indices": [],
+  "max_lle": 0.0004422667288008251,
+  "parameter_columns": [
+    "a",
+    "b",
+    "tau",
+    "k",
+    "width",
+    "equilibrium_height",
+    "unused",
+    "unused"
+  ],
+  "interpretation": "A deliberately phenomenological extension. A candidate here is not evidence of chaos in the published physical device.",
+  "parent_source": "results/photofeedback/scout",
+  "parent_indices": [
+    216,
+    594,
+    966,
+    1320,
+    1350,
+    1632,
+    1947,
+    2382,
+    2487,
+    2520,
+    2610,
+    2949
+  ],
+  "criterion": "status 0, mean LLE > .005, all four windows > .002, late height span > 1e-5"
+}

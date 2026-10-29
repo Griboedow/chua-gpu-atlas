@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-29",
+  "article_doi": "10.1038/s41467-026-68552-8",
+  "code_url": "https://github.com/slevinskygra/ReducedSynchronematic/blob/016614ad6debe11e0353f0a01b1fad937fc77461/simulation_numba.py",
+  "article_coefficients": [
+    [
+      2.921,
+      2.07,
+      -0.781,
+      0.312
+    ],
+    [
+      -5.351,
+      0.223,
+      3.009,
+      -1.359
+    ]
+  ],
+  "numpy_branch_coefficients": [
+    [
+      2.92076,
+      2.06954,
+      -0.78064,
+      0.312294
+    ],
+    [
+      -5.35098,
+      0.222,
+      3.00884,
+      1.359334
+    ]
+  ],
+  "coefficient_order": [
+    "cos Delta",
+    "sin Delta",
+    "cos 3Delta",
+    "sin 3Delta"
+  ],
+  "main_discrepancy": "Orientation sin(3 Delta) coefficient: article -1.359; repository NumPy branch +1.359334.",
+  "derivation": "cos(a-b)+cos(a+b)=2 cos(a) cos(b); sin(a-b)+sin(a+b)=2 sin(a) cos(b).",
+  "additional_observation": "The separate Numba reverse-pair expressions omit the phase sin(3 Delta) term and orientation sin(Delta) term present in the forward-pair expressions. That branch is not reproduced here.",
+  "interpretation": "Sources disagree. This audit does not determine which version was physically intended or used for every published figure. No author contacted."
+}

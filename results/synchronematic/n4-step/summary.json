@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "dt": 0.0025,
+    "transient": 2000.0,
+    "duration": 4000.0
+  },
+  "timing": {
+    "wall_seconds": 223.51142470000013,
+    "gpu_seconds": 219.32225187200137
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "precision": "float64",
+    "integrator": "RK4",
+    "fast_math": false,
+    "oscillators": 4,
+    "model": "Leyva et al. 2026 Eqs 10-12, deterministic Fourier approximation, global phase removed",
+    "coefficients": [
+      [
+        2.921,
+        2.07,
+        -0.781,
+        0.312
+      ],
+      [
+        -5.351,
+        0.223,
+        3.009,
+        -1.359
+      ]
+    ],
+    "time": "s=t/L^3; actual positions L*normalized_positions; L=10 gives far-field separation if normalized minimum>=1"
+  },
+  "experiment": {
+    "mode": "step",
+    "seed": 2026102904,
+    "source_index": 43,
+    "changes_equations": false,
+    "note": "Coefficient jitter is a sensitivity test, not a bound on omitted Fourier harmonics."
+  },
+  "trajectories": 24,
+  "valid": 24,
+  "candidate_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "max_lle": 0.2273248221666742,
+  "criterion": "mean > .002 and all four windows > .001; late flow speed > 1e-5; status 0",
+  "interpretation": "Finite-time candidates in the published truncated deterministic phase model, not proof of novelty or physical chaos."
+}

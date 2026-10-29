@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "dt": 0.01,
+    "transient": 200,
+    "duration": 400
+  },
+  "timing": {
+    "wall_seconds": 7.145943699999407,
+    "gpu_seconds": 7.0369329600000015
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "precision": "float64",
+    "integrator": "RK4",
+    "fast_math": false,
+    "oscillators": 3,
+    "model": "Leyva et al. 2026 Eqs 10-12, deterministic Fourier approximation, global phase removed",
+    "coefficients": [
+      [
+        2.921,
+        2.07,
+        -0.781,
+        0.312
+      ],
+      [
+        -5.351,
+        0.223,
+        3.009,
+        -1.359
+      ]
+    ],
+    "time": "s=t/L^3; actual positions L*normalized_positions; L=10 gives far-field separation if normalized minimum>=1"
+  },
+  "trajectories": 1024,
+  "valid": 1024,
+  "candidate_indices": [
+    491,
+    942
+  ],
+  "max_lle": 0.007465842842997374,
+  "criterion": "mean > .002 and all four windows > .001; late flow speed > 1e-5; status 0",
+  "interpretation": "Finite-time candidates in the published truncated deterministic phase model, not proof of novelty or physical chaos."
+}

@@ -170,6 +170,14 @@ A finite-time positive exponent does not prove an asymptotic strange attractor. 
 
 A [separate research log](docs/candidate-research.md) screens unusual related systems against prior publications and investigates a quantum memristive neuron with Python and an adaptive FP64 GPU solver. Across 36,864 survey trajectories and 58 long follow-ups, **no new chaotic attractor was confirmed**. The log includes failed candidates, independent numerical controls, an analytic boundedness argument, and an energy-based exclusion for an uncoupled physical meminductor. Code and compact raw data are included; publication novelty remains unverified.
 
+The next pass found a stronger candidate: **four synchronematic colloid oscillators** in the deterministic reduced equations printed by Leyva et al. (2026). [The new notebook](docs/synchronematic-research.md) includes a full Lyapunov spectrum with a positive leading exponent, smaller-step GPU reruns, geometry and coefficient sensitivity, and an analytic gradient-flow control. An audit also found a coefficient-sign disagreement between the article and the authors' code, which is investigated explicitly. The result is evidence for the literal printed Fourier approximation, not experimental confirmation or a certified first discovery.
+
+![Independent numerical evidence for the synchronematic candidate](docs/assets/synchronematic_evidence.png)
+
+An [optical-feedback notebook](docs/photofeedback-research.md) develops an explicitly assumed response model for the physical meminductor question. It identifies linear instability boundaries and sustained oscillation, but none of its 12 preliminary chaos candidates survive long follow-up. Both positive and negative results are reproducible from the included code and compact data.
+
+The [candidate queue](docs/candidate-queue.md) records additional physical systems, known prior results, dimensional exclusions and missing source material. An absence of search hits is never treated as proof of novelty.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.

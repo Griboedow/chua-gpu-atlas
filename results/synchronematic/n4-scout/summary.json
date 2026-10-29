@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "dt": 0.01,
+    "transient": 200,
+    "duration": 400
+  },
+  "timing": {
+    "wall_seconds": 24.626331599998593,
+    "gpu_seconds": 24.377981951999974
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "precision": "float64",
+    "integrator": "RK4",
+    "fast_math": false,
+    "oscillators": 4,
+    "model": "Leyva et al. 2026 Eqs 10-12, deterministic Fourier approximation, global phase removed",
+    "coefficients": [
+      [
+        2.921,
+        2.07,
+        -0.781,
+        0.312
+      ],
+      [
+        -5.351,
+        0.223,
+        3.009,
+        -1.359
+      ]
+    ],
+    "time": "s=t/L^3; actual positions L*normalized_positions; L=10 gives far-field separation if normalized minimum>=1"
+  },
+  "trajectories": 2048,
+  "valid": 2048,
+  "candidate_indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    136,
+    296,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    484,
+    527,
+    777,
+    1269,
+    1270,
+    1297,
+    1410,
+    1423,
+    1644,
+    1647,
+    1696,
+    1697,
+    1698,
+    1699,
+    1700,
+    1701,
+    1702,
+    1703,
+    2004
+  ],
+  "max_lle": 0.249016216487842,
+  "criterion": "mean > .002 and all four windows > .001; late flow speed > 1e-5; status 0",
+  "interpretation": "Finite-time candidates in the published truncated deterministic phase model, not proof of novelty or physical chaos."
+}
