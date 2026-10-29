@@ -1,0 +1,90 @@
+{
+  "settings": {
+    "transient": 2000,
+    "duration": 4000,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step": 0.05,
+    "max_attempts": 3000000
+  },
+  "method": "Adaptive DP5(4), analytic variational equations, constant scaled concentrations",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 235.57779819999996,
+  "parameter_columns": [
+    "A",
+    "C",
+    "gamma",
+    "rho",
+    "B",
+    "epsilon",
+    "lambda_g",
+    "Hill_n"
+  ],
+  "state_columns": [
+    "G",
+    "U",
+    "x",
+    "phi"
+  ],
+  "stats_columns": [
+    "min_G",
+    "max_G",
+    "min_U",
+    "max_U",
+    "min_x",
+    "max_x",
+    "min_phi",
+    "max_phi"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "physical domain exit",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "source": "scout.npz",
+  "retained": 0,
+  "lanes": 25,
+  "array_shapes": {
+    "parameters": [
+      25,
+      8
+    ],
+    "initial_states": [
+      25,
+      4
+    ],
+    "final_states": [
+      25,
+      4
+    ],
+    "lle": [
+      25
+    ],
+    "lle_windows": [
+      25,
+      4
+    ],
+    "status": [
+      25
+    ],
+    "stats": [
+      25,
+      8
+    ],
+    "elapsed": [
+      25
+    ],
+    "step_counts": [
+      25,
+      2
+    ],
+    "source_indices": [
+      25
+    ],
+    "retained_candidate": [
+      25
+    ]
+  }
+}

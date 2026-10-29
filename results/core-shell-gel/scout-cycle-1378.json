@@ -1,0 +1,32 @@
+{
+  "period": 5.452534211474665,
+  "section_closure": 4.440892098500626e-16,
+  "radau_closure": 7.298883719641935e-12,
+  "spectral_radius": 3.8024841751188096e-08,
+  "source": "scout.npz",
+  "index": 1378,
+  "method": "Newton Poincare return map with DOP853 variational derivative; independent Radau closed-orbit check",
+  "rtol": 1e-12,
+  "atol": 1e-14,
+  "max_step": 0.01,
+  "section": "phi=0.3, upward",
+  "scope": "Small multipliers below floating-point resolution are not assigned accurate relative values",
+  "array_shapes": {
+    "parameters": [
+      8
+    ],
+    "section_state": [
+      4
+    ],
+    "multipliers": [
+      3
+    ],
+    "times": [
+      2001
+    ],
+    "states": [
+      2001,
+      4
+    ]
+  }
+}

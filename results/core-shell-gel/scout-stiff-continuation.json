@@ -1,0 +1,753 @@
+{
+  "source": "scout.npz",
+  "rows": [
+    {
+      "source_index": 176,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.2832788979381133,
+      "scaled_late_variation": 2.6160688293646364,
+      "eigenvalues": [
+        [
+          -26.148026692424928,
+          0.0
+        ],
+        [
+          -8.852692597614015,
+          0.0
+        ],
+        [
+          -1.8642806584692653,
+          0.7297163638077275
+        ],
+        [
+          -1.8642806584692653,
+          -0.7297163638077275
+        ]
+      ],
+      "wall_seconds": 11.583685400000832
+    },
+    {
+      "source_index": 177,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.7060817654545881,
+      "scaled_late_variation": 1.4834929783274386,
+      "eigenvalues": [
+        [
+          -25.319245464531303,
+          0.0
+        ],
+        [
+          -4.8109155240744945,
+          0.0
+        ],
+        [
+          0.1840823040031067,
+          2.164116545992534
+        ],
+        [
+          0.1840823040031067,
+          -2.164116545992534
+        ]
+      ],
+      "wall_seconds": 11.89243620000343
+    },
+    {
+      "source_index": 1158,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.3359169761141797,
+      "scaled_late_variation": 2.5509852272579825,
+      "eigenvalues": [
+        [
+          -25.2626288372834,
+          0.0
+        ],
+        [
+          -0.5153075257788595,
+          0.0
+        ],
+        [
+          -0.9042221723094652,
+          0.0
+        ],
+        [
+          -3.769710841032451,
+          0.0
+        ]
+      ],
+      "wall_seconds": 12.060734599996067
+    },
+    {
+      "source_index": 1159,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.33130085838845075,
+      "scaled_late_variation": 2.5200562648837908,
+      "eigenvalues": [
+        [
+          -25.257295731866552,
+          0.0
+        ],
+        [
+          -0.5356630966733054,
+          0.0
+        ],
+        [
+          -0.9042792229157262,
+          0.0
+        ],
+        [
+          -3.846297523029888,
+          0.0
+        ]
+      ],
+      "wall_seconds": 11.007734599996184
+    },
+    {
+      "source_index": 1494,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.49178899968400774,
+      "scaled_late_variation": 3.5654299965780942,
+      "eigenvalues": [
+        [
+          -25.299581561261217,
+          0.0
+        ],
+        [
+          -11.335922221693544,
+          0.0
+        ],
+        [
+          0.06013657800354053,
+          0.6520289824050141
+        ],
+        [
+          0.06013657800354053,
+          -0.6520289824050141
+        ]
+      ],
+      "wall_seconds": 14.31352290000359
+    },
+    {
+      "source_index": 1495,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.4615288229784585,
+      "scaled_late_variation": 3.449030009898004,
+      "eigenvalues": [
+        [
+          -25.27383014346065,
+          0.0
+        ],
+        [
+          -11.341522829954384,
+          0.0
+        ],
+        [
+          0.02627925797491374,
+          0.6547820221436097
+        ],
+        [
+          0.02627925797491374,
+          -0.6547820221436097
+        ]
+      ],
+      "wall_seconds": 13.978253499997663
+    },
+    {
+      "source_index": 1698,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.14548702296180127,
+      "scaled_late_variation": 5.009189170296309,
+      "eigenvalues": [
+        [
+          -75843.74208147879,
+          0.0
+        ],
+        [
+          -1.5984520973156686,
+          0.0
+        ],
+        [
+          -24.999916219022914,
+          0.0
+        ],
+        [
+          0.4288200284804897,
+          0.0
+        ]
+      ],
+      "wall_seconds": 11.52812350000022
+    },
+    {
+      "source_index": 1699,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.16068219954644536,
+      "scaled_late_variation": 4.930083327033724,
+      "eigenvalues": [
+        [
+          -75084.25849908676,
+          0.0
+        ],
+        [
+          -1.5984506307548725,
+          0.0
+        ],
+        [
+          -24.999914002503125,
+          0.0
+        ],
+        [
+          0.5403499779528453,
+          0.0
+        ]
+      ],
+      "wall_seconds": 11.460842000000412
+    },
+    {
+      "source_index": 1716,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.49369827802177624,
+      "scaled_late_variation": 4.610985463982961,
+      "eigenvalues": [
+        [
+          -25.342938457976558,
+          0.0
+        ],
+        [
+          -0.18945489748638436,
+          0.0
+        ],
+        [
+          -1.5884857294634176,
+          0.0
+        ],
+        [
+          -3.5348590686761843,
+          0.0
+        ]
+      ],
+      "wall_seconds": 14.366379499995674
+    },
+    {
+      "source_index": 1717,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.4944431895671133,
+      "scaled_late_variation": 4.6129842278156845,
+      "eigenvalues": [
+        [
+          -25.343755629114682,
+          0.0
+        ],
+        [
+          -0.1852508973493784,
+          0.0
+        ],
+        [
+          -1.58808452554353,
+          0.0
+        ],
+        [
+          -3.525426359819473,
+          0.0
+        ]
+      ],
+      "wall_seconds": 12.724566400000185
+    },
+    {
+      "source_index": 1978,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.4940995697642219,
+      "scaled_late_variation": 1.0592393153999784,
+      "eigenvalues": [
+        [
+          -25.35541555543164,
+          0.0
+        ],
+        [
+          -6.515705577120154,
+          0.0
+        ],
+        [
+          -0.21986397047105433,
+          2.794802825055291
+        ],
+        [
+          -0.21986397047105433,
+          -2.794802825055291
+        ]
+      ],
+      "wall_seconds": 13.74846570000227
+    },
+    {
+      "source_index": 1979,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.5912378505217544,
+      "scaled_late_variation": 1.133398796986394,
+      "eigenvalues": [
+        [
+          -25.397928169804306,
+          0.0
+        ],
+        [
+          -6.545231326665468,
+          0.0
+        ],
+        [
+          -0.124861994635109,
+          2.7857844056808596
+        ],
+        [
+          -0.124861994635109,
+          -2.7857844056808596
+        ]
+      ],
+      "wall_seconds": 14.191503999994893
+    },
+    {
+      "source_index": 2248,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.945727342270348,
+      "scaled_late_variation": 1.2131718315123812,
+      "eigenvalues": [
+        [
+          -25.115197199275364,
+          0.0
+        ],
+        [
+          -2.4450575931444525,
+          0.0
+        ],
+        [
+          -0.7259197885688606,
+          0.9216612359041411
+        ],
+        [
+          -0.7259197885688606,
+          -0.9216612359041411
+        ]
+      ],
+      "wall_seconds": 11.69320080000034
+    },
+    {
+      "source_index": 2249,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.9115375954774358,
+      "scaled_late_variation": 1.6004304935479725,
+      "eigenvalues": [
+        [
+          -25.118471280783314,
+          0.0
+        ],
+        [
+          -1.184967102892906,
+          0.24591686108771627
+        ],
+        [
+          -1.184967102892906,
+          -0.24591686108771627
+        ],
+        [
+          -5.118980742094379,
+          0.0
+        ]
+      ],
+      "wall_seconds": 10.79625870000018
+    },
+    {
+      "source_index": 2604,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.7875574277479706,
+      "scaled_late_variation": 2.2108739012159013,
+      "eigenvalues": [
+        [
+          -0.16089536569172885,
+          0.9066650300078387
+        ],
+        [
+          -0.16089536569172885,
+          -0.9066650300078387
+        ],
+        [
+          -28.696931888997852,
+          0.0
+        ],
+        [
+          -25.186006238187552,
+          0.0
+        ]
+      ],
+      "wall_seconds": 11.884589699999196
+    },
+    {
+      "source_index": 2605,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.0386464527781163,
+      "scaled_late_variation": 1.5032781217096631,
+      "eigenvalues": [
+        [
+          -0.13149233664600596,
+          1.3300053489349988
+        ],
+        [
+          -0.13149233664600596,
+          -1.3300053489349988
+        ],
+        [
+          -28.732870408931763,
+          0.0
+        ],
+        [
+          -25.166659436654967,
+          0.0
+        ]
+      ],
+      "wall_seconds": 12.067064399998344
+    },
+    {
+      "source_index": 2732,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.3941791382152509,
+      "scaled_late_variation": 0.8349907190773352,
+      "eigenvalues": [
+        [
+          -25.183403108804868,
+          0.0
+        ],
+        [
+          -2.006512138242403,
+          0.0
+        ],
+        [
+          0.008206888955707814,
+          1.0748703720109225
+        ],
+        [
+          0.008206888955707814,
+          -1.0748703720109225
+        ]
+      ],
+      "wall_seconds": 8.791629200000898
+    },
+    {
+      "source_index": 2733,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.5068163484152722,
+      "scaled_late_variation": 1.013066977522638,
+      "eigenvalues": [
+        [
+          -25.170365664134557,
+          0.0
+        ],
+        [
+          -1.5942634067161159,
+          0.0
+        ],
+        [
+          0.11928912536872549,
+          0.5444030210972045
+        ],
+        [
+          0.11928912536872549,
+          -0.5444030210972045
+        ]
+      ],
+      "wall_seconds": 8.754824499999813
+    },
+    {
+      "source_index": 2798,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 2.0295458020669406,
+      "scaled_late_variation": 2.4144102155381684,
+      "eigenvalues": [
+        [
+          -25.45126545896127,
+          0.0
+        ],
+        [
+          3.7499112666675267,
+          0.0
+        ],
+        [
+          0.25648770461053755,
+          0.0
+        ],
+        [
+          -3.4227706333870045,
+          0.0
+        ]
+      ],
+      "wall_seconds": 9.704089599996223
+    },
+    {
+      "source_index": 2799,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.124564438325505,
+      "scaled_late_variation": 2.587331797993423,
+      "eigenvalues": [
+        [
+          23.64163108268309,
+          0.0
+        ],
+        [
+          -25.412163422997423,
+          0.0
+        ],
+        [
+          -0.8185768223415875,
+          0.0
+        ],
+        [
+          -2.8287539446353795,
+          0.0
+        ]
+      ],
+      "wall_seconds": 10.170895200004452
+    },
+    {
+      "source_index": 2908,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.43780051661853664,
+      "scaled_late_variation": 1.848052843542553,
+      "eigenvalues": [
+        [
+          -25.22580999929963,
+          0.0
+        ],
+        [
+          -0.7823129899984426,
+          0.0
+        ],
+        [
+          -0.944213973559586,
+          0.0
+        ],
+        [
+          -1.5862529256774642,
+          0.0
+        ]
+      ],
+      "wall_seconds": 10.348056800001359
+    },
+    {
+      "source_index": 2909,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.43849321336349784,
+      "scaled_late_variation": 1.84601649132787,
+      "eigenvalues": [
+        [
+          -25.225601355598084,
+          0.0
+        ],
+        [
+          -0.7869323714754575,
+          0.0
+        ],
+        [
+          -0.9384943626913309,
+          0.0
+        ],
+        [
+          -1.5778286483304298,
+          0.0
+        ]
+      ],
+      "wall_seconds": 10.25078719999874
+    },
+    {
+      "source_index": 3466,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.247036453051315,
+      "scaled_late_variation": 1.6562694498295085,
+      "eigenvalues": [
+        [
+          -94.48125765968432,
+          0.0
+        ],
+        [
+          -0.12044584778155645,
+          2.07349158560917
+        ],
+        [
+          -0.12044584778155645,
+          -2.07349158560917
+        ],
+        [
+          -25.209261117444107,
+          0.0
+        ]
+      ],
+      "wall_seconds": 17.81448190000083
+    },
+    {
+      "source_index": 3467,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 1.3069217335528716,
+      "scaled_late_variation": 3.4549873274255014,
+      "eigenvalues": [
+        [
+          -94.44245088576112,
+          0.0
+        ],
+        [
+          -25.626123735815412,
+          0.0
+        ],
+        [
+          2.585320833410717,
+          0.0
+        ],
+        [
+          -0.5218528526380896,
+          0.0
+        ]
+      ],
+      "wall_seconds": 17.575519500001974
+    },
+    {
+      "source_index": 3544,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.556521016424539,
+      "scaled_late_variation": 2.797210093202447,
+      "eigenvalues": [
+        [
+          -45773.92107431538,
+          0.0
+        ],
+        [
+          -24.999783871216913,
+          0.0
+        ],
+        [
+          -1.2788133519801033,
+          0.0
+        ],
+        [
+          0.042523407644111395,
+          0.0
+        ]
+      ],
+      "wall_seconds": 9.471993300001486
+    },
+    {
+      "source_index": 3545,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.756447092807073,
+      "scaled_late_variation": 2.797184464039584,
+      "eigenvalues": [
+        [
+          -37918.78836892548,
+          0.0
+        ],
+        [
+          -24.99969869821296,
+          0.0
+        ],
+        [
+          -1.278746451064406,
+          0.0
+        ],
+        [
+          -0.3696363112261308,
+          0.0
+        ]
+      ],
+      "wall_seconds": 9.208418000001984
+    },
+    {
+      "source_index": 3663,
+      "outcome": "unresolved",
+      "success": true,
+      "elapsed": 100.0,
+      "scaled_residual": 0.6069652736302302,
+      "scaled_late_variation": 3.3381835754607776,
+      "eigenvalues": [
+        [
+          -25.84522693041518,
+          0.0
+        ],
+        [
+          -7.59777750428016,
+          0.0
+        ],
+        [
+          -1.20459909674004,
+          0.0
+        ],
+        [
+          -0.4028181937553073,
+          0.0
+        ]
+      ],
+      "wall_seconds": 11.093061100000341
+    }
+  ],
+  "method": "Independent Radau, analytic Jacobian",
+  "rtol": 1e-09,
+  "atol": 1e-11,
+  "max_step": 0.5,
+  "additional_duration": 100.0,
+  "scope": "Resolve stiff GPU budget cases by observed physical exit or stable equilibrium; oscillatory cases remain unresolved",
+  "array_shapes": {
+    "source_indices": [
+      27
+    ],
+    "parameters": [
+      27,
+      8
+    ],
+    "final_states": [
+      27,
+      4
+    ]
+  }
+}

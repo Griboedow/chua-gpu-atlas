@@ -1,0 +1,45 @@
+{
+  "source": "scout.npz",
+  "index": 1378,
+  "transient": 200.0,
+  "duration": 400.0,
+  "max_step": 0.05,
+  "rtol": 1e-11,
+  "atol": 1e-14,
+  "qr_interval": 0.1,
+  "method": "DOP853 and QR, full tangent burn-in, constant scaled physical concentrations",
+  "sum_divergence_error": 4.647660034606815e-11,
+  "wall_seconds": 53.19700610000291,
+  "array_shapes": {
+    "parameters": [
+      8
+    ],
+    "initial_state": [
+      4
+    ],
+    "final_state": [
+      4
+    ],
+    "spectrum": [
+      4
+    ],
+    "spectrum_windows": [
+      4,
+      4
+    ],
+    "divergence_windows": [
+      4
+    ],
+    "ranges": [
+      4,
+      2
+    ],
+    "times": [
+      4000
+    ],
+    "states": [
+      4000,
+      4
+    ]
+  }
+}

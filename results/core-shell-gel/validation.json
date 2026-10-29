@@ -1,0 +1,12 @@
+{
+  "errors": {
+    "jacobian": 8.940644755995733e-09,
+    "quasi_steady_identity": 1.4210854715202004e-14,
+    "gpu_state": 2.460254222569347e-13,
+    "gpu_lle": 8.604228440844963e-15,
+    "dop853_vs_radau": 3.552713678800501e-15
+  },
+  "passed": true,
+  "device": "NVIDIA GeForce GTX 1080",
+  "random_cases": 64
+}

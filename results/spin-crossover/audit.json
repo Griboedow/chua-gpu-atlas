@@ -1,0 +1,144 @@
+{
+  "scope": "Literal arXiv:2606.25506v1 model; analytical screening, not a chaos search or priority claim",
+  "source_equations": [
+    "16",
+    "26a",
+    "26b",
+    "27",
+    "31/32 in PDF; 35/36 in HTML"
+  ],
+  "first_integral": {
+    "formula": "n_HS^2 - m^2",
+    "condition": "J_tau = 0, n_HS > 0",
+    "random_states": 512,
+    "derivative_residual_max": 8.881784197001252e-16,
+    "full_vs_reduced_error": 1.6723333828849718e-10,
+    "full_control_drift": 9.992007221626409e-16,
+    "methods": [
+      "DOP853 in 3D",
+      "Radau on exact 2D level surface"
+    ],
+    "initial_state": [
+      0.8,
+      0.1,
+      105.0
+    ],
+    "parameters": {
+      "J_s": 112.0,
+      "J_tau": 0.0,
+      "Delta_s": 309.5,
+      "g_tau": 3.0,
+      "Gamma": 0.05,
+      "alpha": 4.5,
+      "T_reservoir": 100.0,
+      "intensity": 0.0,
+      "rho": 0.5,
+      "enthalpy_over_capacity": 100.0
+    },
+    "state_min": [
+      0.7937254062250013,
+      0.00014313295637182014,
+      100.00113899672958
+    ],
+    "state_max": [
+      0.8,
+      0.1,
+      105.0
+    ]
+  },
+  "combined_identity": {
+    "formula": "d(n_HS^2-m^2)/dt = 2*Gamma*J_tau*n_HS*(p_HS-n_HS)",
+    "random_states": 512,
+    "derivative_residual_max": 1.7763568394002505e-15,
+    "exclusion_applied": false
+  },
+  "population_boundary_counterexamples": [
+    {
+      "parameters": {
+        "J_s": 112.0,
+        "J_tau": 0.0,
+        "Delta_s": 309.5,
+        "g_tau": 3.0,
+        "Gamma": 0.05,
+        "alpha": 4.5,
+        "T_reservoir": 100.0,
+        "intensity": 0.0,
+        "rho": 0.5,
+        "enthalpy_over_capacity": 100.0
+      },
+      "state": [
+        1.0,
+        1.9,
+        20.0
+      ],
+      "rhs": [
+        1.042399138369787,
+        0.5486311254577827,
+        305.1368874542217
+      ],
+      "outward_from_population_upper_boundary": true
+    },
+    {
+      "parameters": {
+        "J_s": 112.0,
+        "J_tau": 152.0,
+        "Delta_s": 309.5,
+        "g_tau": 3.0,
+        "Gamma": 0.05,
+        "alpha": 4.5,
+        "T_reservoir": 100.0,
+        "intensity": 0.0,
+        "rho": 0.5,
+        "enthalpy_over_capacity": 100.0
+      },
+      "state": [
+        1.0,
+        1.9,
+        20.0
+      ],
+      "rhs": [
+        1.0630965682549571,
+        0.5596143600225318,
+        304.0385639977468
+      ],
+      "outward_from_population_upper_boundary": true
+    }
+  ],
+  "photothermal_parameter_check": {
+    "J_tau": 152.0,
+    "Gamma": 0.05263157894736842,
+    "T_eq": 112.6,
+    "log_g": 7.0,
+    "alpha": 2.8,
+    "analytical_jacobian": [
+      [
+        -5.300177619893428,
+        0.12433392539964476
+      ],
+      [
+        -70.18666666666665,
+        -2.8
+      ]
+    ],
+    "finite_difference_jacobian": [
+      [
+        -5.300177619934426,
+        0.1243339253886244
+      ],
+      [
+        -70.18666666667173,
+        -2.8000000007466492
+      ]
+    ],
+    "jacobian_error": 7.466494089669595e-10,
+    "trace_at_alpha_zero": -5.300177619893428,
+    "trace_at_reported_alpha": -8.100177619893428,
+    "reported_Hopf_alpha": 2.8,
+    "literal_critical_reservoir_temperature": 176.54285714285714,
+    "reported_critical_reservoir_temperature": 78.8,
+    "no_quarter_factor_diagnostic": 2.7992895204262886,
+    "interpretation": "Unresolved coefficient/parameter convention discrepancy; no correction applied"
+  },
+  "validation_passed": true,
+  "source_pdf_sha256": "5facca4a965f95958c7ba90afcee4d54fb613db745f8197fb771fde6cdffbb86"
+}

@@ -1,0 +1,43 @@
+{
+  "audit_date_utc": "2026-10-29",
+  "source": {
+    "doi": "10.1002/syst.70050",
+    "title": "Theoretical Model of Chemomechanical Self-Oscillation in a Two-Enzyme Core–Shell Hydrogel With pH-Gated Microcapsules",
+    "authors": ["Shinbo", "Sukegawa", "Yamada", "Maeda"],
+    "year": 2026,
+    "primary_scope": "Full primary HTML and ten-page PDF, Eqs. 1–5 and reduced Eqs. 10–11, Table 1",
+    "pdf_url": "https://chemistry-europe.onlinelibrary.wiley.com/doi/pdf/10.1002/syst.70050",
+    "supplement_status": "Official supplement and direct local downloads returned HTTP 403; fit details unverified",
+    "redistribution": "Source text, PDFs and supplement are not included or relicensed"
+  },
+  "implementation_scope": {
+    "state_order": ["scaled glucose G", "scaled urea U", "scaled proton concentration x", "polymer fraction phi"],
+    "method": "Exact scaling of the full four-state source equations, retaining finite substrate relaxations",
+    "free_rate": "lambda_g=(k_D^g+k_R^g)/k_D^h is not fixed independently by the published reduced parameter set",
+    "calibration": "Finite rates and survey ranges are chosen mathematical parameters, not fitted hardware measurements",
+    "reference_initial_state": "Chosen by us; not claimed to be the source's initial condition",
+    "physical_domain": "G,U >= 0, x > 0, 0 < phi < 1; no state clipping",
+    "limitations": "Bounds conditional on remaining in the polymer-fraction interval; low-urea kinetics and bath approximation not validated across the scan"
+  },
+  "literature": {
+    "search_scope": "Targeted DOI, title, author and chaos queries; primary equations compared with the related Milster microreactor",
+    "openalex_work": "W7172295810",
+    "openalex_cited_by_count_snapshot": 0,
+    "conclusion": "No exact full-model chaos demonstration identified in this limited search; absence and novelty are not established"
+  },
+  "result": {
+    "scout_trajectories": 4096,
+    "scout_completed": 3780,
+    "scout_physical_exits": 289,
+    "scout_step_budget_unresolved": 27,
+    "preliminary_source_indices": [1188, 1378, 1575, 2882],
+    "long_followups": 25,
+    "long_completed": 17,
+    "long_budget_unresolved": 8,
+    "long_retained": 0,
+    "independent_stable_cycle_source_index": 1378,
+    "stiff_scout_short_radau_completions": 27,
+    "stiff_scout_still_unclassified": 27,
+    "conclusion": "No validated chaotic candidate; unresolved trajectories are not counted as negative results"
+  }
+}

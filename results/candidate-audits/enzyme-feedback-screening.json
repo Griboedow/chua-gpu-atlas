@@ -1,0 +1,183 @@
+{
+  "audit_utc": "2026-10-29T23:50:31.110092+00:00",
+  "scope": "Independent source and structural audit; no parameter survey or chaos candidate produced.",
+  "documentation": "docs/enzyme-feedback-screening.md",
+  "candidate_decisions": [
+    {
+      "id": "goth-dzubiella-2026",
+      "doi": "10.1021/acs.jpcb.6c03926",
+      "status": "exclude_closed_model",
+      "reason": "L=glucose+urea decreases; Ldot=0 implies both reaction rates vanish. pH is unique algebraic charge-balance solution.",
+      "primary_fulltext": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13637022/fullTextXML"
+    },
+    {
+      "id": "straube-geometric-2025",
+      "arxiv_version": "2508.07275v1",
+      "status": "exclude_planar_model",
+      "reason": "Two-variable autonomous flow; source proves regular limit cycles using Poincare-Bendixson.",
+      "primary_fulltext": "https://arxiv.org/html/2508.07275v1"
+    },
+    {
+      "id": "milster-2023",
+      "doi": "10.1103/PhysRevE.108.L042601",
+      "arxiv_version": "2306.05181v1",
+      "status": "exclude_bounded_chaotic_limit_attractor",
+      "parameter_conditions": "B,m,kR,kDg,g0,tau_phi > 0",
+      "reason": "x=(g,-h,phi) gives competitive vector field on R^3; Hirsch 1982 Theorem A / 3.1 yields planar limit-set embedding.",
+      "theorem_doi": "10.1137/0513013",
+      "does_not_imply": "Does not prove physical boundedness for arbitrary Landau parameters; does not apply to Shinbo 4D."
+    },
+    {
+      "id": "straube-urease-original-4d",
+      "doi": "10.1021/acs.jpcb.2c09092",
+      "arxiv_version": "2212.14503v1",
+      "status": "eligible_conditional_candidate_not_simulated",
+      "reason": "Original 4D has exact 3D attracting hyperplane for k=kS, but approximate 2D reduction is not a global first integral. No complete no-chaos theorem established here.",
+      "primary_fulltext": "https://arxiv.org/html/2212.14503v1"
+    },
+    {
+      "id": "leathard-esterase-2023",
+      "doi": "10.1063/5.0180256",
+      "status": "secondary_lead_equations_not_audited",
+      "reason": "Primary publication identifiesseven-species model, known regular oscillations and supplementary XPP equations.",
+      "primary_fulltext": "https://eprints.whiterose.ac.uk/id/eprint/207599/"
+    }
+  ],
+  "urease_original": {
+    "state_order": [
+      "S",
+      "H",
+      "P",
+      "Q"
+    ],
+    "species": [
+      "urea",
+      "hydrogen ions",
+      "ammonia",
+      "ammonium"
+    ],
+    "concentration_unit": "mol/L",
+    "time_unit": "s",
+    "rates": {
+      "v": "vmax*S/(KM+S)/(1+H/KE1+KE2/H)",
+      "j": "k2*P*H-k2r*Q",
+      "stable_activity_at_H_zero": "H/(H+H*H/KE1+KE2)"
+    },
+    "rhs": [
+      "-v+kS*(Sext-S)",
+      "-j+kH*(Hext-H)",
+      "2*v-j-k*P",
+      "j-k*Q"
+    ],
+    "reference_parameters": {
+      "k2": 43000000000.0,
+      "k2r": 24.0,
+      "KM": 0.003,
+      "KE1": 5e-06,
+      "KE2": 2e-09,
+      "kS": 0.0014,
+      "kH": 0.009,
+      "k": 0.0014,
+      "vmax": 0.000185,
+      "Sext": 0.00038,
+      "Hext": 0.00013
+    },
+    "initial_values_explicit_in_inspected_source_paragraph": {
+      "S": 5e-05,
+      "H": 1e-05,
+      "P": null,
+      "Q": null
+    },
+    "missing_initial_values_policy": "Resolve P,Q from earlier primary source/supplement or explicitly label newly selected values. Do not call a fabricated complete state a source state.",
+    "expected_reference_behavior": "Published sustained regular oscillation; not yet reproduced in this audit.",
+    "exact_identity_general": "N=2S+P+Q; Ndot=2*kS*Sext-2*kS*S-k*(P+Q)",
+    "bound_general": "Ndot<=2*kS*Sext-min(kS,k)*N; Hdot<=k2r*N+kH*Hext-kH*H",
+    "exact_identity_equal_rates": "if k=kS: N(t)=2*Sext+(N(0)-2*Sext)*exp(-kS*t)",
+    "recurrent_state_hyperplane": "if k=kS: Q=2*Sext-2*S-P",
+    "exact_normal_decay_rate_equal_rates": "-kS",
+    "divergence": "-v_S-kS-kH-k2r-2*k-k2*(P+H)",
+    "physical_domain": "S,H,P,Q>=0; recurrent equal-rate manifold additionally2*S+P<=2*Sext",
+    "warning": "Do not replace original 4D by planar approximation for a chaos search. Fixed k2 implies extreme stiffness. Varying protonation constants arbitrarily changes chemical regime."
+  },
+  "algebra_controls": {
+    "seed": 271828,
+    "random_states": 512,
+    "sampling": "Each S,H,P,Q independently10**uniform(-9,-3)",
+    "max_balance_scaled_error": 2.903475894827394e-16,
+    "error_definition": "abs(2*Sdot+Pdot+Qdot-kS*(2*Sext-2*S-P-Q))/max(1,max(abs(rhs)))",
+    "three_state_PH_counterexample": {
+      "state_S_H_P": [
+        5e-05,
+        1e-05,
+        1e-08
+      ],
+      "PH_derivative": 1.771719621009859e-11,
+      "derivative_units": "mol^2 L^-2 s^-1",
+      "a": 2508187.022423692,
+      "a_definition": "k*k2/(k2r+k)",
+      "reason": "PH is not a first integral of original three-state QSSA model."
+    },
+    "reproduction": "At reference parameters evaluatev,j,rhs for the sampled states. For three-state counterexample set Hdot=-a*P*H+kH*(Hext-H),Pdot=2*v-a*P*H-k*P,then PHdot=P*Hdot+H*Pdot. These are algebra checks, not trajectory tests."
+  },
+  "literature_search": {
+    "queries": [
+      "urease deterministic chaos",
+      "urea-urease chaotic",
+      "urease strange attractor",
+      "Accurate Reduced Models chaos",
+      "Synergistic Chemomechanical chaos"
+    ],
+    "outcome": "No exact four-species deterministic chaos result identified in limited search; novelty remains unverified.",
+    "epmc_citation_endpoint_urease": "https://www.ebi.ac.uk/europepmc/webservices/rest/MED/36976257/citations?page=1&pageSize=1000&format=json",
+    "epmc_urease_citers": [
+      {
+        "pmid": "41224738",
+        "doi": "10.1038/s41467-025-65605-2",
+        "title": "A chemoenzymatic reaction-diffusion system with local inhibition and distal activation",
+        "year": 2025,
+        "primary_read": "https://www.nature.com/articles/s41467-025-65605-2",
+        "relevance": "Different injection-driven reaction-diffusion problem, not chaos in the original isolated vesicle"
+      }
+    ],
+    "epmc_milster_citers_pmids": [
+      "39625150",
+      "38441269",
+      "37795797"
+    ],
+    "coverage_limitation": "EuropePMC is not comprehensive; relevant 2025 arXiv preprint absent. ACS final 2023 full text returned 403. No absence proof."
+  },
+  "source_cache": [
+    {
+      "local_ignored_cache": "outputs/candidate_research/enzyme_collective_2026.xml",
+      "sha256": "359401a238ce02eb9d69ff3147eda1f76b003e3b18c5dde1313b74071e60d5f1",
+      "bytes": 152225
+    },
+    {
+      "local_ignored_cache": "outputs/candidate_research/urea_geometric_2508.07275.html",
+      "sha256": "dd400e4454edd7829b40e1475b0af265bf03d4b66753d2dd616d45fc88d45078",
+      "bytes": 916502
+    },
+    {
+      "local_ignored_cache": "outputs/candidate_research/milster_2306.05181.html",
+      "sha256": "9973c17ba0eaa693f9ce929dce68821f60f73ab191d9e19eb5ca58388fa51a74",
+      "bytes": 134191
+    },
+    {
+      "local_ignored_cache": "outputs/candidate_research/urea_reduced_2212.14503.html",
+      "sha256": "0648b2c1e1b476f9312c01eae9355df1983e17b69696102e09f2c790f6e1fda0",
+      "bytes": 580049
+    }
+  ],
+  "next_block": [
+    "Reproduce reference regular oscillation with implicit CPU solver and analytic Jacobian.",
+    "Verifypositivity,N(t),trace,and exact 3Dvs4D agreement onmanifold.",
+    "Audit further primary citations, equivalences, and physical parameter ranges.",
+    "Only then coordinate a GPU survey; do not use unvalidated explicit RK4 on fast protonation."
+  ],
+  "resource_use": {
+    "gpu_trajectories": 0,
+    "cpu_trajectories": 0,
+    "random_algebra_states": 512
+  },
+  "novelty_claim": false
+}

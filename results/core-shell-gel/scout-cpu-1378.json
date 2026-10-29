@@ -1,0 +1,46 @@
+{
+  "source": "scout.npz",
+  "index": 1378,
+  "transient": 500.0,
+  "duration": 1500.0,
+  "max_step": 0.05,
+  "rtol": 1e-11,
+  "atol": 1e-14,
+  "method": "DOP853 and QR, full tangent burn-in, constant scaled physical concentrations",
+  "sum_divergence_error": 0.04684241519063903,
+  "wall_seconds": 101.94352570000046,
+  "array_shapes": {
+    "parameters": [
+      8
+    ],
+    "initial_state": [
+      4
+    ],
+    "final_state": [
+      4
+    ],
+    "spectrum": [
+      4
+    ],
+    "spectrum_windows": [
+      4,
+      4
+    ],
+    "divergence_windows": [
+      4
+    ],
+    "ranges": [
+      4,
+      2
+    ],
+    "times": [
+      1500
+    ],
+    "states": [
+      1500,
+      4
+    ]
+  },
+  "qr_interval": 1.0,
+  "quality": "FAILED spectrum-sum check: QR interval too long for strongly contracted directions; preserve as diagnostic, not a validated full spectrum"
+}

@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-10-29T23:39:39.027954+00:00",
+  "target": "Orlov et al., arXiv:2606.25506v1 / DOI 10.1103/n5cq-qxdq",
+  "queries": [
+    "\"2606.25506\" chaos",
+    "\"Orlov\" \"spin crossover\" \"chaos\"",
+    "\"spin crossover\" \"magnetization\" \"Lyapunov\"",
+    "\"2606.25506\" \"n_HS\" \"integral\"",
+    "\"spin crossover\" \"magnetization\" \"first integral\"",
+    "\"10.1103/n5cq-qxdq\" citations"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2606.25506",
+      "access": "Abstract and version history read; only v1 listed"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.25506v1",
+      "access": "Full text and equations read; numbered linearization 35-36"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.25506v1",
+      "access": "Full PDF retrieved; equations 26-27 and linearization 31-32 visually verified on pp. 7-8",
+      "sha256": "5facca4a965f95958c7ba90afcee4d54fb613db745f8197fb771fde6cdffbb86"
+    },
+    {
+      "url": "https://journals.aps.org/prb/abstract/10.1103/n5cq-qxdq",
+      "access": "Publisher abstract and publication metadata read; publisher PDF and public harvest fulltext returned authorization required; final equations not independently checked"
+    },
+    {
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.224303",
+      "access": "Primary abstract read; original 2014 equations not retrieved"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1134/S0021364023603962",
+      "access": "Publisher abstract and metadata read; PDF returned HTML rather than document"
+    },
+    {
+      "url": "https://www.mathnet.ru/eng/jetpl7151",
+      "access": "Metadata and abstract read; linked PDF explicitly embargoed until 2027-03-01; no access attempted beyond embargo notice"
+    }
+  ],
+  "conclusions": [
+    "Literal J_tau=0 model admits n_HS^2-m^2 first integral; regular positive-n branch reduces to planar autonomous flow.",
+    "No claim that this elementary identity is historically new.",
+    "No complete citation census or equivalence audit was performed; no claim of absence of chaos from all spin-crossover models.",
+    "Both-interaction model not excluded by the integral, but nominal population interval is not globally invariant and printed parameter convention remains unresolved."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "method": "DOP853",
+  "rtol": 1e-12,
+  "atol": 1e-14,
+  "max_step": 0.03,
+  "initial_state": [
+    1.0,
+    0.2
+  ],
+  "time_range": [
+    0,
+    200
+  ],
+  "wall_seconds": 1.9431436000013491,
+  "scope": "Literal Table 1 and Eqs. 10-11, two-dimensional control; initial condition chosen by us",
+  "array_shapes": {
+    "parameters": [
+      8
+    ],
+    "times": [
+      10000
+    ],
+    "states": [
+      10000,
+      2
+    ]
+  }
+}

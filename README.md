@@ -210,6 +210,10 @@ An additional [geometry search](docs/attractor-geometry.md) asks whether a candi
 
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.
 
+The [synchronematic symmetry audit](docs/synchronematic-priority-audit.md) corrects the physical observables used in the figures and narrows the priority question. A [four-state enzyme-gel survey](docs/core-shell-gel-research.md) adds 4,096 GPU trajectories with no validated chaos candidate, including a closed stable cycle that initially gave a positive finite-time exponent. [Spin-crossover screening](docs/spin-crossover-audit.md) and [enzyme-network screening](docs/enzyme-feedback-screening.md) provide exact dimensional constraints and identify a bounded four-species urease network for further work.
+
+The [report-rendering audit](docs/report-format-audit.md) records repairs and actual-browser checks of the published GitHub equations, images and local links.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.
