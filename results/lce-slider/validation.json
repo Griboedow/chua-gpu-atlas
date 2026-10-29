@@ -1,0 +1,14 @@
+{
+  "affine_vs_DOP853": 2.1788126858268697e-14,
+  "return_jacobian_error": 5.727534002630819e-10,
+  "gpu_cpu_four_return_error": 1.2212453270876722e-15,
+  "gpu_status": 0,
+  "first_period": 2.4942617477645084,
+  "baseline_parameters": [
+    5.8,
+    0.1,
+    0.1,
+    0.034482758620689585
+  ],
+  "passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "C": 0.2,
+  "g": 1.2,
+  "h": 0.0014261589650855213,
+  "minimum_x": 0.0013869274143714998,
+  "maximum_x": 0.0014269043755959076,
+  "minimum_elastic_strain": 0.0014543086781435338,
+  "maximum_elastic_strain": 0.0015007450654249857,
+  "min_phi": 0.00021077198855179186,
+  "max_phi": 0.0003729305016973213,
+  "caveat": "Illustrative nondimensional reconstruction on 100 late cycles; sampled extrema, no physical calibration"
+}

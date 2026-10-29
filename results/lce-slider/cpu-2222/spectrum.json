@@ -1,0 +1,45 @@
+{
+  "source": "results\\lce-slider\\wide",
+  "index": 2222,
+  "parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.007235236837126186,
+    0.0002219930226626585
+  ],
+  "start": [
+    0.023299383405718962,
+    0.0020761739302452855
+  ],
+  "method": "DOP853",
+  "rtol": 1e-11,
+  "subdivisions": 256,
+  "transient_cycles": 300,
+  "observation_cycles": 1200,
+  "elapsed_observation_time": 493.3806538875452,
+  "transverse_spectrum": [
+    1.854575270336291,
+    -16.343239705420793
+  ],
+  "window_spectra": [
+    [
+      1.8234456145420732,
+      -16.311481888895464
+    ],
+    [
+      1.9460367028898464,
+      -16.431726200316838
+    ],
+    [
+      1.7808143083896297,
+      -16.281003059709946
+    ],
+    [
+      1.869408799059833,
+      -16.349999097736976
+    ]
+  ],
+  "sum_rule_error": 3.907985046680551e-14,
+  "wall_seconds": 67.19886980000229,
+  "interpretation": "Two exponents on the event-defined return section per elapsed time; autonomous neutral flow direction omitted."
+}

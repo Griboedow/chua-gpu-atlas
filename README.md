@@ -178,6 +178,10 @@ An [optical-feedback notebook](docs/photofeedback-research.md) develops an expli
 
 The [candidate queue](docs/candidate-queue.md) records additional physical systems, known prior results, dimensional exclusions and missing source material. An absence of search hits is never treated as proof of novelty.
 
+A second positive lead is a **light-switching elastomer slider**. Its [research notebook](docs/lce-slider-research.md) reduces the published equations to four effective parameters and uses analytic flight segments, GPU return maps and independent DOP853 checks. An expanded search finds seven parameter tuples with persistent positive exponents, beyond the original paper's numerical stiffness/damping ranges. The representative trajectory remains small in strain and molecular concentration; realistic switching and publication novelty still need investigation.
+
+![Independent event-resolved evidence for the slider candidate](docs/assets/lce_slider_evidence.png)
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.

@@ -1,0 +1,74 @@
+{
+  "eta": 1.074,
+  "source_index": 576,
+  "method": "DOP853 dense trajectory and least-squares circular orbit closure; common phase removed",
+  "returns": [
+    {
+      "time": 5.434302289026288,
+      "residual": 1.8209228156823894e-14
+    },
+    {
+      "time": 10.868604578052606,
+      "residual": 2.095756264449514e-14
+    },
+    {
+      "time": 16.302906867078903,
+      "residual": 8.845806709112056e-15
+    },
+    {
+      "time": 21.737209156103713,
+      "residual": 2.7974380857543213e-12
+    },
+    {
+      "time": 27.171511445131483,
+      "residual": 3.487612798256735e-14
+    },
+    {
+      "time": 32.6058137341578,
+      "residual": 8.244881700411881e-14
+    },
+    {
+      "time": 38.04011602318423,
+      "residual": 3.776433317649893e-14
+    }
+  ],
+  "interpretation": "Numerical periodic-orbit evidence, not a validated existence or stability proof",
+  "floquet_multipliers": [
+    {
+      "real": 0.9999999999996099,
+      "imag": 0.0,
+      "absolute": 0.9999999999996099
+    },
+    {
+      "real": 0.7833363641522543,
+      "imag": 0.0,
+      "absolute": 0.7833363641522543
+    },
+    {
+      "real": 0.16612257909574343,
+      "imag": 0.0,
+      "absolute": 0.16612257909574343
+    },
+    {
+      "real": 0.002832750613907925,
+      "imag": 0.0,
+      "absolute": 0.002832750613907925
+    },
+    {
+      "real": 6.003625174934544e-07,
+      "imag": 0.0,
+      "absolute": 6.003625174934544e-07
+    },
+    {
+      "real": 3.844847949563851e-09,
+      "imag": 0.0,
+      "absolute": 3.844847949563851e-09
+    },
+    {
+      "real": 1.2547035338998098e-15,
+      "imag": 0.0,
+      "absolute": 1.2547035338998098e-15
+    }
+  ],
+  "floquet_caveat": "Direct monodromy integration resolves the dominant multipliers; extremely small contracting multipliers are limited by floating-point precision."
+}

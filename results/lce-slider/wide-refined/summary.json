@@ -1,0 +1,77 @@
+{
+  "settings": {
+    "transient_cycles": 2000,
+    "observation_cycles": 8000,
+    "subdivisions": 256
+  },
+  "method": "Analytic affine segments; bisection at each crossing; derivative of event-defined return map",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 27.117255699999077,
+  "design": {
+    "parent": "results\\lce-slider\\wide",
+    "parent_indices": [
+      980,
+      981,
+      1108,
+      1109,
+      1230,
+      1231,
+      1422,
+      1423,
+      2222,
+      2223,
+      2900,
+      2901,
+      3284,
+      3285,
+      3342,
+      3343,
+      3646,
+      3647,
+      3860,
+      3861,
+      4574,
+      4575,
+      4820,
+      4821,
+      5780,
+      5781,
+      6740,
+      6741,
+      7614,
+      7615,
+      7636,
+      7637
+    ]
+  },
+  "trajectories": 32,
+  "status_counts": {
+    "0": 32
+  },
+  "candidate_indices": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    28,
+    29
+  ],
+  "max_lle": 1.872380598642518,
+  "criterion": "Transverse return-map exponent per elapsed time > 1e-4, all four windows > 1e-5, status 0",
+  "interpretation": "Finite-time event-map screening; a periodic orbit has a negative transverse exponent, with the neutral flow exponent omitted.",
+  "status_key": {
+    "0": "valid",
+    "1": "no return within bracketing horizon",
+    "2": "near grazing / invalid crossing direction",
+    "3": "nonfinite segment",
+    "4": "degenerate tangent"
+  }
+}

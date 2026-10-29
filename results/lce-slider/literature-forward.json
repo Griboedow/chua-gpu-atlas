@@ -1,0 +1,61 @@
+{
+  "checked": "2026-10-29",
+  "source": "OpenAlex public API; index may be incomplete",
+  "works": [
+    {
+      "doi": "10.3390/polym16233298",
+      "id": "https://openalex.org/W4404712383",
+      "title": "Self-Oscillation of Liquid Crystal Elastomer Fiber-Slide System Driven by Self-Flickering Light Source",
+      "cited_by_count": 3,
+      "citations": [
+        {
+          "title": "A comprehensive review on microbial hyaluronan-degrading enzymes: from virulence factors to biotechnological tools",
+          "doi": "https://doi.org/10.1186/s40643-024-00832-x",
+          "year": 2024
+        },
+        {
+          "title": "Advances in Functional Rubber and Elastomer Composites II",
+          "doi": "https://doi.org/10.3390/polym17162247",
+          "year": 2025
+        },
+        {
+          "title": "Dynamic Boronic Ester-Based Photonic Elastomers for Mechanochromic Information Encoding",
+          "doi": "https://doi.org/10.1021/acsami.6c12817",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/s00707-026-04851-x",
+      "id": "https://openalex.org/W7153993699",
+      "title": "A three-dimensional morphoelastic model for self-oscillations in polyelectrolyte hydrogel filaments",
+      "cited_by_count": 0,
+      "citations": []
+    },
+    {
+      "doi": "10.1038/s41467-026-73259-x",
+      "id": "https://openalex.org/W4414818984",
+      "title": "Self sustained oscillations of a nonlinear optomechanical system in the low excitation regime",
+      "cited_by_count": 0,
+      "citations": []
+    }
+  ],
+  "search_queries": [
+    "Self-Oscillation of Liquid Crystal Elastomer Fiber-Slide System Driven by Self-Flickering Light Source chaos",
+    "self-flickering Lyapunov",
+    "10.3390/polym16233298 chaos",
+    "fiber-slider chaos elastomer",
+    "relay feedback relative degree three chaos",
+    "relay feedback no zeros chaos"
+  ],
+  "interpretation": "No matching exact-model chaos result identified in checked sources; novelty unverified. General LCE chaos and relay chaos are established. Older mathematically equivalent relay models remain to be checked.",
+  "followup_notes": [
+    "The Polymers 2025 special-issue editorial was retrieved through indexed publisher text and discusses the periodic slider study.",
+    "The ACS photonic-elastomer DOI page was not retrievable in this pass.",
+    "The enzyme-review citation returned by OpenAlex is suspicious and should not be treated as verified without checking its reference list."
+  ],
+  "primary_related_sources": [
+    "https://eprints.maths.manchester.ac.uk/1600/",
+    "https://skoge.folk.ntnu.no/prost/proceedings/ifac11-proceedings/data/html/papers/0752.pdf"
+  ]
+}

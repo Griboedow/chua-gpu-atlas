@@ -110,7 +110,23 @@ def main():
     fig.suptitle('Optical-feedback mechanism test (uncalibrated model)', fontsize=13)
     fig.savefig(OUT / 'photofeedback_stability.png', dpi=180)
     plt.close(fig)
-    print('Saved three evidence figures to', OUT)
+    transition = DATA / 'n4-transition/scan.npz'
+    if transition.exists():
+        a = np.load(transition)
+        labels = a['experiment_labels'][:, 0]
+        fig, axes = plt.subplots(1, 2, figsize=(12, 4), layout='constrained')
+        for ax in axes:
+            ax.scatter(labels, a['lle'], s=6, alpha=.45, color='#167d9a')
+            ax.axhline(0, color='#333', lw=.7)
+            ax.set(xlabel='Residual scale η (1 = printed model)', ylabel='Largest finite-time exponent')
+        axes[0].set(title='126 levels, eight identical starts per level')
+        axes[0].axvline(1, color='#777', ls=':', lw=.8)
+        axes[1].set(xlim=(1.052, 1.101), title='Regular windows inside the irregular region')
+        axes[1].axvspan(1.074, 1.078, color='#269b72', alpha=.15)
+        fig.suptitle('Controlled equation change: gradient part + η × divergence-free residual', fontsize=13)
+        fig.savefig(OUT / 'synchronematic_transition.png', dpi=180)
+        plt.close(fig)
+    print('Saved evidence figures to', OUT)
 
 
 if __name__ == '__main__':

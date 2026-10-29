@@ -1,0 +1,45 @@
+{
+  "source": "results\\lce-slider\\wide",
+  "index": 2222,
+  "parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.007235236837126186,
+    0.0002219930226626585
+  ],
+  "start": [
+    0.023299383405718962,
+    0.0020761739302452855
+  ],
+  "method": "analytic",
+  "rtol": 1e-11,
+  "subdivisions": 256,
+  "transient_cycles": 2000,
+  "observation_cycles": 8000,
+  "elapsed_observation_time": 3294.7036941148017,
+  "transverse_spectrum": [
+    1.8447825906950999,
+    -16.33644699308751
+  ],
+  "window_spectra": [
+    [
+      1.879623997897561,
+      -16.36998927566117
+    ],
+    [
+      1.8755732490803698,
+      -16.36960756946718
+    ],
+    [
+      1.8123399484673832,
+      -16.303484246692655
+    ],
+    [
+      1.8119678705764741,
+      -16.303084494585303
+    ]
+  ],
+  "sum_rule_error": 1.4210854715202004e-14,
+  "wall_seconds": 49.42163970000183,
+  "interpretation": "Two exponents on the event-defined return section per elapsed time; autonomous neutral flow direction omitted."
+}

@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "transient_cycles": 2000,
+    "observation_cycles": 8000,
+    "subdivisions": 256
+  },
+  "method": "Analytic affine segments; bisection at each crossing; derivative of event-defined return map",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 21.77201369999966,
+  "seed": 2026102922,
+  "base_parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.007235236837126186,
+    0.0002219930226626585
+  ],
+  "groups": [
+    {
+      "relative_jitter": 0.0,
+      "trajectories": 512,
+      "retained": 512,
+      "valid": 512,
+      "median_lle": 1.8486655116423667
+    },
+    {
+      "relative_jitter": 0.001,
+      "trajectories": 512,
+      "retained": 512,
+      "valid": 512,
+      "median_lle": 1.8256318285266606
+    },
+    {
+      "relative_jitter": 0.01,
+      "trajectories": 512,
+      "retained": 463,
+      "valid": 512,
+      "median_lle": 1.7941710678010039
+    },
+    {
+      "relative_jitter": 0.03,
+      "trajectories": 512,
+      "retained": 436,
+      "valid": 512,
+      "median_lle": 1.564488002247417
+    },
+    {
+      "relative_jitter": 0.1,
+      "trajectories": 512,
+      "retained": 332,
+      "valid": 512,
+      "median_lle": 0.9840227974478672
+    }
+  ],
+  "perturbation": "Independent uniform relative jitter of k, b, I, d; four starts per sampled tuple",
+  "caveat": "Finite sampled ensembles, not confidence bounds or a proof of an open chaotic region"
+}

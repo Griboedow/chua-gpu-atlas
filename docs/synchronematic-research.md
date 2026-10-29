@@ -137,6 +137,14 @@ Since `V` is smooth and bounded on the compact angular space, non-equilibrium re
 
 In a coarse 61-value scan from 0 to 1.5, with eight starts per value, the gradient endpoint converges (`median LLE=-0.1542`). Positive four-window candidates occur at `eta=0.975, 1.000, 1.025, 1.050, 1.100, 1.125, 1.150`, with all eight starts retained at each. The gap at `1.075` motivates a finer study of regular windows; this coarse scan does not locate exact bifurcation boundaries. The separate even-phase-term control retains candidates at scales `1.000` through `1.100` on the sampled 0.025 grid.
 
+The follow-up samples 126 values from `eta=0.93` to `1.18` in steps of `0.002`, using the **same eight initial states at every value**, discarding 2,000 and observing 4,000 units. It retains 552 of 1,008 trajectories. All eight starts are regular-looking at `1.074, 1.076, 1.078`; partial retention occurs at `1.080` (2/8) and `1.082` (5/8), followed by 8/8 at `1.084` and another regular window. Differences between starts can reflect coexistence or long transients; this scan alone cannot distinguish them.
+
+![Finer continuation through regular and irregular windows](assets/synchronematic_transition.png)
+
+An independent CPU spectrum at `eta=1.074`, with 1,000 discarded and 4,000 observed units, is `[-0.0000152, -0.044947, -0.330186, -1.079680, -2.636193, -3.565713, -6.470759]`. One approximately neutral exponent and six negative exponents support a stable periodic regime. The divergence identity error is `1.1e-11`. This is a control experiment that changes the interaction law, not a newly sampled physical parameter of the original paper.
+
+A subsequent [orbit-closure check](../results/synchronematic/n4-regular-window-cpu/recurrence.json) identifies period **`5.434302289`**, with angular residual about `2e-14` after removing common phase. The leading Floquet multipliers are approximately `1, 0.783336, 0.166123, 0.002833`; all resolved transverse multipliers lie inside the unit circle. This supplies numerical evidence for an attracting periodic orbit inside the irregular region. The smallest contracting multipliers approach floating-point resolution, and the calculation is not a validated existence proof.
+
 ## Reproduce and inspect
 
 From the repository root, with the [project dependencies](../requirements.txt):
@@ -153,6 +161,9 @@ python research/robust_synchronematic.py --mode geometry
 python research/robust_synchronematic.py --mode coefficients
 python research/robust_synchronematic.py --mode solenoidal --seeds 8
 python research/robust_synchronematic.py --mode nonreciprocity --seeds 8
+python research/continue_synchronematic.py
+python research/check_synchronematic_reference.py --source results/synchronematic/n4-transition --index 576 --transient 1000 --duration 4000 --rtol 1e-11 --output results/synchronematic/n4-regular-window-cpu
+python research/check_synchronematic_period.py
 python research/audit_synchronematic_sources.py --mode reference
 python research/audit_synchronematic_sources.py --mode survey
 python research/audit_synchronematic_sources.py --mode refine
