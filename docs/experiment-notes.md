@@ -79,6 +79,7 @@ A useful next experiment would systematically refine tolerances and observation 
 
 ## Questions still open in this project
 
+- Does a chaotic attractor family persist as α grows without bound along β = κ α², with κ, m₀ and m₁ held fixed? After suitable time and state rescaling, does a limiting dynamical model or a limiting structure of the chaotic parameter region emerge? The apparent bend in a finite cloud motivates this question but does not establish such a limit; its novelty also needs a literature check.
 - Does the explored chaotic family eventually terminate as α increases or m₀ decreases?
 - Which distant points belong to the same connected parameter component?
 - How do the thin regular sheets bifurcate and intersect away from the local zoom?
