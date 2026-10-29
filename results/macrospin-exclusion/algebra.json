@@ -1,0 +1,9 @@
+{
+  "source": "https://arxiv.org/html/2601.07300v1",
+  "samples": 128,
+  "maximum_cartesian_reduction_error": 3.552713678800501e-15,
+  "maximum_norm_derivative_half": 4.440892098500626e-16,
+  "minimum_sampled_denominator": 0.685879121137636,
+  "conclusion": "On a regular deterministic axial branch, z=m_z is a scalar autonomous state; the azimuth is slaved. No autonomous strange-attractor search is warranted for this model.",
+  "scope": "Constant current, no thermal noise, single macrospin, axial field and pinned layer. No claim for coupled spins, delayed circuits, forcing, or singular branches."
+}

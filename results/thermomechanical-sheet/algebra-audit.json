@@ -4,6 +4,7 @@
   "coordinate_validation_max_error": 1.7763568394002505e-15,
   "jacobian_fd_max_error": 8.819629471190638e-10,
   "validation_samples": 32,
+  "jerk_coordinate_validation_max_error": 5.329070518200751e-15,
   "example_parameters": [
     1.0,
     1.0,

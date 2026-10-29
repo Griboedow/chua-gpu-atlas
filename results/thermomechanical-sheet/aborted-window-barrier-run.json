@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-29 19:11:54",
+  "interrupted_utc": "2026-10-29 19:27:16",
+  "trajectories_requested": 8192,
+  "sampling_seed": 2026102943,
+  "settings": {"transient":300,"duration":600,"rtol":1e-7,"atol":1e-10},
+  "old_scheduler": "Wait for every trajectory at each of five time-window boundaries",
+  "last_reported_progress_fraction": 0.667,
+  "last_reported_wall_seconds": 911.1,
+  "action": "Interrupted with Ctrl-C to replace global window barriers with per-trajectory window advancement and explicit attempt/wall-time budgets",
+  "data_recovered": false,
+  "interpretation": "Aborted computational attempt, not a completed survey and not evidence for or against chaos. No trajectory classification from this attempt is counted. The same deterministic samples are rerun by the revised scheduler."
+}

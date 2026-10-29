@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-10-29",
+  "target_doi": "10.1088/0256-307X/42/9/090801",
+  "queries": [
+    "Exact article title combined with chaos",
+    "Exact DOI combined with correction or supplement",
+    "Thermal softening and thermomechanical chaotic oscillator",
+    "Moore-Spiegel oscillator and generalized potential systems"
+  ],
+  "forward_record_checks": [
+    {
+      "doi": "10.1016/j.tws.2026.114970",
+      "primary_url": "https://www.sciencedirect.com/science/article/pii/S0263823126004945",
+      "access": "Publisher abstract and introduction preview",
+      "finding": "LCE switching cantilever reports periodic experimental motion. Complete governing model not retrieved. Preview mentions established LCE chaos as background; this is not a chaos result for the Shen sheet."
+    },
+    {
+      "doi": "10.1016/j.tws.2026.115328",
+      "access": "Publisher preview in the earlier candidate-screening block",
+      "finding": "Three-line LCE oscillator; full model not retrieved. Already in candidate queue."
+    },
+    {
+      "doi": "10.1002/aidi.202500224",
+      "primary_url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/aidi.202500224",
+      "access": "Publisher abstract and reference list",
+      "finding": "Actual sheet citation verified as reference 41 despite a malformed author/title split. This review concerns auxetic networks. Citation context in the main body was not retrieved, so it has not been fully excluded as a source."
+    },
+    {
+      "doi": "10.7498/aps.75.20251763",
+      "primary_url": "https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.75.20251763?viewType=HTML",
+      "access": "Publisher abstract",
+      "finding": "Thermal-field inversion using a convolutional network. No sheet-chaos result in the inspected abstract; citation context remains unchecked."
+    },
+    {
+      "doi": "10.1360/sspma-2025-0562",
+      "access": "Metadata only",
+      "finding": "Thermomechanical metamaterial review. Full primary source not retrieved; unresolved."
+    }
+  ],
+  "older_primary_comparison": {
+    "doi": "10.1063/1.166271",
+    "title": "Synchronizing Moore and Spiegel",
+    "authors": ["N. J. Balmforth", "R. V. Craster"],
+    "year": 1997,
+    "primary_url": "https://personal.math.ubc.ca/~njb/Research/ms.pdf",
+    "inspected": "Author-hosted paper, Eqs. 3-5 and generalized-potential discussion",
+    "equation": "x''' + x'' + (T-R+R*x^2)*x' + T*x = 0",
+    "finding": "Thermomechanical chaos, period doubling and homoclinic bifurcations are established prior art. The literal sheet equations have different polynomial terms. This is a narrow equation comparison, not a comprehensive equivalence or novelty proof."
+  },
+  "conclusion": "No exact-sheet chaos demonstration identified in the material inspected. Coverage is incomplete and does not prove absence or novelty."
+}

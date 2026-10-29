@@ -1,0 +1,25 @@
+{
+  "gpu_vs_dop853_state_errors": [
+    3.2028685259533063e-12,
+    3.371641854599261e-11,
+    1.2350884204259671e-12
+  ],
+  "finite_time_lle_errors": [
+    3.998384956460654e-12,
+    1.4836878253765562e-10,
+    9.87776527239248e-12
+  ],
+  "passed": true,
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Shen 2025 sheet equations with the reported cubic velocity damping",
+    "integrator": "Dormand-Prince 5(4), analytic tangent, per-accepted-step renormalization"
+  }
+}

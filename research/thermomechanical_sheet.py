@@ -25,8 +25,15 @@ def dimensionless(m,c,k0,alpha,gamma,mu,tau,beta,delta):
                      beta*delta*delta/(m*tau*mu*mu)])
 
 
+def jerk_field(state, parameters):
+    """Same flow in (Y,Y',Y''); exact affine change, not a new model."""
+    y,dy,ddy=state;K,G,B,S,D=parameters
+    dddy=-(1+B)*ddy-(B+K*(1-S*y))*dy-G*y+K*(1-S*y)*(1-y)-D*(dy+ddy)**3
+    return np.array([dy,ddy,dddy])
+
+
 def main():
-    rng=np.random.default_rng(2026102942);coordinate_errors=[];jacobian_errors=[]
+    rng=np.random.default_rng(2026102942);coordinate_errors=[];jacobian_errors=[];jerk_errors=[]
     for _ in range(32):
         m,c,k0,gamma,mu,tau,beta,delta=10**rng.uniform(-.5,.5,8)
         alpha=-10**rng.uniform(-1.,0.)
@@ -41,6 +48,9 @@ def main():
         eps=1e-6
         finite=np.column_stack([(field_jacobian(state+eps*e,p)[0]-field_jacobian(state-eps*e,p)[0])/(2*eps) for e in np.eye(3)])
         jacobian_errors.append(float(np.max(abs(j-finite))))
+        # Y'=1-Y-X, Y''=-Y'-V, Y'''=-Y''-V'.
+        dy=1-state[2]-state[0];ddy=-dy-state[1]
+        jerk_errors.append(float(np.max(abs(jerk_field([state[2],dy,ddy],p)-[dy,ddy,-ddy-f[1]]))))
     # Dimensionless illustrative values; not claimed to reproduce a paper figure.
     m=c=k0=gamma=mu=tau=delta=1.;alpha=-.1;beta=.1
     p=dimensionless(m,c,k0,alpha,gamma,mu,tau,beta,delta)
@@ -51,11 +61,12 @@ def main():
     effective=K*(1-S*eq[2]);coupling=G+K*S*eq[0]
     polynomial=np.array([1.,1+B,effective+B,effective+coupling])
     error=max(coordinate_errors);jac_error=max(jacobian_errors)
-    if error>1e-9 or jac_error>1e-5 or np.max(abs(np.poly(j)-polynomial))>1e-10:
+    if error>1e-9 or jac_error>1e-5 or max(jerk_errors)>1e-9 or np.max(abs(np.poly(j)-polynomial))>1e-10:
         raise RuntimeError('Coordinate, Jacobian, or characteristic polynomial audit failed')
     result=dict(source_doi='10.1088/0256-307X/42/9/090801',
                 model='Printed Eqs 1-2 with the cubic velocity damping explicitly added in the numerical section',
                 coordinate_validation_max_error=error,jacobian_fd_max_error=jac_error,validation_samples=32,
+                jerk_coordinate_validation_max_error=max(jerk_errors),
                 example_parameters=p.tolist(),example_is_paper_calibration=False,
                 exact_equilibrium=eq.tolist(),exact_equilibrium_residual=float(np.linalg.norm(f)),
                 printed_equilibrium_displacement=printed,printed_force_balance_residual=printed_residual,
