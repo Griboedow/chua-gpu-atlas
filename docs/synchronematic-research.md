@@ -118,9 +118,9 @@ $$C_n=\frac{A_n^\chi-nB_n^\theta}{n^2+1}.$$
 
 The potential
 
-$$
-V=\sum_{i<j}d_{ij}^{-3}\left(C_1\cos\Delta_{ij}+C_3\cos3\Delta_{ij}\right)\cos\psi_i\cos\psi_j
-$$
+```math
+V=\sum_{i\lt j}d_{ij}^{-3}\left(C_1\cos\Delta_{ij}+C_3\cos3\Delta_{ij}\right)\cos\psi_i\cos\psi_j
+```
 
 gives a gradient field `G=-grad V`. Direct differentiation yields phase sine coefficients `-n C_n` and orientation cosine coefficients `C_n`; all other coefficients vanish. For the published numbers these are
 

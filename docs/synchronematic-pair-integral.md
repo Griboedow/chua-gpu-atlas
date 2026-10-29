@@ -39,7 +39,7 @@ Thus the ratio has no singularity inside a phase chamber. An elementary antideri
 ```math
 \frac BD u+
 \frac{A-BC/D}{\sqrt{C(C+D)}}\,
-\operatorname{atan}_{\rm continuous}
+\arctan_{\rm continuous}
 \left(\sqrt{\frac C{C+D}}\tan u\right).
 ```
 

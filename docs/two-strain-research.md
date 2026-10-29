@@ -70,7 +70,7 @@ Full physical-coordinate QR is much harder to interpret over finite intervals he
 For this transformation, the determinant of the physical-coordinate Jacobian is `I1*(I2+I12)^2`. Consequently,
 
 ```math
-\operatorname{div}F_{\rm physical}-\operatorname{div}F_{\rm log}
+\mathrm{div}\,F_{\rm physical}-\mathrm{div}\,F_{\rm log}
 =\dot u+2\dot v.
 ```
 
