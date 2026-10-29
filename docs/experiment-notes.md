@@ -79,6 +79,7 @@ A useful next experiment would systematically refine tolerances and observation 
 
 ## Questions still open in this project
 
+- Can we find a robust chaotic attractor with geometry substantially different from the familiar scroll, butterfly, funnel and toroidal examples? Treat visual distinctness, a different dynamical mechanism, and literature-supported novelty as separate questions. A rotated, stretched, nonlinearly remapped or unusually projected known attractor does not by itself meet the research objective. Compare multiple projections and Poincare sections, Lyapunov spectra, symmetries, and the equations that generate the dynamics. For higher-dimensional candidates, label three-dimensional views as projections. Preserve reproducible trajectories and prepare a rotation GIF for any substantive candidate.
 - Does a chaotic attractor family persist as α grows without bound along β = κ α², with κ, m₀ and m₁ held fixed? After suitable time and state rescaling, does a limiting dynamical model or a limiting structure of the chaotic parameter region emerge? The apparent bend in a finite cloud motivates this question but does not establish such a limit; its novelty also needs a literature check.
 - Does the explored chaotic family eventually terminate as α increases or m₀ decreases?
 - Which distant points belong to the same connected parameter component?

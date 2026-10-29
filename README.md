@@ -194,6 +194,8 @@ A separate [electrical rheostat oscillator](docs/rheostat-research.md) yields a 
 
 A [16-cell epithelial-chain audit](docs/epithelial-chain-audit.md) separates mathematical expansion from physical validity: all 343 preliminary positive-exponent candidates have negative cell lengths. A source audit of [light-mediated operators](docs/light-operators-audit.md) identifies an exact equivalence between another published photothermal oscillator and our existing relay limit; its six-state coupled version remains a separate candidate.
 
+An additional [geometry search](docs/attractor-geometry.md) asks whether a candidate has a substantially different shape and dynamical organization. A comparison figure, rotation GIF and finite-spectrum dimension estimates establish a baseline from existing data; they do not certify a new attractor type.
+
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.
 
 ## License
