@@ -8,6 +8,8 @@ Research notebook, 29 October 2026. This continues the [search beyond Chua](cand
 
 ![Geometry, independent Lyapunov estimates, a state-space projection and collective order](assets/synchronematic_evidence.png)
 
+The later [symmetry and priority audit](synchronematic-priority-audit.md) corrects the plotted observables to respect each particle's physical phase/orientation equivalence. The figures now use invariant pair signals and synchronematic coherence; the trajectories and Lyapunov estimates are unchanged. That audit also compares the full equations with older four-phase-oscillator chaos and swarmalator models. Neither an unusual projection nor the already published gradient/solenoidal decomposition establishes novelty.
+
 ## Why this candidate?
 
 Leyva et al. [1] study coupled Quincke oscillators with both a phase and an orientation. Their reduced equations provide a concrete target for investigating deterministic irregular motion. We use their reported coefficients without fitting them to produce chaos. The centers stay fixed and both noise terms are set to zero. The paper's low-order interaction approximation has about 6% error; omitted harmonics and physical effects therefore matter.

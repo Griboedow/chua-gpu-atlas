@@ -1,0 +1,148 @@
+{
+  "gauge_observable_audit": {
+    "trace_samples": 64000,
+    "gauge_masks": 16,
+    "max_field_difference": 2.220446049250313e-15,
+    "max_jacobian_difference": 4.884981308350689e-15,
+    "max_gauge_safe_observable_difference": 8.881784197001252e-16,
+    "phase_order_R_gauge_spread_max": 0.9980413936104705,
+    "phase_order_R_gauge_spread_median": 0.6938050023512234,
+    "phase_order_R_gauge_spread_min": 0.4455847529801207,
+    "equal_phases_distinct_orientations_phase_derivatives": [
+      -1.5765567047985793,
+      0.6247662537627727,
+      -0.4827929392881344,
+      1.4345833903239409
+    ],
+    "equal_phases_distinct_orientations_orientation_values": [
+      -1.7129157450894124,
+      1.449978993962171,
+      -2.452428575418168,
+      1.4358646415555967
+    ],
+    "warning": "A fixed-gauge R time series is mathematically valid, but R alone is not an observable of the physical phase-angle quotient. No new trajectories integrated.",
+    "trace_indices_for_field_and_jacobian": [
+      0,
+      21333,
+      42666,
+      63999
+    ],
+    "max_all_render_observables_gauge_error": 1.887379141862766e-15,
+    "max_uniform_phase_error": 8.881784197001252e-16,
+    "max_coherence_identity_error": 5.551115123125783e-16,
+    "doubled_half_best_uniform_gauge_residual": 0.7850550036782535,
+    "doubled_half_pair_correlation_difference": 0.5094889186502711,
+    "doubled_half_nematic_axis_difference": 1.4077119847172164,
+    "new_trajectories_integrated": 0
+  },
+  "audit_date_utc": "2026-10-29T23:45:52Z",
+  "status": "Exact-model collective-chaos priority unresolved; no new attractor type established",
+  "model_scope": "Deterministic fixed-center separable Fourier approximation, Leyva et al. 2026 Eqs 10-12; 4 particles, 7 effective angular states",
+  "sources": [
+    {
+      "id": "leyva2026",
+      "url": "https://doi.org/10.1038/s41467-026-68552-8",
+      "inspected": "Main equations; SI Notes 1, 6, 8; Note 6 Eq 6.61 explicitly states local phase-angle symmetry",
+      "priority_effect": "Published model and gradient/solenoidal decomposition; no novelty claim for them"
+    },
+    {
+      "id": "zhang2023",
+      "url": "https://doi.org/10.7916/0pgk-pw45",
+      "inspected": "Chapter 3 pp29-32 and43-47; Eq3.31-3.32; Table3.1; AppendixB FigsB3-B4",
+      "priority_effect": "Single-particle chaos already demonstrated; collective strange attractors explicitly anticipated; pair interaction fit is not identical to our separable approximation"
+    },
+    {
+      "id": "bick2011",
+      "url": "https://arxiv.org/html/1105.2230v2",
+      "doi": "10.1103/PhysRevLett.107.244101",
+      "inspected": "Full primary preprint, Eq1 and numerical bifurcation examples",
+      "priority_effect": "Four identical phase oscillator chaos, periodic windows, period doubling and coexistence are established prior art",
+      "equation_mismatch": "Phase-only 3D quotient, all-to-all permutation symmetry and invariant coincidence planes; our quotient has 7 angles and geometric orientation-dependent coupling"
+    },
+    {
+      "id": "okeeffe2026",
+      "url": "https://arxiv.org/html/2606.10282v1",
+      "title": "Self-propulsion in the 1D swarmalator model",
+      "inspected": "Model Eq1-3 and chaotic regimes",
+      "priority_effect": "Swarmalator collective chaos is known",
+      "equation_mismatch": "Evolving ring positions, orientation-dependent propulsion and uniform all-to-all coupling; not fixed-center bond-direction interactions"
+    },
+    {
+      "id": "letellier2012",
+      "url": "https://doi.org/10.1103/PhysRevE.85.036204",
+      "inspected": "Publisher abstract only; full text not obtained",
+      "priority_effect": "New equations or unusual silhouettes do not by themselves establish a new topological attractor type"
+    }
+  ],
+  "author_repository_snapshot": {
+    "url": "https://github.com/slevinskygra/ReducedSynchronematic",
+    "latest_commit": "016614ad6debe11e0353f0a01b1fad937fc77461",
+    "commit_timestamp": "2025-12-16T12:27:49Z",
+    "commits_returned": 1,
+    "issues_returned": 0,
+    "meaning": "No later code correction or issue explanation found in this snapshot; not evidence of publication absence",
+    "source_was_copied_or_executed": false
+  },
+  "citation_snapshot": {
+    "index": "OpenAlex",
+    "source_work": "https://openalex.org/W7125514816",
+    "reported_cited_by_count": 1,
+    "citing_work": "https://openalex.org/W7172377816",
+    "citing_doi": "10.1021/acs.langmuir.6c02032",
+    "citing_title": "Particle-Induced Electroconvection in Nonpolar Liquids",
+    "citing_date": "2026-07-28",
+    "limitation": "Metadata snapshot from one incomplete citation index; citing full text not audited in this block"
+  },
+  "pair_integral": {
+    "result": "No same integral identified in the inspected 2026 SI pair sections or 2023 thesis discussion",
+    "scope": "The separable Fourier approximation only; regular phase/orientation chambers",
+    "why_scope_matters": "The thesis general Fourier fit has additional angle terms and independent sum/difference coefficients; cancellation does not automatically extend",
+    "priority_claim": false,
+    "four_units_minimal_claim": false
+  },
+  "search_queries": [
+    "\"synchronematic\" chaos collective",
+    "\"phase orientation\" oscillators chaos",
+    "\"Synchronization and alignment\" \"chaos\"",
+    "\"swarmalator\" \"fixed\" \"orientation\" chaos",
+    "\"four\" \"phase oscillators\" \"chaos\" Ashwin",
+    "\"synchronematic\" \"integral\"",
+    "\"Self-oscillating synchronematic colloids\" citing",
+    "Bick Timme Paul Ashwin Wolfrum Chaos in Symmetric Phase Oscillator Networks 2011",
+    "\"synchronematic\" \"chaotic\" -Griboedow -chua -clearsky",
+    "\"Quincke\" \"first integral\"",
+    "\"Quincke\" \"conserved quantity\" oscillators"
+  ],
+  "open_gaps": [
+    "Independent complete later-citation and equivalent-model priority audit",
+    "Resolve printed versus author-code coefficient and branch discrepancies",
+    "Recover or independently derive untruncated physical interaction; no hardware chaos conclusion",
+    "Classify dynamics on physical quotient, rather than infer topology from 3D projections",
+    "Any rigorous or asymptotic attractor existence claim remains separate from finite numerical evidence"
+  ],
+  "corrected_figures": [
+    "docs/assets/attractor_geometry_baseline.png",
+    "docs/assets/synchronematic_projection_rotation.gif",
+    "docs/assets/synchronematic_evidence.png",
+    "docs/assets/synchronematic_bifurcations.png"
+  ],
+  "reproduce_observable_audit": "python research/synchronematic_observables.py",
+  "render_uses_saved_traces_only": true,
+  "unchanged_dynamics": "No equation, trajectory, Lyapunov spectrum, Floquet multiplier or parameter continuation was changed",
+  "visual_validation": {
+    "png_files_inspected": 3,
+    "gif_frames": 72,
+    "gif_size": [
+      617,
+      551
+    ],
+    "gif_inspected_frames": [
+      0,
+      18,
+      36,
+      54
+    ],
+    "caption_overlap_found_and_fixed": "Pair-signal definition moved above the evidence projection",
+    "saved_input_traces_unchanged": true
+  }
+}

@@ -6,6 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
+from synchronematic_observables import collective_order, pair_signal
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'results/synchronematic'
@@ -50,17 +51,18 @@ def main():
     ax.text(.02, .03, f'Final largest exponent: {spectrum[0]:.4f}\nSecond exponent approaches the neutral flow direction',
             transform=ax.transAxes, fontsize=9)
     ax = fig.add_subplot(gs[1, 0], projection='3d')
-    xyz = np.column_stack([np.sin(state[:, 1] - state[:, 0]), np.sin(state[:, 2] - state[:, 0]), np.sin(2 * state[:, 4])])
+    xyz = np.column_stack([pair_signal(state, 0, 1, odd=True), pair_signal(state, 0, 2, odd=True), np.sin(2 * state[:, 4])])
     stride = max(1, len(xyz) // 12000)
     ax.scatter(*xyz[::stride].T, c=time[::stride], cmap='viridis', s=.5, alpha=.45, rasterized=True)
-    ax.set(xlabel=r'$\sin(\theta_2-\theta_1)$', ylabel=r'$\sin(\theta_3-\theta_1)$', zlabel=r'$\sin(2\chi_1)$',
-           title='Sampled projection of the 7D angular trajectory')
+    ax.set(xlabel=r'$P_{12}$', ylabel=r'$P_{13}$', zlabel=r'$\sin(2\chi_1)$',
+           title='Gauge-invariant projection of the 7D trajectory')
+    ax.text2D(.02, .98, r'$P_{ij}=\sin(\theta_j-\theta_i)\cos(\chi_j-\chi_i)$', transform=ax.transAxes, fontsize=9, va='top')
     ax.view_init(elev=24, azim=38)
     ax = fig.add_subplot(gs[1, 1])
     span = (time >= time[-1] - 60)
-    r = abs(np.exp(1j * state[:, :4]).mean(axis=1))
-    s = abs(np.exp(2j * state[:, 4:]).mean(axis=1))
-    ax.plot(time[span] - time[span][0], r[span], color='#167d9a', label='Phase order R', lw=1)
+    r, nematic = collective_order(state)
+    s = abs(nematic)
+    ax.plot(time[span] - time[span][0], r[span], color='#167d9a', label='Coherence C', lw=1)
     ax.plot(time[span] - time[span][0], s[span], color='#e36b37', label='Nematic order S', lw=1)
     ax.set(xlabel='Time within the final observation segment', ylabel='Order parameter', ylim=(-.02, 1.02),
            title='Persistent fluctuations in collective order')

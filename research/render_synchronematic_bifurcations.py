@@ -5,6 +5,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
+from synchronematic_observables import pair_signal
 
 
 def main():
@@ -33,10 +34,12 @@ def main():
     b.set(xlabel=r'Interaction parameter $\eta$',ylabel='Largest transverse multiplier magnitude',title='B  Loss and recovery of parent stability',ylim=(.48,1.25))
     b.legend(fontsize=8,loc='lower right');b.ticklabel_format(useOffset=False,axis='x')
     orbit=np.load(p/'orbit-1.078.npz');q=orbit['state'];mid=(len(q)-1)//2
-    c.plot(np.cos(q[:mid+1,0]),np.sin(q[:mid+1,3]),color=blue,label='First half of the doubled cycle')
-    c.plot(np.cos(q[mid:,0]),np.sin(q[mid:,3]),color=orange,label='Second half')
-    c.scatter(np.cos(q[[0,mid],0]),np.sin(q[[0,mid],3]),s=32,c=[blue,orange],zorder=4)
-    c.set(xlabel=r'$\cos(\theta_2-\theta_1)$',ylabel=r'$\sin\chi_1$',title=r'C  Distinct half-cycles at $\eta=1.078$')
+    full=np.column_stack([np.zeros(len(q)),q[:,:3],q[:,3:]])
+    pair=pair_signal(full,0,1);axis=np.sin(2*full[:,4])
+    c.plot(pair[:mid+1],axis[:mid+1],color=blue,label='First half of the doubled cycle')
+    c.plot(pair[mid:],axis[mid:],color=orange,label='Second half')
+    c.scatter(pair[[0,mid]],axis[[0,mid]],s=32,c=[blue,orange],zorder=4)
+    c.set(xlabel=r'$\cos(\theta_2-\theta_1)\cos(\chi_2-\chi_1)$',ylabel=r'$\sin(2\chi_1)$',title=r'C  Physical half-cycles at $\eta=1.078$')
     c.legend(fontsize=8,loc='best')
     gpu=np.load(root/'n4-coexistence-gpu/scan.npz');rng=np.random.default_rng(2026102951)
     for center,ids,color,label in [(0,np.arange(24),green,'Near periodic orbit'),(1,np.arange(24,56),blue,'Global angle starts'),(2,np.arange(56,64),orange,'Eight earlier starts')]:

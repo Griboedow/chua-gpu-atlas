@@ -19,12 +19,16 @@ The [four-unit synchronematic candidate](synchronematic-research.md) has seven e
 The top-left panel uses collective observables:
 
 ```text
-R = abs(mean(exp(i*theta)))
 Q = mean(exp(2*i*chi))
-plotted coordinates = (Re Q, Im Q, R).
+U = mean(exp(i*(theta+chi)))
+V = mean(exp(i*(theta-chi)))
+C = sqrt((abs(U)**2 + abs(V)**2)/2)
+plotted coordinates = (Re Q, Im Q, C).
 ```
 
-The bottom-left panel shows the same orbit through different observables. Neither is a Poincare section. No angular discontinuities are joined by artificial straight lines, and no additional orbit is generated. Four-oscillator phase chaos is itself established prior art: Bick et al. [3] reported it in a symmetric phase network in 2011. Its primary abstract and the publisher's four-oscillator cover description were checked. An exact comparison with our phase-plus-orientation equations remains separate; we make no first-four-oscillator claim.
+These observables are invariant under the physical equivalence `(theta_i,chi_i) -> (theta_i+pi,chi_i+pi)` and under a common phase shift. An earlier version used `R=abs(mean(exp(i*theta)))`, which changes under equivalent local phase/orientation choices. The figures and GIF now use `C`; no trajectory was changed. The [priority and symmetry audit](synchronematic-priority-audit.md) explains this correction and verifies all 16 local choices along 64,000 saved states.
+
+The bottom-left panel shows the same orbit through different invariant observables. Neither is a Poincare section. No angular discontinuities are joined by artificial straight lines, and no additional orbit is generated. Four-oscillator phase chaos is itself established prior art: Bick et al. [3] reported it in a symmetric phase network in 2011. The later audit compares its full primary equations and symmetries with our phase-plus-orientation system. We make no first-four-oscillator claim or proof of inequivalence to all known systems.
 
 The [slider candidate](lce-slider-research.md) has three states. Its full-state view here only rescales the existing physical coordinates by `q=I/(1+I)` and the mechanical frequency scale. The visually funnel-like structure and curved two-dimensional event section do not establish a new topological class. Inserting the autonomous flow's zero exponent between the two measured transverse exponents gives a Kaplan–Yorke estimate of **2.11292**. The existing relay-equivalence audit already provides a concrete reason to compare it closely with older relay attractors.
 
@@ -52,4 +56,4 @@ The script reuses saved trajectories; no mass calculation is repeated. Numerical
 
 1. Letellier, C., and Aguirre, L. A. (2012). Required criteria for recognizing new types of chaos: Application to the “cord” attractor. *Physical Review E* **85**, 036204. [doi:10.1103/PhysRevE.85.036204](https://doi.org/10.1103/PhysRevE.85.036204). Publisher abstract inspected; full comparison pending.
 2. Gilmore, R. (1998). Topological analysis of chaotic dynamical systems. *Reviews of Modern Physics* **70**, 1455. [doi:10.1103/RevModPhys.70.1455](https://doi.org/10.1103/RevModPhys.70.1455). Publisher abstract inspected for the method's scope.
-3. Bick, C., Timme, M., Paulikat, D., Rathlev, D., and Ashwin, P. (2011). Chaos in Symmetric Phase Oscillator Networks. *Physical Review Letters* **107**, 244101. [doi:10.1103/PhysRevLett.107.244101](https://doi.org/10.1103/PhysRevLett.107.244101); [publisher issue cover](https://journals.aps.org/prl/issues/107/24). Abstract and cover inspected, not a completed equation-equivalence audit.
+3. Bick, C., Timme, M., Paulikat, D., Rathlev, D., and Ashwin, P. (2011). Chaos in Symmetric Phase Oscillator Networks. *Physical Review Letters* **107**, 244101. [doi:10.1103/PhysRevLett.107.244101](https://doi.org/10.1103/PhysRevLett.107.244101); [publisher issue cover](https://journals.aps.org/prl/issues/107/24). Full primary equations inspected in the later priority audit; global equivalence questions remain open.

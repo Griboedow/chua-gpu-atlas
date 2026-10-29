@@ -22,9 +22,11 @@
     "projection": [
       "Re(mean(exp(2i*chi)))",
       "Im(mean(exp(2i*chi)))",
-      "abs(mean(exp(i*theta)))"
+      "sqrt((abs(mean(exp(i*(theta+chi))))**2+abs(mean(exp(i*(theta-chi))))**2)/2)"
     ],
-    "warning": "Three physical collective observables of a seven-dimensional angular flow; not an embedding or a three-state ODE"
+    "alternative_color": "cos(theta_2-theta_1)*cos(chi_2-chi_1)",
+    "invariance": "Independent (theta_i,chi_i)->(theta_i+pi,chi_i+pi), and uniform phase shift",
+    "warning": "Three physical collective observables of a seven-dimensional angular flow; not an embedding or a three-state ODE. Corrects earlier gauge-dependent R=abs(mean(exp(i*theta))) axis."
   },
   "slider": {
     "source": "results/lce-slider/analytic-2222",
