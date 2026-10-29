@@ -55,15 +55,19 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--validate',action='store_true')
     parser.add_argument('--power',type=int,default=12);parser.add_argument('--seed',type=int,default=2026102943)
     parser.add_argument('--refine',type=Path);parser.add_argument('--top',type=int,default=24)
+    parser.add_argument('--indices',type=int,nargs='+',help='Explicit source indices for a follow-up, preserving selection provenance')
     parser.add_argument('--transient',type=float,default=300);parser.add_argument('--duration',type=float,default=600)
     parser.add_argument('--rtol',type=float,default=1e-7);parser.add_argument('--step-factor',type=float,default=1.)
     parser.add_argument('--max-attempts',type=int,default=3000000);parser.add_argument('--max-wall-seconds',type=float,default=600)
     parser.add_argument('--output',type=Path,default=Path('results/thermomechanical-sheet/scout'))
     args=parser.parse_args();gpu=ThermalSheetGPU()
     if args.validate:validate(gpu);return
+    if args.indices is not None and args.refine is None:parser.error('--indices requires --refine')
     if args.refine:
         old=np.load(args.refine/'scan.npz');valid=np.flatnonzero((old['status']==0)&np.isfinite(old['lle']))
-        ids=valid[np.argsort(-old['lle'][valid])[:args.top]]
+        ids=np.asarray(args.indices,int) if args.indices is not None else valid[np.argsort(-old['lle'][valid])[:args.top]]
+        if len(ids)==0 or len(np.unique(ids))!=len(ids) or not np.isin(ids,valid).all():
+            raise ValueError('Follow-up indices must be unique completed source trajectories')
         p=old['parameters'][ids];starts=old['starts'][ids]
         extra=dict(parent_source=str(args.refine),parent_indices=ids.tolist())
     else:

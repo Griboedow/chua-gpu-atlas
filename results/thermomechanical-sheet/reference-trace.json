@@ -1,0 +1,10 @@
+{
+  "source": "cpu-reference.json final_state",
+  "duration": 50,
+  "samples": 25001,
+  "method": "DOP853",
+  "rtol": 1e-11,
+  "atol": 1e-13,
+  "max_step": 0.01,
+  "interpretation": "A finite mathematical orbit outside the physical sheet domain; no physical attractor claim."
+}

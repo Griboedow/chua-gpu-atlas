@@ -1,0 +1,28 @@
+{
+  "scout_trajectories": 8192,
+  "scout_status_counts": {
+    "0": 6025,
+    "1": 1845,
+    "3": 322
+  },
+  "scout_candidates": 51,
+  "scout_domain_clear_candidates": 37,
+  "distinct_followups": 84,
+  "all_scout_candidates_followed": true,
+  "retained_scout_indices": [
+    3573,
+    3572,
+    4724,
+    4725,
+    1572,
+    1573
+  ],
+  "retained_parameter_tuples": 3,
+  "retained_domain_clear": 0,
+  "sources": [
+    "scout/summary.json",
+    "refined/summary.json",
+    "remaining-candidates/summary.json"
+  ],
+  "caveat": "Computationally unresolved scout cases remain unresolved; finite data and sampled domain checks do not prove attractor existence or global exclusion."
+}

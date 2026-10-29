@@ -1,0 +1,47 @@
+{
+  "source_scout_index": 5906,
+  "parameters": [
+    571.0328513459898,
+    8.419006713128137,
+    0.0024799923654767807,
+    0.01584927136554722,
+    0.40697076031963236
+  ],
+  "period": 0.2650092638108513,
+  "section_state": [
+    0.014756338133576685,
+    0.20404090235663142,
+    0.9856059965903243
+  ],
+  "scaled_closure_error": 2.2204467268765674e-13,
+  "shooting_success": true,
+  "floquet_multipliers": [
+    {
+      "real": 0.7641171329741618,
+      "imag": 0.0,
+      "absolute": 0.7641171329741618
+    },
+    {
+      "real": 1.0000000000000016,
+      "imag": 0.0,
+      "absolute": 1.0000000000000016
+    },
+    {
+      "real": 0.9966381462854033,
+      "imag": 0.0,
+      "absolute": 0.9966381462854033
+    }
+  ],
+  "neutral_multiplier_error": 1.5543122344752192e-15,
+  "sampled_min_X": 0.006150378246242735,
+  "sampled_min_Y": 0.9848810073203359,
+  "sampled_max_Y": 0.9856063181275969,
+  "sampled_min_stiffness": 0.9843788580043978,
+  "settings": {
+    "method": "DOP853",
+    "rtol": 1e-12,
+    "atol": 1e-14,
+    "max_step": 0.005
+  },
+  "interpretation": "Numerical periodic-orbit control, not a validated existence or stability theorem."
+}

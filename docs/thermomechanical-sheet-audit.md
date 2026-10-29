@@ -1,6 +1,8 @@
-# Thermomechanical sheet: model audit before searching
+# Thermomechanical sheet: model audit and GPU survey
 
-**Status: 29 October 2026. GPU survey in progress; no positive result yet.** Shen's 2025 article [1] studies a heated elastic sheet using displacement, velocity and temperature. It reports regular oscillations in its examples. The full publisher PDF was retrieved and its equation page visually checked. A cubic velocity damping term is introduced in the numerical section, although absent from initial Eq. 1; that term must be included when investigating the simulated model.
+**Status: 29 October 2026. No physically admissible chaos candidate survived the completed follow-ups.** The printed mathematical ODE does support a strong numerical chaotic candidate outside the sheet's assumed operating domain. This distinction emerged from 8,192 survey trajectories and 84 longer follow-ups; 322 difficult scout cases remain computationally unresolved.
+
+Shen's 2025 article [1] studies a heated elastic sheet using displacement, velocity and temperature. It reports regular oscillations in its examples. The full publisher PDF was retrieved and its equation page visually checked. A cubic velocity damping term is introduced in the numerical section, although absent from initial Eq. 1; that term must be included when investigating the simulated model.
 
 Write `theta=T-T0` and `Delta=TH-T0`. The equations to investigate are
 
@@ -43,6 +45,41 @@ At this physical equilibrium all coefficients are positive. Local stability is e
 
 The divergence is `-1-B-3DV^2`. Negative divergence does **not** prove boundedness. The constraints `X>=0`, `0<=Y<=1`, and positive effective stiffness `1-SY>0` must be monitored separately: the smooth equations do not automatically enforce contact with the plate or all thermal constraints. Excursions outside those conditions cannot be advertised as a physically valid sheet attractor.
 
+## Survey outcome: mathematical chaos versus physical scope
+
+The initial scout completed in 119.2 seconds on a GTX 1080:
+
+| Outcome | Trajectories |
+| --- | ---: |
+| Completed the requested time | 6,025 |
+| Crossed the state-magnitude cutoff of 10,000 | 1,845 |
+| Exhausted the attempted-step budget; unresolved | 322 |
+| Completed without observed physical-domain exits | 4,088 |
+| Passed the preliminary positive-exponent criterion | 51 |
+| Preliminary candidates without observation-domain exits | 37 |
+
+We reran 84 distinct trajectories with transient 1,500, observation 2,400, `rtol=1e-9`, and half the maximum step. The first batch selected the 64 largest mean exponents; the second explicitly covered the 20 preliminary candidates absent from that selection. Thus **all 51 preliminary candidates received follow-up**, along with 33 additional high-mean cases. All 84 completed. Only six trajectories, representing three parameter tuples and two starts each, retained the criterion. Every retained trajectory violated the domain conditions; none of the 37 initially domain-clear candidates retained it. The two follow-up batches took 165.4 and 73.7 seconds.
+
+For the strongest family, scout index 3573 has
+
+`(K,G,B,S,D) = (424.376516807412, 1040.1687798954433, 14.906307116853698, 8.89452874485259, 0.005441408445857237)`.
+
+An independent DOP853 full-spectrum calculation, transient 600 and observation 1,600, gives
+
+$$\lambda\simeq(1.337613,\;0.000273,\;-28.258189).$$
+
+All four leading-exponent windows remain positive (`1.331..1.345`); the integrated divergence identity agrees to `5.7e-11`. The small second exponent is consistent with the neutral flow direction, **not** hyperchaos. The observed ranges include `X=-1.049..7.378`, `Y=-0.294..0.398`, and a minimum stiffness ratio of `-2.539`. This is strong finite-time evidence for chaos in the polynomial equations, but it crosses the assumed noncontact/thermal/positive-stiffness domain. Contact or postbuckling physics would need a different, justified model. There is no calibrated physical-chaos claim and no rigorous attractor-existence or boundedness proof.
+
+The weak positive scout at index 5906 illustrates a different failure mode. Its four initial exponents are roughly `0.0101, 0.0087, 0.0077, 0.0054`, near the equilibrium's unstable growth rate `0.00635`. Longer observation removes the apparent positive asymptotic rate. Independent shooting finds a periodic orbit of period `0.2650092638`, with scaled closure error `2.3e-13` and Floquet multipliers approximately
+
+$$1,\quad0.99663815,\quad0.76411713.$$
+
+Both transverse multipliers are inside the unit circle, providing a numerical stable-cycle control. Sampled displacement and temperature stay positive and the stiffness ratio exceeds `0.9843`. This is a concrete example of a slow departure from an unstable equilibrium masquerading as chaos in a short run.
+
+![Short-time false positive and an out-of-domain mathematical candidate](assets/thermal_sheet_screening.png)
+
+The compact arrays, selection provenance, unresolved statuses and aggregate counts are under `results/thermomechanical-sheet/`. A finite survey cannot exclude remote basins or all physical parameter choices; the unresolved scout cases have not been reclassified as regular.
+
 ## Jerk representation and older thermal chaos
 
 Eliminate the mechanical variables with `X=1-Y-Y'` and `V=-Y'-Y''`. Our exact affine coordinate change gives
@@ -69,8 +106,12 @@ The first survey uses 4,096 scrambled Sobol parameter tuples with two perturbati
 python research/thermomechanical_sheet.py
 python research/search_thermal_sheet.py --validate
 python research/search_thermal_sheet.py
-# Follow-up after inspecting the saved scout:
-python research/search_thermal_sheet.py --refine results/thermomechanical-sheet/scout --top 24 --transient 1000 --duration 2400 --rtol 1e-9 --step-factor .5 --output results/thermomechanical-sheet/refined
+# Largest-mean follow-up and the remaining preliminary candidates:
+python research/search_thermal_sheet.py --refine results/thermomechanical-sheet/scout --top 64 --transient 1500 --duration 2400 --rtol 1e-9 --step-factor .5 --max-attempts 20000000 --output results/thermomechanical-sheet/refined
+python research/search_thermal_sheet.py --refine results/thermomechanical-sheet/scout --indices 810 1150 1154 2166 2504 2570 3126 3614 3754 4506 4598 4898 4974 5290 5870 6122 6520 7206 7870 7958 --transient 1500 --duration 2400 --rtol 1e-9 --step-factor .5 --max-attempts 20000000 --output results/thermomechanical-sheet/remaining-candidates
+python research/check_thermal_sheet.py results/thermomechanical-sheet/scout --index 3573 --transient 600 --duration 1600 --output results/thermomechanical-sheet/cpu-reference.json
+python research/check_thermal_sheet_period.py
+python research/render_thermal_sheet.py
 ```
 
 `research/check_thermal_sheet.py` supplies an independent full-spectrum CPU calculation with QR orthogonalization and the integrated divergence identity. DOP853 and implicit Radau agree on a two-unit validation trajectory to `3.7e-15` in state and `2.1e-14` in all three finite-time exponents; the validation record includes all settings. A nonzero near-neutral flow exponent must not be mistaken for a weak positive chaos result.

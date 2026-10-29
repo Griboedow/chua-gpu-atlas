@@ -1,0 +1,103 @@
+{
+  "settings": {
+    "transient": 1500.0,
+    "duration": 2400.0,
+    "rtol": 1e-09,
+    "atol": 1e-12,
+    "step_factor": 0.5,
+    "max_attempts": 20000000,
+    "max_wall_seconds": 600.0
+  },
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Shen 2025 sheet equations with the reported cubic velocity damping",
+    "integrator": "Dormand-Prince 5(4), analytic tangent, per-accepted-step renormalization"
+  },
+  "timing": {
+    "wall_seconds": 73.66967049999948,
+    "gpu_seconds": 61.21380502399729
+  },
+  "parameter_columns": [
+    "K",
+    "G",
+    "B",
+    "S",
+    "D"
+  ],
+  "stats_columns": [
+    "min_X",
+    "max_X",
+    "min_Y",
+    "max_Y",
+    "max_abs_V",
+    "min_stiffness_ratio",
+    "late_min_X",
+    "late_max_X"
+  ],
+  "status_legend": {
+    "0": "completed",
+    "1": "state magnitude exceeded 1e4",
+    "2": "numerical failure or step underflow",
+    "3": "per-trajectory attempt budget exhausted; unresolved",
+    "4": "batch wall-time budget exhausted; unresolved"
+  },
+  "domain_legend": {
+    "columns": [
+      "transient",
+      "observation"
+    ],
+    "bits": {
+      "1": "X<0",
+      "2": "Y<0",
+      "4": "Y>1",
+      "8": "1-SY<0"
+    },
+    "tolerance": 1e-08
+  },
+  "trajectories": 20,
+  "candidate_indices": [],
+  "admissible_candidate_indices": [],
+  "admissible_completed": 15,
+  "status_counts": {
+    "0": 20
+  },
+  "domain_counts": {
+    "0": 15,
+    "1": 2,
+    "5": 2,
+    "10": 1
+  },
+  "max_lle": 0.0007306907861173291,
+  "criterion": "completed, mean LLE > .005, all four windows > .002, late X span > 1e-6; admissibility additionally requires no observation domain flags",
+  "interpretation": "Exploration of the printed ODE family, including source-reported cubic damping; no calibrated device or novelty claim.",
+  "parent_source": "results\\thermomechanical-sheet\\scout",
+  "parent_indices": [
+    810,
+    1150,
+    1154,
+    2166,
+    2504,
+    2570,
+    3126,
+    3614,
+    3754,
+    4506,
+    4598,
+    4898,
+    4974,
+    5290,
+    5870,
+    6122,
+    6520,
+    7206,
+    7870,
+    7958
+  ]
+}
