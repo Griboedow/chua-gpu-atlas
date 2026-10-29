@@ -1,0 +1,175 @@
+{
+  "checks": [
+    {
+      "parameters": [
+        1023.6360252006818,
+        18546.24132170179,
+        -1.380703939940805,
+        -0.7142857142857143
+      ],
+      "seed_index": 1,
+      "initial_state": [
+        1.2536206426556897,
+        -0.02874205088147304,
+        57.75762437312595
+      ],
+      "survey_lle": 9.80481233590209,
+      "matched_adaptive_lle": 10.0414319961272,
+      "matched_adaptive_windows": [
+        9.378819218975362,
+        11.349499872261111,
+        11.246546895649136,
+        8.190861997623193
+      ],
+      "independent": {
+        "lle": 9.623527505781592,
+        "windows": [
+          9.435267457634616,
+          11.431116506568321,
+          8.324881716861073,
+          9.302844342062354
+        ],
+        "recorded_crossings": 5634,
+        "max_absolute_coordinate": 64.76024051563581,
+        "transient": 20,
+        "duration": 80,
+        "wall_seconds": 65.33772259999932,
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "renormalization_interval": 0.25,
+        "method": "DOP853 evaluates the full piecewise state and tangent field at every stage; nonterminal x=±1 event diagnostics.",
+        "event_scope": "Recorded events are diagnostic, not a guarantee of detecting every grazing crossing pair."
+      },
+      "positive_in_all_independent_windows": true
+    },
+    {
+      "parameters": [
+        949.5660376844008,
+        173658.02205518258,
+        -3.529177593056915,
+        -0.7142857142857143
+      ],
+      "seed_index": 2,
+      "initial_state": [
+        10.903701520036543,
+        -3.442903414444553,
+        -1221.679879748835
+      ],
+      "survey_lle": 0.24405934451156552,
+      "matched_adaptive_lle": 0.23694085989818464,
+      "matched_adaptive_windows": [
+        0.3495444394395878,
+        0.1748817110055401,
+        0.23017139958821095,
+        0.19316588955939967
+      ],
+      "independent": {
+        "lle": 0.241460599090532,
+        "windows": [
+          0.43635276914569554,
+          0.10571368365345857,
+          0.2774899582099105,
+          0.14628598535306342
+        ],
+        "recorded_crossings": 1360,
+        "max_absolute_coordinate": 1961.824965270084,
+        "transient": 20,
+        "duration": 80,
+        "wall_seconds": 33.01428750000014,
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "renormalization_interval": 0.25,
+        "method": "DOP853 evaluates the full piecewise state and tangent field at every stage; nonterminal x=±1 event diagnostics.",
+        "event_scope": "Recorded events are diagnostic, not a guarantee of detecting every grazing crossing pair."
+      },
+      "positive_in_all_independent_windows": true
+    },
+    {
+      "parameters": [
+        697.4803382293047,
+        36208.215974692896,
+        -28.91074558716271,
+        -0.7142857142857143
+      ],
+      "seed_index": 1,
+      "initial_state": [
+        -101.67948611608917,
+        7.804692862211654,
+        7012.399600090092
+      ],
+      "survey_lle": 0.8751066520974162,
+      "matched_adaptive_lle": 0.8741192897535294,
+      "matched_adaptive_windows": [
+        0.8639381655036784,
+        0.8958105174166772,
+        0.8491497686293948,
+        0.8875787074643672
+      ],
+      "independent": {
+        "lle": 0.8787386743147361,
+        "windows": [
+          0.8817285331955924,
+          0.8850920860974754,
+          0.8686952805615817,
+          0.879438797404295
+        ],
+        "recorded_crossings": 4362,
+        "max_absolute_coordinate": 7526.570666974356,
+        "transient": 20,
+        "duration": 80,
+        "wall_seconds": 55.43872399999964,
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "renormalization_interval": 0.25,
+        "method": "DOP853 evaluates the full piecewise state and tangent field at every stage; nonterminal x=±1 event diagnostics.",
+        "event_scope": "Recorded events are diagnostic, not a guarantee of detecting every grazing crossing pair."
+      },
+      "positive_in_all_independent_windows": true
+    },
+    {
+      "parameters": [
+        940.9957838977729,
+        139103.1807041193,
+        -28.17969796275584,
+        -0.7142857142857143
+      ],
+      "seed_index": 2,
+      "initial_state": [
+        155.09225224943725,
+        45.5223023487497,
+        -1071.7666809582497
+      ],
+      "survey_lle": 0.18679686793553557,
+      "matched_adaptive_lle": 0.2126813589709039,
+      "matched_adaptive_windows": [
+        0.1289425079891685,
+        0.2327790730185626,
+        0.23830426152171755,
+        0.25069959335416686
+      ],
+      "independent": {
+        "lle": 0.09311085703817903,
+        "windows": [
+          0.13794436328919796,
+          0.08375529605888064,
+          0.017587840974426033,
+          0.13315592783021146
+        ],
+        "recorded_crossings": 2908,
+        "max_absolute_coordinate": 17469.48168328145,
+        "transient": 20,
+        "duration": 80,
+        "wall_seconds": 48.18669709999995,
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "renormalization_interval": 0.25,
+        "method": "DOP853 evaluates the full piecewise state and tangent field at every stage; nonterminal x=±1 event diagnostics.",
+        "event_scope": "Recorded events are diagnostic, not a guarantee of detecting every grazing crossing pair."
+      },
+      "positive_in_all_independent_windows": true
+    }
+  ],
+  "method": "DOP853 evaluates the full piecewise field at every stage; crossing events are diagnostics. Matched starting state, transient and observation in an additional tighter adaptive GPU run.",
+  "reference_correction": "The original v1.0 affine-branch event routine failed at the maximum-alpha example. Full-field evaluation prevents a missed crossing from trapping integration on the wrong branch.",
+  "scope": "Selected examples only. Survey and independent checks use different observation lengths. Positive signs do not prove asymptotic chaos."
+}

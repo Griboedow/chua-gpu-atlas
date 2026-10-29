@@ -1,0 +1,19 @@
+{
+  "timing": {
+    "wall_seconds": 88.24620420000065,
+    "gpu_seconds": 81.47195721599908,
+    "max_kernel_seconds": 0.029955072000000003
+  },
+  "settings": {
+    "transient": 100,
+    "duration": 200,
+    "rtol": 1e-06,
+    "atol": 1e-09,
+    "escape": 1000000.0,
+    "threshold": 0.01,
+    "renormalization": "Every accepted step",
+    "max_step": "min(0.1, 0.5/sqrt(beta))",
+    "error_norm": "Maximum scaled local error across all 6 state/tangent coordinates",
+    "stats_note": "x sums use adaptive step endpoints, not equally spaced times; do not interpret as time averages."
+  }
+}

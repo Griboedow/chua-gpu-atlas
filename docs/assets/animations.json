@@ -37,5 +37,18 @@
       "z"
     ],
     "changes_data": false
+  },
+  {
+    "file": "expanded-rotation.gif",
+    "frames": 144,
+    "fps": 16,
+    "seconds": 9.0,
+    "bytes": 7000133,
+    "camera_axes": [
+      "\u03b1",
+      "\u03b2",
+      "m\u2080"
+    ],
+    "changes_data": false
   }
 ]

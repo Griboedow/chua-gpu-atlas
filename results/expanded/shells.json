@@ -1,0 +1,38 @@
+[
+  {
+    "alpha_interval": [
+      2,
+      256
+    ],
+    "count": 1100,
+    "minimum_m0": -28.74183309875103,
+    "maximum_beta": 10927.716147485662
+  },
+  {
+    "alpha_interval": [
+      256,
+      512
+    ],
+    "count": 332,
+    "minimum_m0": -28.81886646433119,
+    "maximum_beta": 47902.27158923972
+  },
+  {
+    "alpha_interval": [
+      512,
+      768
+    ],
+    "count": 222,
+    "minimum_m0": -28.91074558716271,
+    "maximum_beta": 99259.10074889957
+  },
+  {
+    "alpha_interval": [
+      768,
+      1024
+    ],
+    "count": 178,
+    "minimum_m0": -28.17969796275584,
+    "maximum_beta": 173658.02205518258
+  }
+]

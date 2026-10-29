@@ -1,0 +1,96 @@
+{
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "integrator": "Adaptive Dormand-Prince 5(4)"
+  },
+  "checks": [
+    {
+      "name": "Short state against DOP853",
+      "parameters": [
+        9.0,
+        14.285714285714286,
+        -1.1428571428571428,
+        -0.7142857142857143
+      ],
+      "scaled_error": 3.794651022762889e-11,
+      "passed": true
+    },
+    {
+      "name": "Short state against DOP853",
+      "parameters": [
+        255.693129732,
+        7216.58622261,
+        -3.477304427,
+        -0.7142857142857143
+      ],
+      "scaled_error": 7.776962704379839e-09,
+      "passed": true
+    },
+    {
+      "name": "Short state against DOP853",
+      "parameters": [
+        1024.0,
+        150000.0,
+        -29.0,
+        -0.7142857142857143
+      ],
+      "scaled_error": 7.453125891477804e-08,
+      "passed": true
+    },
+    {
+      "name": "Smooth linear exact matrix exponential",
+      "max_error": 7.99298960352246e-11,
+      "passed": true
+    },
+    {
+      "name": "Stationary unstable origin is not classified as chaos",
+      "class": 3,
+      "passed": true
+    },
+    {
+      "name": "Positive LLE at the previous difficult far-field example",
+      "parameters": [
+        255.69312973200468,
+        7216.586222609408,
+        -3.4773044270127405,
+        -0.7142857142857143
+      ],
+      "adaptive_lle": 0.5274875910835505,
+      "adaptive_windows": [
+        0.27117967045285174,
+        0.7207827195083316,
+        0.5762316726261527,
+        0.5417563017468658
+      ],
+      "full_field_dop853": {
+        "lle": 0.7363694207957961,
+        "windows": [
+          1.3025311293081725,
+          1.1100690631817058,
+          0.24424922150971548,
+          0.28862826918359114
+        ],
+        "recorded_crossings": 2856,
+        "max_absolute_coordinate": 340.2807817475308,
+        "transient": 40,
+        "duration": 160,
+        "wall_seconds": 37.00242910000088,
+        "rtol": 2e-09,
+        "atol": 2e-11,
+        "renormalization_interval": 0.25,
+        "method": "DOP853 evaluates the full piecewise state and tangent field at every stage; nonterminal x=±1 event diagnostics.",
+        "event_scope": "Recorded events are diagnostic, not a guarantee of detecting every grazing crossing pair."
+      },
+      "passed": true,
+      "scope": "Agreement of positive sign at matched settings; not a precision certificate for arbitrary parameters."
+    }
+  ],
+  "all_checks_passed": true
+}

@@ -122,9 +122,33 @@ The 32,768 scrambled Sobol points sample log(alpha), log(beta/alpha), and log(-1
 
 The new `GPU.scan(..., initial_states=array)` option accepts a finite `(N,S,3)` array for parameter-dependent starts; ordinary shared seeds remain the default. A DOP853 check of the point-to-seed mapping is recorded in `paired_initial_state_check.json`.
 
-Three selected far-field examples have independent positive finite-time exponents with DOP853 explicitly locating every x=±1 crossing. **The numerical magnitude is not converged at all far-field points**: at alpha≈255.69, fixed-step GPU and event-resolved estimates differ substantially (about 0.93 versus 0.18), although both are positive in all observation windows. Wide-map colors therefore represent m0, not claimed chaos intensity. `event_resolved_checks.json` contains the evidence and observation lengths. The original boxes and their validation are separate from this much stiffer regime.
+The original v1.0 `event_resolved_checks.json` files used a CPU routine that extrapolated one affine branch until a detected event. During the later expansion it failed at a distant point after a missed crossing. These records are retained for provenance, but their exponent values are not definitive references. `validate_extent.py` now uses the corrected full piecewise field and writes `full_field_checks.json`; the new expanded study has its own independent checks. No convergence certificate for the old full cloud is claimed.
 
 The outer-equilibrium stability surface for m1=-5/7 is beta=5*alpha/7+10*alpha²/49. Every repeated candidate in this sample lies below it. This is a local linear stability result, not a proof that this surface exactly bounds global chaos. Candidates occur close to alpha=256 and m0=-8; no global closure or unboundedness follows from finite sampling. Only the m0<-1 continuation was explored.
+
+### Fourfold expansion with adaptive GPU integration
+
+The new section preserves the old data and uses `outputs/expanded/`. Its 16,384 scrambled Sobol points are uniform in log α, log(β/βcrit), and log(−1−m₀), where βcrit=5α/7+10α²/49. Ranges are [2,1024], [0.01,1.3], and [0.003,28], with m₁=−5/7. A rate-based sorting permutation groups similarly expensive trajectories on GPU lanes; it does not change the sampled points.
+
+```bash
+python validate_adaptive.py
+python explore_expanded.py
+python validate_expanded.py
+python expanded_report.py
+python render_animations.py --kind expanded
+```
+
+`explore_expanded.py --resume` reuses completed scout/verification files after verifying that their parameter indices match the requested Sobol sample. It does not resume an interrupted individual integration.
+
+`adaptive_gpu.py` and `adaptive_kernels.cl` implement Dormand–Prince 5(4), with a separate clock for each trajectory and maximum scaled local error over all six state/tangent components. The tangent vector is normalized after every accepted step. Each kernel submission attempts at most 128 steps per trajectory. No fast-math flags are used. Steps are capped at min(0.1,0.5/√β); small accepted steps can cross diode kinks, so independent controls remain necessary.
+
+The scout uses rtol=10⁻⁶, atol=10⁻⁹, transient=100 and observation=200. All 1,950 candidate parameter tuples are recomputed from the same three original starts at rtol=10⁻⁸, atol=10⁻¹¹, transient=200 and observation=600; 1,832 retain a class-4 start. The escape cutoff is 10⁶. The largest recorded coordinate among accepted verification runs is about 17,466, comfortably below that operational cutoff. No numerical-failure statuses were returned.
+
+The class-4 criterion is unchanged: mean LLE>0.01, all four windows>0.005, late x-range>10⁻⁴ and no escape. Other codes match the original scanner. `stats` sums are over adaptive step endpoints; unlike a uniform grid, they cannot be interpreted as time averages. `step_counts` records accepted and rejected steps for each parameter/start pair.
+
+`independent_reference.py` uses SciPy DOP853 on the full piecewise state and variational equations, rtol=2×10⁻⁹ and atol=2×10⁻¹¹. Tangent normalization every 0.25 time units uses a scaled norm to avoid squaring overflow. Nonterminal x=±1 events count observed crossings but never select the vector field. This corrects a failure mode in the older affine-branch reference; missed diagnostic events cannot trap the dynamics on the wrong branch.
+
+For the selected new extremes, an independent check starts at the end of the verified GPU run, discards 20 time units and observes 80 more. An additional GPU calculation uses the identical starting state and intervals with tolerances 10⁻⁹/10⁻¹². Their values and per-window signs are retained together. This is validation of selected examples, not every point or the asymptotic parameter boundary.
 
 ### Original survey results
 

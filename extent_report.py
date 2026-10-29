@@ -40,14 +40,15 @@ def cloud_figure(scout,data,logarithmic=False):
         marker=dict(size=3,color=colors,colorscale='Viridis',opacity=.85,colorbar=dict(title='m₀',thickness=12)),
         customdata=np.c_[p[:,:3],estimates],name='Repeated GPU chaos candidates',
         hovertemplate='α=%{customdata[0]:.5g}<br>β=%{customdata[1]:.6g}<br>m₀=%{customdata[2]:.5f}<br>Rough GPU λ₁=%{customdata[3]:.4f}<extra></extra>'))
-    if (OUT/'event_resolved_checks.json').exists():
-        checks=json.loads((OUT/'event_resolved_checks.json').read_text())['checks']
+    check_file=OUT/('full_field_checks.json' if (OUT/'full_field_checks.json').exists() else 'event_resolved_checks.json')
+    if check_file.exists():
+        checks=json.loads(check_file.read_text())['checks']
         good=[r for r in checks if min(r['windows'])>.005 and r['lle']>.01]
         if good:
             actual=np.array([r['parameters'][:3] for r in good]);shown=actual.copy()
             if logarithmic:shown[:,:2]=np.log2(shown[:,:2])
             fig.add_trace(go.Scatter3d(x=shown[:,0],y=shown[:,1],z=shown[:,2],mode='markers',
-                marker=dict(size=7,color='#f6be57',symbol='diamond'),name='Independent positive-LLE checks',
+                marker=dict(size=7,color='#f6be57',symbol='diamond'),name='Full-field positive-LLE checks' if check_file.name=='full_field_checks.json' else 'Historical v1.0 CPU check locations',
                 customdata=np.c_[actual,[r['lle'] for r in good]],
                 hovertemplate='α=%{customdata[0]:.4f}<br>β=%{customdata[1]:.3f}<br>m₀=%{customdata[2]:.5f}<br>Event-resolved λ₁=%{customdata[3]:.3f}<extra></extra>'))
     box=original_box(logarithmic)
@@ -100,7 +101,10 @@ def static_figure(data):
 def build():
     scout=dict(np.load(OUT/'scout.npz'));data=dict(np.load(OUT/'verified.npz'))
     summary=json.loads((OUT/'summary.json').read_text())
-    evidence=json.loads((OUT/'event_resolved_checks.json').read_text()) if (OUT/'event_resolved_checks.json').exists() else {'checks':[]}
+    check_file=OUT/('full_field_checks.json' if (OUT/'full_field_checks.json').exists() else 'event_resolved_checks.json')
+    evidence=json.loads(check_file.read_text()) if check_file.exists() else {'checks':[]}
+    historical=check_file.name=='event_resolved_checks.json'
+    correction=('These are historical v1.0 CPU values. The affine-branch event routine later failed at a distant point after a missed crossing; these values are not definitive reference measurements. See the corrected full-field controls in the expanded study.' if historical else 'These checks use the corrected DOP853 reference, evaluating the full piecewise field at every stage. Crossing events are diagnostics and do not select a branch.')
     keep=(data['classes']==4).any(axis=1);p=data['parameters'][keep]
     crit=5*p[:,0]/7+10*p[:,0]**2/49
     above=int((p[:,1]>crit).sum())
@@ -136,7 +140,7 @@ def build():
     <div class="pair">{div(cloud_figure(scout,data),'extent-linear')}{div(cloud_figure(scout,data,True),'extent-log')}</div>
     <p class="note">The gold wireframe marks the original classic box. The right plot uses logarithmic α and β, changing the apparent geometry.
     Toggle “Scouted points” in the legend to see other tested points. Color denotes m₀;
-    gold diamonds identify independent positive-LLE checks.</p>
+    gold diamonds identify the recorded CPU check locations; see the reference-solver correction below.</p>
     <section><h2>Why the region bends</h2>
     <p>Outer equilibria change linear stability on the surface
     <b>β = 5α/7 + 10α²/49 ≈ 0.714α + 0.204α²</b>, introducing a β scale that grows faster than α.
@@ -148,15 +152,12 @@ def build():
     Substitution of m₁=−5/7 into the cubic stability criterion gives β=5α/7+10α²/49.
     This is local linear equilibrium stability, not a calculation of the complete global attractor.</p></details></section>
     <section><h2>Independent checks of distant points</h2>
-    <p>Selected extreme examples are checked with independent DOP853 integration explicitly locating every x=±1 crossing.
-    Each segment has an affine vector field; the variational equation therefore does not step across an unlocated Jacobian change.
-    CPU integration is used for these few controls. The main cloud was computed on the GTX 1080.</p>
-    <table><tr><th>α</th><th>β</th><th>m₀</th><th>GPU λ₁</th><th>Event-resolved λ₁</th></tr>{rows}</table>
-    <p class="note">All three independent checks retain positive exponents in all four windows.
-    However, at α≈256 the estimates 0.93 and 0.18 differ substantially. Quantitative convergence is not established there:
-    the difference may include fixed-step error at the kinks and dependence on the observation interval.
+    <div class="box"><b>Reference-solver correction</b><p>{correction}</p>
+    <p><a href="../expanded/index.html">Expanded study and corrected controls</a></p></div>
+    <table><tr><th>α</th><th>β</th><th>m₀</th><th>GPU λ₁</th><th>Recorded CPU λ₁</th></tr>{rows}</table>
+    <p class="note">Quantitative convergence of the original fixed-step cloud is not established.
     Read this as a coarse candidate map, not a precise map of chaos intensity.
-    <a href="event_resolved_checks.json">Independent validation record</a> · <a href="summary.json">GPU settings</a>.</p></section>
+    <a href="{check_file.name}">Recorded checks</a> · <a href="summary.json">GPU settings</a>.</p></section>
     <section><h2>Scope of the search</h2>
     <p>Sobol points sample logarithmic coordinates: 2≤α≤256, 0.25≤β/α≤64, 0.003≤−1−m₀≤7.
     Only the m₀&lt;−1 continuation is explored. Low-discrepancy sampling reduces large gaps but can still miss thin windows and separate regions.</p>

@@ -23,7 +23,9 @@ def main():
     if not args.version or any(c not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-" for c in args.version):
         parser.error("Version must contain only ASCII letters, digits, dots or hyphens")
     files=[]
-    for folder in [ROOT/"outputs",ROOT/"outputs"/"detailed",ROOT/"outputs"/"extent"]:
+    folders=[ROOT/"outputs",ROOT/"outputs"/"detailed",ROOT/"outputs"/"extent"]
+    if (ROOT/"outputs"/"expanded").exists():folders.append(ROOT/"outputs"/"expanded")
+    for folder in folders:
         if not (folder/"index.html").is_file():
             raise FileNotFoundError(f"Missing report: {folder.relative_to(ROOT)}/index.html")
         files.extend(p for p in folder.iterdir() if p.is_file() and p.suffix in {".npz",".json",".html",".js",".png",".pdf"})

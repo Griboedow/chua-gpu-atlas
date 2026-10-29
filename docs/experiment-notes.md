@@ -59,13 +59,23 @@ The largest exponent estimates the average exponential growth rate of an infinit
 
 A positive exponent at an unstable equilibrium is not evidence that a stationary trajectory is chaotic. A positive finite-time value can also come from a transient. Conversely, the largest exponent of a nonstationary regular autonomous flow is often near zero rather than negative. This is why the screen also checks motion, escape, several observation windows and selected peak patterns.
 
+## Going four times farther
+
+The expanded survey increases the α limit to 1024 and the depth −1−m₀ limit to 28. Sampling β relative to its quadratic stability scale raises the upper β limit to about 279,144. Among 16,384 new tuples, 1,832 retain a chaotic start in two adaptive GPU runs. The cloud reaches α≈1023.64, β≈173,658 and m₀≈−28.91; these are separate extrema.
+
+The tail still reaches the imposed limits in α and slope depth. This strengthens the evidence that the old search box was a small fragment, but does not establish an unbounded family. The sample has 178 candidates at α>768 and 95 at m₀<−22. All repeated candidates remain below the outer-equilibrium stability surface.
+
+The overlay uses a different integrator, escape cutoff and sampling measure. It answers a geometric question about extent; comparing raw node counts would not measure a change of chaotic volume.
+
 ## Faster calculations expose numerical problems sooner
 
-At α≈255.69, one fixed-step GPU estimate is about 0.93, while the independent event-resolved estimate is about 0.18. Calling this agreement would be misleading. Both remain positive in their four windows, but quantitative convergence is unresolved.
+The initial v1.0 investigation reported about 0.93 from fixed-step GPU integration and about 0.18 from an affine-branch CPU event routine at α≈255.69. The expanded study uncovered a failure in that reference strategy: if a crossing is missed, the solver can keep extending the wrong affine field. At the maximum-α example, a diagnostic rerun found an accepted state at x≈−1.3×10⁸ while the solver still assumed the inner branch |x|≤1. The corrected full-field reference stays bounded below 65 in the same 100-time-unit check. The exact parameters, starting state and historical commit are retained in `results/expanded/reference_failure_diagnostic.json`.
 
-The vector field is continuous at x=±1, while its Jacobian changes abruptly. A fixed RK step may cross a kink without locating it. The independent solver stops at crossings and restarts on the appropriate affine branch. Observation lengths also differ. Both effects require further study before using distant-point exponents as precise measurements.
+The old CPU records remain public for provenance, but they are not definitive reference measurements. The corrected DOP853 implementation evaluates the actual piecewise field at every stage. Events record crossings without selecting the active branch, and tangent normalization uses a scaled norm. A missed diagnostic crossing therefore cannot force the wrong dynamics.
 
-A useful next experiment would compare matched post-transient windows with systematic step refinement against event-resolved integration, then repeat the wide search where the classification itself changes. More points alone will not resolve an integration bias.
+The new adaptive GPU backend controls state and tangent error together. Short states agree with independent DOP853 at α=9, 255.69 and 1024; a linear exact-solution control and stationary-equilibrium rejection also pass. Selected distant examples receive additional full-field CPU checks at matched intervals. These checks support the selected finite-time behavior, not precise exponent convergence over the entire cloud.
+
+A useful next experiment would systematically refine tolerances and observation lengths at fixed parameter tuples, then reassess any classification changes. More sampling alone cannot resolve integration bias or long transients.
 
 ## Questions still open in this project
 
@@ -75,4 +85,4 @@ A useful next experiment would compare matched post-transient windows with syste
 - Which apparent gaps are regular windows, missed basins, long transients or numerical artifacts?
 - How does changing the fixed outer slope m₁ reshape the three-dimensional sections?
 
-For bibliographic context, see the numbered references in the [README](../README.md#references). Full settings and raw evidence accompany the [results release](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.0.0).
+For bibliographic context, see the numbered references in the [README](../README.md#references). Full settings and raw evidence accompany the [results release](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0).

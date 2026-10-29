@@ -1,0 +1,24 @@
+{
+  "historical_commit": "4189c3670af2a6a82ad8a2e9b84ff69902fb8e5a",
+  "parameters": [
+    1023.6360252006818,
+    18546.24132170179,
+    -1.380703939940805,
+    -0.7142857142857143
+  ],
+  "initial_state": [
+    1.2536206426556897,
+    -0.02874205088147304,
+    57.75762437312595
+  ],
+  "diagnostic": {
+    "reason": "accepted state left assumed affine branch without a detected terminal crossing",
+    "time_start": 29.94839978070397,
+    "time_end": 30.0,
+    "region": 0,
+    "initial_x": -1.0000000000000104,
+    "final_x": -130316870.17655224,
+    "domain_excess": 130316869.17655224,
+    "solver_success": true
+  }
+}

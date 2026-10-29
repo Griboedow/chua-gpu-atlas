@@ -4,8 +4,9 @@ These JSON files are copies of the computation settings and validation summaries
 
 - `original/`: two 51³ scans, reference trajectories and eight numerical validation checks.
 - `detailed/`: two 81³ grids, 41³ local zoom, beta transects, example regimes, connectivity summaries and independent validation.
-- `extent/`: wide-scout settings, repeated-candidate interpretation, per-parameter seed mapping and independent event-resolved checks.
+- `expanded/`: adaptive solver controls, expanded-scout settings, coordinate extrema and corrected full-field DOP853 checks.
+- `extent/`: wide-scout settings, repeated-candidate interpretation, per-parameter seed mapping and historical v1.0 affine-branch event checks (superseded; see correction below).
 
-The large basin metadata, complete NPZ arrays, all offline interactive reports and browser-check records are in [release v1.0.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.0.0). Extract the archive into the repository root. Its internal `RESULTS_MANIFEST.json` provides per-file SHA-256 hashes; `SHA256SUMS.txt` verifies the ZIP itself.
+The large basin metadata, complete NPZ arrays, all offline interactive reports and browser-check records are in [release v1.1.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0). Extract the archive into the repository root. Its internal `RESULTS_MANIFEST.json` provides per-file SHA-256 hashes; `SHA256SUMS.txt` verifies the ZIP itself.
 
-These are finite-time numerical experiments. The far-field exponent discrepancy documented in `extent/event_resolved_checks.json` is unresolved, not a passed convergence test. See the main README and methods for interpretation.
+These are finite-time numerical experiments. The old affine-branch CPU reference in `extent/event_resolved_checks.json` has been superseded after a missed-crossing failure at a distant point. Those files are historical evidence, not definitive reference values; use the new full-field checks under `expanded/`. Quantitative convergence over the entire cloud is not established. See the main README and methods for interpretation.

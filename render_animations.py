@@ -57,17 +57,29 @@ def render(kind, data_dir, output, frames_per_axis, fps):
     ax = fig.add_axes([.08, .15, .78, .7], projection="3d")
     labels = ("x", "y", "z") if kind == "trajectory" else ("α", "β", "m₀")
     configure(ax, labels)
-    if kind == "extent":
-        p = np.load(data_dir / "extent_candidates.npz")["parameters"]
+    if kind in ["extent", "expanded"]:
+        expanded = kind == "expanded"
+        p = np.load(data_dir / ("expanded_candidates.npz" if expanded else "extent_candidates.npz"))["parameters"]
+        if expanded:
+            previous = np.load(data_dir / "extent_candidates.npz")["parameters"]
+            ax.scatter(*previous[:, :3].T, c="#9caac0", s=3, alpha=.25, linewidths=0)
+            vertices = np.array([[a, a*r, m] for a in [2, 256] for r in [.25, 64] for m in [-8, -1.003]])
+            for i in range(8):
+                for bit in [1, 2, 4]:
+                    if i < (j := i ^ bit):
+                        ax.plot(*vertices[[i, j]].T, c="#f6be57", lw=1)
         dots = ax.scatter(*p[:, :3].T, c=p[:, 2], cmap="viridis", s=7, alpha=.85,
                           linewidths=0, depthshade=False)
-        ax.set(xlim=(0, 256), ylim=(0, 12500), zlim=(-8, -1))
+        ax.set(xlim=(0, 1024 if expanded else 256),
+               ylim=(0, np.ceil(p[:, 1].max()/25000)*25000 if expanded else 12500),
+               zlim=(-29 if expanded else -8, -1))
         cb = fig.colorbar(dots, cax=fig.add_axes([.9, .29, .015, .35]))
         cb.set_label("Inner slope m₀", color="#dce7f3")
         cb.ax.tick_params(colors="#b7c9dc")
-        title = "How far does the chaotic region extend?"
+        title = "Four times farther in parameter space" if expanded else "How far does the chaotic region extend?"
         subtitle = f"{len(p):,} repeated GPU candidates · fixed m₁ = −5/7 · linear coordinates"
-        footer = "Sparse finite-time evidence; neither a closed solid nor a proof of unboundedness."
+        footer = ("Gold: previous search limits. Finite-time candidates; no proof of global unboundedness."
+                  if expanded else "Sparse finite-time evidence; neither a closed solid nor a proof of unboundedness.")
     elif kind == "window":
         d = np.load(data_dir / "window_regular_mesh.npz")
         ax.add_collection3d(Poly3DCollection(d["vertices"][d["faces"]], facecolors="#ee8caa",
@@ -122,7 +134,7 @@ def render(kind, data_dir, output, frames_per_axis, fps):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--kind", choices=["all", "extent", "window", "trajectory"], default="all")
+    parser.add_argument("--kind", choices=["all", "extent", "expanded", "window", "trajectory"], default="all")
     parser.add_argument("--frames-per-axis", type=int, default=48)
     parser.add_argument("--fps", type=int, default=16)
     parser.add_argument("--data", type=Path, default=ROOT / "data" / "illustrations")
@@ -131,7 +143,7 @@ def main():
     if args.frames_per_axis < 4 or not 1 <= args.fps <= 50:
         parser.error("Use at least 4 frames per axis and 1–50 fps")
     args.output.mkdir(parents=True, exist_ok=True)
-    kinds = ["extent", "window", "trajectory"] if args.kind == "all" else [args.kind]
+    kinds = ["extent", "expanded", "window", "trajectory"] if args.kind == "all" else [args.kind]
     records = [render(k, args.data, args.output, args.frames_per_axis, args.fps) for k in kinds]
     manifest = args.output / "animations.json"
     previous = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else []

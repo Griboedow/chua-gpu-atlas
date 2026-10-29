@@ -225,7 +225,8 @@ def build_report(directory):
         validation=f'<p><a href="validation.json">Independent checks and refinement →</a></p>'
     followups=[]
     for folder,label in [("detailed","Refined atlas: thin windows and coexisting attractors"),
-                         ("extent","Outer extent: a wide point cloud")]:
+                         ("extent","Outer extent: a wide point cloud"),
+                         ("expanded","Four times farther: expanded adaptive GPU survey")]:
         if (directory/folder/"index.html").exists():
             followups.append(f'<a href="{folder}/index.html">{label} →</a>')
     navigation='<p>'+"<br>".join(followups)+'</p>' if followups else ''

@@ -4,9 +4,9 @@
 
 Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
-![Rotation of the wide parameter cloud about three axes](docs/assets/extent-rotation.gif)
+![The expanded parameter cloud rotating about three axes](docs/assets/expanded-rotation.gif)
 
-*Each dot is a parameter tuple (α, β, m₀). These are 2,249 finite-time chaos candidates surviving two GPU calculations. The camera rotates about all three coordinate axes; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
+*Each dot is a parameter tuple (α, β, m₀). These are 1,832 finite-time chaos candidates from the expanded adaptive GPU survey. Gold outlines the previous search domain. The camera rotates about all three coordinate axes; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
 
 ## Why I came back to this
 
@@ -67,15 +67,46 @@ All 2,249 repeated wide-survey candidates lie below this surface. It provides a 
 
 These types of Chua phenomena are known in the literature [1, 2]. The contribution here is a reproducible numerical exploration of particular sections, not a claim to have discovered periodic windows or coexistence for the first time. More interpretation and open questions are in [the experiment notes](docs/experiment-notes.md).
 
+## Four times farther: the expanded survey
+
+The next experiment extends α from 256 to **1024**, and the slope depth −1−m₀ from 7 to **28** (m₀ down to −29). Sampling β relative to its quadratic stability scale extends the upper search limit to about **279,144**.
+
+Of **16,384** new Sobol parameter samples, **1,832** remain candidates after a second calculation with tighter tolerances and longer observation. Their separate coordinate extrema are:
+
+| Coordinate | Previous wide cloud | Expanded cloud |
+|---|---:|---:|
+| Largest α | 255.69 | **1023.64** |
+| Largest β | 12,022.30 | **173,658.02** |
+| Most negative m₀ | −7.9912 | **−28.9107** |
+
+The expanded cloud contains 732 candidates beyond α=256 and 440 beyond m₀=−8; 981 lie outside the previous search domain in at least one coordinate constraint. There are still candidates near both newly extended limits, so **a natural outer cutoff has not been located in those directions**. Finite sampling does not establish unboundedness or connectedness.
+
+The new FP64 GPU backend uses adaptive Dormand–Prince 5(4), controlling both the state and tangent vector. Scout and candidate verification took **281.5 seconds** in total on the GTX 1080, excluding independent CPU checks and plotting. The escape cutoff, sampling measure and integration settings differ from the previous survey, so candidate counts must not be compared as volumes.
+
+![Old search limits inside the expanded cloud, in linear and logarithmic views](docs/assets/expanded_extent.png)
+
+Four selected distant examples, including the largest α, largest β and most negative m₀, retain positive exponents in every window of independent full-field DOP853 checks. Their exponent magnitudes are not uniformly converged; the new report shows both solver estimates.
+
+The new report adds a view of β/βcrit, with βcrit=5α/7+10α²/49, to separate the quadratic bend from the remaining shape. All repeated candidates in this sample remain below that stability surface. Small original regions and thin windows are still easy to miss in a coarse global survey.
+
+The previous wide-map animation remains available for comparison:
+
+<details><summary>Earlier cloud, before the fourfold expansion</summary>
+
+![Original wide parameter cloud](docs/assets/extent-rotation.gif)
+
+</details>
+
 ## Results and downloads
 
-[**Download the complete results from release v1.0.0**](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.0.0).
+[**Download the complete results from release v1.1.0**](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0).
 
-The release contains `chua-results-v1.0.0.zip` and a SHA-256 checksum. Extract it into the repository root to obtain `outputs/`. Then open:
+The release contains `chua-results-v1.1.0.zip` and a SHA-256 checksum. Extract it into the repository root to obtain `outputs/`. Then open:
 
 - `outputs/index.html` — the original atlas;
 - `outputs/detailed/index.html` — refined surfaces, slices, bifurcation diagrams and basins;
-- `outputs/extent/index.html` — the wider point cloud in linear and logarithmic coordinates.
+- `outputs/extent/index.html` — the earlier wide point cloud;
+- `outputs/expanded/index.html` — the fourfold expansion, old/new overlay and normalized β view.
 
 Reports are **in English and work offline**, with a bundled Plotly runtime. They include links to NPZ arrays and JSON settings/validation records. Large raw arrays live in the release instead of Git history. The repository includes small illustration datasets, all GIFs and selected [evidence records](results/README.md).
 
@@ -85,6 +116,7 @@ Reports are **in English and work offline**, with a bundled Plotly runtime. They
 | Refined two local boxes | 2 × 81³ | 3 each | 137.2 + 147.1 s |
 | Thin-window zoom | 41³ | 3 each | 83.4 s |
 | Wide scout + candidate reruns + selected long reruns | 32,768 scout points | 3 each | about 15.8 min |
+| Expanded adaptive scout + candidate reruns | 16,384 scout points | 3 each | 88.2 + 193.2 s |
 
 Hardware: **NVIDIA GeForce GTX 1080, 8 GB**, FP64 OpenCL. Timings exclude plotting, archive creation and independent CPU checks; workloads use different integration settings. Exact metadata is retained with each experiment.
 
@@ -107,7 +139,7 @@ python run.py all --grid 51
 python validate.py
 python run.py report
 
-# Re-render all three GIFs from included illustration data; no GPU required
+# Re-render all four GIFs from included illustration data; no GPU required
 python render_animations.py
 ```
 
@@ -128,7 +160,9 @@ The GPU integrates the state and a tangent vector with RK4. Repeated tangent nor
 
 The original study passes eight numerical checks, including adaptive DOP853 comparisons, a linear exact-solution control, and rejection of a stationary unstable equilibrium. Separate refinement samples preserve candidate membership at 98.83% and 99.02% of sampled nodes. The thin-window check preserves 252/256 sampled categories. These are sample diagnostics, not confidence levels for the entire boundary.
 
-**An unresolved numerical issue is part of the result.** At one distant point near α=255.69, a fixed-step GPU estimate is about 0.93 while an independent solver that locates every x=±1 crossing gives about 0.18. Both are positive, but their magnitudes have not converged. The wide cloud is therefore colored by m₀, not by a claimed intensity of chaos. All settings, observation lengths and checks are public.
+**A reference-solver correction is part of the result.** During the expansion, the original v1.0 CPU routine failed at a distant example: after a missed crossing, it could keep extrapolating the wrong affine branch. Its historical values, including the earlier 0.18 estimate at α≈255.69, should not be treated as definitive reference measurements. The corrected DOP853 control evaluates the actual piecewise field at every stage; crossing events are diagnostics, not branch selectors. New independent checks are stored under `results/expanded/`. The original records remain available for provenance.
+
+The adaptive backend also passes short-trajectory comparisons at α=9, 255.69 and 1024, an exact linear matrix-exponential control, and rejection of a stationary unstable equilibrium. Quantitative convergence of Lyapunov estimates across the full cloud is still not established. Cloud colors indicate m₀, not a claimed intensity of chaos.
 
 A finite-time positive exponent does not prove an asymptotic strange attractor. Three initial conditions do not exhaust all basins. A ragged mesh does not prove fractality, and a finite search cannot settle global boundedness. These limitations matter when reading the pictures.
 
