@@ -202,6 +202,10 @@ A [20,000-unit follow-up](docs/coupled-operators-research.md#long-runs-reveal-pe
 
 ![Long optical transients and persistent candidates](docs/assets/coupled_operators_lifetimes.png)
 
+The [five-state two-strain outbreak study](docs/two-strain-research.md) adds a different mathematical mechanism: unequal bursts separated by long low-prevalence intervals. Thirty of 41 long GPU checks retain positive exponents; an independent CPU calculation and a stable periodic control are included. A boundary argument rules out a literal interior homoclinic return to the single-strain equilibrium. Related epidemic chaos and possibly aperiodic source regimes are already published, and extremely small population fractions prevent a direct finite-population interpretation.
+
+![Physical projection of the two-strain candidate](docs/assets/two_strain_rotation.gif)
+
 An additional [geometry search](docs/attractor-geometry.md) asks whether a candidate has a substantially different shape and dynamical organization. A comparison figure, rotation GIF and finite-spectrum dimension estimates establish a baseline from existing data; they do not certify a new attractor type.
 
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.

@@ -1,0 +1,17 @@
+{
+  "errors": {
+    "jacobian": 6.912992400742723e-11,
+    "transformed_field": 2.220446049250313e-16,
+    "equilibrium": 6.776263578034403e-20,
+    "population_balance": 1.5837483234582006e-16,
+    "log_jacobian": 1.539541827355606e-10,
+    "trace_coordinate_identity": 1.3322676295501878e-15,
+    "independent_physical_vs_log": 6.994405055138486e-15,
+    "gpu_log_state": 8.963496611613664e-12,
+    "gpu_physical_lle": 1.0946105133413653e-13
+  },
+  "passed": true,
+  "random_cases": 32,
+  "tangent_coordinates": "Original five compartments with fixed infection scale 1/mu; not log variables",
+  "device": "NVIDIA GeForce GTX 1080"
+}

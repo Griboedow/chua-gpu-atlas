@@ -1,0 +1,46 @@
+{
+  "random_checks": 128,
+  "max_eigenvalue_matching_error": 4.996003610813204e-16,
+  "reference_parameters": [
+    0.00025,
+    2.5006250000000003,
+    2.0588428125000005,
+    1.0,
+    1.1,
+    1.0007518796992483,
+    1.1,
+    1.1
+  ],
+  "reference_equilibrium": [
+    0.5344021376085504,
+    0.0,
+    0.00010579365198624164,
+    0.0,
+    0.0
+  ],
+  "reference_eigenvalues": [
+    [
+      0.33608934535738133,
+      0.0
+    ],
+    [
+      -0.00048959375,
+      0.0
+    ],
+    [
+      -1.0010018796992484,
+      0.0
+    ],
+    [
+      -0.00023390625000000017,
+      0.015478807802644592
+    ],
+    [
+      -0.00023390625000000017,
+      -0.015478807802644592
+    ]
+  ],
+  "analytic_statement": "For R1>R2>1, any physical trajectory with I1(t0)>0 cannot converge to the strain-2-only equilibrium as t tends to positive infinity: d(log I1)/dt tends to (gamma1+mu)*(R1/R2-1)>0. This excludes a physical interior homoclinic return to that boundary equilibrium.",
+  "scope": "Does not exclude long near-boundary excursions, an asymptotic singular-limit mechanism, interior homoclinic orbits, or chaos. The source says Shilnikov-like, not a proved physical homoclinic orbit.",
+  "passed": true
+}

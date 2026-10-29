@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "transient": 100000,
+    "duration": 400000,
+    "rtol": 1e-11,
+    "atol": 1e-14,
+    "max_step": 0.25,
+    "max_attempts": 10000000
+  },
+  "method": "Adaptive DP5(4); log prevalence for state, original compartment variational equations with fixed diagonal scaling",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 70.42555020000145,
+  "parameter_columns": [
+    "mu",
+    "beta1",
+    "beta2",
+    "gamma1",
+    "gamma2",
+    "gamma12",
+    "sigma12",
+    "eta2"
+  ],
+  "log_state_columns": [
+    "S",
+    "log(I1/mu)",
+    "log((I2+I12)/mu)",
+    "I12/(I2+I12)",
+    "R1"
+  ],
+  "stats_columns": [
+    "min_log_I1_over_mu",
+    "max_log_I1_over_mu",
+    "min_log_total2_over_mu",
+    "max_log_total2_over_mu",
+    "min_S",
+    "max_S",
+    "min_recovered",
+    "max_population_sum"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "population domain failure",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date_utc": "2026-10-29",
+  "scope": "Bounded primary-source inspection; not a comprehensive novelty certification",
+  "sources": [
+    {
+      "id": "arXiv:2608.13995v1",
+      "url": "https://arxiv.org/html/2608.13995v1",
+      "inspection": "Exact base equations 2a-e, equilibrium 12, numerical Section 5, Appendix 11 and discussion read. HTML cached locally; fingerprint in candidate-audits/late-source-audit.json.",
+      "priority_limit": "The source already calls some regimes possibly aperiodic and announces a companion Shilnikov-like analysis. Its linked author code returned 404. No first-aperiodicity claim is justified."
+    },
+    {
+      "id": "10.1137/25M1826160",
+      "url": "https://epubs.siam.org/doi/full/10.1137/25M1826160",
+      "inspection": "Indexed primary text and selected author MATLAB equations inspected. Seven-state minimal model is related but was not surveyed here.",
+      "code_policy": "Author code was neither executed nor copied; no license was listed at repository root."
+    },
+    {
+      "id": "10.1016/j.mbs.2013.12.009",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0025556414000030",
+      "inspection": "Primary publisher abstract and introduction describe an asymmetric nine-dimensional two-strain model with temporary cross-immunity, Lyapunov calculations and established chaos.",
+      "remaining": "Full equation-by-equation reduction comparison remains unfinished."
+    },
+    {
+      "id": "10.1073/pnas.96.2.790",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9892712/",
+      "inspection": "Primary abstract explicitly reports cyclical and chaotic multistrain behavior. PMC body returned a browser challenge; Europe PMC fullTextXML returned HTTP 500.",
+      "remaining": "Original full equations were not audited."
+    },
+    {
+      "id": "10.1016/j.cam.2012.08.008",
+      "url": "https://doi.org/10.1016/j.cam.2012.08.008",
+      "inspection": "Bibliographic record and a secondary abstract found; primary DOI access failed.",
+      "remaining": "Do not treat the reported three-model comparison as independently inspected primary equations."
+    }
+  ],
+  "queries": [
+    "Gavish Shilnikov",
+    "Gavish chaotic epidemic 2026",
+    "two-strain no secondary chaos Gavish",
+    "asymmetric two-strain dengue model",
+    "Bifurcation analysis of a family of multi-strain epidemiology models"
+  ],
+  "query_limit": "No exact companion chaos analysis was found in these queries. This is not evidence that none exists.",
+  "unverified_reference": "The preprint's Aguiar et al. 2015 Charting complex oscillations reference was not independently located and is not cited here as a verified publication."
+}

@@ -1,0 +1,13 @@
+{
+  "r2": 1.58,
+  "start_kind": "coexistence",
+  "method": "DOP853",
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "max_step": 1.0,
+  "min_log_prevalence": -478.5563520442246,
+  "min_compartment": 3.660640127744049e-212,
+  "max_population_sum": 0.7279110412714669,
+  "wall_seconds": 14.29475509999611,
+  "scope": "Source-parameter trajectory control; not a chaos diagnosis; q_advantage=1.33 interpreted literally"
+}

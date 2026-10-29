@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "transient": 20000.0,
+    "duration": 40000.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_step": 1.0,
+    "max_attempts": 5000000
+  },
+  "method": "Adaptive DP5(4); log prevalence for state, original compartment variational equations with fixed diagonal scaling",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 3.6311920000007376,
+  "parameter_columns": [
+    "mu",
+    "beta1",
+    "beta2",
+    "gamma1",
+    "gamma2",
+    "gamma12",
+    "sigma12",
+    "eta2"
+  ],
+  "log_state_columns": [
+    "S",
+    "log(I1/mu)",
+    "log((I2+I12)/mu)",
+    "I12/(I2+I12)",
+    "R1"
+  ],
+  "stats_columns": [
+    "min_log_I1_over_mu",
+    "max_log_I1_over_mu",
+    "min_log_total2_over_mu",
+    "max_log_total2_over_mu",
+    "min_S",
+    "max_S",
+    "min_recovered",
+    "max_population_sum"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "population domain failure",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 258,
+  "completed": 258,
+  "preliminary_positive": 35,
+  "scope": "Targeted source-parameter slice with two starts; positive finite-time exponents do not certify attractors or novelty"
+}

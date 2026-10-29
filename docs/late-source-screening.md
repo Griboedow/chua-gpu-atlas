@@ -29,6 +29,8 @@ The related preprint [4] supplies a five-state baseline with one direction of se
 
 Before simulation, compare the exact equations with older two-strain chaos models, recover precise example parameters and handle slow demographic timescales. The first paper's Figure 3 author script uses a final time of `1e6`; the indexed paper describes `1e5`, so that reproducibility detail also needs reconciliation. General epidemic chaos is already established, for example in [5]. No biological prediction or exact-model novelty claim is made here.
 
+**Subsequent work:** the [five-state numerical study](two-strain-research.md) now supplies GPU/CPU candidates, precision controls, a periodic orbit and an analytic boundary obstruction. The seven-state first paper was not surveyed. Exact-model priority and a biological interpretation remain unresolved.
+
 ## References
 
 1. Fu, Y.-H., et al. (2026). Modular Opto-Magnetic Oscillators: Harnessing Light to Drive Versatile Materials and Functionalities. *Advanced Materials* **38**(16), e20348. [doi:10.1002/adma.202520348](https://doi.org/10.1002/adma.202520348). Author-hosted PDF, pp. 4 and 7; page 4 visually checked.

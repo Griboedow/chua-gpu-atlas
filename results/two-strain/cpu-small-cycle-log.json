@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "transient": 20000.0,
+    "duration": 40000.0,
+    "rtol": 1e-11,
+    "atol": 9.999999999999999e-14,
+    "max_step": 0.5,
+    "qr_interval": 5.0,
+    "method": "DOP853",
+    "coordinates": "log"
+  },
+  "leading_exponent": 5.118621883886787e-07,
+  "sum_rule_error": 3.429234674001691e-11,
+  "min_sampled_compartments": [
+    0.38945717507862593,
+    2.9704345829591228e-06,
+    4.154366759230703e-05,
+    1.1854296642686198e-05,
+    0.0900047893910688
+  ],
+  "max_sampled_population_sum": 0.5010861876460588,
+  "wall_seconds": 193.76350390000152,
+  "section": "S=(mu+gamma1)/beta1, upward crossing; four-dimensional section shown through projections",
+  "tangent_coordinates": "log",
+  "trace_coordinate_boundary": -5.027132886317176e-05,
+  "trace_coordinate_identity_error": 5.535123141081622e-16,
+  "coordinate_caveat": "Log full spectrum is explicitly a different numerical metric. Equality of asymptotic exponents requires a bounded or subexponentially conditioned transformation on the limiting orbit; finite-time spectra can differ. Original-coordinate leading GPU exponent is a separate check.",
+  "scope": "Finite-time numerical diagnosis; no claim of novelty or biologically calibrated chaos"
+}

@@ -1,0 +1,43 @@
+{
+  "parameters": [
+    0.00025,
+    2.5006250000000003,
+    2.090475,
+    1.0,
+    1.1,
+    1.0007518796992483,
+    1.1,
+    1.1
+  ],
+  "period": 469.8264523867486,
+  "section_log_state": [
+    0.40000000000000013,
+    -3.521635608243435,
+    -1.2789819344775992,
+    0.2227631249607122,
+    0.09476422900299084
+  ],
+  "closure_log_state": 2.788880237858393e-13,
+  "poincare_eigenvalues": [
+    [
+      0.29503324563327116,
+      0.8355273842509852
+    ],
+    [
+      0.29503324563327116,
+      -0.8355273842509852
+    ],
+    [
+      0.741846212053315,
+      0.0
+    ],
+    [
+      -5.571208907331585e-18,
+      0.0
+    ]
+  ],
+  "spectral_radius": 0.8860872563479262,
+  "stable_numerically": true,
+  "scope": "Numerical periodic orbit and Poincare stability; smallest strongly contracting multiplier is limited by double precision",
+  "root_solver_success": true
+}

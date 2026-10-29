@@ -1,0 +1,13 @@
+{
+  "r2": 1.9,
+  "start_kind": "invasion",
+  "method": "DOP853",
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "max_step": 1.0,
+  "min_log_prevalence": -124.85873270665675,
+  "min_compartment": 1.487583582679774e-58,
+  "max_population_sum": 0.5514069858347391,
+  "wall_seconds": 14.092739799998526,
+  "scope": "Source-parameter trajectory control; not a chaos diagnosis; q_advantage=1.33 interpreted literally"
+}

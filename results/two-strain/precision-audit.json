@@ -1,0 +1,49 @@
+{
+  "comparisons": [
+    {
+      "refined_index": 17,
+      "source_index": 134,
+      "max_log_state_difference": 1.049471620717668e-11,
+      "max_physical_state_difference": 6.509237593377293e-13,
+      "minimum_log_prevalence": -107.19438036689846,
+      "minimum_sampled_prevalence": 6.982518970491296e-51,
+      "duration": 1000.0,
+      "DOP853_rtol": 1e-12,
+      "Radau_rtol": 1e-11,
+      "max_step": 0.5
+    },
+    {
+      "refined_index": 32,
+      "source_index": 203,
+      "max_log_state_difference": 1.0647926984574951e-11,
+      "max_physical_state_difference": 4.3837156127324306e-13,
+      "minimum_log_prevalence": -101.35116014117445,
+      "minimum_sampled_prevalence": 2.4081882045731426e-48,
+      "duration": 1000.0,
+      "DOP853_rtol": 1e-12,
+      "Radau_rtol": 1e-11,
+      "max_step": 0.5
+    },
+    {
+      "refined_index": 39,
+      "source_index": 245,
+      "max_log_state_difference": 1.1752376849472057e-11,
+      "max_physical_state_difference": 5.618283616115605e-13,
+      "minimum_log_prevalence": -95.95152470718693,
+      "minimum_sampled_prevalence": 5.32993973008329e-46,
+      "duration": 1000.0,
+      "DOP853_rtol": 1e-12,
+      "Radau_rtol": 1e-11,
+      "max_step": 0.5
+    }
+  ],
+  "tiny_invader": {
+    "initial_log_I1_over_mu": -600.0,
+    "final_log_I1_over_mu": -553.8212989170611,
+    "direct_log_I1_over_mu": -553.8212989170612,
+    "difference": 1.1368683772161603e-13,
+    "scope": "Artificial solver control only; not a physically meaningful finite-population state"
+  },
+  "passed": true,
+  "caveat": "Pointwise agreement over this interval does not imply pathwise agreement for arbitrarily long chaotic trajectories"
+}
