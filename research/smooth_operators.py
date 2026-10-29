@@ -30,7 +30,7 @@ class SmoothOperatorsGPU:
         self.device=devices[0];self.context=cl.Context([self.device]);self.queue=cl.CommandQueue(self.context)
         self.kernel=cl.Kernel(cl.Program(self.context,Path(__file__).with_suffix('.cl').read_text()).build(),'advance')
 
-    def scan(self,parameters,starts,transient=200.,duration=800.,rtol=1e-7,step_factor=1.,max_attempts=10000000,max_wall_seconds=900.):
+    def scan(self,parameters,starts,transient=200.,duration=800.,rtol=1e-7,step_factor=1.,max_attempts=10000000,max_wall_seconds=900.,balanced_tangents=None):
         parameters=np.ascontiguousarray(parameters,dtype=float);starts=np.ascontiguousarray(starts,dtype=float);n=len(parameters)
         if parameters.shape!=(n,5) or starts.shape!=(n,6) or n<1:raise ValueError('Input shape mismatch')
         if not np.isfinite(parameters).all() or not np.isfinite(starts).all():raise ValueError('Nonfinite input')
@@ -38,6 +38,10 @@ class SmoothOperatorsGPU:
         if np.any((starts[:,[2,5]]<0)|(starts[:,[2,5]]>1)) or transient<0 or min(duration,rtol,step_factor,max_wall_seconds)<=0:raise ValueError('Invalid settings or temperatures')
         p=np.zeros((n,8));p[:,:5]=parameters
         state=np.zeros((n,16));state[:,:6]=starts;state[:,[1,4]]/=np.sqrt(parameters[:,0,None]);state[:,6:12]=np.array([1,.3,.4,-.2,.5,-.1])/np.sqrt(1.55)
+        if balanced_tangents is not None:
+            tangent=np.asarray(balanced_tangents,dtype=float)
+            if tangent.shape!=(n,6) or not np.isfinite(tangent).all() or np.any(np.linalg.norm(tangent,axis=1)==0):raise ValueError('Invalid balanced tangents')
+            state[:,6:12]=tangent/np.linalg.norm(tangent,axis=1)[:,None]
         clocks=np.zeros((n,4));clocks[:,1]=np.minimum(.001,.1/np.sqrt(p[:,0]));logs=np.zeros((n,4));stats=np.zeros((n,8));stats[:,[0,2,4,6]]=np.inf;stats[:,[1,3,5,7]]=-np.inf
         status=np.zeros(n,np.int32);counts=np.zeros((n,2),np.int32)
         arrays=[state,p,clocks,logs,stats,status,counts];buffers=[cl.Buffer(self.context,cl.mem_flags.READ_WRITE|cl.mem_flags.COPY_HOST_PTR,hostbuf=a) for a in arrays]
@@ -55,7 +59,7 @@ class SmoothOperatorsGPU:
         for a,buf in zip(arrays,buffers):cl.enqueue_copy(self.queue,a,buf).wait()
         windows=logs/(duration/4);windows[status!=0]=np.nan
         final=state[:,:6].copy();final[:,[1,4]]*=np.sqrt(parameters[:,0,None])
-        return dict(parameters=parameters,starts=starts,final_states=final,lle=windows.mean(axis=1),lle_windows=windows,
+        return dict(parameters=parameters,starts=starts,final_states=final,balanced_tangents=state[:,6:12].copy(),lle=windows.mean(axis=1),lle_windows=windows,
                     elapsed=clocks[:,0],status=status,step_counts=counts,stats=stats,
                     settings=dict(transient=transient,duration=duration,rtol=rtol,atol=rtol*.001,step_factor=step_factor,max_attempts=max_attempts,max_wall_seconds=max_wall_seconds),
                     method='Dormand-Prince 5(4) with analytic tangent and extra optical-transition step cap; explicit logistic model modification',

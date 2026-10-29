@@ -1,0 +1,494 @@
+{
+  "method": "Independent DOP853, rtol=1e-12, atol=1e-14, max_step=.005; four periods per captured endpoint",
+  "scope": "Every classified endpoint is compared with the same upward Poincare section of an independently checked attracting cycle. This does not prove global convergence or a chaotic saddle.",
+  "captured_count": 54,
+  "all_passed": true,
+  "rows": [
+    {
+      "index": 0,
+      "width": 0.003,
+      "capture_checkpoint": 3500.0,
+      "section_error": 1.1623457510194053e-11,
+      "period_error": 6.247002914960831e-12,
+      "scaled_flow_closure": 1.534755955048135e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 1,
+      "width": 0.003,
+      "capture_checkpoint": 4500.0,
+      "section_error": 9.888645144348102e-12,
+      "period_error": 5.10702591327572e-12,
+      "scaled_flow_closure": 9.297772001493505e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 3,
+      "width": 0.003,
+      "capture_checkpoint": 12500.0,
+      "section_error": 1.001845261612117e-11,
+      "period_error": 5.182521078950231e-12,
+      "scaled_flow_closure": 1.2667311644065649e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 6,
+      "width": 0.003,
+      "capture_checkpoint": 6000.0,
+      "section_error": 8.97017525344229e-12,
+      "period_error": 4.473754700029531e-12,
+      "scaled_flow_closure": 7.893189663344162e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 7,
+      "width": 0.003,
+      "capture_checkpoint": 12500.0,
+      "section_error": 7.848217630428395e-12,
+      "period_error": 7.421618875014246e-12,
+      "scaled_flow_closure": 9.602310631327893e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 9,
+      "width": 0.003,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.611108172330556e-11,
+      "period_error": 9.50084455553224e-12,
+      "scaled_flow_closure": 2.2159996060366893e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 10,
+      "width": 0.003,
+      "capture_checkpoint": 10500.0,
+      "section_error": 1.0800726834204744e-11,
+      "period_error": 5.6346038945775945e-12,
+      "scaled_flow_closure": 1.453129283568444e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 11,
+      "width": 0.003,
+      "capture_checkpoint": 12000.0,
+      "section_error": 1.313830561327433e-11,
+      "period_error": 7.30437932361383e-12,
+      "scaled_flow_closure": 3.802824721788056e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 12,
+      "width": 0.003,
+      "capture_checkpoint": 9500.0,
+      "section_error": 1.6979464508104367e-11,
+      "period_error": 9.632739050857708e-12,
+      "scaled_flow_closure": 1.7053802814359642e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 13,
+      "width": 0.003,
+      "capture_checkpoint": 16000.0,
+      "section_error": 8.607182327832057e-12,
+      "period_error": 4.356515148629114e-12,
+      "scaled_flow_closure": 7.392031431407986e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 14,
+      "width": 0.003,
+      "capture_checkpoint": 3500.0,
+      "section_error": 1.3156200311672406e-11,
+      "period_error": 7.410516644767995e-12,
+      "scaled_flow_closure": 3.8507586008762473e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 17,
+      "width": 0.003,
+      "capture_checkpoint": 8000.0,
+      "section_error": 1.3066410955048922e-11,
+      "period_error": 7.356781850376137e-12,
+      "scaled_flow_closure": 2.9691749059423955e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 21,
+      "width": 0.003,
+      "capture_checkpoint": 6000.0,
+      "section_error": 1.7589605393578506e-11,
+      "period_error": 9.85744819104184e-12,
+      "scaled_flow_closure": 1.9866386313793782e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 22,
+      "width": 0.003,
+      "capture_checkpoint": 15000.0,
+      "section_error": 1.3153170589681377e-11,
+      "period_error": 7.430056570001398e-12,
+      "scaled_flow_closure": 3.8482106390347326e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 23,
+      "width": 0.003,
+      "capture_checkpoint": 12000.0,
+      "section_error": 1.2448134943718024e-11,
+      "period_error": 6.730616064487549e-12,
+      "scaled_flow_closure": 1.9336510862520563e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 24,
+      "width": 0.003,
+      "capture_checkpoint": 500.0,
+      "section_error": 1.5924463741092203e-11,
+      "period_error": 9.467981954003335e-12,
+      "scaled_flow_closure": 2.1541685102377528e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 27,
+      "width": 0.003,
+      "capture_checkpoint": 18000.0,
+      "section_error": 5.014280142190301e-12,
+      "period_error": 5.323741447682551e-12,
+      "scaled_flow_closure": 3.83160170258634e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 30,
+      "width": 0.003,
+      "capture_checkpoint": 5500.0,
+      "section_error": 1.7274540091379543e-11,
+      "period_error": 9.739320461221723e-12,
+      "scaled_flow_closure": 1.7877310742875352e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 31,
+      "width": 0.003,
+      "capture_checkpoint": 5000.0,
+      "section_error": 7.289079213875573e-12,
+      "period_error": 3.5864644587491057e-12,
+      "scaled_flow_closure": 6.604938818099981e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 33,
+      "width": 0.005,
+      "capture_checkpoint": 2000.0,
+      "section_error": 2.2729707005453292e-11,
+      "period_error": 6.143974218275616e-12,
+      "scaled_flow_closure": 5.704003935846913e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 34,
+      "width": 0.005,
+      "capture_checkpoint": 2000.0,
+      "section_error": 9.354961250096494e-12,
+      "period_error": 2.468691917556498e-12,
+      "scaled_flow_closure": 1.0132672478846416e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 35,
+      "width": 0.005,
+      "capture_checkpoint": 8500.0,
+      "section_error": 1.0488054869028929e-11,
+      "period_error": 2.7915447731174936e-12,
+      "scaled_flow_closure": 1.1001644040220526e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 37,
+      "width": 0.005,
+      "capture_checkpoint": 5000.0,
+      "section_error": 2.076883109936034e-11,
+      "period_error": 5.679012815562601e-12,
+      "scaled_flow_closure": 4.1979086873311644e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 38,
+      "width": 0.005,
+      "capture_checkpoint": 15500.0,
+      "section_error": 1.8067547458144873e-11,
+      "period_error": 5.827116567047597e-12,
+      "scaled_flow_closure": 3.668165771131271e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 39,
+      "width": 0.005,
+      "capture_checkpoint": 12000.0,
+      "section_error": 2.083366812399845e-11,
+      "period_error": 5.74429392941056e-12,
+      "scaled_flow_closure": 4.001382558627142e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 40,
+      "width": 0.005,
+      "capture_checkpoint": 7500.0,
+      "section_error": 1.6100676347718945e-11,
+      "period_error": 4.350297899691213e-12,
+      "scaled_flow_closure": 2.6562965078219875e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 41,
+      "width": 0.005,
+      "capture_checkpoint": 12500.0,
+      "section_error": 9.137579581874888e-12,
+      "period_error": 2.4020785360789887e-12,
+      "scaled_flow_closure": 1.0018708085368644e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 42,
+      "width": 0.005,
+      "capture_checkpoint": 7000.0,
+      "section_error": 1.7205681324128363e-11,
+      "period_error": 4.668265773943858e-12,
+      "scaled_flow_closure": 8.81104633698726e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 43,
+      "width": 0.005,
+      "capture_checkpoint": 14000.0,
+      "section_error": 1.7091994486406747e-11,
+      "period_error": 4.640732242933154e-12,
+      "scaled_flow_closure": 8.567535569881102e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 44,
+      "width": 0.005,
+      "capture_checkpoint": 2500.0,
+      "section_error": 1.3235301743463879e-11,
+      "period_error": 3.560707284577802e-12,
+      "scaled_flow_closure": 2.011824040693e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 45,
+      "width": 0.005,
+      "capture_checkpoint": 6000.0,
+      "section_error": 1.1321721338219959e-11,
+      "period_error": 3.510525203864745e-12,
+      "scaled_flow_closure": 1.4474366150096785e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 46,
+      "width": 0.005,
+      "capture_checkpoint": 8500.0,
+      "section_error": 1.7727819212609575e-11,
+      "period_error": 4.82280881897168e-12,
+      "scaled_flow_closure": 8.848455301802005e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 47,
+      "width": 0.005,
+      "capture_checkpoint": 13000.0,
+      "section_error": 1.6827095272731185e-11,
+      "period_error": 4.576339307504895e-12,
+      "scaled_flow_closure": 2.975009127936801e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 48,
+      "width": 0.005,
+      "capture_checkpoint": 3000.0,
+      "section_error": 2.0573875936236163e-11,
+      "period_error": 5.584421813864537e-12,
+      "scaled_flow_closure": 7.064582252525042e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 49,
+      "width": 0.005,
+      "capture_checkpoint": 2500.0,
+      "section_error": 1.6842194305866087e-11,
+      "period_error": 4.554134847012392e-12,
+      "scaled_flow_closure": 6.055422829831514e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 50,
+      "width": 0.005,
+      "capture_checkpoint": 1500.0,
+      "section_error": 7.679745728239595e-12,
+      "period_error": 1.98463467881993e-12,
+      "scaled_flow_closure": 8.62526716716161e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 51,
+      "width": 0.005,
+      "capture_checkpoint": 6500.0,
+      "section_error": 2.0521917498683706e-11,
+      "period_error": 5.915712364412684e-12,
+      "scaled_flow_closure": 4.606770520609871e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 52,
+      "width": 0.005,
+      "capture_checkpoint": 18000.0,
+      "section_error": 1.9485191238288735e-11,
+      "period_error": 5.2806647943270946e-12,
+      "scaled_flow_closure": 8.671785511893404e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 53,
+      "width": 0.005,
+      "capture_checkpoint": 5000.0,
+      "section_error": 9.553025037689622e-12,
+      "period_error": 2.5233148903680558e-12,
+      "scaled_flow_closure": 1.0168199615634421e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 54,
+      "width": 0.005,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.1493805907036858e-11,
+      "period_error": 3.0890845437170356e-12,
+      "scaled_flow_closure": 1.5465045910545427e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 56,
+      "width": 0.005,
+      "capture_checkpoint": 8000.0,
+      "section_error": 1.1361245277896614e-11,
+      "period_error": 3.0540014961388806e-12,
+      "scaled_flow_closure": 1.1275258504639396e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 57,
+      "width": 0.005,
+      "capture_checkpoint": 10000.0,
+      "section_error": 2.0478729823025787e-11,
+      "period_error": 5.92303983637521e-12,
+      "scaled_flow_closure": 4.596667491085782e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 58,
+      "width": 0.005,
+      "capture_checkpoint": 9500.0,
+      "section_error": 1.1365131058482802e-11,
+      "period_error": 3.0597746558669314e-12,
+      "scaled_flow_closure": 1.1296352742107274e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 59,
+      "width": 0.005,
+      "capture_checkpoint": 9000.0,
+      "section_error": 2.089106665437157e-11,
+      "period_error": 5.917488721252084e-12,
+      "scaled_flow_closure": 4.6873005477010565e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 60,
+      "width": 0.005,
+      "capture_checkpoint": 1500.0,
+      "section_error": 1.7139956121070554e-11,
+      "period_error": 4.6558312760680565e-12,
+      "scaled_flow_closure": 8.374073656725045e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 61,
+      "width": 0.005,
+      "capture_checkpoint": 500.0,
+      "section_error": 1.3922307751101926e-11,
+      "period_error": 4.2588155224621005e-12,
+      "scaled_flow_closure": 1.8660906153655787e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 62,
+      "width": 0.005,
+      "capture_checkpoint": 2000.0,
+      "section_error": 1.6938672686706013e-11,
+      "period_error": 4.589217894590547e-12,
+      "scaled_flow_closure": 6.131373186946121e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 63,
+      "width": 0.005,
+      "capture_checkpoint": 5500.0,
+      "section_error": 2.1061485888651532e-11,
+      "period_error": 5.931699575967286e-12,
+      "scaled_flow_closure": 4.616407256463617e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 65,
+      "width": 0.04,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.3582308147951065e-11,
+      "period_error": 3.462874431647833e-11,
+      "scaled_flow_closure": 2.398908849343684e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 75,
+      "width": 0.04,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.4320296855229604e-11,
+      "period_error": 3.61843888185831e-11,
+      "scaled_flow_closure": 2.6754154447417022e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 86,
+      "width": 0.04,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.3559823743047432e-11,
+      "period_error": 3.4569236362358424e-11,
+      "scaled_flow_closure": 2.387484654420291e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 89,
+      "width": 0.04,
+      "capture_checkpoint": 500.0,
+      "section_error": 1.4143180596877475e-11,
+      "period_error": 3.574784912530049e-11,
+      "scaled_flow_closure": 2.950173438875936e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 94,
+      "width": 0.04,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.3351146806252588e-11,
+      "period_error": 3.3928415632544784e-11,
+      "scaled_flow_closure": 1.965053187756517e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "index": 95,
+      "width": 0.04,
+      "capture_checkpoint": 1000.0,
+      "section_error": 1.4310240756706191e-11,
+      "period_error": 3.61630725365103e-11,
+      "scaled_flow_closure": 2.923777886465473e-11,
+      "agrees_with_checked_cycle": true
+    }
+  ]
+}

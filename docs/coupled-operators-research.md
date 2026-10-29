@@ -154,6 +154,35 @@ This supports coexistence of a stable periodic orbit and a long-lived chaotic nu
 
 The blue curve closes while the red trajectory visits a band of loops and produces a spread of section points and return intervals. These are physical observables of a six-state model, not a new coordinate transformation of Chua. However, this appearance and coexistence mechanism do not by themselves establish a new topological class or scientific priority.
 
+### Long runs reveal periodic capture after chaotic transients
+
+The shorter calculations above cannot distinguish a chaotic attractor from a long chaotic transient. A new cohort makes that limitation concrete. We generated **32 fresh initial conditions at each of A's widths `0.003,0.005,0.04`**, with seed `2026102969`, displacement and thermal coordinates uniform on `[0.05,0.95]`, and zero initial velocities. We followed each trajectory for up to **20,000 thermal-time units**, in 500-unit blocks, carrying the tangent vector across block boundaries. Integration stopped after confirmed periodic capture; captured trajectories were not each integrated for the full horizon.
+
+| Optical width | Checked periodic captures | Still chaotic at the observation horizon | Last 500-unit leading exponent among survivors |
+| --- | ---: | ---: | --- |
+| 0.003 | 19 / 32 | 13 / 32 | 0.2499–0.3010 |
+| 0.005 | 29 / 32 | 3 / 32 | 0.2055–0.2632 |
+| 0.04 | 6 / 32 | 26 / 32 | 0.3041–0.3623 |
+
+Every survivor has positive estimates in all four windows of its last block. There were no numerical failures or budget exits in this cohort. These counts describe the chosen initial conditions, not basin probabilities or a fitted escape law.
+
+At the two narrow widths, periodic capture continues as late as the checkpoint at **18,000 units**, confirmed one block later. At `w=0.04`, all six captures qualify by time 1,000; the other 26 remain irregular for the full observation. Thus the broader-width candidate has substantially stronger persistence evidence, while the narrow-width examples clearly include very long chaotic transients. We have not proved that every surviving narrow-width trajectory will escape, or that the broad-width set is an asymptotic attractor.
+
+![Finite-time persistence and periodic capture](assets/coupled_operators_lifetimes.png)
+
+Two new independent CPU controls identify the narrow-width limiting cycles:
+
+| Width | Period | Largest Poincare multiplier magnitude | Orbit closure error |
+| --- | ---: | ---: | ---: |
+| 0.003 | 1.8368786709 | 0.595198 | 2.1e-12 |
+| 0.005 | 1.8356888452 | 0.808881 | 2.8e-12 |
+
+Each has one upward crossing of `xm=dm` per period. The broad-width cycle was independently checked above. The GPU capture rule requires a velocity-balanced one-period return residual below `1e-7` and all four exponent magnitudes below `0.01` at two consecutive checkpoints. A separate CPU DOP853 integration then checked **all 54 classified endpoints** against the corresponding reference cycle, including section location and period. Maximum scaled section mismatch was `2.3e-11`, period mismatch `3.7e-11`, and scaled flow closure `8.9e-11`.
+
+The 96-trajectory GPU calculation took 543 seconds on a GTX 1080 at `rtol=1e-9`, with halved step caps. The endpoint checks use `rtol=1e-12`, `atol=1e-14`, and maximum step `0.005`. A whole-run versus split-run test verifies continuation of both states and tangent vectors. Individual chaotic escape times need not reproduce exactly under a changed numerical tolerance; no such claim is made. Full interval-by-interval exponents, saved endpoint states, statuses and independent checks are in `results/light-operators/lifetimes/`.
+
+This update qualifies the earlier positive smooth-profile examples: a positive exponent over hundreds or thousands of units was genuine evidence of expansion on that interval, but did not establish an attracting chaotic invariant set.
+
 ## Prior art and what remains open
 
 General relay chaos is old. Our [relay literature audit](lce-slider-relay-limit.md) already covers several established examples and explicitly lists inaccessible originals. The coupled jerk representation above makes further control-theory equivalence searches necessary. A targeted search for the source title/DOI plus chaos did not identify the same result, which is insufficient to establish novelty.
@@ -197,6 +226,10 @@ python research/analyze_smooth_operators.py
 python research/check_coupled_operators.py --source results/light-operators/smooth-reentrant-starts.npz --index 1 --transient 400 --observation 800 --rtol 1e-12 --qr-interval .025 --output results/light-operators/smooth-cpu-1026-w004-regular
 python research/analyze_smooth_operators.py --regular-control
 python research/analyze_smooth_operators.py --gif
+python research/optical_lifetimes.py --controls
+python research/optical_lifetimes.py --validate
+python research/optical_lifetimes.py --run --starts 32 --blocks 40
+python research/analyze_optical_lifetimes.py --audit --plot
 ```
 
 The saved NPZ files include all surveyed parameters, starts, statuses, exponents/windows and final states; independent CPU traces include physical coordinates and Poincare sections. CPU verification requires no GPU. The analytic GPU implementation currently supports underdamped mechanics only.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-29",
+  "sources": [
+    {
+      "source": "10.1002/adma.202520348",
+      "file": "fu_optomagnetic_2026.pdf",
+      "bytes": 12967226,
+      "sha256": "dff8abbfb67f53679f0e4d7a238a4615f463dc7488923f3ed50a444faaf8a9f7",
+      "inspection": "Full PDF recovered; chaos passages on pp.4 and7 inspected; p4 rendered. SI HTTP403."
+    },
+    {
+      "source": "arXiv:2606.21225v1",
+      "file": "wang_gel_2606.21225.html",
+      "bytes": 442090,
+      "sha256": "ca68779e03b272f0bf12c8a9dc7f20e818f189bb2c49d0bc2d5f21cc24edff58",
+      "inspection": "Equations3-8 inspected; regular autonomous two-state exclusion."
+    },
+    {
+      "source": "arXiv:2608.13995v1",
+      "file": "gavish_framework_2608.13995.html",
+      "bytes": 552166,
+      "sha256": "f7e7fba59585481cf45e21ba2a50488f6a36be10c2387f38d31773352e1419a6",
+      "inspection": "Base Eq2, Eq12 and discussion inspected; exact-model chaos priority unresolved; linked code404."
+    }
+  ],
+  "redistribution": "Sources are cached locally only; not included under MIT."
+}

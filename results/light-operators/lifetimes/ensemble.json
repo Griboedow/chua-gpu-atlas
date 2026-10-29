@@ -1,0 +1,22 @@
+{
+  "seed": 2026102969,
+  "starts_per_width": 32,
+  "requested_blocks": 40,
+  "completed_blocks": 40,
+  "chunk_duration": 500.0,
+  "rtol": 1e-09,
+  "atol": 1.0000000000000002e-12,
+  "step_factor": 0.5,
+  "capture_rule": "Known-period flow residual <1e-7 in velocity-balanced max norm and all four chunk exponent magnitudes <.01 at two consecutive checkpoints. Capture time records first qualifying checkpoint, confirmation one chunk later.",
+  "caveat": "Numerical capture diagnostic; unclassified survivors need not be chaotic. Checkpoint timing is interval resolved; finite persistence cannot establish an attractor.",
+  "status_codes": {
+    "0": "still observed",
+    "1": "captured near checked stable periodic orbit",
+    "11": "thermal failure",
+    "12": "numerical failure",
+    "13": "step budget unresolved",
+    "14": "wall budget unresolved"
+  },
+  "wall_seconds": 542.993644000002,
+  "device": "NVIDIA GeForce GTX 1080"
+}

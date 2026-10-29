@@ -1,0 +1,45 @@
+{
+  "observation_horizon": 20000.0,
+  "groups": [
+    {
+      "width": 0.003,
+      "starts": 32,
+      "captured": 19,
+      "still_observed": 13,
+      "unresolved": 0,
+      "last_block_all_windows_positive": 13,
+      "last_block_lle_range": [
+        0.24987949067659454,
+        0.30096387843617955
+      ],
+      "latest_capture_checkpoint": 18000.0
+    },
+    {
+      "width": 0.005,
+      "starts": 32,
+      "captured": 29,
+      "still_observed": 3,
+      "unresolved": 0,
+      "last_block_all_windows_positive": 3,
+      "last_block_lle_range": [
+        0.2054655552762031,
+        0.2632331741952737
+      ],
+      "latest_capture_checkpoint": 18000.0
+    },
+    {
+      "width": 0.04,
+      "starts": 32,
+      "captured": 6,
+      "still_observed": 26,
+      "unresolved": 0,
+      "last_block_all_windows_positive": 26,
+      "last_block_lle_range": [
+        0.304131978951165,
+        0.3623113415832751
+      ],
+      "latest_capture_checkpoint": 1000.0
+    }
+  ],
+  "caveat": "Cohort counts are descriptive, not basin probabilities. Survivors are censored at the observation horizon; no escape-rate fit or asymptotic classification is made."
+}
