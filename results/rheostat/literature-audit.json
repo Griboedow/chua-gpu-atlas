@@ -1,0 +1,25 @@
+{
+  "checked": "2026-10-29",
+  "source_doi": "10.3390/polym17050617",
+  "source_access": "Full primary article, PMC11902770; JATS XML retained locally. Equations15-17 used, not the planar fast-thermal approximation24.",
+  "queries": [
+    "Electrically Driven Liquid Crystal Elastomer chaos rheostat",
+    "rheostat feedback mechanism chaotic",
+    "10.3390/polym17050617 chaos",
+    "rheostat feedback mechanism Lyapunov",
+    "third order Rayleigh oscillator chaos",
+    "third-order nonlinear damping autonomous chaos thermal"
+  ],
+  "source_assumption": "Q=Q0-beta*u is stipulated by the source. A linear current law alone would not make Joule heating linear; no alternative resistor law or fitted electronic dynamics was introduced here.",
+  "forward_citation": {
+    "doi": "10.3390/polym17101315",
+    "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12115308/",
+    "read": "Full article's actuation results and references inspected; includes externally switched near-infrared deformation/motion demonstrations. No exact rheostat-model chaos result located."
+  },
+  "known_neighboring_chaos": [
+    "10.1016/j.chaos.2024.115653",
+    "10.1016/j.chaos.2024.115027"
+  ],
+  "limits": "OpenAlex forward list may be incomplete. Exact-model novelty and all equivalent feedback oscillators are not exhaustively audited. Negative finite searches do not prove a global exclusion.",
+  "decision": "Lower priority: zero retained candidates in4096 scouts and24 distinct long follow-ups; strongest weak positive independently closes as stable periodic motion."
+}

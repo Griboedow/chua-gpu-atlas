@@ -1,0 +1,14 @@
+{
+  "checked": "2026-10-29",
+  "source": "OpenAlex index, incomplete possible",
+  "doi": "https://doi.org/10.3390/polym17050617",
+  "id": "https://openalex.org/W4407942089",
+  "cited_by_count": 1,
+  "citations": [
+    {
+      "title": "Biomimetic Soft Actuator with Deformation and Motion Driven by Near-Infrared Light",
+      "doi": "https://doi.org/10.3390/polym17101315",
+      "year": 2025
+    }
+  ]
+}

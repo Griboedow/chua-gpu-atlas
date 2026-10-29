@@ -1,0 +1,70 @@
+{
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Li, Li and Zhou 2025 full rheostat ODE, exact normalization",
+    "integrator": "Dormand-Prince 5(4), analytic tangent, per-accepted-step renormalization"
+  },
+  "settings": {
+    "transient": 2000.0,
+    "duration": 4000.0,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "step_factor": 0.5,
+    "max_attempts": 15000000,
+    "max_wall_seconds": 600
+  },
+  "timing": {
+    "wall_seconds": 58.736398400000326,
+    "gpu_seconds": 48.10042255999184
+  },
+  "parameter_columns": [
+    "c",
+    "r",
+    "g"
+  ],
+  "state_columns": [
+    "X",
+    "V",
+    "Y"
+  ],
+  "stats_columns": [
+    "min_X",
+    "max_X",
+    "min_Y",
+    "max_Y",
+    "max_abs_V",
+    "max_abs_state",
+    "late_min_X",
+    "late_max_X"
+  ],
+  "status_legend": {
+    "0": "completed",
+    "1": "amplitude cutoff 1e5",
+    "2": "numerical failure/step underflow",
+    "3": "attempt budget exhausted; unresolved",
+    "4": "wall budget exhausted; unresolved"
+  },
+  "parent_source": "results\\rheostat\\scout",
+  "parent_indices": [
+    2935,
+    3655,
+    1366,
+    2183,
+    1134,
+    54
+  ],
+  "trajectories": 6,
+  "candidate_indices": [],
+  "status_counts": {
+    "0": 6
+  },
+  "criterion": "Mean exponent > .005 and all four windows > .002; finite-time scout only",
+  "physical_caveat": "No full-device calibration; Q>=0, positive temperature/tension and small strain must be checked after choosing original scaling."
+}

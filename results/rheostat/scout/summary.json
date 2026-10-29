@@ -1,0 +1,65 @@
+{
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Li, Li and Zhou 2025 full rheostat ODE, exact normalization",
+    "integrator": "Dormand-Prince 5(4), analytic tangent, per-accepted-step renormalization"
+  },
+  "settings": {
+    "transient": 500,
+    "duration": 1000,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "step_factor": 1,
+    "max_attempts": 3000000,
+    "max_wall_seconds": 600
+  },
+  "timing": {
+    "wall_seconds": 15.40496659999917,
+    "gpu_seconds": 13.228274655999998
+  },
+  "parameter_columns": [
+    "c",
+    "r",
+    "g"
+  ],
+  "state_columns": [
+    "X",
+    "V",
+    "Y"
+  ],
+  "stats_columns": [
+    "min_X",
+    "max_X",
+    "min_Y",
+    "max_Y",
+    "max_abs_V",
+    "max_abs_state",
+    "late_min_X",
+    "late_max_X"
+  ],
+  "status_legend": {
+    "0": "completed",
+    "1": "amplitude cutoff 1e5",
+    "2": "numerical failure/step underflow",
+    "3": "attempt budget exhausted; unresolved",
+    "4": "wall budget exhausted; unresolved"
+  },
+  "seed": 2026102954,
+  "sampling": "Sobol log10c[-2.3,.3],log10r[-1.5,1.5],log10(g/g_H)[-.3,1.5]; two common starts",
+  "exact_normalization": "s=sqrt(K)t,X=C2(u-u0),V=C2*u_dot/sqrt(K),Y=alpha*C2*(T-T0)/K, K=1+j",
+  "source_doi": "10.3390/polym17050617",
+  "trajectories": 4096,
+  "candidate_indices": [],
+  "status_counts": {
+    "0": 4096
+  },
+  "criterion": "Mean exponent > .005 and all four windows > .002; finite-time scout only",
+  "physical_caveat": "No full-device calibration; Q>=0, positive temperature/tension and small strain must be checked after choosing original scaling."
+}

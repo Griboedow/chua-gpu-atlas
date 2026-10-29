@@ -1,0 +1,146 @@
+{
+  "orbits": [
+    {
+      "label": "near-threshold-0.1",
+      "parameters": [
+        0.2,
+        1.0,
+        0.54
+      ],
+      "section": [
+        0.04826666768099316,
+        0.01164007397915138
+      ],
+      "period": 5.640421917626874,
+      "transverse_multipliers": [
+        [
+          0.9021485664369397,
+          0.0
+        ],
+        [
+          0.0009007796971839677,
+          0.0
+        ]
+      ],
+      "closure_error": 4.85722573273506e-17,
+      "radau_closure_error": 4.3028081098128723e-14,
+      "radau_period_error": 4.1744385725905886e-14,
+      "radau_jacobian_error": 3.880173959913691e-12,
+      "amplitude_X": 0.04333993933824006,
+      "amplitude_V": 0.048267650519343445,
+      "trace_file": "near-threshold-0.1.npz",
+      "excess_gain": 0.1,
+      "leading_amplitude_X": 0.04481044694957404,
+      "amplitude_to_leading_ratio": 0.967183821821979
+    },
+    {
+      "label": "near-threshold-0.03",
+      "parameters": [
+        0.2,
+        1.0,
+        0.4700000000000001
+      ],
+      "section": [
+        0.01465061148382463,
+        0.003113045813126301
+      ],
+      "period": 5.706261530405646,
+      "transverse_multipliers": [
+        [
+          0.9684466232138953,
+          0.0
+        ],
+        [
+          0.0009859529459296523,
+          0.0
+        ]
+      ],
+      "closure_error": 3.469446951953614e-18,
+      "radau_closure_error": 4.3413189709795574e-14,
+      "radau_period_error": 5.3290705182007514e-14,
+      "radau_jacobian_error": 2.92466051377005e-12,
+      "amplitude_X": 0.013306240775850058,
+      "amplitude_V": 0.014650629703432805,
+      "trace_file": "near-threshold-0.03.npz",
+      "excess_gain": 0.03,
+      "leading_amplitude_X": 0.013443134084872212,
+      "amplitude_to_leading_ratio": 0.9898168605506805
+    },
+    {
+      "label": "near-threshold-0.01",
+      "parameters": [
+        0.2,
+        1.0,
+        0.45000000000000007
+      ],
+      "section": [
+        0.004900280741203285,
+        0.0010005167905784652
+      ],
+      "period": 5.725824025010801,
+      "transverse_multipliers": [
+        [
+          0.9892542434469865,
+          0.0
+        ],
+        [
+          0.0010119153143733767,
+          0.0
+        ]
+      ],
+      "closure_error": 8.673617379884035e-19,
+      "radau_closure_error": 6.34561847512316e-15,
+      "radau_period_error": 4.440892098500626e-15,
+      "radau_jacobian_error": 3.5562663924793014e-12,
+      "amplitude_X": 0.004465683643929587,
+      "amplitude_V": 0.004900280741203232,
+      "trace_file": "near-threshold-0.01.npz",
+      "excess_gain": 0.01,
+      "leading_amplitude_X": 0.004481044694957404,
+      "amplitude_to_leading_ratio": 0.9965719933467517
+    },
+    {
+      "label": "strongest-scout-control",
+      "parameters": [
+        1.7955178172782595,
+        0.2437837794356129,
+        298.6099435656367
+      ],
+      "section": [
+        17.323844688644975,
+        329.4843531381492
+      ],
+      "period": 3.093718732083179,
+      "transverse_multipliers": [
+        [
+          1.1302070390684094e-13,
+          0.0
+        ],
+        [
+          0.6783653887112846,
+          0.0
+        ]
+      ],
+      "closure_error": 3.986144747614162e-12,
+      "radau_closure_error": 3.007016857736744e-11,
+      "radau_period_error": 3.5083047578154947e-14,
+      "radau_jacobian_error": 9.074851980983567e-12,
+      "amplitude_X": 9.95227814529521,
+      "amplitude_V": 17.367539961951145,
+      "trace_file": "strongest-scout-control.npz",
+      "scout_index": 777,
+      "scout_lle": 0.003038929849038699
+    }
+  ],
+  "linear_example": {
+    "c": 0.2,
+    "g": 1.0,
+    "rate_boundaries": [
+      0.21825757707285715,
+      4.581742422927142
+    ],
+    "polynomial_error": 3.552713678800501e-15
+  },
+  "amplitude_derivation": "Leading harmonic balance: A_X ~ (3*pi/8)*(g-g_H)/(sqrt(1+c*r)*(1/r+2*c+r)); not an interval-validated bifurcation theorem.",
+  "interpretation": "Stable numerically closed periodic controls; tiny contracting multipliers may have limited relative precision."
+}

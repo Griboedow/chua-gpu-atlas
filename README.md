@@ -190,6 +190,8 @@ The [switching-width follow-up](docs/lce-slider-switching.md) finds that chaos s
 
 The [weak-light limit](docs/lce-slider-relay-limit.md) reduces the ideal slider to a classical biased relay around a stable third-order plant. Independent CPU/GPU calculations retain positive exponents in the rescaled limit; a 102-offset survey finds chaotic samples away from a stable symmetric periodic orbit. The physical amplitudes shrink with intensity and the threshold must be retuned, so this does not predict motion in darkness. The connection to older relay theory narrows the possible novelty claim.
 
+A separate [electrical rheostat oscillator](docs/rheostat-research.md) yields a negative chaos search across 4,096 scouts and 24 long checks. Its exact three-parameter reduction exposes a finite thermal-rate instability window. Independent periodic-orbit closure resolves the strongest weak positive exponent, and near-onset amplitudes agree with the quadratic-drag scaling.
+
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.
 
 ## License
