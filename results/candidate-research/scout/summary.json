@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "transient": 200,
+    "duration": 400,
+    "rtol": 1e-07,
+    "atol": 9.999999999999999e-11
+  },
+  "timing": {
+    "wall_seconds": 26.938021500000104,
+    "gpu_seconds": 26.456578784000023
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "driver": "582.28",
+    "precision": "float64",
+    "integrator": "Dormand-Prince 5(4)",
+    "quadrature_order": 512,
+    "table_spacing": 0.0019999999999988916,
+    "table_extent": [
+      -32,
+      32
+    ],
+    "fast_math": false
+  },
+  "parameter_columns": [
+    "Vn",
+    "Rn",
+    "Gamma",
+    "Omega",
+    "alpha",
+    "ZT",
+    "x0",
+    "unused"
+  ],
+  "trajectories": 12288,
+  "valid": 12288,
+  "candidate_indices": [
+    4508,
+    4674,
+    4676,
+    6296,
+    7412,
+    10354,
+    10571,
+    10796,
+    10916,
+    11469
+  ],
+  "max_lle": 0.017489695493175306,
+  "status_counts": {
+    "0": 12288
+  },
+  "criterion": "mean LLE > 0.005; all four windows > 0.002; late V range > 1e-5; physical-domain status 0",
+  "interpretation": "Finite-time screen, not proof of chaos, absence, or publication novelty."
+}

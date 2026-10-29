@@ -1,0 +1,242 @@
+[
+  {
+    "scan": "scout",
+    "index": 11271,
+    "scout_lle": 0.017489695493175306
+  },
+  {
+    "scan": "scout",
+    "index": 2554,
+    "scout_lle": 0.013183711542446287
+  },
+  {
+    "scan": "scout",
+    "index": 2553,
+    "scout_lle": 0.01255829781249199
+  },
+  {
+    "scan": "scout",
+    "index": 9441,
+    "scout_lle": 0.01202186055885799
+  },
+  {
+    "scan": "scout",
+    "index": 11327,
+    "scout_lle": 0.011241491010353627
+  },
+  {
+    "scan": "scout",
+    "index": 2862,
+    "scout_lle": 0.010937253904325053
+  },
+  {
+    "scan": "scout",
+    "index": 6861,
+    "scout_lle": 0.010396536924138913
+  },
+  {
+    "scan": "scout",
+    "index": 11039,
+    "scout_lle": 0.010073998620130281
+  },
+  {
+    "scan": "scout",
+    "index": 8928,
+    "scout_lle": 0.010047065637199374
+  },
+  {
+    "scan": "scout",
+    "index": 6863,
+    "scout_lle": 0.00999721664392065
+  },
+  {
+    "scan": "scout",
+    "index": 3673,
+    "scout_lle": 0.009768813108089804
+  },
+  {
+    "scan": "scout",
+    "index": 2746,
+    "scout_lle": 0.009660238364834164
+  },
+  {
+    "scan": "scout",
+    "index": 3674,
+    "scout_lle": 0.009638423065457927
+  },
+  {
+    "scan": "scout",
+    "index": 3672,
+    "scout_lle": 0.009560781287517542
+  },
+  {
+    "scan": "scout",
+    "index": 1330,
+    "scout_lle": 0.009370494915385491
+  },
+  {
+    "scan": "scout",
+    "index": 946,
+    "scout_lle": 0.009327393163438323
+  },
+  {
+    "scan": "scout",
+    "index": 8930,
+    "scout_lle": 0.009326677699195356
+  },
+  {
+    "scan": "scout",
+    "index": 1681,
+    "scout_lle": 0.008950713637416192
+  },
+  {
+    "scan": "scout",
+    "index": 10906,
+    "scout_lle": 0.008926768651113587
+  },
+  {
+    "scan": "scout",
+    "index": 5338,
+    "scout_lle": 0.008875543479479234
+  },
+  {
+    "scan": "scout",
+    "index": 2567,
+    "scout_lle": 0.008809018617472316
+  },
+  {
+    "scan": "scout",
+    "index": 9745,
+    "scout_lle": 0.008763416350208787
+  },
+  {
+    "scan": "scout",
+    "index": 5766,
+    "scout_lle": 0.008622925749353721
+  },
+  {
+    "scan": "scout",
+    "index": 6791,
+    "scout_lle": 0.008612815893264285
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 18550,
+    "scout_lle": 0.005277160859383493
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 21719,
+    "scout_lle": 0.004690908623175565
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 4655,
+    "scout_lle": 0.0041739283170911315
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 12202,
+    "scout_lle": 0.004027778943276852
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 18346,
+    "scout_lle": 0.003910611394234234
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 14986,
+    "scout_lle": 0.0036863280438199295
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 21022,
+    "scout_lle": 0.003393852687554012
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 14687,
+    "scout_lle": 0.00330820798214374
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 16681,
+    "scout_lle": 0.0032072005458028234
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 14686,
+    "scout_lle": 0.003167721429782039
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 1871,
+    "scout_lle": 0.0031452998114110077
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 6580,
+    "scout_lle": 0.003140725058160385
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 1161,
+    "scout_lle": 0.003135838172645896
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 10111,
+    "scout_lle": 0.0030712405977254427
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 13705,
+    "scout_lle": 0.0030632186684553197
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 7491,
+    "scout_lle": 0.003059329537651596
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 18414,
+    "scout_lle": 0.00304596736414481
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 634,
+    "scout_lle": 0.0030283219964468947
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 4298,
+    "scout_lle": 0.0029918579727372255
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 8472,
+    "scout_lle": 0.002985893449212626
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 2863,
+    "scout_lle": 0.0029606944261986894
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 4296,
+    "scout_lle": 0.0029351837279461795
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 1870,
+    "scout_lle": 0.0028690841911581566
+  },
+  {
+    "scan": "geometry-scout",
+    "index": 23302,
+    "scout_lle": 0.002854614158317348
+  }
+]

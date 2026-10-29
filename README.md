@@ -166,6 +166,10 @@ The adaptive backend also passes short-trajectory comparisons at α=9, 255.69 an
 
 A finite-time positive exponent does not prove an asymptotic strange attractor. Three initial conditions do not exhaust all basins. A ragged mesh does not prove fractality, and a finite search cannot settle global boundedness. These limitations matter when reading the pictures.
 
+## Looking beyond Chua
+
+A [separate research log](docs/candidate-research.md) screens unusual related systems against prior publications and investigates a quantum memristive neuron with Python and an adaptive FP64 GPU solver. Across 36,864 survey trajectories and 58 long follow-ups, **no new chaotic attractor was confirmed**. The log includes failed candidates, independent numerical controls, an analytic boundedness argument, and an energy-based exclusion for an uncoupled physical meminductor. Code and compact raw data are included; publication novelty remains unverified.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.

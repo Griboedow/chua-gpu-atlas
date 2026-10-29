@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "scope": "A bounded exploratory literature search for chaos in two specific published models; not a systematic review or a proof of novelty.",
+  "query_families_executed": [
+    "\"memristive quantum neuron\" chaos chaotic",
+    "\"Hysteresis and self-oscillations\" \"chaos\"",
+    "\"Potter\" \"Balanov\" \"quantum\" \"chaos\"",
+    "\"quantum neuron\" \"042604\" chaotic",
+    "\"memristive quantum neuron\" \"Lyapunov\"",
+    "\"2405.00624\" chaos chaotic Lyapunov",
+    "\"042604\" \"Potter\" chaos neuron",
+    "\"memristive quantum neuron\" bifurcation 2025 2026",
+    "\"Dinavahi\" \"Harris\" \"meminductor\" \"chaotic\"",
+    "\"Dinavahi\" \"meminductor\" strange attractor chaotic",
+    "\"Edge-of-chaos operation\" \"chaotic\"",
+    "\"meminductor\" \"photoresistor\" chaos",
+    "\"meminductor\" \"light dependent resistor\" chaotic",
+    "\"Reenstra\" oscillator chaos",
+    "\"Canonical quantization\" \"memristive\" \"chaos\""
+  ],
+  "primary_full_texts_consulted": [
+    "https://arxiv.org/html/2405.00624v1",
+    "https://link.aps.org/doi/10.1103/PhysRevA.110.042604",
+    "https://www.nature.com/articles/s41598-025-12529-y",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12630749/fullTextXML"
+  ],
+  "additional_checks": [
+    "Author publication list: https://publications.lboro.ac.uk/publications/all/collated/phab4.html",
+    "OpenAlex forward-citation query for each DOI, with returned identities saved in citation_search.json",
+    "Abstract/title screening of returned citing works; no exact-model chaos report identified",
+    "Primary publisher record confirms existing classical inertial-neuron chaos: doi:10.1016/j.chaos.2020.110383",
+    "Primary publisher records confirm existing chaos in other meminductor emulators: doi:10.1016/j.vlsi.2024.102165 and doi:10.1016/j.vlsi.2026.102740",
+    "The quantum-neuron preprint contains chaos-related bibliography entries, but its model results describe periodic oscillations; those references were not mistaken for a chaos demonstration in the quantum model"
+  ],
+  "access_limits": [
+    "The publisher quantum article was available through indexed text; direct HTTP fetches were blocked. Numerical implementation uses the explicit accessible arXiv v1 equations.",
+    "Some publisher redirects failed; the meminductor primary full text was obtained as Europe PMC XML.",
+    "No exhaustive search of subscription citation indexes, all dissertations, unindexed work, or equivalent equations under other names was completed.",
+    "No authors were contacted."
+  ],
+  "conclusion": "No matching strange-attractor report was identified for the two exact targets. Broad classes are already known to exhibit chaos. Publication novelty is unverified."
+}

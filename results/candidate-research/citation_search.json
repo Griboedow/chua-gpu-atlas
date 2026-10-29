@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "note": "An incomplete index, not a proof of absence. Title/abstract screening plus targeted web searches.",
+  "records": [
+    {
+      "doi": "10.1103/PhysRevA.110.042604",
+      "openalex_id": "https://openalex.org/W4403097249",
+      "reported_citation_count": 1,
+      "citing_works": [
+        {
+          "title": "Hysteresis Transformation and Memristor Design Framework for Two-Dimensional Materials for Neuromorphic Computing:Physics-Based Charge-Diffusion Modelling and Machine Learning",
+          "doi": "https://doi.org/10.1021/acsaelm.6c01818",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41598-025-12529-y",
+      "openalex_id": "https://openalex.org/W4416389366",
+      "reported_citation_count": 2,
+      "citing_works": [
+        {
+          "title": "Compact design of MOSFET-only meminductor emulator and its application in chaos and neural spike generator",
+          "doi": "https://doi.org/10.1016/j.vlsi.2026.102740",
+          "year": 2026
+        },
+        {
+          "title": "Memory circuit elements for hardware security: a review from memristors to memcapacitors and meminductors",
+          "doi": "https://doi.org/10.3389/felec.2026.1919384",
+          "year": 2026
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-29",
+  "model": "Potter et al. (2024), arXiv:2405.00624v1 Eq. (10)",
+  "geometry": {
+    "l": 0.5,
+    "lambda": 0.13
+  },
+  "sobol": {
+    "dimension": 7,
+    "scramble": true,
+    "seed": 20261029
+  },
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pyopencl": "2026.1.4",
+    "matplotlib": "3.11.2"
+  },
+  "states": [
+    "X",
+    "Y",
+    "Z",
+    "V"
+  ],
+  "stats_columns": [
+    "min_voltage",
+    "max_voltage",
+    "max_bloch_radius_squared",
+    "max_rhs_norm",
+    "max_bloch_radius_squared_duplicate",
+    "unused",
+    "late_min_voltage",
+    "late_max_voltage"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "2": "numerical_failure",
+    "3": "physical_domain_violation"
+  },
+  "surveys": {
+    "parameter_tuples": 12288,
+    "trajectories": 36864
+  },
+  "long_followups": 58,
+  "screen_survivors_after_followup": 0,
+  "summed_scan_wall_seconds": 527.9923682999979,
+  "sha256": {
+    "periodic_reference.npz": "747050fa4ba969910d7d7894cc78250d395be9b6439fd5cdbaa07c25aed9688b",
+    "reference_6.npz": "1fb33ec4a28693f490d8cd390aef00f8f457a1e27c003763954340a976869e56",
+    "reference_9.npz": "bbaf1f4e8d0b1651106a302a815c5fa20b923f35c1aba5dc4d0608413395b8fb",
+    "geometry-scout/scan.npz": "4e8f81be764cda4e24eb87506ebad9af57fbeea23f30547177c20bb9bd2a7111",
+    "ranked-refined/scan.npz": "56a81df1b4251fc9fc83f50b41520767aef24e3ae75a25c9fdc73c42a27e4645",
+    "refined/scan.npz": "915cf73f50ebbfbef1ecf6a5cddd9bffe076d01952f540d27bd0f9445e5a1207",
+    "scout/scan.npz": "f6e208a20ebe1eac53937a339d8c48f3c88e61a1f72e61b748670ad54377a218"
+  }
+}
