@@ -17,7 +17,7 @@ def smooth_field(state, p, width):
     return f,jac
 
 
-def spectrum(p,start,width,transient,duration,rtol):
+def spectrum(p,start,width,transient,duration,rtol,max_step=.01):
     interval=.1;steps=round((transient+duration)/interval);burn=round(transient/interval)
     state=np.r_[start,np.eye(3).ravel(),0.];sums=np.zeros((4,3));div=np.zeros(4);history=[]
     wall=time.perf_counter();last=wall
@@ -26,7 +26,7 @@ def spectrum(p,start,width,transient,duration,rtol):
         return np.r_[f,(j@y[3:12].reshape(3,3)).ravel(),np.trace(j)]
     for step in range(steps):
         state[-1]=0.
-        sol=solve_ivp(rhs,(0,interval),state,method='DOP853',rtol=rtol,atol=rtol*.01,max_step=.01)
+        sol=solve_ivp(rhs,(0,interval),state,method='DOP853',rtol=rtol,atol=rtol*.01,max_step=max_step)
         if not sol.success:raise RuntimeError(sol.message)
         state=sol.y[:,-1];Q,R=np.linalg.qr(state[3:12].reshape(3,3));state[3:12]=Q.ravel()
         if step>=burn:
@@ -35,7 +35,7 @@ def spectrum(p,start,width,transient,duration,rtol):
         if time.perf_counter()-last>20:
             print(f'width={width:.3g}: {(step+1)/steps:.1%}, {time.perf_counter()-wall:.1f}s',flush=True);last=time.perf_counter()
     exponents=sums.sum(axis=0)/duration
-    result=dict(width=float(width),transient=transient,duration=duration,rtol=rtol,spectrum=exponents.tolist(),
+    result=dict(width=float(width),transient=transient,duration=duration,rtol=rtol,max_step=max_step,spectrum=exponents.tolist(),
                 window_spectra=(sums/(duration/4)).tolist(),divergence_identity_error=float(abs(exponents.sum()-div.sum()/duration)),
                 wall_seconds=time.perf_counter()-wall,final_state=state[:3].tolist())
     return result,np.array(history)
@@ -45,6 +45,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--fractions',nargs='+',type=float,default=[1e-6,1e-5,1e-4,1e-3,.01])
     parser.add_argument('--transient',type=int,default=200);parser.add_argument('--duration',type=int,default=800)
     parser.add_argument('--rtol',type=float,default=1e-10);parser.add_argument('--output',type=Path,default=Path('results/lce-slider/smooth'))
+    parser.add_argument('--max-step',type=float,default=.01)
     args=parser.parse_args();data=np.load('results/lce-slider/analytic-2222/trace.npz')
     p=data['parameters'];start=np.r_[0.,data['section'][-1,1:3]];q=p[2]/(1+p[2])
     args.output.mkdir(parents=True,exist_ok=True);results=[]
@@ -54,9 +55,9 @@ def main():
     error=float(np.max(abs(j-numerical)))
     if error>1e-4:raise RuntimeError(f'Smooth Jacobian check failed: {error}')
     for fraction in args.fractions:
-        result,history=spectrum(p,start,q*fraction,args.transient,args.duration,args.rtol)
+        result,history=spectrum(p,start,q*fraction,args.transient,args.duration,args.rtol,args.max_step)
         result['width_over_q']=fraction;results.append(result)
-        tag=f'{fraction:.0e}'
+        tag=f'{fraction:.6g}' if fraction not in [1e-6,1e-5,1e-4,1e-3,.01] else f'{fraction:.0e}'
         (args.output/f'width-{tag}.json').write_text(json.dumps(result,indent=2))
         np.savez_compressed(args.output/f'width-{tag}.npz',history=history,parameters=p,start=start)
         summary=dict(parameters=p.tolist(),start=start.tolist(),changes_model=True,

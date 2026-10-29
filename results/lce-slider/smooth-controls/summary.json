@@ -1,0 +1,126 @@
+{
+  "parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.007235236837126186,
+    0.0002219930226626585
+  ],
+  "changes_model": true,
+  "linear_hopf_candidates": [
+    {
+      "width_over_q": 0.0027828377265376215,
+      "width": 1.9989858668978746e-05,
+      "state": [
+        -6.378571074921988e-05,
+        0.0,
+        0.0002857787334118784
+      ],
+      "angular_frequency": 28.801259544494084,
+      "linear_period": 0.2181566155977626,
+      "eigenvalues": [
+        {
+          "real": -6.563638521583925e-13,
+          "imag": 28.80125954449376
+        },
+        {
+          "real": -6.563638521583925e-13,
+          "imag": -28.80125954449376
+        },
+        {
+          "real": -14.4919643476072,
+          "imag": 0.0
+        }
+      ],
+      "interpretation": "Linear Hopf candidate; nonlinear criticality and a nondegeneracy proof are not supplied"
+    }
+  ],
+  "periodic_orbits": [
+    {
+      "width": 7.183264219236356e-07,
+      "width_over_q": 9.999999999999999e-05,
+      "period": 1.655321686629365,
+      "section_returns_per_period": 4,
+      "initial_recurrence_error": 1.1008699031726358e-14,
+      "scaled_closure_error": 4.6751748104883413e-17,
+      "state": [
+        -2.4719420706758166e-06,
+        0.00023541007588447042,
+        0.0002180558482757234
+      ],
+      "floquet_multipliers": [
+        {
+          "real": 1.0000000000236207,
+          "imag": 0.0,
+          "absolute": 1.0000000000236207
+        },
+        {
+          "real": -0.7100919505665912,
+          "imag": 0.0,
+          "absolute": 0.7100919505665912
+        },
+        {
+          "real": -5.376039289026556e-11,
+          "imag": 0.0,
+          "absolute": 5.376039289026556e-11
+        }
+      ],
+      "method": "DOP853 shooting with analytic variational matrix and equilibrium-displacement phase section",
+      "rtol": 1e-12,
+      "max_step": 0.005,
+      "interpretation": "Numerical periodic orbit and stability evidence, not a validated proof"
+    },
+    {
+      "width": 7.183264219236356e-06,
+      "width_over_q": 0.001,
+      "period": 0.22251727171613284,
+      "section_returns_per_period": 1,
+      "initial_recurrence_error": 3.5894212216569735e-16,
+      "scaled_closure_error": 3.4501486916025534e-17,
+      "state": [
+        -2.403814185611999e-05,
+        0.0007261817134998386,
+        0.0002500285384386405
+      ],
+      "floquet_multipliers": [
+        {
+          "real": 0.9999999999998045,
+          "imag": 0.0,
+          "absolute": 0.9999999999998045
+        },
+        {
+          "real": -0.6579074248921382,
+          "imag": 0.0,
+          "absolute": 0.6579074248921382
+        },
+        {
+          "real": -0.06044523350129841,
+          "imag": 0.0,
+          "absolute": 0.06044523350129841
+        }
+      ],
+      "method": "DOP853 shooting with analytic variational matrix and equilibrium-displacement phase section",
+      "rtol": 1e-12,
+      "max_step": 0.005,
+      "interpretation": "Numerical periodic orbit and stability evidence, not a validated proof"
+    }
+  ],
+  "steady_control": {
+    "width_over_q": 0.01,
+    "state": [
+      -0.0001998136839427868,
+      0.0,
+      0.0004218067066054453
+    ],
+    "eigenvalue_real_parts": [
+      -3.8177992202420103,
+      -3.8177992202420103,
+      -6.85650203140082
+    ],
+    "max_eigenvalue_imaginary": 27.614947053906544,
+    "routh_hurwitz_margin": 6692.800619735256,
+    "endpoint_error": 1.5719235732696795e-18
+  },
+  "stability_polynomial": "(lambda+a)(lambda^2+b lambda+k)+k c; a=1+I S, c=I(1-phi) Sprime",
+  "stable_iff": "b*(k+a*b+a*a)>k*c (all coefficients positive)",
+  "caveat": "A local equilibrium criterion does not rule out coexisting remote attractors"
+}

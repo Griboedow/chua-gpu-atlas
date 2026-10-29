@@ -103,6 +103,10 @@ Not in the sampled reference trajectory. An illustrative reconstruction with `C=
 
 Thus this example is compatible with small strain, small cis fraction and tensile loading within the ideal equations. It still requires stiffness/damping outside the authors' numerical range, a very fine switching threshold, and a device-specific dimensional calibration. Robustness to realistic switching width, contact effects, noise and additional material relaxation remains unresolved. These could remove the regime.
 
+## Finite switching width and older relay models
+
+The [follow-up notebook](lce-slider-switching.md) tests a logistic switch. Narrow transitions retain positive leading exponents; wider examples settle onto independently closed stable periodic orbits or a stable equilibrium. It derives an equilibrium stability condition and an exact jerk representation, then compares three older relay models. Device calibration and exact-model novelty remain unresolved.
+
 ## Literature status and remaining questions
 
 Exact-title, DOI, fiber-slider, self-flickering, chaos and Lyapunov searches did not identify a matching result in the checked sources. The article itself cites other chaotic LCE systems; the material class is not unexplored. Relay chaos and numerical effects of digitally sampled switching are also established [2]. We have not completed an equivalence search through all older relay models.
@@ -111,7 +115,7 @@ An OpenAlex forward-citation snapshot is included. It returned three records, in
 
 The most useful next checks are:
 
-1. Replace the ideal switch by a finite-width response and test whether positive exponents survive.
+1. Extend the completed finite-width sensitivity experiment to a physically measured response and additional initial states.
 2. Continue periodic orbits and locate the bifurcations or grazing events behind the folded return map.
 3. Determine whether an equivalent relay system and this parameter regime have already been analyzed.
 4. Establish realistic dimensional parameters, switching resolution and omitted material timescales.

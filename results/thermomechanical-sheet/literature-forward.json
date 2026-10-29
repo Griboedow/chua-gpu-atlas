@@ -1,0 +1,64 @@
+{
+  "retrieved_utc": "2026-10-29",
+  "target": "https://openalex.org/W4412887194",
+  "cited_by_count": 5,
+  "returned_total": 5,
+  "records": [
+    {
+      "title": "Self-oscillation of a thin-walled cantilever enabled by a minimal liquid crystal elastomer switching actuator",
+      "doi": "https://doi.org/10.1016/j.tws.2026.114970",
+      "year": 2026,
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      }
+    },
+    {
+      "title": "Photothermally driven self-excited planar oscillator with a three-line tensile structure using liquid crystal elastomer fibers",
+      "doi": "https://doi.org/10.1016/j.tws.2026.115328",
+      "year": 2026,
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      }
+    },
+    {
+      "title": "Explaining the Origin of Negative Poisson's Ratio in Amorphous Networks With Machine Learning",
+      "doi": "https://doi.org/10.1002/aidi.202500224",
+      "year": 2026,
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.1002/aidi.202500224",
+        "any_repository_has_fulltext": false
+      }
+    },
+    {
+      "title": "Convolutional neural network-accelerated thermal field inversion",
+      "doi": "https://doi.org/10.7498/aps.75.20251763",
+      "year": 2026,
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://wulixb.iphy.ac.cn/cn/article/pdf/preview/10.7498/aps.75.20251763.pdf",
+        "any_repository_has_fulltext": false
+      }
+    },
+    {
+      "title": "Metamaterials: Synergy and integration of thermo-mechanical functions",
+      "doi": "https://doi.org/10.1360/sspma-2025-0562",
+      "year": 2026,
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      }
+    }
+  ],
+  "caveat": "Index leads, not verified complete citations or evidence of novelty"
+}
