@@ -1,0 +1,76 @@
+{
+  "settings": {
+    "dt": 0.0025,
+    "transient": 4000,
+    "duration": 8000
+  },
+  "timing": {
+    "wall_seconds": 531.7847372000033,
+    "gpu_seconds": 522.9813970240027
+  },
+  "backend": {
+    "device": "NVIDIA GeForce GTX 1080",
+    "precision": "float64",
+    "integrator": "RK4",
+    "fast_math": false,
+    "oscillators": 4,
+    "model": "Leyva et al. 2026 Eqs 10-12, deterministic Fourier approximation, global phase removed",
+    "coefficients": [
+      [
+        2.921,
+        2.07,
+        -0.781,
+        0.312
+      ],
+      [
+        -5.351,
+        0.223,
+        3.009,
+        -1.359
+      ]
+    ],
+    "time": "s=t/L^3; actual positions L*normalized_positions; L=10 gives far-field separation if normalized minimum>=1"
+  },
+  "experiment": {
+    "eta": 1.082,
+    "seed": 2026102948,
+    "changes_equations": true,
+    "description": "Local neighborhoods of the attracting periodic orbit, random global angles, and eight previously sampled starts; fractions are not basin-volume estimates."
+  },
+  "trajectories": 64,
+  "valid": 64,
+  "candidate_indices": [
+    11,
+    17,
+    18,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    33,
+    34,
+    35,
+    38,
+    39,
+    40,
+    42,
+    44,
+    45,
+    46,
+    47,
+    52,
+    54,
+    56,
+    57,
+    59,
+    60,
+    62
+  ],
+  "max_lle": 0.07950597479626947,
+  "criterion": "mean > .002 and all four windows > .001; late flow speed > 1e-5; status 0",
+  "interpretation": "Finite-time candidates in the specified deterministic Fourier model; actual coefficients are retained in the arrays. Not proof of novelty or physical chaos."
+}

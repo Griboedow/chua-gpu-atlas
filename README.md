@@ -178,6 +178,8 @@ An [optical-feedback notebook](docs/photofeedback-research.md) develops an expli
 
 A [magnetic energy audit](docs/meminductor-energy-audit.md) excludes recurrent chaos under fixed DC drive in a reciprocal moving-coil model even when electrical response is retained. The source's printed force/flux pair fails that reciprocity test, so this conditional result does not settle its optical-feedback experiment. The notebook distinguishes measured-device questions from illustrative model completions.
 
+A [periodic-window study](docs/synchronematic-bifurcations.md) resolves fold candidates, a stable period-doubled branch and competing numerical outcomes in the four-oscillator control family. A separate [two-oscillator first integral](docs/synchronematic-pair-integral.md) explains an additional dimensional constraint in the pair model. These are mathematical model analyses; the control parameter changes the interaction law.
+
 The [candidate queue](docs/candidate-queue.md) records additional physical systems, known prior results, dimensional exclusions and missing source material. An absence of search hits is never treated as proof of novelty.
 
 A second positive lead is a **light-switching elastomer slider**. Its [research notebook](docs/lce-slider-research.md) reduces the published equations to four effective parameters and uses analytic flight segments, GPU return maps and independent DOP853 checks. An expanded search finds seven parameter tuples with persistent positive exponents, beyond the original paper's numerical stiffness/damping ranges. The representative trajectory remains small in strain and molecular concentration; realistic switching and publication novelty still need investigation.

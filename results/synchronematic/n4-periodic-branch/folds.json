@@ -1,0 +1,140 @@
+{
+  "changes_equations": true,
+  "folds": [
+    {
+      "eta": 1.0734897025810743,
+      "period": 5.397039029061432,
+      "state": [
+        -1.9734451727744102,
+        -0.7518708035406155,
+        -1.9994691377738103,
+        -1.7275868167378077,
+        1.4418838400390597,
+        -2.490211669293395,
+        1.4312274823079967
+      ],
+      "winding": [
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closure_residual": 2.805644605530233e-11,
+      "iterations": 16,
+      "neutral_multiplier": {
+        "real": 0.9999999999841758,
+        "imag": 1.5419109900088907e-06
+      },
+      "transverse_multipliers": [
+        {
+          "real": 0.9999999999841758,
+          "imag": -1.5419109900088907e-06,
+          "absolute": 0.9999999999853645
+        },
+        {
+          "real": 0.8053087170757691,
+          "imag": 0.0,
+          "absolute": 0.8053087170757691
+        },
+        {
+          "real": 0.00038149628558490663,
+          "imag": 0.0,
+          "absolute": 0.00038149628558490663
+        },
+        {
+          "real": 5.84515079771436e-07,
+          "imag": 0.0,
+          "absolute": 5.84515079771436e-07
+        },
+        {
+          "real": 4.061595843457006e-09,
+          "imag": 0.0,
+          "absolute": 4.061595843457006e-09
+        },
+        {
+          "real": 7.888432197426366e-16,
+          "imag": 0.0,
+          "absolute": 7.888432197426366e-16
+        }
+      ],
+      "spectral_radius": 0.9999999999853644,
+      "boundary": "lower",
+      "root_message": "The solution converged.",
+      "condition": "periodic closure, fixed phase, transverse Floquet multiplier +1",
+      "radau_closure_error": 1.318500864044836e-12,
+      "radau_monodromy_difference": 4.069189429856124e-12,
+      "radau_transverse_unit_error": 3.1768587760439004e-11
+    },
+    {
+      "eta": 1.0827137055287535,
+      "period": 5.544237142569923,
+      "state": [
+        -1.894099829612963,
+        -0.7128215636768573,
+        -1.9087505703892664,
+        -1.7309574455380172,
+        1.4424434247063405,
+        -2.458485073019424,
+        1.431602180925199
+      ],
+      "winding": [
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closure_residual": 9.923106780718172e-11,
+      "iterations": 16,
+      "neutral_multiplier": {
+        "real": 0.9999999999489506,
+        "imag": 1.556276633298494e-06
+      },
+      "transverse_multipliers": [
+        {
+          "real": 0.9999999999489506,
+          "imag": -1.556276633298494e-06,
+          "absolute": 0.9999999999501615
+        },
+        {
+          "real": 0.8056462679793872,
+          "imag": 0.0,
+          "absolute": 0.8056462679793872
+        },
+        {
+          "real": 0.005064669565609972,
+          "imag": 0.0,
+          "absolute": 0.005064669565609972
+        },
+        {
+          "real": 8.932335568337452e-07,
+          "imag": 0.0,
+          "absolute": 8.932335568337452e-07
+        },
+        {
+          "real": 3.4838126745847816e-09,
+          "imag": 0.0,
+          "absolute": 3.4838126745847816e-09
+        },
+        {
+          "real": 1.1462555946582514e-16,
+          "imag": 0.0,
+          "absolute": 1.1462555946582514e-16
+        }
+      ],
+      "spectral_radius": 0.9999999999501616,
+      "boundary": "upper",
+      "root_message": "The solution converged.",
+      "condition": "periodic closure, fixed phase, transverse Floquet multiplier +1",
+      "radau_closure_error": 4.1815439999481896e-12,
+      "radau_monodromy_difference": 3.231903633604816e-11,
+      "radau_transverse_unit_error": 8.715328458919203e-11
+    }
+  ],
+  "caveat": "Numerical fold candidates, not interval-validated bifurcations or proof of generic nondegeneracy."
+}

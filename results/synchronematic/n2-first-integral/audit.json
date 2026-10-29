@@ -1,0 +1,56 @@
+{
+  "identity": "I=log|sin(a)/sin(b)|+integral S_chi(delta)/S_theta(delta) ddelta",
+  "assumptions": "Two fixed centers; symmetric pair weight; no noise; Fourier coupling as implemented; regular invariant angular chamber",
+  "scope": "First integral reduces regular recurrent dynamics to two-dimensional level surfaces. No claim that three or four oscillators share this integral.",
+  "novelty": "Independent derivation for screening; not claimed as a new theorem or an exhaustive prior-art finding.",
+  "records": [
+    {
+      "variant": "printed",
+      "coefficients": [
+        [
+          2.921,
+          2.07,
+          -0.781,
+          0.312
+        ],
+        [
+          -5.351,
+          0.223,
+          3.009,
+          -1.359
+        ]
+      ],
+      "algebra_samples": 256,
+      "maximum_directional_identity_error": 1.7763568394002505e-15,
+      "maximum_gradient_fd_error": 1.1993446236147065e-09,
+      "trajectory_duration": 12,
+      "trajectory_invariant_drift": 1.9984014443252818e-15,
+      "minimum_abs_orientation_sine": 0.010713796598686374,
+      "minimum_phase_distance_from_boundary": 0.001027557262475054
+    },
+    {
+      "variant": "repository_numpy",
+      "coefficients": [
+        [
+          2.92076,
+          2.06954,
+          -0.78064,
+          0.312294
+        ],
+        [
+          -5.35098,
+          0.222,
+          3.00884,
+          1.359334
+        ]
+      ],
+      "algebra_samples": 256,
+      "maximum_directional_identity_error": 1.3322676295501878e-15,
+      "maximum_gradient_fd_error": 1.0479359602300065e-09,
+      "trajectory_duration": 12,
+      "trajectory_invariant_drift": 4.884981308350689e-15,
+      "minimum_abs_orientation_sine": 0.014720344000164849,
+      "minimum_phase_distance_from_boundary": 0.0011046368313140098
+    }
+  ]
+}

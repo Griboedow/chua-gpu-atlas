@@ -66,6 +66,8 @@ The retention rule requires a mean exponent above `0.002`, every one of four obs
 
 Additional small-cluster controls found no retained candidates among 1,024 starts for two oscillators with either source variant. Six preliminary three-oscillator candidates with repository coefficients also disappeared in a 16-trajectory long follow-up. Sixteen selected two-oscillator printed-variant trajectories likewise failed long follow-up. These checks narrow the numerical search without proving minimality.
 
+A later [two-oscillator first integral](synchronematic-pair-integral.md) supplies an analytical constraint behind the pair-model negative controls: regular trajectories lie on two-dimensional invariant level surfaces after common phase is removed. The cancellation holds for both coefficient signs, but does not extend directly to three or more oscillators.
+
 The reproducible reference is four-oscillator scout index **43**. Its exact geometry and initial angles are in [the independent check record](../results/synchronematic/n4-cpu-long/spectrum.json). With transient 1,000 and observation 4,000, adaptive DOP853 and thin QR give the seven-dimensional spectrum
 
 ```text
@@ -144,6 +146,8 @@ The follow-up samples 126 values from `eta=0.93` to `1.18` in steps of `0.002`, 
 An independent CPU spectrum at `eta=1.074`, with 1,000 discarded and 4,000 observed units, is `[-0.0000152, -0.044947, -0.330186, -1.079680, -2.636193, -3.565713, -6.470759]`. One approximately neutral exponent and six negative exponents support a stable periodic regime. The divergence identity error is `1.1e-11`. This is a control experiment that changes the interaction law, not a newly sampled physical parameter of the original paper.
 
 A subsequent [orbit-closure check](../results/synchronematic/n4-regular-window-cpu/recurrence.json) identifies period **`5.434302289`**, with angular residual about `2e-14` after removing common phase. The leading Floquet multipliers are approximately `1, 0.783336, 0.166123, 0.002833`; all resolved transverse multipliers lie inside the unit circle. This supplies numerical evidence for an attracting periodic orbit inside the irregular region. The smallest contracting multipliers approach floating-point resolution, and the calculation is not a validated existence proof.
+
+The subsequent [orbit-continuation notebook](synchronematic-bifurcations.md) locates two fold candidates and a period-doubling bubble, checks a stable doubled cycle with an independent solver, and probes different basins at identical parameters. At `eta=1.082`, a stable periodic orbit exists while 29 of 64 long GPU trajectories retain positive exponents. The model modification and finite-time limitations remain explicit.
 
 ## Reproduce and inspect
 

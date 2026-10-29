@@ -1,0 +1,306 @@
+{
+  "changes_equations": true,
+  "orbits": [
+    {
+      "eta": 1.078,
+      "period": 10.963633079244845,
+      "state": [
+        -1.7314038876623694,
+        1.8654972136942765,
+        1.4308625446341106,
+        -1.76987365804248,
+        1.4522560660612656,
+        0.667992194112729,
+        -1.703693943671161
+      ],
+      "winding": [
+        2,
+        -2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closure_residual": 6.572520305780927e-13,
+      "iterations": 4,
+      "neutral_multiplier": {
+        "real": 0.99999999998988,
+        "imag": 0.0
+      },
+      "transverse_multipliers": [
+        {
+          "real": 0.584941328603183,
+          "imag": 0.0,
+          "absolute": 0.584941328603183
+        },
+        {
+          "real": 0.5424538392032777,
+          "imag": 0.0,
+          "absolute": 0.5424538392032777
+        },
+        {
+          "real": 2.3858944586783217e-06,
+          "imag": 0.0,
+          "absolute": 2.3858944586783217e-06
+        },
+        {
+          "real": 5.045837157494294e-13,
+          "imag": 0.0,
+          "absolute": 5.045837157494294e-13
+        },
+        {
+          "real": -2.682148706830599e-17,
+          "imag": 0.0,
+          "absolute": 2.682148706830599e-17
+        },
+        {
+          "real": 1.6151385607159456e-17,
+          "imag": 0.0,
+          "absolute": 1.6151385607159456e-17
+        }
+      ],
+      "spectral_radius": 0.584941328603183,
+      "half_period_circular_distance": 0.10249975915246864,
+      "source_transition_index": 597,
+      "initial_period_multiple": 2,
+      "seed_return_residuals": [
+        {
+          "index": 597,
+          "residual": 0.01010696354705981
+        },
+        {
+          "index": 592,
+          "residual": 0.010469835383768425
+        },
+        {
+          "index": 594,
+          "residual": 0.9770552729549975
+        },
+        {
+          "index": 595,
+          "residual": 0.9974037550915604
+        },
+        {
+          "index": 599,
+          "residual": 1.0078264324640411
+        },
+        {
+          "index": 596,
+          "residual": 1.053602210998473
+        },
+        {
+          "index": 598,
+          "residual": 1.1110910012646364
+        },
+        {
+          "index": 593,
+          "residual": 1.594984917215002
+        }
+      ],
+      "radau_closure_error": 8.171241461241152e-13,
+      "radau_monodromy_difference": 2.7618352049785244e-11
+    },
+    {
+      "eta": 1.076,
+      "period": 5.4689922277487995,
+      "state": [
+        2.097824509910275,
+        -0.9220936470821385,
+        2.0684291908266537,
+        0.3133278610948677,
+        -1.7205942683300122,
+        0.6587356923580648,
+        -1.7139143282890021
+      ],
+      "winding": [
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closure_residual": 1.4943601911454607e-13,
+      "iterations": 2,
+      "neutral_multiplier": {
+        "real": 0.999999999997659,
+        "imag": 0.0
+      },
+      "transverse_multipliers": [
+        {
+          "real": -0.7810740998451502,
+          "imag": 0.0,
+          "absolute": 0.7810740998451502
+        },
+        {
+          "real": 0.7558140029841905,
+          "imag": 0.0,
+          "absolute": 0.7558140029841905
+        },
+        {
+          "real": -0.0009532905211325879,
+          "imag": 0.0,
+          "absolute": 0.0009532905211325879
+        },
+        {
+          "real": 6.535566044858383e-07,
+          "imag": 0.0,
+          "absolute": 6.535566044858383e-07
+        },
+        {
+          "real": 3.759618334795897e-09,
+          "imag": 0.0,
+          "absolute": 3.759618334795897e-09
+        },
+        {
+          "real": 2.0402402991979163e-16,
+          "imag": 0.0,
+          "absolute": 2.0402402991979163e-16
+        }
+      ],
+      "spectral_radius": 0.7810740998451502,
+      "half_period_circular_distance": 3.358747436608731,
+      "source_transition_index": 588,
+      "initial_period_multiple": 1,
+      "seed_return_residuals": [
+        {
+          "index": 588,
+          "residual": 5.083186117228818e-09
+        },
+        {
+          "index": 591,
+          "residual": 0.2897518569170171
+        },
+        {
+          "index": 589,
+          "residual": 0.3832963434642839
+        },
+        {
+          "index": 584,
+          "residual": 0.3872782451732232
+        },
+        {
+          "index": 586,
+          "residual": 0.4114090042394763
+        },
+        {
+          "index": 590,
+          "residual": 0.4420349829860764
+        },
+        {
+          "index": 585,
+          "residual": 0.6004335594765281
+        },
+        {
+          "index": 587,
+          "residual": 0.7661933172999085
+        }
+      ],
+      "radau_closure_error": 3.3419933487266462e-12,
+      "radau_monodromy_difference": 2.006927957154403e-11
+    },
+    {
+      "eta": 1.082,
+      "period": 5.516596799959541,
+      "state": [
+        2.4333411554391526,
+        -1.337633192366182,
+        -0.4891396649411138,
+        -2.3190620817076146,
+        -1.7088755016642254,
+        -2.4954929974884053,
+        1.4371668168639091
+      ],
+      "winding": [
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closure_residual": 2.042810365310288e-14,
+      "iterations": 2,
+      "neutral_multiplier": {
+        "real": 1.0000000000000462,
+        "imag": 0.0
+      },
+      "transverse_multipliers": [
+        {
+          "real": 0.7938024491028929,
+          "imag": 0.0,
+          "absolute": 0.7938024491028929
+        },
+        {
+          "real": -0.23010785908535605,
+          "imag": 0.0,
+          "absolute": 0.23010785908535605
+        },
+        {
+          "real": -0.012694057068026237,
+          "imag": 0.0,
+          "absolute": 0.012694057068026237
+        },
+        {
+          "real": 8.439125417360662e-07,
+          "imag": 0.0,
+          "absolute": 8.439125417360662e-07
+        },
+        {
+          "real": 3.7181545526209845e-09,
+          "imag": 0.0,
+          "absolute": 3.7181545526209845e-09
+        },
+        {
+          "real": 2.860761588571527e-16,
+          "imag": 0.0,
+          "absolute": 2.860761588571527e-16
+        }
+      ],
+      "spectral_radius": 0.7938024491028929,
+      "half_period_circular_distance": 3.273138863664966,
+      "source_transition_index": 610,
+      "initial_period_multiple": 1,
+      "seed_return_residuals": [
+        {
+          "index": 610,
+          "residual": 1.108170392572254e-09
+        },
+        {
+          "index": 614,
+          "residual": 0.20917877251264821
+        },
+        {
+          "index": 612,
+          "residual": 0.2233722670181899
+        },
+        {
+          "index": 615,
+          "residual": 0.2501939969218082
+        },
+        {
+          "index": 613,
+          "residual": 0.26282321275750226
+        },
+        {
+          "index": 611,
+          "residual": 0.40482872010130166
+        },
+        {
+          "index": 608,
+          "residual": 0.4481512745413424
+        },
+        {
+          "index": 609,
+          "residual": 1.5848213548718224
+        }
+      ],
+      "radau_closure_error": 1.7474910407599964e-12,
+      "radau_monodromy_difference": 1.425304319013776e-11
+    }
+  ],
+  "caveat": "Shooting/Floquet evidence in the explicit homotopy; not a validated mathematical proof or device calibration."
+}

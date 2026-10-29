@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "purpose": "Screen additional concrete thermo-magneto-mechanical oscillators; no chaos discovery claimed",
+  "query_families": [
+    "10.1016/j.applthermaleng.2026.129703",
+    "Kaneko Souza Kawanami thermomagnetic motor chaos oscillation",
+    "thermomagnetic motor chaotic",
+    "thermomagnetic Lyapunov",
+    "thermomagnetic pendulum chaos",
+    "Dynamics of the Thermomagnetic Pendulum chaos",
+    "2606.03126 chaos Lyapunov",
+    "Ryan Thompson Nilay Kant thermomagnetic chaotic"
+  ],
+  "candidates": [
+    {
+      "id": "10.1016/j.applthermaleng.2026.129703",
+      "source": "https://www.sciencedirect.com/science/article/pii/S1359431126000116",
+      "authors": "Guilherme Hitoshi Kaneko; Alisson Cocci de Souza; Tsuyoshi Kawanami",
+      "title": "Comparative study of linear thermomagnetic motors based on return mechanism: Spring, gravity, and purely magnetic",
+      "read_scope": "Publisher-indexed introduction, configuration and convergence sections, not the complete force/thermal equations",
+      "dissertation": "https://meiji.repo.nii.ac.jp/record/2002351/files/kaneko_2026_rikou.pdf",
+      "retrieval_limits": "Direct publisher access returned 403. Dissertation web retrieval returned 429; direct download returned 503. Search indexing advertised an author-uploaded ResearchGate copy, but the opened landing page said no full text was available; equations were not recovered there.",
+      "decision": "Retain pending complete spatial/hybrid equations. No simulation performed."
+    },
+    {
+      "id": "arXiv:2606.03126v1",
+      "source": "https://arxiv.org/html/2606.03126v1",
+      "authors": "Ryan Thompson; Ethan Wang; Nilay Kant",
+      "title": "Dynamics of the Thermomagnetic Pendulum",
+      "read_scope": "Full preprint including equations 1-18, numerical method, parameter tables, results, conclusion and references",
+      "model": "Pendulum angle and angular velocity coupled to a spatial temperature field; algebraic local magnetization with mean-field demagnetization; volume-integrated magnetic torque",
+      "reported_evidence": "A 20-second numerical trajectory described as converging to periodic motion; no Lyapunov or chaotic-attractor calculation located in the preprint",
+      "author_page_checked": "https://sites.mst.edu/nilaykant/research/",
+      "decision": "Retain as an independent spatial-solver project. No lumped-temperature model substituted and no simulation performed."
+    }
+  ],
+  "novelty_limit": "Bounded targeted search only. No complete forward-citation or older-equivalent-model audit. Absence of a matching search result is not proof of novelty."
+}
