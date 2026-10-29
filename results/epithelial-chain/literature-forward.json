@@ -1,0 +1,109 @@
+{
+  "queried_on": "2026-10-29",
+  "source": "OpenAlex W4406214925, metadata only; primary follow-ups documented separately",
+  "records": [
+    {
+      "title": "Mechanochemical Feedback Drives Complex Inertial Dynamics in Active Solids",
+      "doi": "https://doi.org/10.1103/19rh-3whq",
+      "id": "https://openalex.org/W4417268434",
+      "date": "2025-11-14",
+      "url": {
+        "id": "pmh:oai:arXiv.org:2505.18272",
+        "doi": null,
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2505.18272",
+        "pdf_url": "https://arxiv.org/pdf/2505.18272",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": null,
+        "raw_type": "text"
+      }
+    },
+    {
+      "title": "Cell Stiffness-Mediated Mechanochemical Waves in Three-Dimensional Tissues",
+      "doi": "https://doi.org/10.1103/r4fs-4qqk",
+      "id": "https://openalex.org/W4413926303",
+      "date": "2025-08-07",
+      "url": null
+    },
+    {
+      "title": "Spontaneous cephalic oscillations in vertebrate embryos support the Inside Story scenario of human development and evolution",
+      "doi": "https://doi.org/10.1038/s41598-026-50217-7",
+      "id": "https://openalex.org/W7158750662",
+      "date": "2026-04-29",
+      "url": {
+        "id": "doi:10.1038/s41598-026-50217-7",
+        "doi": "https://doi.org/10.1038/s41598-026-50217-7",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41598-026-50217-7",
+        "pdf_url": "https://www.nature.com/articles/s41598-026-50217-7.pdf",
+        "source": {
+          "id": "https://openalex.org/S196734849",
+          "display_name": "Scientific Reports",
+          "issn_l": "2045-2322",
+          "issn": [
+            "2045-2322"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-c",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Reports",
+        "raw_type": "journal-article"
+      }
+    }
+  ]
+}

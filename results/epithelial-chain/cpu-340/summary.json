@@ -1,0 +1,38 @@
+{
+  "source": "results\\epithelial-chain\\n16-scout",
+  "source_index": 340,
+  "parameters": [
+    0.4784887829785164,
+    1.079246961084412,
+    6.530724092717247,
+    1.288915621882375
+  ],
+  "cells": 16,
+  "method": "DOP853 analytic tangent, renormalized each <=1 unit",
+  "initialization": "Saved GPU final state, followed by additional transient",
+  "transient": 500,
+  "duration": 1000,
+  "rtol": 1e-11,
+  "atol": 9.999999999999999e-14,
+  "max_step": 0.1,
+  "lle": 0.00012387054295866505,
+  "lle_windows": [
+    0.0001587074030066682,
+    0.00013493242849826182,
+    0.00011201543136694082,
+    8.982690896278944e-05
+  ],
+  "domain_minima": [
+    0.639158594952928,
+    0.26041610361486267,
+    0.7594369476463307
+  ],
+  "max_abs_state": 0.7395841881220152,
+  "domain_columns": [
+    "cell length",
+    "effective rest length",
+    "relative concentration"
+  ],
+  "wall_seconds": 30.88005239999984,
+  "rhs_calls": 204828
+}

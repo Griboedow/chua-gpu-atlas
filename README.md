@@ -192,6 +192,8 @@ The [weak-light limit](docs/lce-slider-relay-limit.md) reduces the ideal slider 
 
 A separate [electrical rheostat oscillator](docs/rheostat-research.md) yields a negative chaos search across 4,096 scouts and 24 long checks. Its exact three-parameter reduction exposes a finite thermal-rate instability window. Independent periodic-orbit closure resolves the strongest weak positive exponent, and near-onset amplitudes agree with the quadratic-drag scaling.
 
+A [16-cell epithelial-chain audit](docs/epithelial-chain-audit.md) separates mathematical expansion from physical validity: all 343 preliminary positive-exponent candidates have negative cell lengths. A source audit of [light-mediated operators](docs/light-operators-audit.md) identifies an exact equivalence between another published photothermal oscillator and our existing relay limit; its six-state coupled version remains a separate candidate.
+
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.
 
 ## License

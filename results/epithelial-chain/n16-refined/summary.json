@@ -1,0 +1,80 @@
+{
+  "settings": {
+    "cells": 16,
+    "transient": 1000,
+    "duration": 2000,
+    "max_dt": 0.0025,
+    "time": "s=t/sqrt(tau_a*tau_c)"
+  },
+  "backend": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false,
+    "model": "Parmar et al. 2025 discrete fixed-end chain",
+    "cells": 16,
+    "integrator": "FP64 RK4, analytic tangent"
+  },
+  "timing": {
+    "wall_seconds": 271.04649020000215,
+    "gpu_seconds": 266.46841545599926
+  },
+  "parameter_columns": [
+    "rho=sqrt(tau_a*tau_c)",
+    "ratio=sqrt(tau_a/tau_c)",
+    "alpha",
+    "beta"
+  ],
+  "domain_columns": [
+    "min_cell_length",
+    "min_rest_length",
+    "min_concentration_ratio",
+    "max_abs_state"
+  ],
+  "domain_note": "Minima over observation only; positive lengths/concentration necessary, not sufficient, for physical validity",
+  "parent": "results/epithelial-chain/n16-scout",
+  "parent_indices": [
+    297,
+    296,
+    127,
+    326,
+    340,
+    484,
+    25,
+    24,
+    805,
+    560,
+    341,
+    983,
+    982,
+    910,
+    561,
+    65,
+    511,
+    787,
+    268,
+    804,
+    425,
+    269,
+    64,
+    816
+  ],
+  "selection": "Top 4 mean exponents plus top 20 with positive cell lengths and concentration; not all preliminary mathematical candidates",
+  "trajectories": 24,
+  "candidate_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "domain_clear_candidates": [],
+  "domain_clear_count": 16,
+  "status_counts": {
+    "0": 24
+  },
+  "criterion": "Mean > .005 and all four windows > .002, in normalized time; finite-time screen only"
+}

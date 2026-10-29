@@ -1,0 +1,45 @@
+{
+  "source_doi": "10.1038/s41467-025-66395-3",
+  "supplement": "41467_2025_66395_MOESM1_ESM.pdf",
+  "inspected_pages": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "equations": "SI 6,10,13,17--20; continuous heat state at switching events",
+  "mapping": "s=t/tau_heat; U=delta-w_bar/P_bar,V=-theta*w_bar_dot/P_bar,Y=w_L_bar/P_bar; k=theta^2,b=beta_bar*theta,delta=w0_bar/P_bar",
+  "algebra_max_abs_error": 5.684341886080802e-14,
+  "passed": true,
+  "published_single_reference": {
+    "theta": 20,
+    "damping_bar": 0.8,
+    "k": 400,
+    "b": 16,
+    "beam_length_mm": 25,
+    "threshold_mm": 5,
+    "lambda_per_mW": 0.0026
+  },
+  "existing_relay_candidate_mapping": {
+    "theta": 28.566011554383405,
+    "damping_bar": 0.47229829272795315,
+    "delta": 0.030904198409989477,
+    "k": 816.0170161251663,
+    "b": 13.491678487182265,
+    "illustrative_power_mW": 100,
+    "illustrative_threshold_mm": 0.2008772896649316,
+    "caveat": "Mechanical/thermal ratio and damping changed from the source reference; ideal step beam, no calibrated experimental prediction"
+  },
+  "novelty": "Exact equivalence to an already investigated relay limit, not a third independent chaotic ODE family",
+  "source_ambiguity": "SI exponential formulas give special step responses without arbitrary initial temperatures; a reset implementation would be a different hybrid model"
+}

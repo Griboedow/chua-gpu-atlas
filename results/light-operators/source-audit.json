@@ -1,0 +1,12 @@
+{
+  "retrieved_on": "2026-10-29",
+  "doi": "10.1038/s41467-025-66395-3",
+  "filename": "41467_2025_66395_MOESM1_ESM.pdf",
+  "sha256": "fce7dce20d7f9d3780f1c6a6df8b513b233603022662dfe991229ef4df103ec5",
+  "bytes": 4763623,
+  "pages": 56,
+  "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12722257/supplementaryFiles",
+  "source_access": "Streamed official ZIP and extracted the named supplement; movies discarded. Local PDF not redistributed.",
+  "inspected": "Source model pp34-47; pages37 and40 visually checked.",
+  "novelty_audit_status": "Exact single-operator algebraic equivalence established to an existing classical relay family; no claim of an exhaustive audit for the six-state coupled model."
+}

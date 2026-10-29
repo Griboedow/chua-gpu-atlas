@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "exact_model": "Parmar et al. 2025 discrete fixed-end Eqs.1--4, arXiv2408.02806v3",
+  "queries": [
+    "exact title + chaos",
+    "Parmar Dow chaos epithelia",
+    "myosin tanh chaos",
+    "epithelial mechanochemical chaos tanh"
+  ],
+  "scope": "No matching exact-chain chaos result located in this bounded check; no proof of absence or priority. Broad active-tissue chaos is already established.",
+  "primary_checked": [
+    {
+      "doi": "10.1103/PRXLife.3.013002",
+      "level": "Full author manuscript v3, source equation page visually checked"
+    },
+    {
+      "doi": "10.1103/19rh-3whq",
+      "level": "Primary arXiv2505.18272v2 full equations: inertia and cubic chemical reaction; explicitly reports chaos"
+    },
+    {
+      "doi": "10.1103/r4fs-4qqk",
+      "level": "Primary abstract only; 3D active vertex model, not our discrete scalar chain"
+    },
+    {
+      "doi": "10.1038/s41598-026-50217-7",
+      "level": "Primary article, embryonic oscillation context"
+    },
+    {
+      "doi": "10.1038/srep20838",
+      "level": "Primary abstract explicitly reports spatiotemporal chaos"
+    },
+    {
+      "doi": "10.15479/at:ista:12964",
+      "level": "Author thesis repository abstract; full thesis not audited"
+    }
+  ]
+}
