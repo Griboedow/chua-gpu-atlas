@@ -1,0 +1,115 @@
+{
+  "symmetry": "T(xm,vm,ym,xp,vp,yp)=(xp,vp,yp,1-xm,-vm,-ym+1); (dm,dp)->(dp,1-dm)",
+  "symmetry_max_error": 9.094947017729282e-13,
+  "fourth_power_error": 1.1102230246251565e-16,
+  "jerk_identity_error": 9.549694368615746e-12,
+  "exact_symmetry_at_fixed_parameters": "C4 when dm=dp=1/2; otherwise maps parameter-related systems",
+  "jerk_pair": "P(D)xm=k H(xp-dp); P(D)xp=k H(dm-xm); P(D)=(D+1)(D^2+bD+k)",
+  "divergence": "-2*(b+1); each transverse saltation determinant is 1",
+  "boundedness": "Thermal fractions in [0,1]; stable forced mechanical filters for k,b>0",
+  "no_branch_equilibrium": "For 0<dm,dp<1, branch equilibria require xm=xp and xp=1-xm with xm,xp in {0,1}, a contradiction. This does not exclude a Filippov equilibrium on the intersection of switch surfaces.",
+  "smooth_equilibrium_analysis": {
+    "reference_index": 1026,
+    "parameters": [
+      74.1567393414624,
+      1.784180421282182,
+      0.4139517339970917,
+      0.25683679452165964
+    ],
+    "width_005": {
+      "equilibrium": [
+        0.4193068460911681,
+        0.0,
+        0.4193068460911681,
+        0.2552086970143666,
+        0.0,
+        0.2552086970143666
+      ],
+      "gain_product": 1851.2655413182092,
+      "eigenvalues": [
+        [
+          10.372572881754028,
+          8.196104025750692
+        ],
+        [
+          10.372572881754028,
+          -8.196104025750692
+        ],
+        [
+          -0.9208424676243078,
+          16.376523622067538
+        ],
+        [
+          -0.9208424676243078,
+          -16.376523622067538
+        ],
+        [
+          -12.235910835411893,
+          8.180419596316852
+        ],
+        [
+          -12.235910835411893,
+          -8.180419596316852
+        ]
+      ],
+      "characteristic_scaled_residual": 1.2692598785936094e-22
+    },
+    "critical_gain_product": 11.774691431556933,
+    "linear_Hopf_candidate_width": 0.06326084634401859,
+    "angular_frequency": 5.160914037043095,
+    "characteristic": "[(lambda+1)(lambda^2+b*lambda+k)]^2+k^2*a_minus*a_plus",
+    "caveat": "A simple imaginary pair is a linear Hopf candidate, not a nonlinear bifurcation proof or chaos boundary; logistic optical law is an explicit model modification"
+  },
+  "source_parameter_periodic_control": {
+    "parameters": [
+      400.0,
+      16.0,
+      0.2005347593582888,
+      0.2
+    ],
+    "section_state": [
+      0.2005347593582888,
+      0.8645005477235025,
+      0.25112656916492393,
+      0.2956479452254807,
+      0.6534938540862345,
+      0.31779147282670295
+    ],
+    "return_state": [
+      0.2005347593582888,
+      0.8645005477235025,
+      0.25112656916492393,
+      0.2956479452254807,
+      0.6534938540862345,
+      0.31779147282670295
+    ],
+    "period": 1.8608154587727967,
+    "event_count": 4,
+    "closure_error": 0.0,
+    "poincare_eigenvalues": [
+      [
+        -0.010166032950416532,
+        0.0
+      ],
+      [
+        -3.240870223037968e-06,
+        0.0
+      ],
+      [
+        4.988236226035904e-07,
+        0.0
+      ],
+      [
+        -6.705665465483349e-08,
+        0.0
+      ],
+      [
+        -3.0267305754414516e-07,
+        0.0
+      ]
+    ],
+    "spectral_radius": 0.010166032950416532,
+    "caveat": "Numerical stable periodic control of the continuous-heat interpretation; very small multipliers have limited relative precision"
+  },
+  "passed": true
+}

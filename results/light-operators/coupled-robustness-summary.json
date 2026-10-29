@@ -1,0 +1,53 @@
+{
+  "method": "Independent random starts; all four parameters multiplied by exp(uniform(-j,j)); fractions are not basin probabilities",
+  "groups": [
+    {
+      "reference": 1026,
+      "log_parameter_jitter": 0.0,
+      "retained": 32,
+      "runs": 32
+    },
+    {
+      "reference": 1026,
+      "log_parameter_jitter": 0.001,
+      "retained": 31,
+      "runs": 32
+    },
+    {
+      "reference": 1026,
+      "log_parameter_jitter": 0.01,
+      "retained": 23,
+      "runs": 32
+    },
+    {
+      "reference": 1026,
+      "log_parameter_jitter": 0.03,
+      "retained": 14,
+      "runs": 32
+    },
+    {
+      "reference": 3054,
+      "log_parameter_jitter": 0.0,
+      "retained": 32,
+      "runs": 32
+    },
+    {
+      "reference": 3054,
+      "log_parameter_jitter": 0.001,
+      "retained": 32,
+      "runs": 32
+    },
+    {
+      "reference": 3054,
+      "log_parameter_jitter": 0.01,
+      "retained": 32,
+      "runs": 32
+    },
+    {
+      "reference": 3054,
+      "log_parameter_jitter": 0.03,
+      "retained": 32,
+      "runs": 32
+    }
+  ]
+}

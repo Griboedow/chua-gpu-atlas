@@ -192,7 +192,9 @@ The [weak-light limit](docs/lce-slider-relay-limit.md) reduces the ideal slider 
 
 A separate [electrical rheostat oscillator](docs/rheostat-research.md) yields a negative chaos search across 4,096 scouts and 24 long checks. Its exact three-parameter reduction exposes a finite thermal-rate instability window. Independent periodic-orbit closure resolves the strongest weak positive exponent, and near-onset amplitudes agree with the quadratic-drag scaling.
 
-A [16-cell epithelial-chain audit](docs/epithelial-chain-audit.md) separates mathematical expansion from physical validity: all 343 preliminary positive-exponent candidates have negative cell lengths. A source audit of [light-mediated operators](docs/light-operators-audit.md) identifies an exact equivalence between another published photothermal oscillator and our existing relay limit; its six-state coupled version remains a separate candidate.
+A [16-cell epithelial-chain audit](docs/epithelial-chain-audit.md) separates mathematical expansion from physical validity: all 343 preliminary positive-exponent candidates have negative cell lengths. A source audit of [light-mediated operators](docs/light-operators-audit.md) identifies an exact equivalence between another published single photothermal oscillator and our existing relay limit.
+
+The [six-state coupled optical operators](docs/coupled-operators-research.md) now provide a third independently checked numerical lead: 4,096 scouts, 436 long follow-ups, independent CPU spectra and a positive smooth optical-profile control. Their physical projections, Poincare sections and rotation GIF are included. The result concerns a continuous-heat interpretation of the published equations at changed parameters; novelty and experimental realization remain unconfirmed.
 
 An additional [geometry search](docs/attractor-geometry.md) asks whether a candidate has a substantially different shape and dynamical organization. A comparison figure, rotation GIF and finite-spectrum dimension estimates establish a baseline from existing data; they do not certify a new attractor type.
 

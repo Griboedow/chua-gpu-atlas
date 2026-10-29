@@ -1,0 +1,17 @@
+{
+  "affine_vs_DOP853": 5.706546346573305e-14,
+  "fixed_time_saltation_jacobian_error": 8.988324182168661e-10,
+  "fixed_time_events": 2,
+  "determinant_log_error": 6.252776074688882e-13,
+  "gpu_cpu_12_event_state_error": 3.952393967665557e-14,
+  "gpu_cpu_12_event_lle_error": 7.147060721024445e-15,
+  "gpu_status": 0,
+  "parameters": [
+    400.0,
+    16.0,
+    0.2005347593582888,
+    0.2
+  ],
+  "boundary_restart_error": 3.8191672047105385e-14,
+  "passed": true
+}
