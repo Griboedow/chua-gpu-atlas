@@ -176,6 +176,8 @@ The next pass found a stronger candidate: **four synchronematic colloid oscillat
 
 An [optical-feedback notebook](docs/photofeedback-research.md) develops an explicitly assumed response model for the physical meminductor question. It identifies linear instability boundaries and sustained oscillation, but none of its 12 preliminary chaos candidates survive long follow-up. Both positive and negative results are reproducible from the included code and compact data.
 
+A [magnetic energy audit](docs/meminductor-energy-audit.md) excludes recurrent chaos under fixed DC drive in a reciprocal moving-coil model even when electrical response is retained. The source's printed force/flux pair fails that reciprocity test, so this conditional result does not settle its optical-feedback experiment. The notebook distinguishes measured-device questions from illustrative model completions.
+
 The [candidate queue](docs/candidate-queue.md) records additional physical systems, known prior results, dimensional exclusions and missing source material. An absence of search hits is never treated as proof of novelty.
 
 A second positive lead is a **light-switching elastomer slider**. Its [research notebook](docs/lce-slider-research.md) reduces the published equations to four effective parameters and uses analytic flight segments, GPU return maps and independent DOP853 checks. An expanded search finds seven parameter tuples with persistent positive exponents, beyond the original paper's numerical stiffness/damping ranges. The representative trajectory remains small in strain and molecular concentration; realistic switching and publication novelty still need investigation.

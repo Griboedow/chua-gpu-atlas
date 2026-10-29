@@ -14,9 +14,11 @@ $$E=\tfrac12\dot x^2+U(x),\qquad \dot E=-b\dot x^2.$$
 
 This excludes a sustained non-equilibrium attractor in a compact interior region of that mechanical model. It does not exclude the experimentally observed oscillation, because the experiment includes additional feedback physics.
 
-An electrical starting point for a current source feeding a coil branch and a photoresistor branch is
+Combining the printed flux approximation `Phi=L(x)*i` with a current source feeding a coil branch and a photoresistor branch gives the phenomenological electrical closure
 
 $$L(x)\dot i=R_p I_0-(R_s+R_p)i-L'(x)i\dot x.$$
+
+**Subsequent consistency audit:** this closure omits permanent-magnet flux linkage. Paired with the paper's linear-in-current force, it is not a complete reciprocal magnetic transducer. The [energy and reciprocity audit](meminductor-energy-audit.md) derives the missing back-EMF issue and an exact exclusion for a reciprocal model under fixed DC drive. The assumed optical model below remains explicitly phenomenological; none of its archived data is retroactively interpreted as a calibrated passive circuit simulation.
 
 Here an LED voltage drop has been folded into an approximate branch resistance; it would need separate treatment in a fitted model. With the reported order of magnitude `L <= 0.15 H`, `Rs ~= 6000 ohm` and `Rp >= 2500 ohm`, the electrical relaxation time is at most about `18 microseconds`, much shorter than the mechanical period. This alone does not rule out a coupled instability: feedback gain and the motional term also matter. It does make an explicit model of the response delays necessary.
 

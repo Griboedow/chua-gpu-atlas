@@ -126,6 +126,8 @@ This conclusion does **not** contradict the coupled-device experiment: its windi
 
 The most useful next question for this candidate is therefore **which measured feedback timescale supplies the energy and the additional effective state**, followed by bifurcation analysis of that explicit model. We did not substitute an arbitrary delay equation and label its attractor a discovery in the published device. Device-specific chaos remains an unverified research direction, not a result of this pass.
 
+A later [reciprocity and energy audit](meminductor-energy-audit.md) retains the electrical state and proves a conditional exclusion for a reversible magnetic transducer under fixed DC voltage and resistance. It also identifies an opposite-sign cross-derivative mismatch between the source's printed force and flux approximations. The exclusion therefore cannot be applied to the complete optical apparatus without resolving its constitutive model and additional feedback physics.
+
 ## Reproduction
 
 Run from the repository root with the existing Python dependencies and an FP64 OpenCL GPU:

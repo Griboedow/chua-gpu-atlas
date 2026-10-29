@@ -1,0 +1,102 @@
+{
+  "source_doi": "10.1038/s41598-025-12529-y",
+  "source_equations": [
+    2,
+    3,
+    5,
+    9,
+    13
+  ],
+  "reciprocity_condition": "partial F/partial i = partial Phi/partial x for a reversible magnetic coenergy model",
+  "source_audit": [
+    {
+      "height_m": 0.022,
+      "current_A": 0.02,
+      "mu": 7.165579545845177,
+      "force_current_derivative": 232.473894151797,
+      "flux_position_derivative": -0.06890204042105114,
+      "scale_note": "c=0.15/8 is an illustrative positive inductance scale; the opposite-sign mismatch does not depend on its magnitude."
+    },
+    {
+      "height_m": 0.03,
+      "current_A": 0.02,
+      "mu": 4.5,
+      "force_current_derivative": 42.22222222222223,
+      "flux_position_derivative": -0.1640625,
+      "scale_note": "c=0.15/8 is an illustrative positive inductance scale; the opposite-sign mismatch does not depend on its magnitude."
+    },
+    {
+      "height_m": 0.0475,
+      "current_A": 0.02,
+      "mu": 1.087021555972301,
+      "force_current_derivative": 1.6228460027928802,
+      "flux_position_derivative": -0.008056850097351794,
+      "scale_note": "c=0.15/8 is an illustrative positive inductance scale; the opposite-sign mismatch does not depend on its magnitude."
+    }
+  ],
+  "source_conclusion": "The printed Phi=L(x)i and F=a(x)i have opposite cross-derivative signs for positive current and decreasing permeability. They cannot jointly define a complete reciprocal magnetic transducer under these assumptions.",
+  "conditional_identity": "W=kinetic+U+H(x,Phi)-i0*Phi; dW/dt=-b*v^2-R*(i-i0)^2, i0=Vs/R",
+  "illustrative_model": "L=1+0.3*tanh(x), psi=0.2*tanh(x), U=x^2/2, m=1,b=0.3,i0=0.8; Phi=L*i+psi; F=Lprime*i^2/2+psiprime*i",
+  "is_device_calibration": false,
+  "algebra_samples": 128,
+  "max_energy_derivative_identity_error": 1.4210854715202004e-14,
+  "max_energy_gradient_fd_error": 7.214673303224117e-10,
+  "trajectories": [
+    {
+      "R": 0.1,
+      "initial": [
+        -1.5,
+        1.0,
+        -0.5
+      ],
+      "final_state": [
+        0.2416178692299102,
+        2.772186447943825e-09,
+        0.7999999100704839
+      ],
+      "maximum_energy_balance_error": 2.9753977059954195e-14,
+      "maximum_sampled_energy_increase": 1.6653345369377348e-16,
+      "final_field_norm": 7.831663100744883e-09
+    },
+    {
+      "R": 1.0,
+      "initial": [
+        -1.5,
+        1.0,
+        -0.5
+      ],
+      "final_state": [
+        0.24161790328161897,
+        4.815095999004768e-17,
+        0.8000000000000002
+      ],
+      "maximum_energy_balance_error": 1.4210854715202004e-14,
+      "maximum_sampled_energy_increase": 2.7755575615628914e-16,
+      "final_field_norm": 1.3772165259381281e-16
+    },
+    {
+      "R": 10.0,
+      "initial": [
+        -1.5,
+        1.0,
+        -0.5
+      ],
+      "final_state": [
+        0.2416179032816236,
+        2.891902183837132e-14,
+        0.7999999999999988
+      ],
+      "maximum_energy_balance_error": 8.11906097908377e-13,
+      "maximum_sampled_energy_increase": 2.220446049250313e-16,
+      "final_field_norm": 3.2266458621029395e-14
+    }
+  ],
+  "solver": {
+    "method": "DOP853",
+    "duration": 200,
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "max_step": 0.05
+  },
+  "scope": "Excludes non-equilibrium recurrent compact dynamics for the specified reciprocal fixed-DC fixed-resistance system; does not exclude optical feedback, other energy ports, hysteresis or a singular model."
+}
