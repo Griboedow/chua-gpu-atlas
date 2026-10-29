@@ -53,7 +53,7 @@ Displacement, velocity and acceleration remain continuous at a transverse switch
 
 $$U'''+(b+1)U''+(k+b)U'+kU=k[\delta-H(U)].$$
 
-At `delta=1/2`, its forcing is `-(k/2) sgn(U)`. The linear denominator `(s+1)(s^2+bs+k)` is stable for positive `b,k`. This connects the slider to classical negative relay feedback; it does not claim that the limiting system was simulated here.
+At `delta=1/2`, its forcing is `-(k/2) sgn(U)`. The linear denominator `(s+1)(s^2+bs+k)` is stable for positive `b,k`. This connects the slider to classical negative relay feedback. The subsequent [weak-light and bias study](lce-slider-relay-limit.md) now simulates this normalized limit with independent CPU/GPU checks and a stable symmetric periodic control. Physical amplitudes shrink and the threshold must be retuned as intensity decreases.
 
 Three primary-source comparisons narrow particular matches:
 

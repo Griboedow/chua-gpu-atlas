@@ -1,0 +1,33 @@
+{
+  "parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.0,
+    0.5
+  ],
+  "section": [
+    1.3434255628966105,
+    0.47270998109536044
+  ],
+  "period": 0.21853733004542275,
+  "transverse_multipliers": [
+    [
+      0.24702808502985962,
+      0.0
+    ],
+    [
+      0.17055124329624075,
+      0.0
+    ]
+  ],
+  "transverse_exponents": [
+    -6.398235230352083,
+    -8.093443256830177
+  ],
+  "closure_error": 0.0,
+  "dop853_closure_error": 7.771561172376096e-15,
+  "dop853_period_error": 3.3306690738754696e-16,
+  "dop853_jacobian_error": 4.723998969780041e-14,
+  "half_period_symmetry_error": 4.884981308350689e-15,
+  "interpretation": "Numerically stable one-return symmetric periodic orbit of the normalized I=0 limit; not a validated existence proof."
+}

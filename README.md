@@ -188,6 +188,8 @@ A second positive lead is a **light-switching elastomer slider**. Its [research 
 
 The [switching-width follow-up](docs/lce-slider-switching.md) finds that chaos survives narrow smooth transitions, while wider examples give stable periodic orbits and then rest. It supplies orbit-closure/Floquet controls, an equilibrium stability criterion, and a comparison with older relay equations. Physical switching resolution remains a substantive limitation.
 
+The [weak-light limit](docs/lce-slider-relay-limit.md) reduces the ideal slider to a classical biased relay around a stable third-order plant. Independent CPU/GPU calculations retain positive exponents in the rescaled limit; a 102-offset survey finds chaotic samples away from a stable symmetric periodic orbit. The physical amplitudes shrink with intensity and the threshold must be retuned, so this does not predict motion in darkness. The connection to older relay theory narrows the possible novelty claim.
+
 Further screening includes a [thermomechanical sheet study](docs/thermomechanical-sheet-audit.md): 8,192 scouts and 84 follow-ups reveal strong numerical chaos only outside the assumed physical domain, while a weak positive is independently identified as a stable periodic orbit. The study preserves unresolved cases and corrects a source equilibrium formula. A [single-macrospin exclusion](docs/macrospin-exclusion.md) supplies a different outcome: its deterministic axial dynamics reduces to a scalar tilt equation, so three plotted magnetization components do not provide an autonomous chaos mechanism.
 
 ## License

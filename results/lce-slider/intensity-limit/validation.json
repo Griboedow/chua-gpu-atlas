@@ -1,0 +1,39 @@
+{
+  "normalized_is_coordinate_change_for_positive_I": true,
+  "gpu_scaled_four_return_error": 2.949029909160572e-15,
+  "gpu_scaled_log_stretch_error": 3.3875124927362776e-12,
+  "gpu_status": [
+    0,
+    0
+  ],
+  "cases": [
+    {
+      "intensity": 0.0,
+      "analytic_dop_state_error": 5.551115123125783e-17,
+      "analytic_dop_time_error": 2.220446049250313e-15,
+      "analytic_dop_jacobian_error": 1.843876207318143e-14,
+      "jacobian_fd_error": 4.300146862669499e-12,
+      "gpu_cpu_four_return_error": 2.3848978347729144e-14,
+      "gpu_status": 0
+    },
+    {
+      "intensity": 0.007235236837126186,
+      "analytic_dop_state_error": 1.1796119636642288e-16,
+      "analytic_dop_time_error": 2.6645352591003757e-15,
+      "analytic_dop_jacobian_error": 2.1333581873717727e-14,
+      "jacobian_fd_error": 4.346576707771072e-12,
+      "gpu_cpu_four_return_error": 6.742523206426654e-14,
+      "gpu_status": 0
+    },
+    {
+      "intensity": 1.0,
+      "analytic_dop_state_error": 1.3530843112619095e-16,
+      "analytic_dop_time_error": 3.552713678800501e-15,
+      "analytic_dop_jacobian_error": 2.3259118155788405e-15,
+      "jacobian_fd_error": 2.0124776546831882e-12,
+      "gpu_cpu_four_return_error": 1.4575840534547524e-12,
+      "gpu_status": 0
+    }
+  ],
+  "passed": true
+}

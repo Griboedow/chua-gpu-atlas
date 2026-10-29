@@ -10,12 +10,12 @@ from scipy.integrate import solve_ivp
 from lce_slider import flow, next_crossing
 
 
-def dop853_crossing(section, p, on, rtol):
+def dop853_crossing(section, p, on, rtol, normalized=False):
     k,b,intensity,d=p
     A=np.array([[0.,1.,0.],[-k,-b,-k],[0.,0.,-1-intensity*on]])
     basis=np.array([[0.,0.],[1.,0.],[0.,1.]])
     initial=np.r_[0.,section,basis.ravel()]
-    def rhs(t,y):return np.r_[flow(y[:3],p,on),(A@y[3:].reshape(3,2)).ravel()]
+    def rhs(t,y):return np.r_[flow(y[:3],p,on,normalized),(A@y[3:].reshape(3,2)).ravel()]
     def event(t,y):return y[0]
     event.direction=-1 if on else 1
     event.terminal=True
@@ -23,7 +23,7 @@ def dop853_crossing(section, p, on, rtol):
     result=solve_ivp(rhs,(0,128*period),initial,method='DOP853',rtol=rtol,atol=rtol*.01,
                      events=event,max_step=period/64)
     if not result.success or not len(result.t_events[0]):raise RuntimeError('DOP853 return failed')
-    t=result.t_events[0][0];end=result.y_events[0][0];f=flow(end[:3],p,on)
+    t=result.t_events[0][0];end=result.y_events[0][0];f=flow(end[:3],p,on,normalized)
     if t<=0 or abs(f[0])<1e-10:raise RuntimeError('Nontransverse DOP853 return')
     derivative=end[3:].reshape(3,2)
     derivative-=np.outer(f,derivative[0]/f[0])
@@ -39,6 +39,7 @@ def main():
     parser.add_argument('--cycles',type=int,default=1200)
     parser.add_argument('--rtol',type=float,default=1e-11)
     parser.add_argument('--subdivisions',type=int,default=256)
+    parser.add_argument('--normalized',action='store_true')
     parser.add_argument('--output',type=Path,default=Path('results/lce-slider/cpu'))
     args=parser.parse_args()
     if args.cycles%4:parser.error('Cycles must be divisible by four')
@@ -48,8 +49,8 @@ def main():
     for cycle in range(args.transient+args.cycles):
         jac=np.eye(2);elapsed=0.;div=0.;vstart=s[0]
         for on in [True,False]:
-            s,dt,j=(dop853_crossing(s,p,on,args.rtol) if args.method=='DOP853'
-                    else next_crossing(s,p,on,args.subdivisions))
+            s,dt,j=(dop853_crossing(s,p,on,args.rtol,args.normalized) if args.method=='DOP853'
+                    else next_crossing(s,p,on,args.subdivisions,args.normalized))
             jac=j@jac;elapsed+=dt;div-=dt*(p[1]+1+p[2]*on)
         Q,R=np.linalg.qr(jac@Q);logs=np.log(abs(np.diag(R)))
         # Map Jacobian includes the velocity ratio between the two sections.
@@ -63,7 +64,7 @@ def main():
             print(f'{args.method} {(cycle+1)/(args.transient+args.cycles):.1%}, {time.perf_counter()-wall:.1f}s',flush=True);last=time.perf_counter()
     spectrum=sums.sum(axis=0)/durations.sum()
     result=dict(source=str(args.source),index=args.index,parameters=p.tolist(),start=data['starts'][args.index].tolist(),
-                method=args.method,rtol=args.rtol,subdivisions=args.subdivisions,transient_cycles=args.transient,
+                method=args.method,rtol=args.rtol,subdivisions=args.subdivisions,normalized_photo=args.normalized,transient_cycles=args.transient,
                 observation_cycles=args.cycles,elapsed_observation_time=float(durations.sum()),
                 transverse_spectrum=spectrum.tolist(),window_spectra=(sums/durations[:,None]).tolist(),
                 sum_rule_error=float(abs(spectrum.sum()-divergence.sum()/durations.sum())),

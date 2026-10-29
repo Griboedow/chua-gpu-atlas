@@ -1,0 +1,55 @@
+{
+  "checked": "2026-10-29",
+  "scope": "Targeted primary-source comparisons for the normalized weak-light limit, not an exhaustive novelty search",
+  "sources": [
+    {
+      "title": "Relay Feedback and Multivariable Control",
+      "author": "Karl Henrik Johansson",
+      "year": 1997,
+      "identifier": "Lund TFRT-1048",
+      "url": "https://people.kth.se/~kallej/papers/phd_thesis.pdf",
+      "access": "Complete 179-page thesis downloaded and text-extracted; printed p.25, Example 15, visually checked",
+      "comparison": "Reproduces Cook's unstable second-order G=-1/(s^2-0.1s+1), with unit hysteresis. Different from stable third-order zero-hysteresis limiting slider.",
+      "limit": "Cook's original 1985 paper was not retrieved. This is a verified thesis reproduction, not a complete audit of Cook."
+    },
+    {
+      "title": "On asymmetric periodic solutions in relay feedback systems",
+      "doi": "10.1016/j.jfranklin.2020.10.024",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0016003220307158",
+      "access": "Publisher-indexed abstract and section excerpts; direct open returned 403",
+      "comparison": "Atherton example W=1/[(s-d)(s^2+2s+10)], with the displayed regime described as two unstable saddle-focus equilibria. This is already the same broad factored third-order transfer family.",
+      "limit": "Complete article and cited Atherton reference not read; no claim to exclude matching parameter regimes elsewhere."
+    },
+    {
+      "title": "Global Analysis of Third-Order Relay Feedback Systems",
+      "authors": ["Karl Henrik Johansson", "Anders Rantzer"],
+      "year": 1996,
+      "doi": "10.1016/S1474-6670(17)57954-9",
+      "url": "https://portal.research.lu.se/en/publications/global-analysis-of-third-order-relay-feedback-systems-2/",
+      "access": "University abstract read; linked report https://portal.research.lu.se/files/11036859/7542.pdf was not retrieved (web 403, Python expired-certificate error)",
+      "limit": "No inference that the abstract's global-convergence class includes all stable third-order biased relay systems."
+    },
+    {
+      "title": "An Introduction to Nonlinearity in Control Systems",
+      "author": "Derek Atherton",
+      "year": 2011,
+      "isbn": "978-87-7681-790-9",
+      "url": "https://csva.s3.amazonaws.com/schools/839/Civil/738/An%20Introduction%20to%20Nonlinearity%20in%20Control%20Systems.pdf",
+      "access": "Complete 176-page book downloaded and text-extracted; pp.111-114 read, pp.112-113 visually checked",
+      "comparison": "Author's later account Section6.6.5 connects Amrani-Atherton1989 to cubic relay examples a0=4,a1=1.25,complex-unstable pair at a2<3.2; displayed chaos between2.8 and3.2.",
+      "limit": "Original 1989 proceedings paper not fully retrieved; other examples and general nonlinear equivalences remain unaudited."
+    }
+  ],
+  "other_queries": [
+    "Amrani Atherton chaotic relay transfer function",
+    "relay chaos stable linear bias",
+    "Genesio Tesi relay 1990 chaos",
+    "Control of a Chaotic Relay System Using the OGY Method"
+  ],
+  "additional_leads": [
+    "Genesio and Tesi (1990), Chaos prediction in a third order relay system, internal report RT29/90: bibliography located, original not retrieved",
+    "Holzhueter and Klinker (1998), Control of a Chaotic Relay System Using the OGY Method: author-uploaded article text gives the Cook unstable harmonic oscillator with hysteresis; no exact slider match",
+    "Rehan, Boiko and Zweiri (2026), DOI10.1016/j.jfranklin.2026.109066: publisher abstract concerns a Chua-like relay circuit with lumped delay; equations not read"
+  ],
+  "conclusion": "General relay chaos is established. Specific displayed examples differ, but neither first stable-relay chaos nor first physical elastomer chaos is claimed. Source PDFs remain local and are not redistributed under the repository MIT license."
+}

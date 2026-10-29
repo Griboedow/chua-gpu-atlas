@@ -2,6 +2,9 @@
 
 inline double3 segment(double3 y, double4 p, int on, double t, int homogeneous) {
     double k=p.x,b=p.y,I=p.z,d=p.w,r=1.+I*on,q=I*on/r;
+#ifdef NORMALIZED_PHOTO
+    q=(double)on;
+#endif
     if(homogeneous){q=0.;d=0.;}
     double omega=sqrt(k-b*b*.25),A=-k*(y.z-q)/(r*r-b*r+k),eq=d-q;
     double c=y.x-eq-A,s=(y.y+r*A+b*c*.5)/omega;
@@ -31,6 +34,9 @@ inline int crossing(double3 *state,double3 *tangent,double4 p,int on,int subdivi
     if(fabs(y.y)<1e-10)return 2;
     double3 v=segment(*tangent,p,on,t,1);
     double3 f=(double3)(y.y,p.x*(p.w-y.x-y.z)-p.y*y.y,p.z*on*(1.-y.z)-y.z);
+#ifdef NORMALIZED_PHOTO
+    f.z=(1.+p.z)*on-(1.+p.z*on)*y.z;
+#endif
     v-=f*(v.x/y.y);v.x=0.;y.x=0.;
     if(!isfinite(y.y)||!isfinite(y.z)||!isfinite(v.y)||!isfinite(v.z))return 3;
     *state=y;*tangent=v;*elapsed+=t;*minimum_speed=fmin(*minimum_speed,fabs(y.y));return 0;

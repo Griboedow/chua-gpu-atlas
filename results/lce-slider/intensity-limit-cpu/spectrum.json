@@ -1,0 +1,46 @@
+{
+  "source": "results\\lce-slider\\intensity-limit",
+  "index": 0,
+  "parameters": [
+    816.0170161251663,
+    13.491678487182265,
+    0.0,
+    0.030904198409989477
+  ],
+  "start": [
+    3.243564860571966,
+    0.28902931409447735
+  ],
+  "method": "DOP853",
+  "rtol": 1e-12,
+  "subdivisions": 256,
+  "normalized_photo": true,
+  "transient_cycles": 1000,
+  "observation_cycles": 4000,
+  "elapsed_observation_time": 1602.4759443425426,
+  "transverse_spectrum": [
+    1.892427356927344,
+    -16.38359168810523
+  ],
+  "window_spectra": [
+    [
+      1.8613368871688794,
+      -16.35264436910803
+    ],
+    [
+      1.9108064104437892,
+      -16.403099869109614
+    ],
+    [
+      1.9447358159196275,
+      -16.43566880647954
+    ],
+    [
+      1.8535808595754257,
+      -16.34370223033358
+    ]
+  ],
+  "sum_rule_error": 4.440892098500626e-14,
+  "wall_seconds": 224.23703399999795,
+  "interpretation": "Two exponents on the event-defined return section per elapsed time; autonomous neutral flow direction omitted."
+}

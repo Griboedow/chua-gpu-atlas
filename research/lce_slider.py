@@ -14,16 +14,17 @@ from scipy.integrate import solve_ivp
 from scipy.optimize import brentq
 
 
-def flow(state, parameters, on):
+def flow(state, parameters, on, normalized=False):
     k, b, intensity, d = parameters
     u, v, phi = state
-    return np.array([v, k * (d-u-phi)-b*v, intensity*on*(1-phi)-phi])
+    photo=(1+intensity)*on-(1+intensity*on)*phi if normalized else intensity*on*(1-phi)-phi
+    return np.array([v, k * (d-u-phi)-b*v, photo])
 
 
-def affine_flow(state, parameters, on, time, homogeneous=False):
+def affine_flow(state, parameters, on, time, homogeneous=False, normalized=False):
     k, b, intensity, d = parameters
     r = 1 + intensity * on
-    q = intensity * on / r
+    q = float(on) if normalized else intensity * on / r
     if homogeneous:
         q, d = 0., 0.
     omega = np.sqrt(k - b*b/4)
@@ -40,7 +41,7 @@ def affine_flow(state, parameters, on, time, homogeneous=False):
         q+(phi-q)*er])
 
 
-def next_crossing(section, parameters, on, subdivisions=64):
+def next_crossing(section, parameters, on, subdivisions=64, normalized=False):
     state = np.array([0., *section])
     k, b, intensity, d = parameters
     direction = 1 if on else -1
@@ -50,14 +51,14 @@ def next_crossing(section, parameters, on, subdivisions=64):
     lo = 1e-10 / max(1., np.sqrt(k), 1+intensity)
     for index in range(1, 8193):
         hi = index*step
-        if direction * affine_flow(state, parameters, on, hi)[0] < 0:
-            root = brentq(lambda t: affine_flow(state, parameters, on, t)[0], lo, hi,
+        if direction * affine_flow(state, parameters, on, hi, normalized=normalized)[0] < 0:
+            root = brentq(lambda t: affine_flow(state, parameters, on, t, normalized=normalized)[0], lo, hi,
                           xtol=5e-14, rtol=1e-14)
-            end = affine_flow(state, parameters, on, root)
+            end = affine_flow(state, parameters, on, root, normalized=normalized)
             if abs(end[1]) < 1e-10:
                 raise ValueError('Near grazing crossing')
-            matrix = np.column_stack([affine_flow(e, parameters, on, root, True) for e in np.eye(3)])
-            f = flow(end, parameters, on)
+            matrix = np.column_stack([affine_flow(e, parameters, on, root, True, normalized) for e in np.eye(3)])
+            f = flow(end, parameters, on, normalized)
             projection = np.eye(3) - np.outer(f, [1., 0., 0.])/f[0]
             jac = (projection @ matrix)[1:, 1:]
             return end[1:], root, jac
@@ -65,14 +66,14 @@ def next_crossing(section, parameters, on, subdivisions=64):
     raise RuntimeError('No return within the event-bracketing horizon')
 
 
-def return_map(section, parameters, subdivisions=64):
-    middle, t1, j1 = next_crossing(section, parameters, True, subdivisions)
-    end, t2, j2 = next_crossing(middle, parameters, False, subdivisions)
+def return_map(section, parameters, subdivisions=64, normalized=False):
+    middle, t1, j1 = next_crossing(section, parameters, True, subdivisions, normalized)
+    end, t2, j2 = next_crossing(middle, parameters, False, subdivisions, normalized)
     return end, t1+t2, j2@j1
 
 
 class SliderGPU:
-    def __init__(self):
+    def __init__(self, normalized=False):
         devices = [d for p in cl.get_platforms() for d in p.get_devices()
                    if d.type & cl.device_type.GPU and d.double_fp_config]
         if not devices:
@@ -80,7 +81,9 @@ class SliderGPU:
         self.device = devices[0]
         self.context = cl.Context([self.device])
         self.queue = cl.CommandQueue(self.context)
-        self.kernel = cl.Kernel(cl.Program(self.context, Path(__file__).with_suffix('.cl').read_text()).build(), 'advance')
+        self.normalized=normalized
+        options=['-DNORMALIZED_PHOTO'] if normalized else []
+        self.kernel = cl.Kernel(cl.Program(self.context, Path(__file__).with_suffix('.cl').read_text()).build(options=options), 'advance')
 
     def scan(self, parameters, starts, transient=200, cycles=800, subdivisions=64, progress=None):
         import time
@@ -92,8 +95,9 @@ class SliderGPU:
         if cycles % 4 or cycles < 4 or transient < 0 or subdivisions < 16:
             raise ValueError('Invalid observation or bracketing settings')
         k,b,I,d = p.T
-        if not (np.isfinite(p).all() and np.all(k>b*b/4) and np.all(b>0) and np.all(I>0)
-                and np.all(d>0) and np.all(d<I/(1+I)) and np.all(starts[:,0]>1e-10)):
+        valid_photo=np.all(I>=0) and np.all(d<1) if self.normalized else np.all(I>0) and np.all(d<I/(1+I))
+        if not (np.isfinite(p).all() and np.isfinite(starts).all() and np.all(k>b*b/4) and np.all(b>0) and valid_photo
+                and np.all(d>0) and np.all(starts[:,0]>1e-10)):
             raise ValueError('Require underdamping, positive parameters, interior threshold and transverse start')
         state = np.zeros((lanes, 6)); state[:,:2] = starts
         state[:,2:4] = np.array([1., .3])/np.sqrt(1.09)
@@ -118,6 +122,8 @@ class SliderGPU:
                     minimum_crossing_speed=state[:,4],maximum_abs_u=state[:,5],
                     settings=dict(transient_cycles=transient,observation_cycles=cycles,subdivisions=subdivisions),
                     method='Analytic affine segments; bisection at each crossing; derivative of event-defined return map',
+                    normalized_photo=self.normalized,
+                    state_coordinates='U=u/q,V=v/q,Y=phi/q,delta=d/q; continuous rescaled I=0 limit' if self.normalized else 'u,v,phi,d',
                     device=self.device.name,wall_seconds=time.perf_counter()-wall)
 
 
