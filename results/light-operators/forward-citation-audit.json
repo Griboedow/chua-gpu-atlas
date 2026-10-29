@@ -36,10 +36,10 @@
   "retrieved_utc": "2026-10-29",
   "scope": "OpenAlex snapshot, incomplete citation index; absence of matching titles is not novelty evidence",
   "access_notes": [
-    "118687: publisher highlights only, full equations unavailable",
+    "118687: publisher preview and model-section outlines; diffusion-generated delay, full equations unavailable",
     "217958: metadata only",
     "3646-1: primary publisher abstract and references",
     "76810: primary main text; finite tendon-driven grasping",
-    "118988: indexed bibliographic abstract only, publisher inaccessible"
+    "118988: primary publisher preview and model-section outlines; equivalent viscous damping approximates collision/friction loss, full equations unavailable"
   ]
 }

@@ -1,0 +1,39 @@
+{
+  "source_doi": "10.1038/s41598-025-12529-y",
+  "retrieved_utc": "2026-10-29",
+  "archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12630749/supplementaryFiles",
+  "member_filename": "41598_2025_12529_MOESM4_ESM.docx",
+  "bytes": 1218461,
+  "sha256": "61f1615e779fa22862cb75742949555985241c6e3551080b5292307277ec19f6",
+  "access_scope": "Complete DOCX text and equations extracted from XML; four embedded figures inspected selectively. Full page rendering unavailable because LibreOffice was absent. Source retained locally, not redistributed.",
+  "findings": {
+    "S1a": "Prescribed sinusoidal current and inductance illustrate fingerprints, not an autonomous feedback model.",
+    "S1b": "Measured series winding resistance 628 ohms; separate from circuit series resistance.",
+    "S1c": "Resistive-voltage subtraction and flux integration fail under contact-induced measurement distortion. Vertical contact statement concerns zero-mean bipolar fingerprint excitation, not every optical DC trajectory.",
+    "S1d": "Future measurement/design suggestions, no calibrated optical transfer or response dynamics."
+  },
+  "missing_closures": [
+    "reciprocal magnetic energy or force/flux calibration",
+    "dynamic photoresistor response",
+    "optical transfer and LED current-voltage law",
+    "friction and impact/electrical impulse law"
+  ],
+  "forward_citation_snapshot": {
+    "work": "https://openalex.org/W4416389366",
+    "count": 2,
+    "date": "2026-10-29",
+    "limitations": "Incomplete indexing; not proof of novelty",
+    "works": [
+      {
+        "doi": "10.1016/j.vlsi.2026.102740",
+        "access": "Publisher preview, introduction and section snippets",
+        "decision": "Already-chaotic active five-MOSFET emulator; distinct from physical moving coil"
+      },
+      {
+        "doi": "10.3389/felec.2026.1919384",
+        "access": "Full primary review",
+        "decision": "Distinguishes emulator results from physical devices; no missing device closure supplied"
+      }
+    ]
+  }
+}

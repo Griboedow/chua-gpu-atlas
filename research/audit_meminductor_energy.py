@@ -4,6 +4,7 @@ The reciprocal example is deliberately illustrative, not a fit or replacement
 for the Dinavahi-Harris apparatus. Source equations are audited separately.
 """
 import json
+import argparse
 from pathlib import Path
 
 import numpy as np
@@ -78,4 +79,29 @@ def main():
     print(json.dumps(result,indent=2))
 
 
-if __name__=='__main__':main()
+def audit_impacts():
+    """Check the energy jump only; this is not a calibrated hybrid device model."""
+    rng=np.random.default_rng(2026102968);errors=[];increases=[]
+    for _ in range(256):
+        z=rng.uniform(-2,2,3);restitution=rng.uniform(0,1)
+        after=z.copy();after[1]=-restitution*z[1]
+        # At fixed x, flux continuity implies current continuity in this example.
+        jump=energy(after)-energy(z)
+        expected=-.5*(1-restitution**2)*z[1]**2
+        errors.append(abs(jump-expected));increases.append(jump)
+    result=dict(samples=256,seed=2026102968,
+        assumptions='Fixed wall, continuous position and flux, v_after=-e*v_before, 0<=e<=1; m=1 in numeric example',
+        identity='Delta W=-m*(1-e^2)*v_before^2/2',
+        maximum_identity_error=float(max(errors)),maximum_energy_jump=float(max(increases)),
+        is_device_calibration=False,
+        scope='Passive impacts cannot restore the energy lost by the reciprocal fixed-DC flow; no claim about sticking, Zeno solutions or measured electrical impulses')
+    result['passed']=bool(max(errors)<1e-12 and max(increases)<=1e-14)
+    Path('results/meminductor-energy/passive-impact-audit.json').write_text(json.dumps(result,indent=2))
+    print(json.dumps(result,indent=2))
+    if not result['passed']:raise RuntimeError('Impact identity failed')
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--impacts',action='store_true');args=parser.parse_args()
+    if args.impacts:audit_impacts()
+    else:main()

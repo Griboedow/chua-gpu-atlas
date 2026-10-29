@@ -1,0 +1,22 @@
+{
+  "doi": "10.1016/j.newton.2025.100207",
+  "official_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12501206/fullTextXML",
+  "retrieved_utc": "2026-10-29",
+  "bytes": 248474,
+  "sha256": "84c690e441e2fb3fb8e3837145a843a863a821597bc09799bd5758151c978a67",
+  "equations_inspected": [
+    9,
+    17,
+    18,
+    19,
+    31,
+    32
+  ],
+  "independent_states": [
+    "external capacitor voltage u",
+    "internal electrochemical potential v"
+  ],
+  "decision": "Two-state autonomous regular model: dimensional exclusion of a classical strange attractor on a compact regular domain, not a numerical negative result.",
+  "scope": "No claim about networks, spatial transport, forcing, singular closures or additional ionic memory.",
+  "source_not_redistributed": true
+}

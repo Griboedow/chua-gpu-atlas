@@ -118,6 +118,42 @@ a_minus*a_plus = b^2*(k+b+1)^2 / [k*(b+1)^3].
 
 For reference A this gives a linear Hopf candidate at `w≈0.0632608463`, `omega≈5.16091404`. It does not locate the chaos boundary or prove the nonlinear Hopf bifurcation type. The algebra and direct eigenvalue check are reproducible.
 
+### Smoothing is not a monotone chaos filter
+
+A width survey now compares both references at 16 widths from `0.0005` to `0.1`, with eight random starts each: **256 trajectories**, all completed. The adaptive FP64 GPU solver integrates the smooth field and its analytic tangent, with local error control and an extra step cap near optical transitions. Short-trajectory validation against independent DOP853 gives state discrepancy `2.9e-11` and leading-exponent discrepancy `2.5e-11`.
+
+The scout discards 200 and observes 800 thermal-time units. At reference A, all eight starts retain positive exponents at the six sampled widths through `0.007`. None passes the screening criterion at `0.01,0.015,0.02,0.03`. At **`w=0.04`**, seven of eight are positive again; none passes at `0.05` or `0.06`, and wider samples approach the stable equilibrium. Reference B retains all eight at the four sampled widths through `0.003`; its wider samples have negative estimates. These are discrete samples, not fully resolved bifurcation intervals.
+
+The two strongest completed scout trajectories at each reference/width were then resumed for an additional 400 discarded and 1,600 observed units, with `rtol=1e-9` and half the step caps. **60 of 64 completed; 17 retained the four-window criterion.** Four high-frequency B runs at `w=0.0005,0.001` exhausted the ten-million-step budget and remain unresolved, not negative. At A, one of the two `w=0.003` trajectories lost its positive signal in late windows; one `w=0.005` trajectory also weakened markedly in its last window. These are reasons to retain the long-transient caveat even when another initial state or an independent run remains strongly positive. The refinement took 561 seconds on the GTX 1080, after a 172-second scout.
+
+An independent, tighter CPU calculation confirms the reappearing positive signal at A, `w=0.04`: after 400 discarded and 1,600 observed units, its spectrum is
+
+```text
+(0.331382, -0.000688, -0.431469, -1.309946, -1.882245, -2.275395).
+```
+
+Its four leading estimates are `0.33673,0.28541,0.36856,0.33483`, and the spectrum-sum discrepancy is `1.3e-12`. The 10–90% optical transition now spans about **0.17578 normalized displacement units**. The neighboring `w=0.01` CPU control instead gives a nearly neutral first exponent, `0.0000420`, and negative remaining exponents, beginning with `-0.20084`.
+
+Thus broadening this assumed optical response can remove and then restore the observed chaotic regime before equilibrium stabilization. It changes both loop gain and the nonlinear orbit, so the linear equilibrium boundary alone cannot describe the attractor diagram. This is a useful numerical result for the explicitly modified model, not evidence that smoothing always creates chaos or that the source apparatus has this response profile.
+
+![Width survey and physical displacement projections](assets/coupled_operators_smooth_width.png)
+
+The lower panels use actual displacement coordinates, projected from the six-state system. The curve for equilibrium eigenvalues describes local equilibrium stability, whereas the dots describe the sampled trajectories; they need not agree while an oscillatory attractor is present. Crosses at the bottom mark unresolved refinements and have no exponent value.
+
+### A regular orbit coexists with the broad-width chaotic candidate
+
+The regular-window control at `w=0.01` is a stable periodic orbit with **period 2.3551155363**, two upward crossings of the chosen section per full orbit, closure error `3.5e-13`, and largest Poincare multiplier magnitude `0.62423`. A two-crossing orbit alone does not prove a period-doubling route; no branch continuation was performed here.
+
+All eight A starts at `w=0.04` were separately resumed for another 400 discarded plus 3,200 observed units at `rtol=1e-10`. Seven retain leading exponents between **0.3124 and 0.3345**, positive in every window. The eighth stays regular. An independent CPU spectrum from its saved state has a neutral leading direction and five negative directions. Its subsequent Poincare check finds a **stable periodic orbit of period 1.8879301309**, closure error `1.1e-13`, and largest multiplier magnitude **0.676848**.
+
+![Coexisting trajectories, projected section and return intervals](assets/coupled_operators_coexistence.png)
+
+This supports coexistence of a stable periodic orbit and a long-lived chaotic numerical regime at identical equations and parameters. It does not prove that the latter is an asymptotic attractor rather than a long-lived chaotic saddle. The eight selected initial states are not a measurement of basin volumes. In particular, the weakening narrow-width trajectories above make this distinction consequential.
+
+![Rotating physical projection of the coexisting regimes](assets/coupled_operators_smooth_coexistence.gif)
+
+The blue curve closes while the red trajectory visits a band of loops and produces a spread of section points and return intervals. These are physical observables of a six-state model, not a new coordinate transformation of Chua. However, this appearance and coexistence mechanism do not by themselves establish a new topological class or scientific priority.
+
 ## Prior art and what remains open
 
 General relay chaos is old. Our [relay literature audit](lce-slider-relay-limit.md) already covers several established examples and explicitly lists inaccessible originals. The coupled jerk representation above makes further control-theory equivalence searches necessary. A targeted search for the source title/DOI plus chaos did not identify the same result, which is insufficient to establish novelty.
@@ -126,11 +162,11 @@ An OpenAlex snapshot for source work `W4416430930` on 29 October 2026 returned f
 
 | Citing work | Inspection and relevance |
 | --- | --- |
-| Peng et al., [10.1016/j.chaos.2026.118687](https://doi.org/10.1016/j.chaos.2026.118687) | Publisher highlights: delayed reaction–diffusion, hydrogel swelling and periodic pulsation. Full equations not retrieved; separate candidate, not cleared for absence of chaos. |
+| Peng et al., [10.1016/j.chaos.2026.118687](https://doi.org/10.1016/j.chaos.2026.118687) | Publisher preview: coupled reaction/diffusion and geometric optical feedback; delay attributed to diffusion. Full equations not retrieved; separate candidate, not cleared for absence of chaos. |
 | [10.1016/j.ccr.2026.217958](https://doi.org/10.1016/j.ccr.2026.217958) | Citation metadata only: review on fueling dissipative self-assembly. Full text not audited. |
 | Cheng et al., [10.1007/s10118-026-3646-1](https://doi.org/10.1007/s10118-026-3646-1) | Publisher abstract: pre-twisted hydrogel rings, figure-of-eight reconfiguration and irregular tumbling. No faithful dynamic model retrieved yet; irregular tumbling is not itself a chaos diagnosis. |
 | Boron et al., [10.1002/advs.76810](https://doi.org/10.1002/advs.76810) | Primary main text: tendon-driven origami tentacles and contact-mediated entanglement, with Cosserat-rod simulation. Its finite grasping operation is not evidence of an autonomous sustained chaotic attractor. |
-| Yuan et al., [10.1016/j.chaos.2026.118988](https://doi.org/10.1016/j.chaos.2026.118988) | Indexed bibliographic record/abstract only; publisher full text inaccessible in this pass. Light-powered dominoes and impact-mediated cycling remain a possible hybrid-model target. |
+| Yuan et al., [10.1016/j.chaos.2026.118988](https://doi.org/10.1016/j.chaos.2026.118988) | Publisher preview inspected: collision/friction losses are approximated by equivalent viscous damping. Full equations unavailable; do not treat its numerical model as impact-resolved. |
 
 Other retrieved relay-search results concerned delayed neural relays or a third intermediary oscillator between already chaotic systems. The shared word “relay” does not establish equation equivalence. A comprehensive classification of two stable third-order filters with these cross-coupled switching laws remains unfinished.
 
@@ -151,6 +187,16 @@ python research/audit_coupled_operators.py
 python research/check_coupled_operators.py --periodic-control --rtol 1e-12 --qr-interval .02 --output results/light-operators/coupled-periodic-control-cpu
 python research/audit_coupled_operators.py --robustness
 python research/render_coupled_operators.py --gif
+python research/smooth_operators.py
+python research/smooth_operators.py --scan
+python research/smooth_operators.py --refine results/light-operators/smooth-width-scout.npz --transient 400 --duration 1600 --rtol 1e-9 --step-factor .5
+python research/check_coupled_operators.py --index 1026 --width .01 --transient 400 --observation 800 --rtol 1e-12 --qr-interval .025 --output results/light-operators/smooth-cpu-1026-w001
+python research/check_coupled_operators.py --index 1026 --width .04 --transient 400 --observation 1600 --rtol 1e-12 --qr-interval .025 --output results/light-operators/smooth-cpu-1026-w004
+python research/smooth_operators.py --reentrant-starts --transient 400 --duration 3200 --rtol 1e-10 --step-factor .5
+python research/analyze_smooth_operators.py
+python research/check_coupled_operators.py --source results/light-operators/smooth-reentrant-starts.npz --index 1 --transient 400 --observation 800 --rtol 1e-12 --qr-interval .025 --output results/light-operators/smooth-cpu-1026-w004-regular
+python research/analyze_smooth_operators.py --regular-control
+python research/analyze_smooth_operators.py --gif
 ```
 
 The saved NPZ files include all surveyed parameters, starts, statuses, exponents/windows and final states; independent CPU traces include physical coordinates and Poincare sections. CPU verification requires no GPU. The analytic GPU implementation currently supports underdamped mechanics only.

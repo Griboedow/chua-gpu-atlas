@@ -24,6 +24,8 @@ Here an LED voltage drop has been folded into an approximate branch resistance; 
 
 The article does not give a fitted dynamical photoresistor response. We therefore introduce one transparently, rather than treating an invented time constant as measured data. The printed force coefficient also needs reconciliation with the illustrated operating heights before quantitative device calibration.
 
+The subsequently recovered official supplement does not provide that missing response law. Its **628-ohm winding resistance** is a different quantity from the approximately **6-kilohm circuit series resistance** used in the timescale estimate above; the two must not be interchanged. It also discusses contact-induced measurement distortions under bipolar excitation. See the [updated source and passive-impact audit](meminductor-energy-audit.md).
+
 ## An assumed three-state extension
 
 Our dimensionless states are height `x>0`, velocity `v`, and photoactivation memory `z`:

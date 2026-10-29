@@ -1,0 +1,11 @@
+{
+  "samples": 256,
+  "seed": 2026102968,
+  "assumptions": "Fixed wall, continuous position and flux, v_after=-e*v_before, 0<=e<=1; m=1 in numeric example",
+  "identity": "Delta W=-m*(1-e^2)*v_before^2/2",
+  "maximum_identity_error": 1.1102230246251565e-15,
+  "maximum_energy_jump": -2.26294400496041e-06,
+  "is_device_calibration": false,
+  "scope": "Passive impacts cannot restore the energy lost by the reciprocal fixed-DC flow; no claim about sticking, Zeno solutions or measured electrical impulses",
+  "passed": true
+}

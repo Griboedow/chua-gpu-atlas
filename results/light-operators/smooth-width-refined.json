@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "transient": 400.0,
+    "duration": 1600.0,
+    "rtol": 1e-09,
+    "atol": 1.0000000000000002e-12,
+    "step_factor": 0.5,
+    "max_attempts": 10000000,
+    "max_wall_seconds": 900.0
+  },
+  "method": "Dormand-Prince 5(4) with analytic tangent and extra optical-transition step cap; explicit logistic model modification",
+  "parameter_columns": [
+    "k",
+    "b",
+    "delta_minus",
+    "delta_plus",
+    "width"
+  ],
+  "stats_columns": [
+    "min_x_minus",
+    "max_x_minus",
+    "min_x_plus",
+    "max_x_plus",
+    "min_temperature",
+    "max_temperature",
+    "late_min_x_minus",
+    "late_max_x_minus"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "thermal invariant-domain failure",
+    "2": "numerical failure or underflow",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 561.3601248000014,
+  "source_file": "results/light-operators/smooth-width-scout.npz",
+  "lanes": 64,
+  "completed": 60,
+  "retained": 17
+}

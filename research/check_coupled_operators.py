@@ -93,6 +93,9 @@ if __name__=='__main__':
         p=np.array(d['parameters']);start=np.array(d['section_state']);args.transient=0.;args.observation=d['period'];args.source=source;args.index=None
     else:
         data=np.load(args.source);p=data['parameters'][args.index];start=data['final_states'][args.index]
+        if p.shape==(5,):
+            if args.width and args.width!=p[4]:raise ValueError('Width disagrees with the selected smooth-source row')
+            args.width=float(p[4]);p=p[:4]
     result=integrate(p,start,args.transient,args.observation,args.method,args.rtol,args.qr_interval,args.output,args.width)
     result.update(source_file=args.source,source_index=args.index)
     if args.periodic_control:result['periodic_closure_error']=float(max(abs(np.array(result['final_state'])-start)))

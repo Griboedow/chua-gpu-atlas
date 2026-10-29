@@ -32,7 +32,9 @@ $$\partial_iF=a(x)>0,\qquad \partial_x\Phi=L'(x)i<0\quad(i>0).$$
 
 The cross derivatives have opposite signs. This conclusion does not depend on the positive scale chosen for inductance. Thus these two expressions cannot, together, be the complete constitutive law of a reversible magnetic transducer with these two ports and coordinates. They can still be separate empirical approximations; omitted magnetic bias, additional internal states, or a different meaning of the measured inductance must be resolved before constructing a closed energy-consistent circuit model.
 
-The earlier experimental paper [2] distinguishes motion-dependent flux from the quasi-static estimate and constructs an effective inductance from flux divided by current. Such an effective ratio is not automatically the differential self-inductance needed in a terminal state equation. We have not reconstructed a calibrated magnetic energy from those measurements. The supplementary document could not be retrieved during this audit; this limitation is retained rather than assuming that it resolves or confirms the mismatch.
+The earlier experimental paper [2] distinguishes motion-dependent flux from the quasi-static estimate and constructs an effective inductance from flux divided by current. Such an effective ratio is not automatically the differential self-inductance needed in a terminal state equation. We have not reconstructed a calibrated magnetic energy from those measurements.
+
+**Supplement recovered, 29 October 2026:** the official Europe PMC supplementary archive contains `41598_2025_12529_MOESM4_ESM.docx`. Its complete text and equations, together with the embedded contact diagram, were inspected. It gives illustrative sinusoidal current/inductance signals, a measured winding resistance of **628 ohms**, and limitations of subtracting the resistive voltage before integrating flux. It describes collisions during bipolar-current fingerprint measurements, including the vertical device hitting its lower magnet. This does not imply that every DC optical-feedback trajectory has such a collision. The supplement supplies neither a calibrated dynamical photoresponse nor a reciprocal magnetic energy or impact law. The missing closure is therefore still unresolved, now after inspecting the supplement rather than leaving its contents unknown. Retrieval metadata and source hashes are in [the supplement audit](../results/meminductor-energy/supplement-audit.json); the source document is not redistributed under our MIT license.
 
 ## A reciprocal model including a permanent magnet
 
@@ -82,6 +84,14 @@ $$\dot W=-b v^2-(i-i_0)[\rho(i)-\rho(i_0)]\le0.$$
 
 A constant current source shunted by a **constant** resistor also reduces to a fixed Thevenin drive. A photoresistor that changes with position or its own state does not: its effective source and resistance vary together, and the constant-$i_0$ cancellation need not hold. This is why the optical experiment remains a separate candidate.
 
+### Passive impacts do not automatically remove the exclusion
+
+The recovered supplement makes contact worth considering explicitly. At a fixed wall, suppose position and flux are continuous and the velocity resets as $v^+=-e v^-$, with restitution $0\le e\le1$. Under these additional assumptions the same shifted energy jumps by
+
+$$W^+-W^-=-\tfrac12m(1-e^2)(v^-)^2\le0.$$
+
+Thus a passive mechanical bounce cannot replenish energy lost between impacts in the reciprocal fixed-DC model. A regular recurrent orbit with nonzero integrated dissipation cannot close its energy balance. This observation is not a global hybrid convergence theorem: sticking, accumulating impacts, impulsive electrical changes and additional internal states need their own laws. In particular, the measured voltage spikes in the source are not a calibrated proof of flux continuity. The identity is a conditional audit, not a fitted simulation of those collisions.
+
 ## Why a missing back EMF can mislead a numerical search
 
 For the literal pair $\Phi=Li$, $F=ai$, the natural trial energy $E=mv^2/2+U+Li^2/2$ obeys
@@ -106,6 +116,7 @@ Run from the repository root:
 
 ```bash
 python research/audit_meminductor_energy.py
+python research/audit_meminductor_energy.py --impacts
 ```
 
 The [script](../research/audit_meminductor_energy.py) audits the source cross derivatives and independently checks the shifted-energy gradient and its derivative at 128 random states. It then integrates a deliberately illustrative reciprocal model with
@@ -126,8 +137,12 @@ These CPU controls check the implementation and algebra; the exclusion follows f
 
 For the actual device, the next useful inputs are a consistent magnetic flux/force calibration, the optical transfer function, the photoresistor's response dynamics, and friction/contact laws. The [assumed optical-feedback model](photofeedback-research.md) already demonstrates an instability mechanism, but its negative chaos survey applies only to that assumed model. Neither its extra state nor the permanent-magnet completion above should be mistaken for measured device physics.
 
+A forward-citation snapshot returned two works: a five-MOSFET meminductor emulator explicitly studied for chaos [4], and a hardware-security review [5]. The emulator uses a different active circuit. The review distinguishes emulator demonstrations from physical devices and does not supply the missing moving-coil equations. Neither is evidence that this particular physical apparatus has a newly established chaotic attractor; nor does this small, incomplete citation index establish a publication gap.
+
 ## References
 
 1. Dinavahi, A., and Harris, H. R. (2025). Edge-of-chaos operation and persistent dynamics for neuromorphic meminductor computing. *Scientific Reports*, **15**, 40672. [DOI](https://doi.org/10.1038/s41598-025-12529-y). [Open full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12630749/).
 2. Dinavahi, A., Yamamoto, A., and Harris, H. R. (2023). Physical evidence of meminductance in a passive, two-terminal circuit element. *Scientific Reports*, **13**, 1817. [DOI](https://doi.org/10.1038/s41598-022-24914-y). [Open full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC9892601/).
 3. Haus, H. A., and Melcher, J. R. (1989). *Electromagnetic Fields and Energy*. Prentice Hall, Section 11.7, Macroscopic Magnetic Forces. [MIT open text](https://web.mit.edu/6.013_book/www/chapter11/11.7.html).
+4. Kalra, A., Pandey, N., and Rai, S. K. (2026). Compact design of MOSFET-only meminductor emulator and its application in chaos and neural spike generator. *Integration* **109**, 102740. [DOI](https://doi.org/10.1016/j.vlsi.2026.102740). Publisher preview inspected; distinct active emulator.
+5. Romero, F. J., et al. (2026). Memory circuit elements for hardware security: a review from memristors to memcapacitors and meminductors. *Frontiers in Electronics* **7**, 1919384. [DOI](https://doi.org/10.3389/felec.2026.1919384). Full primary review inspected; it is a literature map, not a calibrated device model or a general proof that memory elements generate chaos.
