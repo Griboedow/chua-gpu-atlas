@@ -13,7 +13,9 @@ $$m\ddot A+c\dot A+(k_0+\alpha\theta)A+\beta\dot A^3=\gamma\theta,
 
 Our substitution of `theta*=Delta-mu A*` gives
 
-$$-\alpha\mu A_*^2+(k_0+\alpha\Delta+\gamma\mu)A_*-\gamma\Delta=0.$$
+```math
+-\alpha\mu A_*^2+(k_0+\alpha\Delta+\gamma\mu)A_*-\gamma\Delta=0.
+```
 
 The paper's Eq. 3 omits the quadratic term. Its displayed expression is therefore not an exact equilibrium of the printed equations in general. It can be a small-deflection approximation only when that term is negligible; we must not use it uncritically as the center of a numerical scan.
 
@@ -66,7 +68,9 @@ For the strongest family, scout index 3573 has
 
 An independent DOP853 full-spectrum calculation, transient 600 and observation 1,600, gives
 
-$$\lambda\simeq(1.337613,\;0.000273,\;-28.258189).$$
+```math
+\lambda\simeq(1.337613,\;0.000273,\;-28.258189).
+```
 
 All four leading-exponent windows remain positive (`1.331..1.345`); the integrated divergence identity agrees to `5.7e-11`. The small second exponent is consistent with the neutral flow direction, **not** hyperchaos. The observed ranges include `X=-1.049..7.378`, `Y=-0.294..0.398`, and a minimum stiffness ratio of `-2.539`. This is strong finite-time evidence for chaos in the polynomial equations, but it crosses the assumed noncontact/thermal/positive-stiffness domain. Contact or postbuckling physics would need a different, justified model. There is no calibrated physical-chaos claim and no rigorous attractor-existence or boundedness proof.
 

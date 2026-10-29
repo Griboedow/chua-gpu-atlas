@@ -22,8 +22,10 @@ $$\frac{d}{dt}\log\left|\frac{\sin a}{\sin b}\right|
 
 Hence
 
-$$\boxed{I=\log\left|\frac{\sin a}{\sin b}\right|
-+\int^\delta\frac{S_\chi(u)}{S_\theta(u)}\,du,\qquad \dot I=0.}$$
+```math
+\boxed{I=\log\left|\frac{\sin a}{\sin b}\right|
++\int^\delta\frac{S_\chi(u)}{S_\theta(u)}\,du,\qquad \dot I=0.}
+```
 
 The even Fourier coefficients cancel from this identity. No assumption that the entire field is a gradient is required.
 
@@ -34,10 +36,12 @@ $$S_\chi=\sin\delta(1.582-5.436\cos^2\delta).$$
 
 Thus the ratio has no singularity inside a phase chamber. An elementary antiderivative is available: if the ratio is $(A+B\cos^2u)/(C+D\cos^2u)$ with $C,C+D>0$ and $D\ne0$, use
 
-$$\frac BD u+
+```math
+\frac BD u+
 \frac{A-BC/D}{\sqrt{C(C+D)}}\,
 \operatorname{atan}_{\rm continuous}
-\left(\sqrt{\frac C{C+D}}\tan u\right).$$
+\left(\sqrt{\frac C{C+D}}\tan u\right).
+```
 
 The continuous branch matters; a raw principal arctangent would create false jumps. The implementation uses `atan2` and a phase-chamber index.
 

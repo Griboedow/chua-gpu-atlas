@@ -133,7 +133,9 @@ The residual `R=F-G` has zero divergence. The sum over pairs and common-phase re
 
 The controlled family `F_eta=G+eta R` has the published model at `eta=1`. At `eta=0`,
 
-$$\frac{dV}{ds}=-\|\nabla V\|^2\le0.$$
+```math
+\frac{dV}{ds}=-\|\nabla V\|^2\le0.
+```
 
 Since `V` is smooth and bounded on the compact angular space, non-equilibrium recurrent motion cannot be a gradient-flow attractor. This supplies an analytic no-chaos endpoint. Removing only the even phase terms is a different control: it does **not** make the full coupled phase-orientation system a gradient flow. Both experiments are saved separately.
 

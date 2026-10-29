@@ -40,8 +40,10 @@ Thus `Q0` shifts the operating point, and `C2>0` sets the amplitude scale. Neith
 
 The Jacobian and divergence are
 
-$$J=\begin{pmatrix}0&1&0\\-1&-c-2|V|&1\\-rg&0&-r\end{pmatrix},\qquad
-\nabla\cdot F=-c-2|V|-r.$$
+```math
+J=\begin{pmatrix}0&1&0\\-1&-c-2|V|&1\\-rg&0&-r\end{pmatrix},\qquad
+\nabla\cdot F=-c-2|V|-r.
+```
 
 Negative divergence is volume contraction, not by itself a global boundedness proof. An algebra audit checks 64 randomly scaled source states against the normalized field. The maximum absolute conversion error is `4.55e-13`.
 
@@ -94,7 +96,9 @@ The drag `|V|V` is continuously differentiable but not twice differentiable at z
 
 Using that harmonic balance in the exact stability threshold gives the leading small-excess estimate
 
-$$A_X\sim\frac{3\pi}{8}\frac{g-g_H}{\sqrt{1+cr}\,(1/r+2c+r)}.$$
+```math
+A_X\sim\frac{3\pi}{8}\frac{g-g_H}{\sqrt{1+cr}\,(1/r+2c+r)}.
+```
 
 The prediction is linear in excess gain. At `c=.2,r=1`, independently closed stable orbits for excess gains `.1,.03,.01` give measured-to-leading amplitude ratios **`.96718,.98982,.99657`**. Their periods are `5.64042,5.70626,5.72582`, and leading transverse multipliers `.90215,.96845,.98925`. Radau return-Jacobian discrepancies stay below `3.9e-12`. This supports the leading approximation near onset; it is not an interval-certified bifurcation theorem.
 

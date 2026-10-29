@@ -26,21 +26,22 @@ OpenAlex returned one citing work for [1], about hysteresis in a different mater
 
 The implementation follows Eq. (10) of the accessible preprint of [1]. States are the Bloch-vector components `(X,Y,Z)` and a classical circuit voltage `V`:
 
-\[
+```math
 \dot X=\Omega Y+2\dot V Z-\Gamma X,\quad
 \dot Y=-\Omega X-\Gamma Y,
-\]
-\[
+```
+
+```math
 \dot Z=-2\dot V X-\alpha\Gamma(Z-Z_T),\quad
 \dot V=V_n-[1+R_n G(X,Z,V)]V.
-\]
+```
 
 Here
 
-\[
+```math
 G=\tfrac12[(1+Z)F_{00}(x_V)+2XF_{01}(x_V)+(1-Z)F_{11}(x_V)],
 \quad x_V=x_0-\sqrt2\,lV.
-\]
+```
 
 The `F` functions are Gaussian-weighted matrix elements of `sech((l u+xV)/lambda)`. With normalized Gauss–Hermite weights, their polynomial factors are `1`, `sqrt(2)*u`, and `2*u*u`. We fix `l=0.5`, `lambda=0.13`, and introduce no forcing, reset, noise, or additional feedback. This is a nonlinear semiclassical feedback model; it is not a claim about chaos in isolated linear quantum evolution.
 
@@ -48,24 +49,24 @@ The `F` functions are Gaussian-weighted matrix elements of `sech((l u+xV)/lambda
 
 Let `r²=X²+Y²+Z²`. Direct cancellation of the rotation/feedback terms gives
 
-\[
+```math
 \frac{d r^2}{dt}=-2\Gamma[X^2+Y^2+\alpha Z(Z-Z_T)].
-\]
+```
 
 For `Gamma>0`, `0<alpha<=2`, and `0<=ZT<=1`, the unit Bloch ball is forward invariant. On its boundary, the bracket is
 
-\[
+```math
 1+(\alpha-1)Z^2-\alpha Z_T Z
 \ge(1-|Z|)[1+(1-\alpha)|Z|]\ge0.
-\]
+```
 
 The conductance operator has spectrum in `[0,1]`; its compression to two levels preserves these bounds. Hence `0<=G<=1` for a physical density matrix. For positive `Vn,Rn`, `0<=V<=Vn` is also forward invariant. **The searched physical trajectories therefore have an analytically bounded domain**, independently of whether their motion is regular or chaotic.
 
 At `ZT=0`, the same identity gives
 
-\[
+```math
 r^2(t)\le r^2(0)e^{-2\Gamma\min(1,\alpha)t}.
-\]
+```
 
 The limiting dynamics lies on `X=Y=Z=0` and is a scalar autonomous voltage equation. A persistent chaotic attractor is excluded on this temperature slice. This is a useful exact exclusion, not a claim of a new theorem in the literature. It does not exclude long transients or settle `ZT>0`.
 
@@ -108,17 +109,17 @@ Raw validation and reference data are under [results/candidate-research](../resu
 
 For the uncoupled constant-current model in Eq. (33) of [2], write
 
-\[
+```math
 \dot x=y,\qquad\dot y=A I\frac{\mu(x)}{x^4}-b y-g,
 \quad A=K_1/m_T>0,\ b=k_a/m_T>0,\ x>0.
-\]
+```
 
 Define
 
-\[
+```math
 U(x)=gx-AI\int_{x_*}^{x}\frac{\mu(s)}{s^4}\,ds,
 \qquad E=\tfrac12y^2+U(x).
-\]
+```
 
 Then **`dE/dt = -b*y² <= 0`**. For the paper's positive, decreasing sigmoid permeability and `I>0`, the force decreases strictly with height. The potential diverges at both `x→0+` and `x→infinity` and has a unique minimum. Bounded energy sublevels and LaSalle's argument give convergence to the unique equilibrium. Neither a sustained periodic orbit nor a strange chaotic attractor exists in this uncoupled model.
 

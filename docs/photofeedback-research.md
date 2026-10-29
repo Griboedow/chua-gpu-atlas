@@ -49,7 +49,9 @@ We choose an equilibrium height `xe` and solve its activation/current relation a
 
 At equilibrium the Jacobian has the form
 
-$$J=\begin{pmatrix}0&1&0\\-K&-b&-c\\d&0&-r\end{pmatrix},\qquad K,c,r>0.$$
+```math
+J=\begin{pmatrix}0&1&0\\-K&-b&-c\\d&0&-r\end{pmatrix},\qquad K,c,r>0.
+```
 
 Its characteristic polynomial is
 

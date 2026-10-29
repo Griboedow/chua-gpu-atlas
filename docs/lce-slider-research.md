@@ -77,7 +77,9 @@ The longer analytic-segment CPU calculation discards 2,000 and observes 8,000 re
 
 The section-Jacobian determinant obeys
 
-$$\log|\det DP|=\int\![-b-1-IH(u)]\,dt+\log|v_{start}/v_{end}|.$$
+```math
+\log|\det DP|=\int\![-b-1-IH(u)]\,dt+\log|v_{start}/v_{end}|.
+```
 
 The two CPU spectrum-sum checks agree with this identity to approximately `4e-14` and `1e-14`. The exact affine flow agrees with a short DOP853 trajectory to `2.2e-14`; the return-map Jacobian agrees with finite differences to `5.8e-10`; CPU and GPU agree after four returns to `1.3e-15`. These are numerical consistency checks, not rigorous error bounds.
 
