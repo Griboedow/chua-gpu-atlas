@@ -1,0 +1,148 @@
+{
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "checks": [
+    {
+      "name": "classic: short trajectory versus adaptive DOP853",
+      "passed": true,
+      "max_abs_error_dt_0_01": 9.25760726255831e-06,
+      "max_abs_error_dt_0_005": 8.382854866706424e-06
+    },
+    {
+      "name": "classic: positive LLE using independent solvers",
+      "passed": true,
+      "gpu_rk4": 0.3231490399212991,
+      "cpu_dop853": 0.2856874785907958,
+      "note": "Long chaotic trajectories decorrelate; compare finite-time exponents, not endpoint positions."
+    },
+    {
+      "name": "reference: short trajectory versus adaptive DOP853",
+      "passed": true,
+      "max_abs_error_dt_0_01": 5.5806551593873266e-05,
+      "max_abs_error_dt_0_005": 1.1780027552088512e-05
+    },
+    {
+      "name": "reference: positive LLE using independent solvers",
+      "passed": true,
+      "gpu_rk4": 0.4136556999193591,
+      "cpu_dop853": 0.45226260289072334,
+      "note": "Long chaotic trajectories decorrelate; compare finite-time exponents, not endpoint positions."
+    },
+    {
+      "name": "Linear control against exact matrix exponential",
+      "passed": true,
+      "max_abs_error": 8.172425305930098e-10
+    },
+    {
+      "name": "Stable equilibrium: negative LLE matches eigenvalue",
+      "passed": true,
+      "gpu_lle": -0.11906019051799635,
+      "expected_lle": -0.11858938212156589
+    },
+    {
+      "name": "Unstable stationary solution is not counted as chaos",
+      "passed": true,
+      "classification": 3
+    },
+    {
+      "name": "Escape detection masks truncated LLE",
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "refinement": [
+    {
+      "name": "classic",
+      "sample_size": 512,
+      "sampling": "256 random base candidates and 256 random other grid nodes; fixed RNG seed 20261029",
+      "fine_settings": {
+        "dt": 0.005,
+        "transient": 600.0,
+        "duration": 1600.0,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "timing": {
+        "wall_seconds": 2.3335894000001645,
+        "gpu_seconds": 1.927184064000018,
+        "max_kernel_seconds": 0.001232896
+      },
+      "candidate_membership_agreement": 0.98828125,
+      "base_candidates_retained": 250,
+      "base_candidate_sample_count": 256,
+      "other_nodes_becoming_candidates": 0,
+      "other_node_sample_count": 256,
+      "interpretation": "This stratified comparison is a sensitivity diagnostic, not a full-grid certificate or confidence interval."
+    },
+    {
+      "name": "reference",
+      "sample_size": 512,
+      "sampling": "256 random base candidates and 256 random other grid nodes; fixed RNG seed 20261029",
+      "fine_settings": {
+        "dt": 0.005,
+        "transient": 600.0,
+        "duration": 1600.0,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "timing": {
+        "wall_seconds": 2.341941399999996,
+        "gpu_seconds": 1.9323652800000153,
+        "max_kernel_seconds": 0.0013824
+      },
+      "candidate_membership_agreement": 0.990234375,
+      "base_candidates_retained": 251,
+      "base_candidate_sample_count": 256,
+      "other_nodes_becoming_candidates": 0,
+      "other_node_sample_count": 256,
+      "interpretation": "This stratified comparison is a sensitivity diagnostic, not a full-grid certificate or confidence interval."
+    }
+  ],
+  "wall_seconds": 12.053632900000139
+}

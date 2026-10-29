@@ -1,0 +1,201 @@
+{
+  "configuration": {
+    "label": "Chua Circuits example",
+    "parameters": [
+      15.6,
+      28.0,
+      -1.143,
+      -0.714
+    ],
+    "half_widths": [
+      3.0,
+      6.0,
+      0.16
+    ],
+    "source": "https://chuacircuits.com/matlab/",
+    "source_note": "Dimensionless example; preserve the published rounded slopes."
+  },
+  "settings": {
+    "dt": 0.005,
+    "transient": 600,
+    "duration": 1600,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 20.64033560000007,
+    "gpu_seconds": 20.181928415999984,
+    "max_kernel_seconds": 0.010113024
+  },
+  "beta_step": 0.009374999999998579,
+  "sampled_parameters": 1601,
+  "recurrent_regular_intervals": [
+    {
+      "start": 25.165625,
+      "end": 25.371875,
+      "nodes": 23
+    },
+    {
+      "start": 27.096875,
+      "end": 27.21875,
+      "nodes": 14
+    },
+    {
+      "start": 28.86875,
+      "end": 30.040625,
+      "nodes": 126
+    },
+    {
+      "start": 30.378125,
+      "end": 30.44375,
+      "nodes": 8
+    },
+    {
+      "start": 32.796875,
+      "end": 32.834375,
+      "nodes": 5
+    },
+    {
+      "start": 33.63125,
+      "end": 38.0,
+      "nodes": 467
+    }
+  ],
+  "double_scroll_screen_intervals": [
+    {
+      "start": 23.0,
+      "end": 23.496875,
+      "nodes": 54
+    },
+    {
+      "start": 23.515625,
+      "end": 23.946875,
+      "nodes": 47
+    },
+    {
+      "start": 23.965625,
+      "end": 25.15625,
+      "nodes": 128
+    },
+    {
+      "start": 25.38125,
+      "end": 27.078125,
+      "nodes": 182
+    },
+    {
+      "start": 27.228125,
+      "end": 27.55625,
+      "nodes": 36
+    },
+    {
+      "start": 27.575,
+      "end": 27.696875,
+      "nodes": 14
+    },
+    {
+      "start": 27.715625,
+      "end": 28.4,
+      "nodes": 74
+    },
+    {
+      "start": 28.41875,
+      "end": 28.596875,
+      "nodes": 20
+    },
+    {
+      "start": 28.615625,
+      "end": 28.68125,
+      "nodes": 8
+    },
+    {
+      "start": 28.709375,
+      "end": 28.85,
+      "nodes": 16
+    },
+    {
+      "start": 30.05,
+      "end": 30.35,
+      "nodes": 33
+    },
+    {
+      "start": 30.453125,
+      "end": 31.174999999999997,
+      "nodes": 78
+    }
+  ],
+  "single_scroll_screen_intervals": [
+    {
+      "start": 31.184375,
+      "end": 32.20625,
+      "nodes": 110
+    },
+    {
+      "start": 32.234375,
+      "end": 32.365625,
+      "nodes": 15
+    },
+    {
+      "start": 32.384375,
+      "end": 32.7875,
+      "nodes": 44
+    },
+    {
+      "start": 32.84375,
+      "end": 33.06875,
+      "nodes": 25
+    },
+    {
+      "start": 33.096875,
+      "end": 33.415625,
+      "nodes": 35
+    },
+    {
+      "start": 33.44375,
+      "end": 33.490625,
+      "nodes": 6
+    },
+    {
+      "start": 33.509375,
+      "end": 33.565625,
+      "nodes": 7
+    },
+    {
+      "start": 33.584375,
+      "end": 33.6125,
+      "nodes": 4
+    }
+  ],
+  "peak_observation_duration": 400,
+  "peak_capacity": 128,
+  "peak_period_tolerance_relative": 0.0005,
+  "scope": "Independent parameter points and three starts; no parameter continuation. Repeated local maxima support periodicity but do not establish an exact mathematical period."
+}

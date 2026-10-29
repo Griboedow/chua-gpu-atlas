@@ -1,0 +1,266 @@
+[
+  {
+    "name": "double_scroll",
+    "parameters": [
+      15.6,
+      28.0,
+      -1.143,
+      -0.714
+    ],
+    "initial_states": [
+      [
+        0.7,
+        0,
+        0
+      ],
+      [
+        -0.7,
+        0,
+        0
+      ]
+    ],
+    "lle": [
+      0.43380577748218324,
+      0.43380577748218324
+    ],
+    "classes": [
+      4,
+      4
+    ],
+    "x_range_per_start": [
+      [
+        -2.262783754764486,
+        2.261867466633303
+      ],
+      [
+        -2.261867466633303,
+        2.262783754764486
+      ]
+    ],
+    "peak_period": [
+      0,
+      0
+    ],
+    "settings": {
+      "dt": 0.005,
+      "transient": 1000,
+      "duration": 2400,
+      "threshold": 0.01,
+      "escape": 100.0,
+      "seeds": [
+        [
+          0.7,
+          0.0,
+          0.0
+        ],
+        [
+          -0.7,
+          0.0,
+          0.0
+        ]
+      ],
+      "renormalize_every_steps": 10,
+      "chunk_steps": 200
+    },
+    "trajectory_duration": 150,
+    "peak_duration": 600
+  },
+  {
+    "name": "periodic_window",
+    "parameters": [
+      15.6,
+      29.0,
+      -1.143,
+      -0.714
+    ],
+    "initial_states": [
+      [
+        0.7,
+        0,
+        0
+      ],
+      [
+        -0.7,
+        0,
+        0
+      ]
+    ],
+    "lle": [
+      -0.00014053627453301538,
+      -0.00014053627453301538
+    ],
+    "classes": [
+      2,
+      2
+    ],
+    "x_range_per_start": [
+      [
+        -2.2361704610411386,
+        2.243881697971661
+      ],
+      [
+        -2.243881697971661,
+        2.2361704610411386
+      ]
+    ],
+    "peak_period": [
+      6,
+      6
+    ],
+    "settings": {
+      "dt": 0.005,
+      "transient": 1000,
+      "duration": 2400,
+      "threshold": 0.01,
+      "escape": 100.0,
+      "seeds": [
+        [
+          0.7,
+          0.0,
+          0.0
+        ],
+        [
+          -0.7,
+          0.0,
+          0.0
+        ]
+      ],
+      "renormalize_every_steps": 10,
+      "chunk_steps": 200
+    },
+    "trajectory_duration": 150,
+    "peak_duration": 600
+  },
+  {
+    "name": "single_scroll_pair",
+    "parameters": [
+      15.6,
+      32.0,
+      -1.143,
+      -0.714
+    ],
+    "initial_states": [
+      [
+        0.7,
+        0,
+        0
+      ],
+      [
+        -0.7,
+        0,
+        0
+      ]
+    ],
+    "lle": [
+      0.41796737557496755,
+      0.41796737557496755
+    ],
+    "classes": [
+      4,
+      4
+    ],
+    "x_range_per_start": [
+      [
+        -0.41816118198784824,
+        2.220345228969408
+      ],
+      [
+        -2.220345228969408,
+        0.41816118198784824
+      ]
+    ],
+    "peak_period": [
+      0,
+      0
+    ],
+    "settings": {
+      "dt": 0.005,
+      "transient": 1000,
+      "duration": 2400,
+      "threshold": 0.01,
+      "escape": 100.0,
+      "seeds": [
+        [
+          0.7,
+          0.0,
+          0.0
+        ],
+        [
+          -0.7,
+          0.0,
+          0.0
+        ]
+      ],
+      "renormalize_every_steps": 10,
+      "chunk_steps": 200
+    },
+    "trajectory_duration": 150,
+    "peak_duration": 600
+  },
+  {
+    "name": "regular_cycle",
+    "parameters": [
+      15.6,
+      36.0,
+      -1.143,
+      -0.714
+    ],
+    "initial_states": [
+      [
+        0.7,
+        0,
+        0
+      ],
+      [
+        -0.7,
+        0,
+        0
+      ]
+    ],
+    "lle": [
+      -0.00027162314671138243,
+      -0.00027162314671138243
+    ],
+    "classes": [
+      2,
+      2
+    ],
+    "x_range_per_start": [
+      [
+        0.23109077028200165,
+        2.1131720890500136
+      ],
+      [
+        -2.1131720890500136,
+        -0.23109077028200165
+      ]
+    ],
+    "peak_period": [
+      1,
+      1
+    ],
+    "settings": {
+      "dt": 0.005,
+      "transient": 1000,
+      "duration": 2400,
+      "threshold": 0.01,
+      "escape": 100.0,
+      "seeds": [
+        [
+          0.7,
+          0.0,
+          0.0
+        ],
+        [
+          -0.7,
+          0.0,
+          0.0
+        ]
+      ],
+      "renormalize_every_steps": 10,
+      "chunk_steps": 200
+    },
+    "trajectory_duration": 150,
+    "peak_duration": 600
+  }
+]

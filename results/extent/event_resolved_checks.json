@@ -1,0 +1,72 @@
+{
+  "method": "DOP853 with exact detection of x=±1 crossings; constant affine field within each region. Tangent vector stays continuous because the vector field is continuous.",
+  "checks": [
+    {
+      "lle": 0.17869196756259695,
+      "windows": [
+        0.26100233821790597,
+        0.1077351798213382,
+        0.18221577010026485,
+        0.16381458211087874
+      ],
+      "boundary_crossings": 2656,
+      "max_absolute_coordinate": 343.6792621053085,
+      "transient": 40,
+      "duration": 160,
+      "wall_seconds": 16.552161999999953,
+      "parameters": [
+        255.69312973200468,
+        7216.586222609408,
+        -3.4773044270127405,
+        -0.7142857142857143
+      ],
+      "gpu_lle": 0.9337565365551117,
+      "seed_index": 0
+    },
+    {
+      "lle": 0.1707894337800492,
+      "windows": [
+        0.25955308662901094,
+        0.17409783166024334,
+        0.0584564945477295,
+        0.19105032228321298
+      ],
+      "boundary_crossings": 868,
+      "max_absolute_coordinate": 804.6677331425259,
+      "transient": 40,
+      "duration": 160,
+      "wall_seconds": 16.304069300000265,
+      "parameters": [
+        254.72332375862894,
+        12022.296134038306,
+        -4.946233253662321,
+        -0.7142857142857143
+      ],
+      "gpu_lle": 0.2650563458674743,
+      "seed_index": 2
+    },
+    {
+      "lle": 0.3244481543013135,
+      "windows": [
+        0.33347941278246485,
+        0.32833943703652446,
+        0.35340601119928367,
+        0.28256775618698116
+      ],
+      "boundary_crossings": 130,
+      "max_absolute_coordinate": 107.0841558106154,
+      "transient": 40,
+      "duration": 160,
+      "wall_seconds": 0.9929984000000331,
+      "parameters": [
+        13.315403175350681,
+        28.745326005971656,
+        -7.99120887676794,
+        -0.7142857142857143
+      ],
+      "gpu_lle": 0.33801192807190394,
+      "seed_index": 0
+    }
+  ],
+  "scope": "Selected examples only; starts from the end of the GPU observation, then discards an additional transient."
+}

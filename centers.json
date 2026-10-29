@@ -1,0 +1,16 @@
+{
+  "classic": {
+    "label": "Classic double scroll",
+    "parameters": [9.0, 14.285714285714286, -1.1428571428571428, -0.7142857142857143],
+    "half_widths": [2.0, 4.0, 0.16],
+    "source": "https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf",
+    "source_note": "Equations 11-14, page 6. These are diode slopes a,b, not the shifted slopes m0,m1 used later in that source."
+  },
+  "reference": {
+    "label": "Chua Circuits example",
+    "parameters": [15.6, 28.0, -1.143, -0.714],
+    "half_widths": [3.0, 6.0, 0.16],
+    "source": "https://chuacircuits.com/matlab/",
+    "source_note": "Dimensionless example; preserve the published rounded slopes."
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "configuration": {
+    "label": "Classic double scroll",
+    "parameters": [
+      9.0,
+      14.285714285714286,
+      -1.1428571428571428,
+      -0.7142857142857143
+    ],
+    "half_widths": [
+      2.0,
+      4.0,
+      0.16
+    ],
+    "source": "https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf",
+    "source_note": "Equations 11-14, page 6. These are diode slopes a,b, not the shifted slopes m0,m1 used later in that source."
+  },
+  "settings": {
+    "dt": 0.005,
+    "transient": 600,
+    "duration": 1600,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 19.906371900000067,
+    "gpu_seconds": 19.448324287999956,
+    "max_kernel_seconds": 0.010395648
+  },
+  "beta_step": 0.005000000000000782,
+  "sampled_parameters": 1601,
+  "recurrent_regular_intervals": [
+    {
+      "start": 12.385,
+      "end": 12.45,
+      "nodes": 14
+    },
+    {
+      "start": 12.96,
+      "end": 12.985,
+      "nodes": 6
+    },
+    {
+      "start": 13.29,
+      "end": 13.3,
+      "nodes": 3
+    },
+    {
+      "start": 13.91,
+      "end": 13.92,
+      "nodes": 3
+    },
+    {
+      "start": 14.31,
+      "end": 14.33,
+      "nodes": 5
+    },
+    {
+      "start": 15.245000000000001,
+      "end": 15.275,
+      "nodes": 7
+    },
+    {
+      "start": 15.585,
+      "end": 19.0,
+      "nodes": 684
+    }
+  ],
+  "double_scroll_screen_intervals": [
+    {
+      "start": 11.545,
+      "end": 11.81,
+      "nodes": 54
+    },
+    {
+      "start": 11.82,
+      "end": 11.96,
+      "nodes": 29
+    },
+    {
+      "start": 11.97,
+      "end": 12.36,
+      "nodes": 79
+    },
+    {
+      "start": 12.455,
+      "end": 12.955,
+      "nodes": 101
+    },
+    {
+      "start": 12.99,
+      "end": 13.285,
+      "nodes": 60
+    },
+    {
+      "start": 13.305,
+      "end": 13.495000000000001,
+      "nodes": 39
+    },
+    {
+      "start": 13.504999999999999,
+      "end": 13.64,
+      "nodes": 28
+    },
+    {
+      "start": 13.65,
+      "end": 13.775,
+      "nodes": 26
+    },
+    {
+      "start": 13.785,
+      "end": 13.905000000000001,
+      "nodes": 25
+    },
+    {
+      "start": 13.925,
+      "end": 14.06,
+      "nodes": 28
+    },
+    {
+      "start": 14.07,
+      "end": 14.2,
+      "nodes": 27
+    },
+    {
+      "start": 14.215,
+      "end": 14.305,
+      "nodes": 19
+    },
+    {
+      "start": 14.335,
+      "end": 14.35,
+      "nodes": 4
+    },
+    {
+      "start": 14.36,
+      "end": 14.71,
+      "nodes": 71
+    }
+  ],
+  "single_scroll_screen_intervals": [
+    {
+      "start": 14.715,
+      "end": 14.905000000000001,
+      "nodes": 39
+    },
+    {
+      "start": 14.915,
+      "end": 15.025,
+      "nodes": 23
+    },
+    {
+      "start": 15.04,
+      "end": 15.115,
+      "nodes": 16
+    },
+    {
+      "start": 15.125,
+      "end": 15.24,
+      "nodes": 24
+    },
+    {
+      "start": 15.280000000000001,
+      "end": 15.375,
+      "nodes": 20
+    },
+    {
+      "start": 15.385,
+      "end": 15.5,
+      "nodes": 24
+    },
+    {
+      "start": 15.515,
+      "end": 15.56,
+      "nodes": 10
+    },
+    {
+      "start": 15.57,
+      "end": 15.58,
+      "nodes": 3
+    }
+  ],
+  "peak_observation_duration": 400,
+  "peak_capacity": 128,
+  "peak_period_tolerance_relative": 0.0005,
+  "scope": "Independent parameter points and three starts; no parameter continuation. Repeated local maxima support periodicity but do not establish an exact mathematical period."
+}

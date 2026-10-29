@@ -1,0 +1,65 @@
+{
+  "parameters": [
+    15.6,
+    28.0,
+    -1.143,
+    -0.714
+  ],
+  "initial_condition": [
+    0.7,
+    0.0,
+    0.0
+  ],
+  "lle": 0.4235083542082314,
+  "lle_windows": [
+    0.4590324921632751,
+    0.42471046309375704,
+    0.39311554641434293,
+    0.41717491516155036
+  ],
+  "class": "chaotic_candidate",
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "settings": {
+    "dt": 0.01,
+    "transient": 300.0,
+    "duration": 800.0,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ]
+    ],
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "plotted_duration": 200.0,
+  "plot_time_origin": "Relative to the end of transient + LLE observation",
+  "configuration": {
+    "label": "Chua Circuits example",
+    "parameters": [
+      15.6,
+      28.0,
+      -1.143,
+      -0.714
+    ],
+    "half_widths": [
+      3.0,
+      6.0,
+      0.16
+    ],
+    "source": "https://chuacircuits.com/matlab/",
+    "source_note": "Dimensionless example; preserve the published rounded slopes."
+  }
+}

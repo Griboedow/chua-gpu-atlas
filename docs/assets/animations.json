@@ -1,0 +1,41 @@
+[
+  {
+    "file": "extent-rotation.gif",
+    "frames": 144,
+    "fps": 16,
+    "seconds": 9.0,
+    "bytes": 7173086,
+    "camera_axes": [
+      "\u03b1",
+      "\u03b2",
+      "m\u2080"
+    ],
+    "changes_data": false
+  },
+  {
+    "file": "window-rotation.gif",
+    "frames": 144,
+    "fps": 16,
+    "seconds": 9.0,
+    "bytes": 12682208,
+    "camera_axes": [
+      "\u03b1",
+      "\u03b2",
+      "m\u2080"
+    ],
+    "changes_data": false
+  },
+  {
+    "file": "trajectory-rotation.gif",
+    "frames": 144,
+    "fps": 16,
+    "seconds": 9.0,
+    "bytes": 7210125,
+    "camera_axes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "changes_data": false
+  }
+]

@@ -1,0 +1,7 @@
+numpy>=2.2,<3
+scipy>=1.15,<2
+matplotlib>=3.10,<4
+plotly>=6,<8
+pyopencl>=2025.2,<2027
+scikit-image>=0.25,<1
+pillow>=11,<14

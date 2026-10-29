@@ -1,0 +1,138 @@
+{
+  "checks": [
+    {
+      "name": "classic_five_peak_window",
+      "passed": true,
+      "expected_peak_pattern": 5,
+      "gpu_peak_pattern": 5,
+      "dop853_peak_pattern": 5,
+      "refined_lle": [
+        -1.6976187392413864e-05,
+        -4.579159378022567e-05,
+        0.0005081228074027824
+      ],
+      "refined_settings": {
+        "dt": 0.0025,
+        "transient": 1200,
+        "duration": 3200,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "dop853_time": 300
+    },
+    {
+      "name": "reference_six_peak_window",
+      "passed": true,
+      "expected_peak_pattern": 6,
+      "gpu_peak_pattern": 6,
+      "dop853_peak_pattern": 6,
+      "refined_lle": [
+        -0.00034409753876757474,
+        9.808828395023867e-06,
+        -0.0003778924247350765
+      ],
+      "refined_settings": {
+        "dt": 0.0025,
+        "transient": 1200,
+        "duration": 3200,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "dop853_time": 300
+    },
+    {
+      "name": "GPU peak buffer versus retained trajectory, with wrap",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "total_peaks": 92,
+      "buffer_capacity": 16
+    },
+    {
+      "name": "Basin slice respects central symmetry",
+      "passed": true,
+      "unresolved_nodes": 1
+    }
+  ],
+  "all_checks_passed": true,
+  "zoom_refinement": {
+    "sampled_regular": 128,
+    "regular_retained": 125,
+    "sampled_all_seed_chaos": 128,
+    "all_seed_chaos_retained": 127,
+    "settings": {
+      "dt": 0.0025,
+      "transient": 1200,
+      "duration": 3200,
+      "threshold": 0.01,
+      "escape": 100.0,
+      "seeds": [
+        [
+          0.7,
+          0.0,
+          0.0
+        ],
+        [
+          -0.2,
+          0.1,
+          0.0
+        ],
+        [
+          1.5,
+          0.02,
+          -1.5
+        ]
+      ],
+      "renormalize_every_steps": 10,
+      "chunk_steps": 200
+    },
+    "scope": "A stratified 256-node sensitivity check, not a certificate for the full local surface."
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  }
+}

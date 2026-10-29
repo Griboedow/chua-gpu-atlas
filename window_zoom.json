@@ -1,0 +1,9 @@
+{
+  "window_zoom": {
+    "label": "Thin recurrent window near the classic reference",
+    "parameters": [9.0, 14.32, -1.1428571428571428, -0.7142857142857143],
+    "half_widths": [0.06, 0.08, 0.006],
+    "source": "https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf",
+    "source_note": "Local zoom selected from the newly computed beta transect; beta=14.32 is a measured recurrent-window example, not a quoted literature reference."
+  }
+}

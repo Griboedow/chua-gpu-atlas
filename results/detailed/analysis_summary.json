@@ -1,0 +1,40 @@
+[
+  {
+    "name": "classic",
+    "grid": 81,
+    "nodes": 531441,
+    "candidate_nodes": 178627,
+    "candidate_fraction": 0.33611821443960854,
+    "all_seeds_fraction_of_candidates": 0.8956540724526527,
+    "largest_6_connected_component_fraction_of_candidates": 0.9995969254368041,
+    "connected_components": 70,
+    "single_node_components": 67,
+    "maximum_candidate_m0": -1.0108571428571427,
+    "chaotic_seed_runs_visiting_both_outer_regions": 0.826432156119389,
+    "grid_step": [
+      0.04999999999999982,
+      0.09999999999999964,
+      0.0040000000000000036
+    ],
+    "scope": "Grid connectivity and fractions, not invariant topology, basin probabilities, or exact volumes."
+  },
+  {
+    "name": "reference",
+    "grid": 81,
+    "nodes": 531441,
+    "candidate_nodes": 242747,
+    "candidate_fraction": 0.45677130669255855,
+    "all_seeds_fraction_of_candidates": 0.9407366517402893,
+    "largest_6_connected_component_fraction_of_candidates": 0.9991266627393953,
+    "connected_components": 181,
+    "single_node_components": 164,
+    "maximum_candidate_m0": -1.0070000000000001,
+    "chaotic_seed_runs_visiting_both_outer_regions": 0.8287245261187586,
+    "grid_step": [
+      0.07499999999999929,
+      0.14999999999999858,
+      0.0040000000000000036
+    ],
+    "scope": "Grid connectivity and fractions, not invariant topology, basin probabilities, or exact volumes."
+  }
+]

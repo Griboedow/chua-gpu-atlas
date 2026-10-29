@@ -1,0 +1,65 @@
+{
+  "parameters": [
+    9.0,
+    14.285714285714286,
+    -1.1428571428571428,
+    -0.7142857142857143
+  ],
+  "initial_condition": [
+    0.7,
+    0.0,
+    0.0
+  ],
+  "lle": 0.3379764335713379,
+  "lle_windows": [
+    0.3301707672107741,
+    0.3510148713969485,
+    0.31607744360598955,
+    0.3546426520716394
+  ],
+  "class": "chaotic_candidate",
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "settings": {
+    "dt": 0.01,
+    "transient": 300.0,
+    "duration": 800.0,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ]
+    ],
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "plotted_duration": 200.0,
+  "plot_time_origin": "Relative to the end of transient + LLE observation",
+  "configuration": {
+    "label": "Classic double scroll",
+    "parameters": [
+      9.0,
+      14.285714285714286,
+      -1.1428571428571428,
+      -0.7142857142857143
+    ],
+    "half_widths": [
+      2.0,
+      4.0,
+      0.16
+    ],
+    "source": "https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf",
+    "source_note": "Equations 11-14, page 6. These are diode slopes a,b, not the shifted slopes m0,m1 used later in that source."
+  }
+}

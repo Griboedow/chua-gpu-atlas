@@ -1,0 +1,275 @@
+{
+  "sampling": "Scrambled Sobol, uniform in log(alpha), log(beta/alpha), log(-1-m0)",
+  "seed": 20261029,
+  "points": 32768,
+  "starts_per_point": 3,
+  "fixed_m1": -0.7142857142857143,
+  "ranges": {
+    "alpha": [
+      2,
+      256
+    ],
+    "beta_over_alpha": [
+      0.25,
+      64
+    ],
+    "depth_minus_one_minus_m0": [
+      0.003,
+      7
+    ]
+  },
+  "initial_states": "(0.7,0,0), (0.9*x*,0.02,-0.9*x*), (1.1*x*,-0.02,-1.1*x*), x*=(m1-m0)/(1+m1)",
+  "escape_cutoff": 1000,
+  "scout_transient": 100,
+  "scout_observation": 200,
+  "verification_transient": 300,
+  "verification_observation": 800,
+  "scout_candidates": 2362,
+  "verified_candidates": 2249,
+  "verified_parameter_min": [
+    2.1448002404061173,
+    2.216739087290998,
+    -7.99120887676794,
+    -0.7142857142857143
+  ],
+  "verified_parameter_max": [
+    255.69312973200468,
+    12022.296134038306,
+    -1.0030069346484851,
+    -0.7142857142857143
+  ],
+  "coarse_groups": [
+    {
+      "points": 14480,
+      "dt": 0.01,
+      "timing": {
+        "wall_seconds": 1.3678337999999712,
+        "gpu_seconds": 1.3272895040000001,
+        "max_kernel_seconds": 0.009841664
+      }
+    },
+    {
+      "points": 6158,
+      "dt": 0.005,
+      "timing": {
+        "wall_seconds": 5.475399900000411,
+        "gpu_seconds": 5.383190463999999,
+        "max_kernel_seconds": 0.019961856
+      }
+    },
+    {
+      "points": 5665,
+      "dt": 0.0025,
+      "timing": {
+        "wall_seconds": 2.851126600000498,
+        "gpu_seconds": 2.7087234879999995,
+        "max_kernel_seconds": 0.006341472000000001
+      }
+    },
+    {
+      "points": 3272,
+      "dt": 0.00125,
+      "timing": {
+        "wall_seconds": 4.054522700000234,
+        "gpu_seconds": 3.7871739839999767,
+        "max_kernel_seconds": 0.004594688
+      }
+    },
+    {
+      "points": 1433,
+      "dt": 0.000625,
+      "timing": {
+        "wall_seconds": 13.973816400000032,
+        "gpu_seconds": 13.450615519999943,
+        "max_kernel_seconds": 0.008840192
+      }
+    },
+    {
+      "points": 1004,
+      "dt": 0.0003125,
+      "timing": {
+        "wall_seconds": 5.1386851999996,
+        "gpu_seconds": 4.237111455999978,
+        "max_kernel_seconds": 0.0013639680000000001
+      }
+    },
+    {
+      "points": 586,
+      "dt": 0.00015625,
+      "timing": {
+        "wall_seconds": 22.580864399999882,
+        "gpu_seconds": 20.665016000000264,
+        "max_kernel_seconds": 0.004827136
+      }
+    },
+    {
+      "points": 170,
+      "dt": 7.8125e-05,
+      "timing": {
+        "wall_seconds": 20.367890499999703,
+        "gpu_seconds": 16.70102745599994,
+        "max_kernel_seconds": 0.0014336000000000002
+      }
+    }
+  ],
+  "verification_groups": [
+    {
+      "points": 607,
+      "dt": 0.005,
+      "timing": {
+        "wall_seconds": 2.601783400000386,
+        "gpu_seconds": 2.3835315199999947,
+        "max_kernel_seconds": 0.0027688960000000003
+      }
+    },
+    {
+      "points": 352,
+      "dt": 0.0025,
+      "timing": {
+        "wall_seconds": 2.3305473000000347,
+        "gpu_seconds": 1.9182342080000025,
+        "max_kernel_seconds": 0.0011735040000000001
+      }
+    },
+    {
+      "points": 444,
+      "dt": 0.00125,
+      "timing": {
+        "wall_seconds": 4.690426000000116,
+        "gpu_seconds": 3.8631745919999396,
+        "max_kernel_seconds": 0.001206272
+      }
+    },
+    {
+      "points": 317,
+      "dt": 0.000625,
+      "timing": {
+        "wall_seconds": 11.381216200000381,
+        "gpu_seconds": 9.654981855998894,
+        "max_kernel_seconds": 0.002063136
+      }
+    },
+    {
+      "points": 259,
+      "dt": 0.0003125,
+      "timing": {
+        "wall_seconds": 12.44398850000016,
+        "gpu_seconds": 9.06808963200023,
+        "max_kernel_seconds": 0.0012810240000000002
+      }
+    },
+    {
+      "points": 218,
+      "dt": 0.00015625,
+      "timing": {
+        "wall_seconds": 38.97594710000067,
+        "gpu_seconds": 31.930534815998673,
+        "max_kernel_seconds": 0.0021227520000000003
+      }
+    },
+    {
+      "points": 127,
+      "dt": 7.8125e-05,
+      "timing": {
+        "wall_seconds": 52.197078500000316,
+        "gpu_seconds": 37.68286431999596,
+        "max_kernel_seconds": 0.0017889280000000002
+      }
+    },
+    {
+      "points": 38,
+      "dt": 3.90625e-05,
+      "timing": {
+        "wall_seconds": 98.71026530000017,
+        "gpu_seconds": 71.6652397440655,
+        "max_kernel_seconds": 0.001308672
+      }
+    }
+  ],
+  "long_check_groups": [
+    {
+      "points": 5,
+      "dt": 0.0025,
+      "timing": {
+        "wall_seconds": 2.342214999999669,
+        "gpu_seconds": 1.505009759999994,
+        "max_kernel_seconds": 0.00052736
+      }
+    },
+    {
+      "points": 2,
+      "dt": 0.00125,
+      "timing": {
+        "wall_seconds": 4.7259751999999935,
+        "gpu_seconds": 3.0123841279997023,
+        "max_kernel_seconds": 0.000528384
+      }
+    },
+    {
+      "points": 3,
+      "dt": 0.000625,
+      "timing": {
+        "wall_seconds": 9.788939399999435,
+        "gpu_seconds": 6.026758367999398,
+        "max_kernel_seconds": 0.002200576
+      }
+    },
+    {
+      "points": 3,
+      "dt": 0.0003125,
+      "timing": {
+        "wall_seconds": 19.23115349999989,
+        "gpu_seconds": 12.080717088000588,
+        "max_kernel_seconds": 0.0012001280000000002
+      }
+    },
+    {
+      "points": 1,
+      "dt": 0.00015625,
+      "timing": {
+        "wall_seconds": 37.4606517000002,
+        "gpu_seconds": 24.06193065600007,
+        "max_kernel_seconds": 0.000560128
+      }
+    },
+    {
+      "points": 1,
+      "dt": 7.8125e-05,
+      "timing": {
+        "wall_seconds": 77.96676219999972,
+        "gpu_seconds": 48.312600927982196,
+        "max_kernel_seconds": 0.001212416
+      }
+    },
+    {
+      "points": 1,
+      "dt": 3.90625e-05,
+      "timing": {
+        "wall_seconds": 162.70280100000036,
+        "gpu_seconds": 96.96486374409365,
+        "max_kernel_seconds": 0.011618304000000001
+      }
+    },
+    {
+      "points": 1,
+      "dt": 1.953125e-05,
+      "timing": {
+        "wall_seconds": 335.0588480000006,
+        "gpu_seconds": 194.43647174434452,
+        "max_kernel_seconds": 0.01622528
+      }
+    }
+  ],
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "wall_seconds": 948.7721771999995,
+  "scope": "Sparse finite-domain evidence. No proof of global closure, unboundedness, connectedness, or absence in empty regions. Only m0<-1 is explored in this continuation of the double-scroll family. Raw positive-node fractions depend on the log sampling density and are not parameter-space volumes."
+}

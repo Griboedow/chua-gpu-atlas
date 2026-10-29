@@ -1,0 +1,95 @@
+{
+  "name": "reference",
+  "configuration": {
+    "label": "Chua Circuits example",
+    "parameters": [
+      15.6,
+      28.0,
+      -1.143,
+      -0.714
+    ],
+    "half_widths": [
+      3.0,
+      6.0,
+      0.16
+    ],
+    "source": "https://chuacircuits.com/matlab/",
+    "source_note": "Dimensionless example; preserve the published rounded slopes."
+  },
+  "grid": 51,
+  "created_utc": "2026-10-29T13:43:18.908403+00:00",
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "settings": {
+    "dt": 0.01,
+    "transient": 300.0,
+    "duration": 800.0,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "timing": {
+    "wall_seconds": 36.6683309,
+    "gpu_seconds": 36.481075071999996,
+    "max_kernel_seconds": 0.070152192
+  },
+  "parameter_order": [
+    "alpha",
+    "beta",
+    "m0",
+    "m1"
+  ],
+  "varying_parameters": [
+    "alpha",
+    "beta",
+    "m0"
+  ],
+  "classes": {
+    "0": "escaped",
+    "1": "equilibrium",
+    "2": "nonpositive_or_near_zero",
+    "3": "uncertain",
+    "4": "chaotic_candidate",
+    "5": "numerical_failure"
+  },
+  "grid_nodes": 132651,
+  "candidate_nodes_any_seed": 60238,
+  "candidate_nodes_all_seeds": 56637,
+  "mixed_class_nodes": 7881,
+  "candidate_fraction_of_nodes": 0.45410890230755896,
+  "boundary_faces_with_candidates": {
+    "alpha_min": true,
+    "alpha_max": true,
+    "beta_min": true,
+    "beta_max": true,
+    "m0_min": true,
+    "m0_max": false
+  },
+  "scope": "Finite-time, finite-grid evidence from the listed initial conditions. Not a rigorous existence region, basin census, or proof of absence elsewhere."
+}

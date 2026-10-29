@@ -1,0 +1,9 @@
+{
+  "candidate_nodes": 2249,
+  "lle_consistent_between_runs": 2207,
+  "candidates_above_outer_stability_boundary": 0,
+  "alpha_above_192": 259,
+  "m0_below_minus_6": 174,
+  "boundary_equation": "beta = 5*alpha/7 + 10*alpha**2/49",
+  "scope": "The stability boundary is not itself a proven chaos boundary. No global closure/unboundedness claim."
+}
