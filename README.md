@@ -83,6 +83,12 @@ Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive expo
 
 [Full views, sections and numerical limits](docs/chua-slope-volumes.md) · [Slow 24-second rotation](docs/assets/chua-slope-volumes.gif) · [Offline interactive viewer](results/chua-slope-volumes/volumes.html) (download and open in a browser).
 
+**Two tracked slope families overlap.** Following the verified five- and seven-peak cycles resolves symmetric cores up to 55 times thinner than the original m0 grid step at the central section. Thirteen common-parameter witnesses support both attracting cycles. At the highlighted witness, all three original atlas starts select the seven-peak cycle, so denser parameter sampling alone would still miss the five-peak outcome.
+
+![The continued five- and seven-peak family sheets overlap in both slope volumes](docs/assets/chua-slope-family-sheets.png)
+
+[Family identities, birth mechanisms, coexistence and an apparent ending](docs/chua-slope-families.md) · [Both coexisting orbits](docs/assets/chua-slope-coexistence.png) · [Slow family rotation](docs/assets/chua-slope-family-sheets.gif). The report retains failed continuation nodes and the capture map's sensitivity to integration step.
+
 **The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
 
 ![Lyapunov transect, peak diagram, coexisting scrolls and basin map](docs/assets/findings.png)

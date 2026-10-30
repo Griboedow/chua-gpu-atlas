@@ -1,0 +1,49 @@
+{
+  "samples": 291,
+  "settings": {
+    "dt": 0.0025,
+    "transient": 2400,
+    "duration": 1600,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": null,
+    "initial_state_mode": "per_parameter",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "all_label_agreement": 0.6701030927835051,
+  "resolved_label_agreement": 1.0,
+  "counts": {
+    "0": {
+      "0": 0,
+      "5": 5,
+      "7": 91
+    },
+    "5": {
+      "0": 0,
+      "5": 96,
+      "7": 0
+    },
+    "7": {
+      "0": 0,
+      "5": 0,
+      "7": 99
+    }
+  },
+  "original_starts_baseline": [
+    7,
+    7,
+    7
+  ],
+  "original_starts_time_only": [
+    7,
+    7,
+    7
+  ],
+  "original_starts_step_and_time": [
+    7,
+    7,
+    7
+  ],
+  "scope": "Same step as the baseline with doubled durations; separates transient-length sensitivity from the combined half-step check."
+}

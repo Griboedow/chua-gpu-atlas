@@ -16,7 +16,8 @@ refine_chua_adding_check refine_chua_satellites refine_chua_sheets scan_chua_off
 select_chua_offcenter verify_chua_offcenter verify_four_chua_cycles
 refine_readme_layers refine_readme_thin_cores plot_readme_layers
 scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane
-scan_chua_slope_volumes check_chua_slope_volumes plot_chua_slope_volumes build_chua_slope_volume_viewer'''.split()
+scan_chua_slope_volumes check_chua_slope_volumes plot_chua_slope_volumes build_chua_slope_volume_viewer
+continue_chua_slope_families check_chua_slope_families map_chua_slope_coexistence plot_chua_slope_families'''.split()
 
 
 def digest(path):
@@ -55,16 +56,19 @@ def main():
     paths.update(p for p in (out/'readme-layer-view').rglob('*') if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-plane').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-volumes').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-slope-families').iterdir() if p.is_file())
     paths.add(ROOT/'research/check_chua_slope_volume_viewer.cjs')
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])
     paths.add(ROOT/'docs/chua-family-gallery.md')
     paths.add(ROOT/'docs/chua-slope-plane.md')
     paths.add(ROOT/'docs/chua-slope-volumes.md')
+    paths.add(ROOT/'docs/chua-slope-families.md')
     paths.update((ROOT/'docs/assets/chua-families').glob('*.png'))
     paths.update(ROOT/'docs/assets'/name for name in ['chua-refined-atlas.png','chua-refined-adding.png','chua-four-cycle-overlap.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-readme-layers.gif','chua-readme-layers-poster.png','chua-readme-layer-zoom.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-plane.png','chua-slope-peak-patterns.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-volumes.png','chua-slope-volumes-interior.png','chua-slope-volume-sections.png','chua-slope-volumes.gif'])
+    paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-family-sheets.png','chua-slope-family-sheets.gif','chua-slope-coexistence.png','chua-slope-basin-sensitivity.png','chua-slope-itinerary-change.png'])
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])
     paths.add(ROOT/'results/chua-layers/extended.json')

@@ -33,6 +33,8 @@ Two examples on m1 = -5/7 were then closed by full-field shooting and checked by
 
 Both magnitudes are below one, supporting attraction. Independent closure errors are below 1.03e-8, and multiplier discrepancies below 2.57e-8. These are two numerical examples, not a count of all periodic families in this plane. The [cycle records](../results/chua-slope-plane/closed-cycles.json) retain the parameters, shooting vectors and checks.
 
+The [family-continuation follow-up](chua-slope-families.md) now tracks these two reference cycles through m1 and alpha or beta, resolves their stability edges, and verifies parameter sets where both cycles attract.
+
 ## Resolution and reliability
 
 Each panel has **241 by 241 nodes**, with the same three prescribed starts used in the earlier atlas. Alpha and beta stay fixed throughout. The wide domain is m0 in [-1.5, -0.9], m1 in [-0.98, -0.10]. The zoom extends 0.006 in each slope direction from the classical point, giving spacing **5e-5** on both axes.

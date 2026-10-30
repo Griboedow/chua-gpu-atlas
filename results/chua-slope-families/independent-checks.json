@@ -1,0 +1,846 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 6.494804694057166e-15,
+      "dominant": 0.999999993508407,
+      "expected": 1.0000000000003157,
+      "multiplier_error": 6.4919087883197335e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.7830181775480014e-13,
+      "dominant": 1.0000000005610117,
+      "expected": 0.9999999999999207,
+      "multiplier_error": 5.610909514786044e-10
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 2.472577698142686e-12,
+      "dominant": 0.19014720754413372,
+      "expected": 0.1901472075858375,
+      "multiplier_error": 4.170377931878022e-11
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 5.628830734849544e-13,
+      "dominant": 0.9999999951605871,
+      "expected": 1.0000000000012657,
+      "multiplier_error": 4.840678524686837e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 5.410116798998388e-13,
+      "dominant": 1.0000000065402292,
+      "expected": 0.9999999999988403,
+      "multiplier_error": 6.5413889860366226e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.522526549280201e-11,
+      "dominant": 0.18246857907546177,
+      "expected": 0.1824685814955635,
+      "multiplier_error": 2.4201017301272998e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 9.725553695716371e-14,
+      "dominant": 0.9999999984145465,
+      "expected": 0.9999999999999676,
+      "multiplier_error": 1.5854211277144259e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.4144241333724494e-13,
+      "dominant": 1.0000000006080358,
+      "expected": 0.9999999999999998,
+      "multiplier_error": 6.080360659410644e-10
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 4.390932062392494e-14,
+      "dominant": 0.13865982017997253,
+      "expected": 0.13865981924784798,
+      "multiplier_error": 9.321245442173165e-10
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 2.44804176929847e-13,
+      "dominant": 0.9999999933371382,
+      "expected": 0.999999999999851,
+      "multiplier_error": 6.66271282590003e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 2.5646151868841116e-13,
+      "dominant": 1.000000001742761,
+      "expected": 1.0000000000000258,
+      "multiplier_error": 1.742735289411712e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.4221956945448255e-13,
+      "dominant": 0.18929505938640984,
+      "expected": 0.18929505639871785,
+      "multiplier_error": 2.987691982703211e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        20
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 8.2798351508373e-15,
+      "dominant": 1.0000000031585927,
+      "expected": 1.0000000000007123,
+      "multiplier_error": 3.157880401616353e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        20
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.1574075031717257e-13,
+      "dominant": 0.9999999959893272,
+      "expected": 1.0000000000000586,
+      "multiplier_error": 4.010731413650603e-09
+    },
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "index": [
+        10,
+        20
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.2678746941219288e-13,
+      "dominant": 0.1871644163821499,
+      "expected": 0.18716441704377987,
+      "multiplier_error": 6.616299730310971e-10
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 6.494804694057166e-15,
+      "dominant": 0.999999993508407,
+      "expected": 1.0000000000003157,
+      "multiplier_error": 6.4919087883197335e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.7830181775480014e-13,
+      "dominant": 1.0000000005610117,
+      "expected": 0.9999999999999207,
+      "multiplier_error": 5.610909514786044e-10
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 2.472577698142686e-12,
+      "dominant": 0.19014720754413372,
+      "expected": 0.1901472075858375,
+      "multiplier_error": 4.170377931878022e-11
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 5.928590951498336e-14,
+      "dominant": 0.9999999963189359,
+      "expected": 0.99999999999978,
+      "multiplier_error": 3.6808440739832804e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 8.326672684688674e-16,
+      "dominant": 0.9999999972581837,
+      "expected": 0.9999999999997649,
+      "multiplier_error": 2.7415811842956828e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 3.3362201889985954e-14,
+      "dominant": 0.13978820087943608,
+      "expected": 0.13978820206151965,
+      "multiplier_error": 1.182083569917225e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.04121180963557e-13,
+      "dominant": 0.9999999935228956,
+      "expected": 1.0000000000004876,
+      "multiplier_error": 6.477592018327982e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 4.606315329169774e-13,
+      "dominant": 0.9999999969650345,
+      "expected": 0.9999999999997753,
+      "multiplier_error": 3.034740791996171e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 2.7730040486062535e-12,
+      "dominant": 0.1833959366439189,
+      "expected": 0.1833959355063287,
+      "multiplier_error": 1.1375901887156203e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 2.44804176929847e-13,
+      "dominant": 0.9999999933371382,
+      "expected": 0.999999999999851,
+      "multiplier_error": 6.66271282590003e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 2.5646151868841116e-13,
+      "dominant": 1.000000001742761,
+      "expected": 1.0000000000000258,
+      "multiplier_error": 1.742735289411712e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.4221956945448255e-13,
+      "dominant": 0.18929505938640984,
+      "expected": 0.18929505639871785,
+      "multiplier_error": 2.987691982703211e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        20
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 8.2798351508373e-15,
+      "dominant": 1.0000000031585927,
+      "expected": 1.0000000000007123,
+      "multiplier_error": 3.157880401616353e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        20
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.1574075031717257e-13,
+      "dominant": 0.9999999959893272,
+      "expected": 1.0000000000000586,
+      "multiplier_error": 4.010731413650603e-09
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "index": [
+        10,
+        20
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.2678746941219288e-13,
+      "dominant": 0.1871644163821499,
+      "expected": 0.18716441704377987,
+      "multiplier_error": 6.616299730310971e-10
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.107825191113079e-15,
+      "dominant": 1.0000000026824278,
+      "expected": 0.9999999999999907,
+      "multiplier_error": 2.6824371612832465e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 2.142730437526552e-14,
+      "dominant": 0.9999999967428775,
+      "expected": 0.9999999999998745,
+      "multiplier_error": 3.256997005429696e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 4.137024056660721e-12,
+      "dominant": 0.1829976088939292,
+      "expected": 0.18299760974440027,
+      "multiplier_error": 8.504710824475126e-10
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 3.9312997301976793e-13,
+      "dominant": 1.0000000013338073,
+      "expected": 1.0000000000002784,
+      "multiplier_error": 1.333528842906162e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 8.870681966755001e-14,
+      "dominant": 0.9999999998042087,
+      "expected": 0.9999999999999449,
+      "multiplier_error": 1.9573620502200129e-10
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.203359634160961e-11,
+      "dominant": 0.18583581806040794,
+      "expected": 0.1858358168051147,
+      "multiplier_error": 1.2552932304732423e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.0523140398818214e-13,
+      "dominant": 0.9999999981274491,
+      "expected": 1.0000000000007696,
+      "multiplier_error": 1.8733204987242402e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.1890488593735427e-13,
+      "dominant": 0.9999999967983138,
+      "expected": 0.9999999999995963,
+      "multiplier_error": 3.2012825723626293e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        20,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 3.2526759063955524e-12,
+      "dominant": 0.17993603666535665,
+      "expected": 0.1799360353264091,
+      "multiplier_error": 1.3389475639336013e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.2243986086987206e-14,
+      "dominant": 1.0000000011464762,
+      "expected": 1.0000000000004476,
+      "multiplier_error": 1.1460286053477375e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.1712852909795402e-14,
+      "dominant": 0.9999999973210261,
+      "expected": 0.9999999999971805,
+      "multiplier_error": 2.6761544091868927e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        10,
+        0
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 7.91033905045424e-14,
+      "dominant": 0.19832406638855177,
+      "expected": 0.19832406557507085,
+      "multiplier_error": 8.134809215132321e-10
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        19
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 2.815525590449397e-13,
+      "dominant": 0.999999995009492,
+      "expected": 1.0000000000001936,
+      "multiplier_error": 4.9907016297368045e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        19
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 5.495603971894525e-14,
+      "dominant": 0.9999999982710215,
+      "expected": 1.0000000000001572,
+      "multiplier_error": 1.7291357234938687e-09
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "index": [
+        0,
+        19
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 1.0258460747536446e-13,
+      "dominant": 0.18030166613208914,
+      "expected": 0.18030166420517638,
+      "multiplier_error": 1.9269127682353115e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.107825191113079e-15,
+      "dominant": 1.0000000026824278,
+      "expected": 0.9999999999999907,
+      "multiplier_error": 2.6824371612832465e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 2.142730437526552e-14,
+      "dominant": 0.9999999967428775,
+      "expected": 0.9999999999998745,
+      "multiplier_error": 3.256997005429696e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 4.137024056660721e-12,
+      "dominant": 0.1829976088939292,
+      "expected": 0.18299760974440027,
+      "multiplier_error": 8.504710824475126e-10
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 6.261380303129727e-13,
+      "dominant": 1.0000000043959985,
+      "expected": 1.000000000000373,
+      "multiplier_error": 4.3956254192067945e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 3.447242491461111e-14,
+      "dominant": 0.9999999963524022,
+      "expected": 1.0000000000000018,
+      "multiplier_error": 3.6475995557339047e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        0,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 2.261080211951594e-12,
+      "dominant": 0.17916408154600294,
+      "expected": 0.17916407852974828,
+      "multiplier_error": 3.016254662702167e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 3.219646771412954e-13,
+      "dominant": 1.0000000060504681,
+      "expected": 1.0000000000002593,
+      "multiplier_error": 6.050208778418664e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.5520917884259688e-13,
+      "dominant": 0.9999999976000804,
+      "expected": 1.0000000000000613,
+      "multiplier_error": 2.399980880696262e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        20,
+        10
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 3.963496197911809e-14,
+      "dominant": 0.1877919214343087,
+      "expected": 0.1877919228440946,
+      "multiplier_error": 1.4097858991313217e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 4.2243986086987206e-14,
+      "dominant": 1.0000000011464762,
+      "expected": 1.0000000000004476,
+      "multiplier_error": 1.1460286053477375e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 1.1712852909795402e-14,
+      "dominant": 0.9999999973210261,
+      "expected": 0.9999999999971805,
+      "multiplier_error": 2.6761544091868927e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        10,
+        0
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 7.91033905045424e-14,
+      "dominant": 0.19832406638855177,
+      "expected": 0.19832406557507085,
+      "multiplier_error": 8.134809215132321e-10
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        16,
+        18
+      ],
+      "role": "fold",
+      "success": true,
+      "closure": 3.36952687973735e-14,
+      "dominant": 0.9999999986905015,
+      "expected": 0.9999999999992759,
+      "multiplier_error": 1.3087744221706998e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        16,
+        18
+      ],
+      "role": "symmetry",
+      "success": true,
+      "closure": 2.2859492077031973e-13,
+      "dominant": 1.0000000021134814,
+      "expected": 1.0000000000000506,
+      "multiplier_error": 2.1134307637282745e-09
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "index": [
+        16,
+        18
+      ],
+      "role": "core",
+      "success": true,
+      "closure": 2.753908212582701e-13,
+      "dominant": 0.18068530758320225,
+      "expected": 0.18068530949666636,
+      "multiplier_error": 1.9134641093820903e-09
+    }
+  ],
+  "scope": "Selected full-field DOP853 state-and-variational controls; not all continuation nodes."
+}

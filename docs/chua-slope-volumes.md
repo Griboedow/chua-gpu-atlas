@@ -9,6 +9,8 @@ The slope-plane study now extends into two directly computed parameter volumes:
 
 Both retain m0 in [-1.5, -0.9] and m1 in [-0.98, -0.10]. These are independent three-dimensional scans, not extrusions or rotations of the earlier two-dimensional image.
 
+**Follow-up:** [tracking the five- and seven-peak families](chua-slope-families.md) resolves thin symmetric cores, verifies 13 coexistence witnesses, and follows a cycle past an apparent sheet ending. That continuation supplements this coarse sampled volume; it does not silently replace its classifications.
+
 ![Full three-dimensional slope sections](assets/chua-slope-volumes.png)
 
 The orange surfaces bound the sampled **regular-candidate mask**: all three starts have negative or near-zero late exponents without meeting the equilibrium criterion. Faint blue dots provide chaotic-candidate context. In these views the regular regions form bent sheets, broad outer regions and narrower connections. Their positions and shapes change with the third parameter.

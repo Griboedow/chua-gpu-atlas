@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "sheets": [
+    {
+      "id": "P5",
+      "kind": "alpha",
+      "continued": 438,
+      "attempted_failures": 2,
+      "unvisited": 1,
+      "width_m0_range": [
+        0.0001958652954372475,
+        0.002798041532197537
+      ]
+    },
+    {
+      "id": "P5",
+      "kind": "beta",
+      "continued": 440,
+      "attempted_failures": 1,
+      "unvisited": 0,
+      "width_m0_range": [
+        0.00023716747571067565,
+        0.0028553193141180877
+      ]
+    },
+    {
+      "id": "P7",
+      "kind": "alpha",
+      "continued": 361,
+      "attempted_failures": 21,
+      "unvisited": 59,
+      "width_m0_range": [
+        9.022526823621035e-05,
+        0.0009049711444761854
+      ]
+    },
+    {
+      "id": "P7",
+      "kind": "beta",
+      "continued": 360,
+      "attempted_failures": 21,
+      "unvisited": 60,
+      "width_m0_range": [
+        8.934388931058912e-05,
+        0.0012605914661059092
+      ]
+    }
+  ],
+  "total_continued": 1599,
+  "maximum_affine_residual": 2.424727085781342e-11,
+  "maximum_extrema_region_violation": 2.4247048813208494e-11,
+  "independent_sheet_controls": 60,
+  "maximum_independent_sheet_closure": 1.522526549280201e-11,
+  "maximum_independent_sheet_multiplier_error": 6.66271282590003e-09,
+  "coexistence_witnesses": 13,
+  "overlap_width_range": [
+    1.3663434677013697e-06,
+    0.0005591788838004152
+  ],
+  "basin_sampled_resolved": 195,
+  "basin_resolved_changes_time_only": 0,
+  "basin_resolved_changes_half_step": 73,
+  "scope": "Numerical consistency and witness checks; no global layer count, complete basin certification or exact bifurcation theorem."
+}
