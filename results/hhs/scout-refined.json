@@ -1,0 +1,108 @@
+{
+  "settings": {
+    "transient": 2000,
+    "duration": 8000,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step": 0.025,
+    "max_attempts": 12000000
+  },
+  "method": "Adaptive DP5(4), exact polynomial variational equations, state and tangent error control",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 408.1263095999966,
+  "parameter_columns": [
+    "mu",
+    "tauD",
+    "tauL"
+  ],
+  "fixed_parameters": {
+    "a": 1,
+    "b": 3,
+    "c": 1,
+    "D0": 0.1,
+    "tauR": 1,
+    "Eref": 3.8626272360560576
+  },
+  "state_columns": [
+    "M",
+    "E",
+    "D",
+    "y",
+    "x"
+  ],
+  "time_unit": "source time in units of tauR, not calibrated seconds",
+  "physical_scope": "Observed alpha bound from accepted observation states only; L=1-alpha*x,L0=1-alpha*y,beta=mu/alpha. No clipping or physical calibration.",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved",
+    "5": "negative concentration beyond 1e-8, invalid numerical trajectory"
+  },
+  "retained": 0,
+  "source": "scout.npz",
+  "selection": "All four positive windows, union preliminary passes and top24 means",
+  "array_shapes": {
+    "parameters": [
+      187,
+      3
+    ],
+    "initial_states": [
+      187,
+      5
+    ],
+    "initial_tangent": [
+      5
+    ],
+    "final_states": [
+      187,
+      5
+    ],
+    "final_tangents": [
+      187,
+      5
+    ],
+    "lle": [
+      187
+    ],
+    "lle_windows": [
+      187,
+      4
+    ],
+    "raw_window_log_sums": [
+      187,
+      4
+    ],
+    "raw_clocks": [
+      187,
+      4
+    ],
+    "status": [
+      187
+    ],
+    "stats": [
+      187,
+      16
+    ],
+    "elapsed": [
+      187
+    ],
+    "step_counts": [
+      187,
+      2
+    ],
+    "alpha_upper_bound_observed": [
+      187
+    ],
+    "minimum_observed_length_at_alpha_point1": [
+      187
+    ],
+    "source_indices": [
+      187
+    ],
+    "retained_candidate": [
+      187
+    ]
+  }
+}

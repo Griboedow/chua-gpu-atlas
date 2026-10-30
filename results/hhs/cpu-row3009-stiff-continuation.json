@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "source_row": 3009,
+  "refined_row": 173,
+  "parameter_columns": [
+    "mu",
+    "tauD",
+    "tauL"
+  ],
+  "state_columns": [
+    "M",
+    "E",
+    "D",
+    "y",
+    "x"
+  ],
+  "source_elapsed_before_CPU": 3717.153804719558,
+  "input_file": "results/hhs/scout-refined.npz",
+  "input_sha256": "31334f446d2700b4f9f9988cab211fac24c3adfeaa444ed9b40db6f5589c7002",
+  "requested_duration": 300.0,
+  "actual_duration": 300.0,
+  "method": "Radau with analytic state Jacobian",
+  "rtol": 1e-10,
+  "atol": 1e-13,
+  "max_step": 0.5,
+  "section_definition": "M=.4 upward; time begins at saved incomplete GPU endpoint",
+  "minimum_length_at_alpha_point1": 0.9442966139871524,
+  "nfev": 1203818,
+  "njev": 36408,
+  "nlu": 76140,
+  "wall_seconds": 72.14631229999941,
+  "time_unit": "source model time (tauR=1), not calibrated seconds",
+  "physical_scope": "Extreme mathematical parameters and huge D; not an experimentally calibrated regime.",
+  "interpretation": "The saved endpoint approaches a numerically closed stable cycle under implicit continuation. The original 10000-unit GPU interval remains incomplete; this local control does not complete that interval or exclude other attractors.",
+  "cycle_record": "cpu-row3009-cycle-check.json",
+  "array_shapes": {
+    "parameters": [
+      3
+    ],
+    "initial_saved_endpoint": [
+      5
+    ],
+    "endpoint": [
+      5
+    ],
+    "times": [
+      15000
+    ],
+    "states": [
+      15000,
+      5
+    ],
+    "section_times": [
+      37
+    ],
+    "section_states": [
+      37,
+      5
+    ],
+    "state_minima": [
+      5
+    ],
+    "state_maxima": [
+      5
+    ]
+  }
+}

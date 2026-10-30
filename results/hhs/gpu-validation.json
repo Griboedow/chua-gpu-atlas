@@ -1,0 +1,123 @@
+{
+  "records": [
+    {
+      "parameters": [
+        0.0,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": false,
+      "errors": {
+        "state": 3.552713678800501e-15,
+        "tangent": 7.771561172376096e-16,
+        "lle": 1.3877787807814457e-16
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.0,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": true,
+      "errors": {
+        "state": 1.5180131633336266e-22,
+        "tangent": 8.604228440844963e-16,
+        "lle": 4.996003610813204e-16,
+        "linear_variational_expm": 2.5118795932144167e-15
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.8,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": false,
+      "errors": {
+        "state": 1.1102230246251565e-15,
+        "tangent": 1.0130785099704553e-15,
+        "lle": 9.71445146547012e-17
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.8,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": true,
+      "errors": {
+        "state": 1.5180017488746344e-22,
+        "tangent": 9.992007221626409e-16,
+        "lle": 1.4213890481284963e-16,
+        "linear_variational_expm": 1.6237011735142914e-15
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        1.5,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": false,
+      "errors": {
+        "state": 1.3322676295501878e-15,
+        "tangent": 1.1518563880486e-15,
+        "lle": 3.469446951953614e-16
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        1.5,
+        1.1,
+        1.2
+      ],
+      "at_reference_equilibrium": true,
+      "errors": {
+        "state": 1.5179914837677142e-22,
+        "tangent": 1.5126788710517758e-15,
+        "lle": 3.7470027081099033e-16,
+        "linear_variational_expm": 9.992007221626409e-16
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        4.0,
+        0.1,
+        10.0
+      ],
+      "at_reference_equilibrium": false,
+      "errors": {
+        "state": 7.521760991835436e-15,
+        "tangent": 3.622102617839573e-14,
+        "lle": 3.58046925441613e-15
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        4.0,
+        0.1,
+        10.0
+      ],
+      "at_reference_equilibrium": true,
+      "errors": {
+        "state": 3.071414595736259e-23,
+        "tangent": 1.1102230246251565e-16,
+        "lle": 2.220446049250313e-16,
+        "linear_variational_expm": 2.220446049250313e-16
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Independent implicit Radau state/tangent, and exact equilibrium matrix-exponential variational controls",
+  "array_shapes": {}
+}

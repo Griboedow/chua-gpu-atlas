@@ -1,0 +1,689 @@
+{
+  "audit_utc": "2026-10-30T02:24:10.044582+00:00",
+  "scope": "Source initialization, units, physical interpretation, available author-code provenance and six independent literal-S2 CPU controls",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2504.19655v1",
+      "local_cache": "outputs/candidate_research/hbr-2025.html",
+      "sha256": "310aa5f378436620b0895c1fd6c371ab88b0e806bb53b53d55fb2671cec24339",
+      "access": "Original full primary HTML and SI"
+    },
+    {
+      "url": "https://arxiv.org/html/2504.19655v3",
+      "local_cache": "outputs/candidate_research/hbr-2026-v3.html",
+      "sha256": "69af6939d5cda84591fae1b18f2a5c52770dc18a26d72fba19c765e4963abbcb",
+      "access": "Latest full primary HTML and SI"
+    },
+    {
+      "url": "https://arxiv.org/html/2504.19655v3/SI_Fig_0D_Time_Series_Fin.png",
+      "sha256": "eaa33f9c026f23930a0e543264037cd8fa7ab5a9728ec7dce9c248649d571fe5",
+      "access": "Complete figure visually inspected"
+    }
+  ],
+  "source_units": {
+    "time": "tau_R; source sets tau_R=1 as time unit",
+    "physical_seconds_calibrated": false,
+    "space": "continuum lattice spacing a=1; unrelated to chemical feed symbol a also set to1"
+  },
+  "single_cell_parameters": {
+    "a": 1,
+    "b": 3,
+    "c": 1,
+    "D0": 0.1,
+    "tau_R": 1,
+    "tau_D": 1.1,
+    "tau_L": 1.2,
+    "optional_force": 0
+  },
+  "reference": {
+    "symbol_in_source": "E0",
+    "meaning_main_text": "E concentration at uncoupled chemical fixed point",
+    "value_used": 3.8626272360560576,
+    "initial_condition_reference_equalized": false,
+    "notation_caveat": "SI reuses E0 for sampled initial concentrations; main-text fixed-reference definition was held fixed."
+  },
+  "source_figure_s1": {
+    "panel_mu_values": [
+      0.8,
+      1.5
+    ],
+    "rounded_initial_ME": [
+      [
+        1.05,
+        3.43
+      ],
+      [
+        0.44,
+        2.71
+      ],
+      [
+        0.49,
+        4.21
+      ]
+    ],
+    "displayed_time_window": [
+      975,
+      1000
+    ],
+    "caption": "Describes equal alpha and beta, while panels label mu",
+    "control_interpretation": "mu=alpha*beta with alpha=beta=sqrt(mu)",
+    "visual_observation": {
+      "mu0.8": "Three essentially constant traces at E approximately3.64,2.56,4.00",
+      "mu1.5": "First and third traces oscillate; middle trace essentially constant around2.99"
+    },
+    "raw_figure_data_available_in_inspected_archive": false
+  },
+  "continuum_only_settings": {
+    "mu_range": [
+      0.01,
+      9
+    ],
+    "equal_alpha_beta": "sqrt(mu)",
+    "alpha_beta_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ],
+    "dt": 0.01,
+    "dx": 1,
+    "example_duration": 50000,
+    "distribution_duration": 100000,
+    "distribution_last_window": [
+      99000,
+      100000
+    ],
+    "system_sizes": [
+      200,
+      1000
+    ],
+    "transfer_to_single_cell_valid": false,
+    "reason": "Cubic regularizers and conserved total length are spatial-model ingredients, absent from literal unforced S2."
+  },
+  "independent_controls": {
+    "settings": {
+      "method": "Radau",
+      "rtol": 1e-08,
+      "atol": 1e-10,
+      "max_step": 0.2,
+      "time_span": [
+        0,
+        1000
+      ],
+      "late_samples": 501,
+      "full_domain_samples": 10001,
+      "state_cutoff": 100000000.0,
+      "fixed_E_reference": 3.8626272360560576
+    },
+    "cases": [
+      {
+        "mu": 0.8,
+        "alpha": 0.8944271909999159,
+        "beta": 0.8944271909999159,
+        "initial_state": [
+          1.05,
+          3.43,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.4614670992836185,
+          4.301919589193398,
+          0.0698289191643688,
+          0.9323254051130375,
+          1.254607628868409
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.35033390187377744,
+          1.3856453429940636,
+          0.04977333413024547,
+          0.662925730867638,
+          0.7540336993676277
+        ],
+        "late_max": [
+          2.3034770269695386,
+          4.37442696223628,
+          0.11464372414764921,
+          2.446186648774814,
+          2.203035342090159
+        ],
+        "late_peak_to_peak": [
+          1.9531431250957612,
+          2.988781619242216,
+          0.06487039001740375,
+          1.783260917907176,
+          1.4490016427225316
+        ],
+        "sampled_full_min": [
+          0.35033386570553154,
+          1.3856425228156746,
+          0.049773334270654015,
+          0.6629004423169575,
+          0.7540276265765555
+        ],
+        "sampled_full_max": [
+          2.303486391567651,
+          4.374428032359531,
+          0.11477401849324571,
+          2.446234717146973,
+          2.2030397409412816
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 229092,
+        "njev": 2110,
+        "nlu": 7820,
+        "wall_seconds": 12.202506800000265
+      },
+      {
+        "mu": 0.8,
+        "alpha": 0.8944271909999159,
+        "beta": 0.8944271909999159,
+        "initial_state": [
+          0.44,
+          2.71,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.5764673636533338,
+          4.35781547407775,
+          0.08724592228775657,
+          0.6987018430194104,
+          0.9278935613047857
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.3503341995632599,
+          1.3856443185247558,
+          0.04977335550287415,
+          0.6629018037924995,
+          0.7540302249856224
+        ],
+        "late_max": [
+          2.303429548200816,
+          4.37442797822826,
+          0.11464621931904279,
+          2.4462056017766254,
+          2.20299637249038
+        ],
+        "late_peak_to_peak": [
+          1.953095348637556,
+          2.988783659703504,
+          0.06487286381616864,
+          1.783303797984126,
+          1.4489661475047577
+        ],
+        "sampled_full_min": [
+          0.3473386363047076,
+          1.385642789561144,
+          0.04977333422900984,
+          0.6629003650159971,
+          0.7484065010278086
+        ],
+        "sampled_full_max": [
+          2.3034868582429078,
+          4.3744279957659495,
+          0.11995927716468467,
+          2.4462348043385376,
+          2.2030397809505056
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 228208,
+        "njev": 2104,
+        "nlu": 7794,
+        "wall_seconds": 12.100660500000231
+      },
+      {
+        "mu": 0.8,
+        "alpha": 0.8944271909999159,
+        "beta": 0.8944271909999159,
+        "initial_state": [
+          0.49,
+          4.21,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.3705363622268643,
+          2.9348491443517317,
+          0.0529320639364854,
+          2.232429340892213,
+          2.201729065848645
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.3503367407448875,
+          1.3856445741679508,
+          0.04977363749428745,
+          0.6629015164857635,
+          0.7540283603054044
+        ],
+        "late_max": [
+          2.303474632714393,
+          4.3744237481517265,
+          0.11464603630260381,
+          2.4461917547204988,
+          2.202976452551332
+        ],
+        "late_peak_to_peak": [
+          1.9531378919695053,
+          2.988779173983776,
+          0.06487239880831636,
+          1.7832902382347353,
+          1.4489480922459275
+        ],
+        "sampled_full_min": [
+          0.35033387927096943,
+          1.3856427282337627,
+          0.04977333742490569,
+          0.6629003311510837,
+          0.7540276353390005
+        ],
+        "sampled_full_max": [
+          2.303484534001766,
+          4.3744280344401165,
+          0.11544110206167153,
+          2.44623480669551,
+          2.203039781378756
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 228879,
+        "njev": 2112,
+        "nlu": 7818,
+        "wall_seconds": 12.173637199994118
+      },
+      {
+        "mu": 1.5,
+        "alpha": 1.224744871391589,
+        "beta": 1.224744871391589,
+        "initial_state": [
+          1.05,
+          3.43,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.6280937632532722,
+          2.303402340914308,
+          0.05254397711841272,
+          3.016314285496159,
+          2.3603137959559994
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.35258859727092867,
+          1.2366182055468538,
+          0.033634924204978114,
+          0.4947690769974744,
+          0.6632499848215396
+        ],
+        "late_max": [
+          2.5802395062927554,
+          4.452876583843514,
+          0.12480412512787219,
+          3.0210370035088974,
+          2.6665696538273345
+        ],
+        "late_peak_to_peak": [
+          2.227650909021827,
+          3.21625837829666,
+          0.09116920092289407,
+          2.526267926511423,
+          2.003319669005795
+        ],
+        "sampled_full_min": [
+          0.3525728087573962,
+          1.2365535320448378,
+          0.03363448448161488,
+          0.4947682369294947,
+          0.6632023909721896
+        ],
+        "sampled_full_max": [
+          2.5814724005233423,
+          4.452925595862735,
+          0.12515448140032065,
+          3.0210449277152738,
+          2.666572149706544
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 266004,
+        "njev": 2365,
+        "nlu": 8884,
+        "wall_seconds": 14.075929400001769
+      },
+      {
+        "mu": 1.5,
+        "alpha": 1.224744871391589,
+        "beta": 1.224744871391589,
+        "initial_state": [
+          0.44,
+          2.71,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.3581023505472306,
+          3.1011677424444035,
+          0.03410184603079268,
+          2.5771488310897688,
+          2.659423053397263
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.352575415983888,
+          1.2368157071788475,
+          0.033636121569763894,
+          0.49487633704029504,
+          0.6632584584104816
+        ],
+        "late_max": [
+          2.5801080651486203,
+          4.452925586693211,
+          0.1248109737282171,
+          3.0208169152778437,
+          2.666465305725515
+        ],
+        "late_peak_to_peak": [
+          2.2275326491647323,
+          3.2161098795143634,
+          0.09117485215845321,
+          2.525940578237549,
+          2.0032068473150337
+        ],
+        "sampled_full_min": [
+          0.34751624843350454,
+          1.2365530707759564,
+          0.03363448417289505,
+          0.49476826249511385,
+          0.6428444372876774
+        ],
+        "sampled_full_max": [
+          2.5814726189873003,
+          4.452925563699947,
+          0.14127965182881239,
+          3.0210449358302554,
+          2.6665721595190366
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 265146,
+        "njev": 2356,
+        "nlu": 8846,
+        "wall_seconds": 14.081186499999603
+      },
+      {
+        "mu": 1.5,
+        "alpha": 1.224744871391589,
+        "beta": 1.224744871391589,
+        "initial_state": [
+          0.49,
+          4.21,
+          0.1,
+          1,
+          1
+        ],
+        "state_order": [
+          "M",
+          "E",
+          "D",
+          "L0",
+          "L"
+        ],
+        "E_reference": 3.8626272360560576,
+        "E_reference_is_initial_E": false,
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "final_time": 1000.0,
+        "endpoint": [
+          0.6300786057258821,
+          4.407985229494952,
+          0.08067839837838343,
+          0.5274556207459684,
+          0.884438360459811
+        ],
+        "late_sample_interval": [
+          975.0,
+          1000.0
+        ],
+        "late_min": [
+          0.3525734533318322,
+          1.2370652503204727,
+          0.0336354812630926,
+          0.494926313975966,
+          0.6632904531542898
+        ],
+        "late_max": [
+          2.5807925905110976,
+          4.452923039966128,
+          0.12480853711659377,
+          3.020839150195014,
+          2.666434354490116
+        ],
+        "late_peak_to_peak": [
+          2.2282191371792655,
+          3.2158577896456557,
+          0.09117305585350118,
+          2.5259128362190477,
+          2.003143901335826
+        ],
+        "sampled_full_min": [
+          0.3525728099066996,
+          1.236553197828905,
+          0.033634484196340714,
+          0.4947682605130289,
+          0.6628640878478554
+        ],
+        "sampled_full_max": [
+          2.5814728772060813,
+          4.452925595085865,
+          0.1295922498803966,
+          3.021044882793206,
+          2.6665721143272023
+        ],
+        "sampled_physical_lengths_positive": true,
+        "nfev": 264214,
+        "njev": 2346,
+        "nlu": 8806,
+        "wall_seconds": 14.153439299996535
+      }
+    ],
+    "implementation_source": "import json, math, time\nfrom pathlib import Path\nimport numpy as np\nfrom scipy.integrate import solve_ivp\n\nE_REF=3.8626272360560576\nPath('outputs/candidate_research').mkdir(parents=True, exist_ok=True)\ncases=[]\nfor mu in (0.8,1.5):\n    alpha=beta=math.sqrt(mu)\n    for M0,Einit in ((1.05,3.43),(.44,2.71),(.49,4.21)):\n        def rhs(t,z):\n            M,E,D,L0,L=z\n            return [1-4*M+M*M*E,3*M-M*M*E-D*E,\n                    (.1-D-beta*D*(L-1))/1.1,\n                    (1-L0-alpha*(E-E_REF))/1.2,L0-L]\n        def stop(t,z):return 1e8-np.max(np.abs(z))\n        stop.terminal=True;stop.direction=-1\n        initial=[M0,Einit,.1,1,1];start=time.perf_counter()\n        sol=solve_ivp(rhs,(0,1000),initial,method='Radau',rtol=1e-8,atol=1e-10,max_step=.2,dense_output=True,events=stop)\n        late=sol.sol(np.linspace(max(0,sol.t[-1]-25),sol.t[-1],501))\n        all_states=sol.sol(np.linspace(0,sol.t[-1],10001))\n        row={'mu':mu,'alpha':alpha,'beta':beta,'initial_state':initial,'state_order':['M','E','D','L0','L'],'E_reference':E_REF,'E_reference_is_initial_E':False,\n             'success':bool(sol.success),'message':sol.message,'final_time':float(sol.t[-1]),'endpoint':sol.y[:,-1].tolist(),'late_sample_interval':[max(0,float(sol.t[-1])-25),float(sol.t[-1])],\n             'late_min':late.min(axis=1).tolist(),'late_max':late.max(axis=1).tolist(),'late_peak_to_peak':np.ptp(late,axis=1).tolist(),'sampled_full_min':all_states.min(axis=1).tolist(),'sampled_full_max':all_states.max(axis=1).tolist(),\n             'sampled_physical_lengths_positive':bool(np.all(all_states[3:]>0)),'nfev':sol.nfev,'njev':sol.njev,'nlu':sol.nlu,'wall_seconds':time.perf_counter()-start}\n        cases.append(row);print(json.dumps(row),flush=True)\n        Path('outputs/candidate_research/hhs-source-controls.json').write_text(json.dumps({'settings':{'method':'Radau','rtol':1e-8,'atol':1e-10,'max_step':.2,'time_span':[0,1000],'late_samples':501,'full_domain_samples':10001,'state_cutoff':1e8,'fixed_E_reference':E_REF},'cases':cases},indent=2))\n",
+    "software": {
+      "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+      "scipy": "1.18.1",
+      "numpy": "2.5.4"
+    },
+    "wall_seconds_total": 78.78735969999252,
+    "classification": "All six have substantial late oscillations; source constant traces not reproduced with this fixed-reference literal-equation interpretation.",
+    "source_reference_fitted": false,
+    "step_convergence_or_other_solver_checked": false,
+    "asymptotic_attractor_established": false,
+    "physical_domain_limit": "Positive sampled lengths but large deformation; sampled bounds are not continuous-time guarantees.",
+    "claim_limit": "Unresolved reproduction issue, not proof of an error in an unseen author implementation."
+  },
+  "author_code_provenance": {
+    "archive_url": "https://arxiv.org/src/2504.19655v3",
+    "http_status": 200,
+    "bytes": 27246866,
+    "sha256": "e3efa9bac29815ee2df5850f672c0d051607f295b840a73930c0357ebcebc4f3",
+    "file_count": 43,
+    "suffix_counts": {
+      ".json": 1,
+      ".png": 15,
+      ".pdf": 22,
+      ".bib": 4,
+      ".tex": 1
+    },
+    "members": [
+      "00README.json",
+      "coherence_fraction_grid_tauD_1.1_tauL_1.2_delta_10_nX_scan.png",
+      "coherence_fraction_grid_tauD_1.1_tauL_1.2.png",
+      "coherence_fraction_seed_grid_tauD_1.1_tauL_1.2.png",
+      "Fig_1.pdf",
+      "Fig_2.pdf",
+      "Fig_3.pdf",
+      "Fig_4.pdf",
+      "Fig_5.png",
+      "Fig_6.pdf",
+      "Fig_7.pdf",
+      "gt0_e1.png",
+      "gt0_g1.png",
+      "gt0_l1.png",
+      "lt0_ba.png",
+      "mainNotes.bib",
+      "mechano-chemical-feedback.bib",
+      "SI_eigenvalue_vs_degradation.pdf",
+      "SI_FHN_b0_I_heatmap.png",
+      "SI_FHN_Static_region_number.pdf",
+      "SI_FHN_Static_region.pdf",
+      "SI_Fig_0D_maxEV.pdf",
+      "SI_Fig_0D_Time_Series_Fin.pdf",
+      "SI_Fig_lyapunov_negative_map_tauD_1.1_tauL_1.2.png",
+      "SI_Fig_Number_Static.png",
+      "SI_Fig_Static_Rgn_Algo.pdf",
+      "SI_Fig_tauD_variation.pdf",
+      "SI_Fig_tauL_variation.pdf",
+      "SI_Fig_Total_Static.png",
+      "SI_Hopf_Fold_eigenstructure.pdf",
+      "SI_Kymograph_FHN_E.pdf",
+      "SI_Kymograph_FHN_X.pdf",
+      "SI_Kymograph_fixed_tauL_E.pdf",
+      "SI_Kymograph_fixed_tauL_X.pdf",
+      "SI_Kymograph_noise_E.pdf",
+      "SI_Kymograph_noise_X.pdf",
+      "SI_LSA.pdf",
+      "SINotes.bib",
+      "SI_phase_plot.png",
+      "SI_S_vs_k_mu_0.01.png",
+      "SI_S_vs_k_mu_0.05.png",
+      "Submission_merged_arXivNotes.bib",
+      "Submission_merged_arXiv.tex"
+    ],
+    "simulation_implementation_found": false,
+    "raw_trajectory_file_found": false,
+    "author_code_executed": false,
+    "archive_extracted": false,
+    "tex_checks": {
+      "fixed_reference_definition_line": 94,
+      "figure_s1_caption_line": 304,
+      "time_unit_line": 312
+    },
+    "linked_author_repository_identified": false,
+    "limitation": "Absence in this inspected source archive and bounded searches does not prove code is unavailable elsewhere."
+  },
+  "priority_followup": {
+    "exact_single_cell_chaotic_parameter_set_found": false,
+    "novelty_established": false,
+    "known_spatial_chaos": "Reported by source v3 itself",
+    "related_prior_art": {
+      "doi": "10.1103/PhysRevE.111.L022202",
+      "scope": "Spatial Brusselator pattern chaos driven by surface curvature; different from S2"
+    },
+    "queries": [
+      "\"2504.19655\" \"single\" \"chaos\"",
+      "\"mechanochemical\" \"Brusselator\" \"chaos\" single cell",
+      "\"2504.19655\" github OR zenodo OR code",
+      "\"Harmonic Hopf Solid\" chaos single-cell",
+      "\"mechanochemical\" \"Brusselator\" \"Lyapunov\" single",
+      "\"Symmetry-protected phases\" \"code\"",
+      "\"Brusselator\" \"mechanochemical feedback\" chaos -\"Symmetry-protected\" -\"Oscillation death\"",
+      "\"Harmonic Hopf Solid\" code",
+      "\"Harmonic Brusselator Ring\" chaos"
+    ],
+    "secondary_ai_review_used_as_evidence": false,
+    "coverage_limit": "Targeted primary-source and identifier checks; not exhaustive equivalence review."
+  },
+  "work_performed": {
+    "cpu_trajectories": 6,
+    "gpu_jobs": 0,
+    "author_contact": false,
+    "paywall_bypass": false,
+    "author_code_executed": false
+  }
+}

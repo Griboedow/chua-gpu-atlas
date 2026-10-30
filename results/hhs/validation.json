@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "errors": {
+    "jacobian": 6.242234394322622e-16,
+    "original_coordinates": 1.6413129537596e-15,
+    "mass_identity": 1.5667874184068213e-15,
+    "reference_equilibrium": 2.220446049250313e-16,
+    "two_solvers_two_coordinate_systems": 1.3655743202889425e-12
+  },
+  "random_states": 128,
+  "time_unit": "source model time, not calibrated seconds",
+  "array_shapes": {}
+}

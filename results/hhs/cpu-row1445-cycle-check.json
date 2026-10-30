@@ -1,0 +1,51 @@
+{
+  "status": "numerically closed cycle",
+  "period": 12.466233923015606,
+  "section_return_order": 1,
+  "newton_closure_inf": 3.6637359812630166e-15,
+  "independent_original_radau_closure_inf": 1.0658141036401503e-14,
+  "alpha_for_original_coordinate_check": 0.1,
+  "multiplier_absolute_resolution_floor": 1e-12,
+  "maximum_transverse_multiplier": 0.005296883439060387,
+  "flow_identity_scaled_error": 7.722040634216967e-15,
+  "integrated_divergence": -259.7185209914694,
+  "minimum_length_at_alpha_point1": 0.9644633504984688,
+  "caveat": "Numerical periodic-orbit evidence. Tiny direct monodromy multipliers are unresolved; no determinant or all-exponent accuracy claim from them.",
+  "row": 1445,
+  "time_unit": "source model time, not calibrated seconds",
+  "array_shapes": {
+    "initial_state": [
+      5
+    ],
+    "section_multipliers": [
+      4
+    ],
+    "full_multipliers": [
+      5
+    ],
+    "monodromy": [
+      5,
+      5
+    ],
+    "multiplier_resolved_mask": [
+      4
+    ],
+    "resolved_transverse_exponents": [
+      3
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      5
+    ],
+    "original_coordinate_states": [
+      4001,
+      5
+    ],
+    "parameters": [
+      3
+    ]
+  }
+}

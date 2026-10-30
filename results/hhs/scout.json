@@ -1,0 +1,109 @@
+{
+  "settings": {
+    "transient": 500.0,
+    "duration": 1000.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_step": 0.05,
+    "max_attempts": 6000000
+  },
+  "method": "Adaptive DP5(4), exact polynomial variational equations, state and tangent error control",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 88.71758840000257,
+  "parameter_columns": [
+    "mu",
+    "tauD",
+    "tauL"
+  ],
+  "fixed_parameters": {
+    "a": 1,
+    "b": 3,
+    "c": 1,
+    "D0": 0.1,
+    "tauR": 1,
+    "Eref": 3.8626272360560576
+  },
+  "state_columns": [
+    "M",
+    "E",
+    "D",
+    "y",
+    "x"
+  ],
+  "time_unit": "source time in units of tauR, not calibrated seconds",
+  "physical_scope": "Observed alpha bound from accepted observation states only; L=1-alpha*x,L0=1-alpha*y,beta=mu/alpha. No clipping or physical calibration.",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved",
+    "5": "negative concentration beyond 1e-8, invalid numerical trajectory"
+  },
+  "source_section_count": 65,
+  "broad_tuple_count": 1024,
+  "lanes": 3267,
+  "completed": 3267,
+  "preliminary_positive": 15,
+  "selection_seed": 2026103015,
+  "start_scope": "Three rounded chemical starts printed in source Fig.S1, D=.1,x=y=0; fixed main-text Eref convention, not an asserted reproduction of ambiguous source plots.",
+  "array_shapes": {
+    "parameters": [
+      3267,
+      3
+    ],
+    "initial_states": [
+      3267,
+      5
+    ],
+    "initial_tangent": [
+      5
+    ],
+    "final_states": [
+      3267,
+      5
+    ],
+    "final_tangents": [
+      3267,
+      5
+    ],
+    "lle": [
+      3267
+    ],
+    "lle_windows": [
+      3267,
+      4
+    ],
+    "raw_window_log_sums": [
+      3267,
+      4
+    ],
+    "raw_clocks": [
+      3267,
+      4
+    ],
+    "status": [
+      3267
+    ],
+    "stats": [
+      3267,
+      16
+    ],
+    "elapsed": [
+      3267
+    ],
+    "step_counts": [
+      3267,
+      2
+    ],
+    "alpha_upper_bound_observed": [
+      3267
+    ],
+    "minimum_observed_length_at_alpha_point1": [
+      3267
+    ],
+    "preliminary_candidate": [
+      3267
+    ]
+  }
+}

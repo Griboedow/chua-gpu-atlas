@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.05,
+      "errors": {
+        "state": 1.5854042523244516e-09,
+        "tangent": 8.565677611649392e-10,
+        "lle": 1.1072683915591686e-10
+      },
+      "passed": true
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.025,
+      "errors": {
+        "state": 3.303712858837571e-11,
+        "tangent": 2.4398427722616134e-11,
+        "lle": 7.745215059584698e-13
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "duration": 250,
+  "scope": "250 source-time units on independently closed mu=0 cycle, two GPU tolerances/steps vs implicit Radau state+tangent",
+  "array_shapes": {
+    "parameters": [
+      3
+    ],
+    "initial_state": [
+      5
+    ]
+  }
+}

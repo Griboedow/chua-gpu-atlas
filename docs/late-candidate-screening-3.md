@@ -86,7 +86,7 @@ The latest SI section X describes QR factorization, associates five reported exp
 
 The OpenAlex record returned zero forward citations for the merged preprint/journal record at audit time, while a June 2026 primary epithelial-tissue article [3] explicitly cites the earlier preprint. This mismatch demonstrates incomplete indexing; it cannot support an absence claim. Targeted queries covered both titles, identifier, authors, mechanochemical Brusselators, and chaos. Known chemical/spatial chaos and the latest paper's own claims substantially narrow the possible contribution.
 
-**Decision:** simulation-ready source-audit target, lower novelty priority; no numerical candidate yet. First reproduce the planar control and physical admissibility before allocating a broad search.
+**Follow-up:** the [literal five-state study](hhs-research.md) now implements this target, verifies the planar/full-spectrum control, and completes 3,267 scouts. No retained chaos candidate emerges from 186 completed longer checks; one stiff GPU interval is incomplete. The [source audit](hhs-source-audit.md) preserves a figure-reproduction mismatch, and the [structural note](hhs-structure.md) establishes an initial-condition-dependent global bound. None of these results establishes first chaos in this already studied family.
 
 ## 2. Inertial mechanochemical solid: an already published chaotic three-state model
 

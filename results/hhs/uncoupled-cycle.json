@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "period": 13.019452305945112,
+  "errors": {
+    "shooting": 1.7763568394002505e-15,
+    "independent_original_radau_closure": 1.0480505352461478e-13,
+    "floquet_vs_triangular": 9.2148511043888e-15,
+    "flow_identity": 2.258609965721803e-15,
+    "spectrum_sum_vs_divergence": 8.43769498715119e-15
+  },
+  "scope": "Exact mu=0 five-state control: planar chemical cycle and three stable driven-filter modes; initial phase chosen here.",
+  "time_unit": "source model time, not calibrated seconds",
+  "alpha_for_original_coordinate_control": 0.2,
+  "array_shapes": {
+    "parameters": [
+      3
+    ],
+    "initial_state": [
+      5
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      5
+    ],
+    "multipliers": [
+      5
+    ],
+    "exponents": [
+      5
+    ],
+    "expected_triangular_exponents": [
+      5
+    ],
+    "monodromy": [
+      5,
+      5
+    ]
+  }
+}

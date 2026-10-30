@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "audit_utc": "2026-10-30T02:21:00Z",
+  "candidate_id": "case2020_rigid_microfluidic_network",
+  "status": "simulation_ready_exact_closure_audit_family_chaos_already_published",
+  "new_attractor_claim": false,
+  "exact_model_chaos_status": "No verified exact-S5-S12 chaos result located in bounded search; unpublished status not established.",
+  "primary": {
+    "authors": [
+      "Daniel J. Case",
+      "Jean-Regis Angilella",
+      "Adilson E. Motter"
+    ],
+    "title": "Spontaneous oscillations and negative-conductance transitions in microfluidic networks",
+    "journal": "Science Advances 6, eaay6761 (2020)",
+    "doi": "10.1126/sciadv.aay6761",
+    "full_primary": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220308/",
+    "full_primary_with_si": "https://arxiv.org/pdf/2006.09400",
+    "source_equations": "SI S1-S2, S5-S12; parameters S13 plus S4 caption and main network dimensions.",
+    "visual_pdf_checks_one_based_pages": [
+      18,
+      19,
+      21,
+      22,
+      23
+    ],
+    "known_behavior": "Full network source Fig.S5 has periodic and multistable branches; source describes supercritical Hopf and homoclinic bifurcations. Isolated chicane Eqs.2-3 is a different planar subsystem."
+  },
+  "model": {
+    "autonomous": true,
+    "effective_dimension": 4,
+    "source_flow_variables": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "additional_source_variable": "r, vortex reattachment length",
+    "algebraic_constraints": [
+      "Q1=Q3+Q5",
+      "Q2=Q4-Q3"
+    ],
+    "energy_supply": "Maintained constant inlet pressures; no periodic input or finite fuel reservoir.",
+    "units": "All source equations below use dimensionless time and variables.",
+    "definitions": {
+      "eta": "p+q*Q1",
+      "xi": "(rstar^3*eta-Q3star)/rstar",
+      "R": "Lb+gamma*(r-rb)^2"
+    },
+    "equations": [
+      "Q1dot=12*((Pin1-P3)/L1-Q1)",
+      "Q2dot=12*((Pin2-P4)/L2-Q2)",
+      "Q3dot=12*((zeta*P3-P4)/L3-R*Q3/L3+k3*Q3*Q5/Q1)",
+      "Q4dot=12*(P4/L4-(alpha+beta*Q4)*Q4/12)",
+      "Q5dot=12*(P3/L5-Q5+k5*Q3*Q5/Q1)",
+      "rdot=epsilon*(Q3-Q3star-eta*(r-rstar)^3+xi*(r-rstar))"
+    ],
+    "critical_transcription_notes": [
+      "Both eta and xi depend on Q1 through source S1-S2; freezing xi changes the model and violates its zero-flow identity.",
+      "Minor-loss coefficients appear with literal PLUS signs in S7/S9; visually verified.",
+      "P3 and P4 are algebraic pressures, not extra dynamical states.",
+      "Do not mix the isolated main-text Fig.6 parameter set with the full-network S13 fit."
+    ],
+    "independent_state_order": [
+      "x=Q1",
+      "y=Q2",
+      "z=Q3",
+      "r"
+    ],
+    "our_exact_pressure_elimination": {
+      "reconstruction": [
+        "Q4=y+z",
+        "Q5=x-z"
+      ],
+      "definitions": [
+        "m=z*(x-z)/x",
+        "a3=-R*z/L3+k3*m",
+        "a4=-(alpha+beta*(y+z))*(y+z)/12",
+        "a5=-(x-z)+k5*m"
+      ],
+      "pressure_matrix": [
+        [
+          "1/L1+zeta/L3+1/L5",
+          "-1/L3"
+        ],
+        [
+          "-zeta/L3",
+          "1/L2+1/L4+1/L3"
+        ]
+      ],
+      "pressure_rhs": [
+        "Pin1/L1-x-a3-a5",
+        "Pin2/L2-y-a4+a3"
+      ],
+      "solve": "A*[P3,P4]^T=b; then use source equations Q1dot,Q2dot,Q3dot,rdot.",
+      "determinant_identity": "With A0=1/L1+1/L5 and B0=1/L2+1/L4, det(A)=A0*B0+(A0+zeta*B0)/L3>0 for positive lengths and zeta.",
+      "source_matrix_determinant": 0.003138888888888888,
+      "source_matrix_2norm_condition": 4.75035469359741,
+      "independent_vortex_expression": "rdot=epsilon*(z-r*(Q3star/rstar+eta*(r-rstar)*(r-2*rstar)))",
+      "boundary_identity": "At r=0, rdot=epsilon*z."
+    },
+    "source_dimensionless_parameters": {
+      "L1": 24,
+      "L2": 144,
+      "L3": 24,
+      "L4": 240,
+      "L5": 120,
+      "alpha": 31,
+      "beta": 0.2565,
+      "zeta": 1.08,
+      "Lb": 42,
+      "gamma": 7.35,
+      "rb": 4.1,
+      "rstar": 5.5,
+      "Q3star": 25,
+      "epsilon": 10.9,
+      "k3": 15.75,
+      "k5": 12,
+      "p": 0.12,
+      "q": 8e-06
+    },
+    "dimensional_constants": {
+      "w_m": 0.0005,
+      "rho_kg_m3": 1000,
+      "nu_m2_s": 1e-06,
+      "channel_lengths_m": [
+        0.001,
+        0.006,
+        0.001,
+        0.01,
+        0.005
+      ],
+      "forchheimer_alpha_mminus2": 124000000,
+      "forchheimer_beta_mminus1": 513
+    },
+    "unit_conversions": {
+      "physical_time_seconds": "0.25*tau",
+      "physical_pressure_pa": "0.004*P",
+      "physical_vortex_size_m": "(w/12)*r",
+      "physical_flow_m2_s_per_depth": "nu*Q",
+      "physical_flow_ul_s_per_mm_depth": "Q",
+      "source_reynolds_number": "2*Q for positive flow"
+    },
+    "suggested_first_reproduction": {
+      "Pin1_pa": 250,
+      "Pin2_pa": 250,
+      "Pin1_dimensionless": 62500,
+      "Pin2_dimensionless": 62500,
+      "basis": "Inside periodic window pictured in source Fig.S5; not integrated here.",
+      "exact_initial_condition_available": false,
+      "source_trajectory_table_available": false
+    }
+  },
+  "physical_domain_and_limits": {
+    "monitor": [
+      "x>0",
+      "y>=0",
+      "0<=z<=x",
+      "r>=0"
+    ],
+    "invariance_established": false,
+    "singularity": "Rational minor-loss term singular at x=0; do not regularize silently.",
+    "source_resistance_fit_vortex_range_m": [
+      6e-05,
+      0.0004
+    ],
+    "flow_reversal": "The source Forchheimer Q4^2 term and junction fit assume the illustrated flow directions. Replacing Q4^2 by Q4*abs(Q4) changes the closure.",
+    "parameter_variation": "Changing fitted coefficients independently is a mathematical sensitivity study, not automatically a realizable geometry change.",
+    "hydrodynamic_validity": "A four-state ODE attractor would require further comparison with fluid dynamics. Two-dimensional flow approximation is not calibrated for arbitrary finite-depth devices.",
+    "global_boundedness_proved": false,
+    "three_dimensional_picture_would_be_projection": true
+  },
+  "algebraic_check": {
+    "random_seed": 4420,
+    "sample_count": 1000,
+    "sample_ranges": {
+      "x_y": [
+        100,
+        1000
+      ],
+      "z_over_x": [
+        0.01,
+        0.9
+      ],
+      "r": [
+        0,
+        12
+      ],
+      "Pin1_Pin2": [
+        20000,
+        100000
+      ]
+    },
+    "identities": [
+      "F1-F3-F5=0",
+      "F2-F4+F3=0"
+    ],
+    "F_definition": "Flow derivatives divided by 12.",
+    "max_absolute_residual": 4.3655745685100555e-11,
+    "max_residual_scaled_by_largest_F_component": 2.1025916074601458e-15,
+    "purpose": "Validate our algebraic pressure elimination against all five original flow equations; not a trajectory, stability, or boundedness test."
+  },
+  "closest_prior_chaos": {
+    "title": "Emergent oscillations and chaos in noncompliant microfluidic networks",
+    "authors": [
+      "Yanxuan Shao",
+      "Jean-Regis Angilella",
+      "Adilson E. Motter"
+    ],
+    "journal": "Physical Review Fluids 10, 054401 (2025)",
+    "doi": "10.1103/PhysRevFluids.10.054401",
+    "full_primary": "https://arxiv.org/html/2505.00068v1",
+    "read_scope": "Full primary manuscript; especially sections II-IV, equations 1-2 and Figs.6-7.",
+    "published_example": {
+      "Pin1_pa": 105,
+      "Pin2_pa": 70,
+      "reported_largest_lyapunov_sminus1": 31.9
+    },
+    "evidence_type": "Period doubling and Lyapunov estimate from two-dimensional Navier-Stokes DNS time series, with embedding checks.",
+    "mechanism": "Autonomous Eulerian flow-rate chaos in serialized rigid networks, not merely chaotic passive particle advection.",
+    "exact_model_difference": "Simplified blade geometry without the strongly nonlinear obstacle-laden branch; elementary network described by two POD modes; chaos shown after serialization in DNS. Not the 2020 four-state phenomenological S5-S12 closure.",
+    "priority_effect": "First chaos in this broad mechanism is already published. Exact-2020-closure novelty remains unresolved."
+  },
+  "forward_citations": {
+    "query": "https://api.openalex.org/works?filter=cites:W3024896709&per-page=200",
+    "returned_count": 8,
+    "coverage": "All returned titles/metadata screened; 2025 Shao paper inspected in full; other citing papers not all read in full. Index dates can disagree with publisher dates.",
+    "records": [
+      {
+        "title": "Nonlinear Phenomena in Microfluidics",
+        "doi": "https://doi.org/10.1021/acs.chemrev.1c00985",
+        "date_from_index": "2022-02-23"
+      },
+      {
+        "title": "Numerical investigation of multiscale lateral microstructures enhancing passive micromixing efficiency via secondary vortex flow",
+        "doi": "https://doi.org/10.1063/5.0105435",
+        "date_from_index": "2022-09-01"
+      },
+      {
+        "title": "Microfluidic hydraulic oscillators: A comprehensive review of emerging biochemical and biomedical applications",
+        "doi": "https://doi.org/10.1016/j.aca.2025.343793",
+        "date_from_index": "2025-02-13"
+      },
+      {
+        "title": "Internal vortex breakdowns with stair-step change in rotating flows",
+        "doi": "https://doi.org/10.1063/5.0107296",
+        "date_from_index": "2022-09-01"
+      },
+      {
+        "title": "Modelling of Transportation Process in Plane Flows with Stagnation Points",
+        "doi": "https://doi.org/10.1007/s11242-020-01465-2",
+        "date_from_index": "2020-08-29"
+      },
+      {
+        "title": "Super-Darcy flow behavior in fracture-confined porous media",
+        "doi": "https://doi.org/10.1073/pnas.2613597123",
+        "date_from_index": "2026-07-15"
+      },
+      {
+        "title": "Emergent oscillations and chaos in noncompliant microfluidic networks",
+        "doi": "https://doi.org/10.1103/physrevfluids.10.054401",
+        "date_from_index": "2025-05-01"
+      },
+      {
+        "title": "Nonlinear dynamics of air invasion in one-dimensional compliant fluid networks",
+        "doi": "https://doi.org/10.1103/mngd-9khq",
+        "date_from_index": "2025-10-28"
+      }
+    ]
+  },
+  "search_scope": [
+    "Exact title and DOI plus chaos/chaotic/Lyapunov",
+    "Case, Angilella, Motter microfluidic vortex mechanism",
+    "Forward-citation metadata and full nearest 2025 chaos paper",
+    "Full 2020 primary manuscript and complete supplementary equations"
+  ],
+  "provenance": [
+    {
+      "ignored_cache_path": "outputs/candidate_research/case2020-arxiv.pdf",
+      "source_url": "https://arxiv.org/pdf/2006.09400",
+      "sha256": "7b23fb8cbdc7b59546af6c6a633e389725d85bc76b5d798cd6d3183a327a0d94",
+      "bytes": 5471377
+    },
+    {
+      "ignored_cache_path": "outputs/candidate_research/shao2025.html",
+      "source_url": "https://arxiv.org/html/2505.00068v1",
+      "sha256": "5fcb4bb3ba66cbd2e6b218ee2d7913bafc1fffaff585f81771868c70056d8006",
+      "bytes": 223204
+    },
+    {
+      "ignored_cache_path": "outputs/candidate_research/case2020-forward.json",
+      "source_url": "https://api.openalex.org/works?filter=cites:W3024896709&per-page=200",
+      "sha256": "14cc78d05a2162a2b97ed9ac16ea4118dab9f5a3cbddf99912d7a4d09160f890",
+      "bytes": 185362
+    }
+  ],
+  "work_performed": {
+    "new_integrations": 0,
+    "gpu_jobs": 0,
+    "author_code_copied_or_executed": false,
+    "author_contact": false,
+    "commits": 0
+  },
+  "limitations": [
+    "No verified new attractor; no proof of absence in literature.",
+    "Equations are exact to a fitted physical closure, not an exact Navier-Stokes reduction.",
+    "Source cycling must be reproduced before a chaos scan.",
+    "A later full-text-equivalence audit remains necessary before novelty claims."
+  ]
+}

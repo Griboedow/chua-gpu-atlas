@@ -1,0 +1,84 @@
+{
+  "status": "numerically closed cycle",
+  "source_row": 3009,
+  "section_return_scaled_differences": {
+    "1": 2.1348854185684488e-12,
+    "2": 1.39534328971091e-12,
+    "3": 1.9760831386832314e-12,
+    "4": 1.9985351063078286e-12,
+    "5": 1.2519518278402086e-12,
+    "6": 2.676655382906361e-12,
+    "7": 1.937113254048822e-12,
+    "8": 2.1138062536980185e-12
+  },
+  "period": 8.115834929619274,
+  "section_return_order": 1,
+  "scaled_newton_closure_inf": 6.106226635438361e-16,
+  "independent_original_BDF_scaled_closure_inf": 5.1656132021502866e-11,
+  "newton_componentwise_relative_closure_inf": 1.6436924026131389e-15,
+  "independent_original_BDF_componentwise_relative_closure_inf": 7.62002978219301e-11,
+  "alpha_for_original_coordinate_check": 0.1,
+  "multiplier_absolute_resolution_floor": 1e-08,
+  "maximum_transverse_multiplier": 0.0012837049841463175,
+  "flow_identity_scaled_error": 3.097981950325439e-13,
+  "integrated_divergence": -43525.75669275524,
+  "wall_seconds": 84.14672569999675,
+  "caveat": "Scaled coordinates condition shooting only; exact field unchanged. Tiny multipliers unresolved. No direct determinant/all-exponent certification. Not an experimental validity claim.",
+  "componentwise_relative_scale_definition": "1+abs(initial_state); additional max(1,abs(initial_state)) checks below",
+  "state_only_Radau_section_local_closure_inf": 5.016126403134535e-13,
+  "original_BDF_section_local_closure_inf": 1.2950474026496295e-10,
+  "implicit_solvers_successful": [
+    "Radau state continuation with analytic Jacobian",
+    "Radau scaled shooting with exact augmented Hessian Jacobian",
+    "BDF original coordinates with analytic transformed Jacobian",
+    "Radau state-only section-local closure check"
+  ],
+  "warning_context": "An initial successful finite-difference augmented-Jacobian run produced SciPy numerical-Jacobian overflow warnings in strongly contracted tangent columns. The recorded repeat uses the exact augmented Jacobian and analytic original-coordinate BDF Jacobian and completed without those warnings.",
+  "array_shapes": {
+    "parameters": [
+      3
+    ],
+    "initial_state": [
+      5
+    ],
+    "coordinate_scales": [
+      5
+    ],
+    "section_multipliers": [
+      4
+    ],
+    "full_multipliers": [
+      5
+    ],
+    "scaled_monodromy": [
+      5,
+      5
+    ],
+    "multiplier_resolved_mask": [
+      4
+    ],
+    "resolved_transverse_exponents": [
+      2
+    ],
+    "times": [
+      8001
+    ],
+    "states": [
+      8001,
+      5
+    ],
+    "original_coordinate_states": [
+      8001,
+      5
+    ],
+    "state_only_Radau_closure_vector": [
+      5
+    ],
+    "original_BDF_closure_vector": [
+      5
+    ],
+    "section_local_scale": [
+      5
+    ]
+  }
+}
