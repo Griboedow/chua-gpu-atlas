@@ -1,0 +1,90 @@
+{
+  "runs": [
+    {
+      "N": 3,
+      "lanes": 18,
+      "completed": 18,
+      "retained": 18,
+      "retained_source_lane_indices": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "status_counts": {
+        "0": 18,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "wall_seconds": 14.025718699995195
+    },
+    {
+      "N": 8,
+      "lanes": 42,
+      "completed": 42,
+      "retained": 32,
+      "retained_source_lane_indices": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        49,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "status_counts": {
+        "0": 42,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "wall_seconds": 50.7852023000014
+    }
+  ],
+  "time_mode": "original",
+  "selection": "Every scout lane with mean>.005 and all four windows>.001",
+  "script_canonical_lf_sha256": "7c16967fbde6ef89d9eb712c0747a973e52290cbaef48a3e94fa7341dbcf5371",
+  "total_wall_seconds": 65.14495770000212
+}

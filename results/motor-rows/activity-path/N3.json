@@ -1,0 +1,127 @@
+{
+  "N": 3,
+  "dimension": 8,
+  "row_distance_definition": "Euclidean distance between row states (c_j,s_j,X_j), including eliminated last X; unordered pairs in lexicographic zero-based order",
+  "row_distance_quadrature": "Last observation quarter only; RMS uses accepted-step right-endpoint quadrature. For incomplete lanes these statistics may cover a partial or absent last window.",
+  "row_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "settings": {
+    "transient_scaled": 200.0,
+    "observation_scaled": 400.0,
+    "rtol": 1e-09,
+    "atol": 1.0000000000000002e-12,
+    "step_factor": 1.0,
+    "max_steps_per_lane": 8000000,
+    "max_wall_seconds": 300.0,
+    "time_mapping": "s=tau; all requested durations and exponents are in original tau",
+    "time_mode": "original",
+    "state_norm": "Euclidean in reduced (c[0:N],s[0:N],X[0:N-1]); last X eliminated exactly",
+    "cap": "h_tau <= step_factor*min(.05,.5/conservative_local_Jacobian_row_bound)",
+    "invariants": "No clipping; check motor disks and analytical displacement bound on every accepted step"
+  },
+  "status_codes": {
+    "0": "completed",
+    "1": "invariant-domain violation",
+    "2": "numerical failure",
+    "3": "step budget incomplete",
+    "4": "wall budget incomplete"
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 5.586310899998352,
+  "caveat": "Exact published model, exploratory parameters. Finite-time positive exponents are candidates only; incomplete lanes are unresolved.",
+  "activity_path": {
+    "mapping": "mapping.json",
+    "seeds": [
+      20251030,
+      20251031,
+      20251032
+    ],
+    "absolute_initial_positions_nm": [
+      [
+        0.0,
+        0.006723916133185197,
+        0.0066025541906126,
+        0.0
+      ],
+      [
+        0.0,
+        0.003347200813593536,
+        0.00579445231378997,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0017238548143218065,
+        0.009122913944565306,
+        0.0
+      ]
+    ],
+    "constants_fixed": true,
+    "fixed_r": 4.7551460477513405,
+    "fixed_b": 1.0,
+    "scope": "Only chemical activity varies; all Table1 constants and Eq65 d stay fixed. The interval extends well beyond illustrated delta=+/-0.1 and is not an experimental calibration.",
+    "time": "Original normalized tau=a0*t. For every lane s=tau; physical seconds differ with activity."
+  },
+  "lanes": 144,
+  "completed": 144,
+  "preliminary_count": 18,
+  "preliminary_ids": [
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "preliminary_rule": "All four original-tau FTLE windows >.001 and mean >.005; screening rule, not a theorem",
+  "largest_completed_lle_ids": [
+    54,
+    55,
+    57,
+    56,
+    59,
+    52,
+    53,
+    51,
+    58,
+    62
+  ],
+  "weak_positive_count": 66,
+  "threshold_scope": "The screening cutoff is arbitrary; all raw exponents are retained and subthreshold lanes do not prove absence of chaos.",
+  "status_counts": {
+    "0": 144,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "source_canonical_lf_sha256": {
+    "research/motor_rows.py": "dd3b5c3caf566125ecee572b021079977856c1b9b0cf327988ba1d825d4aff3f",
+    "research/motor_rows_gpu.py": "c73c54634a4ab4f638c29eec3073702a41fc1e2d82fff45bee9c871782ba1356",
+    "research/motor_rows_gpu.cl": "89e6d027ce89d6da57e1e8837aed5c9b7d434ae26e6b129741dddb1bfb4a1094"
+  }
+}
