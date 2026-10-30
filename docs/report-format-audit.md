@@ -8,7 +8,9 @@ The subsequent microfluidic numerical/source block was checked on 30 October at 
 
 The gel and mineral-protocell follow-up was checked later that morning at [`0069a0a`](https://github.com/Griboedow/chua-gpu-atlas/commit/0069a0ae873058883b88e5d07774bf7377ce73bc).
 
-**Twenty-three distinct expressions in ten reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
+The Chua-scaling and later source-screening block was inspected at [`a645acc`](https://github.com/Griboedow/chua-gpu-atlas/commit/a645acc86a450b66963cfdd0b10de96e6f404556), with three affected pages repaired and rechecked at [`3713534`](https://github.com/Griboedow/chua-gpu-atlas/commit/3713534a83fea7f1083b5bf371f2a77bb3f368d9).
+
+**Thirty-six distinct expressions in thirteen reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
 
@@ -24,8 +26,11 @@ The gel and mineral-protocell follow-up was checked later that morning at [`0069
 | [Two-strain model](two-strain-research.md) | The renderer rejected a custom divergence operator macro | Upright divergence notation with explicit spacing |
 | [HHS structural audit](hhs-structure.md) | One bold heading and two inline inequalities retained literal dollar/TeX text | Plain D in the heading; braced asterisk commands in the two inline subscripts |
 | [Microfluidic screening](late-candidate-screening-4.md) | Markdown emphasis consumed two asterisk superscripts in one table-cell expression | Braced asterisk commands preserving the superscripts |
+| [Chua scaling structure](chua-scaling-structure.md) | Nine inline expressions immediately after hyphenated words remained raw dollar/TeX text | Replace the preceding hyphen with a space |
+| [Photothermal screening](late-candidate-screening-5.md) | Markdown emphasis consumed two inline asterisk subscripts | Braced asterisk commands in those two expressions |
+| [Motor-network screening](late-candidate-screening-6.md) | Two inline source-control labels after hyphenated words remained raw dollar/TeX text | Replace the preceding hyphens with spaces |
 
-The initial nineteen repairs are in commits `c9daf5b` and `04e00a3`; the four later repairs are in `a99a267`. The pair-integral antiderivative needed both an escaping repair and an operator repair; it is counted once.
+The initial nineteen repairs are in commits `c9daf5b` and `04e00a3`; four later repairs are in `a99a267` and thirteen in `3713534`. The pair-integral antiderivative needed both an escaping repair and an operator repair; it is counted once.
 
 ## Verification
 
@@ -99,14 +104,28 @@ The ninth revision-specific pass checked six actual public pages at `0069a0a`: t
 
 The complete two-panel gel figure and the closed-orbit diagnostic table were visually inspected, including the small multipliers and closure residuals. The mineral report's planar equations, dimensional flow definitions and strictly positive membrane-growth identity were also checked in screenshots. Supporting screenshot visits are not additional successful page checks.
 
-The record now covers **51 distinct pages**, **787 math elements in their latest checked versions**, **78 successful page checks**, and **985 successful formula observations**. This pass adds two new pages and repeats four. Eighteen pages retain their `04e00a3` check, six `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, four `0e68396`, and six `0069a0a`. The earlier two failed attempts remain separately recorded and excluded from these totals. Raw-text scans cover fourteen distinct pages at their recorded revisions; the other 37 have not received that additional scan retroactively.
+After that pass, the record covered **51 distinct pages**, **787 math elements in their latest checked versions**, **78 successful page checks**, and **985 successful formula observations**. It added two new pages and repeated four. Eighteen pages retained their `04e00a3` check, six `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, four `0e68396`, and six `0069a0a`. The earlier two failed attempts remained separately recorded and excluded from those totals. Raw-text scans covered fourteen distinct pages at their recorded revisions; the other 37 had not received that additional scan retroactively.
 
 All **313 relative link occurrences** across the 51 documents resolve against the published Git tree at `0069a0a`. The same exclusions for code/math, external destinations, fragments, other viewports and later edits apply.
+
+### Chua scaling and late source screening
+
+Eight actual public pages were inspected at `a645acc`. Five passed: the main README, results README, candidate queue, experiment notes and new Chua-scaling numerical report. Their **10 math elements** rendered correctly, and the two new PNGs were visually inspected in full: fixed-slope parameter sections and independent trajectory/Poincare-section pairs.
+
+Three pages initially failed the raw-text check. The Chua structural report contained nine unparsed inline expressions immediately following hyphenated words; the fifth screening report had two inline asterisk subscripts consumed by Markdown emphasis; the sixth had two unparsed parameter labels after hyphenated words. These expressions never became math elements, despite otherwise clean MathML metrics. The initial failed attempts, containing 250 typeset math elements, are recorded separately and excluded from successful totals.
+
+After the thirteen minimal formatting repairs, the three pages were checked at `3713534`. All **263 math elements** (146 + 61 + 56) rendered correctly; raw-dollar/TeX scans were clean and no renderer errors, red tokens or overflow remained. Screenshots confirmed the repaired normalization formulas, source-control labels and frozen-fiber multiplier/drift table. The five successful original pages retain their `a645acc` revision.
+
+The requested relative link from the numerical report to `#frozen-fibers-sampled-from-one-finite-parameter-scout` was actually clicked in Edge. At the repair revision it navigated to the matching immutable structural-report URL, found the heading anchor and scrolled it into the viewport. This verifies that specific fragment; it does not certify other fragment anchors. Supporting navigation and screenshot visits are not extra successful page checks.
+
+The aggregate is **55 distinct pages**, **1,060 math elements across their latest checked versions**, **86 successful page checks**, and **1,258 successful formula observations**. The eleven revision-specific successful groups retain seventeen pages at `04e00a3`, six at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, three at `ecfd8a5`, one at `a99a267`, four at `0e68396`, three at `0069a0a`, five at `a645acc` and three at `3713534`. The five failed follow-up attempts remain separately recorded. Raw-text checks now cover nineteen distinct pages at their stated revisions, not the other 36 retroactively.
+
+All **338 relative link occurrences** across those 55 documents resolve against the published Git tree at `3713534`, with code/math excluded. The specific frozen-fiber fragment has the additional browser check described above; external destinations, other fragments, other viewports and later edits remain outside scope.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
 ## Conventions for further reports
 
-Use fenced `math` blocks for display equations, especially matrices, subscripts containing asterisks, and formulas with TeX spacing commands. Keep a blank line around each block. Use standard mathematical commands where available, and verify less-than signs inside subscripts and custom operators in the published renderer. For inline asterisks, use braced `\ast` commands when Markdown emphasis would consume a literal asterisk. Check bold labels and table cells visually, and scan for raw dollars or TeX outside rendered math. Do not treat successful Markdown conversion or clean math-element metrics as proof that every intended expression was typeset.
+Use fenced `math` blocks for display equations, especially matrices, subscripts containing asterisks, and formulas with TeX spacing commands. Keep a blank line around each block. Use standard mathematical commands where available, and verify less-than signs inside subscripts and custom operators in the published renderer. For inline asterisks, use braced `\ast` commands when Markdown emphasis would consume a literal asterisk. Avoid joining a prose hyphen directly to an opening inline-math delimiter. Check bold labels and table cells visually, and scan for raw dollars or TeX outside rendered math. Do not treat successful Markdown conversion or clean math-element metrics as proof that every intended expression was typeset.
 
 GitHub documents both dollar delimiters and fenced math blocks, and identifies MathJax as its renderer. The repairs above follow the fenced form and were checked against the deployed implementation. [GitHub mathematical-expression documentation](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
