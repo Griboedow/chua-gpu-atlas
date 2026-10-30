@@ -1,0 +1,226 @@
+{
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "selection": "At most 64 samples per original displayed category, then uniform fill to 512, RNG seed 20261030.",
+  "scope": "Stratified sensitivity checks, not a confidence interval or a complete finer map. Main images retain the original grids.",
+  "planes": [
+    {
+      "name": "wide",
+      "samples": 512,
+      "label_agreement": 0.861328125,
+      "per_start_agreement": 0.8802083333333334,
+      "chaos_any_agreement": 0.91796875,
+      "confusion_old_rows_new_columns": [
+        [
+          67,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          96,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          91,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          21,
+          0,
+          22
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          5,
+          0,
+          6,
+          0,
+          59
+        ]
+      ],
+      "numerical_failures": 0,
+      "settings": {
+        "dt": 0.0025,
+        "transient": 1200,
+        "duration": 3200,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "initial_state_mode": "shared",
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "timing": {
+        "wall_seconds": 9.832896499996423,
+        "gpu_seconds": 7.860456127999961,
+        "max_kernel_seconds": 0.00210944
+      }
+    },
+    {
+      "name": "zoom",
+      "samples": 512,
+      "label_agreement": 0.888671875,
+      "per_start_agreement": 0.9342447916666666,
+      "chaos_any_agreement": 0.9765625,
+      "confusion_old_rows_new_columns": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          110,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          326,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          47,
+          0,
+          2,
+          0,
+          19
+        ]
+      ],
+      "numerical_failures": 0,
+      "settings": {
+        "dt": 0.0025,
+        "transient": 2000,
+        "duration": 4000,
+        "threshold": 0.01,
+        "escape": 100.0,
+        "seeds": [
+          [
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          [
+            1.5,
+            0.02,
+            -1.5
+          ]
+        ],
+        "initial_state_mode": "shared",
+        "renormalize_every_steps": 10,
+        "chunk_steps": 200
+      },
+      "timing": {
+        "wall_seconds": 13.260650199998054,
+        "gpu_seconds": 10.64562959999984,
+        "max_kernel_seconds": 0.0021093120000000003
+      }
+    }
+  ]
+}

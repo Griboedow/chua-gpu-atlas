@@ -71,6 +71,12 @@ Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive expo
 
 **See what each family does:** the [32-family portrait gallery](docs/chua-family-gallery.md) shows one orbit, full repeating signal, and peak sequence per family. Its interactive comparison lets you rotate and overlay any two reference trajectories. Similar outlines can hide very different repetition patterns.
 
+**What if both diode slopes vary?** A new two-dimensional section fixes α=9 and β=100/7 and varies m₀ and m₁ independently. The wide view shows nested curved regular bands inside a chaotic-candidate region; near the classical point they become almost vertical strips. Two marked examples are independently checked attracting cycles with five and seven peaks. The [slope-plane report](docs/chua-slope-plane.md) includes peak-pattern maps and numerical sensitivity checks. This section does not inherit the earlier catalogue's count of 32 families.
+
+![Two-dimensional m0-m1 map, with a zoom near the classical slopes](docs/assets/chua-slope-plane.png)
+
+*Blue: all three starts are chaos candidates; orange: regular candidates; green: equilibrium candidates; purple: different classifications across starts. These are finite-time sampled maps. The report retains changed labels under step and observation-time refinement.*
+
 **The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
 
 ![Lyapunov transect, peak diagram, coexisting scrolls and basin map](docs/assets/findings.png)

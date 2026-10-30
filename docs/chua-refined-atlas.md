@@ -52,6 +52,8 @@ To compare identities, roots are transported to alpha = 9, m0 = -8/7. Symmetric 
 
 The 13 E-family reference roots lie outside beta = 14.24–14.40, but continued attracting representatives lie inside the original three-dimensional box. A single central transect therefore misses them even with an arbitrarily fine beta mesh.
 
+A separate [m0-m1 plane study](chua-slope-plane.md) now varies both diode slopes at fixed alpha = 9 and beta = 100/7. It shows curved regular bands and a local magnification, with five- and seven-peak examples checked independently. This is a different parameter section; its bands have not all been matched to the 32 identities counted here.
+
 Ancestry also prevents overcounting. The earlier 30-maximum example in A03 is a doubled descendant of a 15-maximum parent; the 60-maximum example in A05 descends from a 30-maximum parent. Off-center examples with 16 and 8 maxima lead back to the same four-maximum E06 family. Positive and negative inversion partners are counted as two attractors when both coexist, but as one family in this catalogue.
 
 The [registry](../results/chua-layer-atlas/family-registry.json), [ancestry records](../results/chua-layer-atlas/offcenter-ancestry.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual identities and parameters.

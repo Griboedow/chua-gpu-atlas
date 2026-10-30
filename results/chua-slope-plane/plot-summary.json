@@ -1,0 +1,50 @@
+{
+  "wide": {
+    "nodes": 58081,
+    "shape": [
+      241,
+      241
+    ],
+    "m0_range": [
+      -1.5,
+      -0.9
+    ],
+    "m1_range": [
+      -0.98,
+      -0.1
+    ],
+    "counts": {
+      "Escape cutoff reached": 1664,
+      "Equilibrium candidate": 12991,
+      "Regular candidate": 13158,
+      "Uncertain": 51,
+      "Chaos candidate": 27983,
+      "Numerical failure": 0,
+      "Different labels across starts": 2234
+    }
+  },
+  "zoom": {
+    "nodes": 58081,
+    "shape": [
+      241,
+      241
+    ],
+    "m0_range": [
+      -1.1488571428571428,
+      -1.1368571428571428
+    ],
+    "m1_range": [
+      -0.7202857142857143,
+      -0.7082857142857143
+    ],
+    "counts": {
+      "Escape cutoff reached": 0,
+      "Equilibrium candidate": 0,
+      "Regular candidate": 9158,
+      "Uncertain": 5,
+      "Chaos candidate": 47970,
+      "Numerical failure": 0,
+      "Different labels across starts": 948
+    }
+  }
+}

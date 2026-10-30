@@ -14,7 +14,8 @@ chua_event_map chua_fast_flights chua_overlap_basins chua_window_ancestry
 export_refined_chua_atlas extend_chua_adding manifest_refined_chua_atlas plot_refined_chua_atlas plot_chua_family_gallery
 refine_chua_adding_check refine_chua_satellites refine_chua_sheets scan_chua_offcenter
 select_chua_offcenter verify_chua_offcenter verify_four_chua_cycles
-refine_readme_layers refine_readme_thin_cores plot_readme_layers'''.split()
+refine_readme_layers refine_readme_thin_cores plot_readme_layers
+scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane'''.split()
 
 
 def digest(path):
@@ -51,11 +52,14 @@ def main():
         print('Verified',len(data['sha256']),'published, code, and input hashes');return
     paths=code_dependencies() | {p for p in out.iterdir() if p.is_file() and p!=manifest}
     paths.update(p for p in (out/'readme-layer-view').rglob('*') if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-slope-plane').iterdir() if p.is_file())
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])
     paths.add(ROOT/'docs/chua-family-gallery.md')
+    paths.add(ROOT/'docs/chua-slope-plane.md')
     paths.update((ROOT/'docs/assets/chua-families').glob('*.png'))
     paths.update(ROOT/'docs/assets'/name for name in ['chua-refined-atlas.png','chua-refined-adding.png','chua-four-cycle-overlap.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-readme-layers.gif','chua-readme-layers-poster.png','chua-readme-layer-zoom.png'])
+    paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-plane.png','chua-slope-peak-patterns.png'])
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])
     paths.add(ROOT/'results/chua-layers/extended.json')
