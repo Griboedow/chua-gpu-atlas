@@ -1,0 +1,110 @@
+{
+  "settings": {
+    "transient": 500.0,
+    "duration": 1000.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_step": 0.02,
+    "max_attempts": 4000000
+  },
+  "method": "Adaptive DP5(4), analytic variational equations, physical seconds",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 15.042712599999504,
+  "parameter_columns": [
+    "F",
+    "K",
+    "Rf",
+    "Rl",
+    "Rth",
+    "Ld",
+    "Lf",
+    "Ll",
+    "Lp",
+    "Cad",
+    "Cd",
+    "Cp",
+    "Rtl0",
+    "Rtl1",
+    "Rtl2",
+    "Rtl3",
+    "Rtl4",
+    "Ctl1",
+    "Ctl2",
+    "Ctl3",
+    "Ctl4",
+    "P0",
+    "U0"
+  ],
+  "model": "NTP 5D",
+  "state_columns": [
+    "p",
+    "d",
+    "q",
+    "u",
+    "v"
+  ],
+  "stats_layout": "Interleaved minima/maxima over observation only",
+  "physical_scope": "No vessel/interface calibration imposed; mathematical equations on R^n",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 2048,
+  "preliminary_positive": 0,
+  "completed": 2048,
+  "scope": "Fixed F=1.37; K=G/F. Lf and thermal gain varied independently as mathematical component parameters; no geometric design calibration.",
+  "array_shapes": {
+    "parameters": [
+      2048,
+      23
+    ],
+    "initial_states": [
+      2048,
+      5
+    ],
+    "initial_tangent": [
+      5
+    ],
+    "final_states": [
+      2048,
+      5
+    ],
+    "final_tangents": [
+      2048,
+      5
+    ],
+    "lle": [
+      2048
+    ],
+    "lle_windows": [
+      2048,
+      4
+    ],
+    "status": [
+      2048
+    ],
+    "stats": [
+      2048,
+      10
+    ],
+    "elapsed": [
+      2048
+    ],
+    "step_counts": [
+      2048,
+      2
+    ],
+    "preliminary_candidate": [
+      2048
+    ],
+    "Lf_grid": [
+      32
+    ],
+    "gain_grid": [
+      32
+    ]
+  }
+}

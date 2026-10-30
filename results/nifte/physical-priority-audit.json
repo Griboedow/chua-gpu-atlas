@@ -1,0 +1,258 @@
+{
+  "checked_at_utc": "2026-10-30T00:45:42.066261+00:00",
+  "scope": "Physical-domain reconstruction, geometry mapping and exact-model priority audit for published NIFTE NTP/NTP-TL. No trajectory integration or discovery claim.",
+  "equation_target": "Wang et al. 2019 Eqs.7-8, five-state NTP and nine-state four-pair NTP-TL",
+  "state_order": [
+    "p=Pad/P0",
+    "d=Pd/P0",
+    "q=Pp/P0",
+    "u=Uf/U0",
+    "v=Up/U0"
+  ],
+  "published_physical_values": {
+    "working_fluid": "n-pentane",
+    "pumped_fluid": "water",
+    "liquid_density_kg_m3": 621,
+    "vapor_density_kg_m3": 2.98,
+    "pumped_density_kg_m3": 998,
+    "working_liquid_viscosity_Pa_s": 0.000218,
+    "pumped_liquid_viscosity_Pa_s": 0.001,
+    "equilibrium_temperature_K": 309,
+    "equilibrium_pressure_Pa": 101300,
+    "adiabatic_index": 1.09,
+    "saturation_temperature_slope_K_Pa": 0.000289,
+    "hot_exchanger_height_m": 0.09,
+    "cold_exchanger_height_m": 0.06,
+    "exchanger_gap_m": [
+      0.003,
+      0.004
+    ],
+    "nominal_vapor_volume_m3": 0.000194,
+    "geometry_source": "Markides2013 Table1, Table4 note, Section3.2 and AppendixA. These are not a complete admissible-state envelope.",
+    "feedback_length_investigated_m": [
+      0.05,
+      0.5
+    ],
+    "feedback_diameter_investigated_m": [
+      0.001,
+      0.05
+    ],
+    "load_length_investigated_m": [
+      0.01,
+      30.0
+    ],
+    "load_diameter_investigated_m": [
+      0.003,
+      0.1
+    ],
+    "ranges_are": "Source parameter-study ranges, not safety limits or proof of model accuracy throughout.",
+    "thermal_loss_fit_frequency_rad_s": [
+      0.1,
+      100.0
+    ]
+  },
+  "state_reconstruction": {
+    "absolute_pressure": "P_abs=P0*(1+p)",
+    "displacer_height": "y_d=P0*d/(rho_wf*g)",
+    "power_height": "y_p=P0*q/(rho_wf*g)",
+    "necessary_pressure_condition": "p > -1, assuming the stated nominal pressure is the equilibrium offset.",
+    "conditional_volume_proxy": "V_geom=V0-Ad*y_d-Ap*y_p=V0-P0*(Cd*d+Cp*q)",
+    "volume_proxy_assumptions": [
+      "Constant cylinder cross-sections",
+      "Both free surfaces account for the changing vapor volume",
+      "Correct equilibrium fill and top-chamber volume"
+    ],
+    "not_physical_absolute_pressures": "The thermal-loss capacitor coordinates z_i are auxiliary RC pressures; z_i>-1 is not a justified chamber constraint.",
+    "missing": [
+      "Signed upper and lower interface clearances from equilibrium",
+      "Complete fluid inventory and overflow/gas-ingestion conditions",
+      "Tank static head and capacity constraints",
+      "Validated rule when liquid leaves a modeled component",
+      "Verified geometric link between nominal full cylinder lengths and effective inertial liquid lengths"
+    ],
+    "do_not_use_as_hard_boundary": "The 90 mm heat-exchanger scale and 95 percent saturation distance."
+  },
+  "geometry_map": {
+    "pipe_R": "128*mu*l/(pi*d_tube**4)=8*pi*mu*l/A**2",
+    "pipe_L": "rho*l/A",
+    "pipe_inverse_A": "8*pi*mu*L/(rho*R)",
+    "pipe_inverse_l": "8*pi*mu*L**2/(rho**2*R)",
+    "normalized_diameter_ratio": "sqrt(L_ratio/R_ratio)",
+    "normalized_length_ratio": "L_ratio**2/R_ratio",
+    "cylinder_area": "rho*g*C",
+    "effective_liquid_length": "g*L*C",
+    "vapor_volume": "gamma*P0*Cad",
+    "thermal_difference": "2*P0*s_T*F",
+    "thermal_inverse_spatial_scale": "K*rho*g/P0",
+    "caveats": [
+      "Independent R/L variation implies joint diameter/length redesign for a uniform pipe.",
+      "A separate valve needs its own resistance calibration.",
+      "Changing cylinder geometry may change Cad unless compensated elsewhere.",
+      "A different fluid or mean pressure changes several material properties simultaneously.",
+      "A redesign affecting heat-transfer geometry needs reassessment/refitting of the thermal-loss impedance."
+    ],
+    "published_reduced_Lf_control": "Valid published mathematical reference, but inverse uniform-pipe length is below the 2013 investigated range. Not a declaration of physical impossibility.",
+    "nominal_length_discrepancy": "2013 Table1 lengths inserted literally into L=rho*l/A give approximately twice Table3 cylinder inertances. 2011 defines inertial lengths as time-averaged liquid-column lengths; a half-filled interpretation is plausible but not explicitly reconciled in the inspected tables."
+  },
+  "derived_values_and_checks": {
+    "pressure_scale_Pa": 101300.0,
+    "liquid_density_kg_m3": 621.0,
+    "height_per_dimensionless_hydrostatic_pressure_m": 16.628337773575552,
+    "nominal_vapor_volume_inferred_from_Cad_m3": 0.00019433392000000002,
+    "nominal_area_displacer_inferred_from_Cd_m2": 0.00044776273500000003,
+    "nominal_area_power_inferred_from_Cp_m2": 0.000452636343,
+    "effective_liquid_length_displacer_inferred_from_Ld_Cd_m": 0.1297863,
+    "effective_liquid_length_power_inferred_from_Lp_Cp_m": 0.274788891,
+    "lengths_reported_in_2013_table1_m": {
+      "displacer": 0.26,
+      "power": 0.55
+    },
+    "raw_table1_inductance_displacer_kg_m_minus4": 360401.78571428574,
+    "raw_table1_inductance_power_kg_m_minus4": 755641.592920354,
+    "nominal_feedback_pipe_inverse_map": {
+      "area_m2": 1.9633760606064155e-05,
+      "diameter_m": 0.0049998480392412226,
+      "length_m": 0.14986155438445103
+    },
+    "published_reduced_Lf_control_inverse_map": {
+      "area_m2": 1.9633760606064156e-06,
+      "diameter_m": 0.0015810907758729194,
+      "length_m": 0.0014986155438445105
+    },
+    "nominal_temperature_difference_inferred_K": 80.215418,
+    "beta_from_K330_m_minus1": 19.845639684106615,
+    "heat_profile_95percent_distance_m": 0.09230142500933365,
+    "heat_profile_95percent_dimensionless_displacer_pressure": 0.0055508509789843116,
+    "open_loop_transfer_check": {
+      "complex_frequencies": 32,
+      "real_part_s_minus1": 0.13,
+      "imaginary_range_s_minus1": [
+        0.01,
+        1000.0
+      ],
+      "max_relative_error": 1.0046046917650003e-14,
+      "nominal_zero_angular_frequency_rad_s": 5.974958841824494,
+      "not_a_trajectory_calculation": true
+    },
+    "nominal_feedback_Re_per_abs_dimensionless_u": 580316.8860774577
+  },
+  "circuit_equivalence_audit": {
+    "established_structure": "Lure feedback: passive stable linear network and one static scalar tanh nonlinearity.",
+    "open_loop_input": "w, dimensional thermal pressure in physical-time equation Cad*Pdot=(w-P)/Rth+U+V",
+    "open_loop_output": "D, dimensional displacer hydrostatic pressure deviation",
+    "a": "Ld+Lf",
+    "Ap(s)": "1+Lp*Cp*s**2",
+    "Ad(s)": "1+Rf*Cd*s+(Ld+Lf)*Cd*s**2",
+    "B(s)": "Cd*s*(Ll*s+Rl)*Ap(s)+(1+Cp*s*((Lp+Ll)*s+Rl))*Ad(s)",
+    "G(s)": "-Ap(s)/((1+Rth*Cad*s)*B(s)+Rth*s*(Cd*Ap(s)+Cp*Ad(s)))",
+    "closure": "w=P0*F*tanh(K*D/P0)",
+    "denominator_degree": 5,
+    "relative_degree": 3,
+    "validation": "Compare G at s=0.13+i*geomspace(0.01,1000,32) to component D of solve(s*I-A,b), where A is the dimensional five-state linear matrix with saturation replaced by input w and b=(1/(Rth*Cad),0,0,0,0). Nominal Table2 components used.",
+    "known_related_model": "Sprott2000 Eq12: third-order tanh jerk equations, three equilibria.",
+    "non_equivalence_scope": "The unique equilibrium of positive-parameter NTP prevents a global bijective conjugacy of the entire flow to those particular three-equilibrium examples. This is not a classification of local attractors, invariant reductions or all saturating-feedback circuits.",
+    "complete_equivalence_classification": false
+  },
+  "priority_check": {
+    "verified_exact_model_chaos_publication_found": false,
+    "absence_proved": false,
+    "full_primary_papers_inspected": [
+      "markides2011",
+      "markides2013",
+      "wang2019",
+      "sprott2000"
+    ],
+    "exact_name_queries": [
+      "NIFTE chaotic thermofluidic",
+      "non-inertive-feedback chaos",
+      "Nonlinear heat transfer processes in a two-phase thermofluidic oscillator chaotic",
+      "Optimization-based investigations thermofluidic chaos",
+      "NIFTE Lyapunov"
+    ],
+    "related_queries": [
+      "chaos saturating feedback tanh oscillator circuit",
+      "fifth-order saturation chaos",
+      "thermofluidic oscillator chaotic",
+      "Experimental investigation on the mode transition characteristics chaos"
+    ],
+    "false_positive_chaos_mentions": {
+      "markides2013": "Strogatz textbook reference",
+      "wang2019": "Pyragas1992 reference suggested for unstable-cycle control; no demonstrated chaos in the article"
+    },
+    "prior_snapshot_counts": {
+      "wang2019_citing_works": 3,
+      "markides2013_citing_works": 40,
+      "all_fulltexts_read": false,
+      "record": "results/candidate-audits/physical-candidate-screening.json"
+    },
+    "scope_limitations": [
+      "One citation index snapshot, not exhaustive discovery",
+      "Wang thesis full text unavailable",
+      "Related TPTO descendants inspected only in publisher-indexed previews",
+      "No complete comparison of higher-order saturating-feedback circuits"
+    ],
+    "excluded_broad_novelty_claim": "First chaos in an autonomous thermally driven fluid oscillator: contradicted by Yazaki1993."
+  },
+  "sources": [
+    {
+      "id": "markides2011",
+      "doi": "10.1016/j.energy.2011.08.051",
+      "url": "https://spiral.imperial.ac.uk/server/api/core/bitstreams/c7601b88-278c-4f37-8bd1-df7eb9851579/content",
+      "access": "Full primary PDF; fluid linearization and time-averaged liquid-column definitions inspected."
+    },
+    {
+      "id": "markides2013",
+      "doi": "10.1016/j.apenergy.2012.11.056",
+      "url": "https://gstan.bg-research.cc.ic.ac.uk/Markides_Stan_App_Energy_2013.pdf",
+      "access": "Full primary PDF; Tables 1-3 and Appendix A rendered and visually inspected."
+    },
+    {
+      "id": "wang2019",
+      "doi": "10.1186/s42480-019-0019-3",
+      "url": "https://link.springer.com/article/10.1186/s42480-019-0019-3",
+      "access": "Full primary article and PDF; equations, nominal parameters, control and optimization discussion inspected.",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "sprott2000",
+      "doi": "10.1119/1.19538",
+      "url": "https://sprott.physics.wisc.edu/pubs/paper245.pdf",
+      "access": "Full primary PDF; Equation 12, Table I and surrounding discussion inspected."
+    },
+    {
+      "id": "zhou2024a",
+      "doi": "10.1016/j.applthermaleng.2023.122225",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1359431123022548",
+      "access": "Publisher-indexed abstract only; direct full page returned 403.",
+      "finding": "Related regenerator TPTO reports high-frequency periodic, quasiperiodic and low-frequency periodic regimes; exact NTP equivalence not established."
+    },
+    {
+      "id": "zhou2024b",
+      "doi": "10.1016/j.applthermaleng.2024.124192",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S135943112401860X",
+      "access": "Publisher-indexed preview only; direct full page returned 403 and ordinary alternate publisher URL returned 429. No further retry.",
+      "finding": "External-load TPTO mode-transition experiment; preview refers to a van der Pol model, not the exact five-state NTP equations."
+    },
+    {
+      "id": "yazaki1993",
+      "doi": "10.1103/PhysRevE.48.1806",
+      "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.48.1806",
+      "access": "Primary publisher abstract inspected.",
+      "finding": "Reports chaotic spontaneous as well as externally forced thermoacoustic states. Broad first-thermofluid-chaos claim excluded."
+    },
+    {
+      "id": "wang2020thesis",
+      "doi": "10.25560/86023",
+      "url": "https://spiral.imperial.ac.uk/entities/publication/ff79c230-8eff-4695-8e58-e07d63edca1e",
+      "access": "Institutional record inspected. Ordinary retry of linked PDF returned HTTP 429. No bypass.",
+      "pdf_url": "https://spiral.imperial.ac.uk/bitstreams/21a6fbc3-52ba-466d-88ae-a78aabe1b953/download",
+      "remaining_gap": "Full nonlinear and switched-linear chapters not read."
+    }
+  ],
+  "local_primary_pdf_sha256": {
+    "nifte-2011.pdf": "81c2ec9eff009a3291c12d0f3844cb0d397ae1d1ea87f3da5dd276b2d8fa6a0b",
+    "nifte-2013.pdf": "f5be7a6702029efa0f398de53cbc87ec40be38324b0c1a74f32b573a5bb6b6fc",
+    "nifte-2019.pdf": "8c974c6ea77da1e3a3e9788ad2ff118be66aca8ea0f3ee44f445c4e65a86c078"
+  },
+  "publication_policy": "Only original audit prose, derived checks and source metadata are included. Source PDFs/page renders remain in ignored outputs; their copyrights/licenses are not replaced by the repository MIT license."
+}

@@ -23,3 +23,5 @@ These later datasets are small enough to include directly, along with their sett
 - `thermomechanical-sheet/`: an independent coordinate/Jacobian/equilibrium audit and forward-citation leads for Shen's 2025 model. No chaos survey yet; see [the audit](../docs/thermomechanical-sheet-audit.md).
 
 All angles, time scalings, selection thresholds and source variants are described in their notebooks. Finite-time candidate membership is not a proof of an asymptotic attractor or publication novelty.
+
+- `nifte/`: exact five-/nine-state thermofluidic equations, recovered stable/unstable source cycles, 14,336 scouts, tighter follow-ups, a full-spectrum weak-positive cycle control, source/physical audits and independent mode-interaction algebra. See [the notebook](../docs/nifte-research.md).

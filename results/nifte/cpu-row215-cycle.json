@@ -1,0 +1,41 @@
+{
+  "status": "closed periodic orbit",
+  "solver_message": "The solution converged.",
+  "period_seconds": 1.999548623485531,
+  "section_closure": 1.3322676295501878e-15,
+  "independent_mass_radau_closure": 2.220446049250313e-15,
+  "maximum_transverse_multiplier": 0.9097850980647704,
+  "section_spread_before_newton": 1.0713305242937565e-12,
+  "direct_monodromy_determinant": 0.01808413003397205,
+  "liouville_determinant": 0.01808413003397199,
+  "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+  "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+  "input_file": "results/nifte/random-5d.npz",
+  "row": 215,
+  "wall_seconds": 162.8056762000051,
+  "array_shapes": {
+    "section_state": [
+      5
+    ],
+    "section_multipliers": [
+      4
+    ],
+    "full_multipliers": [
+      5
+    ],
+    "floquet_exponents_per_s": [
+      5
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      5
+    ],
+    "parameters": [
+      23
+    ]
+  },
+  "input_sha256": "0bd3ab61d6c4eee14c3ec314677786ba66ce6c939b007f7c5f6c0aa6b4d538ae"
+}

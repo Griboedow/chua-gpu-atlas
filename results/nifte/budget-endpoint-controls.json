@@ -1,0 +1,577 @@
+{
+  "created_at_utc": "2026-10-30T01:09:11.628135+00:00",
+  "status": "completed requested six-case inspection",
+  "selection": "All three scout-5d step-budget endpoints; two random-5d and one scout-9d step-budget endpoints ranked by largest original scout minimum window, with source_indices mapping.",
+  "cases_requested": 6,
+  "cases_recorded": 6,
+  "per_case_hard_wall_limit_seconds": 38.0,
+  "wall_seconds": 32.40736329999345,
+  "parameter_columns": [
+    "F",
+    "K",
+    "Rf",
+    "Rl",
+    "Rth",
+    "Ld",
+    "Lf",
+    "Ll",
+    "Lp",
+    "Cad",
+    "Cd",
+    "Cp",
+    "Rtl0",
+    "Rtl1",
+    "Rtl2",
+    "Rtl3",
+    "Rtl4",
+    "Ctl1",
+    "Ctl2",
+    "Ctl3",
+    "Ctl4",
+    "P0",
+    "U0"
+  ],
+  "time_unit": "physical seconds",
+  "input_status_code": 3,
+  "method": "Existing check_nifte_spectrum.cycle_check: DOP853 60-second section inspection, Newton Poincare shooting, independent mass_rhs/Radau closure.",
+  "scope": "Only these six saved endpoints are sampled. No blanket classification of remaining step-budget cases and no physical vessel-domain certification.",
+  "nine_dimensional_limit": "Only resolved dominant transverse multipliers support stability classification. Tiny contracting multipliers and direct monodromy determinants are not certified.",
+  "stable_closed_samples": 6,
+  "unresolved_samples": 0,
+  "cases": [
+    {
+      "survey": "scout-5d",
+      "refined_row": 18,
+      "source_scout_row": 575,
+      "refined_file": "scout-5d-refined.npz",
+      "scout_file": "scout-5d.npz",
+      "refined_sha256": "1cfa628daabcd9f92c6f7f54c9351761b1e10b302bfba5825682aa06ddd181d8",
+      "scout_sha256": "7c00020991fdd8df124958840a527dec75178e108566c061cd56057004db1f93",
+      "original_scout_windows": {
+        "npz_key": "case0_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 9.395935397021817e-05,
+      "gpu_elapsed_seconds": 9732.188691687255,
+      "gpu_step_counts": {
+        "npz_key": "case0_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case0_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case0_initial_saved_endpoint",
+        "shape": [
+          5
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case0_section_state",
+        "shape": [
+          5
+        ]
+      },
+      "period_seconds": 1.377109762930857,
+      "section_closure": 4.163336342344337e-16,
+      "independent_mass_radau_closure": 5.800915303666443e-15,
+      "section_multipliers": {
+        "npz_key": "case0_section_multipliers",
+        "shape": [
+          4
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case0_full_multipliers",
+        "shape": [
+          5
+        ]
+      },
+      "maximum_transverse_multiplier": 0.4887392745648216,
+      "floquet_exponents_per_s": {
+        "npz_key": "case0_floquet_exponents_per_s",
+        "shape": [
+          5
+        ]
+      },
+      "times": {
+        "npz_key": "case0_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case0_states",
+        "shape": [
+          4001,
+          5
+        ]
+      },
+      "section_spread_before_newton": 8.443298837867985e-11,
+      "direct_monodromy_determinant": 0.010772564492490052,
+      "liouville_determinant": 0.01077256449248989,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 3.5504692000031355,
+      "case_wall_seconds": 4.761169500001415,
+      "nontrivial_peak_to_peak_max": 1.581364310980904,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.4887392745648216,
+      "multiplier_accuracy_scope": "FP64 periodic-orbit multipliers; no rigorous interval enclosure."
+    },
+    {
+      "survey": "scout-5d",
+      "refined_row": 17,
+      "source_scout_row": 573,
+      "refined_file": "scout-5d-refined.npz",
+      "scout_file": "scout-5d.npz",
+      "refined_sha256": "1cfa628daabcd9f92c6f7f54c9351761b1e10b302bfba5825682aa06ddd181d8",
+      "scout_sha256": "7c00020991fdd8df124958840a527dec75178e108566c061cd56057004db1f93",
+      "original_scout_windows": {
+        "npz_key": "case1_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 4.642812152151869e-05,
+      "gpu_elapsed_seconds": 9871.50884965238,
+      "gpu_step_counts": {
+        "npz_key": "case1_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case1_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case1_initial_saved_endpoint",
+        "shape": [
+          5
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case1_section_state",
+        "shape": [
+          5
+        ]
+      },
+      "period_seconds": 1.377098638830087,
+      "section_closure": 2.1649348980190553e-15,
+      "independent_mass_radau_closure": 2.9976021664879227e-15,
+      "section_multipliers": {
+        "npz_key": "case1_section_multipliers",
+        "shape": [
+          4
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case1_full_multipliers",
+        "shape": [
+          5
+        ]
+      },
+      "maximum_transverse_multiplier": 0.4887336341169593,
+      "floquet_exponents_per_s": {
+        "npz_key": "case1_floquet_exponents_per_s",
+        "shape": [
+          5
+        ]
+      },
+      "times": {
+        "npz_key": "case1_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case1_states",
+        "shape": [
+          4001,
+          5
+        ]
+      },
+      "section_spread_before_newton": 1.684763439868675e-14,
+      "direct_monodromy_determinant": 0.010772958762519581,
+      "liouville_determinant": 0.0107729587625194,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 3.2680575999984285,
+      "case_wall_seconds": 4.393100500004948,
+      "nontrivial_peak_to_peak_max": 1.5811194462521336,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.4887336341169593,
+      "multiplier_accuracy_scope": "FP64 periodic-orbit multipliers; no rigorous interval enclosure."
+    },
+    {
+      "survey": "scout-5d",
+      "refined_row": 16,
+      "source_scout_row": 443,
+      "refined_file": "scout-5d-refined.npz",
+      "scout_file": "scout-5d.npz",
+      "refined_sha256": "1cfa628daabcd9f92c6f7f54c9351761b1e10b302bfba5825682aa06ddd181d8",
+      "scout_sha256": "7c00020991fdd8df124958840a527dec75178e108566c061cd56057004db1f93",
+      "original_scout_windows": {
+        "npz_key": "case2_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 3.967110470255712e-05,
+      "gpu_elapsed_seconds": 9257.957587683148,
+      "gpu_step_counts": {
+        "npz_key": "case2_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case2_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case2_initial_saved_endpoint",
+        "shape": [
+          5
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case2_section_state",
+        "shape": [
+          5
+        ]
+      },
+      "period_seconds": 0.8794020644380727,
+      "section_closure": 1.4432899320127035e-15,
+      "independent_mass_radau_closure": 5.10702591327572e-15,
+      "section_multipliers": {
+        "npz_key": "case2_section_multipliers",
+        "shape": [
+          4
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case2_full_multipliers",
+        "shape": [
+          5
+        ]
+      },
+      "maximum_transverse_multiplier": 0.9182650774973411,
+      "floquet_exponents_per_s": {
+        "npz_key": "case2_floquet_exponents_per_s",
+        "shape": [
+          5
+        ]
+      },
+      "times": {
+        "npz_key": "case2_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case2_states",
+        "shape": [
+          4001,
+          5
+        ]
+      },
+      "section_spread_before_newton": 4.9383275246839275e-11,
+      "direct_monodromy_determinant": 0.04362802454987997,
+      "liouville_determinant": 0.04362802454987759,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 2.814646899998479,
+      "case_wall_seconds": 3.96194370000012,
+      "nontrivial_peak_to_peak_max": 2.697785681611138,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.9182650774973411,
+      "multiplier_accuracy_scope": "FP64 periodic-orbit multipliers; no rigorous interval enclosure."
+    },
+    {
+      "survey": "random-5d",
+      "refined_row": 170,
+      "source_scout_row": 2606,
+      "refined_file": "random-5d-refined.npz",
+      "scout_file": "random-5d.npz",
+      "refined_sha256": "5bb8db76fb39758721eea8a6dc96e59ecfcd203186c70145cee586c6ee8e18e9",
+      "scout_sha256": "0bd3ab61d6c4eee14c3ec314677786ba66ce6c939b007f7c5f6c0aa6b4d538ae",
+      "original_scout_windows": {
+        "npz_key": "case3_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 0.000668624140307944,
+      "gpu_elapsed_seconds": 9216.571250979037,
+      "gpu_step_counts": {
+        "npz_key": "case3_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case3_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case3_initial_saved_endpoint",
+        "shape": [
+          5
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case3_section_state",
+        "shape": [
+          5
+        ]
+      },
+      "period_seconds": 1.718892840346358,
+      "section_closure": 8.604228440844963e-16,
+      "independent_mass_radau_closure": 1.2878587085651816e-14,
+      "section_multipliers": {
+        "npz_key": "case3_section_multipliers",
+        "shape": [
+          4
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case3_full_multipliers",
+        "shape": [
+          5
+        ]
+      },
+      "maximum_transverse_multiplier": 0.015435177661509647,
+      "floquet_exponents_per_s": {
+        "npz_key": "case3_floquet_exponents_per_s",
+        "shape": [
+          5
+        ]
+      },
+      "times": {
+        "npz_key": "case3_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case3_states",
+        "shape": [
+          4001,
+          5
+        ]
+      },
+      "section_spread_before_newton": 2.3592239273284576e-14,
+      "direct_monodromy_determinant": 1.6896932756355421e-10,
+      "liouville_determinant": 1.6896932756360046e-10,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 4.671434100004262,
+      "case_wall_seconds": 5.876154400000814,
+      "nontrivial_peak_to_peak_max": 3.2973949915316463,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.015435177661509647,
+      "multiplier_accuracy_scope": "FP64 periodic-orbit multipliers; no rigorous interval enclosure."
+    },
+    {
+      "survey": "random-5d",
+      "refined_row": 115,
+      "source_scout_row": 1849,
+      "refined_file": "random-5d-refined.npz",
+      "scout_file": "random-5d.npz",
+      "refined_sha256": "5bb8db76fb39758721eea8a6dc96e59ecfcd203186c70145cee586c6ee8e18e9",
+      "scout_sha256": "0bd3ab61d6c4eee14c3ec314677786ba66ce6c939b007f7c5f6c0aa6b4d538ae",
+      "original_scout_windows": {
+        "npz_key": "case4_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 0.0006214134811163174,
+      "gpu_elapsed_seconds": 9502.225888040415,
+      "gpu_step_counts": {
+        "npz_key": "case4_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case4_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case4_initial_saved_endpoint",
+        "shape": [
+          5
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case4_section_state",
+        "shape": [
+          5
+        ]
+      },
+      "period_seconds": 1.4085098108779197,
+      "section_closure": 4.440892098500626e-15,
+      "independent_mass_radau_closure": 1.3322676295501878e-14,
+      "section_multipliers": {
+        "npz_key": "case4_section_multipliers",
+        "shape": [
+          4
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case4_full_multipliers",
+        "shape": [
+          5
+        ]
+      },
+      "maximum_transverse_multiplier": 0.8258454494981835,
+      "floquet_exponents_per_s": {
+        "npz_key": "case4_floquet_exponents_per_s",
+        "shape": [
+          5
+        ]
+      },
+      "times": {
+        "npz_key": "case4_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case4_states",
+        "shape": [
+          4001,
+          5
+        ]
+      },
+      "section_spread_before_newton": 1.5921486351544445e-11,
+      "direct_monodromy_determinant": 0.015331702151188084,
+      "liouville_determinant": 0.01533170215118743,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 3.890441000003193,
+      "case_wall_seconds": 5.047256300000299,
+      "nontrivial_peak_to_peak_max": 10.303008661938009,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.8258454494981835,
+      "multiplier_accuracy_scope": "FP64 periodic-orbit multipliers; no rigorous interval enclosure."
+    },
+    {
+      "survey": "scout-9d",
+      "refined_row": 118,
+      "source_scout_row": 1605,
+      "refined_file": "scout-9d-refined.npz",
+      "scout_file": "scout-9d.npz",
+      "refined_sha256": "000a4cbb478e43adf5d07d4d795c6cd610b45bcb9b6e1b3c30a7625ddb212c4c",
+      "scout_sha256": "e10266696c4048b6a61c9f017e5074933161ff9207bd9233a38e3dc19d111a12",
+      "original_scout_windows": {
+        "npz_key": "case5_original_scout_windows",
+        "shape": [
+          4
+        ]
+      },
+      "original_scout_minimum_window": 0.0006653081097438788,
+      "gpu_elapsed_seconds": 5547.380539540912,
+      "gpu_step_counts": {
+        "npz_key": "case5_gpu_step_counts",
+        "shape": [
+          2
+        ]
+      },
+      "parameters": {
+        "npz_key": "case5_parameters",
+        "shape": [
+          23
+        ]
+      },
+      "initial_saved_endpoint": {
+        "npz_key": "case5_initial_saved_endpoint",
+        "shape": [
+          9
+        ]
+      },
+      "status": "closed periodic orbit",
+      "solver_message": "The solution converged.",
+      "section_state": {
+        "npz_key": "case5_section_state",
+        "shape": [
+          9
+        ]
+      },
+      "period_seconds": 3.33232275216879,
+      "section_closure": 9.992007221626409e-16,
+      "independent_mass_radau_closure": 1.7486012637846216e-15,
+      "section_multipliers": {
+        "npz_key": "case5_section_multipliers",
+        "shape": [
+          8
+        ]
+      },
+      "full_multipliers": {
+        "npz_key": "case5_full_multipliers",
+        "shape": [
+          9
+        ]
+      },
+      "maximum_transverse_multiplier": 0.5553016926667286,
+      "floquet_exponents_per_s": {
+        "npz_key": "case5_floquet_exponents_per_s",
+        "shape": [
+          9
+        ]
+      },
+      "times": {
+        "npz_key": "case5_times",
+        "shape": [
+          4001
+        ]
+      },
+      "states": {
+        "npz_key": "case5_states",
+        "shape": [
+          4001,
+          9
+        ]
+      },
+      "section_spread_before_newton": 4.0914320542650984e-13,
+      "direct_monodromy_determinant": 1.2598978614407428e-51,
+      "liouville_determinant": 9.437553209035934e-302,
+      "determinant_caveat": "Direct determinant is unreliable for unresolved strongly contracting modes, especially 9D.",
+      "scope": "Numerical orbit closure and linear transverse stability, not a rigorous existence proof.",
+      "worker_wall_seconds": 6.423861700000998,
+      "case_wall_seconds": 7.590422799999942,
+      "nontrivial_peak_to_peak_max": 1.987646348388104,
+      "classification": "stable periodic endpoint control",
+      "dominant_transverse_multiplier_modulus": 0.5553016926667286,
+      "multiplier_accuracy_scope": "Dominant multipliers only; tiny modes and determinant may be numerically unresolved."
+    }
+  ]
+}

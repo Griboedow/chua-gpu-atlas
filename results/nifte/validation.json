@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "mass_equivalence": 4.004027036749199e-15,
+    "jacobian": 2.9933030848192183e-13,
+    "odd_symmetry": 0.0,
+    "constant_divergence": 0.0,
+    "dop853_radau_state": 3.107236690169657e-14
+  },
+  "passed": true,
+  "random_states_per_model": 64,
+  "models": [
+    5,
+    9
+  ],
+  "time_unit": "physical s",
+  "scope": "Independent dimensional mass balances, complex-step Jacobian and two CPU methods",
+  "array_shapes": {}
+}

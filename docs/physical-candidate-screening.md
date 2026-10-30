@@ -1,6 +1,6 @@
 # A concrete thermofluidic candidate: the NIFTE heat engine
 
-Screening date: 30 October 2026, 00:20 UTC. **One candidate is ready for an implementation check; no new chaotic trajectory or novelty result is claimed.** This note provides the published equations and an independent boundedness argument. No trajectory integration or parameter scan was performed.
+Screening date: 30 October 2026, 00:20 UTC. This initial note provides the published equations and an independent boundedness argument. No trajectory integration was performed in this screening block. **The subsequent [implementation and numerical study](nifte-research.md) now reproduces the source cycles and records a large search without a validated chaos candidate.** The original transcription and source-access evidence below remain available.
 
 The non-inertive-feedback thermofluidic engine (NIFTE) converts a constant hot/cold temperature difference into fluid motion through evaporation and condensation. Markides et al. [1] introduced a smooth saturating temperature profile. Wang et al. [2] give explicit equations, thermal-loss corrections and coexisting stable/unstable cycles. The latter study is the precise implementation target. Its calibrated thermal-loss model has **nine states**, not six: four additional RC states supplement the five original states.
 

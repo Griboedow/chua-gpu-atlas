@@ -1,0 +1,69 @@
+{
+  "records": [
+    {
+      "dimension": 5,
+      "gain": 0.0,
+      "errors": {
+        "state": 8.21251053273464e-13,
+        "tangent": 4.053851698770927e-11,
+        "lle": 8.444273058572094e-12,
+        "linear_expm": 8.215875896278035e-13
+      },
+      "passed": true
+    },
+    {
+      "dimension": 5,
+      "gain": 452.1,
+      "errors": {
+        "state": 1.9835744158314128e-11,
+        "tangent": 2.2405133304204128e-11,
+        "lle": 1.4201750886400077e-11
+      },
+      "passed": true
+    },
+    {
+      "dimension": 5,
+      "gain": 302.871676391795,
+      "errors": {
+        "state": 2.258049303094367e-11,
+        "tangent": 4.9508537894316085e-11,
+        "lle": 1.6543655334544383e-11
+      },
+      "passed": true
+    },
+    {
+      "dimension": 9,
+      "gain": 0.0,
+      "errors": {
+        "state": 6.326519169652656e-13,
+        "tangent": 2.125034870292808e-11,
+        "lle": 7.678413460610045e-12,
+        "linear_expm": 6.332070284775781e-13
+      },
+      "passed": true
+    },
+    {
+      "dimension": 9,
+      "gain": 452.1,
+      "errors": {
+        "state": 2.869961213125549e-13,
+        "tangent": 9.675246714913044e-13,
+        "lle": 2.886579864025407e-15
+      },
+      "passed": true
+    },
+    {
+      "dimension": 9,
+      "gain": 302.871676391795,
+      "errors": {
+        "state": 7.761326303867833e-14,
+        "tangent": 9.38679689532762e-13,
+        "lle": 2.353672812205332e-14
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Independent Radau state/tangent, zero-input matrix exponential, both published source cycles and double-Hopf linear parameters",
+  "array_shapes": {}
+}

@@ -1,0 +1,337 @@
+{
+  "surveys": [
+    {
+      "dataset": "scout-5d",
+      "lanes": 2048,
+      "status_counts": {
+        "0": 2048,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 109,
+      "largest_completed_mean": 0.001415790090281114,
+      "largest_completed_minimum_window": 0.00047971590737543935,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 64,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 1500.0,
+      "elapsed_max": 1500.0,
+      "settings": {
+        "transient": 500.0,
+        "duration": 1000.0,
+        "rtol": 1e-08,
+        "atol": 1.0000000000000001e-11,
+        "max_step": 0.02,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 15.042712599999504
+    },
+    {
+      "dataset": "scout-5d-refined",
+      "lanes": 132,
+      "status_counts": {
+        "0": 129,
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 0
+      },
+      "all_four_windows_positive": 4,
+      "largest_completed_mean": 0.0001373436776875326,
+      "largest_completed_minimum_window": 3.4880915591024314e-06,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 1,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 9257.957587683148,
+      "elapsed_max": 10000.0,
+      "settings": {
+        "transient": 2000,
+        "duration": 8000,
+        "rtol": 1e-10,
+        "atol": 1e-13,
+        "max_step": 0.01,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 151.53146299999935
+    },
+    {
+      "dataset": "scout-9d",
+      "lanes": 2048,
+      "status_counts": {
+        "0": 2048,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 144,
+      "largest_completed_mean": 0.0019832401525470733,
+      "largest_completed_minimum_window": 0.0006653081097438788,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 1500.0,
+      "elapsed_max": 1500.0,
+      "settings": {
+        "transient": 500.0,
+        "duration": 1000.0,
+        "rtol": 1e-08,
+        "atol": 1.0000000000000001e-11,
+        "max_step": 0.02,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 56.842556600000535
+    },
+    {
+      "dataset": "scout-9d-refined",
+      "lanes": 168,
+      "status_counts": {
+        "0": 27,
+        "1": 0,
+        "2": 0,
+        "3": 141,
+        "4": 0
+      },
+      "all_four_windows_positive": 0,
+      "largest_completed_mean": 2.347198432496219e-05,
+      "largest_completed_minimum_window": -0.00015189420684504664,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 4725.851640867786,
+      "elapsed_max": 10000.0,
+      "settings": {
+        "transient": 2000,
+        "duration": 8000,
+        "rtol": 1e-10,
+        "atol": 1e-13,
+        "max_step": 0.01,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 368.6007933000001
+    },
+    {
+      "dataset": "focus-5d",
+      "lanes": 2048,
+      "status_counts": {
+        "0": 2048,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 140,
+      "largest_completed_mean": 0.0004926588913882378,
+      "largest_completed_minimum_window": 0.00029412245860977197,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 1500.0,
+      "elapsed_max": 1500.0,
+      "settings": {
+        "transient": 500.0,
+        "duration": 1000.0,
+        "rtol": 1e-08,
+        "atol": 1.0000000000000001e-11,
+        "max_step": 0.02,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 18.308848599997873
+    },
+    {
+      "dataset": "focus-5d-refined",
+      "lanes": 153,
+      "status_counts": {
+        "0": 153,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 6,
+      "largest_completed_mean": 5.848810349711161e-05,
+      "largest_completed_minimum_window": 9.108721097304804e-06,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 10000.0,
+      "elapsed_max": 10000.0,
+      "settings": {
+        "transient": 2000,
+        "duration": 8000,
+        "rtol": 1e-10,
+        "atol": 1e-13,
+        "max_step": 0.01,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 136.96166310000262
+    },
+    {
+      "dataset": "random-5d",
+      "lanes": 4096,
+      "status_counts": {
+        "0": 4096,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 251,
+      "largest_completed_mean": 0.003178030246117843,
+      "largest_completed_minimum_window": 0.0011017763301627798,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 814,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 1500.0,
+      "elapsed_max": 1500.0,
+      "settings": {
+        "transient": 500.0,
+        "duration": 1000.0,
+        "rtol": 1e-08,
+        "atol": 1.0000000000000001e-11,
+        "max_step": 0.02,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 25.96648080000159
+    },
+    {
+      "dataset": "random-5d-refined",
+      "lanes": 270,
+      "status_counts": {
+        "0": 218,
+        "1": 0,
+        "2": 0,
+        "3": 52,
+        "4": 0
+      },
+      "all_four_windows_positive": 10,
+      "largest_completed_mean": 0.00025888893670680433,
+      "largest_completed_minimum_window": 5.753898520801714e-05,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 53,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 5472.842931044379,
+      "elapsed_max": 10000.0,
+      "settings": {
+        "transient": 2000,
+        "duration": 8000,
+        "rtol": 1e-10,
+        "atol": 1e-13,
+        "max_step": 0.01,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 160.5649795999998
+    },
+    {
+      "dataset": "random-9d",
+      "lanes": 4096,
+      "status_counts": {
+        "0": 4096,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "all_four_windows_positive": 242,
+      "largest_completed_mean": 0.0026122202806154664,
+      "largest_completed_minimum_window": 0.0010484820442919734,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 1500.0,
+      "elapsed_max": 1500.0,
+      "settings": {
+        "transient": 500.0,
+        "duration": 1000.0,
+        "rtol": 1e-08,
+        "atol": 1.0000000000000001e-11,
+        "max_step": 0.02,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 88.27708880000137
+    },
+    {
+      "dataset": "random-9d-refined",
+      "lanes": 261,
+      "status_counts": {
+        "0": 32,
+        "1": 0,
+        "2": 0,
+        "3": 229,
+        "4": 0
+      },
+      "all_four_windows_positive": 2,
+      "largest_completed_mean": 0.00022386164012535683,
+      "largest_completed_minimum_window": 1.2534693824820638e-05,
+      "passed_declared_threshold": 0,
+      "completed_with_nonpositive_reconstructed_absolute_pressure": 0,
+      "pressure_diagnostic_scope": "Observation minima only; necessary condition, not a full physical-admissibility test",
+      "elapsed_min": 3012.8331390242265,
+      "elapsed_max": 10000.0,
+      "settings": {
+        "transient": 2000,
+        "duration": 8000,
+        "rtol": 1e-10,
+        "atol": 1e-13,
+        "max_step": 0.01,
+        "max_attempts": 4000000
+      },
+      "wall_seconds": 259.97731809999823
+    }
+  ],
+  "cycle_diagnostics": [
+    {
+      "dataset": "source-5d-cycle",
+      "period_seconds": 1.3081459982682369,
+      "minimum_absolute_pressure_Pa": 63094.13997165592,
+      "conditional_volume_min_m3": 6.561445493235445e-05,
+      "conditional_volume_max_m3": 0.00032305338506764624,
+      "displacer_displacement_range_m": [
+        -0.12777113546351127,
+        0.1277711354635083
+      ],
+      "physical_scope": "Assumes source fluid density, gravity and cylindrical-volume reconstruction; not a calibrated vessel-operating envelope"
+    },
+    {
+      "dataset": "source-9d-cycle",
+      "period_seconds": 1.6906670799978671,
+      "minimum_absolute_pressure_Pa": 83390.81669498632,
+      "conditional_volume_min_m3": 9.793105798181261e-05,
+      "conditional_volume_max_m3": 0.00029073678201818837,
+      "displacer_displacement_range_m": [
+        -0.11582413642623171,
+        0.11582413642623256
+      ],
+      "physical_scope": "Assumes source fluid density, gravity and cylindrical-volume reconstruction; not a calibrated vessel-operating envelope"
+    },
+    {
+      "dataset": "source-5d-unstable-cycle",
+      "period_seconds": 0.8799959631993806,
+      "minimum_absolute_pressure_Pa": 27730.89954231125,
+      "conditional_volume_min_m3": 8.111459025043227e-05,
+      "conditional_volume_max_m3": 0.0003075532497495678,
+      "displacer_displacement_range_m": [
+        -0.049084914290762116,
+        0.049084914290762095
+      ],
+      "physical_scope": "Assumes source fluid density, gravity and cylindrical-volume reconstruction; not a calibrated vessel-operating envelope"
+    },
+    {
+      "dataset": "cpu-row215-cycle",
+      "period_seconds": 1.999548623485531,
+      "minimum_absolute_pressure_Pa": 77669.89620813943,
+      "conditional_volume_min_m3": 0.00018905303265761197,
+      "conditional_volume_max_m3": 0.00032037118431751705,
+      "displacer_displacement_range_m": [
+        -2.760204144055998,
+        2.7602041440559324
+      ],
+      "physical_scope": "Assumes source fluid density, gravity and cylindrical-volume reconstruction; not a calibrated vessel-operating envelope"
+    }
+  ],
+  "scout_trajectories": 14336,
+  "followup_trajectories": 984,
+  "interpretation": "No validated chaos candidate in this finite survey; unresolved budgets and small finite-window positives are not a global no-chaos result"
+}

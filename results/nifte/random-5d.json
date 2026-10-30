@@ -1,0 +1,111 @@
+{
+  "settings": {
+    "transient": 500.0,
+    "duration": 1000.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_step": 0.02,
+    "max_attempts": 4000000
+  },
+  "method": "Adaptive DP5(4), analytic variational equations, physical seconds",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 25.96648080000159,
+  "parameter_columns": [
+    "F",
+    "K",
+    "Rf",
+    "Rl",
+    "Rth",
+    "Ld",
+    "Lf",
+    "Ll",
+    "Lp",
+    "Cad",
+    "Cd",
+    "Cp",
+    "Rtl0",
+    "Rtl1",
+    "Rtl2",
+    "Rtl3",
+    "Rtl4",
+    "Ctl1",
+    "Ctl2",
+    "Ctl3",
+    "Ctl4",
+    "P0",
+    "U0"
+  ],
+  "model": "NTP 5D",
+  "state_columns": [
+    "p",
+    "d",
+    "q",
+    "u",
+    "v"
+  ],
+  "stats_layout": "Interleaved minima/maxima over observation only",
+  "physical_scope": "No vessel/interface calibration imposed; mathematical equations on R^n",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 4096,
+  "preliminary_positive": 0,
+  "completed": 4096,
+  "seed": 2026103008,
+  "scope": "Fixed F=1.37; K=G/F. Native model components varied as mathematical parameters; no geometric design calibration.",
+  "array_shapes": {
+    "parameters": [
+      4096,
+      23
+    ],
+    "initial_states": [
+      4096,
+      5
+    ],
+    "initial_tangent": [
+      5
+    ],
+    "final_states": [
+      4096,
+      5
+    ],
+    "final_tangents": [
+      4096,
+      5
+    ],
+    "lle": [
+      4096
+    ],
+    "lle_windows": [
+      4096,
+      4
+    ],
+    "status": [
+      4096
+    ],
+    "stats": [
+      4096,
+      10
+    ],
+    "elapsed": [
+      4096
+    ],
+    "step_counts": [
+      4096,
+      2
+    ],
+    "preliminary_candidate": [
+      4096
+    ],
+    "Lf_grid": [
+      0
+    ],
+    "gain_grid": [
+      0
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "settings": {
+    "transient": 2000,
+    "duration": 8000,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step": 0.01,
+    "max_attempts": 4000000
+  },
+  "method": "Adaptive DP5(4), analytic variational equations, physical seconds",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 259.97731809999823,
+  "parameter_columns": [
+    "F",
+    "K",
+    "Rf",
+    "Rl",
+    "Rth",
+    "Ld",
+    "Lf",
+    "Ll",
+    "Lp",
+    "Cad",
+    "Cd",
+    "Cp",
+    "Rtl0",
+    "Rtl1",
+    "Rtl2",
+    "Rtl3",
+    "Rtl4",
+    "Ctl1",
+    "Ctl2",
+    "Ctl3",
+    "Ctl4",
+    "P0",
+    "U0"
+  ],
+  "model": "NTP-TL 9D",
+  "state_columns": [
+    "p",
+    "d",
+    "q",
+    "u",
+    "v",
+    "z1",
+    "z2",
+    "z3",
+    "z4"
+  ],
+  "stats_layout": "Interleaved minima/maxima over observation only",
+  "physical_scope": "No vessel/interface calibration imposed; mathematical equations on R^n",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "source": "random-9d.npz",
+  "retained": 0,
+  "lanes": 261,
+  "selection": "All four scout windows positive, or preliminary threshold pass, union top 24 means",
+  "retained_thresholds": {
+    "mean": 0.001,
+    "each_window": 0.0005
+  },
+  "array_shapes": {
+    "parameters": [
+      261,
+      23
+    ],
+    "initial_states": [
+      261,
+      9
+    ],
+    "initial_tangent": [
+      9
+    ],
+    "final_states": [
+      261,
+      9
+    ],
+    "final_tangents": [
+      261,
+      9
+    ],
+    "lle": [
+      261
+    ],
+    "lle_windows": [
+      261,
+      4
+    ],
+    "status": [
+      261
+    ],
+    "stats": [
+      261,
+      18
+    ],
+    "elapsed": [
+      261
+    ],
+    "step_counts": [
+      261,
+      2
+    ],
+    "source_indices": [
+      261
+    ],
+    "retained_candidate": [
+      261
+    ]
+  }
+}

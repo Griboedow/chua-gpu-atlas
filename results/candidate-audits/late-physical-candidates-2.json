@@ -1,0 +1,320 @@
+{
+  "date_utc": "2026-10-30T00:55:20+00:00",
+  "scope": "Bounded literature/source audit; one fully explicit mathematical ODE candidate and one source-incomplete valve lead. No new chaos result or novelty claim.",
+  "candidate": {
+    "name": "Thermally powered identical coupled LCE springs",
+    "source": {
+      "id": "lce_pair",
+      "doi": "10.3390/polym15163349",
+      "url": "https://www.mdpi.com/2073-4360/15/16/3349",
+      "full_xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10458843/fullTextXML",
+      "sha256": "8a97fa50fdc532641bc3fb560530398fabbfa9833bd154a38dcaf0d78bb29dae",
+      "equations": [
+        "4",
+        "12",
+        "13",
+        "14"
+      ],
+      "access": "Full primary XML; MathML absolute-value mfenced verified. CC BY 4.0."
+    },
+    "status": "Implementable published four-state reduced ODE; modest priority, physical and literature limitations explicit.",
+    "independent_states": [
+      "q1",
+      "v1",
+      "q2",
+      "v2"
+    ],
+    "dimension": 4,
+    "not_six_states": "Thermal field eliminated in published Eq. 14. Reintroducing independent temperature variables without deriving full source closure would change the model.",
+    "equations": {
+      "s": "alpha*beta",
+      "A": "K*s/expm1(s)",
+      "B": "K*s*tau*(1-exp(s)+s*exp(s))/expm1(s)**2",
+      "d": "a0+B",
+      "C": "(A-K)*lambda1-K*alpha*Q",
+      "equilibrium": "w_eq=-C/(A+2*k)",
+      "shifted": [
+        "dq_i/dt=v_i",
+        "dv_i/dt=-A*q_i-k*(q_1+q_2)-d*v_i-a1*abs(v_i)*v_i"
+      ],
+      "canonical_time": "sigma=sqrt(A)*t",
+      "canonical_scale": "q_i=(-d)/(a1*sqrt(A))*x_i for d<0,a1>0",
+      "canonical_parameters": {
+        "mu": "-d/sqrt(A)",
+        "kappa": "k/A"
+      },
+      "canonical": "d2x_i/dsigma2=-x_i-kappa*(x_1+x_2)+mu*(1-abs(dx_i/dsigma))*dx_i/dsigma",
+      "domain": "A>0, k>=0, a1>0; s=0 evaluated by limits. Source contraction alpha<0 and gradient beta>0."
+    },
+    "source_example": {
+      "K": 14.0,
+      "k": 8.0,
+      "alpha": -0.5,
+      "beta": 0.1,
+      "tau": 0.15,
+      "a0": 0.02,
+      "a1": 0.2,
+      "initial_velocities": [
+        [
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          -0.5
+        ]
+      ],
+      "initial_position_and_prestretch_note": "Fig. 2 gives velocity seeds but does not completely specify prestretch/Q/position reconstruction in inspected text. These set absolute displacement/domain, not shifted vector field.",
+      "A": 14.35291654514612,
+      "B": -0.053374927089842636,
+      "d": -0.03337492708984263,
+      "mu": 0.008809479429279073,
+      "kappa": 0.5573780057061257,
+      "amplitude_scale": 0.04404739714639536,
+      "tau_sqrt_A": 0.5682786484338362
+    },
+    "analysis": {
+      "energy": "E=(v1^2+v2^2)/2+A*(q1^2+q2^2)/2+k*(q1+q2)^2/2",
+      "energy_derivative": "-d*(v1^2+v2^2)-a1*(abs(v1)^3+abs(v2)^3)",
+      "passive_exclusion": "For d>=0 and a1>0, Lyapunov/LaSalle gives convergence to sole equilibrium; no bounded nonstationary attractor.",
+      "active_energy_bound": "For d<0, E_dot <= 8*(-d)^3/(27*a1^2). This rules out finite-time energy explosion, not a proof of an absorbing set.",
+      "invariant_planes": [
+        "q2=q1, v2=v1",
+        "q2=-q1, v2=-v1"
+      ],
+      "planes_scope": "Each is planar with regular autonomous dynamics; an aperiodic collective-chaos candidate must not be confined to either plane.",
+      "equivalence": "Reflect second displacement/velocity to turn sum coupling into ordinary elastic difference coupling. This is a generalized Rayleigh pair with quadratic velocity drag, not a new oscillator mechanism.",
+      "reduction_origin": "Algebra derived in this audit from source Eq. 14; not claimed as a previously unpublished theorem."
+    },
+    "physical_limits": [
+      "Externally maintained stationary temperature gradient is the energy reservoir; no finite-fuel closure imposed.",
+      "Positive fiber lengths and nonnegative tensile forces/prestretch must be checked in unshifted source coordinates; do not let compressed/slack fibers masquerade as physical trajectories.",
+      "The force formula used by the pair paper comes from the earlier small-thermal-time asymptotic constitutive relation. Its accuracy is not guaranteed at large tau or fast dynamics.",
+      "The source example has tau*sqrt(A)=0.568, so the present algebra supplies no small-error certificate.",
+      "Source Table 2 lists alpha in 0..1 although examples use -0.5; use explicit contraction sign rather than blindly sampling the table."
+    ],
+    "novelty": "No exact Eq.14 chaos demonstration was verified in the bounded check. This is not proof of absence. Broad LCE/oscillator-pair chaos is established; later nonidentical/full-model publications remain incompletely checked."
+  },
+  "secondary_screen": {
+    "name": "Huang et al. pressure servo valve system",
+    "doi": "10.3390/app12178477",
+    "decision": "Hold/exclude from immediate implementation; insufficient audited closure and substantial older valve-chaos literature.",
+    "dimension": "Not certified in this pass. At least four states in the relief subsystem (p_h,p_cj,x_j,dx_j/dt), plus pilot, feedback and cylinder dynamics; do not count a complete autonomous model from an isolated subsystem.",
+    "primary_issue": "Eqs.15-16 give p_h_dot=(beta/V_h)*(Q_in-k_j*p_h), while Eq.17 labels the exponential step response as p_h_dot instead of p_h. The right-hand side has pressure units, not pressure/time. Record as source consistency issue; do not silently repair all model conventions.",
+    "physical_domain": "Positive pressures/cavity volumes, real pressure-drop square roots, admissible spool strokes and seat/contact laws. Full source boundary rules and numerical parameter set not audited.",
+    "prior_art": [
+      "10.1006/jfls.1997.0096",
+      "10.1016/j.physd.2011.05.013"
+    ],
+    "novelty_scope": "Earlier valve chaos excludes broad first-chaos claims, not necessarily exact Huang topology. No exact-model novelty assertion."
+  },
+  "literature_scope": {
+    "queries": [
+      "Heat-Driven Synchronization in Coupled Liquid Crystal Elastomer Spring Self-Oscillators chaos",
+      "10.3390/polym15163349 chaos",
+      "Heat-Driven Synchronization 2025",
+      "Heat-Driven Synchronization 2026",
+      "Synchronous behaviors of three coupled chaos chaotic",
+      "coupled Rayleigh oscillators chaos identical coupling",
+      "elastically coupled Rayleigh chaos",
+      "quadratic damping Rayleigh chaos coupled",
+      "A thermally-responsive fiber engine in a linear temperature field small",
+      "Analysis and Suppression of Self-Excited Oscillations in Pressure Servo Valve System chaos",
+      "Grazing bifurcations and chatter chaotic",
+      "Phase-locking in nonidentical coupled light-fueled liquid crystal elastomer self-oscillators"
+    ],
+    "openalex_pair": {
+      "id": "W4385704518",
+      "cited_by_count": 0,
+      "note": "Index snapshot is incomplete evidence; author follow-up was found by independent title/author search."
+    },
+    "openalex_followup": {
+      "doi": "10.1103/PhysRevE.109.024701",
+      "citing_records": 30,
+      "inspection": "Titles/identifiers screened, not all full texts; multiple later LCE-chaos pendulum/stirrer papers, 2026 nonidentical pair source incomplete."
+    },
+    "openalex_constitutive": {
+      "doi": "10.1016/j.ijmecsci.2022.107391",
+      "citing_records": 55,
+      "inspection": "Titles/identifiers screened; many distinct actuators, some explicitly chaotic, no equivalence theorem claimed."
+    },
+    "openalex_valve": {
+      "id": "W4293106123",
+      "citing_records": 3,
+      "citing_dois": [
+        "10.1109/tmech.2024.3354273",
+        "10.1016/j.rineng.2025.108866",
+        "10.2174/0118722121284727240117081349"
+      ],
+      "inspection": "Metadata only; not full forward-citation clearance."
+    }
+  },
+  "algebra_checks": {
+    "random_seed": 2026103001,
+    "random_states": 256,
+    "canonical_vector_field_residual": 8.881784197001252e-16,
+    "energy_derivative_residual": 1.6653345369377348e-16,
+    "constant_shift_residual": 1.3322676295501878e-15,
+    "trajectory_integrations": 0,
+    "gpu_calls": 0,
+    "passed": true
+  },
+  "references": [
+    {
+      "id": "lce_pair",
+      "doi": "10.3390/polym15163349",
+      "url": "https://www.mdpi.com/2073-4360/15/16/3349",
+      "full_xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10458843/fullTextXML",
+      "sha256": "8a97fa50fdc532641bc3fb560530398fabbfa9833bd154a38dcaf0d78bb29dae",
+      "equations": [
+        "4",
+        "12",
+        "13",
+        "14"
+      ],
+      "access": "Full primary XML; MathML absolute-value mfenced verified. CC BY 4.0."
+    },
+    {
+      "id": "fiber_constitutive",
+      "doi": "10.1016/j.ijmecsci.2022.107391",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740322002971",
+      "access": "Primary abstract and section snippets; explicitly distinguish small-time asymptotic force from full constitutive model."
+    },
+    {
+      "id": "three_lce_followup",
+      "doi": "10.1103/PhysRevE.109.024701",
+      "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.024701",
+      "access": "Primary abstract only; complete text requires subscription. Three oscillators, synchronous/partial/asynchronous regimes; no exact pair equivalence established."
+    },
+    {
+      "id": "nonidentical_followup",
+      "doi": "10.1631/jzus.a2600177",
+      "access": "OpenAlex bibliographic/abstract metadata only; 2026-09-26 publication, no open full text located. Not a verified full-model exclusion."
+    },
+    {
+      "id": "sprott_hoover",
+      "doi": "10.1142/S0218127417300373",
+      "url": "https://sprott.physics.wisc.edu/pubs/paper492.pdf",
+      "access": "Primary author-hosted PDF, Section 4.4 Eq. 18. Chaotic cubic-drag, nonidentical, multiplicatively coupled Rayleigh pair; not established equivalent to quadratic-drag elastic pair."
+    },
+    {
+      "id": "pressure_servo",
+      "doi": "10.3390/app12178477",
+      "url": "https://www.mdpi.com/2076-3417/12/17/8477",
+      "access": "Primary indexed article sections/equations; direct HTML/XML/PDF returned 429/403. Full parameter/port/contact closure not recovered."
+    },
+    {
+      "id": "old_valve_chaos",
+      "doi": "10.1006/jfls.1997.0096",
+      "title": "Chaos in a hydraulic control valve",
+      "access": "Identified in primary Huang references and Hos-Champneys discussion; not a full exact-model reproduction here."
+    },
+    {
+      "id": "valve_grazing",
+      "doi": "10.1016/j.physd.2011.05.013",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167278911001229",
+      "access": "Primary preview explicitly reports existing pressure-relief-valve complexity and earlier period-doubling chaos."
+    }
+  ],
+  "next_steps": [
+    "Start with the exact two-parameter pair, preserve nonlinear absolute-value drag. Check the two invariant planar controls before any candidate search.",
+    "Keep weak source-neighborhood and physically uncalibrated expanded domains separate. Reconstruct prestretch, forces and thermal validity before hardware claims.",
+    "Search full nonidentical-pair and older elastically coupled generalized-Rayleigh literature before assigning novelty.",
+    "Do not build a valve surrogate or repair missing contact/flow laws by invention."
+  ],
+  "narrow_equivalence_checks": {
+    "seed": 2026103002,
+    "states": 256,
+    "includes_zero_velocity": true,
+    "reflection_residual": 5.684341886080802e-14,
+    "inverse_map_residual": 1.887379141862766e-14,
+    "vector_field_conjugacy_residual": 0.0,
+    "trajectory_integrations": 0
+  },
+  "narrow_priority_followup": {
+    "time_utc": "2026-10-30T01:08:40.892777+00:00",
+    "scope": "Additional bounded primary-source and exact-coordinate-equivalence audit; no integrations.",
+    "coordinate_equivalence": {
+      "reflection": "z1=x1, z2=-x2, including their velocities",
+      "reflected_equation": "z_i_ddot=-z_i-kappa*(z_i-z_j)+mu*(1-abs(z_i_dot))*z_i_dot",
+      "matrix": "M=[[1+kappa,-kappa],[-kappa,1+kappa]]",
+      "force": "f(v)=mu*(1-abs(v))*v componentwise",
+      "map": "u=2*z_dot, b=2*(-M*z+f(z_dot))",
+      "inverse": "z=M^(-1)*(f(u/2)-b/2), z_dot=u/2",
+      "equivalent_equation": "u_i_ddot+mu*(abs(u_i)-1)*u_i_dot+u_i+kappa*(u_i-u_j)=0",
+      "jacobian_determinant": "16*(1+2*kappa)>0 for kappa>=0",
+      "regularity": "Global C1 invertible state transformation; f is C1, including v=0. No state augmentation or time change.",
+      "consequence": "Identifies an elastically coupled nonsmooth van der Pol pair; geometry changed by this coordinate map cannot establish a new mechanism.",
+      "algebra_check_key": "narrow_equivalence_checks"
+    },
+    "nonidentical_2026": {
+      "doi": "10.1631/jzus.A2600177",
+      "primary_landing": "https://link.springer.com/article/10.1631/jzus.A2600177",
+      "supplement_url": "https://media.springernature.com/original/springer-static/esm/art:10.1631%2Fjzus.A2600177/MediaObjects/11582_2026_177_MOESM1_ESM.pdf",
+      "supplement_sha256": "242f6d7ede0175e029a392cc43f3a5d277b25d3a272dba11e0f3c7e1787fbf67",
+      "supplement_pages": 7,
+      "access": "Official public supplemental PDF linked directly by publisher. Main article remains subscription-only and was not bypassed. This supersedes the initial metadata-only access note.",
+      "visually_inspected": [
+        "S13",
+        "S14-S17",
+        "S18-S21"
+      ],
+      "read_sections": [
+        "S1-S2 small-tau thermal expansion and parameters",
+        "S3 averaged amplitude-phase derivation",
+        "S4 synchronous solution stability and bistability"
+      ],
+      "S13_first_order_forcing": "delta_i*(D0*y_i0-c_i*abs(D0*y_i0)*D0*y_i0)+k*(y_j0-y_i0)",
+      "inference": "Same quadratic-drag elastic-difference functional family at the perturbation level. The identical limit is a direct comparison requirement.",
+      "gap": "Main-text Eq10 and exact parameter definitions are unavailable; S13 alone is not a complete coefficient-level verification of the entire original model.",
+      "chaos_status": "No chaos claim found in the seven-page SI. Loss of synchronization or asynchrony does not imply chaos."
+    },
+    "primary_comparisons": [
+      {
+        "doi": "10.1137/070701091",
+        "url": "https://www.math.ubbcluj.ro/~abuica/BuLlMa-SIAM-2009.pdf",
+        "location": "Section3",
+        "finding": "Exact scalar nonsmooth van der Pol law u_ddot+epsilon*(abs(u)-1)*u_dot+u=0, attributed to Hogan2003; paper studies forcing and periodic solutions, not verified target-pair chaos.",
+        "access": "Full author-hosted primary PDF"
+      },
+      {
+        "doi": "10.1016/S0022-460X(02)01431-1",
+        "finding": "Hogan2003 scalar model priority traced through primary2009 source; full source not independently audited."
+      },
+      {
+        "url": "https://hdl.handle.net/2115/8853",
+        "title": "Systems of Multiply Connected Nonlinear Oscillators and Their Application to Seismic Phenomena",
+        "year": 1999,
+        "location": "Eq7 and Section3",
+        "finding": "Cubic Rayleigh friction, moving-belt offset, elastic and viscous coupling, potentially nonidentical frequencies; period-doubling evidence, not exact target equivalence.",
+        "access": "Full institutional primary PDF"
+      },
+      {
+        "doi": "10.3390/polym15132886",
+        "url": "https://www.mdpi.com/2073-4360/15/13/2886/pdf?version=1688347971",
+        "finding": "Light-powered bars with torsion coupling and angular illumination window; different from translational linear-gradient springs.",
+        "access": "Primary indexed PDF abstract and geometry caption"
+      },
+      {
+        "doi": "10.1007/s11071-025-11869-8",
+        "url": "https://link.springer.com/article/10.1007/s11071-025-11869-8",
+        "finding": "Externally forced coupled Duffing response; does not establish autonomous target equivalence.",
+        "access": "Primary abstract; subscription main text"
+      }
+    ],
+    "additional_queries": [
+      "coupled Rayleigh absolute chaos",
+      "Rayleigh oscillators quadratic elastic coupling",
+      "nonsmooth van der Pol coupled",
+      "non-smooth van der Pol chaos coupled",
+      "piecewise smooth drag coupled",
+      "Phase-locking in nonidentical A2600177"
+    ],
+    "forward_citation_screen": {
+      "seed_doi": "10.1137/070701091",
+      "records": 35,
+      "scope": "Titles/identifiers only, not all full texts"
+    },
+    "conclusion": "A precise four-dimensional mathematical target remains, but ordinary elastic coupling and a known scalar nonsmooth van der Pol law eliminate broad mechanism novelty. The direct 2026 nonidentical generalization narrows the exact-model priority question. No exact coupled-pair chaos demonstration verified; absence not established."
+  }
+}

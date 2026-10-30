@@ -1,0 +1,211 @@
+{
+  "model": "NIFTE NTP 5D",
+  "status": "recovered_and_independently_checked",
+  "attempts": [
+    {
+      "amplitude_factor": 1.0,
+      "seed_state": [
+        -0.33624452861634935,
+        -4.539645779047274e-20,
+        -0.005712865679458812,
+        0.17319143914661908,
+        0.6208329258798208
+      ],
+      "seed_period_s": 0.8733296015122545,
+      "success": true,
+      "message": "The solution converged.",
+      "scaled_residual": 6.2450045135165055e-15,
+      "period_s": 0.8799959631993857,
+      "scaled_peak_to_peak": 3.6312487886333322,
+      "integrations": 10
+    }
+  ],
+  "parameters": {
+    "F": 1.37,
+    "K": 330.0,
+    "Rf": 2130000.0,
+    "Rl": 4080000.0,
+    "Rth": 502000000.0,
+    "Ld": 180000.0,
+    "Lf": 474000.0,
+    "Ll": 12700000.0,
+    "Lp": 377000.0,
+    "Cad": 1.76e-09,
+    "Cd": 7.35e-08,
+    "Cp": 7.43e-08,
+    "Rtl0": 31500000.0,
+    "Rtl1": 8820000.0,
+    "Rtl2": 17200000.0,
+    "Rtl3": 38300000.0,
+    "Rtl4": 281000000.0,
+    "Ctl1": 8.61e-10,
+    "Ctl2": 5.95e-09,
+    "Ctl3": 1.79e-08,
+    "Ctl4": 2.66e-08,
+    "P0": 101300.0,
+    "U0": 0.0008
+  },
+  "source": "Wang et al. 2019, DOI 10.1186/s42480-019-0019-3, Table3",
+  "source_target_period_s": 0.88,
+  "source_target_multipliers": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0348,
+      0.0
+    ],
+    [
+      0.7958,
+      0.0
+    ],
+    [
+      -0.3848,
+      1.2078
+    ],
+    [
+      -0.3848,
+      -1.2078
+    ]
+  ],
+  "chosen_seed_scope": "Our deterministic scaled high-frequency origin eigenvector; source initial state unavailable.",
+  "origin_eigenvalue": [
+    0.17724691329625086,
+    7.194517735686096
+  ],
+  "time_unit": "physical seconds",
+  "no_parameters_fitted": true,
+  "nontriviality_test": "scaled peak-to-peak > 0.05 and 0.7 < T < 1.05 s",
+  "scientific_scope": "Recovery of a published unstable periodic orbit; no chaos or novelty claim.",
+  "period_s": 0.8799959631993806,
+  "section_state": [
+    -0.40580105372150027,
+    -1.2217829344352363e-32,
+    -0.007705507582774484,
+    0.19630406779200782,
+    0.6727556124022898
+  ],
+  "floquet_multipliers": [
+    [
+      -0.3878818759826773,
+      -1.203561775804922
+    ],
+    [
+      -0.3878818759826773,
+      1.203561775804922
+    ],
+    [
+      0.03505171962883248,
+      0.0
+    ],
+    [
+      0.7950488011360572,
+      0.0
+    ],
+    [
+      0.9999999999999988,
+      0.0
+    ]
+  ],
+  "nontrivial_multiplier_moduli": [
+    1.2645209756641203,
+    1.2645209756641203,
+    0.03505171962883248,
+    0.7950488011360572
+  ],
+  "closure_max_abs": 1.1102230246251565e-15,
+  "independent_Radau_closure_max_abs": 8.326672684688674e-16,
+  "independent_trajectory_max_abs_difference": 2.7911006839076435e-13,
+  "independent_floquet_multipliers": [
+    [
+      -0.38788187598268464,
+      -1.2035617758049182
+    ],
+    [
+      -0.38788187598268464,
+      1.2035617758049182
+    ],
+    [
+      0.035051719628832634,
+      0.0
+    ],
+    [
+      0.7950488011360574,
+      0.0
+    ],
+    [
+      1.0000000000000078,
+      0.0
+    ]
+  ],
+  "independent_multiplier_max_abs_difference": 8.992806499463768e-15,
+  "independent_variational_method": "Radau with complex-step derivative of independent dimensional mass_rhs",
+  "determinant_from_monodromy": 0.044561027025622243,
+  "determinant_from_constant_divergence": 0.04456102702562266,
+  "positive_d_crossings_in_open_period": 0,
+  "negative_d_crossings_in_open_period": 1,
+  "half_period_closure_max_abs": 1.3455112248045804,
+  "half_period_antisymmetry_max_abs": 9.992007221626409e-16,
+  "fundamental_period_check": "One descending d=0 crossing and no ascending crossing in the open period; half-period state differs and equals minus the initial state.",
+  "peak_to_peak": [
+    1.4524995154528877,
+    0.005903766805695275,
+    0.025253722622732185,
+    0.3926254129014761,
+    1.6993843980874663
+  ],
+  "shooting_settings": {
+    "method": "DOP853",
+    "rtol": 3e-13,
+    "atol": 3e-15,
+    "max_step": 0.005
+  },
+  "independent_settings": {
+    "method": "Radau",
+    "rtol": 2e-12,
+    "atol": 2e-14,
+    "max_step": 0.003
+  },
+  "final_root_message": "The solution converged.",
+  "passed": true,
+  "published_multiplier_max_abs_difference": 0.005240277082402052,
+  "source_comparison_scope": "Period and instability agree with the published control, but multipliers differ slightly from Table3. Cause unresolved; rounded source components were used without fitting.",
+  "wall_seconds": 8.222911900003965,
+  "array_shapes": {
+    "parameters": [
+      23
+    ],
+    "origin_eigenvalues": [
+      5
+    ],
+    "section_state": [
+      5
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      5
+    ],
+    "independent_states": [
+      4001,
+      5
+    ],
+    "monodromy": [
+      5,
+      5
+    ],
+    "floquet_multipliers": [
+      5
+    ],
+    "independent_monodromy": [
+      5,
+      5
+    ],
+    "independent_floquet_multipliers": [
+      5
+    ]
+  }
+}

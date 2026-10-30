@@ -1,0 +1,38 @@
+{
+  "model": "NTP 5D",
+  "source_override": "Lf=4.74e5, all other parameters nominal",
+  "method": "DOP853",
+  "rtol": 1e-11,
+  "atol": 1e-13,
+  "max_step": 0.02,
+  "duration": 400.0,
+  "time_unit": "physical s",
+  "state_scaling": "Source pressure/P0 and flow/U0; time is not divided by tau",
+  "initial_condition_scope": "Chosen by us; source does not provide this complete initial state",
+  "wall_seconds": 6.3531049999946845,
+  "array_shapes": {
+    "parameters": [
+      23
+    ],
+    "initial_state": [
+      5
+    ],
+    "times": [
+      200000
+    ],
+    "states": [
+      200000,
+      5
+    ],
+    "section_times": [
+      306
+    ],
+    "section_states": [
+      306,
+      5
+    ],
+    "last_periods": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "parameter_columns": [
+    "F",
+    "K",
+    "Rf",
+    "Rl",
+    "Rth",
+    "Ld",
+    "Lf",
+    "Ll",
+    "Lp",
+    "Cad",
+    "Cd",
+    "Cp",
+    "Rtl0",
+    "Rtl1",
+    "Rtl2",
+    "Rtl3",
+    "Rtl4",
+    "Ctl1",
+    "Ctl2",
+    "Ctl3",
+    "Ctl4",
+    "P0",
+    "U0"
+  ],
+  "input_file": "results/nifte/random-5d.npz",
+  "row": 215,
+  "model_dimension": 5,
+  "warm_seconds": 1000.0,
+  "requested_observation_seconds": 4000.0,
+  "actual_observation_seconds": 4000.0,
+  "qr_interval_seconds": 0.5,
+  "method": "DOP853 analytic full variational system",
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "max_step": 0.05,
+  "time_unit": "physical seconds",
+  "spectrum_sum": -2.006813173639029,
+  "exact_divergence_per_s": -2.0068131736787587,
+  "spectrum_sum_minus_trace": 3.972955298081615e-11,
+  "normalized_flow_propagation_max_scaled_error": 9.780659560464523e-10,
+  "flow_control_scope": "Each QR interval starts with normalized actual flow; growth telescopes to log speed ratio. Its finite-window rate need not be exactly zero.",
+  "termination": "completed",
+  "wall_seconds": 159.69664900000498,
+  "interpretation": "Verified stable periodic orbit; finite-window leading rates follow the neutral flow direction. No chaos supported for this saved endpoint.",
+  "array_shapes": {
+    "parameters": [
+      23
+    ],
+    "initial_saved_endpoint": [
+      5
+    ],
+    "endpoint": [
+      5
+    ],
+    "spectrum_per_s": [
+      5
+    ],
+    "spectrum_windows_per_s": [
+      4,
+      5
+    ],
+    "flow_neutral_window_rates_per_s": [
+      4
+    ],
+    "qr_times": [
+      8000
+    ],
+    "qr_log_diagonals": [
+      8000,
+      5
+    ],
+    "qr_flow_log_norms": [
+      8000
+    ],
+    "qr_sampled_states": [
+      8000,
+      5
+    ]
+  },
+  "input_sha256": "0bd3ab61d6c4eee14c3ec314677786ba66ce6c939b007f7c5f6c0aa6b4d538ae",
+  "actual_warm_seconds": 1000.0,
+  "physical_scope": "Native mathematical ODE; no vessel/interface operating limits imposed.",
+  "cycle_verification_record": "cpu-row215-cycle.json",
+  "maximum_leading_minus_flow_window_rate": 1.026474809556581e-10
+}

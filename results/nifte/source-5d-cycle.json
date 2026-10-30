@@ -1,0 +1,36 @@
+{
+  "period_seconds": 1.3081459982682369,
+  "section_closure": 1.3461454173580023e-15,
+  "independent_radau_closure": 2.1649348980190553e-15,
+  "maximum_transverse_multiplier": 0.5559679972494544,
+  "model": "NIFTE 5d",
+  "time_unit": "physical s",
+  "section": "d=0 upward",
+  "method": "Newton section map, DOP853 variational derivative, independent dimensional mass-balance Radau orbit",
+  "full_determinant": 0.00980895551529588,
+  "liouville_determinant": 0.009808955515295828,
+  "caveat": "Smallest 9D multipliers are limited by FP64; numerical closure is not a rigorous orbit-existence proof",
+  "array_shapes": {
+    "parameters": [
+      23
+    ],
+    "section_state": [
+      5
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      5
+    ],
+    "section_multipliers": [
+      4
+    ],
+    "full_multipliers": [
+      5
+    ]
+  },
+  "direct_determinant_resolved": true,
+  "multiplier_accuracy_scope": "Independent cycle and Liouville controls passed"
+}
