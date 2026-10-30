@@ -1,0 +1,61 @@
+{
+  "policy": "Binary NPZ hashes are exact bytes. Text has both historical raw-byte and CRLF-to-LF canonical hashes. Archived scripts identify the actual numerical runs; final drivers additionally add portable CLI and analysis features.",
+  "horizon": 100000.0,
+  "artifacts": [
+    {
+      "path": "results/light-operators/lifetimes-extension/ensemble.npz",
+      "raw_sha256": "86216170acd8b891f6820335249c94809812cc565ee0d1aebcabf4556122cadb",
+      "canonical_lf_sha256": null
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/ensemble.json",
+      "raw_sha256": "a5ad30d79732220eac4920e49539ef9a530d4f5db466b0fb4ee6fa4a0ca465ff",
+      "canonical_lf_sha256": "14f04af1f299d883fbce8343924a305dfffd43157c47b4374eb634b45c57660c"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/capture-cpu-audit.json",
+      "raw_sha256": "935da450772f6b8353154aff7ffe1562bc852d987078100519a285bc4bf69dd8",
+      "canonical_lf_sha256": "4dc1870635028f48a37fd597e3dd02f1e88679ba0c58a49260366d4e55582d42"
+    },
+    {
+      "path": "research/extend_optical_lifetimes.py",
+      "raw_sha256": "e1a8a4b86147c96334cf1dca18953fe551fe3fb8890c7cfb451406f21ed1cfc7",
+      "canonical_lf_sha256": "e1a8a4b86147c96334cf1dca18953fe551fe3fb8890c7cfb451406f21ed1cfc7"
+    },
+    {
+      "path": "research/audit_optical_extension_checkpoint.py",
+      "raw_sha256": "df28386093173c74d0ffc069eec94a70998ee7b39e55e905f7b1e0b047edf0bf",
+      "canonical_lf_sha256": "df28386093173c74d0ffc069eec94a70998ee7b39e55e905f7b1e0b047edf0bf"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-01-script.py",
+      "raw_sha256": "4fdb557524bf62cb319aebc7ea940c8aef13db0e2ebcb2e19bb17745cddf3474",
+      "canonical_lf_sha256": "4fdb557524bf62cb319aebc7ea940c8aef13db0e2ebcb2e19bb17745cddf3474"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-01.json",
+      "raw_sha256": "f4626b7f83493322c07ec72f9af4b9d57da163d009995a51a37f817087d817ab",
+      "canonical_lf_sha256": "087c9bd30708bbe9cda618ab5d7eac7a90fc940f421b972d4e33644cbeb73a72"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-01.npz",
+      "raw_sha256": "0a6cb44efeb5eb9814ff2dc8308bebd0f2c831d03ac8278d93aff0226a024a8c",
+      "canonical_lf_sha256": null
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-02-script.py",
+      "raw_sha256": "fd2dfe1fad286e5bb2a75c00dc0e2aaaf5086eeb0fc1a47587973e6d58f4b6f6",
+      "canonical_lf_sha256": "fd2dfe1fad286e5bb2a75c00dc0e2aaaf5086eeb0fc1a47587973e6d58f4b6f6"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-02.json",
+      "raw_sha256": "a5ad30d79732220eac4920e49539ef9a530d4f5db466b0fb4ee6fa4a0ca465ff",
+      "canonical_lf_sha256": "14f04af1f299d883fbce8343924a305dfffd43157c47b4374eb634b45c57660c"
+    },
+    {
+      "path": "results/light-operators/lifetimes-extension/segments/segment-02.npz",
+      "raw_sha256": "86216170acd8b891f6820335249c94809812cc565ee0d1aebcabf4556122cadb",
+      "canonical_lf_sha256": null
+    }
+  ]
+}

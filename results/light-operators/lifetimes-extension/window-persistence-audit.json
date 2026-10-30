@@ -1,0 +1,97 @@
+{
+  "horizon": 100000.0,
+  "window_duration": 125.0,
+  "scope": "Surviving trajectories include the original initial observation. Selection by survival and retrospective selection of latest captures are explicit; these are finite-time tangent-growth values, not a full asymptotic spectrum.",
+  "groups": [
+    {
+      "width": 0.003,
+      "surviving_ids": [],
+      "windows_per_survivor": 800,
+      "all_recorded_values_finite": true,
+      "minimum_across_full_history": null,
+      "maximum_across_full_history": null,
+      "survivors_with_every_window_above_point01": 0,
+      "survivor_full_history_mean_range": null,
+      "survivor_late_block_mean_range": null
+    },
+    {
+      "width": 0.005,
+      "surviving_ids": [],
+      "windows_per_survivor": 800,
+      "all_recorded_values_finite": true,
+      "minimum_across_full_history": null,
+      "maximum_across_full_history": null,
+      "survivors_with_every_window_above_point01": 0,
+      "survivor_full_history_mean_range": null,
+      "survivor_late_block_mean_range": null
+    },
+    {
+      "width": 0.04,
+      "surviving_ids": [
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93
+      ],
+      "windows_per_survivor": 800,
+      "all_recorded_values_finite": true,
+      "minimum_across_full_history": 0.1693237516070311,
+      "maximum_across_full_history": 0.46435515594971827,
+      "survivors_with_every_window_above_point01": 26,
+      "survivor_full_history_mean_range": [
+        0.3290781578796686,
+        0.3336770983381474
+      ],
+      "survivor_late_block_mean_range": [
+        0.2998391666852289,
+        0.3690499223004534
+      ]
+    }
+  ],
+  "latest_capture_examples": [
+    {
+      "width": 0.003,
+      "cohort_id": 16,
+      "selection": "Chosen retrospectively as the latest confirmed capture in this width cohort",
+      "capture_checkpoint": 73500.0,
+      "confirmation_checkpoint": 74000.0,
+      "consecutive_initial_125_unit_windows_above_point01": 583,
+      "duration_covered_by_those_windows": 72875.0,
+      "smallest_estimate_in_that_prefix": 0.11128336069498893,
+      "prefix_mean": 0.26483276066738265
+    },
+    {
+      "width": 0.005,
+      "cohort_id": 36,
+      "selection": "Chosen retrospectively as the latest confirmed capture in this width cohort",
+      "capture_checkpoint": 25500.0,
+      "confirmation_checkpoint": 26000.0,
+      "consecutive_initial_125_unit_windows_above_point01": 198,
+      "duration_covered_by_those_windows": 24750.0,
+      "smallest_estimate_in_that_prefix": 0.10762575670871972,
+      "prefix_mean": 0.22265428779629948
+    }
+  ]
+}

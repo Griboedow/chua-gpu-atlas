@@ -6,6 +6,8 @@ Follow-up analyses separate two issues: an [order constraint](coupled-operators-
 
 A later [periodic-orbit continuation](optical-cycle-continuation.md) connects the capture cycles at widths 0.003, 0.005 and 0.04 through an unstable segment. Two real-multiplier crossings and an independently checked unstable doubled branch support a local subcritical-flip picture near the first crossing. This is a quantitative model observation, not a demonstrated global route to chaos.
 
+**Longer observation update:** the same lifetime cohort has now been [continued to 100,000 time units](optical-lifetime-extension.md). All 32 starts at each narrow width, 0.003 and 0.005, eventually reach independently checked periodic cycles; the latest first qualifying checkpoint is 73,500. At width 0.04, 26 survivors retain positive estimates in all 800 saved windows. The original 20,000-unit experiment below is preserved as the earlier observation, with its data unchanged.
+
 ![Coupled operator evidence](assets/coupled_operators_1026.png)
 
 ![Camera rotation of a physical projection](assets/coupled_operators_1026.gif)

@@ -1,0 +1,44 @@
+{
+  "source_hashes": {
+    "results/light-operators/lifetimes/ensemble.npz": "03f916252e8f513d12b4c1005c803e0957a349aaf21347fa98d2f4da7049bbb3",
+    "results/light-operators/lifetimes/ensemble.json": "9a7dd19398015b8b0dd213bb3be4a0d9fc532b5239880fa25d8466fc926216e0",
+    "results/light-operators/lifetimes/periodic-controls.json": "ce71c9bb2694e3da17bfd04c46f43ffef28361bd5e9bf80b4588721cad5b4003",
+    "results/light-operators/lifetimes/capture-cpu-audit.json": "28751e6bf73bfd9e7bea7f2689797e92437311005c08e8ea744a4ca67d07a6d2",
+    "results/light-operators/lifetimes/chunk-validation.json": "0d6398f849cf143540292ea7eb7d9f25898e754216f1b7af5307e1352f8e7a6b",
+    "research/smooth_operators.py": "71eb8fac2ecaf52f74caa8816722e6d7d71215e960e34ac071eb1739d1837cf5",
+    "research/smooth_operators.cl": "750ba2a06fd3dedd696427994e510ad6c194a2d2a23ecfb7afa1b372b92cf859",
+    "research/extend_optical_lifetimes.py": "4fdb557524bf62cb319aebc7ea940c8aef13db0e2ebcb2e19bb17745cddf3474"
+  },
+  "source_horizon": 20000.0,
+  "source_checkpoint_count": 40,
+  "runs": [
+    {
+      "start_horizon": 20000.0,
+      "target_horizon": 100000.0,
+      "wall_budget_seconds": 515.0,
+      "chunk_duration": 500.0,
+      "rtol": 1e-09,
+      "atol": 1e-12,
+      "step_factor": 0.5,
+      "max_attempts_per_chunk": 10000000,
+      "device": "NVIDIA GeForce GTX 1080",
+      "script_sha256": "4fdb557524bf62cb319aebc7ea940c8aef13db0e2ebcb2e19bb17745cddf3474",
+      "completed_horizon": 39000.0,
+      "wall_seconds": 500.2851898999943,
+      "stop_reason": "wall budget: stopped before starting another block"
+    }
+  ],
+  "model": "Six-state coupled optical operators; assumed logistic illumination, not a measured beam profile",
+  "capture_rule": "Known-period velocity-balanced max residual <1e-7 and all four chunk exponent magnitudes <.01 at two consecutive checkpoints. Capture time is the first near checkpoint; endpoint time is the confirmation checkpoint.",
+  "status_codes": {
+    "0": "right-censored and still observed",
+    "1": "near independently checked stable periodic orbit",
+    "11": "thermal failure",
+    "12": "numerical failure",
+    "13": "step budget unresolved",
+    "14": "wall budget unresolved"
+  },
+  "caveat": "Finite persistence and positive finite-time exponents do not prove an attracting invariant chaotic set; exact long chaotic paths are sensitive to numerical perturbations.",
+  "completed_extension_blocks": 38,
+  "original_source_unchanged": true
+}

@@ -1,0 +1,48 @@
+{
+  "horizon": 100000.0,
+  "checks": {
+    "original_binary_hash_unchanged": true,
+    "original_history_exact": true,
+    "original_parameters_exact": true,
+    "original_initial_states_exact": true,
+    "original_cohort_ids_exact": true,
+    "original_captured_states_untouched": true,
+    "original_captured_tangents_untouched": true,
+    "original_capture_times_untouched": true,
+    "all_checkpoint_states_finite": true,
+    "all_active_endpoint_times_match_horizon": true,
+    "all_extension_lanes_completed": true,
+    "all_capture_probes_completed": true,
+    "first_segment_history_exact": true,
+    "resume_input_matches_first_archive": true,
+    "canonical_dependency:results/light-operators/lifetimes/ensemble.json": true,
+    "canonical_dependency:results/light-operators/lifetimes/periodic-controls.json": true,
+    "canonical_dependency:results/light-operators/lifetimes/capture-cpu-audit.json": true,
+    "canonical_dependency:results/light-operators/lifetimes/chunk-validation.json": true,
+    "canonical_dependency:research/smooth_operators.py": true,
+    "canonical_dependency:research/smooth_operators.cl": true,
+    "archived_driver_1_matches_record": true,
+    "archived_driver_2_matches_record": true
+  },
+  "all_passed": true,
+  "completed_extension_blocks": 160,
+  "accepted_steps": 587423710,
+  "rejected_steps": 31857877,
+  "thermal_range_at_accepted_steps": [
+    0.12651975336308116,
+    0.7041865278131094
+  ],
+  "displacement_ranges_at_accepted_steps": [
+    [
+      0.1887013603980058,
+      0.8024923088481466
+    ],
+    [
+      0.0857847520471495,
+      0.6349309758506472
+    ]
+  ],
+  "max_tangent_unit_norm_error": 2.220446049250313e-16,
+  "cumulative_gpu_segment_wall_seconds": 1602.217364499993,
+  "scope": "Provenance and continuation checks, not an independent proof of chaotic dynamics or exact reproduction of numerical escape times."
+}

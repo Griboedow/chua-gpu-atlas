@@ -14,6 +14,8 @@ The DCR and optical-order block was inspected at [`3cf58d0`](https://github.com/
 
 The optical-priority follow-up was inspected at [`92d7627`](https://github.com/Griboedow/chua-gpu-atlas/commit/92d7627187f2a514d28090ba364fbe58f0315c96).
 
+The optical-cycle continuation and heat-pipe source block was inspected at [`ca33408`](https://github.com/Griboedow/chua-gpu-atlas/commit/ca33408c8a15717d0d69912f40c4d649a95d5ce9).
+
 **Thirty-six distinct expressions in thirteen reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
@@ -140,9 +142,19 @@ All **360 relative path occurrences** across those 59 documents resolve against 
 
 The thirteenth revision-specific pass inspected three actual public pages at `92d7627`: the new optical-priority audit, updated optical research report and main README. All **19 math elements** rendered correctly; raw-dollar/TeX scans were clean, no formula overflow or renderer errors occurred, and visible images loaded. The tanh normalization and transfer-function formulas were visually inspected. No formatting repair was needed.
 
-The aggregate is **60 distinct pages**, **1,254 math elements across their latest checked versions**, **95 successful page checks**, and **1,452 successful formula observations**. This pass adds one new page and repeats two. Every other page and the earlier fragment-navigation observations retain their actual inspected revision; no full recheck of the older pages is implied. Raw-text scans cover 25 pages, not the other 35 retroactively. The five failed earlier follow-up page attempts remain excluded from successful totals.
+After that pass, the aggregate was **60 distinct pages**, **1,254 math elements across their latest checked versions**, **95 successful page checks**, and **1,452 successful formula observations**. This pass adds one new page and repeats two. Every other page and the earlier fragment-navigation observations retain their actual inspected revision; no full recheck of the older pages is implied. Raw-text scans cover 25 pages, not the other 35 retroactively. The five failed earlier follow-up page attempts remain excluded from successful totals.
 
 All **367 relative path occurrences** across those 60 documents resolve at `92d7627`, with the same code/math, external-link and general fragment exclusions. The earlier optical automatic-landing limitation is not implicitly resolved by this pass.
+
+### Optical-cycle continuation and heat-pipe source audit
+
+Five actual public pages were inspected at `ca33408`: the new optical-cycle continuation and heat-pipe source reports, updated optical research report, main README and candidate queue. All **40 math elements** rendered correctly (15 and 25 in the new reports). No renderer errors, unresolved expressions, overflow, failed visible images or raw dollar/TeX remnants were found. No formatting repair was needed.
+
+Both complete two-panel optical figures were visually inspected, together with the section-return projector and stability-crossing table. The labels distinguish a periodic-branch bifurcation from an attracting chaotic set. These are presentation checks; the scientific conclusions are not independently certified by browser inspection. Supporting screenshot visits are not additional full-page checks.
+
+The aggregate is **62 distinct pages**, **1,294 math elements across their latest checked versions**, **100 successful page checks**, and **1,492 successful formula observations**. This pass adds two new pages and repeats three. Earlier page revisions and the five failed follow-up attempts retain their separate records; no full recheck of older pages is implied. Raw-text scans cover 27 pages, not the other 35 retroactively.
+
+All **377 relative path occurrences** across those 62 documents resolve against the published tree at `ca33408`, with the same code/math, external-destination and general fragment exclusions. The earlier optical automatic-landing limitation remains separately recorded.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 

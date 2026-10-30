@@ -1,0 +1,125 @@
+{
+  "audit_utc": "2026-10-30T05:14:00Z",
+  "title": "Nonlinear stability and vibration of flexible spacecraft solar arrays under thermally induced flutter during the penumbra phase",
+  "doi": "10.1038/s41598-026-38274-4",
+  "status": "excluded_from_current_search_incomplete_unambiguous_closure",
+  "simulation_ready": false,
+  "simulations_performed": false,
+  "novelty_claim": false,
+  "primary": {
+    "url": "https://www.nature.com/articles/s41598-026-38274-4",
+    "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13018175/fullTextXML",
+    "pdf_url": "https://www.nature.com/articles/s41598-026-38274-4.pdf",
+    "read": "Complete XML; publisher PDF text. PDF image rendering failed.",
+    "xml_sha256": "1a9ab7b29fbb9ec01df5feea1708a7dbc10cc50c15a2dfd025f0c3333c3a6de8",
+    "supplementary_material_nodes": 0,
+    "data_availability": "On request to corresponding author; no contact made.",
+    "author_code_found": false
+  },
+  "autonomy": {
+    "thermal_PDE_and_modes": "Explicit cos(omega*t) in equations 9,15,18.",
+    "eclipse": "Prescribed time-dependent speed/illumination-related ratio.",
+    "structural_reduction": "Equation 40 uses apparently fixed thermal coefficients; connection to preceding explicit time dependence unresolved.",
+    "no_repair": "No forcing removal, schedule freezing or phase augmentation adopted."
+  },
+  "dimension": {
+    "full": "Thermal/structural field before Galerkin reduction; retained counts not verified.",
+    "formal_one_triplet": "Three second-order mechanical coordinates u_i,w_j,alpha_k would give six mechanical states, with nonlinear mass matrix. This truncation was not independently adopted.",
+    "source_BT_reduction": "Source discusses dropping in-plane bending; one pair of retained bending/torsion coordinates would give four mechanical states before separately retained thermal/forcing states.",
+    "exact_implemented_dimension": null
+  },
+  "source_gate": [
+    {
+      "where": "Eq40",
+      "issue": "Complete C_uwj,C_wwj,C_awj coefficient definitions/numerical arrays and source initial-state tuple not recovered."
+    },
+    {
+      "where": "Eqs15,18,19",
+      "issue": "Eq19 defines stiffness divided by rho*c but Eq18 retains rho*c on acceleration and damping; direct Eq15-to-Eq18 substitution is inconsistent without further scaling."
+    },
+    {
+      "where": "Eqs10,11",
+      "issue": "Zero boundary values are not automatically enforced by individual cosine products plus nonzero mean."
+    },
+    {
+      "where": "Eqs20,22,33",
+      "issue": "Placement/removal of transient decay factors changes time dependence; unresolved source typography or convention, not silently corrected."
+    },
+    {
+      "where": "Definition of U; reported speed ratios",
+      "issue": "Thermal speed U=sqrt(k/(rho*c*tau0)) described relative to light speed, including >1 examples; dimensional/reference-speed interpretation requires clarification."
+    }
+  ],
+  "partial_physical_constants": {
+    "L_m": 5.91,
+    "width_m": 1.438,
+    "thickness_m": 0.000235,
+    "E_Pa": 193000000000.0,
+    "mass_per_length_kg_m": 1.973,
+    "thermal_conductivity_W_mK": 16.61,
+    "density_kg_m3": 7010,
+    "heat_capacity_numeric": 502,
+    "heat_capacity_source_unit": "W/kgK as printed; no correction used",
+    "absorptivity": 0.5,
+    "expansion_coefficient_K_inverse": 1.63e-05,
+    "irradiance_W_m2": 1350,
+    "initial_temperature_K": 290,
+    "stefan_boltzmann": 5.67e-08,
+    "not_a_complete_control_tuple": true
+  },
+  "own_math": {
+    "mean_equation": "tau0*rho*c*A_ddot + rho*c*A_dot + epsilon*sigma*A^4/t_s = alpha_s*q/(pi*t_s)",
+    "energy": "E=tau0*rho*c*A_dot^2/2 + epsilon*sigma*A^5/(5*t_s) - alpha_s*q*A/(pi*t_s)",
+    "energy_derivative": "-rho*c*A_dot^2",
+    "scope": "Positive constant coefficients; any compact invariant subset of A>=0 has only the unique positive equilibrium in the largest invariant subset E_dot=0. Isolated mean-temperature subsystem cannot supply chaos; no claim for full mechanics.",
+    "steady_mean_perturbation": "Positive-coefficient linear harmonically forced oscillator; not a chaotic subsystem.",
+    "literal_tau0_at_0p95_light_speed_s": 5.819146365856801e-23,
+    "literal_speed_calculation_caveat": "Arithmetic diagnostic only, not a validated physical parameter."
+  },
+  "chaos_status": {
+    "source_reports": [
+      "limit cycles",
+      "internal resonance",
+      "quasiperiodicity",
+      "period-doubling-related instability"
+    ],
+    "computed_positive_Lyapunov_spectrum_found": false,
+    "absence_proven": false
+  },
+  "prior_art": [
+    {
+      "doi": "10.1016/j.ast.2025.110615",
+      "relation": "Direct predecessor nonlinear penumbra model",
+      "evidence": "Primary abstract/introduction/section excerpts; full equations not retrieved."
+    },
+    {
+      "doi": "10.1016/j.actaastro.2020.12.055",
+      "relation": "Earlier chaotic flexible-panel spacecraft, aerodynamic/gravitational attitude mechanism",
+      "evidence": "Author-hosted primary abstract; exact thermal-model equivalence not asserted."
+    }
+  ],
+  "forward_check": {
+    "source": "OpenAlex W7130508958",
+    "indexed_count": 2,
+    "works": [
+      {
+        "doi": "10.3390/aerospace13070645",
+        "evidence": "Primary abstract, methods and discussion accessible in indexed publisher text",
+        "scope": "Spin-modulated bending with admissibility classification; no exact target-model chaos demonstration found."
+      },
+      {
+        "doi": "10.1016/j.ijmecsci.2026.111933",
+        "evidence": "Primary abstract only",
+        "scope": "Free-vibration/modal analysis of composite tubes; full-text gap."
+      }
+    ],
+    "limitation": "Incomplete index and bounded full-text coverage do not clear priority."
+  },
+  "ignored_cache": [
+    "outputs/candidate_research/thermal-flutter2026.xml",
+    "outputs/candidate_research/thermal-flutter2026.txt",
+    "outputs/candidate_research/thermal-flutter2026-openalex.json",
+    "outputs/candidate_research/thermal-flutter2026-forward.json"
+  ],
+  "report": "docs/thermal-flutter-source-audit.md"
+}

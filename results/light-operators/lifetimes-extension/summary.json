@@ -1,0 +1,108 @@
+{
+  "observation_horizon": 100000.0,
+  "completed_extension_blocks": 160,
+  "groups": [
+    {
+      "width": 0.003,
+      "starts": 32,
+      "original_survivors": 13,
+      "newly_captured": 13,
+      "total_captured": 32,
+      "still_observed": 0,
+      "new_capture_ids": [
+        2,
+        4,
+        5,
+        8,
+        15,
+        16,
+        18,
+        19,
+        20,
+        25,
+        26,
+        28,
+        29
+      ],
+      "surviving_ids": [],
+      "late_min_window_range": null,
+      "all_four_late_windows_above_point01": 0,
+      "last_capture": 73500.0
+    },
+    {
+      "width": 0.005,
+      "starts": 32,
+      "original_survivors": 3,
+      "newly_captured": 3,
+      "total_captured": 32,
+      "still_observed": 0,
+      "new_capture_ids": [
+        32,
+        36,
+        55
+      ],
+      "surviving_ids": [],
+      "late_min_window_range": null,
+      "all_four_late_windows_above_point01": 0,
+      "last_capture": 25500.0
+    },
+    {
+      "width": 0.04,
+      "starts": 32,
+      "original_survivors": 26,
+      "newly_captured": 0,
+      "total_captured": 6,
+      "still_observed": 26,
+      "new_capture_ids": [],
+      "surviving_ids": [
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93
+      ],
+      "late_min_window_range": [
+        0.23502700726095743,
+        0.33922780133687763
+      ],
+      "all_four_late_windows_above_point01": 26,
+      "last_capture": null
+    }
+  ],
+  "total_new_captures": 16,
+  "unresolved_ids": [],
+  "plotted_capture_examples": [
+    {
+      "width": 0.003,
+      "cohort_id": 16,
+      "selection": "Retrospectively selected latest confirmed capture at this width"
+    },
+    {
+      "width": 0.005,
+      "cohort_id": 36,
+      "selection": "Retrospectively selected latest confirmed capture at this width"
+    }
+  ],
+  "caveat": "Descriptive finite-cohort counts, not basin probabilities or asymptotic classification. Captures are checkpoint-resolved and surviving trajectories are right-censored."
+}

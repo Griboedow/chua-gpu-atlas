@@ -1,0 +1,443 @@
+{
+  "method": "DOP853, rtol=1e-12, atol=1e-14, max_step=.005, four periods per captured endpoint",
+  "scope": "Independent checks only for new captures. Original 54 captures retain their existing audit. Cached checks require exact parameter/endpoint bytes and canonical periodic-control content.",
+  "checked_checkpoint_horizon": 100000.0,
+  "selected_width": null,
+  "new_checks_this_call": [],
+  "captured_count": 16,
+  "all_passed": true,
+  "rows": [
+    {
+      "cohort_id": 2,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.4746846148763798,
+        0.5720944354346409,
+        0.4938240091348898,
+        0.20574882562661231,
+        -0.5991029331633912,
+        0.1781573159660519
+      ],
+      "input_content_sha256": "3fab89158990ca51dfbeb090d9ab0018628c84b9751bf9d8d87268470e546747",
+      "capture_checkpoint": 42000.0,
+      "endpoint_time": 42500.0,
+      "solver_success": true,
+      "section_error": 1.3208885243231291e-11,
+      "period_error": 7.30304705598428e-12,
+      "scaled_flow_closure": 3.493483280436749e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 4,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.22024913622946474,
+        -0.4580429940160473,
+        0.29009206577438823,
+        0.21694940022920225,
+        1.067860463163597,
+        0.2947110804534066
+      ],
+      "input_content_sha256": "f2e68539d24e56537336a074cda0610f6fc2186864a0377dfc34110c1f84722b",
+      "capture_checkpoint": 39500.0,
+      "endpoint_time": 40000.0,
+      "solver_success": true,
+      "section_error": 1.5987262787127523e-11,
+      "period_error": 9.349410134973368e-12,
+      "scaled_flow_closure": 1.820529837992524e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 5,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.49119253440206423,
+        -0.7078749176172126,
+        0.38948189796530935,
+        0.09925036241754316,
+        -0.12027187513202876,
+        0.1405137219948356
+      ],
+      "input_content_sha256": "0c65ad1cc8987df0bc2cd28460af02edd2497de45b7a59a3269aed4148d6d16b",
+      "capture_checkpoint": 29500.0,
+      "endpoint_time": 30000.0,
+      "solver_success": true,
+      "section_error": 1.7266237363880724e-11,
+      "period_error": 9.677147971842714e-12,
+      "scaled_flow_closure": 2.1240731395977264e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 8,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.45494909995294086,
+        0.5051316867010145,
+        0.5119518329183372,
+        0.22645827539736346,
+        -0.542841256824782,
+        0.1846973785769756
+      ],
+      "input_content_sha256": "198c612473c12770816fd231c77c9cc32a3c9859c4897652102115c4c02a48a5",
+      "capture_checkpoint": 45500.0,
+      "endpoint_time": 46000.0,
+      "solver_success": true,
+      "section_error": 1.3154936853139975e-11,
+      "period_error": 7.262634937887924e-12,
+      "scaled_flow_closure": 3.750483257292103e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 15,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.5092275114513586,
+        1.3269151730560562,
+        0.48793079973881276,
+        0.5551559433734002,
+        0.05004026417912949,
+        0.4507082787688225
+      ],
+      "input_content_sha256": "117b7cf5a89a03d96525ac656bd77dc8922a951a4483efff6ff310f8163ea359",
+      "capture_checkpoint": 39000.0,
+      "endpoint_time": 39500.0,
+      "solver_success": true,
+      "section_error": 7.57170070590252e-12,
+      "period_error": 7.239542298975721e-12,
+      "scaled_flow_closure": 7.064048224546178e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 16,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.6309803044161341,
+        0.5575483933325226,
+        0.5479919792520501,
+        0.4994296943350822,
+        -0.9021097126382669,
+        0.3978441915996878
+      ],
+      "input_content_sha256": "0c3a5289bafbe63772101fffed248303cbfcb3c23c9aea22f4d183f0112de391",
+      "capture_checkpoint": 73500.0,
+      "endpoint_time": 74000.0,
+      "solver_success": true,
+      "section_error": 3.0657698601999073e-12,
+      "period_error": 8.752998326144734e-13,
+      "scaled_flow_closure": 3.296474204717015e-12,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 18,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.5275629742165668,
+        -0.6273410814415912,
+        0.4872428197623116,
+        0.24451443138030968,
+        0.3532972281575138,
+        0.2423199669357235
+      ],
+      "input_content_sha256": "3028f32dc16c16de946ade885aae796c642868c28fe6b9f9c18411f6fe150224",
+      "capture_checkpoint": 26500.0,
+      "endpoint_time": 27000.0,
+      "solver_success": true,
+      "section_error": 1.3064773615930367e-11,
+      "period_error": 7.362555010104188e-12,
+      "scaled_flow_closure": 1.8222681919146426e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 19,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.43224625180472476,
+        -0.09164954256456902,
+        0.5366404113539324,
+        0.2640184996825688,
+        -0.23914246277202678,
+        0.2024731664379246
+      ],
+      "input_content_sha256": "78e92057bf31cf7681ffd420b0255d54678db494d7d4a2e639e18962b65f3d9f",
+      "capture_checkpoint": 59500.0,
+      "endpoint_time": 60000.0,
+      "solver_success": true,
+      "section_error": 1.3129268017037261e-11,
+      "period_error": 7.394973522423243e-12,
+      "scaled_flow_closure": 3.735123321746414e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 20,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.4637132507330215,
+        0.5490415466964413,
+        0.5035394810957643,
+        0.21719524650549993,
+        -0.5738571715444235,
+        0.181662378221698
+      ],
+      "input_content_sha256": "f627dd0692790ad544efd9f8e788b920fac7152c2ce61a754dd6159a150c4f3c",
+      "capture_checkpoint": 40000.0,
+      "endpoint_time": 40500.0,
+      "solver_success": true,
+      "section_error": 1.3164561055124244e-11,
+      "period_error": 7.407852109508895e-12,
+      "scaled_flow_closure": 3.620070909704509e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 25,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.5255853872700557,
+        0.13107592722767009,
+        0.43795985466732495,
+        0.13602266629225734,
+        -0.4916145867505569,
+        0.15800315646271967
+      ],
+      "input_content_sha256": "1e3533c4c56439a0e55981c1664e9438c7a3ec32dda0e486a1a141dfba7006dd",
+      "capture_checkpoint": 41500.0,
+      "endpoint_time": 42000.0,
+      "solver_success": true,
+      "section_error": 1.5067329604962217e-11,
+      "period_error": 8.30180368893707e-12,
+      "scaled_flow_closure": 2.2509216712762736e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 26,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.2192411951749888,
+        -0.4446479634868989,
+        0.28944496385860596,
+        0.21934370014417065,
+        1.0763987326813584,
+        0.29628436670199404
+      ],
+      "input_content_sha256": "d7b80dfc5677ab598cac7339eb26a4397d8a1eca378b384fa7c7e38554819362",
+      "capture_checkpoint": 27000.0,
+      "endpoint_time": 27500.0,
+      "solver_success": true,
+      "section_error": 1.5993032151344484e-11,
+      "period_error": 9.35962418679992e-12,
+      "scaled_flow_closure": 1.8381157707025864e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 28,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.37823278862580434,
+        -1.1186532103527165,
+        0.3467450813447272,
+        0.10444629214641288,
+        0.200962485607344,
+        0.15697293588691513
+      ],
+      "input_content_sha256": "9b0e04b5d4d512f0a15d9b99de6a56f26f7e3905d9653e6f782af6713cb5d7f2",
+      "capture_checkpoint": 47500.0,
+      "endpoint_time": 48000.0,
+      "solver_success": true,
+      "section_error": 1.743403239244769e-11,
+      "period_error": 9.638068121375909e-12,
+      "scaled_flow_closure": 1.923033954298603e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 29,
+      "width": 0.003,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.003
+      ],
+      "endpoint": [
+        0.4199884009738811,
+        1.4575010725671111,
+        0.45454458097195555,
+        0.5377659707210046,
+        0.47196787101215526,
+        0.4798349554849768
+      ],
+      "input_content_sha256": "7f527db58748e7ff94b58d7a00e301f4a4e79c376af12100ae809d647faac9fe",
+      "capture_checkpoint": 25500.0,
+      "endpoint_time": 26000.0,
+      "solver_success": true,
+      "section_error": 7.82658412616905e-12,
+      "period_error": 7.387424005855792e-12,
+      "scaled_flow_closure": 1.0179994814196012e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 32,
+      "width": 0.005,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.005
+      ],
+      "endpoint": [
+        0.579209973840761,
+        -0.4062993596274916,
+        0.5380945390821178,
+        0.2142471881535246,
+        0.21828383258091874,
+        0.26748076357352935
+      ],
+      "input_content_sha256": "a2517ba15e7bb5429c9c038341d9ea959a5e27b27d64ccbb14690ad4875f55c7",
+      "capture_checkpoint": 24000.0,
+      "endpoint_time": 24500.0,
+      "solver_success": true,
+      "section_error": 1.5470069669731856e-11,
+      "period_error": 4.171774037331488e-12,
+      "scaled_flow_closure": 2.4282132347420554e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 36,
+      "width": 0.005,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.005
+      ],
+      "endpoint": [
+        0.5387994779407733,
+        1.2240806770230421,
+        0.5005582533942022,
+        0.5550351025659316,
+        -0.141171669908614,
+        0.44128483012048453
+      ],
+      "input_content_sha256": "da28fdbb7309d7f6b6762dd5689a83313e521403c04f4084fd68e9979e4882ab",
+      "capture_checkpoint": 25500.0,
+      "endpoint_time": 26000.0,
+      "solver_success": true,
+      "section_error": 1.383071435157035e-11,
+      "period_error": 4.219291582785445e-12,
+      "scaled_flow_closure": 1.8467505302766085e-11,
+      "agrees_with_checked_cycle": true
+    },
+    {
+      "cohort_id": 55,
+      "width": 0.005,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.005
+      ],
+      "endpoint": [
+        0.5201446323775073,
+        0.2039322716923717,
+        0.4440589466299432,
+        0.1445425562875163,
+        -0.5208882885721338,
+        0.16128538974837175
+      ],
+      "input_content_sha256": "ccc1e1fc68cb62c95216050461981c930d540a1136ad7b96a9273381c34f621a",
+      "capture_checkpoint": 21500.0,
+      "endpoint_time": 22000.0,
+      "solver_success": true,
+      "section_error": 1.912880964738406e-11,
+      "period_error": 5.190070595517682e-12,
+      "scaled_flow_closure": 8.858680455858803e-11,
+      "agrees_with_checked_cycle": true
+    }
+  ]
+}

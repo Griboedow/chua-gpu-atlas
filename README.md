@@ -210,6 +210,10 @@ A [20,000-unit follow-up](docs/coupled-operators-research.md#long-runs-reveal-pe
 
 ![Long optical transients and persistent candidates](docs/assets/coupled_operators_lifetimes.png)
 
+Extending the **same cohort to [100,000 time units](docs/optical-lifetime-extension.md)** changes the narrow-width conclusion: all 32 trajectories at each of widths `0.003` and `0.005` eventually reach independently checked periodic cycles. The latest capture follows 583 consecutive positive-exponent windows, covering 72,875 time units. At width `0.04`, the same 26 survivors retain positive estimates in all 800 windows. This is a particularly clear example of why long finite-time expansion alone cannot certify a chaotic attractor.
+
+![Longer observation separates periodic capture from persistent irregularity](docs/assets/optical_lifetime_extension.png)
+
 The [five-state two-strain outbreak study](docs/two-strain-research.md) adds a different mathematical mechanism: unequal bursts separated by long low-prevalence intervals. Thirty of 41 long GPU checks retain positive exponents; an independent CPU calculation and a stable periodic control are included. A boundary argument rules out a literal interior homoclinic return to the single-strain equilibrium. Related epidemic chaos and possibly aperiodic source regimes are already published, and extremely small population fractions prevent a direct finite-population interpretation.
 
 ![Physical projection of the two-strain candidate](docs/assets/two_strain_rotation.gif)
