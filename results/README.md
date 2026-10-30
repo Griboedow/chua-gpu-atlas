@@ -15,23 +15,4 @@ These are finite-time numerical experiments. The old affine-branch CPU reference
 
 ## Exploratory searches beyond Chua
 
-These later datasets are small enough to include directly, along with their settings and original analysis code:
-
-- `candidate-research/`: quantum-neuron surveys, independent controls, negative candidate follow-ups, and literature records.
-- `synchronematic/`: phase/orientation cluster scouts, long reruns, full CPU spectra, robustness ensembles and a source-coefficient audit. The main positive evidence uses the literal article coefficients; the article and author code disagree on one sign. See [the notebook](../docs/synchronematic-research.md).
-- `photofeedback/`: an explicitly phenomenological response model, a 3,072-trajectory survey, 12 unsuccessful follow-ups, linear stability roots and independent trajectories. This is not a fitted reconstruction of the experimental device. See [the notebook](../docs/photofeedback-research.md).
-- `lce-slider/`: two 8,192-trajectory event-map surveys, long follow-ups, independent analytic/DOP853 spectra and 2,560 local sensitivity trajectories. The positive cases extend beyond the source paper's numerical stiffness/damping ranges. See [the notebook](../docs/lce-slider-research.md).
-- `lce-slider/smooth*`: five logistic switching widths, a tighter/longer chaos check, periodic-orbit shooting/Floquet controls and a local equilibrium boundary. This explicitly changes the ideal switch; see [switching sensitivity](../docs/lce-slider-switching.md).
-- `thermomechanical-sheet/`: an independent coordinate/Jacobian/equilibrium audit and forward-citation leads for Shen's 2025 model. No chaos survey yet; see [the audit](../docs/thermomechanical-sheet-audit.md).
-
-All angles, time scalings, selection thresholds and source variants are described in their notebooks. Finite-time candidate membership is not a proof of an asymptotic attractor or publication novelty.
-
-- `nifte/`: exact five-/nine-state thermofluidic equations, recovered stable/unstable source cycles, 14,336 scouts, tighter follow-ups, a full-spectrum weak-positive cycle control, source/physical audits and independent mode-interaction algebra. See [the notebook](../docs/nifte-research.md).
-- `rayleigh-pair/`: exact four-state quadratic-drag spring pair; 3,081 scouts, 468 completed tighter checks with auditable resumptions, three very long weak-signal checks, full CPU spectrum, stable and saddle periodic cycles. See [the notebook](../docs/rayleigh-pair-research.md). No chaos candidate retained.
-- `hhs/`: literal fixed-reference five-state mechanochemical single cell; exact uncoupled spectrum control, 3,267 scouts, 187 selected follow-ups, independent cycle checks, boundedness/equilibrium algebra and a source-figure reproduction discrepancy. See [the notebook](../docs/hhs-research.md). No retained chaos candidate among 186 completed long GPU intervals; one interval remains incomplete.
-- `microfluidic/`: literal four-state fixed-geometry flow/vortex model; analytic-Jacobian and conservation checks, three source-pressure CPU controls, an independent Radau reconstruction, equilibrium and conditional energy calculations. [The periodic source control was not recovered](../docs/microfluidic-research.md); no mass GPU search was run while the printed-parameter discrepancy remains unresolved.
-- `core-shell-gel/stiff-followup-2882.*`: independent implicit continuation of one saved budget-limited endpoint, followed by Newton/Radau and BDF closure to a stable cycle. [The follow-up](../docs/core-shell-gel-stiff-followup.md) preserves the original incomplete GPU interval and leaves other stiff cases unclassified.
-- `candidate-audits/mineral-protocell-screening.json`: primary-source equations and scoped dimensional/monotonicity exclusions for fixed and growing mineral membranes. [No trajectories were simulated](../docs/mineral-protocell-screening.md).
-
-- `candidate-audits/late-candidate-screening-5.json`: photothermal Marangoni source equations, missing global closure/calibration, and prior-chaos exclusions. See [screening V](../docs/late-candidate-screening-5.md).
-- `candidate-audits/late-candidate-screening-6.json`: exact motor-contact rotor-network equations, pinned author code, printed/code discrepancies and a reproduction plan. See [screening VI](../docs/late-candidate-screening-6.md); no trajectories integrated yet.
+These datasets and their independent Python/OpenCL implementations now live in [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab). See its [results index](https://github.com/Griboedow/chaos-attractor-lab/blob/main/results/README.md) and [findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md). Chua datasets and all parameter-scaling work remain in this repository. Original historical commits are unchanged.

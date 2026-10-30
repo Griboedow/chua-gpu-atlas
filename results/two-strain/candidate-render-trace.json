@@ -1,6 +1,0 @@
-{
-  "scope": "Additional CPU trace for physical projections; not an independent full-spectrum run",
-  "rtol": 1e-12,
-  "atol": 1e-14,
-  "max_step": 0.5
-}
