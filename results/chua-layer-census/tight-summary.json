@@ -1,0 +1,322 @@
+{
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "settings": {
+    "dt": 0.00125,
+    "transient": 2000,
+    "duration": 2400,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "initial_state_mode": "shared",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "timing": {
+    "wall_seconds": 125.71371490000456,
+    "gpu_seconds": 121.86939155199394,
+    "max_kernel_seconds": 0.009122816
+  },
+  "elapsed_seconds": 143.56614999999874,
+  "peak_settings": {
+    "duration": 1200,
+    "capacity": 512,
+    "max_period": 96,
+    "tolerance": 0.0005,
+    "min_repeats": 4
+  },
+  "code_sha256": "b34090cdba952eeda3a1b9b4471c65ec0c4d094360eebec9a7007b9c687b2a0f",
+  "windows": [
+    {
+      "first_index": 1263,
+      "last_index": 1263,
+      "start": 14.259734375,
+      "end": 14.259734375,
+      "nodes": 1,
+      "periods": [
+        45
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 1263
+    },
+    {
+      "first_index": 1268,
+      "last_index": 1275,
+      "start": 14.2598125,
+      "end": 14.259921875,
+      "nodes": 8,
+      "periods": [
+        9
+      ],
+      "all_starts_near_zero_nodes": 2,
+      "representative_index": 1268
+    },
+    {
+      "first_index": 1277,
+      "last_index": 1277,
+      "start": 14.259953125000001,
+      "end": 14.259953125000001,
+      "nodes": 1,
+      "periods": [
+        9
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 1277
+    },
+    {
+      "first_index": 3252,
+      "last_index": 3252,
+      "start": 14.2908125,
+      "end": 14.2908125,
+      "nodes": 1,
+      "periods": [
+        11
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 3252
+    },
+    {
+      "first_index": 4001,
+      "last_index": 4001,
+      "start": 14.302515625,
+      "end": 14.302515625,
+      "nodes": 1,
+      "periods": [
+        50
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4001
+    },
+    {
+      "first_index": 4061,
+      "last_index": 4079,
+      "start": 14.303453125,
+      "end": 14.303734375,
+      "nodes": 19,
+      "periods": [
+        15,
+        30
+      ],
+      "all_starts_near_zero_nodes": 14,
+      "representative_index": 4063
+    },
+    {
+      "first_index": 4173,
+      "last_index": 4177,
+      "start": 14.305203125,
+      "end": 14.305265625,
+      "nodes": 5,
+      "periods": [
+        25
+      ],
+      "all_starts_near_zero_nodes": 2,
+      "representative_index": 4173
+    },
+    {
+      "first_index": 4219,
+      "last_index": 4219,
+      "start": 14.305921875000001,
+      "end": 14.305921875000001,
+      "nodes": 1,
+      "periods": [
+        35
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4219
+    },
+    {
+      "first_index": 4302,
+      "last_index": 4308,
+      "start": 14.30721875,
+      "end": 14.3073125,
+      "nodes": 7,
+      "periods": [
+        15,
+        30
+      ],
+      "all_starts_near_zero_nodes": 7,
+      "representative_index": 4304
+    },
+    {
+      "first_index": 4332,
+      "last_index": 4332,
+      "start": 14.3076875,
+      "end": 14.3076875,
+      "nodes": 1,
+      "periods": [
+        50
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4332
+    },
+    {
+      "first_index": 4357,
+      "last_index": 4357,
+      "start": 14.308078125,
+      "end": 14.308078125,
+      "nodes": 1,
+      "periods": [
+        30
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4357
+    },
+    {
+      "first_index": 4372,
+      "last_index": 5801,
+      "start": 14.3083125,
+      "end": 14.330640625000001,
+      "nodes": 1430,
+      "periods": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "all_starts_near_zero_nodes": 1428,
+      "representative_index": 4503
+    },
+    {
+      "first_index": 7028,
+      "last_index": 7034,
+      "start": 14.3498125,
+      "end": 14.34990625,
+      "nodes": 7,
+      "periods": [
+        15
+      ],
+      "all_starts_near_zero_nodes": 7,
+      "representative_index": 7028
+    },
+    {
+      "first_index": 7072,
+      "last_index": 7073,
+      "start": 14.3505,
+      "end": 14.350515625,
+      "nodes": 2,
+      "periods": [
+        25
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 7072
+    },
+    {
+      "first_index": 7118,
+      "last_index": 7119,
+      "start": 14.351218750000001,
+      "end": 14.351234375,
+      "nodes": 2,
+      "periods": [
+        15,
+        30
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 7118
+    },
+    {
+      "first_index": 7143,
+      "last_index": 7650,
+      "start": 14.351609375,
+      "end": 14.35953125,
+      "nodes": 508,
+      "periods": [
+        5,
+        10,
+        20,
+        40
+      ],
+      "all_starts_near_zero_nodes": 504,
+      "representative_index": 7190
+    },
+    {
+      "first_index": 10061,
+      "last_index": 10061,
+      "start": 14.397203125,
+      "end": 14.397203125,
+      "nodes": 1,
+      "periods": [
+        6
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 10061
+    }
+  ],
+  "resolution_levels": [
+    {
+      "stride": 256,
+      "nodes": 41,
+      "step": 0.0039999999999995595,
+      "candidate_intervals": 2,
+      "strict_intervals": 2,
+      "periodic_nodes": 7
+    },
+    {
+      "stride": 64,
+      "nodes": 161,
+      "step": 0.0009999999999994458,
+      "candidate_intervals": 2,
+      "strict_intervals": 2,
+      "periodic_nodes": 30
+    },
+    {
+      "stride": 16,
+      "nodes": 641,
+      "step": 0.00024999999999941735,
+      "candidate_intervals": 6,
+      "strict_intervals": 3,
+      "periodic_nodes": 125
+    },
+    {
+      "stride": 4,
+      "nodes": 2561,
+      "step": 6.250000000029843e-05,
+      "candidate_intervals": 10,
+      "strict_intervals": 7,
+      "periodic_nodes": 499
+    },
+    {
+      "stride": 1,
+      "nodes": 10241,
+      "step": 1.5624999999630518e-05,
+      "candidate_intervals": 17,
+      "strict_intervals": 19,
+      "periodic_nodes": 1996
+    }
+  ],
+  "definitions": {
+    "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+    "strict": "Additionally all three starts are near-zero/nonpositive or stationary by the finite-time screen.",
+    "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+  },
+  "limitations": [
+    "Finite samples miss narrower windows.",
+    "Long transients can split or create candidate intervals.",
+    "A transect interval is not automatically a distinct globally connected layer.",
+    "Peak period is a diagnostic, not a proof of an attracting cycle."
+  ]
+}

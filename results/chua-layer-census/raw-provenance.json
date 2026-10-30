@@ -1,0 +1,74 @@
+{
+  "scans": [
+    {
+      "name": "line.npz",
+      "raw_sha256": "292cad1f85fea2073bf0dc05b36eed8db547fbed9192cc5f078e53207a9d8799",
+      "raw_bytes": 39092417,
+      "exported_arrays": [
+        "beta",
+        "parameters",
+        "period",
+        "peak_counts",
+        "peak_status",
+        "lle",
+        "lle_windows",
+        "classes",
+        "status",
+        "visits_both_outer_regions",
+        "final_states",
+        "stats"
+      ],
+      "omitted_arrays": [
+        "peaks"
+      ],
+      "period_note": "Recomputed at tolerance 5e-4 from saved peaks"
+    },
+    {
+      "name": "tight.npz",
+      "raw_sha256": "98d7745498c0a2d49ce4d97535dc4fdd62753fe00d78d19721ff6f6f94fbf2fd",
+      "raw_bytes": 38973736,
+      "exported_arrays": [
+        "beta",
+        "parameters",
+        "period",
+        "peak_counts",
+        "peak_status",
+        "lle",
+        "lle_windows",
+        "classes",
+        "status",
+        "visits_both_outer_regions",
+        "final_states",
+        "stats"
+      ],
+      "omitted_arrays": [
+        "peaks"
+      ],
+      "period_note": "Original 5e-4 recurrence"
+    },
+    {
+      "name": "adding.npz",
+      "raw_sha256": "f69d220a52f544b8aad9c739c834e20cd4fadc3b292f52b1786bab65b1924fa9",
+      "raw_bytes": 38167239,
+      "exported_arrays": [
+        "beta",
+        "parameters",
+        "period",
+        "peak_counts",
+        "peak_status",
+        "lle",
+        "lle_windows",
+        "classes",
+        "status",
+        "visits_both_outer_regions",
+        "final_states",
+        "stats"
+      ],
+      "omitted_arrays": [
+        "peaks"
+      ],
+      "period_note": "Original 5e-4 recurrence"
+    }
+  ],
+  "note": "Full raw peak matrices are omitted from Git. Compact files retain all final states, Lyapunov windows, classifications, counts, and accepted peak periods. Full raw matrices can be regenerated with the documented survey commands."
+}

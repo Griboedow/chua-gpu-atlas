@@ -115,6 +115,8 @@ The default destination is `results/chua-layers`. Every command also accepts `--
 
 ## Relation to prior work and what remains open
 
+The follow-up [layer census](chua-layer-census.md) extends this single-family study to a second broad family, 17 checked local windows on a fixed transect, a shrinking period-adding sequence, and a verified overlap with two attracting cycles. It also explains why neither sampled connected components nor transect windows give a global layer count.
+
 Analytic return and half-return maps for this continuous piecewise-linear family are foundational tools in Chua, Komuro, and Matsumoto, *The Double Scroll Family* (1986). Their slope convention incorporates the linear `x` term and differs by one from this repository's diode slopes. The present calculation specializes those longstanding ideas to the atlas's measured narrow window. [Author-hosted primary paper](https://people.eecs.berkeley.edu/~chua/papers/Chua86.pdf), [DOI](https://doi.org/10.1109/TCS.1986.1085869).
 
 De Sousa and coauthors experimentally observed period-adding sequences of shrinking periodic regions in a modified Chua circuit. That provides evidence that fine periodic-window structure is physically observable, but neither their fitted diode characteristic nor their parameter slice is identical to this atlas. Their period-adding sequence must not be conflated with the period doublings computed here. [Primary manuscript](https://arxiv.org/abs/1509.08425).

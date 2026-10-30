@@ -1,0 +1,271 @@
+{
+  "windows": [
+    {
+      "first_index": 1269,
+      "last_index": 1274,
+      "start": 14.259828125,
+      "end": 14.25990625,
+      "nodes": 6,
+      "periods": [
+        9,
+        18,
+        81
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 1269
+    },
+    {
+      "first_index": 3252,
+      "last_index": 3252,
+      "start": 14.2908125,
+      "end": 14.2908125,
+      "nodes": 1,
+      "periods": [
+        11
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 3252
+    },
+    {
+      "first_index": 4065,
+      "last_index": 4065,
+      "start": 14.303515625000001,
+      "end": 14.303515625000001,
+      "nodes": 1,
+      "periods": [
+        15
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4065
+    },
+    {
+      "first_index": 4069,
+      "last_index": 4072,
+      "start": 14.303578125,
+      "end": 14.303625,
+      "nodes": 4,
+      "periods": [
+        15,
+        30
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 4069
+    },
+    {
+      "first_index": 4074,
+      "last_index": 4079,
+      "start": 14.30365625,
+      "end": 14.303734375,
+      "nodes": 6,
+      "periods": [
+        15,
+        30
+      ],
+      "all_starts_near_zero_nodes": 3,
+      "representative_index": 4074
+    },
+    {
+      "first_index": 4176,
+      "last_index": 4176,
+      "start": 14.305250000000001,
+      "end": 14.305250000000001,
+      "nodes": 1,
+      "periods": [
+        25
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4176
+    },
+    {
+      "first_index": 4178,
+      "last_index": 4178,
+      "start": 14.30528125,
+      "end": 14.30528125,
+      "nodes": 1,
+      "periods": [
+        25
+      ],
+      "all_starts_near_zero_nodes": 0,
+      "representative_index": 4178
+    },
+    {
+      "first_index": 4303,
+      "last_index": 4305,
+      "start": 14.307234375,
+      "end": 14.307265625,
+      "nodes": 3,
+      "periods": [
+        15,
+        90
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 4304
+    },
+    {
+      "first_index": 4307,
+      "last_index": 4308,
+      "start": 14.307296875,
+      "end": 14.3073125,
+      "nodes": 2,
+      "periods": [
+        15
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 4307
+    },
+    {
+      "first_index": 4372,
+      "last_index": 4372,
+      "start": 14.3083125,
+      "end": 14.3083125,
+      "nodes": 1,
+      "periods": [
+        40
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 4372
+    },
+    {
+      "first_index": 4375,
+      "last_index": 4375,
+      "start": 14.308359375,
+      "end": 14.308359375,
+      "nodes": 1,
+      "periods": [
+        40
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 4375
+    },
+    {
+      "first_index": 4379,
+      "last_index": 4382,
+      "start": 14.308421875,
+      "end": 14.30846875,
+      "nodes": 4,
+      "periods": [
+        20,
+        40
+      ],
+      "all_starts_near_zero_nodes": 4,
+      "representative_index": 4379
+    },
+    {
+      "first_index": 4387,
+      "last_index": 5801,
+      "start": 14.308546875000001,
+      "end": 14.330640625000001,
+      "nodes": 1415,
+      "periods": [
+        5,
+        10,
+        20
+      ],
+      "all_starts_near_zero_nodes": 1387,
+      "representative_index": 4502
+    },
+    {
+      "first_index": 7034,
+      "last_index": 7034,
+      "start": 14.34990625,
+      "end": 14.34990625,
+      "nodes": 1,
+      "periods": [
+        15
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 7034
+    },
+    {
+      "first_index": 7146,
+      "last_index": 7146,
+      "start": 14.35165625,
+      "end": 14.35165625,
+      "nodes": 1,
+      "periods": [
+        60
+      ],
+      "all_starts_near_zero_nodes": 1,
+      "representative_index": 7146
+    },
+    {
+      "first_index": 7148,
+      "last_index": 7643,
+      "start": 14.3516875,
+      "end": 14.359421875,
+      "nodes": 496,
+      "periods": [
+        5,
+        10,
+        20
+      ],
+      "all_starts_near_zero_nodes": 457,
+      "representative_index": 7189
+    },
+    {
+      "first_index": 7645,
+      "last_index": 7650,
+      "start": 14.359453125,
+      "end": 14.35953125,
+      "nodes": 6,
+      "periods": [
+        5
+      ],
+      "all_starts_near_zero_nodes": 4,
+      "representative_index": 7645
+    }
+  ],
+  "resolution_levels": [
+    {
+      "stride": 256,
+      "nodes": 41,
+      "step": 0.0039999999999995595,
+      "candidate_intervals": 2,
+      "strict_intervals": 2,
+      "periodic_nodes": 7
+    },
+    {
+      "stride": 64,
+      "nodes": 161,
+      "step": 0.0009999999999994458,
+      "candidate_intervals": 2,
+      "strict_intervals": 3,
+      "periodic_nodes": 30
+    },
+    {
+      "stride": 16,
+      "nodes": 641,
+      "step": 0.00024999999999941735,
+      "candidate_intervals": 4,
+      "strict_intervals": 6,
+      "periodic_nodes": 122
+    },
+    {
+      "stride": 4,
+      "nodes": 2561,
+      "step": 6.250000000029843e-05,
+      "candidate_intervals": 10,
+      "strict_intervals": 20,
+      "periodic_nodes": 488
+    },
+    {
+      "stride": 1,
+      "nodes": 10241,
+      "step": 1.5624999999630518e-05,
+      "candidate_intervals": 17,
+      "strict_intervals": 69,
+      "periodic_nodes": 1950
+    }
+  ],
+  "definitions": {
+    "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+    "strict": "Additionally all three starts are near-zero/nonpositive or stationary by the finite-time screen.",
+    "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+  },
+  "limitations": [
+    "Finite samples miss narrower windows.",
+    "Long transients can split or create candidate intervals.",
+    "A transect interval is not automatically a distinct globally connected layer.",
+    "Peak period is a diagnostic, not a proof of an attracting cycle."
+  ]
+}

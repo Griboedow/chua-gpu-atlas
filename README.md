@@ -105,6 +105,10 @@ The [periodic-layer study](docs/chua-layer-bifurcations.md) continues the classi
 
 ![Periodic branches and their stability](docs/assets/chua-layer-bifurcations.png)
 
+The [layer census](docs/chua-layer-census.md) now matches **two broad five-maximum families** to the visible atlas, checks representatives of **17 periodic windows on one fixed transect**, and resolves a shrinking **15 → 25 → 35 → 45** sequence. The two broad families can overlap: a verified parameter point supports two different attracting five-maximum cycles with periods **10.8914** and **14.4952**. The transect count is not an exhaustive count of globally connected layers, and infinitude remains unproved for this box.
+
+![Two continued families over the original atlas](docs/assets/chua-layer-atlas-comparison.png)
+
 ## Fixed slopes and the quadratic scaling question
 
 A further [fixed-slope experiment](docs/chua-scaling-research.md) follows beta = kappa alpha squared through alpha = **2048**. Of 5,670 prescribed trajectories, 1,536 retain a positive four-window screen after tighter continuation; all numerical failures in the first tight pass are preserved and separately resumed after a clock repair. A selected alpha = 2048 case has independent CPU/GPU leading rates near **0.960** on a matched finite interval. These are numerical candidates, not proof of persistence to infinite alpha.

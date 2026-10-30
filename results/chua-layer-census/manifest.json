@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-30T09:55:22.601622+00:00",
+  "base_commit": "fa162a3e345df90a1a33d218757e49b97ad9472e",
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "parameters": {
+    "alpha": 9,
+    "m0": "-8/7",
+    "m1": "-5/7",
+    "beta": [
+      14.24,
+      14.4
+    ]
+  },
+  "code_sha256": {
+    "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
+    "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
+    "kernels.cl": "99028809908bda135e0641e8665add0003ff4e2c5c098c6c9dbdde2e670d921b",
+    "research/analyze_chua_census.py": "98d4c0f27729e73b01af1b0c0c05bf25ac0695b9cf7515637c0234e81647fec0",
+    "research/audit_chua_census.py": "4044b78a2419684f3f0b2a7eabd28a2802363895051a2e009ad9df89dcd64773",
+    "research/chua_layer_bifurcations.py": "700495d93724f9cecb75a583a4d0d6b3013ad5510bd63e666295268f5b563e00",
+    "research/continue_chua_families.py": "bd9dae6bfdfbccaa726b38078e00b238b65825bd71d8f3980cae919098d39bfd",
+    "research/export_chua_census.py": "0f6243c7b19e299ca72f42c7a37c7ff02f32a9956c085de3d0761583a3e1838a",
+    "research/plot_chua_census.py": "9a10199d7f5c6ead8605c523c4463ec62276759f5e7ec9dfd56bca159c4d2c4d",
+    "research/survey_chua_layers.py": "66f8c059bb9f9eecd33782ce77cdb7d0289b06ea51f3d76dbbe18377051b7361",
+    "research/trace_chua_window.py": "cb89e5df24b3ed2725484d1122211f330c4a4cafa8a7fb0f393dbf6637c19f37",
+    "research/verify_chua_census.py": "2239dc1ae0c93d0f95e6c94db5a795b270cfe0ccb98a3d3121c6122815f0f6f8",
+    "research/verify_coexisting_layers.py": "6a9500c4dafa5bad61023118262827372382cb639f69734cd0b41528e30b551d"
+  },
+  "artifact_sha256": {
+    "docs/assets/chua-layer-atlas-comparison.png": "8d8fbc949bee7183bd0548c6f14401c5d0f0e52df16fbb199294111c881f0cc3",
+    "docs/assets/chua-layer-census.png": "cd6700963b46f0a9c6c01a79cc3996d584d265a4ad9224fd09283758adf670af",
+    "docs/assets/chua-layer-coexistence.png": "ff5962a3ef929a3e740714af0a00e27c8b2204a2fabfaead63bdcaa75a00fe1f",
+    "docs/chua-layer-bifurcations.md": "f8b40e2a7c3d3a676008907388c0e45b5f778b34f3467479eb764e67a2ed6a6a",
+    "docs/chua-layer-census.md": "79da9dacf89d49fa601eab9f2225ac954c252033b84426e74f7e781951294f36",
+    "README.md": "f833f71520609ec3393a1d45662aa6d6b5e9e9a15d399ad15f863bb522b13f4e",
+    "results/chua-layer-census/adding-cycles.json": "61408c7d9eacff3d2452be65a845c01b70f67c81f7a5fcc06c72d5ab63d31b8f",
+    "results/chua-layer-census/adding-cycles.npz": "39ce6056bed694fb2b0655c6ce5d6337d15aa7fa7c528f67558167f041452123",
+    "results/chua-layer-census/adding-summary.json": "835aabe5fc178aaee1091d911831fb27880cb4b55b9b7b02d940cd10f60cb6b2",
+    "results/chua-layer-census/adding.npz": "b97c332c976bad16933a11b569960b46ac2b4e63e1478ba82ede9f41d7ba8bfe",
+    "results/chua-layer-census/atlas-comparison.npz": "1834143c84f95b6d8b3bd5d7e81fcdec8849b79ad985f96b3a40de4db84c13ec",
+    "results/chua-layer-census/audit.json": "6a06a4d122e10781a9d5f51943d3573336e0340d3f4b0abf03c3c140a024290e",
+    "results/chua-layer-census/census-analysis.json": "9cc9f0679829f0e124bd8dde2d3af57b6b72666b8e4fcae8834ee8fa209dd132",
+    "results/chua-layer-census/chua-layer-atlas-comparison.pdf": "242793cf1a7bc842d11b296de752ceef81f32df88ce259fccdb20dec14829477",
+    "results/chua-layer-census/chua-layer-census.pdf": "18a4d5b77fd62415cf115a4ff02b8eae773dad752b7dae2b9d73a8f41234870d",
+    "results/chua-layer-census/chua-layer-coexistence.pdf": "6301a50a42e86b5e5c4f2a56102e126ed1ea3f387dee12b9991d3270b5c453b2",
+    "results/chua-layer-census/coexistence.json": "3608b032890f99ce075599abc9480a3bdac0177ea513116e9b890576b17fdd76",
+    "results/chua-layer-census/coexistence.npz": "9865d779845e5e52b032e5d092f7ff64d13ee7879ac7c17f0af90c59b275fcc1",
+    "results/chua-layer-census/cycles-extra.json": "7d6552fe624374c0beaddebdac2de87e0b28d46d9e30b8a6a15f44ca2c869175",
+    "results/chua-layer-census/cycles-extra.npz": "cf5bb55d108e7f6c850efbd788ab81ca3949ca582bf654e85512d43828ce1c2f",
+    "results/chua-layer-census/cycles.json": "27c6d97fdddc04102ab8dd4821a7dd65b253350713d6f54ea900fe93edd4ef37",
+    "results/chua-layer-census/cycles.npz": "5f65a6fc99b00cdb1a1ad1b0e4464373bbf8d4c805fdb61514fd097c41a20765",
+    "results/chua-layer-census/family-edges.json": "df88aa670ada2eb1b02f6be0e5e53d8e51ed0cd922867aa5422fd72f256afb42",
+    "results/chua-layer-census/line-recurrence.json": "b237bbd33027422f9792d895c084202c0f71355a1bb3ea7d02043d251084c547",
+    "results/chua-layer-census/line-recurrence.npz": "f6a814eabb68b94bb269be1365c8d04b3ab8f3eef10b0fd8151a402a31b1aa0d",
+    "results/chua-layer-census/line-summary.json": "2a6e2408d91dfa075c3f7e8dcef27c40369117099ce549eff0652c38a7ee7848",
+    "results/chua-layer-census/line.npz": "1b9cdc65d37a0640394165a001c8c9022601eb8028adc9f123e57d9c74d53674",
+    "results/chua-layer-census/raw-provenance.json": "fab46b4db2f059fb4ab9dacd9dfb044182ba279da6feed0fcda7ad0ca7420743",
+    "results/chua-layer-census/README.md": "5be67c2b6baa8280bba8428e90ee02bd871eae40d97f8d1d88382c952f336aba",
+    "results/chua-layer-census/second-boundaries.json": "c55b17f6ca6cb8e55f4bc12ee1c73037c13ae237b6ab1697d59eface57f66b03",
+    "results/chua-layer-census/second-surfaces.json": "3eb0ffdc22f144e945bf91dd49cd1e3a83e821f6465bc83ac011678dabcd935e",
+    "results/chua-layer-census/tight-summary.json": "c2e471a343c79efd0d509928ba52d25b7c56e6dde13e75a88d7ff8e6880674a8",
+    "results/chua-layer-census/tight.npz": "59a7a6d271e1560e1b0d00f08c036623d33242cc531f6ff14550ab71cfba9bad"
+  },
+  "scope": "Numerical census of 17 local windows on one transect, two continued broad families, and one coexistence point. No exhaustive basin census, global component count, or infinitude proof.",
+  "provenance_note": "Historical per-run code hashes identify trial revisions. These final code hashes include the corrected classifier, stricter solver-success gating, and reproducible second-family initialization. Raw peak arrays are omitted as documented in raw-provenance.json."
+}
