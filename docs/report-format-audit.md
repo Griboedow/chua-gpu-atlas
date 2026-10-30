@@ -1,6 +1,6 @@
 # GitHub report rendering audit
 
-Checked 29 October 2026, 23:49 UTC, at publication revision [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340).
+Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Follow-up completed 30 October 2026, 00:00 UTC, at [`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60).
 
 **Nineteen distinct formulas in eight reports needed formatting repairs.** The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
@@ -25,7 +25,17 @@ The check loaded **23 public GitHub pages**—the README and the 22 reports that
 
 Across those pages, **177 math elements** produced MathML. No unresolved formulas, renderer error panels, red unknown-command tokens, or math-container overflow were found at the checked 1320 × 1000 viewport. Representative formula screenshots were also inspected, including the Jacobian before and after repair. Merely counting math elements would have missed several failures: GitHub can place an error panel or red command text inside a math element.
 
-All **130 local relative links** checked before this audit note was added resolved to existing paths. No loaded article image reported a failed load during the browser pass. This does not certify every external link, every browser or mobile layout, or the scientific content of the figures. Newly created reports and future changes need their own pass.
+All **130 local relative links** checked before this audit note was added resolved to existing paths. No loaded article image reported a failed load during the initial browser pass.
+
+### Published follow-up
+
+The second pass loaded ten actual GitHub pages at `e2c70b1`: the four new spin-crossover, enzyme-feedback, core-shell-gel and synchronematic-priority reports; the README, candidate queue, synchronematic research, attractor geometry and synchronematic bifurcation reports; and this audit note. Its **111 math elements** rendered without errors, unresolved formulas, red command tokens or math-container overflow. Visible article images were scrolled into view and checked for successful loading. GitHub also inserts hidden GIF preview elements; these were distinguished from the visible figures rather than treated as failed images.
+
+Screenshots from the published pages were inspected for the trace formulas, the aligned four-species equations, the enzyme-gel survey figure, the corrected collective projection and the bifurcation figure. Seven spin-crossover displays had been prepared with math fences before publication, including equivalent upright trace notation. These preventive edits are separate from the nineteen previously observed broken formulas. Local in-memory previews were used during preparation but are not counted as published-page checks.
+
+The two passes cover **28 distinct pages**, with **250 math elements across their latest checked versions**. There were 33 successful page checks: 23 in the first pass and ten in the follow-up, including five previously checked pages. Thus repeated formulas are not counted twice in the total of 250. Eighteen unchanged pages retain their original check at `04e00a3`; the other ten were checked at `e2c70b1`. The machine-readable record retains the revision for each page.
+
+At `e2c70b1`, all **164 relative link occurrences** across these 28 documents resolve to files or directories in that published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
