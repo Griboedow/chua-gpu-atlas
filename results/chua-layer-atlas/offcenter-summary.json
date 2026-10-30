@@ -1,0 +1,1883 @@
+{
+  "settings": {
+    "dt": 0.00125,
+    "transient": 2000,
+    "duration": 2400,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "initial_state_mode": "shared",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 501.2015873000055,
+    "gpu_seconds": 495.5155324480026,
+    "max_kernel_seconds": 0.06601728
+  },
+  "slices": [
+    {
+      "alpha": 9.0,
+      "m0": -1.1488571428571428,
+      "windows": [
+        {
+          "first_index": 1176,
+          "last_index": 1176,
+          "start": 14.258375000000001,
+          "end": 14.258375000000001,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1176
+        },
+        {
+          "first_index": 1178,
+          "last_index": 1184,
+          "start": 14.25840625,
+          "end": 14.2585,
+          "nodes": 7,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 1178
+        },
+        {
+          "first_index": 1186,
+          "last_index": 1186,
+          "start": 14.25853125,
+          "end": 14.25853125,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 1186
+        },
+        {
+          "first_index": 1188,
+          "last_index": 1193,
+          "start": 14.2585625,
+          "end": 14.258640625,
+          "nodes": 6,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 3,
+          "representative_index": 1188
+        },
+        {
+          "first_index": 1195,
+          "last_index": 1201,
+          "start": 14.258671875000001,
+          "end": 14.258765625,
+          "nodes": 7,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 1195
+        },
+        {
+          "first_index": 1203,
+          "last_index": 1206,
+          "start": 14.258796875,
+          "end": 14.25884375,
+          "nodes": 4,
+          "periods": [
+            4,
+            8
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 1203
+        },
+        {
+          "first_index": 1208,
+          "last_index": 1209,
+          "start": 14.258875,
+          "end": 14.258890625,
+          "nodes": 2,
+          "periods": [
+            4,
+            8
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1208
+        },
+        {
+          "first_index": 1211,
+          "last_index": 1219,
+          "start": 14.258921875,
+          "end": 14.259046875000001,
+          "nodes": 9,
+          "periods": [
+            4,
+            8,
+            16
+          ],
+          "all_starts_near_zero_nodes": 3,
+          "representative_index": 1212
+        },
+        {
+          "first_index": 1224,
+          "last_index": 1224,
+          "start": 14.259125000000001,
+          "end": 14.259125000000001,
+          "nodes": 1,
+          "periods": [
+            8
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1224
+        },
+        {
+          "first_index": 1230,
+          "last_index": 1230,
+          "start": 14.25921875,
+          "end": 14.25921875,
+          "nodes": 1,
+          "periods": [
+            12
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1230
+        },
+        {
+          "first_index": 1681,
+          "last_index": 1682,
+          "start": 14.266265625,
+          "end": 14.26628125,
+          "nodes": 2,
+          "periods": [
+            13
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 1681
+        },
+        {
+          "first_index": 4374,
+          "last_index": 4377,
+          "start": 14.30834375,
+          "end": 14.308390625,
+          "nodes": 4,
+          "periods": [
+            6,
+            12
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 4374
+        },
+        {
+          "first_index": 5791,
+          "last_index": 5797,
+          "start": 14.330484375000001,
+          "end": 14.330578125,
+          "nodes": 7,
+          "periods": [
+            21,
+            42
+          ],
+          "all_starts_near_zero_nodes": 6,
+          "representative_index": 5792
+        },
+        {
+          "first_index": 5829,
+          "last_index": 5829,
+          "start": 14.331078125,
+          "end": 14.331078125,
+          "nodes": 1,
+          "periods": [
+            35
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 5829
+        },
+        {
+          "first_index": 5869,
+          "last_index": 5869,
+          "start": 14.331703125,
+          "end": 14.331703125,
+          "nodes": 1,
+          "periods": [
+            21
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 5869
+        },
+        {
+          "first_index": 5885,
+          "last_index": 5885,
+          "start": 14.331953125,
+          "end": 14.331953125,
+          "nodes": 1,
+          "periods": [
+            42
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 5885
+        },
+        {
+          "first_index": 5889,
+          "last_index": 6315,
+          "start": 14.332015625,
+          "end": 14.338671875000001,
+          "nodes": 427,
+          "periods": [
+            7,
+            14,
+            28,
+            84
+          ],
+          "all_starts_near_zero_nodes": 424,
+          "representative_index": 5929
+        },
+        {
+          "first_index": 7570,
+          "last_index": 7571,
+          "start": 14.358281250000001,
+          "end": 14.358296875,
+          "nodes": 2,
+          "periods": [
+            6
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 7570
+        },
+        {
+          "first_index": 8505,
+          "last_index": 8505,
+          "start": 14.372890625,
+          "end": 14.372890625,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 8505
+        },
+        {
+          "first_index": 9551,
+          "last_index": 9563,
+          "start": 14.389234375000001,
+          "end": 14.389421875,
+          "nodes": 13,
+          "periods": [
+            9,
+            18
+          ],
+          "all_starts_near_zero_nodes": 4,
+          "representative_index": 9553
+        },
+        {
+          "first_index": 9765,
+          "last_index": 9765,
+          "start": 14.392578125,
+          "end": 14.392578125,
+          "nodes": 1,
+          "periods": [
+            10
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9765
+        },
+        {
+          "first_index": 9814,
+          "last_index": 9814,
+          "start": 14.39334375,
+          "end": 14.39334375,
+          "nodes": 1,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9814
+        },
+        {
+          "first_index": 9867,
+          "last_index": 9884,
+          "start": 14.394171875,
+          "end": 14.3944375,
+          "nodes": 18,
+          "periods": [
+            15,
+            30
+          ],
+          "all_starts_near_zero_nodes": 16,
+          "representative_index": 9869
+        },
+        {
+          "first_index": 9925,
+          "last_index": 9925,
+          "start": 14.395078125,
+          "end": 14.395078125,
+          "nodes": 1,
+          "periods": [
+            45
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9925
+        },
+        {
+          "first_index": 9967,
+          "last_index": 9971,
+          "start": 14.395734375,
+          "end": 14.395796875,
+          "nodes": 5,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 9967
+        },
+        {
+          "first_index": 10007,
+          "last_index": 10007,
+          "start": 14.396359375000001,
+          "end": 14.396359375000001,
+          "nodes": 1,
+          "periods": [
+            35
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 10007
+        },
+        {
+          "first_index": 10080,
+          "last_index": 10084,
+          "start": 14.3975,
+          "end": 14.397562500000001,
+          "nodes": 5,
+          "periods": [
+            15,
+            30
+          ],
+          "all_starts_near_zero_nodes": 4,
+          "representative_index": 10081
+        },
+        {
+          "first_index": 10097,
+          "last_index": 10097,
+          "start": 14.397765625,
+          "end": 14.397765625,
+          "nodes": 1,
+          "periods": [
+            35
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 10097
+        },
+        {
+          "first_index": 10104,
+          "last_index": 10104,
+          "start": 14.397875,
+          "end": 14.397875,
+          "nodes": 1,
+          "periods": [
+            50
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 10104
+        },
+        {
+          "first_index": 10127,
+          "last_index": 10127,
+          "start": 14.398234375000001,
+          "end": 14.398234375000001,
+          "nodes": 1,
+          "periods": [
+            30
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 10127
+        },
+        {
+          "first_index": 10140,
+          "last_index": 10240,
+          "start": 14.3984375,
+          "end": 14.4,
+          "nodes": 101,
+          "periods": [
+            10,
+            20,
+            40
+          ],
+          "all_starts_near_zero_nodes": 101,
+          "representative_index": 10164
+        }
+      ],
+      "resolution_levels": [
+        {
+          "stride": 256,
+          "nodes": 41,
+          "step": 0.0039999999999995595,
+          "candidate_intervals": 2,
+          "strict_intervals": 2,
+          "periodic_nodes": 2
+        },
+        {
+          "stride": 64,
+          "nodes": 161,
+          "step": 0.0009999999999994458,
+          "candidate_intervals": 3,
+          "strict_intervals": 2,
+          "periodic_nodes": 9
+        },
+        {
+          "stride": 16,
+          "nodes": 641,
+          "step": 0.00024999999999941735,
+          "candidate_intervals": 8,
+          "strict_intervals": 5,
+          "periodic_nodes": 41
+        },
+        {
+          "stride": 4,
+          "nodes": 2561,
+          "step": 6.250000000029843e-05,
+          "candidate_intervals": 11,
+          "strict_intervals": 10,
+          "periodic_nodes": 159
+        },
+        {
+          "stride": 1,
+          "nodes": 10241,
+          "step": 1.5624999999630518e-05,
+          "candidate_intervals": 31,
+          "strict_intervals": 26,
+          "periodic_nodes": 634
+        }
+      ],
+      "definitions": {
+        "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+        "strict": "Additionally all prescribed starts are near-zero/nonpositive or stationary in the preceding finite-time screen.",
+        "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+      },
+      "limitations": [
+        "Finite samples miss narrower windows.",
+        "Long transients can split or create candidate intervals.",
+        "A transect interval is not automatically a distinct globally connected layer.",
+        "Peak period is a diagnostic, not a proof of an attracting cycle."
+      ]
+    },
+    {
+      "alpha": 9.0,
+      "m0": -1.1458571428571427,
+      "windows": [
+        {
+          "first_index": 216,
+          "last_index": 217,
+          "start": 14.243375,
+          "end": 14.243390625,
+          "nodes": 2,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 216
+        },
+        {
+          "first_index": 220,
+          "last_index": 220,
+          "start": 14.2434375,
+          "end": 14.2434375,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 220
+        },
+        {
+          "first_index": 222,
+          "last_index": 222,
+          "start": 14.24346875,
+          "end": 14.24346875,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 222
+        },
+        {
+          "first_index": 224,
+          "last_index": 224,
+          "start": 14.243500000000001,
+          "end": 14.243500000000001,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 224
+        },
+        {
+          "first_index": 227,
+          "last_index": 228,
+          "start": 14.243546875,
+          "end": 14.2435625,
+          "nodes": 2,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 227
+        },
+        {
+          "first_index": 232,
+          "last_index": 232,
+          "start": 14.243625,
+          "end": 14.243625,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 232
+        },
+        {
+          "first_index": 234,
+          "last_index": 236,
+          "start": 14.24365625,
+          "end": 14.2436875,
+          "nodes": 3,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 234
+        },
+        {
+          "first_index": 238,
+          "last_index": 239,
+          "start": 14.243718750000001,
+          "end": 14.243734375,
+          "nodes": 2,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 238
+        },
+        {
+          "first_index": 242,
+          "last_index": 242,
+          "start": 14.24378125,
+          "end": 14.24378125,
+          "nodes": 1,
+          "periods": [
+            4
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 242
+        },
+        {
+          "first_index": 245,
+          "last_index": 245,
+          "start": 14.243828125,
+          "end": 14.243828125,
+          "nodes": 1,
+          "periods": [
+            8
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 245
+        },
+        {
+          "first_index": 247,
+          "last_index": 250,
+          "start": 14.243859375,
+          "end": 14.24390625,
+          "nodes": 4,
+          "periods": [
+            4,
+            8
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 248
+        },
+        {
+          "first_index": 253,
+          "last_index": 254,
+          "start": 14.243953125,
+          "end": 14.24396875,
+          "nodes": 2,
+          "periods": [
+            8
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 253
+        },
+        {
+          "first_index": 256,
+          "last_index": 260,
+          "start": 14.244,
+          "end": 14.2440625,
+          "nodes": 5,
+          "periods": [
+            4,
+            8
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 256
+        },
+        {
+          "first_index": 264,
+          "last_index": 265,
+          "start": 14.244125,
+          "end": 14.244140625,
+          "nodes": 2,
+          "periods": [
+            4,
+            64
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 264
+        },
+        {
+          "first_index": 275,
+          "last_index": 276,
+          "start": 14.244296875,
+          "end": 14.2443125,
+          "nodes": 2,
+          "periods": [
+            12
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 275
+        },
+        {
+          "first_index": 339,
+          "last_index": 341,
+          "start": 14.245296875000001,
+          "end": 14.245328125,
+          "nodes": 3,
+          "periods": [
+            6
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 339
+        },
+        {
+          "first_index": 688,
+          "last_index": 688,
+          "start": 14.25075,
+          "end": 14.25075,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 688
+        },
+        {
+          "first_index": 1724,
+          "last_index": 1730,
+          "start": 14.266937500000001,
+          "end": 14.26703125,
+          "nodes": 7,
+          "periods": [
+            21,
+            42
+          ],
+          "all_starts_near_zero_nodes": 5,
+          "representative_index": 1724
+        },
+        {
+          "first_index": 1760,
+          "last_index": 1761,
+          "start": 14.2675,
+          "end": 14.267515625,
+          "nodes": 2,
+          "periods": [
+            35
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 1760
+        },
+        {
+          "first_index": 1799,
+          "last_index": 1799,
+          "start": 14.268109375,
+          "end": 14.268109375,
+          "nodes": 1,
+          "periods": [
+            21
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1799
+        },
+        {
+          "first_index": 1818,
+          "last_index": 2229,
+          "start": 14.26840625,
+          "end": 14.274828125,
+          "nodes": 412,
+          "periods": [
+            7,
+            14,
+            28,
+            56
+          ],
+          "all_starts_near_zero_nodes": 409,
+          "representative_index": 1856
+        },
+        {
+          "first_index": 3461,
+          "last_index": 3461,
+          "start": 14.294078125,
+          "end": 14.294078125,
+          "nodes": 1,
+          "periods": [
+            6
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 3461
+        },
+        {
+          "first_index": 4398,
+          "last_index": 4398,
+          "start": 14.30871875,
+          "end": 14.30871875,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 4398
+        },
+        {
+          "first_index": 5432,
+          "last_index": 5435,
+          "start": 14.324875,
+          "end": 14.324921875000001,
+          "nodes": 4,
+          "periods": [
+            9,
+            18
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 5433
+        },
+        {
+          "first_index": 5438,
+          "last_index": 5440,
+          "start": 14.32496875,
+          "end": 14.325000000000001,
+          "nodes": 3,
+          "periods": [
+            9
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 5438
+        },
+        {
+          "first_index": 5442,
+          "last_index": 5442,
+          "start": 14.32503125,
+          "end": 14.32503125,
+          "nodes": 1,
+          "periods": [
+            9
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 5442
+        },
+        {
+          "first_index": 6950,
+          "last_index": 6950,
+          "start": 14.348593750000001,
+          "end": 14.348593750000001,
+          "nodes": 1,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 6950
+        },
+        {
+          "first_index": 7007,
+          "last_index": 7024,
+          "start": 14.349484375000001,
+          "end": 14.34975,
+          "nodes": 18,
+          "periods": [
+            15
+          ],
+          "all_starts_near_zero_nodes": 11,
+          "representative_index": 7007
+        },
+        {
+          "first_index": 7111,
+          "last_index": 7116,
+          "start": 14.351109375,
+          "end": 14.3511875,
+          "nodes": 6,
+          "periods": [
+            25,
+            50
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 7113
+        },
+        {
+          "first_index": 7232,
+          "last_index": 7237,
+          "start": 14.353,
+          "end": 14.353078125,
+          "nodes": 6,
+          "periods": [
+            15,
+            30
+          ],
+          "all_starts_near_zero_nodes": 5,
+          "representative_index": 7233
+        },
+        {
+          "first_index": 7260,
+          "last_index": 7260,
+          "start": 14.3534375,
+          "end": 14.3534375,
+          "nodes": 1,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 7260
+        },
+        {
+          "first_index": 7298,
+          "last_index": 8622,
+          "start": 14.35403125,
+          "end": 14.37471875,
+          "nodes": 1325,
+          "periods": [
+            5,
+            10,
+            20,
+            40
+          ],
+          "all_starts_near_zero_nodes": 1318,
+          "representative_index": 7419
+        }
+      ],
+      "resolution_levels": [
+        {
+          "stride": 256,
+          "nodes": 41,
+          "step": 0.0039999999999995595,
+          "candidate_intervals": 3,
+          "strict_intervals": 2,
+          "periodic_nodes": 7
+        },
+        {
+          "stride": 64,
+          "nodes": 161,
+          "step": 0.0009999999999994458,
+          "candidate_intervals": 6,
+          "strict_intervals": 3,
+          "periodic_nodes": 30
+        },
+        {
+          "stride": 16,
+          "nodes": 641,
+          "step": 0.00024999999999941735,
+          "candidate_intervals": 10,
+          "strict_intervals": 4,
+          "periodic_nodes": 117
+        },
+        {
+          "stride": 4,
+          "nodes": 2561,
+          "step": 6.250000000029843e-05,
+          "candidate_intervals": 16,
+          "strict_intervals": 8,
+          "periodic_nodes": 462
+        },
+        {
+          "stride": 1,
+          "nodes": 10241,
+          "step": 1.5624999999630518e-05,
+          "candidate_intervals": 32,
+          "strict_intervals": 26,
+          "periodic_nodes": 1823
+        }
+      ],
+      "definitions": {
+        "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+        "strict": "Additionally all prescribed starts are near-zero/nonpositive or stationary in the preceding finite-time screen.",
+        "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+      },
+      "limitations": [
+        "Finite samples miss narrower windows.",
+        "Long transients can split or create candidate intervals.",
+        "A transect interval is not automatically a distinct globally connected layer.",
+        "Peak period is a diagnostic, not a proof of an attracting cycle."
+      ]
+    },
+    {
+      "alpha": 9.0,
+      "m0": -1.139857142857143,
+      "windows": [
+        {
+          "first_index": 1028,
+          "last_index": 1028,
+          "start": 14.2560625,
+          "end": 14.2560625,
+          "nodes": 1,
+          "periods": [
+            30
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1028
+        },
+        {
+          "first_index": 1030,
+          "last_index": 1047,
+          "start": 14.25609375,
+          "end": 14.256359375,
+          "nodes": 18,
+          "periods": [
+            15
+          ],
+          "all_starts_near_zero_nodes": 12,
+          "representative_index": 1030
+        },
+        {
+          "first_index": 1110,
+          "last_index": 1110,
+          "start": 14.25734375,
+          "end": 14.25734375,
+          "nodes": 1,
+          "periods": [
+            35
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1110
+        },
+        {
+          "first_index": 1149,
+          "last_index": 1152,
+          "start": 14.257953125,
+          "end": 14.258000000000001,
+          "nodes": 4,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 3,
+          "representative_index": 1149
+        },
+        {
+          "first_index": 1248,
+          "last_index": 1248,
+          "start": 14.259500000000001,
+          "end": 14.259500000000001,
+          "nodes": 1,
+          "periods": [
+            20
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1248
+        },
+        {
+          "first_index": 1285,
+          "last_index": 1292,
+          "start": 14.260078125,
+          "end": 14.2601875,
+          "nodes": 8,
+          "periods": [
+            15,
+            30,
+            90
+          ],
+          "all_starts_near_zero_nodes": 5,
+          "representative_index": 1288
+        },
+        {
+          "first_index": 1318,
+          "last_index": 1318,
+          "start": 14.26059375,
+          "end": 14.26059375,
+          "nodes": 1,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1318
+        },
+        {
+          "first_index": 1345,
+          "last_index": 1346,
+          "start": 14.261015625,
+          "end": 14.26103125,
+          "nodes": 2,
+          "periods": [
+            30
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 1345
+        },
+        {
+          "first_index": 1361,
+          "last_index": 2691,
+          "start": 14.261265625,
+          "end": 14.282046875,
+          "nodes": 1331,
+          "periods": [
+            5,
+            10,
+            20,
+            40,
+            80
+          ],
+          "all_starts_near_zero_nodes": 1329,
+          "representative_index": 1500
+        },
+        {
+          "first_index": 2695,
+          "last_index": 2695,
+          "start": 14.282109375000001,
+          "end": 14.282109375000001,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2695
+        },
+        {
+          "first_index": 2701,
+          "last_index": 2701,
+          "start": 14.282203125,
+          "end": 14.282203125,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2701
+        },
+        {
+          "first_index": 2703,
+          "last_index": 2703,
+          "start": 14.282234375,
+          "end": 14.282234375,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2703
+        },
+        {
+          "first_index": 2707,
+          "last_index": 2708,
+          "start": 14.282296875,
+          "end": 14.2823125,
+          "nodes": 2,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2707
+        },
+        {
+          "first_index": 2711,
+          "last_index": 2711,
+          "start": 14.282359375,
+          "end": 14.282359375,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 2711
+        },
+        {
+          "first_index": 2715,
+          "last_index": 2715,
+          "start": 14.282421875,
+          "end": 14.282421875,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 2715
+        },
+        {
+          "first_index": 2725,
+          "last_index": 2725,
+          "start": 14.282578125,
+          "end": 14.282578125,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2725
+        },
+        {
+          "first_index": 2728,
+          "last_index": 2730,
+          "start": 14.282625,
+          "end": 14.28265625,
+          "nodes": 3,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2728
+        },
+        {
+          "first_index": 2732,
+          "last_index": 2732,
+          "start": 14.2826875,
+          "end": 14.2826875,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2732
+        },
+        {
+          "first_index": 2738,
+          "last_index": 2740,
+          "start": 14.282781250000001,
+          "end": 14.2828125,
+          "nodes": 3,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2738
+        },
+        {
+          "first_index": 2744,
+          "last_index": 2744,
+          "start": 14.282875,
+          "end": 14.282875,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2744
+        },
+        {
+          "first_index": 2750,
+          "last_index": 2750,
+          "start": 14.28296875,
+          "end": 14.28296875,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2750
+        },
+        {
+          "first_index": 2756,
+          "last_index": 2764,
+          "start": 14.2830625,
+          "end": 14.2831875,
+          "nodes": 9,
+          "periods": [
+            5,
+            15,
+            30
+          ],
+          "all_starts_near_zero_nodes": 6,
+          "representative_index": 2758
+        },
+        {
+          "first_index": 2768,
+          "last_index": 2768,
+          "start": 14.28325,
+          "end": 14.28325,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2768
+        },
+        {
+          "first_index": 2770,
+          "last_index": 2780,
+          "start": 14.28328125,
+          "end": 14.2834375,
+          "nodes": 11,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 2770
+        },
+        {
+          "first_index": 2784,
+          "last_index": 2785,
+          "start": 14.2835,
+          "end": 14.283515625,
+          "nodes": 2,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2784
+        },
+        {
+          "first_index": 2790,
+          "last_index": 2790,
+          "start": 14.28359375,
+          "end": 14.28359375,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2790
+        },
+        {
+          "first_index": 2793,
+          "last_index": 2793,
+          "start": 14.283640625,
+          "end": 14.283640625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2793
+        },
+        {
+          "first_index": 2799,
+          "last_index": 2800,
+          "start": 14.283734375,
+          "end": 14.28375,
+          "nodes": 2,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2799
+        },
+        {
+          "first_index": 2802,
+          "last_index": 2802,
+          "start": 14.28378125,
+          "end": 14.28378125,
+          "nodes": 1,
+          "periods": [
+            25
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2802
+        },
+        {
+          "first_index": 2809,
+          "last_index": 2809,
+          "start": 14.283890625,
+          "end": 14.283890625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2809
+        },
+        {
+          "first_index": 2811,
+          "last_index": 2811,
+          "start": 14.283921875,
+          "end": 14.283921875,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2811
+        },
+        {
+          "first_index": 2820,
+          "last_index": 2820,
+          "start": 14.284062500000001,
+          "end": 14.284062500000001,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2820
+        },
+        {
+          "first_index": 2826,
+          "last_index": 2826,
+          "start": 14.28415625,
+          "end": 14.28415625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2826
+        },
+        {
+          "first_index": 2833,
+          "last_index": 2833,
+          "start": 14.284265625,
+          "end": 14.284265625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2833
+        },
+        {
+          "first_index": 2835,
+          "last_index": 2836,
+          "start": 14.284296875,
+          "end": 14.2843125,
+          "nodes": 2,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2835
+        },
+        {
+          "first_index": 2838,
+          "last_index": 2838,
+          "start": 14.28434375,
+          "end": 14.28434375,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2838
+        },
+        {
+          "first_index": 2842,
+          "last_index": 2842,
+          "start": 14.28440625,
+          "end": 14.28440625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2842
+        },
+        {
+          "first_index": 2844,
+          "last_index": 2844,
+          "start": 14.284437500000001,
+          "end": 14.284437500000001,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2844
+        },
+        {
+          "first_index": 2847,
+          "last_index": 2849,
+          "start": 14.284484375,
+          "end": 14.284515625000001,
+          "nodes": 3,
+          "periods": [
+            15
+          ],
+          "all_starts_near_zero_nodes": 2,
+          "representative_index": 2847
+        },
+        {
+          "first_index": 2852,
+          "last_index": 2852,
+          "start": 14.2845625,
+          "end": 14.2845625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2852
+        },
+        {
+          "first_index": 2854,
+          "last_index": 2854,
+          "start": 14.28459375,
+          "end": 14.28459375,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2854
+        },
+        {
+          "first_index": 2856,
+          "last_index": 2856,
+          "start": 14.284625,
+          "end": 14.284625,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 2856
+        },
+        {
+          "first_index": 2860,
+          "last_index": 2862,
+          "start": 14.2846875,
+          "end": 14.28471875,
+          "nodes": 3,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2860
+        },
+        {
+          "first_index": 2864,
+          "last_index": 2864,
+          "start": 14.28475,
+          "end": 14.28475,
+          "nodes": 1,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2864
+        },
+        {
+          "first_index": 2868,
+          "last_index": 2869,
+          "start": 14.284812500000001,
+          "end": 14.284828125,
+          "nodes": 2,
+          "periods": [
+            5
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2868
+        },
+        {
+          "first_index": 2873,
+          "last_index": 3377,
+          "start": 14.284890625000001,
+          "end": 14.292765625,
+          "nodes": 505,
+          "periods": [
+            5,
+            10,
+            20,
+            40
+          ],
+          "all_starts_near_zero_nodes": 504,
+          "representative_index": 2874
+        },
+        {
+          "first_index": 6121,
+          "last_index": 6123,
+          "start": 14.335640625,
+          "end": 14.335671875000001,
+          "nodes": 3,
+          "periods": [
+            9,
+            18
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 6122
+        },
+        {
+          "first_index": 7842,
+          "last_index": 7876,
+          "start": 14.36253125,
+          "end": 14.3630625,
+          "nodes": 35,
+          "periods": [
+            7,
+            14
+          ],
+          "all_starts_near_zero_nodes": 22,
+          "representative_index": 7845
+        },
+        {
+          "first_index": 7878,
+          "last_index": 7882,
+          "start": 14.36309375,
+          "end": 14.363156250000001,
+          "nodes": 5,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 3,
+          "representative_index": 7878
+        },
+        {
+          "first_index": 7884,
+          "last_index": 7884,
+          "start": 14.3631875,
+          "end": 14.3631875,
+          "nodes": 1,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 7884
+        },
+        {
+          "first_index": 9910,
+          "last_index": 9910,
+          "start": 14.39484375,
+          "end": 14.39484375,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9910
+        },
+        {
+          "first_index": 9912,
+          "last_index": 9912,
+          "start": 14.394875,
+          "end": 14.394875,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9912
+        }
+      ],
+      "resolution_levels": [
+        {
+          "stride": 256,
+          "nodes": 41,
+          "step": 0.0039999999999995595,
+          "candidate_intervals": 2,
+          "strict_intervals": 2,
+          "periodic_nodes": 7
+        },
+        {
+          "stride": 64,
+          "nodes": 161,
+          "step": 0.0009999999999994458,
+          "candidate_intervals": 4,
+          "strict_intervals": 4,
+          "periodic_nodes": 31
+        },
+        {
+          "stride": 16,
+          "nodes": 641,
+          "step": 0.00024999999999941735,
+          "candidate_intervals": 7,
+          "strict_intervals": 6,
+          "periodic_nodes": 125
+        },
+        {
+          "stride": 4,
+          "nodes": 2561,
+          "step": 6.250000000029843e-05,
+          "candidate_intervals": 16,
+          "strict_intervals": 12,
+          "periodic_nodes": 502
+        },
+        {
+          "stride": 1,
+          "nodes": 10241,
+          "step": 1.5624999999630518e-05,
+          "candidate_intervals": 52,
+          "strict_intervals": 32,
+          "periodic_nodes": 1985
+        }
+      ],
+      "definitions": {
+        "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+        "strict": "Additionally all prescribed starts are near-zero/nonpositive or stationary in the preceding finite-time screen.",
+        "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+      },
+      "limitations": [
+        "Finite samples miss narrower windows.",
+        "Long transients can split or create candidate intervals.",
+        "A transect interval is not automatically a distinct globally connected layer.",
+        "Peak period is a diagnostic, not a proof of an attracting cycle."
+      ]
+    },
+    {
+      "alpha": 9.0,
+      "m0": -1.1368571428571428,
+      "windows": [
+        {
+          "first_index": 1808,
+          "last_index": 1809,
+          "start": 14.26825,
+          "end": 14.268265625,
+          "nodes": 2,
+          "periods": [
+            9
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 1808
+        },
+        {
+          "first_index": 2091,
+          "last_index": 2091,
+          "start": 14.272671875,
+          "end": 14.272671875,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 2091
+        },
+        {
+          "first_index": 3507,
+          "last_index": 3534,
+          "start": 14.294796875,
+          "end": 14.29521875,
+          "nodes": 28,
+          "periods": [
+            7,
+            14
+          ],
+          "all_starts_near_zero_nodes": 22,
+          "representative_index": 3510
+        },
+        {
+          "first_index": 3536,
+          "last_index": 3538,
+          "start": 14.295250000000001,
+          "end": 14.29528125,
+          "nodes": 3,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 1,
+          "representative_index": 3536
+        },
+        {
+          "first_index": 3540,
+          "last_index": 3543,
+          "start": 14.2953125,
+          "end": 14.295359375,
+          "nodes": 4,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 3540
+        },
+        {
+          "first_index": 3545,
+          "last_index": 3546,
+          "start": 14.295390625,
+          "end": 14.295406250000001,
+          "nodes": 2,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 3545
+        },
+        {
+          "first_index": 3548,
+          "last_index": 3548,
+          "start": 14.2954375,
+          "end": 14.2954375,
+          "nodes": 1,
+          "periods": [
+            7
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 3548
+        },
+        {
+          "first_index": 5214,
+          "last_index": 5214,
+          "start": 14.321468750000001,
+          "end": 14.321468750000001,
+          "nodes": 1,
+          "periods": [
+            6
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 5214
+        },
+        {
+          "first_index": 6742,
+          "last_index": 6754,
+          "start": 14.34534375,
+          "end": 14.34553125,
+          "nodes": 13,
+          "periods": [
+            9
+          ],
+          "all_starts_near_zero_nodes": 6,
+          "representative_index": 6742
+        },
+        {
+          "first_index": 7250,
+          "last_index": 7251,
+          "start": 14.35328125,
+          "end": 14.353296875,
+          "nodes": 2,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 7250
+        },
+        {
+          "first_index": 7834,
+          "last_index": 7834,
+          "start": 14.362406250000001,
+          "end": 14.362406250000001,
+          "nodes": 1,
+          "periods": [
+            22
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 7834
+        },
+        {
+          "first_index": 7836,
+          "last_index": 7836,
+          "start": 14.3624375,
+          "end": 14.3624375,
+          "nodes": 1,
+          "periods": [
+            11
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 7836
+        },
+        {
+          "first_index": 8366,
+          "last_index": 8376,
+          "start": 14.37071875,
+          "end": 14.370875,
+          "nodes": 11,
+          "periods": [
+            13
+          ],
+          "all_starts_near_zero_nodes": 6,
+          "representative_index": 8366
+        },
+        {
+          "first_index": 9181,
+          "last_index": 9181,
+          "start": 14.383453125,
+          "end": 14.383453125,
+          "nodes": 1,
+          "periods": [
+            26
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9181
+        },
+        {
+          "first_index": 9599,
+          "last_index": 9601,
+          "start": 14.389984375000001,
+          "end": 14.390015625,
+          "nodes": 3,
+          "periods": [
+            13
+          ],
+          "all_starts_near_zero_nodes": 0,
+          "representative_index": 9599
+        }
+      ],
+      "resolution_levels": [
+        {
+          "stride": 256,
+          "nodes": 41,
+          "step": 0.0039999999999995595,
+          "candidate_intervals": 0,
+          "strict_intervals": 0,
+          "periodic_nodes": 0
+        },
+        {
+          "stride": 64,
+          "nodes": 161,
+          "step": 0.0009999999999994458,
+          "candidate_intervals": 2,
+          "strict_intervals": 1,
+          "periodic_nodes": 2
+        },
+        {
+          "stride": 16,
+          "nodes": 641,
+          "step": 0.00024999999999941735,
+          "candidate_intervals": 5,
+          "strict_intervals": 3,
+          "periodic_nodes": 6
+        },
+        {
+          "stride": 4,
+          "nodes": 2561,
+          "step": 6.250000000029843e-05,
+          "candidate_intervals": 7,
+          "strict_intervals": 4,
+          "periodic_nodes": 19
+        },
+        {
+          "stride": 1,
+          "nodes": 10241,
+          "step": 1.5624999999630518e-05,
+          "candidate_intervals": 15,
+          "strict_intervals": 12,
+          "periodic_nodes": 74
+        }
+      ],
+      "definitions": {
+        "candidate": "Seed zero has a repeated peak pattern (four repeats, relative tolerance 5e-4) in the later peak collection.",
+        "strict": "Additionally all prescribed starts are near-zero/nonpositive or stationary in the preceding finite-time screen.",
+        "interval": "Consecutive successful nodes; a one-node interval is retained, not silently removed."
+      },
+      "limitations": [
+        "Finite samples miss narrower windows.",
+        "Long transients can split or create candidate intervals.",
+        "A transect interval is not automatically a distinct globally connected layer.",
+        "Peak period is a diagnostic, not a proof of an attracting cycle."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "dt": 0.000625,
+    "transient": 0,
+    "duration": 80,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": null,
+    "initial_state_mode": "per_parameter",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "samples": 1024,
+  "positive_four_window_screens": 566,
+  "lle_quantiles": {
+    "0": 0.018397216698233163,
+    "0.1": 0.08364420017668882,
+    "0.25": 0.13431827558937848,
+    "0.5": 0.2741498945033389,
+    "0.75": 0.3690622725391558,
+    "0.9": 0.4048395674572117,
+    "1.0": 0.49529419338460406
+  },
+  "note": "Finite initial-time instability, not an asymptotic chaotic attractor: the same parameter point has attracting cycles."
+}

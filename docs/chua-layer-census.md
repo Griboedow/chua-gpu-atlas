@@ -1,5 +1,7 @@
 # How many layers does the Chua atlas contain?
 
+**Follow-up:** the [family-labelled atlas refinement](chua-refined-atlas.md) expands the numerical catalogue to 32 families across the three-dimensional box, extends the adding sequence to 65 maxima, and verifies four coexisting cycles. The 17-window central census below remains the earlier, more limited result.
+
 The visible sheets contain more structure than a small stack of separate periodic regimes. We have now continued **two broad five-maximum families**, checked representatives of **17 local periodic windows on one fixed transect**, and resolved a shrinking **15 → 25 → 35 → 45** sequence. The two broad families can **overlap and support different attracting cycles at identical parameters**.
 
 These are numerical results for this repository's continuous piecewise-linear Chua model. Seventeen is an operational count on the stated transect, supported by independently closed attracting orbits and intervening finite-time chaotic screens. It is neither an exhaustive count nor the number of globally connected surfaces in three parameters. No finite total, and no infinitude of attracting windows in this exact box, has been established.

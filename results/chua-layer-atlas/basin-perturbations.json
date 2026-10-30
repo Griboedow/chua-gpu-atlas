@@ -1,0 +1,25 @@
+{
+  "epsilon": [
+    0.0,
+    0.01,
+    0.001,
+    0.0001,
+    1e-05,
+    1e-06,
+    1e-08,
+    1e-10
+  ],
+  "changed_fraction": [
+    0.0,
+    0.7529296875,
+    0.734375,
+    0.646484375,
+    0.6357421875,
+    0.5595703125,
+    0.4873046875,
+    0.3994140625
+  ],
+  "samples": 1024,
+  "dt": 0.000625,
+  "note": "Sensitivity at fixed numerical precision; the smallest perturbations need not resolve exact basin boundaries."
+}

@@ -1,0 +1,116 @@
+{
+  "checks": [
+    {
+      "beta": 14.259842625414404,
+      "peak_count": 9,
+      "closure_difference": 4.0112357879706906e-13,
+      "state_jacobian_difference": 5.009326287108706e-12,
+      "section_matrix_difference": 2.2026824808563106e-12,
+      "state_jacobian_scaled_error": 1.7734087554205853e-12,
+      "boundary_jacobian_scaled_error": 1.7531637100444255e-08,
+      "region_violation": 4.4586556668946287e-13
+    },
+    {
+      "beta": 14.290804492739854,
+      "peak_count": 11,
+      "closure_difference": 1.1898259345096577e-13,
+      "state_jacobian_difference": 2.1172841258021435e-11,
+      "section_matrix_difference": 2.887468042445107e-12,
+      "state_jacobian_scaled_error": 1.6139650838680297e-11,
+      "boundary_jacobian_scaled_error": 7.922145310858366e-08,
+      "region_violation": 1.028066520802895e-13
+    },
+    {
+      "beta": 14.303555640528597,
+      "peak_count": 15,
+      "closure_difference": 9.076073226310655e-13,
+      "state_jacobian_difference": 7.503331289626658e-11,
+      "section_matrix_difference": 5.044853423896711e-11,
+      "state_jacobian_scaled_error": 5.9119013720746655e-12,
+      "boundary_jacobian_scaled_error": 1.74177055444978e-07,
+      "region_violation": 2.117306330262636e-12
+    },
+    {
+      "beta": 14.30523092453894,
+      "peak_count": 25,
+      "closure_difference": 4.424682842341099e-12,
+      "state_jacobian_difference": 8.401617179742971e-10,
+      "section_matrix_difference": 9.957830116036348e-10,
+      "state_jacobian_scaled_error": 3.631878987406816e-10,
+      "boundary_jacobian_scaled_error": 5.215546237266476e-07,
+      "region_violation": 4.125810804112007e-12
+    },
+    {
+      "beta": 14.317275007544415,
+      "peak_count": 5,
+      "closure_difference": 7.771561172376096e-15,
+      "state_jacobian_difference": 2.6645352591003757e-13,
+      "section_matrix_difference": 2.3803181647963356e-13,
+      "state_jacobian_scaled_error": 3.1654474496724386e-14,
+      "boundary_jacobian_scaled_error": 1.575270625053804e-08,
+      "region_violation": 9.183764859699295e-13
+    },
+    {
+      "beta": 14.349834008592769,
+      "peak_count": 15,
+      "closure_difference": 1.673328142715036e-12,
+      "state_jacobian_difference": 1.7039303301658038e-10,
+      "section_matrix_difference": 1.4793499758525286e-11,
+      "state_jacobian_scaled_error": 5.8134942421082437e-11,
+      "boundary_jacobian_scaled_error": 6.918959444352512e-08,
+      "region_violation": 6.06736882957648e-13
+    },
+    {
+      "beta": 14.25984262541393,
+      "peak_count": 9,
+      "closure_difference": 1.2456702336294256e-13,
+      "state_jacobian_difference": 3.154809746774845e-12,
+      "section_matrix_difference": 1.9042545318370685e-12,
+      "state_jacobian_scaled_error": 3.768493605267738e-13,
+      "boundary_jacobian_scaled_error": 3.7781407654992585e-08,
+      "region_violation": 1.7563728249569976e-13
+    },
+    {
+      "beta": 14.302512619236703,
+      "peak_count": 25,
+      "closure_difference": 1.729072440781465e-11,
+      "state_jacobian_difference": 1.6591075180372172e-09,
+      "section_matrix_difference": 4.804519448953215e-09,
+      "state_jacobian_scaled_error": 6.709785468734597e-10,
+      "boundary_jacobian_scaled_error": 1.2359188108072969e-06,
+      "region_violation": 1.2768452961609e-11
+    },
+    {
+      "beta": 14.3059172346491,
+      "peak_count": 35,
+      "closure_difference": 9.091172259445557e-12,
+      "state_jacobian_difference": 1.9895494141053405e-09,
+      "section_matrix_difference": 2.5423219085496385e-11,
+      "state_jacobian_scaled_error": 8.028959417982017e-10,
+      "boundary_jacobian_scaled_error": 9.447451144927492e-07,
+      "region_violation": 8.590572697642074e-12
+    },
+    {
+      "beta": 14.350500035660517,
+      "peak_count": 25,
+      "closure_difference": 8.453238109495942e-13,
+      "state_jacobian_difference": 4.5580161867064817e-10,
+      "section_matrix_difference": 1.000444171950221e-11,
+      "state_jacobian_scaled_error": 1.5682342286029075e-10,
+      "boundary_jacobian_scaled_error": 4.808777660514352e-07,
+      "region_violation": 1.6188161922059408e-12
+    },
+    {
+      "beta": 14.306189796880377,
+      "peak_count": 45,
+      "closure_difference": 3.717415264503643e-12,
+      "state_jacobian_difference": 6.111062766933628e-10,
+      "section_matrix_difference": 2.482011041138321e-09,
+      "state_jacobian_scaled_error": 2.494314818855555e-10,
+      "boundary_jacobian_scaled_error": 1.3367904465960644e-06,
+      "region_violation": 2.000177801164682e-12
+    }
+  ],
+  "metric_note": "State Jacobians are compared relative to each entry with an absolute floor of one because long-flight sensitivities grow. Absolute discrepancies are retained.",
+  "passed": true
+}

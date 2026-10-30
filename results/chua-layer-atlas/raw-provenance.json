@@ -1,0 +1,621 @@
+{
+  "files": [
+    {
+      "source_name": "A01-sheet.json",
+      "source_sha256": "227ca6b183506d9725468a08aaa3712e2771c5dad1929382b9da158f5b9703ca",
+      "published_name": "A01-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A02-sheet.json",
+      "source_sha256": "17af801d6502d48776b1cc93609e22615a1d95a3aaaa8fccbb01b5adf4cf31c3",
+      "published_name": "A02-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A03-daughter.json",
+      "source_sha256": "853f6a72736d33aa494724a21ac9d0753f90c1b27fb5aaa1260242299fd9b9e8",
+      "published_name": "A03-daughter.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A03-sheet.json",
+      "source_sha256": "63a49019f5777b4b901ef88ae2b8cbd80361e6d90f9180eb7913e10ed163ec79",
+      "published_name": "A03-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A04-sheet.json",
+      "source_sha256": "f01a312c71eb5cf54e01a3f10b84b352a7d40c332fa14257926c0187d92e5b80",
+      "published_name": "A04-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A05-daughter.json",
+      "source_sha256": "ae87f195b01ade229297ad9e6171365d8cad71f531b51d7d402b9cd548388f44",
+      "published_name": "A05-daughter.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A05-sheet.json",
+      "source_sha256": "aee0a20c590d62ed80bcf59223bcfe9c35b12b26267e38b5722b9f138b022555",
+      "published_name": "A05-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "A06-sheet.json",
+      "source_sha256": "04093a436cad1bd44759c93126019b558a69da8489c2bdc317d73308965b9099",
+      "published_name": "A06-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "adding-registry.json",
+      "source_sha256": "282e26c61ce353a2c7962a206b0aedc5e29b0c9160848f90368065040b3c7097",
+      "published_name": "adding-registry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "additional-templates.json",
+      "source_sha256": "0c7a3b5c3a00cd7ad709d03e9030acd1bab77a720536d926d8bcfde557687c21",
+      "published_name": "additional-templates.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "atlas-audit.json",
+      "source_sha256": "762ea2a6ccc2f7be3f13332e906d452316d2da378700bf8a62fef13fb6146656",
+      "published_name": "atlas-audit.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "basin-capture-full.json",
+      "source_sha256": "2d86699045d25252baa9f13c88aefdfefae11b000d43051b7acd185aa955017a",
+      "published_name": "basin-capture-full.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "basin-capture.json",
+      "source_sha256": "abb13592af93996b8c6d7cab10d22f3ce645f13ab972597cd1d51b2dba4dacd8",
+      "published_name": "basin-capture.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "basin-perturbations.json",
+      "source_sha256": "fa8780c159b4c0863d0e2e46670cbb1c659cb5a6ed5af0962dbed323de0c4a60",
+      "published_name": "basin-perturbations.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "basin-transients.json",
+      "source_sha256": "9f7db3c854b40eda13b7eba5c7c25adeb4748c4b3f88d120299c824ff714a671",
+      "published_name": "basin-transients.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E01-sheet.json",
+      "source_sha256": "03b7c05b77010bfeeb1b39c9f645aea41da6c5c184bb2a1bd115faab3cd857c8",
+      "published_name": "E01-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E02-sheet.json",
+      "source_sha256": "ec4932f2aed1fb2a298e9d9b23379d1c58df8007f882a66a2b41c77f02a558d8",
+      "published_name": "E02-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E03-sheet.json",
+      "source_sha256": "a1c3e996438d972092ca324b5f0e862ae1e6ea4891ae8514ed3435099305b90a",
+      "published_name": "E03-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E04-sheet.json",
+      "source_sha256": "9eb943cc4db7117ba6369e2d246dda5d0b01ce2a8ba40deaf2f2339390c4ad3d",
+      "published_name": "E04-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E05-sheet.json",
+      "source_sha256": "79c789cf0cae16b80d7880d311d49ae49645fc0689f212ed2041ff5dace4f77a",
+      "published_name": "E05-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E06-sheet.json",
+      "source_sha256": "a931610f5f4d3bc4d102354dd4060ac8c74fbd055d512479af54d464e475f25f",
+      "published_name": "E06-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E07-sheet.json",
+      "source_sha256": "7ae0fdd6fd2bb238b41ffbc7b1717b223abf62f1099da866a151285d49367a7a",
+      "published_name": "E07-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E08-sheet.json",
+      "source_sha256": "2aadd684799fb076b86fbf530f77c1c802ee61c5e9482a3d9c6194e101546120",
+      "published_name": "E08-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E09-initial-continuation.json",
+      "source_sha256": "46e4caa0fc0f3fb6f7c9dbc0d8ad134d7579f474607e512aa031691e80e3a634",
+      "published_name": "E09-initial-continuation.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E09-sheet.json",
+      "source_sha256": "5bd1080d6675b69521f801c65012861ef3b0247c5eab98f84c29797009af14c1",
+      "published_name": "E09-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E10-sheet.json",
+      "source_sha256": "518b38e0a9df9ce1ac1c4e58e1c3f0f88502c093fb2a7d1486f878fbac93e723",
+      "published_name": "E10-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E11-sheet.json",
+      "source_sha256": "916934bee8e054121bbd1cf338d84b18c9f057bb49cd1369da8e1195a549f571",
+      "published_name": "E11-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E12-sheet.json",
+      "source_sha256": "a62c6d716a63c87473ee2e33f9afb643eba3109ce144db468922a293836a71e8",
+      "published_name": "E12-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E13-initial-continuation.json",
+      "source_sha256": "f92a3adeb59f72cf53abc77c72347fa70348a4d1009bdac3286d7eb2f8088606",
+      "published_name": "E13-initial-continuation.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "E13-sheet.json",
+      "source_sha256": "b043fd6212e05b588a8f17a2b092ddd1afaf9c9f792de638fc79bb4b743e83e9",
+      "published_name": "E13-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "event-map-checks.json",
+      "source_sha256": "84c0fd571f39c43146914a4a013568f928ec44361105b518d2ccd8a135f83484",
+      "published_name": "event-map-checks.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "extended-adding.json",
+      "source_sha256": "997afe7bf0fa533523619ac0aeddd173d8d0a59a0d22e61500e132e1d990c179",
+      "published_name": "extended-adding.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "family-behavior.json",
+      "source_sha256": "aa937410aab3bfeb42f3f506d558cc28576db8a93839ae2e8c48aff7cb4c4170",
+      "published_name": "family-behavior.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "family-registry.json",
+      "source_sha256": "d703575f34079b93cbb744cf7bb1d532c3b05c339980dac951423d064adc05b0",
+      "published_name": "family-registry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "fast-flight-checks.json",
+      "source_sha256": "daf6c00dee5fe5555cef935ea202e8bd06f8f021deca2332c0b5156653416bb3",
+      "published_name": "fast-flight-checks.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "fast-flight-initial-checks.json",
+      "source_sha256": "1894e564e0b2029869479a65607cdace1b5edd228ff8617b0dafc658825e0e5f",
+      "published_name": "fast-flight-initial-checks.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "four-cycles.json",
+      "source_sha256": "f7b806942b9e593199781ca8799396637232df7adeb5661513444539f81b917f",
+      "published_name": "four-cycles.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "interpolation-checks.json",
+      "source_sha256": "c9d2c36d732ca23f026b41f0790756ed2eaf089c5ad31c01221a0eaba5a87371",
+      "published_name": "interpolation-checks.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "local-bridge-checks.json",
+      "source_sha256": "c0ddfeec266927de3ea1c5ba8fe7bd288c796a0b3d3844af7301dc53007250bd",
+      "published_name": "local-bridge-checks.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "off21-local-ancestry.json",
+      "source_sha256": "b0dc6c0a929b0cb835ffcf79ec1fcaf4749984354a1f12c5892c64949db3c229",
+      "published_name": "off21-local-ancestry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "off21-path-symmetry-check.json",
+      "source_sha256": "bd99ccb7b074abb5e563bc821a40f9247e8e36affa821afc16049d3d4a5c4365",
+      "published_name": "off21-path-symmetry-check.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "off21-transport.json",
+      "source_sha256": "59b082ddaef0df067967e8c74af2065b922cabe07b67ca6b042823cd64633c86",
+      "published_name": "off21-transport.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "offcenter-ancestry.json",
+      "source_sha256": "177dee6a284bc5ea06c10750038ca3136b7ec665db22e6f54a82c00d5cace2d3",
+      "published_name": "offcenter-ancestry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "offcenter-candidates.json",
+      "source_sha256": "0938e209442022e3700e65db373568840d1e87035e263b68914460469799c301",
+      "published_name": "offcenter-candidates.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "offcenter-cycles.json",
+      "source_sha256": "868830073bdfb7f402159a67d926fa72758d0410c6c0dcc11a62d236a54f9c59",
+      "published_name": "offcenter-cycles.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "offcenter-summary.json",
+      "source_sha256": "c9de7b66cfa54e66950332827b2f5a5dbfcd385d37360393610de27a207f91ea",
+      "published_name": "offcenter-summary.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "overlap-basins-tight.json",
+      "source_sha256": "1c616aa9fddae561b6026f18920dda9c7dca463b3f5ff6a5f42d86726ef34ede",
+      "published_name": "overlap-basins-tight.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "overlap-basins.json",
+      "source_sha256": "0a9c0e26432dc705a9eb0187f24949b68fcf5e28b08a78daa6495eb119bf4b3f",
+      "published_name": "overlap-basins.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "P55-sheet.json",
+      "source_sha256": "2d28516e673a2af8c647716b8736c78147f94f20e76f5e1602785a35a3a6ea4e",
+      "published_name": "P55-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "P65-boundary-attempt.json",
+      "source_sha256": "a26c5b92d56ffe6d007dc42389caccc305620eb4d697781bf7430eb12bc83f50",
+      "published_name": "P65-boundary-attempt.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "P65-sheet.json",
+      "source_sha256": "acc0810c956e12c5570f7b97eb52c2d8a1275751473f12b9fb513acda0721547",
+      "published_name": "P65-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "parent-templates.json",
+      "source_sha256": "423ef3cc69ea47471c85cf6058b3385f0d7cb180ca9be581a95f2c06a599f90b",
+      "published_name": "parent-templates.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "plot-summary.json",
+      "source_sha256": "8341703f766dcfb9052e006eb9af72e926962c47bf614e13d6b28c40e0e3db1a",
+      "published_name": "plot-summary.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S01-sheet.json",
+      "source_sha256": "c04aec36d8dd97962ed2249ca6d984c54901c56d5d9615eb2934a405447bef1b",
+      "published_name": "S01-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S02-sheet.json",
+      "source_sha256": "de71ecefee5f05c385facea56dbf34ed6441e2785018a93ed1ef422eb350fffd",
+      "published_name": "S02-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S03-sheet.json",
+      "source_sha256": "19004774a138f9cdfb3b709dec51e330e9e70979fd44d847bea9a2ddea743970",
+      "published_name": "S03-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S04-sheet.json",
+      "source_sha256": "59de510415baada93b37242e8171e7f3d659c6dcdab7de8089654134cd9c53ad",
+      "published_name": "S04-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S05-sheet.json",
+      "source_sha256": "f65a465f08815abfecbf13f8a1daea59e949dbd9d5e66b521ac2d0c1361ccd18",
+      "published_name": "S05-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S06-sheet.json",
+      "source_sha256": "02c68c5a6c965bf582d83440d8c87b373794d4ac5bd47b6ce15b071508474ea5",
+      "published_name": "S06-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S07-sheet.json",
+      "source_sha256": "c4e1353f13e630c0d1b30feaf6da514573fe18bf14a0a1e8213bcfbc6d627ba2",
+      "published_name": "S07-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S08-sheet.json",
+      "source_sha256": "490a235f068ce668f72e553b27685dd0d6a0875cba2ba503880252ec8b899f0f",
+      "published_name": "S08-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S09-sheet.json",
+      "source_sha256": "85b836e18f143fcc3fdccd1863eabe803449e1fc6955b131f0c0f0222bfbe958",
+      "published_name": "S09-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S10-sheet.json",
+      "source_sha256": "95f17664ecb801d10715e058ae86ca307046ee3ebd776a11483a90573986dd90",
+      "published_name": "S10-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "S11-sheet.json",
+      "source_sha256": "04d842f5bc5ba81ac5c34b9722902e9199b639a12a3a8c1463842e6cfb5cf166",
+      "published_name": "S11-sheet.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "sheet-ancestry.json",
+      "source_sha256": "34b887a187c80449f2c1474b05527ccb071cd47b6d04f5acd9300acb09c8139c",
+      "published_name": "sheet-ancestry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "symmetric-registry.json",
+      "source_sha256": "9837345b852027f598b424ec0ea82718e35494f7a3aad80d1aa8160b16a8d3ab",
+      "published_name": "symmetric-registry.json",
+      "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
+    },
+    {
+      "source_name": "basin-capture-full.npz",
+      "source_sha256": "2bf177b47963683788f3216bab5e17ea40d4d1de7d8ecbd4fc3dd2a95a14cc52",
+      "published_name": "basin-capture-full.npz",
+      "retained_arrays": [
+        "initial",
+        "labels",
+        "times"
+      ],
+      "source_bytes": 435596,
+      "published_bytes": 435596
+    },
+    {
+      "source_name": "basin-capture.npz",
+      "source_sha256": "1a6e46173db821480709b1e4d6ff3e557dd8322cfb1e0f01b2ba5c6e34cb2b29",
+      "published_name": "basin-capture.npz",
+      "retained_arrays": [
+        "initial",
+        "labels",
+        "times"
+      ],
+      "source_bytes": 29844,
+      "published_bytes": 29844
+    },
+    {
+      "source_name": "basin-perturbations.npz",
+      "source_sha256": "b2f7ac831dd9b223a6d6ddc3491dfdccd16bb8301d99d7338851bca8fa617c05",
+      "published_name": "basin-perturbations.npz",
+      "retained_arrays": [
+        "indices",
+        "epsilon",
+        "labels",
+        "times"
+      ],
+      "source_bytes": 68374,
+      "published_bytes": 68374
+    },
+    {
+      "source_name": "basin-transients.npz",
+      "source_sha256": "8d41b266968681bd1191445676987aa60ef6c41a1221acc855dd630092d05242",
+      "published_name": "basin-transients.npz",
+      "retained_arrays": [
+        "indices",
+        "initial",
+        "lle",
+        "lle_windows",
+        "classes",
+        "status",
+        "visits_both_outer_regions",
+        "final_states",
+        "stats"
+      ],
+      "source_bytes": 122631,
+      "published_bytes": 122631
+    },
+    {
+      "source_name": "display-samples.npz",
+      "source_sha256": "c4089bf43de9db730e4b9d1b72c134328e442d866ee0f401d449508b9f42ba3b",
+      "published_name": "display-samples.npz",
+      "retained_arrays": [
+        "family",
+        "alpha",
+        "m0",
+        "beta",
+        "period",
+        "symmetric_core_width",
+        "representative_count",
+        "all_families_sampled"
+      ],
+      "source_bytes": 44978,
+      "published_bytes": 44978
+    },
+    {
+      "source_name": "family-orbits.npz",
+      "source_sha256": "04b819a4c68c5290a5c69dd26e0f73aa58b9670a024ad0bb9c31e5af7c7fa301",
+      "published_name": "family-orbits.npz",
+      "retained_arrays": [
+        "A01_t",
+        "A01_xyz",
+        "A02_t",
+        "A02_xyz",
+        "A03_t",
+        "A03_xyz",
+        "A04_t",
+        "A04_xyz",
+        "A05_t",
+        "A05_xyz",
+        "A06_t",
+        "A06_xyz",
+        "E01_t",
+        "E01_xyz",
+        "E02_t",
+        "E02_xyz",
+        "E03_t",
+        "E03_xyz",
+        "E04_t",
+        "E04_xyz",
+        "E05_t",
+        "E05_xyz",
+        "E06_t",
+        "E06_xyz",
+        "E07_t",
+        "E07_xyz",
+        "E08_t",
+        "E08_xyz",
+        "E09_t",
+        "E09_xyz",
+        "E10_t",
+        "E10_xyz",
+        "E11_t",
+        "E11_xyz",
+        "E12_t",
+        "E12_xyz",
+        "E13_t",
+        "E13_xyz",
+        "P55_t",
+        "P55_xyz",
+        "P65_t",
+        "P65_xyz",
+        "S01_t",
+        "S01_xyz",
+        "S02_t",
+        "S02_xyz",
+        "S03_t",
+        "S03_xyz",
+        "S04_t",
+        "S04_xyz",
+        "S05_t",
+        "S05_xyz",
+        "S06_t",
+        "S06_xyz",
+        "S07_t",
+        "S07_xyz",
+        "S08_t",
+        "S08_xyz",
+        "S09_t",
+        "S09_xyz",
+        "S10_t",
+        "S10_xyz",
+        "S11_t",
+        "S11_xyz"
+      ],
+      "source_bytes": 3659498,
+      "published_bytes": 3659498
+    },
+    {
+      "source_name": "four-cycles.npz",
+      "source_sha256": "9e59a2d72a08f59aace222580249834192b2d243b292ce15b1e0405c791c0ff2",
+      "published_name": "four-cycles.npz",
+      "retained_arrays": [
+        "F1a_t",
+        "F1a_xyz",
+        "F1b_t",
+        "F1b_xyz",
+        "F2a_t",
+        "F2a_xyz",
+        "F2b_t",
+        "F2b_xyz"
+      ],
+      "source_bytes": 457861,
+      "published_bytes": 457861
+    },
+    {
+      "source_name": "offcenter-raw.npz",
+      "source_sha256": "b9e5b3fe16196979de201773ab2c8eced373040bf182195968523fbe4397c941",
+      "published_name": "offcenter-raw.npz",
+      "retained_arrays": [
+        "parameters",
+        "beta",
+        "m0_offsets",
+        "period",
+        "peak_counts",
+        "peak_status",
+        "lle",
+        "lle_windows",
+        "classes",
+        "status",
+        "visits_both_outer_regions",
+        "final_states",
+        "stats"
+      ],
+      "source_bytes": 160149128,
+      "published_bytes": 13022981
+    },
+    {
+      "source_name": "overlap-basins-tight.npz",
+      "source_sha256": "0a47f1b68e578c763f2441db7dee401dd354daa5057190e330f5cfb6554097bd",
+      "published_name": "overlap-basins-tight.npz",
+      "retained_arrays": [
+        "initial",
+        "labels",
+        "counts",
+        "status"
+      ],
+      "source_bytes": 1218344,
+      "published_bytes": 41976
+    },
+    {
+      "source_name": "overlap-basins.npz",
+      "source_sha256": "34467ece34058de43f05342c8c408db6b46d99837ca620bc591b4f0875a5f175",
+      "published_name": "overlap-basins.npz",
+      "retained_arrays": [
+        "y",
+        "z",
+        "initial",
+        "labels",
+        "counts",
+        "status"
+      ],
+      "source_bytes": 5057037,
+      "published_bytes": 165553
+    }
+  ],
+  "python": "3.14.3",
+  "libraries": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "plotly": "7.1.0",
+    "pyopencl": "2026.1.4"
+  },
+  "scope": "Compact evidence for a finite numerical catalog. Raw GPU scans can be regenerated with the research scripts."
+}
