@@ -6,6 +6,8 @@ The HHS and microfluidic follow-up completed at 02:56 UTC on 30 October, using [
 
 The subsequent microfluidic numerical/source block was checked on 30 October at [`0e68396`](https://github.com/Griboedow/chua-gpu-atlas/commit/0e683964fd0a97caf45d67df35dc5b452db4c14e).
 
+The gel and mineral-protocell follow-up was checked later that morning at [`0069a0a`](https://github.com/Griboedow/chua-gpu-atlas/commit/0069a0ae873058883b88e5d07774bf7377ce73bc).
+
 **Twenty-three distinct expressions in ten reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
@@ -87,9 +89,19 @@ The eighth revision-specific pass inspected seven actual public pages at `0e6839
 
 Screenshots were inspected for the complete four-panel numerical-control figure, the weighted kinetic expression and its aligned derivative, the conditional energy inequalities and the full three-by-three Gram matrix. These are presentation checks, not a separate validation of the scientific claims.
 
-The aggregate is now **49 distinct pages**, **730 math elements in their latest checked versions**, **72 successful page checks**, and **923 successful formula observations**. This pass adds three new pages and repeats four; the two earlier failed HHS-block attempts remain separate. Eighteen pages retain their `04e00a3` check, seven `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, and seven `0e68396`. No unpublished follow-up or later edit is included. Raw-text scans now cover eleven distinct pages at their recorded revisions, without retroactively extending that check to the other 38.
+After that pass the aggregate was **49 distinct pages**, **730 math elements in their latest checked versions**, **72 successful page checks**, and **923 successful formula observations**. It added three new pages and repeated four; the two earlier failed HHS-block attempts remained separate. Eighteen pages retained their `04e00a3` check, seven `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, and seven `0e68396`. No unpublished follow-up or later edit was included. Raw-text scans then covered eleven distinct pages at their recorded revisions, without retroactively extending that check to the other 38.
 
 All **302 relative link occurrences** across those 49 documents resolve against the published tree at `0e68396`, with code/math excluded from link matching. External destinations, fragment anchors and other viewports remain outside the check.
+
+### Gel endpoint and mineral-protocell follow-up
+
+The ninth revision-specific pass checked six actual public pages at `0069a0a`: the main README, results README, candidate queue, updated core–shell gel research report, new stiff-endpoint follow-up and new mineral-protocell screening report. All **62 math elements** rendered correctly. There were no unresolved formulas, red tokens, container overflow, failed visible figures or raw dollar/TeX remnants outside math and code. No formatting repair was needed.
+
+The complete two-panel gel figure and the closed-orbit diagnostic table were visually inspected, including the small multipliers and closure residuals. The mineral report's planar equations, dimensional flow definitions and strictly positive membrane-growth identity were also checked in screenshots. Supporting screenshot visits are not additional successful page checks.
+
+The record now covers **51 distinct pages**, **787 math elements in their latest checked versions**, **78 successful page checks**, and **985 successful formula observations**. This pass adds two new pages and repeats four. Eighteen pages retain their `04e00a3` check, six `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, four `0e68396`, and six `0069a0a`. The earlier two failed attempts remain separately recorded and excluded from these totals. Raw-text scans cover fourteen distinct pages at their recorded revisions; the other 37 have not received that additional scan retroactively.
+
+All **313 relative link occurrences** across the 51 documents resolve against the published Git tree at `0069a0a`. The same exclusions for code/math, external destinations, fragments, other viewports and later edits apply.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
