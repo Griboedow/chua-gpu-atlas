@@ -96,6 +96,8 @@ The invariant density disks remain respected: maximum sampled $c_j^2+s_j^2=1.996
 
 ## Reproduction and remaining questions
 
+A [separate periodic-cluster continuation](motor-cluster-transverse.md) locates a sixfold transverse multiplier crossing at approximately 24% above onset. The continued four-plus-four cycle has six unstable transverse directions at the present candidate parameters. This is a specific local mechanism clue, not a proof of the global route to hyperchaos or identification of its attracting set.
+
 The driver is [motor_rows_activity_path.py](../research/motor_rows_activity_path.py). It uses the already validated shared N-row implementation without modifying that implementation. To preserve published outputs, reproduce in a disposable checkout or choose a new output directory:
 
 ```bash

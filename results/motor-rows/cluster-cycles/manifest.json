@@ -1,0 +1,161 @@
+{
+  "purpose": "Exact N8 equal-cluster periodic continuation and transverse stability; no global chaos-route proof",
+  "source_hash_normalization": "UTF-8 LF for executed Python versions; data file hashes use raw bytes",
+  "driver": "research/analyze_motor_cluster_cycle.py",
+  "versions": [
+    {
+      "artifact": "analysis.json",
+      "executed_source": "source-versions/initial-driver.py"
+    },
+    {
+      "artifact": "refinement.json",
+      "executed_source": "source-versions/refinement-driver.py"
+    },
+    {
+      "artifact": "crossing-check.json",
+      "executed_source": "source-versions/crossing-driver.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "analysis.json",
+      "bytes": 115046,
+      "sha256": "07b9de3bc42513ea7b9ede056bc29f46b391f613eafa304bbba1b241326fd2ab"
+    },
+    {
+      "path": "continued-branch.csv",
+      "bytes": 3450,
+      "sha256": "5ac001bd9f3157626cf545b45acf6486e56e595c30a9b1d3748ff35b2f2763d6"
+    },
+    {
+      "path": "crossing-check.json",
+      "bytes": 16601,
+      "sha256": "9ff8ca88cbda30fc831b6ed08fb5d9f4a32d07118498f822be759f115f153eac"
+    },
+    {
+      "path": "cycle-00.npz",
+      "bytes": 30349,
+      "sha256": "5e5e62dc47216f84b2eaca303240a277be7e027941f2186bd54cebe183809192"
+    },
+    {
+      "path": "cycle-01.npz",
+      "bytes": 29228,
+      "sha256": "f26f8f8b99619f68c94d26daae55aacee8cd8ad66d431f9876912adcba9208f0"
+    },
+    {
+      "path": "cycle-02.npz",
+      "bytes": 33055,
+      "sha256": "1744e7fdabc4d4b6f4e220a9835e6c8f345a90bcbbb5353122af302b94e50af5"
+    },
+    {
+      "path": "cycle-03.npz",
+      "bytes": 32371,
+      "sha256": "4c7d4a6ecc786a8ec0a3a05bf2a50c22adb54eaaf8f70527965c6e3ec088a205"
+    },
+    {
+      "path": "cycle-04.npz",
+      "bytes": 30913,
+      "sha256": "ef4a3afa232fe9d7189c7884e939e4546adb81242f88a557a7fa38151f12fffb"
+    },
+    {
+      "path": "cycle-05.npz",
+      "bytes": 31091,
+      "sha256": "08daab18d0c35daf9c31f11ea8d170370fcf2051cd7f9d2bb84a275cf08407dc"
+    },
+    {
+      "path": "cycle-06.npz",
+      "bytes": 31006,
+      "sha256": "dc08b106985f35f65e344ac88c4632259ea772969a89ae5b5fc9c262e190bccd"
+    },
+    {
+      "path": "cycle-07.npz",
+      "bytes": 30900,
+      "sha256": "88fbce46be90b3c6f29bc05f16b3924f21951a5c3c5761f265e38e5724cefdcc"
+    },
+    {
+      "path": "cycle-08.npz",
+      "bytes": 31103,
+      "sha256": "45432fe120fea9749153abc25705a1e8d279d8127e5c2172dc06719959076137"
+    },
+    {
+      "path": "cycle-09.npz",
+      "bytes": 31033,
+      "sha256": "8f7ef4dbd9b01b2442acd700e5d065a720551e51371fb04623a2a3d8a9bc1b75"
+    },
+    {
+      "path": "cycle-10.npz",
+      "bytes": 30611,
+      "sha256": "682872e48b8d022e671820067e886edb96c8942a8e49e8f808dbf74cac2c135a"
+    },
+    {
+      "path": "cycle-11.npz",
+      "bytes": 30719,
+      "sha256": "b0f0a88fa93cdac9f44ab5c4f9933e627999ff9754f72245bf80bf274c45b7b6"
+    },
+    {
+      "path": "cycle-12.npz",
+      "bytes": 31171,
+      "sha256": "cf4a420ad1c5593c9bb3a99bc802f628ee05f14c8c5e8f3215176de445ebd738"
+    },
+    {
+      "path": "cycle-13.npz",
+      "bytes": 31470,
+      "sha256": "1934a88b0118013f0c9a0d400e66c176a7d64e7bac84f2c7e865c0fb33f232ed"
+    },
+    {
+      "path": "cycle-14.npz",
+      "bytes": 31145,
+      "sha256": "a779685644a0f43b3eed24355a2de3484173aa8a293232cd8e4d108f8a5872a7"
+    },
+    {
+      "path": "cycle-15.npz",
+      "bytes": 30858,
+      "sha256": "f0c19a65327468369a089284cf27fc822481b789c7b2883d7dfc5dda429d9bc5"
+    },
+    {
+      "path": "cycle-16.npz",
+      "bytes": 31112,
+      "sha256": "582b95393b8f3fe83cd98a89d5ca4fef2a7d2efdad3c838d3ec1456116224ae7"
+    },
+    {
+      "path": "cycle-17.npz",
+      "bytes": 31251,
+      "sha256": "bea0047221ca5038b22ec4021d3c65eba24636c207221dadf185bd4fe4413012"
+    },
+    {
+      "path": "full-monodromy-00.npz",
+      "bytes": 3148,
+      "sha256": "8d8b72cc9568dc345c5fd68495eb72dfc42b186e0a8e8f31d531253d6a05705b"
+    },
+    {
+      "path": "full-monodromy-17.npz",
+      "bytes": 3164,
+      "sha256": "2a71c9534c57aeef5fa8af7ce91efb812aaf8108d39dd95b147381bff4f7bc09"
+    },
+    {
+      "path": "refinement.json",
+      "bytes": 27773,
+      "sha256": "307566646f3cc4debfaff08006604048169de5816217b5d3463db6a7a979060e"
+    },
+    {
+      "path": "source-versions/crossing-driver.py",
+      "bytes": 24077,
+      "sha256": "709c8ffcef0f393d84f00b4ff7d55b4658aab54b15b0713ace63961161686acf"
+    },
+    {
+      "path": "source-versions/initial-driver.py",
+      "bytes": 13114,
+      "sha256": "b3d1e56c00f8f7c5527dd18ae87e2dca82ff5a1256ed26e56e1705299a216267"
+    },
+    {
+      "path": "source-versions/refinement-driver.py",
+      "bytes": 20170,
+      "sha256": "2fe790e09efb6154520bdece4c8115a0cb9b9f70e1ecf7393fdb4c51e8421403"
+    },
+    {
+      "path": "transverse-stability.png",
+      "bytes": 172281,
+      "sha256": "cad405b9d931eebdc8b76609addd8436e244a11c8f22d3ee789051a08e7bf629"
+    }
+  ]
+}

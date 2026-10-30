@@ -1,0 +1,959 @@
+{
+  "started_utc": "2026-10-30T07:14:49.485584+00:00",
+  "source_analysis_sha256": "07b9de3bc42513ea7b9ede056bc29f46b391f613eafa304bbba1b241326fd2ab",
+  "source_driver": "source-versions/initial-driver.py",
+  "independent_variational_checks": [
+    {
+      "index": 0,
+      "parameters": [
+        3.5803912736843437,
+        4.755146047751339,
+        1.0
+      ],
+      "period": 3.2858933512862905,
+      "Radau_base_closure_max_abs": 1.2043317731968983e-14,
+      "base_monodromy_difference_max_abs": 5.0237591864288333e-14,
+      "transverse_A_monodromy_difference_max_abs": 1.176836406102666e-13,
+      "transverse_B_monodromy_difference_max_abs": 1.7619239400801234e-13,
+      "Radau_transverse_A": {
+        "multipliers": [
+          {
+            "real": 0.7462434691536085,
+            "imag": 0.0,
+            "modulus": 0.7462434691536085
+          },
+          {
+            "real": 0.11731729920919248,
+            "imag": 0.17254529171632887,
+            "modulus": 0.20865096785592016
+          },
+          {
+            "real": 0.11731729920919248,
+            "imag": -0.17254529171632887,
+            "modulus": 0.20865096785592016
+          }
+        ],
+        "exponents": [
+          -0.08907877845517795,
+          -0.4769151843239907,
+          -0.4769151843239907
+        ]
+      },
+      "Radau_transverse_B": {
+        "multipliers": [
+          {
+            "real": 0.746243469153651,
+            "imag": 0.0,
+            "modulus": 0.746243469153651
+          },
+          {
+            "real": 0.11731729920926232,
+            "imag": 0.17254529171625257,
+            "modulus": 0.20865096785589632
+          },
+          {
+            "real": 0.11731729920926232,
+            "imag": -0.17254529171625257,
+            "modulus": 0.20865096785589632
+          }
+        ],
+        "exponents": [
+          -0.08907877845516061,
+          -0.4769151843240255,
+          -0.4769151843240255
+        ]
+      },
+      "half_period_cluster_exchange_max_abs": 4.847233725513433e-13
+    },
+    {
+      "index": 17,
+      "parameters": [
+        2.934090909090909,
+        4.755146047751339,
+        1.0
+      ],
+      "period": 3.474056560154015,
+      "Radau_base_closure_max_abs": 6.229045057537519e-14,
+      "base_monodromy_difference_max_abs": 4.0234482412415673e-13,
+      "transverse_A_monodromy_difference_max_abs": 9.663381206337363e-13,
+      "transverse_B_monodromy_difference_max_abs": 2.716937785862683e-12,
+      "Radau_transverse_A": {
+        "multipliers": [
+          {
+            "real": -3.7079876450008444,
+            "imag": 0.0,
+            "modulus": 3.7079876450008444
+          },
+          {
+            "real": 0.42161472641620973,
+            "imag": 0.0,
+            "modulus": 0.42161472641620973
+          },
+          {
+            "real": -0.010978185693290439,
+            "imag": 0.0,
+            "modulus": 0.010978185693290439
+          }
+        ],
+        "exponents": [
+          0.37722164075972614,
+          -0.2486037108437315,
+          -1.2987252843572517
+        ]
+      },
+      "Radau_transverse_B": {
+        "multipliers": [
+          {
+            "real": -3.7079876450011673,
+            "imag": 0.0,
+            "modulus": 3.7079876450011673
+          },
+          {
+            "real": 0.4216147264162073,
+            "imag": 0.0,
+            "modulus": 0.4216147264162073
+          },
+          {
+            "real": -0.010978185693263231,
+            "imag": 0.0,
+            "modulus": 0.010978185693263231
+          }
+        ],
+        "exponents": [
+          0.37722164075975123,
+          -0.24860371084373317,
+          -1.298725284357965
+        ]
+      },
+      "half_period_cluster_exchange_max_abs": 7.847056338050606e-13
+    }
+  ],
+  "root_evaluations": [
+    {
+      "rho": 3.3522852626513666,
+      "period": 3.347004385602423,
+      "multiplier": -1.1203871839119952,
+      "root_function": -0.12038718391199521,
+      "initial_state": [
+        0.0,
+        -0.3717869403363448,
+        0.14417862698083506,
+        -0.37178694033634474,
+        0.8558213730191647
+      ],
+      "closure_max_abs": 2.4424906541753444e-15,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 2.4424906541753444e-15,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.390302931156863,
+      "period": 3.336454103380184,
+      "multiplier": -0.86413363450145,
+      "root_function": 0.13586636549855002,
+      "initial_state": [
+        0.0,
+        -0.3572563989551882,
+        0.13105157926445266,
+        -0.35725639895518824,
+        0.8689484207355475
+      ],
+      "closure_max_abs": 1.376156133492401e-14,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.336454103380184,
+          "residual_max_abs": 1.376156133492401e-14,
+          "state": [
+            0.0,
+            -0.3572563989551882,
+            0.13105157926445266,
+            -0.35725639895518824,
+            0.8689484207355475
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.370145854478502,
+      "period": 3.342028955422831,
+      "multiplier": -1.0004884625086263,
+      "root_function": -0.0004884625086263306,
+      "initial_state": [
+        0.0,
+        -0.3651163505429621,
+        0.13802464200976347,
+        -0.36511635054296204,
+        0.8619753579902364
+      ],
+      "closure_max_abs": 1.1102230246251565e-16,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008069415208603232,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.342014484405087,
+          "residual_max_abs": 3.241523087554876e-05,
+          "state": [
+            0.0,
+            -0.36516142653478123,
+            0.13806158625168694,
+            -0.3651614265347811,
+            0.8619384137483128
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.342028954047171,
+          "residual_max_abs": 2.181367584827565e-09,
+          "state": [
+            0.0,
+            -0.3651163523236176,
+            0.13802464328686012,
+            -0.3651163523236176,
+            0.86197535671314
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.342028955422831,
+          "residual_max_abs": 1.1102230246251565e-16,
+          "state": [
+            0.0,
+            -0.3651163505429621,
+            0.13802464200976347,
+            -0.36511635054296204,
+            0.8619753579902364
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.370218357142996,
+      "period": 3.3420088269994457,
+      "multiplier": -1.0000002857362253,
+      "root_function": -2.8573622534722176e-07,
+      "initial_state": [
+        0.0,
+        -0.3650887219122845,
+        0.13799961342724526,
+        -0.3650887219122846,
+        0.8620003865727547
+      ],
+      "closure_max_abs": 3.95516952522712e-16,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008101776335582546,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.341994241019927,
+          "residual_max_abs": 3.2688094406319035e-05,
+          "state": [
+            0.0,
+            -0.3651341778946732,
+            0.13803686435193024,
+            -0.36513417789467323,
+            0.8619631356480698
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.342008825600509,
+          "residual_max_abs": 2.2179015100182164e-09,
+          "state": [
+            0.0,
+            -0.3650887237236299,
+            0.13799961472619424,
+            -0.36508872372362994,
+            0.8620003852738057
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.3420088269994457,
+          "residual_max_abs": 3.95516952522712e-16,
+          "state": [
+            0.0,
+            -0.3650887219122845,
+            0.13799961342724526,
+            -0.3650887219122846,
+            0.8620003865727547
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.3702183995790422,
+      "period": 3.342008815218376,
+      "multiplier": -1.000000000000784,
+      "root_function": -7.840394999902855e-13,
+      "initial_state": [
+        0.0,
+        -0.365088705739828,
+        0.13799959877782217,
+        -0.36508870573982805,
+        0.8620004012221778
+      ],
+      "closure_max_abs": 2.220446049250313e-16,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008101795275707476,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.341994229171443,
+          "residual_max_abs": 3.268825447039214e-05,
+          "state": [
+            0.0,
+            -0.3651341619451258,
+            0.13803684988239556,
+            -0.36513416194512593,
+            0.8619631501176044
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.342008813819426,
+          "residual_max_abs": 2.217922661501559e-09,
+          "state": [
+            0.0,
+            -0.3650887075511919,
+            0.13799960007678436,
+            -0.36508870755119205,
+            0.8620003999232159
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.342008815218376,
+          "residual_max_abs": 2.220446049250313e-16,
+          "state": [
+            0.0,
+            -0.365088705739828,
+            0.13799959877782217,
+            -0.36508870573982805,
+            0.8620004012221778
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.3702183996824124,
+      "period": 3.342008815189678,
+      "multiplier": -0.9999999993047696,
+      "root_function": 6.952304287821676e-10,
+      "initial_state": [
+        0.0,
+        -0.36508870570043384,
+        0.1379995987421379,
+        -0.3650887057004338,
+        0.8620004012578621
+      ],
+      "closure_max_abs": 1.2437967322753707e-15,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008101795321842898,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.3419942291425815,
+          "residual_max_abs": 3.2688254860635535e-05,
+          "state": [
+            0.0,
+            -0.3651341619062744,
+            0.13803684984714926,
+            -0.3651341619062745,
+            0.8619631501528507
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.3420088137907276,
+          "residual_max_abs": 2.2179238220315645e-09,
+          "state": [
+            0.0,
+            -0.36508870751179767,
+            0.1379996000411001,
+            -0.36508870751179767,
+            0.8620003999589
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.342008815189678,
+          "residual_max_abs": 1.2437967322753707e-15,
+          "state": [
+            0.0,
+            -0.36508870570043384,
+            0.1379995987421379,
+            -0.3650887057004338,
+            0.8620004012578621
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.3703183995790424,
+      "period": 3.3419810538042913,
+      "multiplier": -0.9993266551690949,
+      "root_function": 0.0006733448309050871,
+      "initial_state": [
+        0.0,
+        -0.36505059123614003,
+        0.1379650772372779,
+        -0.36505059123614014,
+        0.8620349227627222
+      ],
+      "closure_max_abs": 7.407269242420966e-16,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008146424355774937,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.3419663084871627,
+          "residual_max_abs": 3.306660258217686e-05,
+          "state": [
+            0.0,
+            -0.3650965743463274,
+            0.138002753499894,
+            -0.36509657434632736,
+            0.8619972465001058
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.3419810523727422,
+          "residual_max_abs": 2.2690761995042275e-09,
+          "state": [
+            0.0,
+            -0.3650505930905047,
+            0.13796507856685247,
+            -0.3650505930905048,
+            0.8620349214331475
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.3419810538042913,
+          "residual_max_abs": 7.407269242420966e-16,
+          "state": [
+            0.0,
+            -0.36505059123614003,
+            0.1379650772372779,
+            -0.36505059123614014,
+            0.8620349227627222
+          ]
+        }
+      ]
+    },
+    {
+      "rho": 3.370118399579042,
+      "period": 3.3420365776849232,
+      "multiplier": -1.0006733189905739,
+      "root_function": -0.000673318990573879,
+      "initial_state": [
+        0.0,
+        -0.36512681161270405,
+        0.13803411959240083,
+        -0.36512681161270405,
+        0.8619658804075992
+      ],
+      "closure_max_abs": 7.112366251504909e-16,
+      "shooting_history": [
+        {
+          "iteration": 0,
+          "period": 3.347004385602423,
+          "residual_max_abs": 0.008057160034524669,
+          "state": [
+            0.0,
+            -0.3717869403363448,
+            0.14417862698083506,
+            -0.37178694033634474,
+            0.8558213730191647
+          ]
+        },
+        {
+          "iteration": 1,
+          "period": 3.3420221500875966,
+          "residual_max_abs": 3.231222201177664e-05,
+          "state": [
+            0.0,
+            -0.3651717441566117,
+            0.1380709480452032,
+            -0.3651717441566117,
+            0.8619290519547969
+          ]
+        },
+        {
+          "iteration": 2,
+          "period": 3.3420365763179993,
+          "residual_max_abs": 2.1676537370618476e-09,
+          "state": [
+            0.0,
+            -0.36512681338184483,
+            0.13803412086129774,
+            -0.36512681338184494,
+            0.8619658791387025
+          ]
+        },
+        {
+          "iteration": 3,
+          "period": 3.3420365776849232,
+          "residual_max_abs": 7.112366251504909e-16,
+          "state": [
+            0.0,
+            -0.36512681161270405,
+            0.13803411959240083,
+            -0.36512681161270405,
+            0.8619658804075992
+          ]
+        }
+      ]
+    }
+  ],
+  "failed_attempts": [],
+  "wall_seconds": 5.346864899998764,
+  "solver_calls": [
+    {
+      "method": "Radau",
+      "duration": 3.2858933512862905,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 14115,
+      "njev": 3,
+      "wall_seconds": 1.2562594000046374
+    },
+    {
+      "method": "Radau",
+      "duration": 3.474056560154015,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 19004,
+      "njev": 3,
+      "wall_seconds": 1.6923810000007506
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03983940000034636
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03993560000526486
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.336454103380184,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03983359999983804
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.336454103380184,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04529710000497289
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.05030490000353893
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342014484405087,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.05434129999775905
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342028954047171,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.05915359999926295
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342028955422831,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04802779999590712
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342028955422831,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04011249999894062
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04215919999842299
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.341994241019927,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04038709999440471
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008825600509,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039291599998250604
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420088269994457,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03952510000090115
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420088269994457,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.0395725999987917
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03952289999870118
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.341994229171443,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03961379999964265
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008813819426,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03937230000155978
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008815218376,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03941669999767328
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008815218376,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039455400001315866
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03980440000304952
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3419942291425815,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039731500000925735
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420088137907276,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039881500000774395
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008815189678,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039666699994995724
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.342008815189678,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03943270000308985
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03970169999956852
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3419663084871627,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039607999999134336
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3419810523727422,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03938200000266079
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3419810538042913,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03940580000198679
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3419810538042913,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039588699997693766
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.347004385602423,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.03933600000164006
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420221500875966,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039726599999994505
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420365763179993,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.04008530000282917
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420365776849232,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.039293399997404777
+    },
+    {
+      "method": "DOP853",
+      "duration": 3.3420365776849232,
+      "dimension": 48,
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 830,
+      "njev": 0,
+      "wall_seconds": 0.0394088000030024
+    }
+  ],
+  "script_sha256": "2fe790e09efb6154520bdece4c8115a0cb9b9f70e1ecf7393fdb4c51e8421403",
+  "crossing": {
+    "rho": 3.3702183995790422,
+    "r": 4.755146047751339,
+    "b": 1.0,
+    "source_activity_delta": 0.24147384540539862,
+    "period": 3.342008815218376,
+    "multiplier": -1.000000000000784,
+    "d_multiplier_d_rho_centered": 6.733319107394831,
+    "difference_epsilon": 0.0001,
+    "multiplicity_full_N8": 6,
+    "base_cycle_stable_in_restriction": true,
+    "classification": "Symmetry-degenerate transverse multiplier -1 crossing; local flip candidate only",
+    "not_established": [
+      "Nonlinear nondegeneracy",
+      "Existence/stability of doubled branches",
+      "Global route to observed hyperchaos",
+      "Identity between periodic Floquet and chaotic Lyapunov directions"
+    ]
+  },
+  "status": "completed_bounded_crossing_and_independent_checks",
+  "finished_utc": "2026-10-30T07:14:54.832432+00:00"
+}
