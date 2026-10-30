@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "source_scout_id": 843,
+      "parameters": [
+        6.789035563049437,
+        9.756655787956213,
+        1.0
+      ],
+      "status": 0,
+      "cpu_state_max_difference": 1.304512053934559e-14,
+      "gpu_state_max_difference": 5.03819208574896e-13,
+      "gpu_tangent_max_difference": 1.8035573035035668e-13,
+      "gpu_lle_difference": 5.662137425588298e-15,
+      "pair_max_distance_sample_difference": 0.005730448145779721,
+      "passed": true
+    },
+    {
+      "source_scout_id": 291,
+      "parameters": [
+        0.1412176304882321,
+        24.056571457783715,
+        1.0
+      ],
+      "status": 0,
+      "cpu_state_max_difference": 2.7651492207070305e-13,
+      "gpu_state_max_difference": 1.4885822338227966e-12,
+      "gpu_tangent_max_difference": 7.325390294354861e-12,
+      "gpu_lle_difference": 1.9165780074104077e-12,
+      "pair_max_distance_sample_difference": 3.444055535384294e-05,
+      "passed": true
+    }
+  ],
+  "note": "Independent solver agreement and direct sampled row-distance checks after adding original-time mode and passive diagnostic accumulators; source field/Jv unchanged."
+}

@@ -1,0 +1,121 @@
+{
+  "N": 3,
+  "dimension": 8,
+  "settings": {
+    "transient_scaled": 100.0,
+    "observation_scaled": 300.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "step_factor": 1.0,
+    "max_steps_per_lane": 8000000,
+    "max_wall_seconds": 200.0,
+    "time_mapping": "s=min(1,rho)*tau; lambda_tau=min(1,rho)*lambda_s",
+    "state_norm": "Euclidean in reduced (c[0:N],s[0:N],X[0:N-1]); last X eliminated exactly",
+    "cap": "h_tau <= step_factor*min(.05,.5/conservative_local_Jacobian_row_bound)",
+    "invariants": "No clipping; check motor disks and analytical displacement bound on every accepted step"
+  },
+  "status_codes": {
+    "0": "completed",
+    "1": "invariant-domain violation",
+    "2": "numerical failure",
+    "3": "step budget incomplete",
+    "4": "wall budget incomplete"
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 200.00129420000303,
+  "caveat": "Exact published model, exploratory parameters. Finite-time positive exponents are candidates only; incomplete lanes are unresolved.",
+  "survey": {
+    "rho_range": [
+      0.03,
+      10.0
+    ],
+    "relative_gain_range": [
+      1.05,
+      30.0
+    ],
+    "rho_points": 16,
+    "relative_gain_points": 20,
+    "relative_gain_definition": "r/(rho+1)",
+    "b": 1.0,
+    "seeds": [
+      20251030,
+      20251031,
+      20251032
+    ],
+    "initial_prescription": "Source equilibrium Fourier densities, seeded absolute positions uniform[-.01,.01]nm, fixed endpoints; convert to constrained relative X",
+    "scope": "Broader dimensionless family of the exact source equations. Source activity path does not independently vary rho and r.",
+    "geometry": "Dimension 3N-1; any three-coordinate plot is a projection. Equal-size two-cluster states reduce to the previously known N=2 motor core."
+  },
+  "lanes": 960,
+  "completed": 954,
+  "preliminary_count": 40,
+  "preliminary_ids": [
+    291,
+    292,
+    293,
+    360,
+    363,
+    364,
+    365,
+    423,
+    424,
+    425,
+    480,
+    481,
+    483,
+    485,
+    540,
+    541,
+    542,
+    558,
+    560,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    660,
+    663,
+    693,
+    695,
+    723,
+    724,
+    725,
+    750,
+    752,
+    783,
+    784,
+    785,
+    843,
+    844,
+    845
+  ],
+  "preliminary_rule": "All four original-tau FTLE windows >.001 and mean >.005; screening rule, not a theorem",
+  "largest_completed_lle_ids": [
+    785,
+    783,
+    784,
+    844,
+    725,
+    724,
+    843,
+    292,
+    723,
+    365
+  ],
+  "weak_positive_count": 496,
+  "threshold_scope": "The screening cutoff is arbitrary; all raw exponents are retained and subthreshold lanes do not prove absence of chaos.",
+  "status_counts": {
+    "0": 954,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 6
+  },
+  "source_canonical_lf_sha256": {
+    "research/motor_rows.py": "dd3b5c3caf566125ecee572b021079977856c1b9b0cf327988ba1d825d4aff3f",
+    "research/motor_rows_gpu.py": "d7e0bab0f11f79c1841453fd4b6ba37884820f4b25e1df164850a10fa2607e96",
+    "research/motor_rows_gpu.cl": "2f15e8510bcc18faf58a2742bb5e0ac79367eac3bc84ff40e15cb9235237d070"
+  }
+}

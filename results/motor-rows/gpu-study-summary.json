@@ -1,0 +1,226 @@
+{
+  "as_of_utc": "2026-10-30T06:49:00Z",
+  "scope": "Exact published Alouges2025 N-row closure, broad dimensionless mathematical exploration at b=1; not an apparatus-calibrated activity path.",
+  "scientific_priority": "Not established. No new model or discovery claim. Bounded primary/full-text and forward-source audit is in source-audit.json.",
+  "scouts": [
+    {
+      "N": 3,
+      "dimension": 8,
+      "lanes": 960,
+      "completed": 954,
+      "preliminary_count": 40,
+      "status_counts": {
+        "0": 954,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 6
+      },
+      "wall_seconds": 200.00129420000303
+    },
+    {
+      "N": 4,
+      "dimension": 11,
+      "lanes": 960,
+      "completed": 945,
+      "preliminary_count": 175,
+      "status_counts": {
+        "0": 945,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 15
+      },
+      "wall_seconds": 200.00294759999815
+    },
+    {
+      "N": 8,
+      "dimension": 23,
+      "lanes": 960,
+      "completed": 861,
+      "preliminary_count": 272,
+      "status_counts": {
+        "0": 861,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 99
+      },
+      "wall_seconds": 200.0047515999977
+    }
+  ],
+  "scout_total": {
+    "lanes": 2880,
+    "completed": 2760,
+    "wall_censored": 120,
+    "preliminary": 487,
+    "domain_or_numerical_failures": 0
+  },
+  "refinement": {
+    "N": 3,
+    "selected": 40,
+    "completed": 40,
+    "retained_four_window_positives": 24,
+    "retained_parameter_tuples": 9,
+    "not_retained_source_ids": [
+      360,
+      480,
+      481,
+      540,
+      541,
+      542,
+      558,
+      560,
+      600,
+      601,
+      602,
+      660,
+      693,
+      695,
+      750,
+      752
+    ],
+    "warmup_original_tau": 300,
+    "observation_original_tau": 1200,
+    "rtol": 1e-10,
+    "step_cap_factor": 0.5,
+    "all_retained_pairs_resolved": true,
+    "clustering_scope": "No fixed 2+1 collapse is seen in late accepted-endpoint row distances. This does not exclude close approaches or changing approximate clusters. RMS uses right-endpoint quadrature.",
+    "strongest_tuple_all_starts": [
+      {
+        "source_id": 783,
+        "parameters": [
+          4.609100387635,
+          7.026038245590061,
+          1.0
+        ],
+        "four_lle_windows_original_tau": [
+          0.27438076477285367,
+          0.26165906389527405,
+          0.2913392617589506,
+          0.2545545919165479
+        ],
+        "late_pair_min": [
+          0.07866495821880384,
+          0.028870758358570083,
+          0.08602094863641266
+        ],
+        "late_pair_max": [
+          2.852110217596992,
+          2.8114178274672716,
+          2.8229590823403634
+        ],
+        "late_pair_rms": [
+          1.3392887198069499,
+          1.301251832520741,
+          1.4205751019686552
+        ]
+      },
+      {
+        "source_id": 784,
+        "parameters": [
+          4.609100387635,
+          7.026038245590061,
+          1.0
+        ],
+        "four_lle_windows_original_tau": [
+          0.24861660022324983,
+          0.251344291037244,
+          0.26897382484245963,
+          0.28368801562053175
+        ],
+        "late_pair_min": [
+          0.04767696880370025,
+          0.0783040304366186,
+          0.04646006975443385
+        ],
+        "late_pair_max": [
+          2.7805061953285803,
+          2.806486239052993,
+          2.7875468787341338
+        ],
+        "late_pair_rms": [
+          1.2651636262930037,
+          1.3935874579235241,
+          1.336299728065834
+        ]
+      },
+      {
+        "source_id": 785,
+        "parameters": [
+          4.609100387635,
+          7.026038245590061,
+          1.0
+        ],
+        "four_lle_windows_original_tau": [
+          0.26676431861684347,
+          0.2847946423073059,
+          0.28902729806388067,
+          0.26878614028854775
+        ],
+        "late_pair_min": [
+          0.058394015984552725,
+          0.03507540400102449,
+          0.04773578971014192
+        ],
+        "late_pair_max": [
+          2.8188740592518235,
+          2.847867640446635,
+          2.782895716913595
+        ],
+        "late_pair_rms": [
+          1.329489627349957,
+          1.3894759243611357,
+          1.3354946241339878
+        ]
+      }
+    ]
+  },
+  "independent_cpu": {
+    "artifact": "cpu-candidate-N3-783.json",
+    "artifact_exact_sha256": "489aa423b61d17b308f783effd7d18bc61c3c17d0c97f5cbfd11ee83ece43373",
+    "full_dimension": 8,
+    "observation_original_tau": 2000.0,
+    "spectrum": [
+      0.2679524968214497,
+      -0.00013860477395780552,
+      -0.08155505455968498,
+      -0.4580141528088638,
+      -0.7624171550272326,
+      -0.8874235235319673,
+      -0.9676524576405672,
+      -0.9967193925807438
+    ],
+    "sum_trace_error": 1.9554136088117956e-14,
+    "section_returns": 636,
+    "finite_time_kaplan_yorke_estimate": 3.4066661179475286,
+    "classification": "Numerically supported chaotic candidate: one positive, one near zero, six negative finite-time exponents, with bounded domain and noncollapsed row states. Not a proof of an asymptotic attractor."
+  },
+  "geometry_scope": "Every displayed 3D view is a projection of an 8D state. The curved triangular envelope in the physical (s1,s2,s3) projection is suggestive of row-permutation symmetry, not proof of topological novelty.",
+  "pending": "N4/N8 positives have only screening-level evidence. No targeted pair-chaos embedding or transverse study was run; N3 received priority.",
+  "source_versions": "source-versions/scout-source-manifest.json preserves immutable executed scout Python/OpenCL sources and matches all three metadata hashes.",
+  "commands": [
+    "python research/motor_rows_gpu.py validate",
+    "python research/motor_rows_gpu.py survey --wall 600",
+    "python research/refine_motor_rows.py"
+  ],
+  "reproduction_note": "Use archived scout driver/kernel under their original research paths for the historical scout. Current main driver adds original-time mode and row-distance diagnostics for refinement.",
+  "long_continuation": {
+    "fixed_cohort": 24,
+    "additional_original_tau_per_lane": 10000,
+    "all_completed": true,
+    "wall_seconds": 313.72501860000193,
+    "cumulative_above_0_005": 22,
+    "late2000_above_0_005": 21,
+    "all80_windows_above_0_001": 12,
+    "strongest_tuple_all80_windows_positive": true,
+    "downgraded_sources": [
+      483,
+      485
+    ],
+    "late_weakening_source": 291,
+    "analysis_file": "lifetimes/analysis.json",
+    "interpretation": "Strong finite-time persistence at the leading tuple; no asymptotic or scientific-priority proof."
+  },
+  "report": "../../docs/motor-rows-gpu-survey.md"
+}
