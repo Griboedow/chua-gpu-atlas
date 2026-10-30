@@ -97,7 +97,7 @@ C_0=c_p\rho_mAt_d(1+b),\quad
 \tau_0=\frac{C_0}{h_0A},\quad T_* =\frac{Q_*}{h_0A}.
 ```
 
-Use $s=t/\tau_0$, $X=x/a$, $V=\tau_0v/a$, $\Theta=T/T_*$, and $q(X)=\Delta Q(aX)/Q_*$. With primes denoting differentiation in $s$, equations 5–7 are exactly
+Use $s=t/\tau_0$, $X=x/a$, $V=\tau_0v/a$, $\Theta=T/T_{\ast}$, and $q(X)=\Delta Q(aX)/Q_{\ast}$. With primes denoting differentiation in $s$, equations 5–7 are exactly
 
 ```math
 X'=V,\qquad V'=\Gamma\Theta-\delta V,\qquad

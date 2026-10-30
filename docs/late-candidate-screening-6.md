@@ -67,7 +67,7 @@ Use the author-code variant with the following source-grounded control settings:
 | Contact events | Default code branch off; independently resolve switching in a later check |
 | Source Fig. 5 parameter pairs $(\alpha,\beta)$ | $(1,1),(1,4),(4,1),(4,4)$ |
 
-The geometry is from the Fig. 5 caption and matches `8.6*c` and `7.8*c` in the code. It differs slightly from rounded physiological values 1.16 and 1.05 discussed elsewhere in the paper; the figure-specific numbers should be used for reproduction. Source runs last 10,000 time units, except $(4,1)$, which lasts 30,000. Its largest-$\alpha$, largest-$\beta$ control has a narrow period distribution near 0.55 s, using the source dimensional frequency $f_0=30$ Hz. This is **not evidence of an exactly periodic full-state orbit**.
+The geometry is from the Fig. 5 caption and matches `8.6*c` and `7.8*c` in the code. It differs slightly from rounded physiological values 1.16 and 1.05 discussed elsewhere in the paper; the figure-specific numbers should be used for reproduction. Source runs last 10,000 time units, except $(4,1)$, which lasts 30,000. Its largest $\alpha$, largest $\beta$ control has a narrow period distribution near 0.55 s, using the source dimensional frequency $f_0=30$ Hz. This is **not evidence of an exactly periodic full-state orbit**.
 
 The supplied file's default values are instead $\alpha=2$, $\beta=0$, $\gamma=2$, duration 400 on Zenodo; GitHub uses $\gamma=3$, duration 100. Those defaults describe unloaded/sustained translation rather than the spring-oscillation controls. Initial phases are unseeded in the supplied file. Reproducible independent work must save phases and distinguish defaults from Fig. 5 settings.
 
