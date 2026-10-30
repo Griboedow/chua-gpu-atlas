@@ -1,0 +1,26 @@
+{
+  "independent_plan": 4,
+  "independent_attempted": 3,
+  "independent_completed": 2,
+  "independent_incomplete": 1,
+  "independent_not_started": 1,
+  "independent_wall_seconds": 420.00042419999954,
+  "completed_proximity_classifications_agree": true,
+  "note": "Radau checks known-cycle proximity; it does not independently calculate a Lyapunov exponent. Failed callbacks are not accepted endpoints.",
+  "periodic_phase_growth": [
+    {
+      "amplitude": 0.0001,
+      "sign": 1,
+      "tangent_mean": 0.0008791856096405949,
+      "flow_endpoint_mean": 0.0008791834292916092,
+      "final_tangent_absolute_cosine_to_flow": 1.0000000000000002
+    },
+    {
+      "amplitude": 1e-05,
+      "sign": 1,
+      "tangent_mean": 0.0008007099576808455,
+      "flow_endpoint_mean": 0.0008006756898064418,
+      "final_tangent_absolute_cosine_to_flow": 1.0
+    }
+  ]
+}
