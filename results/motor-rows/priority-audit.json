@@ -1,0 +1,163 @@
+{
+  "audit_date_utc": "2026-10-30",
+  "completed_before_utc": "2026-10-30T07:15:00Z",
+  "status": "bounded_primary_priority_audit_complete_with_material_gaps",
+  "new_simulations": false,
+  "novelty_confirmed": false,
+  "exact_model_earlier_positive_chaos_result_verified": false,
+  "absence_proved": false,
+  "conclusion": "Numerical candidates in an existing exact model; scientific priority unresolved. Broad claims of first molecular-motor, sarcomere or cluster chaos conflict with prior primary literature.",
+  "target": {
+    "doi": "10.1142/S0218202525500423",
+    "version": "arXiv2409.03506v2",
+    "dimension": "3*N-1",
+    "focus_N": 3,
+    "focus_dimension": 8,
+    "physical_closure": "Constant total transition rate, cosine potential, exact first harmonic, fixed-endpoint mechanical constraint",
+    "source_audit": "source-audit.json",
+    "equivalence_standard": "Exact field or established invertible coordinate/time transformation; a common normal form or symmetry is insufficient. Different printed equations alone do not prove global inequivalence."
+  },
+  "primary_records": [
+    {
+      "id": "alouges2025",
+      "doi": "10.1142/S0218202525500423",
+      "url": "https://arxiv.org/html/2409.03506v2",
+      "version_record": "https://arxiv.org/abs/2409.03506",
+      "access": "Complete primary v2 read from existing cache; version record checked afresh",
+      "locations": ["Eq15", "Fig9", "Conclusion"],
+      "finding": "Published N8 examples have two synchronized groups; general N-row bifurcations are left open. No explicit N3 chaos demonstration identified in inspected text.",
+      "latest_arxiv_version_observed": "v2, 2025-04-16",
+      "cache": "outputs/candidate_research/flagellar2025.html",
+      "cache_sha256": "7631587790489f5e7fda264a2f46b64a4ab551cd1e36a0c24cde209278409894"
+    },
+    {
+      "id": "anello2025flagellar",
+      "doi": "10.1016/j.euromechsol.2025.105729",
+      "url": "https://arxiv.org/html/2412.06067v1",
+      "access": "Complete primary preprint",
+      "locations": ["Sections3.1-3.3.1", "Section6.2"],
+      "relation": "Spatial elastic/hydrodynamic extension; not an established equivalence to isolated N3 rows",
+      "finding": "Attachment fractions are explicitly distinguished from microscopic Fourier coefficients. Inspected long-time examples are periodic.",
+      "cache": "outputs/candidate_research/flagellar2025-followup.html"
+    },
+    {
+      "id": "agostinelli2026",
+      "doi": "10.1016/j.jmps.2026.106529",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022509626000293",
+      "access": "Primary abstract/preview; complete coefficient audit not achieved",
+      "attempted_pdf": "https://www.iris.sssup.it/retrieve/1bc1e5d7-7032-41ad-ade0-cd5e0efeb690/1-s2.0-S0022509626000293-main-4.pdf",
+      "pdf_result": "HTTP403; no bypass attempted",
+      "finding": "Reduced cilia/rod oscillations and Hopf comparison. Exact-model priority remains unchecked in unavailable full text."
+    },
+    {
+      "id": "ishimoto2025",
+      "doi": "10.1017/jfm.2025.10623",
+      "url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/bendingcompression-coupling-in-extensible-slender-microswimmers/EF56B665D16B5603D3712959E0FA4911",
+      "access": "Complete primary article checked in preceding parent source audit; inherited assessment explicitly marked",
+      "locations": ["Section2", "Conclusion"],
+      "finding": "Prescribed deformation and kinematic swimming response; not a reported autonomous N-row chaos result."
+    },
+    {
+      "id": "gunther_kruse2010",
+      "doi": "10.1063/1.3523283",
+      "url": "https://arxiv.org/pdf/1202.0755",
+      "access": "Complete primary manuscript",
+      "locations": ["Equations13-16", "SectionIII.C", "Figure7"],
+      "dimension": 4,
+      "states": ["Q1", "Q2", "y1", "y2"],
+      "finding": "Explicit apparently chaotic sarcomere solutions and a proposed successive-Hopf route; Figure7C uses zeta=1.23.",
+      "relation": "Force-dependent motor detachment and overlap/linker closure, not the exact constant-rate N3 Fourier field. No exact transformation established.",
+      "cache": "outputs/candidate_research/gunther-kruse2010.pdf",
+      "cache_sha256": "9e37e31df08efe33c0ce0e5f60a58c8dd7a44c8fe7bb83830f6ae74817d36925"
+    },
+    {
+      "id": "shintani2026preprint",
+      "doi": "10.64898/2026.07.20.739477",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739477v1",
+      "fulltext_read_url": "https://www.researchgate.net/publication/410649922_Chaotic_internal_dynamics_coexist_with_a_stable_temporal_scaffold_in_a_mesoscale_sarcomere_model_informed_by_high-resolution_recordings",
+      "access": "Full primary-paper text via ResearchGate copy; canonical direct request HTTP403",
+      "publication_status": "bioRxiv preprint, 2026-07-20",
+      "locations": ["Equations1-2", "Sections2.4 and4.4"],
+      "dimension_internal": 10,
+      "finding": "Positive Lyapunov exponents in five complex Stuart-Landau units; common phase belongs to observation map, not internal forcing.",
+      "relation": "Heterogeneous detuning, phase-lagged nearest-neighbor coupling and mean damping; no exact motor probability-transport closure."
+    },
+    {
+      "id": "haugland2021",
+      "doi": "10.1038/s41467-021-25907-7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8463560/",
+      "access": "Complete primary text read through web tool; separate ordinary urllib cache received a reCAPTCHA page, not source text",
+      "locations": ["Equations1-2", "Results", "Discussion"],
+      "finding": "Permutation-symmetric globally coupled Stuart-Landau oscillators exhibit cluster splitting and chaotic attractor collisions.",
+      "relation": "Cubic field and exact harmonic complex mean differ from motor displacement/transport field. No exact conjugacy established.",
+      "rejected_cache": "outputs/candidate_research/cluster-chaos2021.html",
+      "rejected_cache_is_primary_text": false
+    },
+    {
+      "id": "costantini2024",
+      "doi": "10.1088/1742-5468/ad244b",
+      "url": "https://arxiv.org/html/2401.09952v1",
+      "access": "Complete primary preprint",
+      "locations": ["Equation3", "Introduction"],
+      "finding": "Noisy nearest-neighbor Kuramoto motor chain and thermodynamic precision; not the exact deterministic motor-row field."
+    },
+    {
+      "id": "anello2025thesis",
+      "title": "Mathematical modeling of spontaneous oscillations in flagellar and bio-inspired systems",
+      "url": "https://www.math.sissa.it/user/72/former_phd_students/",
+      "attempted_pdf": "https://iris.sissa.it/retrieve/b97cdabf-fec2-4383-bfd1-fc36bbdd4e2f/PhD_Thesis_IreneAnello_2025%20%284%29.pdf",
+      "access": "Official listing and indexed abstract only; normal PDF requests HTTP403",
+      "fulltext_reviewed": false,
+      "material_priority_gap": true,
+      "finding": "Same-author thesis may contain additional N-row results; full chapters and appendices remain unread. No absence inference."
+    }
+  ],
+  "forward_discovery": {
+    "provider": "OpenAlex",
+    "role": "Discovery metadata, not primary evidence or exhaustive census",
+    "request": "https://api.openalex.org/works?filter=cites:W4411285391&per-page=100",
+    "retrieved_date_utc": "2026-10-30",
+    "record_count": 4,
+    "distinct_works_after_preprint_deduplication": 3,
+    "dois": [
+      "10.1016/j.jmps.2026.106529",
+      "10.1016/j.euromechsol.2025.105729",
+      "10.2139/ssrn.5069971",
+      "10.1017/jfm.2025.10623"
+    ],
+    "cache": "outputs/candidate_research/motor-rows-priority-forward20261030.json",
+    "cache_sha256": "d62bc839c334f25d6f4b0bd415addd7085b48c6b655822bf204bdddae898b81f"
+  },
+  "query_record": {
+    "exact_recent_queries": [
+      "\"Between synchrony and turbulence\" \"equations\" chaos",
+      "\"Alouges\" \"Anello\" \"chaos\" motor rows",
+      "\"Some mathematical models for flagellar activation mechanisms\" chaotic"
+    ],
+    "other_search_families": [
+      "Exact paper title and author queries with chaos/attractor terms",
+      "Later source-author papers and thesis records",
+      "Collective motor, sarcomere and cluster-chaos primary models",
+      "Exact source citations and forward-citation discovery"
+    ],
+    "negative_hit_results_are_not_novelty_evidence": true
+  },
+  "remaining_gaps": [
+    "Complete Anello2025 thesis",
+    "Complete Agostinelli2026 coefficient and result audit",
+    "Unindexed, unpublished or non-citing equivalent work",
+    "Global equivalence classification and actual bifurcation mechanism",
+    "Attractor topology beyond the saved physical projections"
+  ],
+  "prohibited_overclaims": [
+    "First molecular-motor chaos",
+    "First sarcomere chaos",
+    "First permutation-symmetric cluster chaos",
+    "Confirmed new attractor or topology from a 3D projection",
+    "No earlier result exists because search returned no exact hit"
+  ],
+  "source_licensing": "Original articles and theses retain their own licenses; source caches are ignored, not relicensed as MIT.",
+  "author_contact": false,
+  "access_bypass": false,
+  "code_from_authors_executed": false
+}

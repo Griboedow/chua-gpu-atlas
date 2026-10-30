@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-30T07:03:41.529114+00:00",
+  "seed": 2026103007,
+  "random_states": 256,
+  "row_counts": [
+    2,
+    3,
+    4,
+    8
+  ],
+  "source_field": "Independent source force-difference reconstruction",
+  "maximum_scaled_identity_errors": {
+    "complex_memory_field": 2.0000587809189838e-16,
+    "projected_velocity_equation": 7.219758416502469e-16,
+    "energy_derivative": 3.017544568841848e-15,
+    "integrating_factor_derivative": 3.4088623725128327e-15
+  },
+  "new_trajectories_integrated": 0,
+  "proof_scope": "Existing normalized model; rho,r>0 and invariant row disks c_j^2+s_j^2<=1+b^2. Strict sufficient exclusion r*sqrt(1+b^2)<rho+1. No exclusion is asserted outside it.",
+  "priority": "These are reproducible derivations, not a claim that the identities or memory formulation were previously unknown."
+}
