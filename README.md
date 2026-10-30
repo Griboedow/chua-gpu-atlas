@@ -4,6 +4,8 @@
 
 Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
+**Beyond Chua:** the searches in other physical and biological systems now have their own public MIT project, [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab), with [a readable findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), data and animations. The Chua atlas and its parameter-scaling investigation remain here. The original research files are retained during the final verified transfer.
+
 ![The expanded parameter cloud rotating about three axes](docs/assets/expanded-rotation.gif)
 
 *Each dot is a parameter tuple (α, β, m₀). These are 1,832 finite-time chaos candidates from the expanded adaptive GPU survey. Gold outlines the previous search domain. The camera rotates about all three coordinate axes; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
