@@ -1,0 +1,100 @@
+{
+  "varied_control": "beta",
+  "fixed_parameter": {
+    "alpha": 9.0
+  },
+  "axes_order": [
+    "control",
+    "m1",
+    "m0"
+  ],
+  "shape": [
+    41,
+    61,
+    61
+  ],
+  "nodes": 152561,
+  "initial_conditions_per_node": 3,
+  "ranges": {
+    "m0": [
+      -1.5,
+      -0.9
+    ],
+    "m1": [
+      -0.98,
+      -0.1
+    ],
+    "control": [
+      10.285714285714286,
+      18.285714285714285
+    ]
+  },
+  "settings": {
+    "dt": 0.005,
+    "transient": 600,
+    "duration": 1600,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.7,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.1,
+        0.0
+      ],
+      [
+        1.5,
+        0.02,
+        -1.5
+      ]
+    ],
+    "initial_state_mode": "shared",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 177.27056869999797,
+    "gpu_seconds": 176.56461747200038,
+    "max_kernel_seconds": 0.090653696
+  },
+  "counts": {
+    "0": 20249,
+    "1": 31659,
+    "2": 33212,
+    "3": 85,
+    "4": 53515,
+    "5": 0,
+    "6": 13841
+  },
+  "labels": {
+    "0": "escaped",
+    "1": "equilibrium",
+    "2": "nonpositive_or_near_zero",
+    "3": "uncertain",
+    "4": "chaotic_candidate",
+    "5": "numerical_failure",
+    "6": "different classifications across starts"
+  },
+  "central_plane_reproduction": {
+    "nodes": 3721,
+    "per_start_class_agreement": 1.0,
+    "max_finite_lle_difference": 0.0,
+    "source": "results/chua-slope-plane/wide.npz"
+  },
+  "compacting": "Raw accumulation statistics are omitted; classes, four-window exponents, statuses, outer-region flags and final states are retained. Parameter tuples are reconstructed from the stored axes.",
+  "scope": "Three independent coordinates varied at each node. Finite-time classification of three starts; no exhaustive layer count or proven continuous boundary."
+}

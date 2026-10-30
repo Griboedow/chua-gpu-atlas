@@ -1,0 +1,25 @@
+{
+  "traces": 12,
+  "indices": {
+    "alpha": {
+      "full2": 0,
+      "full4": 1,
+      "interior2": 2,
+      "interior4": 3,
+      "plane": 4,
+      "map": 5
+    },
+    "beta": {
+      "full2": 6,
+      "full4": 7,
+      "interior2": 8,
+      "interior4": 9,
+      "plane": 10,
+      "map": 11
+    }
+  },
+  "section_levels": 41,
+  "bytes": 12904140,
+  "self_contained": true,
+  "scope": "All volume nodes contribute to the mask meshes; the section sliders show saved grid planes."
+}

@@ -77,6 +77,12 @@ Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive expo
 
 *Blue: all three starts are chaos candidates; orange: regular candidates; green: equilibrium candidates; purple: different classifications across starts. These are finite-time sampled maps. The report retains changed labels under step and observation-time refinement.*
 
+**The slope plane now extends into two 3D volumes.** One varies `(m0, m1, alpha)` at beta = 100/7; the other varies `(m0, m1, beta)` at alpha = 9. Each contains 152,561 directly calculated parameter nodes with three starts. The interior views below expose curved regular-candidate sheets that the broad outer regions obscure. These first volume grids can still miss thin layers.
+
+![Interior views of the m0-m1-alpha and m0-m1-beta volumes](docs/assets/chua-slope-volumes-interior.png)
+
+[Full views, sections and numerical limits](docs/chua-slope-volumes.md) · [Slow 24-second rotation](docs/assets/chua-slope-volumes.gif) · [Offline interactive viewer](results/chua-slope-volumes/volumes.html) (download and open in a browser).
+
 **The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
 
 ![Lyapunov transect, peak diagram, coexisting scrolls and basin map](docs/assets/findings.png)

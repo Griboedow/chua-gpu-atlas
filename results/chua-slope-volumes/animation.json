@@ -1,0 +1,14 @@
+{
+  "frames": 192,
+  "rendered_frames": 192,
+  "duration_seconds": 24.0,
+  "dimensions": [
+    1242,
+    684
+  ],
+  "sweep_degrees": 40,
+  "elevation_degrees": 24,
+  "roll_degrees": 0,
+  "bytes": 27868373,
+  "changes_data": false
+}

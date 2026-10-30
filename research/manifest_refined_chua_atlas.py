@@ -15,12 +15,13 @@ export_refined_chua_atlas extend_chua_adding manifest_refined_chua_atlas plot_re
 refine_chua_adding_check refine_chua_satellites refine_chua_sheets scan_chua_offcenter
 select_chua_offcenter verify_chua_offcenter verify_four_chua_cycles
 refine_readme_layers refine_readme_thin_cores plot_readme_layers
-scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane'''.split()
+scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane
+scan_chua_slope_volumes check_chua_slope_volumes plot_chua_slope_volumes build_chua_slope_volume_viewer'''.split()
 
 
 def digest(path):
     raw=path.read_bytes()
-    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv']:
+    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs']:
         raw=raw.replace(b'\r\n',b'\n')
     return hashlib.sha256(raw).hexdigest()
 
@@ -53,19 +54,23 @@ def main():
     paths=code_dependencies() | {p for p in out.iterdir() if p.is_file() and p!=manifest}
     paths.update(p for p in (out/'readme-layer-view').rglob('*') if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-plane').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-slope-volumes').iterdir() if p.is_file())
+    paths.add(ROOT/'research/check_chua_slope_volume_viewer.cjs')
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])
     paths.add(ROOT/'docs/chua-family-gallery.md')
     paths.add(ROOT/'docs/chua-slope-plane.md')
+    paths.add(ROOT/'docs/chua-slope-volumes.md')
     paths.update((ROOT/'docs/assets/chua-families').glob('*.png'))
     paths.update(ROOT/'docs/assets'/name for name in ['chua-refined-atlas.png','chua-refined-adding.png','chua-four-cycle-overlap.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-readme-layers.gif','chua-readme-layers-poster.png','chua-readme-layer-zoom.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-plane.png','chua-slope-peak-patterns.png'])
+    paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-volumes.png','chua-slope-volumes-interior.png','chua-slope-volume-sections.png','chua-slope-volumes.gif'])
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])
     paths.add(ROOT/'results/chua-layers/extended.json')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
-        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html and .csv; binary files are unchanged.',
+        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js and .cjs; binary files are unchanged.',
         scope='Hashes identify this finite numerical catalogue and its executable evidence, not mathematical certification.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')

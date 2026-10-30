@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "control_combinations": 36,
+  "latest_slider_update": "passed",
+  "camera_reset": "passed",
+  "browser_render_check": "Not performed: local browser use is disabled in Work settings.",
+  "scope": "Exported JavaScript executed with DOM and Plotly state stubs. Checks controller state and data selection, not actual WebGL rendering."
+}

@@ -4,6 +4,8 @@ At **alpha = 9 and beta = 100/7**, varying the inner slope **m0** and outer slop
 
 This is a new two-dimensional section of the four-parameter model. The earlier three-dimensional atlas varied alpha, beta and m0 while fixing m1. Rotating that earlier plot cannot produce this section, and its count of 32 catalogued families does not automatically carry over.
 
+The [three-dimensional extension](chua-slope-volumes.md) now varies alpha or beta as the third coordinate. It includes full and cropped volume views, a slow rotation, and an interactive section viewer. This 2D map is the common central section of both new volumes.
+
 ![Wide m0-m1 section and magnification around the classical point](assets/chua-slope-plane.png)
 
 ## Reading the picture
