@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "gates": {
+    "variational_solvers_succeeded": true,
+    "independent_multiplier_agreement": true,
+    "independent_variational_closure": true,
+    "full_field_closure": true,
+    "radau_closure": true,
+    "affine_jacobian": true,
+    "surface_closure": true,
+    "sampled_region_validity": true,
+    "transverse_breakpoint_crossings": true,
+    "fold_two_distinct_roots": true,
+    "asymmetric_symmetry_partner": true
+  },
+  "independent_variational": [
+    {
+      "name": "fold",
+      "success": true,
+      "closure": 2.1985738785090803e-09,
+      "dominant_multiplier": 0.9999999738664511,
+      "expected_multiplier": 0.9999999957672041,
+      "multiplier_error": 2.1900752988912586e-08,
+      "rtol": 2e-12,
+      "atol": 2e-13,
+      "max_step": 0.02
+    },
+    {
+      "name": "symmetry",
+      "success": true,
+      "closure": 1.0132505945392722e-11,
+      "dominant_multiplier": 0.9999999992661199,
+      "expected_multiplier": 0.9999999999339999,
+      "multiplier_error": 6.678799735482244e-10,
+      "rtol": 2e-12,
+      "atol": 2e-13,
+      "max_step": 0.02
+    },
+    {
+      "name": "period_doubling",
+      "success": true,
+      "closure": 1.2544637550959692e-10,
+      "dominant_multiplier": -0.9999999960325826,
+      "expected_multiplier": -0.999999999255426,
+      "multiplier_error": 3.222843436567757e-09,
+      "rtol": 2e-12,
+      "atol": 2e-13,
+      "max_step": 0.02
+    },
+    {
+      "name": "second_pd",
+      "success": true,
+      "closure": 7.514711075629066e-12,
+      "dominant_multiplier": -0.9999999998423128,
+      "expected_multiplier": -0.9999999975297951,
+      "multiplier_error": 2.312517732860897e-09,
+      "rtol": 2e-12,
+      "atol": 2e-13,
+      "max_step": 0.02
+    }
+  ],
+  "local_surface_gradients": {
+    "fold": {
+      "alpha": {
+        "step": 0.0001,
+        "values": [
+          14.330437937891473,
+          14.330866000380135
+        ],
+        "derivative": 2.1403124433128085
+      },
+      "m0": {
+        "step": 1e-05,
+        "values": [
+          14.3308008108801,
+          14.330503113271268
+        ],
+        "derivative": -14.884880441634605
+      }
+    },
+    "symmetry": {
+      "alpha": {
+        "step": 0.0001,
+        "values": [
+          14.31706127401615,
+          14.317488742062146
+        ],
+        "derivative": 2.1373402299840194
+      },
+      "m0": {
+        "step": 1e-05,
+        "values": [
+          14.317427331002094,
+          14.317122669773406
+        ],
+        "derivative": -15.233061434383186
+      }
+    },
+    "period_doubling": {
+      "alpha": {
+        "step": 0.0001,
+        "values": [
+          14.310130093327002,
+          14.310557263848244
+        ],
+        "derivative": 2.1358526062087435
+      },
+      "m0": {
+        "step": 1e-05,
+        "values": [
+          14.310497745790888,
+          14.310189595482672
+        ],
+        "derivative": -15.407515410803539
+      }
+    }
+  },
+  "jacobian_max_error": 3.4988363317722815e-09,
+  "surface_points": 147,
+  "max_surface_residual": 9.145454393788555e-10,
+  "max_full_field_closure": 3.945245626302274e-07,
+  "max_radau_closure": 2.2705494151509242e-09,
+  "scope": "Numerical continuation and independent controls, not validated interval bounds or an exhaustive atlas.",
+  "code_sha256": {
+    "audit_chua_layers.py": "5ce9ea940f594abaf191241a00886cd9ac4330623f3ca218cfe90f6d95139be4",
+    "chua_layer_bifurcations.py": "700495d93724f9cecb75a583a4d0d6b3013ad5510bd63e666295268f5b563e00",
+    "chua_layer_cascade.py": "e3fffd04563cc48f673f167070e36a20bde54dc0ca32748e31e2606e0ceec2d2",
+    "extend_chua_layer.py": "1be684e1c5e41f09116021ae526abe2d54b888fa534cef195577f208d128c306",
+    "plot_chua_layers.py": "e739475e1aee796195eb8a3ad244a847ca4bdfb9d30df290d202554b76cbbac8",
+    "trace_chua_window.py": "cb89e5df24b3ed2725484d1122211f330c4a4cafa8a7fb0f393dbf6637c19f37"
+  }
+}

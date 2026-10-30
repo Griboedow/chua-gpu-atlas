@@ -1,0 +1,442 @@
+{
+  "checks": [
+    {
+      "name": "symmetry_boundary",
+      "beta": 14.317275007542792,
+      "period": 10.825262226494731,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 3.0427551589440327e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 5.2836623964935825e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 7.307052185545615e-10,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "fold",
+      "beta": 14.330651968476086,
+      "period": 10.913399693985491,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 2.048997416181919e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 2.4235297102492837e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 2.2705494151509242e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "asymmetric",
+      "beta": 14.315,
+      "period": 10.826591107604022,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 1.9667168449366557e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 1.6076823206034874e-10,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 4.501231202005962e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "first_pd",
+      "beta": 14.310343678076155,
+      "period": 10.829311091919307,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 6.273684904911647e-10,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 3.535421955191964e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 1.607676214376852e-10,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "fold_branch_a",
+      "beta": 14.330551968476087,
+      "period": 10.905325000219888,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 2.8608664326412736e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 7.012862512922879e-13,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 3.0106084292214064e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "fold_branch_b",
+      "beta": 14.330551968476087,
+      "period": 10.921561235624083,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 1.2625362977303212e-09,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 9.92530502230693e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 2.2890825912840092e-11,
+          "breakpoint_crossings": 8,
+          "maxima_count": 5
+        }
+      ]
+    },
+    {
+      "name": "doubled",
+      "beta": 14.3097,
+      "period": 21.65747193386125,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 3.945245626302274e-07,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 4.792983043788723e-08,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 6.339654912146386e-10,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        }
+      ]
+    },
+    {
+      "name": "second_pd",
+      "beta": 14.308751147250236,
+      "period": 21.655803563531215,
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 2.645853980354218e-09,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        },
+        {
+          "method": "DOP853",
+          "rtol": 2e-13,
+          "max_step": 0.0125,
+          "closure": 1.5681661524880042e-10,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        },
+        {
+          "method": "Radau",
+          "rtol": 2e-12,
+          "max_step": 0.025,
+          "closure": 1.7580792377458465e-10,
+          "breakpoint_crossings": 16,
+          "maxima_count": 10
+        }
+      ]
+    },
+    {
+      "name": "symmetry_partner",
+      "record": {
+        "beta": 14.315,
+        "alpha": 9.0,
+        "m0": -1.1428571428571428,
+        "m1": -0.7142857142857143,
+        "symmetric": false,
+        "q": [
+          0.23727404856575815,
+          -0.4429474247448281,
+          1.4789538954840034,
+          1.5083562286988728,
+          0.6054010847864539,
+          1.427169072553181,
+          1.838807020428328,
+          1.525057280179019,
+          0.5990759168080929,
+          1.430182366490731,
+          0.4135882421752666
+        ],
+        "period": 10.82659110760395,
+        "residual": 4.6407322429331543e-14,
+        "map_multipliers": [
+          [
+            0.3549911811326829,
+            0.0
+          ],
+          [
+            8.420910616942127e-09,
+            0.0
+          ]
+        ],
+        "full_multipliers": [
+          [
+            0.3549911811326829,
+            0.0
+          ],
+          [
+            8.420910616942127e-09,
+            0.0
+          ]
+        ],
+        "spectral_radius": 0.3549911811326829,
+        "section_matrix": [
+          [
+            -0.5124439613981355,
+            0.5152343591907941
+          ],
+          [
+            -0.8627373156897207,
+            0.8674351509517291
+          ]
+        ],
+        "minimum_breakpoint_speed": 1.140988870285097,
+        "map_determinant_liouville": 2.989349006121035e-09,
+        "map_trace": 0.35499118955359354,
+        "full_logdet": -19.628210196954402,
+        "region_violation": 4.6407322429331543e-14,
+        "arcs": [
+          {
+            "region": 0,
+            "duration": 1.4789538954840034,
+            "start": [
+              0.0,
+              0.23727404856575815,
+              -0.4429474247448281
+            ],
+            "end": [
+              1.0000000000000029,
+              0.11240060402350215,
+              -0.43687973682313963
+            ]
+          },
+          {
+            "region": 1,
+            "duration": 1.5083562286988728,
+            "start": [
+              1.0000000000000029,
+              0.11240060402350215,
+              -0.43687973682313963
+            ],
+            "end": [
+              1.0000000000000002,
+              -0.27074039431755664,
+              -1.1299855884331562
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 0.6054010847864539,
+            "start": [
+              1.0000000000000002,
+              -0.27074039431755664,
+              -1.1299855884331562
+            ],
+            "end": [
+              1.0000000000000024,
+              0.09786902979086508,
+              -0.10394016389665901
+            ]
+          },
+          {
+            "region": 1,
+            "duration": 1.427169072553181,
+            "start": [
+              1.0000000000000024,
+              0.09786902979086508,
+              -0.10394016389665901
+            ],
+            "end": [
+              0.9999999999999984,
+              -0.3827987219807376,
+              -1.5709638064481202
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 1.838807020428328,
+            "start": [
+              0.9999999999999984,
+              -0.3827987219807376,
+              -1.5709638064481202
+            ],
+            "end": [
+              -1.0000000000000013,
+              -0.100177225345145,
+              0.4352253606992458
+            ]
+          },
+          {
+            "region": -1,
+            "duration": 1.525057280179019,
+            "start": [
+              -1.0000000000000013,
+              -0.100177225345145,
+              0.4352253606992458
+            ],
+            "end": [
+              -1.0000000000000084,
+              0.26963368399992893,
+              1.1253654216873965
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 0.5990759168080929,
+            "start": [
+              -1.0000000000000084,
+              0.26963368399992893,
+              1.1253654216873965
+            ],
+            "end": [
+              -1.0000000000000464,
+              -0.0949131893541492,
+              0.10544527518859938
+            ]
+          },
+          {
+            "region": -1,
+            "duration": 1.430182366490731,
+            "start": [
+              -1.0000000000000464,
+              -0.0949131893541492,
+              0.10544527518859938
+            ],
+            "end": [
+              -0.9999999999999871,
+              0.38219754091662084,
+              1.5685403334720307
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 0.4135882421752666,
+            "start": [
+              -0.9999999999999871,
+              0.38219754091662084,
+              1.5685403334720307
+            ],
+            "end": [
+              -9.807484053525981e-15,
+              0.23727404856574813,
+              -0.4429474247448358
+            ]
+          }
+        ]
+      },
+      "section_separation": 0.00452528830986845
+    }
+  ]
+}

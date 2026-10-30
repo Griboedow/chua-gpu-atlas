@@ -24,6 +24,8 @@ The local zoom uses Δα=0.003, Δβ=0.004 and Δm₀=0.0003. What looks like a 
 
 The pink surface uses near-zero/nonpositive exponents at all three starts. Only selected examples were checked for peak recurrence. It should not be read as a rigorously determined periodic-orbit bifurcation surface.
 
+The [periodic-orbit follow-up](chua-layer-bifurcations.md) now resolves the interior of this particular window. With decreasing beta, a symmetric attracting cycle appears at a fold near 14.330652, loses symmetry near 14.317275, and its asymmetric daughter undergoes period doubling near 14.310344. A second doubling is located near 14.308751. The symmetric and asymmetric cycles both have five maxima, so the original peak count missed their boundary. Three local bifurcation surfaces are continued with independent orbit and multiplier checks; global layer termination and the end of the doubling cascade remain open.
+
 ## One parameter tuple does not necessarily select one attractor
 
 At (α,β,m₀,m₁)=(15.6,32,−1.143,−0.714), starts at (±0.7,0,0) approach opposite single-scroll chaotic regimes. A basin slice at z₀=0 assigns 11,400 sampled starts to each side; the exact origin remains an equilibrium.

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-30T09:00:09.433494+00:00",
+  "base_commit": "73f8d00be21a4206cdb18f5955ec3266e886438a",
+  "parameters": {
+    "alpha": 9,
+    "m0": "-8/7",
+    "m1": "-5/7"
+  },
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "code_sha256": {
+    "audit_chua_layers.py": "5ce9ea940f594abaf191241a00886cd9ac4330623f3ca218cfe90f6d95139be4",
+    "chua_layer_bifurcations.py": "700495d93724f9cecb75a583a4d0d6b3013ad5510bd63e666295268f5b563e00",
+    "chua_layer_cascade.py": "e3fffd04563cc48f673f167070e36a20bde54dc0ca32748e31e2606e0ceec2d2",
+    "extend_chua_layer.py": "1be684e1c5e41f09116021ae526abe2d54b888fa534cef195577f208d128c306",
+    "plot_chua_layers.py": "e739475e1aee796195eb8a3ad244a847ca4bdfb9d30df290d202554b76cbbac8",
+    "trace_chua_window.py": "cb89e5df24b3ed2725484d1122211f330c4a4cafa8a7fb0f393dbf6637c19f37"
+  },
+  "artifact_sha256": {
+    "affine-central.json": "d08ff201714291eb663e06bcf6c39be07bb644f10c60ebce9b9ecbe4011b47e9",
+    "audit.json": "a1e285f0e7faf8ad59579a88191c2e5a69dedd02270502d1be6e5dfdf8db3604",
+    "bifurcations.pdf": "da7f3d2d53804c5af7d2937861d8b24c93a119513bbb2d747f936f5e13dc43f2",
+    "cascade.json": "d8f2cc23289005e671a34f4961995c0d9a2ae9e0a8ba7405e7b542fe778bd3c6",
+    "extended.json": "2e4d1ecdc461e9b05bf3a29566567caac5b2e358b8c3e3980cfc92df2032dceb",
+    "initial.json": "d1c799e3b47405a2f5988ab66ae37fa508e4756e53b96062189e59e30c7a3f6c",
+    "plot-data.json": "ff831a13dfd36e2ccc654fa81aae490930c3a71f0214998c7d6586fc22983a24",
+    "README.md": "9cccbbc6375d2f42dca05a29f85f928030d922d2a29caa7784f54f7b7ed0e6ea",
+    "surfaces.pdf": "42b6d05268442f46d96415974e1967d2fb1c975f19d64df8a7017673ff0a6064",
+    "verification.json": "ec75dbc276ce74b865846da64ceda7cb64da50103f0a923ca547df43b266c422",
+    "verified-orbits.npz": "e25d354d96b6c47d1594f5e5f9d93d117ffdf831acfecce3bd360649589ca964"
+  },
+  "scope": "Numerical continuation and independent controls, not validated interval bounds or an exhaustive atlas."
+}

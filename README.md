@@ -99,6 +99,12 @@ The previous wide-map animation remains available for comparison:
 
 </details>
 
+## Inside the thin periodic layers
+
+The [periodic-layer study](docs/chua-layer-bifurcations.md) continues the classical five-maximum window instead of only classifying sampled trajectories. It resolves a fold near beta = **14.330652**, symmetry breaking near **14.317275**, and period-doubling thresholds near **14.310344** and **14.308751**, at alpha = 9 and the classical slopes. Both sides of the symmetry transition have five maxima, hiding an internal boundary from the original recurrence count. Three local bifurcation surfaces and independent numerical checks are included; the end of the cascade and global layer connections remain open.
+
+![Periodic branches and their stability](docs/assets/chua-layer-bifurcations.png)
+
 ## Fixed slopes and the quadratic scaling question
 
 A further [fixed-slope experiment](docs/chua-scaling-research.md) follows beta = kappa alpha squared through alpha = **2048**. Of 5,670 prescribed trajectories, 1,536 retain a positive four-window screen after tighter continuation; all numerical failures in the first tight pass are preserved and separately resumed after a clock repair. A selected alpha = 2048 case has independent CPU/GPU leading rates near **0.960** on a matched finite interval. These are numerical candidates, not proof of persistence to infinite alpha.
