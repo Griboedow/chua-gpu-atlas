@@ -1,0 +1,179 @@
+{
+  "settings": {
+    "transient": 100.0,
+    "duration": 200.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_fast_step": 0.25,
+    "max_attempts": 12000000,
+    "max_wall_seconds": 600.0,
+    "escape_scaled_norm_max": 1000000.0
+  },
+  "method": "FP64 DP5(4), full piecewise field and tangent, state and tangent error control; no explicit kink location",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 181.72218879999855,
+  "parameter_columns": [
+    "alpha",
+    "kappa=beta/alpha^2",
+    "m0",
+    "m1"
+  ],
+  "state_columns": [
+    "x",
+    "y",
+    "Z=z/alpha"
+  ],
+  "time_unit": "Requested times and LLE are ORIGINAL dimensionless t; raw clocks are fast s=alpha*t",
+  "tangent_norm": "Euclidean norm in scaled (x,y,Z), not the historical (x,y,z) finite-time norm",
+  "stats_columns": [
+    "xmin",
+    "xmax",
+    "ymin",
+    "ymax",
+    "Zmin",
+    "Zmax",
+    "last_window_xmin",
+    "last_window_xmax"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "scaled magnitude cutoff (not proof of divergence)",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 5670,
+  "completed": 4744,
+  "preliminary_positive": 1617,
+  "start_scope": "Three fixed scaled-coordinate starts, one zero-action, two finite-action; not a basin census",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        5670,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_states": {
+      "shape": [
+        5670,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "initial_tangent": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_states": {
+      "shape": [
+        5670,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_tangents": {
+      "shape": [
+        5670,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "lle": {
+      "shape": [
+        5670
+      ],
+      "dtype": "float64"
+    },
+    "lle_windows": {
+      "shape": [
+        5670,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_window_log_sums": {
+      "shape": [
+        5670,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_fast_clocks": {
+      "shape": [
+        5670,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "elapsed_original_time": {
+      "shape": [
+        5670
+      ],
+      "dtype": "float64"
+    },
+    "status": {
+      "shape": [
+        5670
+      ],
+      "dtype": "int32"
+    },
+    "step_counts": {
+      "shape": [
+        5670,
+        2
+      ],
+      "dtype": "int32"
+    },
+    "stats": {
+      "shape": [
+        5670,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "boundary_states": {
+      "shape": [
+        5670,
+        5,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "boundary_original_times": {
+      "shape": [
+        5670,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "preliminary_candidate": {
+      "shape": [
+        5670
+      ],
+      "dtype": "bool"
+    },
+    "alphas": {
+      "shape": [
+        9
+      ],
+      "dtype": "float64"
+    },
+    "kappas": {
+      "shape": [
+        42
+      ],
+      "dtype": "float64"
+    },
+    "slopes": {
+      "shape": [
+        5
+      ],
+      "dtype": "float64"
+    }
+  },
+  "clock_mode": "legacy",
+  "reproduction_clock_note": "Use --clock-mode legacy to reproduce the original absolute-clock guard. The compensated backend and only-failed-lane resumptions are saved separately."
+}

@@ -77,6 +77,8 @@ The new adaptive GPU backend controls state and tangent error together. Short st
 
 A useful next experiment would systematically refine tolerances and observation lengths at fixed parameter tuples, then reassess any classification changes. More sampling alone cannot resolve integration bias or long transients.
 
+The [quadratic-path follow-up](chua-scaling-research.md) now supplies fixed-slope GPU sections to alpha = 2048, independent CPU checks, an exact affine-transient counterexample and [a conditional limiting-fiber analysis](chua-scaling-structure.md). The infinite-alpha persistence question below remains open.
+
 ## Questions still open in this project
 
 - Can we find a robust chaotic attractor with geometry substantially different from the familiar scroll, butterfly, funnel and toroidal examples? Treat visual distinctness, a different dynamical mechanism, and literature-supported novelty as separate questions. A rotated, stretched, nonlinearly remapped or unusually projected known attractor does not by itself meet the research objective. Compare multiple projections and Poincare sections, Lyapunov spectra, symmetries, and the equations that generate the dynamics. For higher-dimensional candidates, label three-dimensional views as projections. Preserve reproducible trajectories and prepare a rotation GIF for any substantive candidate.

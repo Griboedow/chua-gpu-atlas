@@ -1,0 +1,16 @@
+{
+  "status": "prototype CPU run failed, no valid spectrum retained",
+  "source_index": 2198,
+  "settings": {
+    "transient_original_time": 5,
+    "duration_original_time": 30,
+    "rtol": 2e-11,
+    "atol": 2e-14,
+    "max_fast_step": 0.15,
+    "fast_QR_interval": 5,
+    "wall_budget": 360
+  },
+  "solver_message": "Required step size is less than spacing between numbers.",
+  "problem": "The prototype passed accumulated fast-time s into successive autonomous QR intervals. Nonsmooth Jacobian error control can demand a step smaller than the floating-point spacing at large s.",
+  "correction": "The next run resets each autonomous QR interval to local time zero, adding the offset only to saved event and trajectory times. Equations, tolerances and physical requested duration are unchanged. This is a plausible numerical diagnosis, not a validated result before the corrected run finishes."
+}

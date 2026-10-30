@@ -1,0 +1,168 @@
+{
+  "settings": {
+    "transient": 100,
+    "duration": 400,
+    "rtol": 1e-11,
+    "atol": 1e-14,
+    "max_fast_step": 0.125,
+    "max_attempts": 40000000,
+    "max_wall_seconds": 900.0,
+    "escape_scaled_norm_max": 1000000.0
+  },
+  "method": "FP64 DP5(4), full piecewise field and tangent, state and tangent error control; no explicit kink location",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 744.1525865000003,
+  "parameter_columns": [
+    "alpha",
+    "kappa=beta/alpha^2",
+    "m0",
+    "m1"
+  ],
+  "state_columns": [
+    "x",
+    "y",
+    "Z=z/alpha"
+  ],
+  "time_unit": "Requested times and LLE are ORIGINAL dimensionless t; raw clocks are fast s=alpha*t",
+  "tangent_norm": "Euclidean norm in scaled (x,y,Z), not the historical (x,y,z) finite-time norm",
+  "stats_columns": [
+    "xmin",
+    "xmax",
+    "ymin",
+    "ymax",
+    "Zmin",
+    "Zmax",
+    "last_window_xmin",
+    "last_window_xmax"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "scaled magnitude cutoff (not proof of divergence)",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 1617,
+  "completed": 1555,
+  "retained_positive": 1483,
+  "selection": "Every scout preliminary positive, continued from its saved endpoint with a fresh tangent",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        1617,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_states": {
+      "shape": [
+        1617,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "initial_tangent": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_states": {
+      "shape": [
+        1617,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_tangents": {
+      "shape": [
+        1617,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "lle": {
+      "shape": [
+        1617
+      ],
+      "dtype": "float64"
+    },
+    "lle_windows": {
+      "shape": [
+        1617,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_window_log_sums": {
+      "shape": [
+        1617,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_fast_clocks": {
+      "shape": [
+        1617,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "elapsed_original_time": {
+      "shape": [
+        1617
+      ],
+      "dtype": "float64"
+    },
+    "status": {
+      "shape": [
+        1617
+      ],
+      "dtype": "int32"
+    },
+    "step_counts": {
+      "shape": [
+        1617,
+        2
+      ],
+      "dtype": "int32"
+    },
+    "stats": {
+      "shape": [
+        1617,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "boundary_states": {
+      "shape": [
+        1617,
+        5,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "boundary_original_times": {
+      "shape": [
+        1617,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "source_indices": {
+      "shape": [
+        1617
+      ],
+      "dtype": "int64"
+    },
+    "retained_candidate": {
+      "shape": [
+        1617
+      ],
+      "dtype": "bool"
+    }
+  },
+  "clock_mode": "legacy",
+  "reproduction_clock_note": "Use --clock-mode legacy to reproduce the original absolute-clock guard. The compensated backend and only-failed-lane resumptions are saved separately.",
+  "source_scout_sha256": "2c412dcf67ed5ed665711cf3f7db08ee58ef653ff86fbdf36dd61dba3a3171b7"
+}

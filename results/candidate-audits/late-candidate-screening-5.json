@@ -1,0 +1,195 @@
+{
+  "audit_utc": "2026-10-30T03:55:00Z",
+  "status": "source_gap_not_simulation_ready",
+  "primary_candidate": {
+    "name": "Photothermal particles in Marangoni optical traps",
+    "doi": "10.1073/pnas.2024581118",
+    "dimensions": {
+      "single": 3,
+      "pair": 6
+    },
+    "states_per_particle": [
+      "position",
+      "velocity",
+      "temperature_difference"
+    ],
+    "energy_supply": "Stationary illumination with water heat sink; autonomous idealized maintained environment.",
+    "equations": {
+      "xdot": "v",
+      "vdot": "(gamma_T*a*T-eta_eff*v)/m_eff",
+      "Tdot": "(DeltaQ(x)-h(v)*A*T)/Cth(v)",
+      "h": "2*kw/L+0.664*Pr**(1/3)*kw*sqrt(rho_w*abs(v)/(a*mu))",
+      "Cth": "cp*rho_m*A*td*(1+h(v)*td/(3*kw))",
+      "Pr": "cp*mu/kw",
+      "A": "a*a/2",
+      "meff": "Lambda_m*m",
+      "etaeff": "Lambda_drag*6*pi*mu*(0.566*a/2)",
+      "pair_vdot": "single_vdot +/- Lambda_th/(m_eff*r*r), using source coordinate convention"
+    },
+    "supplied_parameters_SI": {
+      "cp_J_kg_K": 4180,
+      "mu_N_s_m2": 0.00089,
+      "gammaT_N_m_K": -0.0001379,
+      "kw_W_m_K": 0.6,
+      "kgel_W_m_K": 0.6,
+      "rho_w_kg_m3": 997,
+      "rho_m_kg_m3": 997,
+      "td_m": 1e-05,
+      "a_m": 0.0003
+    },
+    "missing_or_ambiguous": [
+      "No numerical alpha, Lambda_drag, Lambda_m, Lambda_th in retrieved 2021 main/SI.",
+      "L approximately a without an exact selected value.",
+      "Global DeltaQ(x) overlap closure not explicitly supplied.",
+      "Pair plus-left/minus-right requires documented axes and temperature convention.",
+      "Main equation 10 thermal-force sign differs algebraically from numerical equation 6; needs sign-convention audit.",
+      "No calibrated ring network equations recovered."
+    ],
+    "source_controls": [
+      {
+        "figure": "1E",
+        "intensity_W_cm2": 2.8,
+        "trap_length_um": 140
+      },
+      {
+        "figure": "1G",
+        "kind": "position-temperature limit cycle"
+      },
+      {
+        "figure": "2E",
+        "trap_spacing_um": 510,
+        "uncoupled_frequency_mismatch_approx": 0.09
+      }
+    ],
+    "physical_domain": [
+      "Noncolliding particle separation bounded away from zero for pair inverse-square force.",
+      "Particle remains inside intended optical trap and lumped thermal model domain."
+    ],
+    "math_results": [
+      {
+        "kind": "conditional_temperature_bound",
+        "bound": "max(abs(T0),Qmax/(h0*A)), h0=2kw/L",
+        "assumptions": "bounded abs(DeltaQ)<=Qmax and positive thermal parameters"
+      },
+      {
+        "kind": "conditional_velocity_bound",
+        "bound": "max(abs(v0),abs(gammaT)*a*Tmax/etaeff)",
+        "assumptions": "single particle; positive effective mass and drag"
+      },
+      {
+        "kind": "limitation",
+        "statement": "Bounds do not establish confined x, pair collision avoidance, chaos, or existence of compact attractor."
+      },
+      {
+        "kind": "regularity",
+        "statement": "sqrt(abs(v)) is generally non-C1 at v=0; smoothing changes exact model."
+      }
+    ],
+    "geometry_interest": "Experimental frustrated rings and time-varying phase/amplitude relationships; no proven chaos, no exact calibrated ring model recovered.",
+    "nondimensionalization": {
+      "scales": {
+        "h0": "2*kw/L",
+        "b": "h0*td/(3*kw)",
+        "C0": "cp*rho_m*A*td*(1+b)",
+        "tau0": "C0/(h0*A)",
+        "Tstar": "Qstar/(h0*A)",
+        "X": "x/a",
+        "V": "tau0*v/a",
+        "Theta": "T/Tstar",
+        "s": "t/tau0",
+        "q": "DeltaQ(a*X)/Qstar"
+      },
+      "equations": {
+        "Xprime": "V",
+        "Vprime": "Gamma*Theta-delta*V",
+        "Thetaprime": "F(V)*(q(X)-H(V)*Theta)",
+        "H": "1+kappa*sqrt(abs(V))",
+        "F": "(1+b)/(1+b*H(V))"
+      },
+      "groups": {
+        "kappa": "0.664*Pr**(1/3)*kw/h0*sqrt(rho_w/(mu*tau0))",
+        "delta": "etaeff*tau0/meff",
+        "Gamma": "gammaT*Tstar*tau0*tau0/meff",
+        "pair_Ki": "Lambda_th*tau0*tau0/(meff_i*a**3)"
+      },
+      "parameter_dependence": "Mathematical groups may be varied independently only as an explicitly broadened family; physical mass, fluid, geometry and illumination link several groups. Missing fitted tuple blocks reproduction, not abstract analysis.",
+      "jerk_equivalence": "Xthird+(delta+lambda(V))*Xsecond+delta*lambda(V)*Xprime-Gamma*F(V)*q(X)=0, lambda=F*H; exact linear state transformation when Gamma!=0.",
+      "known_class": "Autonomous third-order feedback/jerk class; not a demonstrated equivalence to a particular published chaotic example.",
+      "changed_model_limit": "kappa=0 removes source velocity-dependent heat exchange and gives Xthird+(delta+1)*Xsecond+delta*Xprime-Gamma*q(X)=0.",
+      "remaining_closure": "Global q(X) not supplied as a reproducible formula in retrieved source."
+    }
+  },
+  "priority_audit": {
+    "novelty_proven": false,
+    "exact_model_chaos_verified_in_retrieval": false,
+    "forward_metadata_records": 57,
+    "forward_full_text_coverage": "Not all read; closest 2024 logic-gate primary examined, supplement access incomplete.",
+    "closest_predecessor_doi": "10.1103/PhysRevLett.121.158001",
+    "predecessor_chaos_scope": "2018 paper explicitly discusses irregular motion near possible chaos; not a Lyapunov-confirmed exact-2021 result.",
+    "closest_later_doi": "10.1039/D3SM01487H",
+    "later_scope": "Static traps/logic and escape from arrays, different illumination regime.",
+    "later_SI_status": "Official guessed supplement endpoint returned HTTP403; numerical calibration remains unaudited.",
+    "queries": [
+      "\"Coupled oscillation and spinning\" chaos chaotic Lyapunov",
+      "\"Marangoni optical traps\" chaos chaotic",
+      "\"Modulating photothermocapillary interactions\" effective mass supplementary"
+    ],
+    "equivalence_limit": "Related Duffing/photothermocapillary systems are not demonstrated conjugate to these exact equations.",
+    "jerk_primary_reference": "https://doi.org/10.1119/1.18585"
+  },
+  "other_exclusions": [
+    {
+      "doi": "10.1103/PhysRevResearch.2.043091",
+      "dimension": 3,
+      "reason": "Exact primary Fig3 already reports chaotic regime; not new first-chaos target.",
+      "claim_limit": "Label does not itself prove asymptotic strange attractor."
+    },
+    {
+      "doi": "10.1017/jfm.2025.10837",
+      "reason": "Retrieved physical levitation model does not supply a closed autonomous dynamic state system; adding wake dynamics would introduce a closure."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://subras.github.io/papers/PNAS_21.pdf",
+      "ignored_cache": "outputs/candidate_research/kim2021-marangoni.pdf",
+      "bytes": 2216235,
+      "sha256": "05631f6974d7a559dfb7a739e34c47e8a26e049c9e41d9fc8f3b30aa0aea859f"
+    },
+    {
+      "url": "https://subras.github.io/papers/PNAS_SI_21.pdf",
+      "ignored_cache": "outputs/candidate_research/kim2021-marangoni-SI.pdf",
+      "bytes": 1709007,
+      "sha256": "7df810e6ecd5e463dac557893f2490537c44f21b566fc3f4e0f9eaef8284baec"
+    },
+    {
+      "url": "https://subras.github.io/papers/PRL_18.pdf",
+      "ignored_cache": "outputs/candidate_research/hauser2018.pdf",
+      "bytes": 1081855,
+      "sha256": "86e5d7a9747722a649313fd5a3e3cf0dba82b8d2caee17320df0e9e16740c281"
+    },
+    {
+      "url": "https://subras.github.io/papers/PRL_PTCO_SI.pdf",
+      "ignored_cache": "outputs/candidate_research/hauser2018-SI.pdf",
+      "bytes": 528684,
+      "sha256": "db3402eb61c8fda73dafde9588fc702b0e1fd2e2b2337df8734346a218ca6652"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2006.10631",
+      "ignored_cache": "outputs/candidate_research/marchegiani2020-thermoelectric-squid.pdf",
+      "bytes": 504560,
+      "sha256": "a96afcc4b37962a8a1f615cbc5da96380150dcc82cc4692045c81e4580f5a336"
+    }
+  ],
+  "computed_trajectories": 0,
+  "gpu_used": false,
+  "author_code_used": false,
+  "new_attractor_claim": false,
+  "next_step": "Recover public control specification/calibration and resolve coordinate conventions before any GPU survey.",
+  "validation": {
+    "json_parse": true,
+    "dimensionless_rhs_algebra_checks": 50,
+    "max_scaled_rhs_error": 6.019726280776124e-16,
+    "not_a_simulation": "Random algebra checks use arbitrary auxiliary coefficient values, not source calibration or trajectory integration."
+  }
+}

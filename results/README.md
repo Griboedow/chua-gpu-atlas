@@ -11,6 +11,8 @@ The large basin metadata, complete NPZ arrays, all offline interactive reports a
 
 These are finite-time numerical experiments. The old affine-branch CPU reference in `extent/event_resolved_checks.json` has been superseded after a missed-crossing failure at a distant point. Those files are historical evidence, not definitive reference values; use the new full-field checks under `expanded/`. Quantitative convergence over the entire cloud is not established. See the main README and methods for interpretation.
 
+- `chua-scaling/`: fixed-slope alpha/kappa sections, preserved clock failures and compensated-clock resumptions, CPU spectra/sections, affine-transient counterexample and frozen-fiber controls. See [the numerical report](../docs/chua-scaling-research.md) and [the structural note](../docs/chua-scaling-structure.md).
+
 ## Exploratory searches beyond Chua
 
 These later datasets are small enough to include directly, along with their settings and original analysis code:
@@ -30,3 +32,6 @@ All angles, time scalings, selection thresholds and source variants are describe
 - `microfluidic/`: literal four-state fixed-geometry flow/vortex model; analytic-Jacobian and conservation checks, three source-pressure CPU controls, an independent Radau reconstruction, equilibrium and conditional energy calculations. [The periodic source control was not recovered](../docs/microfluidic-research.md); no mass GPU search was run while the printed-parameter discrepancy remains unresolved.
 - `core-shell-gel/stiff-followup-2882.*`: independent implicit continuation of one saved budget-limited endpoint, followed by Newton/Radau and BDF closure to a stable cycle. [The follow-up](../docs/core-shell-gel-stiff-followup.md) preserves the original incomplete GPU interval and leaves other stiff cases unclassified.
 - `candidate-audits/mineral-protocell-screening.json`: primary-source equations and scoped dimensional/monotonicity exclusions for fixed and growing mineral membranes. [No trajectories were simulated](../docs/mineral-protocell-screening.md).
+
+- `candidate-audits/late-candidate-screening-5.json`: photothermal Marangoni source equations, missing global closure/calibration, and prior-chaos exclusions. See [screening V](../docs/late-candidate-screening-5.md).
+- `candidate-audits/late-candidate-screening-6.json`: exact motor-contact rotor-network equations, pinned author code, printed/code discrepancies and a reproduction plan. See [screening VI](../docs/late-candidate-screening-6.md); no trajectories integrated yet.

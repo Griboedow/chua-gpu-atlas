@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "transient": 5,
+    "duration": 30,
+    "rtol": 5e-12,
+    "atol": 5e-15,
+    "max_fast_step": 0.075,
+    "max_attempts": 12000000,
+    "max_wall_seconds": 180.0,
+    "escape_scaled_norm_max": 1000000.0
+  },
+  "method": "FP64 DP5(4), full piecewise field and tangent, state and tangent error control; no explicit kink location",
+  "clock_mode": "compensated",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 32.528103100004955,
+  "parameter_columns": [
+    "alpha",
+    "kappa=beta/alpha^2",
+    "m0",
+    "m1"
+  ],
+  "state_columns": [
+    "x",
+    "y",
+    "Z=z/alpha"
+  ],
+  "time_unit": "Requested times and LLE are ORIGINAL dimensionless t; raw clocks are fast s=alpha*t",
+  "tangent_norm": "Euclidean norm in scaled (x,y,Z), not the historical (x,y,z) finite-time norm",
+  "stats_columns": [
+    "xmin",
+    "xmax",
+    "ymin",
+    "ymax",
+    "Zmin",
+    "Zmax",
+    "last_window_xmin",
+    "last_window_xmax"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "scaled magnitude cutoff (not proof of divergence)",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "source_index": 2198,
+  "scope": "Matched requested start, original-time window, tolerance and maximum fast step to cpu-2198-aligned. Distinct solvers/control norms can separate chaotic long trajectories.",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_states": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "initial_tangent": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_states": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_tangents": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "lle": {
+      "shape": [
+        1
+      ],
+      "dtype": "float64"
+    },
+    "lle_windows": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_window_log_sums": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_fast_clocks": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "elapsed_original_time": {
+      "shape": [
+        1
+      ],
+      "dtype": "float64"
+    },
+    "status": {
+      "shape": [
+        1
+      ],
+      "dtype": "int32"
+    },
+    "step_counts": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "int32"
+    },
+    "stats": {
+      "shape": [
+        1,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "boundary_states": {
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "boundary_original_times": {
+      "shape": [
+        1,
+        5
+      ],
+      "dtype": "float64"
+    }
+  }
+}

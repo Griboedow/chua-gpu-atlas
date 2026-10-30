@@ -1,0 +1,78 @@
+{
+  "records": [
+    {
+      "parameters": [
+        9.0,
+        0.1763668430335097,
+        -1.1428571428571428,
+        -0.7142857142857143
+      ],
+      "start": [
+        0.7,
+        0.0,
+        0.0
+      ],
+      "fast_duration": 90.0,
+      "errors": {
+        "state_scaled": 4.3729464493935666e-12,
+        "normalized_tangent": 5.905097244518487e-11,
+        "fast_log_growth": 2.5738708941958066e-09,
+        "independent_original_coordinate_state": 8.577916155161347e-11
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        4096.0,
+        0.2,
+        -5.0,
+        -0.7142857142857143
+      ],
+      "start": [
+        0.7,
+        0.5,
+        -0.1
+      ],
+      "fast_duration": 25.0,
+      "errors": {
+        "state_scaled": 2.717825964282383e-13,
+        "normalized_tangent": 1.113553693699032e-13,
+        "fast_log_growth": 1.27675647831893e-13,
+        "independent_original_coordinate_state": 1.7053025658242404e-13
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        128.0,
+        0.24,
+        -1.1428571428571428,
+        -0.7142857142857143
+      ],
+      "start": [
+        1.5,
+        0.0,
+        -0.01171875
+      ],
+      "fast_duration": 20.0,
+      "errors": {
+        "state_scaled": 0.0,
+        "normalized_tangent": 2.0039525594484076e-13,
+        "fast_log_growth": 3.6648462042876417e-13,
+        "independent_original_coordinate_state": 0.0
+      },
+      "passed": true
+    },
+    {
+      "kind": "exact outer equilibrium and matrix exponential",
+      "errors": {
+        "state": 0.0,
+        "tangent": 1.4432899320127035e-15,
+        "log_growth": 1.3322676295501878e-15
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "arrays": {}
+}

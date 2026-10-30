@@ -1,0 +1,45 @@
+{
+  "source_index": 963,
+  "parameters": [
+    1024.0,
+    0.19875,
+    -1.1428571428571428,
+    -0.7142857142857143
+  ],
+  "outer_equilibrium": [
+    1.4999999999999998,
+    0.0,
+    -0.0014648437499999998
+  ],
+  "observation_initial_state": [
+    1.4892033939129061,
+    -0.002956805198917663,
+    0.0007177284853438015
+  ],
+  "duration": 200.0,
+  "original_time_eigenvalues_real": [
+    -293.59294166727784,
+    0.0107565479246432,
+    0.0107565479246432
+  ],
+  "original_time_eigenvalues_imag": [
+    0.0,
+    455.7185177343169,
+    -455.7185177343169
+  ],
+  "uniform_affine_x_deviation_bound": 0.09284174867861897,
+  "entire_affine_solution_stays_above_one": true,
+  "exact_affine_endpoint": [
+    1.408283856813335,
+    -0.03261997711405029,
+    0.014924931011554152
+  ],
+  "gpu_endpoint_error": 4.457639076971276e-06,
+  "gpu_window_lle": [
+    0.011453502492434996,
+    0.011413679157799162,
+    0.011373420249638553,
+    0.011333119149459442
+  ],
+  "interpretation": "This entire observation is self-consistently confined to one affine branch. Its positive exponent describes an unstable oscillatory transient, not a strange attractor. Future switching remains possible."
+}

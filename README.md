@@ -97,6 +97,14 @@ The previous wide-map animation remains available for comparison:
 
 </details>
 
+## Fixed slopes and the quadratic scaling question
+
+A further [fixed-slope experiment](docs/chua-scaling-research.md) follows beta = kappa alpha squared through alpha = **2048**. Of 5,670 prescribed trajectories, 1,536 retain a positive four-window screen after tighter continuation; all numerical failures in the first tight pass are preserved and separately resumed after a clock repair. A selected alpha = 2048 case has independent CPU/GPU leading rates near **0.960** on a matched finite interval. These are numerical candidates, not proof of persistence to infinite alpha.
+
+The [exact rescaling](docs/chua-scaling-structure.md) produces a harmonic oscillator driving a scalar equation at infinite alpha. Its frozen-amplitude responses are regular, but several stable responses can coexist. In a sampled example, outer and central responses produce opposite averaged amplitude drift. This suggests a concrete branch-switching question for the long-time limit. An exact affine transient also demonstrates why a positive finite-time exponent alone is insufficient.
+
+![Fixed-slope parameter sections](docs/assets/chua-scaling-sections.png)
+
 ## Results and downloads
 
 [**Download the complete results from release v1.1.0**](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0).

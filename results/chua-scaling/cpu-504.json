@@ -1,0 +1,126 @@
+{
+  "source_index": 504,
+  "qr_history": [
+    {
+      "original_elapsed": 25.0,
+      "spectrum": [
+        2.4597338764121437,
+        -0.03373920124591346,
+        -19.435123875888934
+      ]
+    },
+    {
+      "original_elapsed": 50.0,
+      "spectrum": [
+        2.1946093820572106,
+        0.011529466091293438,
+        -18.513248983466532
+      ]
+    },
+    {
+      "original_elapsed": 75.0,
+      "spectrum": [
+        2.282131797299982,
+        -0.021282673010403017,
+        -18.65285513188363
+      ]
+    },
+    {
+      "original_elapsed": 100.0,
+      "spectrum": [
+        2.3100162252649783,
+        -0.00744264045164452,
+        -18.551797773271293
+      ]
+    }
+  ],
+  "elapsed_original_time": 100.0,
+  "requested_duration": 100.0,
+  "requested_transient": 20.0,
+  "integrated_divergence_original_rate": -16.249224188457415,
+  "sum_spectrum_minus_trace": -5.435651928564766e-13,
+  "finite_time_neutral_flow_rate": 0.004136429988631249,
+  "status": "completed",
+  "wall_seconds": 104.72081849999813,
+  "settings": {
+    "method": "DOP853 full piecewise field/Jacobian, fast QR interval5 with local clock reset, y=0 upward sections",
+    "rtol": 2e-11,
+    "atol": 2e-14,
+    "max_fast_step": 0.15,
+    "wall_budget": 300.0
+  },
+  "scope": "Independent CPU integrator; same exact scaled equations. Finite-time spectrum, not a proof of a strange attractor.",
+  "time_unit": "original dimensionless time; state=(x,y,Z=z/alpha)",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "observation_initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "spectrum": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_spectra": {
+      "shape": [
+        4,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_elapsed": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "time": {
+      "shape": [
+        64000
+      ],
+      "dtype": "float64"
+    },
+    "states": {
+      "shape": [
+        64000,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "section_time": {
+      "shape": [
+        329
+      ],
+      "dtype": "float64"
+    },
+    "section_states": {
+      "shape": [
+        329,
+        3
+      ],
+      "dtype": "float64"
+    }
+  },
+  "tangent_initialization": "Historical run: identity Q after state-only warm-up; finite-window rates, no assertion of asymptotic convergence."
+}

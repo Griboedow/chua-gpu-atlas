@@ -1,0 +1,111 @@
+{
+  "source_index": 2198,
+  "qr_history": [
+    {
+      "original_elapsed": 7.5,
+      "spectrum": [
+        -0.5182739964875929,
+        0.046300145647333577,
+        -436.7981988204043
+      ]
+    },
+    {
+      "original_elapsed": 15.0,
+      "spectrum": [
+        0.24009981983267417,
+        0.0013769551374582252,
+        -437.47556303749116
+      ]
+    }
+  ],
+  "elapsed_original_time": 21.11572265625,
+  "requested_duration": 30.0,
+  "requested_transient": 5.0,
+  "integrated_divergence_original_rate": -440.69760526775866,
+  "sum_spectrum_minus_trace": -9.094947017729282e-13,
+  "finite_time_neutral_flow_rate": -0.009950712353187195,
+  "status": "CPU wall budget; completed QR intervals only are reported",
+  "wall_seconds": 360.00013220000255,
+  "settings": {
+    "method": "DOP853 full piecewise field/Jacobian, fast QR interval5 with local clock reset, y=0 upward sections",
+    "rtol": 2e-11,
+    "atol": 2e-14,
+    "max_fast_step": 0.15,
+    "wall_budget": 360.0
+  },
+  "scope": "Independent CPU integrator; same exact scaled equations. Finite-time spectrum, not a proof of a strange attractor.",
+  "time_unit": "original dimensionless time; state=(x,y,Z=z/alpha)",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "observation_initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "spectrum": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_spectra": {
+      "shape": [
+        4,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_elapsed": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "time": {
+      "shape": [
+        216225
+      ],
+      "dtype": "float64"
+    },
+    "states": {
+      "shape": [
+        216225,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "section_time": {
+      "shape": [
+        2595
+      ],
+      "dtype": "float64"
+    },
+    "section_states": {
+      "shape": [
+        2595,
+        3
+      ],
+      "dtype": "float64"
+    }
+  },
+  "tangent_alignment_caveat": "This historical partial run used identity Q after state-only warm-up. At large alpha its first vector is nearly the rapidly contracting scalar-fiber direction; reported finite-time QR rates need not be aligned estimates of asymptotic exponents. The aligned rerun is separate.",
+  "missing_window_representation": "Derived window_spectra with zero elapsed time are NaN; no missing window is classified or filled."
+}

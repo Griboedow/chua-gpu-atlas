@@ -8,6 +8,8 @@ A second independently checked lead is the [light-switching LCE slider](lce-slid
 
 A third independently checked lead is the [six-state pair of light-mediated operators](coupled-operators-research.md). Its continuous-heat interpretation retains bounded chaotic candidates under exact-segment GPU integration and independent CPU solvers. The smooth-profile follow-up reveals long chaotic transients ending in stable cycles; a broader-width cohort remains chaotic throughout a 20,000-unit observation. This is not a certified new attractor type or an experimental prediction.
 
+Two later source audits add [photothermal Marangoni traps](late-candidate-screening-5.md), still missing a global heat-profile closure and fitted control tuple, and a [motor-contact phase-rotor network](late-candidate-screening-6.md) with pinned author code and reproducible parameter settings. The rotor model is ready for independent implementation only after explicitly choosing its printed or code variant; its paper already reports irregularity, so a chaos computation would not establish first observation of irregular motion. Neither audit includes trajectories or a new attractor claim.
+
 ## Other leads and exclusions
 
 A further mathematical lead is the [five-state two-strain outbreak model](two-strain-research.md): 30 of 41 long GPU follow-ups retain positive exponents, with an independent CPU check and a stable periodic control. Very small prevalence limits finite-population interpretation, and the source already reports possibly aperiodic motion. A boundary argument excludes a literal interior homoclinic return to its strain-2-only equilibrium; this does not exclude chaos.

@@ -1,0 +1,316 @@
+{
+  "scope": "Exact scaling and analytic structure; small scalar/affine controls only, no finite-alpha chaos survey",
+  "conventions": {
+    "m0_m1": "Slopes of f, so slopes of g=x+f are 1+m0 and 1+m1",
+    "epsilon": "1/alpha",
+    "fast_time": "s=alpha*t",
+    "scaled_state": "(x,y,Z=z/alpha)",
+    "beta_path": "beta=kappa*alpha^2 with kappa>0 and m0,m1 fixed"
+  },
+  "checks": {
+    "random_seed": 2026103018,
+    "random_cases": 256,
+    "scaled_field_max_relative_error": 2.840660747089905e-16,
+    "action_identity_max_absolute_error": 7.105427357601002e-15,
+    "characteristic_polynomial_max_absolute_error": 3.9968028886505635e-15,
+    "critical_polynomial_factorization_max_absolute_error": 5.551115123125783e-17
+  },
+  "standard_slopes": {
+    "m0": -1.1428571428571428,
+    "m1": -0.7142857142857143,
+    "outer_g_slope": 0.2857142857142857,
+    "inner_g_slope": -0.1428571428571428,
+    "limiting_critical_kappa": 0.20408163265306123,
+    "growth_coefficient": 1.25
+  },
+  "fixed_critical_kappa_eigenvalue_controls": [
+    {
+      "alpha": 32,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.3194222396489761,
+          0.0
+        ],
+        [
+          0.001228976967345162,
+          0.42725147027016663
+        ],
+        [
+          0.001228976967345162,
+          -0.42725147027016663
+        ]
+      ],
+      "outer_pair_growth_original_t": 0.039327262955045184,
+      "alpha_times_growth_original_t": 1.2584724145614459,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.22640306122448978
+    },
+    {
+      "alpha": 128,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.2936798907880055,
+          0.0
+        ],
+        [
+          7.655253685982799e-05,
+          0.44558527077456506
+        ],
+        [
+          7.655253685982799e-05,
+          -0.44558527077456506
+        ]
+      ],
+      "outer_pair_growth_original_t": 0.009798724718057983,
+      "alpha_times_growth_original_t": 1.2542367639114218,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.20966198979591835
+    },
+    {
+      "alpha": 512,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.2876769564685343,
+          0.0
+        ],
+        [
+          4.772877124192831e-06,
+          0.4502102724706489
+        ],
+        [
+          4.772877124192831e-06,
+          -0.4502102724706489
+        ]
+      ],
+      "outer_pair_growth_original_t": 0.0024437130875867297,
+      "alpha_times_growth_original_t": 1.2511811008444056,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.2054767219387755
+    },
+    {
+      "alpha": 2048,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.2862031631550783,
+          0.0
+        ],
+        [
+          2.9809539621450387e-07,
+          0.45136795517984496
+        ],
+        [
+          2.9809539621450387e-07,
+          -0.45136795517984496
+        ]
+      ],
+      "outer_pair_growth_original_t": 0.0006104993714473039,
+      "alpha_times_growth_original_t": 1.2503027127240784,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.20443040497448978
+    },
+    {
+      "alpha": 8192,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.28583639328195776,
+          0.0
+        ],
+        [
+          1.862758612636295e-08,
+          0.45165744787569667
+        ],
+        [
+          1.862758612636295e-08,
+          -0.45165744787569667
+        ]
+      ],
+      "outer_pair_growth_original_t": 0.00015259718554716528,
+      "alpha_times_growth_original_t": 1.250076144002378,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.20416882573341835
+    },
+    {
+      "alpha": 32768,
+      "kappa_fixed": 0.20408163265306123,
+      "eigenvalues_fast_s_real_imag": [
+        [
+          -0.28574480562075255,
+          0.0
+        ],
+        [
+          1.164170985307189e-09,
+          0.451729825280868
+        ],
+        [
+          1.164170985307189e-09,
+          -0.451729825280868
+        ]
+      ],
+      "outer_pair_growth_original_t": 3.814755484654597e-05,
+      "alpha_times_growth_original_t": 1.2500190772116184,
+      "asymptotic_alpha_times_growth": 1.25,
+      "exact_kappa_stability_boundary": 0.2041034309231505
+    }
+  ],
+  "affine_boundary_center_control": {
+    "alpha": 64.0,
+    "kappa": 0.2152423469387755,
+    "initial_state_scaled": [
+      1.5499999999999998,
+      0.014285714285714285,
+      -0.03419961734693877
+    ],
+    "equilibrium_scaled": [
+      1.4999999999999998,
+      0.0,
+      -0.023437499999999997
+    ],
+    "period_fast_s": 13.90842357211454,
+    "x_min": 1.4499999999999997,
+    "x_max": 1.5499999999999998,
+    "full_piecewise_field_vs_matrix_exponential_max_error": 1.7763568394002505e-15,
+    "full_piecewise_field_closure_inf": 6.661338147750939e-16,
+    "interpretation": "Exact local center ellipses: affine outer field makes this linear Hopf boundary degenerate, not a generic isolated-limit-cycle bifurcation."
+  },
+  "affine_fiber_controls": [
+    {
+      "branch": "positive outer",
+      "slope_g": 0.2857142857142857,
+      "offset_g": -0.4285714285714285,
+      "forcing_amplitude": 0.1,
+      "kappa": 0.20408163265306123,
+      "period_fast_s": 13.90842357211454,
+      "initial_x": 1.5999999999999999,
+      "x_min": 1.3129171345809543,
+      "x_max": 1.6870828654190455,
+      "max_trajectory_error_against_affine_solution": 1.3322676295501878e-15,
+      "one_period_closure": 1.3322676295501878e-15,
+      "measured_covariance_ratio": 0.9999999999999988,
+      "exact_covariance_ratio": 1.0,
+      "scalar_multiplier_exact": 0.0188011863705938,
+      "scalar_exponent_fast_s_exact": -0.2857142857142857,
+      "interpretation": "Attracting scalar periodic response on one affine outer branch"
+    },
+    {
+      "branch": "inner unstable",
+      "slope_g": -0.1428571428571428,
+      "offset_g": 0.0,
+      "forcing_amplitude": 0.1,
+      "kappa": 0.20408163265306123,
+      "period_fast_s": 13.90842357211454,
+      "initial_x": -0.06363636363636362,
+      "x_min": -0.21105793470340561,
+      "x_max": 0.2110579347034039,
+      "max_trajectory_error_against_affine_solution": 3.3584246494910985e-15,
+      "one_period_closure": 3.3861802251067274e-15,
+      "measured_covariance_ratio": -0.6363636363636427,
+      "exact_covariance_ratio": -0.6363636363636361,
+      "scalar_multiplier_exact": 7.293019466188877,
+      "scalar_exponent_fast_s_exact": 0.1428571428571428,
+      "interpretation": "Positive exponent on an unstable periodic orbit is not a chaotic attractor"
+    }
+  ],
+  "scalar_stroboscopic_order_control": {
+    "forcing_amplitude": 0.1,
+    "kappa": 0.20408163265306123,
+    "initial_x": [
+      -4.0,
+      -2.0,
+      -0.5,
+      0.0,
+      0.5,
+      2.0,
+      4.0
+    ],
+    "one_period_returns": [
+      -1.448883084563543,
+      -1.4112807118223567,
+      -1.3320053622405983,
+      0.4004648751211115,
+      1.5720685130503953,
+      1.6075204745482379,
+      1.6451228472894248
+    ],
+    "smallest_adjacent_return_difference": 0.03545196149784258,
+    "qualification": "Finite numerical illustration; the order theorem follows analytically from uniqueness"
+  },
+  "fiber_inner_residence_thresholds": [
+    {
+      "m0": -2.0,
+      "m1": -0.7142857142857143,
+      "critical_inner_fraction": 0.22222222222222224,
+      "identity": "log(P_R_prime)/T = -[(1+m1)+(m0-m1)*inner_fraction]",
+      "qualification": "Regular frozen scalar periodic response only; not a full finite-epsilon Lyapunov formula. Uniform attraction needs a strict uniform gap below the threshold."
+    },
+    {
+      "m0": -5.0,
+      "m1": -0.7142857142857143,
+      "critical_inner_fraction": 0.06666666666666667,
+      "identity": "log(P_R_prime)/T = -[(1+m1)+(m0-m1)*inner_fraction]",
+      "qualification": "Regular frozen scalar periodic response only; not a full finite-epsilon Lyapunov formula. Uniform attraction needs a strict uniform gap below the threshold."
+    },
+    {
+      "m0": -10.0,
+      "m1": -0.7142857142857143,
+      "critical_inner_fraction": 0.030769230769230764,
+      "identity": "log(P_R_prime)/T = -[(1+m1)+(m0-m1)*inner_fraction]",
+      "qualification": "Regular frozen scalar periodic response only; not a full finite-epsilon Lyapunov formula. Uniform attraction needs a strict uniform gap below the threshold."
+    },
+    {
+      "m0": -30.0,
+      "m1": -0.7142857142857143,
+      "critical_inner_fraction": 0.00975609756097561,
+      "identity": "log(P_R_prime)/T = -[(1+m1)+(m0-m1)*inner_fraction]",
+      "qualification": "Regular frozen scalar periodic response only; not a full finite-epsilon Lyapunov formula. Uniform attraction needs a strict uniform gap below the threshold."
+    }
+  ],
+  "exact_limit_result": "At epsilon=0, each bounded scalar stroboscopic orbit at fixed oscillator amplitude converges to a fixed point. No recurrent chaotic fiber attractor; unstable periodic responses can have positive exponents.",
+  "finite_epsilon_result": "Unresolved globally. No theorem excluding compact chaotic attractors at arbitrarily large finite alpha is proved here.",
+  "normal_hyperbolicity_caveat": "A smooth uniformly attracting periodic fiber family suggests a persistent two-dimensional amplitude-phase manifold locally. Regularity of the actual piecewise-linear return map, trapping and uniformity must be established before invoking a persistence theorem.",
+  "literature": [
+    {
+      "authors": "Chua, Komuro and Matsumoto",
+      "year": 1986,
+      "title": "The Double Scroll Family",
+      "doi": "10.1109/TCS.1986.1085869",
+      "primary_url": "https://people.eecs.berkeley.edu/~chua/papers/Chua86.pdf",
+      "inspected": "Primary full PDF available; introductory equations and Poincare/global-bifurcation scope inspected; bounded text search for asymptotic discussion",
+      "relevance": "Classical piecewise-linear double-scroll equations and return-map analysis; no claim here of a new Chua mechanism"
+    },
+    {
+      "author": "Bruno Rossetto",
+      "year": 1993,
+      "title": "Chua's circuit as a slow-fast autonomous dynamical system",
+      "journal_reference": "Journal of Circuits, Systems and Computers 3, 483-496; reprinted in Chua's Circuit: A Paradigm for Chaos, pp.711-724",
+      "chapter_doi": "10.1142/9789812798855_0037",
+      "primary_abstract_url": "https://doi.org/10.1142/1997",
+      "inspected": "Publisher abstract; full chapter retrieval failed",
+      "relevance": "Explicit singular-perturbation prior art; exact beta=kappa*alpha^2 coverage not verified"
+    },
+    {
+      "authors": "Euzebio and Llibre",
+      "year": 2017,
+      "title": "Zero-Hopf bifurcation in a Chua system",
+      "doi": "10.1016/j.nonrwa.2017.02.002",
+      "primary_url": "https://files.cercomp.ufg.br/weby/up/1076/o/Euzebio_Llibre_chua.pdf",
+      "inspected": "Full primary author manuscript, model equation(1), rescaling and averaging hypotheses in section2",
+      "relevance": "Averaging in a six-parameter cubic Chua system, not an established equivalence to this fixed-slope piecewise-linear limit"
+    },
+    {
+      "authors": "Llibre, Mereu and Novaes",
+      "year": 2015,
+      "title": "Averaging theory for discontinuous piecewise differential systems",
+      "doi": "10.1016/j.jde.2015.01.022",
+      "primary_metadata_url": "https://portalrecerca.uab.cat/en/publications/averaging-theory-for-discontinuous-piecewise-differential-systems/",
+      "inspected": "Author institution abstract/metadata; full text not recovered in this pass",
+      "relevance": "Specialized nonsmooth averaging exists, but its hypotheses have not been checked for the proposed invariant-manifold claim"
+    }
+  ],
+  "novelty": "No originality or literature-absence claim; these are explicitly derived checks and a scoped research question",
+  "reproduction": "python research/audit_chua_scaling.py"
+}

@@ -1,0 +1,173 @@
+{
+  "settings": {
+    "transient": 100,
+    "duration": 400,
+    "rtol": 1e-11,
+    "atol": 1e-14,
+    "max_fast_step": 0.125,
+    "max_attempts": 40000000,
+    "max_wall_seconds": 600.0,
+    "escape_scaled_norm_max": 1000000.0
+  },
+  "method": "FP64 DP5(4), full piecewise field and tangent, state and tangent error control; no explicit kink location",
+  "clock_mode": "compensated",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 239.59457149999798,
+  "parameter_columns": [
+    "alpha",
+    "kappa=beta/alpha^2",
+    "m0",
+    "m1"
+  ],
+  "state_columns": [
+    "x",
+    "y",
+    "Z=z/alpha"
+  ],
+  "time_unit": "Requested times and LLE are ORIGINAL dimensionless t; raw clocks are fast s=alpha*t",
+  "tangent_norm": "Euclidean norm in scaled (x,y,Z), not the historical (x,y,z) finite-time norm",
+  "stats_columns": [
+    "xmin",
+    "xmax",
+    "ymin",
+    "ymax",
+    "Zmin",
+    "Zmax",
+    "last_window_xmin",
+    "last_window_xmax"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "scaled magnitude cutoff (not proof of divergence)",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 61,
+  "completed": 61,
+  "retained_positive": 53,
+  "selection": "Only 61 previous refined numerical failures, resumed from exact saved state/tangent/logs with compensated clock; original results retained",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        61,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_states": {
+      "shape": [
+        61,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "initial_tangent": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_states": {
+      "shape": [
+        61,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_tangents": {
+      "shape": [
+        61,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "lle": {
+      "shape": [
+        61
+      ],
+      "dtype": "float64"
+    },
+    "lle_windows": {
+      "shape": [
+        61,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_window_log_sums": {
+      "shape": [
+        61,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "raw_fast_clocks": {
+      "shape": [
+        61,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "elapsed_original_time": {
+      "shape": [
+        61
+      ],
+      "dtype": "float64"
+    },
+    "status": {
+      "shape": [
+        61
+      ],
+      "dtype": "int32"
+    },
+    "step_counts": {
+      "shape": [
+        61,
+        2
+      ],
+      "dtype": "int32"
+    },
+    "stats": {
+      "shape": [
+        61,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "boundary_states": {
+      "shape": [
+        61,
+        5,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "boundary_original_times": {
+      "shape": [
+        61,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "refined_indices": {
+      "shape": [
+        61
+      ],
+      "dtype": "int64"
+    },
+    "source_indices": {
+      "shape": [
+        61
+      ],
+      "dtype": "int64"
+    },
+    "retained_candidate": {
+      "shape": [
+        61
+      ],
+      "dtype": "bool"
+    }
+  },
+  "source_refined_sha256": "c3dd942e65e137713f6fbd6fd780fdb311ad0b83ec6f94e9c0f454dec5f568f1"
+}

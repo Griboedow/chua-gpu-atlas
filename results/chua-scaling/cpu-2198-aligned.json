@@ -1,0 +1,127 @@
+{
+  "source_index": 2198,
+  "qr_history": [
+    {
+      "original_elapsed": 7.5,
+      "spectrum": [
+        0.9147786211259212,
+        -0.17693274329026323,
+        -437.9803759427595
+      ]
+    },
+    {
+      "original_elapsed": 15.0,
+      "spectrum": [
+        0.8381874469732785,
+        -0.0366148795182224,
+        -438.0125316355279
+      ]
+    },
+    {
+      "original_elapsed": 22.5,
+      "spectrum": [
+        0.8404778677624546,
+        -0.017561408141192954,
+        -438.0382222541528
+      ]
+    },
+    {
+      "original_elapsed": 30.0,
+      "spectrum": [
+        0.9602666871685586,
+        -0.043483485790044935,
+        -438.0511437289073
+      ]
+    }
+  ],
+  "elapsed_original_time": 30.0,
+  "requested_duration": 30.0,
+  "requested_transient": 5.0,
+  "integrated_divergence_original_rate": -437.13436052740195,
+  "sum_spectrum_minus_trace": -1.2681766747846268e-10,
+  "finite_time_neutral_flow_rate": -0.024081116727784124,
+  "status": "completed",
+  "wall_seconds": 470.01068400000077,
+  "settings": {
+    "method": "DOP853 full piecewise field/Jacobian, fast QR interval5 with local clock reset, y=0 upward sections",
+    "rtol": 5e-12,
+    "atol": 5e-15,
+    "max_fast_step": 0.075,
+    "wall_budget": 600.0,
+    "tangent_initialization": "QR basis whose first vector is proportional to (1,2,3); QR also evolves during discarded transient"
+  },
+  "scope": "Independent CPU integrator; same exact scaled equations. Finite-time spectrum, not a proof of a strange attractor.",
+  "optimized_augmented_field_identity_relative_error": 4.2847444107709666e-16,
+  "time_unit": "original dimensionless time; state=(x,y,Z=z/alpha)",
+  "arrays": {
+    "parameters": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "observation_initial_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "final_state": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "spectrum": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_spectra": {
+      "shape": [
+        4,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "window_elapsed": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64"
+    },
+    "time": {
+      "shape": [
+        307200
+      ],
+      "dtype": "float64"
+    },
+    "states": {
+      "shape": [
+        307200,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "section_time": {
+      "shape": [
+        3687
+      ],
+      "dtype": "float64"
+    },
+    "section_states": {
+      "shape": [
+        3687,
+        3
+      ],
+      "dtype": "float64"
+    }
+  }
+}

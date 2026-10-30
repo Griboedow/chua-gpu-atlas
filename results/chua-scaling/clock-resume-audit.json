@@ -1,0 +1,16 @@
+{
+  "source_hashes": {
+    "refined.npz": "c3dd942e65e137713f6fbd6fd780fdb311ad0b83ec6f94e9c0f454dec5f568f1",
+    "refined-clock-resume.npz": "a31b5a1b55cb8709d89c26cfbde4bc287531c527342f8d4c4f427a39faffca69"
+  },
+  "lanes": 61,
+  "old_absolute_clock_stagnation_count": 61,
+  "old_min_step_guard_count": 0,
+  "old_max_abs_clock_compensation": 0.0,
+  "normalized_tangent_error": 2.220446049250313e-16,
+  "previously_completed_boundary_states_preserved_bitwise": true,
+  "previously_completed_window_log_sums_preserved_bitwise": true,
+  "all_resumed_complete": true,
+  "counted_old_attempts_preserved": true,
+  "interpretation": "All guard failures were t+h==t at a large absolute fast clock. The autonomous field can advance the state by h while compensated time retains sub-ULP increments. Resumption preserves completed boundary states and logarithmic sums; old incomplete results remain separate. The large-clock guard was a numerical failure, not an escape or a physical classification."
+}

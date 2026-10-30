@@ -1,0 +1,28 @@
+{
+  "source_index": 2198,
+  "requested_original_transient": 5,
+  "completed_original_observation": 30,
+  "cpu_spectrum": [
+    0.9602666871685586,
+    -0.043483485790044935,
+    -438.0511437289073
+  ],
+  "gpu_lle": 0.9597989891771422,
+  "leading_rate_absolute_difference": 0.00046769799141632706,
+  "cpu_leading_windows": [
+    0.9147786211259212,
+    0.7615962728206297,
+    0.8450587093408015,
+    1.3196331453868695
+  ],
+  "gpu_leading_windows": [
+    0.9129089862168999,
+    0.8091184856038771,
+    0.5466727548903777,
+    1.5704957299974143
+  ],
+  "observation_start_state_max_absolute_difference": 6.092770954424509e-08,
+  "final_state_max_absolute_difference": 0.0034231250829694915,
+  "cpu_trace_identity_error": -1.2681766747846268e-10,
+  "scope": "Same start, tangent direction, warm-up, observation, tolerances and step ceiling; independent CPU DOP853 and GPU DP5(4). Finite-time consistency, not a proof or a converged asymptotic spectrum."
+}
