@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "status": 1,
+  "message": "Reached specified tstop.",
+  "nfev": 3809,
+  "njev": 211,
+  "parameters": {
+    "alpha": 1,
+    "beta": 1,
+    "c": 0.14,
+    "lr": 1.204,
+    "lt": 1.092,
+    "d": 0.02,
+    "n": 100
+  },
+  "seed": 2026103021,
+  "settings": {
+    "requested_duration": 0.2,
+    "max_step": 0.0001,
+    "rtol": 1e-07,
+    "atol": 1e-07,
+    "analytic_branch_jacobian": false,
+    "wall_budget": 120,
+    "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+    "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+  },
+  "callback_calls": 25120,
+  "wall_seconds": 2.0269488000049023,
+  "scope": "Short source-solver control, not reproduction of a long Fig5 regime or a chaos test.",
+  "arrays": {
+    "time": {
+      "shape": [
+        201
+      ],
+      "dtype": "float64"
+    },
+    "states": {
+      "shape": [
+        201,
+        101
+      ],
+      "dtype": "float64"
+    },
+    "derivatives": {
+      "shape": [
+        201,
+        101
+      ],
+      "dtype": "float64"
+    },
+    "contacts": {
+      "shape": [
+        201
+      ],
+      "dtype": "int64"
+    },
+    "initial_state": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    },
+    "initial_derivative": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    }
+  }
+}

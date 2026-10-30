@@ -230,6 +230,8 @@ An [exact five-state mechanochemical single-cell study](docs/hhs-research.md) ad
 
 An [implicit gel follow-up](docs/core-shell-gel-stiff-followup.md) resolves one previously budget-limited endpoint to a strongly stable periodic orbit while retaining the original incomplete GPU record. [Mineral-protocell screening](docs/mineral-protocell-screening.md) identifies a planar model and a growing-membrane predecessor with a monotone thickness variable, rather than a sustained strange-attractor target.
 
+A [motor-contact rotor investigation](docs/dcr-research.md) adds five completed short source-solver controls and two budget-unresolved attempts. Its [strict contact boundary](docs/dcr-source-audit.md) needs an explicit continuation convention before a meaningful attractor search. For the smooth optical pair, an [exact order transformation](docs/coupled-operators-order-audit.md) applies an established theorem to exclude nonperiodic compact equilibrium-free limit sets under real-pole mechanics; the existing numerical candidates are strongly underdamped and outside that exclusion.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.

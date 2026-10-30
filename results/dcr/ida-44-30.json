@@ -1,0 +1,55 @@
+{
+  "success": false,
+  "status": "exception",
+  "message": "TimeoutError: CPU callback wall budget",
+  "last_callback_time": 13.45833088855982,
+  "parameters": {
+    "alpha": 4.0,
+    "beta": 4.0,
+    "c": 0.14,
+    "lr": 1.204,
+    "lt": 1.092,
+    "d": 0.02,
+    "n": 100
+  },
+  "seed": 2026103021,
+  "settings": {
+    "requested_duration": 30.0,
+    "max_step": 0.0001,
+    "rtol": 1e-07,
+    "atol": 1e-07,
+    "analytic_branch_jacobian": true,
+    "wall_budget": 180.0,
+    "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+    "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+  },
+  "callback_calls": 949272,
+  "wall_seconds": 180.0012005000026,
+  "scope": "Short source-solver control, not reproduction of a long Fig5 regime or a chaos test.",
+  "arrays": {
+    "last_callback_state": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    },
+    "last_callback_derivative": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    },
+    "initial_state": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    },
+    "initial_derivative": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64"
+    }
+  }
+}

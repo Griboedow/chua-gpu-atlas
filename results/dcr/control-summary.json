@@ -1,0 +1,208 @@
+{
+  "reference": "ida-analytic-1-fine",
+  "runs": [
+    {
+      "label": "ida-source-short",
+      "success": true,
+      "settings": {
+        "requested_duration": 0.2,
+        "max_step": 0.0001,
+        "rtol": 1e-07,
+        "atol": 1e-07,
+        "analytic_branch_jacobian": false,
+        "wall_budget": 120,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 2.0269488000049023,
+      "callback_calls": 25120,
+      "actual_last_output_time": 0.2,
+      "nfev": 3809,
+      "njev": 211,
+      "displacement_range": [
+        0.0,
+        0.31577864774861714
+      ],
+      "sampled_contact_range": [
+        0,
+        3
+      ]
+    },
+    {
+      "label": "ida-analytic-1",
+      "success": true,
+      "settings": {
+        "requested_duration": 1.0,
+        "max_step": 0.0001,
+        "rtol": 1e-07,
+        "atol": 1e-07,
+        "analytic_branch_jacobian": true,
+        "wall_budget": 120,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 1.7587482999952044,
+      "callback_calls": 16499,
+      "actual_last_output_time": 1.0,
+      "nfev": 16499,
+      "njev": 869,
+      "displacement_range": [
+        0.0,
+        1.0559533365028944
+      ],
+      "sampled_contact_range": [
+        0,
+        4
+      ],
+      "max_state_difference_from_fine": 0.0001641922233375226,
+      "max_displacement_difference_from_fine": 2.030397212204882e-05,
+      "end_state_difference_from_fine": 0.0001641922233375226
+    },
+    {
+      "label": "ida-analytic-1-tight",
+      "success": true,
+      "settings": {
+        "requested_duration": 1.0,
+        "max_step": 5e-05,
+        "rtol": 1e-08,
+        "atol": 1e-08,
+        "analytic_branch_jacobian": true,
+        "wall_budget": 120,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 4.287232999995467,
+      "callback_calls": 38085,
+      "actual_last_output_time": 1.0,
+      "nfev": 38085,
+      "njev": 4869,
+      "displacement_range": [
+        0.0,
+        1.0559716198508402
+      ],
+      "sampled_contact_range": [
+        0,
+        4
+      ],
+      "max_state_difference_from_fine": 1.6402161232775825e-05,
+      "max_displacement_difference_from_fine": 3.3506110656555954e-06,
+      "end_state_difference_from_fine": 1.6402160557760226e-05
+    },
+    {
+      "label": "ida-source-1-tight",
+      "success": true,
+      "settings": {
+        "requested_duration": 1.0,
+        "max_step": 5e-05,
+        "rtol": 1e-08,
+        "atol": 1e-08,
+        "analytic_branch_jacobian": false,
+        "wall_budget": 120,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 8.306192199997895,
+      "callback_calls": 100616,
+      "actual_last_output_time": 1.0,
+      "nfev": 30724,
+      "njev": 692,
+      "displacement_range": [
+        0.0,
+        1.0559718353648813
+      ],
+      "sampled_contact_range": [
+        0,
+        4
+      ],
+      "max_state_difference_from_fine": 1.7104044555793507e-05,
+      "max_displacement_difference_from_fine": 2.84162141006572e-06,
+      "end_state_difference_from_fine": 1.7104044555793507e-05
+    },
+    {
+      "label": "ida-analytic-1-fine",
+      "success": true,
+      "settings": {
+        "requested_duration": 1.0,
+        "max_step": 2.5e-05,
+        "rtol": 1e-09,
+        "atol": 1e-09,
+        "analytic_branch_jacobian": true,
+        "wall_budget": 120,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 11.705624400005036,
+      "callback_calls": 90928,
+      "actual_last_output_time": 1.0,
+      "nfev": 90928,
+      "njev": 21636,
+      "displacement_range": [
+        0.0,
+        1.055972939982509
+      ],
+      "sampled_contact_range": [
+        0,
+        4
+      ],
+      "max_state_difference_from_fine": 0.0,
+      "max_displacement_difference_from_fine": 0.0,
+      "end_state_difference_from_fine": 0.0
+    },
+    {
+      "label": "ida-44-30",
+      "success": false,
+      "settings": {
+        "requested_duration": 30.0,
+        "max_step": 0.0001,
+        "rtol": 1e-07,
+        "atol": 1e-07,
+        "analytic_branch_jacobian": true,
+        "wall_budget": 180.0,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 180.0012005000026,
+      "callback_calls": 949272,
+      "last_callback_time": 13.45833088855982,
+      "message": "TimeoutError: CPU callback wall budget",
+      "interpretation": "Budget-unresolved. Saved callback state can be an unaccepted solver trial; not a certified trajectory endpoint."
+    },
+    {
+      "label": "ida-44-30-tight",
+      "success": false,
+      "settings": {
+        "requested_duration": 30.0,
+        "max_step": 5e-05,
+        "rtol": 1e-08,
+        "atol": 1e-08,
+        "analytic_branch_jacobian": true,
+        "wall_budget": 240.0,
+        "contact_policy": "Literal strict author-code predicates; no capture/Filippov convention added",
+        "solver": "SUNDIALS IDA via scikit-sundae 1.2.0"
+      },
+      "wall_seconds": 240.00115120000555,
+      "callback_calls": 1287349,
+      "last_callback_time": 13.380354419511793,
+      "message": "TimeoutError: CPU callback wall budget",
+      "interpretation": "Budget-unresolved. Saved callback state can be an unaccepted solver trial; not a certified trajectory endpoint."
+    }
+  ],
+  "source_sha256": {
+    "results/dcr/ida-source-short.json": "d67b0a76734882c9b371d0c394bdba91bf1495f50972255fd76504a16ee1846a",
+    "results/dcr/ida-source-short.npz": "c49fecbfe3a42a4118bc78c0f35c654e10bd06bfc690122366d7d952a4f1c065",
+    "results/dcr/ida-analytic-1.json": "e045d7e676625b9ee26b9d40ec578d982ff847457ef3cbf2dc4ec8d65e176c58",
+    "results/dcr/ida-analytic-1.npz": "52a9878c6d989e262947bc71435822ed9b68349c52b19062db760f66247c5868",
+    "results/dcr/ida-analytic-1-tight.json": "b259eb524fd1cec3cb27728da7c0312652eafefa4081dee7ba7ff326c7553032",
+    "results/dcr/ida-analytic-1-tight.npz": "3abffd77e9435745145d70f420a10836bc2e6760afa76a131724fe879c797fef",
+    "results/dcr/ida-source-1-tight.json": "dddab8c2bfe92a5fabea9bbe901287fe648f77d55980e60528a3119d1946715c",
+    "results/dcr/ida-source-1-tight.npz": "37944a52c459941620653fb479c702f5fb2509308b4c3332cf6be8b659d20f76",
+    "results/dcr/ida-analytic-1-fine.json": "7585b5063ca6abb3b29dc5bceb3731c47e07f930193e193e0689ba8e2deb3c6d",
+    "results/dcr/ida-analytic-1-fine.npz": "673e70942a96e8a559066d046883b81942d0085c4bc433f5a88fb521fa8494c2",
+    "results/dcr/ida-44-30.json": "b0735a32d6238edc376b871cde6fd3fc0c6e9ba51de9b1942d9f25256c85ce6b",
+    "results/dcr/ida-44-30.npz": "55b202294864cc1af9a5ca5d8796754322b938e94832d44d7267b988c789889c",
+    "results/dcr/ida-44-30-tight.json": "33154cd41c5c2d708ac89f7451fed12d0201b43b134d66694e310225e63b17e0",
+    "results/dcr/ida-44-30-tight.npz": "193afd9c2f74204a12b9383c8df818cdc28bf4aa7ee4a119bf3f6e6b54a5285a"
+  },
+  "source_hash_convention": "SHA256: exact NPZ bytes; JSON bytes with CRLF normalized to LF for portable Git checkouts.",
+  "scope": "Five completed short controls and two budget-unresolved longer attempts. Agreement away from contact events does not define a continuous-time contact-selection law."
+}

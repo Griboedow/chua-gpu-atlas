@@ -1,0 +1,280 @@
+{
+  "scope": "Explicit logistic optical profile of positive width; continuous heat balance; identical positive k,b. No theorem applied to the ideal relay.",
+  "assumption": "b^2>=4k, including equality",
+  "transformation": "r1+r2=b, r1*r2=k; z=v+r1*x; cyclic state=(yp,zp,xp,ym,zm,xm)",
+  "cyclic_link_signs": [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "sign_product": -1,
+  "invariant_box": "0<=yp,ym,xp,xm<=1; 0<=zp,zm<=r1",
+  "verified_theorem_conclusion": "Every compact omega-limit set containing no equilibrium is a single periodic orbit (Weiss-Margaliot Theorem 12).",
+  "equilibrium": "Unique for every positive logistic width; det(-J)=k^2*(1+a_minus*a_plus)>0",
+  "stronger_extension_status": "Hori-Hara-Kim Proposition 1 states the original cyclic theorem's positive-determinant exclusion of homoclinic omega-limits for its gene-chain model. The original 1990 full hypotheses were not recovered; this audit does not promote that restatement alone to an unconditional global no-chaos theorem for the present six-state family.",
+  "checks": {
+    "seed": 2026103001,
+    "random_algebraic_states": 128,
+    "critical_damping_states": 32,
+    "errors": {
+      "factorization": 2.0723213317891352e-16,
+      "inverse": 2.220446049250313e-16,
+      "field_conjugacy": 2.4296219148943643e-15,
+      "jacobian_similarity": 2.141282783715139e-14,
+      "second_compound_exponential": 1.1102230246251565e-16,
+      "box_outward_violation": 0.0
+    },
+    "minimum_second_compound_offdiagonal": 0.0,
+    "maximum_strongly_connected_components_of_compound_graph": 1,
+    "passed": true
+  },
+  "equilibrium_controls": [
+    {
+      "parameters_k_b_dm_dp_width": [
+        1.471189151686983,
+        2.4258517281045706,
+        0.44289444395637745,
+        0.6527533132784046,
+        0.21615319467367555
+      ],
+      "state": [
+        0.3923479950928728,
+        0.0,
+        0.3923479950928728,
+        0.5581964132375575,
+        0.0,
+        0.5581964132375575
+      ],
+      "field_residual": 1.1102230246251565e-16,
+      "gain_product": 1.258401810547912,
+      "det_minus_J": 4.888079278007055,
+      "expected_k_squared_times_one_plus_gain": 4.888079278007054,
+      "relative_determinant_error": 1.8170294898781783e-16,
+      "eigenvalues": [
+        [
+          -0.11474667584435982,
+          0.5885969874381619
+        ],
+        [
+          -0.11474667584435982,
+          -0.5885969874381619
+        ],
+        [
+          -1.142121869896913,
+          1.1774885318431185
+        ],
+        [
+          -1.142121869896913,
+          -1.1774885318431185
+        ],
+        [
+          -2.168983182363296,
+          0.5888915444049585
+        ],
+        [
+          -2.168983182363296,
+          -0.5888915444049585
+        ]
+      ]
+    },
+    {
+      "parameters_k_b_dm_dp_width": [
+        4.206162682612853,
+        12.42261088588994,
+        0.4398675819221376,
+        0.5040633969496974,
+        0.33876971336240885
+      ],
+      "state": [
+        0.4768807990401476,
+        0.0,
+        0.4768807990401476,
+        0.4727127013786821,
+        0.0,
+        0.4727127013786821
+      ],
+      "field_residual": 0.0,
+      "gain_product": 0.5418086394704047,
+      "det_minus_J": 27.277377045355816,
+      "expected_k_squared_times_one_plus_gain": 27.27737704535581,
+      "relative_determinant_error": 2.6048792542576075e-16,
+      "eigenvalues": [
+        [
+          -12.074352681244623,
+          0.023841593382886484
+        ],
+        [
+          -12.074352681244623,
+          -0.023841593382886484
+        ],
+        [
+          -0.22860382821607617,
+          0.2931118365162667
+        ],
+        [
+          -0.22860382821607617,
+          -0.2931118365162667
+        ],
+        [
+          -1.1196543764292444,
+          0.31695342989915143
+        ],
+        [
+          -1.1196543764292444,
+          -0.31695342989915143
+        ]
+      ]
+    },
+    {
+      "parameters_k_b_dm_dp_width": [
+        1.073153904085617,
+        6.482708245401987,
+        0.1627347474972578,
+        0.1582304602500802,
+        0.3342423125590162
+      ],
+      "state": [
+        0.5571888630073221,
+        0.0,
+        0.5571888630073221,
+        0.2350262756274168,
+        0.0,
+        0.2350262756274168
+      ],
+      "field_residual": 0.0,
+      "gain_product": 0.397064485272136,
+      "det_minus_J": 1.6089423097538076,
+      "expected_k_squared_times_one_plus_gain": 1.608942309753808,
+      "relative_determinant_error": 2.760131343168015e-16,
+      "eigenvalues": [
+        [
+          -6.312859992163947,
+          0.020719353988325313
+        ],
+        [
+          -6.312859992163947,
+          -0.020719353988325313
+        ],
+        [
+          -0.14880764767753887,
+          0.1257038938077275
+        ],
+        [
+          -0.14880764767753887,
+          -0.1257038938077275
+        ],
+        [
+          -1.021040605560494,
+          0.1464232477960525
+        ],
+        [
+          -1.021040605560494,
+          -0.1464232477960525
+        ]
+      ]
+    },
+    {
+      "parameters_k_b_dm_dp_width": [
+        0.8106429055350165,
+        4.680233505102712,
+        0.4414777692663744,
+        0.7234043294426521,
+        0.2413013091661506
+      ],
+      "state": [
+        0.35953943354749374,
+        0.0,
+        0.35953943354749374,
+        0.5840857148192122,
+        0.0,
+        0.5840857148192122
+      ],
+      "field_residual": 6.106226635438361e-16,
+      "gain_product": 0.9607269873801495,
+      "det_minus_J": 1.2884758976597583,
+      "expected_k_squared_times_one_plus_gain": 1.2884758976597583,
+      "relative_determinant_error": 0.0,
+      "eigenvalues": [
+        [
+          -0.12694468210512133,
+          0.19576619914916427
+        ],
+        [
+          -0.12694468210512133,
+          -0.19576619914916427
+        ],
+        [
+          -1.051770150434952,
+          0.24824815997905422
+        ],
+        [
+          -1.051770150434952,
+          -0.24824815997905422
+        ],
+        [
+          -4.501518672562636,
+          0.05248196082989001
+        ],
+        [
+          -4.501518672562636,
+          -0.05248196082989001
+        ]
+      ]
+    }
+  ],
+  "existing_underdamped_references": [
+    {
+      "source_row": 1026,
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964
+      ],
+      "b_squared_over_4k": 0.010731660412645809,
+      "critical_b": 17.222861474384842,
+      "order_audit_applies": false
+    },
+    {
+      "source_row": 3054,
+      "parameters": [
+        8608.828902752228,
+        4.7177230976207,
+        0.8733635635208339,
+        0.8404887881875038
+      ],
+      "b_squared_over_4k": 0.0006463396902541634,
+      "critical_b": 185.5675499946284,
+      "order_audit_applies": false
+    }
+  ],
+  "literature": [
+    {
+      "title": "The Poincare-Bendixson theorem for monotone cyclic feedback systems",
+      "authors": "Mallet-Paret and Smith",
+      "year": 1990,
+      "doi": "10.1007/BF01054041",
+      "url": "https://link.springer.com/article/10.1007/BF01054041",
+      "access": "Publisher abstract/metadata; full PDF redirected to subscription preview; no purchase."
+    },
+    {
+      "title": "A Generalization of Linear Positive Systems with Applications to Nonlinear Systems: Invariant Sets and the Poincare-Bendixson Property",
+      "authors": "Weiss and Margaliot",
+      "year": 2021,
+      "doi": "10.1016/j.automatica.2020.109358",
+      "url": "https://arxiv.org/abs/1902.01630v4",
+      "access": "Full primary author manuscript; Theorem 5/6, Corollary 4, Theorem 12 inspected."
+    },
+    {
+      "title": "Existence Criteria of Periodic Oscillations in Cyclic Gene Regulatory Networks",
+      "authors": "Hori, Hara and Kim",
+      "year": 2010,
+      "url": "https://www.keisu.t.u-tokyo.ac.jp/data/2010/METR10-11.pdf",
+      "access": "Full author/institutional research report; model equation 1, Proposition 1, Lemmas 2/3 and Appendix B inspected. This is an application/restatement, not the original 1990 proof."
+    }
+  ],
+  "wall_seconds": 0.10824570000113454
+}

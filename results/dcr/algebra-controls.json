@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "trials": 128,
+  "seed": 2026103020,
+  "optimized_vs_literal_residual_max_error": 0.0,
+  "nearest_distance_max_error": 1.7763568394002505e-14,
+  "consistent_initial_derivative_residual": 8.881784197001252e-15,
+  "fixed_branch_jacobian_directional_relative_error": 1.4410771906548674e-09,
+  "scope": "Random off-interface residual/geometry/root/Jacobian identities. Strict-boundary predicates and event continuation require a separate audit.",
+  "nominal_parameters": {
+    "alpha": 1.0,
+    "beta": 1.0,
+    "c": 0.14,
+    "lr": 1.204,
+    "lt": 1.092,
+    "d": 0.02,
+    "n": 100
+  },
+  "force_free_rate_fp64": 0.0,
+  "arrays": {}
+}

@@ -1,0 +1,129 @@
+{
+  "audit_utc": "2026-10-30T04:40:00Z",
+  "model": "Discontinuously coupled rotor network",
+  "doi": "10.1098/rsif.2025.0438",
+  "status": "strict_contact_boundary_convention_required_before_attractor_claim",
+  "scope": "Source-only audit; author code read, not executed; no simulations",
+  "provenance": [
+    {
+      "ignored_cache": "outputs/candidate_research/warmington2026-final.pdf",
+      "bytes": 5920084,
+      "sha256": "1f07f634052cfc740053f7ba401092a9afde4427b342b3ceabc84b63cf3f4391"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/warmington2026-SI.pdf",
+      "bytes": 111841,
+      "sha256": "7d2862ca687aec2aa7c89855ed28480c5409c8970328dcee11a06336dfd0337d"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/warmington2026-SI-invariance.pdf",
+      "bytes": 427918,
+      "sha256": "9457c85266eaa19d8623a02a3311168546e7259eeb2bd56b7d8ec3e1607dc14f"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/warmington2026-author.jl",
+      "bytes": 13921,
+      "sha256": "7c3cfcfef142705529f80d057dbc8137db2b76ac02bdc5acdf365deb2158b30a"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/warmington2026-github-pinned.jl",
+      "bytes": 13134,
+      "sha256": "915eb80c6a018711a0d58c0f80c3add89a63bda1892f3166953525eb39b2fb05",
+      "github_blob_sha": "85ccf19ab244815929045fb646814f54b56279e8",
+      "note": "Connector-fetched UTF-8 text cached with normalized newlines; content not executed."
+    }
+  ],
+  "github_commit": "796c5e39468b06fd6fc2c378437d618593948e98",
+  "source_variants": {
+    "default": {
+      "events": false,
+      "solver": "IDA/LapackDense",
+      "dtmax": 0.0001,
+      "rtol": 1e-07,
+      "atol": 1e-07,
+      "initialization": "BrownFullBasicInit",
+      "contact_callback_passed": false,
+      "package_versions_pinned": false
+    },
+    "contact_residual": {
+      "distance_comparison": "strict abs(gap)<0.02",
+      "angular_window": "strict pi-asin(c)<wrapped_theta<pi+asin(c)",
+      "contact_velocity": "v/abs(cos(theta))",
+      "free_velocity": "2*pi",
+      "github_lines": "69-82,117-130"
+    },
+    "optional_callback": {
+      "condition": "min_tooth(abs(gap)-0.023), only if H=1 and current angular derivative>0.9*2*pi; otherwise 1",
+      "assignment": "angular_du_new=0.5*abs(angular_du_old-backbone_du_old/abs(cos(theta)))",
+      "changes": "integrator.du[j+1] only",
+      "does_not_explicitly_do": [
+        "state reset",
+        "persistent contact mode",
+        "backbone force-balance solve",
+        "consistent DAE reinitialization",
+        "separate entry and exit laws"
+      ],
+      "consistent_dae_derivative_guaranteed": false,
+      "library_postcallback_behavior_verified": false,
+      "github_lines": "183-267"
+    }
+  },
+  "contact_derivation": {
+    "author_geometry": "gap=t_k-[j*lr-sin(theta_j)], away from tooth wrap",
+    "free_gap_derivative": "v-2*pi*abs(cos(theta_j))",
+    "contact_gap_derivative": 0,
+    "interior_gap_preserved": true,
+    "local_obstruction_conditions": [
+      "isolated first entry at gap=d",
+      "free gap derivative strictly negative and bounded away from zero nearby",
+      "inside angular window",
+      "away from wrapping and other switching surfaces",
+      "locally regular algebraic velocity branch"
+    ],
+    "local_obstruction": "For h=gap-d, hdot<=-delta on h>=0 and hdot=0 on h<0. No absolutely continuous continuation from h=0 satisfies the literal field almost everywhere under these conditions.",
+    "proof_scope": "Conditional local derivation, not a claim that every trajectory reaches this event or that all numerical simulations fail.",
+    "finite_step_effect": "A numerical step can penetrate the band and freeze a nonzero interior gap.",
+    "convention_needed": "A closed-contact, hybrid-mode or differential-inclusion interpretation must be explicit; it is not specified by reducing solver tolerance."
+  },
+  "source_event_rules_found": {
+    "filippov": false,
+    "persistent_contact_flag": false,
+    "position_reset": false,
+    "grazing_rule": false,
+    "simultaneous_event_ordering": false,
+    "scope": "Examined final paper, two SI PDFs, Zenodo1.0.0 and pinned GitHub code only"
+  },
+  "sensitivity": {
+    "saltation": "Xi=I+(fplus-fminus)*n.T/(n.T*fminus), identity state reset and isolated transverse event",
+    "capture": "n.T*fplus=0 implies n.T*Xi=0",
+    "grazing": "Denominator vanishes; formula is not applicable.",
+    "simultaneous": "Requires separate transition-sequence analysis.",
+    "literal_strict_field_repaired_by_saltation": false,
+    "primary_source": "https://arxiv.org/html/2306.06862v3"
+  },
+  "fixed_branch_algebra": "See independent docs/dcr-structure.md for sigmoid derivative and geometry-dependent contact-count bounds; separate from event ambiguity.",
+  "priority": {
+    "new_attractor_claim": false,
+    "novelty_proven": false,
+    "known_source_irregularity": true,
+    "exact_model_event_aware_lyapunov_found": false,
+    "fulltext_followup_gap": "10.1101/2024.07.03.601948",
+    "followup_attempts": [
+      "https://www.biorxiv.org/content/10.1101/2024.07.03.601948v1.full",
+      "https://www.biorxiv.org/content/early/2024/07/06/2024.07.03.601948.source.xml"
+    ],
+    "followup_access": "Metadata/abstract available; full-text and JATS inaccessible in bounded check.",
+    "closest_known_chaos": "10.1103/PhysRevE.101.012203",
+    "exact_equivalence_established": false,
+    "literature_exhaustive": false
+  },
+  "next_gate": [
+    "Choose and record event interpretation.",
+    "Verify contact and switching convergence to that interpretation.",
+    "Treat optional callback as separate variant.",
+    "Only then assess event-aware exponents and attracting recurrence."
+  ],
+  "simulations": 0,
+  "gpu": false,
+  "author_code_executed": false
+}
