@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T05:15:33.040569+00:00",
+  "checked_at_utc": "2026-10-30T05:28:36.999084+00:00",
   "baseline_commit": "2e20f63",
   "repaired_commit": "04e00a3c9c0a6856be225d08f593e93169966340",
   "repair_commits": [
@@ -8,19 +8,19 @@
     "a99a2675f53135bc2eb112a3d7ded34716d862ea",
     "3713534a83fea7f1083b5bf371f2a77bb3f368d9"
   ],
-  "scope": "62 distinct published Markdown pages, each retaining its latest actual inspected revision. Five new or affected pages were checked at ca33408; other pages retain their earlier recorded checks. Excludes the operational research-state journal. Preparation previews and failed page attempts are not successful publication checks. Earlier optical fragment landing limitations remain separately recorded, not implicitly rechecked.",
+  "scope": "64 distinct published Markdown pages, each retaining its latest actual inspected revision. Five new or affected pages were checked at b60418f; other pages retain their earlier recorded checks. Excludes the operational research-state journal. Preparation previews and failed page attempts are not successful publication checks. Earlier optical fragment landing limitations remain separately recorded, not implicitly rechecked.",
   "browser": "Installed Microsoft Edge, headless Chromium via bundled Playwright; live public GitHub pages with JavaScript and MathJax enabled.",
   "viewport": {
     "width": 1320,
     "height": 1000
   },
-  "pages_checked": 62,
-  "rendered_math_elements": 1294,
+  "pages_checked": 64,
+  "rendered_math_elements": 1310,
   "unresolved_math_elements": 0,
   "error_or_red_command_elements": 0,
   "wide_math_elements_at_checked_viewport": 0,
   "failed_loaded_article_images": 0,
-  "local_relative_links_checked": 377,
+  "local_relative_links_checked": 389,
   "broken_local_relative_links": 0,
   "distinct_formulas_repaired": 36,
   "files_repaired": 13,
@@ -147,9 +147,9 @@
     },
     {
       "file": "docs/candidate-queue.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/candidate-queue.md",
-      "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
-      "checkedAt": "2026-10-30T05:13:19.826Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/candidate-queue.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checkedAt": "2026-10-30T05:27:11.066Z",
       "heading": "Additional candidate screening",
       "mathCount": 0,
       "errors": [],
@@ -294,9 +294,9 @@
     },
     {
       "file": "docs/coupled-operators-research.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/coupled-operators-research.md",
-      "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
-      "checkedAt": "2026-10-30T05:13:12.725Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/coupled-operators-research.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checkedAt": "2026-10-30T05:27:14.653Z",
       "heading": "Chaos candidates in two light-mediated material operators",
       "mathCount": 0,
       "errors": [],
@@ -304,63 +304,63 @@
       "wideMath": [],
       "images": [
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_1026.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_1026.png",
           "visible": true,
           "complete": true,
           "width": 2015,
           "height": 1550
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_1026.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_1026.gif",
           "visible": true,
           "complete": true,
           "width": 665,
           "height": 589
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_1026.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_1026.gif",
           "visible": false,
           "complete": true,
           "width": 665,
           "height": 589
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_3054.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_3054.png",
           "visible": true,
           "complete": true,
           "width": 2015,
           "height": 1550
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_smooth_width.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_smooth_width.png",
           "visible": true,
           "complete": true,
           "width": 2040,
           "height": 1360
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_coexistence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_coexistence.png",
           "visible": true,
           "complete": true,
           "width": 2040,
           "height": 1360
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_smooth_coexistence.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_smooth_coexistence.gif",
           "visible": true,
           "complete": true,
           "width": 576,
           "height": 576
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_smooth_coexistence.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_smooth_coexistence.gif",
           "visible": false,
           "complete": true,
           "width": 576,
           "height": 576
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_lifetimes.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_lifetimes.png",
           "visible": true,
           "complete": true,
           "width": 2040,
@@ -902,6 +902,29 @@
       "rawTexRemnants": []
     },
     {
+      "file": "docs/optical-lifetime-extension.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/optical-lifetime-extension.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checkedAt": "2026-10-30T05:27:00.717Z",
+      "heading": "Extending the optical cohort beyond 20,000 time units",
+      "mathCount": 0,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/optical_lifetime_extension.png",
+          "visible": true,
+          "complete": true,
+          "width": 2210,
+          "height": 1275
+        }
+      ],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
       "file": "docs/photofeedback-research.md",
       "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/04e00a3/docs/photofeedback-research.md",
       "commit": "04e00a3",
@@ -1110,6 +1133,21 @@
       "brokenImages": []
     },
     {
+      "file": "docs/thermal-flutter-source-audit.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/thermal-flutter-source-audit.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checkedAt": "2026-10-30T05:27:04.140Z",
+      "heading": "Solar-array thermal flutter: source gate",
+      "mathCount": 16,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
       "file": "docs/thermomechanical-sheet-audit.md",
       "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/04e00a3/docs/thermomechanical-sheet-audit.md",
       "commit": "04e00a3",
@@ -1167,9 +1205,9 @@
     },
     {
       "file": "README.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ca33408c8a15717d0d69912f40c4d649a95d5ce9/README.md",
-      "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
-      "checkedAt": "2026-10-30T05:13:16.621Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/README.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checkedAt": "2026-10-30T05:27:07.750Z",
       "heading": "Chua GPU Atlas",
       "mathCount": 0,
       "errors": [],
@@ -1177,112 +1215,119 @@
       "wideMath": [],
       "images": [
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/expanded-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/expanded-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/expanded-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/expanded-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/trajectory-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/trajectory-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/trajectory-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/trajectory-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/window-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/window-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/window-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/window-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/findings.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/findings.png",
           "visible": true,
           "complete": true,
           "width": 2700,
           "height": 1800
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/expanded_extent.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/expanded_extent.png",
           "visible": true,
           "complete": true,
           "width": 2720,
           "height": 1190
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/extent-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/extent-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/chua-scaling-sections.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/chua-scaling-sections.png",
           "visible": true,
           "complete": true,
           "width": 2394,
           "height": 827
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/synchronematic_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/synchronematic_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/lce_slider_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/lce_slider_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/coupled_operators_lifetimes.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/coupled_operators_lifetimes.png",
           "visible": true,
           "complete": true,
           "width": 2040,
           "height": 1530
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/two_strain_rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/optical_lifetime_extension.png",
+          "visible": true,
+          "complete": true,
+          "width": 2210,
+          "height": 1275
+        },
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/two_strain_rotation.gif",
           "visible": true,
           "complete": true,
           "width": 600,
           "height": 600
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ca33408c8a15717d0d69912f40c4d649a95d5ce9/docs/assets/two_strain_rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/b60418fc2fbdd8a34ab873c5581e31f1b9c0727a/docs/assets/two_strain_rotation.gif",
           "visible": false,
           "complete": true,
           "width": 600,
@@ -1392,13 +1437,13 @@
   "references": [
     "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
   ],
-  "last_checked_revision": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
+  "last_checked_revision": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
   "page_count_basis": "Distinct pages, using each page's most recent successful public GitHub browser check; failed attempts are recorded separately.",
-  "successful_page_checks_across_passes": 100,
+  "successful_page_checks_across_passes": 105,
   "math_count_basis": "Math elements across the latest checked version of each distinct page; repeated checks are not counted twice.",
-  "math_element_observations_across_passes": 1492,
-  "local_relative_link_check_revision": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
-  "local_relative_link_count_basis": "377 relative path occurrences in the 62 inspected documents at ca33408 resolve in its published Git tree. Excludes code/math, external destinations and general fragment validation; earlier specific anchor checks retain their actual revisions and limitations.",
+  "math_element_observations_across_passes": 1508,
+  "local_relative_link_check_revision": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+  "local_relative_link_count_basis": "389 relative path occurrences in the 64 inspected documents at b60418f resolve in its published Git tree. Excludes code/math, external destinations and general fragment validation; earlier specific anchor checks retain their actual revisions and limitations.",
   "publication_passes": [
     {
       "commit": "04e00a3c9c0a6856be225d08f593e93169966340",
@@ -1666,6 +1711,23 @@
       ],
       "formatting_repairs_needed": 0,
       "raw_dollar_or_tex_remnants": 0
+    },
+    {
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "checked_at_utc": "2026-10-30T05:28:36.999084+00:00",
+      "pages_checked": 5,
+      "rendered_math_elements": 16,
+      "new_distinct_pages": 2,
+      "previously_checked_pages": 3,
+      "files": [
+        "docs/optical-lifetime-extension.md",
+        "docs/thermal-flutter-source-audit.md",
+        "README.md",
+        "docs/candidate-queue.md",
+        "docs/coupled-operators-research.md"
+      ],
+      "formatting_repairs_needed": 0,
+      "raw_dollar_or_tex_remnants": 0
     }
   ],
   "prepublication_format_preparation": [
@@ -1869,6 +1931,18 @@
       "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9",
       "content": "Both complete two-panel figures, the section-return projector and the two stability-crossing table, including qualification that the unstable doubled cycle is not an attractor.",
       "source": "Actual public GitHub browser screenshots; stored in ignored local outputs only. Supporting screenshot visits are not extra page checks."
+    },
+    {
+      "file": "docs/optical-lifetime-extension.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "content": "Complete extended-lifetime figure and cohort/capture table, including 100,000-unit persistence limits and independent endpoint-check qualifications.",
+      "source": "Actual public GitHub browser screenshots; stored in ignored local outputs only. Supporting screenshot visits are not extra page checks."
+    },
+    {
+      "file": "docs/thermal-flutter-source-audit.md",
+      "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a",
+      "content": "Mean-temperature equation, energy identity and physically restricted exclusion statement.",
+      "source": "Actual public GitHub browser screenshots; stored in ignored local outputs only. Supporting screenshot visits are not extra page checks."
     }
   ],
   "followup_image_handling": "Visible article images were scrolled into view and awaited. Hidden GIF preview/fallback elements were recorded separately and not classified as failed visible figures.",
@@ -1937,12 +2011,12 @@
   ],
   "failed_followup_page_checks_scope": "Five failed initial follow-up page checks: two in the HHS/microfluidic block and three in the Chua-scaling/late-screening block. Not an exhaustive history of the earliest pre-repair inspections.",
   "raw_math_remnant_check": {
-    "scope": "27 distinct pages with actual raw-text scans at their recorded revisions; not retroactively certified for the other 35 pages.",
+    "scope": "29 distinct pages with actual raw-text scans at their recorded revisions; not retroactively certified for the other 35 pages.",
     "method": "Clone the rendered article, remove math-renderer, pre and code elements, then inspect remaining text for literal dollars and TeX commands; combine with screenshots.",
     "latest_checked_pages": [
       {
         "file": "README.md",
-        "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9"
+        "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a"
       },
       {
         "file": "results/README.md",
@@ -1950,7 +2024,7 @@
       },
       {
         "file": "docs/candidate-queue.md",
-        "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9"
+        "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a"
       },
       {
         "file": "docs/late-candidate-screening-3.md",
@@ -2038,7 +2112,7 @@
       },
       {
         "file": "docs/coupled-operators-research.md",
-        "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9"
+        "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a"
       },
       {
         "file": "docs/optical-cycle-continuation.md",
@@ -2047,6 +2121,14 @@
       {
         "file": "docs/heat-pipe-source-audit.md",
         "commit": "ca33408c8a15717d0d69912f40c4d649a95d5ce9"
+      },
+      {
+        "file": "docs/optical-lifetime-extension.md",
+        "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a"
+      },
+      {
+        "file": "docs/thermal-flutter-source-audit.md",
+        "commit": "b60418fc2fbdd8a34ab873c5581e31f1b9c0727a"
       }
     ],
     "remaining_raw_dollars": 0,
