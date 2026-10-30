@@ -1,0 +1,10 @@
+{
+  "samples": 128,
+  "seed": 2026103087,
+  "parameter_sampling": "rho,r=10**U(-2,3); standard-normal original motor states",
+  "inverse_scaled_error": 7.26786276183007e-14,
+  "motor_to_memory_field_scaled_error": 8.591251777980468e-13,
+  "zero_inertia_parent_field_scaled_error": 4.1946262464710765e-15,
+  "complex_memory_scaled_error": 9.685096431573739e-17,
+  "scope": "Random algebraic consistency checks supplement the explicit derivation; no integrations, stability result, or priority claim."
+}

@@ -4,6 +4,8 @@ Status: 30 October 2026. Eight trajectories retain positive leading finite-time 
 
 The exact equations, their physical assumptions, equivalence to Oriola et al. (2014), and the published periodic control are documented in the [source audit](motor-pair-source-audit.md). The 2014 authors already investigated chaos and reported periodic/subharmonic behavior in the cases they checked. Our audit has not established that the present parameter tuples were covered, or that later work has not found similar behavior.
 
+A subsequent [equation-level memory comparison](motor-memory-priority-audit.md) also identifies this core as the zero-inertia boundary of an established four-state trapped pilot-wave model. The located finite-inertia chaos results do not settle the boundary case, but this prior model connection further limits any claim of a new mechanism.
+
 ![Survey, tightened finite-time growth and independent CPU convergence diagnostics](assets/motor_pair_gpu_survey.png)
 
 ## What was actually computed

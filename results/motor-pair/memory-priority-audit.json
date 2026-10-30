@@ -1,0 +1,112 @@
+{
+  "checked_at_utc": "2026-10-30T06:40:43.752638+00:00",
+  "status": "exact limiting equivalence established; exact-limit chaos priority unresolved",
+  "simulations_run": false,
+  "motor_state": [
+    "h",
+    "Y",
+    "Z"
+  ],
+  "motor_parameters": [
+    "rho>0",
+    "r>0"
+  ],
+  "affine_map": {
+    "x": "(h-r*Y)/rho",
+    "c": "1-Z",
+    "s": "-Y"
+  },
+  "inverse_map": {
+    "h": "rho*x-r*s",
+    "Y": "-s",
+    "Z": "1-c"
+  },
+  "transformed_field": {
+    "x_prime": "-rho*x+r*s",
+    "c_prime": "1-c-x_prime*s",
+    "s_prime": "-s+x_prime*c"
+  },
+  "complex_memory": "z_prime=(-1+i*x_prime)*z+1; z=c+i*s",
+  "history_caveat": "Finite-time initial memory adds exp[-(t-t0)+i(x(t)-x(t0))]*z(t0); complete-history integral requires compatible initialization.",
+  "valani_2022_equation_12": {
+    "state": [
+      "q",
+      "V",
+      "P",
+      "Q"
+    ],
+    "equations": [
+      "q_prime=V",
+      "kappa*V_prime=P-V-k*q",
+      "P_prime=-P+beta*V-V*Q",
+      "Q_prime=-Q+V*P"
+    ],
+    "source_b": 1,
+    "exact_zero_inertia_mapping": {
+      "kappa": 0,
+      "k": "rho",
+      "beta": "r",
+      "q": "x",
+      "P": "r*s",
+      "Q": "r*(1-c)",
+      "V": "P-k*q"
+    },
+    "mapping_status": "our algebraic derivation, not a claim that the source studied this limit"
+  },
+  "primary_checks": [
+    {
+      "source": "Valani 2022",
+      "url": "https://arxiv.org/pdf/2110.09754",
+      "locator": "Sec.V.A Eqs11-12, preprint p5",
+      "access": "PDF text and rendered page inspected",
+      "conclusion": "harmonic-trap finite-inertia 4D model; no exact-zero-inertia chaos demonstration identified in inspected source"
+    },
+    {
+      "source": "Durey 2020",
+      "url": "https://eprints.gla.ac.uk/276681/1/276681.pdf",
+      "locator": "Eqs1-6; p2 visually inspected",
+      "access": "PDF text and rendered page inspected",
+      "conclusion": "inertial unconfined cosine-memory model, different 3D reduction"
+    },
+    {
+      "source": "Molacek thesis2013",
+      "url": "https://hdl.handle.net/1721.1/83698",
+      "transcription_url": "https://studylib.net/doc/10674740/bouncing--and--walking--droplets--jan--molacek-archnie",
+      "locator": "AppendixE EqsE.4-E.6 and SecE.3",
+      "access": "institutional metadata verified; institutional PDF returned HTTP429; public transcription inspected, not PDF image",
+      "conclusion": "position, velocity and2memory variables retained; very-high-memory survey, not zero-inertia3D"
+    },
+    {
+      "source": "Valani and Dandogbessi2024",
+      "url": "https://arxiv.org/html/2408.00168v2",
+      "locator": "Eqs1-2",
+      "access": "full author HTML equation text",
+      "conclusion": "acceleration retained; constant bias, no harmonic trap"
+    },
+    {
+      "source": "Valani infinite-memory2024",
+      "url": "https://arxiv.org/html/2308.03062v1",
+      "locator": "SecII and alternative attractor-driven interpretation",
+      "access": "author HTML and repository publication metadata",
+      "conclusion": "overdamped particle driven by3D internal engine is not elimination of the velocity state in trapped finite-memory model"
+    }
+  ],
+  "focused_queries": [
+    "Valani memory driven active particle harmonic trap overdamped chaos sinusoidal",
+    "Molacek thesis harmonic potential cosine model chaos overdamped",
+    "\"overdamped\" \"Valani\" \"harmonic\"",
+    "\"overdamped\" \"sinusoidal\" \"pilot-wave\"",
+    "\"harmonic potential\" \"memory\" \"chaos\" \"zero inertia\""
+  ],
+  "priority_conclusion": "No exact-overdamped3D chaotic-attractor demonstration located in bounded inspected set; absence of search hits is not novelty proof.",
+  "limitations": [
+    "not exhaustive citation audit",
+    "Molacek appendix typography not newly verified from institutional PDF",
+    "finite-inertia and infinite-memory chaos do not establish chaos on kappa=0 finite-memory boundary",
+    "no numerical convergence or attractor result generated in this audit"
+  ],
+  "local_primary_pdf_sha256": {
+    "durey2020": "c400d6917fc8e2d988a6820474e29b8a50775870142616944f28dfe78215944e",
+    "valani2022": "d04b0afe44062673a034bea24ee75f7ea6e238a57c84908742fbb46ee10a2ac8"
+  }
+}
