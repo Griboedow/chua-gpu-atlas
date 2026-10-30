@@ -70,6 +70,7 @@
   },
   "algebra_checks": {
     "seed": 72,
+    "stable_plane_seed": 73,
     "samples_per_N": 30,
     "N_values": [
       2,
@@ -82,7 +83,9 @@
     "jacobian_complex_step_scaled_error": 6.101472787404398e-16,
     "source_force_constraint_scaled_error": 1.6285666909103204e-15,
     "n2_core_equivalence_scaled_error": 6.420821782371743e-16,
-    "constraint_velocity_sum_max_abs": 1.0658141036401503e-14
+    "constraint_velocity_sum_max_abs": 1.0658141036401503e-14,
+    "stable_plane_field_identity_scaled_error": 6.33404222463452e-16,
+    "stable_eigenspace_identity_max_abs": 3.552713678800501e-15
   },
   "controls": {
     "N": 8,
@@ -503,5 +506,14 @@
       "evidence": "Full primary section2 and conclusion prescribe deformation; not an autonomous N-row chaos result"
     },
     "novelty": "unverified; absence of retrieved demonstration is not proof"
+  },
+  "equilibrium_homoclinic_exclusion": {
+    "scope": "rho>0,r>rho+1; arbitrary finite b; exact autonomous reduced source equations",
+    "equilibrium": "c_j=1,s_j=b,X_j=0; unique",
+    "stable_manifold": "X_j=0, all s_j equal, c_j arbitrary; dimension N+1",
+    "plane_flow": "c_j-1 and common s-b each decay exp(-tau)",
+    "argument": "The invariant affine plane is tangent to the full stable eigenspace; stable-manifold uniqueness and backwards flow uniqueness give the complete stable manifold. Every nonconstant orbit in it diverges backwards, excluding an equilibrium homoclinic orbit.",
+    "limits": "Not a no-chaos theorem; periodic-orbit connections and other mechanisms remain possible. Nonhyperbolic onset is excluded.",
+    "attribution": "Elementary deduction from the published model, not a novelty claim."
   }
 }

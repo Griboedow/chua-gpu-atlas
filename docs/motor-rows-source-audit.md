@@ -75,7 +75,7 @@ For each row,
 
 Hence the disk $c_j^2+s_j^2\leq1+b^2$ is invariant from the source's equilibrium-density starts. Since $X_j'=-\rho X_j+r(s_j-\bar s)$, these disks also bound every relative displacement; for instance $|X_j|\leq\max(|X_j(0)|,2r\sqrt{1+b^2}/\rho)$. This proves boundedness on the stated invariant region, not chaos.
 
-The first-harmonic source rates require $|A|\sqrt{1+b^2}\leq1/2$ to stay nonnegative. With equilibrium means, $\ell Q_j$ is bounded by $1/2\pm |A|\sqrt{c_j^2+s_j^2}$, so physical density bounds can be checked directly. Varying $b$ changes the prescribed transition-rate asymmetry. It is not part of the fixed-$b=1$ numerical controls below.
+The first-harmonic source rates require $|A|\sqrt{1+b^2}\leq1/2$ to stay nonnegative. With equilibrium means, $\ell Q_j$ is bounded by $1/2\pm |A|\sqrt{c_j^2+s_j^2}$, so physical density bounds can be checked directly. Varying $b$ changes the prescribed transition-rate asymmetry. It is not part of the fixed $b=1$ numerical controls below.
 
 The unique equilibrium has $c_j=1,s_j=b,X_j=0$. Its eigenvalues consist of $N+1$ copies of $-1$ and $N-1$ pairs satisfying
 
@@ -84,6 +84,16 @@ The unique equilibrium has $c_j=1,s_j=b,X_j=0$. Its eigenvalues consist of $N+1$
 ```
 
 At $r=\rho+1$, the full system has $N-1$ simultaneous critical pairs. For $N>2$, it cannot be identified near this point with one three-state core plus strictly stable passive variables. This does not establish a new chaotic mechanism.
+
+There is also a useful exclusion above onset, $r\gt\rho+1$. The unique equilibrium cannot have a nontrivial homoclinic orbit. To see this, consider the affine plane
+
+```math
+\mathcal S=\{X_j=0,\quad s_1=s_2=\cdots=s_N,\quad c_j\text{ arbitrary}\}.
+```
+
+Every velocity $V_j$ vanishes on this plane. Its exact flow is $c_j(\tau)-1=(c_j(0)-1)e^{-\tau}$ and $s_j(\tau)-b=(s_j(0)-b)e^{-\tau}$. The plane has dimension $N+1$, and its tangent space is precisely the stable eigenspace of the hyperbolic equilibrium above onset; all remaining eigenvalues have positive real part. Local stable-manifold uniqueness identifies its neighborhood with the local stable manifold. Any trajectory converging to the equilibrium eventually enters that neighborhood, and backwards uniqueness therefore places its complete stable manifold in the same invariant plane. Every nonconstant orbit in the plane diverges backwards instead of returning to the equilibrium. This rules out an equilibrium homoclinic orbit in this parameter regime. Uniqueness of the equilibrium also rules out a network connecting distinct equilibria.
+
+This is our elementary deduction from the source equations, without a novelty claim. It does **not** rule out chaos, homoclinic or heteroclinic connections involving periodic orbits, or other global bifurcations. It does not apply at the nonhyperbolic onset itself. The saved algebra audit additionally checks the plane's exact field identity and the stable-eigenspace action; those numerical checks supplement the argument, rather than proving the stable-manifold statement.
 
 The identical-row equations have simultaneous permutation symmetry. Subspaces where groups of rows share the same $(c,s,X)$ are invariant. In particular, two equal-sized clusters reduce to the two-row problem. The published eight-row examples and our reproduced oscillation have two groups of four. The single-core global Lyapunov argument must not simply be asserted for the entire $3N-1$ system.
 

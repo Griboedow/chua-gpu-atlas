@@ -114,10 +114,13 @@ def source_start(n=8, seed=20251030, amplitude_nm=.01):
 
 def source_algebra_audit():
     rng = np.random.default_rng(72)
+    plane_rng = np.random.default_rng(73)
     errors = {"jacobian_complex_step_scaled_error": 0.,
               "source_force_constraint_scaled_error": 0.,
               "n2_core_equivalence_scaled_error": 0.,
-              "constraint_velocity_sum_max_abs": 0.}
+              "constraint_velocity_sum_max_abs": 0.,
+              "stable_plane_field_identity_scaled_error": 0.,
+              "stable_eigenspace_identity_max_abs": 0.}
     for n in (2, 3, 8):
         for _ in range(30):
             p = (10**rng.uniform(-1, 1), 10**rng.uniform(-1, 1), rng.uniform(-2, 2))
@@ -135,6 +138,18 @@ def source_algebra_audit():
             v = -rho*x+r*(s-np.mean(s))
             errors["constraint_velocity_sum_max_abs"] = max(
                 errors["constraint_velocity_sum_max_abs"], float(abs(np.sum(v))))
+            plane = np.r_[plane_rng.normal(size=n), np.full(n, plane_rng.normal()), np.zeros(n-1)]
+            expected_plane = np.r_[1-plane[:n], b-plane[n:2*n], np.zeros(n-1)]
+            errors["stable_plane_field_identity_scaled_error"] = max(
+                errors["stable_plane_field_identity_scaled_error"],
+                float(np.max(np.abs(rhs(0., plane, p, n)-expected_plane)/(1+np.abs(expected_plane)))))
+            equilibrium = np.r_[np.ones(n), np.full(n, b), np.zeros(n-1)]
+            stable_basis = np.zeros((dimension(n), n+1))
+            stable_basis[:n, :n] = np.eye(n)
+            stable_basis[n:2*n, n] = 1.
+            errors["stable_eigenspace_identity_max_abs"] = max(
+                errors["stable_eigenspace_identity_max_abs"],
+                float(np.max(np.abs(field_jac(equilibrium, p, n)[1]@stable_basis+stable_basis))))
             if n == 2:
                 y = -(s[0]-s[1])/2
                 z = 1-(c[0]+c[1])/2
@@ -144,7 +159,7 @@ def source_algebra_audit():
                 core = np.array([(-rho+r*(1-z))*h-r*y, h*(1-z)-y, h*y-z])
                 errors["n2_core_equivalence_scaled_error"] = max(
                     errors["n2_core_equivalence_scaled_error"], float(np.max(np.abs(mapped-core)/(1+np.abs(core)))))
-    return {"seed": 72, "samples_per_N": 30, "N_values": [2, 3, 8],
+    return {"seed": 72, "stable_plane_seed": 73, "samples_per_N": 30, "N_values": [2, 3, 8],
             "complex_step": 1e-28, "normalization": "abs(error)/(1+abs(reference))",
             "sample_ranges": "rho,r=10**U(-1,1); b=U(-2,2); standard-normal states",
             **errors}
