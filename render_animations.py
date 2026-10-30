@@ -1,4 +1,4 @@
-"""Render measured data while rotating the camera about three coordinate axes.
+"""Render measured data with a slow, level camera sweep.
 
 The animation changes the view, never the parameters or the integration time.
 Small illustration datasets are included so this works without a GPU.
@@ -21,22 +21,9 @@ ROOT = Path(__file__).resolve().parent
 BG = "#091321"
 
 
-def camera(axis, angle):
-    """Rotate the viewing direction and up vector about a fixed world axis."""
-    elev, azim = np.deg2rad([23, -55])
-    direction = np.array([np.cos(elev)*np.cos(azim), np.cos(elev)*np.sin(azim), np.sin(elev)])
-    up = np.array([-np.sin(elev)*np.cos(azim), -np.sin(elev)*np.sin(azim), np.cos(elev)])
-    a = np.eye(3)[axis]
-    theta = np.deg2rad(angle)
-    def rotate(v):
-        return v*np.cos(theta)+np.cross(a, v)*np.sin(theta)+a*np.dot(a, v)*(1-np.cos(theta))
-    direction, up = rotate(direction), rotate(up)
-    el = np.arcsin(np.clip(direction[2], -1, 1))
-    az = np.arctan2(direction[1], direction[0])
-    default_up = np.array([-np.sin(el)*np.cos(az), -np.sin(el)*np.sin(az), np.cos(el)])
-    roll = np.arctan2(np.dot(direction, np.cross(default_up, up)), np.dot(default_up, up))
-    # Matplotlib rotates its screen basis by minus the supplied roll angle.
-    return np.rad2deg([el, az, -roll])
+def camera(phase, sweep):
+    """Ease through a horizontal arc; keep the tilt and screen orientation fixed."""
+    return 23., -55. + sweep/2*np.sin(2*np.pi*phase), 0.
 
 
 def configure(ax, labels):
@@ -51,7 +38,7 @@ def configure(ax, labels):
         a.label.set_color("#dce7f3")
 
 
-def render(kind, data_dir, output, frames_per_axis, fps):
+def render(kind, data_dir, output, frame_count, fps, sweep):
     plt.rcParams.update({"font.family": "DejaVu Sans", "text.color": "#e1edf8", "font.size": 11})
     fig = plt.figure(figsize=(9.6, 6.4), dpi=100, facecolor=BG)
     ax = fig.add_axes([.08, .15, .78, .7], projection="3d")
@@ -103,52 +90,65 @@ def render(kind, data_dir, output, frames_per_axis, fps):
         footer = "One saved trajectory; only the camera moves. This is not parameter space."
     fig.text(.06, .95, title, fontsize=21, weight="bold")
     fig.text(.06, .905, subtitle, fontsize=10, color="#b7c9dc")
-    caption = fig.text(.06, .09, "", fontsize=12, color="#f6be57")
+    fig.text(.06, .09, f"Gentle {sweep:g}° camera sweep · {frame_count/fps:g} s loop · fixed tilt",
+             fontsize=12, color="#f6be57")
     fig.text(.06, .045, footer, fontsize=9, color="#b7c9dc")
     frames = []
-    for axis in [2, 0, 1]:
-        for i in range(frames_per_axis):
-            ax.view_init(*camera(axis, 360*i/frames_per_axis))
-            caption.set_text(f"Camera rotation about {labels[axis]} axis  ·  {360*i/frames_per_axis:03.0f}°")
-            fig.canvas.draw()
-            rgb = np.asarray(fig.canvas.buffer_rgba())[:, :, :3].copy()
-            frame = Image.fromarray(rgb).quantize(colors=128, method=Image.Quantize.MEDIANCUT,
-                                                  dither=Image.Dither.NONE)
-            frames.append(frame)
-            if i == 0 and axis == 2:
-                Image.fromarray(rgb).save(output / f"{kind}-poster.png")
-        print(f"{kind}: completed rotation about axis {labels[axis]}", flush=True)
+    palette = None
+    for i in range(frame_count):
+        ax.view_init(*camera(i/frame_count, sweep))
+        fig.canvas.draw()
+        rgb = np.asarray(fig.canvas.buffer_rgba())[:, :, :3].copy()
+        if palette is None:
+            palette = Image.fromarray(rgb).quantize(colors=128, method=Image.Quantize.MEDIANCUT,
+                                                    dither=Image.Dither.NONE)
+        frame = Image.fromarray(rgb).quantize(palette=palette, dither=Image.Dither.NONE)
+        frames.append(frame)
+        if i == 0:
+            Image.fromarray(rgb).save(output / f"{kind}-poster.png")
+        if (i+1) % max(1, frame_count//4) == 0:
+            print(f"{kind}: rendered {i+1}/{frame_count} frames", flush=True)
     # GIF durations are multiples of 10 ms; distribute rounding error over frames.
     durations = [10*(round((i+1)*100/fps)-round(i*100/fps)) for i in range(len(frames))]
     target = output / f"{kind}-rotation.gif"
     frames[0].save(target, save_all=True, append_images=frames[1:], loop=0,
-                   duration=durations, disposal=2, optimize=False)
+                   duration=durations, disposal=1, optimize=True)
     plt.close(fig)
     with Image.open(target) as check:
-        if check.n_frames != len(frames):
-            raise RuntimeError(f"Unexpected GIF frame count: {check.n_frames}")
-    return {"file": target.name, "frames": len(frames), "fps": fps,
+        encoded_frames = check.n_frames
+        encoded_duration = 0
+        for i in range(encoded_frames):
+            check.seek(i)
+            encoded_duration += check.info["duration"]
+        # Pillow may merge identical frames at the smooth turning points.
+        if not 1 < encoded_frames <= len(frames) or encoded_duration != sum(durations):
+            raise RuntimeError("Unexpected GIF frame count or playback duration")
+    return {"file": target.name, "frames": encoded_frames, "rendered_frames": len(frames), "fps": fps,
             "seconds": sum(durations)/1000, "bytes": target.stat().st_size,
-            "camera_axes": list(labels), "changes_data": False}
+            "camera_motion": "sinusoidal azimuth sweep", "sweep_degrees": sweep,
+            "azimuth_center_degrees": -55, "elevation_degrees": 23, "roll_degrees": 0,
+            "max_angular_speed_degrees_per_second": np.pi*sweep/(sum(durations)/1000),
+            "changes_data": False}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--kind", choices=["all", "extent", "expanded", "window", "trajectory"], default="all")
-    parser.add_argument("--frames-per-axis", type=int, default=48)
-    parser.add_argument("--fps", type=int, default=16)
+    parser.add_argument("--frames", type=int, default=240)
+    parser.add_argument("--fps", type=int, default=10)
+    parser.add_argument("--sweep", type=float, default=60, help="Total horizontal arc in degrees; camera tilt stays fixed")
     parser.add_argument("--data", type=Path, default=ROOT / "data" / "illustrations")
     parser.add_argument("--output", type=Path, default=ROOT / "docs" / "assets")
     args = parser.parse_args()
-    if args.frames_per_axis < 4 or not 1 <= args.fps <= 50:
-        parser.error("Use at least 4 frames per axis and 1–50 fps")
+    if args.frames < 12 or not 1 <= args.fps <= 50 or not 0 < args.sweep <= 360:
+        parser.error("Use at least 12 frames, 1–50 fps, and a sweep between 0 and 360 degrees")
     args.output.mkdir(parents=True, exist_ok=True)
     kinds = ["extent", "expanded", "window", "trajectory"] if args.kind == "all" else [args.kind]
-    records = [render(k, args.data, args.output, args.frames_per_axis, args.fps) for k in kinds]
+    records = [render(k, args.data, args.output, args.frames, args.fps, args.sweep) for k in kinds]
     manifest = args.output / "animations.json"
     previous = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else []
     current = {r["file"]: r for r in previous + records}
-    manifest.write_text(json.dumps(list(current.values()), indent=2), encoding="utf-8")
+    manifest.write_text(json.dumps(list(current.values()), indent=2)+"\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

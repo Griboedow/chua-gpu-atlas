@@ -1,54 +1,62 @@
 [
   {
     "file": "extent-rotation.gif",
-    "frames": 144,
-    "fps": 16,
-    "seconds": 9.0,
-    "bytes": 7173086,
-    "camera_axes": [
-      "\u03b1",
-      "\u03b2",
-      "m\u2080"
-    ],
+    "frames": 240,
+    "rendered_frames": 240,
+    "fps": 10,
+    "seconds": 24.0,
+    "bytes": 7545834,
+    "camera_motion": "sinusoidal azimuth sweep",
+    "sweep_degrees": 60,
+    "azimuth_center_degrees": -55,
+    "elevation_degrees": 23,
+    "roll_degrees": 0,
+    "max_angular_speed_degrees_per_second": 7.853981633974482,
     "changes_data": false
   },
   {
     "file": "window-rotation.gif",
-    "frames": 144,
-    "fps": 16,
-    "seconds": 9.0,
-    "bytes": 12682208,
-    "camera_axes": [
-      "\u03b1",
-      "\u03b2",
-      "m\u2080"
-    ],
+    "frames": 240,
+    "rendered_frames": 240,
+    "fps": 10,
+    "seconds": 24.0,
+    "bytes": 13952921,
+    "camera_motion": "sinusoidal azimuth sweep",
+    "sweep_degrees": 60,
+    "azimuth_center_degrees": -55,
+    "elevation_degrees": 23,
+    "roll_degrees": 0,
+    "max_angular_speed_degrees_per_second": 7.853981633974482,
     "changes_data": false
   },
   {
     "file": "trajectory-rotation.gif",
-    "frames": 144,
-    "fps": 16,
-    "seconds": 9.0,
-    "bytes": 7210125,
-    "camera_axes": [
-      "x",
-      "y",
-      "z"
-    ],
+    "frames": 240,
+    "rendered_frames": 240,
+    "fps": 10,
+    "seconds": 24.0,
+    "bytes": 10448339,
+    "camera_motion": "sinusoidal azimuth sweep",
+    "sweep_degrees": 60,
+    "azimuth_center_degrees": -55,
+    "elevation_degrees": 23,
+    "roll_degrees": 0,
+    "max_angular_speed_degrees_per_second": 7.853981633974482,
     "changes_data": false
   },
   {
     "file": "expanded-rotation.gif",
-    "frames": 144,
-    "fps": 16,
-    "seconds": 9.0,
-    "bytes": 7000133,
-    "camera_axes": [
-      "\u03b1",
-      "\u03b2",
-      "m\u2080"
-    ],
+    "frames": 240,
+    "rendered_frames": 240,
+    "fps": 10,
+    "seconds": 24.0,
+    "bytes": 7270617,
+    "camera_motion": "sinusoidal azimuth sweep",
+    "sweep_degrees": 60,
+    "azimuth_center_degrees": -55,
+    "elevation_degrees": 23,
+    "roll_degrees": 0,
+    "max_angular_speed_degrees_per_second": 7.853981633974482,
     "changes_data": false
   }
 ]

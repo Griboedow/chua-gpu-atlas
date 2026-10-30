@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-10-30T12:20:12.263994+00:00",
-  "base_commit": "ccde6433a73a75020ab4a3e829b7fd0057ddf400",
+  "created_utc": "2026-10-30T12:29:50.188930+00:00",
+  "base_commit": "d28451ab8886e09a69b416d324ccc9ff4034a832",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -48,7 +48,7 @@
     "docs/chua-layer-census.md": "5560993dafbaeab990bfd6fc86e74f08eeadc05f755e17c04e0134898c0cfe34",
     "docs/chua-refined-atlas.md": "334caef9d8c41af94df2fcd0a58f644db2a0ef1147104f9f47b096a045e32de2",
     "kernels.cl": "99028809908bda135e0641e8665add0003ff4e2c5c098c6c9dbdde2e670d921b",
-    "README.md": "d65c9060073a18cef3b1e872516ea1b3a351ff6c7bf0d42349c2c5741ac79e6a",
+    "README.md": "b17ce37fa99885312e5981c5e5d501e9390dfa5434ff7d0a31545fc4770577fa",
     "report.py": "5b91c7f4cfcbc8928bff63b372db9b70bfba02fb64ebf69696142df410785fa1",
     "requirements.txt": "c24a4d349f0c0edf8352b0daa81e3ac3fb40791d5c0f3e137c510507f6e34178",
     "research/audit_chua_census.py": "4044b78a2419684f3f0b2a7eabd28a2802363895051a2e009ad9df89dcd64773",

@@ -11,4 +11,6 @@ Small measured datasets used by `render_animations.py`. They permit regenerating
 
 No interpolation, smoothing or random downsampling is added when preparing these files. The mesh itself is marching cubes at level 0.5 of the binary regular-node criterion, clipped at the local scan box. See the main methods document for that criterion and its limits.
 
-The GIFs rotate an orthographic camera about each displayed coordinate axis. State or parameter values are never animated. The plotting box gives differently scaled coordinate ranges comparable visual lengths; Euclidean distances in the rendered image therefore are not physical distances in parameter space.
+The GIFs move an orthographic camera smoothly through a 60-degree horizontal arc and back over 24 seconds. Elevation stays at 23 degrees and roll at zero, so the view never tumbles or turns upside down. The sinusoidal sweep slows to a stop at each end and loops continuously. A shared palette keeps colors stable between frames. State or parameter values are never animated. The plotting box gives differently scaled coordinate ranges comparable visual lengths; Euclidean distances in the rendered image therefore are not physical distances in parameter space.
+
+Run `python render_animations.py` from the repository root to regenerate all four GIFs. The defaults are 240 frames at 10 fps; `--frames`, `--fps` and `--sweep` control the loop duration and angular range. `docs/assets/animations.json` records the encoded duration and camera settings.

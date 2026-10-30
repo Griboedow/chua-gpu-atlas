@@ -6,9 +6,9 @@ Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
 **Beyond Chua:** the searches in other physical and biological systems now have their own public MIT project, [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab), with [a readable findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), data and animations. The Chua atlas and its parameter-scaling investigation remain here. The verified transfer is complete; historical commits remain available.
 
-![The expanded parameter cloud rotating about three axes](docs/assets/expanded-rotation.gif)
+![The expanded parameter cloud with a gentle camera sweep](docs/assets/expanded-rotation.gif)
 
-*Each dot is a parameter tuple (α, β, m₀). These are 1,832 finite-time chaos candidates from the expanded adaptive GPU survey. Gold outlines the previous search domain. The camera rotates about all three coordinate axes; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
+*Each dot is a parameter tuple (α, β, m₀). These are 1,832 finite-time chaos candidates from the expanded adaptive GPU survey. Gold outlines the previous search domain. The camera slowly sweeps through a 60° horizontal arc and back over 24 seconds, with a fixed tilt and no roll; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
 
 ## Why I came back to this
 
@@ -41,7 +41,7 @@ This project studies **two different 3D spaces**:
 | State space | x, y, z | One instantaneous state of one system |
 | Parameter space | α, β, m₀ | A different system, with m₁ held fixed |
 
-![The classic double-scroll trajectory rotating about x, y and z](docs/assets/trajectory-rotation.gif)
+![The classic double-scroll trajectory with a gentle camera sweep](docs/assets/trajectory-rotation.gif)
 
 *One finite trajectory at α=9, β=100/7, m₀=−8/7, m₁=−5/7. Only the camera moves.*
 
