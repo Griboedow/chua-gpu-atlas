@@ -1,0 +1,90 @@
+{
+  "explanation": "The original dense one-period samples sometimes report zero upward crossings because a tiny negative closure error places the endpoint just before the root. This separate event audit integrates to 1.1 periods and does not overwrite those original sampled counts.",
+  "all_passed": true,
+  "rows": [
+    {
+      "label": "initial",
+      "solver_success": true,
+      "method": "Radau",
+      "duration": 2.0767231440355896,
+      "rtol": 3e-12,
+      "atol": 3e-14,
+      "max_step": 0.003,
+      "upward_crossings_excluding_initial": 1,
+      "event_times": [
+        0.0,
+        1.8879301309414893
+      ],
+      "expected_period": 1.887930130941445,
+      "period_error": 4.440892098500626e-14,
+      "crossing_velocities": [
+        1.0164975412301696,
+        1.0164975412305701
+      ],
+      "passed": true
+    },
+    {
+      "label": "last",
+      "solver_success": true,
+      "method": "Radau",
+      "duration": 2.18991094931179,
+      "rtol": 3e-12,
+      "atol": 3e-14,
+      "max_step": 0.003,
+      "upward_crossings_excluding_initial": 1,
+      "event_times": [
+        0.0,
+        1.9908281357379454
+      ],
+      "expected_period": 1.9908281357379907,
+      "period_error": 4.529709940470639e-14,
+      "crossing_velocities": [
+        0.6819946090168856,
+        0.6819946090160746
+      ],
+      "passed": true
+    },
+    {
+      "label": "fold",
+      "solver_success": true,
+      "method": "Radau",
+      "duration": 2.097053401902617,
+      "rtol": 3e-12,
+      "atol": 3e-14,
+      "max_step": 0.003,
+      "upward_crossings_excluding_initial": 1,
+      "event_times": [
+        0.0,
+        1.906412183547838
+      ],
+      "expected_period": 1.9064121835478334,
+      "period_error": 4.6629367034256575e-15,
+      "crossing_velocities": [
+        0.9150919598689564,
+        0.9150919598695425
+      ],
+      "passed": true
+    },
+    {
+      "label": "unstable-w004",
+      "solver_success": true,
+      "method": "Radau",
+      "duration": 2.1338626029960372,
+      "rtol": 3e-12,
+      "atol": 3e-14,
+      "max_step": 0.003,
+      "upward_crossings_excluding_initial": 1,
+      "event_times": [
+        0.0,
+        1.9398750936339009
+      ],
+      "expected_period": 1.939875093632761,
+      "period_error": 1.1399770016851107e-12,
+      "crossing_velocities": [
+        0.7831756762314845,
+        0.7831756762327727
+      ],
+      "passed": true
+    }
+  ]
+}

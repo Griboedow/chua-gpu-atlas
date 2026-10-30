@@ -4,6 +4,8 @@
 
 This concerns the explicitly assumed logistic illumination law in the [six-state optical model](coupled-operators-research.md). It is a model observation, not a calibrated experimental prediction, a rigorous bifurcation proof, or a new attractor type. The [priority audit](coupled-operators-priority-audit.md) explains the older feedback-system precedents.
 
+A subsequent [pseudo-arclength continuation](optical-cycle-arclength.md) resolves the fixed-width failure below: the branch folds at width 0.0404788044 and returns as an unstable branch. At width 0.04, independently checked stable and saddle cycles coexist. Their relation to the chaotic transient's basin boundary remains an open question.
+
 ![Period and local stability of the continued optical cycle](assets/optical_cycle_continuation.png)
 
 ## Why follow a periodic orbit during a chaos search?
