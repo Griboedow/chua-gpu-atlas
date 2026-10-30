@@ -1,0 +1,254 @@
+{
+  "audit_utc": "2026-10-30T01:40:44.476887+00:00",
+  "parameters": {
+    "mu": 0.0331323264448661,
+    "kappa": 0.002
+  },
+  "source_scout_row": 193,
+  "time_unit": "canonical sigma",
+  "parent_scaled_time": "mu*sigma; exponents in this time equal canonical exponents divided by mu",
+  "scope": "Two modal orbit/Floquet controls at the exact late weak-positive parameter. No generic 4D trajectory, global chaos exclusion, or novelty claim.",
+  "reproduction": "Import mode_control from research/audit_rayleigh_pair.py and evaluate mode_control(0.0331323264448661,0.002,symmetric) for symmetric=True and False.",
+  "controls": [
+    {
+      "mu": 0.0331323264448661,
+      "kappa": 0.002,
+      "mode": "symmetric",
+      "base_frequency_squared": 1.004,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.1780801449217335,
+      "period_sigma": 6.270814103184705,
+      "section_closure": 1.3322676295501878e-15,
+      "dop853_radau_full_augmented_difference": 8.953948693601887e-12,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -2.0469737016526324e-15,
+            1.1780801449217337,
+            1.0000025761496183,
+            0.0004366191129231726,
+            -0.0005821966063468582,
+            0.9013261127709323,
+            0.9997655983785441,
+            -0.011463774400562244,
+            0.011319121811851728,
+            0.9014102210785729,
+            0.10388528332609054
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000053826,
+              0.0
+            ],
+            [
+              0.901328688915168,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.9984281145994761,
+              0.0
+            ],
+            [
+              0.9027477048576409,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.00025086409557676943,
+            -0.016315610626314855
+          ],
+          "maximum_transverse_multiplier": 0.9984281145994761,
+          "mean_damping": 0.016566474721891565,
+          "determinant_trace_error": 3.3306690738754696e-16,
+          "flow_multiplier_error": 5.382583267987684e-12,
+          "slowest_transverse_exponent": -0.00025086409557676943,
+          "slowest_transverse_efold_sigma": 3986.222092487444,
+          "slowest_transverse_exponent_in_parent_scaled_time": -0.007571581065827666,
+          "determinant_log_reference": -0.10388528332609054
+        },
+        "Radau": {
+          "endpoint": [
+            -1.1825257570027836e-14,
+            1.1780801449217304,
+            1.0000025761406643,
+            0.0004366191127859563,
+            -0.00058219660629747,
+            0.9013261127709302,
+            0.9997655983695936,
+            -0.011463774400841212,
+            0.01131912181165152,
+            0.9014102210785703,
+            0.10388528333504003
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999964295,
+              0.0
+            ],
+            [
+              0.901328688915165,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.9984281145903915,
+              0.0
+            ],
+            [
+              0.9027477048577723,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.0002508640970277651,
+            -0.016315610626291634
+          ],
+          "maximum_transverse_multiplier": 0.9984281145903915,
+          "mean_damping": 0.016566474723318732,
+          "determinant_trace_error": 3.774758283725532e-15,
+          "flow_multiplier_error": 3.5704772471945034e-12,
+          "slowest_transverse_exponent": -0.0002508640970277651,
+          "slowest_transverse_efold_sigma": 3986.2220694311713,
+          "slowest_transverse_exponent_in_parent_scaled_time": -0.007571581109621623,
+          "determinant_log_reference": -0.10388528333504003
+        }
+      }
+    },
+    {
+      "mu": 0.0331323264448661,
+      "kappa": 0.002,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 1.004,
+      "section_velocity": 1.1780800765237838,
+      "period_sigma": 6.28334384641203,
+      "section_closure": 4.440892098500626e-16,
+      "dop853_radau_full_augmented_difference": 5.672615155383198e-12,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -9.007725121357169e-14,
+            1.178080076523783,
+            1.0000025913463308,
+            0.00043919671001383916,
+            -0.0005833002816056578,
+            0.9011390178169894,
+            1.0000877966897244,
+            0.012338369263010409,
+            -0.012530986836394201,
+            0.9009079004896154,
+            0.10409286484024646
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.999999999994728,
+              0.0
+            ],
+            [
+              0.9011416091685922,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.9985035879314271,
+              0.0
+            ],
+            [
+              0.9024921092479127,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.00023833373565398656,
+            -0.016328142233934455
+          ],
+          "maximum_transverse_multiplier": 0.9985035879314271,
+          "mean_damping": 0.01656647596958847,
+          "determinant_trace_error": 2.220446049250313e-16,
+          "flow_multiplier_error": 5.272005054735018e-12,
+          "slowest_transverse_exponent": -0.00023833373565398656,
+          "slowest_transverse_efold_sigma": 4195.797113052439,
+          "slowest_transverse_exponent_in_parent_scaled_time": -0.0071933896960295314,
+          "determinant_log_reference": -0.10409286484024646
+        },
+        "Radau": {
+          "endpoint": [
+            -9.581484911036497e-14,
+            1.178080076523783,
+            1.000002591352002,
+            0.0004391967100764579,
+            -0.000583300281635943,
+            0.9011390178169878,
+            1.0000877966953925,
+            0.012338369263127995,
+            -0.012530986836439571,
+            0.9009079004896129,
+            0.10409286483457385
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000003988,
+              0.0
+            ],
+            [
+              0.9011416091685911,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.9985035879371676,
+              0.0
+            ],
+            [
+              0.9024921092478377,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.00023833373473900843,
+            -0.016328142233947667
+          ],
+          "maximum_transverse_multiplier": 0.9985035879371676,
+          "mean_damping": 0.016566475968685667,
+          "determinant_trace_error": 5.773159728050814e-15,
+          "flow_multiplier_error": 3.9879211044535623e-13,
+          "slowest_transverse_exponent": -0.00023833373473900843,
+          "slowest_transverse_efold_sigma": 4195.797129160367,
+          "slowest_transverse_exponent_in_parent_scaled_time": -0.007193389668413658,
+          "determinant_log_reference": -0.10409286483457385
+        }
+      }
+    }
+  ],
+  "wall_seconds": 2.3125544999929843,
+  "weak_coupling_interpretation": {
+    "status": "Leading-order asymptotic hypothesis, not a phase-space diagnosis of the full scout trajectory.",
+    "regime": "mu small and kappa/mu small; both oscillator amplitudes close to A0=3*pi/8.",
+    "kappa_over_mu": 0.06036400743932375,
+    "coordinates": "Reflect the second oscillator to elastic difference coupling; phi=theta2-theta1 in x_i=A_i*cos(theta_i). Original sum-coupled phases differ by pi, which leaves sin(2*phi) unchanged.",
+    "leading_amplitude_equations": [
+      "A1_dot=(mu/2)*A1*(1-A1/A0)+(kappa/2)*A2*sin(phi)",
+      "A2_dot=(mu/2)*A2*(1-A2/A0)-(kappa/2)*A1*sin(phi)"
+    ],
+    "leading_phase_difference_equation": "phi_dot=-(kappa/2)*(A1/A2-A2/A1)*cos(phi)",
+    "slaved_amplitude_difference": "(A1-A2)/(2*A0) approximately (kappa/mu)*sin(phi)",
+    "reduced_phase_equation": "phi_dot approximately -(kappa^2/mu)*sin(2*phi)",
+    "predicted_stable_modal_phase_exponent_sigma": -0.00024145602975729496,
+    "predicted_quadrature_saddle_exponent_sigma": 0.00024145602975729496,
+    "predicted_quadrature_saddle_exponent_scaled_time": 0.007287626788269464,
+    "predicted_efold_sigma": 4141.540805608262,
+    "predicted_efold_scaled_time": 137.21888195614667,
+    "physical_interpretation": "Two locally attracting locked phases and two unstable quadrature phases in this reduced approximation. Near quadrature, modal energy fractions are near one half and weak positive finite-time growth can persist during slow departure.",
+    "limitations": [
+      "No generic 4D trajectory integrated in this block.",
+      "The actual scout phase history and attraction properties have not been established here.",
+      "The asymptotic phase equation is not an exact invariant reduction or a global no-chaos theorem.",
+      "No claim that this standard weak-coupling mechanism is unpublished."
+    ]
+  }
+}

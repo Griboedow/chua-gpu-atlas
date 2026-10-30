@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-10-30",
+  "scope": "Bounded primary-literature and analytical screening; no integration or GPU search.",
+  "outcome": "No viable new autonomous chaos target; one exact three-state cyclic-feedback exclusion and one planar compact-model exclusion.",
+  "candidates": [
+    {
+      "id": "bisquert-guerrero-perovskite-2022",
+      "doi": "10.1021/acs.jpclett.2c00790",
+      "title": "Dynamic Instability and Time Domain Response of a Model Halide Perovskite Memristor for Artificial Neurons",
+      "dimension": 3,
+      "states": [
+        "u",
+        "i",
+        "f"
+      ],
+      "autonomous_condition": "constant imposed current I; no periodic forcing",
+      "equations": [
+        "du/dt=(I-u/Rb-i)/Cm",
+        "di/dt=(i0*f-i)/tau_d",
+        "df/dt=(1-f-exp(-(u-VT)/Vm)*f)/tau_k"
+      ],
+      "physical_parameters": "Cm,Rb,tau_d,tau_k,i0,Vm strictly positive; VT and constant I finite",
+      "physical_domain": {
+        "f": [
+          0,
+          1
+        ],
+        "i": [
+          0,
+          "i0"
+        ],
+        "u": "real"
+      },
+      "published_examples": [
+        {
+          "source": "Figure5b",
+          "Rb": 1,
+          "i0": 10,
+          "VT": 1,
+          "Vm": 0.05,
+          "tau_m": 0.1,
+          "tau_d": 0.1,
+          "tau_k": 0.1,
+          "I": 6
+        },
+        {
+          "source": "Figure5c",
+          "Rb": 1,
+          "i0": 10,
+          "VT": 1,
+          "Vm": 0.05,
+          "tau_m": 0.1,
+          "tau_d": 0.1,
+          "tau_k": 1,
+          "I": 6
+        }
+      ],
+      "status": "analytically_excluded_as_recurrent_strange_attractor_target",
+      "hypothesis_mapping": {
+        "invariance": "At f=0 derivative positive; at f=1 negative; i boundaries point inward.",
+        "voltage_bound": "min(u_initial,Rb*(I-i0)) <= u(t) <= max(u_initial,Rb*I)",
+        "interior_compactness": "Positive finite lower/upper bounds on E(u) imply asymptotic f bounds strictly within (0,1); hence bounded logit(f).",
+        "coordinate_change": "(u,g=log(f/(1-f)),i); smooth C1 vector field on all R^3",
+        "cyclic_signs": [
+          "negative",
+          "positive",
+          "positive"
+        ],
+        "strict_nonzero_derivatives": true,
+        "irreducible": true,
+        "equilibrium_count": 1,
+        "allowed_omega_limits": [
+          "equilibrium",
+          "periodic orbit",
+          "equilibrium with connecting homoclinic orbits"
+        ],
+        "theorem_scope": "Full Poincare-Bendixson alternatives from accessible primary research restatements, not just equilibrium-free periodicity.",
+        "limitation": "Original 1990 full proof inaccessible; its abstract and two full primary research restatements inspected. Does not cover added feedback, circuit states, networks, stochasticity, or periodic forcing."
+      },
+      "polynomial_check": {
+        "statement": "det(lambda I-J)=(lambda+a)(lambda+b)(lambda+c)+d, hence c0=abc+d.",
+        "manuscript_discrepancy": "Institutional manuscript p9 Eq20 prints only d. Jacobian and source ODE checked visually. Final publisher equation image not independently inspected; not claimed as verified final-publication erratum.",
+        "validation": [
+          {
+            "f": 0.01,
+            "expected_coefficients": [
+              1.0,
+              1020.0,
+              20100.0,
+              297999.99999999994
+            ],
+            "numpy_coefficients": [
+              1.0,
+              1019.9999999999992,
+              20100.000000000036,
+              298000.0000000007
+            ],
+            "relative_error": 2.5392603754197195e-15
+          },
+          {
+            "f": 0.2,
+            "expected_coefficients": [
+              1.0,
+              70.0,
+              1100.0,
+              164999.99999999994
+            ],
+            "numpy_coefficients": [
+              1.0,
+              69.99999999999989,
+              1099.999999999999,
+              165000.00000000003
+            ],
+            "relative_error": 1.6240976817373718e-15
+          },
+          {
+            "f": 0.5,
+            "expected_coefficients": [
+              1.0,
+              40.0,
+              500.0,
+              101999.99999999997
+            ],
+            "numpy_coefficients": [
+              1.0,
+              40.00000000000006,
+              499.99999999999955,
+              101999.99999999997
+            ],
+            "relative_error": 1.4210854715202005e-15
+          },
+          {
+            "f": 0.8,
+            "expected_coefficients": [
+              1.0,
+              32.5,
+              350.0,
+              41249.99999999998
+            ],
+            "numpy_coefficients": [
+              1.0,
+              32.50000000000003,
+              350.00000000000034,
+              41250.000000000065
+            ],
+            "relative_error": 2.1166422150351797e-15
+          },
+          {
+            "f": 0.99,
+            "expected_coefficients": [
+              1.0,
+              30.1010101010101,
+              302.020202020202,
+              3010.101010101011
+            ],
+            "numpy_coefficients": [
+              1.0,
+              30.101010101010147,
+              302.0202020202024,
+              3010.1010101010183
+            ],
+            "relative_error": 2.4171805496783856e-15
+          }
+        ]
+      },
+      "source_audit": {
+        "equations_visually_checked_pages": [
+          3,
+          7
+        ],
+        "figure_parameters_visually_checked_pages": [
+          10
+        ],
+        "polynomial_visually_checked_pages": [
+          9
+        ],
+        "pdf_url": "https://repositori.uji.es/bitstreams/7cfd1818-1271-4bb8-92db-5a91d7ac1666/download",
+        "pdf_sha256": "038134567bbb2562ca146ebf8de67a8767e213c8c0eb272b696355eeb3709bb6",
+        "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9974066/fullTextXML",
+        "source_code_used": false
+      },
+      "citation_screen": {
+        "provider": "OpenAlex",
+        "query": "https://api.openalex.org/works?filter=cites:W4224281929&per-page=200",
+        "record_count": 44,
+        "abstracts_available": 38,
+        "keywords": [
+          "chaos",
+          "chaotic",
+          "Lyapunov",
+          "Poincare"
+        ],
+        "abstract_keyword_matches": 0,
+        "full_text_all_citations_reviewed": false,
+        "records": [
+          {
+            "title": "Organic electrochemical neurons for neuromorphic perception",
+            "year": 2024,
+            "doi": "https://doi.org/10.1038/s41928-024-01200-5"
+          },
+          {
+            "title": "Metal Halide Perovskite-Based Memristors for Emerging Memory Applications",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c01303"
+          },
+          {
+            "title": "Transition from Capacitive to Inductive Hysteresis: A Neuron-Style Model to Correlate I – V Curves to Impedances of Metal Halide Perovskites",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpcc.2c02729"
+          },
+          {
+            "title": "Transient On/Off Photocurrent Response of Halide Perovskite Photodetectors",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpcc.3c04672"
+          },
+          {
+            "title": "Mechanistic and Kinetic Analysis of Perovskite Memristors with Buffer Layers: The Case of a Two-Step Set Process",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c03669"
+          },
+          {
+            "title": "Operating Mechanism Principles and Advancements for Halide Perovskite-Based Memristors and Neuromorphic Devices",
+            "year": 2024,
+            "doi": "https://doi.org/10.1021/acs.jpclett.4c02170"
+          },
+          {
+            "title": "Resistive switching in benzylammonium-based Ruddlesden–Popper layered hybrid perovskites for non-volatile memory and neuromorphic computing",
+            "year": 2024,
+            "doi": "https://doi.org/10.1039/d3ma00618b"
+          },
+          {
+            "title": "Artificial sensory system based on memristive devices",
+            "year": 2023,
+            "doi": "https://doi.org/10.1002/exp.20220162"
+          },
+          {
+            "title": "Hysteresis, Impedance, and Transients Effects in Halide Perovskite Solar Cells and Memory Devices Analysis by Neuron‐Style Models",
+            "year": 2024,
+            "doi": "https://doi.org/10.1002/aenm.202400442"
+          },
+          {
+            "title": "Resistance transient dynamics in switchable perovskite memristors",
+            "year": 2023,
+            "doi": "https://doi.org/10.1063/5.0153289"
+          },
+          {
+            "title": "Advancing Logic Circuits With Halide Perovskite Memristors for Next‐Generation Digital Systems",
+            "year": 2025,
+            "doi": "https://doi.org/10.1002/smm2.70032"
+          },
+          {
+            "title": "Decoupling Volatile and Nonvolatile Response in Reliable Halide Perovskite Memristors",
+            "year": 2024,
+            "doi": "https://doi.org/10.1002/sstr.202400380"
+          },
+          {
+            "title": "Mixed ionic-electronic conduction in Ruddlesden–Popper and Dion–Jacobson layered hybrid perovskites with aromatic organic spacers",
+            "year": 2024,
+            "doi": "https://doi.org/10.1039/d4tc01010h"
+          },
+          {
+            "title": "Synaptic Function in Memristor Devices for Neuromorphic Circuit Applications",
+            "year": 2025,
+            "doi": "https://doi.org/10.1002/aelm.202400903"
+          },
+          {
+            "title": "2-Aminobenzenesulfonate acid as an efficient multifunctional additive for high-performance perovskite solar cells",
+            "year": 2025,
+            "doi": "https://doi.org/10.1016/j.cej.2025.166341"
+          },
+          {
+            "title": "Negative Transient Spikes in Halide Perovskites",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acsenergylett.2c01252"
+          },
+          {
+            "title": "Multiphotoconductance Levels of the Organic Semiconductor of Polyimide-Based Memristor Induced by Interface Charges",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c02651"
+          },
+          {
+            "title": "Inductive and Capacitive Hysteresis of Halide Perovskite Solar Cells and Memristors Under Illumination",
+            "year": 2022,
+            "doi": "https://doi.org/10.3389/fenrg.2022.914115"
+          },
+          {
+            "title": "Electrical Charge Coupling Dominates the Hysteresis Effect of Halide Perovskite Devices",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c03812"
+          },
+          {
+            "title": "Current-controlled memristors: Resistive switching systems with negative capacitance and inverted hysteresis",
+            "year": 2023,
+            "doi": "https://doi.org/10.1103/physrevapplied.20.044022"
+          },
+          {
+            "title": "Solution-Processed Synaptic Memristors Based on Halide Perovskite Nanocrystals",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c02900"
+          },
+          {
+            "title": "Ag/HfOx/Pt Unipolar Memristor for High-Efficiency Logic Operation",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c01906"
+          },
+          {
+            "title": "Long-term potentiation mechanism of biological postsynaptic activity in neuro-inspired halide perovskite memristors",
+            "year": 2023,
+            "doi": "https://doi.org/10.1088/2634-4386/accec4"
+          },
+          {
+            "title": "High-Performance Resistive Random Access Memories Based on Two-Dimensional HAPbI4 Organic–Inorganic Hybrid Perovskite",
+            "year": 2022,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c01786"
+          },
+          {
+            "title": "Iontronic Nanopore Model for Artificial Neurons: The Requisites of Spiking",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpclett.3c02562"
+          },
+          {
+            "title": "Device physics recipe to make spiking neurons",
+            "year": 2023,
+            "doi": "https://doi.org/10.1063/5.0145391"
+          },
+          {
+            "title": "Negative inductor effects in nonlinear two-dimensional systems: Oscillatory neurons and memristors",
+            "year": 2022,
+            "doi": "https://doi.org/10.1063/5.0124115"
+          },
+          {
+            "title": "Two-dimensional Cs3Bi2I6Cl3 perovskite for resistive switching behaviors and artificial synaptic simulation",
+            "year": 2022,
+            "doi": "https://doi.org/10.1016/j.jallcom.2022.168498"
+          },
+          {
+            "title": "Dual Resistive Switching Performance Derived from Ionic Migration in Halide Perovskite Based Memory",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpclett.2c03676"
+          },
+          {
+            "title": "Performance Regulation of a ZnO/WOx-Based Memristor and Its Application in an Emotion Circuit",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpclett.3c00063"
+          },
+          {
+            "title": "High-Efficiency Resistive Switch And Artificial Synaptic Simulation In Antimony-Based Perovskite Devices",
+            "year": 2022,
+            "doi": "https://doi.org/10.1007/s11431-022-2309-1"
+          },
+          {
+            "title": "Outstanding Stability and Resistive Switching Performance through Octa-Amino-Polyhedral Oligomeric Silsesquioxane Modification in Flexible Perovskite Resistive Random-Access Memories",
+            "year": 2024,
+            "doi": "https://doi.org/10.1021/acsami.4c09526"
+          },
+          {
+            "title": "Spinel CuGa2O4-based memristor enabling synaptic plasticity and associative learning for next-generation memory devices",
+            "year": 2026,
+            "doi": "https://doi.org/10.1063/5.0306155"
+          },
+          {
+            "title": "Understanding the Origin and Evolution of Resistive Effects during Switching Action in MAPbBr3 Single Crystals",
+            "year": 2023,
+            "doi": "https://doi.org/10.1021/acs.jpcc.3c04192"
+          },
+          {
+            "title": "Resistive switching characteristics of TiO2 films prepared by DC magnetron sputtering: Effects of nitrogen composition and phase structure",
+            "year": 2025,
+            "doi": "https://doi.org/10.1116/6.0004216"
+          },
+          {
+            "title": "Understanding and engineering metal halide perovskite memristors: Progress and perspectives",
+            "year": 2026,
+            "doi": "https://doi.org/10.1063/5.0320703"
+          },
+          {
+            "title": "A Flexible Humidity Sensor Based on Vanillin‐Modified Polyvinyl Alcohol Ionogel for Wearable Health Monitoring",
+            "year": 2026,
+            "doi": "https://doi.org/10.1002/adfm.76544"
+          },
+          {
+            "title": "Stable Hybrid Perovskite Materials for Photovoltaics Under Real-World Conditions",
+            "year": 2023,
+            "doi": "https://doi.org/10.1016/j.mtelec.2023.100038"
+          },
+          {
+            "title": "Hysteresis Control in Hybrid Perovskite-based Devices for Photovoltaic and Neuromorphic Computing Applications",
+            "year": 2023,
+            "doi": "https://doi.org/10.6035/14104.2023.804973"
+          },
+          {
+            "title": "Developing Artificial Sensory Neurons for Large-Area Hybrid Electronics",
+            "year": 2024,
+            "doi": "https://doi.org/10.1142/s2810922824300034"
+          },
+          {
+            "title": "Versatile Metal Phthalocyanine‐Based Memristive Nanowire Network: Unraveling the Dynamics of Digital to Analog Switching",
+            "year": 2026,
+            "doi": "https://doi.org/10.1002/smsc.202500424"
+          },
+          {
+            "title": "Large Language Model‐Assisted Additive Selection for Synergistic Defect and Crystallization Control in Efficient Inverted Perovskite Solar Cells",
+            "year": 2026,
+            "doi": "https://doi.org/10.1002/cssc.202502563"
+          },
+          {
+            "title": "Te/Fe3GaTe2 1D-2D Ferroelectric Heterojunction Transistors Enabling Ultrafast Multi-State Switching for Workpiece Surface Defect Inspection",
+            "year": 2026,
+            "doi": "https://doi.org/10.3390/nano16150935"
+          },
+          {
+            "title": "A Perovskite Memdiode-Based Neuromorphic in Silico Surrogate Model for Emulating Predictive Coding Failure in Diabetic Neuropathy",
+            "year": 2026,
+            "doi": "https://doi.org/10.1007/s12021-026-09809-x"
+          }
+        ],
+        "novelty_conclusion": "Priority of this exact-model theorem application is unestablished; metadata nonmatches are not an absence proof."
+      }
+    },
+    {
+      "id": "jardali-electrothermal-2026",
+      "doi": "10.1002/apxr.70138",
+      "title": "Material-Driven Neuronal Oscillators and Filters via Active Reactance in CC-NDR and VC-NDR Electro-Thermal Memristors",
+      "dimension_each_oscillator": 2,
+      "models": {
+        "LCO": [
+          "temperature",
+          "capacitor voltage"
+        ],
+        "LCMO": [
+          "temperature",
+          "inductor current"
+        ]
+      },
+      "source_equations": [
+        "6a",
+        "6b",
+        "7a",
+        "7b"
+      ],
+      "status": "excluded_planar_when_dc_driven",
+      "reason": "Material active reactance is not an independent third state. AC probe cases are nonautonomous.",
+      "full_material_fit_coefficients_transcribed": false,
+      "author_code_executed_or_copied": false,
+      "source": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/apxr.70138"
+    }
+  ],
+  "theorem_sources": [
+    {
+      "doi": "10.1007/BF01054041",
+      "access": "publisher abstract only; full proof unavailable"
+    },
+    {
+      "url": "https://arxiv.org/html/1412.1540",
+      "access": "full primary manuscript, introduction equations1.1-1.2 and planar-embedding statement"
+    },
+    {
+      "url": "https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p318.pdf",
+      "access": "full primary proceedings PDF, Definition1 and Theorem2 pp321-322"
+    }
+  ],
+  "search_queries": [
+    "Dynamic Instability and Time Domain Response chaos",
+    "Bisquert 2c00790 filetype:pdf",
+    "halide perovskite monotone memristor",
+    "perovskite memristor Poincare",
+    "perovskite memristor chaotic model",
+    "The Poincare-Bendixson theorem for monotone cyclic feedback systems pdf Smith"
+  ],
+  "numerical_trajectories_run": 0,
+  "new_discovery_claim": false,
+  "notes": "Secondary dimensional screening stopped before unnecessary material coefficient recovery. All source caching is ignored; only this audit and companion Markdown are new tracked candidates."
+}

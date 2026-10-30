@@ -1,0 +1,83 @@
+{
+  "status": "Numerically closed off-modal saddle cycle",
+  "time_unit": "canonical sigma",
+  "state_columns": [
+    "x1",
+    "v1",
+    "x2",
+    "v2"
+  ],
+  "attempts": [
+    {
+      "seed": [
+        1.10698257422894,
+        1.2479645747477408,
+        0.0,
+        6.276911530969843
+      ],
+      "solution": [
+        1.0978001205741834,
+        1.2394878371448146,
+        -0.026217993737066365,
+        6.277224153466213
+      ],
+      "solver_message": "The solution converged.",
+      "closure": 1.1102230246251565e-14,
+      "symmetric_distance": 1.6732443992823487,
+      "antisymmetric_distance": 1.6384805012531243
+    }
+  ],
+  "period_sigma": 6.277224153466213,
+  "newton_closure": 1.1102230246251565e-14,
+  "independent_modal_radau_closure": 8.659739592076221e-15,
+  "maximum_transverse_multiplier": 1.0015415064171909,
+  "flow_identity_scaled_error": 3.4872342181676976e-13,
+  "integrated_divergence": -0.203361687341378,
+  "determinant": 0.8159830573040422,
+  "liouville_determinant": 0.815983057304042,
+  "mean_minimum_modal_energy_fraction": 0.48821036722906097,
+  "kinematic_phase_difference_circular_mean": 1.5955604692170238,
+  "phase_scope": "Kinematic atan2 angles using the approximate common frequency; not exact asymptotic phases.",
+  "script": "research/rayleigh_quadrature_cycle.py",
+  "wall_seconds": 2.963234700000612,
+  "scope": "Unstable periodic-orbit control; not an attractor or novelty claim. Attribution to a scout requires a separate phase/proximity check.",
+  "array_shapes": {
+    "parameters": [
+      2
+    ],
+    "initial_state": [
+      4
+    ],
+    "section_multipliers": [
+      3
+    ],
+    "full_multipliers": [
+      4
+    ],
+    "floquet_exponents": [
+      4
+    ],
+    "floquet_exponents_parent_scaled_time": [
+      4
+    ],
+    "monodromy": [
+      4,
+      4
+    ],
+    "section_derivative": [
+      3,
+      3
+    ],
+    "times": [
+      6001
+    ],
+    "states": [
+      6001,
+      4
+    ],
+    "modal_energies": [
+      6001,
+      2
+    ]
+  }
+}

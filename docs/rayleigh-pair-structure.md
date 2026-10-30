@@ -145,11 +145,28 @@ The first two controls use the source-derived canonical parameters, rounded as r
 
 The 256 random-state algebra checks verify transcription of the modified-energy derivative and its upper bound; the analytical proof does not rely on sampling. Numerical residuals, complete multipliers, and integrator comparisons are saved in the results record.
 
+## Stronger damping: two transverse instabilities
+
+A subsequent set of twelve hand-chosen modal controls used both planes at `mu=10, kappa=0.01,1.5,4` and `mu=30, kappa=0.1,1.5,4`. Reproduce them with `python research/rayleigh_modal_followup.py`; the separate [follow-up record](../results/rayleigh-pair/modal-followup.json) preserves the original seven controls unchanged. All twelve completed in about 75 seconds, using DOP853 and Radau independently.
+
+Two antisymmetric cycles were transversely unstable:
+
+| `mu` | `kappa` | Period in `sigma` | Largest transverse multiplier | Positive transverse exponent |
+|---:|---:|---:|---:|---:|
+| 10 | 0.01 | 13.85173814 | 1.01904760 | 0.00136217 |
+| 30 | 0.1 | 34.34908472 | 1.15097732 | 0.00409360 |
+
+The symmetric cycles at those same points remained stable, with transverse multiplier moduli approximately `0.98013157` and `0.78658473`. The other eight tested modal cycles were stable. Both unstable multipliers are positive real. This establishes numerical growth of a transverse perturbation to those modal cycles, not a period-doubling finding or a chaotic attractor. The corresponding growth times are long: one e-fold takes approximately 734 and 244 canonical time units. A trajectory seeded extremely close to an unstable modal plane can consequently look persistent for a long time before leaving it.
+
+The dominant multipliers agree between the two solvers. At large damping, the tiny contracting multiplier cannot be recovered reliably from a direct double-precision monodromy determinant: for the second unstable case, its true logarithm is hundreds of units below zero. Unresolved direct exponents are marked missing. When the leading multiplier is resolved, the record separately infers the other logarithmic multiplier from the integrated trace; that is explicitly labeled an inference, not a direct eigenvalue measurement. The largest full augmented-state difference between solvers among these twelve controls was approximately `2.3e-9`.
+
+These stronger-damping examples are mathematical bifurcation leads. They do not establish physical validity of the reduced LCE constitutive approximation at those parameters, nor suggest that all trajectories avoid the competing stable symmetric cycle.
+
 ## Scope of the exclusion
 
 The exact modal planes and the uncoupled limit exclude chaos in those restrictions. The passive parameter regime discussed in the source screening also converges to equilibrium. We have not found an applicable theorem that excludes autonomous chaos throughout the active coupled four-state model. Opposite signs in the displacement/velocity reciprocal derivatives obstruct the simplest orthant cooperative/competitive sign-flip argument, but this is not a classification of all possible coordinate transformations or monotone cones.
 
-The next useful full-system calculation must use starts away from both modal planes and distinguish convergence to either known cycle from any persistent off-modal regime. A transversely unstable cycle, if subsequently found, would be a useful bifurcation lead; it would still require independent attractor validation. No literature absence or priority conclusion follows from this short structural audit.
+A subsequent [full-system survey](rayleigh-pair-research.md) uses starts away from both modal planes: 3,081 scouts and 468 completed tighter follow-ups retain no chaos candidate. Independent calculations also close an off-modal saddle cycle at weak coupling. These unstable periodic controls are useful bifurcation leads, but are not chaotic attractors. No literature absence or priority conclusion follows from this structural audit or the finite survey.
 
 ## Reference
 

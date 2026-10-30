@@ -1,0 +1,116 @@
+{
+  "settings": {
+    "transient_scaled": 200,
+    "duration_scaled": 400,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step_sigma": 0.025,
+    "max_attempts": 12000000
+  },
+  "method": "Adaptive DP5(4), exact C1 variational equations, computational time tau=sigma/scale",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 232.64044540000032,
+  "parameter_columns": [
+    "mu",
+    "kappa"
+  ],
+  "state_columns": [
+    "x1",
+    "v1",
+    "x2",
+    "v2"
+  ],
+  "time_unit": "canonical sigma (not physical seconds)",
+  "scaling_rule": "scale=max(1,mu,1/mu) for mu>0, or explicit control override; normalized_lle=lle*scale",
+  "modal_statistics_columns": [
+    "integral_symmetric_energy_dtau",
+    "integral_antisymmetric_energy_dtau",
+    "integral_minimum_energy_fraction_dtau",
+    "max_minimum_energy_fraction"
+  ],
+  "physical_scope": "Exact reduced mathematical source family; no unprovided fiber/tension limits imposed",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "retained": 0,
+  "source": "scout.npz",
+  "selection": "All four positive normalized windows, union preliminary passes and top24 means",
+  "array_shapes": {
+    "parameters": [
+      468,
+      2
+    ],
+    "initial_states": [
+      468,
+      4
+    ],
+    "initial_tangent": [
+      4
+    ],
+    "final_states": [
+      468,
+      4
+    ],
+    "final_tangents": [
+      468,
+      4
+    ],
+    "time_scales": [
+      468
+    ],
+    "lle": [
+      468
+    ],
+    "lle_windows": [
+      468,
+      4
+    ],
+    "normalized_lle": [
+      468
+    ],
+    "normalized_lle_windows": [
+      468,
+      4
+    ],
+    "raw_window_log_sums": [
+      468,
+      4
+    ],
+    "raw_clocks": [
+      468,
+      4
+    ],
+    "status": [
+      468
+    ],
+    "stats": [
+      468,
+      8
+    ],
+    "modal_statistics": [
+      468,
+      4
+    ],
+    "modal_means": [
+      468,
+      3
+    ],
+    "elapsed_sigma": [
+      468
+    ],
+    "step_counts": [
+      468,
+      2
+    ],
+    "source_indices": [
+      468
+    ],
+    "retained_candidate": [
+      468
+    ]
+  }
+}

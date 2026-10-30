@@ -1,0 +1,1806 @@
+{
+  "audit_utc": "2026-10-30T01:24:26.032101+00:00",
+  "equations": "x_i''=-x_i-kappa*(x1+x2)+mu*(1-abs(x_i'))*x_i'",
+  "scope": "Twelve hand-chosen modal controls only, no generic 4D trajectories or parameter grid.",
+  "time_unit": "canonical sigma",
+  "physical_scope": "Strong-mu points are mathematical controls, not calibrated LCE operating conditions.",
+  "script": "research/rayleigh_modal_followup.py",
+  "base_solver": "research/audit_rayleigh_pair.py:mode_control",
+  "requested_cases": [
+    {
+      "mu": 10.0,
+      "kappa": 0.01,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 10.0,
+      "kappa": 0.01,
+      "mode": "antisymmetric"
+    },
+    {
+      "mu": 10.0,
+      "kappa": 1.5,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 10.0,
+      "kappa": 1.5,
+      "mode": "antisymmetric"
+    },
+    {
+      "mu": 10.0,
+      "kappa": 4.0,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 10.0,
+      "kappa": 4.0,
+      "mode": "antisymmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 0.1,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 0.1,
+      "mode": "antisymmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 1.5,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 1.5,
+      "mode": "antisymmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 4.0,
+      "mode": "symmetric"
+    },
+    {
+      "mu": 30.0,
+      "kappa": 4.0,
+      "mode": "antisymmetric"
+    }
+  ],
+  "results": [
+    {
+      "mu": 10.0,
+      "kappa": 0.01,
+      "mode": "symmetric",
+      "base_frequency_squared": 1.02,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.009912133611342,
+      "period_sigma": 13.619356870513426,
+      "section_closure": 2.220446049250313e-15,
+      "dop853_radau_full_augmented_difference": 6.565414878423326e-12,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -6.821713333104995e-14,
+            1.009912133611359,
+            1.0101308972782932,
+            0.10220702915705278,
+            -0.10012552418777572,
+            -0.010130897290240816,
+            0.9898606098896033,
+            0.10013431060264566,
+            -0.09617476209379407,
+            -0.00972904003191882,
+            101.38594277607713
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999880523,
+              0.0
+            ],
+            [
+              1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.9801315698576846,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.0014735248927603794,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.9801315698576846,
+          "mean_damping": 7.444253332958963,
+          "determinant_trace_error": 1.7171344379202043e-18,
+          "flow_multiplier_error": 1.1947665079503622e-11,
+          "liouville_log_abs_determinant": -101.38594277607713,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 6.821713333104995e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.0014735248927603794,
+            -3.002761734041784
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -0.020068461372088633,
+            -101.36587431470504
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.0014735248927603794,
+            -7.442779808066203
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -2.4736809822734074e-13,
+            1.0099121336113694,
+            1.0101308972833547,
+            0.10220702915756517,
+            -0.10012552418828018,
+            -0.010130897290291888,
+            0.9898606098946123,
+            0.10013431060315162,
+            -0.0961747620942835,
+            -0.009729040031968257,
+            101.38594277607056
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999930628,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.980131569862644,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.0014735248923888485,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.980131569862644,
+          "mean_damping": 7.444253332958481,
+          "determinant_trace_error": 1.7171344379289036e-18,
+          "flow_multiplier_error": 6.937228569370291e-12,
+          "liouville_log_abs_determinant": -101.38594277607056,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.4736809822734074e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.0014735248923888485,
+            -3.002761734041784
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -0.020068461367028622,
+            -101.36587431470353
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.0014735248923888485,
+            -7.442779808066092
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 5.646507700002985
+    },
+    {
+      "mu": 10.0,
+      "kappa": 0.01,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 1.02,
+      "section_velocity": 1.009722907031655,
+      "period_sigma": 13.851738141695446,
+      "section_closure": 1.1324274851176597e-14,
+      "dop853_radau_full_augmented_difference": 1.8277712676706415e-10,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -2.3533475515535862e-14,
+            1.0097229070316593,
+            1.0099329260834127,
+            0.10216004206547263,
+            -0.09819483948518634,
+            -0.00993292591352788,
+            1.0293784016239536,
+            0.10414962583146657,
+            -0.10210603597847315,
+            -0.01033080296372597,
+            103.29426923071698
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000001698848,
+              0.0
+            ],
+            [
+              1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.0190475986602276,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            0.0013621730431986386,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.0190475986602276,
+          "mean_damping": 7.457134128155978,
+          "determinant_trace_error": 1.7856868789605468e-18,
+          "flow_multiplier_error": 1.6988477291590698e-10,
+          "liouville_log_abs_determinant": -103.29426923071698,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.3533475515535862e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1.0397112129643655e-12,
+          "raw_transverse_exponents_from_matrix": [
+            0.0013621730431986386,
+            null
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            0.01886846429806394,
+            -103.31313769501504
+          ],
+          "trace_inferred_transverse_exponents": [
+            0.0013621730431986386,
+            -7.458496301199177
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -2.0099200082057678e-13,
+            1.0097229070316696,
+            1.0099329259026135,
+            0.10216004204718356,
+            -0.09819483946760998,
+            -0.009932925911749914,
+            1.0293784014411764,
+            0.10414962581297445,
+            -0.10210603596034573,
+            -0.010330802961891964,
+            103.29426923089395
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999908639,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.0190475984792844,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            0.0013621730303799478,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.0190475984792844,
+          "mean_damping": 7.457134128168754,
+          "determinant_trace_error": 1.7856868786434848e-18,
+          "flow_multiplier_error": 9.136136291942876e-12,
+          "liouville_log_abs_determinant": -103.29426923089395,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.0099200082057678e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1.0397112127797544e-12,
+          "raw_transverse_exponents_from_matrix": [
+            0.0013621730303799478,
+            null
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            0.018868464120502793,
+            -103.31313769501445
+          ],
+          "trace_inferred_transverse_exponents": [
+            0.0013621730303799478,
+            -7.458496301199134
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [
+        "divide by zero encountered in log",
+        "divide by zero encountered in log"
+      ],
+      "status": "transversely unstable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 5.615936000001966
+    },
+    {
+      "mu": 10.0,
+      "kappa": 1.5,
+      "mode": "symmetric",
+      "base_frequency_squared": 4.0,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.036286332583876,
+      "period_sigma": 4.5635510366482945,
+      "section_closure": 1.9095836023552692e-14,
+      "dop853_radau_full_augmented_difference": 8.519474015145079e-11,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -1.300175245244617e-15,
+            1.0362863325839322,
+            1.0395705070098835,
+            0.10905072043323207,
+            -0.37722201161802227,
+            -0.039570507101387715,
+            0.01098333146393825,
+            0.0014305248303361755,
+            -0.0009893106521015945,
+            -0.00012885282273888764,
+            29.288903111221742
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.999999999908305,
+              0.0
+            ],
+            [
+              1.905489654951964e-13,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.01085447862364512,
+              0.0
+            ],
+            [
+              1.7554239935572633e-11,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.9911530453954626,
+            -5.4268540889626955
+          ],
+          "maximum_transverse_multiplier": 0.01085447862364512,
+          "mean_damping": 6.418007134359346,
+          "determinant_trace_error": 1.704078647232194e-22,
+          "flow_multiplier_error": 9.169498493832862e-11,
+          "liouville_log_abs_determinant": -29.288903111221742,
+          "direct_determinant_relative_check_resolvable": true,
+          "direct_determinant_relative_error": 8.943317247374768e-10,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 5.617728504603292e-14,
+          "unresolved_transverse_multiplier_indices": [],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.9911530453954626,
+            -5.4268540889626955
+          ]
+        },
+        "Radau": {
+          "endpoint": [
+            -1.0214962556376328e-13,
+            1.0362863325839724,
+            1.0395705070950783,
+            0.10905072044214695,
+            -0.37722201164893143,
+            -0.039570507104622094,
+            0.01098333145959798,
+            0.0014305248297342924,
+            -0.0009893106517186005,
+            -0.00012885282268570918,
+            29.288903111137287
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999902657,
+              0.0
+            ],
+            [
+              1.9053508770738858e-13,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.010854478619358031,
+              0.0
+            ],
+            [
+              1.7554240016887795e-11,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.9911530454820093,
+            -5.426854087947647
+          ],
+          "maximum_transverse_multiplier": 0.010854478619358031,
+          "mean_damping": 6.418007134340839,
+          "determinant_trace_error": 9.290184154750297e-22,
+          "flow_multiplier_error": 9.73432445761091e-12,
+          "liouville_log_abs_determinant": -29.288903111137287,
+          "direct_determinant_relative_check_resolvable": true,
+          "direct_determinant_relative_error": 4.875659014353471e-09,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.0214962556376328e-13,
+          "unresolved_transverse_multiplier_indices": [],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.9911530454820093,
+            -5.426854087947647
+          ]
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 4.44053499999427
+    },
+    {
+      "mu": 10.0,
+      "kappa": 1.5,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 4.0,
+      "section_velocity": 1.009722907031655,
+      "period_sigma": 13.851738141695446,
+      "section_closure": 1.1324274851176597e-14,
+      "dop853_radau_full_augmented_difference": 5.946307890525304e-10,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -3.184952301893418e-14,
+            1.0097229070316605,
+            1.0099329264980674,
+            0.10216004210741694,
+            -0.09819483952550273,
+            -0.009932925917606075,
+            0.05441215803258714,
+            0.00569655648458104,
+            -0.021780445925736462,
+            -0.0022802539903124925,
+            103.29426923030593
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000005804612,
+              0.0
+            ],
+            [
+              5.204170427930421e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.05213190404227465,
+              0.0
+            ],
+            [
+              -4.336808689942018e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.21325685814778178,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.05213190404227465,
+          "mean_damping": 7.457134128126303,
+          "determinant_trace_error": 2.35975119794223e-20,
+          "flow_multiplier_error": 5.804612346338445e-10,
+          "liouville_log_abs_determinant": -103.29426923030593,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 3.184952301893418e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.21325685814778178,
+            -3.0524673208254405
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -2.953978155983764,
+            -100.34029107432217
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.21325685814778178,
+            -7.243877269978522
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -2.8955050163093077e-13,
+            1.009722907031676,
+            1.0099329259034366,
+            0.10216004204726774,
+            -0.09819483946769061,
+            -0.009932925911758162,
+            0.05441215800975359,
+            0.005696556482190568,
+            -0.021780445916595396,
+            -0.0022802539893555024,
+            103.29426923089241
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999916784,
+              0.0
+            ],
+            [
+              -3.469446951953614e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.052131904020398086,
+              0.0
+            ],
+            [
+              4.336808689942018e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.21325685817807677,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.052131904020398086,
+          "mean_damping": 7.457134128168644,
+          "determinant_trace_error": 2.3597511969519687e-20,
+          "flow_multiplier_error": 8.321565658775398e-12,
+          "liouville_log_abs_determinant": -103.29426923089241,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.8955050163093077e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.21325685817807677,
+            -3.0524673208254405
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -2.9539781564034024,
+            -100.340291074489
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.21325685817807677,
+            -7.243877269990566
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 5.484568100000615
+    },
+    {
+      "mu": 10.0,
+      "kappa": 4.0,
+      "mode": "symmetric",
+      "base_frequency_squared": 9.0,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.072155720656216,
+      "period_sigma": 2.579976468128808,
+      "section_closure": 6.52145004664817e-13,
+      "dop853_radau_full_augmented_difference": 1.203039889929869e-10,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -3.799391357084403e-14,
+            1.0721557206556462,
+            1.0692632877953554,
+            0.09599140173851534,
+            -0.7715344153553046,
+            -0.06926298881141854,
+            0.30712107171575087,
+            0.048215438954059685,
+            -0.02909705689068614,
+            -0.004567021344346471,
+            15.023222238914407
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000001035054,
+              0.0
+            ],
+            [
+              2.988804312792359e-07,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.3025530625102048,
+              0.0
+            ],
+            [
+              9.878611996264053e-07,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.4633757781924798,
+            -5.359631688929569
+          ],
+          "maximum_transverse_multiplier": 0.3025530625102048,
+          "mean_damping": 5.823007467122509,
+          "determinant_trace_error": 3.2600180557449884e-19,
+          "flow_multiplier_error": 1.0350542645198857e-10,
+          "liouville_log_abs_determinant": -15.023222238914407,
+          "direct_determinant_relative_check_resolvable": true,
+          "direct_determinant_relative_error": 1.0907432252308459e-12,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 5.697664562376303e-13,
+          "unresolved_transverse_multiplier_indices": [],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.4633757781924798,
+            -5.359631688929569
+          ]
+        },
+        "Radau": {
+          "endpoint": [
+            -1.8036006715904662e-13,
+            1.0721557206557537,
+            1.0692632876750514,
+            0.09599140172762899,
+            -0.7715344152683733,
+            -0.0692629888035521,
+            0.30712107173143066,
+            0.048215438956408105,
+            -0.02909705689155841,
+            -0.004567021344472516,
+            15.023222239022305
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.999999999991068,
+              0.0
+            ],
+            [
+              2.9888043136250264e-07,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.3025530625257583,
+              0.0
+            ],
+            [
+              9.87861199800745e-07,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.4633757781725542,
+            -5.359631688861164
+          ],
+          "maximum_transverse_multiplier": 0.3025530625257583,
+          "mean_damping": 5.82300746716433,
+          "determinant_trace_error": 1.0057769800860049e-16,
+          "flow_multiplier_error": 8.93196627771431e-12,
+          "liouville_log_abs_determinant": -15.023222239022305,
+          "direct_determinant_relative_check_resolvable": true,
+          "direct_determinant_relative_error": 3.3651483166083817e-10,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 4.622968674539152e-13,
+          "unresolved_transverse_multiplier_indices": [],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.4633757781725542,
+            -5.359631688861164
+          ]
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 3.7925759999998263
+    },
+    {
+      "mu": 10.0,
+      "kappa": 4.0,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 9.0,
+      "section_velocity": 1.009722907031655,
+      "period_sigma": 13.851738141695446,
+      "section_closure": 1.1324274851176597e-14,
+      "dop853_radau_full_augmented_difference": 2.2393420451294332e-11,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -4.768754835460243e-14,
+            1.0097229070316618,
+            1.009932925929316,
+            0.102160042049885,
+            -0.09819483947020323,
+            -0.009932925912012265,
+            3.0037223585679163e-05,
+            3.367104257237701e-06,
+            -2.856021465192006e-05,
+            -3.201534924417956e-06,
+            103.2942692308688
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000173037,
+              0.0
+            ],
+            [
+              3.469446951953614e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              2.6835688661261212e-05,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.7598885989751718,
+            null
+          ],
+          "maximum_transverse_multiplier": 2.6835688661261212e-05,
+          "mean_damping": 7.457134128166939,
+          "determinant_trace_error": 1.2721259010557145e-26,
+          "flow_multiplier_error": 1.7303714017202765e-11,
+          "liouville_log_abs_determinant": -103.2942692308688,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 4.768754835460243e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.7598885989751718,
+            null
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -10.525777889863901,
+            -92.7684913410049
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.7598885989751718,
+            -6.697245529191767
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -1.730473403460664e-13,
+            1.0097229070316647,
+            1.0099329259069225,
+            0.1021600420476201,
+            -0.09819483946803165,
+            -0.009932925911792637,
+            3.0037223585112668e-05,
+            3.367104257174294e-06,
+            -2.8560214651369885e-05,
+            -3.2015349243563737e-06,
+            103.29426923089046
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999951299,
+              0.0
+            ],
+            [
+              -5.204170427930421e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              2.6835688660756292e-05,
+              0.0
+            ],
+            [
+              4.235164736271502e-22,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.75988859897653,
+            null
+          ],
+          "maximum_transverse_multiplier": 2.6835688660756292e-05,
+          "mean_damping": 7.457134128168502,
+          "determinant_trace_error": 2.544251802063437e-26,
+          "flow_multiplier_error": 4.870104319820712e-12,
+          "liouville_log_abs_determinant": -103.29426923089046,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.730473403460664e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.75988859897653,
+            -3.552871799649283
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -10.525777889882717,
+            -92.76849134100775
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.75988859897653,
+            -6.697245529191973
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [
+        "divide by zero encountered in log"
+      ],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 5.409858499995607
+    },
+    {
+      "mu": 30.0,
+      "kappa": 0.1,
+      "mode": "symmetric",
+      "base_frequency_squared": 1.2,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.0013280604988748,
+      "period_sigma": 28.869349687230038,
+      "section_closure": 0.0,
+      "dop853_radau_full_augmented_difference": 8.952927288419232e-11,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            7.969146176289854e-14,
+            1.0013280604988606,
+            1.0013316356427886,
+            0.03342306511405395,
+            -0.039894869746965766,
+            -0.0013316355758734993,
+            0.7874570155751687,
+            0.02627833217032184,
+            -0.02613902481798203,
+            -0.0008722888528378973,
+            722.9520518687158
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000669151,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.7865847267223307,
+              0.0
+            ],
+            [
+              1.0842021724855044e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.00831521453038112,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.7865847267223307,
+          "mean_damping": 25.04220080123605,
+          "determinant_trace_error": 1.707525214051092e-19,
+          "flow_multiplier_error": 6.691514009560251e-11,
+          "liouville_log_abs_determinant": -722.9520518687158,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 7.969146176289854e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.00831521453038112,
+            -1.5126171129027064
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -0.24005483600190886,
+            -722.7119970327138
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.00831521453038112,
+            -25.03388558670567
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -8.431796927332869e-14,
+            1.00132806049887,
+            1.0013316355532593,
+            0.0334230651110652,
+            -0.03989486974340091,
+            -0.001331635575754494,
+            0.7874570154983834,
+            0.026278332167759235,
+            -0.026139024815434647,
+            -0.0008722888527528818,
+            722.9520518688051
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999775049,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.7865847266456306,
+              0.0
+            ],
+            [
+              -1.0842021724855044e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.00831521453375876,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.7865847266456306,
+          "mean_damping": 25.042200801239147,
+          "determinant_trace_error": 8.53762606942302e-20,
+          "flow_multiplier_error": 2.2495116880349997e-11,
+          "liouville_log_abs_determinant": -722.9520518688051,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 8.431796927332869e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.00831521453375876,
+            -1.5126171129027064
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -0.24005483609941913,
+            -722.7119970327058
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.00831521453375876,
+            -25.033885586705388
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 7.728155400000105
+    },
+    {
+      "mu": 30.0,
+      "kappa": 0.1,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 1.2,
+      "section_velocity": 1.00110744252512,
+      "period_sigma": 34.349084719056364,
+      "section_closure": 1.3322676295501878e-15,
+      "dop853_radau_full_augmented_difference": 5.045719397855919e-11,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -1.5414731123486458e-13,
+            1.0011074425251063,
+            1.0011099229246492,
+            0.03340799118353679,
+            -0.03326015102867231,
+            -0.0011099229034538494,
+            1.1525113384539645,
+            0.03846901880773911,
+            -0.04595835715558847,
+            -0.0015340177981786906,
+            864.7934682687319
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000211953,
+              0.0
+            ],
+            [
+              4.336808689942018e-19,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.1509773206557858,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            0.004093600358226458,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.1509773206557858,
+          "mean_damping": 25.17660879007228,
+          "determinant_trace_error": 1.999288475145541e-18,
+          "flow_multiplier_error": 2.1195267763118864e-11,
+          "liouville_log_abs_determinant": -864.7934682687319,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.5414731123486458e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1.1540696575493284e-12,
+          "raw_transverse_exponents_from_matrix": [
+            0.004093600358226458,
+            -1.19059020022005
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            0.1406114255106801,
+            -864.9340796942425
+          ],
+          "trace_inferred_transverse_exponents": [
+            0.004093600358226458,
+            -25.180702390430504
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -2.9739882431711884e-13,
+            1.0011074425251194,
+            1.0011099228777804,
+            0.03340799118197316,
+            -0.03326015102711661,
+            -0.0011099229034019487,
+            1.1525113384035073,
+            0.03846901880605517,
+            -0.045958357153578606,
+            -0.0015340177981116123,
+            864.7934682687759
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999743785,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.1509773206053957,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            0.004093600356951888,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.1509773206053957,
+          "mean_damping": 25.176608790073562,
+          "determinant_trace_error": 0.0,
+          "flow_multiplier_error": 2.5621504917694438e-11,
+          "liouville_log_abs_determinant": -864.7934682687759,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.9739882431711884e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1.1540696574988034e-12,
+          "raw_transverse_exponents_from_matrix": [
+            0.004093600356951888,
+            null
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            0.14061142546689978,
+            -864.9340796942428
+          ],
+          "trace_inferred_transverse_exponents": [
+            0.004093600356951888,
+            -25.18070239043051
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [
+        "divide by zero encountered in log"
+      ],
+      "status": "transversely unstable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 8.366821600000549
+    },
+    {
+      "mu": 30.0,
+      "kappa": 1.5,
+      "mode": "symmetric",
+      "base_frequency_squared": 4.0,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.004387335746802,
+      "period_sigma": 9.42950669444391,
+      "section_closure": 6.439293542825908e-15,
+      "dop853_radau_full_augmented_difference": 4.140554565879029e-11,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -9.118573951472086e-14,
+            1.0043873357468158,
+            1.0044276160678167,
+            0.0336393678563552,
+            -0.132202835551632,
+            -0.004427616032885255,
+            0.013186357528727361,
+            0.00044011474654984036,
+            -0.0004325139914360831,
+            -1.4435812566544529e-05,
+            223.85877184178344
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000000349314,
+              0.0
+            ],
+            [
+              1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.013171921716160816,
+              0.0
+            ],
+            [
+              5.082197683525802e-21,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.4591616505492795,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.013171921716160816,
+          "mean_damping": 23.740242103405723,
+          "determinant_trace_error": 4.467711712442751e-23,
+          "flow_multiplier_error": 3.493139111299115e-11,
+          "liouville_log_abs_determinant": -223.85877184178344,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 9.118573951472086e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.4591616505492795,
+            -4.955566042230151
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -4.3296678576863465,
+            -219.52910398409708
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.4591616505492795,
+            -23.28108045285644
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -2.523153127403921e-13,
+            1.0043873357468245,
+            1.0044276160264112,
+            0.03363936785496845,
+            -0.13220283554619944,
+            -0.0044276160327033085,
+            0.013186357531030077,
+            0.0004401147466266895,
+            -0.0004325139915117067,
+            -1.4435812569068338e-05,
+            223.85877184181956
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999937078,
+              0.0
+            ],
+            [
+              8.673617379884035e-19,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.013171921718461009,
+              0.0
+            ],
+            [
+              1.6940658945086007e-21,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.4591616505307602,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.013171921718461009,
+          "mean_damping": 23.740242103409553,
+          "determinant_trace_error": 6.016870487627167e-98,
+          "flow_multiplier_error": 6.292188992063075e-12,
+          "liouville_log_abs_determinant": -223.85877184181956,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 2.523153127403921e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.4591616505307602,
+            -5.072073970403682
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -4.329667857511718,
+            -219.52910398430785
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.4591616505307602,
+            -23.281080452878793
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 6.258993499999633
+    },
+    {
+      "mu": 30.0,
+      "kappa": 1.5,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 4.0,
+      "section_velocity": 1.00110744252512,
+      "period_sigma": 34.349084719056364,
+      "section_closure": 1.3322676295501878e-15,
+      "dop853_radau_full_augmented_difference": 2.3867552378931123e-10,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -1.6235450484014535e-13,
+            1.0011074425251114,
+            1.001109922640243,
+            0.033407991174046095,
+            -0.033260151019224755,
+            -0.0011099229031385832,
+            0.11104068780648813,
+            0.0037180677638223307,
+            -0.014805569279762095,
+            -0.0004957471981806758,
+            864.7934682690125
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999997371043,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.11054494060830745,
+              0.0
+            ],
+            [
+              2.168404344971009e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.06411621026821313,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.11054494060830745,
+          "mean_damping": 25.176608790080447,
+          "determinant_trace_error": 2.4078110990815745e-20,
+          "flow_multiplier_error": 2.628957052053238e-10,
+          "liouville_log_abs_determinant": -864.7934682690125,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.6235450484014535e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.06411621026821313,
+            -1.2511286849770016
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -2.2023331383676843,
+            -862.5911351306448
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.06411621026821313,
+            -25.112492579812237
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -3.1887573602397325e-13,
+            1.0011074425251194,
+            1.0011099228789184,
+            0.03340799118201108,
+            -0.03326015102715467,
+            -0.001109922903403217,
+            0.11104068782635092,
+            0.0037180677644874046,
+            -0.014805569282411047,
+            -0.000495747198269372,
+            864.7934682687766
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999755155,
+              0.0
+            ],
+            [
+              -2.168404344971009e-19,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.11054494062808155,
+              0.0
+            ],
+            [
+              -1.0842021724855044e-19,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.06411621026300547,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.11054494062808155,
+          "mean_damping": 25.17660879007358,
+          "determinant_trace_error": 0.0,
+          "flow_multiplier_error": 2.4484525518175815e-11,
+          "liouville_log_abs_determinant": -864.7934682687766,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 3.1887573602397325e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.06411621026300547,
+            -1.2713081798959853
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -2.202333138188806,
+            -862.5911351305878
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.06411621026300547,
+            -25.112492579810574
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 8.358883300003072
+    },
+    {
+      "mu": 30.0,
+      "kappa": 4.0,
+      "mode": "symmetric",
+      "base_frequency_squared": 9.0,
+      "transverse_frequency_squared": 1.0,
+      "section_velocity": 1.0097229070316553,
+      "period_sigma": 4.617246047231763,
+      "section_closure": 0.0,
+      "dop853_radau_full_augmented_difference": 2.281625999245307e-09,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            1.830913892719721e-14,
+            1.0097229070316498,
+            1.0099329280934684,
+            0.03405334742293338,
+            -0.29458451904186533,
+            -0.009932925933297188,
+            0.3149818855567653,
+            0.010520454906378901,
+            -0.010126155303298743,
+            -0.0003382155137430755,
+            103.29426922872949
+          ],
+          "longitudinal_multipliers": [
+            [
+              1.0000000021601712,
+              0.0
+            ],
+            [
+              -1.734723475976807e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.31464367004302224,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.2504338029287083,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.31464367004302224,
+          "mean_damping": 22.37140238403774,
+          "determinant_trace_error": 1.3799675108126146e-45,
+          "flow_multiplier_error": 2.1601711530649936e-09,
+          "liouville_log_abs_determinant": -103.29426922872949,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.830913892719721e-14,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.2504338029287083,
+            null
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -1.1563144866657968,
+            -102.1379547420637
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.2504338029287083,
+            -22.120968581109032
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -1.2027423328120346e-13,
+            1.0097229070316842,
+            1.0099329258118424,
+            0.03405334734600004,
+            -0.29458451837634675,
+            -0.009932925910856802,
+            0.31498188587107023,
+            0.01052045491687675,
+            -0.010126155313403776,
+            -0.00033821551408058577,
+            103.29426923098272
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999009855,
+              0.0
+            ],
+            [
+              -3.469446951953614e-18,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              0.31464367035698965,
+              0.0
+            ],
+            [
+              -5.421010862427522e-20,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.2504338027125945,
+            null
+          ],
+          "maximum_transverse_multiplier": 0.31464367035698965,
+          "mean_damping": 22.37140238452574,
+          "determinant_trace_error": 3.4150404495499767e-20,
+          "flow_multiplier_error": 9.901446329507735e-11,
+          "liouville_log_abs_determinant": -103.29426923098272,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.2027423328120346e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.2504338027125945,
+            -9.607765993417889
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -1.1563144856679461,
+            -102.13795474531477
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.2504338027125945,
+            -22.12096858181315
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [
+        "divide by zero encountered in log"
+      ],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 5.4307856000014
+    },
+    {
+      "mu": 30.0,
+      "kappa": 4.0,
+      "mode": "antisymmetric",
+      "base_frequency_squared": 1.0,
+      "transverse_frequency_squared": 9.0,
+      "section_velocity": 1.00110744252512,
+      "period_sigma": 34.349084719056364,
+      "section_closure": 1.3322676295501878e-15,
+      "dop853_radau_full_augmented_difference": 6.139089236967266e-12,
+      "integrators": {
+        "DOP853": {
+          "endpoint": [
+            -1.8029805079478045e-13,
+            1.0011074425251032,
+            1.0011099228971487,
+            0.03340799118261901,
+            -0.03326015102775752,
+            -0.0011099229034233203,
+            1.6726510524412047e-05,
+            5.63272585680887e-07,
+            -5.046194074871926e-06,
+            -1.6993280100187508e-07,
+            864.7934682687569
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999937255,
+              0.0
+            ],
+            [
+              2.168404344971009e-19,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.6556577723410173e-05,
+              0.0
+            ],
+            [
+              -2.6469779601696886e-23,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.32049550023296547,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.6556577723410173e-05,
+          "mean_damping": 25.176608790073008,
+          "determinant_trace_error": 8.854940941732993e-28,
+          "flow_multiplier_error": 6.274536445971535e-12,
+          "liouville_log_abs_determinant": -864.7934682687569,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 1.8029805079478045e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.32049550023296547,
+            -1.5134621189237922
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -11.00872708957848,
+            -853.7847411791785
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.32049550023296547,
+            -24.856113289840042
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        },
+        "Radau": {
+          "endpoint": [
+            -3.6689054572214275e-13,
+            1.001107442525121,
+            1.0011099228982554,
+            0.03340799118265579,
+            -0.03326015102779705,
+            -0.0011099229034246345,
+            1.672651052441694e-05,
+            5.632725856810529e-07,
+            -5.0461940748745365e-06,
+            -1.699328010019633e-07,
+            864.7934682687508
+          ],
+          "longitudinal_multipliers": [
+            [
+              0.9999999999948308,
+              0.0
+            ],
+            [
+              2.168404344971009e-19,
+              0.0
+            ]
+          ],
+          "transverse_multipliers": [
+            [
+              1.6556577723414977e-05,
+              0.0
+            ],
+            [
+              2.6469779601696886e-23,
+              0.0
+            ]
+          ],
+          "transverse_exponents": [
+            -0.32049550023295703,
+            null
+          ],
+          "maximum_transverse_multiplier": 1.6556577723414977e-05,
+          "mean_damping": 25.17660879007283,
+          "determinant_trace_error": 4.4274704708678095e-28,
+          "flow_multiplier_error": 5.169198402654729e-12,
+          "liouville_log_abs_determinant": -864.7934682687508,
+          "direct_determinant_relative_check_resolvable": false,
+          "direct_determinant_relative_error": null,
+          "small_multiplier_warning": "Do not interpret zero/tiny rounded multipliers or a small absolute determinant residual as relative accuracy. Use the integrated trace as the determinant reference.",
+          "state_closure": 3.6689054572214275e-13,
+          "unresolved_transverse_multiplier_indices": [
+            1
+          ],
+          "multiplier_resolution_heuristic_threshold": 1e-12,
+          "raw_transverse_exponents_from_matrix": [
+            -0.32049550023295703,
+            -1.5134621189237922
+          ],
+          "trace_inferred_log_abs_multipliers": [
+            -11.00872708957819,
+            -853.7847411791726
+          ],
+          "trace_inferred_transverse_exponents": [
+            -0.32049550023295703,
+            -24.856113289839872
+          ],
+          "trace_inference_scope": "Small log modulus inferred from integrated trace and the resolved dominant multiplier; not a direct FP64 eigenvalue measurement."
+        }
+      },
+      "warnings": [],
+      "status": "transversely stable numerical modal cycle",
+      "scope": "A modal transverse instability, if present, would not itself establish chaos.",
+      "wall_seconds": 8.135745699997642
+    }
+  ],
+  "wall_limit_seconds": 420.0,
+  "case_limit_seconds": 60.0,
+  "wall_seconds": 74.68701169999986,
+  "termination": "all twelve controls completed"
+}

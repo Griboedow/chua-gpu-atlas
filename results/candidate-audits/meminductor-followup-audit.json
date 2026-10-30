@@ -1,0 +1,98 @@
+{
+  "audit_date_utc": "2026-10-30",
+  "audit_scope": "Bounded follow-up of later citations, corrections, magnetic/optical closure and an earlier dissertation; no simulations",
+  "source_doi": "10.1038/s41598-025-12529-y",
+  "decision": "physical_model_closure_unresolved",
+  "new_scientific_result": false,
+  "novelty_established": false,
+  "preread_records": [
+    "docs/meminductor-energy-audit.md",
+    "docs/photofeedback-research.md",
+    "results/meminductor-energy/supplement-audit.json"
+  ],
+  "crossref": {
+    "url": "https://api.crossref.org/works/10.1038%2Fs41598-025-12529-y",
+    "access": "live API metadata",
+    "update_to_entry_returned": false,
+    "has_preprint": "10.21203/rs.3.rs-5612896/v1",
+    "caveat": "No update-to entry is not proof that no correction exists; targeted search also returned no specific correction."
+  },
+  "openalex": {
+    "work_url": "https://api.openalex.org/works/W4416389366",
+    "citing_list_url": "https://api.openalex.org/works?filter=cites:W4416389366&per-page=100",
+    "cited_by_count": 2,
+    "returned_count": 2,
+    "same_as_prior_snapshot": true,
+    "works": [
+      "10.1016/j.vlsi.2026.102740",
+      "10.3389/felec.2026.1919384"
+    ],
+    "parsing_note": "PowerShell case-insensitive object conversion initially failed on abstract-index keys. Metadata were successfully re-read with ConvertFrom-Json -AsHashTable; failures were not interpreted as zero citations.",
+    "caveat": "Incomplete citation index; no publication-gap inference."
+  },
+  "new_primary_lead": {
+    "title": "Meminductor- Physical Realization and Edge of Chaos Operation",
+    "author": "Abhiram Dinavahi",
+    "type": "Doctoral dissertation",
+    "institution": "Texas A&M University",
+    "repository_date": "2023-10-10",
+    "record": "https://oaktrust.library.tamu.edu/items/4dc0c47e-a888-4e98-8d78-0aacecae55f3",
+    "handle": "https://hdl.handle.net/1969.1/202865",
+    "listed_file": "DINAVAHI-DISSERTATION-2023.pdf",
+    "listed_size": "5.89 MB",
+    "access_scope": "Search-indexed official repository metadata and abstract only",
+    "full_text_accessed": false,
+    "ordinary_attempts": [
+      {"method": "web open", "result": "timeout"},
+      {"method": "ordinary HTTP request", "result": "Cloudflare verification page"},
+      {"method": "installed Edge ordinary page navigation", "http_status": 403, "title": "Just a moment...", "result": "Cloudflare security verification; no file links exposed"}
+    ],
+    "bypass_attempted": false,
+    "closure_present": "unknown",
+    "chaotic_attractor_result_present": "unknown",
+    "next_check": "Inspect equations and appendices if the full text becomes available through ordinary authorized access."
+  },
+  "new_adjacent_papers": [
+    {
+      "doi": "10.1007/s00542-026-06131-z",
+      "access": "publisher abstract and references; subscription full text not accessed",
+      "physical_implementation": "CMOS meminductor emulator",
+      "cites": "10.1038/s41598-022-24914-y",
+      "decision": "different implementation; no moving-coil calibration recovered"
+    },
+    {
+      "doi": "10.1088/1674-1056/ae4c72",
+      "access": "publisher-indexed abstract; direct publisher page timed out twice",
+      "physical_implementation": "memristive and meminductive emulator circuit",
+      "abstract_reports": "chaotic and periodic spiking, numerical and PCB measurements",
+      "full_equations_inspected": false,
+      "decision": "different implementation; not evidence of chaos in the Dinavahi-Harris moving coil"
+    }
+  ],
+  "queries": [
+    "\"10.1038/s41598-025-12529-y\" correction OR erratum OR feedback",
+    "\"Dinavahi\" \"Harris\" meminductor optical flux chaos 2026",
+    "\"Edge-of-chaos operation and persistent dynamics\" citing",
+    "\"Dinavahi\" \"Meminductor-Physical\" dissertation",
+    "\"meminductor\" \"Dinavahi\" \"coenergy\"",
+    "\"meminductor\" \"Dinavahi\" \"correction\"",
+    "\"DINAVAHI-DISSERTATION-2023.pdf\"",
+    "\"1969.1/202865\" meminductor",
+    "site:oaktrust.library.tamu.edu \"Dinavahi\" \"photoresistor\"",
+    "\"Meminductor- Physical Realization and Edge of Chaos Operation\" \"flux\"",
+    "\"Dinavahi\" \"permanent magnet\" \"photoresistor\" thesis",
+    "\"s41598-025-12529-y\" \"Correction\""
+  ],
+  "remaining_missing_inputs": [
+    "calibrated permanent-magnet flux linkage and reciprocal force/flux relation",
+    "LED current-voltage and optical transfer calibration",
+    "LDR response dynamics",
+    "friction/contact and electrical impulse closure"
+  ],
+  "interpretive_limits": [
+    "The source's edge-of-chaos condition concerns local small-signal activity, not a demonstrated positive asymptotic Lyapunov exponent.",
+    "The inaccessible dissertation's abstract is not evidence that its full text lacks a calibrated closure or a chaos result.",
+    "The existing 3072-trajectory negative survey remains phenomenological and was not repeated.",
+    "No arbitrary augmented model was introduced and no new GPU or CPU integration was run."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "errors": {
+    "jacobian": 2.5421151141960927e-09,
+    "energy": 6.0452021251588136e-15,
+    "modal_restriction": 0.0,
+    "vdp_conjugacy": 1.1172025428753872e-15,
+    "two_cpu_methods": 1.3707979196198039e-11
+  },
+  "random_states": 256,
+  "time_unit": "canonical sigma",
+  "note": "C1 drag with absolute value; no saltation. Ordinary finite differences away from zero; exact analytic derivative at zero.",
+  "array_shapes": {}
+}

@@ -1,0 +1,120 @@
+{
+  "settings": {
+    "transient_scaled": 50.0,
+    "duration_scaled": 100.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "max_step_sigma": 0.05,
+    "max_attempts": 6000000
+  },
+  "method": "Adaptive DP5(4), exact C1 variational equations, computational time tau=sigma/scale",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 74.16205030000128,
+  "parameter_columns": [
+    "mu",
+    "kappa"
+  ],
+  "state_columns": [
+    "x1",
+    "v1",
+    "x2",
+    "v2"
+  ],
+  "time_unit": "canonical sigma (not physical seconds)",
+  "scaling_rule": "scale=max(1,mu,1/mu) for mu>0, or explicit control override; normalized_lle=lle*scale",
+  "modal_statistics_columns": [
+    "integral_symmetric_energy_dtau",
+    "integral_antisymmetric_energy_dtau",
+    "integral_minimum_energy_fraction_dtau",
+    "max_minimum_energy_fraction"
+  ],
+  "physical_scope": "Exact reduced mathematical source family; no unprovided fiber/tension limits imposed",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "lanes": 3081,
+  "completed": 3081,
+  "preliminary_positive": 13,
+  "start_scope": "Three chosen canonical states per tuple, strictly off both exact modal planes; not author-supplied physical initial conditions",
+  "array_shapes": {
+    "parameters": [
+      3081,
+      2
+    ],
+    "initial_states": [
+      3081,
+      4
+    ],
+    "initial_tangent": [
+      4
+    ],
+    "final_states": [
+      3081,
+      4
+    ],
+    "final_tangents": [
+      3081,
+      4
+    ],
+    "time_scales": [
+      3081
+    ],
+    "lle": [
+      3081
+    ],
+    "lle_windows": [
+      3081,
+      4
+    ],
+    "normalized_lle": [
+      3081
+    ],
+    "normalized_lle_windows": [
+      3081,
+      4
+    ],
+    "raw_window_log_sums": [
+      3081,
+      4
+    ],
+    "raw_clocks": [
+      3081,
+      4
+    ],
+    "status": [
+      3081
+    ],
+    "stats": [
+      3081,
+      8
+    ],
+    "modal_statistics": [
+      3081,
+      4
+    ],
+    "modal_means": [
+      3081,
+      3
+    ],
+    "elapsed_sigma": [
+      3081
+    ],
+    "step_counts": [
+      3081,
+      2
+    ],
+    "preliminary_candidate": [
+      3081
+    ],
+    "mu_grid": [
+      32
+    ],
+    "kappa_grid": [
+      32
+    ]
+  }
+}

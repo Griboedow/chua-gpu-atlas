@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "audit_utc": "2026-10-30T01:59:00Z",
+  "scope": "Primary-source screening; two autonomous mechanochemical models; no integration or chaos verification performed.",
+  "conclusion": "One exact five-state source-audit target is ready to implement, with substantial prior-art qualifications. A second three-state model already has an explicit published chaotic example. Neither is claimed as a new attractor.",
+  "models": [
+    {
+      "id": "single_cell_mechanochemical_brusselator_s2",
+      "status": "simulation_ready_source_audit_lower_novelty_priority",
+      "effective_dimension": 5,
+      "state_order": ["M", "E", "D", "L0", "L"],
+      "exact_scope": "Equation S2 of arXiv:2504.19655v3 SI, also present in v1; explicit source choice f(L,t)=0; unsaturated single-cell ODE, not a spatially uniform reduction of the continuum PDE.",
+      "equations": [
+        "Mdot = a - (b+1)*M + c*M^2*E",
+        "Edot = b*M - c*M^2*E - D*E",
+        "tauD*Ddot = D0 - D - beta*D*(L-1)",
+        "tauL*L0dot = 1 - L0 - alpha*(E-Eref)",
+        "tauR*Ldot = L0-L"
+      ],
+      "source_default_parameters": {"a": 1, "b": 3, "c": 1, "D0": 0.1, "tauR": 1, "tauD": 1.1, "tauL": 1.2},
+      "reference_equilibrium": {
+        "meaning": "Eref is a fixed uncoupled-equilibrium reference, called E0 in the source; it is not the initial E value.",
+        "Mref": 0.6137372763943942,
+        "Eref": 3.8626272360560576,
+        "calculation": "Unique real root of M^3-M^2+0.4*M-0.1=0; Eref=3*Mref/(Mref^2+0.1). Algebraic root computation only.",
+        "chemical_equilibrium_residual_max_abs": 2.220446049250313e-16
+      },
+      "source_initialization": "M,E on the uncoupled limit cycle; D=D0 and L=L0=1. Coupling enabled at t=0, then autonomous. No exact limit-cycle phase or numeric initial pair is asserted here.",
+      "exact_reparametrization": {
+        "condition": "alpha>0",
+        "definitions": {"x": "(1-L)/alpha", "y": "(1-L0)/alpha", "mu": "alpha*beta"},
+        "state_order": ["M", "E", "D", "y", "x"],
+        "equations_changed": ["tauD*Ddot=D0-D+mu*D*x", "tauL*ydot=E-Eref-y", "tauR*xdot=y-x"],
+        "reconstruction": "L=1-alpha*x; L0=1-alpha*y; beta=mu/alpha. Physical length admissibility still depends on alpha.",
+        "jacobian_rows": [
+          ["-(b+1)+2*c*M*E", "c*M^2", "0", "0", "0"],
+          ["b-2*c*M*E", "-c*M^2-D", "-E", "0", "0"],
+          ["0", "0", "(-1+mu*x)/tauD", "0", "mu*D/tauD"],
+          ["0", "1/tauL", "0", "-1/tauL", "0"],
+          ["0", "0", "0", "1/tauR", "-1/tauR"]
+        ],
+        "divergence": "-(b+1)+2*c*M*E-c*M^2-D+(-1+mu*x)/tauD-1/tauL-1/tauR"
+      },
+      "analytical_validation_control": {
+        "condition": "mu=0; stable planar chemical limit cycle with D=D0",
+        "full_spectrum": ["0", "lambda_radial<0", "-1/tauD", "-1/tauL", "-1/tauR"],
+        "basis": "Block-triangular variational system; driven linear mechanical filters.",
+        "computed_spectrum": false
+      },
+      "physical_domain": {
+        "chemical_positivity": "M,E,D>=0 forward invariant: boundary derivatives a,b*M,D0/tauD.",
+        "length_positivity": "L,L0>0 not automatically invariant; at L0=0, derivative is negative if E>Eref+1/alpha. Require alpha*x<1 and alpha*y<1 without clipping.",
+        "small_strain": "Linear-elastic interpretation needs separate deformation checks.",
+        "fuel": "Maintained chemical feed a and homeostatic source D0; not a closed finite-fuel model.",
+        "global_boundedness_proved": false,
+        "experimental_calibration_established": false
+      },
+      "version_audit": {
+        "v1_title": "Oscillation death by mechanochemical feedback",
+        "v1_date": "2025-04-28",
+        "v3_title": "Symmetry-protected phases in a 1D active solid with mechanochemical feedback",
+        "v3_date": "2026-07-08",
+        "journal": "Physical Review Letters 137, 078401 (2026)",
+        "journal_date": "2026-08-11",
+        "journal_doi": "10.1103/p1bw-v87g",
+        "decisive_prior_art": "Latest main text explicitly reports spatiotemporal chaos in phase II; supplementary section X discusses Lyapunov exponents. A first-chaos claim for the broad family is excluded.",
+        "source_diagnostic_limit": "Written QR description omits usual logged accumulated time-normalized factors, associates five exponents with component variables, and leaves full spatial versus local spectrum interpretation unclear. This does not prove the unseen code wrong.",
+        "narrow_scope_unresolved": "Whether the exact unsaturated autonomous single-cell S2 has an already published correctly verified chaotic parameter set remains unresolved. Spatial chaos is not automatically a result for S2.",
+        "continuum_difference": "The spatial model adds cubic saturation and has total-length-conserving mechanics, unlike S2 relaxation. Do not transfer boundedness or chaos between models."
+      },
+      "forward_citation_audit": {
+        "openalex_id": "https://openalex.org/W4417012253",
+        "openalex_returned_count": 0,
+        "known_primary_forward_citation_despite_zero_index": {
+          "title": "Glassy dynamics in active epithelia emerge from an interplay of mechanochemical feedback and crowding",
+          "doi": "10.1038/s41467-026-74163-0",
+          "url": "https://www.nature.com/articles/s41467-026-74163-0",
+          "relationship": "Explicitly cites earlier preprint; different epithelial tissue model, not an exact S2 equivalence."
+        },
+        "limitation": "Zero indexed citations is demonstrably incomplete and is not evidence of novelty."
+      },
+      "sources": [
+        {"url": "https://arxiv.org/html/2504.19655v1", "access": "full primary HTML and SI", "cache": "outputs/candidate_research/hbr-2025.html"},
+        {"url": "https://arxiv.org/html/2504.19655v3", "access": "full primary HTML and SI", "cache": "outputs/candidate_research/hbr-2026-v3.html"},
+        {"url": "https://journals.aps.org/prl/abstract/10.1103/p1bw-v87g", "access": "published record; subscription full text not accessed"},
+        {"url": "https://api.openalex.org/works?filter=cites:W4417012253&per-page=200", "access": "metadata only", "cache": "outputs/candidate_research/hbr-forward-citations.json"}
+      ]
+    },
+    {
+      "id": "inertial_mechanochemical_solid_single_mode",
+      "status": "exclude_first_chaos_search_exact_published_chaos",
+      "effective_dimension": 3,
+      "state_order": ["U", "V", "X"],
+      "exact_scope": "Published Eq.5, first-spatial-mode Galerkin approximation; tau_el=1 units.",
+      "equations": ["Udot=V", "Vdot=-U-Vi*V-X", "Ch*Xdot=X*(1-X^2)-Au*U-Av*V"],
+      "published_chaotic_parameters": {"Vi": 0.16, "Ch": 100, "Au": 50, "Av": 84},
+      "source_location": "Figure 4e explicitly reports a chaotic strange attractor.",
+      "neighboring_source_controls": [{"Av": 60.5, "regime": "stable fixed point"}, {"Av": 68, "regime": "cycle"}, {"Av": 78.5, "regime": "period doubling"}, {"Av": 106, "regime": "larger cycle"}],
+      "symmetry": "(U,V,X)->(-U,-V,-X)",
+      "divergence": "-Vi+(1-3*X^2)/Ch; strictly negative at stated example, which alone does not establish chaos.",
+      "physical_domain": "Real modal amplitudes; derivation assumes small strain and small reaction chemical potentials. No separate physical-admissibility verification performed here.",
+      "journal": "Physical Review Letters 135, 258301 (2025)",
+      "journal_doi": "10.1103/19rh-3whq",
+      "journal_date": "2025-12-16",
+      "equivalence_limit": "Source cites control-system and hearing models. No conjugacy to a named canonical attractor was established in this audit.",
+      "forward_citation_audit": {
+        "openalex_id": "https://openalex.org/W4417268434",
+        "returned_count": 3,
+        "coverage": "Metadata only; these three citing full papers were not all inspected.",
+        "records": [
+          {"title": "Nonreciprocal constitutive laws for oriented active solids", "doi": "10.1088/1367-2630/ae4f19"},
+          {"title": "Stretched-exponential aging governs nonequilibrium precipitate patterns", "doi": "10.1103/t5gt-r6q2"},
+          {"title": "Active chemomechanical solitons", "doi": "10.1103/h7vc-vzfc"}
+        ]
+      },
+      "sources": [
+        {"url": "https://arxiv.org/html/2505.18272v1", "access": "full primary HTML", "cache": "outputs/candidate_research/inertial-solid-2025.html"},
+        {"url": "https://arxiv.org/html/2505.18272v2", "access": "full primary HTML", "cache": "outputs/candidate_research/inertial-solid-2025-v2.html"},
+        {"url": "https://doi.org/10.1103/19rh-3whq", "access": "published metadata"},
+        {"url": "https://api.openalex.org/works?filter=cites:W4417268434&per-page=200", "access": "metadata only", "cache": "outputs/candidate_research/inertial-solid-citations.json"}
+      ]
+    }
+  ],
+  "work_performed": {"new_integrations": 0, "gpu_jobs": 0, "author_code_copied_or_executed": false, "new_attractor_claim": false, "author_contact": false},
+  "limitations": ["A bounded search is not proof of unpublished status.", "No independent trajectories or Lyapunov spectra were computed.", "Public author manuscripts were used where final publisher full text required access."]
+}

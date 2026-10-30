@@ -1,0 +1,113 @@
+{
+  "records": [
+    {
+      "parameters": [
+        0.0,
+        2.0
+      ],
+      "computational_scale": 1.0,
+      "errors": {
+        "state": 7.076284003204591e-14,
+        "tangent": 6.139533326177116e-14,
+        "lle": 9.395956235280778e-14,
+        "linear_expm": 6.961098364399732e-14
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.0,
+        2.0
+      ],
+      "computational_scale": 7.0,
+      "errors": {
+        "state": 6.250555628639631e-14,
+        "tangent": 7.177591854201637e-14,
+        "lle": 1.0173112352518388e-13,
+        "linear_expm": 6.23945339839338e-14
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.00880947943,
+        0.557378006
+      ],
+      "computational_scale": 1.0,
+      "errors": {
+        "state": 3.1240288134171124e-13,
+        "tangent": 7.568465854035367e-10,
+        "lle": 1.3184559971568532e-09
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.00880947943,
+        0.557378006
+      ],
+      "computational_scale": 7.0,
+      "errors": {
+        "state": 3.173711293769088e-13,
+        "tangent": 7.56857465589178e-10,
+        "lle": 1.3184527219989306e-09
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        3.0,
+        1.5
+      ],
+      "computational_scale": 1.0,
+      "errors": {
+        "state": 7.349676423018536e-14,
+        "tangent": 1.50053047764942e-09,
+        "lle": 7.084042241700672e-10
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        3.0,
+        1.5
+      ],
+      "computational_scale": 7.0,
+      "errors": {
+        "state": 5.306866057708248e-14,
+        "tangent": 1.5005413578350613e-09,
+        "lle": 7.084014486125056e-10
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        10.0,
+        0.01
+      ],
+      "computational_scale": 1.0,
+      "errors": {
+        "state": 3.907985046680551e-13,
+        "tangent": 1.204952804201298e-12,
+        "lle": 2.7870761254433774e-12
+      },
+      "passed": true
+    },
+    {
+      "parameters": [
+        10.0,
+        0.01
+      ],
+      "computational_scale": 7.0,
+      "errors": {
+        "state": 3.8058445284150366e-13,
+        "tangent": 1.204952804201298e-12,
+        "lle": 2.785743857813827e-12
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Independent implicit Radau state/tangent, linear exact control and two computational-time scalings",
+  "array_shapes": {}
+}

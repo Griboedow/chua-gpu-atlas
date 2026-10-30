@@ -1,0 +1,39 @@
+{
+  "status": "numerically closed cycle",
+  "section_return_order": 1,
+  "period_sigma": 6.1223447346439235,
+  "newton_closure": 3.959506333917062e-14,
+  "independent_modal_radau_closure": 2.85701909179259e-14,
+  "maximum_transverse_multiplier": 0.7712129335601432,
+  "caveat": "Numerical closure and Floquet check, not a rigorous orbit proof.",
+  "row": 1865,
+  "time_unit": "canonical sigma",
+  "input_file": "results/rayleigh-pair/scout.npz",
+  "array_shapes": {
+    "initial_state": [
+      4
+    ],
+    "section_multipliers": [
+      3
+    ],
+    "full_multipliers": [
+      4
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      4
+    ],
+    "parameters": [
+      2
+    ],
+    "floquet_exponents": [
+      4
+    ]
+  },
+  "maximum_symmetric_modal_energy": 1.992586253034945,
+  "maximum_antisymmetric_modal_energy": 4.0059342843254506e-32,
+  "modal_plane": "symmetric"
+}

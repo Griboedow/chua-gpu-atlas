@@ -1,0 +1,261 @@
+{
+  "source_row": 193,
+  "refined_row": 17,
+  "time_unit": "canonical sigma",
+  "input_files": [
+    "scout.npz",
+    "scout-refined.npz",
+    "quadrature-cycle.npz",
+    "weak-coupling-modal-controls.json"
+  ],
+  "proximity_summary": {
+    "quadrature": {
+      "minimum_distance": 0.0015514183472471663,
+      "minimum_time_sigma": 500.0,
+      "final_distance": 1.0092880177703074,
+      "below_0.01_intervals_sigma": [
+        [
+          223.0,
+          8089.0
+        ],
+        [
+          8091.0,
+          8092.0
+        ],
+        [
+          8094.0,
+          8095.0
+        ],
+        [
+          8097.0,
+          8098.0
+        ],
+        [
+          8100.0,
+          8100.0
+        ],
+        [
+          8102.0,
+          8103.0
+        ],
+        [
+          8105.0,
+          8105.0
+        ],
+        [
+          8108.0,
+          8108.0
+        ],
+        [
+          8111.0,
+          8111.0
+        ]
+      ],
+      "below_0.05_intervals_sigma": [
+        [
+          122.0,
+          14650.0
+        ],
+        [
+          14652.0,
+          14653.0
+        ],
+        [
+          14655.0,
+          14655.0
+        ],
+        [
+          14658.0,
+          14658.0
+        ],
+        [
+          14661.0,
+          14661.0
+        ],
+        [
+          14663.0,
+          14664.0
+        ],
+        [
+          14666.0,
+          14666.0
+        ]
+      ],
+      "below_0.1_intervals_sigma": [
+        [
+          82.0,
+          17473.0
+        ],
+        [
+          17475.0,
+          17476.0
+        ],
+        [
+          17478.0,
+          17479.0
+        ],
+        [
+          17481.0,
+          17484.0
+        ],
+        [
+          17486.0,
+          17487.0
+        ],
+        [
+          17489.0,
+          17489.0
+        ],
+        [
+          17492.0,
+          17492.0
+        ],
+        [
+          17495.0,
+          17495.0
+        ],
+        [
+          17498.0,
+          17498.0
+        ]
+      ]
+    },
+    "symmetric": {
+      "minimum_distance": 0.29937161245811694,
+      "minimum_time_sigma": 29998.0,
+      "final_distance": 0.3004634382000612,
+      "below_0.01_intervals_sigma": [],
+      "below_0.05_intervals_sigma": [],
+      "below_0.1_intervals_sigma": []
+    },
+    "antisymmetric": {
+      "minimum_distance": 1.2494461770660403,
+      "minimum_time_sigma": 243.0,
+      "final_distance": 2.1341044469648147,
+      "below_0.01_intervals_sigma": [],
+      "below_0.05_intervals_sigma": [],
+      "below_0.1_intervals_sigma": []
+    }
+  },
+  "gpu_checkpoint_comparisons": [
+    {
+      "label": "original start",
+      "sigma": 0.0,
+      "state": [
+        1.7,
+        -0.4,
+        0.2,
+        0.95
+      ],
+      "quadrature_distance": 0.521838016662093,
+      "symmetric_distance": 1.4512064982939825,
+      "antisymmetric_distance": 1.4193949202094789,
+      "cpu_gpu_state_difference": 0.0
+    },
+    {
+      "label": "scout endpoint",
+      "sigma": 4527.300557949281,
+      "state": [
+        -0.11731238277227357,
+        -1.2346241292732476,
+        1.0939397390566252,
+        -0.07871512921433875
+      ],
+      "quadrature_distance": 0.004164350631781214,
+      "symmetric_distance": 1.2894563826178658,
+      "antisymmetric_distance": 1.2526888013962956,
+      "cpu_gpu_state_difference": 3.879606642157949e-07
+    },
+    {
+      "label": "refined endpoint",
+      "sigma": 22636.502789746406,
+      "state": [
+        -1.0455256093613094,
+        -0.6564343119982856,
+        0.1884139402501354,
+        -1.0890251041002232
+      ],
+      "quadrature_distance": 0.3378316654478253,
+      "symmetric_distance": 0.9681578771751583,
+      "antisymmetric_distance": 1.5624442477999174,
+      "cpu_gpu_state_difference": 1.9324034735161724e-05
+    }
+  ],
+  "actual_end_sigma": 30000.0,
+  "requested_end_sigma": 30000.0,
+  "termination": "completed to 30000 sigma",
+  "method": "Independent DOP853 state integration, rtol1e-11,atol1e-13,max_step0.1; samples every1sigma plus exact GPU checkpoint times.",
+  "distance_definition": "Unweighted Euclidean distance in (x1,v1,x2,v2), minimized over adjacent polygon segments near the nearest vertex of each sampled exact cycle. Quadrature/modal references include exchange and global-sign copies.",
+  "quadrature_polygon_resolution_comparison_max_abs": 5.158336081612092e-07,
+  "distance_scope": "Geometric phase-minimized proximity, not a theorem guaranteeing shadowing for infinite time. Interval endpoints have roughly1sigma sampling resolution.",
+  "reference_periods": {
+    "quadrature": 6.277224153466213,
+    "symmetric": 6.270814103184705,
+    "antisymmetric": 6.28334384641203
+  },
+  "wall_seconds": 118.13378560000274,
+  "script": "research/rayleigh_saddle_shadowing.py",
+  "scope": "Check actual proximity and departure; no attractor or novelty claim.",
+  "array_shapes": {
+    "parameters": [
+      2
+    ],
+    "initial_state": [
+      4
+    ],
+    "times": [
+      30003
+    ],
+    "states": [
+      30003,
+      4
+    ],
+    "quadrature_distance": [
+      30003
+    ],
+    "quadrature_copy": [
+      30003
+    ],
+    "quadrature_phase_sigma": [
+      30003
+    ],
+    "symmetric_distance": [
+      30003
+    ],
+    "symmetric_copy": [
+      30003
+    ],
+    "symmetric_phase_sigma": [
+      30003
+    ],
+    "antisymmetric_distance": [
+      30003
+    ],
+    "antisymmetric_copy": [
+      30003
+    ],
+    "antisymmetric_phase_sigma": [
+      30003
+    ]
+  },
+  "symmetry_copy_order": [
+    "identity",
+    "global sign",
+    "exchange oscillators",
+    "exchange plus global sign"
+  ],
+  "geometric_departure_fit": {
+    "selection": "Post hoc interval and distance cutoff chosen after inspecting the trajectory; ordinary least squares of log distance versus time.",
+    "status": "finite geometric departure fit",
+    "time_interval_sigma": [
+      1000.0,
+      12000.0
+    ],
+    "distance_upper_cutoff": 0.03,
+    "sample_count": 11002,
+    "log_distance_growth_rate": 0.00024545006246979846,
+    "R_squared": 0.9999910039812593,
+    "reference_unstable_floquet_exponent": 0.00024538227058703183,
+    "scope": "Corroborates finite saddle departure; does not establish an attracting set or infinite-time shadowing."
+  }
+}

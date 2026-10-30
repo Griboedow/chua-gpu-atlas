@@ -1,0 +1,95 @@
+{
+  "parameter_columns": [
+    "mu",
+    "kappa"
+  ],
+  "state_columns": [
+    "x1",
+    "v1",
+    "x2",
+    "v2"
+  ],
+  "row": 1865,
+  "input_file": "results/rayleigh-pair/scout.npz",
+  "input_sha256": "6d39227992f2c62abb90655f06ad8b64fd58b2e12088bf2ab38dfafae33c4e85",
+  "time_unit": "canonical sigma",
+  "warm_sigma": 1000.0,
+  "actual_warm_sigma": 1000.0,
+  "requested_observation_sigma": 4000.0,
+  "actual_observation_sigma": 4000.0,
+  "qr_interval_sigma": 0.5,
+  "method": "DOP853 full analytic variational system",
+  "rtol": 1e-11,
+  "atol": 1e-13,
+  "max_step": 0.025,
+  "termination": "completed",
+  "integrated_divergence": -10412.68013502769,
+  "mean_divergence": -2.603170033756922,
+  "spectrum_sum_minus_mean_divergence": 8.881784197001252e-16,
+  "flow_propagation_max_scaled_error": 2.4419047579656143e-09,
+  "section_definition": "x1=0 upward; times relative to observation start after warmup",
+  "physical_scope": "Canonical translated/scaled mechanical coordinates; no physical LCE operating-domain certificate.",
+  "wall_seconds": 112.57455800000025,
+  "interpretation": "Saved endpoint converged to a numerically verified stable cycle (symmetric); no persistent chaos supported by this audit.",
+  "array_shapes": {
+    "parameters": [
+      2
+    ],
+    "initial_saved_endpoint": [
+      4
+    ],
+    "endpoint": [
+      4
+    ],
+    "spectrum": [
+      4
+    ],
+    "spectrum_windows": [
+      4,
+      4
+    ],
+    "flow_neutral_windows": [
+      4
+    ],
+    "divergence_windows": [
+      4
+    ],
+    "qr_times": [
+      8000
+    ],
+    "qr_states": [
+      8000,
+      4
+    ],
+    "qr_log_diagonals": [
+      8000,
+      4
+    ],
+    "qr_flow_logs": [
+      8000
+    ],
+    "qr_trace_integrals": [
+      8000
+    ],
+    "trajectory_times": [
+      181195
+    ],
+    "trajectory_states": [
+      181195,
+      4
+    ],
+    "section_times": [
+      654
+    ],
+    "section_states": [
+      654,
+      4
+    ],
+    "modal_energies": [
+      8000,
+      2
+    ]
+  },
+  "cycle_verification_record": "cpu-row1865-cycle-check.json",
+  "maximum_leading_minus_flow_window_rate": 3.803543851405022e-15
+}

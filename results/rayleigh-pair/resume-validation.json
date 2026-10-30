@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "errors": {
+    "final_states": 0.0,
+    "final_tangents": 0.0,
+    "raw_clocks": 0.0,
+    "raw_window_log_sums": 0.0,
+    "stats": 0.0,
+    "modal_statistics": 0.0,
+    "step_counts": 0.0
+  },
+  "scope": "Forced 100-attempt interruption followed by exact clock/state/tangent/log/statistics continuation versus uninterrupted run",
+  "array_shapes": {}
+}

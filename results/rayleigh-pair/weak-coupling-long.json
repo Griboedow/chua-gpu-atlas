@@ -1,0 +1,121 @@
+{
+  "settings": {
+    "transient_scaled": 1000,
+    "duration_scaled": 2000,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step_sigma": 0.025,
+    "max_attempts": 24000000
+  },
+  "method": "Adaptive DP5(4), exact C1 variational equations, computational time tau=sigma/scale",
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 71.78318830000353,
+  "parameter_columns": [
+    "mu",
+    "kappa"
+  ],
+  "state_columns": [
+    "x1",
+    "v1",
+    "x2",
+    "v2"
+  ],
+  "time_unit": "canonical sigma (not physical seconds)",
+  "scaling_rule": "scale=max(1,mu,1/mu) for mu>0, or explicit control override; normalized_lle=lle*scale",
+  "modal_statistics_columns": [
+    "integral_symmetric_energy_dtau",
+    "integral_antisymmetric_energy_dtau",
+    "integral_minimum_energy_fraction_dtau",
+    "max_minimum_energy_fraction"
+  ],
+  "physical_scope": "Exact reduced mathematical source family; no unprovided fiber/tension limits imposed",
+  "status_codes": {
+    "0": "completed",
+    "1": "numerical magnitude cutoff 1e6",
+    "2": "numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "selected_refined_row": 17,
+  "selected_source_row": 193,
+  "retained": 0,
+  "selection": "Fresh three original starts at the completed refined tuple with largest minimum normalized window; not a parameter search",
+  "retained_thresholds": {
+    "normalized_mean": 0.001,
+    "each_normalized_window": 0.0005
+  },
+  "array_shapes": {
+    "parameters": [
+      3,
+      2
+    ],
+    "initial_states": [
+      3,
+      4
+    ],
+    "initial_tangent": [
+      4
+    ],
+    "final_states": [
+      3,
+      4
+    ],
+    "final_tangents": [
+      3,
+      4
+    ],
+    "time_scales": [
+      3
+    ],
+    "lle": [
+      3
+    ],
+    "lle_windows": [
+      3,
+      4
+    ],
+    "normalized_lle": [
+      3
+    ],
+    "normalized_lle_windows": [
+      3,
+      4
+    ],
+    "raw_window_log_sums": [
+      3,
+      4
+    ],
+    "raw_clocks": [
+      3,
+      4
+    ],
+    "status": [
+      3
+    ],
+    "stats": [
+      3,
+      8
+    ],
+    "modal_statistics": [
+      3,
+      4
+    ],
+    "modal_means": [
+      3,
+      3
+    ],
+    "elapsed_sigma": [
+      3
+    ],
+    "step_counts": [
+      3,
+      2
+    ],
+    "source_indices": [
+      3
+    ],
+    "retained_candidate": [
+      3
+    ]
+  }
+}
