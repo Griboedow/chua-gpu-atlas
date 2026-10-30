@@ -1,0 +1,37 @@
+{
+  "date_utc": "2026-10-30",
+  "selected_target": "Exact Oriola2014 collective motor core, recovered through Alouges2025 model",
+  "selected_target_audit": "results/motor-pair/source-audit.json",
+  "new_chaos_claim": false,
+  "screened": [
+    {
+      "title": "On the coexistence of pressure regulation and oscillation modes in soft hysteretic valves",
+      "doi": "10.1016/j.jfluidstructs.2024.104090",
+      "primary": "https://ir.amolf.nl/pub/10955/16970publishedVersion.pdf",
+      "state_count_baseline": 2,
+      "decision": "Baseline planar exclusion on regular autonomous branches; piecewise modifications require separate switching analysis; no invented inertia"
+    },
+    {
+      "title": "Modeling networks of fluidic relaxation oscillators",
+      "author": "M.G.H. Frankevoort",
+      "year": 2023,
+      "primary": "https://pure.tue.nl/ws/portalfiles/portal/293050364/1366157_NetworksOfFluidicRelaxationOscillators.pdf",
+      "decision": "Third single-node state is explicitly artificial low-pass regularization of algebraic flow; physical interpretation needs singular-limit/hybrid audit",
+      "source_equations": [
+        "2.8",
+        "2.9",
+        "3.3",
+        "3.4"
+      ],
+      "date_correction": "Thesis awarded2023, despite later search indexing"
+    },
+    {
+      "title": "A fluidic relaxation oscillator for reprogrammable sequential actuation in soft robots",
+      "doi": "10.1016/j.matt.2022.06.002",
+      "data": "https://zenodo.org/records/6576063",
+      "decision": "Author archive1.1GB listed, not executed or used as a source of unreviewed code"
+    }
+  ],
+  "computations": "Independent motor CPU control only after explicit parent authorization; no GPU or mass scan by this agent",
+  "scope": "Bounded source/equivalence screening, not proof of novelty or nonexistence of chaos"
+}

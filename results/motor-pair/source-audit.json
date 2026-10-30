@@ -1,0 +1,446 @@
+{
+  "date_utc": "2026-10-30",
+  "status": "source_audit_complete_independent_periodic_control_with_explicit_accuracy_limits",
+  "new_model_claim": false,
+  "new_chaos_claim": false,
+  "source_model_doi": "10.1209/0295-5075/107/18002",
+  "later_equivalent_core_doi": "10.1142/S0218202525500423",
+  "state_order": [
+    "h",
+    "Y",
+    "Z"
+  ],
+  "parameter_order": [
+    "rho",
+    "r"
+  ],
+  "time": "tau=a0*t (2025) or alpha*t (2014)",
+  "field": [
+    "(-rho+r*(1-Z))*h-r*Y",
+    "h*(1-Z)-Y",
+    "h*Y-Z"
+  ],
+  "jacobian": [
+    [
+      "-rho+r*(1-Z)",
+      "-r",
+      "-r*h"
+    ],
+    [
+      "1-Z",
+      "-1",
+      "-h"
+    ],
+    [
+      "Y",
+      "h",
+      "-1"
+    ]
+  ],
+  "oriola_map": {
+    "h": "2*pi*rho*Xbar+mu*abar",
+    "Y": "abar/Omega",
+    "Z": "(bbar+Omega)/Omega",
+    "r": "mu*Omega"
+  },
+  "alouges_closed_core": {
+    "c": "(pc+qc)/2",
+    "s": "(ps-qs)/2",
+    "H": "zeta*x+lambda*s",
+    "cdot": "-a*c+H*s+a1/ell",
+    "sdot": "-a*s-H*c",
+    "xdot": "-ell*H/(2*pi)"
+  },
+  "alouges_map": {
+    "h": "H/a",
+    "Omega": "-a1/a",
+    "Y": "ell*s/Omega",
+    "Z": "(ell*c+Omega)/Omega",
+    "rho": "k/(eta*a)",
+    "r": "-lambda*a1/(a*a*ell)"
+  },
+  "physical_scope": {
+    "rho": "positive",
+    "r": "positive",
+    "oriola_Omega": "0<Omega<0.5",
+    "alouges_rates": "sqrt(a1*a1+b1*b1)<=a0/2",
+    "alouges_b1_equal_a1": "Omega<=1/(2*sqrt(2))",
+    "fuel": "constant activity input; no finite ATP reservoir state",
+    "closure": "cosine potential, spatially constant total transition rate; not generic motor kinetics or full flagellar shape"
+  },
+  "mathematical_checks": {
+    "invariant_disk": "Y*Y+(1-Z)*(1-Z)<=1",
+    "memory": "q=h-r*Y; qdot=-rho*(q+r*Y)",
+    "compact_invariant_set": "disk and abs(q)<=r",
+    "boundedness": "radial comparison and stable q filter bound every finite initial state",
+    "equilibrium": [
+      0,
+      0,
+      0
+    ],
+    "characteristic_polynomial": "(s+1)*(s*s+(rho+1-r)*s+rho)",
+    "hopf": "r=rho+1; angular_frequency=sqrt(rho)",
+    "symmetry": "(h,Y,Z)->(-h,-Y,Z)",
+    "passive_2025_variables": "two conditional exponents exactly -1 in tau time; no feedback to core",
+    "lyapunov_function": "V=q*q/(2*rho*r)+(Y*Y+Z*Z)/2; Vdot=-q*q/r+(r-1)*Y*Y-Z*Z",
+    "global_negative_region": "0<r<=1, rho>0: global origin attraction for every finite initial state; r=1 uses LaSalle",
+    "homoclinic_exclusion": "r>rho+1: origin has exactly one stable eigenvalue; complete stable manifold is invariant Z axis, whose nonzero orbits diverge backward. No homoclinic-to-origin orbit.",
+    "limits": "No exclusion of chaos for r>1, hidden basins or periodic-orbit crises; no originality claim for elementary deductions."
+  },
+  "implementation_checks": {
+    "samples": 100,
+    "seed": 70,
+    "alouges_and_identity_seed": 71,
+    "error_normalization": "abs(actual-reference)/(1+abs(reference))",
+    "complex_step": 1e-28,
+    "oriola_parameters": "rho=10**U(-2,2), r=10**U(0,4), Omega=.2; normal states",
+    "alouges_parameters": "positive scales exp(U(-1,1)); a1=-.2a,b1=.1a; normal states",
+    "jacobian_complex_step_scaled_error": 2.2158059736355754e-16,
+    "independent_eq7_field_scaled_error": 2.0890899480954775e-12,
+    "inverse_map_scaled_error": 9.491786478268041e-13,
+    "alouges_full5_to_core_scaled_error": 1.5567562378829855e-14,
+    "lyapunov_identity_scaled_error": 2.925482777660292e-14
+  },
+  "source_initial_conditions": {
+    "phase_diagram_fig5_original": [
+      0,
+      0,
+      0.074
+    ],
+    "phase_diagram_normalized": [
+      "2*pi*rho*.074",
+      0,
+      1
+    ],
+    "figure2_initial_state": "not recovered",
+    "our_control_start": [
+      "2*pi*rho*.01",
+      0,
+      0
+    ]
+  },
+  "source_controls": [
+    {
+      "name": "oriola_2014_figure_2",
+      "rho": 0.05,
+      "mu": 200.0,
+      "Omega": 0.2,
+      "r": 40.0,
+      "reported": "complex periodic orbit"
+    },
+    {
+      "name": "oriola_2014_figure_3a",
+      "rho": 0.7,
+      "mu": 1000.0,
+      "Omega": 0.4,
+      "r": 400.0,
+      "reported": "periodic cusp-like orbit"
+    },
+    {
+      "name": "oriola_2014_figure_3b",
+      "rho": 4.5,
+      "mu": 1000.0,
+      "Omega": 0.4,
+      "r": 400.0,
+      "reported": "periodic orbit"
+    },
+    {
+      "name": "oriola_2014_figure_4a_left",
+      "rho": 6.0,
+      "mu": 63096.0,
+      "Omega": 0.425,
+      "r": 26815.8,
+      "reported": "subharmonic periodic orbit"
+    },
+    {
+      "name": "oriola_2014_figure_4a_right",
+      "rho": 3.0,
+      "mu": 6500.0,
+      "Omega": 0.4,
+      "r": 2600.0,
+      "reported": "subharmonic periodic orbit"
+    },
+    {
+      "name": "oriola_2014_figure_4d_left",
+      "rho": 6.0,
+      "mu": 19000.0,
+      "Omega": 0.4,
+      "r": 7600.0,
+      "reported": "subharmonic periodic orbit"
+    }
+  ],
+  "source_parameter_estimates": {
+    "rho": [
+      0.01,
+      100.0
+    ],
+    "mu": [
+      1000.0,
+      100000.0
+    ],
+    "caution": "physical coefficients are shared; rectangle is exploratory, not experimental calibration"
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2409.03506v2",
+      "ignored_cache": "outputs/candidate_research/flagellar2025.html",
+      "bytes": 752358,
+      "sha256": "7631587790489f5e7fda264a2f46b64a4ab551cd1e36a0c24cde209278409894"
+    },
+    {
+      "url": "https://diposit.ub.edu/bitstreams/9d37fdc6-1352-492b-940f-bee5ddcbe162/download",
+      "ignored_cache": "outputs/candidate_research/oriola-thesis.pdf",
+      "bytes": 27751150,
+      "sha256": "cffb3d87309584410c1cc4e7bc75589f74e72e744f6b96b8ab50a2fed4b981ba"
+    },
+    {
+      "url": "https://arxiv.org/html/2412.06067v1",
+      "ignored_cache": "outputs/candidate_research/flagellar2025-followup.html",
+      "bytes": 494624,
+      "sha256": "6870648811442bc774d34210ebb36fab24a7362696444f4f4ee8699a1656b741"
+    }
+  ],
+  "forward_discovery": {
+    "provider": "OpenAlex",
+    "2014_returned_records": 11,
+    "2025_returned_records": 4,
+    "2014": [
+      {
+        "title": "Human sperm uses asymmetric and anisotropic flagellar controls to regulate swimming symmetry and cell steering",
+        "doi": "https://doi.org/10.1126/sciadv.aba5168"
+      },
+      {
+        "title": "Nonlinear amplitude dynamics in flagellar beating",
+        "doi": "https://doi.org/10.1098/rsos.160698"
+      },
+      {
+        "title": "The asymptotic coarse-graining formulation of slender-rods, bio-filaments and flagella",
+        "doi": "https://doi.org/10.1098/rsif.2018.0235"
+      },
+      {
+        "title": "Large and reversible myosin-dependent forces in rigidity sensing",
+        "doi": "https://doi.org/10.1038/s41567-019-0477-9"
+      },
+      {
+        "title": "The counterbend dynamics of cross-linked filament bundles and flagella",
+        "doi": "https://doi.org/10.1098/rsif.2017.0065"
+      },
+      {
+        "title": "Analysis of spontaneous oscillations for a three-state power-stroke model",
+        "doi": "https://doi.org/10.1103/physreve.95.022411"
+      },
+      {
+        "title": "Emergence of flagellar beating from the collective behavior of individual ATP-powered dyneins",
+        "doi": "https://doi.org/10.1103/physreve.94.042406"
+      },
+      {
+        "title": "A discontinuously coupled network of phase oscillators replicates cooperation between motors in actomyosin systems",
+        "doi": "https://doi.org/10.1098/rsif.2025.0438"
+      },
+      {
+        "title": "Myosin filaments reversibly generate large forces in cells",
+        "doi": "https://doi.org/10.1101/296400"
+      },
+      {
+        "title": "The counterbend dynamics of cross-linked filament bundles and flagella",
+        "doi": "https://doi.org/10.48550/arxiv.1703.04179"
+      },
+      {
+        "title": "Controllability in finite and infinite dimension and applications to bio-inspired nonlinear systems",
+        "doi": "https://doi.org/10.70675/db67cce3zcbc2z408bz860ez92208c64e54d"
+      }
+    ],
+    "2025": [
+      {
+        "title": "Spontaneous oscillations in eukaryotic cilia and photo-responsive rods",
+        "doi": "https://doi.org/10.1016/j.jmps.2026.106529"
+      },
+      {
+        "title": "Beating of eukaryotic flagella via Hopf bifurcation of a system of stalled molecular motors",
+        "doi": "https://doi.org/10.1016/j.euromechsol.2025.105729"
+      },
+      {
+        "title": "Beating of Eukaryotic Flagella Via Hopf Bifurcation of a System of Stalled Molecular Motors",
+        "doi": "https://doi.org/10.2139/ssrn.5069971"
+      },
+      {
+        "title": "Bending–compression coupling in extensible slender microswimmers",
+        "doi": "https://doi.org/10.1017/jfm.2025.10623"
+      }
+    ],
+    "scope": "not all full texts retrieved; counts are not exhaustive priority evidence"
+  },
+  "known_prior_result": "2014 source explicitly searched for chaos; Fig2 reported leading exponent near zero and remaining exponents around -0.02, interpreted as periodic orbit; source also reports subharmonic cycles",
+  "priority_limit": "No exact-core later positive-chaos demonstration verified in bounded retrieval; absence of a hit does not establish novelty.",
+  "control": {
+    "parameters": {
+      "rho": 0.05,
+      "r": 40.0
+    },
+    "start": [
+      0.0031415926535897933,
+      0.0,
+      0.0
+    ],
+    "start_provenance": "Our displacement 0.01, equilibrium motor density; not printed Fig.2 initial state",
+    "short_control": {
+      "DOP853": {
+        "nfev": 16421,
+        "njev": 0
+      },
+      "Radau": {
+        "nfev": 104004,
+        "njev": 26
+      },
+      "maximum_coordinate_difference": [
+        2.672901899813951e-09,
+        6.694189647049598e-11,
+        1.2525691595044464e-10
+      ]
+    },
+    "long_control": {
+      "time": 2000.0,
+      "nfev": 572480,
+      "section_hits": 14,
+      "last_ten_section_intervals": [
+        141.49189763546855,
+        141.49201399970048,
+        141.49201102695542,
+        141.49200966232263,
+        141.4920093156112,
+        141.4920120368795,
+        141.49201028962875,
+        141.49201043673816,
+        141.49200927467723,
+        141.49201085408458
+      ],
+      "last_return_max_difference": 6.217926891149972e-07,
+      "max_disk_radius_squared_at_solver_nodes": 1.0,
+      "max_abs_memory_at_solver_nodes": 9.83245561181552
+    },
+    "shooting": {
+      "optimizer_success": true,
+      "optimizer_message": "The solution converged.",
+      "section_state": [
+        0.0,
+        -0.24486585003634062,
+        0.756004071185656
+      ],
+      "period": 141.49201085408458,
+      "dop853_closure_max_abs": 1.832358580144966e-07,
+      "radau_closure_max_abs": 6.610328543173779e-06,
+      "monodromy_max_solver_difference": 0.0059978268297555815,
+      "monodromy": [
+        [
+          -1.9804862458915333,
+          118.00833475787384,
+          -0.39228759598089613
+        ],
+        [
+          -0.050924650722326575,
+          3.0081494250561236,
+          -0.009340378622141255
+        ],
+        [
+          0.5866484135364005,
+          -26.664837850796452,
+          -0.036108277613131484
+        ]
+      ],
+      "poincare_matrix": [
+        [
+          0.05794105334968558,
+          0.0004668112865546855
+        ],
+        [
+          -17.556302786659437,
+          -0.06638720096671771
+        ]
+      ],
+      "poincare_eigenvalues": [
+        [
+          -0.004223073808516055,
+          0.06581110533673658
+        ],
+        [
+          -0.004223073808516055,
+          -0.06581110533673658
+        ]
+      ],
+      "flow_identity_max_abs": 8.727274797948326e-06,
+      "section_velocity": 9.794635570801754,
+      "scope": "Local stability of the reached numerically closed cycle; not uniqueness across basins"
+    },
+    "refined_shooting": {
+      "coordinates": "q=h-rY, Y, Z; results transformed back to h,Y,Z",
+      "rtol": 3e-14,
+      "atol": 1e-15,
+      "max_step": 0.01,
+      "method": "Two bounded Newton corrections; no solver-success flag used as an accuracy claim",
+      "iteration_residuals_max_abs": [
+        5.427269769597842e-06,
+        9.986315225418707e-06
+      ],
+      "section_state": [
+        0.0,
+        -0.2448658502417374,
+        0.7560038885792849
+      ],
+      "period": 141.49201131472017,
+      "dop853_closure_max_abs": 5.954589498813334e-06,
+      "radau_closure_max_abs": 2.0763456483052778e-05,
+      "monodromy_max_solver_difference": 0.0015528662621591138,
+      "poincare_matrix": [
+        [
+          0.05794108708711976,
+          0.0004668108836358622
+        ],
+        [
+          -17.556365486419267,
+          -0.06638726743435225
+        ]
+      ],
+      "poincare_eigenvalues": [
+        [
+          -0.004223090173616245,
+          0.06581122663835803
+        ],
+        [
+          -0.004223090173616245,
+          -0.06581122663835803
+        ]
+      ],
+      "radau_poincare_eigenvalues": [
+        [
+          -0.004221581973255626,
+          0.06581103273066165
+        ],
+        [
+          -0.004221581973255626,
+          -0.06581103273066165
+        ]
+      ],
+      "flow_identity_max_abs": 2.6837920293232287e-05,
+      "scope": "Numerical local stability of this reached periodic branch; not uniqueness or absence of chaos elsewhere",
+      "transverse_exponent_tau": -0.019215997858122825,
+      "radau_transverse_exponent_tau": -0.01921602894571049,
+      "refinement_assessment": "Tighter requested tolerances and memory coordinates did not improve closure; both solvers retain stable transverse multipliers. Preserve all residuals; no exact-closure or uniqueness claim."
+    }
+  },
+  "control_refinement_attempts": [
+    {
+      "method": "unconstrained single-shoot root in exact q=h-rY coordinates",
+      "rtol": 3e-14,
+      "atol": 1e-15,
+      "max_step": 0.003,
+      "outcome": "manually wall-budget terminated after roughly six minutes; output not replaced",
+      "diagnostic": "not a physical failure or evidence against periodicity",
+      "replacement": "exactly two Newton corrections, max_step=.01, independent DOP853 and Radau"
+    }
+  ],
+  "reproduction_commands": [
+    "python research/motor_pair.py --audit-output outputs/motor-algebra-audit.json",
+    "python research/motor_pair.py --control-output outputs/motor-periodic-control.json",
+    "python research/motor_pair.py --refine-control outputs/motor-periodic-control.json"
+  ]
+}
