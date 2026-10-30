@@ -2,6 +2,8 @@
 
 Research note, 30 October 2026. **No validated chaotic candidate emerged from this survey.** Three of four preliminary signals lost persistence on longer integration; the fourth became too stiff for the GPU step budget. An independent closed-orbit calculation identifies one apparently positive case as a strongly stable periodic orbit. Unresolved cases remain open.
 
+**Later single-case check:** an [implicit CPU continuation and periodic closure](core-shell-gel-stiff-followup.md) now identify the fourth preliminary signal, source 2882, as a strongly stable cycle at its saved endpoint. Its original GPU interval remains incomplete, and other stiff cases remain unclassified. The original survey counts below are preserved.
+
 ![Source control, GPU survey, long windows and a closed periodic orbit](assets/core_shell_gel_survey.png)
 
 ## Model and scope

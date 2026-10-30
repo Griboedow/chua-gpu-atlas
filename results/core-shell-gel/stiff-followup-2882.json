@@ -1,0 +1,146 @@
+{
+  "source_row": 2882,
+  "refined_row": 20,
+  "parameter_columns": [
+    "A",
+    "C",
+    "gamma",
+    "rho",
+    "B",
+    "epsilon",
+    "lambda_g",
+    "Hill_n"
+  ],
+  "source_file": "results/core-shell-gel/scout-refined.npz",
+  "source_sha256": "58bba06b976cb9e674e7a1a4c57f7097bf50883c2715aa502b7e64d6d39f15a8",
+  "previous_GPU_status": 3,
+  "previous_GPU_elapsed": 2722.0885544800813,
+  "original_GPU_interval_still_incomplete": true,
+  "state_columns": [
+    "G",
+    "U",
+    "x",
+    "phi"
+  ],
+  "time_unit": "time scaled by proton relaxation; not calibrated seconds",
+  "continuation_status": "stopped after >=100 units with 12 repeat section returns; proceeding to periodic closure",
+  "requested_continuation": 200.0,
+  "actual_continuation": 100.0,
+  "continuation_solver": {
+    "method": "Radau",
+    "analytic_jacobian": true,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "max_step": 0.1
+  },
+  "section": "phi=.3 upward",
+  "nfev": 1378221,
+  "njev": 3336,
+  "nlu": 13716,
+  "interpretation": "The saved unresolved source2882 endpoint approaches a numerically closed stable periodic orbit. No chaotic attractor supported for this trajectory. Original long GPU interval remains incomplete; other budget cases remain unclassified.",
+  "wall_seconds": 93.10563710000133,
+  "section_return_scaled_differences": {
+    "1": 2.428125100963543e-12,
+    "2": 2.298742376702665e-12,
+    "3": 1.9020539736380986e-12,
+    "4": 2.4048070961751694e-12,
+    "5": 2.1400246672275067e-12,
+    "6": 1.899698352269012e-12,
+    "7": 2.284564535728425e-12,
+    "8": 2.4269340564510834e-12
+  },
+  "augmented_Hessian_scaled_finite_difference_error": 4.4927147710827064e-10,
+  "cycle_status": "numerically closed cycle",
+  "cycle_period": 0.8998653920195196,
+  "cycle_section_return_order": 1,
+  "cycle_newton_section_local_closure": 9.43039770400546e-15,
+  "cycle_BDF_section_local_closure": 6.29954755027029e-10,
+  "cycle_multiplier_resolution_floor": 1e-08,
+  "cycle_transverse_spectral_radius": 1.7113284117024196e-07,
+  "cycle_section_map_two_norm": 1.7378605729379111e-07,
+  "cycle_integrated_divergence": -104.71012985412769,
+  "cycle_flow_identity_error": 4.0147979698712943e-13,
+  "cycle_solver": {
+    "method": "Radau exact full augmented Jacobian and Newton shooting",
+    "rtol": 2e-11,
+    "atol": 2e-13,
+    "max_step": 0.03
+  },
+  "independent_cycle_solver": {
+    "method": "BDF analytic Jacobian",
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "max_step": 0.01
+  },
+  "tiny_multiplier_caveat": "Below the stated absolute resolution floor, individual multipliers are unresolved. No direct determinant or accurate small-mode exponent claim.",
+  "array_shapes": {
+    "parameters": [
+      8
+    ],
+    "initial_saved_endpoint": [
+      4
+    ],
+    "final_state": [
+      4
+    ],
+    "times": [
+      10000
+    ],
+    "states": [
+      10000,
+      4
+    ],
+    "section_times": [
+      111
+    ],
+    "section_states": [
+      111,
+      4
+    ],
+    "observed_minima": [
+      4
+    ],
+    "observed_maxima": [
+      4
+    ],
+    "cycle_initial_state": [
+      4
+    ],
+    "cycle_times": [
+      8001
+    ],
+    "cycle_states": [
+      8001,
+      4
+    ],
+    "cycle_coordinate_scales": [
+      4
+    ],
+    "cycle_newton_raw_closure": [
+      4
+    ],
+    "cycle_BDF_raw_closure": [
+      4
+    ],
+    "cycle_section_local_scale": [
+      4
+    ],
+    "cycle_scaled_monodromy": [
+      4,
+      4
+    ],
+    "cycle_section_map": [
+      3,
+      3
+    ],
+    "cycle_multipliers": [
+      3
+    ],
+    "cycle_multiplier_resolved_mask": [
+      3
+    ],
+    "cycle_resolved_transverse_exponents": [
+      1
+    ]
+  }
+}

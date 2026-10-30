@@ -4,6 +4,8 @@ Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https:/
 
 The HHS and microfluidic follow-up completed at 02:56 UTC on 30 October, using [`ecfd8a5`](https://github.com/Griboedow/chua-gpu-atlas/commit/ecfd8a5672442c9b884e839b2826f2777d68207e) and the two-page repair revision [`a99a267`](https://github.com/Griboedow/chua-gpu-atlas/commit/a99a2675f53135bc2eb112a3d7ded34716d862ea).
 
+The subsequent microfluidic numerical/source block was checked on 30 October at [`0e68396`](https://github.com/Griboedow/chua-gpu-atlas/commit/0e683964fd0a97caf45d67df35dc5b452db4c14e).
+
 **Twenty-three distinct expressions in ten reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
@@ -75,9 +77,19 @@ The HHS structural report and fourth screening report initially **failed** visua
 
 After the four minimal repairs were published, only the affected two pages were rechecked at `a99a267`. Their **159 math elements** (102 and 57) rendered without errors, red command tokens, unresolved formulas or container overflow. Both raw-text scans were clean. The repaired proof inequalities and parameter-table row were visually inspected; the pressure matrix and displayed flow equations had also been inspected in the initial publication. The two failed initial page attempts, containing 156 successfully typeset elements but four unparsed expressions, are recorded separately and excluded from all successful-check totals. Screenshot-only visits and preparation previews are not extra page checks.
 
-The record now covers **46 distinct pages**, with **612 math elements across their latest successfully checked versions**. There are **65 successful page checks** (23 + 10 + 7 + 9 + 8 + 6 + 2) and **748 successful formula observations** (177 + 111 + 68 + 74 + 102 + 57 + 159). The seven revision-specific groups retain eighteen pages at `04e00a3`, seven at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, six at `ecfd8a5` and two at `a99a267`. These counts do not certify every page at the newest revision. The additional raw-text scan covers the eight pages in this block, not the previous 38 pages retroactively.
+After that block, the record covered **46 distinct pages**, with **612 math elements across their latest successfully checked versions**. It contained **65 successful page checks** (23 + 10 + 7 + 9 + 8 + 6 + 2) and **748 successful formula observations** (177 + 111 + 68 + 74 + 102 + 57 + 159). The seven revision-specific groups retained eighteen pages at `04e00a3`, seven at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, six at `ecfd8a5` and two at `a99a267`. Those counts did not certify every page at that newest revision. The additional raw-text scan covered the eight pages in that block, not the previous 38 pages retroactively.
 
 All **283 relative link occurrences** across those 46 documents resolve against the published Git tree at `a99a267`. The link matcher excludes fenced code/math and inline code before interpreting Markdown links, so mathematical bracket-and-parenthesis expressions are not misidentified as paths. External destinations and fragment anchors remain outside this check.
+
+### Microfluidic numerical controls and final-source audit
+
+The eighth revision-specific pass inspected seven actual public pages at `0e68396`: the main README, results README, candidate queue, fourth screening report, and three new microfluidic numerical, structural and source reports. All **175 math elements** rendered correctly, without unresolved expressions, red tokens or math-container overflow. All visible figures loaded. A separate raw-text scan on each page found no literal dollar delimiters or TeX remnants outside rendered math and code. No formatting repair was needed.
+
+Screenshots were inspected for the complete four-panel numerical-control figure, the weighted kinetic expression and its aligned derivative, the conditional energy inequalities and the full three-by-three Gram matrix. These are presentation checks, not a separate validation of the scientific claims.
+
+The aggregate is now **49 distinct pages**, **730 math elements in their latest checked versions**, **72 successful page checks**, and **923 successful formula observations**. This pass adds three new pages and repeats four; the two earlier failed HHS-block attempts remain separate. Eighteen pages retain their `04e00a3` check, seven `e2c70b1`, four `d73464c`, five `1dc034a`, four `ed9517e`, three `ecfd8a5`, one `a99a267`, and seven `0e68396`. No unpublished follow-up or later edit is included. Raw-text scans now cover eleven distinct pages at their recorded revisions, without retroactively extending that check to the other 38.
+
+All **302 relative link occurrences** across those 49 documents resolve against the published tree at `0e68396`, with code/math excluded from link matching. External destinations, fragment anchors and other viewports remain outside the check.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 

@@ -1,0 +1,144 @@
+{
+  "audit_utc": "2026-10-30T03:24:55.910355+00:00",
+  "decision": "exclude_from_sustained_strange_attractor_scan",
+  "summary": "2024 model is planar. The active interior of its three-state growing-membrane predecessor has monotone thickness; the source already discusses possible transient chaos and reports a limited negative sensitivity test.",
+  "model_2024": {
+    "doi": "10.1111/gbi.12611",
+    "independent_dynamic_states": [
+      "dimensionless precipitate concentration c",
+      "dimensionless interior pressure p"
+    ],
+    "dimension": 2,
+    "autonomous": true,
+    "physical_active_domain": "0<c<1, p>0, M>0, N>0; fixed membrane thickness and flow areas. The reduction assumes osmotic pressure much greater than internal pressure.",
+    "equations": {
+      "dc_dt": "(M-c*p+c*c*p)*H(1-c)",
+      "dp_dt": "N+(-p+c*p)*H(1-c)"
+    },
+    "additional_dynamic_flow_states": false,
+    "parameters": {
+      "M": "N*c_outer*A_out*R/(c_critical*A_in*L_r)",
+      "N": "p_osmotic*k_in*A_in*V_p*R_p/(2*E*L_m*k_out*A_out**2*R)"
+    },
+    "scales": {
+      "time": "mu*R_p*V_p/(2*E*A_out*k_out)",
+      "pressure": "2*E*L_m*A_out*R/(V_p*R_p)",
+      "concentration": "c_critical"
+    },
+    "energy_source": "Concentration and osmotic pressure gradients treated as fixed during the modeled interval; no extra reservoir dynamics supplied.",
+    "interior_equilibrium": {
+      "condition": "0<M<N",
+      "c": "M/N",
+      "p": "N*N/(N-M)"
+    },
+    "derived_linearization": {
+      "determinant": "N-M",
+      "trace": "N*(2*M-N)/(N-M)-(N-M)/N",
+      "zero_trace_M": "N*(1+N-sqrt(N*N+N))",
+      "scope": "Linear instability only; no nonlinear Hopf type/stability claim.",
+      "arithmetic_check_max_scaled_det_error": 1.6148698540002277e-16
+    },
+    "exclusion": "A smooth autonomous planar interior cannot support a regular bounded strange attractor on a compact interior set. Above blockage, c is fixed and pressure grows at N. No reset or smoothing has been added.",
+    "source_control": "Source Figure 3 maps stable, oscillatory, explosive regimes. No periodic-control integration is warranted for this chaos-screening exclusion."
+  },
+  "growing_predecessor_2019": {
+    "doi": "10.1002/anie.201812331",
+    "dimension": 3,
+    "states": [
+      "c",
+      "p",
+      "L_m"
+    ],
+    "dimensional_equations": {
+      "dc_dt": "(u_in*c_Si/L_r-u_out*c/R)*H(u_out)",
+      "dp_dt": "gamma*(u_in*A_in-u_out*A_out)",
+      "dL_dt": "K*(-dc_dt+u_in*c_Si/L_r)*H(u_out)",
+      "gamma": "2*L_m*E/(R_p*V_p)",
+      "u_in": "k_in*(p_osmotic-p)/(mu*L_m)",
+      "u_out": "k_out*p*(1-c/c_critical)*H(1-c/c_critical)/(mu*L_m)",
+      "K": "M_source*R/rho_s > 0; dimensional source prefactor, not the 2024 dimensionless M"
+    },
+    "exact_active_identity": "dL_dt=(K/R)*u_out*c>0 when u_out>0 and c>0",
+    "exclusion_scope": "No compact invariant recurrent dynamics wholly in a strict active physical interior; the positive derivative has a positive minimum on a compact interior set and contradicts bounded L_m.",
+    "boundary_limitations": "No global theorem for arbitrary boundary extensions, dissolution, repair, or external forcing. A full source implementation was not reconstructed.",
+    "source_own_transient_chaos_discussion": {
+      "manuscript_page": 12,
+      "initial_dimensionless_pressure_range": [
+        0,
+        10
+      ],
+      "initial_dimensionless_concentration_range": [
+        0,
+        0.4
+      ],
+      "reported_result": "No difference in explosion time; experimental spread attributed as likely stochastic. This is limited numerical evidence, not a rigorous exclusion of all transient chaos."
+    },
+    "supplement_status": "Publisher lists anie201812331-sup-0001-misc_information.pdf; HTTP403 on public download. Institutional original bundle contains main manuscript only. Growth-dependent permeability law and complete numerical parameter table not independently verified.",
+    "simulation_ready": false
+  },
+  "sources": [
+    {
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/1fb23cec-d7ec-411c-93a6-4e0bfe2010e3/content",
+      "local_ignored_path": "outputs/candidate_research/ding2024-mineral-protocell.pdf",
+      "bytes": 1959400,
+      "sha256": "6a035e8a1e366bc059a2196a9677b86e2d3b0f9ab1d8ad013c8eeda316beace7",
+      "kind": "complete_final_primary_article",
+      "visually_checked_one_based_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/ec8ecd2c-0956-4d94-8832-d49a9254860d/content",
+      "local_ignored_path": "outputs/candidate_research/ding2019-exploding-gardens.pdf",
+      "bytes": 2330885,
+      "sha256": "cca1374956d09d5fb6deed3937e8d25ffd750c892a7f8063e3cd7c4e46ed472e",
+      "kind": "complete_primary_author_manuscript",
+      "visually_checked_one_based_pages": [
+        6
+      ],
+      "other_read_pages": [
+        7,
+        8,
+        12
+      ]
+    },
+    {
+      "doi": "10.1098/rsfs.2019.0064",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31641435/",
+      "kind": "earlier_primary_metadata_only",
+      "full_text_access": "EuropePMC XML HTTP500; full text not independently recovered in this audit"
+    },
+    {
+      "doi": "10.1103/PhysRevFluids.5.082201",
+      "url": "https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.5.082201",
+      "kind": "earlier_primary_publisher_record"
+    }
+  ],
+  "forward_citation_checks": [
+    {
+      "url": "https://api.openalex.org/works?filter=cites:W4400772618&per-page=200",
+      "local_ignored_path": "outputs/candidate_research/ding2024-forward.json",
+      "bytes": 136140,
+      "sha256": "3934675b099eecee29bd944322b7518b841ba47f70bad30fb795f55897c40871",
+      "kind": "forward_metadata",
+      "count": 5
+    },
+    {
+      "url": "https://api.openalex.org/works?filter=cites:W2981053675&per-page=200",
+      "local_ignored_path": "outputs/candidate_research/ding2019-forward.json",
+      "bytes": 260490,
+      "sha256": "1284963216984f32aadc4549d1b9d9af7726aef499c582184d88807c05bacdde",
+      "kind": "forward_metadata",
+      "count": 10
+    }
+  ],
+  "literature_scope": "Exact title/DOI/chaos searches plus primary lineage and bounded forward title/DOI screening. Not a full-text audit of all later citing works; no proof of absence or novelty.",
+  "operations": {
+    "trajectory_integrations": 0,
+    "gpu_jobs": 0,
+    "author_code_executed": false,
+    "author_contact": false,
+    "source_redistribution": false
+  },
+  "report": "docs/mineral-protocell-screening.md"
+}
