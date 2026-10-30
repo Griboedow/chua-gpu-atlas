@@ -1,6 +1,6 @@
 # GitHub report rendering audit
 
-Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Follow-up completed 30 October 2026, 00:00 UTC, at [`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60).
+Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Second pass completed 30 October 2026, 00:00 UTC, at [`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60); third pass completed at 00:34 UTC, at [`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87).
 
 **Nineteen distinct formulas in eight reports needed formatting repairs.** The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
@@ -33,9 +33,17 @@ The second pass loaded ten actual GitHub pages at `e2c70b1`: the four new spin-c
 
 Screenshots from the published pages were inspected for the trace formulas, the aligned four-species equations, the enzyme-gel survey figure, the corrected collective projection and the bifurcation figure. Seven spin-crossover displays had been prepared with math fences before publication, including equivalent upright trace notation. These preventive edits are separate from the nineteen previously observed broken formulas. Local in-memory previews were used during preparation but are not counted as published-page checks.
 
-The two passes cover **28 distinct pages**, with **250 math elements across their latest checked versions**. There were 33 successful page checks: 23 in the first pass and ten in the follow-up, including five previously checked pages. Thus repeated formulas are not counted twice in the total of 250. Eighteen unchanged pages retain their original check at `04e00a3`; the other ten were checked at `e2c70b1`. The machine-readable record retains the revision for each page.
+After the second pass, the record covered 28 distinct pages, with 250 math elements across their latest checked versions. Its 33 successful page checks included five repeated pages. All 164 relative link occurrences in those documents resolved against the published Git tree at `e2c70b1`.
 
-At `e2c70b1`, all **164 relative link occurrences** across these 28 documents resolve to files or directories in that published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
+### Urease, esterase and thermofluidic follow-up
+
+The third pass loaded seven published pages at `d73464c`: the new urease research, urease structural audit, esterase compartment audit and physical candidate screening reports, together with the changed README, candidate queue and enzyme-feedback report. All **68 math elements** rendered without errors, unresolved formulas, red command tokens or math-container overflow. Visible images loaded successfully. No formatting repairs were needed in this pass.
+
+Screenshots were inspected for the NIFTE two-by-two matrices and column vectors, the urease reduction and history integral, and the aligned esterase equations. A separate screenshot of the complete published urease survey figure confirmed that all four panels, labels and legends were displayed. This additional screenshot is supporting evidence for the same page check, not an extra page in the totals.
+
+Across all three passes, **32 distinct pages** have been checked, with **301 math elements across their latest checked versions**. The record contains **40 successful page checks** (23 + 10 + 7) and 356 formula observations (177 + 111 + 68). The latest-version totals count each page once: eighteen pages retain their `04e00a3` check, seven their `e2c70b1` check and seven their `d73464c` check. The exact inspected revision is retained for each page; later edits are not implicitly certified.
+
+At `d73464c`, all **189 relative link occurrences** across the 32 documents resolve to files or directories in its published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
