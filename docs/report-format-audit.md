@@ -2,7 +2,9 @@
 
 Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Subsequent passes on 30 October completed at 00:00 UTC ([`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60)), 00:34 UTC ([`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87)), 01:16 UTC ([`1dc034a`](https://github.com/Griboedow/chua-gpu-atlas/commit/1dc034ad51f993509f70c06229473a3dbfd81c70)) and 02:07 UTC ([`ed9517e`](https://github.com/Griboedow/chua-gpu-atlas/commit/ed9517e4eb68d9336e958c553aa669a5f15c13e7)).
 
-**Nineteen distinct formulas in eight reports needed formatting repairs.** The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
+The HHS and microfluidic follow-up completed at 02:56 UTC on 30 October, using [`ecfd8a5`](https://github.com/Griboedow/chua-gpu-atlas/commit/ecfd8a5672442c9b884e839b2826f2777d68207e) and the two-page repair revision [`a99a267`](https://github.com/Griboedow/chua-gpu-atlas/commit/a99a2675f53135bc2eb112a3d7ded34716d862ea).
+
+**Twenty-three distinct expressions in ten reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
 
@@ -16,8 +18,10 @@ Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https:/
 | [Synchronematic model](synchronematic-research.md) | Norm delimiters lost their escapes; a summation subscript caused a brace error | Fenced math blocks and an explicit less-than command |
 | [Thermomechanical sheet](thermomechanical-sheet-audit.md) | Markdown emphasis altered an equilibrium subscript; spacing appeared as punctuation | Fenced math blocks |
 | [Two-strain model](two-strain-research.md) | The renderer rejected a custom divergence operator macro | Upright divergence notation with explicit spacing |
+| [HHS structural audit](hhs-structure.md) | One bold heading and two inline inequalities retained literal dollar/TeX text | Plain D in the heading; braced asterisk commands in the two inline subscripts |
+| [Microfluidic screening](late-candidate-screening-4.md) | Markdown emphasis consumed two asterisk superscripts in one table-cell expression | Braced asterisk commands preserving the superscripts |
 
-The repairs are in commits `c9daf5b` and `04e00a3`. The pair-integral antiderivative needed both an escaping repair and an operator repair; it is counted once in the total of nineteen formulas.
+The initial nineteen repairs are in commits `c9daf5b` and `04e00a3`; the four later repairs are in `a99a267`. The pair-integral antiderivative needed both an escaping repair and an operator repair; it is counted once.
 
 ## Verification
 
@@ -59,14 +63,26 @@ The fifth pass loaded eight public pages at `ed9517e`: the new Rayleigh numerica
 
 The inspected screenshots show all three complete Rayleigh figures: the survey and stable-cycle controls, the weak-coupling saddle/long-transient comparison, and the independent trajectory's approach to and departure from the saddle cycle. The five-by-five trajectory-dependent Jacobian and its divergence formula were visually checked, as were the material model's transformed equations and three signed cyclic derivatives. Earlier in-memory previews are excluded from the published totals.
 
-Across the five passes, **42 distinct pages** have been checked, with **450 math elements across their latest checked versions**. The record contains **57 successful page checks** (23 + 10 + 7 + 9 + 8) and **532 formula observations** (177 + 111 + 68 + 74 + 102). Each page is counted once in the latest-version totals: eighteen retain their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check, five their `1dc034a` check and eight their `ed9517e` check. The fifth pass contains four new pages and four repeated pages; it does not claim that all 42 were revisited at the newest revision.
+After five passes, **42 distinct pages** had been checked, with **450 math elements across their latest checked versions**. The record contained **57 successful page checks** (23 + 10 + 7 + 9 + 8) and **532 formula observations** (177 + 111 + 68 + 74 + 102). Each page was counted once in the latest-version totals: eighteen retained their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check, five their `1dc034a` check and eight their `ed9517e` check. The fifth pass contained four new pages and four repeated pages; it did not claim that all 42 were revisited at that revision.
 
 All **255 relative link occurrences** across those 42 documents resolve against the published Git tree at `ed9517e`. External destinations, fragment anchors, other viewports and later edits remain outside this check.
+
+### HHS and microfluidic follow-up: detecting unparsed inline math
+
+Eight public pages were inspected at `ecfd8a5`. Six passed: the main README, results README, candidate queue, third screening report, HHS numerical report and HHS source audit. Their **57 math elements** rendered correctly and all visible images loaded. Screenshots of both complete HHS figures were inspected.
+
+The HHS structural report and fourth screening report initially **failed** visual inspection. Three expressions in the HHS proof and one in a microfluidic parameter-table cell remained literal dollar/TeX text. The existing MathML checks alone did not detect these failures because those expressions never became math elements. A scan of the rendered article outside code and math elements confirmed raw remnants on these two pages and none on the other six.
+
+After the four minimal repairs were published, only the affected two pages were rechecked at `a99a267`. Their **159 math elements** (102 and 57) rendered without errors, red command tokens, unresolved formulas or container overflow. Both raw-text scans were clean. The repaired proof inequalities and parameter-table row were visually inspected; the pressure matrix and displayed flow equations had also been inspected in the initial publication. The two failed initial page attempts, containing 156 successfully typeset elements but four unparsed expressions, are recorded separately and excluded from all successful-check totals. Screenshot-only visits and preparation previews are not extra page checks.
+
+The record now covers **46 distinct pages**, with **612 math elements across their latest successfully checked versions**. There are **65 successful page checks** (23 + 10 + 7 + 9 + 8 + 6 + 2) and **748 successful formula observations** (177 + 111 + 68 + 74 + 102 + 57 + 159). The seven revision-specific groups retain eighteen pages at `04e00a3`, seven at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, six at `ecfd8a5` and two at `a99a267`. These counts do not certify every page at the newest revision. The additional raw-text scan covers the eight pages in this block, not the previous 38 pages retroactively.
+
+All **283 relative link occurrences** across those 46 documents resolve against the published Git tree at `a99a267`. The link matcher excludes fenced code/math and inline code before interpreting Markdown links, so mathematical bracket-and-parenthesis expressions are not misidentified as paths. External destinations and fragment anchors remain outside this check.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
 ## Conventions for further reports
 
-Use fenced `math` blocks for display equations, especially matrices, subscripts containing asterisks, and formulas with TeX spacing commands. Keep a blank line around each block. Use standard mathematical commands where available, and verify less-than signs inside subscripts and custom operators in the published renderer. Do not treat successful Markdown conversion as proof that the browser completed mathematical typesetting.
+Use fenced `math` blocks for display equations, especially matrices, subscripts containing asterisks, and formulas with TeX spacing commands. Keep a blank line around each block. Use standard mathematical commands where available, and verify less-than signs inside subscripts and custom operators in the published renderer. For inline asterisks, use braced `\ast` commands when Markdown emphasis would consume a literal asterisk. Check bold labels and table cells visually, and scan for raw dollars or TeX outside rendered math. Do not treat successful Markdown conversion or clean math-element metrics as proof that every intended expression was typeset.
 
 GitHub documents both dollar delimiters and fenced math blocks, and identifies MathJax as its renderer. The repairs above follow the fenced form and were checked against the deployed implementation. [GitHub mathematical-expression documentation](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).

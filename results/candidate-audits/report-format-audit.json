@@ -1,27 +1,28 @@
 {
-  "checked_at_utc": "2026-10-30T02:07:24.854Z",
+  "checked_at_utc": "2026-10-30T02:56:30.744Z",
   "baseline_commit": "2e20f63",
   "repaired_commit": "04e00a3c9c0a6856be225d08f593e93169966340",
   "repair_commits": [
     "c9daf5b",
-    "04e00a3"
+    "04e00a3",
+    "a99a2675f53135bc2eb112a3d7ded34716d862ea"
   ],
-  "scope": "42 distinct published Markdown pages. Eighteen retain their 04e00a3 check, seven their e2c70b1 check, four their d73464c check, five their 1dc034a check, and eight new or affected pages were checked at ed9517e. Each recorded revision identifies the actual inspected version. Excludes the operational research-state journal. In-memory previews are not publication checks.",
+  "scope": "46 distinct published Markdown pages. Eighteen retain their 04e00a3 check, seven their e2c70b1 check, four their d73464c check, five their 1dc034a check, four their ed9517e check, six their ecfd8a5 check, and two repaired pages were checked at a99a267. Each recorded revision identifies the actual inspected version. Excludes the operational research-state journal. In-memory previews and failed attempts are not successful publication checks.",
   "browser": "Installed Microsoft Edge, headless Chromium via bundled Playwright; live public GitHub pages with JavaScript and MathJax enabled.",
   "viewport": {
     "width": 1320,
     "height": 1000
   },
-  "pages_checked": 42,
-  "rendered_math_elements": 450,
+  "pages_checked": 46,
+  "rendered_math_elements": 612,
   "unresolved_math_elements": 0,
   "error_or_red_command_elements": 0,
   "wide_math_elements_at_checked_viewport": 0,
   "failed_loaded_article_images": 0,
-  "local_relative_links_checked": 255,
+  "local_relative_links_checked": 283,
   "broken_local_relative_links": 0,
-  "distinct_formulas_repaired": 19,
-  "files_repaired": 8,
+  "distinct_formulas_repaired": 23,
+  "files_repaired": 10,
   "fixes": [
     {
       "file": "docs/candidate-research.md",
@@ -70,6 +71,20 @@
       "distinct_formulas": 1,
       "problem": "GitHub rejected the operatorname macro.",
       "repair": "Use upright div with an explicit thin space."
+    },
+    {
+      "file": "docs/hhs-structure.md",
+      "distinct_formulas": 3,
+      "problem": "A single-symbol formula inside bold text and two inline asterisk subscripts remained literal dollar/TeX text after Markdown parsing.",
+      "repair": "Use plain D in the bold label and braced ast commands in the two inline subscripts.",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "distinct_formulas": 1,
+      "problem": "Markdown emphasis consumed two asterisk superscripts in one table-cell expression, leaving raw dollar/TeX text.",
+      "repair": "Use braced ast commands for the two superscripts, preserving their meaning.",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
     }
   ],
   "pages": [
@@ -110,16 +125,18 @@
     },
     {
       "file": "docs/candidate-queue.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/candidate-queue.md",
-      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-      "checkedAt": "2026-10-30T02:06:19.724Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/candidate-queue.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:38.584Z",
       "heading": "Additional candidate screening",
       "mathCount": 0,
       "errors": [],
       "unresolved": [],
       "wideMath": [],
       "images": [],
-      "brokenImages": []
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
     },
     {
       "file": "docs/candidate-research.md",
@@ -212,17 +229,94 @@
       "brokenImages": []
     },
     {
+      "file": "docs/hhs-research.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/hhs-research.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:45.125Z",
+      "heading": "A mechanochemical single cell: numerical controls and a negative chaos search",
+      "mathCount": 3,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/hhs-controls.png",
+          "visible": true,
+          "complete": true,
+          "width": 2040,
+          "height": 1530
+        },
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/hhs-neutral-control.png",
+          "visible": true,
+          "complete": true,
+          "width": 1870,
+          "height": 748
+        }
+      ],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
+      "file": "docs/hhs-source-audit.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/hhs-source-audit.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:51.848Z",
+      "heading": "HHS single-cell source controls: time units and a figure mismatch",
+      "mathCount": 0,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
+      "file": "docs/hhs-structure.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/a99a2675f53135bc2eb112a3d7ded34716d862ea/docs/hhs-structure.md",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+      "checkedAt": "2026-10-30T02:51:26.417Z",
+      "heading": "Exact single-cell HHS: boundedness and equilibrium controls",
+      "mathCount": 102,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
       "file": "docs/late-candidate-screening-3.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/late-candidate-screening-3.md",
-      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-      "checkedAt": "2026-10-30T02:06:36.154Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/late-candidate-screening-3.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:41.853Z",
       "heading": "Late screening III: mechanochemical models and a consequential version check",
       "mathCount": 54,
       "errors": [],
       "unresolved": [],
       "wideMath": [],
       "images": [],
-      "brokenImages": []
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/a99a2675f53135bc2eb112a3d7ded34716d862ea/docs/late-candidate-screening-4.md",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+      "checkedAt": "2026-10-30T02:51:29.638Z",
+      "heading": "Late screening IV: a rigid microfluidic network",
+      "mathCount": 57,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
     },
     {
       "file": "docs/late-physical-candidates-2.md",
@@ -682,9 +776,9 @@
     },
     {
       "file": "README.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/README.md",
-      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-      "checkedAt": "2026-10-30T02:06:13.338Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/README.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:32.250Z",
       "heading": "Chua GPU Atlas",
       "mathCount": 0,
       "errors": [],
@@ -692,125 +786,129 @@
       "wideMath": [],
       "images": [
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/expanded-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/expanded-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/trajectory-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/trajectory-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/trajectory-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/trajectory-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/window-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/window-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/window-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/window-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/findings.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/findings.png",
           "visible": true,
           "complete": true,
           "width": 2700,
           "height": 1800
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded_extent.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/expanded_extent.png",
           "visible": true,
           "complete": true,
           "width": 2720,
           "height": 1190
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/extent-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/extent-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/synchronematic_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/synchronematic_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/lce_slider_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/lce_slider_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/coupled_operators_lifetimes.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/coupled_operators_lifetimes.png",
           "visible": true,
           "complete": true,
           "width": 2040,
           "height": 1530
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/two_strain_rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/two_strain_rotation.gif",
           "visible": true,
           "complete": true,
           "width": 600,
           "height": 600
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/two_strain_rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ecfd8a5672442c9b884e839b2826f2777d68207e/docs/assets/two_strain_rotation.gif",
           "visible": false,
           "complete": true,
           "width": 600,
           "height": 600
         }
       ],
-      "brokenImages": []
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
     },
     {
       "file": "results/README.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/results/README.md",
-      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-      "checkedAt": "2026-10-30T02:06:16.552Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ecfd8a5672442c9b884e839b2826f2777d68207e/results/README.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checkedAt": "2026-10-30T02:45:35.388Z",
       "heading": "Recorded evidence",
       "mathCount": 0,
       "errors": [],
       "unresolved": [],
       "wideMath": [],
       "images": [],
-      "brokenImages": []
+      "brokenImages": [],
+      "rawDollarCount": 0,
+      "rawTexRemnants": []
     }
   ],
   "source_expression_comparison": [
@@ -853,6 +951,18 @@
       "file": "docs/two-strain-research.md",
       "display_formulas": 5,
       "unchanged_math_up_to_documented_notation": true
+    },
+    {
+      "file": "docs/hhs-structure.md",
+      "repaired_expressions": 3,
+      "comparison": "Reviewed a99a267 diff: bold single-symbol D became plain D; two D_* subscripts became D_{\\ast}; all other source text and expressions unchanged.",
+      "unchanged_math_up_to_documented_notation": true
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "repaired_expressions": 1,
+      "comparison": "Reviewed a99a267 diff: r^* and Q_3^* in one table expression became r^{\\ast} and Q_3^{\\ast}; values and all other source text unchanged.",
+      "unchanged_math_up_to_documented_notation": true
     }
   ],
   "limits": [
@@ -863,13 +973,13 @@
   "references": [
     "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
   ],
-  "last_checked_revision": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-  "page_count_basis": "Distinct pages, using each page most recent completed public GitHub browser check.",
-  "successful_page_checks_across_passes": 57,
+  "last_checked_revision": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+  "page_count_basis": "Distinct pages, using each page's most recent successful public GitHub browser check; failed attempts are recorded separately.",
+  "successful_page_checks_across_passes": 65,
   "math_count_basis": "Math elements across the latest checked version of each distinct page; repeated checks are not counted twice.",
-  "math_element_observations_across_passes": 532,
-  "local_relative_link_check_revision": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
-  "local_relative_link_count_basis": "Occurrences across the 42 distinct Markdown files at ed9517e, including results/README.md, resolved against its published Git tree. Fragment anchors and external URLs are outside this path check.",
+  "math_element_observations_across_passes": 748,
+  "local_relative_link_check_revision": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+  "local_relative_link_count_basis": "Occurrences across the 46 distinct Markdown files at a99a267, including results/README.md, resolved against its published Git tree. Fenced code/math and inline code are excluded before matching Markdown links. Fragment anchors and external URLs are outside this path check.",
   "publication_passes": [
     {
       "commit": "04e00a3c9c0a6856be225d08f593e93169966340",
@@ -981,6 +1091,40 @@
         "docs/late-candidate-screening-3.md"
       ],
       "formatting_repairs_needed": 0
+    },
+    {
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checked_at_utc": "2026-10-30T02:45:51.848Z",
+      "pages_checked": 6,
+      "rendered_math_elements": 57,
+      "new_distinct_pages": 2,
+      "previously_checked_pages": 4,
+      "files": [
+        "README.md",
+        "results/README.md",
+        "docs/candidate-queue.md",
+        "docs/late-candidate-screening-3.md",
+        "docs/hhs-research.md",
+        "docs/hhs-source-audit.md"
+      ],
+      "formatting_repairs_needed": 0,
+      "attempted_pages": 8,
+      "failed_page_checks_recorded_separately": 2,
+      "note": "Six successful pages only; two pages with raw inline math are excluded and recorded separately."
+    },
+    {
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+      "checked_at_utc": "2026-10-30T02:51:29.638Z",
+      "pages_checked": 2,
+      "rendered_math_elements": 159,
+      "new_distinct_pages": 2,
+      "previously_checked_pages": 0,
+      "files": [
+        "docs/hhs-structure.md",
+        "docs/late-candidate-screening-4.md"
+      ],
+      "formatting_repairs_needed": 4,
+      "note": "Two repaired pages rechecked on the actual public revision; the other six pages retain their earlier inspected revision."
     }
   ],
   "prepublication_format_preparation": [
@@ -1082,7 +1226,99 @@
       "content": "Five-by-five trajectory-dependent Jacobian with all row/column separators, divergence formula and surrounding inline physical-domain notation.",
       "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
       "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/hhs-research.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "content": "Both complete published HHS figures: source and parameter-survey controls, plus the near-neutral trajectory and its projection.",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "content": "Two-by-two pressure matrix and displayed flow equations. A separate table-cell failure was detected, so this initial page check is not counted successful.",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/hhs-structure.md",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+      "content": "Repaired large-D label and both inline barrier inequalities; displayed derivative, explicit bound and surrounding proof rendered correctly.",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea",
+      "content": "Repaired parameter-table row with both asterisk superscripts, adjacent vortex formula and dimensional conversions rendered correctly.",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
     }
   ],
-  "followup_image_handling": "Visible article images were scrolled into view and awaited. Hidden GIF preview/fallback elements were recorded separately and not classified as failed visible figures."
+  "followup_image_handling": "Visible article images were scrolled into view and awaited. Hidden GIF preview/fallback elements were recorded separately and not classified as failed visible figures.",
+  "repaired_expression_count_note": "The total includes the single-symbol D expression in a bold heading, replaced by equivalent plain text. Nineteen initial expressions plus four HHS/microfluidic expressions; display and inline expressions are counted once each.",
+  "failed_followup_page_checks": [
+    {
+      "file": "docs/hhs-structure.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checked_at_utc": "2026-10-30T02:45:48.720Z",
+      "math_elements_that_rendered": 100,
+      "raw_dollar_count": 6,
+      "failed_distinct_expressions": 3,
+      "reason": "Visual inspection and a raw-text scan found unparsed inline math outside math-renderer elements despite clean MathML error metrics.",
+      "counted_as_successful_page_check": false,
+      "counted_in_successful_formula_observations": false,
+      "repaired_and_rechecked_at": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
+    },
+    {
+      "file": "docs/late-candidate-screening-4.md",
+      "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e",
+      "checked_at_utc": "2026-10-30T02:45:55.013Z",
+      "math_elements_that_rendered": 56,
+      "raw_dollar_count": 2,
+      "failed_distinct_expressions": 1,
+      "reason": "Visual inspection and a raw-text scan found unparsed inline math outside math-renderer elements despite clean MathML error metrics.",
+      "counted_as_successful_page_check": false,
+      "counted_in_successful_formula_observations": false,
+      "repaired_and_rechecked_at": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
+    }
+  ],
+  "failed_followup_page_checks_scope": "Two failed initial HHS-block page checks; not an exhaustive history of all earlier pre-repair inspections.",
+  "raw_math_remnant_check": {
+    "scope": "Eight pages in the HHS/microfluidic block only; not retroactively certified for the other 38 pages.",
+    "method": "Clone the rendered article, remove math-renderer, pre and code elements, then inspect remaining text for literal dollars and TeX commands; combine with screenshots.",
+    "latest_checked_pages": [
+      {
+        "file": "README.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "results/README.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "docs/candidate-queue.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "docs/late-candidate-screening-3.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "docs/hhs-research.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "docs/hhs-source-audit.md",
+        "commit": "ecfd8a5672442c9b884e839b2826f2777d68207e"
+      },
+      {
+        "file": "docs/hhs-structure.md",
+        "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
+      },
+      {
+        "file": "docs/late-candidate-screening-4.md",
+        "commit": "a99a2675f53135bc2eb112a3d7ded34716d862ea"
+      }
+    ],
+    "remaining_raw_dollars": 0,
+    "remaining_tex_remnants": 0
+  }
 }
