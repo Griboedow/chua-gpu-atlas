@@ -1,6 +1,6 @@
 # GitHub report rendering audit
 
-Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Second pass completed 30 October 2026, 00:00 UTC, at [`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60); third pass completed at 00:34 UTC, at [`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87).
+Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Subsequent passes on 30 October completed at 00:00 UTC ([`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60)), 00:34 UTC ([`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87)) and 01:16 UTC ([`1dc034a`](https://github.com/Griboedow/chua-gpu-atlas/commit/1dc034ad51f993509f70c06229473a3dbfd81c70)).
 
 **Nineteen distinct formulas in eight reports needed formatting repairs.** The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
@@ -41,9 +41,17 @@ The third pass loaded seven published pages at `d73464c`: the new urease researc
 
 Screenshots were inspected for the NIFTE two-by-two matrices and column vectors, the urease reduction and history integral, and the aligned esterase equations. A separate screenshot of the complete published urease survey figure confirmed that all four panels, labels and legends were displayed. This additional screenshot is supporting evidence for the same page check, not an extra page in the totals.
 
-Across all three passes, **32 distinct pages** have been checked, with **301 math elements across their latest checked versions**. The record contains **40 successful page checks** (23 + 10 + 7) and 356 formula observations (177 + 111 + 68). The latest-version totals count each page once: eighteen pages retain their `04e00a3` check, seven their `e2c70b1` check and seven their `d73464c` check. The exact inspected revision is retained for each page; later edits are not implicitly certified.
+After the third pass, the record covered 32 distinct pages, with 301 math elements across their latest checked versions. It contained 40 successful page checks and 356 formula observations including repeats. All 189 relative link occurrences in those documents resolved against the published Git tree at `d73464c`.
 
-At `d73464c`, all **189 relative link occurrences** across the 32 documents resolve to files or directories in its published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
+### Published NIFTE and Rayleigh-pair reports
+
+The fourth pass loaded nine published pages at `1dc034a`: the three new NIFTE reports, the second physical-candidate screening and Rayleigh-pair structural report, `results/README.md`, and the changed main README, candidate queue and first physical-candidate screening. All **74 math elements** rendered without errors, unresolved formulas, red command tokens or math-container overflow. Every visible article image loaded successfully; no formatting repairs were needed.
+
+The inspected screenshots include both complete NIFTE figures, the local cubic-mode coefficient matrix and the Rayleigh-pair Lyapunov inequality with its surrounding derivation. Supporting screenshot visits are not counted as additional page checks. Earlier in-memory previews of the NIFTE drafts remain excluded from the published totals.
+
+Across all four passes, **38 distinct pages** have been checked, with **362 math elements across their latest checked versions**. The record contains **49 successful page checks** (23 + 10 + 7 + 9) and 430 formula observations (177 + 111 + 68 + 74). The latest-version totals count each page once: eighteen pages retain their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check and nine their `1dc034a` check. The exact inspected revision is retained for each page; later edits are not implicitly certified.
+
+At `1dc034a`, all **227 relative link occurrences** across the 38 documents, including `results/README.md`, resolve to files or directories in its published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 
