@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-10-30T11:52:10.850274+00:00",
-  "base_commit": "61f02474c2757a75761c0263270687b2683876ee",
+  "created_utc": "2026-10-30T11:54:27.571464+00:00",
+  "base_commit": "9679b8dd62f43ebfab3e86970e0f5c5e38d2879a",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -43,7 +43,7 @@
     "docs/assets/chua-refined-atlas.png": "72add70f03c4d9a1d3742317cab7a3d3606c3bb88e2ffb1e7f0cfc193c85eff2",
     "docs/chua-family-gallery.md": "9b513b1ea7a60600e5653d7c51ef5e94d79b403b64bc381f00a33980eefaf21d",
     "docs/chua-layer-census.md": "5560993dafbaeab990bfd6fc86e74f08eeadc05f755e17c04e0134898c0cfe34",
-    "docs/chua-refined-atlas.md": "9f3d5ef5d2920333c9d419c5765f9d2032ad97e103a1451aadd538ebbf9a013b",
+    "docs/chua-refined-atlas.md": "b8d48bd33564a78c749b334fffdb3f00f58bb1006141011840f7d461a3e4ef95",
     "kernels.cl": "99028809908bda135e0641e8665add0003ff4e2c5c098c6c9dbdde2e670d921b",
     "README.md": "e0e9d655447484ed583d799300132abbcb536d631af8e6f0b2f0e4372ce411dd",
     "report.py": "5b91c7f4cfcbc8928bff63b372db9b70bfba02fb64ebf69696142df410785fa1",

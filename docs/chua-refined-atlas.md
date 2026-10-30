@@ -106,7 +106,29 @@ For the finer full grid, eight consecutive upward returns within 2e-6 of a refer
 
 ## How behaviour differs between layers
 
+In plain language, the families differ in the **route and rhythm of their repeating motion**:
+
+- **Where the motion goes.** E06 stays near one outer scroll, or "wing"; the other reference representatives visit both outer regions.
+- **How much happens before the pattern repeats.** A cycle can contain 5, 15, 35 or 65 peaks. Longer cycles may make many nearly overlapping passes through similar loops, so a static outline can hide their longer repetition pattern.
+- **How long a complete repetition takes.** S08 and S11 both have five peaks, but their reference periods are approximately 10.89 and 14.50, and their signal shapes differ.
+- **Whether the two halves are symmetric.** For 23 reference representatives, the second half matches the first after reversing all state coordinates. The other nine representatives are asymmetric. A family's descendant branches can change symmetry as parameters vary.
+
+Several families have almost indistinguishable outlines. Their identity therefore also uses continuation, parentage and parameter location. The catalogue does not imply 32 radically different geometric shapes, or 32 attractors all coexisting at the same parameters.
+
 The [gallery of all 32 families](chua-family-gallery.md) now provides an individual card for every reference representative: orbit outline, the complete time signal, and ordered peak heights. Two overview sheets use identical coordinate scales. An [offline interactive comparison](../results/chua-layer-atlas/family-gallery.html) overlays any two families in 3D and compares their signals, with a phase-shift control for the second signal.
+
+Start with **S08 versus S11** to compare two five-peak patterns, then **S04 versus P65** to see how nearly matching outlines hide very different repetition lengths.
+
+<details>
+<summary>Show all 32 reference portraits in this report</summary>
+
+Blue marks the first half of each cycle and orange the second. Every panel uses the same x-z scales. Each family is shown at its own reference beta; these are different parameter choices. The individual gallery cards reveal the time signal and peak sequence that the outlines can hide.
+
+![First sixteen reference portraits](assets/chua-families/overview-1.png)
+
+![Second sixteen reference portraits](assets/chua-families/overview-2.png)
+
+</details>
 
 Peak count alone is inadequate: S08 and S11 both have five maxima, yet different periods and orbit geometry. The catalogue also separates symmetry, number of section returns, average state, and transverse contraction.
 
