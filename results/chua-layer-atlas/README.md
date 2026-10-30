@@ -7,6 +7,8 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | Files | Contents |
 |---|---|
 | `atlas.html` | Offline interactive atlas; download and open in a browser |
+| `family-gallery.html`, `family-portraits-*.pdf` | Offline two-family comparison and two overview portrait sheets; all 32 individual PNG cards are in `docs/assets/chua-families` |
+| `gallery-checks.json` | Checks on the plotted arrays: finite samples, period duration, expected peak counts and small endpoint gaps; not a new stability certificate |
 | `family-registry.json` | 32 normalized roots, identities, source candidates, and ancestry |
 | `family-catalog.csv`, `family-behavior.json`, `family-orbits.npz` | Periods, maxima, symmetry, state statistics, contraction, sampled orbits |
 | `*-sheet.json` | Continued representatives and available fold/symmetry boundaries; missing samples stay explicit |
@@ -107,3 +109,5 @@ python research/plot_refined_chua_atlas.py --output D:/tmp/chua-atlas-publicatio
 ```
 
 The plotting script rebuilds the CSV, display arrays, three PNG/PDF scientific figures, and self-contained interactive HTML from the compact evidence. It uses the earlier original-atlas regular mask for comparison. Numeric results and wall-clock-limited coverage can differ slightly by platform; compare tolerances and branch identities, not binary file equality.
+
+Regenerate the separate per-family gallery with `python research/plot_chua_family_gallery.py`. This writes 32 PNG cards, two overview PNG/PDF sheets, the offline comparison HTML, display checks, and `docs/chua-family-gallery.md`. It reads the already published reference orbits; it does not rerun discovery or change family identities. All 32 sampled peak counts agree with the independent counts. The largest stored plotting-orbit endpoint gap is about 4.4e-6, below the plot scale; existence and attraction checks remain those in the earlier numerical audit.

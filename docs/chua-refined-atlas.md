@@ -106,6 +106,8 @@ For the finer full grid, eight consecutive upward returns within 2e-6 of a refer
 
 ## How behaviour differs between layers
 
+The [gallery of all 32 families](chua-family-gallery.md) now provides an individual card for every reference representative: orbit outline, the complete time signal, and ordered peak heights. Two overview sheets use identical coordinate scales. An [offline interactive comparison](../results/chua-layer-atlas/family-gallery.html) overlays any two families in 3D and compares their signals, with a phase-shift control for the second signal.
+
 Peak count alone is inadequate: S08 and S11 both have five maxima, yet different periods and orbit geometry. The catalogue also separates symmetry, number of section returns, average state, and transverse contraction.
 
 | Representative | Main distinction | Period at the normalized reference root |

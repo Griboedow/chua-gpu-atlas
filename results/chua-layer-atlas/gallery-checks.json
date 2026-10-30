@@ -1,0 +1,236 @@
+{
+  "families": 32,
+  "checks": [
+    {
+      "id": "E01",
+      "samples": 4001,
+      "sampled_peaks": 13,
+      "expected_peaks": 13,
+      "endpoint_gap": 9.560784386408727e-10
+    },
+    {
+      "id": "E02",
+      "samples": 4001,
+      "sampled_peaks": 6,
+      "expected_peaks": 6,
+      "endpoint_gap": 2.339256510719423e-09
+    },
+    {
+      "id": "E03",
+      "samples": 4001,
+      "sampled_peaks": 21,
+      "expected_peaks": 21,
+      "endpoint_gap": 6.997356760685136e-08
+    },
+    {
+      "id": "E04",
+      "samples": 4001,
+      "sampled_peaks": 35,
+      "expected_peaks": 35,
+      "endpoint_gap": 2.6695847643587456e-08
+    },
+    {
+      "id": "E05",
+      "samples": 4001,
+      "sampled_peaks": 7,
+      "expected_peaks": 7,
+      "endpoint_gap": 1.010123762412718e-09
+    },
+    {
+      "id": "E06",
+      "samples": 4001,
+      "sampled_peaks": 4,
+      "expected_peaks": 4,
+      "endpoint_gap": 1.7060956744585631e-09
+    },
+    {
+      "id": "E07",
+      "samples": 4001,
+      "sampled_peaks": 6,
+      "expected_peaks": 6,
+      "endpoint_gap": 1.1493379747928856e-08
+    },
+    {
+      "id": "S01",
+      "samples": 4001,
+      "sampled_peaks": 9,
+      "expected_peaks": 9,
+      "endpoint_gap": 1.517165282294286e-10
+    },
+    {
+      "id": "S02",
+      "samples": 4001,
+      "sampled_peaks": 11,
+      "expected_peaks": 11,
+      "endpoint_gap": 2.5171998874196078e-08
+    },
+    {
+      "id": "S03",
+      "samples": 4001,
+      "sampled_peaks": 25,
+      "expected_peaks": 25,
+      "endpoint_gap": 9.555311947240241e-08
+    },
+    {
+      "id": "S04",
+      "samples": 4001,
+      "sampled_peaks": 15,
+      "expected_peaks": 15,
+      "endpoint_gap": 1.2274453287108855e-08
+    },
+    {
+      "id": "S05",
+      "samples": 4001,
+      "sampled_peaks": 25,
+      "expected_peaks": 25,
+      "endpoint_gap": 8.487372116228187e-08
+    },
+    {
+      "id": "S06",
+      "samples": 4001,
+      "sampled_peaks": 35,
+      "expected_peaks": 35,
+      "endpoint_gap": 1.0529365912503863e-07
+    },
+    {
+      "id": "S07",
+      "samples": 4001,
+      "sampled_peaks": 45,
+      "expected_peaks": 45,
+      "endpoint_gap": 4.587678104073234e-08
+    },
+    {
+      "id": "P55",
+      "samples": 4001,
+      "sampled_peaks": 55,
+      "expected_peaks": 55,
+      "endpoint_gap": 5.27395918714646e-07
+    },
+    {
+      "id": "P65",
+      "samples": 4001,
+      "sampled_peaks": 65,
+      "expected_peaks": 65,
+      "endpoint_gap": 4.392924189355885e-06
+    },
+    {
+      "id": "A01",
+      "samples": 4001,
+      "sampled_peaks": 25,
+      "expected_peaks": 25,
+      "endpoint_gap": 1.9669273765288153e-08
+    },
+    {
+      "id": "A02",
+      "samples": 4001,
+      "sampled_peaks": 20,
+      "expected_peaks": 20,
+      "endpoint_gap": 1.5363744110263866e-08
+    },
+    {
+      "id": "A03",
+      "samples": 4001,
+      "sampled_peaks": 15,
+      "expected_peaks": 15,
+      "endpoint_gap": 1.2332379617507883e-08
+    },
+    {
+      "id": "A04",
+      "samples": 4001,
+      "sampled_peaks": 25,
+      "expected_peaks": 25,
+      "endpoint_gap": 2.5521820614105017e-06
+    },
+    {
+      "id": "A05",
+      "samples": 4001,
+      "sampled_peaks": 30,
+      "expected_peaks": 30,
+      "endpoint_gap": 8.722168542973918e-10
+    },
+    {
+      "id": "S08",
+      "samples": 4001,
+      "sampled_peaks": 5,
+      "expected_peaks": 5,
+      "endpoint_gap": 1.2232703738845885e-10
+    },
+    {
+      "id": "S09",
+      "samples": 4001,
+      "sampled_peaks": 15,
+      "expected_peaks": 15,
+      "endpoint_gap": 7.053980122240233e-09
+    },
+    {
+      "id": "S10",
+      "samples": 4001,
+      "sampled_peaks": 25,
+      "expected_peaks": 25,
+      "endpoint_gap": 1.9847821908225427e-07
+    },
+    {
+      "id": "A06",
+      "samples": 4001,
+      "sampled_peaks": 15,
+      "expected_peaks": 15,
+      "endpoint_gap": 2.2413825129241616e-08
+    },
+    {
+      "id": "S11",
+      "samples": 4001,
+      "sampled_peaks": 5,
+      "expected_peaks": 5,
+      "endpoint_gap": 2.0706517056545692e-09
+    },
+    {
+      "id": "E08",
+      "samples": 4001,
+      "sampled_peaks": 9,
+      "expected_peaks": 9,
+      "endpoint_gap": 2.0508746256808763e-08
+    },
+    {
+      "id": "E09",
+      "samples": 4001,
+      "sampled_peaks": 11,
+      "expected_peaks": 11,
+      "endpoint_gap": 3.559326594571033e-08
+    },
+    {
+      "id": "E10",
+      "samples": 4001,
+      "sampled_peaks": 7,
+      "expected_peaks": 7,
+      "endpoint_gap": 4.815884357967093e-10
+    },
+    {
+      "id": "E11",
+      "samples": 4001,
+      "sampled_peaks": 13,
+      "expected_peaks": 13,
+      "endpoint_gap": 4.112504697895147e-09
+    },
+    {
+      "id": "E12",
+      "samples": 4001,
+      "sampled_peaks": 9,
+      "expected_peaks": 9,
+      "endpoint_gap": 1.9432275996655868e-09
+    },
+    {
+      "id": "E13",
+      "samples": 4001,
+      "sampled_peaks": 13,
+      "expected_peaks": 13,
+      "endpoint_gap": 3.5238608415803785e-09
+    }
+  ],
+  "passed": true,
+  "maximum_plot_endpoint_gap": 4.392924189355885e-06,
+  "note": "Display-array checks, not new existence or stability certificates. Small endpoint gaps are integration errors below the plotting scale.",
+  "source_sha256": {
+    "family-behavior.json": "aa937410aab3bfeb42f3f506d558cc28576db8a93839ae2e8c48aff7cb4c4170",
+    "family-orbits.npz": "04b819a4c68c5290a5c69dd26e0f73aa58b9670a024ad0bb9c31e5af7c7fa301"
+  }
+}

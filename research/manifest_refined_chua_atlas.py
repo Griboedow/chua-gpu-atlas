@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCRIPTS='''audit_refined_chua_atlas bridge_chua_itineraries build_chua_family_registry
 check_chua_event_map check_fast_flights check_sheet_interpolation chua_basin_capture
 chua_event_map chua_fast_flights chua_overlap_basins chua_window_ancestry
-export_refined_chua_atlas extend_chua_adding manifest_refined_chua_atlas plot_refined_chua_atlas
+export_refined_chua_atlas extend_chua_adding manifest_refined_chua_atlas plot_refined_chua_atlas plot_chua_family_gallery
 refine_chua_adding_check refine_chua_satellites refine_chua_sheets scan_chua_offcenter
 select_chua_offcenter verify_chua_offcenter verify_four_chua_cycles'''.split()
 
@@ -50,6 +50,8 @@ def main():
         print('Verified',len(data['sha256']),'published, code, and input hashes');return
     paths=code_dependencies() | {p for p in out.iterdir() if p.is_file() and p!=manifest}
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])
+    paths.add(ROOT/'docs/chua-family-gallery.md')
+    paths.update((ROOT/'docs/assets/chua-families').glob('*.png'))
     paths.update(ROOT/'docs/assets'/name for name in ['chua-refined-atlas.png','chua-refined-adding.png','chua-four-cycle-overlap.png'])
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])

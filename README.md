@@ -55,6 +55,8 @@ This project studies **two different 3D spaces**:
 
 **The layer atlas now distinguishes 32 periodic-window families.** Continuation finds thin cores missed by the original mesh, including a 65-maximum cycle whose symmetric stable interval is about 126,000 times narrower than the old beta spacing. Two broad families overlap and support four attracting cycles at the same parameters. The [refined atlas report](docs/chua-refined-atlas.md) includes labelled branches, ancestry, behaviour comparisons, numerical controls, and an offline interactive atlas. The catalogue is not an exhaustive count of every possible layer.
 
+**See what each family does:** the [32-family portrait gallery](docs/chua-family-gallery.md) shows one orbit, full repeating signal, and peak sequence per family. Its interactive comparison lets you rotate and overlay any two reference trajectories. Similar outlines can hide very different repetition patterns.
+
 **The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
 
 ![Lyapunov transect, peak diagram, coexisting scrolls and basin map](docs/assets/findings.png)
