@@ -1,0 +1,15 @@
+{
+  "base_gamma": 0.2928932188134524,
+  "base_R": "(1+(1-2*gamma)*z)/(1-gamma*z)^2",
+  "accepted_R": "(4*R(z/2)^2-R(z))/3",
+  "point_z": [
+    0,
+    5
+  ],
+  "accepted_amplification": [
+    -0.3972077533475298,
+    -0.9991655222246666
+  ],
+  "modulus": 1.0752235768071134,
+  "conclusion": "Base SDIRK2 is L-stable. Accepted Richardson extrapolate is not A-stable; do not infer unconditional full-integrator stability from the base. No result or algorithm changed by this audit."
+}

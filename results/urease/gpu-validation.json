@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "control": 0,
+      "rtol": 1e-06,
+      "duration": 30.0,
+      "status": 0,
+      "state_error": 7.016671652509545e-08,
+      "lle_error": 2.8167125472322585e-09,
+      "cpu_lle": -0.0187730742318035,
+      "gpu_lle": -0.018773077048516048,
+      "tangent_direction_error": 4.44430631740822e-08,
+      "accepted_rejected": [
+        949,
+        60
+      ],
+      "wall_seconds": 0.1909566000031191
+    },
+    {
+      "control": 0,
+      "rtol": 1e-08,
+      "duration": 30.0,
+      "status": 0,
+      "state_error": 7.887252885723255e-13,
+      "lle_error": 2.081113059659856e-13,
+      "cpu_lle": -0.0187730742318035,
+      "gpu_lle": -0.01877307423159539,
+      "tangent_direction_error": 6.2382099486058e-11,
+      "accepted_rejected": [
+        8013,
+        6
+      ],
+      "wall_seconds": 1.5660193000003346
+    },
+    {
+      "control": 1,
+      "rtol": 1e-06,
+      "duration": 1200.0,
+      "status": 0,
+      "state_error": 1.554463840272055e-08,
+      "lle_error": 1.240048430150957e-10,
+      "cpu_lle": -0.00029037474284180075,
+      "gpu_lle": -0.00029037461883695773,
+      "tangent_direction_error": 9.07314654519098e-08,
+      "accepted_rejected": [
+        918,
+        24
+      ],
+      "wall_seconds": 0.18704189999698428
+    },
+    {
+      "control": 1,
+      "rtol": 1e-08,
+      "duration": 1200.0,
+      "status": 0,
+      "state_error": 3.394021938871899e-09,
+      "lle_error": 2.1068891531590694e-12,
+      "cpu_lle": -0.00029037474284180075,
+      "gpu_lle": -0.0002903747449486899,
+      "tangent_direction_error": 1.690580153645982e-08,
+      "accepted_rejected": [
+        6976,
+        11
+      ],
+      "wall_seconds": 1.3605708000031882
+    }
+  ],
+  "passed": true,
+  "device": "NVIDIA GeForce GTX 1080",
+  "comparison": "Independent implicit Radau in same exact linear coordinates; full state and tangent",
+  "scope": "One initial fast relaxation and one long cycle-scale control; not asymptotic classification",
+  "array_shapes": {}
+}

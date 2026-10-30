@@ -214,6 +214,8 @@ The [synchronematic symmetry audit](docs/synchronematic-priority-audit.md) corre
 
 The [report-rendering audit](docs/report-format-audit.md) records repairs and actual-browser checks of the published GitHub equations, images and local links.
 
+A subsequent [full urease-network study](docs/urease-research.md) implements a stiff implicit GPU method and completes 1,024 survey trajectories without a persistent positive signal. Independent orbit closures explain the two largest weak positive estimates as stable cycles; ten tighter follow-ups remain budget-unresolved. [Exact transport identities](docs/urease-structural-audit.md) provide bounds and a no-cycle control. A [thermofluidic heat engine](docs/physical-candidate-screening.md) is the next fully specified candidate; an [esterase compartment](docs/esterase-compartment-audit.md) remains on hold because its transport closure is incomplete.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.

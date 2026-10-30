@@ -1,0 +1,241 @@
+{
+  "audit_time_utc": "2026-10-30T00:16:25.735726+00:00",
+  "model": "Leathard-Beales-Taylor 2023 seven-species esterase compartment",
+  "doi": "10.1063/5.0180256",
+  "status": "source-incomplete; hold numerical screening",
+  "scientific_novelty": "unconfirmed; no exact-model chaos demonstration retrieved",
+  "recovered_source": {
+    "url": "https://eprints.whiterose.ac.uk/207599/1/123128_1_5.0180256.pdf",
+    "institutional_record": "https://eprints.whiterose.ac.uk/id/eprint/207599/",
+    "cache": "outputs/candidate_research/esterase_compartment_2023.pdf",
+    "sha256": "eceedbdaae3f712fd24ef271ac0db3dcf4005cfb0fd67508152ba5e147687860",
+    "pdf_pages": 10,
+    "visually_checked_pdf_pages": [
+      4,
+      5
+    ],
+    "article_pages": [
+      2,
+      3
+    ],
+    "license": "CC BY 4.0; source not republished under project MIT"
+  },
+  "supplement": {
+    "specified_by_paper": "S1 XPPAUT model; S2 proton transport; S3 enzyme pH-rate effect; S4 extra amplitude/frequency analysis",
+    "recovered": false,
+    "code_executed": false,
+    "author_code_copied_into_project": false
+  },
+  "species_order": [
+    "ethyl_acetate_S",
+    "acetic_acid_A",
+    "acetate_B",
+    "ethanol_E",
+    "ethoxide_F",
+    "proton_h",
+    "hydroxide_o"
+  ],
+  "reaction_rates": {
+    "R": "Vmax*S/((KM+S)*(1+Kes2/h+h/Kes1))",
+    "rA": "k2*A-k2r*h*B",
+    "rE": "k3*E-k3r*h*F",
+    "rW": "kw-kwr*h*o"
+  },
+  "stoichiometric_expansion_not_complete_model": [
+    "-R+J_S",
+    "R-rA+J_A",
+    "rA+J_B",
+    "R-rE+J_E",
+    "rE+J_F",
+    "rA+rE+rW+J_h",
+    "rW+J_o"
+  ],
+  "transport": {
+    "generic_published_form": "J_X=k_X*(X_external-X)",
+    "explicit": "substrate and hydroxide exchange; proton transport discussed",
+    "unknown": "all product-specific transport and external values; baseline proton transport",
+    "reservoir": "constant maintained external concentrations; not finite-fuel batch"
+  },
+  "parameters_from_main_text": {
+    "k2_s-1": 730000.0,
+    "k2r_M-1_s-1": 45000000000.0,
+    "k3_s-1": 1.25e-06,
+    "k3r_M-1_s-1": 10000000000.0,
+    "kw_M_s-1": 0.0001,
+    "kwr_M-1_s-1": 10000000000.0
+  },
+  "published_oscillatory_example_incomplete": {
+    "source": "Figure3 inset",
+    "substrate_external_M": 0.00256,
+    "Vmax_M_s-1": 0.00102,
+    "kOH_s-1": 0.045,
+    "kS_s-1": 0.0014,
+    "hydroxide_external_M": 0.0001,
+    "warning": "Not executable without missing baseline constants, flux choices and starts; no calibrated enzyme concentration inferred"
+  },
+  "missing_baseline": [
+    "KM",
+    "Kes1 and Kes2 individually",
+    "kH",
+    "product transport coefficients",
+    "product external concentrations",
+    "initial concentrations"
+  ],
+  "structural_deductions": {
+    "origin": "Independent stoichiometric algebra, not simulations or a new physical closure",
+    "reaction_matrix_columns": [
+      "R",
+      "rA",
+      "rE",
+      "rW"
+    ],
+    "reaction_matrix": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reaction_rank": 4,
+    "exact_rank_certificate": "S,A,E,o row minor determinant -1",
+    "fast_reaction_rank": 3,
+    "fast_rank_certificate": "A,E,o rows of rA,rE,rW columns form diag(-1,-1,1)",
+    "closed_network_linear_invariants": [
+      "S+A+B",
+      "S+E+F",
+      "h-o-B-F"
+    ],
+    "integer_conservation_check": "left_forms @ N = 0 exactly; no integration",
+    "total_acetate_derivative": "R+J_A+J_B",
+    "total_ethanol_derivative": "R+J_E+J_F",
+    "modeled_ionic_charge_derivative": "J_h-J_o-J_B-J_F",
+    "conditional_exclusion": "If either total-product exchange is zero, that total increases with R>0, excluding bounded recurrent dynamics with sustained reaction in the full positive interior. Whether this applies to S1 remains unknown.",
+    "substrate_bound": "0 <= S(t) <= max(S(0),S_external) for nonnegative rates and stated positive substrate exchange",
+    "fast_equilibrium": {
+      "Ka_acetic_M": 1.6222222222222223e-05,
+      "Ka_ethanol_M": 1.25e-16,
+      "Kw_M2": 1e-14,
+      "slow_coordinates": [
+        "S",
+        "T_A",
+        "T_E",
+        "q"
+      ],
+      "h_equation": "q=h-Kw/h-T_A*Ka/(h+Ka)-T_E*Ke/(h+Ke)",
+      "derivative_wrt_h": "1+Kw/h^2+T_A*Ka/(h+Ka)^2+T_E*Ke/(h+Ke)^2 > 0",
+      "meaning": "Unique positive equilibrium h for finite q and nonnegative totals; singular-limit reduction only, not exact finite-rate ODE"
+    },
+    "numerical_warning": "Strong acid-base stiffness; baseline needs implicit CPU solver. Do not slow reactions or invent closure for an explicit GPU scan."
+  },
+  "priority_search": {
+    "queries": [
+      "\"Design of oscillatory dynamics\" chaos esterase",
+      "\"esterase\" \"chaos\" compartment oscillator",
+      "\"papain\" \"chaos\" oscillator model",
+      "\"Leathard\" \"chaos\" attractor",
+      "\"esterase\" \"chaotic\" \"oscillations\"",
+      "\"compartment\" \"esterase\" \"Lyapunov\"",
+      "\"ethyl acetate\" \"esterase\" \"chaotic\""
+    ],
+    "result": "No primary exact-model chaos result identified in this bounded search; absence of retrieval is not proof of novelty"
+  },
+  "later_citations": {
+    "index": "OpenAlex",
+    "work": "https://openalex.org/W4390277561",
+    "records_returned": 4,
+    "distinct_works_after_edition_deduplication": 3,
+    "records": [
+      {
+        "id": "https://openalex.org/W4413024321",
+        "title": "Experimentally Guided Iterative Parameter Estimation for Predictive Chemical Oscillator Models",
+        "doi": "https://doi.org/10.1002/anie.202511413",
+        "publication_date": "2025-08-06"
+      },
+      {
+        "id": "https://openalex.org/W4411024677",
+        "title": "Tunable photochemical properties of silica gel Belousov\u2013Zhabotinsky micro-reactors: Synthesis and temperature characterization",
+        "doi": "https://doi.org/10.1063/5.0266767",
+        "publication_date": "2025-06-01"
+      },
+      {
+        "id": "https://openalex.org/W4413024336",
+        "title": "Experimentally Guided Iterative Parameter Estimation for Predictive Chemical Oscillator Models",
+        "doi": "https://doi.org/10.1002/ange.202511413",
+        "publication_date": "2025-08-06"
+      },
+      {
+        "id": "https://openalex.org/W7213928746",
+        "title": "Chemical Feedback and Collective pH-Dynamics in Enzyme-Powered Artificial Cells",
+        "doi": "https://doi.org/10.1021/acs.jpcb.6c03926",
+        "publication_date": "2026-09-21"
+      }
+    ],
+    "coverage": "Fmoc primary article inspected; BZ primary abstract inspected; collective-pH article passages inspected; not all full equations compared"
+  },
+  "nearby_prior_model": {
+    "title": "Dynamical properties of chemical systems near Hopf bifurcation points",
+    "authors": [
+      "M. Ipsen",
+      "I. Schreiber"
+    ],
+    "year": 2000,
+    "doi": "10.1063/1.1311980",
+    "inspected": "Primary repository excerpt Eq21 identifies planar papain substrate/proton model; full PDF fetch blocked",
+    "scope": "Same general enzyme-feedback mechanism, not established exact equivalence to seven-species model"
+  },
+  "thesis": {
+    "url": "https://etheses.whiterose.ac.uk/id/eprint/38169/",
+    "title": "Modelling Enzyme-Driven pH Control and Dynamic Behaviour in Compartmentalised Enzymatic Networks",
+    "year": 2025,
+    "embargo_until": "2027-02-09",
+    "full_text_accessed": false,
+    "copy_requested": false
+  },
+  "access_limits": [
+    "Institutional records exposed main article only",
+    "Publisher minimal article body accessible but no S1 file exposed",
+    "Normal browser visit stopped at security verification; no challenge solved",
+    "Figshare resource DOI search returned no matching article",
+    "No author contact or paid access"
+  ],
+  "new_trajectories_integrated": 0,
+  "gpu_runs": 0,
+  "next_action": "Recover authoritative public S1 and audit product removal before implementing. Conditional monotonicity exclusion takes priority if product totals are trapped."
+}

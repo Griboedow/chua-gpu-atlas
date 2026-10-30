@@ -2,6 +2,8 @@
 
 Audit date: 2026-10-29 UTC. This is a model audit, not a discovery claim. No parameter survey or new chaotic trajectory was produced in this block.
 
+Later work: the [full urease survey](urease-research.md) and [structural audit](urease-structural-audit.md) implement the next steps below. The [esterase source audit](esterase-compartment-audit.md) identifies the remaining supplementary-model gap. Their results do not retroactively turn this initial screening into a numerical study.
+
 The October 2026 artificial-cell model and the 2025 two-variable urease oscillator should not enter a search for an autonomous strange attractor. The original four-species urease network remains a concrete candidate for further investigation, subject to the exact dimensional constraint below. The three-state Milster microreactor also has a structural obstruction, even before its published planar reduction.
 
 ## Decisions

@@ -1,0 +1,151 @@
+{
+  "audit_utc": "2026-10-30T00:18:04.814526+00:00",
+  "documentation": "docs/urease-structural-audit.md",
+  "status": "No global no-chaos theorem established for source kH>k. Exact no-chaos slice when kH=kS=k.",
+  "scope": "Source and structural audit only; no trajectories, Lyapunov estimates, or parameter scan.",
+  "original_doi": "10.1021/acs.jpclett.1c03016",
+  "comparison_doi": "10.1021/acs.jpcb.2c09092",
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/2110.03465v1",
+      "version": "arxiv2110.03465v1; 2021-10-07",
+      "role": "Original article plus two-page SI, exact equations S1",
+      "local_cache": "outputs/candidate_research/urease_2021_arxiv.pdf",
+      "sha256": "00ea58c62d7019f0e2468902341852bc53e332efa657570e8f6ec0dad53dfa7c",
+      "bytes": 1809887
+    },
+    {
+      "url": "https://publications.imp.fu-berlin.de/2630/1/acs.jpclett.1c03016.pdf",
+      "version": "Published 2021 article",
+      "role": "Independent original-paper comparison",
+      "local_cache": "outputs/candidate_research/urease_2021_published.pdf",
+      "sha256": "7fd429781a19dc9be5010ccfba687deff88ca9e6ab25aae1ab9ab1768f684858",
+      "bytes": 1904071
+    },
+    {
+      "url": "https://arxiv.org/html/2212.14503v1",
+      "version": "arxiv2212.14503v1",
+      "role": "2023 reduction comparison",
+      "local_cache": "outputs/candidate_research/urea_reduced_2212.14503.html",
+      "sha256": "0648b2c1e1b476f9312c01eae9355df1983e17b69696102e09f2c790f6e1fda0",
+      "bytes": 580049
+    }
+  ],
+  "state_order": [
+    "S",
+    "H",
+    "P",
+    "Q"
+  ],
+  "concentration_unit": "mol/L",
+  "time_unit": "s",
+  "parameters": {
+    "vmax": 0.000185,
+    "KM": 0.003,
+    "KE1": 5e-06,
+    "KE2": 2e-09,
+    "k2": 43000000000.0,
+    "k2r": 24.0,
+    "kS": 0.0014,
+    "kH": 0.009,
+    "k": 0.0014,
+    "Se": 0.00038,
+    "He": 0.00013
+  },
+  "source_initial": {
+    "S": 5e-05,
+    "H": 1e-05,
+    "P": null,
+    "Q": null,
+    "missingness": "P and Q initial values not stated in inspected 2021 main article or two-page SI"
+  },
+  "source_regular_control": {
+    "deterministic_period_minutes": 17.79,
+    "source_reported_uncertainty_minutes": 0.01,
+    "approximate_pH_range": [
+      4.2,
+      8.3
+    ]
+  },
+  "exact_equations": {
+    "v": "vmax*S/(KM+S)*H/(H+H*H/KE1+KE2)",
+    "j": "k2*P*H-k2r*Q",
+    "Sdot": "-v+kS*(Se-S)",
+    "Hdot": "-j+kH*(He-H)",
+    "Pdot": "2*v-j-k*P",
+    "Qdot": "j-k*Q"
+  },
+  "structural_results": [
+    {
+      "claim": "Nonnegative orthant forward invariant; solutions bounded and eventually in a compact positive region for each fixed positive parameter set",
+      "proof": "N=2S+P+Q and Z=H+Q comparison inequalities, followed by scalar lower bounds",
+      "scope": "All strictly positive model parameters; lower concentration bounds do not ensure large molecule counts"
+    },
+    {
+      "claim": "Exact attracting 3D hyperplane N=2Se",
+      "condition": "k=kS",
+      "identity": "Ndot=k*(2*Se-N)",
+      "normal_linear_equation": "deltaNdot=-k*deltaN"
+    },
+    {
+      "claim": "Exact planar recurrent dynamics; no nonconstant periodic orbit or chaotic limit attractor",
+      "condition": "kH=kS=k",
+      "identities": [
+        "Ndot=k*(2*Se-N)",
+        "Zdot=k*(He-Z)"
+      ],
+      "planar_divergence": "-vS-2*k-k2r-k2*(P+H)<0",
+      "domain": "Convex physical polygon in S,H"
+    },
+    {
+      "claim": "All globally closed affine reaction-invariant relaxations classified",
+      "reaction_nullspace": "w=(2*a,b,a,a+b), L=a*N+b*Z",
+      "N_closed_iff": "kS=k",
+      "Z_closed_iff": "kH=k",
+      "two_independent_iff": "kS=kH=k",
+      "limitation": "Does not classify nonlinear invariant manifolds"
+    },
+    {
+      "claim": "Unique physical frozen fast-protonation equilibrium; no fast fold",
+      "frozen_coordinates": [
+        "S",
+        "N",
+        "Z"
+      ],
+      "interval": "max(0,Z-(N-2*S))<=H<=Z",
+      "derivative": "-k2r-k2*(P+H)<=-k2r<0",
+      "limitation": "Not an exact finite-rate reduction and not a full-system Lyapunov exponent"
+    },
+    {
+      "claim": "Simple orthant cooperative/competitive sign-flip argument unavailable at source rates",
+      "coordinates": [
+        "S",
+        "H",
+        "Z"
+      ],
+      "reason": "H_Z>0 but Z_H=k-kH<0; S_H changes sign",
+      "limitation": "Does not exclude other transformations or specialized theorems"
+    }
+  ],
+  "algebra_validation": {
+    "seed": 20261030,
+    "sample_count": 128,
+    "sampling": "Each positive S,H,P,Q independently 10**uniform(-9,-3), source parameter values",
+    "max_N_identity_error_scaled_by_component_sum": 9.532038627983346e-17,
+    "max_Z_identity_error_scaled_by_component_sum": 8.585335066682229e-17,
+    "max_frozen_equilibrium_relative_residual": 1.8196688086432003e-16,
+    "all_frozen_roots_in_physical_interval": true,
+    "stable_frozen_root": "Let B=P+Q,Z=H+Q,d=B-Z,a=k2. If d>=0 solve H using b=k2r+a*d,c=k2r*Z,H=2*c/(b+sqrt(b*b+4*a*c)),P=H+d,Q=Z-H. Otherwise solve P with b=k2r-a*d,c=k2r*B,P=2*c/(b+sqrt(b*b+4*a*c)),H=P-d,Q=B-P.",
+    "purpose": "Floating-point transcription checks; mathematical arguments do not rely on random sampling"
+  },
+  "physical_limitations": [
+    "Four-species model omits carbon dioxide and eliminates hydroxide dynamics",
+    "Fixed reservoirs, well-mixed deterministic concentrations and effective transport",
+    "Reference-regime comparison does not validate arbitrary parameter extrapolation",
+    "Small-vesicle irregularity in source is stochastic, not a deterministic chaos claim"
+  ],
+  "open_questions": [
+    "Does a globally attracting 2D invariant surface exist at the finite source rates? Not established here.",
+    "Can any physically justified unequal-transport regime support a robust chaotic attractor in the original exact four-species equations? Not answered here."
+  ]
+}

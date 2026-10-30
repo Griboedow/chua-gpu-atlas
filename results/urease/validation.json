@@ -1,0 +1,24 @@
+{
+  "errors": {
+    "jacobian": 9.875219556061218e-15,
+    "mass_balance_scaled": 2.04306535054791e-16,
+    "divergence_relative": 4.4113211668033496e-16,
+    "linear_transform_field": 4.647419291830397e-13,
+    "linear_transform_jacobian": 3.2537971800037095e-16,
+    "radau_bdf_state": 1.833176870287349e-09,
+    "exact_mass_trajectory": 1.723066134218243e-13,
+    "four_vs_exact_three_state": 1.1542793319875444e-11
+  },
+  "passed": true,
+  "random_cases": 64,
+  "state_scale_molar": 0.0001,
+  "time_unit": "s",
+  "minimum_scaled_state": 0.0,
+  "methods": "Complex-step Jacobian; Radau full four-state vs BDF; separate exact three-state manifold Radau",
+  "initial_product_policy": "P=Q=0 chosen for off-manifold control; source Section2 does not specify them",
+  "array_shapes": {
+    "parameters": [
+      11
+    ]
+  }
+}

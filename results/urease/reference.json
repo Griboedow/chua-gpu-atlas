@@ -1,0 +1,45 @@
+{
+  "state_scale_molar": 0.0001,
+  "time_unit": "s",
+  "method": "Radau, analytic Jacobian",
+  "rtol": 1e-10,
+  "atol": 1e-13,
+  "max_step": 2.0,
+  "duration": 12000,
+  "parameter_columns": [
+    "k2",
+    "k2r",
+    "KM",
+    "KE1",
+    "KE2",
+    "kS",
+    "kH",
+    "k",
+    "vmax",
+    "Sext",
+    "Hext"
+  ],
+  "state_columns": [
+    "S",
+    "H",
+    "P",
+    "Q"
+  ],
+  "initial_condition_scope": "Source S(0),H(0); product P(0)=Q(0)=0 chosen by us, not attributed to source",
+  "wall_seconds": 15.74959790000139,
+  "array_shapes": {
+    "parameters": [
+      11
+    ],
+    "initial_state": [
+      4
+    ],
+    "times": [
+      24000
+    ],
+    "states": [
+      24000,
+      4
+    ]
+  }
+}

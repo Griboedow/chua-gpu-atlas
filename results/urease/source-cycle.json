@@ -1,0 +1,35 @@
+{
+  "period_seconds": 1067.639503763483,
+  "period_minutes": 17.793991729391383,
+  "section_closure": 9.249545573908335e-15,
+  "independent_bdf_closure": 3.99180688503975e-12,
+  "exact_normal_multiplier": 0.2243169425094105,
+  "maximum_transverse_multiplier": 0.2243169425094105,
+  "method": "Newton section map with implicit Radau variational derivative on exact N plane; independent BDF orbit",
+  "section": "H=1e-7 M upward",
+  "state_scale_molar": 0.0001,
+  "time_unit": "s",
+  "source_period_minutes": [
+    17.78,
+    17.8
+  ],
+  "caveat": "Unresolved extremely small multipliers have no claimed relative accuracy; numerical closure is not a rigorous orbit-existence proof",
+  "array_shapes": {
+    "parameters": [
+      11
+    ],
+    "section_state_transport": [
+      3
+    ],
+    "times": [
+      4001
+    ],
+    "states": [
+      4001,
+      4
+    ],
+    "section_multipliers": [
+      2
+    ]
+  }
+}

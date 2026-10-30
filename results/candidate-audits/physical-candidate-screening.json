@@ -1,0 +1,840 @@
+{
+  "screened_at_utc": "2026-10-30T00:25:38Z",
+  "status": "One explicit physical-model candidate prepared; no new chaotic trajectory or novelty claim.",
+  "numerical_trajectory_integrations_performed": false,
+  "retained_candidates": [
+    {
+      "id": "nifte-ntp-wang-2019",
+      "name": "Non-inertive-feedback thermofluidic heat engine, smooth NTP and NTP-TL models",
+      "source_doi": "10.1186/s42480-019-0019-3",
+      "source_equations": [
+        "7a",
+        "7b",
+        "7c",
+        "7d",
+        "7e",
+        "7a-prime",
+        "7f",
+        "8"
+      ],
+      "drive": "Constant hot and cold heat reservoirs; evaporation/condensation cycle. No periodic external forcing.",
+      "state_order_ntp": [
+        "p",
+        "d",
+        "q",
+        "u",
+        "v"
+      ],
+      "state_meanings": [
+        "dimensionless adiabatic vapor pressure deviation",
+        "dimensionless displacer hydrostatic pressure deviation",
+        "dimensionless power-cylinder hydrostatic pressure deviation",
+        "dimensionless feedback flow",
+        "dimensionless power-cylinder flow"
+      ],
+      "time": "t_hat=t/tau; RHS below differentiated with respect to t_hat",
+      "ntp_dimension": 5,
+      "ntp_tl_dimension": 9,
+      "thermal_loss_pairs": 4,
+      "closure": "smooth tanh; no switching or event reset",
+      "auxiliary_definitions": {
+        "a": "Ld+Lf",
+        "D": "Ll*a+Lp*(a+Ll)",
+        "c": "tau*U0/P0",
+        "b": "tau*P0/U0",
+        "f": "F*tanh(K*d)"
+      },
+      "ntp_rhs": [
+        "tau*(f-p)/(Rth*Cad)+c*(u+v)/Cad",
+        "c*u/Cd",
+        "c*v/Cp",
+        "(b*(Ll*q-Lp*p-(Lp+Ll)*d)-tau*(Ll*Rf+Lp*(Rf+Rl))*u-tau*Lp*Rl*v)/D",
+        "(b*(Ll*d-a*p-(a+Ll)*q)+tau*(Ll*Rf-a*Rl)*u-tau*a*Rl*v)/D"
+      ],
+      "loss_extension": {
+        "p_rhs_added": "-tau*(p-sum(z))/(Rtl0*Cad)",
+        "z_i_rhs": "tau*(p-sum(z))/(Rtl0*Ctl[i])-tau*z[i]/(Rtl[i]*Ctl[i])",
+        "physical_index_range": "i=1..4; arrays above use corresponding ordered entries"
+      },
+      "nominal_parameters": {
+        "F": 1.37,
+        "K": 330,
+        "Rf": 2130000.0,
+        "Rl": 4080000.0,
+        "Rth": 502000000.0,
+        "Ld": 180000.0,
+        "Lf": 4740000.0,
+        "Ll": 12700000.0,
+        "Lp": 377000.0,
+        "Cad": 1.76e-09,
+        "Cd": 7.35e-08,
+        "Cp": 7.43e-08,
+        "P0": 101300.0,
+        "U0": 0.0008,
+        "tau": 5.0,
+        "Rtl0": 31500000.0,
+        "Rtl": [
+          8820000.0,
+          17200000.0,
+          38300000.0,
+          281000000.0
+        ],
+        "Ctl": [
+          8.61e-10,
+          5.95e-09,
+          1.79e-08,
+          2.66e-08
+        ]
+      },
+      "units": {
+        "resistances": "kg m^-4 s^-1",
+        "inertances": "kg m^-4",
+        "capacitances": "m^4 s^2 kg^-1",
+        "P0": "Pa",
+        "U0": "m^3 s^-1",
+        "tau": "s",
+        "F": "dimensionless",
+        "K": "dimensionless"
+      },
+      "thermal_impedance_fit_frequency_rad_per_s": [
+        0.1,
+        100
+      ],
+      "published_controls": {
+        "parameter_override": {
+          "Lf": 474000.0
+        },
+        "source": "Wang et al. 2019 Table 3; all other parameters Table 2.",
+        "stable_ntp": {
+          "period_seconds_table": 1.31,
+          "period_seconds_prose": 1.3,
+          "floquet_real_imag": [
+            [
+              -0.4704,
+              0.2959
+            ],
+            [
+              -0.4704,
+              -0.2959
+            ],
+            [
+              0.1028,
+              0
+            ],
+            [
+              0.3093,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "unstable_ntp": {
+          "period_seconds": 0.88,
+          "floquet_real_imag": [
+            [
+              -0.3848,
+              1.2078
+            ],
+            [
+              -0.3848,
+              -1.2078
+            ],
+            [
+              0.0348,
+              0
+            ],
+            [
+              0.7958,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "stable_ntp_tl": {
+          "period_seconds": 1.69,
+          "floquet_real_imag": [
+            [
+              1,
+              0
+            ],
+            [
+              0.4661,
+              0
+            ],
+            [
+              -0.0971,
+              0.0681
+            ],
+            [
+              -0.0971,
+              -0.0681
+            ],
+            [
+              0.0467,
+              0
+            ],
+            [
+              0.0358,
+              0
+            ],
+            [
+              0.0001,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "note": "Zero multipliers are source-rounded printed values, not exact zeros."
+        },
+        "cycle_initial_state": "Not recovered from inspected tables; any implementation seed must be identified as our choice."
+      },
+      "transcription_traps": [
+        "The flow v term in u_dot is negative.",
+        "The u coefficient in v_dot is Ll*Rf-(Ld+Lf)*Rl, whose sign is parameter dependent.",
+        "Table 3/prose append an inconsistent s^-1 to Lf; Table 2 and the dimensional equation identify inertance units kg m^-4.",
+        "Printed impedance Eq. 6 starts its sum at zero; explicit states and fit use separate Rtl0 and four pairs indexed 1..4.",
+        "Six items in a compact source vector do not mean six scalar states: P_tl represents four states here.",
+        "A separate switched-linear thesis approximation must not replace the smooth source model silently."
+      ],
+      "mathematical_domain": "R^5 or R^9 with positive fixed components and positive F,K.",
+      "physical_domain_limits": [
+        "States are signed perturbations; positivity of every state would be incorrect.",
+        "Absolute pressure and vapor volume must remain positive.",
+        "Liquid interfaces must remain inside actual cylinders; numerical bounds require a geometric reconstruction not completed here.",
+        "Fixed properties, linear compliances/inertances/resistances, and the fitted thermal frequency range limit physical interpretation."
+      ],
+      "independent_analytical_controls": {
+        "mass_matrix": "[[a+Ll,Ll],[Ll,Lp+Ll]]",
+        "dimensional_energy": "0.5*(Cad*P^2+Cd*Dp^2+Cp*Q^2+a*U^2+Lp*V^2+Ll*(U+V)^2)",
+        "dimensional_energy_derivative": "(P*Fdim(Dp)-P^2)/Rth-Rf*U^2-Rl*(U+V)^2",
+        "loss_energy_added": "sum(Ctl[i]*Z[i]^2)/2",
+        "loss_dissipation_added": "-(P-sum(Z))^2/Rtl0-sum(Z[i]^2/Rtl[i])",
+        "boundedness_reasoning": "Positive energy and the zero-dissipation invariant set establish asymptotic, hence exponential, stability of the passive linear subsystem. The remaining scalar tanh forcing is bounded; variation of constants gives global mathematical boundedness and an ultimate bound. This does not enforce device geometry.",
+        "unique_equilibrium": "Origin for positive F,K and positive components; flow equilibrium implies Dp=Q=-P, with monotone scalar thermal balance.",
+        "symmetry": "X -> -X",
+        "divergence_ntp_per_physical_time": "-1/(Rth*Cad)-(Ll*Rf+Lp*(Rf+Rl)+a*Rl)/D",
+        "divergence_loss_addition": "-1/(Rtl0*Cad)-sum((1/Rtl0+1/Rtl[i])/Ctl[i])",
+        "dimensionless_divergence": "tau times the physical-time expression",
+        "no_chaos_exclusion_established": true,
+        "monotonicity_scope": "No direct planar or elementary one-way monotone cyclic feedback form established. Reciprocal p/u derivatives have opposite signs, invariant under diagonal sign changes. This is not a proof against all possible transformations."
+      },
+      "algebraic_validation": {
+        "random_states": 64,
+        "seed": 20261030,
+        "max_energy_identity_scaled_residual": 7.216449660063518e-16,
+        "max_flow_form_absolute_residual_m3_s2": 3.2526065174565133e-19,
+        "integration_performed": false,
+        "ntp_divergence_per_second": -1.8474171214245976
+      },
+      "priority_status": "No exact-model chaos result established in the bounded search; priority remains unresolved."
+    }
+  ],
+  "source_access": [
+    {
+      "doi": "10.1186/s42480-019-0019-3",
+      "scope": "Full primary HTML plus publisher PDF; equations and Tables 2-3 visually checked on PDF pages 6,8,10. Model/results/conclusions inspected.",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1186/s42480-019-0019-3.pdf",
+      "pdf_sha256": "8c974c6ea77da1e3a3e9788ad2ff118be66aca8ea0f3ee44f445c4e65a86c078",
+      "pdf_license": "CC BY 4.0; original PDF not republished in repository"
+    },
+    {
+      "doi": "10.1016/j.apenergy.2012.11.056",
+      "scope": "Primary author-hosted PDF; model and conclusion sections inspected; full-text chaos/attractor searches.",
+      "url": "https://gstan.bg-research.cc.ic.ac.uk/Markides_Stan_App_Energy_2013.pdf"
+    },
+    {
+      "doi": "10.1016/j.ifacol.2018.09.343",
+      "scope": "Primary proceedings preprint; existing stable/unstable CSS multiplicity confirmed.",
+      "url": "https://skoge.folk.ntnu.no/prost/proceedings/ADCHEM-2018/media/files/0136.pdf"
+    },
+    {
+      "doi": "10.25560/86023",
+      "scope": "Institutional thesis abstract/record only. Full PDF returned HTTP 429; no claim of full-equation audit.",
+      "url": "https://spiral.imperial.ac.uk/entities/publication/ff79c230-8eff-4695-8e58-e07d63edca1e"
+    },
+    {
+      "doi": "10.1016/j.energy.2020.118691",
+      "scope": "Direct citing primary paper, publisher preview only; zeotropic-mixture performance study."
+    },
+    {
+      "doi": "10.1016/j.applthermaleng.2023.122225",
+      "scope": "Related primary experiment, publisher abstract only; reported quasiperiodicity/mode transitions, not an exact-NTP chaos audit."
+    }
+  ],
+  "citation_index_snapshot": [
+    {
+      "doi": "10.1186/s42480-019-0019-3",
+      "work_id": "https://openalex.org/W2969512914",
+      "cited_by_count": 3,
+      "query": "https://api.openalex.org/works?filter=cites:W2969512914&per-page=200",
+      "returned_total": 3,
+      "works": [
+        {
+          "id": "https://openalex.org/W4382020760",
+          "title": "Generalized thermoacoustic heat engines with unconventional working substances: A review",
+          "doi": "https://doi.org/10.1016/j.apenergy.2023.121447",
+          "year": 2023,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W3080207618",
+          "title": "A closed two-phase thermofluidic oscillator with zeotropic mixtures for low-grade heat recovery",
+          "doi": "https://doi.org/10.1016/j.energy.2020.118691",
+          "year": 2020,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W4392402117",
+          "title": "Viability of low\u2010grade heat conversion using liquid piston Stirling engines",
+          "doi": "https://doi.org/10.1002/wene.509",
+          "year": 2024,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/j.apenergy.2012.11.056",
+      "work_id": "https://openalex.org/W2032107774",
+      "cited_by_count": 40,
+      "query": "https://api.openalex.org/works?filter=cites:W2032107774&per-page=200",
+      "returned_total": 40,
+      "works": [
+        {
+          "id": "https://openalex.org/W2346231020",
+          "title": "Stirling cycle engines for recovering low and moderate temperature heat: A review",
+          "doi": "https://doi.org/10.1016/j.rser.2016.04.031",
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "http://hdl.handle.net/10044/1/63074",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2191692052",
+          "title": "Low-Concentration Solar-Power Systems Based on Organic Rankine Cycles for Distributed-Scale Applications: Overview and Further Developments",
+          "doi": "https://doi.org/10.3389/fenrg.2015.00047",
+          "year": 2015,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://www.frontiersin.org/articles/10.3389/fenrg.2015.00047/pdf",
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2945307784",
+          "title": "Multi-objective thermo-economic optimization of organic Rankine cycle (ORC) power systems in waste-heat recovery applications using computer-aided molecular design techniques",
+          "doi": "https://doi.org/10.1016/j.apenergy.2019.01.071",
+          "year": 2019,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "http://hdl.handle.net/10044/1/65621",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2884834401",
+          "title": "Computer-aided working-fluid design, thermodynamic optimisation and thermoeconomic assessment of ORC systems for waste-heat recovery",
+          "doi": "https://doi.org/10.1016/j.energy.2018.07.098",
+          "year": 2018,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://www.sciencedirect.com/science/article/pii/S0360544218313951/pdf",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2469977806",
+          "title": "A two-phase single-reciprocating-piston heat conversion engine: Non-linear dynamic modelling",
+          "doi": "https://doi.org/10.1016/j.apenergy.2016.05.140",
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://www.sciencedirect.com/science/article/pii/S0306261916307450/pdf",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4382020760",
+          "title": "Generalized thermoacoustic heat engines with unconventional working substances: A review",
+          "doi": "https://doi.org/10.1016/j.apenergy.2023.121447",
+          "year": 2023,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W3191180558",
+          "title": "A combined experimental and modelling investigation of an overground compressed-air energy storage system with a reversible liquid-piston gas compressor/expander",
+          "doi": "https://doi.org/10.1016/j.enconman.2021.114536",
+          "year": 2021,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://pure.manchester.ac.uk/ws/files/195952274/Manuscript_accepted.pdf",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2068289398",
+          "title": "Transient energy growth of acoustic disturbances in triggering self-sustained thermoacoustic oscillations",
+          "doi": "https://doi.org/10.1016/j.energy.2015.01.047",
+          "year": 2015,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W4405052992",
+          "title": "Working fluid and system optimisation of organic Rankine cycles via computer-aided molecular design: A review",
+          "doi": "https://doi.org/10.1016/j.pecs.2024.101201",
+          "year": 2024,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://doi.org/10.1016/j.pecs.2024.101201",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2386172259",
+          "title": "Working-fluid selection and performance investigation of a two-phase single-reciprocating-piston heat-conversion engine",
+          "doi": "https://doi.org/10.1016/j.apenergy.2016.05.008",
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://www.sciencedirect.com/science/article/pii/S0306261916305906/pdf",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4283827570",
+          "title": "Study of entropy generation and heat flow through a microtube induced by the membrane-based thermofluidics systems",
+          "doi": "https://doi.org/10.1016/j.tsep.2022.101395",
+          "year": 2022,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2004952992",
+          "title": "Performance comparison of jet pumps with rectangular and circular tapered channels for a loop-structured traveling-wave thermoacoustic engine",
+          "doi": "https://doi.org/10.1016/j.apenergy.2015.03.092",
+          "year": 2015,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2460290663",
+          "title": "Comparison of a Novel Organic-Fluid Thermofluidic Heat Converter and an Organic Rankine Cycle Heat Engine",
+          "doi": "https://doi.org/10.3390/en9070479",
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://doi.org/10.3390/en9070479",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2030972267",
+          "title": "Working fluid selection for a two-phase thermofluidic oscillator: Effect of thermodynamic properties",
+          "doi": "https://doi.org/10.1016/j.apenergy.2014.02.042",
+          "year": 2014,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=PARTNER_APP&SrcAuth=LinksAMR&KeyUT=WOS:000336338800015&DestLinkType=FullRecord&DestApp=ALL_WOS&UsrCustomerID=a2bf6146997ec60c407a63945d4e92bb",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2087458188",
+          "title": "Experimental investigation of a thermally powered central heating circulator: Pumping characteristics",
+          "doi": "https://doi.org/10.1016/j.apenergy.2013.03.030",
+          "year": 2013,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W3002954544",
+          "title": "Electrical-analogy network model of a modified two-phase thermofluidic oscillator with regenerator for low-grade heat recovery",
+          "doi": "https://doi.org/10.1016/j.apenergy.2020.114539",
+          "year": 2020,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2338100857",
+          "title": "A single-reciprocating-piston two-phase thermofluidic prime-mover",
+          "doi": "https://doi.org/10.1016/j.energy.2016.02.113",
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://www.sciencedirect.com/science/article/pii/S036054421630175X/pdf",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W1932125368",
+          "title": "Thermodynamic performance of new thermofluidic feed pumps for Organic Rankine Cycle applications",
+          "doi": "https://doi.org/10.1016/j.apenergy.2015.10.004",
+          "year": 2015,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2599774518",
+          "title": "Description of nonlinear thermal effects by means of a two-component Cosserat continuum",
+          "doi": "https://doi.org/10.1007/s00707-017-1829-0",
+          "year": 2017,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2090911179",
+          "title": "Optimizing the Non-Inertive-Feedback Thermofluidic Engine for the Conversion of Low-Grade Heat to Pumping Work",
+          "doi": "https://doi.org/10.1080/01457632.2015.995014",
+          "year": 2014,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://doi.org/10.1080/01457632.2015.995014",
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2979316977",
+          "title": "Dynamic simulation of an original Joule cycle liquid pistons hot air Ericsson engine",
+          "doi": "https://doi.org/10.1016/j.energy.2019.116293",
+          "year": 2019,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "bronze",
+            "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S0360544219319887?via%3Dihub",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4307965154",
+          "title": "Modeling results of a new high performance free liquid piston engine",
+          "doi": "https://doi.org/10.1016/j.energy.2022.125960",
+          "year": 2022,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "bronze",
+            "oa_url": "https://doi.org/10.1016/j.energy.2022.125960",
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2069348055",
+          "title": "Characterization of a solar-powered fluidyne test bed",
+          "doi": "https://doi.org/10.1016/j.seta.2014.06.007",
+          "year": 2014,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2981812945",
+          "title": "Coupled Problems in Thermodynamics",
+          "doi": "https://doi.org/10.1007/978-3-030-30355-6_7",
+          "year": 2019,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2215879596",
+          "title": "Catalytic external combustion engine",
+          "doi": "https://doi.org/10.1134/s0040579515040284",
+          "year": 2015,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W3094292911",
+          "title": "Study on the thermoacoustic system using moisturized stack\u2014energy generation ratio of air and water vapor during system operation",
+          "doi": "https://doi.org/10.35848/1347-4065/abc398",
+          "year": 2020,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "bronze",
+            "oa_url": "https://iopscience.iop.org/article/10.35848/1347-4065/abc398/pdf",
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2286828420",
+          "title": "PERFORMANCE COMPARISON OF A NOVEL THERMOFLUIDIC ORGANIC-FLUID HEAT CONVERTER AND AN ORGANIC RANKINE CYCLE HEAT ENGINE",
+          "doi": null,
+          "year": 2015,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W4382316102",
+          "title": "Resonant Energy Transfer and Storage in Coupled Flow-Driven Heat Oscillators",
+          "doi": "https://doi.org/10.1103/prxenergy.2.023007",
+          "year": 2023,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "http://link.aps.org/pdf/10.1103/PRXEnergy.2.023007",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4392402117",
+          "title": "Viability of low\u2010grade heat conversion using liquid piston Stirling engines",
+          "doi": "https://doi.org/10.1002/wene.509",
+          "year": 2024,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W3209341459",
+          "title": "A variant of the Fluidyne: the liquid piston ERICSSON engine",
+          "doi": "https://doi.org/10.1051/e3sconf/202131304001",
+          "year": 2021,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://doi.org/10.1051/e3sconf/202131304001",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4417295625",
+          "title": "Entropy generation in membrane-actuated pumping of yield-stress fluids in an inclined microchannel: Influence of heat and magnetic fields",
+          "doi": "https://doi.org/10.1016/j.cjph.2025.12.012",
+          "year": 2025,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W2969512914",
+          "title": "Optimization-based investigations of a two-phase thermofluidic oscillator for low-grade heat conversion",
+          "doi": "https://doi.org/10.1186/s42480-019-0019-3",
+          "year": 2019,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://bmcchemeng.biomedcentral.com/track/pdf/10.1186/s42480-019-0019-3",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2596791369",
+          "title": "A thermo-economic assessment and comparison of the Up-THERM heat converter and an organic Rankine cycle engine",
+          "doi": null,
+          "year": 2016,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "http://hdl.handle.net/10044/1/32536",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W2896979560",
+          "title": "Optimization-based Investigations of a Thermofluidic Engine for Low-grade Heat Recovery",
+          "doi": "https://doi.org/10.1016/j.ifacol.2018.09.343",
+          "year": 2018,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://doi.org/10.1016/j.ifacol.2018.09.343",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W3046731826",
+          "title": "Thermal Effects by Means of Two-Component Cosserat Continuum",
+          "doi": "https://doi.org/10.1007/978-3-662-53605-6_66-1",
+          "year": 2017,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W4249754305",
+          "title": "Thermal Effects by Means of Two-Component Cosserat Continuum",
+          "doi": "https://doi.org/10.1007/978-3-662-55771-6_66",
+          "year": 2020,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W1904457088",
+          "title": "Distributed heat conversion technologies based on organic fluid cycles for a high-efficiency and sustainable energy future",
+          "doi": null,
+          "year": 2014,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://repository.up.ac.za/bitstreams/b41d1ce5-bb77-4944-b7a0-d1ed78e487ba/download",
+            "any_repository_has_fulltext": true
+          }
+        },
+        {
+          "id": "https://openalex.org/W4380899271",
+          "title": "Oscillatory flow power cycles",
+          "doi": "https://doi.org/10.1016/b978-0-12-818022-8.00004-1",
+          "year": 2023,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W7148681649",
+          "title": "Etude th\u00e9orique, conception, r\u00e9alisation et essai pr\u00e9liminaire d'un moteur \u00e0 air chaud \u00e0 pistons liquides",
+          "doi": "https://doi.org/10.70675/aec3fecbz971cz4067zbf8az6d14cce88a2e",
+          "year": 2019,
+          "open_access": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          }
+        },
+        {
+          "id": "https://openalex.org/W7213603849",
+          "title": "Overview and outlook of heat-driven oscillating systems for sustainable heating, cooling and power generation",
+          "doi": "https://doi.org/10.1016/j.applthermaleng.2026.133305",
+          "year": 2026,
+          "open_access": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://www.sciencedirect.com/science/article/pii/S1359431126036136/pdf",
+            "any_repository_has_fulltext": true
+          }
+        }
+      ]
+    }
+  ],
+  "citation_screening_scope": "All returned titles/identifiers screened; not full texts of every cited-by work. Citation index is incomplete and cannot establish absence.",
+  "queries": [
+    "NIFTE chaos chaotic nonlinear oscillator",
+    "Non-Inertive-Feedback bifurcation",
+    "NIFTE Lyapunov attractor chaos Wang",
+    "Non-Inertive-Feedback chaos attractor",
+    "NIFTE strange attractor",
+    "Nonlinear heat transfer processes in a two-phase thermofluidic oscillator chaos attractor",
+    "s42480-019-0019-3 cited",
+    "thermofluidic Wang chaotic"
+  ],
+  "unpromoted_lead": {
+    "doi": "10.1016/j.ijmecsci.2010.01.011",
+    "name": "Bi-articulated field-emission nanowire",
+    "reason": "Complete model includes geometry-dependent electrostatic quantities obtained from a field solve. No guessed scalar closure substituted. Comprehensive novelty audit not completed.",
+    "source": "https://ilm.univ-lyon1.fr/images/ILM/Equipe_17/articles/articlePNEC/lazarusmechanics.pdf"
+  },
+  "limits": [
+    "No trajectory or Lyapunov calculation here.",
+    "No claim of a new attractor, unpublished theorem, or experimental prediction.",
+    "No equivalence classification against general saturating-feedback electrical oscillators completed."
+  ],
+  "next_steps": [
+    "Reproduce the 5D source periodic controls with two independent equation forms.",
+    "Check full variational trace and source Floquet spectrum.",
+    "Implement all four loss pairs and reproduce the 9D periodic control.",
+    "Recover geometric operating constraints before physical claims or broad scans."
+  ]
+}

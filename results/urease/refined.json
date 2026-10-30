@@ -1,0 +1,101 @@
+{
+  "settings": {
+    "transient": 200000.0,
+    "duration": 400000.0,
+    "rtol": 1e-09,
+    "atol": 1.0000000000000002e-12,
+    "max_step": 5.0,
+    "max_attempts": 3000000,
+    "max_wall": 600.0
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 600.0395168000032,
+  "state_scale_molar": 0.0001,
+  "time_unit": "s",
+  "parameter_columns": [
+    "k2",
+    "k2r",
+    "KM",
+    "KE1",
+    "KE2",
+    "kS",
+    "kH",
+    "k",
+    "vmax",
+    "Sext",
+    "Hext"
+  ],
+  "state_columns": [
+    "S",
+    "H",
+    "P",
+    "Q"
+  ],
+  "tangent_coordinates": [
+    "S",
+    "P-H",
+    "H+Q",
+    "H"
+  ],
+  "method": "SDIRK2 base, step doubling, Richardson extrapolation; analytic discrete tangent through converged implicit stages",
+  "status_codes": {
+    "0": "completed",
+    "2": "step underflow or numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "retained_count": 0,
+  "source": "scout.npz",
+  "selection": "All positive mean scouts plus the largest 16 means; long criterion lowered to mean>1e-6 and every window>5e-7 per second",
+  "array_shapes": {
+    "parameters": [
+      16,
+      11
+    ],
+    "initial_states": [
+      16,
+      4
+    ],
+    "final_states": [
+      16,
+      4
+    ],
+    "transport_final_states": [
+      16,
+      4
+    ],
+    "final_tangents": [
+      16,
+      4
+    ],
+    "lle": [
+      16
+    ],
+    "lle_windows": [
+      16,
+      4
+    ],
+    "status": [
+      16
+    ],
+    "ranges": [
+      16,
+      8
+    ],
+    "elapsed": [
+      16
+    ],
+    "step_counts": [
+      16,
+      2
+    ],
+    "source_indices": [
+      16
+    ],
+    "retained_candidate": [
+      16
+    ]
+  },
+  "stability_scope": "SDIRK2 base is L-stable, accepted Richardson extrapolate is not unconditionally A-stable. Adaptive error control and independent stiff CPU checks are required.",
+  "incomplete_data_scope": "Incomplete trajectories retain elapsed time, final state/tangent and ranges; partial window log sums were not retained and no exponent classification is assigned."
+}

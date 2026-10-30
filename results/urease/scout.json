@@ -1,0 +1,98 @@
+{
+  "settings": {
+    "transient": 20000.0,
+    "duration": 40000.0,
+    "rtol": 1e-07,
+    "atol": 1e-10,
+    "max_step": 10.0,
+    "max_attempts": 1000000,
+    "max_wall": 600.0
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 57.7762223000027,
+  "state_scale_molar": 0.0001,
+  "time_unit": "s",
+  "parameter_columns": [
+    "k2",
+    "k2r",
+    "KM",
+    "KE1",
+    "KE2",
+    "kS",
+    "kH",
+    "k",
+    "vmax",
+    "Sext",
+    "Hext"
+  ],
+  "state_columns": [
+    "S",
+    "H",
+    "P",
+    "Q"
+  ],
+  "tangent_coordinates": [
+    "S",
+    "P-H",
+    "H+Q",
+    "H"
+  ],
+  "method": "SDIRK2 base, step doubling, Richardson extrapolation; analytic discrete tangent through converged implicit stages",
+  "status_codes": {
+    "0": "completed",
+    "2": "step underflow or numerical failure",
+    "3": "step budget unresolved",
+    "4": "wall budget unresolved"
+  },
+  "preliminary_count": 0,
+  "seed": 2026103006,
+  "scope": "Original four-state source reaction network; varied transport and reservoir settings, not fitted experiments",
+  "cohort_rule": "First half tuples use k=kS; second half vary product outflow. Tuple0 source, tuple1 equal-transport no-cycle control.",
+  "array_shapes": {
+    "parameters": [
+      1024,
+      11
+    ],
+    "initial_states": [
+      1024,
+      4
+    ],
+    "final_states": [
+      1024,
+      4
+    ],
+    "transport_final_states": [
+      1024,
+      4
+    ],
+    "final_tangents": [
+      1024,
+      4
+    ],
+    "lle": [
+      1024
+    ],
+    "lle_windows": [
+      1024,
+      4
+    ],
+    "status": [
+      1024
+    ],
+    "ranges": [
+      1024,
+      8
+    ],
+    "elapsed": [
+      1024
+    ],
+    "step_counts": [
+      1024,
+      2
+    ],
+    "preliminary_candidate": [
+      1024
+    ]
+  },
+  "stability_scope": "SDIRK2 base is L-stable; accepted Richardson extrapolate is not unconditionally A-stable. Adaptive error control and independent stiff CPU checks are required."
+}
