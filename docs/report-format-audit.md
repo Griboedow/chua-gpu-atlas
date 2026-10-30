@@ -1,6 +1,6 @@
 # GitHub report rendering audit
 
-Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Subsequent passes on 30 October completed at 00:00 UTC ([`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60)), 00:34 UTC ([`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87)) and 01:16 UTC ([`1dc034a`](https://github.com/Griboedow/chua-gpu-atlas/commit/1dc034ad51f993509f70c06229473a3dbfd81c70)).
+Initial published-page check: 29 October 2026, 23:49 UTC, at [`04e00a3`](https://github.com/Griboedow/chua-gpu-atlas/commit/04e00a3c9c0a6856be225d08f593e93169966340). Subsequent passes on 30 October completed at 00:00 UTC ([`e2c70b1`](https://github.com/Griboedow/chua-gpu-atlas/commit/e2c70b18a2e00d523a47c7eb54e68ee02f101b60)), 00:34 UTC ([`d73464c`](https://github.com/Griboedow/chua-gpu-atlas/commit/d73464c9e7d1dbfec35cc9ae377e9a1d42f29e87)), 01:16 UTC ([`1dc034a`](https://github.com/Griboedow/chua-gpu-atlas/commit/1dc034ad51f993509f70c06229473a3dbfd81c70)) and 02:07 UTC ([`ed9517e`](https://github.com/Griboedow/chua-gpu-atlas/commit/ed9517e4eb68d9336e958c553aa669a5f15c13e7)).
 
 **Nineteen distinct formulas in eight reports needed formatting repairs.** The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
@@ -49,9 +49,19 @@ The fourth pass loaded nine published pages at `1dc034a`: the three new NIFTE re
 
 The inspected screenshots include both complete NIFTE figures, the local cubic-mode coefficient matrix and the Rayleigh-pair Lyapunov inequality with its surrounding derivation. Supporting screenshot visits are not counted as additional page checks. Earlier in-memory previews of the NIFTE drafts remain excluded from the published totals.
 
-Across all four passes, **38 distinct pages** have been checked, with **362 math elements across their latest checked versions**. The record contains **49 successful page checks** (23 + 10 + 7 + 9) and 430 formula observations (177 + 111 + 68 + 74). The latest-version totals count each page once: eighteen pages retain their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check and nine their `1dc034a` check. The exact inspected revision is retained for each page; later edits are not implicitly certified.
+After four passes, the record covered **38 distinct pages**, with **362 math elements across their latest checked versions**. It contained **49 successful page checks** (23 + 10 + 7 + 9) and 430 formula observations (177 + 111 + 68 + 74). At that point, eighteen pages retained their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check and nine their `1dc034a` check. The exact inspected revision is retained for each page; later edits are not implicitly certified.
 
 At `1dc034a`, all **227 relative link occurrences** across the 38 documents, including `results/README.md`, resolve to files or directories in its published Git tree. This is a path check, not a certification of external destinations or fragment anchors. The browser checks do not certify every browser or mobile layout, or the scientific content of the figures. Future changes need their own pass.
+
+### Rayleigh numerical results and material-model screening
+
+The fifth pass loaded eight public pages at `ed9517e`: the new Rayleigh numerical report, material-memory screening, meminductor follow-up and third candidate-screening reports, together with the main README, results README, candidate queue and updated Rayleigh structural report. All **102 math elements** rendered without errors, unresolved formulas, red command tokens or math-container overflow. This count includes inline expressions as well as display blocks. Every visible article image loaded successfully. No formatting repairs were needed.
+
+The inspected screenshots show all three complete Rayleigh figures: the survey and stable-cycle controls, the weak-coupling saddle/long-transient comparison, and the independent trajectory's approach to and departure from the saddle cycle. The five-by-five trajectory-dependent Jacobian and its divergence formula were visually checked, as were the material model's transformed equations and three signed cyclic derivatives. Earlier in-memory previews are excluded from the published totals.
+
+Across the five passes, **42 distinct pages** have been checked, with **450 math elements across their latest checked versions**. The record contains **57 successful page checks** (23 + 10 + 7 + 9 + 8) and **532 formula observations** (177 + 111 + 68 + 74 + 102). Each page is counted once in the latest-version totals: eighteen retain their `04e00a3` check, seven their `e2c70b1` check, four their `d73464c` check, five their `1dc034a` check and eight their `ed9517e` check. The fifth pass contains four new pages and four repeated pages; it does not claim that all 42 were revisited at the newest revision.
+
+All **255 relative link occurrences** across those 42 documents resolve against the published Git tree at `ed9517e`. External destinations, fragment anchors, other viewports and later edits remain outside this check.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 

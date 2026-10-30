@@ -1,24 +1,24 @@
 {
-  "checked_at_utc": "2026-10-30T01:16:55.098Z",
+  "checked_at_utc": "2026-10-30T02:07:24.854Z",
   "baseline_commit": "2e20f63",
   "repaired_commit": "04e00a3c9c0a6856be225d08f593e93169966340",
   "repair_commits": [
     "c9daf5b",
     "04e00a3"
   ],
-  "scope": "38 distinct published Markdown pages. Eighteen retain their 04e00a3 check, seven their e2c70b1 check, four their d73464c check, and nine new or affected pages were checked at 1dc034a. Each recorded revision identifies the actual inspected version. Excludes the operational research-state journal. In-memory previews are not publication checks.",
+  "scope": "42 distinct published Markdown pages. Eighteen retain their 04e00a3 check, seven their e2c70b1 check, four their d73464c check, five their 1dc034a check, and eight new or affected pages were checked at ed9517e. Each recorded revision identifies the actual inspected version. Excludes the operational research-state journal. In-memory previews are not publication checks.",
   "browser": "Installed Microsoft Edge, headless Chromium via bundled Playwright; live public GitHub pages with JavaScript and MathJax enabled.",
   "viewport": {
     "width": 1320,
     "height": 1000
   },
-  "pages_checked": 38,
-  "rendered_math_elements": 362,
+  "pages_checked": 42,
+  "rendered_math_elements": 450,
   "unresolved_math_elements": 0,
   "error_or_red_command_elements": 0,
   "wide_math_elements_at_checked_viewport": 0,
   "failed_loaded_article_images": 0,
-  "local_relative_links_checked": 227,
+  "local_relative_links_checked": 255,
   "broken_local_relative_links": 0,
   "distinct_formulas_repaired": 19,
   "files_repaired": 8,
@@ -110,9 +110,9 @@
     },
     {
       "file": "docs/candidate-queue.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/candidate-queue.md",
-      "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
-      "checkedAt": "2026-10-30T01:14:32.964Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/candidate-queue.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:19.724Z",
       "heading": "Additional candidate screening",
       "mathCount": 0,
       "errors": [],
@@ -212,6 +212,19 @@
       "brokenImages": []
     },
     {
+      "file": "docs/late-candidate-screening-3.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/late-candidate-screening-3.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:36.154Z",
+      "heading": "Late screening III: mechanochemical models and a consequential version check",
+      "mathCount": 54,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": []
+    },
+    {
       "file": "docs/late-physical-candidates-2.md",
       "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/late-physical-candidates-2.md",
       "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
@@ -291,6 +304,19 @@
       "brokenImages": []
     },
     {
+      "file": "docs/material-memory-screening.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/material-memory-screening.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:29.753Z",
+      "heading": "Material-memory screening: a three-state model that does not need a chaos scan",
+      "mathCount": 31,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
+      "brokenImages": []
+    },
+    {
       "file": "docs/meminductor-energy-audit.md",
       "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/04e00a3/docs/meminductor-energy-audit.md",
       "commit": "04e00a3",
@@ -299,6 +325,19 @@
       "errors": [],
       "unresolved": [],
       "wideMath": [],
+      "brokenImages": []
+    },
+    {
+      "file": "docs/meminductor-followup-audit.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/meminductor-followup-audit.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:33.009Z",
+      "heading": "Physical meminductor: follow-up sources and an inaccessible thesis",
+      "mathCount": 0,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [],
       "brokenImages": []
     },
     {
@@ -402,10 +441,45 @@
       "brokenImages": []
     },
     {
+      "file": "docs/rayleigh-pair-research.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/rayleigh-pair-research.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:26.119Z",
+      "heading": "A thermal spring pair: slow transients, periodic saddles, and a negative chaos search",
+      "mathCount": 3,
+      "errors": [],
+      "unresolved": [],
+      "wideMath": [],
+      "images": [
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/rayleigh-pair-search.png",
+          "visible": true,
+          "complete": true,
+          "width": 2125,
+          "height": 1615
+        },
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/rayleigh-pair-weak-coupling.png",
+          "visible": true,
+          "complete": true,
+          "width": 2040,
+          "height": 850
+        },
+        {
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/rayleigh-pair-saddle-visit.png",
+          "visible": true,
+          "complete": true,
+          "width": 1870,
+          "height": 782
+        }
+      ],
+      "brokenImages": []
+    },
+    {
       "file": "docs/rayleigh-pair-structure.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/rayleigh-pair-structure.md",
-      "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
-      "checkedAt": "2026-10-30T01:14:52.143Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/rayleigh-pair-structure.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:22.918Z",
       "heading": "Structural controls for the quadratic-drag Rayleigh pair",
       "mathCount": 14,
       "errors": [],
@@ -608,9 +682,9 @@
     },
     {
       "file": "README.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/1dc034ad51f993509f70c06229473a3dbfd81c70/README.md",
-      "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
-      "checkedAt": "2026-10-30T01:14:29.758Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/README.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:13.338Z",
       "heading": "Chua GPU Atlas",
       "mathCount": 0,
       "errors": [],
@@ -618,105 +692,105 @@
       "wideMath": [],
       "images": [
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/expanded-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/expanded-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/trajectory-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/trajectory-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/trajectory-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/trajectory-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/window-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/window-rotation.gif",
           "visible": true,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/window-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/window-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/findings.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/findings.png",
           "visible": true,
           "complete": true,
           "width": 2700,
           "height": 1800
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/expanded_extent.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/expanded_extent.png",
           "visible": true,
           "complete": true,
           "width": 2720,
           "height": 1190
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/extent-rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/extent-rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/extent-rotation.gif",
           "visible": false,
           "complete": true,
           "width": 960,
           "height": 640
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/synchronematic_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/synchronematic_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/lce_slider_evidence.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/lce_slider_evidence.png",
           "visible": true,
           "complete": true,
           "width": 2340,
           "height": 1620
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/coupled_operators_lifetimes.png",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/coupled_operators_lifetimes.png",
           "visible": true,
           "complete": true,
           "width": 2040,
           "height": 1530
         },
         {
-          "source": "/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/two_strain_rotation.gif",
+          "source": "/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/two_strain_rotation.gif",
           "visible": true,
           "complete": true,
           "width": 600,
           "height": 600
         },
         {
-          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/1dc034ad51f993509f70c06229473a3dbfd81c70/docs/assets/two_strain_rotation.gif",
+          "source": "https://github.com/Griboedow/chua-gpu-atlas/raw/ed9517e4eb68d9336e958c553aa669a5f15c13e7/docs/assets/two_strain_rotation.gif",
           "visible": false,
           "complete": true,
           "width": 600,
@@ -727,9 +801,9 @@
     },
     {
       "file": "results/README.md",
-      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/1dc034ad51f993509f70c06229473a3dbfd81c70/results/README.md",
-      "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
-      "checkedAt": "2026-10-30T01:15:25.129Z",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/ed9517e4eb68d9336e958c553aa669a5f15c13e7/results/README.md",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checkedAt": "2026-10-30T02:06:16.552Z",
       "heading": "Recorded evidence",
       "mathCount": 0,
       "errors": [],
@@ -789,13 +863,13 @@
   "references": [
     "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
   ],
-  "last_checked_revision": "1dc034ad51f993509f70c06229473a3dbfd81c70",
+  "last_checked_revision": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
   "page_count_basis": "Distinct pages, using each page most recent completed public GitHub browser check.",
-  "successful_page_checks_across_passes": 49,
+  "successful_page_checks_across_passes": 57,
   "math_count_basis": "Math elements across the latest checked version of each distinct page; repeated checks are not counted twice.",
-  "math_element_observations_across_passes": 430,
-  "local_relative_link_check_revision": "1dc034ad51f993509f70c06229473a3dbfd81c70",
-  "local_relative_link_count_basis": "Occurrences across the 38 distinct Markdown files at 1dc034a, including results/README.md, resolved against its published Git tree. Fragment anchors and external URLs are outside this path check.",
+  "math_element_observations_across_passes": 532,
+  "local_relative_link_check_revision": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+  "local_relative_link_count_basis": "Occurrences across the 42 distinct Markdown files at ed9517e, including results/README.md, resolved against its published Git tree. Fragment anchors and external URLs are outside this path check.",
   "publication_passes": [
     {
       "commit": "04e00a3c9c0a6856be225d08f593e93169966340",
@@ -888,6 +962,25 @@
       ],
       "formatting_repairs_needed": 0,
       "screenshot_retry": "Rayleigh math validation succeeded, but the screenshot helper initially selected an out-of-range formula index. A separate actual-page screenshot selected the correct inequality and was inspected. Supporting screenshot visits are not additional page checks."
+    },
+    {
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "checked_at_utc": "2026-10-30T02:07:24.854Z",
+      "pages_checked": 8,
+      "rendered_math_elements": 102,
+      "new_distinct_pages": 4,
+      "previously_checked_pages": 4,
+      "files": [
+        "README.md",
+        "results/README.md",
+        "docs/candidate-queue.md",
+        "docs/rayleigh-pair-structure.md",
+        "docs/rayleigh-pair-research.md",
+        "docs/material-memory-screening.md",
+        "docs/meminductor-followup-audit.md",
+        "docs/late-candidate-screening-3.md"
+      ],
+      "formatting_repairs_needed": 0
     }
   ],
   "prepublication_format_preparation": [
@@ -970,6 +1063,24 @@
       "file": "docs/rayleigh-pair-structure.md",
       "content": "Proper modified energy, its derivative and the complete Lyapunov upper-bound inequality, including norms, fractions and powers.",
       "commit": "1dc034ad51f993509f70c06229473a3dbfd81c70",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/rayleigh-pair-research.md",
+      "content": "All three complete published figures: the four-panel parameter survey and stable-cycle controls, weak-coupling saddle/long-transient panels, and independent saddle-visit trajectory with shaded observation intervals.",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/material-memory-screening.md",
+      "content": "Logit-transformed three-state equations, all three signed cyclic predecessor derivatives, and inline bounds/coordinate notation.",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
+      "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
+    },
+    {
+      "file": "docs/late-candidate-screening-3.md",
+      "content": "Five-by-five trajectory-dependent Jacobian with all row/column separators, divergence formula and surrounding inline physical-domain notation.",
+      "commit": "ed9517e4eb68d9336e958c553aa669a5f15c13e7",
       "source": "Actual public GitHub browser screenshot; stored in ignored local outputs only."
     }
   ],

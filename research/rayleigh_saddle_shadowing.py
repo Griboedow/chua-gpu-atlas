@@ -112,7 +112,8 @@ def main():
         residual=np.log(closest[fit_mask])-np.polyval(coefficients,times[fit_mask])
         variance=np.sum((np.log(closest[fit_mask])-np.mean(np.log(closest[fit_mask])))**2)
         growth_fit={'status':'finite geometric departure fit','time_interval_sigma':[1000.,12000.],
-                    'selection':'Post hoc interval and distance cutoff chosen after inspecting the trajectory; ordinary least squares of log distance versus time.',
+                    'interval_selection':'Post hoc chosen after inspecting the proximity/departure data; exploratory agreement, not a preregistered independent test.',
+                    'fit_method':'Unweighted ordinary least squares of natural log phase-minimized Euclidean polygon distance versus canonical sigma, using all saved samples in the stated time and distance filters.',
                     'distance_upper_cutoff':.03,'sample_count':int(np.count_nonzero(fit_mask)),
                     'log_distance_growth_rate':float(coefficients[0]),
                     'R_squared':float(1-np.sum(residual**2)/variance),
