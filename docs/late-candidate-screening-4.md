@@ -2,6 +2,8 @@
 
 Audit: 30 October 2026 UTC. **The exact four-state model is ready for a reproducibility check, but the broad fluidic mechanism already has published chaos.** No trajectories were simulated in this block and no new-attractor claim is made.
 
+**Subsequent check:** the [literal-model CPU study](microfluidic-research.md) did not recover the periodic source control. A [final-supplement audit](microfluidic-source-audit.md) confirms that the printed coefficients match the manuscript, and [structural checks](microfluidic-structure.md) identify physical-domain limits. The text below records the original extraction stage; its proposed simulation is now superseded by those results.
+
 ## Source and scope
 
 Case, Angilella, and Motter [1] model a pressure-driven rigid network using five channel flow rates and one vortex size. Two flow-conservation constraints leave **four independent states**. The primary supplement contains the complete equations and fitted constants. Its bifurcation diagram, Fig. S5, contains periodic and multistable regimes. The separate, isolated chicane model in the main text is planar and must not be mistaken for the full network.

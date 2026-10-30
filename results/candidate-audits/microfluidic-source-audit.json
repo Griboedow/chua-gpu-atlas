@@ -1,0 +1,107 @@
+{
+  "audit_utc": "2026-10-30T03:17:00Z",
+  "status": "source_periodic_control_unresolved_final_supplement_confirmed",
+  "model": {
+    "authors": [
+      "Daniel J. Case",
+      "Jean-Regis Angilella",
+      "Adilson E. Motter"
+    ],
+    "year": 2020,
+    "doi": "10.1126/sciadv.aay6761",
+    "independent_dimension": 4,
+    "scope": "Literal supplementary S1-S2 and S5-S13 closure. No refitted or frozen coefficients."
+  },
+  "primary_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220308/",
+      "kind": "final_primary_main_article"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7220308/supplementaryFiles",
+      "kind": "official_public_supplement_archive",
+      "local_ignored_pdf": "outputs/candidate_research/case2020-published-SM.pdf",
+      "pdf_bytes": 2367829,
+      "pdf_pages": 11,
+      "sha256": "885b93467f60324f762da7bbe7556ff71ebd26199f0c7964f2360689a5b22357",
+      "visually_checked_one_based_pages": [
+        5,
+        9,
+        10
+      ],
+      "source_locations": [
+        "S1-S2",
+        "S5-S13",
+        "Figure S5"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/pdf/2006.09400",
+      "kind": "author_manuscript_with_supplement",
+      "version": "v1",
+      "relevant_final_si_agreement": true
+    }
+  ],
+  "printed_constants": {
+    "r_star": 5.5,
+    "Q3_star": 25,
+    "p": 0.12,
+    "q": 8e-06,
+    "epsilon": 10.9
+  },
+  "coefficient_equations": {
+    "eta": "p + q*Q1",
+    "xi": "r_star**2*eta - Q3_star/r_star",
+    "xi_zero_Q1": 3782.870022539443
+  },
+  "source_discrepancy": {
+    "main_text_describes_eta_xi_positive": true,
+    "figure_S5_approximate_dimensionless_total_flow_range": [
+      400,
+      900
+    ],
+    "xi_negative_on_plotted_forward_flow_range": true,
+    "numerical_control_reference": "results/microfluidic/independent-source-control.json",
+    "equilibrium_Q1": 694.316102856,
+    "equilibrium_eta": 0.12555452882284798,
+    "equilibrium_xi": -0.7474300485633942,
+    "interpretation": "Literal printed equations have not recovered the displayed 250 Pa cycle from three chosen starts. This does not exclude another basin or establish which printed or implementation detail differs."
+  },
+  "source_distinctions": {
+    "figure_S5": "four-state reduced closure",
+    "figure_S2": "Navier-Stokes oscillation periods",
+    "figure_S3": "Navier-Stokes time traces",
+    "epsilon": "constant fitted relaxation parameter",
+    "eta": "flow-dependent fitted coefficient",
+    "xi": "flow-dependent through stated S2 relation",
+    "Lb": "retained constant after source reported no marked improvement with flow dependence",
+    "source_initial_conditions_provided": false,
+    "author_code_in_retrieved_supplement_archive": false,
+    "crossref_correction_relation_retrieved": false,
+    "correction_check_limit": "No relation in retrieved metadata is not proof that no correction exists."
+  },
+  "structural_limits": {
+    "vortex_partial_r": "epsilon*(xi-3*eta*(r-r_star)**2)",
+    "negative_xi_consequence": "Negative scalar partial derivative for positive eta; not a global no-oscillation or no-chaos theorem.",
+    "fixed_sign_feedback_barrier": "Flow derivatives contain Rprime=2*gamma*(r-rb), changing sign across rb; no direct global cyclic-sign theorem in these coordinates.",
+    "physical_domain_reference": "docs/microfluidic-structure.md"
+  },
+  "prior_art": {
+    "closest_primary_doi": "10.1103/PhysRevFluids.10.054401",
+    "closest_primary_url": "https://arxiv.org/html/2505.00068v1",
+    "known_chaos": true,
+    "same_exact_model": false,
+    "distinction": "Different serialized rigid network, with full Navier-Stokes flow-rate chaos.",
+    "exact_closure_priority": "unresolved",
+    "retrieval_limit": "Bounded exact-title/equation and forward-citation audit; no proof of absence."
+  },
+  "decision": "Pause proposed GPU chaos scan until periodic source control or a justified correction is available. Do not repair q/signs/freeze coefficients to fit the desired outcome.",
+  "operations": {
+    "trajectory_integrations_in_this_audit": 0,
+    "gpu_jobs": 0,
+    "author_contact": false,
+    "author_code_executed": false,
+    "source_material_redistributed": false
+  },
+  "report": "docs/microfluidic-source-audit.md"
+}

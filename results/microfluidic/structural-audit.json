@@ -1,0 +1,1035 @@
+{
+  "model": "Literal Case et al. 2020 S5-S13 four-state closure, including positive minor-loss terms and both Q1-dependent vortex coefficients",
+  "primary_source": "https://arxiv.org/pdf/2006.09400",
+  "journal_doi": "10.1126/sciadv.aay6761",
+  "state_order": [
+    "Q1=x",
+    "Q2=y",
+    "Q3=z",
+    "r"
+  ],
+  "scope": "Algebra, conditional boundedness, and equilibrium linear analysis only; no trajectories or scientific novelty claim",
+  "forward_domain": {
+    "definition": "x>0, y>=0, 0<=z<=x, r>=0",
+    "globally_forward_invariant": false,
+    "counterexample_inlet_pressures": [
+      62500.0,
+      62500.0
+    ],
+    "counterexample_state": [
+      1000.0,
+      100.0,
+      0.0,
+      4.1
+    ],
+    "counterexample_vector_field": [
+      -7993.731563421835,
+      -1135.9513274336314,
+      -1442.4778761062043,
+      -258.39465483636366
+    ],
+    "z_zero_boundary_outward_above_y": 64.48200099004198,
+    "r_zero_boundary": "r'=epsilon*z; inward conditional on z>=0",
+    "consequence": "Strict interior starts sufficiently close to the outward z=0 boundary also leave the forward domain; no clipping or sign repair is authorized by the source equations."
+  },
+  "conditional_energy_bound": {
+    "energy_gram_w_y_z": [
+      [
+        155.52,
+        0.0,
+        25.92
+      ],
+      [
+        0.0,
+        384.0,
+        240.0
+      ],
+      [
+        25.92,
+        240.0,
+        289.92
+      ]
+    ],
+    "gram_eigenvalue_min": 86.5404417003018,
+    "gram_eigenvalue_max": 582.1636190956074,
+    "quadratic_z_coefficient_C": 9709.200000000003,
+    "cubic_damping_d": 5.13,
+    "forcing_constant_K": 5288032986.352644,
+    "energy_decay_k": 0.04122552356893078,
+    "limsup_energy_bound_if_forward_complete": 128270850884.66698,
+    "limsup_each_of_w_y_z_bound_if_forward_complete": 188607.97615503316,
+    "limsup_r_bound_if_forward_complete": 161.2312349166869,
+    "qualification": "Conditional on remaining in the regular forward-flow cone for all forward time; not an invariant-set certificate."
+  },
+  "equilibrium_flow_bound_z_at_source": 65.40787672363568,
+  "source_pressure_equilibria": [
+    {
+      "state": [
+        694.3161028559958,
+        36.429512429865085,
+        24.84742620266001,
+        5.297268464173454
+      ],
+      "field_residual_inf": 1.0231815394945443e-11,
+      "eigenvalues_real_imag": [
+        [
+          -11.85304725972476,
+          0.0
+        ],
+        [
+          -8.373456777304883,
+          18.324148714373447
+        ],
+        [
+          -8.373456777304883,
+          -18.324148714373447
+        ],
+        [
+          -52.39025781786858,
+          0.0
+        ]
+      ],
+      "maximum_eigenvalue_real_part": -8.373456777304883,
+      "eta": 0.12555452882284796,
+      "xi": -0.7474300485633951,
+      "forward_flow_domain": true
+    }
+  ],
+  "equal_pressure_linear_controls": [
+    {
+      "equal_inlet_dimensionless_pressure": 40000.0,
+      "equal_inlet_pressure_Pa": 160.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            529.0218425398152,
+            19.73513284242041,
+            24.214885875652495,
+            4.613031997570838
+          ],
+          "field_residual_inf": 5.4569682106375694e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.724950574222243,
+              0.0
+            ],
+            [
+              -9.44471057956077,
+              11.386952609200575
+            ],
+            [
+              -9.44471057956077,
+              -11.386952609200575
+            ],
+            [
+              -45.41518421936149,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -9.44471057956077,
+          "eta": 0.12423217474031852,
+          "xi": -0.7874312595599107,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 42500.0,
+      "equal_inlet_pressure_Pa": 170.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            548.4564908332286,
+            21.626011227151587,
+            24.383855328299376,
+            4.773707744701942
+          ],
+          "field_residual_inf": 6.821210263296962e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.754694176261838,
+              0.0
+            ],
+            [
+              -9.048653433659478,
+              13.387157612367753
+            ],
+            [
+              -9.048653433659478,
+              -13.387157612367753
+            ],
+            [
+              -46.11106262666642,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -9.048653433659478,
+          "eta": 0.12438765192666583,
+          "xi": -0.7827280746729044,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 45000.0,
+      "equal_inlet_pressure_Pa": 180.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            567.3770745647284,
+            23.5254960514951,
+            24.50399131728859,
+            4.897570426145304
+          ],
+          "field_residual_inf": 3.410605131648481e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.774535691749549,
+              0.0
+            ],
+            [
+              -8.812207203525709,
+              14.734368581818659
+            ],
+            [
+              -8.812207203525709,
+              -14.734368581818659
+            ],
+            [
+              -46.85814593586238,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.812207203525709,
+          "eta": 0.12453901659651782,
+          "xi": -0.7781492934098817,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 47500.0,
+      "equal_inlet_pressure_Pa": 190.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            585.9783700744908,
+            25.418543106163167,
+            24.59445682830395,
+            4.99638954023067
+          ],
+          "field_residual_inf": 4.092726157978177e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.79036188592609,
+              0.0
+            ],
+            [
+              -8.664553729561035,
+              15.718932017798313
+            ],
+            [
+              -8.664553729561035,
+              -15.718932017798313
+            ],
+            [
+              -47.63055122332672,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.664553729561035,
+          "eta": 0.12468782696059592,
+          "xi": -0.7736477798965193,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 50000.0,
+      "equal_inlet_pressure_Pa": 200.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            604.3580147208986,
+            27.298373976893448,
+            24.664788504817505,
+            5.07653178247474
+          ],
+          "field_residual_inf": 1.0231815394945443e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.80388325657978,
+              0.0
+            ],
+            [
+              -8.569609787258905,
+              16.468146442783283
+            ],
+            [
+              -8.569609787258905,
+              -16.468146442783283
+            ],
+            [
+              -48.41624015989791,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.569609787258905,
+          "eta": 0.12483486411776719,
+          "xi": -0.7691999058920884,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 52500.0,
+      "equal_inlet_pressure_Pa": 210.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            622.5718390113735,
+            29.161698093509266,
+            24.720387822126618,
+            5.141898953380927
+          ],
+          "field_residual_inf": 6.821210263296962e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.815807982189517,
+              0.0
+            ],
+            [
+              -8.506543663956379,
+              17.049711300361942
+            ],
+            [
+              -8.506543663956379,
+              -17.049711300361942
+            ],
+            [
+              -49.20877602803949,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.506543663956379,
+          "eta": 0.12498057471209098,
+          "xi": -0.7647921604137937,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 55000.0,
+      "equal_inlet_pressure_Pa": 220.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            640.6546744746406,
+            31.006924409786965,
+            24.764585652275432,
+            5.195078833738694
+          ],
+          "field_residual_inf": 7.503331289626658e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.826500941356173,
+              0.0
+            ],
+            [
+              -8.462435998178933,
+              17.50400732225489
+            ],
+            [
+              -8.462435998178933,
+              -17.50400732225489
+            ],
+            [
+              -50.0043981821196,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.462435998178933,
+          "eta": 0.12512523739579712,
+          "xi": -0.760416114231683,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 57500.0,
+      "equal_inlet_pressure_Pa": 230.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            658.6296610435287,
+            32.83336766608672,
+            24.799565019847158,
+            5.237881419996821
+          ],
+          "field_residual_inf": 1.0231815394945443e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.836180983346805,
+              0.0
+            ],
+            [
+              -8.428927122614851,
+              17.857003820424584
+            ],
+            [
+              -8.428927122614851,
+              -17.857003820424584
+            ],
+            [
+              -50.800773467299415,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.428927122614851,
+          "eta": 0.12526903728834823,
+          "xi": -0.7560661674820119,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 60000.0,
+      "equal_inlet_pressure_Pa": 240.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            676.5129202638477,
+            34.64085451875194,
+            24.82682375867115,
+            5.271619548429006
+          ],
+          "field_residual_inf": 7.503331289626658e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.844994480418006,
+              0.0
+            ],
+            [
+              -8.400488949580073,
+              18.1262800020362
+            ],
+            [
+              -8.400488949580073,
+              -18.1262800020362
+            ],
+            [
+              -51.5963936119772,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.400488949580073,
+          "eta": 0.12541210336211078,
+          "xi": -0.7517384187506946,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 62500.0,
+      "equal_inlet_pressure_Pa": 250.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            694.3161028559958,
+            36.429512429865085,
+            24.84742620266001,
+            5.297268464173454
+          ],
+          "field_residual_inf": 1.0231815394945443e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.85304725972476,
+              0.0
+            ],
+            [
+              -8.373456777304883,
+              18.324148714373447
+            ],
+            [
+              -8.373456777304883,
+              -18.324148714373447
+            ],
+            [
+              -52.39025781786858,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.373456777304883,
+          "eta": 0.12555452882284796,
+          "xi": -0.7474300485633951,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 65000.0,
+      "equal_inlet_pressure_Pa": 260.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            712.0478635743997,
+            38.199650301487566,
+            24.862148498750376,
+            5.315562256598435
+          ],
+          "field_residual_inf": 8.185452315956354e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.860420153083652,
+              0.0
+            ],
+            [
+              -8.345453679058256,
+              18.459406104481786
+            ],
+            [
+              -8.345453679058256,
+              -18.459406104481786
+            ],
+            [
+              -53.1816945704404,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.345453679058256,
+          "eta": 0.1256963829085952,
+          "xi": -0.743138962469541,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 67500.0,
+      "equal_inlet_pressure_Pa": 270.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            729.71475250091,
+            39.95168865555408,
+            24.871566125847206,
+            5.327054757054013
+          ],
+          "field_residual_inf": 7.503331289626658e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.86717729266494,
+              0.0
+            ],
+            [
+              -8.315034030211507,
+              18.53836725050423
+            ],
+            [
+              -8.315034030211507,
+              -18.53836725050423
+            ],
+            [
+              -53.97025695415964,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.315034030211507,
+          "eta": 0.12583771802000726,
+          "xi": -0.7388635753493262,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 70000.0,
+      "equal_inlet_pressure_Pa": 280.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            747.3217679814907,
+            41.68611826563915,
+            24.87610797110663,
+            5.33215909222546
+          ],
+          "field_residual_inf": 4.092726157978177e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.873370876767067,
+              0.0
+            ],
+            [
+              -8.281457630660393,
+              18.56550160958844
+            ],
+            [
+              -8.281457630660393,
+              -18.56550160958844
+            ],
+            [
+              -54.75565938924463,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.281457630660393,
+          "eta": 0.1259785741438519,
+          "xi": -0.7346026776030254,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 72500.0,
+      "equal_inlet_pressure_Pa": 290.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            764.8727011934019,
+            43.403476105825355,
+            24.876089869722755,
+            5.331173617106786
+          ],
+          "field_residual_inf": 1.0913936421275139e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.87904407330914,
+              0.0
+            ],
+            [
+              -8.244546597291755,
+              18.543828053649424
+            ],
+            [
+              -8.244546597291755,
+              -18.543828053649424
+            ],
+            [
+              -55.537739135474325,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.244546597291755,
+          "eta": 0.1261189816095472,
+          "xi": -0.7303553517657426,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 75000.0,
+      "equal_inlet_pressure_Pa": 300.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            782.3703436224337,
+            45.10433254936342,
+            24.87173468613541,
+            5.3242985821150945
+          ],
+          "field_residual_inf": 9.549694368615746e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.884232863602687,
+              0.0
+            ],
+            [
+              -8.204598315533794,
+              18.475154423196056
+            ],
+            [
+              -8.204598315533794,
+              -18.475154423196056
+            ],
+            [
+              -56.31643354936852,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.204598315533794,
+          "eta": 0.12625896274897946,
+          "xi": -0.726120922297917,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 77500.0,
+      "equal_inlet_pressure_Pa": 310.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            799.8165964633067,
+            46.78928653080568,
+            24.86318281586384,
+            5.31164599578248
+          ],
+          "field_residual_inf": 1.1596057447604835e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.888967232385397,
+              0.0
+            ],
+            [
+              -8.162339579622667,
+              18.36020692705063
+            ],
+            [
+              -8.162339579622667,
+              -18.36020692705063
+            ],
+            [
+              -57.09176815027498,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.162339579622667,
+          "eta": 0.12639853277170646,
+          "xi": -0.7218989291104254,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 80000.0,
+      "equal_inlet_pressure_Pa": 320.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            817.2125014403074,
+            48.458967065682515,
+            24.850495058545192,
+            5.293243976704485
+          ],
+          "field_residual_inf": 1.2278178473934531e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.893271911733889,
+              0.0
+            ],
+            [
+              -8.118914377132867,
+              18.198671385344536
+            ],
+            [
+              -8.118914377132867,
+              -18.198671385344536
+            ],
+            [
+              -57.86385291067101,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.118914377132867,
+          "eta": 0.12653770001152245,
+          "xi": -0.7176891201059918,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 82500.0,
+      "equal_inlet_pressure_Pa": 330.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            834.5581988659069,
+            50.11404070066918,
+            24.83364846899892,
+            5.269036060779061
+          ],
+          "field_residual_inf": 1.432454155292362e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.897166774643603,
+              0.0
+            ],
+            [
+              -8.075903028085973,
+              17.989152063935038
+            ],
+            [
+              -8.075903028085973,
+              -17.989152063935038
+            ],
+            [
+              -58.63288573842601,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.075903028085973,
+          "eta": 0.12667646559092724,
+          "xi": -0.7134914613289967,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 85000.0,
+      "equal_inlet_pressure_Pa": 340.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            851.8528067623304,
+            51.75522550486086,
+            24.812524625177087,
+            5.238875208531967
+          ],
+          "field_residual_inf": 1.5006662579253316e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.90066689608942,
+              0.0
+            ],
+            [
+              -8.035375073936791,
+              17.729039241585035
+            ],
+            [
+              -8.035375073936791,
+              -17.729039241585035
+            ],
+            [
+              -59.39916336730339,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.035375073936791,
+          "eta": 0.12681482245409864,
+          "xi": -0.7093061662180618,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 87500.0,
+      "equal_inlet_pressure_Pa": 350.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            869.0942011520607,
+            53.383313406747845,
+            24.78688842682105,
+            5.202511450973358
+          ],
+          "field_residual_inf": 1.432454155292362e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.903782222569609,
+              0.0
+            ],
+            [
+              -7.999983694011924,
+              17.414259033383484
+            ],
+            [
+              -7.999983694011924,
+              -17.414259033383484
+            ],
+            [
+              -60.16310118398749,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -7.999983694011924,
+          "eta": 0.12695275360921648,
+          "xi": -0.7051337487757472,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 90000.0,
+      "equal_inlet_pressure_Pa": 360.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            886.2786579579034,
+            54.99920440130641,
+            24.756353649176525,
+            5.159570988383253
+          ],
+          "field_residual_inf": 1.2278178473934531e-11,
+          "eigenvalues_real_imag": [
+            [
+              -11.906516681301198,
+              0.0
+            ],
+            [
+              -7.973117097363647,
+              17.03885210649827
+            ],
+            [
+              -7.973117097363647,
+              -17.03885210649827
+            ],
+            [
+              -60.925265298577976,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -7.973117097363647,
+          "eta": 0.12709022926366323,
+          "xi": -0.7009751102287334,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 92500.0,
+      "equal_inlet_pressure_Pa": 370.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            903.4002842001945,
+            56.60395902418844,
+            24.720328336745315,
+            5.109522728888678
+          ],
+          "field_residual_inf": 9.549694368615746e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.908866357039257,
+              0.0
+            ],
+            [
+              -7.959134993377992,
+              16.59428023196087
+            ],
+            [
+              -7.959134993377992,
+              -16.59428023196087
+            ],
+            [
+              -61.68642305080279,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -7.959134993377992,
+          "eta": 0.12722720227360154,
+          "xi": -0.6968316766780993,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 95000.0,
+      "equal_inlet_pressure_Pa": 380.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            920.4501059650532,
+            58.198880778168835,
+            24.677927355846187,
+            5.051624958397958
+          ],
+          "field_residual_inf": 8.185452315956354e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.910815926304705,
+              0.0
+            ],
+            [
+              -7.963741292599441,
+              16.068266005754587
+            ],
+            [
+              -7.963741292599441,
+              -16.068266005754587
+            ],
+            [
+              -62.447623397009416,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -7.963741292599441,
+          "eta": 0.12736360084772042,
+          "xi": -0.6927056198110031,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 97500.0,
+      "equal_inlet_pressure_Pa": 390.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            937.4145607685483,
+            59.785650728463125,
+            24.627827951157073,
+            4.984838381646571
+          ],
+          "field_residual_inf": 7.503331289626658e-12,
+          "eigenvalues_real_imag": [
+            [
+              -11.912331478176108,
+              0.0
+            ],
+            [
+              -7.994589682580715,
+              15.442770517061438
+            ],
+            [
+              -7.994589682580715,
+              -15.442770517061438
+            ],
+            [
+              -63.21032905256804,
+              0.0
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -7.994589682580715,
+          "eta": 0.12749931648614837,
+          "xi": -0.6886002217485574,
+          "forward_flow_domain": true
+        }
+      ]
+    },
+    {
+      "equal_inlet_dimensionless_pressure": 100000.0,
+      "equal_inlet_pressure_Pa": 400.0,
+      "bracketed_equilibria": [
+        {
+          "state": [
+            954.272883389063,
+            61.366559207229066,
+            24.568019401075183,
+            4.907678065169971
+          ],
+          "field_residual_inf": 1.2278178473934531e-11,
+          "eigenvalues_real_imag": [
+            [
+              -63.97664477872887,
+              0.0
+            ],
+            [
+              -11.913344957488805,
+              0.0
+            ],
+            [
+              -8.062316182961919,
+              14.69024118136802
+            ],
+            [
+              -8.062316182961919,
+              -14.69024118136802
+            ]
+          ],
+          "maximum_eigenvalue_real_part": -8.062316182961919,
+          "eta": 0.1276341830671125,
+          "xi": -0.6845205076743928,
+          "forward_flow_domain": true
+        }
+      ]
+    }
+  ],
+  "root_search_qualification": "1801 z samples on each admissible resistance branch, then Brent brackets. No certification against unbracketed multiple/tangential roots or bifurcations between pressure samples.",
+  "vortex_xi_positive_only_above_Q1": 3782.870022539443,
+  "vortex_contraction_condition": "For Q1 below the stated threshold, xi<0 and partial r'/partial r=epsilon*(xi-3*eta*(r-rstar)^2)<0; this is not a four-state chaos exclusion.",
+  "energy_identity_check": {
+    "seed": 2026103017,
+    "sample_count": 128,
+    "maximum_scaled_residual": 6.758352901966531e-12
+  },
+  "global_chaos_exclusion": "Not established. The forward cone is not invariant; no global planar reduction or monotone theorem was proved.",
+  "reproduction": "python research/audit_microfluidic_structure.py"
+}

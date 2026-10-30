@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "relative_sup_error": 1.0763169687006677e-11,
+  "settings": {
+    "duration": 10,
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "max_step": 0.005
+  },
+  "scope": "Independent five-flow pressure reconstruction Radau vs reduced-field DOP853, at source 250Pa. No cycle reproduced.",
+  "array_shapes": {
+    "parameters": [
+      2
+    ],
+    "initial_state": [
+      4
+    ],
+    "times": [
+      10001
+    ],
+    "dop853_states": [
+      10001,
+      4
+    ],
+    "independent_radau_states": [
+      10001,
+      4
+    ],
+    "equilibrium_eigenvalues": [
+      4
+    ]
+  }
+}

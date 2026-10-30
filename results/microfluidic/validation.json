@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "errors": {
+    "jacobian": 7.203266535202889e-15,
+    "five_flow_reconstruction": 1.254487327473321e-15,
+    "flow_constraints": 2.4926901213856175e-15
+  },
+  "random_states": 128,
+  "seed": 2026103016,
+  "array_shapes": {}
+}
