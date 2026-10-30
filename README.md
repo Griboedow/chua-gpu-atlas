@@ -47,13 +47,27 @@ This project studies **two different 3D spaces**:
 
 ## What turned out to be interesting?
 
-**A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; a local 41³ zoom reveals thin inclined sheets of regular behavior.
+**A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; continuation now separates **32 periodic-window families** in the local atlas.
 
-![Rotation of the local regular-window surface](docs/assets/window-rotation.gif)
+![All 32 catalogued layers highlighted one at a time, with a matching alpha=9 slice](docs/assets/chua-readme-layers.gif)
 
-*Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive exponents for all three starts. It is clipped at the search box. A five-peak pattern was checked at the highlighted example, not at every surface vertex.*
+*Watch one family at a time: the coordinates and camera stay fixed. The refined view contains **5,447 checked periodic-cycle samples**, including **3,975 new parameter locations**; 4,126 samples lie inside the displayed box. Dots are closed attracting cycles, and connecting facets guide the eye. A colored sheet locates a family; its drawn thickness does not measure the width of its stable window. The label gives the peak count and period of that family's reference cycle.*
 
-**The layer atlas now distinguishes 32 periodic-window families.** Continuation finds thin cores missed by the original mesh, including a 65-maximum cycle whose symmetric stable interval is about 126,000 times narrower than the old beta spacing. Two broad families overlap and support four attracting cycles at the same parameters. The [refined atlas report](docs/chua-refined-atlas.md) includes labelled branches, ancestry, behaviour comparisons, numerical controls, and an offline interactive atlas. The catalogue is not an exhaustive count of every possible layer.
+**More points alone cannot make every thin window visible at this scale.** The separate zoom below resolves the 55- and 65-peak symmetric cores with 25 newly closed cycles each. The narrowest core is about **126,000 times smaller** than the old beta spacing; its new interior beta spacing is about **1.27e-9**.
+
+![Dense family branches over the old sampled mask, and physical-width zooms of the thinnest cores](docs/assets/chua-readme-layer-zoom.png)
+
+*Left: the alpha=9 slice over the original regular-node mask. Upper right: six shrinking windows on one beta scale, with a separate categorical row for each family. Lower right: magnified physical beta intervals; multiplier magnitude below one means the cycle is attracting. Open circles mark the previously estimated boundaries. [Data and reproduction](results/chua-layer-atlas/readme-layer-view/README.md).*
+
+Two broad families overlap and support four attracting cycles at the same parameters. The [refined atlas report](docs/chua-refined-atlas.md) includes the new views, labelled branches, ancestry, behaviour comparisons, numerical controls, and an offline interactive atlas. **The catalogue is not an exhaustive count of every possible layer.**
+
+<details><summary>Original 41³ scan, before resolving individual families</summary>
+
+![Rotation of the original local regular-window surface](docs/assets/window-rotation.gif)
+
+Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive exponents for all three starts. It is clipped at the search box. A five-peak pattern was checked at the highlighted example, not at every surface vertex. This earlier mask does not separate the 32 family identities.
+
+</details>
 
 **See what each family does:** the [32-family portrait gallery](docs/chua-family-gallery.md) shows one orbit, full repeating signal, and peak sequence per family. Its interactive comparison lets you rotate and overlay any two reference trajectories. Similar outlines can hide very different repetition patterns.
 

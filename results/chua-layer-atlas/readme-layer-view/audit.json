@@ -1,0 +1,516 @@
+{
+  "status": "passed",
+  "gates": {
+    "all_families": true,
+    "affine_closure": true,
+    "selected_coverage": true,
+    "affine_multipliers": true,
+    "full_field_controls": true
+  },
+  "families": [
+    {
+      "id": "A01",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 5.53361800825769e-11,
+      "max_expm_rho_error": 6.094271753909197e-10,
+      "independent_controls": [],
+      "elapsed_seconds": 18.015195400002995
+    },
+    {
+      "id": "A02",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 1.3898437956072485e-11,
+      "max_expm_rho_error": 9.318696925220138e-10,
+      "independent_controls": [],
+      "elapsed_seconds": 15.061260800008313
+    },
+    {
+      "id": "A03",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 160,
+      "failures": 0,
+      "max_expm_closure": 8.344658297687602e-12,
+      "max_expm_rho_error": 1.6213164144573966e-10,
+      "independent_controls": [],
+      "elapsed_seconds": 10.654396400001133
+    },
+    {
+      "id": "A04",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 160,
+      "failures": 0,
+      "max_expm_closure": 2.8210989100330153e-11,
+      "max_expm_rho_error": 6.08789463285575e-10,
+      "independent_controls": [],
+      "elapsed_seconds": 18.471185899994452
+    },
+    {
+      "id": "A05",
+      "nodes": 203,
+      "selected_nodes": 203,
+      "new_parameter_locations": 148,
+      "inside_nodes": 160,
+      "failures": 0,
+      "max_expm_closure": 3.546096749573735e-11,
+      "max_expm_rho_error": 2.403961474328753e-10,
+      "independent_controls": [
+        {
+          "index": [
+            1,
+            0
+          ],
+          "success": true,
+          "closure": 2.2308821456817896e-12,
+          "dominant": -0.5000000386977368,
+          "expected": -0.5000000000267244,
+          "multiplier_error": 3.867101239229953e-08
+        },
+        {
+          "index": [
+            11,
+            16
+          ],
+          "success": true,
+          "closure": 4.102829187502266e-13,
+          "dominant": -0.49999994382499097,
+          "expected": -0.4999999999783169,
+          "multiplier_error": 5.615332593356115e-08
+        }
+      ],
+      "elapsed_seconds": 25.620925800001714
+    },
+    {
+      "id": "A06",
+      "nodes": 190,
+      "selected_nodes": 190,
+      "new_parameter_locations": 140,
+      "inside_nodes": 136,
+      "failures": 0,
+      "max_expm_closure": 3.894051747721505e-12,
+      "max_expm_rho_error": 3.540989723660459e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 10.736347099998966
+    },
+    {
+      "id": "E01",
+      "nodes": 76,
+      "selected_nodes": 76,
+      "new_parameter_locations": 55,
+      "inside_nodes": 55,
+      "failures": 0,
+      "max_expm_closure": 4.710242235203742e-13,
+      "max_expm_rho_error": 4.434230760352875e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 1.950576800009003
+    },
+    {
+      "id": "E02",
+      "nodes": 117,
+      "selected_nodes": 117,
+      "new_parameter_locations": 84,
+      "inside_nodes": 85,
+      "failures": 0,
+      "max_expm_closure": 2.514988217683367e-12,
+      "max_expm_rho_error": 1.0692247087717988e-10,
+      "independent_controls": [],
+      "elapsed_seconds": 2.6812509000010323
+    },
+    {
+      "id": "E03",
+      "nodes": 131,
+      "selected_nodes": 131,
+      "new_parameter_locations": 96,
+      "inside_nodes": 95,
+      "failures": 0,
+      "max_expm_closure": 1.7226220450083929e-12,
+      "max_expm_rho_error": 8.827605313399545e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 4.257893100002548
+    },
+    {
+      "id": "E04",
+      "nodes": 131,
+      "selected_nodes": 131,
+      "new_parameter_locations": 96,
+      "inside_nodes": 95,
+      "failures": 0,
+      "max_expm_closure": 5.923261880980135e-12,
+      "max_expm_rho_error": 9.706013770482969e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 6.465149099996779
+    },
+    {
+      "id": "E05",
+      "nodes": 143,
+      "selected_nodes": 143,
+      "new_parameter_locations": 103,
+      "inside_nodes": 101,
+      "failures": 0,
+      "max_expm_closure": 1.9961809982760315e-13,
+      "max_expm_rho_error": 1.0009770790020411e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 2.2320509999990463
+    },
+    {
+      "id": "E06",
+      "nodes": 153,
+      "selected_nodes": 153,
+      "new_parameter_locations": 110,
+      "inside_nodes": 128,
+      "failures": 0,
+      "max_expm_closure": 1.5543122344752192e-13,
+      "max_expm_rho_error": 4.0021874703199956e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 2.525133100003586
+    },
+    {
+      "id": "E07",
+      "nodes": 159,
+      "selected_nodes": 159,
+      "new_parameter_locations": 117,
+      "inside_nodes": 114,
+      "failures": 0,
+      "max_expm_closure": 1.128208637624084e-12,
+      "max_expm_rho_error": 9.534595335480844e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 3.6681982000009157
+    },
+    {
+      "id": "E08",
+      "nodes": 165,
+      "selected_nodes": 165,
+      "new_parameter_locations": 120,
+      "inside_nodes": 116,
+      "failures": 0,
+      "max_expm_closure": 1.0591527654923993e-12,
+      "max_expm_rho_error": 9.137579581874888e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 4.786944200008293
+    },
+    {
+      "id": "E09",
+      "nodes": 193,
+      "selected_nodes": 193,
+      "new_parameter_locations": 139,
+      "inside_nodes": 155,
+      "failures": 0,
+      "max_expm_closure": 4.707789713620514e-12,
+      "max_expm_rho_error": 3.78619802177127e-10,
+      "independent_controls": [
+        {
+          "index": [
+            3,
+            0
+          ],
+          "success": true,
+          "closure": 1.684736794516084e-10,
+          "dominant": 0.250000029699887,
+          "expected": 0.25000000001842926,
+          "multiplier_error": 2.968145773607489e-08
+        },
+        {
+          "index": [
+            1,
+            16
+          ],
+          "success": true,
+          "closure": 9.639677944761615e-12,
+          "dominant": 0.2500001056339587,
+          "expected": 0.24999999999721723,
+          "multiplier_error": 1.0563674146535362e-07
+        }
+      ],
+      "elapsed_seconds": 9.685077500005718
+    },
+    {
+      "id": "E10",
+      "nodes": 145,
+      "selected_nodes": 145,
+      "new_parameter_locations": 105,
+      "inside_nodes": 105,
+      "failures": 0,
+      "max_expm_closure": 3.155253835984695e-13,
+      "max_expm_rho_error": 1.0040301923197603e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 3.3689377999980934
+    },
+    {
+      "id": "E11",
+      "nodes": 98,
+      "selected_nodes": 98,
+      "new_parameter_locations": 71,
+      "inside_nodes": 70,
+      "failures": 0,
+      "max_expm_closure": 1.1570744362643381e-12,
+      "max_expm_rho_error": 2.192557246871729e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 2.331058199997642
+    },
+    {
+      "id": "E12",
+      "nodes": 98,
+      "selected_nodes": 98,
+      "new_parameter_locations": 71,
+      "inside_nodes": 69,
+      "failures": 0,
+      "max_expm_closure": 7.671083420419773e-13,
+      "max_expm_rho_error": 2.489564110419451e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 2.1468404000042938
+    },
+    {
+      "id": "E13",
+      "nodes": 74,
+      "selected_nodes": 74,
+      "new_parameter_locations": 54,
+      "inside_nodes": 53,
+      "failures": 0,
+      "max_expm_closure": 6.697975507563569e-13,
+      "max_expm_rho_error": 2.1758150836603818e-12,
+      "independent_controls": [
+        {
+          "index": [
+            0,
+            9
+          ],
+          "success": true,
+          "closure": 5.806874078806423e-13,
+          "dominant": 0.24999999642985182,
+          "expected": 0.250000000000132,
+          "multiplier_error": 3.5702801826076325e-09
+        },
+        {
+          "index": [
+            1,
+            16
+          ],
+          "success": true,
+          "closure": 1.8432477766339161e-13,
+          "dominant": 0.24999999734104053,
+          "expected": 0.24999999999917288,
+          "multiplier_error": 2.658132353117182e-09
+        }
+      ],
+      "elapsed_seconds": 3.6688744999992196
+    },
+    {
+      "id": "P55",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 8.010558882887153e-11,
+      "max_expm_rho_error": 3.1250123183612644e-08,
+      "independent_controls": [],
+      "elapsed_seconds": 31.271510799997486
+    },
+    {
+      "id": "P65",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 2.0824497681815046e-10,
+      "max_expm_rho_error": 2.1669489894127203e-07,
+      "independent_controls": [
+        {
+          "index": [
+            1,
+            0
+          ],
+          "success": true,
+          "closure": 1.4241885448740277e-11,
+          "dominant": 0.2336063290780407,
+          "expected": 0.23360649372514117,
+          "multiplier_error": 1.646471004812522e-07
+        },
+        {
+          "index": [
+            11,
+            16
+          ],
+          "success": true,
+          "closure": 2.6979918299474548e-11,
+          "dominant": 0.23360587824746676,
+          "expected": 0.2336064909634499,
+          "multiplier_error": 6.127159831448292e-07
+        }
+      ],
+      "elapsed_seconds": 55.76764869999897
+    },
+    {
+      "id": "S01",
+      "nodes": 177,
+      "selected_nodes": 177,
+      "new_parameter_locations": 130,
+      "inside_nodes": 130,
+      "failures": 0,
+      "max_expm_closure": 4.25659507641285e-13,
+      "max_expm_rho_error": 1.4548362514688051e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 4.666806100009126
+    },
+    {
+      "id": "S02",
+      "nodes": 186,
+      "selected_nodes": 186,
+      "new_parameter_locations": 136,
+      "inside_nodes": 139,
+      "failures": 0,
+      "max_expm_closure": 1.2804006010119717e-12,
+      "max_expm_rho_error": 5.930367308337736e-12,
+      "independent_controls": [],
+      "elapsed_seconds": 4.666734400001587
+    },
+    {
+      "id": "S03",
+      "nodes": 203,
+      "selected_nodes": 203,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 1.4359879951797438e-10,
+      "max_expm_rho_error": 1.0672238065501105e-08,
+      "independent_controls": [],
+      "elapsed_seconds": 13.487577899999451
+    },
+    {
+      "id": "S04",
+      "nodes": 202,
+      "selected_nodes": 202,
+      "new_parameter_locations": 148,
+      "inside_nodes": 159,
+      "failures": 0,
+      "max_expm_closure": 3.144706717250756e-12,
+      "max_expm_rho_error": 3.890210376056302e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 7.202342399992631
+    },
+    {
+      "id": "S05",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 150,
+      "inside_nodes": 159,
+      "failures": 0,
+      "max_expm_closure": 1.1749767825364188e-11,
+      "max_expm_rho_error": 1.2261835991012049e-09,
+      "independent_controls": [],
+      "elapsed_seconds": 10.796687399997609
+    },
+    {
+      "id": "S06",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 1.4308554341369017e-11,
+      "max_expm_rho_error": 5.609024356090231e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 13.652891699995962
+    },
+    {
+      "id": "S07",
+      "nodes": 204,
+      "selected_nodes": 204,
+      "new_parameter_locations": 149,
+      "inside_nodes": 158,
+      "failures": 0,
+      "max_expm_closure": 2.4317714508725885e-11,
+      "max_expm_rho_error": 4.350283688836498e-09,
+      "independent_controls": [],
+      "elapsed_seconds": 19.36955950000265
+    },
+    {
+      "id": "S08",
+      "nodes": 207,
+      "selected_nodes": 207,
+      "new_parameter_locations": 151,
+      "inside_nodes": 159,
+      "failures": 0,
+      "max_expm_closure": 1.0613732115416497e-13,
+      "max_expm_rho_error": 8.434919429589627e-13,
+      "independent_controls": [
+        {
+          "index": [
+            1,
+            0
+          ],
+          "success": true,
+          "closure": 7.888134589961737e-14,
+          "dominant": 0.25000000030102143,
+          "expected": 0.2500000000001019,
+          "multiplier_error": 3.0091951153110585e-10
+        },
+        {
+          "index": [
+            9,
+            16
+          ],
+          "success": true,
+          "closure": 2.298161660974074e-13,
+          "dominant": 0.24999999635399417,
+          "expected": 0.2499999999999475,
+          "multiplier_error": 3.6459533170329905e-09
+        }
+      ],
+      "elapsed_seconds": 4.500972599998931
+    },
+    {
+      "id": "S09",
+      "nodes": 187,
+      "selected_nodes": 187,
+      "new_parameter_locations": 137,
+      "inside_nodes": 141,
+      "failures": 0,
+      "max_expm_closure": 2.5264235148370062e-12,
+      "max_expm_rho_error": 1.1247891507082386e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 6.496625899992068
+    },
+    {
+      "id": "S10",
+      "nodes": 189,
+      "selected_nodes": 189,
+      "new_parameter_locations": 139,
+      "inside_nodes": 137,
+      "failures": 0,
+      "max_expm_closure": 2.9547475577373916e-12,
+      "max_expm_rho_error": 2.8911983918078477e-11,
+      "independent_controls": [],
+      "elapsed_seconds": 9.39489219999814
+    },
+    {
+      "id": "S11",
+      "nodes": 184,
+      "selected_nodes": 184,
+      "new_parameter_locations": 134,
+      "inside_nodes": 139,
+      "failures": 0,
+      "max_expm_closure": 1.503241975342462e-13,
+      "max_expm_rho_error": 6.989964163039986e-13,
+      "independent_controls": [],
+      "elapsed_seconds": 3.3400779999938095
+    }
+  ],
+  "total_nodes": 5447,
+  "new_parameter_locations": 3975,
+  "inside_nodes": 4126,
+  "failures": 0,
+  "scope": "Targeted display refinement of the existing 32-family catalogue, not a new exhaustive search."
+}

@@ -9,6 +9,7 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | `atlas.html` | Offline interactive atlas; download and open in a browser |
 | `family-gallery.html`, `family-portraits-*.pdf` | Offline two-family comparison and two overview portrait sheets; all 32 individual PNG cards are in `docs/assets/chua-families` |
 | `gallery-checks.json` | Checks on the plotted arrays: finite samples, period duration, expected peak counts and small endpoint gaps; not a new stability certificate |
+| [`readme-layer-view/`](readme-layer-view/README.md) | Denser 5,447-sample view of the same 32 families, 50 thin-core interior samples, numerical checks, retained P65 normalization attempt, and reproduction commands for the main-page animation and zoom |
 | `family-registry.json` | 32 normalized roots, identities, source candidates, and ancestry |
 | `family-catalog.csv`, `family-behavior.json`, `family-orbits.npz` | Periods, maxima, symmetry, state statistics, contraction, sampled orbits |
 | `*-sheet.json` | Continued representatives and available fold/symmetry boundaries; missing samples stay explicit |
@@ -27,7 +28,7 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 
 Arrays in `offcenter-raw.npz` retain the name used by the scanner so the verification scripts can read the compact file directly. It is not byte-identical to the original raw output. `raw-provenance.json` records the original hash and retained arrays. Sampled arc geometry is removed from published JSON; flight times, region itineraries, parameters and checks are retained. Regenerate an arc with `Flights.record(beta, q, True)` using the stored model and itinerary. A node-specific `regions`/`targets` pair takes precedence over the sheet-level template.
 
-E09's initial continuation is excluded from the displayed atlas because local branch continuity was not established. Its rebuilt samples use the automatic event map and bounded small-step affine corrections, with five paths cross-checked between the two methods. E13 remains partially sampled. Missing points, including any stopped by a per-node continuation time budget, must not be interpreted as dynamical boundaries. P65 has a complete representative grid but no claimed complete boundary grid. `P65-boundary-attempt.json` records that unsuccessful boundary attempt.
+E09's initial continuation is excluded from the displayed atlas because local branch continuity was not established. Its rebuilt samples use the automatic event map and bounded small-step affine corrections, with five paths cross-checked between the two methods. E13 remains partially sampled on the original 9 by 9 grid; the newer README view recovers all selected locations near the visible box. Missing points, including any stopped by a per-node continuation time budget, must not be interpreted as dynamical boundaries. P65 has a complete representative grid but no claimed complete boundary grid. `P65-boundary-attempt.json` records that unsuccessful boundary attempt.
 
 ## Recheck the published evidence
 
