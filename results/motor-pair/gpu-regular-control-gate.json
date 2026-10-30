@@ -1,0 +1,105 @@
+{
+  "all_passed": true,
+  "source_control_reference": "results/motor-pair/source-audit.json: control.shooting",
+  "source_shooting_snapshot": {
+    "optimizer_success": true,
+    "optimizer_message": "The solution converged.",
+    "section_state": [
+      0.0,
+      -0.24486585003634062,
+      0.756004071185656
+    ],
+    "period": 141.49201085408458,
+    "dop853_closure_max_abs": 1.832358580144966e-07,
+    "radau_closure_max_abs": 6.610328543173779e-06,
+    "monodromy_max_solver_difference": 0.0059978268297555815,
+    "monodromy": [
+      [
+        -1.9804862458915333,
+        118.00833475787384,
+        -0.39228759598089613
+      ],
+      [
+        -0.050924650722326575,
+        3.0081494250561236,
+        -0.009340378622141255
+      ],
+      [
+        0.5866484135364005,
+        -26.664837850796452,
+        -0.036108277613131484
+      ]
+    ],
+    "poincare_matrix": [
+      [
+        0.05794105334968558,
+        0.0004668112865546855
+      ],
+      [
+        -17.556302786659437,
+        -0.06638720096671771
+      ]
+    ],
+    "poincare_eigenvalues": [
+      [
+        -0.004223073808516055,
+        0.06581110533673658
+      ],
+      [
+        -0.004223073808516055,
+        -0.06581110533673658
+      ]
+    ],
+    "flow_identity_max_abs": 8.727274797948326e-06,
+    "section_velocity": 9.794635570801754,
+    "scope": "Local stability of the reached numerically closed cycle; not uniqueness across basins"
+  },
+  "source_shooting_content_sha256": "2e18b388a1d5ca3ca411c6b12985f9574afee0bcea2bf1cf64c26e1df2f7776b",
+  "periodic": {
+    "passed": true,
+    "period_original": 141.49201085408458,
+    "gpu_balanced_closure": 2.0652340848581474e-07,
+    "gpu_original_time_flow_tangent_mean": 1.9226283863582605e-08,
+    "qualification": "One-period GPU consistency check against a bounded-accuracy published-parameter periodic control, not machine-precision proof of orbit closure"
+  },
+  "negative": {
+    "passed": true,
+    "theorem": "The exact model has global origin attraction for r<=1, rho>0",
+    "parameters": [
+      [
+        0.01,
+        0.5
+      ],
+      [
+        0.05,
+        0.5
+      ],
+      [
+        1.0,
+        0.5
+      ],
+      [
+        100.0,
+        0.5
+      ]
+    ],
+    "equilibrium_spectral_abscissae": [
+      -0.020425917885201983,
+      -0.11492189406417874,
+      -0.75,
+      -1.0
+    ],
+    "gpu_original_time_leading_estimates": [
+      -0.020425917885608116,
+      -0.11492189406362661,
+      -0.7500720817512463,
+      -1.000754314236941
+    ],
+    "spectral_discrepancy": [
+      4.061334601956901e-13,
+      5.521277879338982e-13,
+      7.208175124628902e-05,
+      0.000754314236941056
+    ]
+  }
+}

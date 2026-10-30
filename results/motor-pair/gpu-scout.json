@@ -1,0 +1,100 @@
+{
+  "settings": {
+    "transient_scaled": 200.0,
+    "observation_scaled": 400.0,
+    "rtol": 1e-08,
+    "atol": 1.0000000000000001e-11,
+    "step_factor": 1.0,
+    "max_steps_per_lane": 8000000,
+    "max_wall_seconds": 600.0,
+    "time_mapping": "s=min(1,rho)*tau; exponent_tau=min(1,rho)*exponent_s",
+    "state_norm": "Euclidean (Q=h/r-Y,Y,Z); final_states retain original (h,Y,Z)",
+    "stability_cap": "h_tau<=step_factor*min(.05,.5/local_Jacobian_row_bound)",
+    "invariant_check": "No clipping; reject accepted step when |Q| or Y^2+(1-Z)^2 exceeds its unit bound by more than 1e-6"
+  },
+  "stats_columns": [
+    "min_Q",
+    "max_Q",
+    "min_Y",
+    "max_Y",
+    "min_Z",
+    "max_Z",
+    "maximum_disk_radius_squared",
+    "maximum_abs_Q",
+    "observed_integrated_divergence",
+    "late_min_H",
+    "late_max_H",
+    "late_min_Y",
+    "late_max_Y",
+    "late_min_Z",
+    "late_max_Z",
+    "unused"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "invariant-cylinder violation",
+    "2": "numerical failure",
+    "3": "step budget incomplete",
+    "4": "wall budget incomplete"
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 324.487663800006,
+  "caveat": "Exact previously published model. Finite-time positivity is preliminary; incomplete lanes are unresolved, not negative results.",
+  "survey": {
+    "rho_range": [
+      0.01,
+      100.0
+    ],
+    "r_range": [
+      0.5,
+      30000.0
+    ],
+    "rho_points": 24,
+    "r_points": 40,
+    "spacing": "logarithmic rectangle, three declared invariant-cylinder starts per tuple",
+    "balanced_starts": [
+      [
+        0.01,
+        0.0,
+        0.0
+      ],
+      [
+        0.2,
+        0.2,
+        0.5
+      ],
+      [
+        -0.5,
+        0.3,
+        1.2
+      ]
+    ],
+    "source": "Exact Oriola 2014 model; broad exploratory dimensionless ratios, not apparatus calibration"
+  },
+  "lanes": 2880,
+  "completed": 2628,
+  "preliminary_count": 8,
+  "preliminary_ids": [
+    437,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446
+  ],
+  "status_counts": {
+    "0": 2628,
+    "1": 0,
+    "2": 0,
+    "3": 252,
+    "4": 0
+  },
+  "source_hash_policy": "Canonical LF for Python/OpenCL source; exact bytes for NPZ data",
+  "source_canonical_lf_sha256": {
+    "research/motor_pair.py": "94412dfffba552255588c7a2c33b84454a7398be6c4e113ca2d06ccbb0cd7071",
+    "research/motor_pair_gpu.py": "5fd53ccb1b4b53b5f3fb08bfce17539d6d676e0876130019c2b7db7db60ad454",
+    "research/motor_pair_gpu.cl": "0bdfd7265d0f96c02a3f92193cb59336510c4bca99b9230fd13469cd34fd4bfd"
+  }
+}

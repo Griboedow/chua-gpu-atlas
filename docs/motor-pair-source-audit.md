@@ -2,6 +2,8 @@
 
 Status: 30 October 2026. This is a source and equivalence audit, with a separate reproducible periodic-control calculation. It is **not a new model, mechanism, or attractor claim**.
 
+The subsequent [GPU survey and independent CPU follow-up](motor-pair-gpu-survey.md) now retain eight numerical chaos candidates in this exact model. That new numerical evidence is documented separately from the source-control and priority audit below.
+
 The starting lead was the two-row flagellar activation model of Alouges et al. (2025). Its five-state first-harmonic equations contain an exact closed three-state core. That core is linearly equivalent, after time and amplitude scaling, to Oriola et al. (2014), Eq. (10). The older paper explicitly tested for chaos and instead reported complex periodic and subharmonic orbits. This makes a further calculation a narrowly defined revisit of an existing question.
 
 ## Exact equations suitable for independent implementation

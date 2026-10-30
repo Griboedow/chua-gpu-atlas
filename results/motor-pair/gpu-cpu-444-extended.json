@@ -1,0 +1,602 @@
+{
+  "parameters": [
+    0.03324597932270942,
+    1347.217044462391
+  ],
+  "source_id": 444,
+  "source_control_exact_sha256": "d8444f7ea17b6e4d228369048016632d098ad141f2432dc5d556328caaac2065",
+  "frame_recovery": "The first audit did not retain the final QR frame. Deterministically replay its saved-endpoint 100+400 tau path and verify state and QR logs before extension; no grid is rerun.",
+  "settings": {
+    "replayed_warm_tau": 100.0,
+    "replayed_observation_tau": 400.0,
+    "additional_observation_tau": 3000.0,
+    "window_tau": 100.0,
+    "qr_max": 0.05,
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "maxstep": 0.01,
+    "wall_budget_seconds": 1000.0
+  },
+  "coordinate_norm": "Euclidean Q=h/r-Y,Y,Z; original tau time",
+  "status": "complete",
+  "windows": [
+    {
+      "phase": "replay",
+      "end_tau": 200.00000000001123,
+      "duration": 100.0,
+      "spectrum": [
+        -0.005471899568080839,
+        -0.10569779875434446,
+        -0.1132695651008907
+      ],
+      "mean_divergence": -0.22443926341745699,
+      "sum_trace_error": 5.859028817667422e-12,
+      "flow_exponent": -0.024152627651604183,
+      "telescopic_flow_exponent": -0.024152627650235927,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "replay",
+      "end_tau": 300.00000000003394,
+      "duration": 100.0,
+      "spectrum": [
+        0.02159086972629566,
+        -0.07509666780947334,
+        -0.12263056411782472
+      ],
+      "mean_divergence": -0.1761363621950114,
+      "sum_trace_error": 5.9910121308348605e-12,
+      "flow_exponent": 0.0006109923911980114,
+      "telescopic_flow_exponent": 0.0006109923919901368,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "replay",
+      "end_tau": 400.0000000000567,
+      "duration": 100.0,
+      "spectrum": [
+        0.01864965396218481,
+        -0.04817185333349246,
+        -0.09911505485110332
+      ],
+      "mean_divergence": -0.12863725421608194,
+      "sum_trace_error": 6.329035073804334e-12,
+      "flow_exponent": 0.0006615754814299684,
+      "telescopic_flow_exponent": 0.0006615754816938054,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "replay",
+      "end_tau": 500.0000000000794,
+      "duration": 100.0,
+      "spectrum": [
+        0.03314958346732943,
+        -0.03710864397570646,
+        -0.06542672755721017
+      ],
+      "mean_divergence": -0.06938578805918758,
+      "sum_trace_error": 6.399618612817903e-12,
+      "flow_exponent": 0.0008146006012305744,
+      "telescopic_flow_exponent": 0.000814600601848932,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 600.000000000002,
+      "duration": 100.0,
+      "spectrum": [
+        0.005228392762821573,
+        -0.012038364256576936,
+        -0.03584982125104137
+      ],
+      "mean_divergence": -0.042659792738262495,
+      "sum_trace_error": 6.534239815891851e-12,
+      "flow_exponent": 0.0008171549577138676,
+      "telescopic_flow_exponent": 0.0008171549587311404,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 699.9999999999111,
+      "duration": 100.0,
+      "spectrum": [
+        0.004616585509537185,
+        0.024779968185254332,
+        -0.02214573129179012
+      ],
+      "mean_divergence": 0.0072508224098850335,
+      "sum_trace_error": 6.883635883525585e-12,
+      "flow_exponent": 0.0009921514640778024,
+      "telescopic_flow_exponent": 0.0009921514637085136,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 799.9999999998201,
+      "duration": 100.0,
+      "spectrum": [
+        0.0107817348584113,
+        0.0290802969577857,
+        0.005060292710507124
+      ],
+      "mean_divergence": 0.04492232453390035,
+      "sum_trace_error": 7.196216955662749e-12,
+      "flow_exponent": 0.001164800627374213,
+      "telescopic_flow_exponent": 0.0011648006267624478,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 899.9999999997292,
+      "duration": 100.0,
+      "spectrum": [
+        8.467450871307504e-05,
+        0.0659977630303657,
+        0.02428762909786989
+      ],
+      "mean_divergence": 0.09037006664441707,
+      "sum_trace_error": 7.46840811416405e-12,
+      "flow_exponent": 0.0014649755131062186,
+      "telescopic_flow_exponent": 0.0014649755130433392,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 999.9999999996382,
+      "duration": 100.0,
+      "spectrum": [
+        -0.023400842059881164,
+        0.11984910115467837,
+        0.07223150384077226
+      ],
+      "mean_divergence": 0.16867976294355377,
+      "sum_trace_error": 7.98429766746267e-12,
+      "flow_exponent": 0.0020649413540618673,
+      "telescopic_flow_exponent": 0.002064941353857006,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1099.9999999995473,
+      "duration": 100.0,
+      "spectrum": [
+        0.08643965386945203,
+        0.005896554526619443,
+        0.043625589232894973
+      ],
+      "mean_divergence": 0.13596179763648292,
+      "sum_trace_error": 7.516494093806614e-12,
+      "flow_exponent": 0.045369515249074135,
+      "telescopic_flow_exponent": 0.045369515249840744,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1199.9999999994563,
+      "duration": 100.0,
+      "spectrum": [
+        -0.047497953168804764,
+        -0.013390354248245424,
+        -0.04064326930217712
+      ],
+      "mean_divergence": -0.10153157671258616,
+      "sum_trace_error": 6.641158734055352e-12,
+      "flow_exponent": -0.03983839904473703,
+      "telescopic_flow_exponent": -0.039838399047307085,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1299.9999999993654,
+      "duration": 100.0,
+      "spectrum": [
+        0.011421408854388932,
+        -0.08627477365977967,
+        -0.14801941418460815
+      ],
+      "mean_divergence": -0.22287277898428656,
+      "sum_trace_error": 5.71233726986975e-12,
+      "flow_exponent": -0.014065641193609963,
+      "telescopic_flow_exponent": -0.014065641196288907,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1399.9999999992745,
+      "duration": 100.0,
+      "spectrum": [
+        0.0036327752069699537,
+        -0.07649766960081983,
+        -0.10229253548662155
+      ],
+      "mean_divergence": -0.17515742987468208,
+      "sum_trace_error": 5.789360102426144e-12,
+      "flow_exponent": 0.000581582708444463,
+      "telescopic_flow_exponent": 0.0005815827079246867,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1499.9999999991835,
+      "duration": 100.0,
+      "spectrum": [
+        -0.0020686804831273097,
+        -0.030769525273675963,
+        -0.08566110713639699
+      ],
+      "mean_divergence": -0.11849931288729015,
+      "sum_trace_error": 5.9100990768001796e-12,
+      "flow_exponent": 0.0007022355611062952,
+      "telescopic_flow_exponent": 0.0007022355607087552,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1599.9999999990926,
+      "duration": 100.0,
+      "spectrum": [
+        -0.01692528233331508,
+        0.017502026588754736,
+        -0.0756005992802368
+      ],
+      "mean_divergence": -0.07502385501851486,
+      "sum_trace_error": 6.2822902435755164e-12,
+      "flow_exponent": 0.0007526563820167751,
+      "telescopic_flow_exponent": 0.0007526563817827552,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1699.9999999990016,
+      "duration": 100.0,
+      "spectrum": [
+        0.028300363729168204,
+        -0.023765230801210898,
+        -0.03971462881321989
+      ],
+      "mean_divergence": -0.03517949587877388,
+      "sum_trace_error": 6.4887073492059246e-12,
+      "flow_exponent": 0.0008537744407214732,
+      "telescopic_flow_exponent": 0.0008537744404191052,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1799.9999999989107,
+      "duration": 100.0,
+      "spectrum": [
+        0.020685804431075674,
+        0.009114683043893027,
+        -0.024390012728115654
+      ],
+      "mean_divergence": 0.005410474753801075,
+      "sum_trace_error": 6.948032149622918e-12,
+      "flow_exponent": 0.000979671612206106,
+      "telescopic_flow_exponent": 0.0009796716109336534,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1899.9999999988197,
+      "duration": 100.0,
+      "spectrum": [
+        0.026689997642818618,
+        0.03168319365252565,
+        -0.030830111360553917
+      ],
+      "mean_divergence": 0.027543079941857354,
+      "sum_trace_error": 7.067004759164774e-12,
+      "flow_exponent": 0.001062615395261023,
+      "telescopic_flow_exponent": 0.0010626153954075633,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 1999.9999999987288,
+      "duration": 100.0,
+      "spectrum": [
+        0.028631744816178837,
+        0.04472208616150725,
+        0.024389943132105983
+      ],
+      "mean_divergence": 0.09774377411743339,
+      "sum_trace_error": 7.64131868891127e-12,
+      "flow_exponent": 0.001496286423698231,
+      "telescopic_flow_exponent": 0.0014962864242490847,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2099.999999998874,
+      "duration": 100.0,
+      "spectrum": [
+        0.03531393770058359,
+        0.06875461583986375,
+        0.017207425024617026
+      ],
+      "mean_divergence": 0.12127597857276692,
+      "sum_trace_error": 7.70256747273379e-12,
+      "flow_exponent": 0.0017930858623410497,
+      "telescopic_flow_exponent": 0.0017930858617284818,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2199.999999999238,
+      "duration": 100.0,
+      "spectrum": [
+        0.05350358897930873,
+        0.044345190969954144,
+        0.048593812493496216
+      ],
+      "mean_divergence": 0.1464425924504404,
+      "sum_trace_error": 7.681304481366168e-12,
+      "flow_exponent": 0.032927051474525106,
+      "telescopic_flow_exponent": 0.032927051476717824,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2299.9999999996016,
+      "duration": 100.0,
+      "spectrum": [
+        -0.020917331959578105,
+        -0.007218652541669321,
+        -0.01630290430274993
+      ],
+      "mean_divergence": -0.044438888797243836,
+      "sum_trace_error": 6.753522185931615e-12,
+      "flow_exponent": -0.02148871208718223,
+      "telescopic_flow_exponent": -0.021488712087042092,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2399.9999999999654,
+      "duration": 100.0,
+      "spectrum": [
+        0.00015258265858080804,
+        -0.10449637056907751,
+        -0.12596217735623
+      ],
+      "mean_divergence": -0.23030596526115804,
+      "sum_trace_error": 5.568630001562269e-12,
+      "flow_exponent": -0.01968305234449142,
+      "telescopic_flow_exponent": -0.019683052346421467,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2500.0000000003292,
+      "duration": 100.0,
+      "spectrum": [
+        -0.003784068172656024,
+        -0.0608663889544297,
+        -0.1118131297728035
+      ],
+      "mean_divergence": -0.17646358689395875,
+      "sum_trace_error": 5.9304738897481e-12,
+      "flow_exponent": 0.0005864226726148449,
+      "telescopic_flow_exponent": 0.0005864226733910545,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2600.000000000693,
+      "duration": 100.0,
+      "spectrum": [
+        0.011785956555009873,
+        -0.06481537544897258,
+        -0.06912771165894821
+      ],
+      "mean_divergence": -0.1221571305467602,
+      "sum_trace_error": 6.150706610696943e-12,
+      "flow_exponent": 0.0007118459391955799,
+      "telescopic_flow_exponent": 0.000711845942087887,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2700.000000001057,
+      "duration": 100.0,
+      "spectrum": [
+        0.016678317634821315,
+        -0.016168680542278067,
+        -0.0652338866504622
+      ],
+      "mean_divergence": -0.06472424955146072,
+      "sum_trace_error": 6.4582383885181115e-12,
+      "flow_exponent": 0.0008112944197877911,
+      "telescopic_flow_exponent": 0.0008112944208816554,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2800.0000000014206,
+      "duration": 100.0,
+      "spectrum": [
+        0.02400808506234269,
+        -0.013130317089014545,
+        -0.05346747827340443
+      ],
+      "mean_divergence": -0.04258971029364381,
+      "sum_trace_error": 6.432481214346808e-12,
+      "flow_exponent": 0.0007965187756661043,
+      "telescopic_flow_exponent": 0.0007965187742583916,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 2900.0000000017844,
+      "duration": 100.0,
+      "spectrum": [
+        0.006861588016409874,
+        0.010736107050051099,
+        -0.021263184659484693
+      ],
+      "mean_divergence": -0.003665489585995274,
+      "sum_trace_error": 7.028448933965592e-12,
+      "flow_exponent": 0.0009373151420040377,
+      "telescopic_flow_exponent": 0.0009373151425862075,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3000.000000002148,
+      "duration": 100.0,
+      "spectrum": [
+        0.02049323875791935,
+        0.03837657952908847,
+        -0.016409624256795395
+      ],
+      "mean_divergence": 0.04246019403729976,
+      "sum_trace_error": 7.087344044975908e-12,
+      "flow_exponent": 0.0011311706778300299,
+      "telescopic_flow_exponent": 0.0011311706762292377,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3100.000000002512,
+      "duration": 100.0,
+      "spectrum": [
+        0.003902583503534334,
+        0.040487586531305145,
+        0.01922237083852688
+      ],
+      "mean_divergence": 0.06361254088075646,
+      "sum_trace_error": 7.390106304683286e-12,
+      "flow_exponent": 0.0013197982102035354,
+      "telescopic_flow_exponent": 0.0013197982100714982,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3200.000000002876,
+      "duration": 100.0,
+      "spectrum": [
+        0.004298569549538962,
+        0.07752322915358283,
+        0.01880528106046888
+      ],
+      "mean_divergence": 0.10062707977119116,
+      "sum_trace_error": 7.600480245173457e-12,
+      "flow_exponent": 0.001667067010222117,
+      "telescopic_flow_exponent": 0.001667067009769737,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3300.0000000032396,
+      "duration": 100.0,
+      "spectrum": [
+        0.0466849180357142,
+        0.06766739802443221,
+        0.01746431285431002
+      ],
+      "mean_divergence": 0.13181662892222945,
+      "sum_trace_error": 7.772982257847616e-12,
+      "flow_exponent": 0.01635184903628623,
+      "telescopic_flow_exponent": 0.01635184903608131,
+      "upward_section_hits": 1
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3400.0000000036034,
+      "duration": 100.0,
+      "spectrum": [
+        0.02254766877452755,
+        0.017199197745071077,
+        -0.007440787636434707
+      ],
+      "mean_divergence": 0.03230607888997765,
+      "sum_trace_error": 6.813731801003087e-12,
+      "flow_exponent": 0.021978182442424263,
+      "telescopic_flow_exponent": 0.02197818244474249,
+      "upward_section_hits": 0
+    },
+    {
+      "phase": "extension",
+      "end_tau": 3500.000000003967,
+      "duration": 100.0,
+      "spectrum": [
+        -0.02495276734937855,
+        -0.09922540133968019,
+        -0.11591380277452969
+      ],
+      "mean_divergence": -0.24009197145766115,
+      "sum_trace_error": 5.92727644743718e-12,
+      "flow_exponent": -0.04647103138508653,
+      "telescopic_flow_exponent": -0.046471031383838256,
+      "upward_section_hits": 0
+    }
+  ],
+  "max_local_trace_error": 7.396430690143063e-12,
+  "max_local_flow_identity_error": 5.3169346175423475e-12,
+  "qualification": "Finite-time evidence; convergence of the neutral exponent and adequate recurrence count are assessed, not assumed.",
+  "wall_seconds": 438.9800275000016,
+  "elapsed_original": 3500.000000003967,
+  "qr_chunks": 70000,
+  "rejected_qr_chunks": 0,
+  "final_balanced_state": [
+    0.03958724838346906,
+    -0.05343720442801116,
+    0.9971165675426716
+  ],
+  "final_original_state": [
+    -18.65889684826204,
+    -0.05343720442801116,
+    0.9971165675426716
+  ],
+  "final_basis": [
+    [
+      -0.7820335223987034,
+      -0.5523377099009984,
+      -0.28869815390126224
+    ],
+    [
+      0.6196672059465185,
+      -0.6395971980100976,
+      -0.454893370112235
+    ],
+    [
+      0.06660423199100386,
+      -0.5346386429346015,
+      0.8424520151094282
+    ]
+  ],
+  "observation_log_sums": [
+    40.11154534788171,
+    -16.101649005371318,
+    -131.76356695180647
+  ],
+  "integrated_trace": -107.75367058640349,
+  "integrated_normalized_flow_log": -2.4298331880889323,
+  "next_qr_interval": 0.05,
+  "cumulative_observed_tau": 3400.0,
+  "cumulative_spectrum": [
+    0.011797513337612267,
+    -0.004735779119226858,
+    -0.03875399027994308
+  ],
+  "cumulative_sum_trace_error": 6.733115503052164e-12,
+  "mean_divergence": -0.03169225605482456,
+  "cumulative_flow_exponent": -0.0007146568200261566,
+  "cumulative_telescopic_flow_exponent": -0.0007146568199907733,
+  "observed_section_hits": 15,
+  "replay_verification": {
+    "endpoint_max_error": 0.0,
+    "spectrum_max_error": 0.0,
+    "passed": true
+  },
+  "extension_spectrum": [
+    0.011106574863036189,
+    0.0035019491273100786,
+    -0.030573125263034497
+  ],
+  "extension_completed_tau": 3000.0,
+  "sampled_domain": {
+    "maximum_abs_Q": 0.0454992734743927,
+    "maximum_disk_radius_squared": 0.012544987257390566
+  }
+}

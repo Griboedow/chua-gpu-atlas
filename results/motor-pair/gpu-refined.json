@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "transient_scaled": 400.0,
+    "observation_scaled": 800.0,
+    "rtol": 1e-10,
+    "atol": 1e-13,
+    "step_factor": 0.5,
+    "max_steps_per_lane": 80000000,
+    "max_wall_seconds": 600.0,
+    "time_mapping": "s=min(1,rho)*tau; exponent_tau=min(1,rho)*exponent_s",
+    "state_norm": "Euclidean (Q=h/r-Y,Y,Z); final_states retain original (h,Y,Z)",
+    "stability_cap": "h_tau<=step_factor*min(.05,.5/local_Jacobian_row_bound)",
+    "invariant_check": "No clipping; reject accepted step when |Q| or Y^2+(1-Z)^2 exceeds its unit bound by more than 1e-6"
+  },
+  "stats_columns": [
+    "min_Q",
+    "max_Q",
+    "min_Y",
+    "max_Y",
+    "min_Z",
+    "max_Z",
+    "maximum_disk_radius_squared",
+    "maximum_abs_Q",
+    "observed_integrated_divergence",
+    "late_min_H",
+    "late_max_H",
+    "late_min_Y",
+    "late_max_Y",
+    "late_min_Z",
+    "late_max_Z",
+    "unused"
+  ],
+  "status_codes": {
+    "0": "completed",
+    "1": "invariant-cylinder violation",
+    "2": "numerical failure",
+    "3": "step budget incomplete",
+    "4": "wall budget incomplete"
+  },
+  "device": "NVIDIA GeForce GTX 1080",
+  "wall_seconds": 600.0129576999971,
+  "caveat": "Exact previously published model. Finite-time positivity is preliminary; incomplete lanes are unresolved, not negative results.",
+  "source_npz": "results\\motor-pair\\gpu-scout.npz",
+  "source_npz_sha256": "b8ee93d10d399bc3be5232faeb4cabc9cb92dfecf07f9faded3022c1164d64f1",
+  "lanes": 8,
+  "completed": 2,
+  "preliminary_count": 2,
+  "preliminary_ids": [
+    0,
+    1
+  ],
+  "status_counts": {
+    "0": 2,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 6
+  },
+  "source_hash_policy": "Canonical LF for Python/OpenCL source; exact bytes for NPZ data",
+  "source_canonical_lf_sha256": {
+    "research/motor_pair.py": "94412dfffba552255588c7a2c33b84454a7398be6c4e113ca2d06ccbb0cd7071",
+    "research/motor_pair_gpu.py": "f80a44cff223f102af8e328105da6b5f2405b26b878683ed06f3a884c442b035",
+    "research/motor_pair_gpu.cl": "0bdfd7265d0f96c02a3f92193cb59336510c4bca99b9230fd13469cd34fd4bfd"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "scout": {
+    "lanes": 2880,
+    "completed": 2628,
+    "step_budget_incomplete": 252,
+    "preliminary_count": 8
+  },
+  "tightened": {
+    "completed": 8,
+    "minimum_window": 0.008444864853646901,
+    "maximum_window": 0.01602293546006295,
+    "rows": [
+      {
+        "source_id": 437,
+        "rho": 0.03324597932270942,
+        "r": 577.9462797685308,
+        "mean_lle": 0.011574152747865421,
+        "windows": [
+          0.010726337858693197,
+          0.012696535316135897,
+          0.014428872962985692,
+          0.008444864853646901
+        ],
+        "mean_divergence": -0.018136450345569242
+      },
+      {
+        "source_id": 440,
+        "rho": 0.03324597932270942,
+        "r": 766.309432393553,
+        "mean_lle": 0.013035952829726442,
+        "windows": [
+          0.013433420009841586,
+          0.012955941755319065,
+          0.012464229271436483,
+          0.013290220282308633
+        ],
+        "mean_divergence": -0.02218488886633132
+      },
+      {
+        "source_id": 441,
+        "rho": 0.03324597932270942,
+        "r": 1016.0635455781764,
+        "mean_lle": 0.013279684142288908,
+        "windows": [
+          0.012270377646384553,
+          0.014623769344115531,
+          0.014510371214866756,
+          0.011714218363788791
+        ],
+        "mean_divergence": -0.02366199890724225
+      },
+      {
+        "source_id": 442,
+        "rho": 0.03324597932270942,
+        "r": 1016.0635455781764,
+        "mean_lle": 0.012999536529804493,
+        "windows": [
+          0.012982745264985955,
+          0.010341017223522916,
+          0.012847742416811978,
+          0.015826641213897125
+        ],
+        "mean_divergence": -0.02382796224268499
+      },
+      {
+        "source_id": 443,
+        "rho": 0.03324597932270942,
+        "r": 1016.0635455781764,
+        "mean_lle": 0.012771940187298063,
+        "windows": [
+          0.011617822756313576,
+          0.015058038627096983,
+          0.014252246124363361,
+          0.010159653241418333
+        ],
+        "mean_divergence": -0.024935693976355807
+      },
+      {
+        "source_id": 444,
+        "rho": 0.03324597932270942,
+        "r": 1347.217044462391,
+        "mean_lle": 0.014251234659275188,
+        "windows": [
+          0.015995650083082524,
+          0.01602293546006295,
+          0.012538918960558934,
+          0.012447434133396343
+        ],
+        "mean_divergence": -0.023816334633058985
+      },
+      {
+        "source_id": 445,
+        "rho": 0.03324597932270942,
+        "r": 1347.217044462391,
+        "mean_lle": 0.012232321242017435,
+        "windows": [
+          0.012860655472434101,
+          0.013858988676165373,
+          0.011627437066786749,
+          0.010582203752683515
+        ],
+        "mean_divergence": -0.027076428994972347
+      },
+      {
+        "source_id": 446,
+        "rho": 0.03324597932270942,
+        "r": 1347.217044462391,
+        "mean_lle": 0.013472383642688471,
+        "windows": [
+          0.01384694585726391,
+          0.014280181903293065,
+          0.014198199383331587,
+          0.01156420742686532
+        ],
+        "mean_divergence": -0.02341343687187606
+      }
+    ]
+  },
+  "cpu": {
+    "status": "complete",
+    "cumulative_spectrum": [
+      0.011797513337612267,
+      -0.004735779119226858,
+      -0.03875399027994308
+    ],
+    "extension_spectrum": [
+      0.011106574863036189,
+      0.0035019491273100786,
+      -0.030573125263034497
+    ],
+    "observed_tau": 3400.0,
+    "section_returns": 15,
+    "extension_section_returns": 13,
+    "sum_trace_error": 6.733115503052164e-12,
+    "flow_exponent": -0.0007146568200261566,
+    "telescopic_flow_exponent": -0.0007146568199907733
+  },
+  "source_hash_policy": "Exact NPZ bytes; canonical LF text files",
+  "source_sha256": {
+    "gpu-scout.npz": "b8ee93d10d399bc3be5232faeb4cabc9cb92dfecf07f9faded3022c1164d64f1",
+    "gpu-refined.npz": "e767a1af642f06fc536f6a8e3de830a259163bc64354448786ee36245412aa13",
+    "gpu-refined-complete.npz": "c2a5d81e5cb468d52076658384bb444bc248998ebe11d446d3228522eed94f96",
+    "gpu-cpu-444.json": "7f26ccfc99e9e78a6374e53572ec1bdd75b7a140cf7f8d0c53c61a3dbaa14a2a",
+    "gpu-cpu-444-extended.json": "606d3768e145f69cbba60e0dcef78a00a7c4e5f85dd215ac805affd16672a64a",
+    "gpu-cpu-444-extended.npz": "22bff57d42c273c93fc441e2705451625d9e8ff87a2973cd0f173d245dd9102f"
+  },
+  "limitations": [
+    "252 scout trajectories remain step-budget censored; they are not negative results.",
+    "Only one representative has an independent long full-spectrum CPU check.",
+    "Finite-time bounded persistence does not prove asymptotic attraction, scientific priority or new topology.",
+    "The physical parameter rectangle is exploratory, not an apparatus calibration.",
+    "Incomplete historical NPZ mean_divergence_original fields are full-request-normalized partial integrals, not valid means; use only status 0."
+  ]
+}

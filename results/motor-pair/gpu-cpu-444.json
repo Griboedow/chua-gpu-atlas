@@ -1,0 +1,225 @@
+{
+  "source_npz_sha256": "b8ee93d10d399bc3be5232faeb4cabc9cb92dfecf07f9faded3022c1164d64f1",
+  "source_id": 444,
+  "parameters": [
+    0.03324597932270942,
+    1347.217044462391
+  ],
+  "time": "Original dimensionless transition-rate time tau; no slowtime rescaling",
+  "coordinate_norm": "Euclidean Q=h/r-Y,Y,Z",
+  "settings": {
+    "warm": 100.0,
+    "observe": 400.0,
+    "qr_max": 0.05,
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "max_step": 0.01,
+    "wall_budget": 300.0
+  },
+  "runs": [
+    {
+      "label": "saved_endpoint",
+      "start_balanced": [
+        0.03696296284197927,
+        0.01399520069615805,
+        0.998655805551771
+      ],
+      "short_control": {
+        "duration_original": 2.0,
+        "DOP853_Radau_state_error": 1.887379141862766e-15,
+        "DOP853_Radau_monodromy_error": 1.237121516339812e-12,
+        "independent_Oriola_equation7_state_error": 1.4432899320127035e-15,
+        "method": "DOP853/Radau in balanced memory coordinates, plus independent original equation (7), rtol2e-12,atol2e-14,maxstep.002",
+        "passed": true
+      },
+      "status": "complete",
+      "windows": [
+        {
+          "duration": 100.0,
+          "spectrum": [
+            -0.005471899568080839,
+            -0.10569779875434446,
+            -0.1132695651008907
+          ],
+          "mean_divergence": -0.22443926341745699,
+          "spectrum_sum_trace_error": 5.859028817667422e-12,
+          "normalized_flow_exponent": -0.024152627651604183,
+          "telescopic_flow_exponent": -0.024152627650235927,
+          "flow_exponent_discrepancy": 1.3682562027828027e-12
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.02159086972629566,
+            -0.07509666780947334,
+            -0.12263056411782472
+          ],
+          "mean_divergence": -0.1761363621950114,
+          "spectrum_sum_trace_error": 5.9910121308348605e-12,
+          "normalized_flow_exponent": 0.0006109923911980114,
+          "telescopic_flow_exponent": 0.0006109923919901368,
+          "flow_exponent_discrepancy": 7.921254797926824e-13
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.01864965396218481,
+            -0.04817185333349246,
+            -0.09911505485110332
+          ],
+          "mean_divergence": -0.12863725421608194,
+          "spectrum_sum_trace_error": 6.329035073804334e-12,
+          "normalized_flow_exponent": 0.0006615754814299684,
+          "telescopic_flow_exponent": 0.0006615754816938054,
+          "flow_exponent_discrepancy": 2.6383691238696105e-13
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.03314958346732943,
+            -0.03710864397570646,
+            -0.06542672755721017
+          ],
+          "mean_divergence": -0.06938578805918758,
+          "spectrum_sum_trace_error": 6.399618612817903e-12,
+          "normalized_flow_exponent": 0.0008146006012305744,
+          "telescopic_flow_exponent": 0.000814600601848932,
+          "flow_exponent_discrepancy": 6.183575786827822e-13
+        }
+      ],
+      "max_local_trace_error": 6.489694198696938e-12,
+      "max_local_flow_identity_error": 3.8191568093740096e-12,
+      "rejected_qr_chunks": 0,
+      "warm_completed": true,
+      "warm_final_state": [
+        -0.04266431874720563,
+        0.055829824697371494,
+        0.9968850918863552
+      ],
+      "elapsed_original": 500.0000000000794,
+      "qr_chunks": 10000,
+      "final_balanced_state": [
+        -0.022556455814510632,
+        0.04074340970046901,
+        0.9983200802261815
+      ],
+      "final_original_state": [
+        24.501774262014642,
+        0.04074340970046901,
+        0.9983200802261815
+      ],
+      "spectrum": [
+        0.016979551896932205,
+        -0.06651874096825448,
+        -0.10011047790675753
+      ],
+      "mean_divergence": -0.14964966697193494,
+      "spectrum_sum_trace_error": 6.144880160263711e-12,
+      "flow_exponent": -0.005516364794436369,
+      "telescopic_flow_exponent": -0.005516364793675762
+    },
+    {
+      "label": "original_start",
+      "start_balanced": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "short_control": {
+        "duration_original": 2.0,
+        "DOP853_Radau_state_error": 1.1823875212257917e-13,
+        "DOP853_Radau_monodromy_error": 1.397557625182344e-10,
+        "independent_Oriola_equation7_state_error": 5.362377208939506e-13,
+        "method": "DOP853/Radau in balanced memory coordinates, plus independent original equation (7), rtol2e-12,atol2e-14,maxstep.002",
+        "passed": true
+      },
+      "status": "complete",
+      "windows": [
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.0029158235782654808,
+            -0.007933517828235233,
+            -0.011582097115694539
+          ],
+          "mean_divergence": -0.01659979135896277,
+          "spectrum_sum_trace_error": 6.7015215599042224e-12,
+          "normalized_flow_exponent": 0.0008960037999719354,
+          "telescopic_flow_exponent": 0.0008960038010664474,
+          "flow_exponent_discrepancy": 1.0945119593638863e-12
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.02691327214304697,
+            0.04859986817821481,
+            0.002865428239882627
+          ],
+          "mean_divergence": 0.07837856856837855,
+          "spectrum_sum_trace_error": 7.234151055968141e-12,
+          "normalized_flow_exponent": 0.0014773846874626875,
+          "telescopic_flow_exponent": 0.0014773846865355933,
+          "flow_exponent_discrepancy": 9.270941219580164e-13
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.0005490011442562682,
+            0.06591165146324439,
+            0.056084475285976716
+          ],
+          "mean_divergence": 0.12254512790111079,
+          "spectrum_sum_trace_error": 7.633413900975938e-12,
+          "normalized_flow_exponent": 0.0031367968719944197,
+          "telescopic_flow_exponent": 0.003136796870950148,
+          "flow_exponent_discrepancy": 1.0442718738346013e-12
+        },
+        {
+          "duration": 100.0,
+          "spectrum": [
+            0.10554939886722206,
+            0.007583889333618747,
+            0.021072363043913453
+          ],
+          "mean_divergence": 0.13420565125163933,
+          "spectrum_sum_trace_error": 6.8850702916734005e-12,
+          "normalized_flow_exponent": 0.07204337335747936,
+          "telescopic_flow_exponent": 0.07204337335616072,
+          "flow_exponent_discrepancy": 1.318639641922914e-12
+        }
+      ],
+      "max_local_trace_error": 7.239671973024997e-09,
+      "max_local_flow_identity_error": 1.57697310587694e-10,
+      "rejected_qr_chunks": 5,
+      "warm_completed": true,
+      "warm_final_state": [
+        0.0013995415216955965,
+        -0.02794224187268298,
+        0.9992059448894302
+      ],
+      "elapsed_original": 500.000000000083,
+      "qr_chunks": 10049,
+      "final_balanced_state": [
+        -0.04373928641220673,
+        -0.0001333742802632107,
+        0.9643281586549994
+      ],
+      "final_original_state": [
+        -59.10599627081067,
+        -0.0001333742802632107,
+        0.9643281586549994
+      ],
+      "spectrum": [
+        0.033981873933197695,
+        0.02854047278671064,
+        0.017110042363519568
+      ],
+      "mean_divergence": 0.07963238909054175,
+      "spectrum_sum_trace_error": 7.113838407235562e-12,
+      "flow_exponent": 0.019388389679227094,
+      "telescopic_flow_exponent": 0.019388389678678227
+    }
+  ],
+  "caveat": "Finite-time full-spectrum and independent solver evidence; not proof of an attractor or priority.",
+  "wall_seconds": 166.13878009999462
+}

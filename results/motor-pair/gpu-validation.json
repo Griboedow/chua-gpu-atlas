@@ -1,0 +1,136 @@
+{
+  "algebra_max": 2.8679741262394363e-16,
+  "jacobian_transform_max": 2.4176719155173604e-16,
+  "rows": [
+    {
+      "parameters": [
+        0.05,
+        40.0
+      ],
+      "duration_original": 2.0,
+      "status": 0,
+      "solver_state_max_difference": 2.19824158875781e-14,
+      "solver_lle_difference": 9.65005853004186e-13,
+      "gpu_cpu_state_max_difference": 1.0597744903861894e-11,
+      "gpu_cpu_tangent_max_difference": 9.945239076714074e-13,
+      "gpu_cpu_lle_difference": 8.901501757918595e-11,
+      "cpu_lle": 2.9900409348746493,
+      "gpu_lle": 2.9900409347856343,
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.7,
+        400.0
+      ],
+      "duration_original": 0.15,
+      "status": 0,
+      "solver_state_max_difference": 5.551115123125783e-14,
+      "solver_lle_difference": 1.7252865802674933e-13,
+      "gpu_cpu_state_max_difference": 5.2451376575390896e-12,
+      "gpu_cpu_tangent_max_difference": 6.877720615250382e-12,
+      "gpu_cpu_lle_difference": 6.991518475274461e-12,
+      "cpu_lle": 1.76815813307074,
+      "gpu_lle": 1.7681581330637486,
+      "passed": true
+    },
+    {
+      "parameters": [
+        4.5,
+        400.0
+      ],
+      "duration_original": 0.15,
+      "status": 0,
+      "solver_state_max_difference": 4.440892098500626e-14,
+      "solver_lle_difference": 1.4832579608992091e-13,
+      "gpu_cpu_state_max_difference": 4.864109115487736e-12,
+      "gpu_cpu_tangent_max_difference": 7.548503488941094e-12,
+      "gpu_cpu_lle_difference": 1.7814638653135262e-12,
+      "cpu_lle": 1.6318257544426369,
+      "gpu_lle": 1.6318257544408554,
+      "passed": true
+    },
+    {
+      "parameters": [
+        6.0,
+        7600.0
+      ],
+      "duration_original": 0.015,
+      "status": 0,
+      "solver_state_max_difference": 4.3520742565306136e-14,
+      "solver_lle_difference": 4.547473508864641e-13,
+      "gpu_cpu_state_max_difference": 5.763611810039038e-12,
+      "gpu_cpu_tangent_max_difference": 8.716097288363756e-12,
+      "gpu_cpu_lle_difference": 1.8630430531629827e-11,
+      "cpu_lle": 17.523620905122783,
+      "gpu_lle": 17.523620905104153,
+      "passed": true
+    },
+    {
+      "parameters": [
+        6.0,
+        26815.8
+      ],
+      "duration_original": 0.005,
+      "status": 0,
+      "solver_state_max_difference": 4.1300296516055823e-14,
+      "solver_lle_difference": 8.526512829121202e-13,
+      "gpu_cpu_state_max_difference": 5.8331117713805725e-12,
+      "gpu_cpu_tangent_max_difference": 8.829867392812218e-12,
+      "gpu_cpu_lle_difference": 5.417177817435004e-11,
+      "cpu_lle": 52.7141677369898,
+      "gpu_lle": 52.71416773693563,
+      "passed": true
+    },
+    {
+      "parameters": [
+        0.01,
+        0.5
+      ],
+      "duration_original": 2.0,
+      "status": 0,
+      "solver_state_max_difference": 1.3877787807814457e-16,
+      "solver_lle_difference": 1.4918621893400541e-15,
+      "gpu_cpu_state_max_difference": 2.1549428907974288e-13,
+      "gpu_cpu_tangent_max_difference": 5.557221349761221e-13,
+      "gpu_cpu_lle_difference": 3.149563942983491e-14,
+      "cpu_lle": 0.020816917353073804,
+      "gpu_lle": 0.0208169173531053,
+      "passed": true
+    },
+    {
+      "parameters": [
+        100.0,
+        0.5
+      ],
+      "duration_original": 0.2,
+      "status": 0,
+      "solver_state_max_difference": 4.440892098500626e-16,
+      "solver_lle_difference": 4.440892098500626e-15,
+      "gpu_cpu_state_max_difference": 1.3877787807814457e-16,
+      "gpu_cpu_tangent_max_difference": 8.326672684688674e-16,
+      "gpu_cpu_lle_difference": 1.1546319456101628e-14,
+      "cpu_lle": -4.222667828467864,
+      "gpu_lle": -4.222667828467875,
+      "passed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        30000.0
+      ],
+      "duration_original": 0.005,
+      "status": 0,
+      "solver_state_max_difference": 3.9968028886505635e-14,
+      "solver_lle_difference": 2.1813661987835076e-12,
+      "gpu_cpu_state_max_difference": 5.841327421762799e-12,
+      "gpu_cpu_tangent_max_difference": 8.825273845047832e-12,
+      "gpu_cpu_lle_difference": 5.723421736547607e-11,
+      "cpu_lle": 52.76903678105313,
+      "gpu_lle": 52.7690367809959,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "note": "Short controls validate original-time conversion, balanced field/tangent, DOP853 and Radau agreement; not a chaos or source-periodic classification."
+}
