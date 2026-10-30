@@ -2,6 +2,8 @@
 
 **Status: independently checked numerical chaos candidates in a published-model interpretation; scientific novelty and experimental realization remain unconfirmed.** The single operator is equivalent to our previous relay limit. The coupled six-state system is a distinct investigation, and its chaotic examples survive an independent numerical ODE solver. One example also survives an explicitly assumed smooth optical transition.
 
+Follow-up analyses separate two issues: an [order constraint](coupled-operators-order-audit.md) excludes nonperiodic compact equilibrium-free limit sets for real-pole mechanics, while a [priority comparison](coupled-operators-priority-audit.md) identifies older chaotic relay, inertial-neuron and six-state ring circuits. An exact earlier match has not been established; a new feedback mechanism or attractor topology is not claimed.
+
 ![Coupled operator evidence](assets/coupled_operators_1026.png)
 
 ![Camera rotation of a physical projection](assets/coupled_operators_1026.gif)

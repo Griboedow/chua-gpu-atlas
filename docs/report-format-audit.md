@@ -10,6 +10,8 @@ The gel and mineral-protocell follow-up was checked later that morning at [`0069
 
 The Chua-scaling and later source-screening block was inspected at [`a645acc`](https://github.com/Griboedow/chua-gpu-atlas/commit/a645acc86a450b66963cfdd0b10de96e6f404556), with three affected pages repaired and rechecked at [`3713534`](https://github.com/Griboedow/chua-gpu-atlas/commit/3713534a83fea7f1083b5bf371f2a77bb3f368d9).
 
+The DCR and optical-order block was inspected at [`3cf58d0`](https://github.com/Griboedow/chua-gpu-atlas/commit/3cf58d03dc2d0398e084967a726e1a2d64080a82).
+
 **Thirty-six distinct expressions in thirteen reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
@@ -118,9 +120,19 @@ After the thirteen minimal formatting repairs, the three pages were checked at `
 
 The requested relative link from the numerical report to `#frozen-fibers-sampled-from-one-finite-parameter-scout` was actually clicked in Edge. At the repair revision it navigated to the matching immutable structural-report URL, found the heading anchor and scrolled it into the viewport. This verifies that specific fragment; it does not certify other fragment anchors. Supporting navigation and screenshot visits are not extra successful page checks.
 
-The aggregate is **55 distinct pages**, **1,060 math elements across their latest checked versions**, **86 successful page checks**, and **1,258 successful formula observations**. The eleven revision-specific successful groups retain seventeen pages at `04e00a3`, six at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, three at `ecfd8a5`, one at `a99a267`, four at `0e68396`, three at `0069a0a`, five at `a645acc` and three at `3713534`. The five failed follow-up attempts remain separately recorded. Raw-text checks now cover nineteen distinct pages at their stated revisions, not the other 36 retroactively.
+After that block, the aggregate was **55 distinct pages**, **1,060 math elements across their latest checked versions**, **86 successful page checks**, and **1,258 successful formula observations**. The eleven revision-specific successful groups retained seventeen pages at `04e00a3`, six at `e2c70b1`, four at `d73464c`, five at `1dc034a`, four at `ed9517e`, three at `ecfd8a5`, one at `a99a267`, four at `0e68396`, three at `0069a0a`, five at `a645acc` and three at `3713534`. The five failed follow-up attempts remained separately recorded. Raw-text checks covered nineteen distinct pages at their stated revisions, not the other 36 retroactively.
 
 All **338 relative link occurrences** across those 55 documents resolve against the published Git tree at `3713534`, with code/math excluded. The specific frozen-fiber fragment has the additional browser check described above; external destinations, other fragments, other viewports and later edits remain outside scope.
+
+### DCR controls and the optical-order constraint
+
+Six actual public pages were inspected at `3cf58d0`: the three new DCR reports, the optical-order audit, main README and candidate queue. All **175 math elements** rendered correctly, with no error/red tokens, unresolved formulas, overflow or raw dollar/TeX remnants. Visible images loaded. Screenshots were inspected for the complete DCR control figure, comparison table, contact-boundary identities and all six transformed optical equations. No formula repair was needed.
+
+Two existing optical-report fragments in the README were also clicked. Both selected the correct immutable report URL and existing heading IDs. However, after an eight-second wait their headings remained below the viewport in this browser session. This automatic-landing limitation is recorded separately; it is not reported as a successful scroll check, and no speculative Markdown change was made. The path targets are valid. These supporting navigation checks do not add full-page successes or certify the rest of the older target report at this revision.
+
+The aggregate is **59 distinct pages**, **1,235 math elements across their latest checked versions**, **92 successful page checks**, and **1,433 successful formula observations**. This pass adds four new pages and repeats two; all other pages retain the exact earlier revisions in the machine-readable record. The five earlier failed page attempts remain separate. Raw-text checks cover 23 distinct pages, not the other 36 retroactively.
+
+All **360 relative path occurrences** across those 59 documents resolve against the published tree at `3cf58d0`. General fragment anchors, external destinations, other viewports and later edits remain outside that path check; the explicitly tested fragments have the separate results described above.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 

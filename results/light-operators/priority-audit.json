@@ -1,0 +1,178 @@
+{
+  "audit_utc": "2026-10-30T04:54:53.028939+00:00",
+  "target": "Guo2025 two optical operators, continuous-heat six-state interpretation; explicitly modified logistic model",
+  "status": "no_exact_prior_match_verified_broad_mechanism_precedents_found_priority_uncleared",
+  "source_doi": "10.1038/s41467-025-66395-3",
+  "exact_normalization": {
+    "variables": "X=2x-1,V=2v,Y=2y-1,a=2delta-1",
+    "time_changed": false,
+    "P": "(D+1)(D^2+bD+k)",
+    "equations": [
+      "P(D)X_minus=k*tanh((X_plus-a_plus)/(4*w))",
+      "P(D)X_plus=-k*tanh((X_minus-a_minus)/(4*w))"
+    ],
+    "relay_limit": "Replace tanh with sign, away from surfaces.",
+    "proof": "2*S_w(z)-1=tanh(z/(2*w)); P(D)1=k.",
+    "meaning": "Two third-order tanh units with one increasing and one decreasing link; logistic terminology is not mathematical novelty.",
+    "nonlinear_dimension_reduction_established": false
+  },
+  "comparisons": [
+    {
+      "name": "di Bernardo Johansson Vasca2001 relay feedback",
+      "doi": "10.1142/S0218127401002584",
+      "access": "Full cached primary PDF; model and complexity discussion reread",
+      "equations": "qdot=Aq+B*u; y=Cq; u=-sign(y); G=K(s^2+2*sigma*rho*s+rho^2)/[(s^2+2*zeta*omega*s+omega^2)(s+lambda)]",
+      "match_level": "same type of linear denominator and relay feedback; not exact",
+      "difference": [
+        "single relay",
+        "frequency-dependent numerator and relative degree",
+        "normal switch action and sliding",
+        "three states rather than six"
+      ],
+      "chaos_claim_in_source": "Preliminary positive-exponent evidence for a seemingly aperiodic attractor; not represented here as a rigorous theorem."
+    },
+    {
+      "name": "Mondal etal2023 diode-coupled inverter rings",
+      "doi": "10.37936/ecti-eec.2023211.248668",
+      "access": "Complete primary PDF available via web reader; equations1-14 and numerical-results text inspected; local download did not complete and was stopped",
+      "dimension": 6,
+      "equations": [
+        "p1dot=-p1-alpha*p3",
+        "p2dot=-p2-alpha*p1",
+        "p3dot=-beta*p3-alpha*beta*p2-beta*delta*J",
+        "q1dot=-q1-alpha*q3",
+        "q2dot=-q2-alpha*q1",
+        "q3dot=-gamma*q3-alpha*gamma*q2+gamma*delta*J",
+        "J=max(p3-q3-1,0)"
+      ],
+      "match_level": "Two third-order units and coupling-induced complex dynamics; not an exact match",
+      "difference": [
+        "one continuous PWL coupling of coordinate difference",
+        "two internally closed inverter loops",
+        "diode-off linear branch not Hurwitz at displayed parameters",
+        "optical pair uses two bounded cross nonlinearities and Hurwitz relay affine branches"
+      ],
+      "algebra_check": {
+        "first_ring_off_characteristic": "(s+1)^2*(s+beta)+alpha^3*beta",
+        "alpha": 3.6,
+        "beta": 0.1,
+        "cubic_routh_product": 2.52,
+        "constant_term": 4.7656,
+        "conclusion": "Unstable diode-off ring at this tuple; no global nonconjugacy theorem asserted."
+      },
+      "prior_source_gap": {
+        "name": "Hosokawa Nishio Ushida2001",
+        "primary_url": "https://globals.ieice.org/en_transactions/fundamentals/10.1587/e84-a_9_2288/_p",
+        "access": "Publisher abstract only; full equation gap; no unverified DOI copied from secondary bibliography"
+      }
+    },
+    {
+      "name": "Boui etal2025 coupled nonoscillatory inertial neurons",
+      "doi": "10.1016/j.heliyon.2024.e41526",
+      "access": "Complete primary XML recovered from Europe PMC; Eq1 and numerical results inspected",
+      "dimension": 4,
+      "equations": [
+        "qddot+epsilon*qdot=-(q+alpha*r)+c1*tanh(q+alpha*r)",
+        "rddot+epsilon*rdot=-(r+beta*q)+c2*asinh(r+beta*q)"
+      ],
+      "match_level": "coupled inertial nonoscillatory units, chaos and coexistence; not exact",
+      "difference": [
+        "nonlinear self-plus-cross stiffness",
+        "no thermal relaxation",
+        "four states",
+        "multiple equilibria versus unique smooth optical equilibrium"
+      ],
+      "independent_numerical_verification": false
+    },
+    {
+      "name": "monotone cyclic gene filters",
+      "match_level": "exact order-structure relationship only in overdamped optical region",
+      "source": "docs/coupled-operators-order-audit.md",
+      "difference": "Underdamped candidate filters do not factor into two real positive stages; equilibrium-free theorem does not cover those candidates."
+    }
+  ],
+  "forward_audit": {
+    "index": "OpenAlex",
+    "work_id": "W4416430930",
+    "reported_count": 5,
+    "retrieved_count": 5,
+    "records": [
+      {
+        "title": "Time-delay-regulated self-pulsation of a hydrogel layer under constant light",
+        "doi": "https://doi.org/10.1016/j.chaos.2026.118687",
+        "year": 2026
+      },
+      {
+        "title": "Fueling dissipative self-assembly with non-invasive energy inputs",
+        "doi": "https://doi.org/10.1016/j.ccr.2026.217958",
+        "year": 2026
+      },
+      {
+        "title": "Pre-Twist-dependent Configurations of Hydrogel Rings and Their Distinct Modes of Self-sustained Locomotion",
+        "doi": "https://doi.org/10.1007/s10118-026-3646-1",
+        "year": 2026
+      },
+      {
+        "title": "Stochastic Entanglement of Deterministic Origami Tentacles For Robust Robotic Grasping",
+        "doi": "https://doi.org/10.1002/advs.76810",
+        "year": 2026
+      },
+      {
+        "title": "Light-fueled self-cycling dominoes via continuous barrier crossing",
+        "doi": "https://doi.org/10.1016/j.chaos.2026.118988",
+        "year": 2026
+      }
+    ],
+    "inspection": {
+      "10.1016/j.chaos.2026.118687": "Publisher abstract/introduction excerpts; full equations gap",
+      "10.1016/j.ccr.2026.217958": "Metadata only",
+      "10.1007/s10118-026-3646-1": "Metadata only",
+      "10.1002/advs.76810": "Publisher model/methods sections; actuated Cosserat rods, not optical six-state pair",
+      "10.1016/j.chaos.2026.118988": "Publisher abstract/section excerpts; complete equation gap; future issue date November2026 but already indexed online"
+    },
+    "exhaustive": false
+  },
+  "geometry": {
+    "three_dimensional_plot_is_projection": true,
+    "new_topology_established": false,
+    "source": "10.1103/PhysRevE.85.036204",
+    "access": "Publisher abstract; not a complete topological-method audit",
+    "needed": [
+      "full-state recurrence and suitable embedding",
+      "invariant-object asymptotic status",
+      "mechanism and bifurcation/escape analysis",
+      "comparison of exact transfer functions/static nonlinearities"
+    ]
+  },
+  "claims": {
+    "new_feedback_mechanism_established": false,
+    "new_attractor_established": false,
+    "priority_proven": false,
+    "exact_earlier_chaos_match_found": false,
+    "useful_current_scope": "Reproducible numerical study of identified optical model interpretation, explicitly modified finite-width profiles, long transients and persistent candidate coexistence."
+  },
+  "provenance": [
+    {
+      "ignored_cache": "outputs/candidate_research/guo2025-priority-forward.json",
+      "bytes": 143232,
+      "sha256": "2d8382af2e400653fa3f799c85422d9a058f1fbeae35d7a9cc061aee09f095fe"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/guo2025-priority-openalex.json",
+      "bytes": 39635,
+      "sha256": "f79567bfdb51d34d93b04759d3fa07c8bf50c30b4d44fa59476fbd160590f2e9"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/inertial-neurons2025.xml",
+      "bytes": 167919,
+      "sha256": "b0b1ff2022bb7dfa952b24bad2b84770d92daf92f9ca17ff2b65919a366f89ba"
+    },
+    {
+      "ignored_cache": "outputs/candidate_research/relay_ijbc01.pdf",
+      "bytes": 1539999,
+      "sha256": "1f3079102bcea459d27e453f02ddc2b0747aa5ada2241f86930e06da1bf7a972"
+    }
+  ],
+  "simulations": 0,
+  "gpu": false
+}
