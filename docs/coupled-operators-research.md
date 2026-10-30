@@ -4,6 +4,8 @@
 
 Follow-up analyses separate two issues: an [order constraint](coupled-operators-order-audit.md) excludes nonperiodic compact equilibrium-free limit sets for real-pole mechanics, while a [priority comparison](coupled-operators-priority-audit.md) identifies older chaotic relay, inertial-neuron and six-state ring circuits. An exact earlier match has not been established; a new feedback mechanism or attractor topology is not claimed.
 
+A later [periodic-orbit continuation](optical-cycle-continuation.md) connects the capture cycles at widths 0.003, 0.005 and 0.04 through an unstable segment. Two real-multiplier crossings and an independently checked unstable doubled branch support a local subcritical-flip picture near the first crossing. This is a quantitative model observation, not a demonstrated global route to chaos.
+
 ![Coupled operator evidence](assets/coupled_operators_1026.png)
 
 ![Camera rotation of a physical projection](assets/coupled_operators_1026.gif)

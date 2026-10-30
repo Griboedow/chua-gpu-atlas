@@ -1,0 +1,366 @@
+{
+  "records": [
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.0064
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.440703040992374,
+        0.4540315983167276,
+        0.5364542764718654,
+        0.49607656346662904,
+        0.4796768092200969
+      ],
+      "period": 3.6703271004900055,
+      "closure_balanced_max": 3.9997487255178767e-13,
+      "newton_history": [
+        3.9997487255178767e-13
+      ],
+      "multipliers": [
+        [
+          1.0558858883836442,
+          0.0
+        ],
+        [
+          -0.06493169365885897,
+          0.0
+        ],
+        [
+          -0.023726690822078022,
+          0.0
+        ],
+        [
+          0.0006154162154254086,
+          0.0
+        ],
+        [
+          0.0013290379009204302,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0558858883836442,
+      "flow_multiplier_error": 2.450009600901108e-12,
+      "liouville_logdet_error": 4.583000645652646e-13,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.002494984244917009,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 3.922136272811528e-13,
+      "independent_radau_multiplier_error": 8.378343591824988e-13
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.00646
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4417837558674604,
+        0.454046108118592,
+        0.536696955411314,
+        0.4946373812111374,
+        0.4798291253983139
+      ],
+      "period": 3.670234041464114,
+      "closure_balanced_max": 2.55351295663786e-15,
+      "newton_history": [
+        5.216755978570964e-05,
+        4.440600968070527e-06,
+        1.3524193528489312e-07,
+        2.3708654321146364e-10,
+        2.55351295663786e-15
+      ],
+      "multipliers": [
+        [
+          1.0380587935009111,
+          0.0
+        ],
+        [
+          -0.053740365372485346,
+          0.0
+        ],
+        [
+          -0.02883160174221108,
+          0.0
+        ],
+        [
+          0.000622423500855029,
+          0.0
+        ],
+        [
+          0.0013297344357188349,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0380587935009111,
+      "flow_multiplier_error": 2.52926550995881e-12,
+      "liouville_logdet_error": 1.3677947663381929e-12,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.0020659707740573463,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 4.773959005888173e-15,
+      "independent_radau_multiplier_error": 7.493638955885507e-13
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.0065
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4426723278951563,
+        0.4540531631690328,
+        0.5368869088672322,
+        0.4935308894935189,
+        0.4799518111394923
+      ],
+      "period": 3.670172575504107,
+      "closure_balanced_max": 1.0698810209535044e-10,
+      "newton_history": [
+        3.4934547297915675e-05,
+        2.784936744291747e-06,
+        7.512234788532358e-08,
+        1.0698810209535044e-10
+      ],
+      "multipliers": [
+        [
+          1.0263805748811632,
+          0.0
+        ],
+        [
+          -0.03924834200845137,
+          0.0038671353034342862
+        ],
+        [
+          -0.03924834200845137,
+          -0.0038671353034342862
+        ],
+        [
+          0.0006270813809710436,
+          0.0
+        ],
+        [
+          0.0013302095435768462,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0263805748811632,
+      "flow_multiplier_error": 2.3451611987046977e-12,
+      "liouville_logdet_error": 7.105427357601002e-14,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.0017239273010491996,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 1.0698505303470841e-10,
+      "independent_radau_multiplier_error": 6.475284718143737e-13
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.00654
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4438160249324317,
+        0.4540562881166218,
+        0.5371197611636339,
+        0.49219873090181704,
+        0.4801066355662907
+      ],
+      "period": 3.670111572087185,
+      "closure_balanced_max": 7.438934420525448e-14,
+      "newton_history": [
+        3.504254284431019e-05,
+        3.661036972052365e-06,
+        2.0267487830644494e-07,
+        1.4329870325486066e-09,
+        7.438934420525448e-14
+      ],
+      "multipliers": [
+        [
+          1.0148655778455877,
+          0.0
+        ],
+        [
+          -0.037204222692910655,
+          0.013314505604611839
+        ],
+        [
+          -0.037204222692910655,
+          -0.013314505604611839
+        ],
+        [
+          0.0006317268256037071,
+          0.0
+        ],
+        [
+          0.001330693311984844,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0148655778455877,
+      "flow_multiplier_error": 2.1667673328386363e-12,
+      "liouville_logdet_error": 2.948752353404416e-13,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.001297006318444982,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 7.952053293899646e-14,
+      "independent_radau_multiplier_error": 7.001638852033309e-13
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.00657
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4450609181827807,
+        0.45405271468560043,
+        0.5373596581899627,
+        0.49085437699459944,
+        0.4802715767270202
+      ],
+      "period": 3.6700661255338294,
+      "closure_balanced_max": 6.267547205538773e-12,
+      "newton_history": [
+        2.645569982462348e-05,
+        3.342007608590652e-06,
+        3.17156906474618e-07,
+        8.391127005932989e-09,
+        6.267547205538773e-12
+      ],
+      "multipliers": [
+        [
+          1.0063358724445735,
+          0.0
+        ],
+        [
+          -0.03566725188085858,
+          0.01714235425425175
+        ],
+        [
+          -0.03566725188085858,
+          -0.01714235425425175
+        ],
+        [
+          0.0006352017841711662,
+          0.0
+        ],
+        [
+          0.0013310618454367568,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0063358724445735,
+      "flow_multiplier_error": 2.5179781710432384e-12,
+      "liouville_logdet_error": 4.583000645652646e-13,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.0008481603037518992,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 6.267824392869867e-12,
+      "independent_radau_multiplier_error": 6.57376930668363e-13
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.00658
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4456765257221313,
+        0.4540484696970112,
+        0.5374734961411175,
+        0.4902264765488604,
+        0.4803518787091641
+      ],
+      "period": 3.6700510352275164,
+      "closure_balanced_max": 2.0995328776127716e-14,
+      "newton_history": [
+        8.909336803308854e-06,
+        8.936305723270879e-07,
+        4.817178004281231e-08,
+        3.534470773936269e-10,
+        2.0995328776127716e-14
+      ],
+      "multipliers": [
+        [
+          1.0035127940571975,
+          0.0
+        ],
+        [
+          -0.035154232741914995,
+          0.018213467471862768
+        ],
+        [
+          -0.035154232741914995,
+          -0.018213467471862768
+        ],
+        [
+          0.0006363582546396281,
+          0.0
+        ],
+        [
+          0.0013311857798841988,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0035127940571975,
+      "flow_multiplier_error": 3.0952131201001693e-12,
+      "liouville_logdet_error": 4.050093593832571e-13,
+      "method": "DOP853",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.0025,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "half_period_nonclosure": 0.0006318868799720656,
+      "upward_crossings_per_period": 2,
+      "independent_radau_closure": 2.018955165085416e-14,
+      "independent_radau_multiplier_error": 6.522493049138101e-13
+    }
+  ],
+  "interpretation": "Unstable two-crossing periodic branch on the stable-parent side, numerically approaching the first flip. Supports a subcritical local picture; not a rigorously certified normal form or a chaos-crisis mechanism."
+}

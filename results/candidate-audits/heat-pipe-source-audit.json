@@ -1,0 +1,132 @@
+{
+  "audit_utc": "2026-10-30T05:01:00Z",
+  "target": {
+    "authors": [
+      "Carmen Chicone",
+      "Z. C. Feng",
+      "Stephen J. Lombardo"
+    ],
+    "title": "Modeling of oscillating heat pipes: Equilibria, stagnation, startup, bifurcation, oscillation, conductance, and statistics",
+    "doi": "10.1016/j.applthermaleng.2026.129761",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1359431126000694",
+    "reported_dimension": "3N before auditing redundancy and merger events",
+    "full_equations_retrieved": false,
+    "control_tuple_retrieved": false,
+    "author_code_retrieved": false
+  },
+  "status": "source_gated_and_prior_chaos_suspected_in_direct_predecessor",
+  "simulation_ready": false,
+  "new_chaos_claim": false,
+  "simulations_performed": false,
+  "author_code_executed": false,
+  "retrieval": {
+    "final": "Publisher abstract, introduction and section excerpts; direct page returned 403; no full equations.",
+    "ssrn": {
+      "doi": "10.2139/ssrn.5732707",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5732707",
+      "pages_reported": 31,
+      "posted": "2025-11-10",
+      "status": "Indexed metadata retrieved; landing and public PDF delivery requests HTTP 403."
+    },
+    "predecessor": "Public author-upload full text read; final publication version not retrieved.",
+    "repositories": "No verified author code found in bounded title/author/code query; not proof of absence."
+  },
+  "predecessor": {
+    "doi_final": "10.1504/IJMMNO.2024.143238",
+    "doi_early_record": "10.1504/IJMMNO.2024.10059141",
+    "url_read": "https://www.researchgate.net/publication/377035225_Startup_of_oscillating_heat_pipes_via_Hopf_bifurcation",
+    "version": "Author-upload draft, uploaded 2025-01-22; draft pagination",
+    "equation_locations": [
+      "(5)",
+      "(6)",
+      "(12)",
+      "(13)"
+    ],
+    "equations": {
+      "theta_dot": "v_i",
+      "v_dot": "(phi_i/beta_i - phi_(i+1)/beta_(i+1))/gamma_i - nu*v_i",
+      "phi_dot": "e(theta_(i-1)+gamma_(i-1)) + e(theta_i)",
+      "beta_1": "theta_1 + ell - theta_N - gamma_N",
+      "beta_i": "theta_i - theta_(i-1) - gamma_(i-1), i>=2",
+      "e(theta)": "-R*clip(Y(theta)/epsilon,-1,1)",
+      "boundary": "cyclic pressure and meniscus indexing; Y follows the serpentine tube"
+    },
+    "prior_observation": "Section 3.2 pp15-16 already describes prospective chaotic three- and five-slug motion, while leaving exact attractor characterization unproved.",
+    "partial_figure_parameters": {
+      "r_over_L": 0.1,
+      "h_over_L": 0.03,
+      "nu": 0.5,
+      "sigma_definition": "R/epsilon",
+      "N3_sigma": [
+        0.617,
+        1.0
+      ],
+      "N5_sigma": [
+        0.65,
+        0.834
+      ],
+      "approximate_values": [
+        0.617,
+        0.834
+      ]
+    },
+    "missing_for_reproduction": [
+      "Fully specified global geometry mapping Y",
+      "Separate evaporation magnitude R and transition width epsilon",
+      "Exact initial menisci, velocities and vapor masses",
+      "Merger/termination rule and positive-mass treatment"
+    ],
+    "source_known_identity": "S=sum(gamma_i*theta_i)=c1+c2*exp(-nu*t), already explicitly derived on draft p14"
+  },
+  "mathematical_gate": {
+    "scope": "Displayed 2024 equations only, on unwrapped ordered coordinates before mergers; no automatic transfer to 2026 extension.",
+    "momentum": "P=sum(gamma_i*v_i), P_dot=-nu*P. For nu>0 compact recurrent sets have P=0.",
+    "single_pair": "Closed-ring N=1 has zero pressure difference in its sole mechanical equation; it is not the open-ended SBPHP oscillator.",
+    "domain": [
+      "gamma_i>0",
+      "beta_i>0",
+      "phi_i>0"
+    ],
+    "failure_boundaries": [
+      "beta_i=0 is a singular pressure denominator",
+      "evaporation law need not preserve nonnegative vapor mass at phi_i=0"
+    ],
+    "geometry": "The serpentine apparatus is not an attractor; a three-coordinate image of a many-slug state is a projection."
+  },
+  "prior_art": [
+    {
+      "doi": "10.1063/5.0147852",
+      "evidence": "Primary publisher abstract",
+      "result": "Single-branch chaos studied with period doubling, Lyapunov exponent and correlation dimension.",
+      "exact_equivalence": "Not established; full equations not retrieved."
+    },
+    {
+      "doi": "10.1016/j.ijthermalsci.2023.108384",
+      "evidence": "Primary abstract/introduction and section excerpts",
+      "result": "Bifurcation analysis identifies period-doubling and Neimark-Sacker routes; distinct paper from PoF 054113.",
+      "exact_equivalence": "Not established."
+    }
+  ],
+  "forward_check": {
+    "source": "OpenAlex works filter cites:W7120089517",
+    "checked_utc": "2026-10-30",
+    "indexed_count": 1,
+    "citations": [
+      {
+        "doi": "10.1016/j.ijheatmasstransfer.2026.129266",
+        "evidence": "Primary publisher abstract/highlights",
+        "model": "Two-dimensional thermofluidic uniform-diameter versus dual-diameter comparison.",
+        "exact_ODE_chaos_demonstration_found": false,
+        "full_text_checked": false,
+        "date_caveat": "OpenAlex publication 2026-07-13, publisher December 2026 issue; already searchable at audit."
+      }
+    ],
+    "limitation": "Index incompleteness and full-text gaps prevent priority clearance."
+  },
+  "ignored_cache": [
+    "outputs/candidate_research/heat-pipe2026-openalex.json",
+    "outputs/candidate_research/heat-pipe2026-forward.json"
+  ],
+  "decision": "Do not implement a surrogate. Stop target search: 2026 equations unavailable; direct predecessor already suggests chaos. Future work may quantify those existing claims once exact controls and physical-domain rules are complete.",
+  "report": "docs/heat-pipe-source-audit.md"
+}

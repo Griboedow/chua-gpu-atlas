@@ -1,0 +1,203 @@
+{
+  "common_widths": 75,
+  "bidirectional_max_balanced_state_error": 1.3651176951915645e-10,
+  "bidirectional_max_period_error": 2.2241120056776253e-10,
+  "bidirectional_max_matched_multiplier_error": 2.033112422861194e-08,
+  "crossings": [
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.00659249317540286
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4475342805032574,
+        0.454026640878973,
+        0.5377996995807047,
+        0.48846324690209514,
+        0.48058966118538765
+      ],
+      "period": 1.835016111963362,
+      "closure_balanced_max": 3.6359804056473877e-14,
+      "newton_history": [
+        8.749623564563436e-05,
+        5.323590623884655e-08,
+        3.6359804056473877e-14
+      ],
+      "multipliers": [
+        [
+          -1.0000000000005742,
+          0.0
+        ],
+        [
+          -0.050516291648767545,
+          0.1925220518633675
+        ],
+        [
+          -0.050516291648767545,
+          -0.1925220518633675
+        ],
+        [
+          -0.025254736017408807,
+          0.0
+        ],
+        [
+          0.03648755103304777,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0000000000005742,
+      "flow_multiplier_error": 2.651563937124131e-12,
+      "liouville_logdet_error": 1.2434497875801753e-14,
+      "method": "DOP853",
+      "rtol": 3e-12,
+      "atol": 3.0000000000000005e-14,
+      "max_step": 0.005,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "width_bracket": [
+        0.0065,
+        0.007
+      ],
+      "critical_multiplier": -1.0000000000005742,
+      "other_multiplier_max": 0.19903928299615756,
+      "multiplier_derivative_width": -70.1375752851785,
+      "interpretation": "Simple real multiplier crossing -1; flip candidate, nonlinear nondegeneracy not established."
+    },
+    {
+      "parameters": [
+        74.1567393414624,
+        1.784180421282182,
+        0.4139517339970917,
+        0.25683679452165964,
+        0.01388153155928066
+      ],
+      "section_state": [
+        0.4139517339970917,
+        1.4104472492071272,
+        0.4575241116909605,
+        0.5370359966843791,
+        0.5040239665337736,
+        0.47742843241267624
+      ],
+      "period": 1.8345770443383456,
+      "closure_balanced_max": 1.852917264066889e-10,
+      "newton_history": [
+        0.0004435344484701411,
+        3.049702827645479e-06,
+        1.852917264066889e-10
+      ],
+      "multipliers": [
+        [
+          -1.0000000000000158,
+          0.0
+        ],
+        [
+          0.04199964390409519,
+          0.18868407200801504
+        ],
+        [
+          0.04199964390409519,
+          -0.18868407200801504
+        ],
+        [
+          -0.026724725114725435,
+          0.0
+        ],
+        [
+          0.03664723126185775,
+          0.0
+        ]
+      ],
+      "spectral_radius": 1.0000000000000158,
+      "flow_multiplier_error": 1.677965047185807e-13,
+      "liouville_logdet_error": 3.552713678800501e-15,
+      "method": "DOP853",
+      "rtol": 3e-12,
+      "atol": 3.0000000000000005e-14,
+      "max_step": 0.005,
+      "stability": "unstable",
+      "caveat": "Numerical closure and local Floquet stability; no rigorous existence, basin, global branch, or chaos-crisis proof.",
+      "width_bracket": [
+        0.0135,
+        0.014
+      ],
+      "critical_multiplier": -1.0000000000000158,
+      "other_multiplier_max": 0.19330196356373774,
+      "multiplier_derivative_width": 23.360838959485264,
+      "interpretation": "Simple real multiplier crossing -1; flip candidate, nonlinear nondegeneracy not established."
+    }
+  ],
+  "independent_solver_controls": [
+    {
+      "width": 0.003,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 4.326539126964235e-13,
+      "multiplier_max_difference": 8.97163668914908e-12,
+      "liouville_logdet_error": 7.815970093361102e-14,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.2889077700076645
+    },
+    {
+      "width": 0.005,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 4.313216450668733e-14,
+      "multiplier_max_difference": 2.9715209459713066e-11,
+      "liouville_logdet_error": 1.7763568394002505e-15,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.2896286277546065
+    },
+    {
+      "width": 0.01,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 1.466162746766031e-10,
+      "multiplier_max_difference": 2.0362940500451288e-11,
+      "liouville_logdet_error": 1.2434497875801753e-14,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.2895607819512682
+    },
+    {
+      "width": 0.04,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 3.008704396734174e-14,
+      "multiplier_max_difference": 6.421913424664546e-13,
+      "liouville_logdet_error": 3.375077994860476e-14,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.21923094572822655
+    },
+    {
+      "width": 0.00659249317540286,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 3.9468428525424315e-14,
+      "multiplier_max_difference": 3.2587890719248946e-12,
+      "liouville_logdet_error": 1.4566126083082054e-13,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.28991401007665624
+    },
+    {
+      "width": 0.01388153155928066,
+      "method": "Radau",
+      "rtol": 2e-12,
+      "max_step": 0.0025,
+      "closure_balanced_max": 1.8528950596063964e-10,
+      "multiplier_max_difference": 4.916136941979232e-13,
+      "liouville_logdet_error": 9.237055564881302e-14,
+      "upward_section_crossings_per_period": 1,
+      "half_period_nonclosure": 0.28779417971952553
+    }
+  ],
+  "limitations": "Only this cycle branch was continued. No global basin result, no rigorous nonlinear flip proof, no full period-doubling route or crisis, and no interpretation of fixed-parameter Newton failure as a fold."
+}

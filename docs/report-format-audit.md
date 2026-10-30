@@ -12,6 +12,8 @@ The Chua-scaling and later source-screening block was inspected at [`a645acc`](h
 
 The DCR and optical-order block was inspected at [`3cf58d0`](https://github.com/Griboedow/chua-gpu-atlas/commit/3cf58d03dc2d0398e084967a726e1a2d64080a82).
 
+The optical-priority follow-up was inspected at [`92d7627`](https://github.com/Griboedow/chua-gpu-atlas/commit/92d7627187f2a514d28090ba364fbe58f0315c96).
+
 **Thirty-six distinct expressions in thirteen reports needed formatting repairs.** This includes a single-symbol formula in a bold heading, replaced by the same symbol as plain text. The mathematical expressions and research conclusions were retained. The problems were visible in GitHub's actual renderer, not merely suspected from the Markdown source.
 
 ## What was repaired
@@ -130,9 +132,17 @@ Six actual public pages were inspected at `3cf58d0`: the three new DCR reports, 
 
 Two existing optical-report fragments in the README were also clicked. Both selected the correct immutable report URL and existing heading IDs. However, after an eight-second wait their headings remained below the viewport in this browser session. This automatic-landing limitation is recorded separately; it is not reported as a successful scroll check, and no speculative Markdown change was made. The path targets are valid. These supporting navigation checks do not add full-page successes or certify the rest of the older target report at this revision.
 
-The aggregate is **59 distinct pages**, **1,235 math elements across their latest checked versions**, **92 successful page checks**, and **1,433 successful formula observations**. This pass adds four new pages and repeats two; all other pages retain the exact earlier revisions in the machine-readable record. The five earlier failed page attempts remain separate. Raw-text checks cover 23 distinct pages, not the other 36 retroactively.
+After that pass the aggregate was **59 distinct pages**, **1,235 math elements across their latest checked versions**, **92 successful page checks**, and **1,433 successful formula observations**. It added four new pages and repeated two; all other pages retained the exact earlier revisions in the machine-readable record. The five earlier failed page attempts remained separate. Raw-text checks covered 23 distinct pages, not the other 36 retroactively.
 
 All **360 relative path occurrences** across those 59 documents resolve against the published tree at `3cf58d0`. General fragment anchors, external destinations, other viewports and later edits remain outside that path check; the explicitly tested fragments have the separate results described above.
+
+### Optical-priority comparison
+
+The thirteenth revision-specific pass inspected three actual public pages at `92d7627`: the new optical-priority audit, updated optical research report and main README. All **19 math elements** rendered correctly; raw-dollar/TeX scans were clean, no formula overflow or renderer errors occurred, and visible images loaded. The tanh normalization and transfer-function formulas were visually inspected. No formatting repair was needed.
+
+The aggregate is **60 distinct pages**, **1,254 math elements across their latest checked versions**, **95 successful page checks**, and **1,452 successful formula observations**. This pass adds one new page and repeats two. Every other page and the earlier fragment-navigation observations retain their actual inspected revision; no full recheck of the older pages is implied. Raw-text scans cover 25 pages, not the other 35 retroactively. The five failed earlier follow-up page attempts remain excluded from successful totals.
+
+All **367 relative path occurrences** across those 60 documents resolve at `92d7627`, with the same code/math, external-link and general fragment exclusions. The earlier optical automatic-landing limitation is not implicitly resolved by this pass.
 
 The [machine-readable record](../results/candidate-audits/report-format-audit.json) lists every checked page, the corrections, and the expression-preservation checks. Downloaded GitHub HTML and UI screenshots remain in the ignored local `outputs/report-format-audit/` directory.
 

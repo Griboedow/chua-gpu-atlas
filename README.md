@@ -234,6 +234,8 @@ A [motor-contact rotor investigation](docs/dcr-research.md) adds five completed 
 
 The [optical priority audit](docs/coupled-operators-priority-audit.md) compares older chaotic relay systems, coupled inertial neurons and six-state ring circuits. The smooth optical equations are exactly two coupled third-order tanh feedback units after an affine change of variables. Their particular regime remains a research question; neither the nonlinear response's name nor the projected shape establishes a new attractor class.
 
+A [cycle-continuation study](docs/optical-cycle-continuation.md) connects three optical periodic controls through the same branch, which loses and regains stability. An independently checked unstable doubled branch supports a local subcritical period-doubling picture near the first crossing. This helps characterize the destination of long chaotic transients without asserting a complete chaos mechanism.
+
 ## License
 
 Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.
