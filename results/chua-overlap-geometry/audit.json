@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "contact_points": 1188,
+  "contact_curves": 18,
+  "independent_contact_cycle_checks": 180,
+  "maximum_independent_closure": 8.170131238216527e-13,
+  "maximum_independent_multiplier_error": 1.5395309804766555e-08,
+  "minimum_contact_transversality": 0.02356098704365958,
+  "minimum_joint_jacobian_singular_value": 0.023442377325380268,
+  "projection_turning_points": 18,
+  "held_out_cut_predictions": 32,
+  "maximum_prediction_relative_error": 3.91565099704394e-05,
+  "slice_cross_sections": 404,
+  "stable_slice_interior_checks": 1616,
+  "slice_root_counts": {
+    "8.84": {
+      "FS": 0,
+      "SF": 0,
+      "FD": 0,
+      "DF": 0,
+      "SD": 0,
+      "DS": 0
+    },
+    "8.85": {
+      "FS": 2,
+      "SF": 0,
+      "FD": 2,
+      "DF": 0,
+      "SD": 0,
+      "DS": 0
+    },
+    "8.86": {
+      "FS": 2,
+      "SF": 2,
+      "FD": 2,
+      "DF": 0,
+      "SD": 2,
+      "DS": 2
+    },
+    "8.865": {
+      "FS": 2,
+      "SF": 2,
+      "FD": 2,
+      "DF": 2,
+      "SD": 2,
+      "DS": 2
+    }
+  },
+  "slice_symmetric_and_primary_component_counts": {
+    "8.84": [
+      0,
+      0
+    ],
+    "8.85": [
+      1,
+      1
+    ],
+    "8.86": [
+      2,
+      1
+    ],
+    "8.865": [
+      2,
+      2
+    ]
+  },
+  "refined_stable_branch_samples": 2340,
+  "independent_stable_branch_midpoints": 36,
+  "coexistence_witness_counts": [
+    2,
+    3,
+    4
+  ],
+  "maximum_witness_closure": 4.694689081929937e-12,
+  "scope": "Numerical validation of the two selected primary families. No completeness of the full attractor set, interval proof, or world-first claim."
+}

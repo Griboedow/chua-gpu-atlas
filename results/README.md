@@ -2,6 +2,8 @@
 
 These JSON files are copies of the computation settings and validation summaries supplied in the complete results release. They allow checking the headline claims without downloading the large arrays.
 
+- [`chua-overlap-geometry/`](chua-overlap-geometry/README.md): symmetry-resolved P5/P7 coexistence, 18 contact curves, projection extrema, checked two-/three-/four-cycle examples, predictive tests, six figures and a self-contained visual guide. See [the research note](../docs/chua-overlap-geometry.md).
+
 - `original/`: two 51³ scans, reference trajectories and eight numerical validation checks.
 - `detailed/`: two 81³ grids, 41³ local zoom, beta transects, example regimes, connectivity summaries and independent validation.
 - `expanded/`: adaptive solver controls, expanded-scout settings, coordinate extrema and corrected full-field DOP853 checks.

@@ -1,5 +1,7 @@
 # What the slope-volume layers contain
 
+**Follow-up:** the [symmetry-resolved overlap study](chua-overlap-geometry.md) continues both asymmetric branches through their first period doubling, resolves 18 contact curves, and explains how two symmetric-coexistence islands can remain connected by a region with three attracting cycles. It includes checked two-, three- and four-cycle examples and a visual guide.
+
 **Two tracked families overlap: one parameter set can support both a five-peak and a seven-peak attracting cycle.** Continuation also exposes layers far thinner than the original 3D grid and a missing sheet edge where the physical cycle survives by changing its route through the diode regions.
 
 These results follow the two independently closed cycles from the [slope-plane study](chua-slope-plane.md). Local labels **P5** and **P7** refer to those particular continued families. They do not identify every five- or seven-peak orbit, add two new entries to the earlier 32-family catalogue, or provide a global layer count.

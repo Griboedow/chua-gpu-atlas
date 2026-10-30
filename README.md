@@ -4,6 +4,12 @@
 
 Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
+**New research: symmetry changes the apparent layer count.** Two islands of symmetric coexistence can be connected by a region with **three** attracting cycles. Following the asymmetric branches resolves that bridge and identifies nearby regions with four cycles. The new study traces 18 contact curves, checks representative orbits independently, and tests quantitative predictions for how the islands separate.
+
+![Symmetric coexistence islands and the three-cycle region connecting them](docs/assets/chua-overlap-story.png)
+
+[Research note and literature comparison](docs/chua-overlap-geometry.md) · [See the 2, 3 and 4 cycles](docs/assets/chua-overlap-orbits.png) · [Magnified section points](docs/assets/chua-overlap-sections.png) · [Offline visual guide](results/chua-overlap-geometry/guide.html) (download and open locally). These are results for two selected primary families; scientific priority and the complete attractor count remain open.
+
 **Beyond Chua:** the searches in other physical and biological systems now have their own public MIT project, [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab), with [a readable findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), data and animations. The Chua atlas and its parameter-scaling investigation remain here. The verified transfer is complete; historical commits remain available.
 
 ![The expanded parameter cloud with a gentle camera sweep](docs/assets/expanded-rotation.gif)
@@ -88,6 +94,8 @@ Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive expo
 ![The continued five- and seven-peak family sheets overlap in both slope volumes](docs/assets/chua-slope-family-sheets.png)
 
 [Family identities, birth mechanisms, coexistence and an apparent ending](docs/chua-slope-families.md) · [Both coexisting orbits](docs/assets/chua-slope-coexistence.png) · [Slow family rotation](docs/assets/chua-slope-family-sheets.gif). The report retains failed continuation nodes and the capture map's sensitivity to integration step.
+
+The [symmetry-resolved continuation study](docs/chua-overlap-geometry.md) now extends both families through their asymmetric branches and first period-doubling edges. It explains why the symmetric overlap splits before the primary-family overlap, and supplies the new figures at the top of this page.
 
 **The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
 

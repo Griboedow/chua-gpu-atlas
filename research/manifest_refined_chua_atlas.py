@@ -17,12 +17,13 @@ select_chua_offcenter verify_chua_offcenter verify_four_chua_cycles
 refine_readme_layers refine_readme_thin_cores plot_readme_layers
 scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane
 scan_chua_slope_volumes check_chua_slope_volumes plot_chua_slope_volumes build_chua_slope_volume_viewer
-continue_chua_slope_families check_chua_slope_families map_chua_slope_coexistence plot_chua_slope_families'''.split()
+continue_chua_slope_families check_chua_slope_families map_chua_slope_coexistence plot_chua_slope_families
+resolve_chua_overlap_geometry check_chua_overlap_geometry plot_chua_overlap_geometry'''.split()
 
 
 def digest(path):
     raw=path.read_bytes()
-    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs']:
+    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg']:
         raw=raw.replace(b'\r\n',b'\n')
     return hashlib.sha256(raw).hexdigest()
 
@@ -57,12 +58,17 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-slope-plane').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-volumes').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-families').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-overlap-geometry').iterdir() if p.is_file())
     paths.add(ROOT/'research/check_chua_slope_volume_viewer.cjs')
+    paths.add(ROOT/'research/check_chua_overlap_guide.cjs')
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])
     paths.add(ROOT/'docs/chua-family-gallery.md')
     paths.add(ROOT/'docs/chua-slope-plane.md')
     paths.add(ROOT/'docs/chua-slope-volumes.md')
     paths.add(ROOT/'docs/chua-slope-families.md')
+    paths.add(ROOT/'docs/chua-overlap-geometry.md')
+    paths.add(ROOT/'results/README.md')
+    paths.update((ROOT/'docs/assets').glob('chua-overlap-*.png'))
     paths.update((ROOT/'docs/assets/chua-families').glob('*.png'))
     paths.update(ROOT/'docs/assets'/name for name in ['chua-refined-atlas.png','chua-refined-adding.png','chua-four-cycle-overlap.png'])
     paths.update(ROOT/'docs/assets'/name for name in ['chua-readme-layers.gif','chua-readme-layers-poster.png','chua-readme-layer-zoom.png'])
@@ -74,7 +80,7 @@ def main():
     paths.add(ROOT/'results/chua-layers/extended.json')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
-        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js and .cjs; binary files are unchanged.',
+        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs and .svg; binary files are unchanged.',
         scope='Hashes identify this finite numerical catalogue and its executable evidence, not mathematical certification.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')
