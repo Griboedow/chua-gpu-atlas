@@ -100,7 +100,7 @@ The source width is $w=5\times10^{-4}$ m, density $\rho=1000$ kg/m³, and kinema
 | $L_1,L_2,L_3,L_4,L_5$ | $24,144,24,240,120$ |
 | $\alpha,\beta$ | $31,0.2565$ |
 | $\zeta,L_b,\gamma$ | $1.08,42,7.35$ |
-| $r_b,r^*,Q_3^*$ | $4.1,5.5,25$ |
+| $r_b,r^{\ast},Q_3^{\ast}$ | $4.1,5.5,25$ |
 | $\epsilon,k_3,k_5$ | $10.9,15.75,12$ |
 | $p,q$ | $0.12,8\times10^{-6}$ |
 

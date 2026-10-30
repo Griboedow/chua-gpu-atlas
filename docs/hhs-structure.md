@@ -54,7 +54,7 @@ B=\max\left\{N(0),\frac{a}{\min\{1,\delta\}}\right\},
 
 we have $0\leq M,E\leq B$ and $h\leq x,y\leq H$. These inequalities hold on any interval of local existence. The remaining equation satisfies $\tau_D\dot D\leq D_0+(-1+\mu H)D$, so $D$ cannot diverge in finite time. The locally Lipschitz vector field therefore has a global forward solution. The next step strengthens its finite-time bound to a time-uniform bound.
 
-**3. A large-$D$ barrier.** Put $C=1+\mu E_r$ and choose any $\rho>0$ such that $\rho bB<C/(4\tau_D)$. Define
+**3. A large-D barrier.** Put $C=1+\mu E_r$ and choose any $\rho>0$ such that $\rho bB<C/(4\tau_D)$. Define
 
 ```math
 V=\log D+\frac{\mu}{\tau_D}(\tau_Ly+\tau_Rx)+\rho E.
@@ -84,7 +84,7 @@ Z_-:=\frac{\mu(\tau_L+\tau_R)}{\tau_D}h
 Z_+:=\frac{\mu(\tau_L+\tau_R)}{\tau_D}H+\rho B.
 ```
 
-Whenever $V\geq\log D_*+Z_+$, we necessarily have $D\geq D_*$ and hence $\dot V<0$. A scalar barrier argument yields the explicit finite bound
+Whenever $V\geq\log D_{\ast}+Z_+$, we necessarily have $D\geq D_{\ast}$ and hence $\dot V<0$. A scalar barrier argument yields the explicit finite bound
 
 ```math
 D(t)\leq
