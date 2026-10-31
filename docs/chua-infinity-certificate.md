@@ -3,7 +3,7 @@
 The fixed transect **α = 9, m₀ = −8/7, m₁ = −5/7** contains infinitely many parameter intervals supporting attracting periodic orbits of increasing return period. They accumulate at a parameter β∗ enclosed by
 
 ```math
-14.30635909996140 < \beta_* < 14.30635909996152.
+14.30635909996140 \lt \beta_* \lt 14.30635909996152.
 ```
 
 This conclusion combines an **executable interval certificate of a quadratic homoclinic tangency** with the classical theorem on cascades of periodic sinks. The certificate checks the actual invariant manifolds through bounds on their graphs, admissible flight paths, dissipativity and nonzero parameter unfolding. It passes at 80 and 100 decimal working digits.
@@ -75,7 +75,7 @@ V=\begin{pmatrix}0.5085382183836141&0.7893852382512966\\0.8610394186349539&-0.61
 V is only an approximate eigenbasis. No exact diagonalization is assumed. Write the centered half-return as (F,G). Throughout |u|, |s| ≤ δ = 10⁻⁷ and the full certified β interval, the interval code verifies
 
 ```math
-F_u<-a,\quad |F_s|<b,\quad |G_u|<c,\quad |G_s|<d,
+F_u\lt -a,\quad |F_s|\lt b,\quad |G_u|\lt c,\quad |G_s|\lt d,
 ```
 
 with a = 1.6469, b = 0.00035, c = 0.00024 and d = 0.00032. Every state Hessian entry is bounded in magnitude by M = 1500. Both centered parameter derivatives are bounded by Q = 0.000041. For the latter bound, F(0,0,β) = G(0,0,β) = 0; integrating the enclosed mixed state/parameter derivatives along a segment from the origin gives the bound 2δ times their maximum.

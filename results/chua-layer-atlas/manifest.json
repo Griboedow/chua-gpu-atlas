@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-10-31T23:03:59.337454+00:00",
-  "base_commit": "a6f3134e27fce54d799bf7e14e1102aca049902f",
+  "created_utc": "2026-10-31T23:04:59.048200+00:00",
+  "base_commit": "74a96f58f09e6678ae066110d5ee1869d2b873d4",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -69,7 +69,7 @@
     "docs/assets/chua-slope-volumes.gif": "ceae77919c3438e102b27bd135140eb3d1bd84b5e1ed4c4575d9c3e8967abf49",
     "docs/assets/chua-slope-volumes.png": "4f74584219270c7bdd3d9d830f5b382124cb9bff9496743227d646cd596019ba",
     "docs/chua-family-gallery.md": "9b513b1ea7a60600e5653d7c51ef5e94d79b403b64bc381f00a33980eefaf21d",
-    "docs/chua-infinity-certificate.md": "89d8bf63798b83c025f0879cf3ac76098e5b727eec1e16bb095f3d0dacfab5bd",
+    "docs/chua-infinity-certificate.md": "b81a68657ae78b862ee5a8874378a94a82f8746d1839cc50f0645937d6bb4386",
     "docs/chua-layer-census.md": "07e65b6b8e4e79e13db4ce66cb6466fd446bded12281825a5e73cbbbf1d98802",
     "docs/chua-layer-prediction.md": "7049a70e0fb8947719f74097db63e721a9959651ca66b5faa78a16d74135bc12",
     "docs/chua-overlap-geometry.md": "37a882270276ca5010b4a39cd52cfbbbe4ef7befed62871d4522101a18bbce14",
