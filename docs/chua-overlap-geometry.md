@@ -47,8 +47,8 @@ The computed ordering is `D_j < S_j < F_j`. For the checked branch segments, the
 ```math
 \nu_j(m_0)=
 \begin{cases}
-1,&S_j<m_0<F_j,\\
-2,&D_j<m_0<S_j,\\
+1,&S_j<m_0<F_j,\\[2pt]
+2,&D_j<m_0<S_j,\\[2pt]
 0,&\text{outside those two tracked stable segments}.
 \end{cases}
 ```
