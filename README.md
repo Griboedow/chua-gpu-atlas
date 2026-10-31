@@ -1,5 +1,15 @@
 # Chua GPU Atlas
 
+## Why I came back to this
+
+My university coursework involved studying the Chua system by scanning two parameters. I spent months running calculations. I did not understand the subject very well, and my computer was weak. Much of the experience was simply waiting for another calculation to finish.
+
+I decided to return to the problem and see whether there had been anything interesting hiding in it. This time I could use a GPU, vary three parameters, and look inside the shapes instead of just waiting for them to appear.
+
+The months are a personal recollection; those calculations and today's scans are not a matched speed benchmark.
+
+## What this study found
+
 A study of periodic layers, coexisting attractors and thin stability windows in the continuous piecewise-linear Chua system. GPU surveys locate candidate regions; periodic-orbit continuation resolves their structure; interval arithmetic checks a mechanism that generates infinitely many windows.
 
 **Main result:** at α = 9, m₀ = −8/7 and m₁ = −5/7, infinitely many attracting periodic windows accumulate near **β = 14.30635909996146**. An executable interval certificate establishes a quadratic homoclinic tangency and the hypotheses of the classical sink-cascade theorem. The finite atlas contains **34 reference identities**, of which 32 have sampled three-dimensional sheets.
@@ -105,9 +115,7 @@ python run.py all --grid 21 --transient 100 --duration 200 --output outputs/quic
 
 The release predates the layer prediction and interval proof; their data are in this repository. The [manifest](results/chua-layer-atlas/manifest.json) records hashes of the research files. Historical failed checks remain available and are identified in their reports. A positive finite-time Lyapunov exponent is treated as a chaos candidate, not as a proof of an asymptotic attractor.
 
-## Background and scope
-
-This project revisits a university coursework study of Chua's system. The original two-parameter calculations took months on the author's computer; the present work uses GPU surveys, branch continuation and validated return maps. That recollection is not a matched speed benchmark.
+## Scope and related work
 
 Periodic windows, coexistence and homoclinic cascades are established phenomena. This repository contributes explicit parameter studies, reproducible forecasts and a computer-assisted certificate for the stated transect. Historical priority for these Chua structures has not been established. The certificate is inspectable mathematical and numerical work; it has not been checked by a formal proof assistant.
 
