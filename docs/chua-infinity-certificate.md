@@ -1,6 +1,6 @@
 # Infinitely many attracting windows in the Chua transect
 
-The fixed transect **α = 9, m₀ = −8/7, m₁ = −5/7** contains infinitely many parameter intervals supporting attracting periodic orbits of increasing return period. They accumulate at a parameter β* enclosed by
+The fixed transect **α = 9, m₀ = −8/7, m₁ = −5/7** contains infinitely many parameter intervals supporting attracting periodic orbits of increasing return period. They accumulate at a parameter β∗ enclosed by
 
 ```math
 14.30635909996140 < \beta_* < 14.30635909996152.
@@ -10,7 +10,7 @@ This conclusion combines an **executable interval certificate of a quadratic hom
 
 ![Measured windows and the interval conditions establishing an infinite cascade](assets/chua-infinity-overview.png)
 
-The result concerns distinct attracting windows at different parameter values. It does not give the number of attractors at β*, an exhaustive classification of the atlas, or a count of globally disconnected surfaces. The **34 reference identities** in the finite catalogue remain a record of explicitly computed motions. Hyperbolic attracting cycles persist under small changes of the other parameters, so the windows have local extensions in parameter space; their complete connections have not been mapped.
+The result concerns distinct attracting windows at different parameter values. It does not give the number of attractors at β∗, an exhaustive classification of the atlas, or a count of globally disconnected surfaces. The **34 reference identities** in the finite catalogue remain a record of explicitly computed motions. Hyperbolic attracting cycles persist under small changes of the other parameters, so the windows have local extensions in parameter space; their complete connections have not been mapped.
 
 ## What changed since the prediction study
 
@@ -166,7 +166,7 @@ All unknown graph quantities in these expressions range over the bounds from Sec
 
 ![Four boundary signs, convexity and parameter transversality](assets/chua-infinity-signs.png)
 
-For each β, strict convexity and the opposite signs of ga give a unique interior minimizer a(β). At the lower β face its gap is negative; at the upper face it is positive. Continuity gives a parameter β* with g = ga = 0. Moreover, the derivative of this minimum with respect to β equals gβ > 0, so the crossing is transverse and unique within this box.
+For each β, strict convexity and the opposite signs of ga give a unique interior minimizer a(β). At the lower β face its gap is negative; at the upper face it is positive. Continuity gives a parameter β∗ with g = ga = 0. Moreover, the derivative of this minimum with respect to β equals gβ > 0, so the crossing is transverse and unique within this box.
 
 The curvature gaa > 0 makes the contact quadratic. The image of the unstable graph has a nonzero tangent because the return map is a local diffeomorphism. The initial point is different from the saddle; its backward orbit stays on the local unstable graph, while the final point's forward orbit stays on the local stable graph. Thus this is a homoclinic tangency of the exact manifolds.
 
@@ -176,7 +176,7 @@ The classical **Gavrilov–Shilnikov sink-cascade theorem** applies to a smooth 
 
 All required local hypotheses have been checked here. To use the ordinary return P = H², append one local H iterate to the 27-iterate connection. Its endpoint remains on the local stable manifold. A parameter-dependent local diffeomorphism preserves quadratic contact and nonzero unfolding, so the resulting 28-iterate connection is a homoclinic tangency for P. P has the positive multipliers and dissipative determinant in Section 2.
 
-The analytic return maps exist on neighborhoods of the whole connection and the local saddle. A periodic sink of the upward first-return map corresponds to an attracting periodic orbit of the flow. Hence the theorem yields infinitely many attracting windows on this exact Chua transect, inside any sufficiently small neighborhood of β*. No extrapolation from eight numerical points is used for this implication.
+The analytic return maps exist on neighborhoods of the whole connection and the local saddle. A periodic sink of the upward first-return map corresponds to an attracting periodic orbit of the flow. Hence the theorem yields infinitely many attracting windows on this exact Chua transect, inside any sufficiently small neighborhood of β∗. No extrapolation from eight numerical points is used for this implication.
 
 The theorem does not supply an explicit first index at which its asymptotic conclusions hold. Matching every theorem-generated orbit to the proposed 10n+5 peak sequence, obtaining rigorous widths for all later members, and extending the contact surface over a specified three-dimensional box are further problems.
 

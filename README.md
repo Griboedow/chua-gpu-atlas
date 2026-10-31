@@ -8,7 +8,7 @@ A study of periodic layers, coexisting attractors and thin stability windows in 
 
 ![Measured periodic windows and the certificate establishing an infinite cascade](docs/assets/chua-infinity-overview.png)
 
-The infinite sequence concerns different periodic motions at different parameter values. It does not count globally disconnected surfaces, and it does not assert infinitely many attractors at the limiting parameter itself. The certificate encloses the tangency in **14.30635909996140 < β* < 14.30635909996152**. Its assumptions, derivation, positive checks and rejected controls are given in the [proof report](docs/chua-infinity-certificate.md).
+The infinite sequence concerns different periodic motions at different parameter values. It does not count globally disconnected surfaces, and it does not assert infinitely many attractors at the limiting parameter itself. The certificate encloses the tangency in **14.30635909996140 < β∗ < 14.30635909996152**. Its assumptions, derivation, positive checks and rejected controls are given in the [proof report](docs/chua-infinity-certificate.md).
 
 ## What a layer represents
 
