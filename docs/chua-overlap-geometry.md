@@ -16,15 +16,15 @@ We continue the previously identified five- and seven-peak families of the conti
 
 The equations and slope convention are
 
-$$
+```math
 \dot x=\alpha[y-x-h(x)],\qquad
 \dot y=x-y+z,\qquad
 \dot z=-\beta y,
-$$
+```
 
-$$
+```math
 h(x)=m_1x+\tfrac12(m_0-m_1)(|x+1|-|x-1|).
-$$
+```
 
 We study `(m0, m1, alpha)` with beta = 100/7, and `(m0, m1, beta)` with alpha = 9. Contact continuation uses m1 in [-0.790, -0.674]. The detailed alpha slices use m1 in [-0.785, -0.718]. This is an autonomous three-state model with no inductor-loss term and no added feedback signal.
 
@@ -44,34 +44,34 @@ For each family j, let the following symbols denote m0 values at fixed values of
 
 The computed ordering is `D_j < S_j < F_j`. For the checked branch segments, the primary-cycle count is represented by
 
-$$
+```math
 \nu_j(m_0)=
 \begin{cases}
 1,&S_j<m_0<F_j,\\
 2,&D_j<m_0<S_j,\\
 0,&\text{outside those two tracked stable segments}.
 \end{cases}
-$$
+```
 
 The count excludes marginal endpoints, period-doubled descendants, other windows and other families. A zero in this expression does **not** assert the absence of attractors. Within the tracked segments, the number of distinct attracting primary cycles is `nu_5 + nu_7`.
 
 The common m0 interval for two symmetric cycles has signed width
 
-$$
+```math
 W_{\rm sym}=\min(F_5,F_7)-\max(S_5,S_7).
-$$
+```
 
 Including either symmetry gives
 
-$$
+```math
 W_{\rm primary}=\min(F_5,F_7)-\max(D_5,D_7).
-$$
+```
 
 A positive width indicates overlap of these tracked intervals. Four primary cycles are possible when
 
-$$
+```math
 \min(S_5,S_7)-\max(D_5,D_7)>0.
-$$
+```
 
 These interval identities are elementary geometry. Their numerical ingredients, validity checks and implications for the selected Chua families are the subject of this note.
 
@@ -151,15 +151,15 @@ The nine displayed cycles pass independent full-field state-and-variational inte
 
 Let a contact curve in the projection be `a = a(m1)`, where a is alpha or beta. At a nondegenerate extremum `(m1*, a*)`, its local Taylor expansion is
 
-$$
-a(m_1)=a_*+\tfrac12 a''_*(m_1-m_{1*})^2+O((m_1-m_{1*})^3).
-$$
+```math
+a(m_1)=a_{\ast}+\tfrac12 a_{\ast}^{\prime\prime}(m_1-m_{1\ast})^2+O((m_1-m_{1\ast})^3).
+```
 
 A cut a distance delta from the tip on the intersecting side therefore has leading-order root separation
 
-$$
-\Delta m_1\simeq 2\sqrt{\frac{2\delta}{|a''_*|}}.
-$$
+```math
+\Delta m_1\simeq 2\sqrt{\frac{2\delta}{\lvert a_{\ast}^{\prime\prime}\rvert}}.
+```
 
 This is the standard square-root geometry of a smooth nondegenerate extremum. We test its quantitative prediction here rather than claim a new scaling law.
 
