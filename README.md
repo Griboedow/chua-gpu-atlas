@@ -4,7 +4,15 @@
 
 Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
-**What a layer means:** each resolved periodic layer maps the parameter values supporting a family of repeating attractor motions. Moving along a stable branch changes the orbit's shape and timing; moving between families can change its repeating pattern, visits to the two scrolls, and symmetry. The layer lives in parameter space; the corresponding motion lives in state space. [See the motion behind each of the 32 catalogued families](docs/chua-family-gallery.md).
+**What a layer means:** each resolved periodic layer maps the parameter values supporting a family of repeating attractor motions. Moving along a stable branch changes the orbit's shape and timing; moving between families can change its repeating pattern, visits to the two scrolls, and symmetry. The layer lives in parameter space; the corresponding motion lives in state space. See the [original 32-family portraits](docs/chua-family-gallery.md) and [two newly predicted motions](docs/chua-layer-prediction.md#predictions-first-search-second).
+
+**New: predict the next layers before searching.** A short unstable cycle predicts the shrinking widths and growing periods of the 15 → 25 → … sequence. Forecasts were [published first](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea); the subsequent search found **75- and 85-peak cycles**, with width discrepancies of **1.89% and 2.70%**. The 85-peak location forecast missed its exceptionally thin core, and that miss is shown at the true scale below. Orbit correction and independent full-field checks then confirmed the motion.
+
+![Frozen forecasts versus the two newly found stable cores](docs/assets/chua-layer-prediction-proof.png)
+
+[Theory, predictions, numerical evidence and the infinity question](docs/chua-layer-prediction.md) · [Why similar-looking orbits differ](docs/assets/chua-layer-motion-description.png) · [Candidate organizing geometry](docs/assets/chua-layer-prediction-organizer.png) · [Reproduce the calculations](results/chua-layer-prediction/README.md).
+
+The reference catalogue now contains **34 distinct normalized roots** under its existing identity convention. The two new entries have checked reference cycles; the three-dimensional animation below remains the **32-family mesh snapshot**. The proposed mechanism supports an infinite hierarchy conditionally, but an infinite number of attracting layers has **not** been proved. At the observed shrinkage rate, an extra decimal digit of parameter resolution would expose only about 1.15 further members of this sequence asymptotically.
 
 **New research: symmetry changes the apparent layer count.** Two islands of symmetric coexistence can be connected by a region with **three** attracting cycles. Following the asymmetric branches resolves that bridge and identifies nearby regions with four cycles. The new study traces 18 contact curves, checks representative orbits independently, and tests quantitative predictions for how the islands separate.
 
@@ -55,16 +63,16 @@ This project studies **two different 3D spaces**:
 
 ## What turned out to be interesting?
 
-**A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; continuation now separates **32 periodic-window families** in the local atlas.
+**A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; continuation separated **32 periodic-window families** in the mesh snapshot below, and the prediction study adds two reference identities.
 
 **Read the layers as families of motion.** Each highlighted sheet below follows a particular family of attracting periodic orbits. Their differences become clearer when we compare a complete repeating signal, not just the outline of the orbit:
 
 | Difference in motion | Example from the reference portraits |
 |---|---|
-| Which scrolls it visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other 31 reference representatives visit both outer regions. |
+| Which scrolls it visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other 31 mesh-snapshot representatives and both new references visit both outer regions. |
 | How long and in what pattern it repeats | [S08](docs/chua-family-gallery.md#s08) and [S11](docs/chua-family-gallery.md#s11) both have five peaks, but different waveforms and periods of about 10.89 and 14.50. |
-| How many peaks occur before the whole motion repeats | The thin sequence runs through 15, 25, 35, 45, [55](docs/chua-family-gallery.md#p55), and [65](docs/chua-family-gallery.md#p65) peaks per full cycle. |
-| Whether the two halves mirror each other | 23 reference representatives are inversion symmetric; 9 are asymmetric. Symmetry can change along a family's descendant branches. |
+| How many peaks occur before the whole motion repeats | The thin sequence runs through 15, 25, 35, 45, [55](docs/chua-family-gallery.md#p55), [65](docs/chua-family-gallery.md#p65), and now [75 and 85](docs/chua-layer-prediction.md#predictions-first-search-second) peaks per full cycle. |
+| Whether the two halves mirror each other | In the 32-family mesh snapshot, 23 reference representatives are inversion symmetric and 9 are asymmetric. The two new references are symmetric. Symmetry can change along a family's descendant branches. |
 
 Thus **32 families does not mean 32 unique silhouettes or 32 simultaneous attractors**. Family identity comes from following the periodic-orbit branch, including its ancestry, rather than counting peaks alone. Where stability regions overlap, different repeating motions can coexist at identical parameters; the initial state selects the outcome. A symmetric cycle can also split into an asymmetric pair within the same family, as the study at the top of this page shows.
 

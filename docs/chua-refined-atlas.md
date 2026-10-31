@@ -1,5 +1,7 @@
 # A family-labelled refinement of the Chua layer atlas
 
+**Catalogue update:** the subsequent [theory-first prediction study](chua-layer-prediction.md) found 75- and 85-peak reference cycles after publishing their forecasts, extending the operational registry to **34 distinct normalized roots**. Its [extended registry](../results/chua-layer-prediction/extended-family-registry.json) retains the original entries and adds P75/P85. The report below, its grids and its animations document the **32-family mesh snapshot**; the two new families have not been meshed in three dimensions. Neither count is exhaustive, and infinitude remains unproved.
+
 The catalogue now contains **32 numerically distinguished periodic-window families** intersecting the original atlas box. Nineteen have representatives on the original central transect, including two newly resolved thin windows; thirteen were found in off-center searches. We also verify **four coexisting attracting cycles at one parameter point**, and extend the shrinking period-adding sequence to **65 maxima per full cycle**.
 
 This is a count of the families identified by the continuation and ancestry procedure below. It is **not an exhaustive count of all layers**, nor a proof that all 32 remain globally disconnected outside the continued patches. The earlier count of 17 was a local census on one transect, not the total for the three-dimensional atlas.

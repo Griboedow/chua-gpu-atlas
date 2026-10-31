@@ -2,6 +2,8 @@
 
 These JSON files are copies of the computation settings and validation summaries supplied in the complete results release. They allow checking the headline claims without downloading the large arrays.
 
+- [`chua-layer-prediction/`](chua-layer-prediction/README.md): forecasts published before the 75/85-peak search, 55/75-digit orbit checks, independent full-field controls, preserved forecast and numerical failures, a candidate organizing tangency, a 34-entry reference registry and five scientific figures. See [the theory and evidence](../docs/chua-layer-prediction.md); an infinite hierarchy remains conditional.
+
 - [`chua-overlap-geometry/`](chua-overlap-geometry/README.md): symmetry-resolved P5/P7 coexistence, 18 contact curves, projection extrema, checked two-/three-/four-cycle examples, predictive tests, six figures and a self-contained visual guide. See [the research note](../docs/chua-overlap-geometry.md).
 
 - `original/`: two 51³ scans, reference trajectories and eight numerical validation checks.

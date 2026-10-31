@@ -18,7 +18,10 @@ refine_readme_layers refine_readme_thin_cores plot_readme_layers
 scan_chua_slope_plane check_chua_slope_plane plot_chua_slope_plane
 scan_chua_slope_volumes check_chua_slope_volumes plot_chua_slope_volumes build_chua_slope_volume_viewer
 continue_chua_slope_families check_chua_slope_families map_chua_slope_coexistence plot_chua_slope_families
-resolve_chua_overlap_geometry check_chua_overlap_geometry plot_chua_overlap_geometry'''.split()
+resolve_chua_overlap_geometry check_chua_overlap_geometry plot_chua_overlap_geometry
+predict_chua_layers chua_precision_flights check_chua_precision_flights verify_chua_layer_predictions
+audit_chua_layer_predictions describe_chua_layer_words analyze_chua_prediction_evidence
+trace_chua_layer_organizer plot_chua_layer_predictions'''.split()
 
 
 def digest(path):
@@ -59,6 +62,12 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-slope-volumes').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-families').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-overlap-geometry').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-layer-prediction').iterdir() if p.is_file())
+    paths.add(ROOT/'requirements-precision.txt')
+    paths.add(ROOT/'docs/chua-layer-prediction.md')
+    paths.update((ROOT/'docs/assets').glob('chua-layer-prediction-*.png'))
+    paths.add(ROOT/'docs/assets/chua-layer-motion-description.png')
+    paths.add(ROOT/'docs/assets/chua-layer-predicted-motions.png')
     paths.add(ROOT/'research/check_chua_slope_volume_viewer.cjs')
     paths.add(ROOT/'research/check_chua_overlap_guide.cjs')
     paths.update([ROOT/'README.md',ROOT/'docs/chua-refined-atlas.md',ROOT/'docs/chua-layer-census.md'])

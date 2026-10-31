@@ -1,0 +1,2 @@
+# Install after requirements.txt to reproduce arbitrary-precision layer checks.
+mpmath==1.3.0

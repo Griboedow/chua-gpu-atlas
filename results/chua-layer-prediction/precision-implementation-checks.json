@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "S08",
+      "maximum_scaled_jacobian_error": 1.4398490894711884e-28,
+      "beta_discrepancy": 2.842170943040401e-14,
+      "high_precision_residual": "1.05721303697e-52",
+      "float_closure": 8.43769498715119e-15,
+      "float_multiplier": 0.5000000000000175
+    },
+    {
+      "id": "S04",
+      "maximum_scaled_jacobian_error": 5.800059316295683e-27,
+      "beta_discrepancy": 1.865174681370263e-13,
+      "high_precision_residual": "3.54117440823e-45",
+      "float_closure": 6.268319197033634e-13,
+      "float_multiplier": 0.500000000017774
+    }
+  ]
+}
