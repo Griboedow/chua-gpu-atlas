@@ -1,0 +1,393 @@
+{
+  "created_utc": "2026-10-31T21:41:44.431450+00:00",
+  "stage": "Frozen before any new 75/85-peak cycle solve in this experiment",
+  "input_sha256": {
+    "results/chua-layer-census/census-analysis.json": "9cc9f0679829f0e124bd8dde2d3af57b6b72666b8e4fcae8834ee8fa209dd132",
+    "results/chua-layer-atlas/extended-adding.json": "22e40206ba5c8f5a221d7f664c19c8017800f7cc353fe965331da85e5603d2fa",
+    "results/chua-layers/affine-central.json": "d08ff201714291eb663e06bcf6c39be07bb644f10c60ebce9b9ecbe4011b47e9",
+    "results/chua-layer-atlas/family-registry.json": "5056ca94a512c9cf6006282ab3522d9dcd041531cb00500c2e2bccdf7e1ac9c9"
+  },
+  "known_layers": [
+    {
+      "n": 1,
+      "peaks": 15,
+      "fold_beta": 14.30374675130898,
+      "width": 0.0001911107804417611,
+      "fold_period": 32.60123475646037
+    },
+    {
+      "n": 2,
+      "peaks": 25,
+      "fold_beta": 14.305279648511352,
+      "width": 4.872397247268623e-05,
+      "fold_period": 54.16330670712213
+    },
+    {
+      "n": 3,
+      "peaks": 35,
+      "fold_beta": 14.305926476748104,
+      "width": 9.242098967021661e-06,
+      "fold_period": 75.7481905924875
+    },
+    {
+      "n": 4,
+      "peaks": 45,
+      "fold_beta": 14.30619130320051,
+      "width": 1.5063202685183796e-06,
+      "fold_period": 97.34026404041992
+    },
+    {
+      "n": 5,
+      "peaks": 55,
+      "fold_beta": 14.30629558012158,
+      "width": 2.2413232159124163e-07,
+      "fold_period": 118.93442552846786
+    },
+    {
+      "n": 6,
+      "peaks": 65,
+      "fold_beta": 14.306335389781674,
+      "width": 3.1759077145920855e-08,
+      "fold_period": 140.52909744264215
+    }
+  ],
+  "theory": {
+    "position_ratio": "1/Lambda",
+    "width_ratio": "1/Lambda^2",
+    "period_increment": "2*Tp",
+    "position_correction": "limit + A*r^n + (B+C*n)*r^(2*n)",
+    "mechanism_status": "Quadratic global-return/tangency hypothesis; not a proved global connection"
+  },
+  "calibration": {
+    "limit": 14.30635910320525,
+    "ratio": 0.36853707109453687,
+    "coefficients": [
+      2.3713423575132673e-05,
+      -2.395881190039921e-05,
+      2.4538832526654683e-07,
+      4.33560457106751e-08
+    ],
+    "beta_origin": 14.306335389781674,
+    "n_origin": 6,
+    "parent": {
+      "beta": 14.30635910320525,
+      "alpha": 9.0,
+      "m0": -1.1428571428571428,
+      "m1": -0.7142857142857143,
+      "symmetric": true,
+      "q": [
+        0.23909563977157933,
+        -0.4390043257333907,
+        1.431637184446946,
+        1.5238111774213436,
+        0.601459048841477,
+        1.4295306349763592,
+        0.4122356667735114
+      ],
+      "period": 10.797347424919273,
+      "residual": 1.4983569940341113e-12,
+      "map_multipliers": [
+        [
+          -1.6472495970858503,
+          0.0
+        ],
+        [
+          3.205395250716011e-05,
+          0.0
+        ]
+      ],
+      "full_multipliers": [
+        [
+          2.7134312350994962,
+          0.0
+        ],
+        [
+          1.0274558713312757e-09,
+          0.0
+        ]
+      ],
+      "spectral_radius": 2.7134312350994962,
+      "section_matrix": [
+        [
+          -0.5184426036516507,
+          -0.6666843412640189
+        ],
+        [
+          -0.8778634553007407,
+          -1.1287749394816924
+        ]
+      ],
+      "minimum_breakpoint_speed": 1.1438630967389098,
+      "map_determinant_liouville": -5.280086035242846e-05,
+      "map_trace": -1.6472175431333431,
+      "full_logdet": -19.697966145662487,
+      "region_violation": 1.4983569940341113e-12,
+      "arcs": [
+        {
+          "region": 0,
+          "duration": 1.431637184446946,
+          "start": [
+            0.0,
+            0.23909563977157933,
+            -0.4390043257333907
+          ],
+          "end": [
+            0.9999999999985016,
+            0.10121810590760594,
+            -0.43544484759202584
+          ]
+        },
+        {
+          "region": 1,
+          "duration": 1.5238111774213436,
+          "start": [
+            0.9999999999985016,
+            0.10121810590760594,
+            -0.43544484759202584
+          ],
+          "end": [
+            1.0000000000008167,
+            -0.2699530424945661,
+            -1.1270714290091874
+          ]
+        },
+        {
+          "region": 0,
+          "duration": 0.601459048841477,
+          "start": [
+            1.0000000000008167,
+            -0.2699530424945661,
+            -1.1270714290091874
+          ],
+          "end": [
+            1.0000000000007876,
+            0.09587383991236587,
+            -0.1052887121464019
+          ]
+        },
+        {
+          "region": 1,
+          "duration": 1.4295306349763592,
+          "start": [
+            1.0000000000007876,
+            0.09587383991236587,
+            -0.1052887121464019
+          ],
+          "end": [
+            1.0000000000004212,
+            -0.3825197894384947,
+            -1.5703052327939342
+          ]
+        },
+        {
+          "region": 0,
+          "duration": 0.4122356667735114,
+          "start": [
+            1.0000000000004212,
+            -0.3825197894384947,
+            -1.5703052327939342
+          ],
+          "end": [
+            1.3742340598810188e-12,
+            -0.23909563977147544,
+            0.4390043257321018
+          ]
+        }
+      ]
+    },
+    "training_n": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "root_converged": true
+  },
+  "retrospective_control": {
+    "note": "P65 was already known; this is NOT a blind test.",
+    "fit": {
+      "limit": 14.306358989456566,
+      "ratio": 0.36853445991709144,
+      "coefficients": [
+        6.340933498610976e-05,
+        -6.479806514468816e-05,
+        1.3887301585786424e-06,
+        2.8316314075515e-07
+      ],
+      "beta_origin": 14.30629558012158,
+      "n_origin": 5,
+      "parent": {
+        "beta": 14.306358989456566,
+        "alpha": 9.0,
+        "m0": -1.1428571428571428,
+        "m1": -0.7142857142857143,
+        "symmetric": true,
+        "q": [
+          0.2390956447674108,
+          -0.4390043058510264,
+          1.4316369945784875,
+          1.5238112495470675,
+          0.601459029444603,
+          1.4295306507871344,
+          0.4122356646937858
+        ],
+        "period": 10.797347178102157,
+        "residual": 1.4974688156144111e-12,
+        "map_multipliers": [
+          [
+            -1.6472554327048274,
+            0.0
+          ],
+          [
+            3.205382694947776e-05,
+            0.0
+          ]
+        ],
+        "full_multipliers": [
+          [
+            2.7134504605755683,
+            0.0
+          ],
+          [
+            1.0274478221070666e-09,
+            0.0
+          ]
+        ],
+        "spectral_radius": 2.7134504605755683,
+        "section_matrix": [
+          [
+            -0.5184458495676489,
+            -0.666685859665499
+          ],
+          [
+            -0.8778689655804044,
+            -1.128777529310229
+          ]
+        ],
+        "minimum_breakpoint_speed": 1.1438630535544956,
+        "map_determinant_liouville": -5.280084058150764e-05,
+        "map_trace": -1.6472233788778778,
+        "full_logdet": -19.69796689454894,
+        "region_violation": 1.4975798379168737e-12,
+        "arcs": [
+          {
+            "region": 0,
+            "duration": 1.4316369945784875,
+            "start": [
+              0.0,
+              0.2390956447674108,
+              -0.4390043058510264
+            ],
+            "end": [
+              0.9999999999985025,
+              0.10121805804043038,
+              -0.43544485401914246
+            ]
+          },
+          {
+            "region": 1,
+            "duration": 1.5238112495470675,
+            "start": [
+              0.9999999999985025,
+              0.10121805804043038,
+              -0.43544485401914246
+            ],
+            "end": [
+              1.0000000000008165,
+              -0.2699530376962979,
+              -1.127071414736458
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 0.601459029444603,
+            "start": [
+              1.0000000000008165,
+              -0.2699530376962979,
+              -1.127071414736458
+            ],
+            "end": [
+              1.0000000000007876,
+              0.09587382871905398,
+              -0.10528872268065381
+            ]
+          },
+          {
+            "region": 1,
+            "duration": 1.4295306507871344,
+            "start": [
+              1.0000000000007876,
+              0.09587382871905398,
+              -0.10528872268065381
+            ],
+            "end": [
+              1.000000000000421,
+              -0.3825197887385809,
+              -1.5703052361167356
+            ]
+          },
+          {
+            "region": 0,
+            "duration": 0.4122356646937858,
+            "start": [
+              1.000000000000421,
+              -0.3825197887385809,
+              -1.5703052361167356
+            ],
+            "end": [
+              1.3768985951401191e-12,
+              -0.23909564476730608,
+              0.4390043058497343
+            ]
+          }
+        ]
+      },
+      "training_n": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "root_converged": true
+    },
+    "predicted_fold": 14.30633533620924,
+    "known_fold": 14.306335389781674,
+    "absolute_error": 5.3572433600379554e-08
+  },
+  "predictions": [
+    {
+      "n": 7,
+      "peaks": 75,
+      "section_returns": 15,
+      "symmetric": true,
+      "half_outer_word": "RRLLRRLLRRLLRRLLRRLLRRLLRRLLRR",
+      "fold_beta_corrected": 14.306350312712022,
+      "fold_beta_leading": 14.306350061117207,
+      "symmetric_core_width": 4.313504289558286e-09,
+      "fold_period": 162.1237922924807,
+      "acceptance": {
+        "corrected_location_absolute_error": 2e-08,
+        "width_relative_error": 0.2,
+        "period_absolute_error": 0.002,
+        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured core widths."
+      }
+    },
+    {
+      "n": 8,
+      "peaks": 85,
+      "section_returns": 17,
+      "symmetric": true,
+      "half_outer_word": "RRLLRRLLRRLLRRLLRRLLRRLLRRLLRRLLRR",
+      "fold_beta_corrected": 14.306355855255894,
+      "fold_beta_leading": 14.306355468048233,
+      "symmetric_core_width": 5.858583097534224e-10,
+      "fold_period": 183.71848714231925,
+      "acceptance": {
+        "corrected_location_absolute_error": 2e-08,
+        "width_relative_error": 0.2,
+        "period_absolute_error": 0.002,
+        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured core widths."
+      }
+    }
+  ]
+}
