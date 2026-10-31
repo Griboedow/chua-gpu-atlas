@@ -4,6 +4,8 @@
 
 Python + OpenCL · actual GPU calculations · reproducible data · MIT license
 
+**What a layer means:** each resolved periodic layer maps the parameter values supporting a family of repeating attractor motions. Moving along a stable branch changes the orbit's shape and timing; moving between families can change its repeating pattern, visits to the two scrolls, and symmetry. The layer lives in parameter space; the corresponding motion lives in state space. [See the motion behind each of the 32 catalogued families](docs/chua-family-gallery.md).
+
 **New research: symmetry changes the apparent layer count.** Two islands of symmetric coexistence can be connected by a region with **three** attracting cycles. Following the asymmetric branches resolves that bridge and identifies nearby regions with four cycles. The new study traces 18 contact curves, checks representative orbits independently, and tests quantitative predictions for how the islands separate.
 
 ![Symmetric coexistence islands and the three-cycle region connecting them](docs/assets/chua-overlap-story.png)
@@ -54,6 +56,17 @@ This project studies **two different 3D spaces**:
 ## What turned out to be interesting?
 
 **A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; continuation now separates **32 periodic-window families** in the local atlas.
+
+**Read the layers as families of motion.** Each highlighted sheet below follows a particular family of attracting periodic orbits. Their differences become clearer when we compare a complete repeating signal, not just the outline of the orbit:
+
+| Difference in motion | Example from the reference portraits |
+|---|---|
+| Which scrolls it visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other 31 reference representatives visit both outer regions. |
+| How long and in what pattern it repeats | [S08](docs/chua-family-gallery.md#s08) and [S11](docs/chua-family-gallery.md#s11) both have five peaks, but different waveforms and periods of about 10.89 and 14.50. |
+| How many peaks occur before the whole motion repeats | The thin sequence runs through 15, 25, 35, 45, [55](docs/chua-family-gallery.md#p55), and [65](docs/chua-family-gallery.md#p65) peaks per full cycle. |
+| Whether the two halves mirror each other | 23 reference representatives are inversion symmetric; 9 are asymmetric. Symmetry can change along a family's descendant branches. |
+
+Thus **32 families does not mean 32 unique silhouettes or 32 simultaneous attractors**. Family identity comes from following the periodic-orbit branch, including its ancestry, rather than counting peaks alone. Where stability regions overlap, different repeating motions can coexist at identical parameters; the initial state selects the outcome. A symmetric cycle can also split into an asymmetric pair within the same family, as the study at the top of this page shows.
 
 ![All 32 catalogued layers highlighted one at a time, with a matching alpha=9 slice](docs/assets/chua-readme-layers.gif)
 

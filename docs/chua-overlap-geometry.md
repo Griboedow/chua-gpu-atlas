@@ -42,18 +42,15 @@ For each family j, let the following symbols denote m0 values at fixed values of
 | S_j | Symmetry-breaking branch point | Symmetric cycle changes into an asymmetric pair |
 | D_j | First period doubling of an asymmetric cycle | The asymmetric pair reaches its first loss of stability |
 
-The computed ordering is `D_j < S_j < F_j`. For the checked branch segments, the primary-cycle count is represented by
+The computed ordering is `D_j < S_j < F_j`. For the checked branch segments, the primary-cycle count `nu_j(m0)` is:
 
-```math
-\nu_j(m_0)=
-\begin{cases}
-1,&S_j<m_0<F_j,\\[2pt]
-2,&D_j<m_0<S_j,\\[2pt]
-0,&\text{outside those two tracked stable segments}.
-\end{cases}
-```
+| Parameter interval | Count `nu_j` | Attracting primary motion |
+|---|---:|---|
+| `S_j < m0 < F_j` | 1 | One symmetric cycle |
+| `D_j < m0 < S_j` | 2 | Two distinct asymmetric cycles related by inversion |
+| Outside these two tracked stable segments, excluding marginal endpoints | 0 | No attracting primary cycle counted on these segments |
 
-The count excludes marginal endpoints, period-doubled descendants, other windows and other families. A zero in this expression does **not** assert the absence of attractors. Within the tracked segments, the number of distinct attracting primary cycles is `nu_5 + nu_7`.
+The count excludes marginal endpoints, period-doubled descendants, other windows and other families. A zero in this table does **not** assert the absence of attractors. Within the tracked segments, the number of distinct attracting primary cycles is `nu_5 + nu_7`.
 
 The common m0 interval for two symmetric cycles has signed width
 
