@@ -1,8 +1,14 @@
 # Recorded evidence
 
-These JSON files are copies of the computation settings and validation summaries supplied in the complete results release. They allow checking the headline claims without downloading the large arrays.
+The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
-- [`chua-layer-prediction/`](chua-layer-prediction/README.md): forecasts published before the 75/85-peak search, 55/75-digit orbit checks, independent full-field controls, preserved forecast and numerical failures, a candidate organizing tangency, a 34-entry reference registry and five scientific figures. See [the theory and evidence](../docs/chua-layer-prediction.md); an infinite hierarchy remains conditional.
+- [`chua-layer-infinity/`](chua-layer-infinity/README.md): interval certificates at 80 and 100 digits, two rejected parameter boxes, independent local/global derivative controls, a reconstructed numerical center and two figures. The [proof report](../docs/chua-infinity-certificate.md) derives an infinite cascade from the certified quadratic tangency.
+
+- [`chua-layer-prediction/`](chua-layer-prediction/README.md): forecasts published before the 75/85-peak search, 55/75-digit orbit checks, independent full-field controls, preserved forecast and numerical failures, the preliminary organizing geometry, a 34-entry reference registry and five scientific figures. See [the prediction report](../docs/chua-layer-prediction.md).
+
+- [`chua-layer-atlas/`](../docs/chua-refined-atlas.md): the 32-family mesh snapshot, registry, ancestry, continuation checks, dense README view and [file manifest](chua-layer-atlas/manifest.json).
+
+- [`chua-slope-plane/`](../docs/chua-slope-plane.md), [`chua-slope-volumes/`](../docs/chua-slope-volumes.md), [`chua-slope-families/`](../docs/chua-slope-families.md): sampled slope sections and volumes, continued families and basin controls.
 
 - [`chua-overlap-geometry/`](chua-overlap-geometry/README.md): symmetry-resolved P5/P7 coexistence, 18 contact curves, projection extrema, checked two-/three-/four-cycle examples, predictive tests, six figures and a self-contained visual guide. See [the research note](../docs/chua-overlap-geometry.md).
 

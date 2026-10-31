@@ -21,7 +21,10 @@ continue_chua_slope_families check_chua_slope_families map_chua_slope_coexistenc
 resolve_chua_overlap_geometry check_chua_overlap_geometry plot_chua_overlap_geometry
 predict_chua_layers chua_precision_flights check_chua_precision_flights verify_chua_layer_predictions
 audit_chua_layer_predictions describe_chua_layer_words analyze_chua_prediction_evidence
-trace_chua_layer_organizer plot_chua_layer_predictions'''.split()
+trace_chua_layer_organizer plot_chua_layer_predictions
+chua_interval_map chua_interval_connection certify_chua_layer_organizer
+certify_chua_homoclinic_tangency locate_chua_homoclinic_tangency
+check_chua_interval_derivatives check_chua_global_connection plot_chua_infinity'''.split()
 
 
 def digest(path):
@@ -63,6 +66,9 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-slope-families').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-overlap-geometry').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-prediction').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-layer-infinity').iterdir() if p.is_file())
+    paths.update(ROOT/p for p in ['requirements-certificate.txt','docs/chua-infinity-certificate.md','docs/research-guide.md','docs/README.md','research/README.md'])
+    paths.update((ROOT/'docs/assets').glob('chua-infinity-*.png'))
     paths.add(ROOT/'requirements-precision.txt')
     paths.add(ROOT/'docs/chua-layer-prediction.md')
     paths.update((ROOT/'docs/assets').glob('chua-layer-prediction-*.png'))
@@ -90,7 +96,7 @@ def main():
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
         text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs and .svg; binary files are unchanged.',
-        scope='Hashes identify this finite numerical catalogue and its executable evidence, not mathematical certification.')
+        scope='Hashes identify the finite numerical catalogue, forecasts and executable interval certificate. Integrity checks do not themselves prove mathematical claims; see docs/chua-infinity-certificate.md for the argument.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')
 

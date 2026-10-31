@@ -2,7 +2,7 @@
 
 The [research report](../../docs/chua-layer-prediction.md) compares forecasts published in [0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) with a later targeted search. The model is the classical piecewise-linear Chua system at alpha = 9, m0 = -8/7, m1 = -5/7. Two new attracting reference cycles have 75 and 85 maxima, extending the operational catalogue from 32 to 34. Their complete three-dimensional sheets were not continued in this update.
 
-The 75-peak forecast overlaps the measured core. The 85-peak forecast misses it by several measured widths; orbit correction subsequently finds it. The width discrepancies are 1.89% and 2.70% of the forecasts. The numerical checks support a quadratic-return mechanism but do not certify a homoclinic tangency or infinitely many layers.
+The 75-peak forecast overlaps the measured core. The 85-peak forecast misses it by several measured widths; orbit correction subsequently finds it. The width discrepancies are 1.89% and 2.70% of the forecasts. These numerical checks preceded the separate [interval certificate](../chua-layer-infinity/README.md), which now establishes a tangency and an infinite cascade. The frozen forecasts and recorded numerical outcomes here remain unchanged.
 
 ## Evidence files
 

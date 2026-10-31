@@ -2,7 +2,7 @@
 
 **Two previously uncatalogued motions, with 75 and 85 peaks per full cycle, were found after their forecasts were published.** Their symmetric-core widths differ from the forecasts by **1.89% and 2.70%**. The 75-peak forecast overlaps the measured core; the 85-peak forecast misses it by several core widths and requires orbit correction. Both results, including this miss, are retained below.
 
-The theoretical mechanism links the spacing, thickness and repetition time of one sequence of layers to a short unstable periodic orbit. It also provides a precise conditional route to infinitely many layers. The numerical evidence supports that mechanism; **it does not prove the required global connection or an infinite hierarchy**. The operational reference catalogue grows from **32 to 34**, with two new reference roots rather than two newly meshed three-dimensional sheets.
+The theoretical mechanism links the spacing, thickness and repetition time of one sequence of layers to a short unstable periodic orbit. This report records the numerical prediction stage, which left infinity conditional. A subsequent [interval certificate](chua-infinity-certificate.md) establishes the exact quadratic homoclinic tangency and proves an infinite cascade of attracting windows on the stated transect. The frozen forecasts and numerical outcomes below are unchanged. The operational reference catalogue contains **34** roots; the two additions have not been meshed in three dimensions.
 
 ![Frozen predictions beside the measured cores at their actual width scale](assets/chua-layer-prediction-proof.png)
 
@@ -102,6 +102,8 @@ This is a numerical approximation using tangent lines and finitely many iterates
 
 ## What this would say about the number of layers
 
+**Status after the prediction stage:** the [subsequent proof](chua-infinity-certificate.md) now verifies the organizing connection and the hypotheses of the sink-cascade theorem. The discussion below preserves the prediction model and its original conditional argument. Exact peak labels and quantitative widths for every uncomputed member remain outside that certificate.
+
 An infinite sequence is a theorem-level conclusion only if the required global connection, quadratic nondegeneracy, dissipativity, admissible itineraries and transverse parameter unfolding are established. A finite fit, however accurate, does not verify those hypotheses for all n. Counting unstable periodic orbits also does not count attracting windows.
 
 Conditional on Wn approximately B Lambda^(-2n), the number of cores wider than a resolution epsilon grows only logarithmically with 1/epsilon:
@@ -128,7 +130,7 @@ Assume also that the parameter conversion is transverse, with derivative of orde
 
 On the square D = [-1/4, 1/4]^2, for abs(M) <= 1/16, Q maps D strictly into its interior: the first coordinate has magnitude at most 1/8 and the second is zero. Its derivative has induced infinity norm at most 1/2. Uniform perturbations of less than 1/16 in value and less than 1/4 in derivative therefore still map D into itself and contract distances by a factor below 3/4. The contraction mapping theorem gives an attracting fixed point for every such M. Since the hypotheses hold for every sufficiently large n, this yields infinitely many primitive attracting windows. Their beta widths have order Lambda^(-2n). If their centers have a nonzero leading A Lambda^(-n) displacement, their separations are larger than their widths for large n, so the windows are disjoint along the transect.
 
-This proves the **conditional implication** without inferring infinity from a finite list. Establishing the uniformly rescaled return maps for this Chua sequence would complete the crucial step. A suitable nondegenerate quadratic manifold connection with dissipativity is the proposed route to that result. The 55/75-digit calculations below are ordinary numerical calculations, not interval bounds on those maps.
+This proves the **conditional implication** without inferring infinity from a finite list. At this stage the global manifold connection remained to be verified. The later [certificate](chua-infinity-certificate.md) supplies a nondegenerate dissipative connection and applies the classical sink-cascade theorem. It does not claim explicit uniform error bounds for the 10n+5 peak labelling or width formula. The 55/75-digit calculations below are ordinary numerical calculations, not interval bounds on those maps.
 
 This mechanism would give infinitely many parameter windows accumulating near a finite beta. It would **not** mean infinitely many stable cycles coexist at the limiting parameter itself.
 

@@ -1,274 +1,118 @@
 # Chua GPU Atlas
 
-**Revisiting an old coursework problem: from a two-parameter scan that took months to a three-dimensional numerical atlas of chaos.**
+A study of periodic layers, coexisting attractors and thin stability windows in the continuous piecewise-linear Chua system. GPU surveys locate candidate regions; periodic-orbit continuation resolves their structure; interval arithmetic checks a mechanism that generates infinitely many windows.
 
-Python + OpenCL · actual GPU calculations · reproducible data · MIT license
+**Main result:** at α = 9, m₀ = −8/7 and m₁ = −5/7, infinitely many attracting periodic windows accumulate near **β = 14.30635909996146**. An executable interval certificate establishes a quadratic homoclinic tangency and the hypotheses of the classical sink-cascade theorem. The finite atlas contains **34 reference identities**, of which 32 have sampled three-dimensional sheets.
 
-**What a layer means:** each resolved periodic layer maps the parameter values supporting a family of repeating attractor motions. Moving along a stable branch changes the orbit's shape and timing; moving between families can change its repeating pattern, visits to the two scrolls, and symmetry. The layer lives in parameter space; the corresponding motion lives in state space. See the [original 32-family portraits](docs/chua-family-gallery.md) and [two newly predicted motions](docs/chua-layer-prediction.md#predictions-first-search-second).
+[Research guide](docs/research-guide.md) · [Proof and interval certificate](docs/chua-infinity-certificate.md) · [Motion gallery](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
-**New: predict the next layers before searching.** A short unstable cycle predicts the shrinking widths and growing periods of the 15 → 25 → … sequence. Forecasts were [published first](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea); the subsequent search found **75- and 85-peak cycles**, with width discrepancies of **1.89% and 2.70%**. The 85-peak location forecast missed its exceptionally thin core, and that miss is shown at the true scale below. Orbit correction and independent full-field checks then confirmed the motion.
+![Measured periodic windows and the certificate establishing an infinite cascade](docs/assets/chua-infinity-overview.png)
 
-![Frozen forecasts versus the two newly found stable cores](docs/assets/chua-layer-prediction-proof.png)
+The infinite sequence concerns different periodic motions at different parameter values. It does not count globally disconnected surfaces, and it does not assert infinitely many attractors at the limiting parameter itself. The certificate encloses the tangency in **14.30635909996140 < β* < 14.30635909996152**. Its assumptions, derivation, positive checks and rejected controls are given in the [proof report](docs/chua-infinity-certificate.md).
 
-[Theory, predictions, numerical evidence and the infinity question](docs/chua-layer-prediction.md) · [Why similar-looking orbits differ](docs/assets/chua-layer-motion-description.png) · [Candidate organizing geometry](docs/assets/chua-layer-prediction-organizer.png) · [Reproduce the calculations](results/chua-layer-prediction/README.md).
+## What a layer represents
 
-The reference catalogue now contains **34 distinct normalized roots** under its existing identity convention. The two new entries have checked reference cycles; the three-dimensional animation below remains the **32-family mesh snapshot**. The proposed mechanism supports an infinite hierarchy conditionally, but an infinite number of attracting layers has **not** been proved. At the observed shrinkage rate, an extra decimal digit of parameter resolution would expose only about 1.15 further members of this sequence asymptotically.
+A layer is a region in **parameter space** supporting a family of attracting periodic motions. Following that family changes its orbit continuously. Different families can differ in their complete repeating signal, period, visits to the two scrolls and symmetry. The corresponding orbit is a curve in **state space**.
 
-**New research: symmetry changes the apparent layer count.** Two islands of symmetric coexistence can be connected by a region with **three** attracting cycles. Following the asymmetric branches resolves that bridge and identifies nearby regions with four cycles. The new study traces 18 contact curves, checks representative orbits independently, and tests quantitative predictions for how the islands separate.
+![The 32 sampled families highlighted individually at a fixed camera angle](docs/assets/chua-readme-layers.gif)
 
-![Symmetric coexistence islands and the three-cycle region connecting them](docs/assets/chua-overlap-story.png)
+The camera and coordinates stay fixed while individual families are highlighted. This view uses **5,447 checked periodic-cycle samples**, including 3,975 added parameter locations; 4,126 samples lie in the displayed box. Dots are closed attracting cycles. Facets show sample adjacency; their drawn thickness does not represent a window's physical width. The animation is the 32-family mesh snapshot. The later 75- and 85-peak entries have checked reference cycles but have not been meshed.
 
-[Research note and literature comparison](docs/chua-overlap-geometry.md) · [See the 2, 3 and 4 cycles](docs/assets/chua-overlap-orbits.png) · [Magnified section points](docs/assets/chua-overlap-sections.png) · [Offline visual guide](results/chua-overlap-geometry/guide.html) (download and open locally). These are results for two selected primary families; scientific priority and the complete attractor count remain open.
-
-**Beyond Chua:** the searches in other physical and biological systems now have their own public MIT project, [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab), with [a readable findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), data and animations. The Chua atlas and its parameter-scaling investigation remain here. The verified transfer is complete; historical commits remain available.
-
-![The expanded parameter cloud with a gentle camera sweep](docs/assets/expanded-rotation.gif)
-
-*Each dot is a parameter tuple (α, β, m₀). These are 1,832 finite-time chaos candidates from the expanded adaptive GPU survey. Gold outlines the previous search domain. The camera slowly sweeps through a 60° horizontal arc and back over 24 seconds, with a fixed tilt and no roll; the data do not change. The axes have different scales, and the cloud is not a filled or proven existence region.*
-
-## Why I came back to this
-
-My university coursework involved studying the Chua system by scanning two parameters. I spent months running calculations. I did not understand the subject very well, and my computer was weak. Much of the experience was simply waiting for another calculation to finish.
-
-I decided to return to the problem and see whether there had been anything interesting hiding in it. This time I could use a GPU, vary three parameters, and look inside the shapes instead of just waiting for them to appear.
-
-There was plenty to look at: thin regular windows inside chaotic regions, different attractors at exactly the same parameters, and a parameter cloud that keeps extending beyond the original search boxes. This repository is a record of that return, including the numerical checks and the places where the evidence is still incomplete.
-
-The old “months” is a personal recollection, **not a speedup benchmark**. The old and new calculations are not matched experiments.
-
-## What is the Chua system?
-
-Chua's circuit is a small nonlinear electrical circuit with two capacitors, an inductor, a resistor, and a nonlinear resistor often called the Chua diode. Its dimensionless model has three state variables and can produce the famous **double-scroll attractor**: motion that keeps folding around two lobes without settling into a repeating cycle [1, 2].
-
-```text
-dx/dt = α [y − x − h(x)]
-dy/dt = x − y + z
-dz/dt = −βy
-
-h(x) = m₁x + ½(m₀ − m₁)(|x + 1| − |x − 1|)
-```
-
-Here `m₀` and `m₁` are the inner and outer diode slopes. Some references absorb the `x` term into the nonlinear function, shifting both slopes by one; parameter conventions matter.
-
-This project studies **two different 3D spaces**:
-
-| Space | Coordinates | What a point means |
-|---|---|---|
-| State space | x, y, z | One instantaneous state of one system |
-| Parameter space | α, β, m₀ | A different system, with m₁ held fixed |
-
-![The classic double-scroll trajectory with a gentle camera sweep](docs/assets/trajectory-rotation.gif)
-
-*One finite trajectory at α=9, β=100/7, m₀=−8/7, m₁=−5/7. Only the camera moves.*
-
-## What turned out to be interesting?
-
-**A tiny parameter change can remove the observed chaos.** At the classic slopes and α=9, changing β from 100/7 to 14.32 is only a 0.24% change. The new trajectory has a repeating five-peak pattern and an exponent near zero. The initial coarse grid missed the window; continuation separated **32 periodic-window families** in the mesh snapshot below, and the prediction study adds two reference identities.
-
-**Read the layers as families of motion.** Each highlighted sheet below follows a particular family of attracting periodic orbits. Their differences become clearer when we compare a complete repeating signal, not just the outline of the orbit:
-
-| Difference in motion | Example from the reference portraits |
+| Difference in motion | Example |
 |---|---|
-| Which scrolls it visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other 31 mesh-snapshot representatives and both new references visit both outer regions. |
-| How long and in what pattern it repeats | [S08](docs/chua-family-gallery.md#s08) and [S11](docs/chua-family-gallery.md#s11) both have five peaks, but different waveforms and periods of about 10.89 and 14.50. |
-| How many peaks occur before the whole motion repeats | The thin sequence runs through 15, 25, 35, 45, [55](docs/chua-family-gallery.md#p55), [65](docs/chua-family-gallery.md#p65), and now [75 and 85](docs/chua-layer-prediction.md#predictions-first-search-second) peaks per full cycle. |
-| Whether the two halves mirror each other | In the 32-family mesh snapshot, 23 reference representatives are inversion symmetric and 9 are asymmetric. The two new references are symmetric. Symmetry can change along a family's descendant branches. |
+| Repetition time and waveform | [S08 and S11](docs/chua-family-gallery.md#s08) both have five peaks but periods of about 10.89 and 14.50. |
+| Number of peaks before the motion repeats | The measured thin sequence has 15, 25, …, 85 peaks per full cycle. |
+| Scroll visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other mesh representatives visit both. |
+| Symmetry | A symmetric cycle can lose symmetry and produce two inversion-related attracting cycles. |
 
-Thus **32 families does not mean 32 unique silhouettes or 32 simultaneous attractors**. Family identity comes from following the periodic-orbit branch, including its ancestry, rather than counting peaks alone. Where stability regions overlap, different repeating motions can coexist at identical parameters; the initial state selects the outcome. A symmetric cycle can also split into an asymmetric pair within the same family, as the study at the top of this page shows.
+Peak counts and orbit silhouettes alone do not identify a family. The catalogue follows normalized periodic roots and their continuation ancestry. The [gallery](docs/chua-family-gallery.md) shows an orbit, complete signal and peak sequence for each original family; [two further portraits](docs/chua-layer-prediction.md) show the 75- and 85-peak motions. The [refined atlas](docs/chua-refined-atlas.md) documents the identity convention and numerical checks.
 
-![All 32 catalogued layers highlighted one at a time, with a matching alpha=9 slice](docs/assets/chua-readme-layers.gif)
+## Prediction, search and proof
 
-*Watch one family at a time: the coordinates and camera stay fixed. The refined view contains **5,447 checked periodic-cycle samples**, including **3,975 new parameter locations**; 4,126 samples lie inside the displayed box. Dots are closed attracting cycles, and connecting facets guide the eye. A colored sheet locates a family; its drawn thickness does not measure the width of its stable window. The label gives the peak count and period of that family's reference cycle.*
+A short unstable periodic orbit organizes the measured 15 → 25 → … sequence. Longer cycles spend additional returns near this saddle before making a global excursion. Its expansion factor predicts the rate at which window spacing and width decrease, while its period predicts the additional repetition time.
 
-**More points alone cannot make every thin window visible at this scale.** The separate zoom below resolves the 55- and 65-peak symmetric cores with 25 newly closed cycles each. The narrowest core is about **126,000 times smaller** than the old beta spacing; its new interior beta spacing is about **1.27e-9**.
+Forecasts for the 75- and 85-peak members were [published before the search](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea). Both motions were subsequently found and checked independently. Their symmetric-core widths differed from the forecasts by **1.89% and 2.70%**.
 
-![Dense family branches over the old sampled mask, and physical-width zooms of the thinnest cores](docs/assets/chua-readme-layer-zoom.png)
+![Published forecasts compared with the measured windows at their true width scale](docs/assets/chua-layer-prediction-proof.png)
 
-*Left: the alpha=9 slice over the original regular-node mask. Upper right: six shrinking windows on one beta scale, with a separate categorical row for each family. Lower right: magnified physical beta intervals; multiplier magnitude below one means the cycle is attracting. Open circles mark the previously estimated boundaries. [Data and reproduction](results/chua-layer-atlas/readme-layer-view/README.md).*
+The 75-peak forecast overlaps its core. The 85-peak location forecast misses its much narrower core and requires orbit correction. This miss remains part of the result. That core is about **6.65 million times narrower** than the old β grid spacing, which explains why a uniform scan can miss whole families.
 
-Two broad families overlap and support four attracting cycles at the same parameters. The [refined atlas report](docs/chua-refined-atlas.md) includes the new views, labelled branches, ancestry, behaviour comparisons, numerical controls, and an offline interactive atlas. **The catalogue is not an exhaustive count of every possible layer.**
+The [prediction report](docs/chua-layer-prediction.md) preserves the frozen forecasts, measured orbits and failed numerical controls. The [subsequent certificate](docs/chua-infinity-certificate.md) bounds the exact invariant manifolds and proves the organizing tangency. It checks entire flight intervals, curvature, dissipativity and parameter unfolding. A classical theorem then supplies the infinite cascade; the finite sequence is not extrapolated into a proof.
 
-<details><summary>Original 41³ scan, before resolving individual families</summary>
+## Where layers overlap
 
-![Rotation of the original local regular-window surface](docs/assets/window-rotation.gif)
+Different attracting motions can coexist at the same parameters. Their basins determine which one a trajectory reaches. Following only one initial state can therefore miss a family even on a dense parameter grid.
 
-Pink: an unsmoothed surface extracted from nodes with near-zero/nonpositive exponents for all three starts. It is clipped at the search box. A five-peak pattern was checked at the highlighted example, not at every surface vertex. This earlier mask does not separate the 32 family identities.
+![Symmetric coexistence islands connected through a three-cycle region](docs/assets/chua-overlap-story.png)
 
-</details>
+For two selected families, the symmetric coexistence region splits into islands while a region with **three attracting cycles** connects their primary branches. Nearby parameters support four cycles. The [overlap study](docs/chua-overlap-geometry.md) follows symmetric and asymmetric branches, traces 18 contact curves and checks representative motions independently. [Orbit portraits](docs/assets/chua-overlap-orbits.png) and [magnified section points](docs/assets/chua-overlap-sections.png) show the different outcomes.
 
-**See what each family does:** the [32-family portrait gallery](docs/chua-family-gallery.md) shows one orbit, full repeating signal, and peak sequence per family. Its interactive comparison lets you rotate and overlay any two reference trajectories. Similar outlines can hide very different repetition patterns.
+## Varying both diode slopes
 
-**What if both diode slopes vary?** A new two-dimensional section fixes α=9 and β=100/7 and varies m₀ and m₁ independently. The wide view shows nested curved regular bands inside a chaotic-candidate region; near the classical point they become almost vertical strips. Two marked examples are independently checked attracting cycles with five and seven peaks. The [slope-plane report](docs/chua-slope-plane.md) includes peak-pattern maps and numerical sensitivity checks. This section does not inherit the earlier catalogue's count of 32 families.
+The [m₀–m₁ section](docs/chua-slope-plane.md) and the two volumes below vary both slopes independently. The volumes use **(m₀,m₁,α)** at β = 100/7 and **(m₀,m₁,β)** at α = 9.
 
-![Two-dimensional m0-m1 map, with a zoom near the classical slopes](docs/assets/chua-slope-plane.png)
+![Interior views of the m0-m1-alpha and m0-m1-beta parameter volumes](docs/assets/chua-slope-volumes-interior.png)
 
-*Blue: all three starts are chaos candidates; orange: regular candidates; green: equilibrium candidates; purple: different classifications across starts. These are finite-time sampled maps. The report retains changed labels under step and observation-time refinement.*
+Each volume contains 152,561 sampled parameter nodes with three initial states. These are finite-time classifications; they can miss thin windows and small basins. [Continued five- and seven-peak families](docs/chua-slope-families.md) resolve parts of this structure and establish coexistence. The [volume report](docs/chua-slope-volumes.md) provides sections, numerical limits and an offline interactive viewer. [Slow rotation](docs/assets/chua-slope-volumes.gif).
 
-**The slope plane now extends into two 3D volumes.** One varies `(m0, m1, alpha)` at beta = 100/7; the other varies `(m0, m1, beta)` at alpha = 9. Each contains 152,561 directly calculated parameter nodes with three starts. The interior views below expose curved regular-candidate sheets that the broad outer regions obscure. These first volume grids can still miss thin layers.
+## Model
 
-![Interior views of the m0-m1-alpha and m0-m1-beta volumes](docs/assets/chua-slope-volumes-interior.png)
-
-[Full views, sections and numerical limits](docs/chua-slope-volumes.md) · [Slow 24-second rotation](docs/assets/chua-slope-volumes.gif) · [Offline interactive viewer](results/chua-slope-volumes/volumes.html) (download and open in a browser).
-
-**Two tracked slope families overlap.** Following the verified five- and seven-peak cycles resolves symmetric cores up to 55 times thinner than the original m0 grid step at the central section. Thirteen common-parameter witnesses support both attracting cycles. At the highlighted witness, all three original atlas starts select the seven-peak cycle, so denser parameter sampling alone would still miss the five-peak outcome.
-
-![The continued five- and seven-peak family sheets overlap in both slope volumes](docs/assets/chua-slope-family-sheets.png)
-
-[Family identities, birth mechanisms, coexistence and an apparent ending](docs/chua-slope-families.md) · [Both coexisting orbits](docs/assets/chua-slope-coexistence.png) · [Slow family rotation](docs/assets/chua-slope-family-sheets.gif). The report retains failed continuation nodes and the capture map's sensitivity to integration step.
-
-The [symmetry-resolved continuation study](docs/chua-overlap-geometry.md) now extends both families through their asymmetric branches and first period-doubling edges. It explains why the symmetric overlap splits before the primary-family overlap, and supplies the new figures at the top of this page.
-
-**The same parameters can support two different chaotic outcomes.** At α=15.6, β=32, m₀=−1.143 and m₁=−0.714, symmetric initial states approach two symmetric single-scroll attractors. A 151² initial-condition slice shows their different basins. At β=29 in the same section, the calculation instead finds a six-peak regular window.
-
-![Lyapunov transect, peak diagram, coexisting scrolls and basin map](docs/assets/findings.png)
-
-**The original region was only a small piece.** A wider Sobol survey finds repeated candidates near α=256 and m₀=−8, with β reaching about 12,022. The search still reaches its imposed limits. We have not established whether the complete parameter set is bounded, or whether all distant points connect to the original component.
-
-**There is an analytic clue to the bend.** For m₁=−5/7, the outer equilibria change linear stability at
-
-```text
-β = 5α/7 + 10α²/49.
+```math
+\dot x=\alpha[y-x-h(x)],\qquad \dot y=x-y+z,\qquad \dot z=-\beta y,
 ```
 
-All 2,249 repeated wide-survey candidates lie below this surface. It provides a useful growing β scale; it is not a proven global boundary of chaos.
+```math
+h(x)=m_1x+\frac{m_0-m_1}{2}\left(|x+1|-|x-1|\right).
+```
 
-These types of Chua phenomena are known in the literature [1, 2]. The contribution here is a reproducible numerical exploration of particular sections, not a claim to have discovered periodic windows or coexistence for the first time. More interpretation and open questions are in [the experiment notes](docs/experiment-notes.md).
+m₀ and m₁ are the inner and outer diode slopes. Some conventions absorb the x term into h and shift both slopes by one. The classic starting section uses α = 9, β = 100/7, m₀ = −8/7 and m₁ = −5/7. Background: [Chua circuit](https://doi.org/10.4249/scholarpedia.1488), [Kennedy's circuit primer](https://doi.org/10.1109/81.246141), and [Muthuswamy's model discussion, Eqs. 11–14](https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf).
 
-## Four times farther: the expanded survey
+## Reproduce the research
 
-The next experiment extends α from 256 to **1024**, and the slope depth −1−m₀ from 7 to **28** (m₀ down to −29). Sampling β relative to its quadratic stability scale extends the upper search limit to about **279,144**.
-
-Of **16,384** new Sobol parameter samples, **1,832** remain candidates after a second calculation with tighter tolerances and longer observation. Their separate coordinate extrema are:
-
-| Coordinate | Previous wide cloud | Expanded cloud |
-|---|---:|---:|
-| Largest α | 255.69 | **1023.64** |
-| Largest β | 12,022.30 | **173,658.02** |
-| Most negative m₀ | −7.9912 | **−28.9107** |
-
-The expanded cloud contains 732 candidates beyond α=256 and 440 beyond m₀=−8; 981 lie outside the previous search domain in at least one coordinate constraint. There are still candidates near both newly extended limits, so **a natural outer cutoff has not been located in those directions**. Finite sampling does not establish unboundedness or connectedness.
-
-The new FP64 GPU backend uses adaptive Dormand–Prince 5(4), controlling both the state and tangent vector. Scout and candidate verification took **281.5 seconds** in total on the GTX 1080, excluding independent CPU checks and plotting. The escape cutoff, sampling measure and integration settings differ from the previous survey, so candidate counts must not be compared as volumes.
-
-![Old search limits inside the expanded cloud, in linear and logarithmic views](docs/assets/expanded_extent.png)
-
-Four selected distant examples, including the largest α, largest β and most negative m₀, retain positive exponents in every window of independent full-field DOP853 checks. Their exponent magnitudes are not uniformly converged; the new report shows both solver estimates.
-
-The new report adds a view of β/βcrit, with βcrit=5α/7+10α²/49, to separate the quadratic bend from the remaining shape. All repeated candidates in this sample remain below that stability surface. Small original regions and thin windows are still easy to miss in a coarse global survey.
-
-The previous wide-map animation remains available for comparison:
-
-<details><summary>Earlier cloud, before the fourfold expansion</summary>
-
-![Original wide parameter cloud](docs/assets/extent-rotation.gif)
-
-</details>
-
-## Inside the thin periodic layers
-
-The [periodic-layer study](docs/chua-layer-bifurcations.md) continues the classical five-maximum window instead of only classifying sampled trajectories. It resolves a fold near beta = **14.330652**, symmetry breaking near **14.317275**, and period-doubling thresholds near **14.310344** and **14.308751**, at alpha = 9 and the classical slopes. Both sides of the symmetry transition have five maxima, hiding an internal boundary from the original recurrence count. Three local bifurcation surfaces and independent numerical checks are included; the end of the cascade and global layer connections remain open.
-
-![Periodic branches and their stability](docs/assets/chua-layer-bifurcations.png)
-
-The [layer census](docs/chua-layer-census.md) now matches **two broad five-maximum families** to the visible atlas, checks representatives of **17 periodic windows on one fixed transect**, and resolves a shrinking **15 → 25 → 35 → 45** sequence. The two broad families can overlap: a verified parameter point supports two different attracting five-maximum cycles with periods **10.8914** and **14.4952**. The transect count is not an exhaustive count of globally connected layers, and infinitude remains unproved for this box.
-
-![Two continued families over the original atlas](docs/assets/chua-layer-atlas-comparison.png)
-
-## Fixed slopes and the quadratic scaling question
-
-A further [fixed-slope experiment](docs/chua-scaling-research.md) follows beta = kappa alpha squared through alpha = **2048**. Of 5,670 prescribed trajectories, 1,536 retain a positive four-window screen after tighter continuation; all numerical failures in the first tight pass are preserved and separately resumed after a clock repair. A selected alpha = 2048 case has independent CPU/GPU leading rates near **0.960** on a matched finite interval. These are numerical candidates, not proof of persistence to infinite alpha.
-
-The [exact rescaling](docs/chua-scaling-structure.md) produces a harmonic oscillator driving a scalar equation at infinite alpha. Its frozen-amplitude responses are regular, but several stable responses can coexist. In a sampled example, outer and central responses produce opposite averaged amplitude drift. This suggests a concrete branch-switching question for the long-time limit. An exact affine transient also demonstrates why a positive finite-time exponent alone is insufficient.
-
-![Fixed-slope parameter sections](docs/assets/chua-scaling-sections.png)
-
-## Results and downloads
-
-[**Download the complete results from release v1.1.0**](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0).
-
-The release contains `chua-results-v1.1.0.zip` and a SHA-256 checksum. Extract it into the repository root to obtain `outputs/`. Then open:
-
-- `outputs/index.html` — the original atlas;
-- `outputs/detailed/index.html` — refined surfaces, slices, bifurcation diagrams and basins;
-- `outputs/extent/index.html` — the earlier wide point cloud;
-- `outputs/expanded/index.html` — the fourfold expansion, old/new overlay and normalized β view.
-
-Reports are **in English and work offline**, with a bundled Plotly runtime. They include links to NPZ arrays and JSON settings/validation records. Large raw arrays live in the release instead of Git history. The repository includes small illustration datasets, all GIFs and selected [evidence records](results/README.md).
-
-| Experiment | Parameter samples | Initial states | Measured GPU scan time |
-|---|---:|---:|---:|
-| Original two local boxes | 2 × 51³ | 3 each | 34.4 + 36.7 s |
-| Refined two local boxes | 2 × 81³ | 3 each | 137.2 + 147.1 s |
-| Thin-window zoom | 41³ | 3 each | 83.4 s |
-| Wide scout + candidate reruns + selected long reruns | 32,768 scout points | 3 each | about 15.8 min |
-| Expanded adaptive scout + candidate reruns | 16,384 scout points | 3 each | 88.2 + 193.2 s |
-
-Hardware: **NVIDIA GeForce GTX 1080, 8 GB**, FP64 OpenCL. Timings exclude plotting, archive creation and independent CPU checks; workloads use different integration settings. Exact metadata is retained with each experiment.
-
-## Run it
-
-Use **64-bit Python 3.11+** and a GPU driver exposing OpenCL with FP64 support. The recorded environment used Python 3.14.3. A separate CUDA toolkit is not required. The scanner requires an actual GPU; there is no silent CPU fallback.
+The interval certificate and its independent checks run on a CPU:
 
 ```bash
 python -m venv .venv
-# Activate: source .venv/bin/activate (Linux/macOS)
-# Activate: .\.venv\Scripts\Activate.ps1 (PowerShell)
-python -m pip install -r requirements.txt
-python run.py devices
-
-# Small exploratory run
-python run.py all --grid 21 --transient 100 --duration 200 --output outputs/quick
-
-# Reproduce the original atlas and its numerical checks
-python run.py all --grid 51
-python validate.py
-python run.py report
-
-# Re-render all four GIFs from included illustration data; no GPU required
-python render_animations.py
+# PowerShell: .\.venv\Scripts\Activate.ps1
+# Linux/macOS: source .venv/bin/activate
+python -m pip install -r requirements-certificate.txt
+python research/certify_chua_homoclinic_tangency.py --digits 100
+python research/check_chua_interval_derivatives.py
+python research/check_chua_global_connection.py
+python research/manifest_refined_chua_atlas.py --check
 ```
 
-The [methods and reproduction guide](docs/methods.md) covers refined scans, the wide survey, validation, classification codes and array layouts. `requirements-lock.txt` records exact versions from the supplied run; `requirements.txt` gives portable version ranges. `requirements-render.txt` is sufficient if you only want to rebuild the GIFs.
+See the [certificate reproduction guide](results/chua-layer-infinity/README.md) for the 80-digit repeat, center reconstruction, rejected controls and figures. The recorded environment used Python 3.14.3 and python-flint 0.9.0.
 
-Published starting points:
+The original scanner requires an OpenCL device with FP64 support:
 
-| Section | α | β | m₀ | Fixed m₁ | Source |
-|---|---:|---:|---:|---:|---|
-| Classic | 9 | 100/7 | −8/7 | −5/7 | Muthuswamy, Eqs. 11–14 [3] |
-| Chua Circuits example | 15.6 | 28 | −1.143 | −0.714 | Published dimensionless example [4] |
+```bash
+python -m pip install -r requirements.txt
+python run.py devices
+python run.py all --grid 21 --transient 100 --duration 200 --output outputs/quick
+```
 
-These are separate sections of a four-parameter family. The slightly different outer slopes are deliberately preserved.
+[Methods](docs/methods.md) covers the full scans, classifications, numerical controls and array layouts. The GPU surveys were run on an NVIDIA GTX 1080; scan timings exclude independent CPU checks and plotting.
 
-## How strong is the evidence?
+| Evidence | Location |
+|---|---|
+| Interval proof, positive and negative controls | [Certificate files](results/chua-layer-infinity/README.md) |
+| Published forecasts and 75/85-peak checks | [Prediction files](results/chua-layer-prediction/README.md) |
+| Family meshes, ancestry and sample audits | [Atlas report](docs/chua-refined-atlas.md) |
+| Symmetry and coexistence | [Overlap files](results/chua-overlap-geometry/README.md) |
+| Wider chaos surveys and large-α scaling | [Research guide](docs/research-guide.md#broader-surveys-and-scaling) |
+| Large historical arrays and offline reports | [Release v1.1.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0) |
 
-The GPU integrates the state and a tangent vector with RK4. Repeated tangent normalization estimates the largest **finite-time Lyapunov exponent**: positive values indicate growth of small perturbations. To become a candidate, a trajectory must also stay inside the observation cutoff, keep moving, and pass a positive-exponent criterion in all four observation windows.
+The release predates the layer prediction and interval proof; their data are in this repository. The [manifest](results/chua-layer-atlas/manifest.json) records hashes of the research files. Historical failed checks remain available and are identified in their reports. A positive finite-time Lyapunov exponent is treated as a chaos candidate, not as a proof of an asymptotic attractor.
 
-The original study passes eight numerical checks, including adaptive DOP853 comparisons, a linear exact-solution control, and rejection of a stationary unstable equilibrium. Separate refinement samples preserve candidate membership at 98.83% and 99.02% of sampled nodes. The thin-window check preserves 252/256 sampled categories. These are sample diagnostics, not confidence levels for the entire boundary.
+## Background and scope
 
-**A reference-solver correction is part of the result.** During the expansion, the original v1.0 CPU routine failed at a distant example: after a missed crossing, it could keep extrapolating the wrong affine branch. Its historical values, including the earlier 0.18 estimate at α≈255.69, should not be treated as definitive reference measurements. The corrected DOP853 control evaluates the actual piecewise field at every stage; crossing events are diagnostics, not branch selectors. New independent checks are stored under `results/expanded/`. The original records remain available for provenance.
+This project revisits a university coursework study of Chua's system. The original two-parameter calculations took months on the author's computer; the present work uses GPU surveys, branch continuation and validated return maps. That recollection is not a matched speed benchmark.
 
-The adaptive backend also passes short-trajectory comparisons at α=9, 255.69 and 1024, an exact linear matrix-exponential control, and rejection of a stationary unstable equilibrium. Quantitative convergence of Lyapunov estimates across the full cloud is still not established. Cloud colors indicate m₀, not a claimed intensity of chaos.
+Periodic windows, coexistence and homoclinic cascades are established phenomena. This repository contributes explicit parameter studies, reproducible forecasts and a computer-assisted certificate for the stated transect. Historical priority for these Chua structures has not been established. The certificate is inspectable mathematical and numerical work; it has not been checked by a formal proof assistant.
 
-A finite-time positive exponent does not prove an asymptotic strange attractor. Three initial conditions do not exhaust all basins. A ragged mesh does not prove fractality, and a finite search cannot settle global boundedness. These limitations matter when reading the pictures.
-
-## Looking beyond Chua
-
-The investigations of other physical and biological systems have moved to the separate public MIT repository [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab). It contains independently checked numerical candidates, negative searches, equations, Python/OpenCL code, datasets, figures, rotating GIFs and primary references.
-
-Start with [the findings overview](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), [collective motor rows](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/motor-rows-gpu-survey.md), or [long optical transients](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/optical-lifetime-extension.md). Scientific priority and a new topological attractor class remain unestablished.
-
-The Chua circuit, its parameter atlas and the quadratic-scaling investigation remain here. The [transfer record](docs/research-transfer.md) explains the verified forward move; historical commits are intact.
+Investigations of other physical and biological models are maintained in [Chaos Attractor Lab](https://github.com/Griboedow/chaos-attractor-lab). Chua data and reports remain here.
 
 ## License
 
-Project code, original text, generated figures and numerical datasets are provided under the [MIT License](LICENSE). Dependencies retain their own licenses. The results archive bundles an unmodified Plotly.js runtime; its MIT notice is retained and included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Referenced publications are linked, not redistributed.
-
-## References
-
-1. **Chua, L. O.** (2007). Chua circuit. *Scholarpedia*, **2**(10), 1488. [doi:10.4249/scholarpedia.1488](https://doi.org/10.4249/scholarpedia.1488).
-2. **Kennedy, M. P.** (1993). Three steps to chaos. II. A Chua's circuit primer. *IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications*, **40**(10), 657–674. [doi:10.1109/81.246141](https://doi.org/10.1109/81.246141). [Author-hosted PDF](https://people.eecs.berkeley.edu/~chua/papers/Kennedy93b.pdf).
-3. **Muthuswamy, B.** (2012). Chua's Equation was Proved to be Chaotic in Two Years, Lorenz Equation in Thirty Six Years. Author-hosted chapter manuscript, dated March 25, 2012; Eqs. 11–14, printed p. 6. [PDF](https://www.bharathm.org/pubs/MuthuswamyWSPCSampleChapter-ChuaCircuit.pdf).
-4. **Chua Circuits.** (n.d.). MATLAB: dimensionless Chua's circuit. [Online example](https://chuacircuits.com/matlab/). Accessed October 29, 2026.
-5. **Matsumoto, T.** (1984). A chaotic attractor from Chua's circuit. *IEEE Transactions on Circuits and Systems*, **31**(12), 1055–1058. [doi:10.1109/TCS.1984.1085459](https://doi.org/10.1109/TCS.1984.1085459). [Berkeley technical-report version](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1984/307.html).
-6. **PyOpenCL contributors.** PyOpenCL documentation. [Runtime documentation](https://documen.tician.de/pyopencl/). Accessed October 29, 2026.
-7. **SciPy contributors.** `scipy.integrate.solve_ivp`: initial-value ODE solvers, including DOP853. [API documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html). Accessed October 29, 2026.
+Original code, text, figures and datasets use the [MIT License](LICENSE). Dependencies retain their own licenses; bundled Plotly notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Publications are linked, not redistributed.

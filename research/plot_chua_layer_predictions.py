@@ -27,7 +27,7 @@ def save(fig,name):
 
 def forecasts(data):
     fig=plt.figure(figsize=(13,8),layout='constrained');gs=fig.add_gridspec(3,2,height_ratios=[1,1,.44],width_ratios=[1.6,1])
-    fig.suptitle('Predicted first. Searched second. Compared at the true scale.',fontsize=20,weight='bold')
+    fig.suptitle('Published forecasts and measured stability intervals',fontsize=20,weight='bold')
     for i,r in enumerate(data['comparison']):
         ax=fig.add_subplot(gs[i,0]);left,right=r['predicted_interval_in_measured_width_units']
         ax.barh(.68,right-left,left=left,height=.19,color=BLUE,alpha=.8,label='Frozen forecast')

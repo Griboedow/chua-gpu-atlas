@@ -4,7 +4,7 @@
 
 The visible sheets contain more structure than a small stack of separate periodic regimes. We have now continued **two broad five-maximum families**, checked representatives of **17 local periodic windows on one fixed transect**, and resolved a shrinking **15 → 25 → 35 → 45** sequence. The two broad families can **overlap and support different attracting cycles at identical parameters**.
 
-These are numerical results for this repository's continuous piecewise-linear Chua model. Seventeen is an operational count on the stated transect, supported by independently closed attracting orbits and intervening finite-time chaotic screens. It is neither an exhaustive count nor the number of globally connected surfaces in three parameters. No finite total, and no infinitude of attracting windows in this exact box, has been established.
+These are numerical results for this repository's continuous piecewise-linear Chua model. Seventeen is an operational count on the stated transect, supported by independently closed attracting orbits and intervening finite-time chaotic screens. It is neither an exhaustive count nor the number of globally connected surfaces in three parameters. This early study left infinity open; the subsequent [interval certificate](chua-infinity-certificate.md) establishes an infinite cascade on the classical transect. The numerical evidence below remains the earlier census.
 
 ## Matching the visible atlas
 

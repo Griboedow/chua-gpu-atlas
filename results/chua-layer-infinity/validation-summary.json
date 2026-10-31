@@ -1,0 +1,49 @@
+{
+  "tangency-certificate-80.json": {
+    "exit_status": 0,
+    "status": "passed",
+    "failed_gates": []
+  },
+  "tangency-certificate-100.json": {
+    "exit_status": 0,
+    "status": "passed",
+    "failed_gates": []
+  },
+  "negative-control-plus.json": {
+    "exit_status": 2,
+    "status": "failed",
+    "failed_gates": [
+      "negative_lower_parameter"
+    ]
+  },
+  "negative-control-minus.json": {
+    "exit_status": 2,
+    "status": "failed",
+    "failed_gates": [
+      "positive_upper_parameter"
+    ]
+  },
+  "derivative-controls.json": "passed",
+  "global-derivative-controls.json": "passed",
+  "center-reconstruction.json": "passed",
+  "frozen_prediction_sha256": "503e4437a22389251f6a73cada1639bd126ce58949db4bf7bc9cc81268276dbf",
+  "relative_links": "passed",
+  "markdown_fences": "balanced",
+  "certificate_cpu_imports": [
+    "__future__",
+    "argparse",
+    "datetime",
+    "flint",
+    "functools",
+    "hashlib",
+    "importlib",
+    "json",
+    "mpmath",
+    "numpy",
+    "pathlib",
+    "platform",
+    "scipy",
+    "time"
+  ],
+  "recorded_utc": "2026-10-31T23:00:52.922240+00:00"
+}

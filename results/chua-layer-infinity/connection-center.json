@@ -1,0 +1,8 @@
+{
+  "a": "-7.45837889299135509806551754972441288498765367606828694320186121135180734601e-8",
+  "beta": "14.3063590999614598153676545066251508423747393741854114438857170304702121592",
+  "iterations": 27,
+  "extra_local_iterations": 18,
+  "terminal_iterations": 2,
+  "scope": "Numerical tangent-line root used only as a center for later interval tests"
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "step": "1e-18",
+      "value_error": "2.253265697861062e-89",
+      "a_derivative_error": "2.76570913820126e-17",
+      "beta_derivative_error": "2.765185732222919e-29",
+      "relative_curvature_error": "6.108161816232536e-22",
+      "passed": true
+    },
+    {
+      "step": "3e-19",
+      "value_error": "2.253265697861062e-89",
+      "a_derivative_error": "2.489138224381134e-18",
+      "beta_derivative_error": "2.488667158983842e-30",
+      "relative_curvature_error": "5.497345634609282e-23",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 125.79674169999998,
+  "scope": "Independent numerical controls of the full composition; not interval proofs."
+}

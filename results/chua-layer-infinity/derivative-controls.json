@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "point": "saddle_neighborhood",
+      "coordinates": [
+        "0.23909563991385",
+        "-0.4390043251667",
+        "14.30635909996146"
+      ],
+      "value_error": "2.53159562927992e-96",
+      "differences": [
+        {
+          "step": "1e-15",
+          "maximum_scaled_jacobian_error": "4.14603835507641e-28",
+          "maximum_scaled_hessian_error": "2.04801692880946e-27"
+        },
+        {
+          "step": "3e-16",
+          "maximum_scaled_jacobian_error": "3.73143451956877e-29",
+          "maximum_scaled_hessian_error": "1.84321523592851e-28"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "point": "outgoing_neighborhood",
+      "coordinates": [
+        "0.2386",
+        "-0.4395",
+        "14.30635909996146"
+      ],
+      "value_error": "2.12216683021581e-96",
+      "differences": [
+        {
+          "step": "1e-15",
+          "maximum_scaled_jacobian_error": "7.24667084659895e-28",
+          "maximum_scaled_hessian_error": "2.19711243321926e-27"
+        },
+        {
+          "step": "3e-16",
+          "maximum_scaled_jacobian_error": "6.52200376193906e-29",
+          "maximum_scaled_hessian_error": "1.97740118989734e-28"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 37.82658570000058,
+  "scope": "Independent numerical derivative controls, not themselves interval proofs."
+}
