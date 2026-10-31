@@ -1,0 +1,175 @@
+{
+  "checked_utc": "2026-10-31T23:06:03.300Z",
+  "content_commit": "33abaac",
+  "browser": "Chrome",
+  "pages": [
+    {
+      "bound": "14.30635909996140 < β∗ < 14.30635909996152",
+      "errors": [],
+      "formulas": [
+        "x˙=α[y−x−h(x)],y˙=x−y+z,z˙=−βy,",
+        "h(x)=m1x+m0−m12(|x+1|−|x−1|)."
+      ],
+      "images": [
+        {
+          "alt": "Measured periodic windows and the certificate establishing an infinite cascade",
+          "complete": true,
+          "width": 2329
+        },
+        {
+          "alt": "The 32 sampled families highlighted individually at a fixed camera angle",
+          "complete": true,
+          "width": 1200
+        },
+        {
+          "alt": "The 32 sampled families highlighted individually at a fixed camera angle",
+          "complete": true,
+          "width": 1200
+        },
+        {
+          "alt": "Published forecasts compared with the measured windows at their true width scale",
+          "complete": true,
+          "width": 2229
+        },
+        {
+          "alt": "Symmetric coexistence islands connected through a three-cycle region",
+          "complete": true,
+          "width": 2465
+        },
+        {
+          "alt": "Interior views of the m0-m1-alpha and m0-m1-beta parameter volumes",
+          "complete": true,
+          "width": 2208
+        }
+      ],
+      "math": 2,
+      "renderedMath": 2,
+      "tables": 2,
+      "url": "https://github.com/Griboedow/chua-gpu-atlas"
+    },
+    {
+      "errors": [],
+      "formulas": [
+        "14.30635909996140<β∗<14.30635909996152.",
+        "x˙=9[y−x−h(x)],y˙=x−y+z,z˙=−βy,",
+        "h(x)=−57x−314(|x+1|−|x−1|).",
+        "(C,R,C,R,C),(1,1,1,1,0).",
+        "V=(0.50853821838361410.78938523825129660.8610394186349539−0.6138981557481208).",
+        "Fu<−a,|Fs|<b,|Gu|<c,|Gs|<d,",
+        "Wlocu:s=ψ(u,β),Wlocs:u=χ(s,β),",
+        "|ψu|,|χs|≤L=10−3,|ψuu|,|χss|≤K=2000,|ψβ|,|χβ|≤Γ=10−4.",
+        "ψnew″=D2G[(1,ψu),(1,ψu)]−ψnew′D2F[(1,ψu),(1,ψu)]+(Gs−ψnew′Fs)ψuuA2.",
+        "a0=−7.45837889299135509806551755×10−8,β0=14.30635909996145981536765451.",
+        "|a−a0|≤10−14,|β−β0|≤5×10−14,|v|≤8×10−11.",
+        "g(a,β)=U(a,ψ(a,β),β)−χ(S(a,ψ(a,β),β),β).",
+        "gβ=Uβ+Uvψβ−χs(Sβ+Svψβ)−χβ.",
+        "gaa=Uaa+2Uavψa+Uvvψa2+Uvψaa−χs(Saa+2Savψa+Svvψa2+Svψaa)−χssD2."
+      ],
+      "images": [
+        {
+          "alt": "Measured windows and the interval conditions establishing an infinite cascade",
+          "complete": true,
+          "width": 2329
+        },
+        {
+          "alt": "Four boundary signs, convexity and parameter transversality",
+          "complete": true,
+          "width": 2271
+        }
+      ],
+      "math": 14,
+      "renderedMath": 14,
+      "tables": 5,
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-infinity-certificate.md#3-bounds-on-the-exact-invariant-manifolds"
+    },
+    {
+      "errors": [],
+      "images": [
+        {
+          "alt": "Frozen predictions beside the measured cores at their actual width scale",
+          "complete": true,
+          "width": 2229
+        },
+        {
+          "alt": "Full trajectories and signals of the two newly found motions",
+          "complete": true,
+          "width": 2354
+        },
+        {
+          "alt": "Identical outer-region words with different residence times and waveforms",
+          "complete": true,
+          "width": 2142
+        },
+        {
+          "alt": "Spacing, width, period and quadratic-map shape across eight members",
+          "complete": true,
+          "width": 2229
+        },
+        {
+          "alt": "Returning branch fold and the extra time spent near the short saddle",
+          "complete": true,
+          "width": 2241
+        }
+      ],
+      "math": 7,
+      "renderedMath": 7,
+      "tables": 2,
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-layer-prediction.md"
+    },
+    {
+      "errors": [],
+      "formulas": [
+        "x˙=α[y−x−h(x)],y˙=x−y+z,z˙=−βy,",
+        "h(x)=m1x+12(m0−m1)(|x+1|−|x−1|).",
+        "Wsym=min(F5,F7)−max(S5,S7).",
+        "Wprimary=min(F5,F7)−max(D5,D7).",
+        "min(S5,S7)−max(D5,D7)>0.",
+        "a(m1)=a∗+12a∗′′(m1−m1∗)2+O((m1−m1∗)3).",
+        "Δm1≃22δ|a∗′′|."
+      ],
+      "images": [
+        {
+          "alt": "Symmetric overlap islands connected by an asymmetric coexistence region",
+          "complete": true,
+          "width": 2465
+        },
+        {
+          "alt": "Contact curves in both original three-parameter coordinate systems",
+          "complete": true,
+          "width": 2380
+        },
+        {
+          "alt": "Four sections with family and symmetry resolved",
+          "complete": true,
+          "width": 2295
+        },
+        {
+          "alt": "Orbit shapes and signals for the three coexistence examples",
+          "complete": true,
+          "width": 2550
+        },
+        {
+          "alt": "Magnified section points distinguish the cycles",
+          "complete": true,
+          "width": 2380
+        },
+        {
+          "alt": "Geometric predictions and independent cut corrections",
+          "complete": true,
+          "width": 2550
+        }
+      ],
+      "math": 7,
+      "renderedMath": 7,
+      "tables": 6,
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-overlap-geometry.md"
+    }
+  ],
+  "visual_review": true,
+  "issues_fixed": [
+    "Unescaped asterisk inside the bold beta bound changed emphasis.",
+    "GitHub silently truncated a strict inequality at <b; replacing raw signs with TeX lt restored all four estimates."
+  ],
+  "full_local_inequality_visible": true,
+  "scope": "Live GitHub rendering inspected through Chrome DOM and screenshots. Math content was inspected as well as renderer error counts."
+}

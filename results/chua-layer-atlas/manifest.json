@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-10-31T23:04:59.048200+00:00",
-  "base_commit": "74a96f58f09e6678ae066110d5ee1869d2b873d4",
+  "created_utc": "2026-10-31T23:06:44.725295+00:00",
+  "base_commit": "33abaac2d9c5c2a7cc1b84a0e7ac7d9b9e814b2f",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -283,6 +283,7 @@
     "results/chua-layer-census/family-edges.json": "df88aa670ada2eb1b02f6be0e5e53d8e51ed0cd922867aa5422fd72f256afb42",
     "results/chua-layer-census/second-boundaries.json": "c55b17f6ca6cb8e55f4bc12ee1c73037c13ae237b6ab1697d59eface57f66b03",
     "results/chua-layer-census/second-surfaces.json": "3eb0ffdc22f144e945bf91dd49cd1e3a83e821f6465bc83ac011678dabcd935e",
+    "results/chua-layer-infinity/browser-check.json": "7fa2b6cb036acd5870627e54e6fbd714f51faa613187fb0cf2bce826fd3e9f52",
     "results/chua-layer-infinity/center-reconstruction.json": "163d7914b02a1c6a83d1522235dce3dfcd5b7e44afdd05b39499c9869a450871",
     "results/chua-layer-infinity/chua-infinity-overview.pdf": "a4f37f5afded6a2022b723fc25260d422f1f99c9903a1489984a5d485a15c9a6",
     "results/chua-layer-infinity/chua-infinity-signs.pdf": "89417ef84db19dd9528313a4027905f1156a3c93754da61c0e9fdd5edeaf4c31",
@@ -292,7 +293,7 @@
     "results/chua-layer-infinity/local-certificate.json": "21c8bb6d83866a6a99f12c00d3a20e27ccdde654865f7ac44076e4e3ffaf596a",
     "results/chua-layer-infinity/negative-control-minus.json": "4aa03f8b048c577cf5ab95e754b602aab9c05740a01b7afc8e56466114481d8f",
     "results/chua-layer-infinity/negative-control-plus.json": "30e489866b32441f9e589cae671177537a5db227592ddf9a7e9d856ba97a00d3",
-    "results/chua-layer-infinity/README.md": "b916f950fba5b4207f6f0c3f3a96c0c4233071cb107a11cbc9040fb61d3d421f",
+    "results/chua-layer-infinity/README.md": "816e855a7c8dbc188dd36bc390498b97f731315e6e740fb28ff07da4ea791ef3",
     "results/chua-layer-infinity/tangency-certificate-100.json": "e09097e0451394897a6fe304b4a89fdf5bf73980a0928e5efc5a5315d0b2e304",
     "results/chua-layer-infinity/tangency-certificate-80.json": "1e05ec37731c0499c2b4872f852586fec584f2c4e3df52f759c8b54113e115c8",
     "results/chua-layer-infinity/validation-summary.json": "2af4b4344171a7dae409dfb0d3e2226cccff2b2b4ab6b9a9c86cbb82be1dfaec",

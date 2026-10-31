@@ -16,6 +16,7 @@ This directory accompanies the [proof of infinitely many attracting windows](../
 | [derivative-controls.json](derivative-controls.json) | Independent mpmath checks of local map derivatives |
 | [global-derivative-controls.json](global-derivative-controls.json) | Independent 27-fold composition, curvature and unfolding checks |
 | [validation-summary.json](validation-summary.json) | Expected pass/fail outcomes, unchanged forecast hash and publication checks |
+| [browser-check.json](browser-check.json) | Live Chrome inspection of four GitHub pages: formula content, tables and loaded images |
 | [Overview PDF](chua-infinity-overview.pdf), [interval-sign PDF](chua-infinity-signs.pdf) | Vector versions of the two report figures |
 
 The local study alone is explicitly marked incomplete; it is not the final proof. The two negative controls are expected failures of the sufficient tangency test. All earlier forecast and orbit-check failures remain in [the prediction directory](../chua-layer-prediction/README.md).
