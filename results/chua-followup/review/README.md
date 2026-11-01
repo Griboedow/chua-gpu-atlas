@@ -36,4 +36,4 @@ The merger reproduces the original 662-interval certificate exactly from its ret
 
 The analytic review checked the gap chain rule with moving saddle and invariant-graph derivatives, the distinction between F and F², the interval-uniform hiddenness argument, and the localization needed for the parameter theorem. These arguments remain written mathematics. In particular, no program here proves the localized Newhouse–Robinson theorem, certifies historical priority or supplies a decimal β∞ with an enumerated infinite collection. The existing Lean project does not formalize this result.
 
-The revised README, report, proof and review guide are also inspected as rendered GitHub pages. The browser record identifies the inspected revision and retains screenshot hashes separately from mathematical evidence.
+The revised README, report, proof and review guide are also inspected as rendered GitHub pages. The [browser record](browser-check.json) identifies the inspected revision and retains screenshot hashes separately from mathematical evidence.

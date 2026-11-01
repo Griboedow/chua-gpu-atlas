@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T13:41:24.744711+00:00",
-  "base_commit": "22e0f99a7646837eada2649f8e8fd1edd10cbd3e",
+  "created_utc": "2026-11-01T13:46:59.180589+00:00",
+  "base_commit": "46706639a0adf64e7109566c6b373026eadf8369",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -311,10 +311,11 @@
     "results/chua-followup/review/below-part-80-86-98.json": "399ce8921bfb47f0ec08fa9c09dce26a4ce70dae42b9c3ba0d034077394036c1",
     "results/chua-followup/review/below-part-80-9-22.json": "c7a2b652f435d78de33d7624c82507ef28883c6ad3475c57a63b240a46dd0474",
     "results/chua-followup/review/below-prefix-80.json": "8b4419501c26d5d32f2208eaa41dda958cb7c931aa15c939f2f404630a830876",
+    "results/chua-followup/review/browser-check.json": "6a257a58d4321a412afc0968f807fbf81592dcff1cb46ccfaa9997ef7a71fa8b",
     "results/chua-followup/review/equilibria-100.json": "9703a388791d77dfd51be89d354b4697c13a67011677806470b8c9906d534b0d",
     "results/chua-followup/review/execution.json": "6a2dd2723fdecb758d96659bca57460add888231a5c6e87a06b510904d971f67",
     "results/chua-followup/review/independent-tangency-checks.json": "b9c782d34b5705f543bbc78bc03269b880da7c77431ab7b8e5f4da2c6ed37111",
-    "results/chua-followup/review/README.md": "d94f81f914c9d1d674bc7994d5e36b75e054938102ebab6f00b04b80187afea4",
+    "results/chua-followup/review/README.md": "5c14dbc0d5fd725309057104f918a77a549e5e47565610cad15f2bcde68e3e6d",
     "results/chua-followup/review/record-check.json": "5b32ee4abf99e72e006a2fbd2ca092a9b57308c7838bf05486250e2c788e9249",
     "results/chua-followup/review/shifted-tangency-minus.json": "adfaab47fb43c9f7bb56fdcf33d8c7ab4ca8778629dbe706201f4313c2c56219",
     "results/chua-followup/review/shifted-tangency-plus.json": "28d59f3e333fa1aa6561535970582fa7867fde1ad057c25d7f870eef9bd0b701",

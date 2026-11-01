@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-11-01T13:46:07.004033+00:00",
+  "first_inspected_commit": "22e0f99",
+  "corrected_commit": "46706639a0adf64e7109566c6b373026eadf8369",
+  "browser": "Chrome",
+  "method": "Direct browser navigation and visual screenshot inspection, with DOM checks for loaded figures and rendered equations.",
+  "pages": [
+    {
+      "path": "README.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/",
+      "source_sha256": "a20fe64931b0d6f72defc7afa5f82fc5cc28d4a13dbd25481ce2c43c8f8e9542"
+    },
+    {
+      "path": "docs/chua-prediction-and-hidden-coexistence.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-prediction-and-hidden-coexistence.md",
+      "source_sha256": "71e90af3da7c1440444713a9f3b2f2a7e0ebd67780c718f17cd95f070ef73939"
+    },
+    {
+      "path": "docs/chua-hidden-infinity-certificate.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-hidden-infinity-certificate.md",
+      "source_sha256": "c52c162a5e9e778f4d9fac1356d45f70c2b19f40786c6312218435de2c07f8c5"
+    },
+    {
+      "path": "docs/chua-review-guide.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-review-guide.md",
+      "source_sha256": "b86c1333230864d730c43655e0f83a9d7df0059192659916ccdc3ae258953315"
+    },
+    {
+      "path": "results/chua-followup/review/README.md",
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/results/chua-followup/review/README.md",
+      "source_sha256": "d94f81f914c9d1d674bc7994d5e36b75e054938102ebab6f00b04b80187afea4"
+    }
+  ],
+  "observations": {
+    "readme_questions_table": "readable",
+    "personal_coursework_background": "preserved and visible",
+    "combined_report_math_blocks": 10,
+    "combined_report_figures_loaded": 3,
+    "hidden_proof_math_blocks": 12,
+    "hidden_proof_figures_loaded": 1,
+    "proof_rendering_error_after_correction": false,
+    "review_tables": "All columns and links visible; no clipped cells in the inspected desktop viewport.",
+    "new_formulas_visually_inspected": [
+      "model",
+      "infinite-coexistence quantifiers",
+      "exact gap parameter derivative",
+      "invariant ellipsoid",
+      "saturation decomposition",
+      "global Lyapunov bound"
+    ]
+  },
+  "correction": {
+    "initial_issue": "GitHub rejected the operatorname macro in the saturation decomposition.",
+    "action": "Replaced it with supported upright notation; reloaded the published page and inspected the corrected formula.",
+    "detection": "Visual inspection and article error text; counting math elements alone had reported no problem."
+  },
+  "screenshots": {
+    "browser-audit.jpg": {
+      "local_path": ".publication/review-20261101/browser-audit.jpg",
+      "sha256": "9868531156b2b4e2c45229c2bb8dfb120128315f2b44a6aedf816b728dead7f7",
+      "status": "visually inspected"
+    },
+    "browser-boundedness.jpg": {
+      "local_path": ".publication/review-20261101/browser-boundedness.jpg",
+      "sha256": "6095d6e0a742e12f6c10964d5a0e3dd56dfd48bad124900cb95e0c834918667d",
+      "status": "visually inspected"
+    },
+    "browser-gap-derivative.jpg": {
+      "local_path": ".publication/review-20261101/browser-gap-derivative.jpg",
+      "sha256": "010004d867db6c90c75b8562a431ce42a3ca2f17656e04fc11d1eb0af8ad3b1a",
+      "status": "visually inspected"
+    },
+    "browser-infinity.jpg": {
+      "local_path": ".publication/review-20261101/browser-infinity.jpg",
+      "sha256": "371c8e65692ff69a591aef773fe9c1227c9844eb07f9fc5e71619db37e7bfea3",
+      "status": "visually inspected"
+    },
+    "browser-model.jpg": {
+      "local_path": ".publication/review-20261101/browser-model.jpg",
+      "sha256": "6cbfd3bda2a9c1463cd25262bf236af8f914ba582eee4dd443d5a6f376c18612",
+      "status": "visually inspected"
+    },
+    "browser-proof-statement.jpg": {
+      "local_path": ".publication/review-20261101/browser-proof-statement.jpg",
+      "sha256": "ba65180b302fb7056aa93ee1b1e8a3b0cda742456d8d3efafebd0bea7cf9f37b",
+      "status": "visually inspected"
+    },
+    "browser-readme.jpg": {
+      "local_path": ".publication/review-20261101/browser-readme.jpg",
+      "sha256": "1595b33d4f7edb01b1fc026720f7eb03880e280e073e1b417e2c3eb9e04f5a57",
+      "status": "visually inspected"
+    },
+    "browser-rejected-macro.jpg": {
+      "local_path": ".publication/review-20261101/browser-rejected-macro.jpg",
+      "sha256": "7db06b92aae8ffb917bc306097bbbb0cb063236e4f26426295e3a49831a1b9a6",
+      "status": "rejected rendering retained for the audit"
+    },
+    "browser-review-obligations.jpg": {
+      "local_path": ".publication/review-20261101/browser-review-obligations.jpg",
+      "sha256": "c746d42e85f41674c2e7372b91b75228f3124a4e1a149e9c71d418831e284131",
+      "status": "visually inspected"
+    },
+    "browser-review-overview.jpg": {
+      "local_path": ".publication/review-20261101/browser-review-overview.jpg",
+      "sha256": "33ad39bd0201c9bd545e0842b75413e7e1373d903992eeb4f8be34b381ef1b22",
+      "status": "visually inspected"
+    },
+    "browser-theorem-hypotheses.jpg": {
+      "local_path": ".publication/review-20261101/browser-theorem-hypotheses.jpg",
+      "sha256": "f53a89bcf4680d0f060282d53e7b34a8e6a8344d272c58dd014f32a2adf527c1",
+      "status": "visually inspected"
+    }
+  },
+  "scope": "Checks presentation of the stated revision. Screenshot files remain in the local working copy. This record is not mathematical verification."
+}
