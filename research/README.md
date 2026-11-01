@@ -21,6 +21,7 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 - `audit_chua_coexistence.py` recomputes the local tangency hypotheses at two precisions and rejects two shifted boxes.
 - `check_chua_formal.py` builds the [Lean project](../formal/README.md), checks the five declarations' axiom dependencies and runs rejection controls.
+- `check_chua_formal_local.ps1` runs that check on the Windows research workstation using tools, caches and temporary files on D:.
 - `plot_chua_proof_audit.py` draws the checked implications and remaining obligations from those records.
 
 [Audit report](../docs/chua-coexistence-audit.md) · [Evidence and reproduction](../results/chua-proof-audit/README.md)

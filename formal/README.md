@@ -28,7 +28,15 @@ The pinned toolchain is **Lean 4.24.0**. Mathlib is pinned to **f897ebcf72cd16f8
 
 The Python checker requires only the standard library and `lake` on PATH. It checks source identity if an optional `--project` build copy is used, builds the project, and inspects the transitive dependencies printed by Lean. Only `propext`, `Classical.choice` and `Quot.sound` are accepted. It also verifies that reversing the upper-face sign breaks the proof and that a deliberately introduced extra axiom is detected. Generated control files live under the ignored `.lake/build/` directory.
 
-[GitHub Actions](../.github/workflows/formal-proof.yml) repeats this check for changes to the proof or checker. The [recorded local result](../results/chua-proof-audit/formal-check.json) includes source hashes and axiom lists. Hashes normalize CRLF to LF.
+Checks run locally on the research workstation. With the existing Windows installation on D:, run this command from the repository root:
+
+```powershell
+.\research\check_chua_formal_local.ps1
+```
+
+The [local launcher](../research/check_chua_formal_local.ps1) uses the repository's Python environment and the Lean installation under `D:\_TMP\chua-proof-tools`. Its temporary files and caches stay on D:. It restores the calling shell's environment afterwards.
+
+The [recorded local result](../results/chua-proof-audit/formal-check.json) includes source hashes and axiom lists. Hashes normalize CRLF to LF.
 
 ## Trust boundary
 
