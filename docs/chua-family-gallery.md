@@ -11,6 +11,8 @@ The figures compare one numerically checked reference orbit from each of 32 cata
 
 Continuation, branch relationships and parameter location distinguish families whose orbit outlines are visually similar.
 
+The [knot atlas](chua-knot-atlas.md) adds spatial topology for these 32 representatives and the later P75/P85 cycles. It compares each orbit with a standard knot embedding and explains why dense, section-aligned samples are needed to distinguish close strands. Knot type supplements the recurrence patterns shown here; it does not identify a family by itself.
+
 [Offline interactive comparison](../results/chua-layer-atlas/family-gallery.html): download and open the HTML in a browser. Select two families, rotate their 3D paths and compare signals. A phase slider shifts the second signal; the saved starting crossing need not be the same position within a repeated multi-loop pattern.
 
 The interactive time axis is the fraction of a full cycle, so equal panel width does not mean equal physical period. The peak-order panel uses the saved starting phase and does not shift with the signal slider. The orange/blue on the static cards mark cycle halves; in the interactive comparison they identify the selected families.

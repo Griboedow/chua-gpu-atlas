@@ -12,6 +12,7 @@ The [terminology guide](terminology.md) distinguishes periodic orbits, their sta
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
+| Classify spatial knot types | Five numerical knot types among 34 references; all eight tested thin-sequence cycles are unknots; a coarse sampling failure is retained | [Knot atlas](chua-knot-atlas.md) | [Diagrams, refinements and controls](../results/chua-knot-atlas/README.md) |
 | Extend excitation, robustness and prediction | Energy-based basin section; nonmonotone pulse excitation; four cycles throughout a parameter box; 24 new prospective window tests | [Extension report](chua-excitation-robustness-prediction.md) | [Data and checks](../results/chua-followup/extended-studies.md) |
 | Predict slope layers, quantify excitation and prove hidden coexistence | 48 held-out windows; seven certified impulse crossings; a second tangency and uniform hiddenness imply infinite hidden coexistence | [Combined study](chua-prediction-and-hidden-coexistence.md), [hidden-infinity proof](chua-hidden-infinity-certificate.md) | [Forecasts, certificates and controls](../results/chua-followup/README.md) |
 | Identify the layers | 32 sampled family sheets; periodic-orbit branch relationships, symmetry and behaviour | [Refined atlas](chua-refined-atlas.md) | [Atlas data](../results/chua-layer-atlas/) |

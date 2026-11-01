@@ -4,6 +4,8 @@ This guide identifies what must be checked to accept each conclusion of the [com
 
 For the subsequent plane/pulse excitation calculations, uniform four-cycle box and 24 additional forecasts, see the [extension report](chua-excitation-robustness-prediction.md) and its [reproduction and review instructions](../results/chua-followup/extended-studies.md). The box proof uses multiple shooting, a determinant bound and exclusion of ±1; the new excitation minima remain numerical.
 
+The separate [knot atlas](chua-knot-atlas.md) classifies the reference orbit curves. Its [review instructions](../results/chua-knot-atlas/README.md#review-targets) distinguish exact diagram algebra from numerical polygon extraction and the still missing certified isotopy to the ODE orbit. The infinity arguments reviewed below do not imply infinitely many different knot types.
+
 ## 1. Questions, quantities and evidence
 
 | Result | Quantity being determined | Evidence | What remains undetermined |

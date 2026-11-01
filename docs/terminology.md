@@ -18,6 +18,10 @@ The reports use the following terms to distinguish objects in state space, param
 | Symmetry-breaking bifurcation | A bifurcation from a symmetric branch to branches lacking that symmetry. The reports identify the relevant map and evidence before calling it a pitchfork. |
 | Homoclinic tangency | A nontransverse intersection of the stable and unstable manifolds of the same saddle. A finite-iterate tangent-line estimate is distinguished from a certificate for the exact manifolds. |
 
+## Knot types in state space
+
+The **knot type** of a primitive periodic orbit is its ambient-isotopy class as a closed curve in three-dimensional state space. An **unknot** is equivalent to a circle. A **link** is a collection of disjoint closed curves; it can be nontrivial even when every component is an unknot. These terms do not describe the surfaces drawn in parameter space. Numerical knot classifications and exact diagram invariants are distinguished from a certified isotopy to the exact ODE orbit in the [knot study](chua-knot-atlas.md).
+
 ## Parameter regions and the catalogue
 
 A **stability region** is a set of parameter values where a specified periodic-orbit branch is attracting. A **periodic window** is an interval of periodic attraction on a specified one-dimensional parameter section. The **stability interval of the symmetric cycle** ends when that cycle loses stability; attracting asymmetric or period-doubled branches can continue beyond it.

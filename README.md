@@ -43,6 +43,7 @@ A **stability region** is a set of parameter values supporting an attracting per
 | Number of peaks before repetition | The measured thin sequence has 15, 25, …, 85 peaks per full cycle. |
 | Scroll visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other mesh representatives visit both. |
 | Symmetry | A symmetric cycle can lose symmetry and produce two inversion-related attracting cycles. |
+| Knot type in state space | [A04 and A01](docs/chua-knot-atlas.md) both have 25 peaks; A04 is a torus knot and A01 is an unknot. |
 
 The finite catalogue contains **34 reference entries** under a stated continuation and normalization convention: the 32 original entries plus the later 75- and 85-peak motions. Those two are absent from the original mesh and have small slope patches in the later study. These are catalogue counts, not 34 simultaneous attractors or an exhaustive count of globally disconnected surfaces. Peak counts and orbit silhouettes alone do not identify a family.
 
@@ -54,11 +55,20 @@ The results below move from the geometry of the atlas to the dynamics within it.
 
 | Question | Result | Evidence |
 |---|---|---|
+| Are different motions tied into different knots? | The 34 references realize five numerical knot types; the eight tested thin-sequence members are all unknots. | Refined periodic roots, diagram reductions and exact knot invariants |
 | How do layers change with the diode slopes? | Two families are followed through 6,713 accepted cross-sections; diode crossings can change within one attracting family. | Continuation and independent orbit checks |
 | Can thin windows be predicted before searching? | A calibrated rule locates 48/48 held-out windows, then 24/24 on a larger slope square. | Frozen forecasts followed by independent searches |
 | How many attracting motions can coexist? | Four cycles persist in an explicit parameter box. In another specified family, some parameters support infinitely many simultaneous hidden cycles. | Interval certificates, analytic arguments and a classical parameter theorem |
 | How can a hidden motion be reached? | One initial-state ray has a proved excitation infimum; energy and pulse studies identify other ways to reach the cycle. | Basin certificates and separately identified numerical experiments |
 | Can an empty region be proved empty? | An explicit slope sector has convergence to the origin from every initial state. | A storage-function argument |
+
+### Knot types of the periodic motions
+
+![Five knot types: actual Chua orbits above, standard embeddings below](docs/assets/chua-knots-overview.png)
+
+**Similar outlines can conceal different knots.** The [knot atlas](docs/chua-knot-atlas.md) identifies 23 unknotted reference cycles, two torus-knot representatives and nine composite-knot representatives. The lower row makes their topology visible using standard embeddings; these are not additional circuit trajectories. An [interactive 3D comparison](results/chua-knot-atlas/knot-atlas.html), downloaded and opened locally, covers every reference entry.
+
+All eight tested cycles in the 15 → 25 → … → 85 peak sequence are unknots. Increasing period therefore does not establish increasing knot complexity, and the infinite-window result below does not prove infinitely many knot types. The classification uses 108 projection/resolution checks and exact diagram calculations; a certified isotopy from the sampled polygons to the exact ODE orbits remains open. The report also retains a [sampling counterexample](docs/chua-knot-atlas.md#5-a-sampling-error-that-changes-the-knot) in which a coarse trajectory produces the wrong knot polynomial.
 
 ### Parameter changes and family structure
 
@@ -139,6 +149,7 @@ The [research guide](docs/research-guide.md) provides the full study map; the [r
 | To inspect or reproduce | Start here |
 |---|---|
 | Family catalogue, meshes and numerical audits | [Atlas report](docs/chua-refined-atlas.md), [orbit gallery](docs/chua-family-gallery.md) |
+| Knot types, orbit diagrams and sampling controls | [Knot atlas](docs/chua-knot-atlas.md), [reproduction](results/chua-knot-atlas/README.md) |
 | First forecasts and the classical interval certificate | [Prediction data](results/chua-layer-prediction/README.md), [certificate reproduction](results/chua-layer-infinity/README.md) |
 | Slope predictions, excitation thresholds and hidden coexistence | [Follow-up data](results/chua-followup/README.md) |
 | Energy, finite pulses, robust coexistence and larger-square forecasts | [Extended-study reproduction](results/chua-followup/extended-studies.md) |

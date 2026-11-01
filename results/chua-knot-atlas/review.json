@@ -1,0 +1,646 @@
+{
+  "families": [
+    {
+      "id": "A01",
+      "knot_type": "unknot",
+      "peaks": 25,
+      "beta": "14.306469688212615262974087002764873713849060415187229350786999157",
+      "period": "54.068428852922764674330228648067103221942887464929377990542440329",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.3960763267251904e-61,
+      "minimum_crossing_height": 1.7099454201712665e-05,
+      "numerical_stability_other_map_multiplier": 3.73109706724e-43
+    },
+    {
+      "id": "A02",
+      "knot_type": "unknot",
+      "peaks": 20,
+      "beta": "14.306671387553320138103274807475225455576131935757474195825777595",
+      "period": "43.270109167104169252309116058723521725443727491925291132657580461",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.9923216370641733e-61,
+      "minimum_crossing_height": 0.0005415920763397976,
+      "numerical_stability_other_map_multiplier": 1.340361289714e-34
+    },
+    {
+      "id": "A03",
+      "knot_type": "unknot",
+      "peaks": 15,
+      "beta": "14.307278441505988374157885691209218679263532099141667457166359193",
+      "period": "32.468734944596520455922303121744398225621525505303781354411093191",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.7896770246048165e-61,
+      "minimum_crossing_height": 0.0008815627462835515,
+      "numerical_stability_other_map_multiplier": 4.81243352734e-26
+    },
+    {
+      "id": "A04",
+      "knot_type": "T(2,5)",
+      "peaks": 25,
+      "beta": "14.307688607423528768269227796661275845990065889069962376098552223",
+      "period": "54.135020249850161408620585940114884378682162114918100839163835468",
+      "symmetric": false,
+      "checks": 5,
+      "alexander_coefficients": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "determinant": 5,
+      "precision_grid_difference": 2.2539832324441138e-61,
+      "minimum_crossing_height": 6.0481931429960754e-05,
+      "numerical_stability_other_map_multiplier": 4.14591317702e-43
+    },
+    {
+      "id": "A05",
+      "knot_type": "T(3,5) mirror",
+      "peaks": 30,
+      "beta": "14.308089972413135073665481146047204795452620896742380216489165258",
+      "period": "64.969283350054045504757218711088080311998159999302339843059113507",
+      "symmetric": false,
+      "checks": 5,
+      "alexander_coefficients": [
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.246544562356226e-61,
+      "minimum_crossing_height": 2.6155413392416452e-05,
+      "numerical_stability_other_map_multiplier": 1.22715342529e-51
+    },
+    {
+      "id": "A06",
+      "knot_type": "unknot",
+      "peaks": 15,
+      "beta": "14.351235590544329562606724385503194202520673782249744832077865964",
+      "period": "43.426194106265043295256647654462185944026586833593701484332114809",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.4468873347413344e-61,
+      "minimum_crossing_height": 2.375349318455461e-05,
+      "numerical_stability_other_map_multiplier": 6.02723790696e-47
+    },
+    {
+      "id": "E01",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 13,
+      "beta": "14.141376390886674730473703605728574934602030472630041806984934687",
+      "period": "32.600604534227914783630720925846677873062223755834695117704343775",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 3.771073295248661e-62,
+      "minimum_crossing_height": 0.03792456302747752,
+      "numerical_stability_other_map_multiplier": 1.448682243518e-19
+    },
+    {
+      "id": "E02",
+      "knot_type": "unknot",
+      "peaks": 6,
+      "beta": "14.181578793206819952921429016210833019449048324706162205903731543",
+      "period": "16.53568592442232403239111572154861065161755399668957281960327111",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 3.444759551131676e-62,
+      "minimum_crossing_height": 0.10316217672851256,
+      "numerical_stability_other_map_multiplier": 7.09199948954e-20
+    },
+    {
+      "id": "E03",
+      "knot_type": "unknot",
+      "peaks": 21,
+      "beta": "14.202784958928385918931165594713770131114865167291730978564363841",
+      "period": "55.804857418889272340141708262039324659031935727136934277827372872",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.6219865239336464e-61,
+      "minimum_crossing_height": 9.146196646837507e-05,
+      "numerical_stability_other_map_multiplier": 9.99969959536e-35
+    },
+    {
+      "id": "E04",
+      "knot_type": "unknot",
+      "peaks": 35,
+      "beta": "14.203256816468645903237725606737589503495080873894241514767084705",
+      "period": "92.971792614219401147210334001130807841652197779529622446389752096",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.1929216740185721e-61,
+      "minimum_crossing_height": 2.510157835937431e-05,
+      "numerical_stability_other_map_multiplier": 1.220727525648e-57
+    },
+    {
+      "id": "E05",
+      "knot_type": "unknot",
+      "peaks": 7,
+      "beta": "14.210091386115574489130592198236986048174708685599486445504197244",
+      "period": "18.604352831440110318021108334028403903634396529123318311641371269",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.11493041159032892,
+      "numerical_stability_other_map_multiplier": 7.6142173884e-12
+    },
+    {
+      "id": "E06",
+      "knot_type": "unknot",
+      "peaks": 4,
+      "beta": "14.227785194541591324791219937372003262417790286734732373590187807",
+      "period": "9.5654402233142753407504526324787619776688608193804798668213228358",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.05249784900481106,
+      "numerical_stability_other_map_multiplier": 3.07743506914e-11
+    },
+    {
+      "id": "E07",
+      "knot_type": "unknot",
+      "peaks": 6,
+      "beta": "14.229173311188278227559513021922345043460489383561114180455859412",
+      "period": "16.630707061151878591417770684879997708489801715442070883885603825",
+      "symmetric": false,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 6.223862820039859e-62,
+      "minimum_crossing_height": 0.10693705295489553,
+      "numerical_stability_other_map_multiplier": 1.75544139271e-19
+    },
+    {
+      "id": "E08",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 9,
+      "beta": "14.40228841979612282437774614943388672702787363367578331047118688",
+      "period": "24.345324821617742877855211896263346491430150345089609192986626759",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.023969137711184262,
+      "numerical_stability_other_map_multiplier": 3.38460971238e-11
+    },
+    {
+      "id": "E09",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 11,
+      "beta": "14.427559629520522688478914889477641524185752429892354073927951799",
+      "period": "28.207055910534630762176424722270694985218624176437340844850730316",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 1.7654168683137704e-61,
+      "minimum_crossing_height": 0.023905134720177454,
+      "numerical_stability_other_map_multiplier": 1.281131269098e-11
+    },
+    {
+      "id": "E10",
+      "knot_type": "T(2,3) # T(2,3) mirror",
+      "peaks": 7,
+      "beta": "14.430120989142057067092639804764295392023597588510951236774108834",
+      "period": "19.663194466957409236382576974610690351644302543004459449441191827",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 9,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.04204401260336014,
+      "numerical_stability_other_map_multiplier": 4.51672256554e-09
+    },
+    {
+      "id": "E11",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 13,
+      "beta": "14.472373585586054470165400385511405383851166035992918098817136838",
+      "period": "30.573956710357695281225827172256578834086253704152632644075144809",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 8.160994264553661e-63,
+      "minimum_crossing_height": 0.012393217338312942,
+      "numerical_stability_other_map_multiplier": 2.75291034398e-15
+    },
+    {
+      "id": "E12",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 9,
+      "beta": "14.483456372191804347638429387556612434734922828133678229613624456",
+      "period": "24.263193976496271892563525004941137680065311075584523973180749495",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 1.0798128202744057e-61,
+      "minimum_crossing_height": 0.02071393954992308,
+      "numerical_stability_other_map_multiplier": 6.22054800376e-12
+    },
+    {
+      "id": "E13",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 13,
+      "beta": "14.513283835719051042220984019843361752135080202778566363203164319",
+      "period": "28.857468184349442968141012175943215711444117551146326822058170348",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 9.442076440846522e-62,
+      "minimum_crossing_height": 0.018606146708653282,
+      "numerical_stability_other_map_multiplier": 5.58723425622e-15
+    },
+    {
+      "id": "P55",
+      "knot_type": "unknot",
+      "peaks": 55,
+      "beta": "14.30629556612521538236708549943024252957891011104680820840120962",
+      "period": "118.93449324628355061998683209316622480036084180616759608447723453",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.631530095202139e-61,
+      "minimum_crossing_height": 1.5913689722752648e-05,
+      "numerical_stability_other_map_multiplier": 1.963442162566e-47
+    },
+    {
+      "id": "P65",
+      "knot_type": "unknot",
+      "peaks": 65,
+      "beta": "14.306335387797506061821590991671887056298746809289608838061085974",
+      "period": "140.52912265477479010658760828706772852145671482778608823617179864",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.4574835770935183e-61,
+      "minimum_crossing_height": 1.0640603148033952e-05,
+      "numerical_stability_other_map_multiplier": 5.47791252276e-56
+    },
+    {
+      "id": "P75",
+      "knot_type": "unknot",
+      "peaks": 75,
+      "beta": "14.306350311442041568376450118381417601482602534157391894923641881",
+      "period": "162.12385905321835101395108592538604130676103044061326799557088594",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.2237544496911178e-61,
+      "minimum_crossing_height": 1.1704792935991242e-06,
+      "numerical_stability_other_map_multiplier": 1.527771205126e-64
+    },
+    {
+      "id": "P85",
+      "knot_type": "unknot",
+      "peaks": 85,
+      "beta": "14.306355853111487543450416395384448916534670959979058993273350294",
+      "period": "183.7185935743688875945786896406982971520505864578000873315496222",
+      "symmetric": true,
+      "checks": 5,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.381131655255997e-61,
+      "minimum_crossing_height": 3.925258688429413e-07,
+      "numerical_stability_other_map_multiplier": 4.26006387314e-73
+    },
+    {
+      "id": "S01",
+      "knot_type": "T(2,3) # T(2,3) mirror",
+      "peaks": 9,
+      "beta": "14.259955810164261051275613886764889680934990460505042415403935749",
+      "period": "23.675535067179236384726202766464838391017230774565395356222233393",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 9,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.0413471657487888,
+      "numerical_stability_other_map_multiplier": 6.69632216746e-13
+    },
+    {
+      "id": "S02",
+      "knot_type": "T(2,5) # T(2,5) mirror",
+      "peaks": 11,
+      "beta": "14.290823151497364888356643918806468485890277444115668647164896642",
+      "period": "28.250272286413003148407871221547077322787323462213149667140042425",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -4,
+        3,
+        -2,
+        1
+      ],
+      "determinant": 25,
+      "precision_grid_difference": 8.800123892242073e-62,
+      "minimum_crossing_height": 0.039944764205573045,
+      "numerical_stability_other_map_multiplier": 7.60040870394e-16
+    },
+    {
+      "id": "S03",
+      "knot_type": "unknot",
+      "peaks": 25,
+      "beta": "14.302519712466688097544541906915959565107000462266098479125636522",
+      "period": "54.32447822232989377138996117940381104753202977305518474000132612",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.0735962633522598e-61,
+      "minimum_crossing_height": 0.0004918629160304221,
+      "numerical_stability_other_map_multiplier": 9.72436089078e-22
+    },
+    {
+      "id": "S04",
+      "knot_type": "unknot",
+      "peaks": 15,
+      "beta": "14.303733801459488334355386589526665680187762391071674709521499721",
+      "period": "32.604301480305103246656683863626103160361743192920829135912160107",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.458716868699229e-61,
+      "minimum_crossing_height": 0.0020270492266148345,
+      "numerical_stability_other_map_multiplier": 3.30196729926e-13
+    },
+    {
+      "id": "S05",
+      "knot_type": "unknot",
+      "peaks": 25,
+      "beta": "14.305276563609310933000285408619471645673963729000561227355819616",
+      "period": "54.164550137414213030892965350417483029849874930478379929264275237",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.3525841905786507e-61,
+      "minimum_crossing_height": 0.0003942356403764009,
+      "numerical_stability_other_map_multiplier": 9.055986426e-22
+    },
+    {
+      "id": "S06",
+      "knot_type": "unknot",
+      "peaks": 35,
+      "beta": "14.30592589939495977278323534326972941684740615776367658513637775",
+      "period": "75.748665852110004933081497426578349591486445614628003278774589629",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.8648002086729624e-61,
+      "minimum_crossing_height": 0.00014738905443204193,
+      "numerical_stability_other_map_multiplier": 2.52010491268e-30
+    },
+    {
+      "id": "S07",
+      "knot_type": "unknot",
+      "peaks": 45,
+      "beta": "14.306191209199803436896791413800935993273166804108796619807789919",
+      "period": "97.340444365286135640695132891377378006054264493643601206261388784",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 2.6757251762988078e-61,
+      "minimum_crossing_height": 7.323343984809564e-05,
+      "numerical_stability_other_map_multiplier": 7.03424089452e-39
+    },
+    {
+      "id": "S08",
+      "knot_type": "unknot",
+      "peaks": 5,
+      "beta": "14.329910049401471712077353641381248660275795103284819630050538901",
+      "period": "10.891608322657238394081433676285141610475789490951794451025492295",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.05413354001133763,
+      "numerical_stability_other_map_multiplier": 0.000117176751887
+    },
+    {
+      "id": "S09",
+      "knot_type": "unknot",
+      "peaks": 15,
+      "beta": "14.349913696448763016882597475426335641059296673372711783134196512",
+      "period": "43.466289632854966170696740664761120371468940021557183611996344084",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.1371574416831155e-61,
+      "minimum_crossing_height": 0.00011864961162804435,
+      "numerical_stability_other_map_multiplier": 1.213650141804e-23
+    },
+    {
+      "id": "S10",
+      "knot_type": "unknot",
+      "peaks": 25,
+      "beta": "14.350518061155955210852787785696516400449931523682983558061284128",
+      "period": "72.391542457800943592687895011041272602332895175098545657930241489",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 1.4543441044575428e-61,
+      "minimum_crossing_height": 3.1563093899119026e-05,
+      "numerical_stability_other_map_multiplier": 3.52152987694e-39
+    },
+    {
+      "id": "S11",
+      "knot_type": "unknot",
+      "peaks": 5,
+      "beta": "14.35924545810496287036324092984695982095739251700040337476868798",
+      "period": "14.495247978979703875514877792036742683235267678596151756185978174",
+      "symmetric": true,
+      "checks": 3,
+      "alexander_coefficients": [
+        1
+      ],
+      "determinant": 1,
+      "precision_grid_difference": 0.0,
+      "minimum_crossing_height": 0.11748123849014071,
+      "numerical_stability_other_map_multiplier": 3.81504417242e-08
+    }
+  ],
+  "family_count": 34,
+  "diagram_count": 108,
+  "counts": {
+    "unknot": 23,
+    "T(2,5)": 1,
+    "T(3,5) mirror": 1,
+    "T(2,3) # T(2,3) mirror": 2,
+    "T(2,5) # T(2,5) mirror": 7
+  },
+  "thin_sequence": [
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "P55",
+    "P65",
+    "P75",
+    "P85"
+  ],
+  "analytic_curve_controls": 22,
+  "raw_diagrams_replayed": 108,
+  "scope": "Numerical orbit topology. Exact algebra and diagram matches do not enclose the ODE curve."
+}
