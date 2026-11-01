@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T10:57:42.275974+00:00",
-  "base_commit": "eb776d63e0ef20da2669ab380b03bcde097a3cf6",
+  "created_utc": "2026-11-01T10:59:52.736775+00:00",
+  "base_commit": "ce29e8d1dabf74d5ef9cd3270bf9781a61d43467",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -228,6 +228,7 @@
     "results/chua-accessibility/stability-certificate-100.json": "4480837fff74d048a12228f21b0cb87abcdd17837687f799866e0a56b1dc508a",
     "results/chua-accessibility/stability-certificate-80.json": "c3979330ad672222f15cd79344209768b8a8ab7796bc325be0e0dd8382e29682",
     "results/chua-basin-proof/audit.json": "8975869e70e841a6f49e8ed1679f70f26a2ec09ef2d590f0b390928a241e4392",
+    "results/chua-basin-proof/browser-check.json": "47b5aae97c95c228de5b74f4453db5dfe6dd6fc72899efe0eae40520fe63cdef",
     "results/chua-basin-proof/chua-basin-proof.pdf": "4866565af7d84fe6e9654588eb9464bc7ef4ccc89d754055b701f87c4826f978",
     "results/chua-basin-proof/chua-coexistence-localization.pdf": "dafca6f003ff83def3bccc50d090446c3aca989881bbdcce1e6ebef226df888a",
     "results/chua-basin-proof/independent-checks.json": "f2d145c4e0209f710fc614cf1a4d655ae4bc0dc27e2283154016551ba49f1e69",

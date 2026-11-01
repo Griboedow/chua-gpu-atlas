@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-01T10:59:41.689Z",
+  "reviewed_commit": "ce29e8d",
+  "report_url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-basin-and-coexistence.md",
+  "report": {
+    "errors": [],
+    "formulas": 12,
+    "guardFormula": "a−b>1,c+d<1,b+Lda−Lc<L,1a−Lc<1,cL+d<1.",
+    "images": [
+      {
+        "alt": "Certified local separation and complete exit-strip coverage",
+        "loaded": true
+      },
+      {
+        "alt": "Localized return domains and the nested-parameter construction",
+        "loaded": true
+      }
+    ],
+    "rendered": 12,
+    "tables": 2
+  },
+  "readme": {
+    "rendered_formulas": 2,
+    "all_observed_images_loaded": true,
+    "new_basin_figure_loaded": true,
+    "coursework_background_preserved": true,
+    "infinite_coexistence_conclusion_present": true
+  },
+  "earlier_coexistence_audit": {
+    "rendered_formulas": 2,
+    "updated_claim_present": true,
+    "old_open_obligation_removed": true,
+    "figure_loaded": true
+  },
+  "correction": {
+    "initial_failure": "A raw less-than sign before L silently truncated the displayed graph-transform inequalities although all 12 math-renderer elements existed.",
+    "fix": "Use explicit TeX lt and gt commands. Rechecked the rendered MathML and a browser screenshot; all five inequalities are present."
+  },
+  "screenshots_directory": ".publication/local-results-browser",
+  "screenshots": [
+    "report-overview.png",
+    "statements.png",
+    "graph-proof.png",
+    "localization.png",
+    "readme.png",
+    "coexistence-audit.png"
+  ],
+  "scope": "Live Chrome page inspection and screenshots; a publication-format check, not a mathematical verification."
+}
