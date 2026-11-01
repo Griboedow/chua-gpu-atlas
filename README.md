@@ -16,6 +16,8 @@ A study of periodic layers, coexisting attractors and thin stability windows in 
 
 [Research guide](docs/research-guide.md) · [Proof and interval certificate](docs/chua-infinity-certificate.md) · [Motion gallery](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
+**Proof audit:** [infinite coexistence and the first Lean proof](docs/chua-coexistence-audit.md). The local numerical hypotheses reproduce, and Lean checks the boundary-sign implication that forces a stationary zero. Infinitely many cycles at one parameter value remain conditional on a localization step; the full Chua certificate is not yet formally verified.
+
 ![Measured periodic windows and the certificate establishing an infinite cascade](docs/assets/chua-infinity-overview.png)
 
 The infinite sequence concerns different periodic motions at different parameter values. It does not count globally disconnected surfaces, and it does not assert infinitely many attractors at the limiting parameter itself. The certificate encloses the tangency in **14.30635909996140 < β∗ < 14.30635909996152**. Its assumptions, derivation, positive checks and rejected controls are given in the [proof report](docs/chua-infinity-certificate.md).

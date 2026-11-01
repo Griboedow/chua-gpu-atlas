@@ -12,6 +12,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 | Compare their motions | One complete orbit, signal and peak sequence per reference | [Family gallery](chua-family-gallery.md) | [Portrait data](../results/chua-layer-atlas/) |
 | Predict thinner windows | Published forecasts followed by 75/85-peak discoveries; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
 | Establish infinity | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
+| Audit infinite coexistence | Local hypotheses pass; localization remains open; Lean proves the tangency-box implication | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
 | Explain overlaps | Symmetry breaking, coexistence of 2–4 cycles, 18 contact curves | [Overlap geometry](chua-overlap-geometry.md) | [Continuation and checks](../results/chua-overlap-geometry/README.md) |
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
@@ -34,6 +35,7 @@ A family can have multiple attracting descendants at the same parameters, partic
 | Computed periodic cycle | Closed orbit, valid itinerary, attracting multipliers and independent controls | A global component count |
 | Interval certificate | Outward-rounded inclusions and inequalities for complete parameter boxes and flight intervals | A classification outside the certified neighborhoods |
 | Theorem consequence | Verified hypotheses plus the established sink-cascade theorem | Exact widths and peak labels for every uncomputed member |
+| Partial formal proof | Lean checks the general boundary-sign implication and rational guards | The Chua numerical implementation, invariant-manifold construction or infinite coexistence |
 
 The 85-peak forecast miss, failed whole-period multiplier checks and two rejected tangency boxes are retained. The independent checks and the interval proof are distinct forms of evidence.
 
@@ -58,6 +60,7 @@ The large-α problem is separate from the infinitely many windows proved near β
 
 - `docs/` contains the reports and displayed figures.
 - `research/` contains continuation, analysis, interval and plotting programs.
+- `formal/` contains the pinned Lean project and its explicit verification scope.
 - `results/` contains settings, small datasets, certificates and checks. Each recent study has a reproduction guide.
 - The root scanner and OpenCL kernels support the original broad surveys.
 - [Release v1.1.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0) supplies large historical arrays and offline HTML reports. It predates the recent layer studies.

@@ -17,6 +17,14 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 [Proof and derivation](../docs/chua-infinity-certificate.md) · [Commands and evidence](../results/chua-layer-infinity/README.md)
 
+## Coexistence audit and formal proof
+
+- `audit_chua_coexistence.py` recomputes the local tangency hypotheses at two precisions and rejects two shifted boxes.
+- `check_chua_formal.py` builds the [Lean project](../formal/README.md), checks the five declarations' axiom dependencies and runs rejection controls.
+- `plot_chua_proof_audit.py` draws the checked implications and remaining obligations from those records.
+
+[Audit report](../docs/chua-coexistence-audit.md) · [Evidence and reproduction](../results/chua-proof-audit/README.md)
+
 ## Numerical studies
 
 - `predict_chua_layers.py`, `verify_chua_layer_predictions.py` and the associated precision, audit and plotting programs implement the [forecast protocol](../results/chua-layer-prediction/README.md).

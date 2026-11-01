@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "toolchain": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "source_sha256_lf": {
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "79971a808e69f76429c2b6ac05f5abbc7cdb77cc4909c3a3057fa312991df30e",
+    "lake-manifest.json": "6e97e925c4e59c83ac8e5413f23e165d205edd9338c3b7f271a58b33ff4fe167",
+    "ChuaProof.lean": "e86ba6010294c3bac2c5b25719121b7516f512afbbbeac83e22bd6ae586360cc",
+    "Audit.lean": "4d5eed469a4d70a323efbd2164fc906670eed3549b0e93adef361a0f153f1f74",
+    "ChuaProof/Guards.lean": "1217097c0679c3bdb30821275ec31b0a7dc365639976a332fd1737feef77a620",
+    "ChuaProof/TangencyBox.lean": "238cfeb01b4f65a09d4bba0387e3256b439c0dc0bbbf7dcd0711827c4323c757"
+  },
+  "theorem_axioms": {
+    "ChuaProof.not_min_at_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.not_min_at_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.tangency_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.quadratic_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.graph_guards": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "controls": {
+    "reversed_parameter_face_rejected": true,
+    "extra_axiom_rejected": true
+  },
+  "build_output": "Build completed successfully (1845 jobs).",
+  "axiom_output": "'ChuaProof.not_min_at_left' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.not_min_at_right' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.tangency_box' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.quadratic_contact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.graph_guards' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "scope": "Generic real-analysis tangency-box implication and exact rational guards. No formal Chua flow, interval evaluator, invariant-manifold construction, or Newhouse--Robinson theorem is included."
+}

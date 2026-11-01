@@ -24,12 +24,13 @@ audit_chua_layer_predictions describe_chua_layer_words analyze_chua_prediction_e
 trace_chua_layer_organizer plot_chua_layer_predictions
 chua_interval_map chua_interval_connection certify_chua_layer_organizer
 certify_chua_homoclinic_tangency locate_chua_homoclinic_tangency
-check_chua_interval_derivatives check_chua_global_connection plot_chua_infinity'''.split()
+check_chua_interval_derivatives check_chua_global_connection plot_chua_infinity
+audit_chua_coexistence check_chua_formal plot_chua_proof_audit'''.split()
 
 
 def digest(path):
     raw=path.read_bytes()
-    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg']:
+    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg','.lean','.toml','.yml'] or path.name == 'lean-toolchain':
         raw=raw.replace(b'\r\n',b'\n')
     return hashlib.sha256(raw).hexdigest()
 
@@ -67,6 +68,10 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-overlap-geometry').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-prediction').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-infinity').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-proof-audit').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'formal').glob('*') if p.is_file() and p.name != '.gitignore')
+    paths.update((ROOT/'formal/ChuaProof').glob('*.lean'))
+    paths.update(ROOT/p for p in ['docs/chua-coexistence-audit.md','docs/assets/chua-proof-audit.png','.github/workflows/formal-proof.yml'])
     paths.update(ROOT/p for p in ['requirements-certificate.txt','docs/chua-infinity-certificate.md','docs/research-guide.md','docs/README.md','research/README.md'])
     paths.update((ROOT/'docs/assets').glob('chua-infinity-*.png'))
     paths.add(ROOT/'requirements-precision.txt')
@@ -95,8 +100,8 @@ def main():
     paths.add(ROOT/'results/chua-layers/extended.json')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
-        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs and .svg; binary files are unchanged.',
-        scope='Hashes identify the finite numerical catalogue, forecasts and executable interval certificate. Integrity checks do not themselves prove mathematical claims; see docs/chua-infinity-certificate.md for the argument.')
+        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs, .svg, .lean, .toml, .yml and lean-toolchain; binary files are unchanged.',
+        scope='Hashes identify the finite catalogue, forecasts, interval certificate and partial formal proof. Integrity checks do not themselves prove mathematical claims; see docs/chua-infinity-certificate.md and docs/chua-coexistence-audit.md for the arguments and remaining obligations.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')
 

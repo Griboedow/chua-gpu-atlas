@@ -1,0 +1,488 @@
+{
+  "status": "local_numerical_hypotheses_reproduced",
+  "coexistence_status": "conditional_on_localization_argument",
+  "formal_scope": "Generic tangency-box lemma and rational guards only; see formal/.",
+  "runs": [
+    {
+      "digits": 80,
+      "beta_shift": "0",
+      "status": "passed",
+      "expected_status": "passed",
+      "gates": {
+        "local": true,
+        "graphs": true,
+        "initial_on_graph_box": true,
+        "initial_inside_local_box": true,
+        "final_inside_stable_graph_domain": true,
+        "negative_lower_parameter": true,
+        "positive_upper_parameter": true,
+        "negative_left_derivative": true,
+        "positive_right_derivative": true,
+        "quadratic": true,
+        "transverse_parameter": true,
+        "nontrivial_excursion": true,
+        "saddle_unstable": true,
+        "saddle_stable": true,
+        "dissipative": true
+      },
+      "local_gates": {
+        "expansion": true,
+        "cross_u": true,
+        "cross_s": true,
+        "contraction": true,
+        "second_derivatives": true,
+        "parameter_derivatives": true
+      },
+      "graph_gates": {
+        "unstable_projection_covers": true,
+        "stable_image_inside": true,
+        "unstable_slope": true,
+        "stable_slope": true,
+        "unstable_contraction": true,
+        "stable_contraction": true,
+        "unstable_curvature": true,
+        "stable_curvature": true,
+        "unstable_parameter": true,
+        "stable_parameter": true
+      },
+      "full_return_multipliers": [
+        {
+          "ball": "[2.713431783 +/- 1.09e-10]",
+          "lower": "[2.71343178289135951983994342651 +/- 6.06e-31]",
+          "upper": "[2.71343178299256159596462105776 +/- 1.92e-30]",
+          "midpoint": "2.7134317829419605579022822421356569936578141823003598762112570962000942767004223",
+          "radius": "[5.0601038062338815626e-11 +/- 2.63e-31]"
+        },
+        {
+          "ball": "[1.02746e-9 +/- 5.35e-15]",
+          "lower": "[1.02745465730927220959495537134e-9 +/- 1.51e-39]",
+          "upper": "[1.02745662660805743937050778209e-9 +/- 2.43e-39]",
+          "midpoint": "1.0274556419586648244827315767154590054662359841409787591210522591541131186565631e-9",
+          "radius": "[9.8464939261488777621e-16 +/- 4.63e-36]"
+        }
+      ],
+      "full_return_determinant": {
+        "ball": "[2.78793e-9 +/- 2.16e-15]",
+        "lower": "[2.78792943208950477839245160640e-9 +/- 6.94e-40]",
+        "upper": "[2.78793215681785002130471822317e-9 +/- 3.88e-41]",
+        "midpoint": "2.7879307944536773998485849147853658870750425317702509745202661187840050285152634e-9",
+        "radius": "[1.3623641726214561333e-15 +/- 8.39e-36]"
+      },
+      "face_signs": {
+        "beta_lower": {
+          "ball": "[-1.7e-13 +/- 3.58e-15]",
+          "lower": "[-1.70876172217294912266567849697e-13 +/- 1.79e-43]",
+          "upper": "[-1.66420361889977112649060131573e-13 +/- 1.69e-43]",
+          "midpoint": "-1.6864826705363601245781399063517358290050515125504300159868191411386407460197079e-13",
+          "radius": "[2.2279051636588998088e-15 +/- 4.62e-35]"
+        },
+        "beta_upper": {
+          "ball": "[1.7e-13 +/- 3.58e-15]",
+          "lower": "[1.66420362013545404746791419553e-13 +/- 3.02e-44]",
+          "upper": "[1.70876172340863204364299137677e-13 +/- 4.00e-44]",
+          "midpoint": "1.6864826717720430455554527861503502539219958992203645014042653219770940267821103e-13",
+          "radius": "[2.2279051636588998088e-15 +/- 4.62e-35]"
+        },
+        "a_lower": {
+          "ball": "[-0.2 +/- 0.0288]",
+          "lower": "[-0.228769146325360455483967682606 +/- 8.47e-33]",
+          "upper": "[-0.195263445389285155505711457020 +/- 5.41e-32]",
+          "midpoint": "-0.21201629585732280549483956981302280297737963811681275978506430189124283925184402",
+          "radius": "[0.016752850468037649989 +/- 1.29e-22]"
+        },
+        "a_upper": {
+          "ball": "[0.2 +/- 0.0288]",
+          "lower": "[0.195263445389285155505711457020 +/- 5.41e-32]",
+          "upper": "[0.228769146325360455483967682606 +/- 8.47e-33]",
+          "midpoint": "0.21201629585732280549483956981302280299403169302613945951622837974062907919552513",
+          "radius": "[0.016752850468037649989 +/- 1.29e-22]"
+        }
+      },
+      "normal_curvature": {
+        "ball": "[2.1e+13 +/- 4.47e+11]",
+        "lower": "[20956903628868.2805494839569813 +/- 2.29e-18]",
+        "upper": "[21446355542596.2805494839569813 +/- 2.29e-18]",
+        "midpoint": "21201629585732.280549483956981302280298570566557147610965064634081593595922368457",
+        "radius": "244725956864.00000000"
+      },
+      "parameter_unfolding": {
+        "ball": "[3.373 +/- 1.49e-4]",
+        "lower": "[3.37285135956146442458454951839 +/- 3.38e-30]",
+        "upper": "[3.37307932505534191568337813214 +/- 4.72e-30]",
+        "midpoint": "3.3729653423084031701339638252656730759612758976119864189384830691168273539967148",
+        "radius": "[0.00011398274693874554941 +/- 4.31e-24]"
+      },
+      "global_flights": 135,
+      "global_time_cells": 12534,
+      "software": {
+        "python": "3.14.3",
+        "python_flint": "0.9.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "digits": 100,
+      "beta_shift": "0",
+      "status": "passed",
+      "expected_status": "passed",
+      "gates": {
+        "local": true,
+        "graphs": true,
+        "initial_on_graph_box": true,
+        "initial_inside_local_box": true,
+        "final_inside_stable_graph_domain": true,
+        "negative_lower_parameter": true,
+        "positive_upper_parameter": true,
+        "negative_left_derivative": true,
+        "positive_right_derivative": true,
+        "quadratic": true,
+        "transverse_parameter": true,
+        "nontrivial_excursion": true,
+        "saddle_unstable": true,
+        "saddle_stable": true,
+        "dissipative": true
+      },
+      "local_gates": {
+        "expansion": true,
+        "cross_u": true,
+        "cross_s": true,
+        "contraction": true,
+        "second_derivatives": true,
+        "parameter_derivatives": true
+      },
+      "graph_gates": {
+        "unstable_projection_covers": true,
+        "stable_image_inside": true,
+        "unstable_slope": true,
+        "stable_slope": true,
+        "unstable_contraction": true,
+        "stable_contraction": true,
+        "unstable_curvature": true,
+        "stable_curvature": true,
+        "unstable_parameter": true,
+        "stable_parameter": true
+      },
+      "full_return_multipliers": [
+        {
+          "ball": "[2.713431783 +/- 1.09e-10]",
+          "lower": "[2.71343178289135951973152320926 +/- 8.45e-31]",
+          "upper": "[2.71343178299256159607304127501 +/- 4.70e-31]",
+          "midpoint": "2.713431782941960557902282242135656993657814182300359876211257096200094276700426486334077834132088231",
+          "radius": "[5.0601038170759032875e-11 +/- 1.88e-31]"
+        },
+        {
+          "ball": "[1.02746e-9 +/- 5.35e-15]",
+          "lower": "[1.02745465730926890087250515923e-9 +/- 2.21e-39]",
+          "upper": "[1.02745662660806074809295799420e-9 +/- 3.13e-39]",
+          "midpoint": "1.027455641958664824482731576715459005466235984140978759121052259154113118575996628983223843728982765e-9",
+          "radius": "[9.8464939592361022642e-16 +/- 2.52e-36]"
+        }
+      ],
+      "full_return_determinant": {
+        "ball": "[2.78793e-9 +/- 2.16e-15]",
+        "lower": "[2.78792943208950312403122650035e-9 +/- 4.66e-39]",
+        "upper": "[2.78793215681785167566594332923e-9 +/- 4.62e-39]",
+        "midpoint": "2.787930794453677399848584914785365887075042531770250974520266118784005028504673655186479674867260548e-9",
+        "radius": "[1.3623641742758173584e-15 +/- 1.45e-35]"
+      },
+      "face_signs": {
+        "beta_lower": {
+          "ball": "[-1.7e-13 +/- 3.58e-15]",
+          "lower": "[-1.70876172217294912266567849697e-13 +/- 1.79e-43]",
+          "upper": "[-1.66420361889977112649060131573e-13 +/- 1.69e-43]",
+          "midpoint": "-1.686482670536360124578139906351735829005051512550430015986819141133591723893831066714841870704254743e-13",
+          "radius": "[2.2279051636588998088e-15 +/- 4.62e-35]"
+        },
+        "beta_upper": {
+          "ball": "[1.7e-13 +/- 3.58e-15]",
+          "lower": "[1.66420362013545404746791419553e-13 +/- 3.02e-44]",
+          "upper": "[1.70876172340863204364299137677e-13 +/- 4.00e-44]",
+          "midpoint": "1.686482671772043045555452786150350253921995899220364501404265321982143048907987166365658447453890573e-13",
+          "radius": "[2.2279051636588998088e-15 +/- 4.62e-35]"
+        },
+        "a_lower": {
+          "ball": "[-0.2 +/- 0.0288]",
+          "lower": "[-0.228769146325360455483967682606 +/- 8.47e-33]",
+          "upper": "[-0.195263445389285155505711457020 +/- 5.41e-32]",
+          "midpoint": "-0.2120162958573228054948395698130228029773796381168127597850643018912428392533097766727802872458719658",
+          "radius": "[0.016752850468037649989 +/- 1.29e-22]"
+        },
+        "a_upper": {
+          "ball": "[0.2 +/- 0.0288]",
+          "lower": "[0.195263445389285155505711457020 +/- 5.41e-32]",
+          "upper": "[0.228769146325360455483967682606 +/- 8.47e-33]",
+          "midpoint": "0.2120162958573228054948395698130228029940316930261394595162283797406290791969908846154849114681433996",
+          "radius": "[0.016752850468037649989 +/- 1.29e-22]"
+        }
+      },
+      "normal_curvature": {
+        "ball": "[2.1e+13 +/- 4.47e+11]",
+        "lower": "[20956903629124.2805494839569813 +/- 2.29e-18]",
+        "upper": "[21446355542340.2805494839569813 +/- 2.29e-18]",
+        "midpoint": "21201629585732.28054948395698130228029857056655714761096506463408159359592251503306441325993570076827",
+        "radius": "244725956608.00000000"
+      },
+      "parameter_unfolding": {
+        "ball": "[3.373 +/- 1.49e-4]",
+        "lower": "[3.37285135956146442458454951839 +/- 3.38e-30]",
+        "upper": "[3.37307932505534191568337813214 +/- 4.72e-30]",
+        "midpoint": "3.372965342308403170133963825265673075961275897611986418938483069116827353996714803025709915402850347",
+        "radius": "[0.00011398274693874554941 +/- 4.31e-24]"
+      },
+      "global_flights": 135,
+      "global_time_cells": 12534,
+      "software": {
+        "python": "3.14.3",
+        "python_flint": "0.9.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "digits": 100,
+      "beta_shift": "1e-10",
+      "status": "failed",
+      "expected_status": "failed",
+      "gates": {
+        "local": true,
+        "graphs": true,
+        "initial_on_graph_box": true,
+        "initial_inside_local_box": true,
+        "final_inside_stable_graph_domain": true,
+        "negative_lower_parameter": false,
+        "positive_upper_parameter": true,
+        "negative_left_derivative": true,
+        "positive_right_derivative": true,
+        "quadratic": true,
+        "transverse_parameter": true,
+        "nontrivial_excursion": true,
+        "saddle_unstable": true,
+        "saddle_stable": true,
+        "dissipative": true
+      },
+      "local_gates": {
+        "expansion": true,
+        "cross_u": true,
+        "cross_s": true,
+        "contraction": true,
+        "second_derivatives": true,
+        "parameter_derivatives": true
+      },
+      "graph_gates": {
+        "unstable_projection_covers": true,
+        "stable_image_inside": true,
+        "unstable_slope": true,
+        "stable_slope": true,
+        "unstable_contraction": true,
+        "stable_contraction": true,
+        "unstable_curvature": true,
+        "stable_curvature": true,
+        "unstable_parameter": true,
+        "stable_parameter": true
+      },
+      "full_return_multipliers": [
+        {
+          "ball": "[2.713431766 +/- 9.09e-11]",
+          "lower": "[2.71343176598965561631373990543 +/- 4.68e-30]",
+          "upper": "[2.71343176609085769222157710219 +/- 9.82e-32]",
+          "midpoint": "2.713431766040256654267658503812386398779559226008707125198181646005122457551820868387044148059288305",
+          "radius": "[5.0601037953918598378e-11 +/- 2.89e-31]"
+        },
+        {
+          "ball": "[1.02746e-9 +/- 5.34e-15]",
+          "lower": "[1.02745466438563644433821812106e-9 +/- 2.18e-40]",
+          "upper": "[1.02745663368442829155867095604e-9 +/- 4.90e-39]",
+          "midpoint": "1.027455649035032367948444538547444378311956362978534490689460303753050238540804742766742434435719225e-9",
+          "radius": "[9.8464939592361022642e-16 +/- 2.52e-36]"
+        }
+      ],
+      "full_return_determinant": {
+        "ball": "[2.78793e-9 +/- 2.16e-15]",
+        "lower": "[2.78792943392499220911402912762e-9 +/- 5.67e-40]",
+        "upper": "[2.78793215865334076074874595650e-9 +/- 6.12e-40]",
+        "midpoint": "2.787930796289166484931387542060588833334260048862419819940183593184977423842661788034119460200971626e-9",
+        "radius": "[1.3623641742758173584e-15 +/- 1.45e-35]"
+      },
+      "face_signs": {
+        "beta_lower": {
+          "ball": "[3.3713e-10 +/- 5.21e-15]",
+          "lower": "[3.37124790223506283698462158225e-10 +/- 2.12e-40]",
+          "upper": "[3.37131475482903403948512878064e-10 +/- 1.38e-40]",
+          "midpoint": "3.371281328532048438234875181443253883310495531298711929075034192356468449625028023464320425070946968e-10",
+          "radius": "[3.3426296985601250254e-15 +/- 4.01e-35]"
+        },
+        "beta_upper": {
+          "ball": "[3.3747e-10 +/- 7.92e-15]",
+          "lower": "[3.37462087252010205771085214903e-10 +/- 2.52e-40]",
+          "upper": "[3.37468772511407326021135934742e-10 +/- 1.78e-40]",
+          "midpoint": "3.374654298817087658961105748222855483844060589393871903294393608942151237361823508211244051209693893e-10",
+          "radius": "[3.3426296985601250254e-15 +/- 4.01e-35]"
+        },
+        "a_lower": {
+          "ball": "[-0.1 +/- 0.0243]",
+          "lower": "[-0.124238643347517808461347485331 +/- 5.09e-32]",
+          "upper": "[-0.0907272458022918901683482177528 +/- 2.43e-32]",
+          "midpoint": "-0.1074829445749048493148478515418867010644516356274106800162972461198670044445859896007038380719538263",
+          "radius": "[0.016755698772612959146 +/- 5.00e-22]"
+        },
+        "a_upper": {
+          "ball": "[0.3 +/- 0.0334]",
+          "lower": "[0.299793882840156489597392798384 +/- 3.30e-31]",
+          "upper": "[0.333305280385382407890392065962 +/- 4.55e-31]",
+          "midpoint": "0.3165495816127694487438924321733921523270498945849136145327854317547081272084266103318449586410989560",
+          "radius": "[0.016755698772612959146 +/- 5.00e-22]"
+        }
+      },
+      "normal_curvature": {
+        "ball": "[2.1e+13 +/- 4.47e+11]",
+        "lower": "[20956908521735.7149029370141858 +/- 3.61e-17]",
+        "upper": "[21446344097031.7149029370141858 +/- 3.61e-17]",
+        "midpoint": "21201626309383.71490293701418576394266957507651061621472745413389372875658265062999662743983565263912",
+        "radius": "244717787648.00000000"
+      },
+      "parameter_unfolding": {
+        "ball": "[3.373 +/- 1.44e-4]",
+        "lower": "[3.37285630192711985792014328406 +/- 2.46e-30]",
+        "upper": "[3.37308426815132159454263327286 +/- 1.42e-30]",
+        "midpoint": "3.372970285039220726231388278459481288278100368893188932954968491472263626338140481329187676134485248",
+        "radius": "[0.00011398311210086831124 +/- 5.00e-24]"
+      },
+      "global_flights": 135,
+      "global_time_cells": 12534,
+      "software": {
+        "python": "3.14.3",
+        "python_flint": "0.9.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "digits": 80,
+      "beta_shift": "-1e-10",
+      "status": "failed",
+      "expected_status": "failed",
+      "gates": {
+        "local": true,
+        "graphs": true,
+        "initial_on_graph_box": true,
+        "initial_inside_local_box": true,
+        "final_inside_stable_graph_domain": true,
+        "negative_lower_parameter": true,
+        "positive_upper_parameter": false,
+        "negative_left_derivative": true,
+        "positive_right_derivative": true,
+        "quadratic": true,
+        "transverse_parameter": true,
+        "nontrivial_excursion": true,
+        "saddle_unstable": true,
+        "saddle_stable": true,
+        "dissipative": true
+      },
+      "local_gates": {
+        "expansion": true,
+        "cross_u": true,
+        "cross_s": true,
+        "contraction": true,
+        "second_derivatives": true,
+        "parameter_derivatives": true
+      },
+      "graph_gates": {
+        "unstable_projection_covers": true,
+        "stable_image_inside": true,
+        "unstable_slope": true,
+        "stable_slope": true,
+        "unstable_contraction": true,
+        "stable_contraction": true,
+        "unstable_curvature": true,
+        "stable_curvature": true,
+        "unstable_parameter": true,
+        "stable_parameter": true
+      },
+      "full_return_multipliers": [
+        {
+          "ball": "[2.713431800 +/- 2.07e-10]",
+          "lower": "[2.71343179979306344014172822228 +/- 4.99e-30]",
+          "upper": "[2.71343179989426551648324628802 +/- 4.64e-30]",
+          "midpoint": "2.7134317998436644783124872551498237296499684333185695467732717764244857716178421",
+          "radius": "[5.0601038170759032875e-11 +/- 1.88e-31]"
+        },
+        {
+          "ball": "[1.02746e-9 +/- 5.35e-15]",
+          "lower": "[1.02745465023290734397264911757e-9 +/- 2.49e-39]",
+          "upper": "[1.02745661953168595630330110410e-9 +/- 4.40e-41]",
+          "midpoint": "1.0274556348822966501379751108337809343231275517820574269630336288256336663721805e-9",
+          "radius": "[9.8464938930616532599e-16 +/- 3.27e-36]"
+        }
+      ],
+      "full_return_determinant": {
+        "ball": "[2.78793e-9 +/- 2.16e-15]",
+        "lower": "[2.78792943025401238765979365071e-9 +/- 1.24e-39]",
+        "upper": "[2.78793215498236424801696069170e-9 +/- 4.89e-40]",
+        "midpoint": "2.7879307926181883178383771712041389365616592765968876314344486176367068777089818e-9",
+        "radius": "[1.3623641759301785835e-15 +/- 2.05e-35]"
+      },
+      "face_signs": {
+        "beta_lower": {
+          "ball": "[-3.3746e-10 +/- 8.28e-15]",
+          "lower": "[-3.37468277615249075170855690160e-10 +/- 4.65e-40]",
+          "upper": "[-3.37461592613045568420692759213e-10 +/- 1.22e-40]",
+          "midpoint": "-3.3746493511414732179577422468620656956771896238275121544399858460953704092700284e-10",
+          "radius": "[3.3425011017533750815e-15 +/- 3.46e-35]"
+        },
+        "beta_upper": {
+          "ball": "[-3.3713e-10 +/- 5.71e-15]",
+          "lower": "[-3.37130981575291482520416261910e-10 +/- 2.75e-40]",
+          "upper": "[-3.37124296573087975770253330964e-10 +/- 3.83e-40]",
+          "midpoint": "-3.3712763907418972914533479643694643387061901618985122011768737057620380645978021e-10",
+          "radius": "[3.3425011017533750815e-15 +/- 3.46e-35]"
+        },
+        "a_lower": {
+          "ball": "[-0.3 +/- 0.0333]",
+          "lower": "[-0.333299480707861477135980362025 +/- 1.72e-31]",
+          "upper": "[-0.299799870621424162387216323939 +/- 1.10e-31]",
+          "midpoint": "-0.31654967566464281976159834298185936468980836379758363336833527062719269945796712",
+          "radius": "[0.016749805043218657374 +/- 3.83e-22]"
+        },
+        "a_upper": {
+          "ball": "[0.1 +/- 0.0243]",
+          "lower": "[0.0907331763977968896393071310410 +/- 1.82e-32]",
+          "upper": "[0.124232786484234204388071169127 +/- 4.45e-32]",
+          "midpoint": "0.10748298144101554701368915008398686843181170681993715351331053659349704871748160",
+          "radius": "[0.016749805043218657374 +/- 3.83e-22]"
+        }
+      },
+      "normal_curvature": {
+        "ball": "[2.1e+13 +/- 4.47e+11]",
+        "lower": "[20956917398258.9183387643746533 +/- 7.70e-18]",
+        "upper": "[21446348312306.9183387643746533 +/- 7.70e-18]",
+        "midpoint": "21201632855282.918338764374653292311656081003530876039344082290361034487408772436",
+        "radius": "244715457024.00000000"
+      },
+      "parameter_unfolding": {
+        "ball": "[3.373 +/- 1.54e-4]",
+        "lower": "[3.37284641699735796551146480037 +/- 1.34e-30]",
+        "upper": "[3.37307438215449504327886673404 +/- 1.38e-30]",
+        "midpoint": "3.3729603995759265043951657672063530702121099234380493180860155005631629690247112",
+        "radius": "[0.00011398257856853888370 +/- 9.67e-25]"
+      },
+      "global_flights": 135,
+      "global_time_cells": 12534,
+      "software": {
+        "python": "3.14.3",
+        "python_flint": "0.9.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    }
+  ],
+  "source_sha256": {
+    "research/certify_chua_homoclinic_tangency.py": "135f38397a506149df95ccd9003800d87de2decd792290eaed618473f8eb920b",
+    "research/certify_chua_layer_organizer.py": "35489e5296c154f403810b32154e52035582142ffddf4ba968c9bb64968cfa42",
+    "research/chua_interval_map.py": "1e028f10751e300ded103e923b5fa3411b6968f643a860177119fa2b92b1230a",
+    "research/chua_interval_connection.py": "f5d4ecd891abfb4b567978e8b9aac5ec16220c13d6c6a440df91949d5d5be9d6",
+    "results/chua-layer-infinity/connection-center.json": "8cfdd07bfbcd316ef69c76b7c856cf406730c2b8d11b3f69ceda1e4c1f26c383",
+    "results/chua-layer-infinity/local-certificate.json": "21c8bb6d83866a6a99f12c00d3a20e27ccdde654865f7ac44076e4e3ffaf596a"
+  },
+  "open_obligation": "Supply a precise local Newhouse--Robinson theorem or a parameter-dependent compact extension, with the generated sinks confined to the unchanged Chua return-map neighborhood. This audit does not mark that step as proved."
+}
