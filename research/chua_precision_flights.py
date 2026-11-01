@@ -14,6 +14,9 @@ class PrecisionFlights:
         self.sign=-1 if symmetric else 1
         self.alpha=mp.mpf(9);self.m0=-mp.mpf(8)/7;self.m1=-mp.mpf(5)/7
 
+    def exponential(self, A, duration):
+        return mp.expm(A*duration)
+
     def evaluate(self, beta, q, gradients=True):
         n=len(q);initial=mp.matrix([0,q[0],q[1]]);state=initial.copy()
         D=mp.zeros(3,n);D[1,0]=D[2,1]=1;D0=D.copy();M=mp.eye(3)
@@ -25,7 +28,7 @@ class PrecisionFlights:
             mats[reg]=(A,c)
         arcs=[]
         for k,(dt,reg) in enumerate(zip(q[2:],self.regions)):
-            A,c=mats[reg];E=mp.expm(A*dt);old=state.copy();state=c+E*(state-c)
+            A,c=mats[reg];E=self.exponential(A,dt);old=state.copy();state=c+E*(state-c)
             D=E*D
             v=A*(state-c)
             for i in range(3):D[i,k+2]+=v[i]

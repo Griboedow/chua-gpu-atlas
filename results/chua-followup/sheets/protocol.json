@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-11-01T11:31:56Z",
+  "base_parameters": {
+    "alpha": 9.0,
+    "beta": 14.30635909996146,
+    "m0": -1.1428571428571428,
+    "m1": -0.7142857142857143
+  },
+  "slope_offsets": [
+    -0.0004,
+    0.0,
+    0.0004
+  ],
+  "sections": [
+    "alpha=9; predict beta",
+    "beta=14.30635909996146; predict alpha"
+  ],
+  "training_peaks": [
+    35,
+    45,
+    55
+  ],
+  "target_peaks": [
+    65,
+    75,
+    85
+  ],
+  "position_model": "coordinate_n = organizer + A*r^(n-5) + (B+C*(n-5))*r^(2*(n-5))",
+  "width_model": "width_n = width_55*r^(2*(n-5))",
+  "r_source": "Inverse full-return unstable multiplier of the short saddle at the numerical organizer",
+  "primary_gate": "Predicted midpoint lies strictly between independently solved fold and symmetry-breaking endpoints",
+  "secondary_gate": "Relative width error below 10 percent",
+  "organizer_scope": "Finite-iterate tangent-line approximation, with increased-iteration controls; exact tangency certified only at the original point.",
+  "provenance": "Existing central target roots are used only as initial guesses during the later search; target endpoints do not enter forecasts. Central beta node is retrospective.",
+  "failure_policy": "Retain forecast misses and unresolved roots without changing the frozen forecasts."
+}
