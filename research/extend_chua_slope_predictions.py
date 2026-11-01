@@ -33,6 +33,7 @@ def initialize():
     original.update(slope_offsets=[-.0008,.0008],
         nodes=[name for name,*_ in nodes()],
         purpose='Test the unchanged model outside the previous slope square; twice its half-width.',
+        provenance='All eight new nodes are held-out target locations. Previously published central folds initialize continuation but do not provide the new target endpoints.',
         central_bias_correction='Reuse the original central residuals; no fitting to new target endpoints.',
         target_count=24,
         publication_rule='Commit and push forecasts-frozen.json before any new target solve.',

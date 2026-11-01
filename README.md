@@ -12,6 +12,8 @@ The [prediction and hidden-coexistence study](docs/chua-prediction-and-hidden-co
 
 [Study outline](docs/research-guide.md) · [Review guide](docs/chua-review-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
+The [excitation, robustness and prediction extension](docs/chua-excitation-robustness-prediction.md) adds a plane of initial conditions, finite-duration forcing, a uniform four-cycle parameter box and 24 further forecasts tested outside the original slope square. A stronger pulse can return the system to rest after a weaker pulse excites its hidden cycle. The new calibrated forecasts locate 24/24 windows; the uncorrected forecasts locate 16/24.
+
 An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
 
 The [global-stability and basin study](docs/chua-hidden-boundary.md) addresses questions posed by Leonov, Kuznetsov, Chua and colleagues. It derives an explicit slope sector where all trajectories converge to the origin, certifies a saddle beside a hidden attracting cycle, and tests amplitude and flight-time predictions near two linear contacts. A [subsequent proof](docs/chua-basin-and-coexistence.md) certifies a local basin boundary by covering both exit strips and establishes infinite simultaneous periodic coexistence on the classical slice. The global basin boundary remains unclassified.
@@ -22,11 +24,16 @@ At the same parameter values, different initial states can approach different su
 
 | Question | What the present results determine |
 |---|---|
-| Where should we look for thinner layers? | A calibrated formula located all 48 held-out windows in two small slope patches. Its uncorrected version located 32. |
-| How can an initial displacement reach a hidden cycle? | Seven local basin crossings are enclosed. On one ray, all smaller amplitudes are excluded, giving an excitation infimum and a predicted delay near it. |
+| Where should we look for thinner layers? | A calibrated formula located 48/48 original held-out windows and 24/24 further windows on an enlarged slope square. The uncorrected model located 32/48 and 16/24. |
+| How can an initial displacement reach a hidden cycle? | Seven local basin crossings are enclosed; one ray has a proved excitation infimum. A numerical plane scan compares stored-energy costs, and finite pulses can enter and leave the cycle's basin. |
+| Does coexistence survive parameter errors? | Four attracting cycles persist throughout an explicit five-parameter box. Its certified tolerances are conservative and too small for a practical hardware specification. |
 | Is there a finite upper bound on simultaneous periodic attractors? | In a specified ideal-model family, a computer-assisted argument gives parameter values with infinitely many simultaneous hidden periodic attractors. |
 
 These results address search, accessibility and coexistence questions discussed in the [2017 and 2023 studies](docs/chua-prediction-and-hidden-coexistence.md#model-questions-and-interpretation). The [review guide](docs/chua-review-guide.md) identifies the assumptions, data and failure conditions for each inference. Infinite simultaneous coexistence does not give a count of globally disconnected layer surfaces, and no decimal parameter realizing the infinite collection is supplied.
+
+![At the same duration, a moderate pulse excites a hidden periodic orbit and a stronger pulse returns to rest](docs/assets/chua-extended-pulse-return.png)
+
+The same initial equilibrium and pulse duration produce different long-term motions: amplitude 0.7 excites the hidden cycle, while amplitude 1.2 returns to rest. The pulse endpoint crosses the basin boundary twice as amplitude increases. The [excitation report](docs/chua-excitation-robustness-prediction.md#finite-duration-forcing) specifies the input, numerical thresholds and independent checks.
 
 ## Background
 
@@ -60,6 +67,10 @@ Figure 2. The 32 sampled families, highlighted individually with fixed camera an
 Peak counts and orbit silhouettes alone do not identify a family. The catalogue follows normalized periodic roots and their continuation history. The [gallery](docs/chua-family-gallery.md) shows an orbit, complete signal and peak sequence for each original family; [two further portraits](docs/chua-layer-prediction.md) show the 75- and 85-peak motions. The [refined atlas](docs/chua-refined-atlas.md) documents the catalogue convention and numerical checks. The [terminology guide](docs/terminology.md) distinguishes stability regions, plotted sheets, periodic windows and catalogue entries.
 
 ## Predicted and measured stability windows
+
+![Additional prospective forecasts at twice the original slope offsets](docs/assets/chua-extended-predictions.png)
+
+The new test doubles the slope offsets to ±0.0008 and reuses the previous central calibration without refitting. All 24 corrected midpoints lie inside the measured fold-to-symmetry-breaking windows; the largest corrected fold error is 4.40% of a window width. [Frozen forecasts, independent searches and limitations](docs/chua-excitation-robustness-prediction.md#3-prospective-prediction-on-a-larger-slope-square).
 
 ![Held-out slope-section forecasts and three resolved thin layer surfaces](docs/assets/chua-followup-sheets.png)
 

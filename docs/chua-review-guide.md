@@ -2,6 +2,8 @@
 
 This guide identifies what must be checked to accept each conclusion of the [combined study](chua-prediction-and-hidden-coexistence.md). It separates arithmetic that can be replayed from mathematical implications that require reading. It also identifies failures that would invalidate a conclusion. A file containing `passed: true` is a record of an execution, not an independent proof object.
 
+For the subsequent plane/pulse excitation calculations, uniform four-cycle box and 24 additional forecasts, see the [extension report](chua-excitation-robustness-prediction.md) and its [reproduction and review instructions](../results/chua-followup/extended-studies.md). The box proof uses multiple shooting, a determinant bound and exclusion of ±1; the new excitation minima remain numerical.
+
 ## 1. Questions, quantities and evidence
 
 | Result | Quantity being determined | Evidence | What remains undetermined |

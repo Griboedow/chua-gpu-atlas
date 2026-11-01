@@ -1,0 +1,273 @@
+{
+  "records": [
+    {
+      "initial_state": [
+        0.0,
+        3.4077391855201064e-05,
+        -0.6144646998052552
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "initial_state": [
+        0.0,
+        3.407807340985372e-05,
+        -0.6144769892221454
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 6.298486855525918e-09
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.394756526593632e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        17.03140692024672,
+        0.02
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        17.03174755179144,
+        0.02
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 7.527410455032374e-09
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.680619227266015e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        2.1542152196524262,
+        0.15874010519681994
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        2.1542583043876666,
+        0.15874010519681994
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 1.3267914600027673e-07
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.6342125623545402e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.3516021553764604,
+        1.2599210498948727
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.35160918748988906,
+        1.2599210498948727
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 1.1499646386089008e-08
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.6851076030382e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.43207635481687157,
+        2.345526436848252
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.43208499643038406,
+        2.345526436848252
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 5.332170401004518e-09
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.7064142371876966e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        1.0218772376012595,
+        2.345526436848252
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 1.6095649954883614e-09
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.491754078799044e-09
+        }
+      ]
+    },
+    {
+      "forcing": [
+        1.021897675350389,
+        2.345526436848252
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.3594177495255866,
+        1.2026949616680962
+      ],
+      "expected": 1,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        },
+        {
+          "method": "Radau",
+          "label": 1,
+          "last_section_distance": 24.501763570122527
+        }
+      ]
+    },
+    {
+      "forcing": [
+        0.3594249379524614,
+        1.2026949616680962
+      ],
+      "expected": 2,
+      "checks": [
+        {
+          "method": "DOP853",
+          "label": 2,
+          "last_section_distance": 4.05655326886499e-08
+        },
+        {
+          "method": "Radau",
+          "label": 2,
+          "last_section_distance": 2.589272408733681e-09
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

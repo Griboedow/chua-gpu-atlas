@@ -1,0 +1,233 @@
+{
+  "records": [
+    {
+      "id": "beta_00_65",
+      "parameter_difference": "3.045086939493255e-39",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 9.260214817174983e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 3.233191492313381e-11,
+        "multiplier_error": 1.332979403800838e-07,
+        "dominant": 0.249999964007543
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "beta_00_75",
+      "parameter_difference": "4.292633377474686e-32",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 2.6236124384126924e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 1.5404499897897495e-10,
+        "multiplier_error": 9.495238144030527e-06,
+        "dominant": 0.2500095721886777
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "beta_00_85",
+      "parameter_difference": "5.463308878690458e-35",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 1.7001156038531917e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 8.675002938218768e-10,
+        "multiplier_error": 4.477400689070765e-05,
+        "dominant": 0.2500434555578156
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "beta_22_65",
+      "parameter_difference": "3.593944923024828e-39",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 5.7134741382469656e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 1.59416868594775e-10,
+        "multiplier_error": 8.9882635101457e-07,
+        "dominant": 0.2500008400548068
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "beta_22_75",
+      "parameter_difference": "4.244868703151443e-32",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 7.502620746890898e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 5.48806555755732e-11,
+        "multiplier_error": 8.724378607882777e-07,
+        "dominant": 0.25000108197275106
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "beta_22_85",
+      "parameter_difference": "5.444949204613889e-35",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 7.073430730031305e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 2.336768001320877e-10,
+        "multiplier_error": 2.069391886519445e-05,
+        "dominant": 0.2500201642094226
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_65",
+      "parameter_difference": "4.558809511364412e-40",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 3.607225629309596e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 7.107914257176162e-11,
+        "multiplier_error": 1.345940809915902e-07,
+        "dominant": 0.24999990429273072
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_75",
+      "parameter_difference": "2.032828137331973e-32",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 2.1157497975821116e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 2.58045029788434e-10,
+        "multiplier_error": 3.4826860871306486e-06,
+        "dominant": 0.24999712851382544
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_85",
+      "parameter_difference": "2.581282598234692e-35",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 5.088198751224127e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 3.0590235899907725e-10,
+        "multiplier_error": 3.9618719808842684e-05,
+        "dominant": 0.2500435597468682
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_65",
+      "parameter_difference": "3.942816294862484e-40",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 1.7809087538012136e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 2.0575208203865714e-12,
+        "multiplier_error": 1.9282202823323047e-07,
+        "dominant": 0.24999982517050579
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_75",
+      "parameter_difference": "2.024069218121291e-32",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 3.323635811014469e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 5.894351673418896e-11,
+        "multiplier_error": 5.354943031221637e-06,
+        "dominant": 0.24999372416987492
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_85",
+      "parameter_difference": "2.589906954171363e-35",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 8.04151856215185e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 6.493034443444401e-10,
+        "multiplier_error": 1.1652488708990827e-05,
+        "dominant": 0.2500177020857037
+      },
+      "working_digits": 65,
+      "method": "Nonspectral mpmath matrix exponential and segmented ODE integration",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

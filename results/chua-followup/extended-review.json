@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "cycle_certificates": 4,
+  "pair_separations": 6,
+  "negative_controls_rejected": [
+    "contraction",
+    "inclusion"
+  ],
+  "independent_excitation_cases": 14,
+  "independent_prediction_cycles": 12,
+  "frozen_forecast_commit": "0c39117",
+  "versions": {
+    "python-flint": "0.9.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "mpmath": "1.3.0",
+    "numba": "0.68.1"
+  },
+  "source_sha256": {
+    "research/certify_chua_coexistence_box.py": "0b3f7fcf18f2d27f98d96bc07b8497bc569b7259238eb60657bdd58efe36415c",
+    "research/study_chua_excitation_plane.py": "0defa3b0e3e1a8c84042234dc4ad3674abb7ae8d9f298e92602a98522c6f7065",
+    "research/extend_chua_slope_predictions.py": "e6c13adeb3eb6b0b5eea08fbad2f42969f368707ee2eba1e4ea5f85c12b089cd",
+    "research/check_chua_extended_predictions.py": "5900378d80565b145d026e419314e0f0f3831c68d02084f1231bb38e5caf598f",
+    "research/study_chua_coexistence_tolerances.py": "d876d3fe6daf069494337c4be4bfb5ee10cdace6696a02f85a1308640ed637de",
+    "research/plot_chua_extended_studies.py": "c76cfb21d0ddebfbc1c036ba0534f878053cdc7a8f5341f0f041ed7bde8dd45e",
+    "research/review_chua_extended_studies.py": "57f8405b7375d5b33eb13baa423a7dd4d8e99c3ac90a9d49625969b8ea6f99c4",
+    "research/check_chua_coexistence_box.py": "b9c4d1ab9cd83771acdf47e8f555bec3be5cb55e80e749e06a4eb80b6214e1ec",
+    "research/derive_chua_pulse_limit.py": "4e4b48de5e7cf9fccd04994c23caeeabbedcc0f3581c701697fe897878184e00"
+  },
+  "scope": "Stored inequality and provenance review; does not replace re-executing the interval program or the written mathematical argument."
+}

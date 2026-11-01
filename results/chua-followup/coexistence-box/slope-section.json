@@ -1,0 +1,2913 @@
+{
+  "parameters": {
+    "alpha": 9.06,
+    "beta": 14.3458,
+    "m0": -1.1368571428571428,
+    "m1": -0.7142857142857143,
+    "gamma": 0.0
+  },
+  "grid_shape": [
+    31,
+    31,
+    4
+  ],
+  "status": {
+    "0": "unresolved",
+    "1": "continued but not attracting",
+    "2": "continued attracting"
+  },
+  "failed_attempts": [
+    {
+      "index": [
+        11,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.04770572055621425 The iteration is not making good progress, as measured by the \n improvement from the last ten iterations."
+    },
+    {
+      "index": [
+        25,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00013232422878539651 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006475574189666045 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00012953188716080533 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.000801030717800133 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00012001160590324744 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00034281379244638366 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00014122821203321756 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006603555944516559 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00010997259224332367 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003416633071640085 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 9.389036471563195e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003678521584619121 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00014054534305252275 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003724206333195479 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0001251044341582519 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00015169122021951864 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002726868782438885 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00033597414536945536 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00015336730767145923 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00015001457286523134 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005413733791128639 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00042440491036899175 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005287533928122201 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00012223132170596784 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008340017310292103 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00035337478084751517 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00041064952724434445 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00047714632992934547 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00017772885438516184 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00022692832131765428 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0001408492714158882 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00017016012691284388 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00023803957509693774 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 2.4939565165471578e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 2.999982164764159e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 1.899772051827675e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 3.7675939615233744e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 1.1870298171068328e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 2.5652957593602643e-05 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        25,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 5.416707179461966e-06 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002898585235242557 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003151701805408913 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002810902344827504 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004063953032518164 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00027379852986775255 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004269956449286294 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002628138329259233 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0031585675433858373 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002608781982365027 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022403915116269157 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.11132442700070566 The iteration is not making good progress, as measured by the \n improvement from the last ten iterations."
+    },
+    {
+      "index": [
+        26,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002652715548607576 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00024242622191916752 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0036651284248636617 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002308032169731078 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0030868968255792772 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0011835569400164836 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0019137791942951399 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00022115530595101518 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0032136732489860265 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002255745141310772 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0037003620110447333 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002903342372160278 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0017017591185144454 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00019601637488220192 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0026997905186163518 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003235800886504103 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0015875884121641093 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00018545883239595717 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0018998790106041774 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0014930651098644665 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0027790034879731085 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00057968265455699 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022683659184653537 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00016746576842230354 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0011752991872047147 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003643059265581172 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0030630491145153815 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0007997858406011416 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022949878013636127 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        20,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001649974881855476 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        20,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010417590792659581 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        21,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001160074898104213 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        21,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001172400185583955 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        22,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00101391759914371 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        22,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001020616770038174 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        23,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010655532114416388 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        23,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0011291480619192162 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        24,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008694386367587015 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        24,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008586018634400006 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        25,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001224905661221909 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        25,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0024741309692275504 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008826898119966842 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        26,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008089172960321633 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        27,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004939199274396344 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        27,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0013656601608430519 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        28,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00032378720320380694 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        28,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0012177884842140552 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        29,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004010004757990515 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        29,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0011112476304908636 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        30,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0002047916706491293 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        26,
+        30,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008542781295595159 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004554972296881843 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0028568979601306665 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004507220413629831 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0029251466902007195 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00044969808983874593 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00675091446959164 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004262255347842192 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002661523724756476 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00041476110426796886 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004505219844161967 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004101519393040487 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006712383830436708 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00039515575425785876 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005073524229878834 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004084380217945771 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005185787932220132 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00038582593954350486 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006628921628229034 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003804158107529876 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005085592944874318 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003766010074468529 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002746938565493906 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00036076785840521985 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006253580854913787 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003614751804457139 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0045768414954845404 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004817422294953744 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005015255403107766 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0009736499950832034 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00599452013178603 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00035079830221529384 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002340290382020882 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0003663999833047882 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022660453524778745 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005155488544925646 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0024907484428098314 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0009251256842339739 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003386730626836476 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005961314895284175 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002927957846487139 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        20,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0007989479134837829 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        20,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004838934188354127 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        21,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00045467385271358296 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        21,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0024706410275390223 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        22,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010001018681224938 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        22,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0015453263737092993 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        23,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002130726895797186 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        23,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0009491266699122036 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        24,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0028483857062141515 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        24,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0013138329532664805 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        25,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0037010399707054775 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        25,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00239625938061816 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004672213873025743 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        26,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0017616633225254752 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        27,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0004484515094418384 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        27,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0014482210307265042 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        28,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003270831543916608 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        28,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005911348723675047 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        29,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0013423208080105553 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        29,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0017371373292611736 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        30,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001611995719164483 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        27,
+        30,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0020042741547993126 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006484958351686831 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006236039301822149 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006103259758520885 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003278110513568633 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006331957099494634 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0034693534590362063 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006317047553765498 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005062378276200041 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.000596454460310536 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002727289823932777 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005916046690621624 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0027975691590800267 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005697675162452676 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005608215018092277 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005670216602144951 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0059422374405565526 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0009745857033376382 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0033539481958750894 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005982320768139759 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0056924173236631015 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005955205371916961 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004662569943983508 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008230654806484772 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005305641345786594 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005557785076426569 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002521230533909957 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005094615477196918 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00538612583025766 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0005450641312316762 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003116103446487384 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.000509784381216738 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0035318123999050766 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0006843554788018569 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0036564447849529724 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00048225411412872177 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004958012120724664 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.000923834358160347 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005041044059348021 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0012535340250370286 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.010140270096162585 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        20,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0047298182711243975 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        20,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.01023301149220801 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        21,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005013878449357745 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        21,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004260155717947134 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        22,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0015717617466570744 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        22,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003465732379583031 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        23,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0021073613848017203 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        23,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0076257324289159545 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        24,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0018737438572014042 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        24,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005339288949087084 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        25,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004227885297022449 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        25,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022313455974866114 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001334502380352376 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        26,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0021347535091589265 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        27,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004789732409695047 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        27,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0036962363577064394 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        28,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0045026216394232765 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        28,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005422942946343712 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        29,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.010437264150536696 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        29,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002028191676657798 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        30,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006873712071152727 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        28,
+        30,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0019674314571087592 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008232560374383802 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.010597810980681022 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0009296732532232399 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0043849253217920214 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008545218134727861 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004629934142341252 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0016454839497186402 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004601202677560701 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0007945918161929022 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0060635551591238235 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0008045055000871493 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007825263384368841 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0007972287527471256 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0048406017541615665 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0018937327021966155 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0056019461987262265 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002237063440466258 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005789361869524834 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0035567710275483666 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007693010132814093 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0038267183125054727 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005218632788148048 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002065794810068411 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004842764686589729 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004880015632993673 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.009100237901830122 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0032503845844131796 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0037013694935730257 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005841846306599563 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0031036156938544224 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004609868219100033 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003686559711681081 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004940217723305773 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0025682438244167827 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0022900040400095634 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003815083046419643 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0065171524269084236 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006877895628871311 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006743481731678713 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004846306570296388 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        20,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004040942903513867 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        20,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003726440276038301 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        21,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003916826965302933 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        21,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0031112820380503337 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        22,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0024895483107147953 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        22,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003903888997703442 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        23,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0026397877259718427 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        23,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0028943357512680734 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        24,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006581803388926888 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        24,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003023012567506811 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        25,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003430271729364276 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        25,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004540355016530606 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0066531533510740815 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        26,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002738269036708374 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        27,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0025302313747062044 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        27,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007443807373513467 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        28,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002732822645274524 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        28,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007406129053094457 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        29,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003522241579226648 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        29,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0036921581778224244 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        30,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0037457736235253503 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        29,
+        30,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003068009299587615 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        0,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010665202027548837 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        0,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0042179076639037305 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        1,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010285533658380697 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        1,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007541749031197531 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        2,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0010260444895549004 The iteration is not making good progress, as measured by the \n improvement from the last ten iterations."
+    },
+    {
+      "index": [
+        30,
+        2,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0039667520266881695 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        3,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0023505074794351044 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        3,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003936803747635054 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        4,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0023640553819791466 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        4,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00452635258628753 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        5,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0021844389972072165 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        5,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0036482821418637457 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        6,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0018588523661122736 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        6,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004128089970659943 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        7,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004214862771710459 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        7,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003138070054614417 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        8,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00295507355704161 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        8,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0043149096310379775 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        9,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003068784883659581 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        9,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005052314168408678 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        10,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004932809667390403 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        10,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.009367337905043405 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        11,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007202583767878412 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        11,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004602844672932371 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        12,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005498352658605654 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        12,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002124597538031736 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        13,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0033413960557524547 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        13,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003614458983445701 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        14,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003178672629015833 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        14,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004337749298437998 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        15,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003008649008560904 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        15,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006965121829694776 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        16,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0014771307753473906 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        16,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.006925352101716076 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        17,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001727756961345861 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        17,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.001742692567992421 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        18,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0034455464388468693 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        18,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0059912913703568105 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        19,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0020190688882202323 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        19,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004490953124448804 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        20,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0021466797234306334 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        20,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004993052053411162 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        21,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0021269019674452494 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        21,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004010507374113459 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        22,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004055261011376099 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        22,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004112455028931095 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        23,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005477287772693407 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        23,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004141159810361117 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        24,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.002029339475486225 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        24,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00791010997956021 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        25,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0028265097285284924 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        25,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.009794076543866881 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        26,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.005843994974667588 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        26,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.004068342028478944 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        27,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003390742885689746 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        27,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003972921597418022 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        28,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003085774830880794 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        28,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007436816861478679 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        29,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.0059358582538989735 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        29,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.003553319728691662 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        30,
+        2
+      ],
+      "message": "flight closure failed beta=14.3458: 0.007416268526539316 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    },
+    {
+      "index": [
+        30,
+        30,
+        3
+      ],
+      "message": "flight closure failed beta=14.3458: 0.00538374715157075 The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations."
+    }
+  ],
+  "selection_checks": [
+    {
+      "id": "F1a",
+      "initial_state": [
+        0.0,
+        0.23629512270153077,
+        -0.4166511665229719
+      ],
+      "last_section_distance": 5.707680746618117e-10,
+      "passed": true
+    },
+    {
+      "id": "F1a",
+      "initial_state": [
+        0.0,
+        0.2363151227015308,
+        -0.4166711665229719
+      ],
+      "last_section_distance": 4.069310951357333e-10,
+      "passed": true
+    },
+    {
+      "id": "F1b",
+      "initial_state": [
+        0.0,
+        0.23295058068603047,
+        -0.4223293166906114
+      ],
+      "last_section_distance": 6.796938283777091e-11,
+      "passed": true
+    },
+    {
+      "id": "F1b",
+      "initial_state": [
+        0.0,
+        0.2329705806860305,
+        -0.42234931669061143
+      ],
+      "last_section_distance": 2.563896982216294e-09,
+      "passed": true
+    },
+    {
+      "id": "F2a",
+      "initial_state": [
+        0.0,
+        0.2618034365240354,
+        -0.3712984505443314
+      ],
+      "last_section_distance": 4.3250171897937153e-10,
+      "passed": true
+    },
+    {
+      "id": "F2a",
+      "initial_state": [
+        0.0,
+        0.26182343652403545,
+        -0.37131845054433144
+      ],
+      "last_section_distance": 3.989434981593789e-09,
+      "passed": true
+    },
+    {
+      "id": "F2b",
+      "initial_state": [
+        0.0,
+        0.2623928299138445,
+        -0.37013115501205524
+      ],
+      "last_section_distance": 6.104273074609453e-11,
+      "passed": true
+    },
+    {
+      "id": "F2b",
+      "initial_state": [
+        0.0,
+        0.2624128299138445,
+        -0.37015115501205526
+      ],
+      "last_section_distance": 2.2771694307266052e-10,
+      "passed": true
+    }
+  ],
+  "four_attracting_nodes": 301,
+  "scope": "Finite numerical continuation screen. A failed solve is unresolved, not evidence of cycle absence."
+}

@@ -30,7 +30,7 @@
   "primary_gate": "Predicted midpoint lies strictly between independently solved fold and symmetry-breaking endpoints",
   "secondary_gate": "Relative width error below 10 percent",
   "tangency_estimate_scope": "Finite-iterate tangent-line approximation, with increased-iteration controls; exact tangency certified only at the original point.",
-  "provenance": "Existing central target roots are used only as initial guesses during the later search; target endpoints do not enter forecasts. Central beta node is retrospective.",
+  "provenance": "All eight new nodes are held-out target locations. Previously published central folds initialize continuation but do not provide the new target endpoints.",
   "failure_policy": "Keep all misses and unresolved targets; do not refit this experiment.",
   "nodes": [
     "beta_00",

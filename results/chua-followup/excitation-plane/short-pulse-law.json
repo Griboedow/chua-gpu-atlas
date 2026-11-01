@@ -1,0 +1,108 @@
+{
+  "voltage_ray_threshold": 0.34061011644046296,
+  "normal_approximations": [
+    {
+      "half_returns": 4,
+      "normal": [
+        0.049564737688766604,
+        1.0,
+        -0.04863801695119671
+      ],
+      "quadratic_coefficient": 0.05357320837416968
+    },
+    {
+      "half_returns": 6,
+      "normal": [
+        0.049564737688766604,
+        1.0,
+        -0.04863801695119671
+      ],
+      "quadratic_coefficient": 0.05357320837416968
+    },
+    {
+      "half_returns": 8,
+      "normal": [
+        0.049564737688766604,
+        1.0,
+        -0.04863801695119671
+      ],
+      "quadratic_coefficient": 0.05357320837416968
+    }
+  ],
+  "comparisons": [
+    {
+      "duration": 0.02,
+      "measured_area": 0.3406315447203816,
+      "predicted_area": 0.34063154572381266,
+      "measured_quadratic_coefficient": 0.053570699796584575,
+      "quadratic_increment_relative_error": 4.682522591481497e-05
+    },
+    {
+      "duration": 0.02460343031299717,
+      "measured_area": 0.34064253458753235,
+      "predicted_area": 0.3406425458454984,
+      "measured_quadratic_coefficient": 0.053554610272800215,
+      "quadratic_increment_relative_error": 0.0003471530254369748
+    },
+    {
+      "duration": 0.03026643915832541,
+      "measured_area": 0.3406591846607626,
+      "predicted_area": 0.34065919257118527,
+      "measured_quadratic_coefficient": 0.053564573082106,
+      "quadratic_increment_relative_error": 0.00016118676341658755
+    },
+    {
+      "duration": 0.03723291133272139,
+      "measured_area": 0.34068440416827794,
+      "predicted_area": 0.34068438442669463,
+      "measured_quadratic_coefficient": 0.053587448964367,
+      "quadratic_increment_relative_error": 0.00026581551916504687
+    },
+    {
+      "duration": 0.04580286696623066,
+      "measured_area": 0.3407225420139731,
+      "predicted_area": 0.34072250781479757,
+      "measured_quadratic_coefficient": 0.0535895099771095,
+      "quadratic_increment_relative_error": 0.0003042864789049027
+    },
+    {
+      "duration": 0.0563453822769568,
+      "measured_area": 0.34078024437651033,
+      "predicted_area": 0.3407802007751239,
+      "measured_quadratic_coefficient": 0.05358694195031279,
+      "quadratic_increment_relative_error": 0.0002563515712405984
+    },
+    {
+      "duration": 0.06931448431551465,
+      "measured_area": 0.3408676511980594,
+      "predicted_area": 0.34086750879880295,
+      "measured_quadratic_coefficient": 0.053602847113593685,
+      "quadratic_increment_relative_error": 0.00055323808902763
+    },
+    {
+      "duration": 0.08526870422690498,
+      "measured_area": 0.34099994758144025,
+      "predicted_area": 0.3409996339481387,
+      "measured_quadratic_coefficient": 0.053616344669422604,
+      "quadratic_increment_relative_error": 0.0008051840941025734
+    },
+    {
+      "duration": 0.10489513111631121,
+      "measured_area": 0.3412002782337368,
+      "predicted_area": 0.34119958183782145,
+      "measured_quadratic_coefficient": 0.05363649989840247,
+      "quadratic_increment_relative_error": 0.0011814025359604408
+    },
+    {
+      "duration": 0.1290390024296432,
+      "measured_area": 0.34150378419086336,
+      "predicted_area": 0.34150216736971745,
+      "measured_quadratic_coefficient": 0.0536703085433567,
+      "quadratic_increment_relative_error": 0.0018124762756197565
+    }
+  ],
+  "area_law": "a*tau = Astar + c*tau^2 + O(tau^4)",
+  "cost_law": "J = Astar^2/tau + 2*Astar*c*tau + O(tau^3)",
+  "coefficient_formula": "c = -Astar * n dot (A0^2 e_y) / (24 * n dot e_y)",
+  "scope": "Analytic short-pulse expansion on the smooth local separator; numerical coefficient from finite-iterate normals. Comparison with existing pulse data, not a newly frozen prospective experiment."
+}

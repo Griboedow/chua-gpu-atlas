@@ -2,6 +2,8 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+The [extension programs](../results/chua-followup/extended-studies.md) add a plane and finite-pulse excitation scan, interval multiple shooting for four-cycle parameter boxes, correlated component images, and prospective slope predictions at new nodes. Their independent checks and retained failures are described with the data.
+
 ## Cross-parameter prediction, impulses and hidden coexistence
 
 `predict_chua_slope_sheets.py` separates calibration, frozen forecasts and endpoint searches. `study_chua_trigger.py` and `certify_chua_trigger.py` compute impulse crossings and verify their relation to the exact basin separator. `chua_interval_lobe.py` provides the second return geometry; `certify_chua_hidden_tangency.py` and `certify_chua_hidden_neighborhoods.py` verify the hypotheses for infinite hidden coexistence. `check_chua_followup.py` and `check_chua_hidden_tangency.py` use separate numerical implementations. The shared composition supports rational moving frames to reduce interval wrapping. [Reports and exact reproduction commands](../results/chua-followup/README.md).

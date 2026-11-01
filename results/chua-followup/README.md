@@ -2,6 +2,8 @@
 
 [Combined report](../../docs/chua-prediction-and-hidden-coexistence.md) · [Hidden-infinity proof](../../docs/chua-hidden-infinity-certificate.md) · [Computed summary](analysis.json)
 
+The later [excitation, robustness and prediction data](extended-studies.md) are stored separately in `excitation-plane`, `coexistence-box` and `extended-slopes`. They preserve the original forecasts and certificates below.
+
 The [review guide](../../docs/chua-review-guide.md) maps claims to these files and provides isolated output commands. The [revision audit](review/README.md) retains fresh executions and a record-level checker that recomputes inequalities instead of relying on saved success flags. Older commands below use the original output locations; use the review commands when preserving published evidence.
 
 ## Slope-sheet predictions

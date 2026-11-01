@@ -2,6 +2,8 @@
 
 The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
+The [excitation, robustness and prediction extension](chua-excitation-robustness-prediction.md) compares energy-based initial directions and finite pulses, proves four-cycle persistence on a parameter box, and tests 24 forecasts on a larger slope square.
+
 The current [prediction, excitation and hidden-coexistence study](chua-prediction-and-hidden-coexistence.md) connects 48 held-out slope-window tests, certified impulse thresholds and a [computer-assisted argument for infinite hidden periodic coexistence](chua-hidden-infinity-certificate.md).
 
 The [review guide](chua-review-guide.md) connects each conclusion to its precise assumptions, certificate fields, executable checks and possible failure points. It includes commands that preserve the published evidence and a record of the revision checks.

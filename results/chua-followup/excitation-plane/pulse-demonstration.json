@@ -1,0 +1,20 @@
+{
+  "records": [
+    {
+      "amplitude": 0.7,
+      "duration": 2.345526436848252,
+      "destination": "cycle",
+      "last_section_distance": 1.604806215843812e-09,
+      "final_norm": 22.038419210175537
+    },
+    {
+      "amplitude": 1.2,
+      "duration": 2.345526436848252,
+      "destination": "origin",
+      "last_section_distance": 24.501763570122527,
+      "final_norm": 1.2502832531186713e-15
+    }
+  ],
+  "method": "DOP853",
+  "passed": true
+}

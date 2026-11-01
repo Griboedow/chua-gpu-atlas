@@ -37,12 +37,14 @@ certify_chua_basin_separator check_chua_basin_proof audit_chua_local_results plo
 chua_research_followup predict_chua_slope_sheets study_chua_trigger certify_chua_trigger finalize_chua_trigger
 search_chua_hidden_tangencies check_chua_followup check_chua_hidden_candidates certify_chua_hidden_neighborhoods
 chua_lobe_map chua_interval_lobe study_chua_hidden_lobes locate_chua_hidden_connections refine_chua_hidden_connection
-certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup review_chua_followup check_chua_schema'''.split()
+certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup review_chua_followup check_chua_schema
+certify_chua_coexistence_box study_chua_excitation_plane extend_chua_slope_predictions
+check_chua_extended_predictions study_chua_coexistence_tolerances plot_chua_extended_studies review_chua_extended_studies check_chua_coexistence_box derive_chua_pulse_limit'''.split()
 
 
 def digest(path):
     raw=path.read_bytes()
-    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg','.lean','.toml','.yml','.ps1'] or path.name == 'lean-toolchain':
+    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg','.lean','.toml','.yml','.ps1','.log'] or path.name == 'lean-toolchain':
         raw=raw.replace(b'\r\n',b'\n')
     return hashlib.sha256(raw).hexdigest()
 
@@ -87,6 +89,9 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-basin-proof').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-followup').rglob('*') if p.is_file())
     paths.update((ROOT/'docs/assets').glob('chua-followup-*.png'))
+    paths.update((ROOT/'docs/assets').glob('chua-extended-*.png'))
+    paths.update((ROOT/'docs/assets').glob('chua-extended-*.pdf'))
+    paths.update(ROOT/p for p in ['docs/chua-excitation-robustness-prediction.md','requirements-excitation.txt'])
     paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md','docs/chua-review-guide.md','docs/terminology.md','AGENTS.md'])
     paths.update(ROOT/p for p in ['docs/chua-basin-and-coexistence.md',
         'docs/assets/chua-basin-proof.png','docs/assets/chua-coexistence-localization.png'])
@@ -129,7 +134,7 @@ def main():
     paths.add(ROOT/'results/chua-layers/extended.json')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
-        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs, .svg, .lean, .toml, .yml, .ps1 and lean-toolchain; binary files are unchanged.',
+        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs, .svg, .lean, .toml, .yml, .ps1, .log and lean-toolchain; binary files are unchanged.',
         scope='Hashes identify the finite catalogue, forecasts, interval certificate and partial formal proof. Integrity checks do not themselves prove mathematical claims; see docs/chua-infinity-certificate.md and docs/chua-coexistence-audit.md for the arguments and remaining obligations.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')

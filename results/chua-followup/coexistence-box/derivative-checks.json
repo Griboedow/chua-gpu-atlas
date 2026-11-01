@@ -1,0 +1,65 @@
+{
+  "records": [
+    {
+      "id": "F1a",
+      "checks": [
+        {
+          "variables": "parameters",
+          "max_absolute_difference": "2.054743338518366e-37"
+        },
+        {
+          "variables": "shooting",
+          "max_absolute_difference": "8.144532929080462e-40"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "F1b",
+      "checks": [
+        {
+          "variables": "parameters",
+          "max_absolute_difference": "2.054743338518366e-37"
+        },
+        {
+          "variables": "shooting",
+          "max_absolute_difference": "8.144532929080462e-40"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "F2a",
+      "checks": [
+        {
+          "variables": "parameters",
+          "max_absolute_difference": "1.796703963827623e-38"
+        },
+        {
+          "variables": "shooting",
+          "max_absolute_difference": "8.290138221674555e-40"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "F2b",
+      "checks": [
+        {
+          "variables": "parameters",
+          "max_absolute_difference": "1.796703963827623e-38"
+        },
+        {
+          "variables": "shooting",
+          "max_absolute_difference": "8.290138221674555e-40"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "working_digits": 80,
+  "centered_difference_step": "1e-20",
+  "method": "Independent mpmath 4x4 affine exponentials",
+  "scope": "Numerical implementation cross-check, not an independent interval proof.",
+  "passed": true
+}
