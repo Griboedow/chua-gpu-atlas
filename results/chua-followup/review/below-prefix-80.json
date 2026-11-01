@@ -1,0 +1,991 @@
+{
+  "passed": false,
+  "partial": true,
+  "central": {
+    "passed": true,
+    "upper_amplitude": ".299",
+    "duration": "30",
+    "time_cells": 26876,
+    "maximum_absolute_x": {
+      "ball": "[1.0 +/- 6.26e-3]",
+      "lower": "[0.993742384609281932748625575792 +/- 3.41e-31]",
+      "upper": "[0.999994186600593300349781810533 +/- 1.30e-31]",
+      "midpoint": "0.99686828560493761654920369316226466513169542166497790801607442583321494921905722",
+      "radius": "[0.0031259009956556838006 +/- 2.19e-23]"
+    },
+    "final_energy": {
+      "ball": "[0.110703711767475756575676578416 +/- 1.27e-31]",
+      "lower": "[0.110703711767475756575676578416 +/- 1.27e-31]",
+      "upper": "[0.110703711767475756575676578416 +/- 1.27e-31]",
+      "midpoint": "0.11070371176747575657567657841612692878803112087049210118260459276778802134405000",
+      "radius": "[2.4778956333031490787e-76 +/- 1.56e-96]"
+    },
+    "capture_level": {
+      "ball": "[1.19384487158232736863063118778 +/- 6.07e-31]",
+      "lower": "[1.19384487158232736863063118778 +/- 6.07e-31]",
+      "upper": "[1.19384487158232736863063118778 +/- 6.07e-31]",
+      "midpoint": "1.1938448715823273686306311877806063516896517901286863211322106247212273404532738",
+      "radius": "[8.3658938651958913184e-80 +/- 3.61e-100]"
+    },
+    "argument": "All smaller nonnegative amplitudes scale this central trajectory. At T they enter the invariant origin ellipsoid."
+  },
+  "records": [
+    {
+      "lower": "0.29900000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.30316101164404629600000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 36,
+      "time": 1.234471185845356,
+      "depth": 1
+    },
+    {
+      "lower": "0.30316101164404629600000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.30732202328809259200000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 36,
+      "time": 1.234471185845356,
+      "depth": 1
+    },
+    {
+      "lower": "0.30732202328809259200000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.30898642794571111040000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 2
+    },
+    {
+      "lower": "0.30898642794571111040000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31065083260332962880000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 2
+    },
+    {
+      "lower": "0.31065083260332962880000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31231523726094814720000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 2
+    },
+    {
+      "lower": "0.31231523726094814720000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31397964191856666560000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 2
+    },
+    {
+      "lower": "0.31397964191856666560000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31664268937075629504000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 1
+    },
+    {
+      "lower": "0.31664268937075629504000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31730845123380370240000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 1,
+      "path_cells": 35,
+      "time": 1.234471185845356,
+      "depth": 3
+    },
+    {
+      "lower": "0.31730845123380370240000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31764133216532740608000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 744,
+      "time": 12.453976065718956,
+      "depth": 4
+    },
+    {
+      "lower": "0.31764133216532740608000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31797421309685110976000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 756,
+      "time": 12.453359437852,
+      "depth": 4
+    },
+    {
+      "lower": "0.31797421309685110976000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31830709402837481344000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 764,
+      "time": 12.452743145653574,
+      "depth": 4
+    },
+    {
+      "lower": "0.31830709402837481344000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31863997495989851712000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 772,
+      "time": 12.452127233774638,
+      "depth": 4
+    },
+    {
+      "lower": "0.31863997495989851712000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31897285589142222080000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 777,
+      "time": 12.451511744702827,
+      "depth": 4
+    },
+    {
+      "lower": "0.31897285589142222080000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31930573682294592448000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 8,
+      "path_cells": 815,
+      "time": 12.450896718879825,
+      "depth": 4
+    },
+    {
+      "lower": "0.31930573682294592448000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.31983834631338385036800000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 1889,
+      "time": 2.8507953703297835,
+      "depth": 3
+    },
+    {
+      "lower": "0.31983834631338385036800000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32037095580382177625600000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 1898,
+      "time": 2.8492913742005053,
+      "depth": 3
+    },
+    {
+      "lower": "0.32037095580382177625600000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32090356529425970214400000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 1906,
+      "time": 2.8477903456920663,
+      "depth": 3
+    },
+    {
+      "lower": "0.32090356529425970214400000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32143617478469762803200000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 1923,
+      "time": 2.8462924564122547,
+      "depth": 3
+    },
+    {
+      "lower": "0.32143617478469762803200000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32196878427513555392000000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 2042,
+      "time": 2.8447978643034313,
+      "depth": 3
+    },
+    {
+      "lower": "0.32196878427513555392000000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32250139376557347980800000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.8433067147515776,
+      "depth": 3
+    },
+    {
+      "lower": "0.32250139376557347980800000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32303400325601140569600000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.8418191415760976,
+      "depth": 3
+    },
+    {
+      "lower": "0.32303400325601140569600000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32356661274644933158400000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 94,
+      "time": 2.840335267926058,
+      "depth": 3
+    },
+    {
+      "lower": "0.32356661274644933158400000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32399270033879967229440000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 94,
+      "time": 2.8390030385684737,
+      "depth": 3
+    },
+    {
+      "lower": "0.32399270033879967229440000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32441878793115001300480000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 95,
+      "time": 2.837821489293517,
+      "depth": 3
+    },
+    {
+      "lower": "0.32441878793115001300480000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32484487552350035371520000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 95,
+      "time": 2.8366424905064074,
+      "depth": 3
+    },
+    {
+      "lower": "0.32484487552350035371520000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32527096311585069442560000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 95,
+      "time": 2.8354660887847998,
+      "depth": 3
+    },
+    {
+      "lower": "0.32527096311585069442560000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32569705070820103513600000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 95,
+      "time": 2.834292327629991,
+      "depth": 3
+    },
+    {
+      "lower": "0.32569705070820103513600000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32612313830055137584640000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 95,
+      "time": 2.8331212476392214,
+      "depth": 3
+    },
+    {
+      "lower": "0.32612313830055137584640000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32654922589290171655680000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 94,
+      "time": 2.83195288667502,
+      "depth": 3
+    },
+    {
+      "lower": "0.32654922589290171655680000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32697531348525205726720000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 94,
+      "time": 2.8307872800202825,
+      "depth": 3
+    },
+    {
+      "lower": "0.32697531348525205726720000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32765705363301260240384000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 98,
+      "time": 2.829276162796917,
+      "depth": 2
+    },
+    {
+      "lower": "0.32765705363301260240384000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32799792370689287497216000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.8278855234314175,
+      "depth": 3
+    },
+    {
+      "lower": "0.32799792370689287497216000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32833879378077314754048000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.82696071529811,
+      "depth": 3
+    },
+    {
+      "lower": "0.32833879378077314754048000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32867966385465342010880000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.8260377503559906,
+      "depth": 3
+    },
+    {
+      "lower": "0.32867966385465342010880000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32902053392853369267712000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 2,
+      "path_cells": 93,
+      "time": 2.8251166408965194,
+      "depth": 3
+    },
+    {
+      "lower": "0.32902053392853369267712000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32919096896547382896128000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 9,
+      "path_cells": 909,
+      "time": 14.008330536827316,
+      "depth": 4
+    },
+    {
+      "lower": "0.32919096896547382896128000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32936140400241396524544000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 9,
+      "path_cells": 932,
+      "time": 14.007446616031254,
+      "depth": 4
+    },
+    {
+      "lower": "0.32936140400241396524544000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32953183903935410152960000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 9,
+      "path_cells": 1018,
+      "time": 14.006562687722296,
+      "depth": 4
+    },
+    {
+      "lower": "0.32953183903935410152960000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32970227407629423781376000000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 9,
+      "path_cells": 1179,
+      "time": 14.005678818042524,
+      "depth": 4
+    },
+    {
+      "lower": "0.32970227407629423781376000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.32997497013539845586841600000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 1990,
+      "time": 4.4037936635369395,
+      "depth": 3
+    },
+    {
+      "lower": "0.32997497013539845586841600000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33024766619450267392307200000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 2030,
+      "time": 4.401895496764089,
+      "depth": 3
+    },
+    {
+      "lower": "0.33024766619450267392307200000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33052036225360689197772800000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 2182,
+      "time": 4.399998970615538,
+      "depth": 3
+    },
+    {
+      "lower": "0.33052036225360689197772800000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33079305831271111003238400000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 176,
+      "time": 4.398104377446481,
+      "depth": 3
+    },
+    {
+      "lower": "0.33079305831271111003238400000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33106575437181532808704000000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 173,
+      "time": 4.396211986591643,
+      "depth": 3
+    },
+    {
+      "lower": "0.33106575437181532808704000000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33133845043091954614169600000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 172,
+      "time": 4.394322046401469,
+      "depth": 3
+    },
+    {
+      "lower": "0.33133845043091954614169600000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33161114649002376419635200000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 153,
+      "time": 4.3924347860569855,
+      "depth": 3
+    },
+    {
+      "lower": "0.33161114649002376419635200000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33188384254912798225100800000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 151,
+      "time": 4.390550417194044,
+      "depth": 3
+    },
+    {
+      "lower": "0.33188384254912798225100800000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33210199939641135669473280000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 149,
+      "time": 4.3888571193649355,
+      "depth": 3
+    },
+    {
+      "lower": "0.33210199939641135669473280000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33232015624369473113845760000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 149,
+      "time": 4.387354172210175,
+      "depth": 3
+    },
+    {
+      "lower": "0.33232015624369473113845760000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33253831309097810558218240000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 149,
+      "time": 4.3858533924389675,
+      "depth": 3
+    },
+    {
+      "lower": "0.33253831309097810558218240000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33275646993826148002590720000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 149,
+      "time": 4.384354861691983,
+      "depth": 3
+    },
+    {
+      "lower": "0.33275646993826148002590720000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33297462678554485446963200000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 149,
+      "time": 4.382858656675177,
+      "depth": 3
+    },
+    {
+      "lower": "0.33297462678554485446963200000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33319278363282822891335680000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 148,
+      "time": 4.381364849462798,
+      "depth": 3
+    },
+    {
+      "lower": "0.33319278363282822891335680000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33341094048011160335708160000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 148,
+      "time": 4.37987350777788,
+      "depth": 3
+    },
+    {
+      "lower": "0.33341094048011160335708160000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33362909732739497780080640000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 148,
+      "time": 4.3783846952522545,
+      "depth": 3
+    },
+    {
+      "lower": "0.33362909732739497780080640000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33380362280522167735578624000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 145,
+      "time": 4.377046975896506,
+      "depth": 3
+    },
+    {
+      "lower": "0.33380362280522167735578624000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33397814828304837691076608000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 144,
+      "time": 4.375859685790767,
+      "depth": 3
+    },
+    {
+      "lower": "0.33397814828304837691076608000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33415267376087507646574592000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 144,
+      "time": 4.374674112458765,
+      "depth": 3
+    },
+    {
+      "lower": "0.33415267376087507646574592000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33432719923870177602072576000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 3,
+      "path_cells": 144,
+      "time": 4.373490281898616,
+      "depth": 3
+    },
+    {
+      "lower": "0.33432719923870177602072576000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33441446197761512579821568000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 10,
+      "path_cells": 941,
+      "time": 15.556644200247863,
+      "depth": 4
+    },
+    {
+      "lower": "0.33441446197761512579821568000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33450172471652847557570560000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 10,
+      "path_cells": 959,
+      "time": 15.555649511987193,
+      "depth": 4
+    },
+    {
+      "lower": "0.33450172471652847557570560000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33458898745544182535319552000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 10,
+      "path_cells": 1034,
+      "time": 15.55465491172889,
+      "depth": 4
+    },
+    {
+      "lower": "0.33458898745544182535319552000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33467625019435517513068544000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 10,
+      "path_cells": 1160,
+      "time": 15.55366045789689,
+      "depth": 4
+    },
+    {
+      "lower": "0.33467625019435517513068544000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33476351293326852490817536000000000000000000000000000000000000000000000000000000",
+      "label": "origin",
+      "returns": 10,
+      "path_cells": 1789,
+      "time": 15.552666206211432,
+      "depth": 4
+    },
+    {
+      "lower": "0.33476351293326852490817536000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33485077567218187468566528000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 4,
+      "path_cells": 2007,
+      "time": 5.950784966907693,
+      "depth": 4
+    },
+    {
+      "lower": "0.33485077567218187468566528000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33493803841109522446315520000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 4,
+      "path_cells": 2013,
+      "time": 5.949504254376153,
+      "depth": 4
+    },
+    {
+      "lower": "0.33493803841109522446315520000000000000000000000000000000000000000000000000000000",
+      "upper": "0.33502530115000857424064512000000000000000000000000000000000000000000000000000000",
+      "label": "origin_by_continuous_flow",
+      "returns": 4,
+      "path_cells": 2035,
+      "time": 5.948224250080841,
+      "depth": 4
+    }
+  ],
+  "rejected_enclosures": [
+    {
+      "lower": "0.2990000000000000000000000",
+      "upper": "0.3073220232880925920000000",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3073220232880925920000000",
+      "upper": "0.3139796419185666656000000",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3073220232880925920000000",
+      "upper": "0.3106508326033296288000000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3106508326033296288000000",
+      "upper": "0.3139796419185666656000000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3139796419185666656000000",
+      "upper": "0.3193057368229459244800000",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3166426893707562950400000",
+      "upper": "0.3193057368229459244800000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3166426893707562950400000",
+      "upper": "0.3179742130968511097600000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3173084512338037024000000",
+      "upper": "0.3179742130968511097600000",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3179742130968511097600000",
+      "upper": "0.3193057368229459244800000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3179742130968511097600000",
+      "upper": "0.3186399749598985171200000",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3186399749598985171200000",
+      "upper": "0.3193057368229459244800000",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3193057368229459244800000",
+      "upper": "0.3235666127464493315840000",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3193057368229459244800000",
+      "upper": "0.3214361747846976280320000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3193057368229459244800000",
+      "upper": "0.3203709558038217762560000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3203709558038217762560000",
+      "upper": "0.3214361747846976280320000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3214361747846976280320000",
+      "upper": "0.3235666127464493315840000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3214361747846976280320000",
+      "upper": "0.3225013937655734798080000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3225013937655734798080000",
+      "upper": "0.3235666127464493315840000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3235666127464493315840000",
+      "upper": "0.3269753134852520572672000",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3235666127464493315840000",
+      "upper": "0.3252709631158506944256000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3235666127464493315840000",
+      "upper": "0.3244187879311500130048000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3244187879311500130048000",
+      "upper": "0.3252709631158506944256000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3252709631158506944256000",
+      "upper": "0.3269753134852520572672000",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3252709631158506944256000",
+      "upper": "0.3261231383005513758464000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3261231383005513758464000",
+      "upper": "0.3269753134852520572672000",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3269753134852520572672000",
+      "upper": "0.3297022740762942378137600",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3269753134852520572672000",
+      "upper": "0.3283387937807731475404800",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3276570536330126024038400",
+      "upper": "0.3283387937807731475404800",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3283387937807731475404800",
+      "upper": "0.3297022740762942378137600",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3283387937807731475404800",
+      "upper": "0.3290205339285336926771200",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3290205339285336926771200",
+      "upper": "0.3297022740762942378137600",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3290205339285336926771200",
+      "upper": "0.3293614040024139652454400",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3293614040024139652454400",
+      "upper": "0.3297022740762942378137600",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3297022740762942378137600",
+      "upper": "0.3318838425491279822510080",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3297022740762942378137600",
+      "upper": "0.3307930583127111100323840",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3297022740762942378137600",
+      "upper": "0.3302476661945026739230720",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3302476661945026739230720",
+      "upper": "0.3307930583127111100323840",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3307930583127111100323840",
+      "upper": "0.3318838425491279822510080",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3307930583127111100323840",
+      "upper": "0.3313384504309195461416960",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3313384504309195461416960",
+      "upper": "0.3318838425491279822510080",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3318838425491279822510080",
+      "upper": "0.3336290973273949778008064",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3318838425491279822510080",
+      "upper": "0.3327564699382614800259072",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3318838425491279822510080",
+      "upper": "0.3323201562436947311384576",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3323201562436947311384576",
+      "upper": "0.3327564699382614800259072",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3327564699382614800259072",
+      "upper": "0.3336290973273949778008064",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3327564699382614800259072",
+      "upper": "0.3331927836328282289133568",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3331927836328282289133568",
+      "upper": "0.3336290973273949778008064",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3336290973273949778008064",
+      "upper": "0.3350253011500085742406451",
+      "depth": 0,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3336290973273949778008064",
+      "upper": "0.3343271992387017760207258",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3336290973273949778008064",
+      "upper": "0.3339781482830483769107661",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3339781482830483769107661",
+      "upper": "0.3343271992387017760207258",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3343271992387017760207258",
+      "upper": "0.3350253011500085742406451",
+      "depth": 1,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3343271992387017760207258",
+      "upper": "0.3346762501943551751306854",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3343271992387017760207258",
+      "upper": "0.3345017247165284755757056",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3345017247165284755757056",
+      "upper": "0.3346762501943551751306854",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3346762501943551751306854",
+      "upper": "0.3350253011500085742406451",
+      "depth": 2,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3346762501943551751306854",
+      "upper": "0.3348507756721818746856653",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    },
+    {
+      "lower": "0.3348507756721818746856653",
+      "upper": "0.3350253011500085742406451",
+      "depth": 3,
+      "error": "All continuous enclosures failed: [{'method': 'norm_origin_capture', 'step': '.005', 'reason': 'Norm enclosure exceeded capture scale'}, {'method': 'affine_origin_capture', 'step': '.005', 'reason': 'Continuous flow did not enter origin ellipsoid'}, {'method': 'affine_origin_capture', 'step': '.001', 'reason': 'Continuous flow did not enter origin ellipsoid'}]"
+    }
+  ],
+  "first_band": 0,
+  "last_completed_band": 8,
+  "total_bands": 98,
+  "working_digits": 80
+}

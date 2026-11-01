@@ -2,7 +2,16 @@
 
 ## Statement and scope
 
-Consider the continuous three-segment Chua equations used in the [main report](chua-prediction-and-hidden-coexistence.md), with γ = 0 and the exact decimal parameters
+Consider the dimensionless continuous three-segment Chua equations
+
+```math
+\begin{gathered}
+\dot x=\alpha[y-x-h(x)],\quad\dot y=x-y+z,\quad\dot z=-\beta y,\\
+h(x)=m_1x+\frac{m_0-m_1}{2}(|x+1|-|x-1|).
+\end{gathered}
+```
+
+with γ = 0 and the exact decimal parameters
 
 ```math
 \alpha=13.803545907139778,\quad m_0=-1.5179789642291142,\quad m_1=-0.10174607415658823.
@@ -11,6 +20,20 @@ Consider the continuous three-segment Chua equations used in the [main report](c
 **Theorem.** There is a parameter β* in (29.51661848407718, 29.51661848408720) at which a dissipative periodic saddle has a quadratic homoclinic tangency, unfolding nondegenerately with β. Arbitrarily close to β* there are individual β values for which the flow has infinitely many geometrically distinct, simultaneous, hidden attracting periodic orbits.
 
 The argument combines interval computations, the analytic steps below and the classical parameter theorem. It is not a complete Lean formalization, an externally reviewed result, a decimal witness β∞, or a certificate of chaotic attraction. The numerical examples used to find the connection are not substituted for the exact-manifold argument.
+
+**Meaning of the conclusion.** One fixed choice of α, m₀ and m₁ is used throughout. For every ε > 0 there is an individual β∞ with 0 < |β∞ − β*| < ε for which infinitely many attracting periodic flow orbits coexist. Each orbit has a basin avoiding an open neighborhood of every equilibrium. The claim concerns the number of simultaneous periodic attractors, not the number of connected surfaces in a global atlas.
+
+The proof has three dependencies: **T**, a quadratic tangency of exact invariant manifolds (§§1–3); **H**, uniform equilibrium-neighborhood exclusion (§4); and **N**, the localized parameter theorem (§5). T alone does not prove hiddenness; H alone does not prove existence of an attracting cycle. The [review guide](chua-review-guide.md#3-infinite-hidden-coexistence) gives the corresponding data fields and executable checks.
+
+| Notation | Meaning |
+|---|---|
+| q = (y,z) | Physical coordinates on the section x = 1 |
+| ξ = (u,s) | Coordinates centered at the saddle, in a fixed approximate eigenbasis |
+| Fβ | Ordinary first return, two affine flights |
+| Pβ = Fβ² | Two first returns; the map to which the parameter theorem is applied |
+| I | The tested tangency parameter box, β₀ ± 5 × 10⁻¹² |
+| J | [29.516618475, 29.516618493], the larger interval on which hiddenness is uniform |
+| R | The rational matrix of the Lyapunov quadratic form in §4 |
 
 ![Connection, certified signs and the implication for hidden coexistence](assets/chua-followup-hidden.png)
 
@@ -32,14 +55,14 @@ Pβ is a strongly dissipative, orientation-preserving local diffeomorphism. It r
 
 ## 2. Exact local invariant graphs
 
-Use z = V⁻¹(q − p(β)), with the fixed decimal matrix V in [connection-center-14-2.json](../results/chua-followup/hidden-search/connection-center-14-2.json). V need not be an exact eigenbasis. In the square |u|, |s| ≤ δ = 10⁻⁷, write Fβ = (U,S) in these centered coordinates. The certificate checks
+Use ξ = V⁻¹(q − p(β)), with the fixed decimal matrix V in [connection-center-14-2.json](../results/chua-followup/hidden-search/connection-center-14-2.json). V need not be an exact eigenbasis. In the square |u|, |s| ≤ δ = 10⁻⁷, write Fβ = (U,S) in these centered coordinates. The certificate checks
 
 ```math
 U_u\lt-1.7,\quad |U_s|\lt0.000012,\quad
 |S_u|\lt0.000012,\quad |S_s|\lt0.000223.
 ```
 
-All state Hessian entries have magnitude below M = 60. The centered parameter derivatives have magnitude below Q = 10⁻⁶. The derivative enclosure is intersected with its mean-value enclosure about z = 0, using the Hessian over the entire square. This tightens the bound without sampling the square or assuming exact diagonalization.
+All state Hessian entries have magnitude below M = 60. The centered parameter derivatives have magnitude below Q = 10⁻⁶. The derivative enclosure is intersected with its mean-value enclosure about ξ = 0, using the Hessian over the entire square. This tightens the bound without sampling the square or assuming exact diagonalization.
 
 The graph-transform inequalities derived in the [earlier tangency proof](chua-infinity-certificate.md#3-bounds-on-the-exact-invariant-manifolds) apply also when both saddle multipliers of Fβ are negative. With
 
@@ -93,7 +116,16 @@ The chain rule retains all manifold slopes, curvatures and parameter derivatives
 | gₐₐ throughout the box | [2.2495 × 10¹⁶, 3.6604 × 10¹⁶] |
 | gβ throughout the box | [1.862685, 1.862993] |
 
-For each β, strict convexity and the two a-face signs give a unique interior stationary point a(β). The minimum g(a(β),β) changes sign between the two parameter faces. Its derivative is gβ > 0, so it vanishes at exactly one β in the tested box. At that zero, g = gₐ = 0, gₐₐ > 0 and gβ > 0. This is a quadratic homoclinic tangency with a nondegenerate parameter unfolding. Since 36 is even, the connection also belongs to Pβ = Fβ².
+For example, the parameter derivative includes both moving manifolds:
+
+```math
+g_\beta=U_\beta+U_v\psi_\beta
+-\chi_s(S_\beta+S_v\psi_\beta)-\chi_\beta.
+```
+
+All derivatives here belong to the centered composite map; its saddle center p(β) is also differentiated. Omitting that dependence or replacing the exact graphs by their tangent lines would test a different gap.
+
+For each β, strict convexity and the two a-face signs give a unique interior stationary point a(β). The minimum g(a(β),β) changes sign between the two parameter faces. Its derivative is gβ > 0, so this minimum vanishes at exactly one β in the tested box. This uniqueness concerns the specified connection and departure interval. At that zero, g = gₐ = 0, gₐₐ > 0 and gβ > 0. This is a quadratic homoclinic tangency with a nondegenerate parameter unfolding. Since 36 is even, the connection also belongs to Pβ = Fβ².
 
 ### 3.1 Controlling interval overestimation
 
@@ -113,11 +145,11 @@ An interval-Newton enclosure for the central characteristic polynomial gives one
 
 Take a stable-coordinate disk of radius 10⁻⁶. While |u| ≤ 1/2, the first state coordinate satisfies |x| ≤ 1/2 + 10⁻⁶, so the trajectory remains in the exactly linear central region. Any point in a sufficiently small origin ball either has u = 0 and tends to the origin, or exits at u = ±1/2 with stable coordinates still in that disk. The entire positive exit rectangle is enclosed through its first x = 1 crossing and then for 160 time units in the outer affine region; 2,702 time cells verify that this outer flight never returns through x = 1. The negative exit follows by odd symmetry.
 
-A fixed rational symmetric matrix P is positive definite, and so is −(A₁ᵀP + PA₁), uniformly over J. Around E₊ choose
+A fixed rational symmetric matrix R is positive definite, and so is −(A₁ᵀR + RA₁), uniformly over J. Around E₊ choose
 
 ```math
-\mathcal E_+=\{X:(X-E_+)^TP(X-E_+)\le\ell\},\qquad
-\ell=\frac{(x_e-1)^2}{2(P^{-1})_{11}}.
+\mathcal E_+=\{X:(X-E_+)^TR(X-E_+)\le\ell\},\qquad
+\ell=\frac{(x_e-1)^2}{2(R^{-1})_{11}}.
 ```
 
 This ellipsoid lies strictly inside x > 1. Its quadratic energy decreases, and the entire transported exit rectangle lies inside it. The mirrored ellipsoid has the same property around E₋. The calculation provides the following conservative Euclidean neighborhoods, at every β ∈ J:
@@ -127,15 +159,47 @@ This ellipsoid lies strictly inside x > 1. Its quadratic energy decreases, and t
 | Origin | 2.53 × 10⁻⁷ | Origin or one of the two outer equilibria |
 | Either outer equilibrium | 0.00322 | That equilibrium |
 
-Thus these three open balls are disjoint from the basin of every attracting periodic orbit. This is a neighborhood statement about all points, not an unstable-eigenvector sampling test. It is the hidden-attractor definition needed for the theorem. The certificates repeat at 80 and 100 digits and retain the rational P, its positive principal minors, the spectral enclosures and every path check.
+Thus these three open balls are disjoint from the basin of every attracting periodic orbit. This is a neighborhood statement about all points, not an unstable-eigenvector sampling test. It is the hidden-attractor definition needed for the theorem. The certificates repeat at 80 and 100 digits and retain the rational R, its positive principal minors, the spectral enclosures and every path check. The legacy JSON key for R is `outer_lyapunov.P`; it does not denote the return map Pβ.
+
+**Boundedness of the model.** The same matrix also gives a global forward-boundedness check, separately from dissipativity of the return saddle. Write the complete field as
+
+```math
+\begin{gathered}
+\dot X=A_1X+b\operatorname{sat}(x),\qquad
+b=-\alpha(m_0-m_1)e_1,\\
+\operatorname{sat}(x)=\tfrac12(|x+1|-|x-1|).
+\end{gathered}
+```
+
+For V(X) = XᵀRX and Q = −(A₁ᵀR + RA₁), positive definiteness gives
+
+```math
+\dot V\le-\lambda_{\min}(Q)\|X\|^2+2\|Rb\|\|X\|.
+```
+
+Since |sat(x)| ≤ 1 and Q is uniformly positive on the compact interval J, V decreases outside a bounded ellipsoid. Every forward trajectory is therefore bounded for these parameters. This uses the full three-segment field, rather than continuing the outer affine equation through the central region. It is a qualitative consequence of the already verified matrix inequalities, not an additional numerical attractor search.
 
 ## 5. From the certified tangency to infinite hidden coexistence
 
 We use the parameter Newhouse–Robinson theorem: a sufficiently smooth fixed one-parameter family unfolding a quadratic homoclinic tangency of a dissipative surface saddle has arbitrarily nearby parameter intervals containing parameters with infinitely many simultaneous sinks. See [Robinson (1983)](https://doi.org/10.1007/BF01206892) and the formulation in Theorem 2.6 of [Catsigeras, Cerminara and Enrich, author manuscript](https://www.fing.edu.uy/~eleonora/Recopilacion/Archivos/InfinitosPozos_Premat-2008-108.pdf), [published version (2011)](https://doi.org/10.3934/dcds.2011.29.693).
 
+The hypothesis correspondence is explicit:
+
+| Parameter-theorem hypothesis | Verification for this family |
+|---|---|
+| A fixed C³ one-parameter family of surface diffeomorphisms | β varies with α and both slopes fixed; transverse affine flights give analytic local maps; localization is addressed below. |
+| A saddle with positive stable and unstable multipliers and product below one | The enclosures for Pβ = Fβ² in §1. |
+| Quadratic contact of the exact local manifolds after a nontrivial excursion | The graph bounds, domain containments and g = gₐ = 0, gₐₐ > 0 in §§2–3. |
+| Generic unfolding in the given parameter | The minimum gap has derivative gβ > 0; parameter reversal is permitted to match the theorem's sign convention. |
+| The resulting sinks belong to the original flow | Every iterate remains in the agreement region of the return map and its extension, as explained below. |
+
+Analyticity on the validated branches supplies C³ regularity; a bound only on second derivatives would not by itself supply this hypothesis. The theorem is applied to the specified β family, rather than to an unspecified perturbation of the Chua equations.
+
 The compact-surface formulation requires a localization argument for this partial return map. The saddle and complete homoclinic orbit form a compact set K: the two tails converge to the saddle, and only finitely many excursion points lie outside its neighborhood. The certified transverse flights and local saddle domain give analytic return branches and local inverses on a neighborhood of K. Pβ is injective there by uniqueness of the flow and of preceding section crossings, and preserves orientation.
 
-Choose finitely many disks covering K with closures in this valid region. The restrictions extend to an orientation-preserving surface diffeomorphism, with the parameter variation extended by smooth isotopy. Fix a smaller neighborhood Ω of K contained in the agreement region. The local saddle returns and the finite transition can be chosen with all intermediate images inside Ω. The localized thick-horseshoe and sink construction uses only finite words in these pieces, so all its periodic orbits remain in Ω. This is the same domain argument detailed in [the preceding coexistence proof](chua-basin-and-coexistence.md#32-localization-and-extension-argument); the extension outside Ω is never used by the resulting orbits.
+Choose one closed disk containing the saddle and both sufficiently short tails, and finitely many pairwise disjoint disks around the remaining excursion points, with closures in this valid region. Injectivity makes their images disjoint disks. Their orientation-preserving restrictions extend across collars and the complementary punctured sphere to a smooth surface diffeomorphism. Isotopy extension supplies the small parameter variations while preserving agreement on smaller disks covering K. This is an extension of the map germ; it is not an assertion that the original global return is defined everywhere.
+
+Fix a smaller neighborhood Ω of K contained in the agreement region. The local saddle returns and the finite transition can be chosen with all intermediate images inside Ω. The localized thick-horseshoe and sink construction uses only finite words in these pieces, so all its periodic orbits remain in Ω. This is the domain argument detailed in [the preceding coexistence proof](chua-basin-and-coexistence.md#32-localization-and-extension-argument); the extension outside Ω is never used by the resulting orbits. Agreement only at the saddle and tangency point would be insufficient: it is required along every intermediate iterate.
 
 Shrink the parameter interval to remain inside J. The parameter theorem then gives infinitely many simultaneous sinks of the actual Chua return map at some individual β values arbitrarily near β*. A sink of Pβ gives an attracting periodic flow orbit. A flow orbit has finitely many crossings in the compact transverse return region, so at most finitely many Pβ cycles represent the same flow orbit. Infinitely many map cycles therefore yield infinitely many geometrically distinct attracting flow cycles. Section 4 excludes every equilibrium neighborhood from each basin; consequently all these cycles are hidden.
 
@@ -146,3 +210,5 @@ The infinite existence conclusion comes from the theorem, not from enumerating c
 The 140- and 160-digit tangency certificates pass all local, graph, path, face-sign, curvature, unfolding and dissipativity conditions. Independent 90-digit mpmath matrix exponentials and event solves recover the numerical center. Finite differences with two step sizes give curvature approximately 2.9549291146 × 10¹⁶ and parameter derivative 1.86283893632, inside the interval bounds. Direct DOP853 integration checks selected full returns. Moving the whole β box by ±10⁻⁹ makes the required parameter-face sign fail. The original classical tangency certificate also passes after the shared map changes.
 
 These are separate numerical implementations and negative controls, not independent mathematical review. Python/FLINT correctness, the analytic graph-transform argument, smooth localization and the cited parameter theorem remain part of the trust basis. The existing Lean development does not verify this new result. The [evidence index](../results/chua-followup/README.md) lists the exact commands and files.
+
+The [record-level review](../results/chua-followup/review/record-check.json) recomputes the graph inequalities, displayed signs, Lyapunov positivity and published radii from the retained bounds. It also checks prediction scores and amplitude coverage. Fresh certificate replays and a second matrix-exponential calculation are recorded in the [revision audit](../results/chua-followup/review/README.md). A successful replay is evidence about the implementation; it does not replace review of the analytic implications in §§2–5.

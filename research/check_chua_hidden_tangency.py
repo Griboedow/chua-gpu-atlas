@@ -1,5 +1,7 @@
 """Independent mpmath flights, finite differences and direct-field ODE controls."""
 import json
+import argparse
+from pathlib import Path
 import mpmath as mp
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -9,7 +11,8 @@ from chua_lobe_map import LobeMap
 from certify_chua_hidden_tangency import main as certificate
 
 
-def main():
+def main(output_directory=None):
+    destination=output_directory or OUT/'hidden-search'
     source=json.loads((OUT/'hidden-search/connection-center-14-2.json').read_text())
     cert=json.loads((OUT/'hidden-search/hidden-tangency-160.json').read_text())
     mp.mp.dps=90;p=source['parameters'];model=LobeMap(p)
@@ -68,15 +71,16 @@ def main():
     # Shift the whole tested beta interval, retaining the original a center.
     negative=[]
     for shift in ['-1e-9','1e-9']:
-        certificate(140,shift,'1e-15','5e-12','8e-13')
-        result=json.loads((OUT/'hidden-search/hidden-tangency-140.json').read_text())
+        target=destination/('shifted-tangency-'+('minus' if shift[0]=='-' else 'plus')+'.json')
+        result=certificate(140,shift,'1e-15','5e-12','8e-13',target)
         assert result['status']=='failed'
-        target=OUT/'hidden-search'/('shifted-tangency-'+('minus' if shift[0]=='-' else 'plus')+'.json')
         dump(target,result);negative.append(dict(shift=shift,failed_gates=[k for k,v in result['gates'].items() if not v]))
-    certificate(140,'0','1e-15','5e-12','8e-13')
-    dump(OUT/'hidden-search/independent-tangency-checks.json',dict(passed=True,working_digits=90,
+    dump(destination/'independent-tangency-checks.json',dict(passed=True,working_digits=90,
         center=[str(v) for v in center],finite_differences=tests,ode=ode,negative_controls=negative,section_trace=traces,
         scope='Independent numerical controls of the enclosure implementation; not a second proof or an external review.'))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-directory',type=Path)
+    main(parser.parse_args().output_directory)

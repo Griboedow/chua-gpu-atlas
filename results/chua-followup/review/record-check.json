@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "results": {
+    "predictions": {
+      "held_out": 48,
+      "calibration_targets": 6,
+      "raw_hits": 32,
+      "corrected_hits": 48,
+      "maximum_corrected_fold_error_in_widths": "0.022102769563582631",
+      "maximum_absolute_width_relative_error": "0.066802573293653878"
+    },
+    "tangency_140": {
+      "returns": 36,
+      "flights": 72,
+      "accepted_time_cells": 14555,
+      "graph_inequalities_recomputed": 10
+    },
+    "tangency_160": {
+      "returns": 36,
+      "flights": 72,
+      "accepted_time_cells": 14555,
+      "graph_inequalities_recomputed": 10
+    },
+    "thresholds_80": {
+      "rays": 7,
+      "inequalities_per_ray": 5
+    },
+    "neighborhoods_80": {
+      "positive_principal_minors_recomputed": 6,
+      "origin_radius": "2.53e-7",
+      "outer_radius": ".00322",
+      "limitation": "Flight enclosures and the spectral root are recomputed by certificate replay."
+    },
+    "thresholds_100": {
+      "rays": 7,
+      "inequalities_per_ray": 5
+    },
+    "neighborhoods_100": {
+      "positive_principal_minors_recomputed": 6,
+      "origin_radius": "2.53e-7",
+      "outer_radius": ".00322",
+      "limitation": "Flight enclosures and the spectral root are recomputed by certificate replay."
+    },
+    "lower_ray": {
+      "intervals": 662,
+      "capture_types": {
+        "origin_by_continuous_flow": 476,
+        "origin": 154,
+        "origin_by_separator": 32
+      },
+      "limitation": "Endpoint continuity and recorded destinations; replay is required to recompute every transported set."
+    }
+  },
+  "negative_controls": {
+    "shifted_minus": "upper parameter face",
+    "shifted_plus": "lower parameter face",
+    "missing_capture_interval": "coverage gap or overlap",
+    "uncertain_curvature": "quadratic curvature"
+  },
+  "input_sha256": {
+    "results/chua-followup/sheets/alpha_00-search.json": "a1cd989fffe62f0561c5dcb0569fa432f9035ae931985ef39d36b1928feb9e9f",
+    "results/chua-followup/sheets/alpha_01-search.json": "471f4211f416ca47fe8e1aea89d58ed2f580864a6ade5fc0987523dae91aada3",
+    "results/chua-followup/sheets/alpha_02-search.json": "3fd2d09cabb383906c9eb02b4bc1cc24df756688e64c62025c1e5e0a5e8369fb",
+    "results/chua-followup/sheets/alpha_10-search.json": "b8446256052a163e59372a229f5b13c8a1edc119a48601c390387db1558fb494",
+    "results/chua-followup/sheets/alpha_11-search.json": "870052225db896a445bfb686d1ee2ad7d560639711f06ba92db573f431d4e2ac",
+    "results/chua-followup/sheets/alpha_12-search.json": "d863774de870695106746589b2a6e04b3e8f41a3c75c3aaf92b9fb0a91dc5858",
+    "results/chua-followup/sheets/alpha_20-search.json": "bc359c419178a0e08f328070cf2bdc27e3909680e62419fa72345600174c7e27",
+    "results/chua-followup/sheets/alpha_21-search.json": "971c4e75d2aeefde182317d2eede1bba3da7e536be48fa3c7e845f761f7b4154",
+    "results/chua-followup/sheets/alpha_22-search.json": "5560c6ed0fe96dae1652d8cbf6d63a6c7097a1f55351b88c1f1911cf49d9b3a8",
+    "results/chua-followup/sheets/beta_00-search.json": "bf7a1a3f605e8773ecaf270f983c169bb2e9244440ea97952850cdeeef02a0bf",
+    "results/chua-followup/sheets/beta_01-search.json": "d7d32fb0e90983a4f16122b17c2df520d889a053f99134f2c0808802e44ce04f",
+    "results/chua-followup/sheets/beta_02-search.json": "e0b029b930c3ac44aa3d008d60f8c85cd826706b00d26551e43a72a94402122c",
+    "results/chua-followup/sheets/beta_10-search.json": "527851485dfbabee791db049dfc637d512cc356fa76d76e6959f40e54021fd57",
+    "results/chua-followup/sheets/beta_11-search.json": "8dc16ccca615fd36fb9aa377fd01d84d5d60df1b851becb978b470819a811a2a",
+    "results/chua-followup/sheets/beta_12-search.json": "0d6fe712e3294c32e400d8ea114743573515aa98a2f1a33300975fc2a680007e",
+    "results/chua-followup/sheets/beta_20-search.json": "7da59a2f776776aa9e577b1f2cd77cd49f2d175412d93e3d5d7710cb8ee7169d",
+    "results/chua-followup/sheets/beta_21-search.json": "291b13ac873958511de5b7ba695ab98134977983a476bc2966fdca05ba1dd1f2",
+    "results/chua-followup/sheets/beta_22-search.json": "d6e9340a5db22d4b4e4d30ffa71fd859ed8afd254a85571a7d44f150c453f3ce",
+    "results/chua-followup/sheets/forecasts-frozen.json": "88948bb69fb44e9b01e27526b1ec33494a598846aacd2a33d027da54d2698a1f",
+    "results/chua-followup/hidden-search/hidden-tangency-140.json": "febf9bdd70238831a8adf512be45b544898b430b408e29605a034cf12245a453",
+    "results/chua-followup/hidden-search/hidden-tangency-160.json": "ec7a66c9af513a68062de47598fba4060393727c9c4d6bac18c37a2122bd72aa",
+    "results/chua-followup/hidden-search/uniform-equilibrium-exclusion-80.json": "b9f4659d642a1c9f8a9ead27fcc791f5b0fc73ae89bc494bc712e387a99378cb",
+    "results/chua-followup/hidden-search/uniform-equilibrium-exclusion-100.json": "9703a388791d77dfd51be89d354b4697c13a67011677806470b8c9906d534b0d",
+    "results/chua-followup/trigger/local-certificate-80.json": "4609cc0bfbc3ea8118c1c837fec37de05e7b40e5bb7798cf23319d1cf6e5957e",
+    "results/chua-followup/trigger/local-certificate-100.json": "e21b27db99134aee95efb2989b7137b3091c8ac4b3eb71b0b4085e274a66a595",
+    "results/chua-followup/trigger/below-certificate-80.json": "56a4887b50f965f7cec752e391095b6c35abcdc5d724be319740fc6b6dca6287",
+    "results/chua-followup/hidden-search/shifted-tangency-minus.json": "877b06dc4a4e4f98373f1817e27eab6561ea011267bd7dd23f2f2cadade988fe",
+    "results/chua-followup/hidden-search/shifted-tangency-plus.json": "14290ddf12ee33592496ff4aa60ad02fbf4fbb99b616949347e9cfa663d8a04f"
+  },
+  "scope": "Recomputed record-level scores and inequalities, with rejection controls. This does not verify the code that produced the enclosures, the analytic localization, or the imported dynamical theorem."
+}

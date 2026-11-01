@@ -4,6 +4,8 @@ The central question is how the periodic layers of the Chua atlas are organized:
 
 The investigation proceeds from sampled parameter maps to continued periodic orbits, forecasts tested against new searches, and an interval proof of one organizing homoclinic tangency. These stages support different kinds of claims.
 
+For the current prediction, excitation and hidden-coexistence results, start with the [claim-by-claim review guide](chua-review-guide.md). It states how each result can be used, what would invalidate it and how to repeat the checks without modifying the published evidence.
+
 ## Studies and principal results
 
 | Stage | Question and result | Report | Evidence |

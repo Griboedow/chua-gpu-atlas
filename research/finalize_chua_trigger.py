@@ -1,21 +1,38 @@
 """Join completed, independently run amplitude bands without hiding a gap."""
 import json
 import hashlib
+import argparse
+from pathlib import Path
 from decimal import Decimal
 from chua_research_followup import OUT,dump
 
 
-def main():
-    directory=OUT/'trigger';prefix=directory/'below-prefix-80.json';sources=[prefix]
+def main(directory=None,local_path=None):
+    directory=directory or OUT/'trigger';prefix=directory/'below-prefix-80.json';sources=[prefix]
     data=json.loads(prefix.read_text());rows=list(data['records']);failures=list(data['rejected_enclosures'])
-    # The prefix was saved only after completing original bands 0 through 30.
-    for first,last in [(31,43),(43,55),(55,67),(67,79),(79,89),(89,98)]:
-        path=directory/f'below-part-80-{first}-{last}.json';chunk=json.loads(path.read_text())
+    assert data['central']['passed']
+    if 'first_band' in data:
+        assert data['first_band']==0 and data['total_bands']==98 and data['working_digits']==80
+        next_band=data['last_completed_band']+1
+    else:
+        # The original prefix predates band metadata. Accept that one retained
+        # file by its published digest; do not silently infer missing metadata
+        # for an arbitrary incomplete run. Endpoint coverage is checked below.
+        published=json.loads((OUT/'trigger/below-certificate-80.json').read_text())
+        assert hashlib.sha256(prefix.read_bytes()).hexdigest()==published['source_sha256'][prefix.name]
+        next_band=31
+    parts=[(path,json.loads(path.read_text())) for path in directory.glob('below-part-80-*.json')]
+    for path,chunk in sorted(parts,key=lambda item:item[1]['first_band']):
+        first,last=map(int,path.stem.split('-')[-2:])
         assert chunk.get('chunk_complete') and chunk['last_completed_band']==last-1
-        assert chunk['first_band']==first and chunk['total_bands']==98
+        assert chunk['first_band']==first==next_band and chunk['total_bands']==98
+        assert chunk['central']==data['central'] and chunk['working_digits']==80
+        next_band=last
         sources.append(path);rows.extend(chunk['records']);failures.extend(chunk['rejected_enclosures'])
+    assert next_band==98
     rows.sort(key=lambda r:Decimal(r['lower']))
-    local=json.loads((directory/'local-certificate-80.json').read_text());crossing=next(r for r in local['records'] if r['angle']==0)
+    local=json.loads((local_path or directory/'local-certificate-80.json').read_text());crossing=next(r for r in local['records'] if r['angle']==0)
+    assert local['passed'] and crossing['passed'] and all(crossing['gates'].values())
     assert Decimal(rows[0]['lower'])==Decimal('.299')
     assert Decimal(rows[-1]['upper'])==Decimal(crossing['bracket'][0])
     assert all(Decimal(a['upper'])==Decimal(b['lower']) for a,b in zip(rows[:-1],rows[1:]))
@@ -29,4 +46,8 @@ def main():
     dump(directory/'below-certificate-80.json',report);print('complete lower-amplitude coverage:',len(rows),'intervals')
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--directory',type=Path)
+    parser.add_argument('--local-certificate',type=Path)
+    args=parser.parse_args();main(args.directory,args.local_certificate)

@@ -12,6 +12,35 @@ The three results have different evidential status: the cross-parameter forecast
 | What impulse reaches a hidden cycle? | Seven local crossing brackets of width 2 × 10⁻¹¹; complete lower-amplitude coverage proves the infimum along the y ray | Specified initial-state rays and fixed parameters |
 | Can infinitely many coexisting cycles all be hidden? | Certified tangency and uniform equilibrium exclusion, followed by the parameter theorem | One explicitly specified fixed-slope, fixed-α family; ideal γ = 0 model |
 
+## Model, questions and interpretation
+
+An attracting periodic orbit is a motion that repeats and attracts nearby initial states. Its basin is the set of initial states that approach it. A parameter layer records where a continued family of such motions is attracting. Thus a layer belongs to parameter space, whereas an orbit and its basin belong to state space.
+
+We consider the dimensionless continuous three-segment system
+
+```math
+\begin{aligned}
+\dot x&=\alpha[y-x-h(x)],&\dot y&=x-y+z,&\dot z&=-\beta y,\\
+h(x)&=m_1x+\frac{m_0-m_1}{2}(|x+1|-|x-1|).
+\end{aligned}
+```
+
+Here α, β > 0; m₀ and m₁ are the inner and outer slopes. All results below set the additional loss parameter γ to zero. This is the γ = 0 specialization of system (1) in [Stankevich, Kuznetsov, Leonov and Chua (2017)](https://arxiv.org/abs/1710.02677). Their paper studies hidden-attractor birth and asks about the possible coexistence count in §5. The question is repeated in §6 of [Kuznetsov et al. (2023)](https://doi.org/10.1007/s11071-022-08078-y), alongside the difficulty of excluding attractors missed by numerical continuation. That study also distinguishes the ideal equations from circuit and laboratory models. The parameter sets in this report are specified separately for each result; they are not a reproduction of the experimental parameter sets.
+
+We call an attracting periodic orbit **hidden** if, for every equilibrium, some open neighborhood of that equilibrium is disjoint from the orbit's basin. This condition concerns all initial states in those neighborhoods. A trajectory started away from an equilibrium, or a simulation that fails to find an orbit, does not establish hiddenness.
+
+The three questions concern different obstacles to finding and counting motions:
+
+| Obstacle | What this study supplies | How it can be used |
+|---|---|---|
+| A parameter grid misses a narrow periodic window. | A formula tested against 48 subsequent searches, including the failure of its uncorrected version. | Select search locations and precision before refining a local atlas. |
+| The desired motion exists, but the chosen initial state approaches an equilibrium. | Certified basin-boundary crossings and an excitation infimum on one ray. | Bracket an initial state that reaches the hidden cycle; anticipate a long transient close to the boundary. |
+| A finite list cannot decide whether a finite maximum exists. | A tangency certificate, uniform hiddenness and a localized parameter-theorem application. | Reduce the infinite-count claim to explicit inequalities and an identifiable analytic argument. |
+
+The last result concerns infinitely many attracting cycles **at the same parameter value**. It is stronger than finding successively longer cycles at different parameter values. Neither statement determines the number of globally disconnected layer surfaces. The original 32 sampled sheets remain a finite catalogue under its stated family convention.
+
+For verification, the [review guide](chua-review-guide.md) maps each conclusion to its assumptions, data fields, producing routines and failure conditions. The figures below distinguish measured orbits, interval bounds and consequences of the imported theorem.
+
 ## 1. Predicting two slope sections
 
 ![Published forecasts, measured windows and the separated thin sheets](assets/chua-followup-sheets.png)
@@ -47,7 +76,7 @@ The uncorrected model misses the 85-peak core at all sixteen held-out nodes. Its
 
 Each search solves the fold, symmetry-breaking boundary and an interior cycle at 45 decimal working digits. The core ends at symmetry breaking; it is not necessarily the full attracting interval of every asymmetric continuation. Twelve corner cases are independently refined at 65 digits using direct mpmath matrix exponentials, then checked with segmented DOP853 integration of the actual vector field and variational equation. The full-period peak counts are checked. Parameters displaced by ten measured widths fail the unchanged orbit equations. Rejected initial guesses and their subsequent recoveries remain in the [search records](../results/chua-followup/sheets/).
 
-The numerical organizer at each node is a finite-iterate tangent-line approximation, checked with additional iterates. Only the earlier central tangency has an exact-manifold certificate in this slope experiment. The nine-node interpolation is a local refinement, not a new dense mesh of all 32 original sheets.
+The numerical organizer at each node is a finite-iterate tangent-line approximation, checked with additional iterates. The earlier exact-manifold certificate concerns the rational classical slice α = 9, m₀ = −8/7, m₁ = −5/7; it is not a parameter-uniform certificate for these floating-decimal slope patches. The nine-node interpolation is a local refinement, not a new dense mesh of all 32 original sheets.
 
 ## 2. Excitation of a hidden attracting cycle
 
@@ -93,6 +122,8 @@ These local brackets alone do not exclude earlier crossings along the same ray. 
 
 Together these two certificates prove that A* is the **infimum** of y-ray amplitudes reaching the hidden cycle. It is not an attained minimum: the trajectory at A* reaches the saddle. No optimization over all impulse directions, pulse durations or forcing waveforms is asserted.
 
+In operational terms, sufficiently close amplitudes just below A* return to rest; amplitudes just above A* reach the hidden cycle. The six other directions have certified local crossings, without the complete smaller-amplitude exclusion proved for the y ray. Here an impulse means prescribing the initial state. A finite-duration electrical pulse requires a separate input model.
+
 ### 2.2 Delay predicted from the saddle
 
 Let λH = 1.830852121058724 be the saddle's unstable half-return multiplier and TH = 1.5371905307324059 its half period. Transversality of the impulse ray to the stable graph makes the initial unstable displacement proportional to |A − A*|. After k local returns it is proportional to |λH|ᵏ|A − A*|. Leaving a fixed neighborhood therefore takes
@@ -137,14 +168,26 @@ The parameter Newhouse–Robinson theorem, localized to the certified return bra
 
 This establishes an absence of any finite upper bound on simultaneous hidden periodic attractors in the stated ideal model. It does not identify a decimal β∞, give the number at β*, imply robustness of infinitely many sinks under component tolerances, or prove a hidden chaotic attractor. Infinitely many attracting cycles also do not determine the number of globally disconnected family sheets.
 
+More precisely, the conclusion has the quantifier order
+
+```math
+\begin{gathered}
+\forall\varepsilon>0\quad\exists\beta_\infty\in J:\quad
+0\lt|\beta_\infty-\beta_*|\lt\varepsilon,\\
+\#\{\text{hidden attracting periodic orbits at }\beta_\infty\}=\infty.
+\end{gathered}
+```
+
+Here J is the displayed uniform-exclusion interval. The same β∞ supports the entire infinite collection. The theorem supplies its existence; the certificate does not print its digits or enumerate that collection.
+
 ### 3.1 Search record and relation to the literature
 
 The search retained unsuccessful routes. A continuation of the original classical tangency stopped numerically before crossing m₀ = −1; this is not a proof that the branch terminates. Two surveys totaling 18,432 parameter points in stable-origin sectors produced no candidates passing the specified finite-time chaos filter. That result cannot establish absence of attractors. A separate 4,096-point survey in a sector with stable outer equilibria produced six candidates surviving smaller time steps and longer integration. Their apparent chaos remains numerical. All six admit certified equilibrium exclusion; one led to the tangency proved above.
 
-Kuznetsov, Mokaev, Ponomarenko, Seleznev, Stankevich and Chua discuss the maximum coexistence count and hidden-attractor accessibility in [their 2023 study](https://doi.org/10.1007/s11071-022-08078-y). Our conclusion addresses the hidden periodic-count question for a specified ideal parameter family. It is not a new proof of the general Newhouse mechanism or an exhaustive solution of the broader questions in that paper. Comparison with all earlier Chua coexistence results is still required before making a priority claim.
+Our conclusion addresses the periodic part of the coexistence-count question for a specified ideal parameter family. The mechanism is the established Newhouse–Robinson mechanism; the system-specific work is to verify its hypotheses and hiddenness for this Chua return map. This does not settle the subcritical-Hopf conjecture discussed in the 2017 paper, the exact global-stability boundary, or a maximum count of chaotic attractors. Comparison with all earlier Chua coexistence results is still required before making a priority claim.
 
 ## 4. Evidence and reproduction
 
-The [evidence index](../results/chua-followup/README.md) links frozen forecasts, every solved endpoint, failed controls, both-precision certificates, independent calculations and figure PDFs. The calculations run locally; no GitHub Actions are required. The source distinguishes numerical seed refinement from interval validation. Reproduction commands are included in that index.
+The [review guide](chua-review-guide.md) gives the shortest route from a claim to its checks, including explicit reasons to reject an inference. The [evidence index](../results/chua-followup/README.md) links frozen forecasts, every solved endpoint, failed controls, both-precision certificates, independent calculations and figure PDFs. The calculations run locally; no GitHub Actions are required. Numerical seed refinement, interval validation and independent numerical controls are separate operations. The review commands write to a separate directory and preserve the published evidence.
 
 The principal remaining questions are quantitative: how far the residual transport law extends, how the threshold varies between tested impulse directions, and which finite collections of hidden cycles can be located simultaneously at explicit parameter intervals of experimentally meaningful width. The existence theorem does not provide those quantities.

@@ -1,0 +1,149 @@
+{
+  "created_utc": "2026-11-01T13:37:35.049858+00:00",
+  "base_commit": "74fe0a624f543d02fc5f98aef6cf7a16314440e9",
+  "passed": true,
+  "software": {
+    "python": "3.14.3",
+    "python_flint": "0.9.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "recomputed_checks": {
+    "tangency": {
+      "returns": 36,
+      "flights": 72,
+      "accepted_time_cells": 14555,
+      "graph_inequalities_recomputed": 10
+    },
+    "thresholds": {
+      "rays": 7,
+      "inequalities_per_ray": 5
+    },
+    "equilibrium_exclusion": {
+      "positive_principal_minors_recomputed": 6,
+      "origin_radius": "2.53e-7",
+      "outer_radius": ".00322",
+      "limitation": "Flight enclosures and the spectral root are recomputed by certificate replay."
+    },
+    "lower_ray": {
+      "intervals": 662,
+      "capture_types": {
+        "origin_by_continuous_flow": 476,
+        "origin": 154,
+        "origin_by_separator": 32
+      },
+      "limitation": "Endpoint continuity and recorded destinations; replay is required to recompute every transported set."
+    }
+  },
+  "independent_numerical_control": {
+    "passed": true,
+    "decimal_digits": 90,
+    "finite_difference_steps": 2,
+    "direct_ode_returns": 3,
+    "maximum_direct_ode_error": 8.886984481648597e-10,
+    "shifted_boxes_rejected": 2
+  },
+  "merger_controls": {
+    "original_certificate_reproduced_exactly": true,
+    "omitted_chunk_rejected": true,
+    "fresh_capture_records_match_original_exactly": true
+  },
+  "cli_control": {
+    "shift": "1e-9",
+    "status": "failed",
+    "exit_code": 1
+  },
+  "interval_kernel_unchanged_from_base": [
+    "research/chua_interval_map.py",
+    "research/chua_interval_connection.py",
+    "research/chua_interval_lobe.py",
+    "research/certify_chua_homoclinic_tangency.py",
+    "research/certify_chua_layer_organizer.py",
+    "research/certify_chua_basin_separator.py",
+    "research/certify_chua_coexisting_cycles.py",
+    "research/certify_chua_hidden_cycle.py"
+  ],
+  "reviewed_source_sha256": {
+    "research/chua_interval_map.py": "7b5e4d1610ab6f7c3cff2b956eab9ed810115b99b44398234b38d95ce50df2cc",
+    "research/chua_interval_connection.py": "c19ad43db67d6161fb73b4cf8e8ed96051f455bcf8315131116303d7b7aaaeec",
+    "research/chua_interval_lobe.py": "1e21dfdbb7907015a00cf54af30814faa3285a1ed17101a0438b804dc453c74d",
+    "research/certify_chua_homoclinic_tangency.py": "4979524f8f4f3f0bc675dc4d3db8d7194ce992e75d9b6a0fa3c65c07425b4484",
+    "research/certify_chua_layer_organizer.py": "ba6e7750052d865257cd870e2d76471f14c9d30cecf8c3b27281b48092279b84",
+    "research/certify_chua_basin_separator.py": "076bde470f37bda0a8a263c76c5ce85044d49113ed4f8162ed69bd1f65b4f6d1",
+    "research/certify_chua_coexisting_cycles.py": "8f1bb3562321520cf37bb1ba6783f803526d172ac915358f4ac3596c5d109487",
+    "research/certify_chua_hidden_cycle.py": "55afe859e579789b210c3c56d8eb6523c1863a455a8448ade4959c1979dfda82",
+    "research/review_chua_followup.py": "324c6a4c736a58bb6863e38d6d8a4be92157d1f588227c1ba10159794c5111d4",
+    "research/certify_chua_hidden_tangency.py": "808637601af17da4d12e0154a2932cddec0e6347baf6c0a4ba39618937282b9b",
+    "research/certify_chua_hidden_neighborhoods.py": "f88fd69b41384257b7545a5e5cecee098adae58d280700e22b312179fecd7d24",
+    "research/certify_chua_trigger.py": "bce0916b2591f2bd996c2c03e32abac402c0c59eee3ec527af57e4e0cff7b0c0",
+    "research/check_chua_hidden_tangency.py": "3bf57eae2c1ec4b47b373f21f5aad5935a4996762152b91ffe2c0a8cd3861987",
+    "research/finalize_chua_trigger.py": "847a1f73faaa857d4a2e8b4d3eb9337adce82563d6f703837f195ac0fa2277ac",
+    "research/chua_research_followup.py": "ca5df294ed4ff436e62fe0a5f60cc04490cdf32c7fd8bfb5e2f30d64a1afe023",
+    "research/chua_lobe_map.py": "0db2f9ff6f2cbf9fc17e00f5acee26f95575aa9937a742dcbbc988441f1dd520"
+  },
+  "input_sha256": {
+    "results/chua-followup/hidden-search/connection-center-14-2.json": "23170e12760ce3e992678310f517158323a15fcb3f94ebf3655deb205b233548",
+    "results/chua-hidden-boundary/cycle-seeds.json": "002bdd04b61f776149f9c4e891b68ea7682128674bd66b74664f44f06641cc7f",
+    "results/chua-followup/trigger/thresholds.json": "e278f9489c1349bc252f2840c939f0cdfefded26dbfd26ad28f011bf88e57b56",
+    "results/chua-followup/trigger/local-certificate-80.json": "4609cc0bfbc3ea8118c1c837fec37de05e7b40e5bb7798cf23319d1cf6e5957e"
+  },
+  "replay_sha256": {
+    "below-certificate-80.json": "e0f90be6cf9047d85f1fae0b643456f74fc65873ace56b45aebebd3b7a40b9f1",
+    "below-part-80-22-35.json": "e763e64d029a1dcd86827a920439b5afa231f3f232c1a2e66093a4283ce88df0",
+    "below-part-80-35-48.json": "27c6474e4b575948b6e7a179ca5a5b3393841943c71bea36a7595a6c8ef783e0",
+    "below-part-80-48-61.json": "044d3cf7374a267797c43b560b0c46c3e655cce9ec1be8ff163cc94831fb94e9",
+    "below-part-80-61-74.json": "6046949424b9e3d0b61a858be749f462c3159159ce95a9ac52c3df6b508fdf09",
+    "below-part-80-74-86.json": "74f6f3c4b31751f504d9ab05068601753807498b71a26e6ea95ad84fd63f1e67",
+    "below-part-80-86-98.json": "399ce8921bfb47f0ec08fa9c09dce26a4ce70dae42b9c3ba0d034077394036c1",
+    "below-part-80-9-22.json": "c7a2b652f435d78de33d7624c82507ef28883c6ad3475c57a63b240a46dd0474",
+    "below-prefix-80.json": "8b4419501c26d5d32f2208eaa41dda958cb7c931aa15c939f2f404630a830876",
+    "equilibria-100.json": "9703a388791d77dfd51be89d354b4697c13a67011677806470b8c9906d534b0d",
+    "independent-tangency-checks.json": "b9c782d34b5705f543bbc78bc03269b880da7c77431ab7b8e5f4da2c6ed37111",
+    "record-check.json": "5b32ee4abf99e72e006a2fbd2ca092a9b57308c7838bf05486250e2c788e9249",
+    "shifted-tangency-minus.json": "adfaab47fb43c9f7bb56fdcf33d8c7ab4ca8778629dbe706201f4313c2c56219",
+    "shifted-tangency-plus.json": "28d59f3e333fa1aa6561535970582fa7867fde1ad057c25d7f870eef9bd0b701",
+    "tangency-160.json": "fced15874e73c4695d053b9b08cbde19fe6ccc2d0aa25fb9aa3ac8ab2ec3cc33",
+    "thresholds-100.json": "e21b27db99134aee95efb2989b7137b3091c8ac4b3eb71b0b4085e274a66a595"
+  },
+  "amplitude_replay": {
+    "working_digits": 80,
+    "sequential_prefix_completed_bands": [
+      0,
+      8
+    ],
+    "remaining_half_open_band_ranges": [
+      [
+        9,
+        22
+      ],
+      [
+        22,
+        35
+      ],
+      [
+        35,
+        48
+      ],
+      [
+        48,
+        61
+      ],
+      [
+        61,
+        74
+      ],
+      [
+        74,
+        86
+      ],
+      [
+        86,
+        98
+      ]
+    ],
+    "total_original_bands": 98,
+    "adjoining_capture_intervals": 662,
+    "command": "python research/finalize_chua_trigger.py --directory .publication/review-20261101 --local-certificate results/chua-followup/trigger/local-certificate-80.json"
+  },
+  "scope": "Repeat executions and record-level checks during the exposition revision. The interval numerical kernels are unchanged from the base commit. Analytic deductions, including localization and the global boundedness consequence of the Lyapunov inequalities, require mathematical review and are not formally verified by this record."
+}

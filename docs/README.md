@@ -4,6 +4,8 @@ The [research guide](research-guide.md) summarizes the research questions, verif
 
 The current [prediction, excitation and hidden-coexistence study](chua-prediction-and-hidden-coexistence.md) connects 48 held-out slope-window tests, certified impulse thresholds and a [computer-assisted argument for infinite hidden periodic coexistence](chua-hidden-infinity-certificate.md).
 
+The [review guide](chua-review-guide.md) connects each conclusion to its precise assumptions, certificate fields, executable checks and possible failure points. It includes commands that preserve the published evidence and a record of the revision checks.
+
 The reports cover the [family atlas](chua-refined-atlas.md), [reference periodic orbits](chua-family-gallery.md), [predictions and search results](chua-layer-prediction.md), and the [interval argument for an infinite cascade](chua-infinity-certificate.md).
 
 The [coexistence audit and Lean proof](chua-coexistence-audit.md) examine the stronger claim of infinitely many simultaneous cycles and formally check one step of the tangency argument. The [localization proof](chua-basin-and-coexistence.md) now completes that application and also certifies a local basin boundary near a hidden cycle.

@@ -10,11 +10,23 @@ The repository contains the numerical data, continuation programs, interval cert
 
 The [prediction and hidden-coexistence study](docs/chua-prediction-and-hidden-coexistence.md) extends these results: a calibrated model locates 48/48 held-out thin windows in two slope sections; seven impulse directions have certified local excitation thresholds; and a second certified tangency, combined with uniform equilibrium exclusion and the parameter theorem, gives **infinitely many simultaneous hidden attracting cycles** at some nearby individual parameters. The [complete hidden-coexistence argument](docs/chua-hidden-infinity-certificate.md) states the exact fixed slopes, interval bounds and verification limits. It does not identify a decimal parameter exhibiting infinite coexistence.
 
-[Study outline](docs/research-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
+[Study outline](docs/research-guide.md) · [Review guide](docs/chua-review-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
 An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
 
 The [global-stability and basin study](docs/chua-hidden-boundary.md) addresses questions posed by Leonov, Kuznetsov, Chua and colleagues. It derives an explicit slope sector where all trajectories converge to the origin, certifies a saddle beside a hidden attracting cycle, and tests amplitude and flight-time predictions near two linear contacts. A [subsequent proof](docs/chua-basin-and-coexistence.md) certifies a local basin boundary by covering both exit strips and establishes infinite simultaneous periodic coexistence on the classical slice. The global basin boundary remains unclassified.
+
+## Questions and outcomes
+
+At the same parameter values, different initial states can approach different sustained motions. A scan using one initial state can miss a motion because its parameter window is too narrow or because that initial state lies outside its basin.
+
+| Question | What the present results determine |
+|---|---|
+| Where should we look for thinner layers? | A calibrated formula located all 48 held-out windows in two small slope patches. Its uncorrected version located 32. |
+| How can an initial displacement reach a hidden cycle? | Seven local basin crossings are enclosed. On one ray, all smaller amplitudes are excluded, giving an excitation infimum and a predicted delay near it. |
+| Is there a finite upper bound on simultaneous periodic attractors? | In a specified ideal-model family, a computer-assisted argument gives parameter values with infinitely many simultaneous hidden periodic attractors. |
+
+These results address search, accessibility and coexistence questions discussed in the [2017 and 2023 studies](docs/chua-prediction-and-hidden-coexistence.md#model-questions-and-interpretation). The [review guide](docs/chua-review-guide.md) identifies the assumptions, data and failure conditions for each inference. Infinite simultaneous coexistence does not give a count of globally disconnected layer surfaces, and no decimal parameter realizing the infinite collection is supplied.
 
 ## Background
 

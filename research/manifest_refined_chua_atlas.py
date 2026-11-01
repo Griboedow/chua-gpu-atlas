@@ -37,7 +37,7 @@ certify_chua_basin_separator check_chua_basin_proof audit_chua_local_results plo
 chua_research_followup predict_chua_slope_sheets study_chua_trigger certify_chua_trigger finalize_chua_trigger
 search_chua_hidden_tangencies check_chua_followup check_chua_hidden_candidates certify_chua_hidden_neighborhoods
 chua_lobe_map chua_interval_lobe study_chua_hidden_lobes locate_chua_hidden_connections refine_chua_hidden_connection
-certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup'''.split()
+certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup review_chua_followup'''.split()
 
 
 def digest(path):
@@ -87,7 +87,7 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-basin-proof').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-followup').rglob('*') if p.is_file())
     paths.update((ROOT/'docs/assets').glob('chua-followup-*.png'))
-    paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md'])
+    paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md','docs/chua-review-guide.md'])
     paths.update(ROOT/p for p in ['docs/chua-basin-and-coexistence.md',
         'docs/assets/chua-basin-proof.png','docs/assets/chua-coexistence-localization.png'])
     paths.add(ROOT/'docs/chua-hidden-boundary.md')

@@ -5,6 +5,7 @@ This certificate does not assert existence of a chaotic attractor. It proves
 """
 import argparse
 import json
+from pathlib import Path
 import numpy as np
 from flint import arb,arb_mat,acb,ctx
 from chua_research_followup import ROOT,OUT,dump
@@ -37,7 +38,7 @@ def modal_basis(A,a,b,m,root_radius='1e-50'):
     return S,lam,dict(unstable=bounds(lam),stable_real=bounds(sigma),stable_imaginary=bounds(omega))
 
 
-def main(digits,uniform=False):
+def main(digits,uniform=False,output=None):
     candidates=json.loads((OUT/'hidden-search/outer-screen.json').read_text())['candidates'];rows=[]
     if uniform:
         center=json.loads((OUT/'hidden-search/connection-center-14-2.json').read_text())
@@ -76,10 +77,13 @@ def main(digits,uniform=False):
         except (ValueError,AssertionError,ZeroDivisionError) as exc:result['error']=str(exc)
         rows.append(result);print('neighborhood exclusion',row['parameter_index'],result['passed'],result.get('error'),flush=True)
         prefix='uniform-equilibrium-exclusion' if uniform else 'equilibrium-exclusion'
-        dump(OUT/'hidden-search'/f'{prefix}-{digits}.json',dict(working_digits=digits,records=rows,
+        report=dict(working_digits=digits,records=rows,
             passed=all(r['passed'] for r in rows),complete=len(rows)==len(candidates),
-            scope='Certified equilibrium neighborhoods exclude the basin of every attracting periodic orbit, or compact attractor disjoint from all equilibria, if one exists. No chaotic-attractor or homoclinic-tangency existence is inferred.'))
+            scope='Certified equilibrium neighborhoods exclude the basin of every attracting periodic orbit, or compact attractor disjoint from all equilibria, if one exists. No chaotic-attractor or homoclinic-tangency existence is inferred.')
+        dump(output or OUT/'hidden-search'/f'{prefix}-{digits}.json',report)
+    return report
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--digits',type=int,default=80);ap.add_argument('--uniform',action='store_true');a=ap.parse_args();main(a.digits,a.uniform)
+    ap=argparse.ArgumentParser();ap.add_argument('--digits',type=int,default=80);ap.add_argument('--uniform',action='store_true');ap.add_argument('--output',type=Path);a=ap.parse_args();report=main(a.digits,a.uniform,a.output)
+    if not report['passed']:raise SystemExit(1)

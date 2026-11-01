@@ -3,6 +3,7 @@ import argparse
 import json
 import time
 from decimal import Decimal
+from pathlib import Path
 from flint import arb,arb_mat,ctx
 from chua_research_followup import ROOT,OUT,dump
 from certify_chua_basin_separator import (refine_root,local_block,DynamicReturn,
@@ -32,7 +33,7 @@ def iterate_ray(amplitude,direction,count,digits,pbox,W):
     return W*(state-pbox),W*derivative,cells,time
 
 
-def local(digits):
+def local(digits,output=None):
     f,p,pbox,V,W,d,cert=context(digits);L=arb('.02');rows=[]
     numeric=json.loads((DIR/'thresholds.json').read_text())['records']
     for row in numeric:
@@ -56,10 +57,12 @@ def local(digits):
             right_image=[bounds(v) for v in qr.entries()],path_cells=cells+lc+rc,
             gates=dict(local_domain=bool(contained),transverse=bool(transverse),negative_side=bool(negative),positive_side=bool(positive)),passed=passed)
         rows.append(rec);print('pulse intersection',row['angle'],passed,rec['gates'],flush=True)
-    dump(DIR/f'local-certificate-{digits}.json',dict(passed=all(r['passed'] for r in rows),working_digits=digits,
+    report=dict(passed=all(r['passed'] for r in rows),working_digits=digits,
         local_block=cert,records=rows,
-        scope='Unique intersection on each displayed local amplitude interval, with opposite basin destinations. Does not exclude earlier or later crossings along the ray.'))
+        scope='Unique intersection on each displayed local amplitude interval, with opposite basin destinations. Does not exclude earlier or later crossings along the ray.')
+    dump(output or DIR/f'local-certificate-{digits}.json',report)
     assert all(r['passed'] for r in rows)
+    return report
 
 
 def central_segment(digits,amplitude='.299',duration='30'):
@@ -82,7 +85,7 @@ def central_segment(digits,amplitude='.299',duration='30'):
         argument='All smaller nonnegative amplitudes scale this central trajectory. At T they enter the invariant origin ellipsoid.')
 
 
-def below(digits,start_band=0,end_band=None):
+def below(digits,start_band=0,end_band=None,output=None):
     f,p,pbox,V,W,d,cert=context(digits)
     seeds=json.loads((ROOT/'results/chua-hidden-boundary/cycle-seeds.json').read_text())['full_records']
     fc,pc,cbox,Jc=refine_root(seeds[1],digits);target,_=capture_cycle(fc,pc,Jc)
@@ -101,7 +104,7 @@ def below(digits,start_band=0,end_band=None):
     if edges[-1]!=stop:edges.append(stop)
     rows=[];failures=[]
     chunk=end_band is not None or start_band!=0
-    output=DIR/(f'below-part-{digits}-{start_band}-{end_band}.json' if chunk else f'below-certificate-{digits}.json')
+    output=output or DIR/(f'below-part-{digits}-{start_band}-{end_band}.json' if chunk else f'below-certificate-{digits}.json')
     def capture(a,b,depth=0):
         interval=a.union(b);centre=col([interval.mid(),0]);basis=eye(2);radii=[interval.rad(),arb(0)]
         count=0;cells=0;elapsed=0.;label=None
@@ -140,13 +143,13 @@ def below(digits,start_band=0,end_band=None):
     assert Decimal(ordered[0]['lower'])==Decimal(start.mid().str(80,radius=False))
     assert Decimal(ordered[-1]['upper'])==Decimal(stop.mid().str(80,radius=False))
     assert all(Decimal(a['upper'])==Decimal(b['lower']) for a,b in zip(ordered[:-1],ordered[1:]))
-    dump(DIR/f'below-certificate-{digits}.json',dict(passed=True,partial=False,working_digits=digits,
+    dump(output,dict(passed=True,partial=False,working_digits=digits,
         central=central,records=ordered,rejected_enclosures=failures,
         coverage=dict(adjoining_intervals=len(ordered),first=ordered[0]['lower'],last=ordered[-1]['upper']),
         threshold_bracket=row['bracket'],scope='Every amplitude from zero to the lower bracket endpoint converges to the origin; the upper endpoint converges to the hidden cycle by the local certificate.'))
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['local','below']);ap.add_argument('--digits',type=int,default=80);ap.add_argument('--start-band',type=int,default=0);ap.add_argument('--end-band',type=int);a=ap.parse_args()
-    if a.phase=='local':local(a.digits)
-    else:below(a.digits,a.start_band,a.end_band)
+    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['local','below']);ap.add_argument('--digits',type=int,default=80);ap.add_argument('--start-band',type=int,default=0);ap.add_argument('--end-band',type=int);ap.add_argument('--output',type=Path);a=ap.parse_args()
+    if a.phase=='local':local(a.digits,a.output)
+    else:below(a.digits,a.start_band,a.end_band,a.output)
