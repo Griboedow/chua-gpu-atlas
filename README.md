@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We study families of attracting periodic orbits in the continuous piecewise-linear Chua system. GPU parameter surveys identify candidate regions, periodic-orbit continuation resolves stability boundaries and coexistence, and interval arithmetic is used to verify a quadratic homoclinic tangency. The finite catalogue contains 34 reference identities under a stated continuation and normalization convention; 32 have sampled three-dimensional sheets.
+We study families of attracting periodic orbits in the continuous piecewise-linear Chua system. GPU parameter surveys identify candidate regions, periodic-orbit continuation resolves stability boundaries and coexistence, and interval arithmetic verifies organizing homoclinic tangencies. The finite catalogue contains 34 reference identities under a stated continuation and normalization convention. The original three-dimensional atlas contains 32 family sheets; later slope-section tests add small patches for the thin sequence.
 
 At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses the tangency parameter in 14.30635909996140 < β∗ < 14.30635909996152. Application of the classical sink-cascade theorem gives infinitely many attracting periodic windows accumulating at this parameter. A [localization argument](docs/chua-basin-and-coexistence.md#3-proof-of-theorem-b) also completes the stronger Newhouse–Robinson application: some individual β values arbitrarily near β∗ support infinitely many simultaneous attracting periodic orbits. No decimal value of such a β is identified.
 
@@ -36,7 +36,7 @@ A layer is a region in **parameter space** supporting a family of attracting per
 
 ![The 32 sampled families highlighted individually at a fixed camera angle](docs/assets/chua-readme-layers.gif)
 
-Figure 2. The 32 sampled families, highlighted individually with fixed camera and coordinates. The view contains 5,447 checked periodic-cycle samples, including 3,975 parameter locations added during refinement; 4,126 samples lie in the displayed box. Dots represent closed attracting cycles. Facets indicate sample adjacency; their displayed thickness does not measure window width. The 75- and 85-peak entries have checked reference cycles but no three-dimensional mesh.
+Figure 2. The 32 sampled families, highlighted individually with fixed camera and coordinates. The view contains 5,447 checked periodic-cycle samples, including 3,975 parameter locations added during refinement; 4,126 samples lie in the displayed box. Dots represent closed attracting cycles. Facets indicate sample adjacency; their displayed thickness does not measure window width. The 75- and 85-peak entries are absent from this original mesh; their new small slope patches appear below.
 
 | Difference in motion | Example |
 |---|---|

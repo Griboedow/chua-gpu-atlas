@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-11-01T12:50:33.491599+00:00",
+  "browser": "Chrome through computer-use",
+  "checked_commit": "4e3c64a",
+  "pages": [
+    {
+      "path": "docs/chua-prediction-and-hidden-coexistence.md",
+      "math_renderers": 8,
+      "images_loaded": 3
+    },
+    {
+      "path": "docs/chua-hidden-infinity-certificate.md",
+      "math_renderers": 8,
+      "images_loaded": 1
+    },
+    {
+      "path": "README.md",
+      "math_renderers": 2,
+      "coursework_background_present": true,
+      "original_layer_gif_loaded": true
+    }
+  ],
+  "math_errors": 0,
+  "visual_checks": [
+    "Published forecast figure and both separated 3D slope surfaces",
+    "Prediction equation, impulse bracket, monotonic-crossing inequality and residence-time law",
+    "Local derivative guards, graph constants, return box, normal-gap equation and equilibrium ellipsoid",
+    "README figure layout and preserved coursework account"
+  ],
+  "screenshots": {
+    "connection-formulas.jpg": "a946dc7c713d2a3b7ca7be868ff1d4bfeec47ef08621dc3b9d6bef50b39fdcee",
+    "hiddenness-formulas.jpg": "36f761945ac1a6414e59e2eea5f01ad91def637d3e85fc0ff7ad0b5cbf4697aa",
+    "invariant-graphs.jpg": "b0c4c94a84efc1cf455868b2ba52cb116e1b008a27a8b4c6abdce3b181acb093",
+    "proof-full.jpg": "d9b617ee6b65a2e7d2f3b34fa1b65963d036cd26396794f36f19812c2303eaf1",
+    "readme-layers.jpg": "7e565df320a8ebad741e6cc1a8ae70c2523e62f7537d56578c0ffde7cff5440a",
+    "report-full.jpg": "ecf998b5cdf6353a4c20674e48bf43ef612aaba748c5ba87efa0302ff3042cda",
+    "slope-formula.jpg": "57926bb63dcce3fb97eaedfac22d2fdc9676f32a105015f26d646704eb9ed826",
+    "threshold-proof.jpg": "f86cd840d561beaade33cb481751334e2813431a322bd10db02ce1b13db11a63"
+  },
+  "screenshot_location": ".publication/followup-browser (local, ignored)",
+  "scope": "Live rendered GitHub pages were inspected, including screenshots. Renderer counts supplement visual inspection; they do not replace it."
+}

@@ -66,6 +66,8 @@ Exploratory scans can be rerun with `search_chua_hidden_tangencies.py` phases `c
 
 ## Figures and integrity
 
+The [browser check](browser-check.json) records inspection of the rendered GitHub reports and README, including the displayed equations and figures. The local screenshots accompany the working copy; their hashes are retained in the record.
+
 - [Slope-sheet comparison, PDF](chua-followup-sheets.pdf)
 - [Impulse and delay comparison, PDF](chua-followup-trigger.pdf)
 - [Hidden-connection certificate, PDF](chua-followup-hidden.pdf)
