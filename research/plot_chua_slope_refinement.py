@@ -70,13 +70,13 @@ def volumes():
             axis.set_pane_color((.97, .98, .985, 1))
             axis._axinfo['grid']['color'] = (.4, .5, .6, .17)
     fig.suptitle('Continued families in the two slope volumes', x=.5, y=.96, fontsize=23, weight='semibold')
-    fig.text(.5, .89, '6,713 checked cross-sections  /  6,724 requested     ·     separate fold, symmetry edge and attracting core', ha='center', fontsize=12)
+    fig.text(.5, .89, '6,713 checked cross-sections  /  6,724 requested     ·     fold, symmetry breaking and interior attracting cycle', ha='center', fontsize=12)
     fig.legend(handles=[Patch(color=COLORS['P5'], label='P5: five peaks'),
         Patch(color=COLORS['P7'], label='P7: seven peaks, 8 crossings'),
         Patch(color=COLORS['new'], label='Same P7 family, 12 crossings'),
         Line2D([0], [0], color=COLORS['contact'], lw=2.7, label='P7 contact curve')],
         loc='lower center', bbox_to_anchor=(.5, .105), ncol=2, frameon=False, columnspacing=3)
-    fig.text(.5, .035, 'Surfaces connect checked core midpoints at their actual coordinates; stability widths are shown separately.\n'
+    fig.text(.5, .035, 'Surfaces connect checked stability-interval midpoints at their actual coordinates; stability widths are shown separately.\n'
         'All P7 nodes are recovered. Eleven P5 nodes remain unresolved. Facets are interpolation, not an existence proof.',
         ha='center', fontsize=10.5, color='#536573')
     save(fig, 'chua-slope-refined-volumes')
@@ -98,7 +98,7 @@ def sections():
     axes[0, 0].set(xlabel=r'$m_1$', ylabel=r'$m_0$', title=r'Actual stability bands: $\alpha=9$, $\beta=100/7$')
     axes[0, 0].legend(frameon=False)
     axes[0, 1].axhline(.01, color='#75818a', ls='--', label='Original volume step in m0')
-    axes[0, 1].set(xlabel=r'$m_1$', ylabel='Symmetric-core width in m0', title='Widths require continuation, not grid occupancy')
+    axes[0, 1].set(xlabel=r'$m_1$', ylabel='Stability width in m0', title='Widths require continuation, not grid occupancy')
     axes[0, 1].legend(frameon=True, facecolor='white', framealpha=1, edgecolor='none', fontsize=10, loc='upper right')
     grazing = read('grazing-results.json')['contact_curves']
     for col, kind in enumerate(['alpha', 'beta']):
@@ -108,7 +108,7 @@ def sections():
         for r in d['nodes']:
             widths[tuple(r['index'])] = np.log10(r['width_m0'])
         im = ax.pcolormesh(d['m1'], d['controls'], widths, shading='nearest', cmap='viridis', vmin=-4.15, vmax=-2.85)
-        for target, style, label in [(1., '-', 'Fold contact'), (-.43, '--', 'Core contact'), (-1., ':', 'Symmetry-edge contact')]:
+        for target, style, label in [(1., '-', 'Fold contact'), (-.43, '--', 'Interior-cycle contact'), (-1., ':', 'Symmetry-edge contact')]:
             c = next(x for x in grazing if x['kind'] == kind and x['target'] == target)
             ax.plot([r['contact']['orbit']['m1'] for r in c['nodes']], [r['control'] for r in c['nodes']],
                     style, color='white', lw=1.7, label=label)

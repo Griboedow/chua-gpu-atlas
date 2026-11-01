@@ -1,4 +1,4 @@
-"""Make a family-by-family README tour and honest multiscale window views."""
+"""Make a family-by-family README tour and stability-window views at multiple scales."""
 import argparse,colorsys,io,json
 from pathlib import Path
 import numpy as np
@@ -80,7 +80,7 @@ def main():
         fig.text(.045,.94,'The layers, resolved by family',fontsize=21,weight='bold')
         fig.text(.045,.885,title,fontsize=16,color='#193449');fig.text(.045,.85,sub,fontsize=11,color='#526673')
         fig.text(.045,.045,'Dots are closed attracting cycles. Facets guide the eye between samples; their visible thickness is not window width.\n'
-            'Fixed coordinates throughout. The separate zoom shows the physical widths of the thinnest symmetric cores.',fontsize=10,color='#526673')
+            'Fixed coordinates throughout. The separate zoom shows the widths of the narrowest stability intervals.',fontsize=10,color='#526673')
         buf=io.BytesIO();fig.savefig(buf,format='png',dpi=100);plt.close(fig);buf.seek(0)
         return Image.open(buf).convert('RGB')
 
@@ -127,7 +127,7 @@ def main():
     for ax in fig.axes:ax.spines[['top','right']].set_visible(False)
     fig.suptitle('More points reveal the branches; magnification reveals their width',fontsize=17,weight='bold')
     fig.supxlabel(f'{audit["total_nodes"]:,} closed surface samples, including {audit["new_parameter_locations"]:,} new parameter locations. '
-        f'The width zooms contain {thin_counts[0]} and {thin_counts[1]} newly closed cycles.\nThe old beta spacing was 0.004: about 126,000 times the P65 symmetric-core width. Connecting lines are visual guides.',fontsize=10)
+        f'The width zooms contain {thin_counts[0]} and {thin_counts[1]} newly closed cycles.\nThe old beta spacing was 0.004: about 126,000 times the P65 stability width. Connecting lines are visual guides.',fontsize=10)
     fig.savefig(assets/'chua-readme-layer-zoom.png',dpi=170,facecolor='white');fig.savefig(source/'readme-layer-zoom.pdf',facecolor='white');plt.close(fig)
     report=dict(families=32,gif_frames=len(frames),frame_order=[r['id'] for r in ordered],
         surface_samples=audit['total_nodes'],new_parameter_locations=audit['new_parameter_locations'],thin_core_samples=sum(thin_counts),

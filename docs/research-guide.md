@@ -6,14 +6,16 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 
 For the current prediction, excitation and hidden-coexistence results, start with the [claim-by-claim review guide](chua-review-guide.md). It states how each result can be used, what would invalidate it and how to repeat the checks without modifying the published evidence.
 
+The [terminology guide](terminology.md) distinguishes periodic orbits, their stability regions, plotted sheets and catalogue entries, and explains the legacy identifiers in the evidence files.
+
 ## Studies and principal results
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
 | Predict slope layers, quantify excitation and prove hidden coexistence | 48 held-out windows; seven certified impulse crossings; a second tangency and uniform hiddenness imply infinite hidden coexistence | [Combined study](chua-prediction-and-hidden-coexistence.md), [hidden-infinity proof](chua-hidden-infinity-certificate.md) | [Forecasts, certificates and controls](../results/chua-followup/README.md) |
-| Identify the layers | 32 sampled family sheets; orbit ancestry, symmetry and behaviour | [Refined atlas](chua-refined-atlas.md) | [Atlas data](../results/chua-layer-atlas/) |
+| Identify the layers | 32 sampled family sheets; periodic-orbit branch relationships, symmetry and behaviour | [Refined atlas](chua-refined-atlas.md) | [Atlas data](../results/chua-layer-atlas/) |
 | Compare their motions | One complete orbit, signal and peak sequence per reference | [Family gallery](chua-family-gallery.md) | [Portrait data](../results/chua-layer-atlas/) |
-| Predict thinner windows | Published forecasts compared with 75/85-peak computations; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
+| Predict thinner windows | Published forecasts compared with 75/85-peak computations; 34 reference entries | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
 | Periodic-window accumulation | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
 | Audit infinite coexistence | Local hypotheses pass; localization is now proved in the companion study; Lean proves only the stated general implications | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
 | Explain overlaps | Symmetry breaking, coexistence of 2–4 cycles, 18 contact curves | [Overlap geometry](chua-overlap-geometry.md) | [Continuation and checks](../results/chua-overlap-geometry/README.md) |
@@ -28,7 +30,7 @@ The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-f
 
 ## Counts and terminology
 
-**17** was an early census on one transect. **32** is the subsequent catalogue with sampled three-dimensional sheets. **34** includes two later reference cycles predicted before discovery. These are operational counts under a periodic-root and ancestry convention.
+**17** was an early census on one transect. **32** is the subsequent catalogue with sampled three-dimensional sheets. **34** includes two later reference cycles predicted before discovery. These are operational counts under a periodic-root and branch-matching convention.
 
 **Infinitely many** refers to attracting periodic windows with unbounded return periods near a certified parameter on the fixed classical transect. The localized parameter theorem also gives individual nearby parameters with infinitely many simultaneous periodic attractors. Neither result makes the finite mesh exhaustive or proves that every motion belongs to a globally disconnected family surface.
 

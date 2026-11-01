@@ -61,7 +61,7 @@ def main():
         ax.ticklabel_format(useOffset=False,style='plain')
         ax.legend(handles=[Patch(facecolor=color,label=label) for color,label in zip(peak_colors,['5 peaks','7 peaks','10 peaks','14 peaks','Other resolved counts'])],
             loc='upper center',bbox_to_anchor=(.48,.99),framealpha=.95,fontsize=9)
-        fig.supxlabel('Gray: not tested here or no repeated pattern resolved.\nPeak counts are recurrence diagnostics, not distinct family identities.',fontsize=10)
+        fig.supxlabel('Gray: not tested here or no repeated pattern resolved.\nPeak counts are recurrence diagnostics, not a classification of periodic-orbit families.',fontsize=10)
         fig.savefig(args.assets/'chua-slope-peak-patterns.png',dpi=180,facecolor='white');plt.close(fig)
     summary={name:dict(nodes=len(d['labels']),shape=[len(d['m1']),len(d['m0'])],m0_range=[float(d['m0'][0]),float(d['m0'][-1])],
         m1_range=[float(d['m1'][0]),float(d['m1'][-1])],counts={LABELS[k]:int((d['labels']==k).sum()) for k in range(7)}) for name,d in data.items()}

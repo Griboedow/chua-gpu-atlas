@@ -1,6 +1,6 @@
 # Two three-dimensional sections through the diode slopes
 
-For individual family identities and narrow stability bands, see the [refined P5/P7 continuation](chua-slope-refinement.md). It resolves 6,713 cross-sections and distinguishes a change of diode itinerary from cycle birth. The sampled volumes below retain the broader finite-time survey and its limitations.
+For individual catalogue entries and narrow stability bands, see the [refined P5/P7 continuation](chua-slope-refinement.md). It resolves 6,713 cross-sections and distinguishes a change of diode itinerary from cycle birth. The sampled volumes below retain the broader finite-time survey and its limitations.
 
 We compute two three-dimensional parameter sections extending the slope-plane study:
 
@@ -11,7 +11,7 @@ We compute two three-dimensional parameter sections extending the slope-plane st
 
 Both retain m0 in [-1.5, -0.9] and m1 in [-0.98, -0.10]. Each volume is obtained from a separate three-dimensional parameter scan.
 
-[Continuation of the five- and seven-peak families](chua-slope-families.md) resolves thin symmetric cores, verifies 13 coexistence examples and follows an attracting cycle through an itinerary change. Those results supplement the finite-time classifications used in the present volumes.
+[Continuation of the five- and seven-peak families](chua-slope-families.md) resolves thin stability intervals of symmetric cycles, verifies 13 coexistence examples and follows an attracting cycle through an itinerary change. Those results supplement the finite-time classifications used in the present volumes.
 
 ![Full three-dimensional slope sections](assets/chua-slope-volumes.png)
 
@@ -51,6 +51,6 @@ For each volume, 512 stratified nodes were recomputed at half the step and twice
 
 Full-field DOP853 state-and-variational controls examine four off-center chaos candidates and the common central regular example; the central example is repeated once for each volume. Three off-center candidates retain positive exponents in all independent windows. The low-alpha example at alpha = 7.2, m0 = -1.47, m1 = -0.5986667 is less secure: its original GPU mean was 0.01604, while the first independent mean was 0.00374 with a negative window. A longer matched-start check gives a refined GPU mean of 0.01267 with a negative window, and an independent mean of 0.00852, below the screen's 0.01 threshold. Its original chaos label is therefore **not independently confirmed**. Both follow-ups are retained in [low-alpha-recheck.json](../results/chua-slope-volumes/low-alpha-recheck.json).
 
-The volumes provide a finite-resolution classification. The mesh is four times coarser in each slope direction than the earlier wide 2D map, and much coarser than its local zoom. Thin windows can be missed or appear fragmented; small isolated pieces and holes are not established bifurcations or disconnected families. These surfaces do not count all layers, prove global topology, or assign the previous 32 family identities to the new sections.
+The volumes provide a finite-resolution classification. The mesh is four times coarser in each slope direction than the earlier wide 2D map, and much coarser than its local zoom. Thin windows can be missed or appear fragmented; small isolated pieces and holes are not established bifurcations or disconnected families. These surfaces do not count all layers, prove global topology, or assign the previous 32 catalogue entries to the new sections.
 
 The [data README](../results/chua-slope-volumes/README.md) gives all reconstruction, rendering and check commands.

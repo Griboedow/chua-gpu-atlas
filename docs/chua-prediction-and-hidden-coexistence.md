@@ -8,13 +8,13 @@ The three results have different evidential status: the cross-parameter forecast
 
 | Question | Result | Scope |
 |---|---|---|
-| Can thin layers be predicted after both slopes change? | Corrected midpoint inside 48/48 held-out cores; maximum width error 6.69% | Two small 3 × 3 slope patches and three families |
+| Can thin layers be predicted after both slopes change? | Corrected midpoint inside 48/48 held-out stability intervals; maximum width error 6.69% | Two small 3 × 3 slope patches and three families |
 | What impulse reaches a hidden cycle? | Seven local crossing brackets of width 2 × 10⁻¹¹; complete lower-amplitude coverage proves the infimum along the y ray | Specified initial-state rays and fixed parameters |
 | Can infinitely many coexisting cycles all be hidden? | Certified tangency and uniform equilibrium exclusion, followed by the parameter theorem | One explicitly specified fixed-slope, fixed-α family; ideal γ = 0 model |
 
 ## Model, questions and interpretation
 
-An attracting periodic orbit is a motion that repeats and attracts nearby initial states. Its basin is the set of initial states that approach it. A parameter layer records where a continued family of such motions is attracting. Thus a layer belongs to parameter space, whereas an orbit and its basin belong to state space.
+An attracting periodic orbit is a motion that repeats and attracts nearby initial states. Its basin is the set of initial states that approach it. A stability region records where a continued periodic-orbit family is attracting; we use "layer" as visual shorthand for this region in the atlas. Thus a layer belongs to parameter space, whereas an orbit and its basin belong to state space.
 
 We consider the dimensionless continuous three-segment system
 
@@ -45,38 +45,38 @@ For verification, the [review guide](chua-review-guide.md) maps each conclusion 
 
 ![Published forecasts, measured windows and the separated thin sheets](assets/chua-followup-sheets.png)
 
-Figure 1. Panel A scores every held-out prediction at the width of its measured symmetric core, shown as [0,1]. Panel B retains the original width model. Panels C–D subtract the numerical organizing surface from the vertical coordinate, exposing three layers that would otherwise almost coincide. The surfaces interpolate nine solved folds per family; their thickness does not represent stability width.
+Figure 1. Panel A maps each measured stability interval of a symmetric cycle to [0,1] and plots the corresponding predicted midpoint. Panel B retains the original width model. Panels C–D subtract the estimated homoclinic-tangency surface from the vertical coordinate, exposing three layers that would otherwise almost coincide. The surfaces interpolate nine solved folds per family; their thickness does not represent stability width.
 
 ### 1.1 Prediction specified before the searches
 
 The slope offsets are Δm₀, Δm₁ ∈ {−0.0004, 0, 0.0004}, measured from the numerical central slopes recorded in the [protocol](../results/chua-followup/sheets/protocol.json). The two sections hold α = 9 or β = 14.30635909996146 fixed and predict the other parameter. Exact serialized parameter values are retained in each orbit record; the floating decimal central slopes approximate −8/7 and −5/7.
 
-At each node, the 35-, 45- and 55-peak folds train the model. A short saddle supplies the numerical organizing parameter t* and the full-return unstable multiplier Λ. With r = 1/Λ and n = 6, 7, 8 for the target 65-, 75- and 85-peak families, the forecast is
+At each node, the 35-, 45- and 55-peak folds train the model. The model uses a short saddle periodic orbit, an estimate t* of its homoclinic tangency parameter and its full-return unstable multiplier Λ. With r = 1/Λ and n = 6, 7, 8 for the target 65-, 75- and 85-peak families, the forecast is
 
 ```math
 t_n=t_*+A r^{n-5}+[B+C(n-5)]r^{2(n-5)},\qquad
 w_n=w_{55}r^{2(n-5)}.
 ```
 
-The geometric factors express the extra residence near the saddle: one additional block contracts the distance to the organizing parameter by approximately r and the window width by approximately r². The fitted coefficients describe the finite-order correction. This is an asymptotic prediction model, not a proved remainder estimate.
+The geometric factors express the extra residence near the saddle: one additional block contracts the distance to the tangency parameter by approximately r and the window width by approximately r². The fitted coefficients describe the finite-order correction. This is an asymptotic prediction model, not a proved remainder estimate.
 
-The already known central target folds reveal a remaining systematic location error. A second model adds each target family's central fold residual, unchanged across the small slope patch. These **six central targets are calibration data**, excluded from validation. The other sixteen nodes, with three target families each, give 48 held-out tests. Both models and their scoring rules were [published in commit 112b01f before these endpoint searches](https://github.com/Griboedow/chua-gpu-atlas/commit/112b01f). The [transport protocol](../results/chua-followup/sheets/transport-protocol.json) explicitly states this distinction.
+The already known central target folds reveal a remaining systematic location error. A second model adds each target family's central fold residual, unchanged across the small slope patch. These **six central targets are calibration data**, excluded from validation. The other sixteen nodes, with three target families each, give 48 held-out tests. Both models and their scoring rules were [published in commit 112b01f before these endpoint searches](https://github.com/Griboedow/chua-gpu-atlas/commit/112b01f). The [bias-correction protocol](../results/chua-followup/sheets/transport-protocol.json) explicitly states this distinction.
 
 ### 1.2 Measured result and failure of the uncorrected model
 
 | Measurement over 48 held-out targets | Outcome |
 |---|---:|
-| Uncorrected midpoint lies inside measured symmetric core | 32/48 |
-| Transported midpoint lies inside measured symmetric core | 48/48 |
-| Largest corrected fold error / measured core width | 0.022103 |
+| Uncorrected midpoint lies inside measured stability interval | 32/48 |
+| Bias-corrected midpoint lies inside measured stability interval | 48/48 |
+| Largest corrected fold error / measured stability width | 0.022103 |
 | Largest absolute relative width error | 6.6803% |
 | Independently checked corner cycles | 12/12 |
 
-The uncorrected model misses the 85-peak core at all sixteen held-out nodes. Its error remains small in the physical parameter coordinate, but exceeds these very narrow widths. The correction therefore resolves a measurable limitation of the model, rather than merely improving a plot. Passing the test establishes local transportability of the central residual; it does not justify extrapolation across the complete atlas.
+The uncorrected model misses the 85-peak stability interval at all sixteen held-out nodes. Its error remains small in the physical parameter coordinate, but exceeds these very narrow widths. The correction therefore resolves a measurable limitation of the model, rather than merely improving a plot. Passing the test supports the use of a constant central-node correction on these tested patches; it does not justify extrapolation across the complete atlas.
 
-Each search solves the fold, symmetry-breaking boundary and an interior cycle at 45 decimal working digits. The core ends at symmetry breaking; it is not necessarily the full attracting interval of every asymmetric continuation. Twelve corner cases are independently refined at 65 digits using direct mpmath matrix exponentials, then checked with segmented DOP853 integration of the actual vector field and variational equation. The full-period peak counts are checked. Parameters displaced by ten measured widths fail the unchanged orbit equations. Rejected initial guesses and their subsequent recoveries remain in the [search records](../results/chua-followup/sheets/).
+Each search solves the fold, symmetry-breaking boundary and an interior cycle at 45 decimal working digits. The symmetric cycle loses stability at the symmetry-breaking boundary. Attracting asymmetric branches may extend beyond this interval. Twelve corner cases are independently refined at 65 digits using direct mpmath matrix exponentials, then checked with segmented DOP853 integration of the actual vector field and variational equation. The full-period peak counts are checked. Parameters displaced by ten measured widths fail the unchanged orbit equations. Rejected initial guesses and their subsequent recoveries remain in the [search records](../results/chua-followup/sheets/).
 
-The numerical organizer at each node is a finite-iterate tangent-line approximation, checked with additional iterates. The earlier exact-manifold certificate concerns the rational classical slice α = 9, m₀ = −8/7, m₁ = −5/7; it is not a parameter-uniform certificate for these floating-decimal slope patches. The nine-node interpolation is a local refinement, not a new dense mesh of all 32 original sheets.
+The tangency parameter at each node is estimated using finitely iterated tangent lines, with additional iterates as a numerical check. The earlier exact-manifold certificate concerns the rational classical slice α = 9, m₀ = −8/7, m₁ = −5/7; it is not a parameter-uniform certificate for these floating-decimal slope patches. The nine-node interpolation is a local refinement, not a new dense mesh of all 32 original sheets.
 
 ## 2. Excitation of a hidden attracting cycle
 
@@ -190,4 +190,4 @@ Our conclusion addresses the periodic part of the coexistence-count question for
 
 The [review guide](chua-review-guide.md) gives the shortest route from a claim to its checks, including explicit reasons to reject an inference. The [evidence index](../results/chua-followup/README.md) links frozen forecasts, every solved endpoint, failed controls, both-precision certificates, independent calculations and figure PDFs. The calculations run locally; no GitHub Actions are required. Numerical seed refinement, interval validation and independent numerical controls are separate operations. The review commands write to a separate directory and preserve the published evidence.
 
-The principal remaining questions are quantitative: how far the residual transport law extends, how the threshold varies between tested impulse directions, and which finite collections of hidden cycles can be located simultaneously at explicit parameter intervals of experimentally meaningful width. The existence theorem does not provide those quantities.
+The principal remaining questions are quantitative: over what slope range the constant bias correction remains accurate, how the threshold varies between tested impulse directions, and which finite collections of hidden cycles can be located simultaneously at explicit parameter intervals of experimentally meaningful width. The existence theorem does not provide those quantities.

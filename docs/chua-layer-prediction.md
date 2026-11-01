@@ -2,17 +2,17 @@
 
 ## Abstract
 
-We use a short unstable periodic orbit to model the spacing, width and period of a measured sequence of Chua stability windows. Parameters fitted to the 15–65-peak members yield forecasts for 75- and 85-peak cycles. These forecasts were published before a targeted orbit search. Both cycles were subsequently computed and checked independently. Their symmetric-core widths differ from the forecasts by 1.89% and 2.70%; the 75-peak forecast overlaps the measured core, whereas the 85-peak location forecast misses its core and requires correction.
+We use a short unstable periodic orbit to model the spacing, width and period of a measured sequence of Chua stability windows. Parameters fitted to the 15–65-peak members yield forecasts for 75- and 85-peak cycles. These forecasts were published before a targeted orbit search. Both cycles were subsequently computed and checked independently. Their symmetric-cycle stability widths differ from the forecasts by 1.89% and 2.70%; the 75-peak forecast overlaps the measured stability interval, whereas the 85-peak location forecast misses its stability interval and requires correction.
 
-This report describes the numerical prediction stage. The [interval certificate](chua-infinity-certificate.md) subsequently verified the organizing tangency and the hypotheses of the sink-cascade theorem. The numerical forecasts and outcomes remain unchanged. The two computed cycles increase the operational reference catalogue from 32 to 34 identities; their three-dimensional sheets have not been meshed.
+This report describes the numerical prediction stage. The [interval certificate](chua-infinity-certificate.md) subsequently verified the organizing tangency and the hypotheses of the sink-cascade theorem. The numerical forecasts and outcomes remain unchanged. The two computed cycles increase the operational reference catalogue from 32 to 34 entries; their three-dimensional sheets have not been meshed.
 
-![Published predictions and measured cores at their actual width scale](assets/chua-layer-prediction-proof.png)
+![Published predictions and measured stability intervals at their actual width scale](assets/chua-layer-prediction-proof.png)
 
-Figure 1. Predicted and measured symmetric-core intervals, expressed relative to the measured fold and normalized by the measured core width. The location discrepancy for the 85-peak cycle exceeds its core width.
+Figure 1. Predicted and measured stability intervals of symmetric cycles, expressed relative to the measured fold and normalized by the measured stability width. The location discrepancy for the 85-peak cycle exceeds its measured stability width.
 
 ## Forecasts and search results
 
-The theory, target itineraries, numerical forecasts, input hashes and acceptance gates were published in [commit 0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) before either new cycle was solved. The [frozen prediction file](../results/chua-layer-prediction/predictions-frozen.json) is unchanged. Only the existing 15–65-peak members were used: the last four folds fix four location coefficients, while the short saddle supplies the expansion factor and period. This is an asymptotic calibration, not a parameter-free prediction. An earlier backtest on the already known 65-peak member is explicitly retrospective.
+The theory, target itineraries, numerical forecasts, input hashes and acceptance criteria were published in [commit 0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) before either new cycle was solved. The [frozen prediction file](../results/chua-layer-prediction/predictions-frozen.json) is unchanged. Only the existing 15–65-peak members were used: the last four folds fix four location coefficients, while the short saddle supplies the expansion factor and period. This is an asymptotic calibration, not a parameter-free prediction. An earlier backtest on the already known 65-peak member is explicitly retrospective.
 
 | Quantity | 75 peaks: frozen prediction | 75 peaks: measured | 85 peaks: frozen prediction | 85 peaks: measured |
 |---|---:|---:|---:|---:|
@@ -23,9 +23,9 @@ The theory, target itineraries, numerical forecasts, input hashes and acceptance
 | Upward section returns per full cycle | 15 | 15 | 17 | 17 |
 | Inversion symmetry | Yes | Yes | Yes | Yes |
 | Fold error / measured width | — | +0.2265 | — | +3.5014 |
-| Predicted midpoint inside the measured core | — | Yes | — | **No** |
+| Predicted midpoint inside the measured stability interval | — | Yes | — | **No** |
 
-Widths here cover the symmetric branch from its fold to symmetry breaking, not its entire descendant window. The blue intervals in the figure are point forecasts for those cores, not confidence bands. Both new roots meet the preregistered engineering gates (absolute location error below 2e-8, width discrepancy below 20%, period error below 0.002), but the location gate is wider than either core. Meeting the location tolerance does not imply that the forecast lies inside the stable interval. The 75-peak forecast overlaps 75.5% of the measured core; the 85-peak forecast has no overlap. For the latter cycle, the predicted motion and approximate width are recovered, but the predicted location requires correction.
+Widths here cover the symmetric branch from its fold to symmetry breaking, not its entire descendant window. The blue intervals in the figure are point forecasts for those stability intervals, not confidence bands. Both new roots meet the predeclared numerical acceptance criteria (absolute location error below 2e-8, width discrepancy below 20%, period error below 0.002), but the location tolerance is wider than either stability interval. Meeting the location tolerance does not imply that the forecast lies inside the stable interval. The 75-peak forecast overlaps 75.5% of the measured stability interval; the 85-peak forecast has no overlap. For the latter cycle, the predicted motion and approximate width are recovered, but the predicted location requires correction.
 
 The search inserted a predicted short-saddle return into each half of a known cycle and solved the resulting flight equations, starting at the frozen predicted beta. This was a targeted orbit search, not a fresh uniform parameter sweep. [Raw search records](../results/chua-layer-prediction/search-results.json) retain the unsuccessful double-precision trials, the corrected roots and all Newton residuals. [Analysis](../results/chua-layer-prediction/analysis.json) scores the forecasts without refitting them.
 
@@ -50,7 +50,7 @@ The appropriate description retains:
 1. The primitive full orbit and its inversion symmetry, with phase shifts and inversion partners treated explicitly.
 2. The region word and residence times, together with a starting section state. The affine equations reconstruct the orbit from these data.
 3. The period, ordered section returns and extrema, to distinguish repeated-looking passes.
-4. The transverse multipliers and the branch's known continuation ancestry.
+4. The transverse multipliers and the branch's known continuation history.
 
 Across the adding sequence, the half-cycle outer-region word is `(RRLL)^n RR`, for n = 1,...,6. Inversion supplies the other half. Its full outer-region word is `(RRLL)^(2n+1)`. Thus the coarse word has a shorter symbolic period than the actual orbit: unequal residence times and return coordinates carry the longer recurrence. The forecast for n = 7,8 is 75,85 maxima and 15,17 upward section returns. Counts must be checked independently; a formal word is only a candidate itinerary.
 
@@ -76,7 +76,7 @@ If the unfolding derivative with respect to beta is nonzero and the strongly con
 \beta_n-\beta_\infty\sim A\Lambda^{-n},\qquad W_n\sim B\Lambda^{-2n}.
 ```
 
-Here Wn is the symmetric-core width from fold to symmetry breaking. The signs and constants of the position law depend on the global return. Neither the full window including descendants nor all families share a universal numerical constant. In particular, width should shrink approximately as the **square** of the factor governing the distance to accumulation.
+Here Wn is the symmetric-cycle stability width from fold to symmetry breaking. The signs and constants of the position law depend on the global return. Neither the full window including descendants nor all families share a universal numerical constant. In particular, width should shrink approximately as the **square** of the factor governing the distance to accumulation.
 
 For an initial finite-order correction to locations, we freeze the ansatz
 
@@ -86,13 +86,15 @@ For an initial finite-order correction to locations, we freeze the ansatz
 
 The n-dependent term allows the first correction from parameter-dependent local expansion. This is an asymptotic model, not an exact identity. Its constants are calibrated using existing layers, while Lambda comes from the short saddle cycle. Forecasts retain a simpler leading-order alternative so the effect of the correction is visible.
 
-## Spacing, width, period and normalized core position
+<a id="spacing-width-period-and-normalized-core-position"></a>
+
+## Spacing, width, period and normalized orbit position
 
 At the frozen fitted accumulation value, the short saddle has full period **Tp = 10.79734742** and unstable full-return multiplier **Lambda = 2.71343124**. Thus the predicted spacing ratio is **0.36853707**, the width ratio is **0.13581957**, and the period increment is **21.59469485**. The last measured ratios are 0.37136152 and 0.13690871; the last period increment is 21.59474041. These comparisons test three consequences of the same return model.
 
 ![Spacing, width, period and quadratic-map shape across eight members](assets/chua-layer-prediction-scales.png)
 
-There is also a shape prediction from the same quadratic model. Half-return multiplier +0.5 means X = -1/4, hence M = -3/16. Its distance from the fold M = -1/4 is 1/16 of the unit fold-to-flip interval. Accordingly, the normalized coordinate (fold beta minus core beta) / width should approach **1/16 = 0.0625**. It is 0.06249116 and 0.06249666 for the two new members. This check is derived from the frozen quadratic model, but was evaluated after discovery and was not a separate preregistered acceptance gate.
+There is also a shape prediction from the same quadratic model. Half-return multiplier +0.5 means X = -1/4, hence M = -3/16. Its distance from the fold M = -1/4 is 1/16 of the unit fold-to-flip interval. Accordingly, the normalized coordinate (fold beta minus the normalized reference orbit beta) / width should approach **1/16 = 0.0625**. It is 0.06249116 and 0.06249666 for the two new members. This check is derived from the frozen quadratic model, but was evaluated after discovery and was not a separate preregistered acceptance criterion.
 
 ## Finite-iterate approximation of the manifold connection
 
@@ -102,7 +104,7 @@ The preceding predictions were made without solving a manifold connection. After
 
 The estimates cluster near **beta = 14.30635909996**, spanning **1.12e-12**. In the first coordinate convention, three finite-difference steps give curvature near -1.86674e5 and parameter derivative near -2.04763, supporting a quadratic fold with transverse unfolding. Extra terminal iteration reduces the final stable displacement from about 1.77e-11 to about 9e-15. The smallest boundary-crossing speed stays above 1.12 in these computations. [All coordinates, itineraries, derivative checks and curves](../results/chua-layer-prediction/organizer-approximants.json) are retained.
 
-This is a numerical approximation using tangent lines and finitely many iterates, **not a certified exact stable/unstable manifold tangency**. Agreement between its variants is not an error bound. It was evaluated after the orbit search and was not part of the published forecast. Its beta differs from the frozen fitted limit 14.30635910320525 by about 3.24e-9: a tiny absolute bias can already exceed a new core's width. This is consistent with the fine-scale location miss and explains why better width predictions alone do not ensure direct hits on later layers.
+This is a numerical approximation using tangent lines and finitely many iterates, **not a certified exact stable/unstable manifold tangency**. Agreement between its variants is not an error bound. It was evaluated after the orbit search and was not part of the published forecast. Its beta differs from the frozen fitted limit 14.30635910320525 by about 3.24e-9: a tiny absolute bias can already exceed a new stability interval's width. This is consistent with the fine-scale location miss and explains why better width predictions alone do not ensure direct hits on later layers.
 
 ## Consequences for the number of resolvable windows
 
@@ -110,7 +112,7 @@ The [interval certificate](chua-infinity-certificate.md) verifies the organizing
 
 An infinite sequence is a theorem-level conclusion only if the required global connection, quadratic nondegeneracy, dissipativity, admissible itineraries and transverse parameter unfolding are established. A finite fit, however accurate, does not verify those hypotheses for all n. Counting unstable periodic orbits also does not count attracting windows.
 
-Conditional on Wn approximately B Lambda^(-2n), the number of cores wider than a resolution epsilon grows only logarithmically with 1/epsilon:
+Conditional on Wn approximately B Lambda^(-2n), the number of stability intervals wider than a resolution epsilon grows only logarithmically with 1/epsilon:
 
 ```math
 n_{\max}\approx\frac{\log(B/\epsilon)}{2\log\Lambda}.
@@ -118,7 +120,7 @@ n_{\max}\approx\frac{\log(B/\epsilon)}{2\log\Lambda}.
 
 An additive index convention and finite-order corrections remain. This is a count of resolvable members of this sequence, not the total atlas count and not the number of attractors coexisting at a single parameter tuple. A finite experimental resolution can therefore see only a modest number even if the mathematical hierarchy is infinite.
 
-For the measured saddle expansion, one extra decimal digit of beta resolution would reveal only about **1.15 additional members** asymptotically. This estimate is conditional on the width law and says nothing about the basins captured by a chosen initial condition. The 85-peak core is about **6.65 million times narrower** than the old atlas's 0.004 beta spacing. Continuation resolves this scale without requiring a uniform grid at the same spacing.
+For the measured saddle expansion, one extra decimal digit of beta resolution would reveal only about **1.15 additional members** asymptotically. This estimate is conditional on the width law and says nothing about the basins captured by a chosen initial condition. The 85-peak stability interval is about **6.65 million times narrower** than the old atlas's 0.004 beta spacing. Continuation resolves this scale without requiring a uniform grid at the same spacing.
 
 The [extended registry](../results/chua-layer-prediction/extended-family-registry.json) appends P75 and P85 under the existing normalized-root identity rule: **34 reference families, global total unknown**. These two distinct primitive roots lie in the original box and have different periods from the earlier representatives. Their three-dimensional sheets have not been meshed here. The original 32-entry atlas, gallery and animations remain reproducible snapshots; the portraits above supply the two new examples. The number 34 is neither a proof of 34 globally disconnected components nor a claim of 34 coexisting attractors.
 
@@ -152,7 +154,7 @@ Differentiation predicts that their tangent directions approach the accumulation
 
 1. Calibration used the previously published 15–65-peak sequence. Checks against those existing values were retrospective.
 2. A machine-readable file containing forecasts, input hashes, target itineraries and tolerances was committed before the 75- and 85-peak searches.
-3. Forecast quantities were peak count, number of section returns, symmetry, fold location, symmetric-core width and period. Both leading-order and corrected location models were recorded.
+3. Forecast quantities were peak count, number of section returns, symmetry, fold location, symmetric-cycle stability width and period. Both leading-order and corrected location models were recorded.
 4. Candidate itineraries were constructed by inserting the predicted saddle return. The resulting targeted search measured correction distances relative to the window width.
 5. Arbitrary-precision solves were compared at two precisions. Separate full-field integrations checked itinerary validity, orbit closure and attraction.
 6. Forecast discrepancies and unsuccessful numerical trials were retained. The reported scores use the published forecasts without refitting.

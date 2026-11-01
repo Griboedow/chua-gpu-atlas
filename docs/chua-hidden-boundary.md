@@ -212,7 +212,7 @@ The atlas can now distinguish three pieces of evidence: a periodic-family contin
 
 After the [follow-up proofs](chua-basin-and-coexistence.md), the remaining distinctions are:
 
-1. **Counts at prescribed parameters.** Infinite coexistence is established existentially nearby the classical tangency. Four certified periodic sinks remain a lower bound at the explicit four-cycle point. The 32 sampled sheets and 34 reference identities count families across parameters.
+1. **Counts at prescribed parameters.** Infinite coexistence is established existentially nearby the classical tangency. Four certified periodic sinks remain a lower bound at the explicit four-cycle point. The 32 sampled sheets and 34 reference entries count families across parameters.
 2. **The full global-stability boundary.** The theorem settles the stated upper slope sector and its neutral m₀ face. Regions with one slope below m\*, nonzero γ, and the lower stable-equilibrium band require other arguments.
 3. **The complete hiddenness boundary.** The certified local separator does not describe its entire global stable manifold or all possible basins.
 4. **Accessibility of infinitely many cycles.** The infinite-coexistence theorem does not identify their basins, classify them as hidden, or provide an explicit decimal parameter at which to sample them.

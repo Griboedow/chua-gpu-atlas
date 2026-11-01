@@ -24,7 +24,7 @@ The four mesh jobs are independent. They reuse and recheck the previous 21 × 21
 
 | File | Meaning |
 |---|---|
-| `P5-alpha.json`, `P5-beta.json`, `P7-alpha.json`, `P7-beta.json` | Corrected fold, symmetry edge and attracting core at every accepted node, each with its own itinerary; failed attempts and completeness |
+| `P5-alpha.json`, `P5-beta.json`, `P7-alpha.json`, `P7-beta.json` | Corrected fold, symmetry edge and attracting interior cycle at every accepted node, each with its own itinerary; failed attempts and completeness |
 | `audit.json` | Whole-mesh residual/path checks, 84 independent ODE controls, sampled fold coefficients and old-cell interpolation discrepancies |
 | `heldout-interpolation.json` | 32 additional corrected cell centres, coarse/fine interpolation errors and full witnesses |
 | `bifurcation-anchors.json`, `bifurcation-controls.json` | Twelve branch-switch locations, stable/saddle pairs, asymmetric inversion pairs, unstable parents and unsuccessful initial guesses |

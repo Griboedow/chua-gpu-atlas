@@ -6,7 +6,7 @@ We refine two locally continued periodic families in the parameter volumes (m₀
 
 ![Refined family sheets in both three-dimensional slope volumes](assets/chua-slope-refined-volumes.png)
 
-Figure 1. Blue and rose identify the continued P5 and P7 families. Purple identifies P7 cores with the additional diode crossings; it is part of the same family. The gold curve locates contact on a selected attracting P7 branch with signed half-return multiplier −0.43. Facets interpolate core midpoints at their actual parameter coordinates. They do not display the true stability thickness or certify the cells between nodes.
+Figure 1. Blue and rose identify the continued P5 and P7 families. Purple identifies P7 representatives with the additional diode crossings; it is part of the same family. The gold curve locates contact on a selected attracting P7 branch with signed half-return multiplier −0.43. Facets interpolate stability-interval midpoints at their actual parameter coordinates. They do not display the true stability thickness or certify the cells between nodes.
 
 ## 1. Question and relation to the earlier atlas
 
@@ -20,20 +20,20 @@ Here P5 and P7 retain their earlier continuation identities. Five or seven peaks
 
 Each family uses 41 m₁ values in [−5/7 − 0.08, −5/7 + 0.08]. The third coordinate is either 41 α values in [8.6, 9.4] at β = 100/7, or 41 β values in [100/7 − 0.8, 100/7 + 0.8] at α = 9. Thus the increments are Δm₁ = 0.004, Δα = 0.02 and Δβ = 0.04. At every accepted node, m₀ is solved separately for a fold, a symmetry-loss edge and an attracting midpoint cycle. There is no uniform m₀ sampling step in this calculation.
 
-| Family and volume | Previous accepted nodes | Refined accepted nodes / requested | Recovered old missing nodes | Sampled symmetric-core widths in m₀ |
+| Family and volume | Previous accepted nodes | Refined accepted nodes / requested | Recovered old missing nodes | Sampled symmetric-cycle stability widths in m₀ |
 |---|---:|---:|---:|---:|
 | P5, varying α | 438 | 1,671 / 1,681 | 0 | 1.95865e−4 to 2.79966e−3 |
 | P5, varying β | 440 | 1,680 / 1,681 | 0 | 2.24580e−4 to 2.85777e−3 |
 | P7, varying α | 361 | 1,681 / 1,681 | 80 | 7.25954e−5 to 9.04971e−4 |
 | P7, varying β | 360 | 1,681 / 1,681 | 81 | 7.53160e−5 to 1.26059e−3 |
 
-The two volumes share their central section, so these totals count mesh records, not distinct parameter points. All previous accepted nodes are retained and rechecked. Of the eleven remaining P5 holes, five were attempted and six were not reached by the connected traversal. They lie near the low-m₁, low-α or high-β corners. No physical termination is inferred from them. There are 242 and 245 P7 core nodes with the new itinerary in the α and β volumes respectively.
+The two volumes share their central section, so these totals count mesh records, not distinct parameter points. All previous accepted nodes are retained and rechecked. Of the eleven remaining P5 holes, five were attempted and six were not reached by the connected traversal. They lie near the low-m₁, low-α or high-β corners. No physical termination is inferred from them. There are 242 and 245 P7 interior representative nodes with the new itinerary in the α and β volumes respectively.
 
 ![True stability bands, widths and contact curves](assets/chua-slope-refined-sections.png)
 
-Figure 2. The upper left panel displays the two stability bands in the common m₀–m₁ section. The upper right panel compares their widths with the original volume step, 0.01. The narrowest sampled P7 width is about 138 times smaller than that step. Lower panels distinguish contact at the fold, at the selected interior core and at the symmetry edge.
+Figure 2. The upper left panel displays the two stability bands in the common m₀–m₁ section. The upper right panel compares their widths with the original volume step, 0.01. The narrowest sampled P7 width is about 138 times smaller than that step. Lower panels distinguish contact at the fold, at the selected interior cycle and at the symmetry edge.
 
-The largest accepted affine closure residual is 3.00e−11. Eighty-four selected edge/core records pass full-field state-and-variational integration: maximum closure error 1.54e−11 and dominant-multiplier discrepancy 3.67e−9. These controls sample the centre, coordinate extremes and both sides of the itinerary change; they do not independently integrate every mesh record.
+The largest accepted affine closure residual is 3.00e−11. Eighty-four selected boundary and interior-orbit records pass full-field state-and-variational integration: maximum closure error 1.54e−11 and dominant-multiplier discrepancy 3.67e−9. These controls sample the centre, coordinate extremes and both sides of the itinerary change; they do not independently integrate every mesh record.
 
 At 32 additional cell centres, corrected roots improve on both coarse and fine interpolation. The fine-grid estimate is better at all 32 controls; the median coarse/fine error ratio is 2.97. The largest fine-grid edge error is 7.74e−5 in m₀, or 20.4% of the local stability width. P7's largest tested relative error is 4.92%. Thus even the refined facets should be used as predictors followed by root correction, not as exact boundaries. The [audit](../results/chua-slope-refinement/audit.json) and [held-out centres](../results/chua-slope-refinement/heldout-interpolation.json) retain the individual checks.
 
@@ -44,7 +44,7 @@ Let H be the signed half-return map of a symmetric cycle; its transverse full-pe
 | Event | Numerical evidence | Consequence for the layer |
 |---|---|---|
 | Fold of symmetric cycles | Half-return multiplier +1; one small closing singular value; nonzero projected parameter and quadratic coefficients; distinct stable and saddle partners | A symmetric stable branch appears with a saddle branch |
-| Symmetry breaking | Half-return multiplier −1; two attracting asymmetric roots related by inversion; unstable symmetric parent | The symmetric core ends, while attracting asymmetric descendants persist |
+| Symmetry breaking | Half-return multiplier −1; two attracting asymmetric roots related by inversion; unstable symmetric parent | The stability interval of the symmetric cycle ends, while attracting asymmetric descendants persist |
 | Internal diode contact | An internal extremum reaches x = ±1; extra crossings appear; the cycle remains attracting | The itinerary changes inside the same family |
 
 The [branch controls](../results/chua-slope-refinement/bifurcation-controls.json) repeat the fold and symmetry switches at twelve distinct family cross-sections. For each family and each volume, they test the two third-coordinate extremes at m₁ = −5/7 and a high-m₁ section. The latter uses α = 9 in the α volume and β = 100/7 + 0.16 in the β volume, avoiding a duplicate of the common section. All twelve recover the stable/saddle fold pair, two attracting asymmetric partners and the unstable symmetric parent. The controls include P7 beyond the diode contact. Several initial branch-switch guesses returned the symmetric parent; those attempts are retained, and accepted pairs are explicitly checked for asymmetry and separation.
@@ -60,10 +60,10 @@ The closing equations, half-return multiplier condition, x = 1 and dx/dt = 0 are
 | Contact location | m₀ | m₁ |
 |---|---:|---:|
 | Fold, half-return multiplier +1 | −1.145119564885636 | −0.660236446083389 |
-| Attracting core, half-return multiplier −0.43 | −1.145273980679323 | −0.655374411697133 |
+| Attracting interior cycle, half-return multiplier −0.43 | −1.145273980679323 | −0.655374411697133 |
 | Symmetry edge, half-return multiplier −1 | −1.145381108456496 | −0.653335461961121 |
 
-These are three different parameter points. Each contact is continued through 17 third-coordinate values in each volume, giving six sampled curves. The cycle, fold and symmetry edge therefore need not share one itinerary at a given m₁. This explains why replacing only the core orbit's itinerary would leave erroneous boundaries.
+These are three different parameter points. Each contact is continued through 17 third-coordinate values in each volume, giving six sampled curves. The cycle, fold and symmetry edge therefore need not share one itinerary at a given m₁. This explains why replacing only the interior orbit's itinerary would leave erroneous boundaries.
 
 ## 4. A local quantitative prediction
 

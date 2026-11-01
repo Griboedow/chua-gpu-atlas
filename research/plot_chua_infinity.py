@@ -82,7 +82,7 @@ def overview(cert):
     ax = fig.add_subplot(grid[:, 0])
     for vals, color, label, marker in [
         (distance, BLUE, r"Distance to $\beta_*$", "o"),
-        (width, ORANGE, "Symmetric-core width", "s"),
+        (width, ORANGE, "Symmetric-cycle stability width", "s"),
     ]:
         ax.semilogy(n, vals, color=color, lw=1.8, marker=marker, ms=6, label=label)
         ax.scatter(
@@ -118,7 +118,7 @@ def overview(cert):
     ax.text(
         0.02,
         0.02,
-        "85-peak core: 6.02 × 10⁻¹⁰\nThe eight points alone do not prove infinity.",
+        "85-peak stability width: 6.02 × 10⁻¹⁰\nThe eight points alone do not prove infinity.",
         transform=ax.transAxes,
         fontsize=10,
         color=MUTED,

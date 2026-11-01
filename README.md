@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We study families of attracting periodic orbits in the continuous piecewise-linear Chua system. GPU parameter surveys identify candidate regions, periodic-orbit continuation resolves stability boundaries and coexistence, and interval arithmetic verifies organizing homoclinic tangencies. The finite catalogue contains 34 reference identities under a stated continuation and normalization convention. The original three-dimensional atlas contains 32 family sheets; later slope-section tests add small patches for the thin sequence.
+We study families of attracting periodic orbits in the continuous piecewise-linear Chua system. GPU parameter surveys identify candidate regions, periodic-orbit continuation resolves stability boundaries and coexistence, and interval arithmetic verifies organizing homoclinic tangencies. The finite catalogue contains 34 reference entries under a stated continuation and normalization convention. The original three-dimensional atlas contains 32 family sheets; later slope-section tests add small patches for the thin sequence.
 
 At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses the tangency parameter in 14.30635909996140 < β∗ < 14.30635909996152. Application of the classical sink-cascade theorem gives infinitely many attracting periodic windows accumulating at this parameter. A [localization argument](docs/chua-basin-and-coexistence.md#3-proof-of-theorem-b) also completes the stronger Newhouse–Robinson application: some individual β values arbitrarily near β∗ support infinitely many simultaneous attracting periodic orbits. No decimal value of such a β is identified.
 
@@ -44,7 +44,7 @@ Figure 1. Measured periodic windows and the conditions verified by the interval 
 
 ## Layer definition and finite catalogue
 
-A layer is a region in **parameter space** supporting a family of attracting periodic motions. Following that family changes its orbit continuously. Different families can differ in their complete repeating signal, period, visits to the two scrolls and symmetry. The corresponding orbit is a curve in **state space**.
+A **stability region** is a set of parameter values supporting an attracting periodic-orbit branch. We use **layer** as a visual shorthand for the region associated with a continued family. Following that family changes its orbit continuously. Different families can differ in their complete repeating signal, period, visits to the two scrolls and symmetry. The corresponding orbit is a curve in **state space**.
 
 ![The 32 sampled families highlighted individually at a fixed camera angle](docs/assets/chua-readme-layers.gif)
 
@@ -57,21 +57,21 @@ Figure 2. The 32 sampled families, highlighted individually with fixed camera an
 | Scroll visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other mesh representatives visit both. |
 | Symmetry | A symmetric cycle can lose symmetry and produce two inversion-related attracting cycles. |
 
-Peak counts and orbit silhouettes alone do not identify a family. The catalogue follows normalized periodic roots and their continuation ancestry. The [gallery](docs/chua-family-gallery.md) shows an orbit, complete signal and peak sequence for each original family; [two further portraits](docs/chua-layer-prediction.md) show the 75- and 85-peak motions. The [refined atlas](docs/chua-refined-atlas.md) documents the identity convention and numerical checks.
+Peak counts and orbit silhouettes alone do not identify a family. The catalogue follows normalized periodic roots and their continuation history. The [gallery](docs/chua-family-gallery.md) shows an orbit, complete signal and peak sequence for each original family; [two further portraits](docs/chua-layer-prediction.md) show the 75- and 85-peak motions. The [refined atlas](docs/chua-refined-atlas.md) documents the catalogue convention and numerical checks. The [terminology guide](docs/terminology.md) distinguishes stability regions, plotted sheets, periodic windows and catalogue entries.
 
 ## Predicted and measured stability windows
 
 ![Held-out slope-section forecasts and three resolved thin layer surfaces](docs/assets/chua-followup-sheets.png)
 
-The current cross-parameter test uses 48 held-out windows for the 65-, 75- and 85-peak families. The original model places 32 predicted midpoints inside the measured cores; transporting each family's calibrated central residual raises this to 48. The largest width error is 6.69%. The lower panels subtract the numerical organizing surface so the thin sheets can be distinguished. Nine solved folds per family support each displayed surface. The [report](docs/chua-prediction-and-hidden-coexistence.md#1-predicting-two-slope-sections) links forecasts published before the endpoint searches, measured roots and independent controls.
+The current cross-parameter test uses 48 held-out windows for the 65-, 75- and 85-peak families. The original model places 32 predicted midpoints inside the measured stability intervals; adding each family's fold-location residual measured at the central parameter node raises this to 48. The largest width error is 6.69%. The lower panels subtract the estimated homoclinic-tangency surface so the thin sheets can be distinguished. Nine solved folds per family support each displayed surface. The [report](docs/chua-prediction-and-hidden-coexistence.md#1-predicting-two-slope-sections) links forecasts published before the endpoint searches, measured roots and independent controls.
 
 A short unstable periodic orbit organizes the measured 15 → 25 → … sequence. Longer cycles spend additional returns near this saddle before making a global excursion. Its expansion factor predicts the rate at which window spacing and width decrease, while its period predicts the additional repetition time.
 
-Forecasts for the 75- and 85-peak members were [published before the search](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea). Both motions were subsequently found and checked independently. Their symmetric-core widths differed from the forecasts by **1.89% and 2.70%**.
+Forecasts for the 75- and 85-peak members were [published before the search](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea). Both motions were subsequently found and checked independently. Their symmetric-cycle stability widths differed from the forecasts by **1.89% and 2.70%**.
 
 ![Published forecasts compared with the measured windows at their true width scale](docs/assets/chua-layer-prediction-proof.png)
 
-Figure 3. Forecast and measured symmetric-core intervals, normalized by each measured width. The 75-peak forecast overlaps its core. The 85-peak forecast has no overlap; the orbit search locates the core after correction. Its width is approximately 1/6.65 million of the original β grid spacing, so the original uniform survey could not resolve it.
+Figure 3. Forecast and measured stability intervals of symmetric cycles, normalized by each measured width. The 75-peak forecast overlaps its stability interval. The 85-peak forecast has no overlap; the orbit search locates the stability interval after correction. Its width is approximately 1/6.65 million of the original β grid spacing, so the original uniform survey could not resolve it.
 
 The [prediction report](docs/chua-layer-prediction.md) records the forecasts, measured orbits and unsuccessful numerical controls. The [interval certificate](docs/chua-infinity-certificate.md) bounds the exact invariant manifolds and verifies the organizing tangency, including itinerary validity over complete flights, curvature, dissipativity and parameter unfolding. The infinite-cascade conclusion follows from these hypotheses and the classical theorem.
 

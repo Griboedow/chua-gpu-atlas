@@ -20,7 +20,7 @@ The star marks m0 = -8/7, m1 = -5/7. In the wide panel, the regular bands curve 
 
 ## Periodic signals in selected bands
 
-The peak diagnostic examines the first start at all 9,158 zoom nodes where the preceding three-start screen was uniformly regular. It resolves a repeating peak pattern at 9,138 of them. The most common detected patterns contain **5 peaks (7,111 nodes)** and **7 peaks (1,237 nodes)**. Patterns with 10 and 14 peaks also occur. These counts do not establish ancestry, period doubling, or distinct family identities by themselves.
+The peak diagnostic examines the first start at all 9,158 zoom nodes where the preceding three-start screen was uniformly regular. It resolves a repeating peak pattern at 9,138 of them. The most common detected patterns contain **5 peaks (7,111 nodes)** and **7 peaks (1,237 nodes)**. Patterns with 10 and 14 peaks also occur. These counts do not establish branch relationships, period doubling, or distinct periodic-orbit families by themselves.
 
 ![Repeated peak patterns inside the regular bands](assets/chua-slope-peak-patterns.png)
 

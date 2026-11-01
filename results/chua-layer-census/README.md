@@ -12,7 +12,7 @@ See the [research report](../../docs/chua-layer-census.md) for interpretation, l
 | `family-edges.json` | Symmetric fold and symmetry-breaking thresholds for selected verified families, including both representatives of the same nine-maximum window. |
 | `second-boundaries.json`, `second-surfaces.json` | Three central thresholds and 49 × 3 continued boundary records for the second broad family. |
 | `census-analysis.json` | Seventeen deduplicated window representatives, 16 finite-time gap witnesses, the four-member adding sequence, section-return distances, and original-grid comparison. |
-| `atlas-comparison.npz` | Original 41³ regular mask and masks for the two interpolated five-maximum cores. |
+| `atlas-comparison.npz` | Original 41³ regular mask and masks for the two interpolated stability regions of the five-maximum parent cycles. |
 | `coexistence.json/.npz` | Two attracting cycles at identical parameters, independent state/multiplier checks, perturbed-start checks, and sampled trajectories. |
 | `audit.json` | Executable numerical acceptance gates, independent boundary integrations, fold controls, and the second fold's stable/saddle partners. |
 | `chua-layer-*.pdf` | Exportable figures; PNG versions are in `docs/assets`. |

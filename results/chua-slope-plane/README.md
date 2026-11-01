@@ -1,6 +1,6 @@
 # Two-dimensional slope-plane evidence
 
-Read the [report](../../docs/chua-slope-plane.md). This experiment fixes alpha = 9 and beta = 100/7 while varying m0 and m1 independently. It complements the earlier atlas, whose m1 was fixed; no correspondence to all 32 earlier family identities is claimed.
+Read the [report](../../docs/chua-slope-plane.md). This experiment fixes alpha = 9 and beta = 100/7 while varying m0 and m1 independently. It complements the earlier atlas, whose m1 was fixed; no correspondence to all 32 earlier catalogue entries is claimed.
 
 | Files | Contents |
 |---|---|
@@ -18,7 +18,7 @@ The broad grid uses dt = 0.005, transient = 600 and observation = 1,600. The zoo
 
 The refinement sample selects up to 64 nodes from each displayed category, then fills uniformly to 512 using RNG seed 20261030. It deliberately overrepresents uncertain and mixed points. Do not interpret its agreement percentages as whole-grid accuracy. The published main images retain the original complete grids; refined samples are separate evidence.
 
-The peak diagnostic continues seed zero for 1,200 additional time units at dt = 0.0025, retains up to 512 peaks, and examines the last 384 for at least four repeats. Its maximum lag is 96, with relative height tolerance 5e-4. Zero means unresolved. These are recurrence diagnostics; rare large counts are not automatically new closed cycles or new family identities.
+The peak diagnostic continues seed zero for 1,200 additional time units at dt = 0.0025, retains up to 512 peaks, and examines the last 384 for at least four repeats. Its maximum lag is 96, with relative height tolerance 5e-4. Zero means unresolved. These are recurrence diagnostics; rare large counts are not automatically new closed cycles or new catalogue entries.
 
 ## Reproduce
 

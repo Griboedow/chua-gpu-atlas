@@ -87,7 +87,7 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-basin-proof').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-followup').rglob('*') if p.is_file())
     paths.update((ROOT/'docs/assets').glob('chua-followup-*.png'))
-    paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md','docs/chua-review-guide.md'])
+    paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md','docs/chua-review-guide.md','docs/terminology.md','AGENTS.md'])
     paths.update(ROOT/p for p in ['docs/chua-basin-and-coexistence.md',
         'docs/assets/chua-basin-proof.png','docs/assets/chua-coexistence-localization.png'])
     paths.add(ROOT/'docs/chua-hidden-boundary.md')

@@ -27,15 +27,15 @@ def save(fig,name):
 def sheets():
     d=read('analysis.json')['sheets'];rows=[r for r in d['records'] if r['held_out']]
     fig=plt.figure(figsize=(15,11));gs=fig.add_gridspec(2,2,hspace=.38,wspace=.24,left=.07,right=.96,bottom=.10,top=.85)
-    fig.suptitle('Predicting thin periodic layers across the two slope sections',x=.06,y=.98,ha='left',fontsize=21,weight='bold')
+    fig.suptitle('Predicting narrow periodic windows in two slope sections',x=.06,y=.98,ha='left',fontsize=21,weight='bold')
     fig.text(.06,.925,'48 held-out windows  |  65, 75 and 85 peaks  |  Forecasts published before endpoint searches',fontsize=12)
-    ax=fig.add_subplot(gs[0,0]);ax.axvspan(0,1,color=TEAL,alpha=.13,label='Measured symmetric core')
+    ax=fig.add_subplot(gs[0,0]);ax.axvspan(0,1,color=TEAL,alpha=.13,label='Measured stability interval')
     for k,r in enumerate(rows):
         y=k+(2 if k>=24 else 0)
         ax.plot([r['raw_midpoint_in_core_units'],r['transport_midpoint_in_core_units']],[y,y],color='#b7c2c8',lw=.7)
         ax.scatter(r['raw_midpoint_in_core_units'],y,c=RED,s=16,marker='x',label='Uncorrected forecast' if k==0 else None)
-        ax.scatter(r['transport_midpoint_in_core_units'],y,c=BLUE,s=12,label='Transported central residual' if k==0 else None)
-    ax.set(xlabel='Predicted midpoint / measured core width',yticks=[11.5,37.5],yticklabels=['Fixed β','Fixed α'])
+        ax.scatter(r['transport_midpoint_in_core_units'],y,c=BLUE,s=12,label='Bias-corrected forecast' if k==0 else None)
+    ax.set(xlabel='Predicted midpoint in normalized interval coordinates',yticks=[11.5,37.5],yticklabels=['Fixed β','Fixed α'])
     ax.set_title('A  Every forecast at the scale of its own window',loc='left',fontsize=12,weight='bold')
     ax.legend(frameon=False,fontsize=9,loc='upper right');ax.grid(axis='x',alpha=.15)
     ax=fig.add_subplot(gs[0,1])
@@ -63,7 +63,7 @@ def sheets():
         symbol=r'\beta' if free=='beta' else r'\alpha'
         ax.set_zlabel(r'$10^6('+symbol+'-'+symbol+'_*)$',labelpad=9)
         ax.set_title(('C  Fixed α = 9; predict β' if free=='beta' else 'D  Fixed β ≈ 14.30636; predict α'),loc='left',fontsize=12,weight='bold',pad=4)
-    fig.text(.06,.025,'Surfaces join nine solved folds per family. The vertical coordinate subtracts the numerical organizing surface to expose the layer spacing.',fontsize=10)
+    fig.text(.06,.025,'Surfaces join nine solved folds per family. Height is relative to the estimated homoclinic-tangency parameter at each node.',fontsize=10)
     save(fig,'chua-followup-sheets')
 
 

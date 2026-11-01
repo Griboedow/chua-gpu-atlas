@@ -8,7 +8,7 @@ The [animation](../../../docs/assets/chua-readme-layers.gif) highlights all 32 f
 
 Dots are numerically closed attracting cycles. Colored facets locate a representative surface at a selected transverse multiplier; they do not measure the full window's physical thickness. Triangles connect adjacent accepted mesh vertices and are geometrically clipped at beta = 14.24 and 14.40. Neither the facets nor straight slice segments certify attraction between their vertices.
 
-The width zoom uses a categorical row for each of six period-adding families, then physical beta offsets for P55 and P65. Its open circles mark the earlier boundary estimates. The 25 newly solved interior points per core run from 2% to 98% of that interval; endpoints are excluded. No vertical separation of categorical rows represents a parameter distance.
+The width zoom uses a categorical row for each of six period-adding families, then physical beta offsets for P55 and P65. Its open circles mark the earlier boundary estimates. The 25 newly solved interior points per stability interval run from 2% to 98% of that interval; endpoints are excluded. No vertical separation of categorical rows represents a parameter distance.
 
 ## Data and numerical checks
 
@@ -21,7 +21,7 @@ The width zoom uses a categorical row for each of six period-adding families, th
 | `render-summary.json` | Frame order, face counts and plotted sample totals |
 | `readme-layer-zoom.pdf` | Vector version of the multiscale figure |
 
-There are **5,447 checked surface samples**, including **3,975 new parameter locations** relative to the old mesh; **4,126** fall inside the displayed beta box. The total includes 1,321 halo samples used to clip adjacent facets. This set overlaps the original 2,587 representatives and must not be added to it as a distinct-sample count. There are a further **50 thin-core profile samples** at alpha = 9 and m0 = -8/7.
+There are **5,447 checked surface samples**, including **3,975 new parameter locations** relative to the old mesh; **4,126** fall inside the displayed beta box. The total includes 1,321 halo samples used to clip adjacent facets. This set overlaps the original 2,587 representatives and must not be added to it as a distinct-sample count. There are a further **50 samples across narrow stability intervals** at alpha = 9 and m0 = -8/7.
 
 A linear interpolant of the old beta samples selects candidate cells intersecting beta = [14.238, 14.402]; it does not generate the accepted orbit data. All four cell vertices are selected. Each candidate is closed by bounded local continuation from a nearby earlier representative. Missing source coverage is not extrapolated. Selection near the visible box is not an exhaustive search of the complete 17 by 17 mesh or of all possible periodic orbits.
 
@@ -29,9 +29,9 @@ The representative target is half-return multiplier +0.5 for symmetric families 
 
 Every accepted point passes the original 4 by 4 matrix-exponential implementation: closure below 2e-8, return-multiplier magnitude discrepancy below 2e-5, and attracting return magnitude below 0.999. Region sampling is gated at 1e-7. The largest observed surface closure error is **2.09e-10**, and the largest multiplier discrepancy is **2.17e-7**. These checks compare two affine implementations, not independent physical models.
 
-Two new in-box points each for A05, S08, E09, E13 and P65 also receive independent full-field state and variational integration. All ten controls pass; maximum closure is **1.69e-10** and maximum multiplier discrepancy **6.13e-7**. Each thin-core midpoint receives the same independent check; their largest closure is **5.08e-10** and multiplier discrepancy **8.16e-7**. The full-field gates are closure below 2e-7, multiplier error below 2e-5 and attraction. These are numerical checks, not interval certificates.
+Two new in-box points each for A05, S08, E09, E13 and P65 also receive independent full-field state and variational integration. All ten controls pass; maximum closure is **1.69e-10** and maximum multiplier discrepancy **6.13e-7**. Each narrow-interval midpoint receives the same independent check; their largest closure is **5.08e-10** and multiplier discrepancy **8.16e-7**. The full-field gates are closure below 2e-7, multiplier error below 2e-5 and attraction. These are numerical checks, not interval certificates.
 
-The P55 and P65 profile spacings are approximately **8.9653e-9** and **1.2704e-9** in beta. Their widths, approximately 2.2413e-7 and 3.1759e-8, come from the previously published fold and symmetry-breaking estimates in `../extended-adding.json`. Descendant branches can extend beyond the symmetric core.
+The P55 and P65 profile spacings are approximately **8.9653e-9** and **1.2704e-9** in beta. Their widths, approximately 2.2413e-7 and 3.1759e-8, come from the previously published fold and symmetry-breaking estimates in `../extended-adding.json`. Descendant branches can extend beyond the stability interval of the symmetric cycle.
 
 ## Reproduce
 

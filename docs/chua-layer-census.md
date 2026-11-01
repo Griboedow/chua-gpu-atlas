@@ -28,7 +28,7 @@ At alpha = 9 and m0 = −8/7, the two families have the following boundaries. Va
 
 Both examples have five local maxima of x over a full cycle. Counting maxima alone therefore cannot identify a family. Family 1's example is symmetric under a half-period shift followed by state inversion; family 2's example lies on its asymmetric branch.
 
-Each boundary of family 2 was continued to 49 points in (alpha, m0), matching the earlier family's 7 × 7 grid. Bilinear interpolation of the regions between fold and first doubling covers 5,086 of the original 6,419 regular nodes, approximately **79.2%**. This approximate comparison only includes the five-maximum cores. Doubled descendants, smaller windows, finite transients, basin selection, and interpolation errors contribute to the remainder. Coverage is not an accuracy score or a measured parameter volume.
+Each boundary of family 2 was continued to 49 points in (alpha, m0), matching the earlier family's 7 × 7 grid. Bilinear interpolation of the regions between fold and first doubling covers 5,086 of the original 6,419 regular nodes, approximately **79.2%**. This approximate comparison only includes the stability regions of the five-maximum parent cycles. Doubled descendants, smaller windows, finite transients, basin selection, and interpolation errors contribute to the remainder. Coverage is not an accuracy score or a measured parameter volume.
 
 ## Bifurcations and loss of attraction
 
@@ -122,7 +122,7 @@ These four symmetric attracting cycles have 3, 5, 7 and 9 upward crossings of x 
 | 35 | 14.305921875 | 75.749507 | 9.2421e−6 | 5.8393e−4 |
 | 45 | 14.306190000 | 97.340923 | 1.5063e−6 | 2.1579e−4 |
 
-The width here is only the **symmetric stable core**, not the complete window including asymmetric and doubled descendants. The full period increases by approximately 21.56, 21.58 and 21.59. Across the four members, the core narrows by about a factor of 127.
+The width here is that of the **stability interval of the symmetric cycle**, not the complete window including asymmetric and doubled descendants. The full period increases by approximately 21.56, 21.58 and 21.59. Across the four members, the stability interval narrows by about a factor of 127.
 
 At each member's beta we also continued the original five-maximum symmetric orbit, now unstable. The last column measures the minimum Euclidean distance in (y, z) on the upward x = 0 section to that unstable orbit's section point. Longer cycles pass progressively closer and make more returns before closing. The unstable parent's largest multiplier magnitude is approximately 3.17, 2.90, 2.79 and 2.74 at these parameters.
 

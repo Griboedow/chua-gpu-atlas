@@ -60,7 +60,7 @@ def main():
     ax.legend(loc='upper left',fontsize=8);ax.ticklabel_format(useOffset=False)
     ax=fig.add_subplot(gs[1,0]);seq=a['adding_sequence'];n=np.array([r['maxima'] for r in seq])
     ax.semilogy(n,[r['symmetric_core_width'] for r in seq],'o-',color=COLORS[0],label='Fold to symmetry breaking')
-    ax.set(xlabel='Maxima per full cycle',ylabel=r'Symmetric stable-core width in $\beta$',title='Four resolved members of a shrinking sequence',xticks=n)
+    ax.set(xlabel='Maxima per full cycle',ylabel=r'Symmetric-cycle stability width in $\beta$',title='Four resolved members of a shrinking sequence',xticks=n)
     ax.grid(alpha=.2);ax.legend(fontsize=8)
     for r in seq:ax.annotate(f"{r['symmetric_core_width']:.2e}",(r['maxima'],r['symmetric_core_width']),xytext=(5,5),textcoords='offset points',fontsize=8)
     ax=fig.add_subplot(gs[1,1])

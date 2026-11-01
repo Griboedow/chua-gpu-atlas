@@ -1,6 +1,6 @@
 # Reference periodic orbits in the family catalogue
 
-The figures compare one numerically checked reference orbit from each of 32 catalogued families. A family is defined by periodic-orbit continuation and ancestry, rather than by peak count or orbit outline alone.
+The figures compare one numerically checked reference orbit from each of 32 catalogued families. A family is defined by periodic-orbit continuation and recorded branch relationships, rather than by peak count or orbit outline alone.
 
 ## Orbit characteristics
 
@@ -9,7 +9,7 @@ The figures compare one numerically checked reference orbit from each of 32 cata
 - Time signals and ordered local maxima distinguish recurrence patterns. S08 and S11 both have five peaks, with periods of approximately 10.89 and 14.50.
 - Twenty-three representatives have half-period inversion symmetry and nine are asymmetric. Symmetry can change along descendant branches.
 
-Continuation, ancestry and parameter location distinguish families whose orbit outlines are visually similar.
+Continuation, branch relationships and parameter location distinguish families whose orbit outlines are visually similar.
 
 [Offline interactive comparison](../results/chua-layer-atlas/family-gallery.html): download and open the HTML in a browser. Select two families, rotate their 3D paths and compare signals. A phase slider shifts the second signal; the saved starting crossing need not be the same position within a repeated multi-loop pattern.
 

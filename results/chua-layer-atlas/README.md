@@ -1,6 +1,6 @@
 # Refined Chua layer atlas: evidence and reproduction
 
-Read the [research report](../../docs/chua-refined-atlas.md) for interpretation. The catalogue contains 32 numerically distinguished family identities, not a proven exhaustive number of periodic windows. All calculations use the continuous piecewise-linear model in this repository with m1 = -5/7.
+Read the [research report](../../docs/chua-refined-atlas.md) for interpretation. The catalogue contains 32 numerically distinguished reference entries, not a proven exhaustive number of periodic windows. All calculations use the continuous piecewise-linear model in this repository with m1 = -5/7.
 
 ## Main files
 
@@ -9,8 +9,8 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | `atlas.html` | Offline interactive atlas; download and open in a browser |
 | `family-gallery.html`, `family-portraits-*.pdf` | Offline two-family comparison and two overview portrait sheets; all 32 individual PNG cards are in `docs/assets/chua-families` |
 | `gallery-checks.json` | Checks on the plotted arrays: finite samples, period duration, expected peak counts and small endpoint gaps; not a new stability certificate |
-| [`readme-layer-view/`](readme-layer-view/README.md) | Denser 5,447-sample view of the same 32 families, 50 thin-core interior samples, numerical checks, retained P65 normalization attempt, and reproduction commands for the main-page animation and zoom |
-| `family-registry.json` | 32 normalized roots, identities, source candidates, and ancestry |
+| [`readme-layer-view/`](readme-layer-view/README.md) | Denser 5,447-sample view of the same 32 families, 50 interior samples in narrow stability intervals, numerical checks, retained P65 normalization attempt, and reproduction commands for the main-page animation and zoom |
+| `family-registry.json` | 32 normalized roots, catalogue labels, source candidates, and branch relationships |
 | `family-catalog.csv`, `family-behavior.json`, `family-orbits.npz` | Periods, maxima, symmetry, state statistics, contraction, sampled orbits |
 | `*-sheet.json` | Continued representatives and available fold/symmetry boundaries; missing samples stay explicit |
 | `display-samples.npz`, `plot-summary.json` | Arrays and counts used by the figures; a missing value does not mean no family exists |
@@ -19,7 +19,7 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | `interpolation-checks.json` | Fresh midpoint checks for S01–S11 and P55 only |
 | `extended-adding.json` | New 55- and 65-maximum cycles, boundaries, independent checks, failed and refined Radau trials |
 | `offcenter-raw.npz`, `offcenter-summary.json` | Compact four-transect GPU evidence; the large peak matrix is omitted |
-| `offcenter-candidates.json`, `offcenter-cycles.json`, `offcenter-ancestry.json` | Candidate selection, accepted and unresolved CPU checks, identity resolution |
+| `offcenter-candidates.json`, `offcenter-cycles.json`, `offcenter-ancestry.json` | Candidate selection, accepted and unresolved CPU checks, catalogue matching |
 | `off21-*.json` | Local parent recovery, small-step transport, and inversion-symmetry checks for the difficult E09 source |
 | `four-cycles.json`, `four-cycles.npz` | Four attracting cycles at exactly the same parameters |
 | `overlap-basins*`, `basin-capture*`, `basin-perturbations*`, `basin-transients*` | Initial-condition outcomes, step comparisons, capture and sensitivity diagnostics |
@@ -44,7 +44,7 @@ python research/audit_refined_chua_atlas.py --output D:/tmp/chua-atlas-recheck
 python research/plot_refined_chua_atlas.py --output D:/tmp/chua-atlas-recheck --assets D:/tmp/chua-atlas-figures
 ```
 
-The audit checks all saved sheet points using the original 4 by 4 matrix-exponential affine flow. It separately integrates the full state and variational equations for two in-box representatives per family. Gates are closure below 2e-8 for the original affine implementation; multiplier differences below 2e-5; sampled region violations below 1e-7; independent full-field closure below 2e-7; and independent attraction. Region sampling and ordinary floating-point solvers do not provide interval enclosures. Passing these gates does not establish exhaustive enumeration or global family identity.
+The audit checks all saved sheet points using the original 4 by 4 matrix-exponential affine flow. It separately integrates the full state and variational equations for two in-box representatives per family. Gates are closure below 2e-8 for the original affine implementation; multiplier differences below 2e-5; sampled region violations below 1e-7; independent full-field closure below 2e-7; and independent attraction. Region sampling and ordinary floating-point solvers do not provide interval enclosures. Passing these gates does not establish exhaustive enumeration or global equivalence of periodic-orbit families.
 
 ## Regenerate discovery and continuation
 
@@ -111,4 +111,4 @@ python research/plot_refined_chua_atlas.py --output D:/tmp/chua-atlas-publicatio
 
 The plotting script rebuilds the CSV, display arrays, three PNG/PDF scientific figures, and self-contained interactive HTML from the compact evidence. It uses the earlier original-atlas regular mask for comparison. Numeric results and wall-clock-limited coverage can differ slightly by platform; compare tolerances and branch identities, not binary file equality.
 
-Regenerate the separate per-family gallery with `python research/plot_chua_family_gallery.py`. This writes 32 PNG cards, two overview PNG/PDF sheets, the offline comparison HTML, display checks, and `docs/chua-family-gallery.md`. It reads the already published reference orbits; it does not rerun discovery or change family identities. All 32 sampled peak counts agree with the independent counts. The largest stored plotting-orbit endpoint gap is about 4.4e-6, below the plot scale; existence and attraction checks remain those in the earlier numerical audit.
+Regenerate the separate per-family gallery with `python research/plot_chua_family_gallery.py`. This writes 32 PNG cards, two overview PNG/PDF sheets, the offline comparison HTML, display checks, and `docs/chua-family-gallery.md`. It reads the already published reference orbits; it does not rerun discovery or change catalogue entries. All 32 sampled peak counts agree with the independent counts. The largest stored plotting-orbit endpoint gap is about 4.4e-6, below the plot scale; existence and attraction checks remain those in the earlier numerical audit.

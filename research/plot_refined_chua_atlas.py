@@ -1,4 +1,4 @@
-"""Render family-labelled continuation samples, thin cores, and overlap evidence."""
+"""Render family-labelled continuation samples, narrow stability intervals, and overlap evidence."""
 import argparse
 import colorsys
 import csv
@@ -77,7 +77,7 @@ def main():
                 x.append(None); y.append(None); z.append(None); custom.append([None,None])
         interactive.add_trace(go.Scatter3d(x=x, y=y, z=z, customdata=custom, mode='lines+markers', name=f'{id} | parent: {family["peak_count"]} maxima',
             line=dict(color=rgb,width=3), marker=dict(color=rgb,size=2.4), connectgaps=False,
-            hovertemplate=f'<b>{id}</b><br>alpha=%{{x:.5f}}<br>m0 offset x1000=%{{y:.3f}}<br>beta=%{{z:.11f}}<br>T=%{{customdata[0]:.6f}}<br>symmetric-core width=%{{customdata[1]:.3e}}<extra></extra>'))
+            hovertemplate=f'<b>{id}</b><br>alpha=%{{x:.5f}}<br>m0 offset x1000=%{{y:.3f}}<br>beta=%{{z:.11f}}<br>T=%{{customdata[0]:.6f}}<br>symmetric-cycle stability width=%{{customdata[1]:.3e}}<extra></extra>'))
     interactive.update_layout(height=850,
         margin=dict(l=20,r=20,t=55,b=85), scene=dict(xaxis_title='alpha',yaxis_title='1000 (m0 + 8/7)',zaxis_title='beta',
         xaxis=dict(range=[8.94,9.06]),yaxis=dict(range=[-6,6]),zaxis=dict(range=[14.24,14.4]),aspectmode='cube'),
@@ -93,7 +93,7 @@ Lines show mesh adjacency, not verified attraction at every interpolated point. 
 The atlas is clipped to alpha 8.94–9.06, beta 14.24–14.40 and m0 = −8/7 ± 0.006, with m1 = −5/7.</p>
 <p>This is a finite family catalogue, not an exhaustive count of windows or a proof of global connectedness.
 Missing samples remain unresolved. Symmetry partners and period-doubled descendants are grouped with their traced parent family.
-Hover shows the full period and, where continued, the width of the symmetric core.</p>''' + fragment + '</html>\n'
+Hover shows the full period and, where continued, the stability width of the symmetric cycle.</p>''' + fragment + '</html>\n'
     # The bundled Plotly shader sources contain incidental trailing spaces.
     html='\n'.join(line.rstrip() for line in html.splitlines())+'\n'
     (out/'atlas.html').write_text(html,encoding='utf-8',newline='\n')
@@ -107,7 +107,7 @@ Hover shows the full period and, where continued, the width of the symmetric cor
     axes[0].semilogy(peaks, corewidth, 'o-', color='#9653a2', lw=2)
     axes[0].axhline(.004,color='#b26030',ls='--',label='Old beta spacing: 0.004')
     for x,y in zip(peaks,corewidth): axes[0].annotate(f'{y:.2e}',(x,y),xytext=(0,-17),textcoords='offset points',ha='center',fontsize=9)
-    axes[0].set(xlabel='Maxima per full cycle',ylabel='Fold-to-symmetry width in beta',xlim=(10,70),ylim=(1e-8,1e-2),title='Six shrinking symmetric cores');axes[0].legend(fontsize=9);axes[0].grid(alpha=.15)
+    axes[0].set(xlabel='Maxima per full cycle',ylabel='Fold-to-symmetry width in beta',xlim=(10,70),ylim=(1e-8,1e-2),title='Six shrinking stability intervals');axes[0].legend(fontsize=9);axes[0].grid(alpha=.15)
     axes[1].plot(peaks,duration,'o-',color='#197b89',lw=2)
     axes[1].set(xlabel='Maxima per full cycle',ylabel='Full period',title='Approximately 21.6 extra time units per member');axes[1].grid(alpha=.15)
     fig.suptitle('15 → 25 → 35 → 45 → 55 → 65',fontsize=17)

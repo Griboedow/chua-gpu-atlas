@@ -12,11 +12,11 @@ This conclusion combines an **executable interval certificate of a quadratic hom
 
 ![Measured windows and the interval conditions establishing an infinite cascade](assets/chua-infinity-overview.png)
 
-The result concerns distinct attracting windows at different parameter values. It does not give the number of attractors at β∗, an exhaustive classification of the atlas, or a count of globally disconnected surfaces. The **34 reference identities** in the finite catalogue remain a record of explicitly computed motions. Hyperbolic attracting cycles persist under small changes of the other parameters, so the windows have local extensions in parameter space; their complete connections have not been mapped.
+The result concerns distinct attracting windows at different parameter values. It does not give the number of attractors at β∗, an exhaustive classification of the atlas, or a count of globally disconnected surfaces. The **34 reference entries** in the finite catalogue remain a record of explicitly computed motions. Hyperbolic attracting cycles persist under small changes of the other parameters, so the windows have local extensions in parameter space; their complete connections have not been mapped.
 
 ## Relation to the numerical predictions
 
-The [prediction study](chua-layer-prediction.md) published forecasts before searching for the 75- and 85-peak cycles. Their measured widths differed from the forecasts by 1.89% and 2.70%. The 85-peak location forecast missed its core; that miss and the original forecasts remain unchanged.
+The [prediction study](chua-layer-prediction.md) published forecasts before searching for the 75- and 85-peak cycles. Their measured widths differed from the forecasts by 1.89% and 2.70%. The 85-peak location forecast missed its stability interval; that miss and the original forecasts remain unchanged.
 
 Those calculations suggested a manifold tangency but only propagated tangent lines. The present calculation encloses the **exact local stable and unstable manifolds**, including their possible curvature and parameter dependence. Existence follows from the interval inclusions and graph bounds; agreement between high-precision approximations supplies an implementation control.
 
@@ -26,9 +26,9 @@ Those calculations suggested a manifold tangency but only propagated tangent lin
 | Exact quadratic homoclinic tangency in the stated β interval | Interval inclusions, graph transforms and sign inequalities below |
 | Infinitely many attracting windows accumulating there | The sink-cascade theorem applied to the certified hypotheses |
 | Every sufficiently long window has exactly the proposed 10n+5 peak label | Not established by this certificate |
-| All visible families have this same organizer | Not established |
+| All visible families accumulate at this same homoclinic tangency | Not established |
 
-The previously fitted limit was 14.30635910320525. Its difference from the certified interval is about 3.24 × 10⁻⁹, already larger than the 85-peak core. The interval calculation refines the accumulation parameter. The earlier fitted value is retained in the prediction record.
+The previously fitted limit was 14.30635910320525. Its difference from the certified interval is about 3.24 × 10⁻⁹, already larger than the 85-peak stability interval. The interval calculation refines the accumulation parameter. The earlier fitted value is retained in the prediction record.
 
 ## 1. Model and return map
 

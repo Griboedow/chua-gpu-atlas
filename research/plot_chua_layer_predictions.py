@@ -31,12 +31,12 @@ def forecasts(data):
     for i,r in enumerate(data['comparison']):
         ax=fig.add_subplot(gs[i,0]);left,right=r['predicted_interval_in_measured_width_units']
         ax.barh(.68,right-left,left=left,height=.19,color=BLUE,alpha=.8,label='Frozen forecast')
-        ax.barh(.29,1,left=-1,height=.19,color=ORANGE,label='Measured stable core')
+        ax.barh(.29,1,left=-1,height=.19,color=ORANGE,label='Measured stability interval')
         ax.axvline(0,color=INK,lw=.8,ls=':');ax.set(xlim=(-1.5,4.1),ylim=(0,1),yticks=[.29,.68],yticklabels=['Found','Forecast'])
         ax.set_title(f'{r["peaks"]} peaks per complete cycle',loc='left',fontsize=15)
-        ax.set_xlabel('Position relative to the measured fold / measured core width')
+        ax.set_xlabel('Displacement from measured fold / measured stability width')
         ax.grid(axis='x');ax.spines['left'].set_visible(False);ax.tick_params(axis='y',length=0)
-        note='Forecast overlaps the core' if r['predicted_midpoint_inside_measured_core'] else 'Forecast misses the core; correction finds it'
+        note='Forecast overlaps the stability interval' if r['predicted_midpoint_inside_measured_core'] else 'Forecast misses the interval; correction locates it'
         ax.text(.02,.96,note,transform=ax.transAxes,va='top',fontsize=10,color=TEAL if i==0 else ORANGE)
         ax=fig.add_subplot(gs[i,1]);ax.axis('off')
         txt=(f'WIDTH\nPredicted   {r["predicted_width"]:.4e}\nMeasured  {float(r["measured_width"]):.4e}\n'
@@ -48,7 +48,7 @@ def forecasts(data):
     ax=fig.add_subplot(gs[2,:]);ax.axis('off')
     ax.text(.02,.84,'Forecast locked in Git: 0fc47ea   |   Calibration: the previously known 15–65-peak layers',weight='bold',fontsize=12)
     ax.text(.02,.43,'Search: prescribed itinerary + orbit closing, followed by 55/75-digit comparison and independent full-field integrations.',fontsize=10)
-    ax.text(.02,.05,'The blue intervals are point forecasts, not confidence bands. Their engineering location gate was wider than either new core.',fontsize=10,color=GRAY)
+    ax.text(.02,.05,'The blue intervals are point forecasts, not confidence bands. The location tolerance exceeded either measured stability width.',fontsize=10,color=GRAY)
     save(fig,'chua-layer-prediction-proof')
 
 
@@ -58,9 +58,9 @@ def scaling(data):
     fig.suptitle('One short saddle cycle predicts three scales of the hierarchy',fontsize=19,weight='bold')
     ax=axes[0,0];ax.semilogy(n[:6],w[:6],'o-',color=GRAY,label='Known before forecast');ax.semilogy(n[6:],w[6:],'o',color=ORANGE,ms=8,label='Newly closed cycles')
     pred=[r['predicted_width'] for r in data['comparison']];ax.semilogy([7,8],pred,'x',ms=10,mew=2,color=BLUE,label='Frozen width forecasts')
-    ax.set(title='A | Symmetric cores keep shrinking',xlabel='Sequence index n  (peaks = 10n + 5)',ylabel='Width in beta');ax.legend(fontsize=9);ax.grid()
+    ax.set(title='A | Symmetric stability intervals shrink',xlabel='Sequence index n  (peaks = 10n + 5)',ylabel='Width in beta');ax.legend(fontsize=9);ax.grid()
     ax=axes[0,1];ax.plot(n[2:],[r['spacing_ratio'] for r in rows[2:]],'o-',color=BLUE,label='Successive fold-spacing ratio')
-    ax.plot(n[1:],[r['width_ratio'] for r in rows[1:]],'s-',color=ORANGE,label='Successive core-width ratio')
+    ax.plot(n[1:],[r['width_ratio'] for r in rows[1:]],'s-',color=ORANGE,label='Successive stability-width ratio')
     ax.axhline(data['expected_spacing_ratio'],color=BLUE,ls='--',label=f'1 / Lambda = {data["expected_spacing_ratio"]:.4f}')
     ax.axhline(data['expected_width_ratio'],color=ORANGE,ls='--',label=f'1 / Lambda² = {data["expected_width_ratio"]:.4f}')
     ax.set(title='B | Position and width have different scales',xlabel='Sequence index n',ylabel='Ratio to the previous member',ylim=(.10,.47));ax.legend(fontsize=9);ax.grid()
@@ -70,7 +70,7 @@ def scaling(data):
     ax=axes[1,1];coord=np.array([r['quadratic_core_coordinate'] for r in rows]);ax.semilogy(n,abs(coord-1/16),'o-',color=TEAL)
     ax.set(title='D | An extra check of the quadratic return shape',xlabel='Sequence index n',ylabel='Error from predicted normalized position 1/16');ax.grid()
     for ax in axes.flat:ax.xaxis.set_major_locator(MaxNLocator(integer=True))
-    fig.supxlabel('The quadratic-return mechanism is supported numerically. Its global tangency and an infinite hierarchy are not proved.',fontsize=10,color=GRAY)
+    fig.supxlabel('These numerical scaling tests preceded the separate interval certificate for the homoclinic tangency and infinite cascade.',fontsize=10,color=GRAY)
     save(fig,'chua-layer-prediction-scales')
 
 
@@ -78,7 +78,7 @@ def descriptions():
     orbits=np.load(ROOT/'results/chua-layer-atlas/family-orbits.npz')
     records=json.loads((OUT/'motion-descriptions.json').read_text())['families']
     fig,axes=plt.subplots(3,2,figsize=(13,9),width_ratios=[1,2.4],layout='constrained')
-    fig.suptitle('The same region route can carry different rhythms',fontsize=20,weight='bold')
+    fig.suptitle('Equal region itineraries can have different periods',fontsize=20,weight='bold')
     for i,id in enumerate(['S08','S11','E05']):
         r=next(r for r in records if r['id']==id);u=orbits[id+'_xyz'];t=orbits[id+'_t']
         ax=axes[i,0];ax.plot(u[:,0],u[:,2],color=INK,lw=1);ax.set(xlim=(-2.5,2.5),ylim=(-3.3,3.3),xlabel='x',ylabel='z',aspect='equal')
@@ -118,7 +118,7 @@ def main():
 def organizer(data):
     report=json.loads((OUT/'organizer-approximants.json').read_text())
     fig,axes=plt.subplots(1,2,figsize=(13,5.5),layout='constrained')
-    fig.suptitle('A candidate mechanism: linger near a saddle, leave, and return',fontsize=18,weight='bold')
+    fig.suptitle('Finite-iterate homoclinic-tangency estimates',fontsize=18,weight='bold')
     ax=axes[0];a=report['records'][0]['starting_coordinate']
     for curve,color in zip(report['curves'],[BLUE,INK,ORANGE]):
         # Magnify the vicinity where the moving parabola meets the stable line.

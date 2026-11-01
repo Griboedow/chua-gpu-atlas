@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Periodic-orbit continuation identifies 32 families intersecting the original three-parameter atlas box. Nineteen have representatives on the central transect; thirteen enter the box away from that transect. The calculation resolves a period-adding sequence through 65 maxima per full cycle and independently checks four coexisting attracting cycles at one parameter point. Family identities are assigned by the normalization and ancestry convention stated below. They do not provide an exhaustive count or a classification of global connected components.
+Periodic-orbit continuation identifies 32 families intersecting the original three-parameter atlas box. Nineteen have representatives on the central transect; thirteen enter the box away from that transect. The calculation resolves a period-adding sequence through 65 maxima per full cycle and independently checks four coexisting attracting cycles at one parameter point. Catalogue entries are assigned by the normalization and branch-matching convention stated below. They do not provide an exhaustive count or a classification of global connected components.
 
 The grids and animations in this report describe the 32-family dataset. The [prediction study](chua-layer-prediction.md) adds 75- and 85-peak reference cycles, bringing the [registry](../results/chua-layer-prediction/extended-family-registry.json) to 34 identities without meshing the additions. The [interval certificate](chua-infinity-certificate.md) addresses an infinite sequence of attracting windows on the classical transect.
 
@@ -20,9 +20,9 @@ The left panel shows a single family's representative surface; the right panel s
 
 ![Dense family slice and magnified physical widths](assets/chua-readme-layer-zoom.png)
 
-The lower-right panels therefore use the actual beta widths of P55 and P65 on the central transect. Each contains **25 newly closed attracting cycles**, spaced by approximately **8.97e-9** and **1.27e-9** in beta, respectively. These are interior samples from 2% to 98% of the previously estimated symmetric-core interval. Open circles show the boundary estimates, not newly sampled attracting cycles. The upper-right rows separate the six families categorically while retaining a shared physical beta axis.
+The lower-right panels therefore use the actual beta widths of P55 and P65 on the central transect. Each contains **25 newly closed attracting cycles**, spaced by approximately **8.97e-9** and **1.27e-9** in beta, respectively. These are interior samples from 2% to 98% of the previously estimated stability interval of the symmetric cycle. Open circles show the boundary estimates, not newly sampled attracting cycles. The upper-right rows separate the six families categorically while retaining a shared physical beta axis.
 
-Every new view sample is checked with the original matrix-exponential flow; ten new sheet points and the midpoint of each thin-core profile also receive independent full-field variational checks. The final sample set passes the closure, multiplier and attraction gates. For P65, the surface retains the earlier negative half-return multiplier, approximately -0.48333. An initial attempt to move the display representatives to +0.5 left 35 unresolved points and is retained as a numerical limitation, not an absent layer. Its normalized +0.5 catalogue identity is unchanged. [The view data, checks, and reproduction commands](../results/chua-layer-atlas/readme-layer-view/README.md) are separate from the original 9 by 9 atlas grids.
+Every new view sample is checked with the original matrix-exponential flow; ten new sheet points and the midpoint of each narrow-interval profile also receive independent full-field variational checks. The final sample set passes the closure, multiplier and attraction gates. For P65, the surface retains the earlier negative half-return multiplier, approximately -0.48333. An initial attempt to move the display representatives to +0.5 left 35 unresolved points and is retained as a numerical limitation, not an absent layer. Its normalized +0.5 catalogue identity is unchanged. [The view data, checks, and reproduction commands](../results/chua-layer-atlas/readme-layer-view/README.md) are separate from the original 9 by 9 atlas grids.
 
 ## Parameter domain and identity convention
 
@@ -42,7 +42,7 @@ m1    = -5/7
 
 A family label groups a periodic branch with the symmetry partners and period-doubled descendants that we have explicitly traced back to it. It is different from a connected component of colored grid nodes, a number of maxima, or a count of attractors at one parameter point.
 
-To compare identities, roots are transported to alpha = 9, m0 = -8/7. Symmetric roots are normalized to half-return multiplier +0.5; asymmetric roots to full-return multiplier -0.5. After tracing ancestry, roots are merged when their symmetry class agrees, beta differs by less than 1e-7, and full period differs by less than 1e-5. The smallest separations in the final catalogue are larger than these merge tolerances. This is a numerical identity convention, not a theorem about global connectivity.
+To match catalogue entries, roots are continued to alpha = 9, m0 = -8/7. Symmetric roots are normalized to half-return multiplier +0.5; asymmetric roots to full-return multiplier -0.5. After tracing parent and descendant branches, roots are merged when their symmetry class agrees, beta differs by less than 1e-7, and full period differs by less than 1e-5. The smallest separations in the final catalogue are larger than these merge tolerances. This is a numerical catalogue-matching convention, not a theorem about global connectivity.
 
 | Catalogue group | Families | Meaning |
 |---|---:|---|
@@ -54,17 +54,17 @@ To compare identities, roots are transported to alpha = 9, m0 = -8/7. Symmetric 
 
 The 13 E-family reference roots lie outside beta = 14.24–14.40, but continued attracting representatives lie inside the original three-dimensional box. A single central transect therefore misses them even with an arbitrarily fine beta mesh.
 
-A separate [m0-m1 plane study](chua-slope-plane.md) varies both diode slopes at fixed alpha = 9 and beta = 100/7. It shows curved regular bands and a local magnification, with five- and seven-peak examples checked independently. This is a different parameter section; its bands have not all been matched to the 32 identities counted here.
+A separate [m0-m1 plane study](chua-slope-plane.md) varies both diode slopes at fixed alpha = 9 and beta = 100/7. It shows curved regular bands and a local magnification, with five- and seven-peak examples checked independently. This is a different parameter section; its bands have not all been matched to the 32 entries counted here.
 
-Ancestry also prevents overcounting. The earlier 30-maximum example in A03 is a doubled descendant of a 15-maximum parent; the 60-maximum example in A05 descends from a 30-maximum parent. Off-center examples with 16 and 8 maxima lead back to the same four-maximum E06 family. Positive and negative inversion partners are counted as two attractors when both coexist, but as one family in this catalogue.
+Tracing branch relationships also prevents overcounting. The earlier 30-maximum example in A03 is a doubled descendant of a 15-maximum parent; the 60-maximum example in A05 descends from a 30-maximum parent. Off-center examples with 16 and 8 maxima lead back to the same four-maximum E06 family. Positive and negative inversion partners are counted as two attractors when both coexist, but as one family in this catalogue.
 
-The [registry](../results/chua-layer-atlas/family-registry.json), [ancestry records](../results/chua-layer-atlas/offcenter-ancestry.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual identities and parameters.
+The [registry](../results/chua-layer-atlas/family-registry.json), [branch-relationship records](../results/chua-layer-atlas/offcenter-ancestry.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual catalogue labels and parameters.
 
 ## Stability widths below the original grid resolution
 
-The old 41-point beta axis has spacing **0.004**. The new 65-maximum member has a symmetric stable core only **3.1759e-8** wide on the central transect: about **126,000 times narrower** than that spacing.
+The old 41-point beta axis has spacing **0.004**. The new 65-maximum member has a symmetric cycle stable over an interval only **3.1759e-8** wide on the central transect: about **126,000 times narrower** than that spacing.
 
-![Six shrinking cores and their periods](assets/chua-refined-adding.png)
+![Six shrinking stability intervals and their periods](assets/chua-refined-adding.png)
 
 | Maxima per full cycle | Upward section returns | Example full period | Width from fold to symmetry breaking |
 |---:|---:|---:|---:|
@@ -75,9 +75,9 @@ The old 41-point beta axis has spacing **0.004**. The new 65-maximum member has 
 | 55 | 11 | 118.934625 | 2.2413232e-7 |
 | 65 | 13 | 140.529172 | 3.1759077e-8 |
 
-The 55- and 65-maximum folds are at beta approximately 14.306295580122 and 14.306335389782. These are rounded numerical estimates, not certified intervals. The width describes the symmetric core only; asymmetric and doubled descendants can extend the full regular window.
+The 55- and 65-maximum folds are at beta approximately 14.306295580122 and 14.306335389782. These are rounded numerical estimates, not certified intervals. The width describes the stability interval of the symmetric cycle only; asymmetric and doubled descendants can extend the full regular window.
 
-The full period increases by approximately 21.6 each time, while the core shrinks by a factor of about 6,018 from the first to the sixth member. The construction inserts another near-parent return into a half-period itinerary and then solves the closing and stability equations. Independent full-field integration verifies the resulting attracting cycle. The 65-maximum Radau check initially failed the 2e-7 closure gate; tighter tolerances and a smaller maximum step reduced the error from 2.32e-7 to 3.03e-9. Both trials are retained.
+The full period increases by approximately 21.6 each time, while the stability interval shrinks by a factor of about 6,018 from the first to the sixth member. The construction inserts another near-parent return into a half-period itinerary and then solves the closing and stability equations. Independent full-field integration verifies the resulting attracting cycle. The 65-maximum Radau check initially failed the 2e-7 closure gate; tighter tolerances and a smaller maximum step reduced the error from 2.32e-7 to 3.03e-9. Both trials are retained.
 
 Six members support a continuing period-adding hierarchy. They do not establish an exact limiting beta, an infinite number of attracting windows, or the absence of other families between them. Resolving this beta scale by a uniform three-dimensional grid would require substantially more parameter samples than the continuation used here.
 
@@ -166,11 +166,11 @@ For a dominant transverse multiplier magnitude rho, -T/log(rho) gives an asympto
 
 ## Numerical evidence and remaining limits
 
-The off-center search uses four m0 offsets (-0.006, -0.003, +0.003, +0.006), alpha = 9, 10,241 beta nodes per slice, three starts, RK4 step 0.00125, a 2,000-unit transient and 2,400-unit observation. Late peaks select candidates. Nearby screen fragments are coalesced before selection; 23 of 24 selected candidates pass independent cycle checks. The unresolved candidate is retained. Several accepted candidates have the same parent, giving 13 additional family identities after ancestry and transport.
+The off-center search uses four m0 offsets (-0.006, -0.003, +0.003, +0.006), alpha = 9, 10,241 beta nodes per slice, three starts, RK4 step 0.00125, a 2,000-unit transient and 2,400-unit observation. Late peaks select candidates. Nearby screen fragments are coalesced before selection; 23 of 24 selected candidates pass independent cycle checks. The unresolved candidate is retained. Several accepted candidates have the same parent, giving 13 additional catalogue entries after tracing branch relationships and continuing to the reference section.
 
 The original refined atlas contains 2,587 representative samples: 31 complete 9 by 9 (alpha, m0) grids and 76 of 81 E13 points. Of these representatives, 1,125 lie inside the original beta box. Twelve families also have fold and symmetry boundaries on their grids: S01–S11 and P55. All saved final sheet samples are checked against the original matrix-exponential implementation. Two in-box representatives per family receive independent full-field variational integration. The [audit](../results/chua-layer-atlas/atlas-audit.json) records every gate, maximum discrepancy, and incomplete grid; it does not treat missing points as absent branches. The newer 5,447-sample README view has its own [audit](../results/chua-layer-atlas/readme-layer-view/audit.json); these totals overlap and must not be added as distinct samples.
 
-For the twelve bounded sheets, fresh midpoint solves compare cubic interpolation with exact continuation. Maximum beta errors are of order 1e-9–1e-8; the largest error relative to the symmetric-core width is about 3.03%, for P55. This check does not justify interpolating P65's extremely thin stable interval or smoothing the strongly bending E09 patch. Displayed straight segments are visual guides only.
+For the twelve bounded sheets, fresh midpoint solves compare cubic interpolation with exact continuation. Maximum beta errors are of order 1e-9–1e-8; the largest error relative to the symmetric-cycle stability width is about 3.03%, for P55. This check does not justify interpolating P65's extremely thin stable interval or smoothing the strongly bending E09 patch. Displayed straight segments are visual guides only.
 
 The audit is numerical, not an interval proof. Sampling can still miss thinner windows and inaccessible basins. The catalogue does not bound all possible periods, close all global continuations, or establish an exact finite or infinite total. The dataset supplies labelled branches, stability checks and coexistence examples at scales unresolved by the original grid.
 

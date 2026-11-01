@@ -1,7 +1,7 @@
 """Make 32 individual orbit cards and an offline two-family visual comparison.
 
 Uses the published reference orbits without rerunning discovery or changing
-family identities. The time series and peak order distinguish nearly identical
+catalogue entries. The time series and peak order distinguish nearly identical
 projected outlines. Every card uses the same state-coordinate scales.
 """
 import argparse
@@ -88,13 +88,13 @@ def main():
         source_sha256={name:hashlib.sha256((out/name).read_bytes()).hexdigest() for name in ['family-behavior.json','family-orbits.npz']})
     (out/'gallery-checks.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
     lines=['# Individual Chua family portraits','',
-        'These 32 cards compare one verified reference representative from each catalogued family. A family is a continued periodic-window branch, not simply a peak count or a visually unique outline.',
+        'The figures compare one numerically checked reference orbit from each of 32 catalogued families. A family is defined by periodic-orbit continuation and recorded branch relationships, rather than by peak count or orbit outline alone.',
         '', '## How to read the differences','',
         '- **Where it moves:** E06 stays near one outer scroll; the other reference representatives visit both outer regions.',
         '- **How long until it repeats:** the full period T ranges from about 9.57 to 140.53. A longer cycle can retrace almost the same visible loops many times.',
         '- **What repeats:** the full signal and the ordered heights of its local maxima reveal patterns hidden by the orbit outline. Two five-peak families, S08 and S11, have different geometry and periods of about 10.89 and 14.50.',
         '- **Whether the halves mirror:** for a symmetric representative, the second half equals the first with all state coordinates reversed. Twenty-three reference representatives have this property; nine are asymmetric. Symmetry can change along a family\'s descendant branches.',
-        '', '**The 32 families do not mean 32 radically different shapes.** Some are close relatives with almost indistinguishable outlines. Their identity also uses continuation, parentage and parameter location, not image recognition.',
+        '', 'Continuation, branch relationships and parameter location distinguish families whose orbit outlines are visually similar.',
         '', '[Offline interactive comparison](../results/chua-layer-atlas/family-gallery.html): download and open the HTML in a browser. Select two families, rotate their 3D paths and compare signals. A phase slider shifts the second signal; the saved starting crossing need not be the same position within a repeated multi-loop pattern.',
         '', 'The interactive time axis is the fraction of a full cycle, so equal panel width does not mean equal physical period. The peak-order panel uses the saved starting phase and does not shift with the signal slider. The orange/blue on the static cards mark cycle halves; in the interactive comparison they identify the selected families.',
         '', 'All cards fix alpha = 9, m0 = -8/7, m1 = -5/7 and use the family-specific reference beta shown. The E-family reference roots can lie outside the original beta box; their continued families enter that box elsewhere. These are comparisons at different parameters, not a claim of 32 simultaneous attractors. Asymmetric cards show one partner. The normalized transverse multiplier is chosen by convention, so this gallery does not rank stability or basin size.',
