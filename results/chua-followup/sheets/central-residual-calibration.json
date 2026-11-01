@@ -583,5 +583,5 @@
       ]
     }
   },
-  "scope": "Both central nodes calibrate a constant fold-residual correction. Only the other 16 nodes test cross-parameter transport. The uncorrected forecasts remain separately scored."
+  "scope": "Both central nodes calibrate a constant fold-residual correction. Only the other 16 nodes test prediction at other parameter values. The uncorrected forecasts remain separately scored."
 }

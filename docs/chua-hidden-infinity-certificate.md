@@ -159,7 +159,7 @@ This ellipsoid lies strictly inside x > 1. Its quadratic energy decreases, and t
 | Origin | 2.53 × 10⁻⁷ | Origin or one of the two outer equilibria |
 | Either outer equilibrium | 0.00322 | That equilibrium |
 
-Thus these three open balls are disjoint from the basin of every attracting periodic orbit. This is a neighborhood statement about all points, not an unstable-eigenvector sampling test. It is the hidden-attractor definition needed for the theorem. The certificates repeat at 80 and 100 digits and retain the rational R, its positive principal minors, the spectral enclosures and every path check. The legacy JSON key for R is `outer_lyapunov.P`; it does not denote the return map Pβ.
+Thus these three open balls are disjoint from the basin of every attracting periodic orbit. This is a neighborhood statement about all points, not an unstable-eigenvector sampling test. It is the hidden-attractor definition needed for the theorem. The certificates repeat at 80 and 100 digits and retain the rational R, its positive principal minors, the spectral enclosures and every path check. The JSON field storing R is `outer_lyapunov.P`; it does not denote the return map Pβ.
 
 **Boundedness of the model.** The same matrix also gives a global forward-boundedness check, separately from dissipativity of the return saddle. Write the complete field as
 

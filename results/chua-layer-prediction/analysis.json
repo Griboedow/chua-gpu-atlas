@@ -8,7 +8,7 @@
       "width": 0.0001911107804417611,
       "fold_period": 32.60123475646037,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.06776095858113967,
+      "normalized_representative_coordinate": 0.06776095858113967,
       "motion": {
         "times": [
           0.0,
@@ -58,7 +58,7 @@
       "width": 4.872397247268623e-05,
       "fold_period": 54.16330670712213,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.06331384925659508,
+      "normalized_representative_coordinate": 0.06331384925659508,
       "motion": {
         "times": [
           0.0,
@@ -126,7 +126,7 @@
       "width": 9.242098967021661e-06,
       "fold_period": 75.7481905924875,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.062469918167370735,
+      "normalized_representative_coordinate": 0.062469918167370735,
       "motion": {
         "times": [
           0.0,
@@ -217,7 +217,7 @@
       "width": 1.5063202685183796e-06,
       "fold_period": 97.34026404041992,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.06240418461256163,
+      "normalized_representative_coordinate": 0.06240418461256163,
       "motion": {
         "times": [
           0.0,
@@ -334,7 +334,7 @@
       "width": 2.2413232159124163e-07,
       "fold_period": 118.93442552846786,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.062446796234571465,
+      "normalized_representative_coordinate": 0.062446796234571465,
       "motion": {
         "times": [
           0.0,
@@ -477,7 +477,7 @@
       "width": 3.1759077145920855e-08,
       "fold_period": 140.52909744264215,
       "stage": "known_before_forecast",
-      "quadratic_core_coordinate": 0.062477504745712106,
+      "normalized_representative_coordinate": 0.062477504745712106,
       "motion": {
         "times": [
           0.0,
@@ -646,7 +646,7 @@
       "width": 4.39491657886843e-09,
       "fold_period": 162.12384971533467,
       "stage": "new_target",
-      "quadratic_core_coordinate": 0.06249115834924155,
+      "normalized_representative_coordinate": 0.06249115834924155,
       "motion": {
         "times": [
           0.0,
@@ -841,7 +841,7 @@
       "width": 6.017023580698134e-10,
       "fold_period": 183.71859012518289,
       "stage": "new_target",
-      "quadratic_core_coordinate": 0.06249666158038568,
+      "normalized_representative_coordinate": 0.06249666158038568,
       "motion": {
         "times": [
           0.0,
@@ -1068,8 +1068,8 @@
         -0.755001198828408,
         0.22647460671893974
       ],
-      "interval_overlap_fraction_of_measured_core": 0.755001198828408,
-      "predicted_midpoint_inside_measured_core": true,
+      "interval_overlap_fraction": 0.755001198828408,
+      "predicted_midpoint_inside_measured_interval": true,
       "predicted_period": 162.1237922924807,
       "measured_period": 162.12384971533467,
       "period_absolute_error": 5.742285398468994e-05,
@@ -1087,8 +1087,8 @@
         2.5277344151197134,
         3.501402378849793
       ],
-      "interval_overlap_fraction_of_measured_core": 0.0,
-      "predicted_midpoint_inside_measured_core": false,
+      "interval_overlap_fraction": 0.0,
+      "predicted_midpoint_inside_measured_interval": false,
       "predicted_period": 183.71848714231925,
       "measured_period": 183.71859012518289,
       "period_absolute_error": 0.00010298286363763509,

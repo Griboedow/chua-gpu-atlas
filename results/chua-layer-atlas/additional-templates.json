@@ -2,7 +2,7 @@
   {
     "id": "E01",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.141376390886672,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -102,7 +102,7 @@
   {
     "id": "E02",
     "symmetric": false,
-    "core": {
+    "representative": {
       "beta": 14.181578793206837,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -223,7 +223,7 @@
   {
     "id": "E03",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.202784958928396,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -332,7 +332,7 @@
   {
     "id": "E04",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.203256816468654,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -468,7 +468,7 @@
   {
     "id": "E05",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.21009138611556,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -553,7 +553,7 @@
   {
     "id": "E06",
     "symmetric": false,
-    "core": {
+    "representative": {
       "beta": 14.227785194541568,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -678,7 +678,7 @@
   {
     "id": "E07",
     "symmetric": false,
-    "core": {
+    "representative": {
       "beta": 14.229173311188285,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -787,7 +787,7 @@
   {
     "id": "E08",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.402288419796117,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -897,7 +897,7 @@
   {
     "id": "E09",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.427559629520497,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -996,7 +996,7 @@
   {
     "id": "E10",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.430120989142058,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -1100,7 +1100,7 @@
   {
     "id": "E11",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.472373585586078,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -1200,7 +1200,7 @@
   {
     "id": "E12",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.483456372191808,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -1293,7 +1293,7 @@
   {
     "id": "E13",
     "symmetric": true,
-    "core": {
+    "representative": {
       "beta": 14.513283835719049,
       "alpha": 9.0,
       "m0": -1.1428571428571428,

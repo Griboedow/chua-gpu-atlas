@@ -164,7 +164,7 @@ python run.py all --grid 21 --transient 100 --duration 200 --output outputs/quic
 |---|---|
 | Interval proof, positive and negative controls | [Certificate files](results/chua-layer-infinity/README.md) |
 | Published forecasts and 75/85-peak checks | [Prediction files](results/chua-layer-prediction/README.md) |
-| Family meshes, ancestry and sample audits | [Atlas report](docs/chua-refined-atlas.md) |
+| Family meshes, branch relationships and sample audits | [Atlas report](docs/chua-refined-atlas.md) |
 | Symmetry and coexistence | [Overlap files](results/chua-overlap-geometry/README.md) |
 | Wider chaos surveys and large-α scaling | [Research guide](docs/research-guide.md#broader-surveys-and-scaling) |
 | Large historical arrays and offline reports | [Release v1.1.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0) |

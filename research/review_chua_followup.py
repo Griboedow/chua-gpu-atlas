@@ -164,7 +164,8 @@ def predictions():
     calibration_count=0
     frozen_path=OUT/"sheets/forecasts-frozen.json"
     original=subprocess.check_output(["git","show","112b01f:results/chua-followup/sheets/forecasts-frozen.json"],cwd=ROOT)
-    require(original.replace(b"\r\n",b"\n") == frozen_path.read_bytes().replace(b"\r\n",b"\n"),
+    from publication_schema import current_names
+    require(current_names(original.decode('utf-8')).replace("\r\n","\n") == frozen_path.read_text(encoding="utf-8"),
             "published forecast provenance")
     frozen={r["node"]:r for r in read("sheets/forecasts-frozen.json")["records"]}
     seen=set()
@@ -176,25 +177,25 @@ def predictions():
         expected={r["peaks"]:r for r in frozen[data["node"]]["forecasts"]}
         require(sorted(r["peaks"] for r in data["records"]) == sorted(expected), "target family identity")
         for r in data["records"]:
-            fold,sym,core = (Decimal(r[k]["coordinate"]) for k in ["fold","symmetry","core"])
+            fold,sym,representative = (Decimal(r[k]["coordinate"]) for k in ["fold","symmetry","representative"])
             low,high = min(fold,sym),max(fold,sym)
             width=high-low
-            require(width > 0 and low < core < high, "interior cycle location")
+            require(width > 0 and low < representative < high, "interior cycle location")
             require(abs((fold-sym)-Decimal(r["signed_width"])) < Decimal("1e-35"), "stored window width")
-            tr,det = (Decimal(r["core"][k]) for k in ["trace","determinant"])
-            require(1-tr+det > 0 and 1+tr+det > 0 and 1-det > 0, "numerical core stability")
+            tr,det = (Decimal(r["representative"][k]) for k in ["trace","determinant"])
+            require(1-tr+det > 0 and 1+tr+det > 0 and 1-det > 0, "numerical representative stability")
             f=r["forecast"]
             require(f == expected[r["peaks"]], "forecast changed inside a search record")
             raw=low < Decimal(f["midpoint"]) < high
-            corrected=low < Decimal(f["transport_midpoint"]) < high
-            require(raw == r["midpoint_inside"] and corrected == r["transport_midpoint_inside"], "stored midpoint score")
+            corrected=low < Decimal(f["corrected_midpoint"]) < high
+            require(raw == r["midpoint_inside"] and corrected == r["corrected_midpoint_inside"], "stored midpoint score")
             central=frozen[data["node"]]["index"] == [0,0]
             require(central == data["node"].endswith("_11"), "central calibration identity")
             if central:
                 calibration_count+=1
             else:
                 rows.append(dict(raw=raw,corrected=corrected,
-                    fold_error=abs(Decimal(f["transport_fold"])-fold)/width,
+                    fold_error=abs(Decimal(f["corrected_fold"])-fold)/width,
                     width_error=abs(abs(Decimal(f["signed_width"]))/width-1)))
     require(len(rows)==48 and calibration_count==6 and seen == set(frozen), "held-out denominator")
     require(sum(r["raw"] for r in rows)==32 and sum(r["corrected"] for r in rows)==48,

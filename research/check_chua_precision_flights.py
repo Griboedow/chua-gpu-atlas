@@ -12,20 +12,20 @@ def main():
     rows=json.loads((ROOT/'results/chua-layer-atlas/family-registry.json').read_text())['families']
     result=[]
     for name in ['S08','S04']:
-        row=next(r for r in rows if r['id']==name);core=row['core']
+        row=next(r for r in rows if r['id']==name);representative=row['representative']
         f=PrecisionFlights(row['regions'],row['targets'],True,55)
-        w=mp.matrix([mp.mpf(str(v)) for v in core['q']]+[mp.mpf(str(core['beta']))])
+        w=mp.matrix([mp.mpf(str(v)) for v in representative['q']]+[mp.mpf(str(representative['beta']))])
         residual,J=f.system(w,mp.mpf('.5'),True)
         errors=[];h=mp.mpf('1e-15')
         for j in [0,1,2,len(w)//2,len(w)-1]:
             a=w.copy();b=w.copy();a[j]+=h;b[j]-=h
             col=(f.system(a,mp.mpf('.5'))-f.system(b,mp.mpf('.5')))/(2*h)
             errors.append(float(max(abs(col[i]-J[i,j]) for i in range(len(w)))/max(1,max(abs(v) for v in col))))
-        refined=f.boundary(core['beta'],core['q'],.5)
+        refined=f.boundary(representative['beta'],representative['q'],.5)
         fast=FastFlights(Chua(),row['regions'],row['targets'],True)
         r=fast.record(float(refined['beta']),np.array(refined['q'],float),True)
         record=dict(id=name,maximum_scaled_jacobian_error=max(errors),
-            beta_discrepancy=abs(float(refined['beta'])-core['beta']),
+            beta_discrepancy=abs(float(refined['beta'])-representative['beta']),
             high_precision_residual=refined['residual'],float_closure=r['residual'],
             float_multiplier=r['map_multipliers'][0][0])
         assert max(errors)<1e-20

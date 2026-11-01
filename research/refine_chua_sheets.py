@@ -1,4 +1,4 @@
-"""Continue identified symmetric window cores through the original atlas box."""
+"""Continue identified symmetric window representatives through the original atlas box."""
 import argparse,json,time
 from collections import deque
 from pathlib import Path
@@ -45,15 +45,15 @@ def advance(template,source,alpha,m0,depth=0):
             if abs(r['period']/previous['period']-1)>.08:raise RuntimeError('Period jump')
             row[key]=r
         width=row['fold']['beta']-row['symmetry']['beta']
-        if width<=1e-10:raise RuntimeError('Nonpositive or unresolved core width')
+        if width<=1e-10:raise RuntimeError('Nonpositive or unresolved stability width')
         if abs(width/(source['fold']['beta']-source['symmetry']['beta'])-1)>.7:
-            raise RuntimeError('Core width jumped')
-        # Solve inside the core from the symmetry boundary, away from the
+            raise RuntimeError('Stability width jumped')
+        # Solve inside the representative from the symmetry boundary, away from the
         # fold's double root, and explicitly check attraction.
         b=row['symmetry']['beta']+.45*width
         q=f.solve(b,np.array(row['symmetry']['q']));r=f.record(b,q,True)
-        if r['spectral_radius']>=.9999 or r['region_violation']>1e-7:raise RuntimeError('Core not attracting')
-        row['core']=r;row['width']=width;row['status']='continued';return row
+        if r['spectral_radius']>=.9999 or r['region_violation']>1e-7:raise RuntimeError('Representative not attracting')
+        row['representative']=r;row['width']=width;row['status']='continued';return row
     except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:
         if depth>=7:raise RuntimeError(str(e))
         midalpha=(alpha+source['alpha'])/2;midm0=(m0+source['m0'])/2
@@ -70,7 +70,7 @@ def main():
     aa=np.linspace(8.94,9.06,args.nodes);mm=np.linspace(-8/7-.006,-8/7+.006,args.nodes)
     templates=registry()
     if args.adding:
-        templates=[dict(id='P'+str(r['peak_count']),beta=r['core']['beta'],peak_count=r['peak_count'],fold=r['fold'],symmetry=r['symmetry'],
+        templates=[dict(id='P'+str(r['peak_count']),beta=r['representative']['beta'],peak_count=r['peak_count'],fold=r['fold'],symmetry=r['symmetry'],
                         regions=r['regions'],targets=r['targets']) for r in json.loads((out/'extended-adding.json').read_text()) if r['status']=='verified_attracting_cycle']
     (out/('adding-registry.json' if args.adding else 'symmetric-registry.json')).write_text(json.dumps(templates,indent=2)+'\n',encoding='utf-8',newline='\n')
     for template in templates:

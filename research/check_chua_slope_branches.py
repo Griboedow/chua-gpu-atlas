@@ -109,14 +109,14 @@ def main():
                 if row['fold']['regions'] != row['symmetry']['regions']:
                     raise RuntimeError('Selected branch control straddles two itineraries')
                 anchors.append(dict(id=f'{family}-{kind}-{index[0]}-{index[1]}',
-                    anchor=parameters(row['core']), regions=row['core']['regions'],
-                    targets=row['core']['targets'], reference_peak_count=int(family[1:]), **row))
+                    anchor=parameters(row['representative']), regions=row['representative']['regions'],
+                    targets=row['representative']['targets'], reference_peak_count=int(family[1:]), **row))
             # Unused cell centres check interpolation on the new 41-point grid.
             for i, j in [(4, 8), (8, 24), (16, 30), (20, 33), (24, 35), (28, 12), (34, 26), (38, 38)]:
                 corners = [(i, j), (i+1, j), (i, j+1), (i+1, j+1)]
                 if not all(k in nodes for k in corners):
                     continue
-                p = parameters(nodes[i, j]['core'])
+                p = parameters(nodes[i, j]['representative'])
                 p[kind] = (d['controls'][i]+d['controls'][i+1])/2
                 p['m1'] = (d['m1'][j]+d['m1'][j+1])/2
                 exact = advance(nodes[i, j], p, int(family[1:]))

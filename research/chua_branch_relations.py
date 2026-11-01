@@ -20,10 +20,10 @@ def canonical(f,b,q,target):
     return b,q,r
 
 
-def ancestry(template):
-    origin=template['core'];model=Chua(alpha=origin['alpha'],m0=origin['m0'],m1=origin['m1'])
+def branch_relations(template):
+    origin=template['representative'];model=Chua(alpha=origin['alpha'],m0=origin['m0'],m1=origin['m1'])
     symmetric=template['symmetric'];f=FastFlights(model,template['regions'],template['targets'],symmetric)
-    r=template['core'];q=np.array(r['q']);b=r['beta'];chain=[]
+    r=template['representative'];q=np.array(r['q']);b=r['beta'];chain=[]
     for depth in range(6):
         if symmetric:
             b,q,r=canonical(f,b,q,.5)
@@ -70,7 +70,7 @@ def ancestry(template):
             chain.append(dict(type='fold_candidate',beta=b,period=T,half_return_error=returning,half_inversion_error=inverting))
             source=current;b,q,r=canonical(f,source['beta'],np.array(source['q']),-.5)
             return dict(status='identified',symmetric=False,root=r,regions=f.regions,targets=f.targets,chain=chain)
-    raise RuntimeError('Ancestry depth limit')
+    raise RuntimeError('Branch-relation search depth limit')
 
 
 def main():
@@ -80,23 +80,23 @@ def main():
     args=p.parse_args();out=args.output;items=[]
     if args.local_offcenter_index is not None:
         r=json.loads((out/'offcenter-cycles.json').read_text())[args.local_offcenter_index]
-        item=dict(core=r['cycle'],regions=r['regions'],targets=r['targets'],symmetric=False)
-        result=ancestry(item)
-        (out/f'off{args.local_offcenter_index}-local-ancestry.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+        item=dict(representative=r['cycle'],regions=r['regions'],targets=r['targets'],symmetric=False)
+        result=branch_relations(item)
+        (out/f'off{args.local_offcenter_index}-local-branch-relations.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
         print(result['status'],result['root']['beta'],flush=True);return
     if args.offcenter:
         for r in json.loads((out/'offcenter-cycles.json').read_text()):
             if 'canonical' in r:items.append(dict(id='off'+str(r['candidate_index']),**r['canonical']))
-        filename='offcenter-ancestry.json'
+        filename='offcenter-branch-relations.json'
     else:
         for path in sorted(out.glob('*-sheet.json')):
             r=json.loads(path.read_text());center=next(x for x in r['nodes'] if x['index']==[4,4])
             if args.families and r['id'] not in args.families:continue
-            items.append(dict(id=r['id'],regions=r['regions'],targets=r['targets'],symmetric=r.get('symmetric',True),core=center['core']))
-        filename='sheet-ancestry.json'
+            items.append(dict(id=r['id'],regions=r['regions'],targets=r['targets'],symmetric=r.get('symmetric',True),representative=center['representative']))
+        filename='sheet-branch-relations.json'
     results=[]
     for item in items:
-        try:result=dict(id=item['id'],**ancestry(item))
+        try:result=dict(id=item['id'],**branch_relations(item))
         except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:result=dict(id=item['id'],status='unresolved',error=str(e))
         results.append(result);(out/filename).write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8',newline='\n')
         print(result['id'],result['status'],result.get('root',{}).get('beta'),[x['type'] for x in result.get('chain',[])],result.get('error'),flush=True)

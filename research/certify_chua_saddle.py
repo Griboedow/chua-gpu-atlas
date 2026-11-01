@@ -1,4 +1,4 @@
-"""Validated local ingredients for the proposed layer organizer.
+"""Validated saddle and local invariant-manifold bounds.
 
 Each reported inclusion is checked with Arb balls, never inferred from a
 floating-point residual. Failure leaves an explicit incomplete certificate.

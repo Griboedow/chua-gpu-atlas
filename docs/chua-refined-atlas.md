@@ -58,7 +58,7 @@ A separate [m0-m1 plane study](chua-slope-plane.md) varies both diode slopes at 
 
 Tracing branch relationships also prevents overcounting. The earlier 30-maximum example in A03 is a doubled descendant of a 15-maximum parent; the 60-maximum example in A05 descends from a 30-maximum parent. Off-center examples with 16 and 8 maxima lead back to the same four-maximum E06 family. Positive and negative inversion partners are counted as two attractors when both coexist, but as one family in this catalogue.
 
-The [registry](../results/chua-layer-atlas/family-registry.json), [branch-relationship records](../results/chua-layer-atlas/offcenter-ancestry.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual catalogue labels and parameters.
+The [registry](../results/chua-layer-atlas/family-registry.json), [branch-relationship records](../results/chua-layer-atlas/offcenter-branch-relations.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual catalogue labels and parameters.
 
 ## Stability widths below the original grid resolution
 

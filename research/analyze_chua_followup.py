@@ -13,17 +13,17 @@ def main():
         d=json.loads(source.read_text());cal=read('sheets/'+d['node']+'-calibration.json')
         for r in d['records']:
             assert r['status']=='numerical_root'
-            row={k:r[k] for k in ['peaks','midpoint_inside','transport_midpoint_inside','signed_fold_error_in_widths','transport_fold_error_in_widths','width_relative_error']}
+            row={k:r[k] for k in ['peaks','midpoint_inside','corrected_midpoint_inside','signed_fold_error_in_widths','corrected_fold_error_in_widths','width_relative_error']}
             low=min(Decimal(r['fold']['coordinate']),Decimal(r['symmetry']['coordinate']));width=abs(Decimal(r['signed_width']))
             row.update(node=d['node'],section=d['free_parameter'],held_out=not d['node'].endswith('_11'),
-                raw_midpoint_in_core_units=float((Decimal(r['forecast']['midpoint'])-low)/width),
-                transport_midpoint_in_core_units=float((Decimal(r['forecast']['transport_midpoint'])-low)/width),
-                measured_width=float(width),organizer_control_difference=cal['organizer_difference'])
+                raw_midpoint_in_interval_units=float((Decimal(r['forecast']['midpoint'])-low)/width),
+                corrected_midpoint_in_interval_units=float((Decimal(r['forecast']['corrected_midpoint'])-low)/width),
+                measured_width=float(width),tangency_estimate_control_difference=cal['tangency_estimate_difference'])
             rows.append(row)
     held=[r for r in rows if r['held_out']];assert len(held)==48
     sheet=dict(held_out=48,calibration_targets=6,raw_midpoints_inside=sum(r['midpoint_inside'] for r in held),
-        transported_midpoints_inside=sum(r['transport_midpoint_inside'] for r in held),
-        max_transport_fold_error_in_widths=max(abs(r['transport_fold_error_in_widths']) for r in held),
+        corrected_midpoints_inside=sum(r['corrected_midpoint_inside'] for r in held),
+        max_corrected_fold_error_in_widths=max(abs(r['corrected_fold_error_in_widths']) for r in held),
         max_absolute_width_relative_error=max(abs(r['width_relative_error']) for r in held),
         independent_checks=read('sheets/independent-checks.json'),records=rows)
     hidden=read('hidden-search/hidden-tangency-160.json');uniform=read('hidden-search/uniform-equilibrium-exclusion-100.json')

@@ -30,16 +30,4 @@ An **itinerary** records successive visits to the affine regions. A **flight** i
 
 The slope prediction study uses a **bias correction**: it adds each target family's fold-location residual at the central parameter node to the uncorrected prediction throughout the small tested slope patch. The correction is held fixed before the off-centre tests; its success there does not justify global extrapolation.
 
-## Legacy identifiers in published evidence
-
-Published files and schema keys retain their original names so that forecasts and certificate inputs can be checked against their recorded versions. Their interpretation is:
-
-| Identifier or earlier label | Interpretation |
-|---|---|
-| `symmetric_core_width`; "symmetric core" in older outputs | Width of the attracting symmetric branch between the specified fold and symmetry-breaking boundaries. |
-| `core`, `core.coordinate`, `core_beta` | A selected interior periodic-orbit representative or its parameter coordinate, depending on the record. It is not the entire interval and need not be its midpoint. The normalization is specified in the producing study. |
-| `transport_*`; `transport-protocol.json` | The fixed central-node bias correction and its prediction scores. This does not denote physical transport. |
-| `organizer` in the slope-calibration records | The saddle and finite-iterate estimate of the homoclinic tangency parameter used by the prediction model. |
-| `ancestry`, family `identity` | Recorded branch relationships and catalogue matching under numerical tolerances; not a theorem of global branch equivalence. |
-
 For the distinct map conventions and verification dependencies in the hidden-coexistence proof, see the [review guide](chua-review-guide.md). Numerical tolerances, interval bounds and formal proof obligations remain separate in that guide.

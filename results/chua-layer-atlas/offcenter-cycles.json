@@ -119,7 +119,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.228337528613128,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -348,7 +348,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.14135772022881,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -577,7 +577,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.1815502615318,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -830,7 +830,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.202784958928396,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1023,7 +1023,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.21009138611556,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1216,7 +1216,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.229157093797692,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1469,7 +1469,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.307278441505996,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1722,7 +1722,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.309132370018338,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1927,7 +1927,7 @@
       1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.228221586505606,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2108,7 +2108,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.181578793206821,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2337,7 +2337,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.202784958928385,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2626,7 +2626,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.203237213288963,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2903,7 +2903,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.210091386115572,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3120,7 +3120,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.307278441505964,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3831,7 +3831,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.308079411609185,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4312,7 +4312,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.402288419796117,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4523,7 +4523,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.430120989142058,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4740,7 +4740,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.402235982594075,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4981,7 +4981,7 @@
       -1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.42956822491125,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -5210,7 +5210,7 @@
       1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.483456372191808,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -5430,7 +5430,7 @@
     "candidate_index": 21,
     "gpu_period_hint": 11,
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.427559629520449,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -5519,9 +5519,9 @@
       "target": 0.5
     },
     "canonical_recovery": "Automatic event itinerary, small parameter steps, and bounded predictor corrections.",
-    "rejected_transport": {
+    "rejected_continuation": {
       "previous": {
-        "core": {
+        "representative": {
           "beta": 14.42755962952066,
           "alpha": 9.0,
           "m0": -1.1428571428571428,
@@ -5732,7 +5732,7 @@
       1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.513283835719049,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -5937,7 +5937,7 @@
       1
     ],
     "canonical": {
-      "core": {
+      "representative": {
         "beta": 14.472352496771554,
         "alpha": 9.0,
         "m0": -1.1428571428571428,

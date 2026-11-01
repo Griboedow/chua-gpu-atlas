@@ -321,7 +321,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.140341469578201,
@@ -715,7 +715,7 @@
         "extrema_region_violation": 1.021405182655144e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1460669636338925,
@@ -1109,7 +1109,7 @@
         "extrema_region_violation": 3.552713678800501e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1349956668455579,
@@ -1503,7 +1503,7 @@
         "extrema_region_violation": 3.9968028886505635e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.140408708617569,
@@ -1897,7 +1897,7 @@
         "extrema_region_violation": 3.83026943495679e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1404833593598231,
@@ -2291,7 +2291,7 @@
         "extrema_region_violation": 2.853273173286652e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1522162095056852,
@@ -2685,7 +2685,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.146151927145625,
@@ -3079,7 +3079,7 @@
         "extrema_region_violation": 1.687538997430238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1462123488467075,
@@ -3473,7 +3473,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1299917792150809,
@@ -3867,7 +3867,7 @@
         "extrema_region_violation": 2.2315482794965646e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1350492486590116,
@@ -4261,7 +4261,7 @@
         "extrema_region_violation": 1.9984014443252818e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1351325294981829,
@@ -4655,7 +4655,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1406980610323418,
@@ -5049,7 +5049,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1408253557505215,
@@ -5443,7 +5443,7 @@
         "extrema_region_violation": 1.2323475573339238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1588408587221113,
@@ -5837,7 +5837,7 @@
         "extrema_region_violation": 1.765254609153999e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1523238235957871,
@@ -6231,7 +6231,7 @@
         "extrema_region_violation": 1.7985612998927536e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1523631668061776,
@@ -6625,7 +6625,7 @@
         "extrema_region_violation": 7.327471962526033e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.146481923425094,
@@ -7019,7 +7019,7 @@
         "extrema_region_violation": 2.930988785010413e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1465779702601113,
@@ -7413,7 +7413,7 @@
         "extrema_region_violation": 2.4424906541753444e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1252972512966566,
@@ -7807,7 +7807,7 @@
         "extrema_region_violation": 3.019806626980426e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1300350954327394,
@@ -8201,7 +8201,7 @@
         "extrema_region_violation": 8.215650382226158e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1301223772030347,
@@ -8595,7 +8595,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.135304802204627,
@@ -8989,7 +8989,7 @@
         "extrema_region_violation": 3.5083047578154947e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1354517593933078,
@@ -9383,7 +9383,7 @@
         "extrema_region_violation": 1.687538997430238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1412272748572465,
@@ -9777,7 +9777,7 @@
         "extrema_region_violation": 2.2648549702353193e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1413618456746386,
@@ -10171,7 +10171,7 @@
         "extrema_region_violation": 3.297362383136715e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1660017709029278,
@@ -10565,7 +10565,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1589771491300758,
@@ -10959,7 +10959,7 @@
         "extrema_region_violation": 9.880984919163893e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1589869412683922,
@@ -11353,7 +11353,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1527026934273432,
@@ -11747,7 +11747,7 @@
         "extrema_region_violation": 1.5543122344752192e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1527533126046752,
@@ -12141,7 +12141,7 @@
         "extrema_region_violation": 1.532107773982716e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1470771454392426,
@@ -12535,7 +12535,7 @@
         "extrema_region_violation": 3.6415315207705135e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.147157645797951,
@@ -12929,7 +12929,7 @@
         "extrema_region_violation": 2.1760371282653068e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1208838703584902,
@@ -13323,7 +13323,7 @@
         "extrema_region_violation": 1.2323475573339238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1253331556677022,
@@ -13717,7 +13717,7 @@
         "extrema_region_violation": 1.3211653993039363e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1254205710378464,
@@ -14111,7 +14111,7 @@
         "extrema_region_violation": 1.2434497875801753e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1302625926615093,
@@ -14505,7 +14505,7 @@
         "extrema_region_violation": 3.4416913763379853e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1304196387327259,
@@ -14899,7 +14899,7 @@
         "extrema_region_violation": 1.0547118733938987e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1357779944600948,
@@ -15293,7 +15293,7 @@
         "extrema_region_violation": 2.4424906541753444e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1359482488005765,
@@ -15687,7 +15687,7 @@
         "extrema_region_violation": 2.2315482794965646e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1420200004435705,
@@ -16081,7 +16081,7 @@
         "extrema_region_violation": 5.3512749786932545e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1420902616939044,
@@ -16475,7 +16475,7 @@
         "extrema_region_violation": 1.5543122344752192e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1737710180952479,
@@ -16869,7 +16869,7 @@
         "extrema_region_violation": 8.881784197001252e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.166174179776318,
@@ -17263,7 +17263,7 @@
         "extrema_region_violation": 1.9317880628477724e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1661438302591933,
@@ -17657,7 +17657,7 @@
         "extrema_region_violation": 1.887379141862766e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1594148741434738,
@@ -18051,7 +18051,7 @@
         "extrema_region_violation": 2.353672812205332e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.159402518234802,
@@ -18445,7 +18445,7 @@
         "extrema_region_violation": 3.774758283725532e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1533759104621566,
@@ -18839,7 +18839,7 @@
         "extrema_region_violation": 1.0325074129013956e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1533798170770195,
@@ -19233,7 +19233,7 @@
         "extrema_region_violation": 9.992007221626409e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1479646385014335,
@@ -19627,7 +19627,7 @@
         "extrema_region_violation": 8.881784197001252e-16,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.147948708790249,
@@ -20021,7 +20021,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.11672702190842,
@@ -20415,7 +20415,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1209147774794346,
@@ -20809,7 +20809,7 @@
         "extrema_region_violation": 7.771561172376096e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1209990763130575,
@@ -21203,7 +21203,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1255374521997374,
@@ -21597,7 +21597,7 @@
         "extrema_region_violation": 1.0880185641326534e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1256965932470846,
@@ -21991,7 +21991,7 @@
         "extrema_region_violation": 1.2323475573339238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1306881514629281,
@@ -22385,7 +22385,7 @@
         "extrema_region_violation": 1.9539925233402755e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1308789093533336,
@@ -22779,7 +22779,7 @@
         "extrema_region_violation": 4.218847493575595e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.136489605108088,
@@ -23173,7 +23173,7 @@
         "extrema_region_violation": 1.176836406102666e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1366195393784841,
@@ -23567,7 +23567,7 @@
         "extrema_region_violation": 8.215650382226158e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1431074054975945,
@@ -23961,7 +23961,7 @@
         "extrema_region_violation": 1.1102230246251565e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1430108713567624,
@@ -24355,7 +24355,7 @@
         "extrema_region_violation": 5.040412531798211e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1822343607405312,
@@ -24749,7 +24749,7 @@
         "extrema_region_violation": 3.11972669919669e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1739888233696343,
@@ -25143,7 +25143,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1739049618246968,
@@ -25537,7 +25537,7 @@
         "extrema_region_violation": 1.765254609153999e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1666829726541188,
@@ -25931,7 +25931,7 @@
         "extrema_region_violation": 1.4765966227514582e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1665856989008159,
@@ -26325,7 +26325,7 @@
         "extrema_region_violation": 1.5765166949677223e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1601805940941472,
@@ -26719,7 +26719,7 @@
         "extrema_region_violation": 2.020605904817785e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.160080013324813,
@@ -27113,7 +27113,7 @@
         "extrema_region_violation": 2.4091839634365897e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1543745716593627,
@@ -27507,7 +27507,7 @@
         "extrema_region_violation": 7.327471962526033e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1542399265751635,
@@ -27901,7 +27901,7 @@
         "extrema_region_violation": 1.1657341758564144e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.14918022083013,
@@ -28295,7 +28295,7 @@
         "extrema_region_violation": 2.1316282072803006e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1489517751559801,
@@ -28689,7 +28689,7 @@
         "extrema_region_violation": 1.1102230246251565e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1128050324468859,
@@ -29083,7 +29083,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.116754968436167,
@@ -29477,7 +29477,7 @@
         "extrema_region_violation": 3.9968028886505635e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1168334358694691,
@@ -29871,7 +29871,7 @@
         "extrema_region_violation": 1.5210055437364645e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1211000017927546,
@@ -30265,7 +30265,7 @@
         "extrema_region_violation": 3.9968028886505635e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1212545212944,
@@ -30659,7 +30659,7 @@
         "extrema_region_violation": 2.0872192862952943e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1259224762580877,
@@ -31053,7 +31053,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1261210737024023,
@@ -31447,7 +31447,7 @@
         "extrema_region_violation": 2.0650148258027912e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1313301033495944,
@@ -31841,7 +31841,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1314978475618922,
@@ -32235,7 +32235,7 @@
         "extrema_region_violation": 2.919886554764162e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1374668961630454,
@@ -32629,7 +32629,7 @@
         "extrema_region_violation": 1.7763568394002505e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1374656312326445,
@@ -33023,7 +33023,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1445304830522613,
@@ -33417,7 +33417,7 @@
         "extrema_region_violation": 8.881784197001252e-16,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1441266979201874,
@@ -33811,7 +33811,7 @@
         "extrema_region_violation": 1.021405182655144e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1914942759859923,
@@ -34205,7 +34205,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1825092354696585,
@@ -34599,7 +34599,7 @@
         "extrema_region_violation": 2.4646951146678475e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1823548189957733,
@@ -34993,7 +34993,7 @@
         "extrema_region_violation": 2.020605904817785e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1745837564544628,
@@ -35387,7 +35387,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1743738512036472,
@@ -35781,7 +35781,7 @@
         "extrema_region_violation": 1.0436096431476471e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1675589024727513,
@@ -36175,7 +36175,7 @@
         "extrema_region_violation": 1.7763568394002505e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1673189283874201,
@@ -36569,7 +36569,7 @@
         "extrema_region_violation": 2.7533531010703882e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.161310287484916,
@@ -36963,7 +36963,7 @@
         "extrema_region_violation": 1.4654943925052066e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.161016600491699,
@@ -37357,7 +37357,7 @@
         "extrema_region_violation": 6.106226635438361e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1557400844089853,
@@ -37751,7 +37751,7 @@
         "extrema_region_violation": 8.43769498715119e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1553347056640348,
@@ -38145,7 +38145,7 @@
         "extrema_region_violation": 1.554312234475219e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1507712521164581,
@@ -38539,7 +38539,7 @@
         "extrema_region_violation": 7.549516567451064e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1501706680444594,
@@ -38933,7 +38933,7 @@
         "extrema_region_violation": 2.4424906541753444e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1090985598574183,
@@ -39327,7 +39327,7 @@
         "extrema_region_violation": 3.019806626980426e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1128316982376893,
@@ -39721,7 +39721,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.112902142352422,
@@ -40115,7 +40115,7 @@
         "extrema_region_violation": 2.6201263381153694e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1169246306072016,
@@ -40509,7 +40509,7 @@
         "extrema_region_violation": 6.8833827526759706e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1170689145419672,
@@ -40903,7 +40903,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1214505339852208,
@@ -41297,7 +41297,7 @@
         "extrema_region_violation": 1.1324274851176597e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1216463353275525,
@@ -41691,7 +41691,7 @@
         "extrema_region_violation": 6.8833827526759706e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1265044553729897,
@@ -42085,7 +42085,7 @@
         "extrema_region_violation": 1.8207657603852567e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.126691793773336,
@@ -42479,7 +42479,7 @@
         "extrema_region_violation": 2.220446049250313e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1322124011897379,
@@ -42873,7 +42873,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1322762514623128,
@@ -43267,7 +43267,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.13874555362914,
@@ -43661,7 +43661,7 @@
         "extrema_region_violation": 1.0658141036401503e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1384889023956357,
@@ -44055,7 +44055,7 @@
         "extrema_region_violation": 3.3306690738754696e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.146343399284739,
@@ -44449,7 +44449,7 @@
         "extrema_region_violation": 1.509903313490213e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1454435630439408,
@@ -44843,7 +44843,7 @@
         "extrema_region_violation": 5.5067062021407764e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2016735868486097,
@@ -45237,7 +45237,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.191841039266103,
@@ -45631,7 +45631,7 @@
         "extrema_region_violation": 1.199040866595169e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1915941380193753,
@@ -46025,7 +46025,7 @@
         "extrema_region_violation": 1.176836406102666e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1832090703734317,
@@ -46419,7 +46419,7 @@
         "extrema_region_violation": 2.375877272697835e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1828511916226883,
@@ -46813,7 +46813,7 @@
         "extrema_region_violation": 2.7977620220553945e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1755916897467746,
@@ -47207,7 +47207,7 @@
         "extrema_region_violation": 7.549516567451064e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1751682028636163,
@@ -47601,7 +47601,7 @@
         "extrema_region_violation": 2.042810365310288e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1688438876834082,
@@ -47995,7 +47995,7 @@
         "extrema_region_violation": 3.8413716652030416e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1683406364059163,
@@ -48389,7 +48389,7 @@
         "extrema_region_violation": 8.881784197001252e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1628521447832583,
@@ -48783,7 +48783,7 @@
         "extrema_region_violation": 4.218847493575595e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.162213917076926,
@@ -49177,7 +49177,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.157527520626651,
@@ -49571,7 +49571,7 @@
         "extrema_region_violation": 3.241851231905457e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1566689693081473,
@@ -49965,7 +49965,7 @@
         "extrema_region_violation": 3.419486915845482e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1528006892160862,
@@ -50359,7 +50359,7 @@
         "extrema_region_violation": 4.551914400963142e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.151612490190952,
@@ -50753,7 +50753,7 @@
         "extrema_region_violation": 5.995204332975845e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1055900088734538,
@@ -51147,7 +51147,7 @@
         "extrema_region_violation": 4.3298697960381105e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.109125245587148,
@@ -51541,7 +51541,7 @@
         "extrema_region_violation": 2.731148640577885e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1091860637425661,
@@ -51935,7 +51935,7 @@
         "extrema_region_violation": 9.325873406851315e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1129887474683111,
@@ -52329,7 +52329,7 @@
         "extrema_region_violation": 1.6209256159527285e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1131182495073153,
@@ -52723,7 +52723,7 @@
         "extrema_region_violation": 4.6629367034256575e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1172458250565738,
@@ -53117,7 +53117,7 @@
         "extrema_region_violation": 1.5543122344752192e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1174299317374095,
@@ -53511,7 +53511,7 @@
         "extrema_region_violation": 1.4654943925052066e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1219807822074097,
@@ -53905,7 +53905,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1221724274815115,
@@ -54299,7 +54299,7 @@
         "extrema_region_violation": 7.216449660063518e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1273045160882682,
@@ -54693,7 +54693,7 @@
         "extrema_region_violation": 1.2434497875801753e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.127408402777235,
@@ -55087,7 +55087,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1333662663334192,
@@ -55481,7 +55481,7 @@
         "extrema_region_violation": 1.1102230246251565e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1332159789138627,
@@ -55875,7 +55875,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1403724786060114,
@@ -56269,7 +56269,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1396941297813052,
@@ -56663,7 +56663,7 @@
         "extrema_region_violation": 1.4876988529977098e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1486184530365615,
@@ -57057,7 +57057,7 @@
         "extrema_region_violation": 1.0658141036401503e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1469702527090995,
@@ -57451,7 +57451,7 @@
         "extrema_region_violation": 7.260858581048524e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2129196443305794,
@@ -57845,7 +57845,7 @@
         "extrema_region_violation": 1.4876988529977098e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.202111216570695,
@@ -58239,7 +58239,7 @@
         "extrema_region_violation": 5.218048215738236e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2017433504783548,
@@ -58633,7 +58633,7 @@
         "extrema_region_violation": 4.241051954068098e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1926693266120023,
@@ -59027,7 +59027,7 @@
         "extrema_region_violation": 3.4638958368304884e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1921179747300323,
@@ -59421,7 +59421,7 @@
         "extrema_region_violation": 3.930189507173054e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1843760555339904,
@@ -59815,7 +59815,7 @@
         "extrema_region_violation": 2.3092638912203256e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1837127452921776,
@@ -60209,7 +60209,7 @@
         "extrema_region_violation": 8.659739592076221e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1770618441988319,
@@ -60603,7 +60603,7 @@
         "extrema_region_violation": 3.2085445411667024e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1762850936765996,
@@ -60997,7 +60997,7 @@
         "extrema_region_violation": 3.9190872769268026e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1705944349025184,
@@ -61391,7 +61391,7 @@
         "extrema_region_violation": 1.865174681370263e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1696531860710264,
@@ -61785,7 +61785,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1648706754087041,
@@ -62179,7 +62179,7 @@
         "extrema_region_violation": 1.2545520178264269e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1636780083200813,
@@ -62573,7 +62573,7 @@
         "extrema_region_violation": 1.354472090042691e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1598105829850847,
@@ -62967,7 +62967,7 @@
         "extrema_region_violation": 9.547918011776346e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1582513952855553,
@@ -63361,7 +63361,7 @@
         "extrema_region_violation": 9.325873406851315e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1553531632638911,
@@ -63755,7 +63755,7 @@
         "extrema_region_violation": 3.774758283725532e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1532878476795516,
@@ -64149,7 +64149,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1022629854608708,
@@ -64543,7 +64543,7 @@
         "extrema_region_violation": 7.105427357601002e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1056175734963678,
@@ -64937,7 +64937,7 @@
         "extrema_region_violation": 6.439293542825908e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.105667894965655,
@@ -65331,7 +65331,7 @@
         "extrema_region_violation": 1.2878587085651816e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1092720757288124,
@@ -65725,7 +65725,7 @@
         "extrema_region_violation": 8.881784197001252e-16,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1093834395874393,
@@ -66119,7 +66119,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1132849731946028,
@@ -66513,7 +66513,7 @@
         "extrema_region_violation": 1.8207657603852567e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1134501451470427,
@@ -66907,7 +66907,7 @@
         "extrema_region_violation": 1.3211653993039363e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1177313813122036,
@@ -67301,7 +67301,7 @@
         "extrema_region_violation": 4.884981308350689e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1179145284091203,
@@ -67695,7 +67695,7 @@
         "extrema_region_violation": 1.3433698597964394e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1227094429096902,
@@ -68089,7 +68089,7 @@
         "extrema_region_violation": 1.6431300764452317e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1228323420698751,
@@ -68483,7 +68483,7 @@
         "extrema_region_violation": 3.2862601528904634e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.128350091482146,
@@ -68877,7 +68877,7 @@
         "extrema_region_violation": 3.7636560534792807e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1282723400694317,
@@ -69271,7 +69271,7 @@
         "extrema_region_violation": 1.9539925233402755e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1348325369371324,
@@ -69665,7 +69665,7 @@
         "extrema_region_violation": 1.9984014443252818e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.13432095273912,
@@ -70059,7 +70059,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.142409879010422,
@@ -70453,7 +70453,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1410886111877105,
@@ -70847,7 +70847,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1514536240306568,
@@ -71241,7 +71241,7 @@
         "extrema_region_violation": 1.554312234475219e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1487188183952972,
@@ -71635,7 +71635,7 @@
         "extrema_region_violation": 7.749356711883593e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2254087847825152,
@@ -72029,7 +72029,7 @@
         "extrema_region_violation": 1.9761969838327786e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2134726447667123,
@@ -72423,7 +72423,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2129464959248262,
@@ -72817,7 +72817,7 @@
         "extrema_region_violation": 3.4416913763379853e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2030977562279652,
@@ -73211,7 +73211,7 @@
         "extrema_region_violation": 3.5416114485542494e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2022938063361033,
@@ -73605,7 +73605,7 @@
         "extrema_region_violation": 2.7755575615628914e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1940292094133003,
@@ -73999,7 +73999,7 @@
         "extrema_region_violation": 3.552713678800501e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1930535125690818,
@@ -74393,7 +74393,7 @@
         "extrema_region_violation": 1.765254609153999e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1860684853123962,
@@ -74787,7 +74787,7 @@
         "extrema_region_violation": 3.397282455352979e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1849365257065765,
@@ -75181,7 +75181,7 @@
         "extrema_region_violation": 3.375077994860476e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1790610306355975,
@@ -75575,7 +75575,7 @@
         "extrema_region_violation": 5.329070518200751e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.177727799368475,
@@ -75969,7 +75969,7 @@
         "extrema_region_violation": 4.6629367034256575e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1728867257557893,
@@ -76363,7 +76363,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1712641488539903,
@@ -76757,7 +76757,7 @@
         "extrema_region_violation": 1.6209256159527285e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1674528596223728,
@@ -77151,7 +77151,7 @@
         "extrema_region_violation": 5.329070518200751e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1654194933675832,
@@ -77545,7 +77545,7 @@
         "extrema_region_violation": 1.2656542480726785e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1626891393143652,
@@ -77939,7 +77939,7 @@
         "extrema_region_violation": 3.9968028886505635e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1600948240085285,
@@ -78333,7 +78333,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1585443535834998,
@@ -78727,7 +78727,7 @@
         "extrema_region_violation": 2.3092638912203256e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1552112427046581,
@@ -79121,7 +79121,7 @@
         "extrema_region_violation": 1.509903313490213e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0991018584402286,
@@ -79515,7 +79515,7 @@
         "extrema_region_violation": 2.4424906541753444e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1022917655990159,
@@ -79909,7 +79909,7 @@
         "extrema_region_violation": 1.3322676295501878e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1023316341595826,
@@ -80303,7 +80303,7 @@
         "extrema_region_violation": 7.105427357601002e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1057559844010016,
@@ -80697,7 +80697,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.105847317867216,
@@ -81091,7 +81091,7 @@
         "extrema_region_violation": 2.1316282072803006e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1095469590393603,
@@ -81485,7 +81485,7 @@
         "extrema_region_violation": 2.375877272697835e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.109687771973968,
@@ -81879,7 +81879,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1137318371174705,
@@ -82273,7 +82273,7 @@
         "extrema_region_violation": 1.865174681370263e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.113896006197903,
@@ -82667,7 +82667,7 @@
         "extrema_region_violation": 7.771561172376096e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1183978977639515,
@@ -83061,7 +83061,7 @@
         "extrema_region_violation": 2.3092638912203256e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1185221807058592,
@@ -83455,7 +83455,7 @@
         "extrema_region_violation": 2.919886554764162e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.123660710729519,
@@ -83849,7 +83849,7 @@
         "extrema_region_violation": 1.1102230246251565e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1236271833808675,
@@ -84243,7 +84243,7 @@
         "extrema_region_violation": 5.040412531798211e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1296769131649942,
@@ -84637,7 +84637,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1292868289902807,
@@ -85031,7 +85031,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1366650779189647,
@@ -85425,7 +85425,7 @@
         "extrema_region_violation": 3.9968028886505635e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.135597249437215,
@@ -85819,7 +85819,7 @@
         "extrema_region_violation": 3.1086244689504383e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1449414209442172,
@@ -86213,7 +86213,7 @@
         "extrema_region_violation": 6.8833827526759706e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1426823963655521,
@@ -86607,7 +86607,7 @@
         "extrema_region_violation": 5.10702591327572e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.154984451834629,
@@ -87001,7 +87001,7 @@
         "extrema_region_violation": 1.687538997430238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.0,
         "m0": -1.1507050380396255,
@@ -87395,7 +87395,7 @@
         "extrema_region_violation": 1.6209256159527285e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.22610902700225,
@@ -87789,7 +87789,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2253752921501992,
@@ -88183,7 +88183,7 @@
         "extrema_region_violation": 1.176836406102666e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2146554196949997,
@@ -88577,7 +88577,7 @@
         "extrema_region_violation": 3.885780586188048e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2135213475082764,
@@ -88971,7 +88971,7 @@
         "extrema_region_violation": 5.551115123125783e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2046932174082396,
@@ -89365,7 +89365,7 @@
         "extrema_region_violation": 1.9761969838327786e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2033107396520957,
@@ -89759,7 +89759,7 @@
         "extrema_region_violation": 1.709743457922741e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1959903789842485,
@@ -90153,7 +90153,7 @@
         "extrema_region_violation": 3.375077994860476e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.194397759207813,
@@ -90547,7 +90547,7 @@
         "extrema_region_violation": 1.1102230246251565e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1883660789031103,
@@ -90941,7 +90941,7 @@
         "extrema_region_violation": 2.886579864025407e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1865269454637581,
@@ -91335,7 +91335,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1816800283145517,
@@ -91729,7 +91729,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1795057832634517,
@@ -92123,7 +92123,7 @@
         "extrema_region_violation": 3.1308289294429414e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1758243330957678,
@@ -92517,7 +92517,7 @@
         "extrema_region_violation": 1.787459069646502e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.173186541580944,
@@ -92911,7 +92911,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1707176088932574,
@@ -93305,7 +93305,7 @@
         "extrema_region_violation": 1.2878587085651816e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.167453964844419,
@@ -93699,7 +93699,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1663010157711404,
@@ -94093,7 +94093,7 @@
         "extrema_region_violation": 1.687538997430238e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.162216770991027,
@@ -94487,7 +94487,7 @@
         "extrema_region_violation": 2.398081733190338e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1625359769815355,
@@ -94881,7 +94881,7 @@
         "extrema_region_violation": 9.2148511043888e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.96,
         "m0": -1.1574016694158573,
@@ -95275,7 +95275,7 @@
         "extrema_region_violation": 1.7763568394002505e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0991316175339834,
@@ -95669,7 +95669,7 @@
         "extrema_region_violation": 1.0880185641326534e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0991621269324048,
@@ -96063,7 +96063,7 @@
         "extrema_region_violation": 2.042810365310288e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1024229092916475,
@@ -96457,7 +96457,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1024941380062034,
@@ -96851,7 +96851,7 @@
         "extrema_region_violation": 2.3647750424515834e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1060124017041408,
@@ -97245,7 +97245,7 @@
         "extrema_region_violation": 6.439293542825908e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1061256305686353,
@@ -97639,7 +97639,7 @@
         "extrema_region_violation": 2.4091839634365897e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.109960182387984,
@@ -98033,7 +98033,7 @@
         "extrema_region_violation": 9.103828801926284e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1100973779617007,
@@ -98427,7 +98427,7 @@
         "extrema_region_violation": 1.1435297153639112e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1143441267465088,
@@ -98821,7 +98821,7 @@
         "extrema_region_violation": 8.659739592076221e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.114455272826255,
@@ -99215,7 +99215,7 @@
         "extrema_region_violation": 2.9531932455029164e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.119266785660781,
@@ -99609,7 +99609,7 @@
         "extrema_region_violation": 8.881784197001252e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.119253727446575,
@@ -100003,7 +100003,7 @@
         "extrema_region_violation": 3.708144902248023e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.124865979778205,
@@ -100397,7 +100397,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1245596016349513,
@@ -100791,7 +100791,7 @@
         "extrema_region_violation": 3.530509218307998e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1313318793624054,
@@ -101185,7 +101185,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1304569403761757,
@@ -101579,7 +101579,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1389358501009024,
@@ -101973,7 +101973,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1370532765214323,
@@ -102367,7 +102367,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1480817692700684,
@@ -102761,7 +102761,7 @@
         "extrema_region_violation": 1.509903313490213e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.04,
         "m0": -1.1444886447052354,
@@ -103155,7 +103155,7 @@
         "extrema_region_violation": 3.0309088572266774e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.227536743072093,
@@ -103549,7 +103549,7 @@
         "extrema_region_violation": 1.3988810110276972e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2259700473348563,
@@ -103943,7 +103943,7 @@
         "extrema_region_violation": 3.352873534367973e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2165406549245468,
@@ -104337,7 +104337,7 @@
         "extrema_region_violation": 3.175237850427948e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2146274755961486,
@@ -104731,7 +104731,7 @@
         "extrema_region_violation": 2.475797344914099e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2069817652486368,
@@ -105125,7 +105125,7 @@
         "extrema_region_violation": 2.4202861936828413e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.204791075449355,
@@ -105519,7 +105519,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1986489089364527,
@@ -105913,7 +105913,7 @@
         "extrema_region_violation": 4.218847493575595e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1961565249895476,
@@ -106307,7 +106307,7 @@
         "extrema_region_violation": 1.8207657603852567e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.191378085331091,
@@ -106701,7 +106701,7 @@
         "extrema_region_violation": 1.0769163338864018e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1884958068099205,
@@ -107095,7 +107095,7 @@
         "extrema_region_violation": 7.216449660063518e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1850433947045098,
@@ -107489,7 +107489,7 @@
         "extrema_region_violation": 1.7763568394002505e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1816350261188355,
@@ -107883,7 +107883,7 @@
         "extrema_region_violation": 2.731148640577885e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1795502645694032,
@@ -108277,7 +108277,7 @@
         "extrema_region_violation": 2.6645352591003757e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1754393562502399,
@@ -108671,7 +108671,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1748308142209996,
@@ -109065,7 +109065,7 @@
         "extrema_region_violation": 9.992007221626409e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1698026576669998,
@@ -109459,7 +109459,7 @@
         "extrema_region_violation": 2.4868995751603507e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1708411893526418,
@@ -109853,7 +109853,7 @@
         "extrema_region_violation": 2.4868995751603507e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.92,
         "m0": -1.1646401991288435,
@@ -110247,7 +110247,7 @@
         "extrema_region_violation": 5.329070518200751e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0992559827761341,
@@ -110641,7 +110641,7 @@
         "extrema_region_violation": 2.1760371282653068e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.099309114391116,
@@ -111035,7 +111035,7 @@
         "extrema_region_violation": 1.84297022087776e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1026629642647208,
@@ -111429,7 +111429,7 @@
         "extrema_region_violation": 2.3092638912203256e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1027480870718296,
@@ -111823,7 +111823,7 @@
         "extrema_region_violation": 1.8207657603852567e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1063961217027332,
@@ -112217,7 +112217,7 @@
         "extrema_region_violation": 1.199040866595169e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1065012933371907,
@@ -112611,7 +112611,7 @@
         "extrema_region_violation": 6.5503158452884236e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1105249812069697,
@@ -113005,7 +113005,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.110611691204166,
@@ -113399,7 +113399,7 @@
         "extrema_region_violation": 1.0658141036401503e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1151408570904384,
@@ -113793,7 +113793,7 @@
         "extrema_region_violation": 4.218847493575595e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1151285780612508,
@@ -114187,7 +114187,7 @@
         "extrema_region_violation": 1.1657341758564144e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1203657289771962,
@@ -114581,7 +114581,7 @@
         "extrema_region_violation": 1.9984014443252818e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1201113503181679,
@@ -114975,7 +114975,7 @@
         "extrema_region_violation": 1.3100631690576847e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1263662754712622,
@@ -115369,7 +115369,7 @@
         "extrema_region_violation": 2.220446049250313e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1256338374120194,
@@ -115763,7 +115763,7 @@
         "extrema_region_violation": 3.175237850427948e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1333772757051048,
@@ -116157,7 +116157,7 @@
         "extrema_region_violation": 8.881784197001252e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1317897286628034,
@@ -116551,7 +116551,7 @@
         "extrema_region_violation": 1.84297022087776e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1417426679002514,
@@ -116945,7 +116945,7 @@
         "extrema_region_violation": 1.6653345369377348e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.08,
         "m0": -1.1387000509524299,
@@ -117339,7 +117339,7 @@
         "extrema_region_violation": 1.9317880628477724e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2297809549135952,
@@ -117733,7 +117733,7 @@
         "extrema_region_violation": 3.552713678800501e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2271729955288038,
@@ -118127,7 +118127,7 @@
         "extrema_region_violation": 1.7763568394002505e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2192311017119932,
@@ -118521,7 +118521,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2162615993137793,
@@ -118915,7 +118915,7 @@
         "extrema_region_violation": 3.4638958368304884e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2100804356734949,
@@ -119309,7 +119309,7 @@
         "extrema_region_violation": 1.3322676295501878e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2067423079086097,
@@ -119703,7 +119703,7 @@
         "extrema_region_violation": 5.861977570020827e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2021377030874054,
@@ -120097,7 +120097,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.1983444870364268,
@@ -120491,7 +120491,7 @@
         "extrema_region_violation": 1.9317880628477724e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1952559398636537,
@@ -120885,7 +120885,7 @@
         "extrema_region_violation": 2.842170943040401e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1908627506342788,
@@ -121279,7 +121279,7 @@
         "extrema_region_violation": 1.9317880628477724e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.189325031557091,
@@ -121673,7 +121673,7 @@
         "extrema_region_violation": 1.509903313490213e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.184138724645741,
@@ -122067,7 +122067,7 @@
         "extrema_region_violation": 1.9095836023552692e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.184266467233848,
@@ -122461,7 +122461,7 @@
         "extrema_region_violation": 1.7319479184152442e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.178048432384965,
@@ -122855,7 +122855,7 @@
         "extrema_region_violation": 1.3988810110276972e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1800303229974656,
@@ -123249,7 +123249,7 @@
         "extrema_region_violation": 2.1094237467877974e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.88,
         "m0": -1.1724934520300496,
@@ -123643,7 +123643,7 @@
         "extrema_region_violation": 6.8833827526759706e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0994810242425017,
@@ -124037,7 +124037,7 @@
         "extrema_region_violation": 4.884981308350689e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0995406028461352,
@@ -124431,7 +124431,7 @@
         "extrema_region_violation": 8.215650382226158e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1030204149283622,
@@ -124825,7 +124825,7 @@
         "extrema_region_violation": 4.6629367034256575e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.103092082766008,
@@ -125219,7 +125219,7 @@
         "extrema_region_violation": 3.375077994860476e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1069190698255866,
@@ -125613,7 +125613,7 @@
         "extrema_region_violation": 1.1546319456101628e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1069737609287404,
@@ -126007,7 +126007,7 @@
         "extrema_region_violation": 1.7763568394002505e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1112583162458383,
@@ -126401,7 +126401,7 @@
         "extrema_region_violation": 2.220446049250313e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.111231192238809,
@@ -126795,7 +126795,7 @@
         "extrema_region_violation": 3.5416114485542494e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1161465253518013,
@@ -127189,7 +127189,7 @@
         "extrema_region_violation": 5.551115123125783e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1159177234634654,
@@ -127583,7 +127583,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1217307592277335,
@@ -127977,7 +127977,7 @@
         "extrema_region_violation": 1.199040866595169e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1210986037643906,
@@ -128371,7 +128371,7 @@
         "extrema_region_violation": 2.7977620220553945e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1282158023925932,
@@ -128765,7 +128765,7 @@
         "extrema_region_violation": 7.105427357601002e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1268558260588923,
@@ -129159,7 +129159,7 @@
         "extrema_region_violation": 7.327471962526033e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1358971564937759,
@@ -129553,7 +129553,7 @@
         "extrema_region_violation": 4.884981308350689e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.12,
         "m0": -1.1332944493344006,
@@ -129947,7 +129947,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2329685608276288,
@@ -130341,7 +130341,7 @@
         "extrema_region_violation": 3.019806626980426e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2289803713863123,
@@ -130735,7 +130735,7 @@
         "extrema_region_violation": 3.042011087472929e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2228709949251606,
@@ -131129,7 +131129,7 @@
         "extrema_region_violation": 5.995204332975845e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2184331738393932,
@@ -131523,7 +131523,7 @@
         "extrema_region_violation": 7.105427357601002e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2141528225096438,
@@ -131917,7 +131917,7 @@
         "extrema_region_violation": 2.1316282072803006e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2091826082507255,
@@ -132311,7 +132311,7 @@
         "extrema_region_violation": 1.3100631690576847e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2066430965819555,
@@ -132705,7 +132705,7 @@
         "extrema_region_violation": 6.061817714453355e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.200985786674042,
@@ -133099,7 +133099,7 @@
         "extrema_region_violation": 5.551115123125783e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.2002137288033152,
@@ -133493,7 +133493,7 @@
         "extrema_region_violation": 2.220446049250313e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.193656170383012,
@@ -133887,7 +133887,7 @@
         "extrema_region_violation": 3.3306690738754696e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1947739171272298,
@@ -134281,7 +134281,7 @@
         "extrema_region_violation": 5.218048215738236e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1870484268369665,
@@ -134675,7 +134675,7 @@
         "extrema_region_violation": 4.618527782440651e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.190266940162331,
@@ -135069,7 +135069,7 @@
         "extrema_region_violation": 1.84297022087776e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.84,
         "m0": -1.1810477606342467,
@@ -135463,7 +135463,7 @@
         "extrema_region_violation": 5.995204332975845e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.099814582418241,
@@ -135857,7 +135857,7 @@
         "extrema_region_violation": 1.199040866595169e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.0998553197362813,
@@ -136251,7 +136251,7 @@
         "extrema_region_violation": 9.43689570931383e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1035061053976947,
@@ -136645,7 +136645,7 @@
         "extrema_region_violation": 2.4424906541753444e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1035256248256249,
@@ -137039,7 +137039,7 @@
         "extrema_region_violation": 1.2434497875801753e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.107596465873645,
@@ -137433,7 +137433,7 @@
         "extrema_region_violation": 1.2434497875801753e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1075434110373106,
@@ -137827,7 +137827,7 @@
         "extrema_region_violation": 2.842170943040401e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.112181949350541,
@@ -138221,7 +138221,7 @@
         "extrema_region_violation": 3.441691376337985e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1119573797625337,
@@ -138615,7 +138615,7 @@
         "extrema_region_violation": 1.021405182655144e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1173928869501302,
@@ -139009,7 +139009,7 @@
         "extrema_region_violation": 3.1530333899354446e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1168256976803907,
@@ -139403,7 +139403,7 @@
         "extrema_region_violation": 3.441691376337985e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1234092620571319,
@@ -139797,7 +139797,7 @@
         "extrema_region_violation": 1.27675647831893e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.122220494957369,
@@ -140191,7 +140191,7 @@
         "extrema_region_violation": 1.3322676295501878e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1304872507894796,
@@ -140585,7 +140585,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.16,
         "m0": -1.1282333680902963,
@@ -140979,7 +140979,7 @@
         "extrema_region_violation": 1.4432899320127035e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2372796105016777,
@@ -141373,7 +141373,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2314037796144919,
@@ -141767,7 +141767,7 @@
         "extrema_region_violation": 4.6629367034256575e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2276643480934455,
@@ -142161,7 +142161,7 @@
         "extrema_region_violation": 2.020605904817785e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2211645305658436,
@@ -142555,7 +142555,7 @@
         "extrema_region_violation": 2.4424906541753444e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.219431294047326,
@@ -142949,7 +142949,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.212141597670922,
@@ -143343,7 +143343,7 @@
         "extrema_region_violation": 1.9317880628477724e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2124323178670329,
@@ -143737,7 +143737,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2041152113717133,
@@ -144131,7 +144131,7 @@
         "extrema_region_violation": 1.9984014443252818e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.2065628669215362,
@@ -144525,7 +144525,7 @@
         "extrema_region_violation": 3.042011087472929e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.1969146820628946,
@@ -144919,7 +144919,7 @@
         "extrema_region_violation": 4.418687638008123e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.2017589975794805,
@@ -145313,7 +145313,7 @@
         "extrema_region_violation": 3.397282455352979e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.8,
         "m0": -1.1904057237805517,
@@ -145707,7 +145707,7 @@
         "extrema_region_violation": 1.9984014443252818e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1002666287113763,
@@ -146101,7 +146101,7 @@
         "extrema_region_violation": 3.574918139293004e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1002528233034787,
@@ -146495,7 +146495,7 @@
         "extrema_region_violation": 2.7755575615628914e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1041338052929004,
@@ -146889,7 +146889,7 @@
         "extrema_region_violation": 4.440892098500626e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1040490346413918,
@@ -147283,7 +147283,7 @@
         "extrema_region_violation": 2.353672812205332e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1084477408628586,
@@ -147677,7 +147677,7 @@
         "extrema_region_violation": 8.548717289613705e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1082115100104608,
@@ -148071,7 +148071,7 @@
         "extrema_region_violation": 8.43769498715119e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1133239623643791,
@@ -148465,7 +148465,7 @@
         "extrema_region_violation": 4.973799150320701e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1127927797716561,
@@ -148859,7 +148859,7 @@
         "extrema_region_violation": 1.9539925233402755e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1189215181475327,
@@ -149253,7 +149253,7 @@
         "extrema_region_violation": 1.9539925233402755e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1178567374301482,
@@ -149647,7 +149647,7 @@
         "extrema_region_violation": 5.551115123125783e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.1254644348027592,
@@ -150041,7 +150041,7 @@
         "extrema_region_violation": 1.6209256159527285e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.2,
         "m0": -1.123483617810518,
@@ -150435,7 +150435,7 @@
         "extrema_region_violation": 6.217248937900877e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2429725857348077,
@@ -150829,7 +150829,7 @@
         "extrema_region_violation": 2.842170943040401e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2344703236565298,
@@ -151223,7 +151223,7 @@
         "extrema_region_violation": 1.7763568394002505e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2339055897201106,
@@ -151617,7 +151617,7 @@
         "extrema_region_violation": 3.064215547965432e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.224491837719179,
@@ -152011,7 +152011,7 @@
         "extrema_region_violation": 3.042011087472929e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2262549287564073,
@@ -152405,7 +152405,7 @@
         "extrema_region_violation": 3.774758283725532e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2156618475588714,
@@ -152799,7 +152799,7 @@
         "extrema_region_violation": 1.3988810110276972e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2199016114483876,
@@ -153193,7 +153193,7 @@
         "extrema_region_violation": 1.432187701766452e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2077800787785005,
@@ -153587,7 +153587,7 @@
         "extrema_region_violation": 2.6645352591003757e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.2147748531322837,
@@ -153981,7 +153981,7 @@
         "extrema_region_violation": 3.68594044175552e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.76,
         "m0": -1.2006893082854067,
@@ -154375,7 +154375,7 @@
         "extrema_region_violation": 1.6764367671839864e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1008497447944858,
@@ -154769,7 +154769,7 @@
         "extrema_region_violation": 1.0436096431476471e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1007334180375392,
@@ -155163,7 +155163,7 @@
         "extrema_region_violation": 1.2212453270876722e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.104920985710062,
@@ -155557,7 +155557,7 @@
         "extrema_region_violation": 1.1324274851176597e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.104663412820424,
@@ -155951,7 +155951,7 @@
         "extrema_region_violation": 1.2434497875801753e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1094978291948907,
@@ -156345,7 +156345,7 @@
         "extrema_region_violation": 1.532107773982716e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.108980213053524,
@@ -156739,7 +156739,7 @@
         "extrema_region_violation": 2.2870594307278225e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1147209452984839,
@@ -157133,7 +157133,7 @@
         "extrema_region_violation": 1.4876988529977098e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1137409914525884,
@@ -157527,7 +157527,7 @@
         "extrema_region_violation": 1.3988810110276972e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.120787592966238,
@@ -157921,7 +157921,7 @@
         "extrema_region_violation": 7.993605777301127e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.24,
         "m0": -1.1190164332822319,
@@ -158315,7 +158315,7 @@
         "extrema_region_violation": 3.9745984281580604e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2504296843248142,
@@ -158709,7 +158709,7 @@
         "extrema_region_violation": 1.0769163338864018e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2382237239810512,
@@ -159103,7 +159103,7 @@
         "extrema_region_violation": 1.9539925233402755e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2420351278099862,
@@ -159497,7 +159497,7 @@
         "extrema_region_violation": 2.2648549702353193e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2284669457050166,
@@ -159891,7 +159891,7 @@
         "extrema_region_violation": 2.1538326677728037e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2351400552214584,
@@ -160285,7 +160285,7 @@
         "extrema_region_violation": 1.5987211554602254e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.219801249199659,
@@ -160679,7 +160679,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2296689547919522,
@@ -161073,7 +161073,7 @@
         "extrema_region_violation": 3.552713678800501e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.72,
         "m0": -1.2120430233499229,
@@ -161467,7 +161467,7 @@
         "extrema_region_violation": 6.994405055138486e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1015797773032696,
@@ -161861,7 +161861,7 @@
         "extrema_region_violation": 1.6542323066914832e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1012981006324636,
@@ -162255,7 +162255,7 @@
         "extrema_region_violation": 1.0436096431476471e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1058899104453213,
@@ -162649,7 +162649,7 @@
         "extrema_region_violation": 9.547918011776346e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1053706291891174,
@@ -163043,7 +163043,7 @@
         "extrema_region_violation": 4.5075054799781356e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1107790307620318,
@@ -163437,7 +163437,7 @@
         "extrema_region_violation": 1.6431300764452317e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.109852597379059,
@@ -163831,7 +163831,7 @@
         "extrema_region_violation": 6.661338147750939e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.116421214219533,
@@ -164225,7 +164225,7 @@
         "extrema_region_violation": 1.554312234475219e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.28,
         "m0": -1.1148067708998712,
@@ -164619,7 +164619,7 @@
         "extrema_region_violation": 1.7763568394002505e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2602595426825998,
@@ -165013,7 +165013,7 @@
         "extrema_region_violation": 9.103828801926284e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2427264669223201,
@@ -165407,7 +165407,7 @@
         "extrema_region_violation": 1.7985612998927536e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2527636222822438,
@@ -165801,7 +165801,7 @@
         "extrema_region_violation": 3.730349362740526e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.2331602687373384,
@@ -166195,7 +166195,7 @@
         "extrema_region_violation": 2.4424906541753444e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2469429776379666,
@@ -166589,7 +166589,7 @@
         "extrema_region_violation": 1.2545520178264269e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.68,
         "m0": -1.2246364896187192,
@@ -166983,7 +166983,7 @@
         "extrema_region_violation": 1.8540724511240114e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1024767551816508,
@@ -167377,7 +167377,7 @@
         "extrema_region_violation": 5.773159728050814e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.101948536687126,
@@ -167771,7 +167771,7 @@
         "extrema_region_violation": 3.3306690738754696e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1070692086156046,
@@ -168165,7 +168165,7 @@
         "extrema_region_violation": 4.884981308350689e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1061733437261188,
@@ -168559,7 +168559,7 @@
         "extrema_region_violation": 2.55351295663786e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1123337526583859,
@@ -168953,7 +168953,7 @@
         "extrema_region_violation": 5.10702591327572e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.32,
         "m0": -1.1108327282931796,
@@ -169347,7 +169347,7 @@
         "extrema_region_violation": 3.9745984281580604e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2480631008027254,
@@ -169741,7 +169741,7 @@
         "extrema_region_violation": 5.440092820663267e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.64,
         "m0": -1.238664942754727,
@@ -170135,7 +170135,7 @@
         "extrema_region_violation": 5.329070518200751e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1035662080310389,
@@ -170529,7 +170529,7 @@
         "extrema_region_violation": 1.7763568394002505e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.102687067663865,
@@ -170923,7 +170923,7 @@
         "extrema_region_violation": 9.547918011776346e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1084961954119747,
@@ -171317,7 +171317,7 @@
         "extrema_region_violation": 2.0650148258027912e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.36,
         "m0": -1.1070750576116435,
@@ -171711,7 +171711,7 @@
         "extrema_region_violation": 7.105427357601002e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 8.6,
         "m0": -1.2543448357424059,
@@ -172105,7 +172105,7 @@
         "extrema_region_violation": 9.769962616701378e-15,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.104881110485377,
@@ -172499,7 +172499,7 @@
         "extrema_region_violation": 2.375877272697835e-14,
         "derivative_bracket_max_step": 0.025
       },
-      "core": {
+      "representative": {
         "beta": 14.285714285714286,
         "alpha": 9.4,
         "m0": -1.1035167471664207,
@@ -172665,5 +172665,5 @@
   ],
   "complete": false,
   "elapsed_seconds": 22.50358450000931,
-  "scope": "Locally continued attracting symmetric cores and their two marginal-stability edges. A failed continuation is not evidence of an orbit ending. Full stable asymmetric extensions are not included."
+  "scope": "Locally continued attracting symmetric representatives and their two marginal-stability edges. A failed continuation is not evidence of an orbit ending. Full stable asymmetric extensions are not included."
 }

@@ -18,16 +18,16 @@ def primitive(word):
 def main():
     registry=json.loads((ROOT/'results/chua-layer-atlas/family-registry.json').read_text())['families']
     rows=[];groups=defaultdict(list);primitives=defaultdict(list)
-    for r in sorted(registry,key=lambda x:x['core']['beta']):
+    for r in sorted(registry,key=lambda x:x['representative']['beta']):
         short=''.join('R' if reg==1 else 'L' for reg in r['regions'] if reg)
         full=short+short.translate(str.maketrans('LR','RL')) if r['symmetric'] else short
         word=canonical(full);prim,reps=primitive(word)
-        core=r['core'];row=dict(id=r['id'],beta=core['beta'],period=core['period'],peaks=r['peak_count'],
+        representative=r['representative'];row=dict(id=r['id'],beta=representative['beta'],period=representative['period'],peaks=r['peak_count'],
             section_returns=r['section_returns'],symmetric=r['symmetric'],
             half_or_full_outer_word=short,canonical_full_outer_word=word,
             primitive_outer_word=canonical(prim),symbolic_repetitions=reps,
-            regions=r['regions'],residence_times=core['q'][2:],section_state=core['q'][:2],
-            full_multipliers=core['full_multipliers'],ancestry=r['sources'])
+            regions=r['regions'],residence_times=representative['q'][2:],section_state=representative['q'][:2],
+            full_multipliers=representative['full_multipliers'],branch_relations=r['sources'])
         rows.append(row);groups[word].append(r['id']);primitives[canonical(prim)].append(r['id'])
     summary=dict(reference_families=len(rows),distinct_full_outer_words=len(groups),
         distinct_primitive_outer_words=len(primitives),

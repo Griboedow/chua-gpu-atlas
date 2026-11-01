@@ -28,10 +28,10 @@ def old_layers():
     extra = json.loads((ROOT / INPUTS[1]).read_text())
     return [dict(n=(r['maxima'] - 5)//10, peaks=r['maxima'],
                  fold=r['fold'], symmetry=r['symmetry'],
-                 width=r['symmetric_core_width']) for r in old] + [
+                 width=r['symmetric_stability_width']) for r in old] + [
         dict(n=(r['peak_count']-5)//10, peaks=r['peak_count'],
              fold=r['fold'], symmetry=r['symmetry'],
-             width=r['symmetric_core_width']) for r in extra
+             width=r['symmetric_stability_width']) for r in extra
         if r['status'] == 'verified_attracting_cycle']
 
 
@@ -94,10 +94,10 @@ def main():
         targets.append(dict(n=n,peaks=10*n+5,section_returns=2*n+1,
             symmetric=True,half_outer_word='RRLL'*n+'RR',
             fold_beta_corrected=corrected,fold_beta_leading=simple,
-            symmetric_core_width=width,fold_period=period,
+            symmetric_stability_width=width,fold_period=period,
             acceptance=dict(corrected_location_absolute_error=2e-8,
                 width_relative_error=.20,period_absolute_error=.002,
-                rationale='Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured core widths.')))
+                rationale='Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured stability widths.')))
     report=dict(created_utc=datetime.now(timezone.utc).isoformat(),
         stage='Frozen before any new 75/85-peak cycle solve in this experiment',
         input_sha256={name:hashlib.sha256((ROOT/name).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for name in INPUTS},

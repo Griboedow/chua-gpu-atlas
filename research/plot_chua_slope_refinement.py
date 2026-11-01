@@ -46,12 +46,12 @@ def volumes():
                     keys = [(i, j), (i+1, j), (i+1, j+1), (i, j+1)]
                     if not all(k in rows for k in keys):
                         continue
-                    vertices = [[rows[k]['core'][p] for p in ['m0', 'm1', kind]] for k in keys]
-                    changed = family == 'P7' and sum(len(rows[k]['core']['targets']) > 4 for k in keys) >= 2
+                    vertices = [[rows[k]['representative'][p] for p in ['m0', 'm1', kind]] for k in keys]
+                    changed = family == 'P7' and sum(len(rows[k]['representative']['targets']) > 4 for k in keys) >= 2
                     color = COLORS['new' if changed else family]
                     polygons.extend([[vertices[0], vertices[1], vertices[2]], [vertices[0], vertices[2], vertices[3]]])
                     colors.extend([color]*2)
-            points.extend([[r['core'][p] for p in ['m0', 'm1', kind]] for r in d['nodes']])
+            points.extend([[r['representative'][p] for p in ['m0', 'm1', kind]] for r in d['nodes']])
         ax.add_collection3d(Poly3DCollection(polygons, facecolors=colors, alpha=.82,
             edgecolors=(1, 1, 1, .25), linewidths=.12))
         contact = next(c for c in grazing if c['kind'] == kind and c['target'] == -.43)
@@ -87,8 +87,8 @@ def sections():
     fig.subplots_adjust(left=.085, right=.93, bottom=.15, top=.85, hspace=.48, wspace=.30)
     for family in ['P5', 'P7']:
         d = read(f'{family}-alpha.json')
-        rows = sorted([r for r in d['nodes'] if r['index'][0] == 20], key=lambda r: r['core']['m1'])
-        x = [r['core']['m1'] for r in rows]
+        rows = sorted([r for r in d['nodes'] if r['index'][0] == 20], key=lambda r: r['representative']['m1'])
+        x = [r['representative']['m1'] for r in rows]
         lower = [r['symmetry']['m0'] for r in rows]
         upper = [r['fold']['m0'] for r in rows]
         axes[0, 0].fill_between(x, lower, upper, color=COLORS[family], alpha=.7, label=family)

@@ -235,9 +235,9 @@
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
-      "source_name": "off21-local-ancestry.json",
+      "source_name": "off21-local-branch-relations.json",
       "source_sha256": "b0dc6c0a929b0cb835ffcf79ec1fcaf4749984354a1f12c5892c64949db3c229",
-      "published_name": "off21-local-ancestry.json",
+      "published_name": "off21-local-branch-relations.json",
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
@@ -247,15 +247,15 @@
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
-      "source_name": "off21-transport.json",
+      "source_name": "off21-continuation.json",
       "source_sha256": "59b082ddaef0df067967e8c74af2065b922cabe07b67ca6b042823cd64633c86",
-      "published_name": "off21-transport.json",
+      "published_name": "off21-continuation.json",
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
-      "source_name": "offcenter-ancestry.json",
+      "source_name": "offcenter-branch-relations.json",
       "source_sha256": "177dee6a284bc5ea06c10750038ca3136b7ec665db22e6f54a82c00d5cace2d3",
-      "published_name": "offcenter-ancestry.json",
+      "published_name": "offcenter-branch-relations.json",
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
@@ -385,9 +385,9 @@
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
-      "source_name": "sheet-ancestry.json",
+      "source_name": "sheet-branch-relations.json",
       "source_sha256": "34b887a187c80449f2c1474b05527ccb071cd47b6d04f5acd9300acb09c8139c",
-      "published_name": "sheet-ancestry.json",
+      "published_name": "sheet-branch-relations.json",
       "transformation": "Removed sampled arc geometry; retained flight times, itineraries and checks."
     },
     {
@@ -461,7 +461,7 @@
         "m0",
         "beta",
         "period",
-        "symmetric_core_width",
+        "symmetric_stability_width",
         "representative_count",
         "all_families_sampled"
       ],

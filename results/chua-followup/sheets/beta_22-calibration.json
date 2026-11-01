@@ -11,7 +11,7 @@
     "m0": -1.1424571428571428,
     "m1": -0.7138857142857143
   },
-  "organizer": {
+  "tangency_estimate": {
     "parameters": {
       "alpha": 9.0,
       "beta": 14.300130733117532,
@@ -155,7 +155,7 @@
       }
     ]
   },
-  "organizer_control": {
+  "tangency_estimate_control": {
     "parameters": {
       "alpha": 9.0,
       "beta": 14.300130733117493,
@@ -279,7 +279,7 @@
       ]
     }
   },
-  "organizer_difference": 3.907985046680551e-14,
+  "tangency_estimate_difference": 3.907985046680551e-14,
   "training": [
     {
       "peaks": 35,

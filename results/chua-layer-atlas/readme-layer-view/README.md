@@ -16,7 +16,7 @@ The width zoom uses a categorical row for each of six period-adding families, th
 |---|---|
 | `A01.json` through `S11.json` (32 family files) | Selected 17 by 17 mesh locations, closed representatives, itineraries and independent affine checks |
 | `audit.json` | Final surface counts, coverage and numerical gates; all selected points recovered |
-| `thin-cores.json` | 25 fresh interior cycles each for P55 and P65, plus full-field midpoint controls |
+| `thin-intervals.json` | 25 fresh interior cycles each for P55 and P65, plus full-field midpoint controls |
 | `P65-positive-half-multiplier-attempt.json` | Retained preliminary display attempt, with 35 unresolved locations; excluded from the figures and final totals |
 | `render-summary.json` | Frame order, face counts and plotted sample totals |
 | `readme-layer-zoom.pdf` | Vector version of the multiscale figure |
@@ -39,7 +39,7 @@ Run from the repository root with its Python dependencies installed. These scrip
 
 ```powershell
 python research/refine_readme_layers.py --output D:/tmp/chua-readme-view
-python research/refine_readme_thin_cores.py --output D:/tmp/chua-readme-view
+python research/refine_readme_thin_intervals.py --output D:/tmp/chua-readme-view
 python research/plot_readme_layers.py --source D:/tmp/chua-readme-view --assets D:/tmp/chua-readme-figures
 ```
 

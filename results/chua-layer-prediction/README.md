@@ -14,12 +14,12 @@ The 75-peak forecast overlaps the measured stability interval. The 85-peak forec
 | [implementation-trial-01.json](implementation-trial-01.json) | Failed initial implementation: negative indexing of an mpmath matrix accessed the wrong element. Preserved for provenance; not an absence-of-orbit result. |
 | [independent-checks.json](independent-checks.json) | 75-digit repeats, original affine implementation, DOP853/Radau full-field integrations and variational controls. Includes rejected whole-period multiplier checks and the passing section-by-section checks. |
 | [analysis.json](analysis.json) | Forecast scoring, scaling ratios, normalized reference-orbit coordinates and measured section sequences. |
-| [organizer-approximants.json](organizer-approximants.json) | Six finite-iterate tangent-line approximations, derivative controls and sampled return folds. Post-search exploratory evidence, in float64; their agreement is not a rigorous error bound. |
+| [tangency-estimates.json](tangency-estimates.json) | Six finite-iterate tangent-line approximations, derivative controls and sampled return folds. Post-search exploratory evidence, in float64; their agreement is not a rigorous error bound. |
 | [motion-descriptions.json](motion-descriptions.json), [CSV](motion-descriptions.csv) | Original 32-family route words, residence times, symmetry, periods and coarse-code groups. |
-| [extended-family-registry.json](extended-family-registry.json) | Original 32 entries plus P75/P85. Compatible float64 interior-orbit fields are accompanied by the high-precision representative and evidence links. The original registry is unchanged. |
+| [extended-family-registry.json](extended-family-registry.json) | Original 32 entries plus P75/P85. Compatible float64 interior-orbit fields are accompanied by the high-precision representative and evidence links. The original reference orbits and catalogue assignments are unchanged. |
 | [predicted-orbits.npz](predicted-orbits.npz) | Sampled trajectories for the two new portraits. These illustrate the checked solutions; the independent solvers count peaks and section returns. |
 
-All five figures are available as vector PDFs: [forecast comparison](chua-layer-prediction-proof.pdf), [scaling](chua-layer-prediction-scales.pdf), [motion descriptions](chua-layer-motion-description.pdf), [new motions](chua-layer-predicted-motions.pdf), and [homoclinic-tangency estimates](chua-layer-prediction-organizer.pdf). Their PNG versions appear in the report and under `docs/assets/`. The [atlas manifest](../chua-layer-atlas/manifest.json) covers the study, code and input evidence.
+All five figures are available as vector PDFs: [forecast comparison](chua-layer-prediction-proof.pdf), [scaling](chua-layer-prediction-scales.pdf), [motion descriptions](chua-layer-motion-description.pdf), [new motions](chua-layer-predicted-motions.pdf), and [homoclinic-tangency estimates](chua-layer-prediction-tangency.pdf). Their PNG versions appear in the report and under `docs/assets/`. The [atlas manifest](../chua-layer-atlas/manifest.json) covers the study, code and input evidence.
 
 ## Numerical checks and forecast errors
 
@@ -57,7 +57,7 @@ The following commands regenerate descriptions, analysis and figures **from the 
 ```sh
 python research/describe_chua_layer_words.py
 python research/analyze_chua_prediction_evidence.py
-python research/trace_chua_layer_organizer.py
+python research/estimate_chua_homoclinic_tangency.py
 python research/plot_chua_layer_predictions.py
 python research/manifest_refined_chua_atlas.py --check
 ```

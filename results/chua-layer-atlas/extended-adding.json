@@ -192,7 +192,7 @@
       "full_logdet": -216.4796585688443,
       "region_violation": 6.387779194483301e-12
     },
-    "core": {
+    "representative": {
       "beta": 14.306295456848803,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -380,7 +380,7 @@
       1
     ],
     "peak_count": 55,
-    "symmetric_core_width": 2.2413232159124163e-07,
+    "symmetric_stability_width": 2.2413232159124163e-07,
     "independent_variational": {
       "success": true,
       "closure": 1.8892087894073484e-10,
@@ -599,7 +599,7 @@
       "full_logdet": -255.87428610533024,
       "region_violation": 3.339550858072471e-13
     },
-    "core": {
+    "representative": {
       "beta": 14.306335372314182,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -811,7 +811,7 @@
       1
     ],
     "peak_count": 65,
-    "symmetric_core_width": 3.1759077145920855e-08,
+    "symmetric_stability_width": 3.1759077145920855e-08,
     "independent_variational": {
       "success": true,
       "closure": 6.06237116063113e-10,

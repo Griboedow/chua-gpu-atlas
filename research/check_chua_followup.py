@@ -22,28 +22,28 @@ def sheets():
         for row in data['records']:
             uid=name+'_'+str(row['peaks'])
             if row['status']!='numerical_root' or any(c['id']==uid for c in checks):continue
-            core=row['core'];free=data['free_parameter'];p={k:float(v) for k,v in core['parameters'].items()}
+            representative=row['representative'];free=data['free_parameter'];p={k:float(v) for k,v in representative['parameters'].items()}
             solver=ParameterPrecisionFlights(row['regions'],row['targets'],p,free,digits=65,spectral=False)
             # Preserve exactly the parameter decimals used in the original solve.
-            solver.parameters={k:mp.mpf(v) for k,v in core['parameters'].items()}
-            refined=solver.boundary(core['coordinate'],core['q'],'.5')
-            delta=abs(mp.mpf(refined['coordinate'])-mp.mpf(core['coordinate']))
+            solver.parameters={k:mp.mpf(v) for k,v in representative['parameters'].items()}
+            refined=solver.boundary(representative['coordinate'],representative['q'],'.5')
+            delta=abs(mp.mpf(refined['coordinate'])-mp.mpf(representative['coordinate']))
             assert delta<mp.mpf('1e-23')
             fast=CoordinateFlights(p,row['regions'],row['targets'],free=free)
-            r=fast.record(float(core['coordinate']),np.array(core['q'],float),True)
+            r=fast.record(float(representative['coordinate']),np.array(representative['q'],float),True)
             geometry=extrema_check(fast,r)
             assert geometry['full_cycle_peaks']==row['peaks']
             ode=independent_segmented(r)
             assert ode['success'] and ode['closure']<2e-6 and ode['multiplier_error']<2e-4,ode
             # A deliberately displaced free parameter cannot satisfy the same
             # orbit equations with the unchanged shooting vector.
-            w=mp.matrix([mp.mpf(v) for v in core['q']]+[mp.mpf(core['coordinate'])+10*mp.mpf(row['signed_width'])])
+            w=mp.matrix([mp.mpf(v) for v in representative['q']]+[mp.mpf(representative['coordinate'])+10*mp.mpf(row['signed_width'])])
             displaced=max(abs(v) for v in solver.system(w,mp.mpf('.5')))
             assert displaced>mp.mpf('1e-12')
             checks.append(dict(id=uid,parameter_difference=mp.nstr(delta,16),refined_residual=refined['residual'],
                 working_digits=65,method='mpmath matrix exponential, independent of spectral flight evaluation',
                 geometry=geometry,ode=ode,displaced_parameter_residual=mp.nstr(displaced,16),
-                core_sha256=hashlib.sha256(json.dumps(core,sort_keys=True).encode()).hexdigest(),passed=True))
+                representative_sha256=hashlib.sha256(json.dumps(representative,sort_keys=True).encode()).hexdigest(),passed=True))
             dump(path,dict(passed=all(r['passed'] for r in checks),records=checks,
                 scope='Independent numerical controls, not interval certificates for these new sheets.'))
             print('independent sheet',uid,'closure',ode['closure'],flush=True)

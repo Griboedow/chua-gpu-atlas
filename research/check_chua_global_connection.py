@@ -6,7 +6,7 @@ import mpmath as mp
 from flint import arb, arb_mat
 from chua_interval_map import IntervalHalfMap
 from chua_interval_connection import connect
-from certify_chua_layer_organizer import OUT, saddle_center, enclose_saddle
+from certify_chua_saddle import OUT, saddle_center, enclose_saddle
 from check_chua_interval_derivatives import mp_return
 
 

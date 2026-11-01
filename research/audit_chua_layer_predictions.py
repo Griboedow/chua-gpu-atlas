@@ -15,8 +15,8 @@ from predict_chua_layers import OUT
 
 
 def full_field(rec,method,step,variational=False):
-    core=rec['core'];beta=float(core['beta']);q=np.array(core['q'],float)
-    u=np.r_[0.,q[:2]];period=float(core['period'])
+    representative=rec['representative'];beta=float(representative['beta']);q=np.array(representative['q'],float)
+    u=np.r_[0.,q[:2]];period=float(representative['period'])
     model=Chua(rtol=2.5e-14,step=step,method=method)
     if not variational:
         sol=model.integrate(beta,u,period)
@@ -50,8 +50,8 @@ def local_return_variation(rec,step):
     each next crossing and its derivative are independently integrated.
     """
     from analyze_chua_prediction_evidence import section_word
-    core=rec['core'];beta=float(core['beta'])
-    motion=section_word(core,rec['regions'],rec['targets'],high=True)
+    representative=rec['representative'];beta=float(representative['beta'])
+    motion=section_word(representative,rec['regions'],rec['targets'],high=True)
     points=np.array(motion['normalized_section_points']);model=Chua()
     mp.mp.dps=60;product=mp.eye(2);determinant=mp.mpf(1);checks=[];duration=0.
     for i,point in enumerate(points):
@@ -79,7 +79,7 @@ def local_return_variation(rec,step):
         closure=max(r['next_point_error'] for r in checks),closure_meaning='Maximum independent next-section error, not full-period drift',
         dominant_multiplier=dominant,expected=.25,multiplier_error=abs(dominant-.25),
         signed_half_multiplier=float(mp.re(half)),half_determinant=mp.nstr(determinant,15),
-        period_difference=abs(2*duration-float(core['period'])),
+        period_difference=abs(2*duration-float(representative['period'])),
         checks=checks)
 
 
@@ -111,13 +111,13 @@ def main():
         row=dict(peaks=rec['peaks_requested'],integrations=[]);rows.append(row);save()
         high=PrecisionFlights(rec['regions'],rec['targets'],True,75)
         controls={}
-        for key,target in [('fold',1),('symmetry',-1),('core',.5)]:
+        for key,target in [('fold',1),('symmetry',-1),('representative',.5)]:
             old=rec[key];new=high.boundary(old['beta'],old['q'],target)
             controls[key]=dict(root=new,beta_change=mp.nstr(abs(mp.mpf(new['beta'])-mp.mpf(old['beta'])),12),
                 period_change=mp.nstr(abs(mp.mpf(new['period'])-mp.mpf(old['period'])),12))
             print(row['peaks'],key,'75-digit comparison',controls[key]['beta_change'],flush=True)
         row['precision_checks']=controls
-        f=Flights(Chua(),rec['regions'],rec['targets'],True);c=rec['core']
+        f=Flights(Chua(),rec['regions'],rec['targets'],True);c=rec['representative']
         rr=f.record(float(c['beta']),np.array(c['q'],float),True)
         row['independent_matrix_exponential']=dict(closure=rr['residual'],
             full_multiplier=rr['full_multipliers'][0][0],

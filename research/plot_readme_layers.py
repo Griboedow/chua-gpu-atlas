@@ -25,7 +25,7 @@ def clip(poly,level,keep_above):
 def geometry(sheet):
     grid=np.full((17,17,3),np.nan);beta=np.full((17,17),np.nan)
     for n in sheet['nodes']:
-        i,j=n['index'];r=n['core'];grid[i,j]=[r['alpha'],(r['m0']+8/7)*1000,r['beta']];beta[i,j]=r['beta']
+        i,j=n['index'];r=n['representative'];grid[i,j]=[r['alpha'],(r['m0']+8/7)*1000,r['beta']];beta[i,j]=r['beta']
     faces=[]
     for i in range(16):
         for j in range(16):
@@ -44,7 +44,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source',type=Path,required=True);p.add_argument('--assets',type=Path,required=True)
     args=p.parse_args();source=args.source;assets=args.assets;assets.mkdir(parents=True,exist_ok=True)
     registry=json.loads((ROOT/'results/chua-layer-atlas/family-registry.json').read_text())['families']
-    ordered=sorted(registry,key=lambda r:r['core']['beta']);ids=sorted(r['id'] for r in registry)
+    ordered=sorted(registry,key=lambda r:r['representative']['beta']);ids=sorted(r['id'] for r in registry)
     colors={id:colorsys.hsv_to_rgb((k*.61803398875)%1,.7,.72) for k,id in enumerate(ids)}
     sheets={id:json.loads((source/(id+'.json')).read_text()) for id in ids};geo={id:geometry(sheets[id]) for id in ids}
     allpoints=np.vstack([geo[id]['points'][::3] for id in ids]);audit=json.loads((source/'audit.json').read_text())
@@ -66,7 +66,7 @@ def main():
             ax.scatter(*g['points'].T,s=5,c=[color],depthshade=False)
             title=f'{index:02d} / 32   {id}   |   {family["peak_count"]}-peak reference cycle'
             sub='One family highlighted; other families remain as faint context.'
-            fig.text(.71,.12,f'Reference period T = {family["core"]["period"]:.4f}\n{len(g["points"])} checked samples inside the box',fontsize=10,color='#193449')
+            fig.text(.71,.12,f'Reference period T = {family["representative"]["period"]:.4f}\n{len(g["points"])} checked samples inside the box',fontsize=10,color='#193449')
         ax.set(xlim=(8.94,9.06),ylim=(-6,6),zlim=(LOW,HIGH),xlabel='alpha',ylabel='1000 (m0 + 8/7)',zlabel='beta')
         ax.set_xticks([8.94,9,9.06]);ax.set_yticks([-4,0,4]);ax.set_zticks([14.24,14.28,14.32,14.36,14.4]);ax.tick_params(labelsize=9,pad=0)
         ax.view_init(elev=23,azim=-55);ax.set_box_aspect([1,1,1.15]);ax.grid(True)
@@ -100,7 +100,7 @@ def main():
     ax.set(xlim=(-6,6),ylim=(LOW,HIGH),xlabel='1000 (m0 + 8/7)',ylabel='beta',title='Family branches over the old sampled mask\nSlice at alpha = 9')
     ax.legend(loc='lower left',ncol=3,fontsize=8,framealpha=.92);ax.grid(alpha=.12)
     adding=json.loads((ROOT/'results/chua-layer-census/census-analysis.json').read_text())['adding_sequence']
-    thin_report=json.loads((source/'thin-cores.json').read_text());assert thin_report['status']=='passed'
+    thin_report=json.loads((source/'thin-intervals.json').read_text());assert thin_report['status']=='passed'
     thin=thin_report['families'];thin_counts=[len(r['nodes']) for r in thin]
     bands=[dict(id=id,maxima=r['maxima'],low=r['symmetry']['beta'],high=r['fold']['beta']) for id,r in zip(['S04','S05','S06','S07'],adding)]
     bands += [dict(id=r['id'],maxima=r['maxima'],low=r['symmetry_beta'],high=r['fold_beta']) for r in thin]
@@ -114,7 +114,7 @@ def main():
     sub=grid[1,1].subgridspec(1,2,wspace=.13)
     for k,r in enumerate(thin):
         ax=fig.add_subplot(sub[0,k]);scale=1e7 if r['id']=='P55' else 1e8
-        x=[(n['core']['beta']-r['fold_beta'])*scale for n in r['nodes']];rho=[n['core']['spectral_radius'] for n in r['nodes']]
+        x=[(n['representative']['beta']-r['fold_beta'])*scale for n in r['nodes']];rho=[n['representative']['spectral_radius'] for n in r['nodes']]
         ax.axvspan(-r['width']*scale,0,color=colors[r['id']],alpha=.10)
         ax.plot(x,rho,'.-',color=colors[r['id']],lw=1.1,ms=4)
         ax.axhline(1,color='#7b8790',lw=.8,ls='--');ax.plot([-r['width']*scale,0],[1,1],'o',mfc='white',mec='#7b8790',ms=4)
@@ -130,7 +130,7 @@ def main():
         f'The width zooms contain {thin_counts[0]} and {thin_counts[1]} newly closed cycles.\nThe old beta spacing was 0.004: about 126,000 times the P65 stability width. Connecting lines are visual guides.',fontsize=10)
     fig.savefig(assets/'chua-readme-layer-zoom.png',dpi=170,facecolor='white');fig.savefig(source/'readme-layer-zoom.pdf',facecolor='white');plt.close(fig)
     report=dict(families=32,gif_frames=len(frames),frame_order=[r['id'] for r in ordered],
-        surface_samples=audit['total_nodes'],new_parameter_locations=audit['new_parameter_locations'],thin_core_samples=sum(thin_counts),
+        surface_samples=audit['total_nodes'],new_parameter_locations=audit['new_parameter_locations'],thin_interval_samples=sum(thin_counts),
         face_counts={id:len(geo[id]['faces']) for id in ids},
         scope='Displayed facets interpolate closed representative points; they are not physical window thicknesses or validated interiors. The six-row chart uses a categorical vertical axis. The two detailed zooms retain physical beta widths.')
     (source/'render-summary.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')

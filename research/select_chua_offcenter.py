@@ -2,7 +2,7 @@
 
 This is a discovery heuristic, not a complete window enumeration. Retain the
 largest fragment in each group; discard one-node groups and already mapped
-symmetric cores of the same candidate peak count.
+symmetric representatives of the same candidate peak count.
 """
 import argparse
 import json

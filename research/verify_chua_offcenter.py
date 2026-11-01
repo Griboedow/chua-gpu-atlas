@@ -32,9 +32,9 @@ def verify(m0,beta,start):
             b,qq=f.boundary(beta,qq,target);local=f.record(b,qq,True)
             if abs(local['period']/T-1)>.1 or local['region_violation']>1e-7:raise RuntimeError('Canonical local root changed itinerary')
             template=dict(regions=f.regions,targets=f.targets,symmetric=symmetric,target=target)
-            row=dict(alpha=9.,m0=m0,core=local)
+            row=dict(alpha=9.,m0=m0,representative=local)
             for m in np.linspace(m0,-8/7,25)[1:]:row=advance(template,row,9.,float(m))
-            record['canonical']=dict(core=row['core'],symmetric=symmetric,regions=f.regions,targets=f.targets,target=target)
+            record['canonical']=dict(representative=row['representative'],symmetric=symmetric,regions=f.regions,targets=f.targets,target=target)
         except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:record['canonical_error']=str(e)
         return record
     return record
@@ -52,7 +52,7 @@ def main():
         except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:r=dict(status='failed',error=str(e),beta=beta,m0=c['m0'])
         r['candidate_index']=k;r['gpu_period_hint']=c['period_hint'];records.append(r)
         path.write_text(json.dumps(records,indent=2)+'\n',encoding='utf-8',newline='\n')
-        print(k+1,'of',len(candidates),r['status'],beta,r.get('peak_count'),'canonical',r.get('canonical',{}).get('core',{}).get('beta'),r.get('canonical_error'),flush=True)
+        print(k+1,'of',len(candidates),r['status'],beta,r.get('peak_count'),'canonical',r.get('canonical',{}).get('representative',{}).get('beta'),r.get('canonical_error'),flush=True)
 
 
 if __name__=='__main__':main()

@@ -36,7 +36,7 @@ def main():
         print(f"digits={digits}, shift={shift}: {data['status']} (expected {expected})", flush=True)
     source_files = [
         "research/certify_chua_homoclinic_tangency.py",
-        "research/certify_chua_layer_organizer.py",
+        "research/certify_chua_saddle.py",
         "research/chua_interval_map.py", "research/chua_interval_connection.py",
         "results/chua-layer-infinity/connection-center.json",
         "results/chua-layer-infinity/local-certificate.json",

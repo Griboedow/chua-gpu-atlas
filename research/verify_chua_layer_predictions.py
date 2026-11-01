@@ -76,17 +76,17 @@ def main():
             fold=high.boundary(beta,q,1);rec['fold']=fold;save()
             print(prediction['peaks'],'precision fold',fold['beta'],'residual',fold['residual'],flush=True)
             symmetry=high.boundary(fold['beta'],fold['q'],-1);rec['symmetry']=symmetry;save()
-            core=high.boundary(fold['beta'],fold['q'],.5);rec['core']=core
+            representative=high.boundary(fold['beta'],fold['q'],.5);rec['representative']=representative
             import mpmath as mp
-            rec['symmetric_core_width']=mp.nstr(mp.mpf(fold['beta'])-mp.mpf(symmetry['beta']),args.digits-5)
+            rec['symmetric_stability_width']=mp.nstr(mp.mpf(fold['beta'])-mp.mpf(symmetry['beta']),args.digits-5)
             rec['status']='high_precision_candidate'
             rec['forecast_errors']=dict(
                 fold_absolute=float(abs(mp.mpf(fold['beta'])-mp.mpf(str(prediction['fold_beta_corrected'])))),
-                fold_in_core_widths=float(abs(mp.mpf(fold['beta'])-mp.mpf(str(prediction['fold_beta_corrected'])))/mp.mpf(rec['symmetric_core_width'])),
-                width_relative=float(abs(mp.mpf(rec['symmetric_core_width'])/mp.mpf(str(prediction['symmetric_core_width']))-1)),
+                fold_error_in_stability_widths=float(abs(mp.mpf(fold['beta'])-mp.mpf(str(prediction['fold_beta_corrected'])))/mp.mpf(rec['symmetric_stability_width'])),
+                width_relative=float(abs(mp.mpf(rec['symmetric_stability_width'])/mp.mpf(str(prediction['symmetric_stability_width']))-1)),
                 period_absolute=abs(float(fold['period'])-prediction['fold_period']))
             edge=fold;regions=newregions;save()
-            print(prediction['peaks'],'width',rec['symmetric_core_width'],rec['forecast_errors'],flush=True)
+            print(prediction['peaks'],'width',rec['symmetric_stability_width'],rec['forecast_errors'],flush=True)
         except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError,ZeroDivisionError) as exc:
             rec['error']=str(exc);save();print('STOP',exc,flush=True);break
     print('Saved search-results.json',flush=True)

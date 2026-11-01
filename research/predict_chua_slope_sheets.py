@@ -1,4 +1,4 @@
-"""Freeze organizer-anchored layer forecasts before solving their off-slice targets."""
+"""Freeze tangency_estimate-anchored layer forecasts before solving their off-slice targets."""
 import argparse
 import hashlib
 import json
@@ -14,7 +14,7 @@ DIR=OUT/'sheets'
 
 def boundary_seed(seed,p,free,guess):
     """Use a short continuation only to initialize the high-precision root."""
-    q=np.array(seed['core']['q'],float);source={k:float(seed['core'][k]) for k in BASE}
+    q=np.array(seed['representative']['q'],float);source={k:float(seed['representative'][k]) for k in BASE}
     value=source[free];failures=[]
     for fraction in np.linspace(0,1,9):
         pars={k:source[k]+fraction*(p[k]-source[k]) for k in BASE}
@@ -87,12 +87,12 @@ def initialize():
         base_parameters=BASE,slope_offsets=[-.0004,0.,.0004],
         sections=['alpha=9; predict beta','beta=14.30635909996146; predict alpha'],
         training_peaks=[35,45,55],target_peaks=[65,75,85],
-        position_model='coordinate_n = organizer + A*r^(n-5) + (B+C*(n-5))*r^(2*(n-5))',
+        position_model='coordinate_n = estimated_tangency_parameter + A*r^(n-5) + (B+C*(n-5))*r^(2*(n-5))',
         width_model='width_n = width_55*r^(2*(n-5))',
-        r_source='Inverse full-return unstable multiplier of the short saddle at the numerical organizer',
+        r_source='Inverse full-return unstable multiplier of the short saddle at the numerical tangency estimate',
         primary_gate='Predicted midpoint lies strictly between independently solved fold and symmetry-breaking endpoints',
         secondary_gate='Relative width error below 10 percent',
-        organizer_scope='Finite-iterate tangent-line approximation, with increased-iteration controls; exact tangency certified only at the original point.',
+        tangency_estimate_scope='Finite-iterate tangent-line approximation, with increased-iteration controls; exact tangency certified only at the original point.',
         provenance='Existing central target roots are used only as initial guesses during the later search; target endpoints do not enter forecasts. Central beta node is retrospective.',
         failure_policy='Retain forecast misses and unresolved roots without changing the frozen forecasts.')
     if path.exists():return
@@ -106,7 +106,7 @@ def calibrate(only=None):
         path=DIR/(name+'-calibration.json')
         if path.exists():continue
         start=time.monotonic();org=continue_tangency(p,free)
-        # A second finite-iterate construction tests sensitivity of the organizer approximation.
+        # A second finite-iterate construction tests sensitivity of the tangency_estimate approximation.
         from chua_research_followup import approximate_tangency
         check=approximate_tangency(org['parameters'],free,
             [org['starting_coordinate']/org['expansion'],org['coordinate']],iterations=10)
@@ -114,7 +114,7 @@ def calibrate(only=None):
         for peaks in [35,45,55]:
             seed=templates[peaks]
             solver=ParameterPrecisionFlights(seed['regions'],seed['targets'],p,free,digits=45)
-            displacement=seed['core']['beta']-BASE['beta']
+            displacement=seed['representative']['beta']-BASE['beta']
             # The alpha surface uses the local beta/alpha tangent for a starting guess only.
             guess=org['coordinate']+displacement*(1 if free=='beta' else -1/2.135)
             value,q,failures=boundary_seed(seed,p,free,guess)
@@ -138,8 +138,8 @@ def calibrate(only=None):
             forecasts.append(dict(peaks=peaks,fold=mp.nstr(fold,38),signed_width=mp.nstr(width,38),
                 midpoint=mp.nstr(fold-width/2,38)))
         dump(path,dict(node=name,free_parameter=free,index=[i,j],parameters=p,
-            organizer=org,organizer_control=check,
-            organizer_difference=abs(check['coordinate']-org['coordinate']),training=training,
+            tangency_estimate=org,tangency_estimate_control=check,
+            tangency_estimate_difference=abs(check['coordinate']-org['coordinate']),training=training,
             coefficients=[mp.nstr(x,38) for x in coeff],forecasts=forecasts,
             elapsed_seconds=time.monotonic()-start))
         print(name,'calibration saved in',time.monotonic()-start,flush=True)
@@ -152,12 +152,12 @@ def freeze():
     assert all(p.exists() for p in files),'All calibration nodes must finish before freezing'
     corrections=json.loads((DIR/'central-residual-calibration.json').read_text())
     records=[{k:v for k,v in json.loads(p.read_text()).items() if k in
-                  ['node','parameters','free_parameter','index','forecasts','organizer']} for p in files]
+                  ['node','parameters','free_parameter','index','forecasts','tangency_estimate']} for p in files]
     for rec in records:
         for forecast in rec['forecasts']:
             delta=mp.mpf(corrections[rec['free_parameter']][str(forecast['peaks'])]['fold_residual'])
-            forecast['transport_fold']=mp.nstr(mp.mpf(forecast['fold'])+delta,38)
-            forecast['transport_midpoint']=mp.nstr(mp.mpf(forecast['midpoint'])+delta,38)
+            forecast['corrected_fold']=mp.nstr(mp.mpf(forecast['fold'])+delta,38)
+            forecast['corrected_midpoint']=mp.nstr(mp.mpf(forecast['midpoint'])+delta,38)
     dump(path,dict(created_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
         calibration_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
         central_calibration_sha256=hashlib.sha256((DIR/'central-residual-calibration.json').read_bytes()).hexdigest(),
@@ -165,7 +165,7 @@ def freeze():
 
 
 def central_residuals():
-    """A separately labelled transport model uses known central target folds.
+    """A separately labelled bias-correction model uses known central target folds.
 
     These central points are calibration, not blind validation. Off-centre
     endpoint solves have not yet run. The original asymptotic model is retained.
@@ -184,7 +184,7 @@ def central_residuals():
                 fold_residual=mp.nstr(mp.mpf(fold['coordinate'])-mp.mpf(forecast['fold']),38),seed_failures=failures)
             print('central calibration',free,forecast['peaks'],fold['coordinate'],flush=True)
         result[free]=rows
-    result['scope']='Both central nodes calibrate a constant fold-residual correction. Only the other 16 nodes test cross-parameter transport. The uncorrected forecasts remain separately scored.'
+    result['scope']='Both central nodes calibrate a constant fold-residual correction. Only the other 16 nodes test prediction at other parameter values. The uncorrected forecasts remain separately scored.'
     dump(path,result)
 
 
@@ -212,14 +212,14 @@ def search(only=None):
                 fold=solver.boundary(value,q,1)
                 symmetry=solver.boundary(fold['coordinate'],fold['q'],-1)
                 # A third root is useful for independent integration and phase portraits.
-                core=solver.boundary(fold['coordinate'],fold['q'],.5)
+                representative=solver.boundary(fold['coordinate'],fold['q'],.5)
                 x=mp.mpf(forecast['midpoint']);a=mp.mpf(fold['coordinate']);b=mp.mpf(symmetry['coordinate'])
                 width=a-b
-                transport=mp.mpf(forecast['transport_midpoint'])
-                rec.update(status='numerical_root',fold=fold,symmetry=symmetry,core=core,
+                corrected_midpoint=mp.mpf(forecast['corrected_midpoint'])
+                rec.update(status='numerical_root',fold=fold,symmetry=symmetry,representative=representative,
                     signed_width=mp.nstr(width,38),midpoint_inside=bool(min(a,b)<x<max(a,b)),
-                    transport_midpoint_inside=bool(min(a,b)<transport<max(a,b)),
-                    transport_fold_error_in_widths=float((mp.mpf(forecast['transport_fold'])-a)/width),
+                    corrected_midpoint_inside=bool(min(a,b)<corrected_midpoint<max(a,b)),
+                    corrected_fold_error_in_widths=float((mp.mpf(forecast['corrected_fold'])-a)/width),
                     signed_fold_error_in_widths=float((mp.mpf(forecast['fold'])-a)/width),
                     width_relative_error=float(abs(mp.mpf(forecast['signed_width'])/width-1)),
                     regions=seed['regions'],targets=seed['targets'])

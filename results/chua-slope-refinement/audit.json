@@ -13,7 +13,7 @@
       "accepted": 1671,
       "requested": 1681,
       "recovered_old_nodes": 0,
-      "new_itinerary_cores": 0,
+      "new_itinerary_representatives": 0,
       "widths": [
         0.0001958652954372475,
         0.0027996630995630323
@@ -27,7 +27,7 @@
       "accepted": 1680,
       "requested": 1681,
       "recovered_old_nodes": 0,
-      "new_itinerary_cores": 0,
+      "new_itinerary_representatives": 0,
       "widths": [
         0.00022458032793415406,
         0.0028577660206825506
@@ -41,7 +41,7 @@
       "accepted": 1681,
       "requested": 1681,
       "recovered_old_nodes": 80,
-      "new_itinerary_cores": 242,
+      "new_itinerary_representatives": 242,
       "widths": [
         7.259536644532716e-05,
         0.0009049711444761854
@@ -55,7 +55,7 @@
       "accepted": 1681,
       "requested": 1681,
       "recovered_old_nodes": 81,
-      "new_itinerary_cores": 245,
+      "new_itinerary_representatives": 245,
       "widths": [
         7.531599272292411e-05,
         0.0012605914661059092
@@ -100,7 +100,7 @@
         0,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.5302870082223308e-11,
@@ -142,7 +142,7 @@
         20,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.965094753586527e-13,
@@ -184,7 +184,7 @@
         20,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.4922286456785514e-12,
@@ -226,7 +226,7 @@
         40,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.4632739464559563e-13,
@@ -268,7 +268,7 @@
         20,
         30
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 7.133182933216631e-14,
@@ -310,7 +310,7 @@
         20,
         35
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.659783421814609e-13,
@@ -352,7 +352,7 @@
         20,
         40
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.5068835896036035e-13,
@@ -394,7 +394,7 @@
         0,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.1785017406396037e-13,
@@ -436,7 +436,7 @@
         20,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.965094753586527e-13,
@@ -478,7 +478,7 @@
         20,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.4922286456785514e-12,
@@ -520,7 +520,7 @@
         40,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.4216184613123914e-12,
@@ -562,7 +562,7 @@
         20,
         30
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 7.133182933216631e-14,
@@ -604,7 +604,7 @@
         20,
         35
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.659783421814609e-13,
@@ -646,7 +646,7 @@
         20,
         40
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.5068835896036035e-13,
@@ -688,7 +688,7 @@
         0,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.1906031716080179e-11,
@@ -730,7 +730,7 @@
         20,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 7.949196856316121e-14,
@@ -772,7 +772,7 @@
         20,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 4.213684956511088e-12,
@@ -814,7 +814,7 @@
         40,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 3.433919815165609e-12,
@@ -856,7 +856,7 @@
         20,
         30
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 3.0397906414236786e-12,
@@ -898,7 +898,7 @@
         20,
         35
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.665645482125001e-13,
@@ -940,7 +940,7 @@
         20,
         40
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.109667913112844e-12,
@@ -982,7 +982,7 @@
         0,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.1261881144596373e-12,
@@ -1024,7 +1024,7 @@
         20,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 7.949196856316121e-14,
@@ -1066,7 +1066,7 @@
         20,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 4.213684956511088e-12,
@@ -1108,7 +1108,7 @@
         40,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 5.706546346573305e-14,
@@ -1150,7 +1150,7 @@
         20,
         30
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 3.0397906414236786e-12,
@@ -1192,7 +1192,7 @@
         20,
         35
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 2.665645482125001e-13,
@@ -1234,7 +1234,7 @@
         20,
         40
       ],
-      "role": "core",
+      "role": "representative",
       "method": "DOP853",
       "success": true,
       "closure": 1.109667913112844e-12,

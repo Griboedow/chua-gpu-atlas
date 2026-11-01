@@ -12,7 +12,7 @@ Figure 1. Predicted and measured stability intervals of symmetric cycles, expres
 
 ## Forecasts and search results
 
-The theory, target itineraries, numerical forecasts, input hashes and acceptance criteria were published in [commit 0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) before either new cycle was solved. The [frozen prediction file](../results/chua-layer-prediction/predictions-frozen.json) is unchanged. Only the existing 15–65-peak members were used: the last four folds fix four location coefficients, while the short saddle supplies the expansion factor and period. This is an asymptotic calibration, not a parameter-free prediction. An earlier backtest on the already known 65-peak member is explicitly retrospective.
+The theory, target itineraries, numerical forecasts, input hashes and acceptance criteria were published in [commit 0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) before either new cycle was solved. The numerical values in the [frozen predictions](../results/chua-layer-prediction/predictions-frozen.json) are unchanged. Only the existing 15–65-peak members were used: the last four folds fix four location coefficients, while the short saddle supplies the expansion factor and period. This is an asymptotic calibration, not a parameter-free prediction. An earlier backtest on the already known 65-peak member is explicitly retrospective.
 
 | Quantity | 75 peaks: frozen prediction | 75 peaks: measured | 85 peaks: frozen prediction | 85 peaks: measured |
 |---|---:|---:|---:|---:|
@@ -86,7 +86,7 @@ For an initial finite-order correction to locations, we freeze the ansatz
 
 The n-dependent term allows the first correction from parameter-dependent local expansion. This is an asymptotic model, not an exact identity. Its constants are calibrated using existing layers, while Lambda comes from the short saddle cycle. Forecasts retain a simpler leading-order alternative so the effect of the correction is visible.
 
-<a id="spacing-width-period-and-normalized-core-position"></a>
+<a id="spacing-width-period-and-normalized-representative-position"></a>
 
 ## Spacing, width, period and normalized orbit position
 
@@ -100,9 +100,9 @@ There is also a shape prediction from the same quadratic model. Half-return mult
 
 The preceding predictions were made without solving a manifold connection. After finding the cycles, we additionally propagated short lines tangent to the saddle's unstable direction through a global excursion. We solved for a fold of their final displacement normal to the tangent stable line. Two extra terminal choices and three initial local-iteration choices give six finite-iterate approximations.
 
-![Returning branch fold and the extra time spent near the short saddle](assets/chua-layer-prediction-organizer.png)
+![Returning branch fold and the extra time spent near the short saddle](assets/chua-layer-prediction-tangency.png)
 
-The estimates cluster near **beta = 14.30635909996**, spanning **1.12e-12**. In the first coordinate convention, three finite-difference steps give curvature near -1.86674e5 and parameter derivative near -2.04763, supporting a quadratic fold with transverse unfolding. Extra terminal iteration reduces the final stable displacement from about 1.77e-11 to about 9e-15. The smallest boundary-crossing speed stays above 1.12 in these computations. [All coordinates, itineraries, derivative checks and curves](../results/chua-layer-prediction/organizer-approximants.json) are retained.
+The estimates cluster near **beta = 14.30635909996**, spanning **1.12e-12**. In the first coordinate convention, three finite-difference steps give curvature near -1.86674e5 and parameter derivative near -2.04763, supporting a quadratic fold with transverse unfolding. Extra terminal iteration reduces the final stable displacement from about 1.77e-11 to about 9e-15. The smallest boundary-crossing speed stays above 1.12 in these computations. [All coordinates, itineraries, derivative checks and curves](../results/chua-layer-prediction/tangency-estimates.json) are retained.
 
 This is a numerical approximation using tangent lines and finitely many iterates, **not a certified exact stable/unstable manifold tangency**. Agreement between its variants is not an error bound. It was evaluated after the orbit search and was not part of the published forecast. Its beta differs from the frozen fitted limit 14.30635910320525 by about 3.24e-9: a tiny absolute bias can already exceed a new stability interval's width. This is consistent with the fine-scale location miss and explains why better width predictions alone do not ensure direct hits on later layers.
 

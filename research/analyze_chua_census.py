@@ -51,7 +51,7 @@ def main():
             bb,qq=boundary(family,b,q,target);rr=family.record(bb,qq,True)
             if rr['region_violation']>1e-7:raise RuntimeError('Invalid adding-family itinerary')
             row[name]=rr
-        row['symmetric_core_width']=abs(row['fold']['beta']-row['symmetry']['beta'])
+        row['symmetric_stability_width']=abs(row['fold']['beta']-row['symmetry']['beta'])
         pp=parent.solve(b,parent_q);pr=parent.record(b,pp)
         sol=model.integrate(b,[0.,*r['cycle']['q'][:2]],T)
         returns=sol.y_events[2][sol.t_events[2]<T-1e-6]
@@ -59,8 +59,8 @@ def main():
         row.update(parent_five_cycle=pr,section_returns=returns.tolist(),
                    distances_to_parent_section=distances.tolist(),minimum_parent_distance=float(min(distances)))
         adding.append(row)
-        print('adding',b,r['peak_count'],T,row['symmetric_core_width'],row['minimum_parent_distance'],flush=True)
-    # Assign only the attracting five-maximum cores; doubled daughters and
+        print('adding',b,r['peak_count'],T,row['symmetric_stability_width'],row['minimum_parent_distance'],flush=True)
+    # Assign only the attracting five-maximum representatives; doubled daughters and
     # satellites are deliberately left outside this narrow comparison.
     atlas_path=ROOT/'outputs/detailed/window_zoom_scan.npz'
     atlas=np.load(atlas_path);params=atlas['parameters'];classes=atlas['classes']
@@ -88,14 +88,14 @@ def main():
                     rho=r['independent_variational_rho'],closure=r.get('radau_refinement',{}).get('closure',r['radau_closure']),source=r['source']) for r in anchors]
     report=dict(verified_anchor_windows=len(anchors),anchors=summaries,gap_witnesses=gaps,adding_sequence=adding,
                 old_grid=dict(shape=old_shape,regular_nodes=int(regular.sum()),sampled_connectivity=topology,
-                              source_sha256=hashlib.sha256(atlas_path.read_bytes()).hexdigest(),five_maximum_core_coverage=coverage,
+                              source_sha256=hashlib.sha256(atlas_path.read_bytes()).hexdigest(),five_peak_stability_region_coverage=coverage,
                               union_regular_nodes=int((regular&union).sum()),union_fraction=float((regular&union).sum()/regular.sum()),
                               interpolation_note='Surface boundaries are bilinearly interpolated from 7x7 continuation points; the comparison is approximate.'),
                 scope='Verified local periodic windows along one transect, not the number of globally connected 3D sheets.',
-                infinity_status='No finite total or infinitude is proved. Four period-adding members and shrinking cores support an accumulating hierarchy hypothesis.')
+                infinity_status='No finite total or infinitude is proved. Four period-adding members and shrinking stability intervals support an accumulating hierarchy hypothesis.')
     (out/'census-analysis.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
     np.savez_compressed(out/'atlas-comparison.npz',alpha=atlas['alpha'],beta=atlas['beta'],m0=atlas['m0'],
-                        regular=regular.reshape(old_shape),first_core=masks[0].reshape(old_shape),second_core=masks[1].reshape(old_shape))
+                        regular=regular.reshape(old_shape),first_stability_region=masks[0].reshape(old_shape),second_stability_region=masks[1].reshape(old_shape))
     print('count',len(anchors),'gap witnesses',sum('witness_beta' in g for g in gaps),'old grid',report['old_grid'],flush=True)
 
 

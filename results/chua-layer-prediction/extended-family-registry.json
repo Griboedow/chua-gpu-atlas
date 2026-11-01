@@ -4,7 +4,7 @@
     {
       "id": "A01",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.306469688212651,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -201,7 +201,7 @@
     {
       "id": "A02",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.306671387553248,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -374,7 +374,7 @@
     {
       "id": "A03",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.307278441506087,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -555,7 +555,7 @@
     {
       "id": "A04",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.30768860742372,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -752,7 +752,7 @@
     {
       "id": "A05",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.308089972413162,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1001,7 +1001,7 @@
     {
       "id": "A06",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.351235590544348,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1150,7 +1150,7 @@
     {
       "id": "P55",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.306295566125234,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1351,7 +1351,7 @@
     {
       "id": "P65",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.306335387797446,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1576,7 +1576,7 @@
     {
       "id": "S01",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.259955810164266,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1669,7 +1669,7 @@
     {
       "id": "S02",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.290823151497353,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1762,7 +1762,7 @@
     {
       "id": "S03",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.302519712466765,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1891,7 +1891,7 @@
     {
       "id": "S04",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.303733801459302,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -1996,7 +1996,7 @@
     {
       "id": "S05",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.305276563609103,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2125,7 +2125,7 @@
     {
       "id": "S06",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.305925899394937,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2278,7 +2278,7 @@
     {
       "id": "S07",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.306191209199822,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2455,7 +2455,7 @@
     {
       "id": "S08",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.3299100494015,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2555,7 +2555,7 @@
     {
       "id": "S09",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.349913696448763,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2660,7 +2660,7 @@
     {
       "id": "S10",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.350518061155968,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2789,7 +2789,7 @@
     {
       "id": "S11",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.359245458104967,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2870,7 +2870,7 @@
     {
       "id": "E06",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.227785194541568,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -2995,7 +2995,7 @@
     {
       "id": "E01",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.141376390886672,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3095,7 +3095,7 @@
     {
       "id": "E02",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.181578793206837,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3216,7 +3216,7 @@
     {
       "id": "E03",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.202784958928396,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3325,7 +3325,7 @@
     {
       "id": "E05",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.21009138611556,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3410,7 +3410,7 @@
     {
       "id": "E07",
       "symmetric": false,
-      "core": {
+      "representative": {
         "beta": 14.229173311188285,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3519,7 +3519,7 @@
     {
       "id": "E04",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.203256816468654,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3655,7 +3655,7 @@
     {
       "id": "E08",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.402288419796117,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3765,7 +3765,7 @@
     {
       "id": "E10",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.430120989142058,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3869,7 +3869,7 @@
     {
       "id": "E12",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.483456372191808,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -3962,7 +3962,7 @@
     {
       "id": "E09",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.427559629520497,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4061,7 +4061,7 @@
     {
       "id": "E13",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.513283835719049,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4154,7 +4154,7 @@
     {
       "id": "E11",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.472373585586078,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4254,7 +4254,7 @@
     {
       "id": "P75",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.306350311442042,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4491,7 +4491,7 @@
         1
       ],
       "target": 0.5,
-      "precision_core": {
+      "high_precision_representative": {
         "beta": "14.306350311442041568376450118381417601482602534157",
         "q": [
           "0.234432628392952694434785288747190089912549072496",
@@ -4572,7 +4572,7 @@
           "2.51373182484e-48"
         ]
       },
-      "precision_evidence": "search-results.json and independent-checks.json; core retains float64 compatibility only",
+      "precision_evidence": "search-results.json and independent-checks.json; representative retains float64 compatibility only",
       "peak_count": 75,
       "section_returns": 15,
       "sources": [
@@ -4587,7 +4587,7 @@
     {
       "id": "P85",
       "symmetric": true,
-      "core": {
+      "representative": {
         "beta": 14.306355853111487,
         "alpha": 9.0,
         "m0": -1.1428571428571428,
@@ -4848,7 +4848,7 @@
         1
       ],
       "target": 0.5,
-      "precision_core": {
+      "high_precision_representative": {
         "beta": "14.306355853111487543450416395384448916534670959979",
         "q": [
           "0.23443511065591217261125723097766014295407898258381",
@@ -4937,7 +4937,7 @@
           "4.20892730004e-47"
         ]
       },
-      "precision_evidence": "search-results.json and independent-checks.json; core retains float64 compatibility only",
+      "precision_evidence": "search-results.json and independent-checks.json; representative retains float64 compatibility only",
       "peak_count": 85,
       "section_returns": 17,
       "sources": [

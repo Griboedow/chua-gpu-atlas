@@ -36,21 +36,21 @@ def main():
             bf,qf=candidate.boundary(predicted,guess,1);fold=candidate.record(bf,qf,True)
             bs,qs=candidate.boundary(bf,qf,-1);sym=candidate.record(bs,qs,True)
             width=bf-bs
-            if width<=0 or width>last['symmetric_core_width']*.7:raise RuntimeError('Unexpected adding width')
-            bc=bs+.45*width;qc=candidate.solve(bc,qs);core=candidate.record(bc,qc,True)
-            if max(r['region_violation'] for r in [fold,sym,core])>1e-7:raise RuntimeError('Invalid itinerary')
-            orbit=model.integrate(bc,[0.,*qc[:2]],core['period']);peak_count=len(orbit.t_events[3])
-            var=independent(core);radau=Chua(rtol=2e-13,step=.01,method='Radau').integrate(bc,[0.,*qc[:2]],core['period'])
+            if width<=0 or width>last['symmetric_stability_width']*.7:raise RuntimeError('Unexpected adding width')
+            bc=bs+.45*width;qc=candidate.solve(bc,qs);representative=candidate.record(bc,qc,True)
+            if max(r['region_violation'] for r in [fold,sym,representative])>1e-7:raise RuntimeError('Invalid itinerary')
+            orbit=model.integrate(bc,[0.,*qc[:2]],representative['period']);peak_count=len(orbit.t_events[3])
+            var=independent(representative);radau=Chua(rtol=2e-13,step=.01,method='Radau').integrate(bc,[0.,*qc[:2]],representative['period'])
             closure=float(max(abs(radau.y[:,-1]-np.r_[0.,qc[:2]])))
-            record.update(fold=fold,symmetry=sym,core=core,regions=newregions,targets=targets,
-                peak_count=peak_count,symmetric_core_width=width,independent_variational=var,radau_closure=closure)
-            if peak_count!=count or core['spectral_radius']>=.999 or not var['success'] or abs(var['dominant'])>=.999 or var['multiplier_error']>2e-5 or var['closure']>2e-7 or closure>2e-7:
+            record.update(fold=fold,symmetry=sym,representative=representative,regions=newregions,targets=targets,
+                peak_count=peak_count,symmetric_stability_width=width,independent_variational=var,radau_closure=closure)
+            if peak_count!=count or representative['spectral_radius']>=.999 or not var['success'] or abs(var['dominant'])>=.999 or var['multiplier_error']>2e-5 or var['closure']>2e-7 or closure>2e-7:
                 raise RuntimeError('Independent orbit check failed')
             record['status']='verified_attracting_cycle'
-            previous=b;last=dict(fold=fold,symmetric_core_width=width,parent_five_cycle=parent)
+            previous=b;last=dict(fold=fold,symmetric_stability_width=width,parent_five_cycle=parent)
         except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:record['error']=str(e)
         records.append(record);(out/'extended-adding.json').write_text(json.dumps(records,indent=2)+'\n',encoding='utf-8',newline='\n')
-        print(count,record['status'],record.get('fold',{}).get('beta'),record.get('symmetric_core_width'),record.get('radau_closure'),record.get('error'),flush=True)
+        print(count,record['status'],record.get('fold',{}).get('beta'),record.get('symmetric_stability_width'),record.get('radau_closure'),record.get('error'),flush=True)
         if record['status']!='verified_attracting_cycle':break
 
 

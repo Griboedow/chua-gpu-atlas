@@ -32,14 +32,14 @@ def main():
     beta = np.full((len(families), 9, 9), np.nan); periods = beta.copy(); widths = beta.copy()
     for k, family in enumerate(families):
         for n in sheets[family['id']]['nodes']:
-            i, j = n['index']; beta[k, i, j] = n['core']['beta']; periods[k, i, j] = n['core']['period']
+            i, j = n['index']; beta[k, i, j] = n['representative']['beta']; periods[k, i, j] = n['representative']['period']
             if 'fold' in n:
                 widths[k, i, j] = n['fold']['beta'] - n['symmetry']['beta']
     aa = np.array(sheets[families[0]['id']]['alpha']); mm = np.array(sheets[families[0]['id']]['m0']); offsets = (mm + 8/7) * 1000
     inside = (beta >= 14.24) & (beta <= 14.4)
     count = inside.sum(axis=0); complete = np.isfinite(beta).all(axis=0)
     np.savez_compressed(out / 'display-samples.npz', family=np.array([r['id'] for r in families]), alpha=aa, m0=mm,
-        beta=beta, period=periods, symmetric_core_width=widths, representative_count=count, all_families_sampled=complete)
+        beta=beta, period=periods, symmetric_stability_width=widths, representative_count=count, all_families_sampled=complete)
 
     plt.rcParams.update({'font.size': 10, 'axes.spines.top': False, 'axes.spines.right': False})
     fig, axes = plt.subplots(1, 2, figsize=(13.8, 7.2), gridspec_kw={'width_ratios': [1.65, 1]}, constrained_layout=True)
@@ -101,12 +101,12 @@ Hover shows the full period and, where continued, the stability width of the sym
     oldadding = json.loads((ROOT/'results/chua-layer-census/census-analysis.json').read_text())['adding_sequence']
     added = json.loads((out/'extended-adding.json').read_text())
     peaks = [r['maxima'] for r in oldadding] + [r['peak_count'] for r in added]
-    corewidth = [r['symmetric_core_width'] for r in oldadding] + [r['symmetric_core_width'] for r in added]
-    duration = [r['period'] for r in oldadding] + [r['core']['period'] for r in added]
+    stability_widths = [r['symmetric_stability_width'] for r in oldadding] + [r['symmetric_stability_width'] for r in added]
+    duration = [r['period'] for r in oldadding] + [r['representative']['period'] for r in added]
     fig, axes = plt.subplots(1, 2, figsize=(11.5, 4.6), constrained_layout=True)
-    axes[0].semilogy(peaks, corewidth, 'o-', color='#9653a2', lw=2)
+    axes[0].semilogy(peaks, stability_widths, 'o-', color='#9653a2', lw=2)
     axes[0].axhline(.004,color='#b26030',ls='--',label='Old beta spacing: 0.004')
-    for x,y in zip(peaks,corewidth): axes[0].annotate(f'{y:.2e}',(x,y),xytext=(0,-17),textcoords='offset points',ha='center',fontsize=9)
+    for x,y in zip(peaks,stability_widths): axes[0].annotate(f'{y:.2e}',(x,y),xytext=(0,-17),textcoords='offset points',ha='center',fontsize=9)
     axes[0].set(xlabel='Maxima per full cycle',ylabel='Fold-to-symmetry width in beta',xlim=(10,70),ylim=(1e-8,1e-2),title='Six shrinking stability intervals');axes[0].legend(fontsize=9);axes[0].grid(alpha=.15)
     axes[1].plot(peaks,duration,'o-',color='#197b89',lw=2)
     axes[1].set(xlabel='Maxima per full cycle',ylabel='Full period',title='Approximately 21.6 extra time units per member');axes[1].grid(alpha=.15)
@@ -139,7 +139,7 @@ Hover shows the full period and, where continued, the stability width of the sym
     report=dict(families=len(families),samples=int(np.isfinite(beta).sum()),inside_samples=int(inside.sum()),
         representative_count_range=[int(count.min()),int(count.max())],fully_sampled_parameter_nodes=int(complete.sum()),
         missing_samples={r['id']:int(np.isnan(beta[k]).sum()) for k,r in enumerate(families) if np.isnan(beta[k]).any()},
-        adding=dict(maxima=peaks,widths=corewidth,periods=duration,old_spacing_over_thinnest=float(.004/corewidth[-1])),
+        adding=dict(maxima=peaks,widths=stability_widths,periods=duration,old_spacing_over_thinnest=float(.004/stability_widths[-1])),
         basin_fractions=dict(baseline=coarsecounts.tolist(),half_step=finecounts.tolist(),max_change_percentage_points=float(max(abs(coarsecounts-finecounts)))),
         single_outer_region_families=[r['id'] for r in behavior if not r['both_outer_regions']])
     (out/'plot-summary.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')

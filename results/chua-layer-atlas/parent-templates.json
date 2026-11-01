@@ -2,7 +2,7 @@
   {
     "id": "A03",
     "symmetric": false,
-    "core": {
+    "representative": {
       "beta": 14.307278441506087,
       "alpha": 9.0,
       "m0": -1.1428571428571428,
@@ -183,7 +183,7 @@
   {
     "id": "A05",
     "symmetric": false,
-    "core": {
+    "representative": {
       "beta": 14.308089972413162,
       "alpha": 9.0,
       "m0": -1.1428571428571428,

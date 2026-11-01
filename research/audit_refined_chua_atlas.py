@@ -15,17 +15,17 @@ def main():
         sheet=json.loads(path.read_text());original=[]
         for node in sheet['nodes']:
             model=Chua(alpha=node['alpha'],m0=node['m0']);f=Flights(model,node.get('regions',sheet['regions']),node.get('targets',sheet['targets']),sheet.get('symmetric',True))
-            for key in ['core','fold','symmetry']:
+            for key in ['representative','fold','symmetry']:
                 if key not in node:continue
                 r=node[key];check=f.record(r['beta'],np.array(r['q']))
                 original.append(dict(key=key,residual=check['residual'],rho_difference=abs(check['spectral_radius']-r['spectral_radius'])))
-        inside=[n for n in sheet['nodes'] if 14.24<=n['core']['beta']<=14.4]
+        inside=[n for n in sheet['nodes'] if 14.24<=n['representative']['beta']<=14.4]
         assert inside,'No representative inside original atlas'
         selected=[min(inside,key=lambda n:n['m0']),max(inside,key=lambda n:n['m0'])]
         controls=[]
         for node in selected:
-            r=node['core'];check=independent(r);controls.append(dict(alpha=node['alpha'],m0=node['m0'],beta=r['beta'],**check))
-        root=lookup[sheet['id']]['core'];model=Chua(rtol=2e-12,step=.02)
+            r=node['representative'];check=independent(r);controls.append(dict(alpha=node['alpha'],m0=node['m0'],beta=r['beta'],**check))
+        root=lookup[sheet['id']]['representative'];model=Chua(rtol=2e-12,step=.02)
         u=np.r_[0.,root['q'][:2]];T=root['period'];orbit=model.integrate(root['beta'],u,T)
         t=np.linspace(0,T,8001);xyz=orbit.sol(t).T
         feature=dict(id=sheet['id'],reference_beta=root['beta'],period=T,maxima=len(orbit.t_events[3]),
@@ -37,7 +37,7 @@ def main():
         features.append(feature);arrays[sheet['id']+'_t']=t[::2];arrays[sheet['id']+'_xyz']=xyz[::2]
         row=dict(id=sheet['id'],nodes=len(sheet['nodes']),inside_nodes=len(inside),complete=sheet['complete'],
             max_expm_closure=max(r['residual'] for r in original),max_expm_rho_difference=max(r['rho_difference'] for r in original),
-            max_recorded_region_violation=max(n['core']['region_violation'] for n in sheet['nodes']),independent_controls=controls)
+            max_recorded_region_violation=max(n['representative']['region_violation'] for n in sheet['nodes']),independent_controls=controls)
         rows.append(row);(out/'atlas-audit-partial.json').write_text(json.dumps(rows,indent=2)+'\n',encoding='utf-8',newline='\n')
         print(row['id'],row['nodes'],'expm closure',row['max_expm_closure'],'rho difference',row['max_expm_rho_difference'],
               'ODE error',max(c['multiplier_error'] for c in controls),flush=True)

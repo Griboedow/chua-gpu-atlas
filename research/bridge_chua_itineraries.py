@@ -1,4 +1,4 @@
-"""Transport cycles through changes of diode-breakpoint itinerary."""
+"""Continue cycles through changes of diode-breakpoint itinerary."""
 import argparse,json,time
 from pathlib import Path
 import numpy as np
@@ -44,7 +44,7 @@ def step(source,alpha,m0,count,target,depth=0):
         return step(mid,alpha,m0,count,target,depth+1)
 
 
-def transport(source,alpha,m0,count,target):
+def continue_branch(source,alpha,m0,count,target):
     n=max(1,int(np.ceil(abs(alpha-source['alpha'])/.002)),int(np.ceil(abs(m0-source['m0'])/.0002)))
     aa=np.linspace(source['alpha'],alpha,n+1)[1:];mm=np.linspace(source['m0'],m0,n+1)[1:];path=[]
     for a,m in zip(aa,mm):source=step(source,float(a),float(m),count,target);path.append(source)
@@ -56,14 +56,14 @@ def record(source,symmetric):
     family,q=from_orbit(model,b,[y,z,source['period']],symmetric);family=FastFlights(model,family.regions,family.targets,symmetric)
     r=family.record(b,q,True)
     if r['region_violation']>1e-7 or r['spectral_radius']>=.999:raise RuntimeError('Invalid bridged orbit')
-    return dict(alpha=source['alpha'],m0=source['m0'],core=r,regions=family.regions,targets=family.targets,
+    return dict(alpha=source['alpha'],m0=source['m0'],representative=r,regions=family.regions,targets=family.targets,
                 status='continued_with_automatic_itinerary')
 
 
 def local_step(template,source,alpha,m0,depth=0):
     """Small fixed-itinerary correction with an explicit locality check."""
     if time.monotonic()>deadline:raise ContinuationBudget('Per-node local continuation time limit')
-    target=template['target_multiplier'];sym=template['symmetric'];r=source['core']
+    target=template['target_multiplier'];sym=template['symmetric'];r=source['representative']
     old=FastFlights(Chua(alpha=source['alpha'],m0=source['m0']),template['regions'],template['targets'],sym)
     w=np.r_[r['q'],r['beta']];forcing=np.zeros(len(w))
     try:
@@ -84,7 +84,7 @@ def local_step(template,source,alpha,m0,depth=0):
         result=f.record(beta,q,True)
         if abs(result['period']/r['period']-1)>.01 or result['region_violation']>1e-7 or result['spectral_radius']>=.999:
             raise RuntimeError('Invalid local affine orbit')
-        return dict(alpha=float(alpha),m0=float(m0),core=result,regions=f.regions,targets=f.targets,
+        return dict(alpha=float(alpha),m0=float(m0),representative=result,regions=f.regions,targets=f.targets,
                     correction_ratio=ratio,status='continued_with_bounded_local_affine_steps')
     except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError) as e:
         if depth>=8:raise RuntimeError(str(e))
@@ -92,13 +92,13 @@ def local_step(template,source,alpha,m0,depth=0):
         return local_step(template,mid,alpha,m0,depth+1)
 
 
-def local_transport(template,source,alpha,m0):
+def continue_reference_branch(template,source,alpha,m0):
     n=max(1,int(np.ceil(abs(alpha-source['alpha'])/.002)),int(np.ceil(abs(m0-source['m0'])/.0002)))
     aa=np.linspace(source['alpha'],alpha,n+1)[1:];mm=np.linspace(source['m0'],m0,n+1)[1:];history=[]
     for a,m in zip(aa,mm):
         source=local_step(template,source,float(a),float(m))
-        history.append(dict(alpha=source['alpha'],m0=source['m0'],beta=source['core']['beta'],
-                            period=source['core']['period'],correction_ratio=source['correction_ratio']))
+        history.append(dict(alpha=source['alpha'],m0=source['m0'],beta=source['representative']['beta'],
+                            period=source['representative']['period'],correction_ratio=source['correction_ratio']))
     return source,history
 
 
@@ -110,16 +110,16 @@ def main():
     p.add_argument('--fast-local',action='store_true',help='Fill remaining holes with bounded small affine continuation steps.')
     args=p.parse_args();out=args.output
     if args.recover_off21:
-        local=json.loads((out/'off21-local-ancestry.json').read_text());r=local['root']
+        local=json.loads((out/'off21-local-branch-relations.json').read_text());r=local['root']
         start=dict(alpha=r['alpha'],m0=r['m0'],w=[*r['q'][:2],r['beta']],period=r['period'],half_sign=1)
-        endpoint,path=transport(start,9.,-8/7,3,.25);node=record(endpoint,True)
+        endpoint,path=continue_branch(start,9.,-8/7,3,.25);node=record(endpoint,True)
         records=json.loads((out/'offcenter-cycles.json').read_text());r=records[21]
-        r['rejected_transport']=dict(previous=r.get('canonical'),reason='A single large parameter jump did not establish branch continuity.')
-        r['canonical']=dict(core=node['core'],regions=node['regions'],targets=node['targets'],symmetric=True,target=.5)
+        r['rejected_continuation']=dict(previous=r.get('canonical'),reason='A single large parameter jump did not establish branch continuity.')
+        r['canonical']=dict(representative=node['representative'],regions=node['regions'],targets=node['targets'],symmetric=True,target=.5)
         r['canonical_recovery']='Automatic event itinerary, small parameter steps, and bounded predictor corrections.'
-        (out/'off21-transport.json').write_text(json.dumps(path,indent=2)+'\n',encoding='utf-8',newline='\n')
+        (out/'off21-continuation.json').write_text(json.dumps(path,indent=2)+'\n',encoding='utf-8',newline='\n')
         (out/'offcenter-cycles.json').write_text(json.dumps(records,indent=2)+'\n',encoding='utf-8',newline='\n')
-        print('off21 verified transport',node['core']['beta'],node['core']['period'],node['regions'],flush=True);return
+        print('off21 verified continuation',node['representative']['beta'],node['representative']['period'],node['regions'],flush=True);return
     registry={r['id']:r for r in json.loads((out/'family-registry.json').read_text())['families']}
     for id in args.families:
         path=out/(id+'-sheet.json');sheet=json.loads(path.read_text());nodes={tuple(n['index']):n for n in sheet['nodes']};failures=[];bridges=sheet.get('bridges',[])
@@ -130,18 +130,18 @@ def main():
         for ij in missing:
             global deadline
             deadline=time.monotonic()+args.seconds_per_node
-            near=min(nodes,key=lambda k:abs(k[0]-ij[0])+abs(k[1]-ij[1]));n=nodes[near];r=n['core']
+            near=min(nodes,key=lambda k:abs(k[0]-ij[0])+abs(k[1]-ij[1]));n=nodes[near];r=n['representative']
             source=dict(alpha=n['alpha'],m0=n['m0'],w=[*r['q'][:2],r['beta']],period=r['period'])
             if sheet['symmetric']:source['half_sign']=1 if sheet['target_multiplier']>0 else -1
             try:
                 if args.fast_local:
                     template=dict(symmetric=sheet['symmetric'],target_multiplier=sheet['target_multiplier'],regions=n.get('regions',sheet['regions']),targets=n.get('targets',sheet['targets']))
-                    node,history=local_transport(template,n,sheet['alpha'][ij[0]],sheet['m0'][ij[1]])
+                    node,history=continue_reference_branch(template,n,sheet['alpha'][ij[0]],sheet['m0'][ij[1]])
                 else:
-                    endpoint,history=transport(source,sheet['alpha'][ij[0]],sheet['m0'][ij[1]],count,target)
+                    endpoint,history=continue_branch(source,sheet['alpha'][ij[0]],sheet['m0'][ij[1]],count,target)
                     node=record(endpoint,sheet['symmetric'])
                 node['index']=list(ij);nodes[ij]=node
-                bridges.append(dict(index=list(ij),source=list(near),method='bounded_local_affine' if args.fast_local else 'automatic_event_map',steps=history));print(id,ij,'recovered',node['core']['beta'],len(node['regions']),flush=True)
+                bridges.append(dict(index=list(ij),source=list(near),method='bounded_local_affine' if args.fast_local else 'automatic_event_map',steps=history));print(id,ij,'recovered',node['representative']['beta'],len(node['regions']),flush=True)
             except (RuntimeError,ValueError,OverflowError,np.linalg.LinAlgError,ContinuationBudget) as e:failures.append(dict(index=list(ij),error=str(e)));print(id,ij,'unresolved',str(e)[:120],flush=True)
             sheet['nodes']=list(nodes.values());sheet['complete']=len(nodes)==81;sheet['bridge_failures']=failures;sheet['bridges']=bridges
             path.write_text(json.dumps(sheet,indent=2)+'\n',encoding='utf-8',newline='\n')

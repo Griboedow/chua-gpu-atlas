@@ -363,13 +363,13 @@
       "half_outer_word": "RRLLRRLLRRLLRRLLRRLLRRLLRRLLRR",
       "fold_beta_corrected": 14.306350312712022,
       "fold_beta_leading": 14.306350061117207,
-      "symmetric_core_width": 4.313504289558286e-09,
+      "symmetric_stability_width": 4.313504289558286e-09,
       "fold_period": 162.1237922924807,
       "acceptance": {
         "corrected_location_absolute_error": 2e-08,
         "width_relative_error": 0.2,
         "period_absolute_error": 0.002,
-        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured core widths."
+        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured stability widths."
       }
     },
     {
@@ -380,13 +380,13 @@
       "half_outer_word": "RRLLRRLLRRLLRRLLRRLLRRLLRRLLRRLLRR",
       "fold_beta_corrected": 14.306355855255894,
       "fold_beta_leading": 14.306355468048233,
-      "symmetric_core_width": 5.858583097534224e-10,
+      "symmetric_stability_width": 5.858583097534224e-10,
       "fold_period": 183.71848714231925,
       "acceptance": {
         "corrected_location_absolute_error": 2e-08,
         "width_relative_error": 0.2,
         "period_absolute_error": 0.002,
-        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured core widths."
+        "rationale": "Pre-search engineering gates, not statistical confidence intervals; location is also scored in measured stability widths."
       }
     }
   ]

@@ -87,12 +87,12 @@ def overlaps(out):
             low = max(d[index]['symmetry']['m0'] for d in maps)
             high = min(d[index]['fold']['m0'] for d in maps)
             if low >= high: continue
-            parameters = {k:maps[0][index]['core'][k] for k in ['alpha','beta','m0','m1']}
+            parameters = {k:maps[0][index]['representative'][k] for k in ['alpha','beta','m0','m1']}
             parameters['m0'] = (low+high)/2
             item = dict(kind=kind, index=list(index), interval_m0=[low, high], parameters=parameters, cycles=[])
             for name, rows in zip(['P5','P7'], maps):
                 f = family(templates[name], parameters)
-                q = f.solve(parameters['m0'], np.array(rows[index]['core']['q']))
+                q = f.solve(parameters['m0'], np.array(rows[index]['representative']['q']))
                 r = f.record(parameters['m0'], q, True); valid(r); r.update(extrema_check(f,r))
                 assert r['spectral_radius'] < .9999 and r['full_cycle_peaks'] == templates[name]['reference_peak_count']
                 r['id'] = name; r['independent'] = verify(r)
@@ -121,10 +121,10 @@ def sampled(out):
             data = json.loads((out/(name+'-'+kind+'.json')).read_text()); nodes=data['nodes']
             picks = {min(range(len(nodes)), key=lambda k:sum((i-10)**2 for i in nodes[k]['index']))}
             for coordinate in ['m1', kind]:
-                picks.add(min(range(len(nodes)), key=lambda k:nodes[k]['core'][coordinate]))
-                picks.add(max(range(len(nodes)), key=lambda k:nodes[k]['core'][coordinate]))
+                picks.add(min(range(len(nodes)), key=lambda k:nodes[k]['representative'][coordinate]))
+                picks.add(max(range(len(nodes)), key=lambda k:nodes[k]['representative'][coordinate]))
             for k in sorted(picks):
-                for role in ['fold', 'symmetry', 'core']:
+                for role in ['fold', 'symmetry', 'representative']:
                     r = nodes[k][role]
                     checks.append(dict(id=name, kind=kind, index=nodes[k]['index'], role=role, **verify(r)))
             print('independent sheet samples', name, kind, len(picks), flush=True)
@@ -138,9 +138,9 @@ def itinerary_change(out):
     data = json.loads((out/'P7-alpha.json').read_text())
     source = next(r for r in data['nodes'] if r['index']==[10,16])
     previous = {key:source[key] for key in ['fold','symmetry']}
-    guess = [*source['core']['q'][:2], source['core']['period']]
+    guess = [*source['representative']['q'][:2], source['representative']['period']]
     records = []
-    for m1 in np.linspace(source['core']['m1'], -5/7+.06, 13):
+    for m1 in np.linspace(source['representative']['m1'], -5/7+.06, 13):
         params = dict(template['anchor']); params['m1'] = float(m1)
         f = family(template, params); algebraic = {}
         # Past grazing these affine roots supply only a parameter predictor.
@@ -173,9 +173,9 @@ def audit(out):
             d=json.loads((out/(name+'-'+kind+'.json')).read_text()); indices=[]
             for row in d['nodes']:
                 i,j=row['index']; indices.append((i,j))
-                assert row['width_m0'] > 0 and row['symmetry']['m0'] < row['core']['m0'] < row['fold']['m0']
-                assert row['core']['full_cycle_peaks']==int(name[1:]) and row['core']['spectral_radius'] < .9999
-                for key in ['fold','symmetry','core']:
+                assert row['width_m0'] > 0 and row['symmetry']['m0'] < row['representative']['m0'] < row['fold']['m0']
+                assert row['representative']['full_cycle_peaks']==int(name[1:]) and row['representative']['spectral_radius'] < .9999
+                for key in ['fold','symmetry','representative']:
                     r=row[key];valid(r)
                     assert r[kind]==d['controls'][i] and r['m1']==d['m1'][j]
                     assert r['extrema_region_violation'] < 1e-7

@@ -16,8 +16,8 @@
         "fold": "14.312531343515656484255160746407483584",
         "signed_width": "0.000000030132752661377018591666813961714045252",
         "midpoint": "14.312531328449280153566651450574076603",
-        "transport_fold": "14.312531345043383979032114439178258181",
-        "transport_midpoint": "14.312531329977007388265519693959504366"
+        "corrected_fold": "14.312531345043383979032114439178258181",
+        "corrected_midpoint": "14.312531329977007388265519693959504366"
       },
       "status": "numerical_root",
       "float_seed_failure": "Fast boundary residual 2.627120920806192e-08; The solution converged.",
@@ -188,7 +188,7 @@
           "m1": "-0.7146857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2348360893729292961364116132128104381365",
           "-0.4486467523277479321391181623171246222999",
@@ -270,8 +270,8 @@
       },
       "signed_width": "0.00000003143581730969864933491352020408",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.0005172155094598893,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.0005172155094598893,
       "signed_fold_error_in_widths": -0.04808109131126386,
       "width_relative_error": 0.04145159120515713,
       "regions": [
@@ -391,8 +391,8 @@
         "fold": "14.312546124666087590168269606184600122",
         "signed_width": "0.0000000040903622058626380829928867538986379269",
         "midpoint": "14.312546122620906487236950564688156745",
-        "transport_fold": "14.312546126177732475071024964563548565",
-        "transport_midpoint": "14.312546124132550673380137595813721418"
+        "corrected_fold": "14.312546126177732475071024964563548565",
+        "corrected_midpoint": "14.312546124132550673380137595813721418"
       },
       "status": "numerical_root",
       "previous_failed_attempt": {
@@ -402,8 +402,8 @@
           "fold": "14.312546124666087590168269606184600122",
           "signed_width": "0.0000000040903622058626380829928867538986379269",
           "midpoint": "14.312546122620906487236950564688156745",
-          "transport_fold": "14.312546126177732475071024964563548565",
-          "transport_midpoint": "14.312546124132550673380137595813721418"
+          "corrected_fold": "14.312546126177732475071024964563548565",
+          "corrected_midpoint": "14.312546124132550673380137595813721418"
         },
         "status": "unresolved",
         "float_seed_failure": "Fast boundary residual 0.5577931705335513; The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
@@ -585,7 +585,7 @@
           "m1": "-0.7146857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2348427300322695223773733853613571413029",
           "-0.4486371536300442611727553666500487822037",
@@ -674,8 +674,8 @@
       },
       "signed_width": "0.0000000043477177661712250898746105092900000005",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.003831122358537264,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.003831122358537264,
       "signed_fold_error_in_widths": -0.34385586336638263,
       "width_relative_error": 0.05919325359870925,
       "regions": [
@@ -811,8 +811,8 @@
         "fold": "14.312551612916757300962773731913756883",
         "signed_width": "0.00000000055524509038945808795822288444839472176",
         "midpoint": "14.31255161263913475576804468793464544",
-        "transport_fold": "14.312551613763194069406381458975374699",
-        "transport_midpoint": "14.312551613485572588047034514602273703"
+        "corrected_fold": "14.312551613763194069406381458975374699",
+        "corrected_midpoint": "14.312551613485572588047034514602273703"
       },
       "status": "numerical_root",
       "previous_failed_attempt": {
@@ -822,8 +822,8 @@
           "fold": "14.312551612916757300962773731913756883",
           "signed_width": "0.00000000055524509038945808795822288444839472176",
           "midpoint": "14.31255161263913475576804468793464544",
-          "transport_fold": "14.312551613763194069406381458975374699",
-          "transport_midpoint": "14.312551613485572588047034514602273703"
+          "corrected_fold": "14.312551613763194069406381458975374699",
+          "corrected_midpoint": "14.312551613485572588047034514602273703"
         },
         "status": "unresolved",
         "previous_failed_attempt": {
@@ -833,8 +833,8 @@
             "fold": "14.312551612916757300962773731913756883",
             "signed_width": "0.00000000055524509038945808795822288444839472176",
             "midpoint": "14.31255161263913475576804468793464544",
-            "transport_fold": "14.312551613763194069406381458975374699",
-            "transport_midpoint": "14.312551613485572588047034514602273703"
+            "corrected_fold": "14.312551613763194069406381458975374699",
+            "corrected_midpoint": "14.312551613485572588047034514602273703"
           },
           "status": "unresolved",
           "float_seed_failure": "Fast boundary residual 0.0578155486407681; The iteration is not making good progress, as measured by the \n improvement from the last ten iterations.",
@@ -1034,7 +1034,7 @@
           "m1": "-0.7146857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.234845193722053003056397208779931546167",
           "-0.4486335927900923003520617492563437484488",
@@ -1131,8 +1131,8 @@
       },
       "signed_width": "0.00000000059490695671554076182234048683000000008",
       "midpoint_inside": false,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.016244963574512508,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.016244963574512508,
       "signed_fold_error_in_widths": -1.406560332091811,
       "width_relative_error": 0.06666902425390075,
       "regions": [

@@ -97,14 +97,14 @@ def boundary(previous, p, target):
             m0, q = f.boundary(m0, q, target)
 
 
-def core(previous, p):
+def representative(previous, p):
     f = flights(p, previous)
     q = f.solve(p['m0'], np.array(previous['q']))
     for attempt in range(5):
         try:
             r = checked(f, p['m0'], q)
             if r['spectral_radius'] >= .9999:
-                raise RuntimeError('Core is not attracting')
+                raise RuntimeError('Representative is not attracting')
             return r
         except RuntimeError:
             if attempt == 4:
@@ -121,15 +121,15 @@ def advance(source, p, peaks, depth=0):
         if width < 1e-10 or abs(width/source['width_m0']-1) > .7:
             raise RuntimeError('Width collapsed or changed too rapidly')
         mid = (row['fold']['m0']+row['symmetry']['m0'])/2
-        row['core'] = core(row['symmetry'], {**p, 'm0': mid})
-        if row['core']['full_cycle_peaks'] != peaks:
+        row['representative'] = representative(row['symmetry'], {**p, 'm0': mid})
+        if row['representative']['full_cycle_peaks'] != peaks:
             raise RuntimeError('Peak count changed; requires a separate branch study')
         row['width_m0'] = width
         return row
     except (RuntimeError, ValueError, OverflowError, np.linalg.LinAlgError) as exc:
         if depth >= 5:
             raise RuntimeError(str(exc)) from exc
-        middle = {k: (p[k]+source['core'][k])/2 for k in KEYS}
+        middle = {k: (p[k]+source['representative'][k])/2 for k in KEYS}
         halfway = advance(source, middle, peaks, depth+1)
         return advance(halfway, p, peaks, depth+1)
 
@@ -151,7 +151,7 @@ def run(family, kind, count):
         if abs(controls[ii]-old['controls'][i]) > 1e-10 or abs(slopes[jj]-old['m1'][j]) > 1e-10:
             continue
         fresh = {}
-        for role in ['fold', 'symmetry', 'core']:
+        for role in ['fold', 'symmetry', 'representative']:
             f = CoordinateFlights(parameters(row[role]), t['regions'], t['targets'])
             fresh[role] = checked(f, row[role]['m0'], np.array(row[role]['q']))
         fresh.update(width_m0=row['width_m0'], index=[ii, jj], origin='previous_mesh')
@@ -185,7 +185,7 @@ def run(family, kind, count):
                 nodes=sorted(found.values(), key=lambda r: r['index']), failures=list(errors.values()),
                 requested=count*count, complete=len(found) == count*count,
                 elapsed_seconds=time.monotonic()-started,
-                scope='Locally continued symmetric attracting cores and their fold/symmetry edges; '
+                scope='Locally continued symmetric attracting representatives and their fold/symmetry edges; '
                       'each root has its own checked itinerary. Missing nodes are unresolved, not orbit deaths. '
                       'No exhaustive family census or interval proof is claimed.')
             dump(path, report)

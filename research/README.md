@@ -31,7 +31,7 @@ The follow-up [global-stability and basin study](../docs/chua-hidden-boundary.md
 | `certify_chua_homoclinic_tangency.py` | Main interval certificate and shifted-box controls |
 | `chua_interval_map.py` | Affine event maps, implicit first/second derivatives, all-time path checks |
 | `chua_interval_connection.py` | Enclosed composition in coordinates following the saddle |
-| `certify_chua_layer_organizer.py` | Local saddle, parameter derivatives and coordinate bounds |
+| `certify_chua_saddle.py` | Local saddle, parameter derivatives and coordinate bounds |
 | `locate_chua_homoclinic_tangency.py` | Reconstruct the numerical center used by the certificate |
 | `check_chua_interval_derivatives.py` | Independent local derivative checks |
 | `check_chua_global_connection.py` | Independent 27-fold composition checks |
@@ -59,3 +59,5 @@ The follow-up [global-stability and basin study](../docs/chua-hidden-boundary.md
 - `manifest_refined_chua_atlas.py --check` verifies the published file hashes.
 
 Older programs remain alongside their data so the earlier numerical stages can be reproduced. Exact per-study commands are given in the reports and results guides; the interval proof does not require rerunning the GPU surveys.
+
+The field-name consistency check, `python research/check_chua_schema.py`, compares the current records with their preceding Git publication. It verifies exact numerical values, array contents, mathematical blocks and local links, and writes its report under `.publication/`.

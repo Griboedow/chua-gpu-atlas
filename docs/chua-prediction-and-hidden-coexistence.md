@@ -60,7 +60,7 @@ w_n=w_{55}r^{2(n-5)}.
 
 The geometric factors express the extra residence near the saddle: one additional block contracts the distance to the tangency parameter by approximately r and the window width by approximately r². The fitted coefficients describe the finite-order correction. This is an asymptotic prediction model, not a proved remainder estimate.
 
-The already known central target folds reveal a remaining systematic location error. A second model adds each target family's central fold residual, unchanged across the small slope patch. These **six central targets are calibration data**, excluded from validation. The other sixteen nodes, with three target families each, give 48 held-out tests. Both models and their scoring rules were [published in commit 112b01f before these endpoint searches](https://github.com/Griboedow/chua-gpu-atlas/commit/112b01f). The [bias-correction protocol](../results/chua-followup/sheets/transport-protocol.json) explicitly states this distinction.
+The already known central target folds reveal a remaining systematic location error. A second model adds each target family's central fold residual, unchanged across the small slope patch. These **six central targets are calibration data**, excluded from validation. The other sixteen nodes, with three target families each, give 48 held-out tests. Both models and their scoring rules were [published in commit 112b01f before these endpoint searches](https://github.com/Griboedow/chua-gpu-atlas/commit/112b01f). The [bias-correction protocol](../results/chua-followup/sheets/bias-correction-protocol.json) explicitly states this distinction.
 
 ### 1.2 Measured result and failure of the uncorrected model
 

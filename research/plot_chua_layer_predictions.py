@@ -36,7 +36,7 @@ def forecasts(data):
         ax.set_title(f'{r["peaks"]} peaks per complete cycle',loc='left',fontsize=15)
         ax.set_xlabel('Displacement from measured fold / measured stability width')
         ax.grid(axis='x');ax.spines['left'].set_visible(False);ax.tick_params(axis='y',length=0)
-        note='Forecast overlaps the stability interval' if r['predicted_midpoint_inside_measured_core'] else 'Forecast misses the interval; correction locates it'
+        note='Forecast overlaps the stability interval' if r['predicted_midpoint_inside_measured_interval'] else 'Forecast misses the interval; correction locates it'
         ax.text(.02,.96,note,transform=ax.transAxes,va='top',fontsize=10,color=TEAL if i==0 else ORANGE)
         ax=fig.add_subplot(gs[i,1]);ax.axis('off')
         txt=(f'WIDTH\nPredicted   {r["predicted_width"]:.4e}\nMeasured  {float(r["measured_width"]):.4e}\n'
@@ -67,7 +67,7 @@ def scaling(data):
     ax=axes[1,0];delta=np.diff(period);ax.plot(n[1:],delta,'o-',color=ORANGE)
     ax.axhline(data['expected_period_increment'],color=INK,ls='--',label=f'2 Tp = {data["expected_period_increment"]:.6f}')
     ax.set(title='C | Two extra saddle turns per new member',xlabel='Sequence index n',ylabel='Increase in full period');ax.legend(fontsize=9);ax.grid()
-    ax=axes[1,1];coord=np.array([r['quadratic_core_coordinate'] for r in rows]);ax.semilogy(n,abs(coord-1/16),'o-',color=TEAL)
+    ax=axes[1,1];coord=np.array([r['normalized_representative_coordinate'] for r in rows]);ax.semilogy(n,abs(coord-1/16),'o-',color=TEAL)
     ax.set(title='D | An extra check of the quadratic return shape',xlabel='Sequence index n',ylabel='Error from predicted normalized position 1/16');ax.grid()
     for ax in axes.flat:ax.xaxis.set_major_locator(MaxNLocator(integer=True))
     fig.supxlabel('These numerical scaling tests preceded the separate interval certificate for the homoclinic tangency and infinite cascade.',fontsize=10,color=GRAY)
@@ -111,12 +111,12 @@ def new_motions(data):
 
 
 def main():
-    style();data=json.loads((OUT/'analysis.json').read_text());forecasts(data);scaling(data);descriptions();new_motions(data);organizer(data)
+    style();data=json.loads((OUT/'analysis.json').read_text());forecasts(data);scaling(data);descriptions();new_motions(data);tangency_estimate(data)
     print('Rendered five PNG/PDF figures.')
 
 
-def organizer(data):
-    report=json.loads((OUT/'organizer-approximants.json').read_text())
+def tangency_estimate(data):
+    report=json.loads((OUT/'tangency-estimates.json').read_text())
     fig,axes=plt.subplots(1,2,figsize=(13,5.5),layout='constrained')
     fig.suptitle('Finite-iterate homoclinic-tangency estimates',fontsize=18,weight='bold')
     ax=axes[0];a=report['records'][0]['starting_coordinate']
@@ -136,7 +136,7 @@ def organizer(data):
         title='B | The long cycle spends extra returns near that saddle')
     ax.xaxis.set_major_locator(MaxNLocator(integer=True));ax.legend();ax.grid()
     fig.supxlabel(f'Finite-iterate tangency estimates cluster near beta = {report["approximate_beta"]:.11f}.\nSix approximations span {report["beta_spread"]:.2e}; this spread is not an error bound or a proof of an exact manifold tangency.',fontsize=10,color=GRAY)
-    save(fig,'chua-layer-prediction-organizer')
+    save(fig,'chua-layer-prediction-tangency')
 
 
 if __name__=='__main__':main()

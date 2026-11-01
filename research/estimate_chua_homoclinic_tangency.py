@@ -66,7 +66,7 @@ def saddle(beta):
 def main():
     frozen=json.loads((OUT/'predictions-frozen.json').read_text())
     records=json.loads((OUT/'search-results.json').read_text())['records'];r=records[-1]
-    motion=section_word(r['core'],r['regions'],r['targets'],True)
+    motion=section_word(r['representative'],r['regions'],r['targets'],True)
     b0=frozen['calibration']['limit'];p,vals,V,W,parent=saddle(b0)
     a0=float(W[0]@(np.array(motion['normalized_section_points'][11])-p))
     hmap=HalfMap();rows=[]
@@ -92,7 +92,7 @@ def main():
                 starting_coordinate=float(a),beta=float(b),normal_displacement=g,tangency_derivative=d,
                 solver_success=bool(sol.success),controls=controls,**aux)
             rows.append(row);print({k:v for k,v in row.items() if k not in ['itineraries','controls']},flush=True)
-            (OUT/'organizer-approximants.json').write_text(json.dumps(dict(records=rows,
+            (OUT/'tangency-estimates.json').write_text(json.dumps(dict(records=rows,
                 scope='Finite-iterate unstable-line and stable-line approximations; not an exact or interval-certified homoclinic tangency.'),indent=2)+'\n')
     # Show the normal-distance fold at the first approximation, with fixed axes.
     first=rows[0];a=first['starting_coordinate'];b=first['beta'];curves=[]
@@ -107,7 +107,7 @@ def main():
         beta_spread=rootspread,approximate_beta=float(np.mean([r['beta'] for r in rows])),
         frozen_fit_limit=frozen['calibration']['limit'],
         scope='Finite-iterate approximations with nonzero sampled curvature and unfolding derivative; not a certified exact manifold connection or a proof of infinitely many windows.')
-    (OUT/'organizer-approximants.json').write_text(json.dumps(report,indent=2)+'\n')
+    (OUT/'tangency-estimates.json').write_text(json.dumps(report,indent=2)+'\n')
     print('Beta spread',rootspread,flush=True)
 
 

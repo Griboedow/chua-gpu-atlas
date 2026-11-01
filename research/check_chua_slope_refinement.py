@@ -59,10 +59,10 @@ def main():
             old_indices = {tuple(r['index']) for r in old['nodes']}
             recovered = sum((2*i, 2*j) in nodes and (i, j) not in old_indices
                             for i in range(21) for j in range(21))
-            allr = [r[role] for r in nodes.values() for role in ['fold', 'symmetry', 'core']]
+            allr = [r[role] for r in nodes.values() for role in ['fold', 'symmetry', 'representative']]
             audits.append(dict(family=family, kind=kind, accepted=len(nodes), requested=data['requested'],
                 recovered_old_nodes=recovered,
-                new_itinerary_cores=sum(len(r['core']['targets']) != 4 for r in nodes.values()),
+                new_itinerary_representatives=sum(len(r['representative']['targets']) != 4 for r in nodes.values()),
                 widths=[min(r['width_m0'] for r in nodes.values()), max(r['width_m0'] for r in nodes.values())],
                 maximum_closure=max(r['residual'] for r in allr),
                 maximum_region_violation=max(r['extrema_region_violation'] for r in allr)))
@@ -72,7 +72,7 @@ def main():
                 if index not in nodes:
                     continue
                 row = nodes[index]
-                for role in ['fold', 'symmetry', 'core']:
+                for role in ['fold', 'symmetry', 'representative']:
                     result = independent_segmented(row[role])
                     controls.append(dict(family=family, kind=kind, index=index, role=role, **result))
                 if index in [(20, 20), (20, 35), (20, 40)]:

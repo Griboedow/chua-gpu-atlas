@@ -11,7 +11,7 @@ from flint import arb,arb_mat
 from chua_research_followup import ROOT,OUT
 from chua_lobe_map import LobeMap
 from chua_interval_lobe import IntervalLobe,saddle_center
-from certify_chua_layer_organizer import enclose_saddle
+from certify_chua_saddle import enclose_saddle
 from chua_interval_connection import connect
 
 INK='#213647';BLUE='#246ca0';RED='#b85247';TEAL='#237e70';GOLD='#b47b2a'
@@ -32,9 +32,9 @@ def sheets():
     ax=fig.add_subplot(gs[0,0]);ax.axvspan(0,1,color=TEAL,alpha=.13,label='Measured stability interval')
     for k,r in enumerate(rows):
         y=k+(2 if k>=24 else 0)
-        ax.plot([r['raw_midpoint_in_core_units'],r['transport_midpoint_in_core_units']],[y,y],color='#b7c2c8',lw=.7)
-        ax.scatter(r['raw_midpoint_in_core_units'],y,c=RED,s=16,marker='x',label='Uncorrected forecast' if k==0 else None)
-        ax.scatter(r['transport_midpoint_in_core_units'],y,c=BLUE,s=12,label='Bias-corrected forecast' if k==0 else None)
+        ax.plot([r['raw_midpoint_in_interval_units'],r['corrected_midpoint_in_interval_units']],[y,y],color='#b7c2c8',lw=.7)
+        ax.scatter(r['raw_midpoint_in_interval_units'],y,c=RED,s=16,marker='x',label='Uncorrected forecast' if k==0 else None)
+        ax.scatter(r['corrected_midpoint_in_interval_units'],y,c=BLUE,s=12,label='Bias-corrected forecast' if k==0 else None)
     ax.set(xlabel='Predicted midpoint in normalized interval coordinates',yticks=[11.5,37.5],yticklabels=['Fixed β','Fixed α'])
     ax.set_title('A  Every forecast at the scale of its own window',loc='left',fontsize=12,weight='bold')
     ax.legend(frameon=False,fontsize=9,loc='upper right');ax.grid(axis='x',alpha=.15)
@@ -55,7 +55,7 @@ def sheets():
             for path in sorted((OUT/'sheets').glob(f'{free}_??-search.json')):
                 data=json.loads(path.read_text());cal=read('sheets/'+data['node']+'-calibration.json');r=next(r for r in data['records'] if r['peaks']==n)
                 x.append((data['parameters']['m0']+8/7)*1e4);y.append((data['parameters']['m1']+5/7)*1e4)
-                z.append(float(Decimal(r['fold']['coordinate'])-Decimal(str(cal['organizer']['parameters'][free])))*1e6)
+                z.append(float(Decimal(r['fold']['coordinate'])-Decimal(str(cal['tangency_estimate']['parameters'][free])))*1e6)
             ax.plot_trisurf(x,y,z,color=COLORS[n],alpha=.58,linewidth=.5,edgecolor='white')
             ax.scatter(x,y,z,color=COLORS[n],s=16)
             ax.text(x[-1]+.5,y[-1],z[-1],f'{n} peaks',fontsize=9,color=COLORS[n])

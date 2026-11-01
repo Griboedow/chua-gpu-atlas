@@ -1,6 +1,6 @@
 """Resolve contacts of two independently continued Chua stability bands.
 
-F and S denote the fold and symmetry-loss edges of the symmetric core.
+F and S denote the fold and symmetry-loss edges of the symmetric representative.
 A contact is a simultaneous marginal event on TWO distinct periodic orbits;
 it is not a collision of those orbits in state space.
 """
@@ -138,9 +138,9 @@ def edges_at(kind, control, m1, include_asymmetric=False):
     result = {}
     for t in json.loads((SOURCE/'anchors.json').read_text()):
         d=json.loads((SOURCE/(t['id']+'-'+kind+'.json')).read_text())
-        source=min(d['nodes'],key=lambda r: ((r['core'][kind]-control)/(.04 if kind=='alpha' else .08))**2
-                   +((r['core']['m1']-m1)/.008)**2)
-        params={k:source['core'][k] for k in PARAMETERS}
+        source=min(d['nodes'],key=lambda r: ((r['representative'][kind]-control)/(.04 if kind=='alpha' else .08))**2
+                   +((r['representative']['m1']-m1)/.008)**2)
+        params={k:source['representative'][k] for k in PARAMETERS}
         params.update({kind:float(control),'m1':float(m1)})
         f=CoordinateFlights(params,t['regions'],t['targets'])
         row={}

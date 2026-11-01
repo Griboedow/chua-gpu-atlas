@@ -1,7 +1,7 @@
 """Candidate searches for hidden coexistence, retaining negative outcomes.
 
 Finite-time Lyapunov classifications are screens, never homoclinic certificates.
-The direct continuation follows only the already known organizer branch.
+The direct continuation follows only the already known tangency_estimate branch.
 """
 import argparse
 import json
@@ -17,18 +17,18 @@ DIR=OUT/'hidden-search'
 
 def continuation():
     source=approximate_tangency(BASE);rows=[source];failures=[]
-    # A fixed-alpha, fixed-outer-slope path tests whether the existing organizer
+    # A fixed-alpha, fixed-outer-slope path tests whether the existing tangency_estimate
     # reaches the unique-equilibrium region. Failure is not a nonexistence proof.
     for m0 in np.linspace(BASE['m0'], -.94, 82)[1:]:
         p=source['parameters'].copy();p['m0']=float(m0)
         try:
             source=continue_tangency(p,source=source);rows.append(source)
-            print('organizer m0',m0,'beta',source['coordinate'],'stable',source['equilibrium']['stable'],flush=True)
+            print('tangency_estimate m0',m0,'beta',source['coordinate'],'stable',source['equilibrium']['stable'],flush=True)
         except (ValueError,RuntimeError,np.linalg.LinAlgError) as exc:
             failures.append(dict(target=p,error=str(exc)));break
         dump(DIR/'classical-continuation.json',dict(records=rows,failures=failures))
     dump(DIR/'classical-continuation.json',dict(records=rows,failures=failures,
-        scope='Numerical continuation of one fixed itinerary organizer. A stopped branch does not exclude other connections.'))
+        scope='Numerical continuation of one homoclinic tangency estimate with a fixed itinerary. A stopped branch does not exclude other connections.'))
 
 
 def screen(kind='stable'):

@@ -3,7 +3,7 @@ import numpy as np
 from flint import arb,arb_mat,ctx
 from chua_interval_map import IntervalHalfMap,col,eye,midpoint
 from chua_lobe_map import LobeMap
-from certify_chua_layer_organizer import submatrix
+from certify_chua_saddle import submatrix
 
 
 class IntervalLobe(IntervalHalfMap):

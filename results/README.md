@@ -15,7 +15,7 @@ The directories below contain the settings, data, certificates and numerical con
 
 - [`chua-layer-prediction/`](chua-layer-prediction/README.md): forecasts published before the 75/85-peak search, 55/75-digit orbit checks, independent full-field controls, preserved forecast and numerical failures, the preliminary organizing geometry, a 34-entry reference registry and five scientific figures. See [the prediction report](../docs/chua-layer-prediction.md).
 
-- [`chua-layer-atlas/`](../docs/chua-refined-atlas.md): the 32-family mesh snapshot, registry, ancestry, continuation checks, dense README view and [file manifest](chua-layer-atlas/manifest.json).
+- [`chua-layer-atlas/`](../docs/chua-refined-atlas.md): the 32-family mesh snapshot, registry, branch relationships, continuation checks, dense README view and [file manifest](chua-layer-atlas/manifest.json).
 
 - [`chua-slope-plane/`](../docs/chua-slope-plane.md), [`chua-slope-volumes/`](../docs/chua-slope-volumes.md), [`chua-slope-families/`](../docs/chua-slope-families.md): sampled slope sections and volumes, continued families and basin controls.
 

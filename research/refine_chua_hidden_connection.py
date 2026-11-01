@@ -6,7 +6,7 @@ from flint import arb,arb_mat,ctx
 from chua_research_followup import OUT,dump
 from chua_interval_lobe import IntervalLobe,saddle_center
 from chua_interval_map import col,midpoint,bounds
-from certify_chua_layer_organizer import enclose_saddle,submatrix
+from certify_chua_saddle import enclose_saddle,submatrix
 from chua_interval_connection import connect
 
 

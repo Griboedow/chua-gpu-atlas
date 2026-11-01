@@ -9,7 +9,7 @@ import numpy as np
 from scipy.optimize import root
 import mpmath as mp
 from trace_chua_window import Chua
-from trace_chua_layer_organizer import HalfMap
+from estimate_chua_homoclinic_tangency import HalfMap
 from chua_fast_flights import FastFlights
 from chua_precision_flights import PrecisionFlights
 

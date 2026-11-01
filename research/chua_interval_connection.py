@@ -3,7 +3,7 @@
 import numpy as np
 from flint import arb, arb_mat
 from chua_interval_map import col, eye, upper
-from certify_chua_layer_organizer import submatrix, sum_matrices
+from certify_chua_saddle import submatrix, sum_matrices
 
 
 def connect(

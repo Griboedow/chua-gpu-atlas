@@ -54,7 +54,7 @@ def main():
     controls=read('results/chua-basin-proof/independent-checks.json');assert controls['passed'] and controls['shifted_root_rejected']
     inputs+=['research/certify_chua_basin_separator.py','research/check_chua_basin_proof.py',
              'research/certify_chua_homoclinic_tangency.py','research/chua_interval_map.py',
-             'research/chua_interval_connection.py','research/certify_chua_layer_organizer.py',
+             'research/chua_interval_connection.py','research/certify_chua_saddle.py',
              'docs/chua-basin-and-coexistence.md','results/chua-basin-proof/independent-checks.json']
     report=dict(passed=True,basin_certificates=basins,tangency_certificates=tangencies,
         theorem_A='Computer-assisted local basin separation; graph-transform argument in the report.',

@@ -58,7 +58,7 @@
     "research/chua_interval_connection.py",
     "research/chua_interval_lobe.py",
     "research/certify_chua_homoclinic_tangency.py",
-    "research/certify_chua_layer_organizer.py",
+    "research/certify_chua_saddle.py",
     "research/certify_chua_basin_separator.py",
     "research/certify_chua_coexisting_cycles.py",
     "research/certify_chua_hidden_cycle.py"

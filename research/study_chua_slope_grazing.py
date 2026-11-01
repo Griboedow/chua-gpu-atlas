@@ -10,7 +10,7 @@ import time
 import numpy as np
 from scipy.optimize import root, brentq
 from refine_chua_slope_atlases import (ROOT, OUT, CoordinateFlights, parameters,
-                                      attach, checked, boundary, core, flights, dump)
+                                      attach, checked, boundary, representative, flights, dump)
 from check_chua_slope_refinement import independent_segmented
 
 
@@ -35,8 +35,8 @@ def touch_system(w, p, template, target, details=False):
 def locate(p, template, target, seed=None):
     if seed is None:
         previous = json.loads((ROOT/'results/chua-slope-families/P7-alpha.json').read_text())['nodes']
-        row = min(previous, key=lambda r: abs(r['core']['alpha']-9)+abs(r['core']['m1']+.655))
-        guess = row['fold' if target == 1 else 'symmetry' if target == -1 else 'core']
+        row = min(previous, key=lambda r: abs(r['representative']['alpha']-9)+abs(r['representative']['m1']+.655))
+        guess = row['fold' if target == 1 else 'symmetry' if target == -1 else 'representative']
         f = CoordinateFlights({**p, 'm1': -.655}, template['regions'], template['targets'])
         m0, q = f.boundary(guess['m0'], np.array(guess['q']), target)
         seed = np.r_[q, m0, -.655, 4.03]
@@ -128,7 +128,7 @@ def main():
     previous = contact['orbit']
     for delta in [-1e-4, -1e-5, 1e-3, 3e-4, 1e-4, 3e-5, 1e-5, 3e-6, 1e-6]:
         pp = {**p, 'm1': r0['m1']+delta, 'm0': r0['m0']+slope*delta}
-        r = core(previous, pp)
+        r = representative(previous, pp)
         previous = r
         check = independent_segmented(r)
         crossing_count = 2*len(r['targets'])

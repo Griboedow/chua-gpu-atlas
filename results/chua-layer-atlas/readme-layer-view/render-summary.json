@@ -37,7 +37,7 @@
   ],
   "surface_samples": 5447,
   "new_parameter_locations": 3975,
-  "thin_core_samples": 50,
+  "thin_interval_samples": 50,
   "face_counts": {
     "A01": 316,
     "A02": 316,

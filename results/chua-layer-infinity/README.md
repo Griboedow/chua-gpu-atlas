@@ -52,7 +52,7 @@ python research/check_chua_global_connection.py
 
 The last two programs use mpmath matrix exponentials and separate crossing solves. Finite differences at two scales check local first/second derivatives and the composed normal gap, state curvature and parameter derivative. The full-composition control takes about two minutes. These controls test the implementation; they are not interval existence proofs.
 
-To reconstruct the preliminary local study, run `python research/certify_chua_layer_organizer.py`. It regenerates the approximate coordinate basis and local enclosures. Re-run the main certificate afterwards; no unverified approximate eigenvector is treated as an exact eigendirection.
+To reconstruct the preliminary local study, run `python research/certify_chua_saddle.py`. It regenerates the approximate coordinate basis and local enclosures. Re-run the main certificate afterwards; no unverified approximate eigenvector is treated as an exact eigendirection.
 
 ## Figures and integrity
 

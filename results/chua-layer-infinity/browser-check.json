@@ -86,7 +86,7 @@
       "errors": [],
       "images": [
         {
-          "alt": "Frozen predictions beside the measured cores at their actual width scale",
+          "alt": "Frozen predictions beside the measured stability intervals at their actual width scale",
           "complete": true,
           "width": 2229
         },

@@ -1071,7 +1071,7 @@
           }
         ]
       },
-      "symmetric_core_width": 0.0001911107804417611,
+      "symmetric_stability_width": 0.0001911107804417611,
       "parent_five_cycle": {
         "beta": 14.3036875,
         "alpha": 9.0,
@@ -1888,7 +1888,7 @@
           }
         ]
       },
-      "symmetric_core_width": 4.872397247268623e-05,
+      "symmetric_stability_width": 4.872397247268623e-05,
       "parent_five_cycle": {
         "beta": 14.30525,
         "alpha": 9.0,
@@ -2957,7 +2957,7 @@
           }
         ]
       },
-      "symmetric_core_width": 9.242098967021661e-06,
+      "symmetric_stability_width": 9.242098967021661e-06,
       "parent_five_cycle": {
         "beta": 14.305921875,
         "alpha": 9.0,
@@ -4278,7 +4278,7 @@
           }
         ]
       },
-      "symmetric_core_width": 1.5063202685183796e-06,
+      "symmetric_stability_width": 1.5063202685183796e-06,
       "parent_five_cycle": {
         "beta": 14.30619,
         "alpha": 9.0,
@@ -4420,7 +4420,7 @@
       }
     ],
     "source_sha256": "8a4d868dc6961e00d50119e842f45d6a2f736887351c5213397a1b38c1986e9f",
-    "five_maximum_core_coverage": [
+    "five_peak_stability_region_coverage": [
       {
         "family": "first_five",
         "regular_nodes_inside": 4204,
@@ -4437,5 +4437,5 @@
     "interpolation_note": "Surface boundaries are bilinearly interpolated from 7x7 continuation points; the comparison is approximate."
   },
   "scope": "Verified local periodic windows along one transect, not the number of globally connected 3D sheets.",
-  "infinity_status": "No finite total or infinitude is proved. Four period-adding members and shrinking cores support an accumulating hierarchy hypothesis."
+  "infinity_status": "No finite total or infinitude is proved. Four period-adding members and shrinking stability intervals support an accumulating hierarchy hypothesis."
 }

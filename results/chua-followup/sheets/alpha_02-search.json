@@ -16,8 +16,8 @@
         "fold": "8.9971210084338288147724202307990986509",
         "signed_width": "-0.000000014066385029748855332361826801700969721",
         "midpoint": "8.9971210154670213296468478969800120518",
-        "transport_fold": "8.9971210077200787225137901259586215019",
-        "transport_midpoint": "8.9971210147532705292405807995237410069"
+        "corrected_fold": "8.9971210077200787225137901259586215019",
+        "corrected_midpoint": "8.9971210147532705292405807995237410069"
       },
       "status": "numerical_root",
       "initial_solver": "Implicit continuation from the central fold, followed by arbitrary precision",
@@ -180,7 +180,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2346004202463313264552530166717662450446",
           "-0.4480723939342805684004177419950374096882",
@@ -262,8 +262,8 @@
       },
       "signed_width": "-0.000000014674410657246829689288237423680999999",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.0006924430965046074,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.0006924430965046074,
       "signed_fold_error_in_widths": -0.04794665450883267,
       "width_relative_error": 0.04143441543921263,
       "regions": [
@@ -383,8 +383,8 @@
         "fold": "8.9971141067762302435869795862639214574",
         "signed_width": "-0.000000001909081278314095371317356590624662094",
         "midpoint": "8.9971141077307708827440272719225997527",
-        "transport_fold": "8.9971141060694694857602371484972536564",
-        "transport_midpoint": "8.9971141070240108206235163379460573196"
+        "corrected_fold": "8.9971141060694694857602371484972536564",
+        "corrected_midpoint": "8.9971141070240108206235163379460573196"
       },
       "status": "numerical_root",
       "initial_solver": "Implicit continuation from the central fold, followed by arbitrary precision",
@@ -563,7 +563,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2346069940852813946715799076720938431745",
           "-0.4480624607967748877203427175245650622462",
@@ -652,8 +652,8 @@
       },
       "signed_width": "-0.0000000020291419368084501660670604854219999991",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.005153526227012479,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.005153526227012479,
       "signed_fold_error_in_widths": -0.3431517081216383,
       "width_relative_error": 0.059168191399756404,
       "regions": [
@@ -789,8 +789,8 @@
         "fold": "8.9971115444369276860599085827255876063",
         "signed_width": "-0.00000000025909935775975640928160640465098990235",
         "midpoint": "8.9971115445664773649397867873663908086",
-        "transport_fold": "8.9971115440410116548264340963214635849",
-        "transport_midpoint": "8.997111544170561359123894362710416317"
+        "corrected_fold": "8.9971115440410116548264340963214635849",
+        "corrected_midpoint": "8.997111544170561359123894362710416317"
       },
       "status": "numerical_root",
       "previous_failed_attempt": {
@@ -800,8 +800,8 @@
           "fold": "8.9971115444369276860599085827255876063",
           "signed_width": "-0.00000000025909935775975640928160640465098990235",
           "midpoint": "8.9971115445664773649397867873663908086",
-          "transport_fold": "8.9971115440410116548264340963214635849",
-          "transport_midpoint": "8.997111544170561359123894362710416317"
+          "corrected_fold": "8.9971115440410116548264340963214635849",
+          "corrected_midpoint": "8.997111544170561359123894362710416317"
         },
         "status": "unresolved",
         "error": "Target seed continuation failed: {'fraction': 0.17432618141174316, 'step': 0.0001303553581237793, 'error': 'Seed corrector stalled'}"
@@ -998,7 +998,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2346094327428663982392243298735221139672",
           "-0.4480587761475458361365244826393124988473",
@@ -1095,8 +1095,8 @@
       },
       "signed_width": "-0.00000000027759860171289564693068414216500000046",
       "midpoint_inside": false,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.02210276956358263,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.02210276956358263,
       "signed_fold_error_in_widths": -1.4041149015288237,
       "width_relative_error": 0.06664026345590872,
       "regions": [

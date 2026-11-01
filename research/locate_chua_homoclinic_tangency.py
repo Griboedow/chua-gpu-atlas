@@ -7,7 +7,7 @@ that the exact stable and unstable manifolds touch.
 import json
 from flint import arb, arb_mat
 from chua_interval_map import IntervalHalfMap, col, midpoint, bounds
-from certify_chua_layer_organizer import OUT, saddle_center, enclose_saddle
+from certify_chua_saddle import OUT, saddle_center, enclose_saddle
 from chua_interval_connection import connect
 
 

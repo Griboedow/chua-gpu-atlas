@@ -5,6 +5,7 @@ import hashlib
 from decimal import Decimal
 from flint import arb,ctx
 from chua_research_followup import ROOT,OUT,dump
+from publication_schema import current_names
 
 
 def read(p):return json.loads((OUT/p).read_text())
@@ -13,12 +14,14 @@ def read(p):return json.loads((OUT/p).read_text())
 def main():
     ctx.dps=100;checks={}
     frozen=OUT/'sheets/forecasts-frozen.json';original=subprocess.check_output(['git','show','112b01f:results/chua-followup/sheets/forecasts-frozen.json'],cwd=ROOT)
-    checks['published_forecasts_unchanged']=original.replace(b'\r\n',b'\n')==frozen.read_bytes().replace(b'\r\n',b'\n')
-    digest=hashlib.sha256(frozen.read_bytes()).hexdigest()
+    checks['published_forecasts_unchanged']=current_names(original.decode('utf-8')).replace('\r\n','\n')==frozen.read_text(encoding='utf-8')
+    # Existing search records identify the original published file. New runs
+    # identify its renamed version; exact contents are compared above.
+    digests={hashlib.sha256(b.replace(b'\r\n',b'\n')).hexdigest() for b in [original,frozen.read_bytes()]}
     searches=[json.loads(p.read_text()) for p in (OUT/'sheets').glob('*-search.json')]
-    checks['all_searches_use_frozen_forecasts']=len(searches)==18 and all(d['forecast_sha256']==digest for d in searches)
+    checks['all_searches_use_frozen_forecasts']=len(searches)==18 and all(d['forecast_sha256'] in digests for d in searches)
     checks['all_54_targets_solved']=all(len(d['records'])==3 and all(r['status']=='numerical_root' for r in d['records']) for d in searches)
-    a=read('analysis.json');checks['48_held_out_corrected_hits']=a['sheets']['held_out']==48 and a['sheets']['transported_midpoints_inside']==48
+    a=read('analysis.json');checks['48_held_out_corrected_hits']=a['sheets']['held_out']==48 and a['sheets']['corrected_midpoints_inside']==48
     checks['16_uncorrected_misses_retained']=a['sheets']['raw_midpoints_inside']==32
     for part in ['sheets','trigger']:
         c=read(part+'/independent-checks.json');checks[part+'_12_independent_checks']=c['passed'] and len(c['records'])==12

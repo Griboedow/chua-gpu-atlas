@@ -59,10 +59,10 @@ def main():
     ax.set(xlim=(14.24,14.4),ylim=(0,100),xlabel=r'$\beta$',ylabel='Maxima per full cycle',title=r'Fixed transect: $\alpha=9$, $m_0=-8/7$, $m_1=-5/7$')
     ax.legend(loc='upper left',fontsize=8);ax.ticklabel_format(useOffset=False)
     ax=fig.add_subplot(gs[1,0]);seq=a['adding_sequence'];n=np.array([r['maxima'] for r in seq])
-    ax.semilogy(n,[r['symmetric_core_width'] for r in seq],'o-',color=COLORS[0],label='Fold to symmetry breaking')
+    ax.semilogy(n,[r['symmetric_stability_width'] for r in seq],'o-',color=COLORS[0],label='Fold to symmetry breaking')
     ax.set(xlabel='Maxima per full cycle',ylabel=r'Symmetric-cycle stability width in $\beta$',title='Four resolved members of a shrinking sequence',xticks=n)
     ax.grid(alpha=.2);ax.legend(fontsize=8)
-    for r in seq:ax.annotate(f"{r['symmetric_core_width']:.2e}",(r['maxima'],r['symmetric_core_width']),xytext=(5,5),textcoords='offset points',fontsize=8)
+    for r in seq:ax.annotate(f"{r['symmetric_stability_width']:.2e}",(r['maxima'],r['symmetric_stability_width']),xytext=(5,5),textcoords='offset points',fontsize=8)
     ax=fig.add_subplot(gs[1,1])
     for r in seq:
         dist=np.array(r['distances_to_parent_section']);i=int(dist.argmin());dist=np.roll(dist,-i)

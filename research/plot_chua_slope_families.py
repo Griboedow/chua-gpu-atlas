@@ -32,10 +32,10 @@ def sheet_figure(source, dpi=130):
                 for j in range(len(data['m1'])-1):
                     corners=[(i,j),(i+1,j),(i+1,j+1),(i,j+1)]
                     if not all(k in rows for k in corners):continue
-                    v=[[rows[k]['core'][p] for p in ['m0','m1',kind]] for k in corners]
+                    v=[[rows[k]['representative'][p] for p in ['m0','m1',kind]] for k in corners]
                     polygons.extend([[v[0],v[1],v[2]],[v[0],v[2],v[3]]])
             ax.add_collection3d(Poly3DCollection(polygons,facecolors=COLORS[name],alpha=.72,linewidths=.12,edgecolors='white',zorder=1))
-            values=np.array([[r['core'][p] for p in ['m0','m1',kind]] for r in data['nodes']])
+            values=np.array([[r['representative'][p] for p in ['m0','m1',kind]] for r in data['nodes']])
             all_values.append(values)
         values=np.vstack(all_values)
         ax.auto_scale_xyz(values[:,0],values[:,1],values[:,2])

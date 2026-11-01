@@ -1,0 +1,57 @@
+{
+  "base_commit": "37dd180",
+  "counts": {
+    "json": 416,
+    "arrays": 601,
+    "python": 143,
+    "math_blocks": 115,
+    "local_links": 608
+  },
+  "renamed_paths": [
+    [
+      "research/certify_chua_layer_organizer.py",
+      "research/certify_chua_saddle.py"
+    ],
+    [
+      "research/chua_window_ancestry.py",
+      "research/chua_branch_relations.py"
+    ],
+    [
+      "research/refine_readme_thin_cores.py",
+      "research/refine_readme_thin_intervals.py"
+    ],
+    [
+      "research/trace_chua_layer_organizer.py",
+      "research/estimate_chua_homoclinic_tangency.py"
+    ],
+    [
+      "results/chua-followup/sheets/transport-protocol.json",
+      "results/chua-followup/sheets/bias-correction-protocol.json"
+    ],
+    [
+      "results/chua-layer-atlas/off21-local-ancestry.json",
+      "results/chua-layer-atlas/off21-local-branch-relations.json"
+    ],
+    [
+      "results/chua-layer-atlas/off21-transport.json",
+      "results/chua-layer-atlas/off21-continuation.json"
+    ],
+    [
+      "results/chua-layer-atlas/offcenter-ancestry.json",
+      "results/chua-layer-atlas/offcenter-branch-relations.json"
+    ],
+    [
+      "results/chua-layer-atlas/readme-layer-view/thin-cores.json",
+      "results/chua-layer-atlas/readme-layer-view/thin-intervals.json"
+    ],
+    [
+      "results/chua-layer-atlas/sheet-ancestry.json",
+      "results/chua-layer-atlas/sheet-branch-relations.json"
+    ],
+    [
+      "results/chua-layer-prediction/organizer-approximants.json",
+      "results/chua-layer-prediction/tangency-estimates.json"
+    ]
+  ],
+  "passed": true
+}

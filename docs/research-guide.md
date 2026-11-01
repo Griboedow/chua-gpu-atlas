@@ -6,7 +6,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 
 For the current prediction, excitation and hidden-coexistence results, start with the [claim-by-claim review guide](chua-review-guide.md). It states how each result can be used, what would invalidate it and how to repeat the checks without modifying the published evidence.
 
-The [terminology guide](terminology.md) distinguishes periodic orbits, their stability regions, plotted sheets and catalogue entries, and explains the legacy identifiers in the evidence files.
+The [terminology guide](terminology.md) distinguishes periodic orbits, their stability regions, plotted sheets and catalogue entries.
 
 ## Studies and principal results
 

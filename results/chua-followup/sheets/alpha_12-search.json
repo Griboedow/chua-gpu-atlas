@@ -16,8 +16,8 @@
         "fold": "9.0000181633332745658690907703118405362",
         "signed_width": "-0.000000014242656697857541543461758586756759771",
         "midpoint": "9.0000181704546029147978615420427198296",
-        "transport_fold": "9.000018162619523920398023619782179594",
-        "transport_midpoint": "9.0000181697408514480684971204027533531"
+        "corrected_fold": "9.000018162619523920398023619782179594",
+        "corrected_midpoint": "9.0000181697408514480684971204027533531"
       },
       "status": "numerical_root",
       "initial_solver": "Implicit continuation from the central fold, followed by arbitrary precision",
@@ -180,7 +180,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.2343180824646774258418548011967016845491",
           "-0.4466431109871711812843450375262135476966",
@@ -262,8 +262,8 @@
       },
       "signed_width": "-0.000000014858862396443409642377284312224000001",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 6.678807203739195e-05,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 6.678807203739195e-05,
       "signed_fold_error_in_widths": -0.047968561231817065,
       "width_relative_error": 0.04147058382702043,
       "regions": [
@@ -383,8 +383,8 @@
         "fold": "9.0000111809862918803042826217341863094",
         "signed_width": "-0.0000000019342409743162193001560943959777598935",
         "midpoint": "9.0000111819534123674623922718122335074",
-        "transport_fold": "9.0000111802795306203961445135064423084",
-        "transport_midpoint": "9.0000111812466521143960562767460942268"
+        "corrected_fold": "9.0000111802795306203961445135064423084",
+        "corrected_midpoint": "9.0000111812466521143960562767460942268"
       },
       "status": "numerical_root",
       "initial_solver": "Implicit continuation from the central fold, followed by arbitrary precision",
@@ -563,7 +563,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.234324713787668501142949710152551249596",
           "-0.446633090924194548542029996199637134311",
@@ -652,8 +652,8 @@
       },
       "signed_width": "-0.0000000020560048919146036478769990113829999994",
       "midpoint_inside": true,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.0005450253433966461,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.0005450253433966461,
       "signed_fold_error_in_widths": -0.34320963335782084,
       "width_relative_error": 0.05922355441722452,
       "regions": [
@@ -789,8 +789,8 @@
         "fold": "9.0000085878386020942964397450010127563",
         "signed_width": "-0.0000000002626819017049355961834231223027934616",
         "midpoint": "9.0000085879699430451489075430927243174",
-        "transport_fold": "9.0000085874426858367769455071538686752",
-        "transport_midpoint": "9.0000085875740261087685212260112166405"
+        "corrected_fold": "9.0000085874426858367769455071538686752",
+        "corrected_midpoint": "9.0000085875740261087685212260112166405"
       },
       "status": "numerical_root",
       "initial_solver": "Implicit continuation from the central fold, followed by arbitrary precision",
@@ -991,7 +991,7 @@
           "m1": "-0.7138857142857143"
         }
       },
-      "core": {
+      "representative": {
         "q": [
           "0.234327174574115983514326218102659042428",
           "-0.4466293728152795884354573692967113978308",
@@ -1088,8 +1088,8 @@
       },
       "signed_width": "-0.00000000028145661636812098259692498166200000038",
       "midpoint_inside": false,
-      "transport_midpoint_inside": true,
-      "transport_fold_error_in_widths": 0.002828094084626759,
+      "corrected_midpoint_inside": true,
+      "corrected_fold_error_in_widths": 0.002828094084626759,
       "signed_fold_error_in_widths": -1.4038407653237799,
       "width_relative_error": 0.06670553673760392,
       "regions": [

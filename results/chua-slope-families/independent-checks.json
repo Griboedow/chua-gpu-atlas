@@ -36,7 +36,7 @@
         10,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 2.472577698142686e-12,
       "dominant": 0.19014720754413372,
@@ -78,7 +78,7 @@
         0,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.522526549280201e-11,
       "dominant": 0.18246857907546177,
@@ -120,7 +120,7 @@
         20,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 4.390932062392494e-14,
       "dominant": 0.13865982017997253,
@@ -162,7 +162,7 @@
         10,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.4221956945448255e-13,
       "dominant": 0.18929505938640984,
@@ -204,7 +204,7 @@
         10,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.2678746941219288e-13,
       "dominant": 0.1871644163821499,
@@ -246,7 +246,7 @@
         10,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 2.472577698142686e-12,
       "dominant": 0.19014720754413372,
@@ -288,7 +288,7 @@
         0,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 3.3362201889985954e-14,
       "dominant": 0.13978820087943608,
@@ -330,7 +330,7 @@
         20,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 2.7730040486062535e-12,
       "dominant": 0.1833959366439189,
@@ -372,7 +372,7 @@
         10,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.4221956945448255e-13,
       "dominant": 0.18929505938640984,
@@ -414,7 +414,7 @@
         10,
         20
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.2678746941219288e-13,
       "dominant": 0.1871644163821499,
@@ -456,7 +456,7 @@
         10,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 4.137024056660721e-12,
       "dominant": 0.1829976088939292,
@@ -498,7 +498,7 @@
         0,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.203359634160961e-11,
       "dominant": 0.18583581806040794,
@@ -540,7 +540,7 @@
         20,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 3.2526759063955524e-12,
       "dominant": 0.17993603666535665,
@@ -582,7 +582,7 @@
         10,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 7.91033905045424e-14,
       "dominant": 0.19832406638855177,
@@ -624,7 +624,7 @@
         0,
         19
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 1.0258460747536446e-13,
       "dominant": 0.18030166613208914,
@@ -666,7 +666,7 @@
         10,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 4.137024056660721e-12,
       "dominant": 0.1829976088939292,
@@ -708,7 +708,7 @@
         0,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 2.261080211951594e-12,
       "dominant": 0.17916408154600294,
@@ -750,7 +750,7 @@
         20,
         10
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 3.963496197911809e-14,
       "dominant": 0.1877919214343087,
@@ -792,7 +792,7 @@
         10,
         0
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 7.91033905045424e-14,
       "dominant": 0.19832406638855177,
@@ -834,7 +834,7 @@
         16,
         18
       ],
-      "role": "core",
+      "role": "representative",
       "success": true,
       "closure": 2.753908212582701e-13,
       "dominant": 0.18068530758320225,

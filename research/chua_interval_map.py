@@ -8,7 +8,7 @@ Itinerary admissibility is a separate, explicit all-time check.
 
 from flint import arb, arb_mat, ctx
 import numpy as np
-from trace_chua_layer_organizer import HalfMap
+from estimate_chua_homoclinic_tangency import HalfMap
 
 
 def col(v):

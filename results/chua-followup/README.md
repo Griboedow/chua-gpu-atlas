@@ -6,7 +6,7 @@ The [review guide](../../docs/chua-review-guide.md) maps claims to these files a
 
 ## Slope-sheet predictions
 
-- [`sheets/protocol.json`](sheets/protocol.json) and [`transport-protocol.json`](sheets/transport-protocol.json): training sets, two models, held-out definition and scoring rules.
+- [`sheets/protocol.json`](sheets/protocol.json) and [`bias-correction-protocol.json`](sheets/bias-correction-protocol.json): training sets, two models, held-out definition and scoring rules.
 - [`forecasts-frozen.json`](sheets/forecasts-frozen.json): predictions published in [112b01f](https://github.com/Griboedow/chua-gpu-atlas/commit/112b01f), before the 48 off-centre endpoint searches. Central target folds are calibration, not validation.
 - `sheets/*-calibration.json`: the 18 local saddle-orbit and tangency-parameter estimates, additional-iterate checks, training folds and coefficients.
 - `sheets/*-search.json`: all 54 targets, including the six central calibration targets, with fold, symmetry and interior roots. The uncorrected 85-peak forecasts miss all sixteen held-out stability intervals. Failed initial guesses remain recorded even when later continuation succeeds.

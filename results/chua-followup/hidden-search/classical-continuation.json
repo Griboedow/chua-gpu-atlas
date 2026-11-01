@@ -5598,5 +5598,5 @@
       "error": "Continuation stopped at 0.8681705654189587: Tangency Newton could not improve"
     }
   ],
-  "scope": "Numerical continuation of one fixed itinerary organizer. A stopped branch does not exclude other connections."
+  "scope": "Numerical continuation of one homoclinic tangency estimate with a fixed itinerary. A stopped branch does not exclude other connections."
 }

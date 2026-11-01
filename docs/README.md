@@ -1,6 +1,6 @@
 # Chua research reports
 
-The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects and explains legacy data labels.
+The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
 The current [prediction, excitation and hidden-coexistence study](chua-prediction-and-hidden-coexistence.md) connects 48 held-out slope-window tests, certified impulse thresholds and a [computer-assisted argument for infinite hidden periodic coexistence](chua-hidden-infinity-certificate.md).
 

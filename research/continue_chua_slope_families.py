@@ -1,4 +1,4 @@
-"""Continue the verified five- and seven-peak symmetric cores in slope volumes.
+"""Continue the verified five- and seven-peak symmetric representatives in slope volumes.
 
 Family labels are inherited by local continuation from closed reference cycles,
 not assigned by the number of disconnected pieces in a sampled mask.
@@ -98,23 +98,23 @@ def anchors(out):
         a, b = item['fold']['m0'], item['symmetry']['m0']
         m0 = (a+b)/2
         qq = f.solve(m0, np.array(item['symmetry']['q']))
-        item['core'] = f.record(m0, qq, True)
-        valid(item['core'])
-        item['core'].update(extrema_check(f, item['core']))
-        assert item['core']['spectral_radius'] < .9999
+        item['representative'] = f.record(m0, qq, True)
+        valid(item['representative'])
+        item['representative'].update(extrema_check(f, item['representative']))
+        assert item['representative']['spectral_radius'] < .9999
         item['width_m0'] = abs(b-a)
         records.append(item)
         print(item['id'], 'edges', a, b, 'width', item['width_m0'],
-              'period', item['core']['period'], flush=True)
+              'period', item['representative']['period'], flush=True)
     dump(out/'anchors.json', records)
     return records
 
 
 def advance(template, source, parameters, depth=0):
-    """Implicit tangent prediction, corrected boundaries, and an attracting core."""
+    """Implicit tangent prediction, corrected boundaries, and an attracting representative."""
     try:
         f = CoordinateFlights(parameters, template['regions'], template['targets'])
-        source_parameters = {k: source['core'][k] for k in ['alpha', 'beta', 'm0', 'm1']}
+        source_parameters = {k: source['representative'][k] for k in ['alpha', 'beta', 'm0', 'm1']}
         old = CoordinateFlights(source_parameters, template['regions'], template['targets'])
         row = {}
         for name, target in [('fold', 1), ('symmetry', -1)]:
@@ -145,22 +145,22 @@ def advance(template, source, parameters, depth=0):
             row[name] = r
         width = row['fold']['m0']-row['symmetry']['m0']
         if width < 1e-10 or abs(width/source['width_m0']-1) > .7:
-            raise RuntimeError('Core width collapsed or jumped')
+            raise RuntimeError('Stability width collapsed or jumped')
         m0 = (row['fold']['m0']+row['symmetry']['m0'])/2
         q = f.solve(m0, np.array(row['symmetry']['q']))
-        row['core'] = f.record(m0, q, True)
-        valid(row['core'])
-        row['core'].update(extrema_check(f, row['core']))
-        if row['core']['spectral_radius'] >= .9999:
-            raise RuntimeError('The continued core is not attracting')
-        if row['core']['full_cycle_peaks'] != template['reference_peak_count']:
+        row['representative'] = f.record(m0, q, True)
+        valid(row['representative'])
+        row['representative'].update(extrema_check(f, row['representative']))
+        if row['representative']['spectral_radius'] >= .9999:
+            raise RuntimeError('The continued representative is not attracting')
+        if row['representative']['full_cycle_peaks'] != template['reference_peak_count']:
             raise RuntimeError('Peak count changed along the continued family')
         row['width_m0'] = width
         return row
     except (RuntimeError, ValueError, OverflowError, np.linalg.LinAlgError) as exc:
         if depth >= 4:
             raise RuntimeError(str(exc))
-        middle = {k: (parameters[k]+source['core'][k])/2 for k in ['alpha', 'beta', 'm0', 'm1']}
+        middle = {k: (parameters[k]+source['representative'][k])/2 for k in ['alpha', 'beta', 'm0', 'm1']}
         halfway = advance(template, source, middle, depth+1)
         return advance(template, halfway, parameters, depth+1)
 
@@ -202,7 +202,7 @@ def sheets(out, nodes):
                         regions=template['regions'], targets=template['targets'], controls=controls.tolist(), m1=slopes.tolist(),
                         nodes=list(found.values()), failures=failures, complete=len(found) == nodes*nodes,
                         elapsed_seconds=time.monotonic()-started,
-                        scope='Locally continued attracting symmetric cores and their two marginal-stability edges. '
+                        scope='Locally continued attracting symmetric representatives and their two marginal-stability edges. '
                               'A failed continuation is not evidence of an orbit ending. Full stable asymmetric extensions are not included.')
                     dump(path, report)
                     print(template['id'], kind, len(found), '/', nodes*nodes, 'failures', len(failures), flush=True)

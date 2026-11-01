@@ -19,7 +19,7 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | `interpolation-checks.json` | Fresh midpoint checks for S01–S11 and P55 only |
 | `extended-adding.json` | New 55- and 65-maximum cycles, boundaries, independent checks, failed and refined Radau trials |
 | `offcenter-raw.npz`, `offcenter-summary.json` | Compact four-transect GPU evidence; the large peak matrix is omitted |
-| `offcenter-candidates.json`, `offcenter-cycles.json`, `offcenter-ancestry.json` | Candidate selection, accepted and unresolved CPU checks, catalogue matching |
+| `offcenter-candidates.json`, `offcenter-cycles.json`, `offcenter-branch-relations.json` | Candidate selection, accepted and unresolved CPU checks, catalogue matching |
 | `off21-*.json` | Local parent recovery, small-step transport, and inversion-symmetry checks for the difficult E09 source |
 | `four-cycles.json`, `four-cycles.npz` | Four attracting cycles at exactly the same parameters |
 | `overlap-basins*`, `basin-capture*`, `basin-perturbations*`, `basin-transients*` | Initial-condition outcomes, step comparisons, capture and sensitivity diagnostics |
@@ -56,14 +56,14 @@ python research/extend_chua_adding.py --output D:/tmp/chua-atlas-new
 python research/refine_chua_adding_check.py --output D:/tmp/chua-atlas-new
 python research/refine_chua_satellites.py --output D:/tmp/chua-atlas-new
 python research/refine_chua_satellites.py --output D:/tmp/chua-atlas-new --adding
-python research/chua_window_ancestry.py --output D:/tmp/chua-atlas-new
+python research/chua_branch_relations.py --output D:/tmp/chua-atlas-new
 
 python research/scan_chua_offcenter.py --output D:/tmp/chua-atlas-new
 python research/select_chua_offcenter.py --output D:/tmp/chua-atlas-new
 python research/verify_chua_offcenter.py --output D:/tmp/chua-atlas-new
-python research/chua_window_ancestry.py --output D:/tmp/chua-atlas-new --local-offcenter-index 21
+python research/chua_branch_relations.py --output D:/tmp/chua-atlas-new --local-offcenter-index 21
 python research/bridge_chua_itineraries.py --output D:/tmp/chua-atlas-new --recover-off21
-python research/chua_window_ancestry.py --output D:/tmp/chua-atlas-new --offcenter
+python research/chua_branch_relations.py --output D:/tmp/chua-atlas-new --offcenter
 python research/build_chua_family_registry.py --output D:/tmp/chua-atlas-new
 
 Copy-Item D:/tmp/chua-atlas-new/A03-sheet.json D:/tmp/chua-atlas-new/A03-daughter.json
@@ -86,7 +86,7 @@ The off-center scan requires an FP64 OpenCL device. Candidate index 21 refers to
 
 The original E09 rebuild was interrupted after 18 accepted nodes and resumed with a 25-second per-node continuation budget. The remaining 19 holes were then filled by bounded local affine continuation; previous timeout records remain in `prior_bridge_failures`. Each saved node is independently checked by the final audit. The original P65 boundary attempt is retained as evidence of a numerical limitation but is not required to reproduce its verified representative grid. The initial strict absolute Jacobian comparison is also retained; the final fast-flow check reports both absolute discrepancies and scale-aware relative errors for long-flight sensitivities.
 
-To rerun ancestry after adding E-family sheets, pass `--families A01 A02 A03 A04 A05 A06 P55 P65 S01 S02 S03 S04 S05 S06 S07 S08 S09 S10 S11` when rebuilding the central ancestry file; otherwise the new sheets would also be treated as central inputs. For the original daughter ancestry, use the saved daughter sheets or rerun the initial satellite continuation before replacing A03 and A05 with their parent sheets.
+To retrace branch relationships after adding E-family sheets, pass `--families A01 A02 A03 A04 A05 A06 P55 P65 S01 S02 S03 S04 S05 S06 S07 S08 S09 S10 S11` when rebuilding the central branch-relationship file; otherwise the new sheets would also be treated as central inputs. For the original daughter branch relationships, use the saved daughter sheets or rerun the initial satellite continuation before replacing A03 and A05 with their parent sheets.
 
 ## Regenerate the overlap experiment
 
