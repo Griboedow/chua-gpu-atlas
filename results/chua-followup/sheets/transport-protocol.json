@@ -1,0 +1,13 @@
+{
+  "stage": "Specified after inspecting the already known central windows and before any off-centre target endpoint search",
+  "comparison": [
+    "The original organizer-anchored forecast uses only the 35, 45 and 55 peak folds at each node.",
+    "The transport forecast adds the central fold residual of the same target family, held constant over the small slope patch."
+  ],
+  "central_calibration": "The 65, 75 and 85 peak folds at both central section nodes are calibration data for transport, not held-out tests.",
+  "validation": "The other 16 nodes, three target families each, are the 48 held-out cross-parameter tests. No target endpoints at those nodes enter either forecast.",
+  "primary_gate": "Predicted midpoint strictly inside the measured fold-to-symmetry-breaking interval",
+  "secondary_gate": "Width error below ten percent",
+  "reason": "The central retrospective check shows a systematic location error larger than the thinnest core despite the improved organizer. The second model tests whether this residual is locally transportable. It is a calibrated approximation, not a rigorous remainder bound.",
+  "failure_policy": "Score and retain both models, including every miss and unresolved solve. Do not revise the frozen predictions."
+}

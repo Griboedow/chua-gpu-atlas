@@ -16,7 +16,7 @@ def setup():
     P=np.array(cert['origin_capture']['lyapunov']['P'],float)
     level=float(cert['origin_capture']['level']['midpoint'])
     J=np.array(seeds['saddle']['section_matrix'])
-    e,V=np.linalg.eig(J);order=np.argsort(-abs(e));e,V=e[order],V[:,order]
+    e,V=np.linalg.eig(J);order=np.argsort(-abs(e));e,V=e[order].real,V[:,order].real
     if V[:,0]@p<0:V[:,0]*=-1
     return p,pc,P,level,e,V,np.linalg.inv(V),seeds
 
@@ -64,17 +64,12 @@ def main():
             changes=[(u,v) for u,v in zip(a[:-1],a[1:]) if u['label']!=v['label']]
             for left,right in changes:
                 lo,hi=left['amplitude'],right['amplitude']
-                # Find a narrow basin bracket before solving a finite-manifold equation.
-                for _ in range(20):
-                    mid=(lo+hi)/2;label=outcome(mid*direction,f,pc,P,level)['label']
-                    if label==left['label']:lo=mid
-                    elif label==right['label']:hi=mid
-                    else:raise ValueError('Unresolved bracket')
                 approximants=[]
                 for n in [4,6,8]:
                     try:
                         root,residual=boundary_on_ray(direction,(lo,hi),n,f,p,W)
                         approximants.append(dict(returns=n,amplitude=root,residual=residual))
+                        lo,hi=root-1e-8,root+1e-8
                     except ValueError as exc:approximants.append(dict(returns=n,error=str(exc)))
                 rows.append(dict(angle=line['angle'],direction=direction.tolist(),bracket=[lo,hi],
                     left=left['label'],right=right['label'],approximants=approximants))

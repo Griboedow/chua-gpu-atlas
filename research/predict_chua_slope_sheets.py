@@ -7,8 +7,25 @@ import numpy as np
 import mpmath as mp
 from chua_research_followup import (ROOT,OUT,BASE,dump,classical_templates,
     continue_tangency,ParameterPrecisionFlights)
+from continue_chua_slope_families import CoordinateFlights
 
 DIR=OUT/'sheets'
+
+
+def boundary_seed(seed,p,free,guess):
+    """Use a short continuation only to initialize the high-precision root."""
+    q=np.array(seed['core']['q'],float);source={k:float(seed['core'][k]) for k in BASE}
+    value=source[free];failures=[]
+    for fraction in np.linspace(0,1,9):
+        pars={k:source[k]+fraction*(p[k]-source[k]) for k in BASE}
+        fast=CoordinateFlights(pars,seed['regions'],seed['targets'],free=free)
+        try:value,q=fast.boundary(value,q,1)
+        except (ValueError,RuntimeError,np.linalg.LinAlgError) as exc:
+            failures.append(dict(fraction=float(fraction),error=str(exc)))
+            # The published forecast remains unchanged; this changes only the
+            # starting guess used by the independent target solve.
+            return guess,q,failures
+    return value,q,failures
 
 
 def nodes():
@@ -55,8 +72,9 @@ def calibrate(only=None):
             displacement=seed['core']['beta']-BASE['beta']
             # The alpha surface uses the local beta/alpha tangent for a starting guess only.
             guess=org['coordinate']+displacement*(1 if free=='beta' else -1/2.135)
-            fold=solver.boundary(guess,seed['core']['q'],1)
-            item=dict(peaks=peaks,fold=fold)
+            value,q,failures=boundary_seed(seed,p,free,guess)
+            fold=solver.boundary(value,q,1)
+            item=dict(peaks=peaks,fold=fold,seed_failures=failures)
             if peaks==55:
                 symmetry=solver.boundary(fold['coordinate'],fold['q'],-1)
                 item['symmetry']=symmetry
@@ -87,10 +105,42 @@ def freeze():
     if path.exists():raise SystemExit('Frozen forecasts already exist; refusing overwrite.')
     files=[DIR/(name+'-calibration.json') for name,*_ in nodes()]
     assert all(p.exists() for p in files),'All calibration nodes must finish before freezing'
+    corrections=json.loads((DIR/'central-residual-calibration.json').read_text())
+    records=[{k:v for k,v in json.loads(p.read_text()).items() if k in
+                  ['node','parameters','free_parameter','index','forecasts','organizer']} for p in files]
+    for rec in records:
+        for forecast in rec['forecasts']:
+            delta=mp.mpf(corrections[rec['free_parameter']][str(forecast['peaks'])]['fold_residual'])
+            forecast['transport_fold']=mp.nstr(mp.mpf(forecast['fold'])+delta,38)
+            forecast['transport_midpoint']=mp.nstr(mp.mpf(forecast['midpoint'])+delta,38)
     dump(path,dict(created_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
         calibration_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
-        records=[{k:v for k,v in json.loads(p.read_text()).items() if k in
-                  ['node','parameters','free_parameter','index','forecasts','organizer']} for p in files]))
+        central_calibration_sha256=hashlib.sha256((DIR/'central-residual-calibration.json').read_bytes()).hexdigest(),
+        records=records))
+
+
+def central_residuals():
+    """A separately labelled transport model uses known central target folds.
+
+    These central points are calibration, not blind validation. Off-centre
+    endpoint solves have not yet run. The original asymptotic model is retained.
+    """
+    path=DIR/'central-residual-calibration.json'
+    if path.exists():raise SystemExit('Central calibration already exists')
+    templates=classical_templates();result={}
+    for free in ['beta','alpha']:
+        node=json.loads((DIR/(free+'_11-calibration.json')).read_text());rows={}
+        for forecast in node['forecasts']:
+            seed=templates[forecast['peaks']]
+            value,q,failures=boundary_seed(seed,BASE,free,float(forecast['fold']))
+            solver=ParameterPrecisionFlights(seed['regions'],seed['targets'],BASE,free,digits=45)
+            fold=solver.boundary(value,q,1)
+            rows[str(forecast['peaks'])]=dict(fold=fold,
+                fold_residual=mp.nstr(mp.mpf(fold['coordinate'])-mp.mpf(forecast['fold']),38),seed_failures=failures)
+            print('central calibration',free,forecast['peaks'],fold['coordinate'],flush=True)
+        result[free]=rows
+    result['scope']='Both central nodes calibrate a constant fold-residual correction. Only the other 16 nodes test cross-parameter transport. The uncorrected forecasts remain separately scored.'
+    dump(path,result)
 
 
 def search(only=None):
@@ -107,14 +157,23 @@ def search(only=None):
             solver=ParameterPrecisionFlights(seed['regions'],seed['targets'],node['parameters'],free,digits=45)
             rec=dict(peaks=forecast['peaks'],forecast=forecast,status='unresolved')
             try:
-                fold=solver.boundary(forecast['fold'],seed['core']['q'],1)
+                fast=CoordinateFlights(node['parameters'],seed['regions'],seed['targets'],free=free)
+                try:
+                    value,q=fast.boundary(float(forecast['fold']),np.array(seed['core']['q'],float),1)
+                    rec['initial_solver']='float64 boundary followed by arbitrary precision'
+                except (RuntimeError,ValueError,np.linalg.LinAlgError) as exc:
+                    value,q=forecast['fold'],seed['core']['q'];rec['float_seed_failure']=str(exc)
+                fold=solver.boundary(value,q,1)
                 symmetry=solver.boundary(fold['coordinate'],fold['q'],-1)
                 # A third root is useful for independent integration and phase portraits.
                 core=solver.boundary(fold['coordinate'],fold['q'],.5)
                 x=mp.mpf(forecast['midpoint']);a=mp.mpf(fold['coordinate']);b=mp.mpf(symmetry['coordinate'])
                 width=a-b
+                transport=mp.mpf(forecast['transport_midpoint'])
                 rec.update(status='numerical_root',fold=fold,symmetry=symmetry,core=core,
                     signed_width=mp.nstr(width,38),midpoint_inside=bool(min(a,b)<x<max(a,b)),
+                    transport_midpoint_inside=bool(min(a,b)<transport<max(a,b)),
+                    transport_fold_error_in_widths=float((mp.mpf(forecast['transport_fold'])-a)/width),
                     signed_fold_error_in_widths=float((mp.mpf(forecast['fold'])-a)/width),
                     width_relative_error=float(abs(mp.mpf(forecast['signed_width'])/width-1)),
                     regions=seed['regions'],targets=seed['targets'])
@@ -126,9 +185,10 @@ def search(only=None):
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['init','calibrate','freeze','search']);ap.add_argument('--only')
+    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['init','calibrate','central','freeze','search']);ap.add_argument('--only')
     a=ap.parse_args()
     if a.phase=='init':initialize()
     elif a.phase=='calibrate':calibrate(a.only)
+    elif a.phase=='central':central_residuals()
     elif a.phase=='freeze':freeze()
     else:search(a.only)

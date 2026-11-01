@@ -80,11 +80,11 @@ def classical_templates():
     return {peaks[r['id']]:r for r in registry['families'] if r['id'] in peaks}
 
 
-def parent(parameters):
+def parent(parameters,guess=None):
     seed = json.loads((ROOT/'results/chua-layers/affine-central.json').read_text())
     f = FastFlights(Chua(parameters['alpha'],parameters['m0'],parameters['m1']),
                     seed['regions'],seed['targets'],True)
-    q = f.solve(parameters['beta'],np.array(seed['boundaries']['-1']['q']))
+    q = f.solve(parameters['beta'],np.array(seed['boundaries']['-1']['q'] if guess is None else guess))
     r = f.record(parameters['beta'],q,True)
     if r['region_violation'] > 1e-7:
         raise ValueError('Parent itinerary invalid')
@@ -98,13 +98,13 @@ def parent(parameters):
     return q[:2],ev.real,V,np.linalg.inv(V),r
 
 
-def approximate_tangency(parameters, free='beta', guess=None, iterations=8):
+def approximate_tangency(parameters, free='beta', guess=None, iterations=8, parent_seed=None):
     """Finite-iterate tangent-line approximation; NOT an exact tangency proof."""
     p0=parameters.copy()
     if guess is None: guess=[-.0006075330794225644,p0[free]]
     def quantities(a,t,detail=False):
         p=p0.copy();p[free]=float(t)
-        point,ev,V,W,r=parent(p)
+        point,ev,V,W,r=parent(p,parent_seed)
         h=half_map(p);state=point+a*V[:,0];tangent=V[:,0].copy()
         words=[];minimum=1e30
         for _ in range(iterations):
@@ -113,7 +113,7 @@ def approximate_tangency(parameters, free='beta', guess=None, iterations=8):
         g=float(W[0]@(state-point));slope=float(W[0]@tangent)
         return g,slope,dict(parameters=p,expansion=float(ev[0]**2),
             period=r['period'],minimum_speed=minimum,words=words,
-            stable_displacement=float(W[1]@(state-point)))
+            stable_displacement=float(W[1]@(state-point)),parent_q=r['q'])
     scale=abs(guess[0])
     fun=lambda w:np.array(quantities(w[0]*scale,w[1])[:2])*[1,scale]
     w=np.array([guess[0]/scale,guess[1]],float)
@@ -143,6 +143,7 @@ def approximate_tangency(parameters, free='beta', guess=None, iterations=8):
 
 def continue_tangency(parameters, free='beta', source=None):
     if source is None: source=approximate_tangency(BASE)
+    source=dict(source,coordinate=source['parameters'][free],free_parameter=free)
     start=source['parameters'].copy();target=parameters.copy()
     done=0.;step=.02;record=source;previous=None;path=[]
     while done<1:
@@ -153,7 +154,7 @@ def continue_tangency(parameters, free='beta', source=None):
             oldt,oldrec=previous
             for j,key in enumerate(['starting_coordinate','coordinate']):
                 guess[j]+=(nxt-done)/(done-oldt)*(record[key]-oldrec[key])
-        try: new=approximate_tangency(p,free,guess)
+        try: new=approximate_tangency(p,free,guess,parent_seed=record.get('parent_q'))
         except (ValueError,RuntimeError,np.linalg.LinAlgError) as exc:
             step/=2
             if step<1e-6: raise ValueError(f'Continuation stopped at {done}: {exc}')
