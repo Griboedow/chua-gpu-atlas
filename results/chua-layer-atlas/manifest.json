@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T09:15:37.141299+00:00",
-  "base_commit": "b6de00248b32a017c4a61ab8eec15eedf6a9749c",
+  "created_utc": "2026-11-01T09:17:36.365007+00:00",
+  "base_commit": "eed5b979c7070634b6dbb4c7be17a484c9d49d4c",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -457,6 +457,7 @@
     "results/chua-slope-refinement/audit.json": "6e132f5953ea4097797a1f96bf31d508c2192febfef76e3e5a7848d91f8f52d5",
     "results/chua-slope-refinement/bifurcation-anchors.json": "d8e9ea9d69dc933ea1b12e215025390094342cbe69e45484d3ee9ad2637e0cc7",
     "results/chua-slope-refinement/bifurcation-controls.json": "fc811a3c84e471de89143876f4afbf28c59213820f53dd94f15936ba934428ac",
+    "results/chua-slope-refinement/browser-check.json": "d06aac783295d7b5786d327f708a3d453150a2352fabd57641e560d3bb2e19a8",
     "results/chua-slope-refinement/chua-slope-grazing-law.pdf": "c03f7df34fb57be12e37b755b57f5ef5a451d6ca3d0a8ac1572a5b05f3e72048",
     "results/chua-slope-refinement/chua-slope-refined-sections.pdf": "b6956df716106d652e986a1c86366832713f2bfae78d0f348c3a13a64c156925",
     "results/chua-slope-refinement/chua-slope-refined-volumes.pdf": "fd4eaf789864bc6a818be96ceec67eaf04bbd35b6954b216582a22bb13319697",

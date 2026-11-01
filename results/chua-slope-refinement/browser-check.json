@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-11-01T09:17:35.783807+00:00",
+  "content_commit": "eed5b979c7070634b6dbb4c7be17a484c9d49d4c",
+  "method": "Chrome browser through the computer-use API; rendered DOM checks and visual screenshot inspection.",
+  "pages": [
+    {
+      "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-slope-refinement.md",
+      "rendered_math_blocks": 3,
+      "math_errors": 0,
+      "tables": 4,
+      "images_loaded": 3,
+      "image_natural_widths": [
+        2700,
+        2520,
+        2520
+      ],
+      "visual_checks": [
+        "Full report illustration and captions",
+        "Three rendered equations and numerical prediction table",
+        "Report and data links visible"
+      ]
+    },
+    {
+      "url": "https://github.com/Griboedow/chua-gpu-atlas#two-slope-parameter-sections",
+      "new_atlas_image_loaded": true,
+      "image_natural_width": 2700,
+      "math_errors": 0,
+      "coursework_motivation_present": true,
+      "visual_checks": [
+        "Updated family surfaces and figure caption",
+        "Refinement-report link",
+        "Historical sampled-volume links retained"
+      ]
+    }
+  ],
+  "local_screenshots": [
+    ".publication/slope-refinement-browser/report.png",
+    ".publication/slope-refinement-browser/formulas.png",
+    ".publication/slope-refinement-browser/readme.png"
+  ],
+  "scope": "Visual and DOM checks at the published content commit; local screenshots are not included in the research dataset. No interactive WebGL viewer was changed."
+}
