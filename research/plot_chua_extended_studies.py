@@ -108,7 +108,7 @@ def coexistence():
     cert=json.loads((directory/'certificate.json').read_text())
     fig,axs=plt.subplots(1,3,figsize=(15,4.8),layout='constrained')
     ax=axs[0];off=d['offsets']*1000
-    counts=np.sum(d['status']==2,axis=2)
+    counts=d['distinct_attracting_counts']
     cmap=plt.get_cmap('viridis').copy();cmap.set_bad('#bcb9b1')
     masked=np.ma.masked_where(np.any(d['status']==0,axis=2),counts)
     im=ax.pcolormesh(off,off,masked.T,vmin=0,vmax=4,cmap=cmap,shading='nearest')

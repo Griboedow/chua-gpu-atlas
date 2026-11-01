@@ -21,9 +21,9 @@
     "research/study_chua_excitation_plane.py": "0defa3b0e3e1a8c84042234dc4ad3674abb7ae8d9f298e92602a98522c6f7065",
     "research/extend_chua_slope_predictions.py": "e6c13adeb3eb6b0b5eea08fbad2f42969f368707ee2eba1e4ea5f85c12b089cd",
     "research/check_chua_extended_predictions.py": "5900378d80565b145d026e419314e0f0f3831c68d02084f1231bb38e5caf598f",
-    "research/study_chua_coexistence_tolerances.py": "d876d3fe6daf069494337c4be4bfb5ee10cdace6696a02f85a1308640ed637de",
-    "research/plot_chua_extended_studies.py": "c76cfb21d0ddebfbc1c036ba0534f878053cdc7a8f5341f0f041ed7bde8dd45e",
-    "research/review_chua_extended_studies.py": "57f8405b7375d5b33eb13baa423a7dd4d8e99c3ac90a9d49625969b8ea6f99c4",
+    "research/study_chua_coexistence_tolerances.py": "8f607b4647ac52dbd62a9aa019a8190f70dc98cbd4a6ca6776f29e47d7e8a622",
+    "research/plot_chua_extended_studies.py": "4e8ac4dd2c61ce9c2646a81dfb239b4f4dad82293aff304c15a5c16837d983d9",
+    "research/review_chua_extended_studies.py": "af504d6487d5ddd0b2193cea30fbafa381f664e657d2f2940915b5a016d024d4",
     "research/check_chua_coexistence_box.py": "b9c4d1ab9cd83771acdf47e8f555bec3be5cb55e80e749e06a4eb80b6214e1ec",
     "research/derive_chua_pulse_limit.py": "4e4b48de5e7cf9fccd04994c23caeeabbedcc0f3581c701697fe897878184e00"
   },

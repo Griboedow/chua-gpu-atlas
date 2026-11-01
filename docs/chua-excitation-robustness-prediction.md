@@ -118,7 +118,9 @@ the ideal continuous piecewise-linear Chua system has **at least four geometrica
 
 ![Numerical slope section and uniform interval certificate for four coexisting cycles](assets/chua-extended-coexistence.png)
 
-**Figure 4.** A: a 31 × 31 numerical slope section at nominal α,β and γ = 0. Four attracting continuations were recovered at 301 nodes. Grey marks at least one unresolved continuation; failed solves do not establish absence. B: sufficient interval bounds for existence and exclusion of unit multipliers. C: the much smaller parameter box covered by the proof. The numerical map and the proof box have different scales and verification status.
+**Figure 4.** A: a 31 × 31 numerical slope section at nominal α,β and γ = 0. Four distinct attracting returns were recovered at 124 nodes. Grey marks at least one unresolved continuation; failed solves do not establish absence. B: sufficient interval bounds for existence and exclusion of unit multipliers. C: the much smaller parameter box covered by the proof. The numerical map and the proof box have different scales and verification status.
+
+The numerical count clusters section points within 10⁻⁶. At 332 nodes, multiple reference continuations converge to the same attracting return; counting successful continuation records would overcount the motions. A symmetry-related pair can merge into one symmetric cycle. The stored section points allow this distinction to be checked directly. The interval proof below uses disjoint boxes and does not rely on this numerical clustering rule.
 
 ### Uniform existence and admissibility
 

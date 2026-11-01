@@ -26,6 +26,7 @@ def main():
     center={k:float(v) for k,v in zip(['alpha','beta','m0','m1','gamma'],nominal())}
     offsets=np.linspace(-.0004,.0004,31)
     status=np.zeros((31,31,4),np.int8);rhos=np.full((31,31,4),np.nan)
+    points=np.full((31,31,4,2),np.nan);distinct=np.zeros((31,31),np.int8)
     failures=[]
     for i,dm0 in enumerate(offsets):
         for j,dm1 in enumerate(offsets):
@@ -33,11 +34,18 @@ def main():
             for k,row in enumerate(rows):
                 try:
                     rec=solve(row,p);rhos[i,j,k]=rec['spectral_radius']
+                    points[i,j,k]=rec['q'][:2]
                     status[i,j,k]=2 if rec['spectral_radius']<1 else 1
                 except (ValueError,RuntimeError,np.linalg.LinAlgError) as err:
                     failures.append(dict(index=[i,j,k],message=str(err)))
+            representatives=[]
+            for k in np.flatnonzero(status[i,j]==2):
+                point=points[i,j,k]
+                if all(np.linalg.norm(point-old)>1e-6 for old in representatives):representatives.append(point)
+            distinct[i,j]=len(representatives)
         print('slope row',i,flush=True)
-    np.savez_compressed(DIR/'slope-section.npz',offsets=offsets,status=status,spectral_radii=rhos)
+    np.savez_compressed(DIR/'slope-section.npz',offsets=offsets,status=status,spectral_radii=rhos,
+                        section_points=points,distinct_attracting_counts=distinct)
     checks=[]
     for row in rows:
         for sign in [-1,1]:
@@ -53,7 +61,8 @@ def main():
     dump(DIR/'slope-section.json',dict(parameters=center,grid_shape=list(status.shape),
         status={'0':'unresolved','1':'continued but not attracting','2':'continued attracting'},
         failed_attempts=failures,selection_checks=checks,
-        four_attracting_nodes=int(np.sum(np.all(status==2,axis=2))),
+        four_attracting_nodes=int(np.sum(distinct==4)),section_clustering_tolerance=1e-6,
+        nodes_with_merged_attracting_references=int(np.sum(distinct<np.sum(status==2,axis=2))),
         scope='Finite numerical continuation screen. A failed solve is unresolved, not evidence of cycle absence.'))
     components()
 

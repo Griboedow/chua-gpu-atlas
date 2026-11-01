@@ -4,6 +4,7 @@ import hashlib
 import importlib.metadata
 import json
 import subprocess
+import numpy as np
 from flint import arb,ctx
 from chua_research_followup import ROOT,OUT,dump
 from study_chua_circuit_constraints import parameters
@@ -64,6 +65,18 @@ def main():
     derivatives=json.loads((OUT/'coexistence-box/derivative-checks.json').read_text())
     assert len(derivatives['records'])==4
     assert all(float(c['max_absolute_difference'])<1e-32 for r in derivatives['records'] for c in r['checks'])
+    section=np.load(OUT/'coexistence-box/slope-section.npz')
+    section_meta=json.loads((OUT/'coexistence-box/slope-section.json').read_text())
+    counts=np.zeros(section['status'].shape[:2],dtype=int)
+    for i,j in np.ndindex(counts.shape):
+        representatives=[]
+        for k in np.flatnonzero(section['status'][i,j]==2):
+            point=section['section_points'][i,j,k]
+            assert np.isfinite(point).all()
+            if all(np.linalg.norm(point-q)>section_meta['section_clustering_tolerance'] for q in representatives):representatives.append(point)
+        counts[i,j]=len(representatives)
+    assert np.array_equal(counts,section['distinct_attracting_counts'])
+    assert int(np.sum(counts==4))==section_meta['four_attracting_nodes']
     check=json.loads((OUT/'excitation-plane/independent-checks.json').read_text())
     assert len(check['records'])==14,len(check['records'])
     assert all(len(r['checks'])==2 and all(c['label']==r['expected'] for c in r['checks']) for r in check['records'])

@@ -31,6 +31,8 @@ The basin and pulse commands replace their numerical output files; use a separat
 
 The slope/component numerical screen can be repeated with `research/study_chua_coexistence_tolerances.py`. Its failed solves are retained as unresolved. The physical component image is an interval calculation, not a random tolerance sample.
 
+The slope grid stores section points as well as continuation status. Counts merge attracting returns within 10⁻⁶: continuation references are not themselves distinct attractors. There are 124 nodes with four distinct attracting returns and 332 nodes where at least two reference continuations converge to the same return. These are numerical counts; the uniform certificate separately proves distinctness by interval separation.
+
 To reproduce the prospective experiment from scratch in a separate checkout, run the `init`, `calibrate`, `freeze`, then `search` phases of `research/extend_chua_slope_predictions.py`. The existing frozen file is deliberately protected against overwrite. Do not run `search` before publishing the new frozen forecast when proposing another out-of-sample test.
 
 ## Meaning of the checks

@@ -2908,6 +2908,8 @@
       "passed": true
     }
   ],
-  "four_attracting_nodes": 301,
+  "four_attracting_nodes": 124,
+  "section_clustering_tolerance": 1e-06,
+  "nodes_with_merged_attracting_references": 332,
   "scope": "Finite numerical continuation screen. A failed solve is unresolved, not evidence of cycle absence."
 }
