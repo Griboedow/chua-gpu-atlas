@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T13:38:03.502748+00:00",
-  "base_commit": "74fe0a624f543d02fc5f98aef6cf7a16314440e9",
+  "created_utc": "2026-11-01T13:41:24.744711+00:00",
+  "base_commit": "22e0f99a7646837eada2649f8e8fd1edd10cbd3e",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -88,7 +88,7 @@
     "docs/chua-coexistence-audit.md": "7f7a4f69a1eec136467e445dd07b02595a416765854790906792092d134915e1",
     "docs/chua-family-gallery.md": "21f754acc4b543cf6a634cd6a06fd40f695779f6bc41d84c248172f97c7ea5f9",
     "docs/chua-hidden-boundary.md": "e94b50e623c71da3588a913845d40e565894da3ad52105dce3272349622008c7",
-    "docs/chua-hidden-infinity-certificate.md": "400d73b093066f0d53c8fe5afad2190a2f9d5946420c3c94d91635d47f6a8998",
+    "docs/chua-hidden-infinity-certificate.md": "c52c162a5e9e778f4d9fac1356d45f70c2b19f40786c6312218435de2c07f8c5",
     "docs/chua-infinity-certificate.md": "da51d1f3fcf9866bcf57d299141c83b71f09acc9414f5f0a20827f1a42c3e733",
     "docs/chua-layer-census.md": "70cadabd720ed6db84ac6325706367715b2a27a32cd887bb4aa21b667db81d23",
     "docs/chua-layer-prediction.md": "3a7ed067e626bdad6de4b1a2b404131a342fa39293837a800ca7221dcb5acf29",
@@ -314,7 +314,7 @@
     "results/chua-followup/review/equilibria-100.json": "9703a388791d77dfd51be89d354b4697c13a67011677806470b8c9906d534b0d",
     "results/chua-followup/review/execution.json": "6a2dd2723fdecb758d96659bca57460add888231a5c6e87a06b510904d971f67",
     "results/chua-followup/review/independent-tangency-checks.json": "b9c782d34b5705f543bbc78bc03269b880da7c77431ab7b8e5f4da2c6ed37111",
-    "results/chua-followup/review/README.md": "3cc497cfc3e603b4c19c24e640bd20ba58d84669053869e92019e1190ff8075e",
+    "results/chua-followup/review/README.md": "d94f81f914c9d1d674bc7994d5e36b75e054938102ebab6f00b04b80187afea4",
     "results/chua-followup/review/record-check.json": "5b32ee4abf99e72e006a2fbd2ca092a9b57308c7838bf05486250e2c788e9249",
     "results/chua-followup/review/shifted-tangency-minus.json": "adfaab47fb43c9f7bb56fdcf33d8c7ab4ca8778629dbe706201f4313c2c56219",
     "results/chua-followup/review/shifted-tangency-plus.json": "28d59f3e333fa1aa6561535970582fa7867fde1ad057c25d7f870eef9bd0b701",

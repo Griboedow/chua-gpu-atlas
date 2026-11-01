@@ -165,9 +165,9 @@ Thus these three open balls are disjoint from the basin of every attracting peri
 
 ```math
 \begin{gathered}
-\dot X=A_1X+b\operatorname{sat}(x),\qquad
+\dot X=A_1X+b\mathrm{sat}(x),\qquad
 b=-\alpha(m_0-m_1)e_1,\\
-\operatorname{sat}(x)=\tfrac12(|x+1|-|x-1|).
+\mathrm{sat}(x)=\tfrac12(|x+1|-|x-1|).
 \end{gathered}
 ```
 

@@ -28,6 +28,7 @@ The revision corrects or makes explicit the following points:
 - **Return-map notation.** The proof now distinguishes physical z, local ξ, the return map P and the Lyapunov matrix R. Legacy JSON names are mapped explicitly to these objects.
 - **Reproduction behavior.** Review commands write to separate files. A failed tangency or equilibrium-exclusion CLI run returns a nonzero exit status. The independent negative controls no longer overwrite the positive tangency output. The coverage merger verifies the prefix, ordered band metadata, central calculation and local certificate before joining chunks; the legacy prefix is accepted only with its published digest.
 - **References.** The coexistence question is located in both the 2017 and 2023 papers. The 2008 author-manuscript title and theorem numbering are distinguished from the 2011 publication title.
+- **Rendered equations.** Direct GitHub inspection found that the saturation formula used an unsupported operator macro. It was replaced by supported upright notation and checked again in the browser. Counting math elements alone had not detected this rendering failure.
 
 The merger reproduces the original 662-interval certificate exactly from its retained chunks and rejects an omitted chunk. Separate record-level controls reject an omitted capture interval and a curvature enclosure containing zero even when the original success flags remain unchanged. Both shifted tangency boxes are also rejected.
 
