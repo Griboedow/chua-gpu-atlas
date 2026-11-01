@@ -26,8 +26,8 @@ Throughout, the equations and slope convention are
 ```
 
 ```math
-h(x)=m_1x+(m_0-m_1)\operatorname{sat}(x),\qquad
-\operatorname{sat}(x)=\max(-1,\min(1,x)).
+h(x)=m_1x+(m_0-m_1)\mathrm{sat}(x),\qquad
+\mathrm{sat}(x)=\max(-1,\min(1,x)).
 ```
 
 ## 2. An explicit region without oscillatory attractors

@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T10:13:44.772214+00:00",
-  "base_commit": "254750bef05b4678f7fe060245b99fe2a3c04612",
+  "created_utc": "2026-11-01T10:14:22.162929+00:00",
+  "base_commit": "0194f9914e77901235e7e41506202c91b0ec553e",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -81,7 +81,7 @@
     "docs/chua-accessibility.md": "94dffcc9f67bb46fa9b37d1ca2b1d5634dc2b1b75df64985ed52a29e62e7e3ba",
     "docs/chua-coexistence-audit.md": "5d65ecc1a40e456e504728988eaab53d9bb8c1e3133e48bf8f2fe80dd1ad3b3c",
     "docs/chua-family-gallery.md": "21f754acc4b543cf6a634cd6a06fd40f695779f6bc41d84c248172f97c7ea5f9",
-    "docs/chua-hidden-boundary.md": "d76300dff355342b6c6dee05971d8eecab059c9b299698e42e56421757ec0af7",
+    "docs/chua-hidden-boundary.md": "5e1a7d7881b7b2289508abe9d190b8470a467ad1c2bc9227a8a6d2e3c6f6c8dc",
     "docs/chua-infinity-certificate.md": "4f74e0620a05f1d557df98689a08ab63df50c26cb547a21a299cd9bfd80de23f",
     "docs/chua-layer-census.md": "70cadabd720ed6db84ac6325706367715b2a27a32cd887bb4aa21b667db81d23",
     "docs/chua-layer-prediction.md": "3a7ed067e626bdad6de4b1a2b404131a342fa39293837a800ca7221dcb5acf29",
