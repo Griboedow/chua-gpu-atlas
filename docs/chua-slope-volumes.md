@@ -1,5 +1,7 @@
 # Two three-dimensional sections through the diode slopes
 
+For individual family identities and narrow stability bands, see the [refined P5/P7 continuation](chua-slope-refinement.md). It resolves 6,713 cross-sections and distinguishes a change of diode itinerary from cycle birth. The sampled volumes below retain the broader finite-time survey and its limitations.
+
 We compute two three-dimensional parameter sections extending the slope-plane study:
 
 | Coordinates | Fixed parameter | Third-coordinate range |

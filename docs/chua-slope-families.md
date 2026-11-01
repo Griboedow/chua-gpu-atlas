@@ -1,5 +1,7 @@
 # Continuation of five- and seven-peak families in the slope volumes
 
+The [subsequent refinement](chua-slope-refinement.md) increases the meshes to 41 × 41, recovers all previously missing P7 nodes, locates the diode-contact curves and tests a local duration law. The 21 × 21 results below retain the evidence and limitations of the first continuation stage.
+
 ## Abstract
 
 We continue two periodic-orbit families from the [slope-plane study](chua-slope-plane.md) while varying both diode slopes and either α or β. The calculation resolves thin symmetric stability intervals, independently verifies 13 parameter sets with coexisting attracting cycles, and follows a seven-peak cycle through a change of diode-region itinerary. The latter change explains a termination of fixed-itinerary continuation without loss of the attracting cycle.
@@ -65,7 +67,7 @@ The P7 fixed-itinerary continuation develops a missing edge as m1 increases near
 
 ![Cycle persistence across a change of diode-region itinerary](assets/chua-slope-itinerary-change.png)
 
-All 13 independently checked path witnesses remain symmetric, attracting and seven-peaked. Between the sampled values m1 = -0.6562857143 and -0.6552857143, the number of crossings of x = +/-1 changes from eight to twelve per full period. The dominant transverse multiplier magnitude remains around 0.18. The original sequence of affine flights therefore stops describing the orbit, even though the orbit survives. This is consistent with a grazing-related itinerary change; the precise contact parameter and its normal form have not been solved.
+All 13 independently checked path witnesses remain symmetric, attracting and seven-peaked. Between the sampled values m1 = -0.6562857143 and -0.6552857143, the number of crossings of x = +/-1 changes from eight to twelve per full period. The dominant transverse multiplier magnitude remains around 0.18. The original sequence of affine flights therefore stops describing the orbit, even though the orbit survives. This stage did not locate the precise contact. The [refinement study](chua-slope-refinement.md#3-three-events-that-must-be-distinguished) subsequently solves contacts at the fold, an attracting core and the symmetry edge, and checks a square-root duration prediction on a specified smooth parameter line.
 
 Invalid fixed-itinerary edge roots are retained only as a predictor for the m0 values used in this path. They are never accepted as physical boundaries. The [path records](../results/chua-slope-families/itinerary-change.json) include that distinction.
 

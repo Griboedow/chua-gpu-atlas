@@ -40,6 +40,8 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 ## Numerical studies
 
+- `refine_chua_slope_atlases.py`, `check_chua_slope_refinement.py`, `study_chua_slope_grazing.py`, `check_chua_slope_branches.py` and `plot_chua_slope_refinement.py` reproduce the [refined slope volumes and contact study](../results/chua-slope-refinement/README.md).
+
 - `predict_chua_layers.py`, `verify_chua_layer_predictions.py` and the associated precision, audit and plotting programs implement the [forecast protocol](../results/chua-layer-prediction/README.md).
 - The `refine_chua_*`, registry, gallery and atlas programs implement the [family refinement](../docs/chua-refined-atlas.md).
 - The `scan_chua_slope_*`, `continue_chua_slope_*` and associated checks resolve [slope sections and volumes](../docs/chua-slope-volumes.md).

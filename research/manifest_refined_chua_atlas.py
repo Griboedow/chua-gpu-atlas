@@ -28,7 +28,9 @@ check_chua_interval_derivatives check_chua_global_connection plot_chua_infinity
 audit_chua_coexistence check_chua_formal plot_chua_proof_audit
 certify_chua_coexisting_cycles certify_chua_hidden_cycle study_chua_stability
 check_chua_accessibility prepare_chua_accessibility probe_chua_accessibility
-check_chua_stability_prediction study_chua_circuit_constraints plot_chua_accessibility'''.split()
+check_chua_stability_prediction study_chua_circuit_constraints plot_chua_accessibility
+refine_chua_slope_atlases check_chua_slope_refinement study_chua_slope_grazing
+check_chua_slope_branches plot_chua_slope_refinement'''.split()
 
 
 def digest(path):
@@ -73,6 +75,10 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-layer-infinity').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-proof-audit').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-accessibility').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-slope-refinement').iterdir() if p.is_file())
+    paths.add(ROOT/'docs/chua-slope-refinement.md')
+    paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-refined-volumes.png',
+        'chua-slope-refined-sections.png','chua-slope-grazing-law.png'])
     paths.update(ROOT/p for p in ['docs/chua-accessibility.md','docs/assets/chua-accessibility.png',
         'docs/assets/chua-four-cycle-certificate.png','docs/assets/chua-circuit-accessibility.png'])
     paths.update(p for p in (ROOT/'formal').glob('*') if p.is_file() and p.name != '.gitignore')

@@ -1,0 +1,129 @@
+{
+  "contact": {
+    "target": -0.43,
+    "orbit": {
+      "beta": 14.285714285714286,
+      "alpha": 9.0,
+      "m0": -1.145273980679323,
+      "m1": -0.6553744116971325,
+      "symmetric": true,
+      "q": [
+        0.26429236180971233,
+        -0.3499427400074376,
+        0.7420313576759479,
+        5.776062146775811,
+        0.8159453984257423,
+        1.2810488097509416,
+        0.4073853793383064
+      ],
+      "period": 18.044946183933497,
+      "residual": 3.1807889655510735e-14,
+      "map_multipliers": [
+        [
+          -0.42999999999947824,
+          0.0
+        ],
+        [
+          1.142950167962084e-12,
+          0.0
+        ]
+      ],
+      "full_multipliers": [
+        [
+          0.18489999999955128,
+          0.0
+        ],
+        [
+          1.306335086444556e-24,
+          0.0
+        ]
+      ],
+      "spectral_radius": 0.18489999999955128,
+      "section_matrix": [
+        [
+          -0.20570582094519274,
+          -0.0976655415186034
+        ],
+        [
+          -0.4724145027861866,
+          -0.22429417905314253
+        ]
+      ],
+      "minimum_breakpoint_speed": 0.8614739417697385,
+      "map_determinant_liouville": -4.914685722230998e-13,
+      "map_trace": -0.42999999999833527,
+      "full_logdet": -56.682756799890996,
+      "region_violation": 2.220446049250313e-14,
+      "full_cycle_peaks": 7,
+      "extrema_region_violation": 2.220446049250313e-14,
+      "derivative_bracket_max_step": 0.025,
+      "regions": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "targets": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "state": [
+      0.9999999999999977,
+      -0.1452739806793251,
+      -0.6791949424817489
+    ],
+    "acceleration": 4.194711343778199,
+    "contact_time_within_outer_flight": 4.035176731346282,
+    "residual": 2.2434772290396992e-13,
+    "solution": [
+      0.26429236180971233,
+      -0.3499427400074376,
+      0.7420313576759479,
+      5.776062146775811,
+      0.8159453984257423,
+      1.2810488097509416,
+      0.4073853793383064,
+      -1.145273980679323,
+      -0.6553744116971325,
+      4.035176731346282
+    ]
+  },
+  "derivative_checks": [
+    {
+      "step": 0.0001,
+      "minimum_derivative": -0.48117536731173693
+    },
+    {
+      "step": 3e-05,
+      "minimum_derivative": -0.4811753219887323
+    },
+    {
+      "step": 1e-05,
+      "minimum_derivative": -0.4811753178735056
+    }
+  ],
+  "slope_checks": [
+    {
+      "step": 0.0001,
+      "dm0_dm1": -0.021546572661623742
+    },
+    {
+      "step": 3e-05,
+      "dm0_dm1": -0.021546587621508923
+    },
+    {
+      "step": 1e-05,
+      "dm0_dm1": -0.021546588957477294
+    }
+  ],
+  "line_slope": -0.021546588957477294,
+  "coefficient": 0.9579561373824055,
+  "exponent": 0.5,
+  "protocol": "m1=m1_contact+delta; m0=m0_contact+line_slope*delta; alpha=9; beta=100/7.",
+  "status": "Analytic prediction compared after preliminary numerical exploration; not a blind forecast.",
+  "original_protocol": "Retained in grazing-prediction.json and grazing-constraint-control.json."
+}

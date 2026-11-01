@@ -17,6 +17,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 | Certify finite coexistence and hiddenness | Four distinct periodic sinks; two hidden-cycle examples with excluded equilibrium neighborhoods; a global-convergence sector and circuit constraints | [Accessibility](chua-accessibility.md) | [Certificates and controls](../results/chua-accessibility/README.md) |
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
+| Refine two-slope families | 6,713 cross-sections; recovered P7 nodes; diode-contact curves and a tested duration law | [Slope refinement](chua-slope-refinement.md) | [Refinement data and controls](../results/chua-slope-refinement/README.md) |
 
 The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-family-gallery.md) describes the reference motions, the [prediction study](chua-layer-prediction.md) compares forecasts with subsequent computations, and the [certificate](chua-infinity-certificate.md) presents the mathematical argument and its scope.
 

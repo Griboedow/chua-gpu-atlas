@@ -14,6 +14,8 @@ The directories below contain the settings, data, certificates and numerical con
 
 - [`chua-slope-plane/`](../docs/chua-slope-plane.md), [`chua-slope-volumes/`](../docs/chua-slope-volumes.md), [`chua-slope-families/`](../docs/chua-slope-families.md): sampled slope sections and volumes, continued families and basin controls.
 
+- [`chua-slope-refinement/`](chua-slope-refinement/README.md): four 41 × 41 family meshes, 161 recovered P7 nodes, diode-contact curves, a local duration prediction, preserved unsuccessful controls, twelve branch-switch checks and finer-grid interpolation errors. See [the report](../docs/chua-slope-refinement.md).
+
 - [`chua-overlap-geometry/`](chua-overlap-geometry/README.md): symmetry-resolved P5/P7 coexistence, 18 contact curves, projection extrema, checked two-/three-/four-cycle examples, predictive tests, six figures and a self-contained visual guide. See [the research note](../docs/chua-overlap-geometry.md).
 
 - `original/`: two 51³ scans, reference trajectories and eight numerical validation checks.

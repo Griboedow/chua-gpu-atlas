@@ -67,9 +67,11 @@ Figure 4. Coexistence regions for two selected families. The region supporting t
 
 The [m₀–m₁ section](docs/chua-slope-plane.md) and the two volumes below vary both slopes independently. The volumes use **(m₀,m₁,α)** at β = 100/7 and **(m₀,m₁,β)** at α = 9.
 
-![Interior views of the m0-m1-alpha and m0-m1-beta parameter volumes](docs/assets/chua-slope-volumes-interior.png)
+![Refined P5 and P7 family sheets in the m0-m1-alpha and m0-m1-beta parameter volumes](docs/assets/chua-slope-refined-volumes.png)
 
-Figure 5. Cropped views of the two parameter volumes. Each contains 152,561 sampled nodes with three initial states per node. These finite-time classifications can miss thin windows and small basins. [Continuation of five- and seven-peak families](docs/chua-slope-families.md) resolves selected stability intervals and coexistence examples. The [volume report](docs/chua-slope-volumes.md) gives sections, numerical limitations and an offline viewer. A [rotation animation](docs/assets/chua-slope-volumes.gif) shows the same volumes.
+Figure 5. Refined continuation of two selected families in both slope volumes: 6,713 accepted cross-sections on four 41 × 41 meshes. Blue identifies P5; rose and purple identify P7 before and after an additional excursion through the central diode region. The colour change does not create a new family. The [refinement report](docs/chua-slope-refinement.md) gives actual stability widths, independent checks, eleven unresolved P5 nodes and the located contact curves. Twelve separated branch controls retain fold birth and symmetry breaking; a contact inside the P7 stability band changes eight diode crossings to twelve while the same seven-peak cycle remains attracting.
+
+The earlier [sampled volumes](docs/chua-slope-volumes.md) each contain 152,561 parameter nodes and three initial states per node. Their [interior views](docs/assets/chua-slope-volumes-interior.png), [slow rotation](docs/assets/chua-slope-volumes.gif) and offline viewer remain available. Those finite-time masks can miss thin windows and small basins; they do not label individual periodic families.
 
 ## Hidden periodic attractors and equilibrium accessibility
 
