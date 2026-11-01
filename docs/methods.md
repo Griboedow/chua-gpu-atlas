@@ -1,6 +1,6 @@
 # Methods and reproduction guide
 
-Run commands from the repository root. See the [main README](../README.md) for the project story, figures, release downloads and numbered references.
+Run commands from the repository root. See the [main README](../README.md) for the study summary, figures and links to the reports and datasets.
 
 Python code, actual GPU results, and an offline interactive report for two standard Chua double-scroll parameter sets. The parameter survey runs through **PyOpenCL on a GPU**. There is no silent CPU fallback. OpenCL is supported by the installed NVIDIA driver; a separate CUDA toolkit is not required.
 

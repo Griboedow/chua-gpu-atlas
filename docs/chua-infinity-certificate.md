@@ -1,5 +1,7 @@
 # Infinitely many attracting windows in the Chua transect
 
+## Abstract
+
 The fixed transect **α = 9, m₀ = −8/7, m₁ = −5/7** contains infinitely many parameter intervals supporting attracting periodic orbits of increasing return period. They accumulate at a parameter β∗ enclosed by
 
 ```math
@@ -12,11 +14,11 @@ This conclusion combines an **executable interval certificate of a quadratic hom
 
 The result concerns distinct attracting windows at different parameter values. It does not give the number of attractors at β∗, an exhaustive classification of the atlas, or a count of globally disconnected surfaces. The **34 reference identities** in the finite catalogue remain a record of explicitly computed motions. Hyperbolic attracting cycles persist under small changes of the other parameters, so the windows have local extensions in parameter space; their complete connections have not been mapped.
 
-## What changed since the prediction study
+## Relation to the numerical predictions
 
 The [prediction study](chua-layer-prediction.md) published forecasts before searching for the 75- and 85-peak cycles. Their measured widths differed from the forecasts by 1.89% and 2.70%. The 85-peak location forecast missed its core; that miss and the original forecasts remain unchanged.
 
-Those calculations suggested a manifold tangency but only propagated tangent lines. The present calculation encloses the **exact local stable and unstable manifolds**, including their possible curvature and parameter dependence. The difference is essential: agreement between high-precision approximations alone cannot establish existence.
+Those calculations suggested a manifold tangency but only propagated tangent lines. The present calculation encloses the **exact local stable and unstable manifolds**, including their possible curvature and parameter dependence. Existence follows from the interval inclusions and graph bounds; agreement between high-precision approximations supplies an implementation control.
 
 | Statement | Evidence |
 |---|---|
@@ -26,7 +28,7 @@ Those calculations suggested a manifold tangency but only propagated tangent lin
 | Every sufficiently long window has exactly the proposed 10n+5 peak label | Not established by this certificate |
 | All visible families have this same organizer | Not established |
 
-The previously fitted limit was 14.30635910320525. Its difference from the certified interval is about 3.24 × 10⁻⁹, already larger than the 85-peak core. The new certificate therefore improves the limiting location without rewriting the earlier forecast.
+The previously fitted limit was 14.30635910320525. Its difference from the certified interval is about 3.24 × 10⁻⁹, already larger than the 85-peak core. The interval calculation refines the accumulation parameter. The earlier fitted value is retained in the prediction record.
 
 ## 1. Model and return map
 
@@ -94,7 +96,7 @@ through the origin, with common bounds
 |\psi_u|,|\chi_s|\le L=10^{-3},\quad |\psi_{uu}|,|\chi_{ss}|\le K=2000,\quad |\psi_\beta|,|\chi_\beta|\le\Gamma=10^{-4}.
 ```
 
-These bounds follow from graph transforms, rather than replacing a manifold by its tangent line. For the unstable transform, solve u′ = F(u,ψ(u)) and set ψnew(u′) = G(u,ψ(u)). The expanding projection covers the entire local u′ interval because a − bL > 1. For the stable transform, solve F(χnew(s),s) = χold(G(χnew(s),s)). The slope inequality below gives a unique solution within |u| ≤ L|s|, and its image has |s′| ≤ (cL+d)|s| < δ.
+We obtain these bounds by graph transforms. For the unstable transform, solve u′ = F(u,ψ(u)) and set ψnew(u′) = G(u,ψ(u)). The expanding projection covers the entire local u′ interval because a − bL > 1. For the stable transform, solve F(χnew(s),s) = χold(G(χnew(s),s)). The slope inequality below gives a unique solution within |u| ≤ L|s|, and its image has |s′| ≤ (cL+d)|s| < δ.
 
 Differentiation and the triangle inequality give the following bounds. Every displayed strict comparison is checked in Arb, using exact decimal guard constants.
 
@@ -170,13 +172,13 @@ For each β, strict convexity and the opposite signs of ga give a unique interio
 
 The curvature gaa > 0 makes the contact quadratic. The image of the unstable graph has a nonzero tangent because the return map is a local diffeomorphism. The initial point is different from the saddle; its backward orbit stays on the local unstable graph, while the final point's forward orbit stays on the local stable graph. Thus this is a homoclinic tangency of the exact manifolds.
 
-## 5. Why this implies infinity
+## 5. Application of the sink-cascade theorem
 
 The classical **Gavrilov–Shilnikov sink-cascade theorem** applies to a smooth one-parameter family of planar diffeomorphisms with a dissipative saddle and a quadratic homoclinic tangency unfolding with nonzero speed. It gives infinitely many disjoint parameter intervals, accumulating at the tangency value, with attracting periodic orbits of unbounded period. The original results are in Gavrilov and Shilnikov, Parts [I](https://doi.org/10.1070/SM1972v017n04ABEH001597) and [II](https://doi.org/10.1070/SM1973v019n01ABEH001741); the two-dimensional statement is also summarized explicitly in the introduction, pp. 1115–1116, of [Gonchenko, Ovsyannikov and Turaev (2012)](https://www.ma.imperial.ac.uk/~dturaev/mypapers/physd12.pdf).
 
 All required local hypotheses have been checked here. To use the ordinary return P = H², append one local H iterate to the 27-iterate connection. Its endpoint remains on the local stable manifold. A parameter-dependent local diffeomorphism preserves quadratic contact and nonzero unfolding, so the resulting 28-iterate connection is a homoclinic tangency for P. P has the positive multipliers and dissipative determinant in Section 2.
 
-The analytic return maps exist on neighborhoods of the whole connection and the local saddle. A periodic sink of the upward first-return map corresponds to an attracting periodic orbit of the flow. Hence the theorem yields infinitely many attracting windows on this exact Chua transect, inside any sufficiently small neighborhood of β∗. No extrapolation from eight numerical points is used for this implication.
+The analytic return maps exist on neighborhoods of the whole connection and the local saddle. A periodic sink of the upward first-return map corresponds to an attracting periodic orbit of the flow. Hence the theorem yields infinitely many attracting windows on this exact Chua transect, inside any sufficiently small neighborhood of β∗.
 
 The theorem does not supply an explicit first index at which its asymptotic conclusions hold. Matching every theorem-generated orbit to the proposed 10n+5 peak sequence, obtaining rigorous widths for all later members, and extending the contact surface over a specified three-dimensional box are further problems.
 
@@ -200,7 +202,7 @@ The program fails unless every sufficient inequality passes. The JSON records th
 | Independent 27-fold composition | Gap, state curvature and parameter derivative agree at both tested scales |
 | Reconstruct the numerical box center from the earlier approximation | Agreement within 10⁻³⁵ |
 
-The mpmath comparisons are implementation controls, not interval proofs. The certificate's mathematical guarantees come from the inclusions and inequalities. Its software trust base consists of the published Python implementation and FLINT/Arb's outward-rounded arithmetic and matrix exponentials; see the official [Arb matrix documentation](https://flintlib.org/doc/arb_mat.html). This is a computer-assisted proof with inspectable assumptions and code, not a proof checked by a formal proof assistant. Independent mathematical and implementation review remains valuable.
+The mpmath comparisons are implementation controls, not interval proofs. The certificate's mathematical guarantees come from the inclusions and inequalities. Its software trust base consists of the published Python implementation and FLINT/Arb's outward-rounded arithmetic and matrix exponentials; see the official [Arb matrix documentation](https://flintlib.org/doc/arb_mat.html). The resulting computer-assisted argument depends on this analytical and software basis. The complete certificate has not been verified in a proof assistant.
 
 The subsequent [coexistence audit](chua-coexistence-audit.md) examines the stronger Newhouse–Robinson conclusion and its outstanding localization step. It also adds a Lean proof of the general boundary-sign implication in Section 4 and exact rational checks of the graph guards. The complete interval certificate and its link to those formal hypotheses remain outside Lean.
 

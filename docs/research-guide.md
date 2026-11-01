@@ -1,23 +1,23 @@
-# Research guide
+# Study outline and verification scope
 
 The central question is how the periodic layers of the Chua atlas are organized: which motions they represent, how they appear and overlap, and whether a finite catalogue can exhaust them.
 
 The investigation proceeds from sampled parameter maps to continued periodic orbits, forecasts tested against new searches, and an interval proof of one organizing homoclinic tangency. These stages support different kinds of claims.
 
-## Main line of the study
+## Studies and principal results
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
 | Identify the layers | 32 sampled family sheets; orbit ancestry, symmetry and behaviour | [Refined atlas](chua-refined-atlas.md) | [Atlas data](../results/chua-layer-atlas/) |
 | Compare their motions | One complete orbit, signal and peak sequence per reference | [Family gallery](chua-family-gallery.md) | [Portrait data](../results/chua-layer-atlas/) |
-| Predict thinner windows | Published forecasts followed by 75/85-peak discoveries; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
-| Establish infinity | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
+| Predict thinner windows | Published forecasts compared with 75/85-peak computations; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
+| Periodic-window accumulation | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
 | Audit infinite coexistence | Local hypotheses pass; localization remains open; Lean proves the tangency-box implication | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
 | Explain overlaps | Symmetry breaking, coexistence of 2–4 cycles, 18 contact curves | [Overlap geometry](chua-overlap-geometry.md) | [Continuation and checks](../results/chua-overlap-geometry/README.md) |
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
 
-For a first reading, start with the [main page](../README.md), compare the [motion portraits](chua-family-gallery.md), then read the [prediction study](chua-layer-prediction.md) and the [certificate](chua-infinity-certificate.md). The latter contains the mathematical argument and separates its conclusion from the remaining classification questions.
+The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-family-gallery.md) describes the reference motions, the [prediction study](chua-layer-prediction.md) compares forecasts with subsequent computations, and the [certificate](chua-infinity-certificate.md) presents the mathematical argument and its scope.
 
 ## Counts and terminology
 
@@ -27,7 +27,7 @@ For a first reading, start with the [main page](../README.md), compare the [moti
 
 A family can have multiple attracting descendants at the same parameters, particularly after symmetry breaking. A parameter projection can also merge distinct branches. Counts of families, individual attracting cycles, connected components and projected islands must therefore be kept separate.
 
-## Strength of the evidence
+## Verification methods and scope
 
 | Type | What supports the claim | What it does not establish |
 |---|---|---|

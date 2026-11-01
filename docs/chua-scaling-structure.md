@@ -1,8 +1,8 @@
-# Chua along the quadratic parameter path: a regular singular limit with important caveats
+# Singular-limit analysis along the quadratic parameter path
 
-The question is whether a chaotic family can persist as $\alpha\to\infty$ with $\beta=\kappa\alpha^2$ and both diode slopes fixed. An exact rescaling produces a useful limiting model: a harmonic oscillator drives a scalar periodic equation. That limiting equation has no recurrent chaotic attractor at fixed amplitude. **This does not prove that chaos terminates at a finite $\alpha$.** Long-time limits, weak amplitude drift, and losses of uniform attraction must be treated separately.
+The question is whether a chaotic family can persist as $\alpha\to\infty$ with $\beta=\kappa\alpha^2$ and both diode slopes fixed. An exact rescaling produces a limiting model: a harmonic oscillator drives a scalar periodic equation. That limiting equation has no recurrent chaotic attractor at fixed amplitude. **This does not prove that chaos terminates at a finite $\alpha$.** Long-time limits, weak amplitude drift, and losses of uniform attraction must be treated separately.
 
-The derivations below are our explicit checks of the canonical equations, not a claim of a new Chua mechanism or a new singular-perturbation theory. Chua return maps and slow–fast analysis have substantial primary literature [1–4]. This note belongs to the original Chua project, rather than the separate search for other physical models.
+The derivations apply rescaling and averaging arguments to the canonical equations used in this repository. Related Chua return-map and slow–fast analyses are discussed in references [1–4].
 
 ## Exact scaling and an action identity
 
@@ -49,7 +49,7 @@ R_s=\varepsilon\cos\theta\,[x-R\cos\theta],\qquad
 
 The polar description is singular at $R=0$; it is not a uniform coordinate system for starts whose oscillator amplitude vanishes with $\varepsilon$.
 
-## What is rigorously simple at zero epsilon
+## Dynamics at zero epsilon
 
 At $\varepsilon=0$, the pair $(y,Z)$ is an independent harmonic oscillator. Fix its amplitude $R>0$ and phase. The remaining equation is
 
@@ -145,7 +145,7 @@ p(\lambda)=(\lambda+a+\varepsilon)
 
 The local field is exactly affine. Sufficiently small ellipses in its center plane stay entirely in the outer branch and are exact periodic orbits. They form a nonisolated family; generic nondegenerate Hopf conclusions do not follow. A full-field integration at $\alpha=64$ reproduces one such ellipse, with $1.45\leq x\leq1.55$, and closes to approximately $6.7\times10^{-16}$.
 
-## Why the leading parabola hides very slow growth
+## Growth rates near the leading parabolic stability boundary
 
 For the standard outer slope $m_1=-5/7$, the limiting value and finite $\alpha$ correction are
 

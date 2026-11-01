@@ -1,6 +1,6 @@
 # Denser layers for the README
 
-This add-on makes the existing 32-family catalogue easier to see. It does not discover another 32 families, establish an exhaustive count, or replace the earlier 9 by 9 atlas grids. Read the [main report](../../../docs/chua-refined-atlas.md#seeing-the-individual-layers) for interpretation.
+This add-on makes the existing 32-family catalogue easier to see. It does not discover another 32 families, establish an exhaustive count, or replace the earlier 9 by 9 atlas grids. Read the [main report](../../../docs/chua-refined-atlas.md#sampling-and-visualization-of-individual-families) for interpretation.
 
 ## What the figures show
 

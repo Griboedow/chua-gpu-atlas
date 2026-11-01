@@ -2,13 +2,13 @@
 
 At **alpha = 9 and beta = 100/7**, varying the inner slope **m0** and outer slope **m1** produces a broad chaotic-candidate region crossed by **nested curved regular bands**. Near the classical slopes, these bands look almost vertical. Two selected bands contain independently checked attracting cycles with **five and seven peaks per period**.
 
-This is a new two-dimensional section of the four-parameter model. The earlier three-dimensional atlas varied alpha, beta and m0 while fixing m1. Rotating that earlier plot cannot produce this section, and its count of 32 catalogued families does not automatically carry over.
+This two-dimensional section varies both slopes in the four-parameter model. The earlier atlas varied alpha, beta and m0 at fixed m1. Its 32 catalogue identities have not all been matched to the bands in the present section.
 
-The [three-dimensional extension](chua-slope-volumes.md) now varies alpha or beta as the third coordinate. It includes full and cropped volume views, a slow rotation, and an interactive section viewer. This 2D map is the common central section of both new volumes.
+The [three-dimensional extension](chua-slope-volumes.md) varies alpha or beta as the third coordinate. It includes full and cropped volume views, a slow rotation, and an interactive section viewer. This 2D map is the common central section of both volumes.
 
 ![Wide m0-m1 section and magnification around the classical point](assets/chua-slope-plane.png)
 
-## Reading the picture
+## Finite-time classification
 
 - **Blue:** all three starts meet the finite-time chaos-candidate criterion.
 - **Orange:** all three have negative or near-zero late exponents without meeting the equilibrium criterion. Periodicity is not established for every orange pixel.
@@ -18,7 +18,7 @@ The [three-dimensional extension](chua-slope-volumes.md) now varies alpha or bet
 
 The star marks m0 = -8/7, m1 = -5/7. In the wide panel, the regular bands curve back through the chaotic-candidate region. The zoom resolves several narrow bands and a broader strip to the right of the star. What looks like a thin layer in a higher-dimensional parameter view appears here as a band with nonzero width. The displayed pixels remain finite samples, so gaps and isolated pixels are not established branch endpoints.
 
-## Different rhythms in neighboring bands
+## Periodic signals in selected bands
 
 The peak diagnostic examines the first start at all 9,158 zoom nodes where the preceding three-start screen was uniformly regular. It resolves a repeating peak pattern at 9,138 of them. The most common detected patterns contain **5 peaks (7,111 nodes)** and **7 peaks (1,237 nodes)**. Patterns with 10 and 14 peaks also occur. These counts do not establish ancestry, period doubling, or distinct family identities by themselves.
 
@@ -33,9 +33,9 @@ Two examples on m1 = -5/7 were then closed by full-field shooting and checked by
 
 Both magnitudes are below one, supporting attraction. Independent closure errors are below 1.03e-8, and multiplier discrepancies below 2.57e-8. These are two numerical examples, not a count of all periodic families in this plane. The [cycle records](../results/chua-slope-plane/closed-cycles.json) retain the parameters, shooting vectors and checks.
 
-The [family-continuation follow-up](chua-slope-families.md) now tracks these two reference cycles through m1 and alpha or beta, resolves their stability edges, and verifies parameter sets where both cycles attract.
+The [family-continuation follow-up](chua-slope-families.md) tracks these two reference cycles through m1 and alpha or beta, resolves their stability edges, and verifies parameter sets where both cycles attract.
 
-## Resolution and reliability
+## Resolution and numerical controls
 
 Each panel has **241 by 241 nodes**, with the same three prescribed starts used in the earlier atlas. Alpha and beta stay fixed throughout. The wide domain is m0 in [-1.5, -0.9], m1 in [-0.98, -0.10]. The zoom extends 0.006 in each slope direction from the classical point, giving spacing **5e-5** on both axes.
 

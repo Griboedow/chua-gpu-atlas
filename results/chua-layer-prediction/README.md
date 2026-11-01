@@ -1,8 +1,8 @@
-# Evidence for theory-first layer predictions
+# Periodic-window predictions: data and reproduction
 
-The [research report](../../docs/chua-layer-prediction.md) compares forecasts published in [0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) with a later targeted search. The model is the classical piecewise-linear Chua system at alpha = 9, m0 = -8/7, m1 = -5/7. Two new attracting reference cycles have 75 and 85 maxima, extending the operational catalogue from 32 to 34. Their complete three-dimensional sheets were not continued in this update.
+The [research report](../../docs/chua-layer-prediction.md) compares forecasts published in [0fc47ea](https://github.com/Griboedow/chua-gpu-atlas/commit/0fc47ea) with a later targeted search. The model is the classical piecewise-linear Chua system at alpha = 9, m0 = -8/7, m1 = -5/7. Two new attracting reference cycles have 75 and 85 maxima, extending the operational catalogue from 32 to 34. Their complete three-dimensional sheets were not continued in this study.
 
-The 75-peak forecast overlaps the measured core. The 85-peak forecast misses it by several measured widths; orbit correction subsequently finds it. The width discrepancies are 1.89% and 2.70% of the forecasts. These numerical checks preceded the separate [interval certificate](../chua-layer-infinity/README.md), which now establishes a tangency and an infinite cascade. The frozen forecasts and recorded numerical outcomes here remain unchanged.
+The 75-peak forecast overlaps the measured core. The 85-peak forecast misses it by several measured widths; orbit correction subsequently finds it. The width discrepancies are 1.89% and 2.70% of the forecasts. These numerical checks preceded the separate [interval certificate](../chua-layer-infinity/README.md), which establishes a tangency and an infinite cascade. The frozen forecasts and recorded numerical outcomes here remain unchanged.
 
 ## Evidence files
 
@@ -21,7 +21,7 @@ The 75-peak forecast overlaps the measured core. The 85-peak forecast misses it 
 
 All five figures are available as vector PDFs: [forecast comparison](chua-layer-prediction-proof.pdf), [scaling](chua-layer-prediction-scales.pdf), [motion descriptions](chua-layer-motion-description.pdf), [new motions](chua-layer-predicted-motions.pdf), and [organizing geometry](chua-layer-prediction-organizer.pdf). Their PNG versions appear in the report and under `docs/assets/`. The [atlas manifest](../chua-layer-atlas/manifest.json) covers the study, code and input evidence.
 
-## What passed, and what did not
+## Numerical checks and forecast errors
 
 All final orbit-audit gates pass. A 55-to-75-digit repeat changes beta by less than 7.4e-42 for these records; this is precision sensitivity within one implementation, not a certified accuracy statement. Direct full-field DOP853 and Radau integrations independently recover the peak counts, primitive section sequences and inversion symmetry. Their full-period state closure errors are below 2e-8.
 

@@ -1,15 +1,15 @@
-# Individual Chua family portraits
+# Reference periodic orbits in the family catalogue
 
-These 32 cards compare one verified reference representative from each catalogued family. A family is a continued periodic-window branch, not simply a peak count or a visually unique outline.
+The figures compare one numerically checked reference orbit from each of 32 catalogued families. A family is defined by periodic-orbit continuation and ancestry, rather than by peak count or orbit outline alone.
 
-## How to read the differences
+## Orbit characteristics
 
-- **Where it moves:** E06 stays near one outer scroll; the other reference representatives visit both outer regions.
-- **How long until it repeats:** the full period T ranges from about 9.57 to 140.53. A longer cycle can retrace almost the same visible loops many times.
-- **What repeats:** the full signal and the ordered heights of its local maxima reveal patterns hidden by the orbit outline. Two five-peak families, S08 and S11, have different geometry and periods of about 10.89 and 14.50.
-- **Whether the halves mirror:** for a symmetric representative, the second half equals the first with all state coordinates reversed. Twenty-three reference representatives have this property; nine are asymmetric. Symmetry can change along a family's descendant branches.
+- E06 remains near one outer scroll; the other representatives visit both outer regions.
+- Full periods range from approximately 9.57 to 140.53. Different cycles can make nearly coincident passes in state space.
+- Time signals and ordered local maxima distinguish recurrence patterns. S08 and S11 both have five peaks, with periods of approximately 10.89 and 14.50.
+- Twenty-three representatives have half-period inversion symmetry and nine are asymmetric. Symmetry can change along descendant branches.
 
-**The 32 families do not mean 32 radically different shapes.** Some are close relatives with almost indistinguishable outlines. Their identity also uses continuation, parentage and parameter location, not image recognition.
+Continuation, ancestry and parameter location distinguish families whose orbit outlines are visually similar.
 
 [Offline interactive comparison](../results/chua-layer-atlas/family-gallery.html): download and open the HTML in a browser. Select two families, rotate their 3D paths and compare signals. A phase slider shifts the second signal; the saved starting crossing need not be the same position within a repeated multi-loop pattern.
 
@@ -21,7 +21,7 @@ All cards fix alpha = 9, m0 = -8/7, m1 = -5/7 and use the family-specific refere
 
 ![Second sixteen family outlines](assets/chua-families/overview-2.png)
 
-## All 32 cards
+## Catalogue of reference orbits
 
 | Family | Peaks | Full period T | Reference symmetry |
 |---|---:|---:|---|

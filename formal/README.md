@@ -40,6 +40,6 @@ The [recorded local result](../results/chua-proof-audit/formal-check.json) inclu
 
 ## Trust boundary
 
-This project depends on Lean's kernel and the imported Mathlib environment. It uses ordinary proof-producing tactics; it contains no assumed Chua theorem or proof placeholder. Source hashes identify the files checked; hashes are not a proof of their mathematical interpretation.
+This project depends on Lean's kernel and the imported Mathlib environment. The declarations use proof-producing tactics and depend only on the standard axioms listed in the check record. Source hashes identify the files checked; hashes are not a proof of their mathematical interpretation.
 
-The numerical bounds on the actual map are still supplied by the separate Python/FLINT computation and the analytical manifold argument. No code here proves that those outputs satisfy the hypotheses of `tangency_box`. The Newhouse–Robinson theorem and its localization to the Chua return domain are outside this formalization. See the audit's [scope table](../docs/chua-coexistence-audit.md#4-where-formal-verification-stops).
+The numerical bounds on the actual map are still supplied by the separate Python/FLINT computation and the analytical manifold argument. No code here proves that those outputs satisfy the hypotheses of `tangency_box`. The Newhouse–Robinson theorem and its localization to the Chua return domain are outside this formalization. See the audit's [scope table](../docs/chua-coexistence-audit.md#4-scope-of-formal-verification).

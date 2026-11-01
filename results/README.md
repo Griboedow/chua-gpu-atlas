@@ -2,7 +2,7 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
-- [`chua-proof-audit/`](chua-proof-audit/README.md): a fresh audit of the tangency hypotheses, the first Lean-checked implication, source hashes, axiom reports and rejection controls. The [coexistence audit](../docs/chua-coexistence-audit.md) keeps infinite simultaneous coexistence conditional on localization.
+- [`chua-proof-audit/`](chua-proof-audit/README.md): recomputed tangency hypotheses, a Lean-checked stationary-zero existence statement, source hashes, axiom reports and rejection controls. The [coexistence audit](../docs/chua-coexistence-audit.md) keeps infinite simultaneous coexistence conditional on localization.
 
 - [`chua-layer-infinity/`](chua-layer-infinity/README.md): interval certificates at 80 and 100 digits, two rejected parameter boxes, independent local/global derivative controls, a reconstructed numerical center and two figures. The [proof report](../docs/chua-infinity-certificate.md) derives an infinite cascade from the certified quadratic tangency.
 
@@ -21,7 +21,7 @@ The directories below contain the settings, data, certificates and numerical con
 
 The large basin metadata, complete NPZ arrays, all offline interactive reports and browser-check records are in [release v1.1.0](https://github.com/Griboedow/chua-gpu-atlas/releases/tag/v1.1.0). Extract the archive into the repository root. Its internal `RESULTS_MANIFEST.json` provides per-file SHA-256 hashes; `SHA256SUMS.txt` verifies the ZIP itself.
 
-These are finite-time numerical experiments. The old affine-branch CPU reference in `extent/event_resolved_checks.json` has been superseded after a missed-crossing failure at a distant point. Those files are historical evidence, not definitive reference values; use the new full-field checks under `expanded/`. Quantitative convergence over the entire cloud is not established. See the main README and methods for interpretation.
+The original, detailed, expanded and extent surveys are finite-time numerical experiments. The old affine-branch CPU reference in `extent/event_resolved_checks.json` has been superseded after a missed-crossing failure at a distant point. Those files are historical evidence, not definitive reference values; use the new full-field checks under `expanded/`. Quantitative convergence over the entire cloud is not established. See the main README and methods for interpretation.
 
 - `chua-scaling/`: fixed-slope alpha/kappa sections, preserved clock failures and compensated-clock resumptions, CPU spectra/sections, affine-transient counterexample and frozen-fiber controls. See [the numerical report](../docs/chua-scaling-research.md) and [the structural note](../docs/chua-scaling-structure.md).
 

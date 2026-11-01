@@ -1,18 +1,18 @@
-# A family-labelled refinement of the Chua layer atlas
+# Continuation and classification of periodic-orbit families
 
-**Scope of this report:** the grids and animations below document the **32-family mesh snapshot**. The subsequent [prediction study](chua-layer-prediction.md) added 75- and 85-peak reference cycles, bringing the [registry](../results/chua-layer-prediction/extended-family-registry.json) to **34 normalized roots**, without meshing those additions. A later [interval certificate](chua-infinity-certificate.md) proves infinitely many attracting windows on the classical transect. Neither finite catalogue is an exhaustive count or a classification of globally disconnected surfaces.
+## Abstract
 
-The catalogue now contains **32 numerically distinguished periodic-window families** intersecting the original atlas box. Nineteen have representatives on the original central transect, including two newly resolved thin windows; thirteen were found in off-center searches. We also verify **four coexisting attracting cycles at one parameter point**, and extend the shrinking period-adding sequence to **65 maxima per full cycle**.
+Periodic-orbit continuation identifies 32 families intersecting the original three-parameter atlas box. Nineteen have representatives on the central transect; thirteen enter the box away from that transect. The calculation resolves a period-adding sequence through 65 maxima per full cycle and independently checks four coexisting attracting cycles at one parameter point. Family identities are assigned by the normalization and ancestry convention stated below. They do not provide an exhaustive count or a classification of global connected components.
 
-This is a count of the families identified by the continuation and ancestry procedure below. It is **not an exhaustive count of all layers**, nor a proof that all 32 remain globally disconnected outside the continued patches. The earlier count of 17 was a local census on one transect, not the total for the three-dimensional atlas.
+The grids and animations in this report describe the 32-family dataset. The [prediction study](chua-layer-prediction.md) adds 75- and 85-peak reference cycles, bringing the [registry](../results/chua-layer-prediction/extended-family-registry.json) to 34 identities without meshing the additions. The [interval certificate](chua-infinity-certificate.md) addresses an infinite sequence of attracting windows on the classical transect.
 
 ![Family representatives and local catalogue counts](assets/chua-refined-atlas.png)
 
 The [interactive atlas](../results/chua-layer-atlas/atlas.html) lets readers rotate the samples and isolate families in the legend. Download the HTML and open it in a browser; it includes Plotly and works offline. Dots are closed attracting cycles. Connecting lines show mesh adjacency and are not a claim that every interpolated point is attracting. Their visible thickness is unrelated to physical window width. The right-hand count sums representatives whose beta lies in the box at each sampled pair (alpha, m0); it does not count simultaneous attractors at one beta. Asterisks mark incomplete family sampling.
 
-## Seeing the individual layers
+## Sampling and visualization of individual families
 
-The README now isolates every family in turn, using a denser **17 by 17 candidate mesh in (alpha, m0)** around the visible box. This targeted continuation closes **5,447 representatives**, including **3,975 new parameter locations**; **4,126** lie inside beta = 14.24–14.40. A small halo outside that interval allows the displayed facets to be clipped at the box boundary. All selected locations were recovered in the final run. This is a display refinement of the same 32 identities, not another family census.
+The README animation displays each family in turn, using a **17 by 17 candidate mesh in (alpha, m0)** around the visible box. This targeted continuation closes **5,447 representatives**, including **3,975 new parameter locations**; **4,126** lie inside beta = 14.24–14.40. A small halo outside that interval allows the displayed facets to be clipped at the box boundary. All selected locations were recovered in the final run. This is a display refinement of the same 32 identities, not another family census.
 
 ![Each catalogued layer highlighted in fixed coordinates](assets/chua-readme-layers.gif)
 
@@ -24,7 +24,7 @@ The lower-right panels therefore use the actual beta widths of P55 and P65 on th
 
 Every new view sample is checked with the original matrix-exponential flow; ten new sheet points and the midpoint of each thin-core profile also receive independent full-field variational checks. The final sample set passes the closure, multiplier and attraction gates. For P65, the surface retains the earlier negative half-return multiplier, approximately -0.48333. An initial attempt to move the display representatives to +0.5 left 35 unresolved points and is retained as a numerical limitation, not an absent layer. Its normalized +0.5 catalogue identity is unchanged. [The view data, checks, and reproduction commands](../results/chua-layer-atlas/readme-layer-view/README.md) are separate from the original 9 by 9 atlas grids.
 
-## What is being counted?
+## Parameter domain and identity convention
 
 The model and original domain are unchanged:
 
@@ -54,13 +54,13 @@ To compare identities, roots are transported to alpha = 9, m0 = -8/7. Symmetric 
 
 The 13 E-family reference roots lie outside beta = 14.24–14.40, but continued attracting representatives lie inside the original three-dimensional box. A single central transect therefore misses them even with an arbitrarily fine beta mesh.
 
-A separate [m0-m1 plane study](chua-slope-plane.md) now varies both diode slopes at fixed alpha = 9 and beta = 100/7. It shows curved regular bands and a local magnification, with five- and seven-peak examples checked independently. This is a different parameter section; its bands have not all been matched to the 32 identities counted here.
+A separate [m0-m1 plane study](chua-slope-plane.md) varies both diode slopes at fixed alpha = 9 and beta = 100/7. It shows curved regular bands and a local magnification, with five- and seven-peak examples checked independently. This is a different parameter section; its bands have not all been matched to the 32 identities counted here.
 
 Ancestry also prevents overcounting. The earlier 30-maximum example in A03 is a doubled descendant of a 15-maximum parent; the 60-maximum example in A05 descends from a 30-maximum parent. Off-center examples with 16 and 8 maxima lead back to the same four-maximum E06 family. Positive and negative inversion partners are counted as two attractors when both coexist, but as one family in this catalogue.
 
 The [registry](../results/chua-layer-atlas/family-registry.json), [ancestry records](../results/chua-layer-atlas/offcenter-ancestry.json), and [behaviour table](../results/chua-layer-atlas/family-catalog.csv) preserve the individual identities and parameters.
 
-## Thin layers that the old grid could not resolve
+## Stability widths below the original grid resolution
 
 The old 41-point beta axis has spacing **0.004**. The new 65-maximum member has a symmetric stable core only **3.1759e-8** wide on the central transect: about **126,000 times narrower** than that spacing.
 
@@ -79,11 +79,11 @@ The 55- and 65-maximum folds are at beta approximately 14.306295580122 and 14.30
 
 The full period increases by approximately 21.6 each time, while the core shrinks by a factor of about 6,018 from the first to the sixth member. The construction inserts another near-parent return into a half-period itinerary and then solves the closing and stability equations. Independent full-field integration verifies the resulting attracting cycle. The 65-maximum Radau check initially failed the 2e-7 closure gate; tighter tolerances and a smaller maximum step reduced the error from 2.32e-7 to 3.03e-9. Both trials are retained.
 
-Six members support a continuing period-adding hierarchy. They do not establish an exact limiting beta, an infinite number of attracting windows, or the absence of other families between them. Uniform brute-force refinement to this beta scale throughout a three-dimensional box would be wasteful; continuation supplies the thin branches directly.
+Six members support a continuing period-adding hierarchy. They do not establish an exact limiting beta, an infinite number of attracting windows, or the absence of other families between them. Resolving this beta scale by a uniform three-dimensional grid would require substantially more parameter samples than the continuation used here.
 
 ## Birth, loss of attraction, and apparent disappearance
 
-For the two broad five-maximum families S08 and S11, the earlier [bifurcation study](chua-layer-census.md#what-birth-and-disappearance-mean) established the sequence obtained when beta decreases:
+For the two broad five-maximum families S08 and S11, the earlier [bifurcation study](chua-layer-census.md#bifurcations-and-loss-of-attraction) established the sequence obtained when beta decreases:
 
 1. A stable and a saddle periodic orbit meet at a fold of cycles. Crossing it creates an attracting regular window.
 2. A symmetry-breaking transition replaces the attracting inversion-symmetric cycle with two attracting asymmetric partners.
@@ -95,7 +95,7 @@ The last issue matters in the refinement. E09 bends strongly, and the initial fi
 
 Bounded small-step affine continuation agrees with the automatic map to about 1e-11 in beta on five control paths and fills the remaining E09 grid points. Missing E13 samples in the original 9 by 9 atlas remain marked unresolved; the newer view solves all of its selected locations near the visible box, without claiming complete coverage outside that selection. The full 65-member boundary continuation also encountered numerical limits, so P65 is displayed through attracting representatives, not a claimed complete boundary surface. Global crises, endpoints of entire cascades, and all connections between these patches remain undetermined.
 
-## Intersections mean coexistence, not colliding trajectories
+## Coexistence at a fixed parameter tuple
 
 At the single parameter tuple
 
@@ -120,22 +120,22 @@ We sampled 40,401 starts on x = 0, y in [0.19, 0.30], z in [-0.54, -0.30]. All r
 
 The basin image is therefore **not pointwise converged**. A third step on a subset also changed many labels. We do not infer a basin-boundary dimension, Wada property, or exact fractal geometry from the image. The fixed-step perturbation experiment is retained as a sensitivity diagnostic, including its unresolved smallest perturbations.
 
-For the finer full grid, eight consecutive upward returns within 2e-6 of a reference section point certify numerical capture. The median completion time for that criterion is 198.9, the 99th percentile is 490.3, and the maximum is 831.1. These times include the eight-return confirmation delay and are not pure chaotic-transient lifetimes. Among 1,024 selected starts, 566 have positive finite-time exponents in all four windows during the initial 80 time units. This demonstrates strong transient instability before capture and explains why a short scan can resemble chaos even at a parameter point supporting attracting cycles. It does not establish a coexisting asymptotic chaotic attractor.
+For the finer full grid, numerical capture is assigned after eight consecutive upward returns within 2e-6 of a reference section point. The median completion time for that criterion is 198.9, the 99th percentile is 490.3, and the maximum is 831.1. These times include the eight-return confirmation delay and are not pure chaotic-transient lifetimes. Among 1,024 selected starts, 566 have positive finite-time exponents in all four windows during the initial 80 time units. This demonstrates strong transient instability before capture and explains why a short scan can resemble chaos even at a parameter point supporting attracting cycles. It does not establish a coexisting asymptotic chaotic attractor.
 
-## How behaviour differs between layers
+## Dynamical characteristics of the families
 
-In plain language, the families differ in the **route and rhythm of their repeating motion**:
+The reference cycles differ in spatial extent, temporal structure and symmetry:
 
-- **Where the motion goes.** E06 stays near one outer scroll, or "wing"; the other reference representatives visit both outer regions.
-- **How much happens before the pattern repeats.** A cycle can contain 5, 15, 35 or 65 peaks. Longer cycles may make many nearly overlapping passes through similar loops, so a static outline can hide their longer repetition pattern.
-- **How long a complete repetition takes.** S08 and S11 both have five peaks, but their reference periods are approximately 10.89 and 14.50, and their signal shapes differ.
-- **Whether the two halves are symmetric.** For 23 reference representatives, the second half matches the first after reversing all state coordinates. The other nine representatives are asymmetric. A family's descendant branches can change symmetry as parameters vary.
+- E06 remains near one outer scroll; the other reference representatives visit both outer regions.
+- Peak counts range across distinct recurrence patterns, including 5, 15, 35 and 65 peaks per full cycle. Longer cycles can make nearly coincident passes in state space.
+- S08 and S11 both have five peaks, but their reference periods are approximately 10.89 and 14.50, with different waveforms.
+- Twenty-three representatives have half-period inversion symmetry and nine are asymmetric. Symmetry can change along a family's descendant branches.
 
-Several families have almost indistinguishable outlines. Their identity therefore also uses continuation, parentage and parameter location. The catalogue does not imply 32 radically different geometric shapes, or 32 attractors all coexisting at the same parameters.
+Several families have almost indistinguishable outlines. Their identity therefore also uses continuation, parentage and parameter location. These identities do not require distinct orbit silhouettes or coexistence at a common parameter tuple.
 
-The [gallery of all 32 families](chua-family-gallery.md) now provides an individual card for every reference representative: orbit outline, the complete time signal, and ordered peak heights. Two overview sheets use identical coordinate scales. An [offline interactive comparison](../results/chua-layer-atlas/family-gallery.html) overlays any two families in 3D and compares their signals, with a phase-shift control for the second signal.
+The [gallery of all 32 families](chua-family-gallery.md) provides an individual figure for every reference representative: orbit outline, the complete time signal, and ordered peak heights. Two overview sheets use identical coordinate scales. An [offline interactive comparison](../results/chua-layer-atlas/family-gallery.html) overlays any two families in 3D and compares their signals, with a phase-shift control for the second signal.
 
-Start with **S08 versus S11** to compare two five-peak patterns, then **S04 versus P65** to see how nearly matching outlines hide very different repetition lengths.
+S08 and S11 illustrate different five-peak patterns. S04 and P65 illustrate similar orbit outlines with different recurrence lengths.
 
 <details>
 <summary>Show all 32 reference portraits in this report</summary>
@@ -172,7 +172,7 @@ The original refined atlas contains 2,587 representative samples: 31 complete 9 
 
 For the twelve bounded sheets, fresh midpoint solves compare cubic interpolation with exact continuation. Maximum beta errors are of order 1e-9–1e-8; the largest error relative to the symmetric-core width is about 3.03%, for P55. This check does not justify interpolating P65's extremely thin stable interval or smoothing the strongly bending E09 patch. Displayed straight segments are visual guides only.
 
-The audit is numerical, not an interval proof. Sampling can still miss thinner windows and inaccessible basins. The catalogue does not bound all possible periods, close all global continuations, or establish an exact finite or infinite total. The concrete advance is a labelled, reproducible set of branches that resolves structures the original grid missed, with explicit coexistence and behaviour checks.
+The audit is numerical, not an interval proof. Sampling can still miss thinner windows and inaccessible basins. The catalogue does not bound all possible periods, close all global continuations, or establish an exact finite or infinite total. The dataset supplies labelled branches, stability checks and coexistence examples at scales unresolved by the original grid.
 
 Shrinking periodic-window structures are already known in experimental Chua circuits; see [Maranhão et al.](https://arxiv.org/abs/0712.3842) and [de Sousa et al.](https://arxiv.org/abs/1509.08425). Those experimental models and parameter sections do not prove an infinite attracting hierarchy in this repository's exact box. The contribution here is the quantitative refinement and verification of this particular atlas.
 

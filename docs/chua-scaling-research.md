@@ -1,10 +1,10 @@
-# Following Chua along beta = kappa alpha squared
+# Numerical continuation of Chua dynamics along beta = kappa alpha squared
 
-**The finite family reaches alpha = 2048 in this experiment, but persistence to infinity remains open.** We held the diode slopes fixed within each section, integrated the exactly rescaled equations, and checked selected positive signals independently. The zero-epsilon model has regular periodic fibers; several such fibers can coexist and drive opposite slow amplitude changes. That is a useful explanation to investigate, not a proof of a limiting chaotic attractor or a new discovery.
+We investigate the path β = κα² at fixed diode slopes using exactly rescaled equations and independent numerical controls. The finite calculation extends to α = 2048. Persistence of chaotic attractors as α tends to infinity remains open.
 
-The [structural note](chua-scaling-structure.md) gives the derivations and primary references. This study belongs to the original Chua atlas, not to the search for unfamiliar physical systems.
+The zero-epsilon model has regular periodic fibers. Coexisting fibers can produce opposite signs of slow amplitude drift, suggesting a mechanism for further analysis at finite epsilon. These observations do not establish a limiting chaotic attractor. The [structural analysis](chua-scaling-structure.md) gives the derivations and primary references.
 
-## What was computed
+## Rescaled model and parameter sampling
 
 With $\beta=\kappa\alpha^2$, use $s=\alpha t$ and $Z=z/\alpha$. The exact equations are
 
@@ -62,7 +62,7 @@ These are linearly scaled physical coordinates of the three-state Chua system. T
 
 An earlier row-2198 CPU attempt failed because a large absolute fast-time clock could not represent a requested tiny step at a diode crossing. Its failure record is retained. A local-clock rerun hit its wall budget after 21.11572 of 30 requested observation units; that partial record also remains separate. It used an identity QR basis after a state-only warm-up, which can delay alignment severely at large alpha. The completed aligned rerun above fixes both operational issues without filling or relabeling the old missing interval.
 
-## A positive signal that is exactly an affine transient
+## An affine transient with a positive finite-time exponent
 
 Scout row 963 has alpha = 1024, kappa = 0.19875 and the standard slopes. Its four positive rates are about 0.0113–0.0115. Nevertheless, its **entire 200-unit observation can be confined analytically to the positive affine branch**.
 
@@ -70,7 +70,7 @@ The outer equilibrium has x = 1.5. An eigenvector envelope bounds the whole exac
 
 This counterexample is why the grid is called a **finite-time candidate screen**, even after a tolerance check.
 
-## What the limiting fibers suggest
+## Periodic fibers and amplitude drift
 
 At infinite alpha, the pair $(y,Z)$ is a harmonic oscillator of fixed amplitude. Its scalar forced equation has an increasing stroboscopic map, so every bounded sequence of returns converges to a fixed point. The limiting fiber itself cannot support recurrent chaos. This order argument does not interchange the infinite-time and infinite-alpha limits.
 

@@ -1,16 +1,14 @@
 # Symmetry-resolved overlap geometry in Chua's circuit
 
-Computational research note · 30 October 2026
+## Abstract
 
-**A gap between two regions of symmetric coexistence can contain three attracting cycles.** In the two families followed here, the symmetric overlap splits into two islands before coexistence of their primary cycles splits. An asymmetric pair replaces one symmetric cycle and supplies a connecting region. This separates a change in the appearance of a parameter slice from the loss of coexistence.
+We continue the previously identified five- and seven-peak families of the continuous piecewise-linear Chua system, including their symmetry-breaking branches through the first period doubling. Joint closing and marginal-stability equations resolve nine types of simultaneous events on distinct cycles in each of two three-parameter sections. The resulting 18 contact curves contain 1,188 corrected points. Their projection extrema explain the creation and splitting of coexistence intervals in two-dimensional cuts. At fixed beta = 100/7, symmetric coexistence splits near alpha = 8.857664193, whereas coexistence including the asymmetric primary branches splits near alpha = 8.862393535. Independent integrations verify examples with two, three and four attracting cycles. Tip curvature predicts the separation of 32 held-out cut intersections with a maximum measured relative discrepancy of 3.92e-5. The results characterize the local overlap geometry of the two selected families; they do not establish an exhaustive attractor count.
 
 ![Symmetric overlap islands connected by an asymmetric coexistence region](assets/chua-overlap-story.png)
 
-[Offline visual guide](../results/chua-overlap-geometry/guide.html) — download and open locally; it contains all images and four selectable, directly calculated sections. [Data and reproduction](../results/chua-overlap-geometry/README.md) · [Numerical audit](../results/chua-overlap-geometry/audit.json).
+**Figure 1.** The region supporting two symmetric cycles separates into two components before coexistence of the tracked primary cycles separates. An asymmetric pair and a symmetric cycle coexist in the connecting region.
 
-## Abstract
-
-We continue the previously identified five- and seven-peak families of the continuous piecewise-linear Chua system, including their symmetry-breaking branches through the first period doubling. Joint closing and marginal-stability equations resolve nine types of simultaneous events on distinct cycles in each of two three-parameter sections. The resulting 18 contact curves contain 1,188 corrected points. Their projection extrema explain the creation and splitting of coexistence intervals in two-dimensional cuts. At fixed beta = 100/7, symmetric coexistence splits near alpha = 8.857664193, whereas coexistence including the asymmetric primary branches splits near alpha = 8.862393535. Independent integrations verify examples with two, three and four attracting cycles. Tip curvature predicts the separation of 32 held-out cut intersections with a maximum measured relative discrepancy of 3.92e-5. The contribution is a reproducible local geometry and symmetry-resolved numerical catalogue, not a new bifurcation type, a new universal scaling law, or an established priority claim.
+[Interactive sections and figures](../results/chua-overlap-geometry/guide.html) are available as a self-contained HTML file for local viewing. [Data and reproduction](../results/chua-overlap-geometry/README.md) · [Numerical checks](../results/chua-overlap-geometry/audit.json).
 
 ## 1. Model and meaning of a family
 
@@ -72,7 +70,7 @@ A positive width indicates overlap of these tracked intervals. Four primary cycl
 
 These interval identities are elementary geometry. Their numerical ingredients, validity checks and implications for the selected Chua families are the subject of this note.
 
-## 3. Contact curves, not collisions of orbits
+## 3. Contact curves of stability boundaries
 
 We solve all nine equalities between an edge of P5 and an edge of P7: FF, FS, FD, SF, SS, SD, DF, DS and DD. The first letter always belongs to P5. For example, SF means `S_5 = F_7`: one cycle loses symmetry at the same parameters at which a different family's symmetric cycle is at a fold.
 
@@ -84,7 +82,7 @@ Each equality is solved together with both periodic-orbit closing equations and 
 
 Selected local controls find nonzero differences between the two edge slopes with respect to the free control parameter; the smallest magnitude is about 0.02356. The smallest singular value of the corresponding joint closing-and-marginality Jacobian is about 0.02344. These support transverse, locally well-resolved contacts in the sampled controls. They do not constitute an interval proof over every intervening point.
 
-## 4. Why one interval becomes two
+## 4. Connected components of coexistence sections
 
 In the alpha section, the contact curves bend back in the `(m1, alpha)` projection. A horizontal cut can miss the overlap strip, cross one connected interval, or cross two separated intervals. Four calculated sections show this progression:
 
@@ -122,7 +120,7 @@ In particular, the middle is not a loss of the tracked coexistence. A checked po
 
 The beta section exhibits the corresponding inverted bend. As beta decreases at alpha = 9, the primary interval enters near beta = 14.6481061052 and splits near 14.5989681967. The symmetric interval enters near 14.6416053051 and splits near 14.6096888224. These are separate numerical sections, not a claim that the alpha and beta geometries are exactly equivalent.
 
-## 5. What two, three and four attractors look like
+## 5. Two-, three- and four-cycle examples
 
 All examples below fix beta = 100/7 and m1 = -0.7521. Within each row, every cycle uses identical parameters.
 
@@ -144,7 +142,7 @@ The pair members nearly coincide in the broad orbit view. Their recorded upward 
 
 The nine displayed cycles pass independent full-field state-and-variational integration. The largest closure discrepancy is 4.70e-12, and every transverse multiplier magnitude is below one. The three-cycle example has magnitudes approximately 0.49147, 0.49147 and 0.0000650. These establish numerical examples with **at least** the stated number of attracting cycles; they do not exclude additional attractors.
 
-## 6. A quantitative prediction from the bend
+## 6. Cut separation near projection extrema
 
 Let a contact curve in the projection be `a = a(m1)`, where a is alpha or beta. At a nondegenerate extremum `(m1*, a*)`, its local Taylor expansion is
 
@@ -158,7 +156,7 @@ A cut a distance delta from the tip on the intersecting side therefore has leadi
 \Delta m_1\simeq 2\sqrt{\frac{2\delta}{\lvert a_{\ast}^{\prime\prime}\rvert}}.
 ```
 
-This is the standard square-root geometry of a smooth nondegenerate extremum. We test its quantitative prediction here rather than claim a new scaling law.
+This is the standard square-root scaling near a smooth nondegenerate extremum. The following calculation tests its quantitative prediction for the continued contact curves.
 
 The tip is found by solving `da/dm1 = 0` using implicit derivatives of the joint contact system. Curvature is checked at three finite-difference spacings. Using only the tip and its curvature, we predict cuts at distances 1e-5, 4e-5, 1.6e-4 and 6.4e-4 for the FF, FS, SS and SF curves in both parameter sections. The two roots of each horizontal cut are then corrected separately; they are not used to fit the curvature.
 
@@ -193,7 +191,7 @@ Independent controls integrate the actual piecewise field and its variational eq
 
 As a separate branch check, 36 selected symmetric/asymmetric stable segments are sampled at 65 interior fractions each. All 2,340 samples are attracting, their signed dominant return multipliers vary monotonically along the sampled segment, and each midpoint has an additional independent integration. These controls support the use of the first doubling edge and the stable interval descriptions; they do not rule out every unsampled event by theorem.
 
-## 8. Relation to earlier work and the novelty boundary
+## 8. Relation to earlier work
 
 The underlying effects have clear predecessors:
 
@@ -206,9 +204,9 @@ The underlying effects have clear predecessors:
 
 Symmetry breaking and period addition also appear in early Chua studies, including Kennedy's [ABC program and examples, 1994](https://people.eecs.berkeley.edu/~chua/papers/Kennedy94.pdf). Interactive visual catalogues are therefore not new in themselves.
 
-The candidate contribution is specific: **the verified local arrangement of nine types of simultaneous events for these two families; its symmetry-dependent section topology; and quantitative predictions and reproducible witnesses connecting that geometry to two, three and four attracting cycles.** The literature check used available papers and primary-source abstracts. It has not established that the exact branch arrangement is absent from all earlier work. This is a research note and dataset suitable for further comparison and review, not a declaration of a world-first phenomenon.
+The present calculation resolves nine types of simultaneous events for P5 and P7, the dependence of their coexistence sections on symmetry, and the associated two-, three- and four-cycle examples. The literature comparison used the available papers and primary-source abstracts. It has not established historical priority for this particular branch arrangement.
 
-## 9. Limits and the next scientific test
+## 9. Limitations and further work
 
 The counts stop at the first asymmetric period doubling. A gap in primary coexistence at alpha = 8.865 may still contain attracting doubled descendants or another family. The present note therefore does not claim a gap in all multistability, a finite total number of layers, or the global connection structure of the older 32-family catalogue.
 

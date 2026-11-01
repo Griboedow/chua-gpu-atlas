@@ -1,12 +1,16 @@
-# From infinitely many windows to infinitely many coexisting cycles
+# Homoclinic-tangency hypotheses and partial formal verification
 
-The existing certificate concerns a quadratic homoclinic tangency near β = 14.30635909996146, with α = 9, m₀ = −8/7 and m₁ = −5/7. This audit asks whether it also establishes infinitely many attracting cycles **at one parameter value**, and starts a formal verification of the tangency argument.
+## Abstract
 
-**Result:** the numerical local hypotheses reproduce, and the relevant classical theorem does apply to fixed one-parameter families. The application to Chua still needs a precise localization argument. Infinite simultaneous coexistence is therefore **conditional in this repository**. Separately, Lean checks a general theorem turning the four boundary signs into an interior stationary zero, together with the rational graph-transform guards. It does not yet check the Chua interval computation or the Newhouse–Robinson theorem.
+We examine whether the quadratic homoclinic tangency certified near β = 14.30635909996146, at α = 9, m₀ = −8/7 and m₁ = −5/7, supports an application of the parameter version of the Newhouse–Robinson theorem. The local numerical hypotheses reproduce at 80 and 100 decimal working digits. Application to the Chua return map still requires a localization argument ensuring that the generated sinks remain within its valid domain. Infinite coexistence at a single parameter value is therefore conditional.
 
-![The numerical, formal and classical parts of the argument](assets/chua-proof-audit.png)
+A separate Lean formalization proves that four boundary-sign conditions imply an interior stationary zero of a continuous function with the stated derivatives. It also verifies ten rational graph-transform inequalities. The Chua interval evaluator, invariant-manifold construction and Newhouse–Robinson theorem remain outside this formalization.
 
-## 1. Two different meanings of infinity
+![Components of the tangency and coexistence arguments](assets/chua-proof-audit.png)
+
+Figure 1. Dependencies of the numerical, formal and classical arguments. Dashed arrows indicate connections not verified in Lean or requiring the localization argument stated below.
+
+## 1. Window accumulation and simultaneous coexistence
 
 The [cascade report](chua-infinity-certificate.md) concerns infinitely many attracting windows at different parameter values. That statement alone does not imply coexistence: an infinite collection of intervals can be pairwise disjoint.
 
@@ -18,7 +22,7 @@ The cited formulation uses diffeomorphisms of a compact surface. Its density sta
 
 ## 2. Hypothesis audit
 
-Write H for the sign-reduced half return and P = H² for the ordinary upward first return. The numerical evidence below is recomputed, not inferred from a plot. The full records are in [numerical-audit.json](../results/chua-proof-audit/numerical-audit.json).
+Write H for the sign-reduced half return and P = H² for the ordinary upward first return. The numerical values below were recomputed from the certificate. The full records are in [numerical-audit.json](../results/chua-proof-audit/numerical-audit.json).
 
 | Requirement | Chua evidence or argument | Status |
 |---|---|---|
@@ -36,7 +40,7 @@ Write H for the sign-reduced half return and P = H² for the ordinary upward fir
 
 Both 80- and 100-digit runs pass all 15 final gates, all local gates and all graph-transform guards. Each global connection covers 135 flights and 12,534 accepted time cells. Shifting the box by +10⁻¹⁰ or −10⁻¹⁰ fails the required parameter-face sign, as expected. A rejected box is not a proof that no other tangency exists nearby.
 
-### Why the diode corners are not automatically an obstruction
+### Local regularity of the return map
 
 The vector field is continuous and piecewise affine, with derivative jumps at x = ±1. A global smooth-flow theorem cannot simply be applied to that field.
 
@@ -51,11 +55,11 @@ To finish the stronger coexistence argument, one must supply either:
 1. A precise local version of Newhouse–Robinson whose generated periodic orbits stay in an arbitrarily small prescribed neighborhood of K, and verify its assumptions for these branches; or
 2. A parameter-dependent extension to compact-surface diffeomorphisms, agreeing with P on that neighborhood, **plus** a proof that the theorem-generated sinks stay in the agreement region.
 
-Merely extending a map is insufficient: a sink created outside the agreement region would say nothing about Chua. Nor does the small determinant alone construct a thick horseshoe or give a computable coexistence parameter. The local estimates strongly support the proposed route, but this report does not replace that obligation with an unsupported assertion of locality.
+A compact-surface extension is insufficient unless the generated sinks remain in the region where it agrees with the Chua return map. The determinant bound establishes dissipation; it does not construct a thick horseshoe or identify a parameter with infinite coexistence. The localization step remains unproved here.
 
-No historical-priority claim is made. This is an audit of the explicit certificate in this repository, not a claim that homoclinic tangencies or Newhouse phenomena are new.
+This report assesses the application of established homoclinic-tangency theory to the explicit certificate in this repository. Historical priority for the parameter-specific result has not been established.
 
-## 3. What Lean now checks
+## 3. Statements verified in Lean
 
 The source is [TangencyBox.lean](../formal/ChuaProof/TangencyBox.lean). Its central theorem, `ChuaProof.tangency_box`, takes an arbitrary real function g(a,b), continuous on a closed rectangle, and an actual state derivative gₐ. Its four uniform sign assumptions are:
 
@@ -72,15 +76,15 @@ It proves the existence of an interior pair satisfying
 g(a_*,b_*)=0,\qquad g_a(a_*,b_*)=0.
 ```
 
-The proof minimizes g over the compact state interval. The minimum depends continuously on b and changes sign between the parameter faces. A minimizer at the zero cannot lie on either state boundary because of the derivative signs. Fermat's theorem then gives the zero state derivative. The code proves this implication; it does not assume the existence of a contact or insert a precomputed witness.
+The proof minimizes g over the compact state interval. The minimum depends continuously on b and changes sign between the parameter faces. A minimizer at the zero cannot lie on either state boundary because of the derivative signs. Fermat's theorem then gives the zero state derivative. The witness is obtained from these hypotheses within the formal proof.
 
-An additional theorem, `quadratic_contact`, includes the actual second state derivative and parameter derivative, positive throughout the rectangle. The same interior witness has positive curvature and nonzero parameter derivative. These derivatives are tied to g by `HasDerivAt` hypotheses, rather than being unrelated functions with convenient names.
+An additional theorem, `quadratic_contact`, includes the actual second state derivative and parameter derivative, positive throughout the rectangle. The same interior witness has positive curvature and nonzero parameter derivative. The `HasDerivAt` hypotheses specify their relation to g.
 
-The existence argument needs less than the original prose argument: **strict convexity is unnecessary for existence**. It remains useful for uniqueness and classification. Uniqueness of the tangency is not part of this first formalization.
+Strict convexity is not required for this existence argument. It can be used in a separate uniqueness argument; uniqueness of the tangency is outside the present formalization.
 
 [Guards.lean](../formal/ChuaProof/Guards.lean) also proves the ten rational graph-transform inequalities with the exact published constants. This checks the arithmetic of those guards, not the graph-transform construction or the bounds on the actual Chua map.
 
-## 4. Where formal verification stops
+## 4. Scope of formal verification
 
 | Part | Checked by Lean? |
 |---|---|
@@ -92,6 +96,6 @@ The existence argument needs less than the original prose argument: **strict con
 | The connection between the interval output and the hypotheses of the Lean theorem | No |
 | Newhouse–Robinson and the localization obligation | No |
 
-The [formal check record](../results/chua-proof-audit/formal-check.json) records the toolchain, source hashes, build result and transitive axiom dependencies. Accepted dependencies are Lean's standard `propext`, `Classical.choice` and `Quot.sound`. The checker rejects additional axioms and incomplete proof placeholders. This is a partial formalization with an explicit boundary, not a formally verified proof of infinitely many Chua attractors.
+The [formal check record](../results/chua-proof-audit/formal-check.json) records the toolchain, source hashes, build result and transitive axiom dependencies. Accepted dependencies are Lean's standard `propext`, `Classical.choice` and `Quot.sound`. The checker rejects additional axioms and incomplete proof placeholders. The formalization is limited to the statements listed in the table; infinite coexistence is not a Lean-verified conclusion.
 
-Reproduction commands and the exact pinned dependency revisions are in [formal/README.md](../formal/README.md). The numerical audit and visual can be reproduced through the [evidence guide](../results/chua-proof-audit/README.md).
+Reproduction commands and the exact pinned dependency revisions are in [formal/README.md](../formal/README.md). The numerical checks and argument diagram can be reproduced using the [evidence guide](../results/chua-proof-audit/README.md).

@@ -4,7 +4,7 @@ The [report](../../docs/chua-coexistence-audit.md) separates reproduced numerica
 
 | File | Contents |
 |---|---|
-| [numerical-audit.json](numerical-audit.json) | Fresh 80/100-digit certificates and two expected shifted-box failures; source hashes and software versions |
+| [numerical-audit.json](numerical-audit.json) | Recomputed 80/100-digit certificates and two expected shifted-box failures; source hashes and software versions |
 | [formal-check.json](formal-check.json) | Lean build, five transitive axiom reports, source hashes and two rejection controls |
 | [validation-summary.json](validation-summary.json) | Local verification record, preserved forecast hash, browser review and historical Linux check |
 | [browser-check.json](browser-check.json) | Live Chrome review of the report, formulas, tables, figure, formal guide and main page |

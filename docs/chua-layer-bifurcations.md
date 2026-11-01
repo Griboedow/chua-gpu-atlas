@@ -1,12 +1,12 @@
-# Inside a thin periodic layer: birth, symmetry breaking, and period doubling
+# Fold, symmetry-breaking and period-doubling bifurcations of a Chua periodic family
 
-**The atlas's classical five-maximum window contains several distinct periodic regimes.** Numerical continuation resolves a saddle-node of symmetric cycles, a symmetry-breaking transition to two attracting cycles, and the first two period-doubling thresholds. The original near-zero-Lyapunov mesh could not distinguish these internal boundaries.
+Numerical continuation of the classical five-maximum window resolves a saddle-node of symmetric cycles, a symmetry-breaking transition to two attracting cycles, and the first two period-doubling thresholds. These internal boundaries are unresolved by the original finite-time Lyapunov mesh.
 
-This is a new calculation for this atlas, not a claim of a new general Chua mechanism. It examines one local window in the original continuous piecewise-linear model. The calculations are floating-point evidence with independent controls, not a validated interval proof or a classification of every sheet in the atlas.
+The calculation concerns one local window of the continuous piecewise-linear model. Independent integrations check selected orbits and multipliers. The resulting bifurcation estimates are floating-point numerical results, without validated interval bounds or a classification of the remaining atlas families.
 
 ![Periodic branches and stability](assets/chua-layer-bifurcations.png)
 
-## What happens when beta decreases
+## Bifurcation sequence along the beta transect
 
 Fix `alpha = 9`, `m0 = -8/7`, and `m1 = -5/7`, using the diode-slope convention of [the methods](methods.md#equations-and-parameter-conventions). The following values are rounded to six decimal places; extra digits in the raw records identify reproducible solver outputs, not certified error bounds.
 
@@ -29,7 +29,7 @@ The two asymmetric cycles are exchanged by `u -> -u`; this does not mean that ea
 
 The regular layer does not disappear at the first doubling: its attracting orbit changes period. Nor does an unstable continuation disappear merely because a direct trajectory no longer converges to it. The calculation establishes the beginning of a period-doubling route, but does not locate the final loss of periodic attraction, prove a subsequent chaotic attractor, or exclude other coexisting attractors.
 
-## Why the two positive-one crossings are different
+## Half-return multipliers and symmetry
 
 Let `H` take a state on the upward `x=0` section to its next downward crossing, then invert all coordinates. Near this itinerary the full return map is `P = H o H`. A symmetric orbit is a fixed point of `H`.
 
@@ -65,11 +65,11 @@ A narrow interval in a beta transect becomes a thin region between moving surfac
 
 Consequently, a layer can appear to be born or vanish on a particular two-dimensional slice simply because a moving surface enters or leaves that slice. Its true termination in three-parameter space is a separate question. No global endpoint, intersection of different layers, cusp, or complete atlas connectivity is established by this small box.
 
-## A useful numerical detail: strong contraction
+## Strong contraction and multiplier conditioning
 
 The return map contracts extremely strongly in its second transverse direction. At the symmetry threshold, its full-period determinant is about `3.01e-9`; at the first period doubling the second multiplier is of comparable magnitude. For the doubled orbit the determinant is of order `1e-17`.
 
-This makes the local dynamics effectively close to a one-dimensional return map, but it also creates a numerical trap: a direct determinant or the smaller eigenvalue of a rounded matrix can have the wrong sign. The calculation obtains the determinant from Liouville's identity,
+The strong contraction motivates a one-dimensional approximation to the local return dynamics. It also causes numerical ill-conditioning: direct evaluation of the determinant or smaller eigenvalue of a rounded matrix can give the wrong sign. The calculation obtains the determinant from Liouville's identity,
 
 ```math
 \det DP = \exp\left(\int_0^T \mathrm{tr}\,J(u(t))\,dt\right)>0,
@@ -77,7 +77,7 @@ This makes the local dynamics effectively close to a one-dimensional return map,
 
 and combines it with the computed trace to recover the two multipliers without subtractive cancellation. For the inverted half-return, the section orientation gives the negative of the half-flight exponential. This is a property of these return maps, not a statement that the original flow has only one state variable.
 
-## What was checked
+## Numerical methods and validation
 
 The initial cycle is located by integrating the full vector field. Its measured sequence of affine regions is then continued using matrix exponentials and closing equations for the section state and all flight times. The analytic derivative of these equations is checked by finite differences. The vector field is continuous across the diode breakpoints, so the variational flow has no saltation jump there; its Jacobian changes between regions.
 
@@ -113,7 +113,7 @@ The default destination is `results/chua-layers`. Every command also accepts `--
 - [Sampled independently integrated orbits](../results/chua-layers/verified-orbits.npz)
 - [Plot continuation data](../results/chua-layers/plot-data.json)
 
-## Relation to prior work and what remains open
+## Related work and limitations
 
 The follow-up [layer census](chua-layer-census.md) extends this single-family study to a second broad family, 17 checked local windows on a fixed transect, a shrinking period-adding sequence, and a verified overlap with two attracting cycles. It also explains why neither sampled connected components nor transect windows give a global layer count.
 

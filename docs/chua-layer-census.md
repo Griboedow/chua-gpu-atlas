@@ -1,12 +1,10 @@
-# How many layers does the Chua atlas contain?
+# A transect census of periodic windows
 
-**Follow-up:** the [family-labelled atlas refinement](chua-refined-atlas.md) expands the numerical catalogue to 32 families across the three-dimensional box, extends the adding sequence to 65 maxima, and verifies four coexisting cycles. The 17-window central census below remains the earlier, more limited result.
+This study continues two five-maximum families, identifies representatives of 17 local periodic windows on a fixed transect, and resolves a 15 → 25 → 35 → 45 peak-adding sequence. Independent orbit checks establish coexistence of the two broad families at selected parameter values.
 
-The visible sheets contain more structure than a small stack of separate periodic regimes. We have now continued **two broad five-maximum families**, checked representatives of **17 local periodic windows on one fixed transect**, and resolved a shrinking **15 → 25 → 35 → 45** sequence. The two broad families can **overlap and support different attracting cycles at identical parameters**.
+Seventeen is an operational count for the stated transect, based on closed attracting orbits and intervening finite-time classifications. It is not exhaustive and does not count global connected components in three-parameter space. The [refined atlas](chua-refined-atlas.md) extends the numerical catalogue to 32 families and the adding sequence to 65 maxima. The [interval certificate](chua-infinity-certificate.md) separately establishes an infinite cascade on the classical transect. The data below describe the earlier census.
 
-These are numerical results for this repository's continuous piecewise-linear Chua model. Seventeen is an operational count on the stated transect, supported by independently closed attracting orbits and intervening finite-time chaotic screens. It is neither an exhaustive count nor the number of globally connected surfaces in three parameters. This early study left infinity open; the subsequent [interval certificate](chua-infinity-certificate.md) establishes an infinite cascade on the classical transect. The numerical evidence below remains the earlier census.
-
-## Matching the visible atlas
+## Relation to the sampled atlas
 
 The original pink surface was extracted from a 41 × 41 × 41 mesh in
 
@@ -32,7 +30,7 @@ Both examples have five local maxima of x over a full cycle. Counting maxima alo
 
 Each boundary of family 2 was continued to 49 points in (alpha, m0), matching the earlier family's 7 × 7 grid. Bilinear interpolation of the regions between fold and first doubling covers 5,086 of the original 6,419 regular nodes, approximately **79.2%**. This approximate comparison only includes the five-maximum cores. Doubled descendants, smaller windows, finite transients, basin selection, and interpolation errors contribute to the remainder. Coverage is not an accuracy score or a measured parameter volume.
 
-## What birth and disappearance mean
+## Bifurcations and loss of attraction
 
 When beta decreases across the upper boundary of either broad family, a stable and a saddle periodic orbit meet at a **fold of cycles**. The new attracting cycle can capture trajectories and produces a regular window inside the otherwise chaotic scan. The stable and saddle partners have been recovered on the same side of the second fold; closing-equation derivatives support a nondegenerate fold.
 
@@ -42,7 +40,7 @@ Next, a full-return multiplier crosses −1 and the attracting cycle undergoes p
 
 The boundaries move smoothly with the other two parameters over the continued patches. A one-dimensional stability interval consequently becomes a thin region bounded by surfaces in parameter space. Different families need not have the same slope, thickness, or basin of attraction.
 
-## A concrete overlap: two stable cycles at one parameter point
+## Two-cycle coexistence
 
 At
 

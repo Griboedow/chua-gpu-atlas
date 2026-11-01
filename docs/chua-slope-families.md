@@ -1,16 +1,16 @@
-# What the slope-volume layers contain
+# Continuation of five- and seven-peak families in the slope volumes
 
-**Follow-up:** the [symmetry-resolved overlap study](chua-overlap-geometry.md) continues both asymmetric branches through their first period doubling, resolves 18 contact curves, and explains how two symmetric-coexistence islands can remain connected by a region with three attracting cycles. It includes checked two-, three- and four-cycle examples and a visual guide.
+## Abstract
 
-**Two tracked families overlap: one parameter set can support both a five-peak and a seven-peak attracting cycle.** Continuation also exposes layers far thinner than the original 3D grid and a missing sheet edge where the physical cycle survives by changing its route through the diode regions.
+We continue two periodic-orbit families from the [slope-plane study](chua-slope-plane.md) while varying both diode slopes and either α or β. The calculation resolves thin symmetric stability intervals, independently verifies 13 parameter sets with coexisting attracting cycles, and follows a seven-peak cycle through a change of diode-region itinerary. The latter change explains a termination of fixed-itinerary continuation without loss of the attracting cycle.
 
-These results follow the two independently closed cycles from the [slope-plane study](chua-slope-plane.md). Local labels **P5** and **P7** refer to those particular continued families. They do not identify every five- or seven-peak orbit, add two new entries to the earlier 32-family catalogue, or provide a global layer count.
+The labels P5 and P7 refer to these specific continued families. They neither enumerate all five- or seven-peak orbits nor add two identities to the earlier 32-family catalogue. The [overlap study](chua-overlap-geometry.md) extends their asymmetric branches through the first period doubling and calculates 18 contact curves.
 
 ![Continued family sheets in both slope volumes](assets/chua-slope-family-sheets.png)
 
 Blue follows P5; rose follows P7. Black diamonds mark parameter sets where **both cycles** were closed and independently checked. The surfaces linearly connect the midpoints of continued stable symmetric intervals. Their physical thickness is not enlarged, and cells with missing vertices are omitted. Surface interpolation itself is not evidence of coexistence. A [slow 24-second rotation](assets/chua-slope-family-sheets.gif) uses fixed tilt and zero roll.
 
-## A concrete overlap
+## Two-cycle coexistence example
 
 At
 
@@ -32,11 +32,11 @@ Both multiplier magnitudes are below one. Independent full-field state-and-varia
 
 ![Two coexisting cycles and their overlapping stable intervals](assets/chua-slope-coexistence.png)
 
-The three original atlas starts all select P7 at this witness, both at the baseline step and at half the step with longer integration. A scan using those starts can miss P5 even when the parameter point itself is sampled. **Denser parameter sampling alone does not recover all families: initial-state coverage and orbit continuation also matter.**
+The three original atlas starts all select P7 at this witness, both at the baseline step and at half the step with longer integration. A scan using those starts can miss P5 even when the parameter point itself is sampled. Resolving the coexistence requires additional initial states or orbit continuation, as well as parameter resolution.
 
 Across the new continuation meshes, 13 parameter witnesses were independently verified: four in the alpha volume and nine in the beta volume. Each has two closed attracting cycles. The continued overlap intervals in m0 range from approximately 1.37e-6 to 5.59e-4 wide. These are sampled witnesses, not a complete map of all overlaps or a certification of every point between interval endpoints. See [overlaps.json](../results/chua-slope-families/overlaps.json).
 
-## Why the original volume misses thin layers
+## Stability widths and sampling resolution
 
 At alpha = 9, beta = 100/7, m1 = -5/7, the two central symmetric stability intervals are:
 
@@ -45,13 +45,13 @@ At alpha = 9, beta = 100/7, m1 = -5/7, the two central symmetric stability inter
 | P5 | -1.1408052526 | -1.1398776866 | 0.000927566 | 10.8 |
 | P7 | -1.1465478668 | -1.1463659114 | 0.000181955 | 55.0 |
 
-The original volume step in m0 is 0.01. An entire P7 symmetric core can fit between adjacent grid planes about 55 times over. These widths describe the symmetric attracting cores; stable asymmetric extensions can lie beyond them.
+The original volume step in m0 is 0.01. The P7 symmetric-core width is approximately 1/55 of this step. These widths describe the symmetric attracting cores; stable asymmetric extensions can lie beyond them.
 
 Continuation follows the orbit and solves its marginal-stability equations directly. The local meshes use 21 m1 values in [-5/7 - 0.08, -5/7 + 0.08] and 21 alpha values in [8.6, 9.4], or 21 beta values in [100/7 - 0.8, 100/7 + 0.8]. The other control parameter remains at its classical value. At each successful node, m0 is solved for both edges and an attracting cycle is closed between them.
 
 There are **1,599 successful family cross-sections** out of 1,764 requested: P5 has 438 alpha and 440 beta nodes; P7 has 361 alpha and 360 beta nodes. Forty-five attempted nodes failed the continuation checks, and another 120 were not reached by the connected traversal. Those missing nodes are not classified as cycle deaths. All accepted core witnesses retain the reference peak count. Sixty selected edge/core records pass independent full-field controls; their maximum closure error is 1.53e-11 and maximum dominant-multiplier discrepancy is 6.67e-9.
 
-## Two different mechanisms at the central edges
+## Fold and symmetry-breaking boundaries
 
 For both families, decreasing m0 through the fold edge produces a stable/saddle pair of symmetric cycles. The closing Jacobian has one small singular value, and the projected parameter and quadratic coefficients stay nonzero under three finite-difference steps. Two nearby distinct cycles are recovered at the same parameters, with transverse multiplier magnitudes on opposite sides of one. This is numerical evidence for a generic saddle-node of cycles.
 
@@ -59,7 +59,7 @@ At the other edge, the symmetric cycle loses stability while a pair of attractin
 
 The signed half-return multipliers distinguish these mechanisms: +1 at the fold and -1 at the symmetry edge. Both correspond to +1 in the full-period map. The [bifurcation records](../results/chua-slope-families/bifurcations.json) retain the coefficients, stable/saddle pair, asymmetric pair, unstable parent and independent checks. These are numerical witnesses, not interval-certified theorems.
 
-## An apparent ending caused by a changed itinerary
+## Cycle continuation through an itinerary change
 
 The P7 fixed-itinerary continuation develops a missing edge as m1 increases near -0.66. Direct shooting with the actual piecewise vector field follows the seven-peak attracting cycle beyond that edge. Along the checked path, m0 is adjusted and alpha = 9, beta = 100/7 stay fixed.
 
@@ -69,7 +69,7 @@ All 13 independently checked path witnesses remain symmetric, attracting and sev
 
 Invalid fixed-itinerary edge roots are retained only as a predictor for the m0 values used in this path. They are never accepted as physical boundaries. The [path records](../results/chua-slope-families/itinerary-change.json) include that distinction.
 
-## What the basin experiment does not settle
+## Basin sampling and numerical sensitivity
 
 A 121 by 121 initial-state slice at the overlap witness gives 5,593 captures matching P5, 8,835 matching P7 and 213 unresolved outcomes. Matching uses the ordered peak-height signature of the closed reference, repeated peak count, and a preceding regular-candidate screen. These are finite-time assignments.
 
@@ -79,4 +79,4 @@ The sensitivity check deliberately samples each outcome category. Among 195 prev
 
 The existence of the two attracting cycles is supported by independent orbit checks. Their finely speckled capture boundaries remain numerically sensitive. This experiment does not establish a fractal basin boundary or reliable basin areas.
 
-The [data guide](../results/chua-slope-families/README.md) contains reproduction commands and [audit.json](../results/chua-slope-families/audit.json) summarizes numerical checks. Periodic windows in Chua's circuit are already known experimentally; this report makes specific claims about the tracked witnesses in this atlas, not priority claims about the general phenomenon. See [Maranhao et al., Experimental observation of a complex periodic window](https://arxiv.org/abs/0712.3842).
+The [data guide](../results/chua-slope-families/README.md) contains reproduction commands and [audit.json](../results/chua-slope-families/audit.json) summarizes numerical checks. Experimental periodic windows in Chua's circuit are described in the literature. The present results concern the continued branches and parameter sets specified here. See [Maranhao et al., Experimental observation of a complex periodic window](https://arxiv.org/abs/0712.3842).

@@ -1,15 +1,15 @@
 # Two three-dimensional sections through the diode slopes
 
-The slope-plane study now extends into two directly computed parameter volumes:
+We compute two three-dimensional parameter sections extending the slope-plane study:
 
 | Coordinates | Fixed parameter | Third-coordinate range |
 |---|---|---|
 | m0, m1, alpha | beta = 100/7 | alpha = 7 to 11 |
 | m0, m1, beta | alpha = 9 | beta = 100/7 - 4 to 100/7 + 4 |
 
-Both retain m0 in [-1.5, -0.9] and m1 in [-0.98, -0.10]. These are independent three-dimensional scans, not extrusions or rotations of the earlier two-dimensional image.
+Both retain m0 in [-1.5, -0.9] and m1 in [-0.98, -0.10]. Each volume is obtained from a separate three-dimensional parameter scan.
 
-**Follow-up:** [tracking the five- and seven-peak families](chua-slope-families.md) resolves thin symmetric cores, verifies 13 coexistence witnesses, and follows a cycle past an apparent sheet ending. That continuation supplements this coarse sampled volume; it does not silently replace its classifications.
+[Continuation of the five- and seven-peak families](chua-slope-families.md) resolves thin symmetric cores, verifies 13 coexistence examples and follows an attracting cycle through an itinerary change. Those results supplement the finite-time classifications used in the present volumes.
 
 ![Full three-dimensional slope sections](assets/chua-slope-volumes.png)
 
@@ -21,19 +21,19 @@ The broad outer regions hide much of the interior. The following crop removes th
 
 The crop selects m0 <= -1.06 and -0.90 <= m1 <= -0.20; the retained grid coordinates actually span m0 = [-1.5, -1.06] and m1 = [-0.892, -0.2026667]. It changes only the displayed domain. The full volumes remain available. Dashed frames mark alpha = 9 or beta = 100/7, where the two volumes share the earlier slope section.
 
-[Watch the slow rotation](assets/chua-slope-volumes.gif): a 40-degree horizontal sweep and return over 24 seconds, at fixed elevation and zero roll. Only the camera moves.
+[Rotation animation](assets/chua-slope-volumes.gif): a 40-degree horizontal sweep and return over 24 seconds, at fixed elevation and zero roll. Only the camera moves.
 
-## Explore the interior
+## Sections and interactive visualization
 
 The [self-contained interactive viewer](../results/chua-slope-volumes/volumes.html) lets readers rotate both volumes, switch between full and cropped views, show regular or chaotic candidates, and move an m0-m1 section through all 41 alpha or beta levels. Download the HTML and open it in a browser; no network connection is needed.
 
-The controller passed 36 combinations of display settings, section-data checks, a rapid-slider-update check and camera-reset checks using JavaScript state stubs. Actual browser/WebGL interaction could not be checked here because local browser use was disabled in Work settings. The PNGs and representative GIF frames were inspected visually. [Viewer checks](../results/chua-slope-volumes/viewer-checks.json) preserve this distinction.
+The controller passed 36 combinations of display settings, section-data checks, a rapid-slider-update check and camera-reset checks using JavaScript state stubs. The recorded validation did not include browser/WebGL interaction. The PNGs and representative GIF frames were inspected visually. [Viewer checks](../results/chua-slope-volumes/viewer-checks.json) preserve this distinction.
 
 ![Low, middle and high sections of both volumes](assets/chua-slope-volume-sections.png)
 
 These actual sampled sections show why a three-dimensional interpretation needs more than a single plane. The regions change substantially between the ends of each third-coordinate range. The two center panels are the same parameter section and reproduce the earlier map on a coarser mesh.
 
-## What was calculated
+## Sampling and numerical methods
 
 Each volume has **61 x 61 x 41 = 152,561 parameter nodes**, with three original initial states per node: **915,366 trajectories across the two scans**. The FP64 GPU calculation uses RK4 step 0.005, discards 600 time units and observes another 1,600 in four Lyapunov windows. Classification rules match the [slope-plane report](chua-slope-plane.md).
 
@@ -49,6 +49,6 @@ For each volume, 512 stratified nodes were recomputed at half the step and twice
 
 Full-field DOP853 state-and-variational controls examine four off-center chaos candidates and the common central regular example; the central example is repeated once for each volume. Three off-center candidates retain positive exponents in all independent windows. The low-alpha example at alpha = 7.2, m0 = -1.47, m1 = -0.5986667 is less secure: its original GPU mean was 0.01604, while the first independent mean was 0.00374 with a negative window. A longer matched-start check gives a refined GPU mean of 0.01267 with a negative window, and an independent mean of 0.00852, below the screen's 0.01 threshold. Its original chaos label is therefore **not independently confirmed**. Both follow-ups are retained in [low-alpha-recheck.json](../results/chua-slope-volumes/low-alpha-recheck.json).
 
-This is a first volumetric view. The mesh is four times coarser in each slope direction than the earlier wide 2D map, and much coarser than its local zoom. Thin windows can be missed or appear fragmented; small isolated pieces and holes are not established bifurcations or disconnected families. These surfaces do not count all layers, prove global topology, or assign the previous 32 family identities to the new sections.
+The volumes provide a finite-resolution classification. The mesh is four times coarser in each slope direction than the earlier wide 2D map, and much coarser than its local zoom. Thin windows can be missed or appear fragmented; small isolated pieces and holes are not established bifurcations or disconnected families. These surfaces do not count all layers, prove global topology, or assign the previous 32 family identities to the new sections.
 
 The [data README](../results/chua-slope-volumes/README.md) gives all reconstruction, rendering and check commands.
