@@ -1,0 +1,59 @@
+{
+  "checked_utc": "2026-11-01T10:15:49.300Z",
+  "content_commit": "e29b91c",
+  "browser": "Chrome; live GitHub rendering",
+  "report_url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-hidden-boundary.md",
+  "report": {
+    "failed": [],
+    "images": [
+      {
+        "alt": "The proved convergence sector in the slope plane and the two parameter volumes",
+        "loaded": true,
+        "width": 2960
+      },
+      {
+        "alt": "The saddle cycle and a numerical local section of its separating stable manifold",
+        "loaded": true,
+        "width": 2590
+      },
+      {
+        "alt": "Computed cycle branches and the predicted two-thirds and one-third scaling laws",
+        "loaded": true,
+        "width": 2590
+      }
+    ],
+    "mathBlocks": 17,
+    "overflowMath": [],
+    "rendered": 17,
+    "tables": 3
+  },
+  "readme_url": "https://github.com/Griboedow/chua-gpu-atlas/tree/main",
+  "readme": {
+    "courseworkPreserved": true,
+    "failed": [],
+    "mathBlocks": 2,
+    "newFigure": [
+      {
+        "alt": "Global-convergence sector in the slope plane and the two parameter volumes",
+        "loaded": true,
+        "width": 2960
+      }
+    ],
+    "rendered": 2
+  },
+  "visual_checks": [
+    "Global sector and the two slope-volume faces",
+    "Storage formulas and positivity argument",
+    "Saddle portrait, local section and multiplier table",
+    "Contact prediction panels and error table",
+    "README figure and preserved coursework motivation"
+  ],
+  "corrected_rendering_error": "GitHub rejected operatorname in the saturation formula. Replaced it with mathrm; all 17 math blocks subsequently rendered.",
+  "local_screenshots": [
+    ".publication/hidden-boundary-browser/global-sector.png",
+    ".publication/hidden-boundary-browser/saddle.png",
+    ".publication/hidden-boundary-browser/contacts.png",
+    ".publication/hidden-boundary-browser/readme.png"
+  ],
+  "scope": "Rendering and visible-content checks only; not evidence for the dynamical theorems."
+}

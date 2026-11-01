@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T10:14:22.162929+00:00",
-  "base_commit": "0194f9914e77901235e7e41506202c91b0ec553e",
+  "created_utc": "2026-11-01T10:16:21.844675+00:00",
+  "base_commit": "e29b91c9a47f6b08290edb2aade2e97b1f630b94",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -223,6 +223,7 @@
     "results/chua-hidden-boundary/audit-corrections.json": "95cd9e67b95c865ea4cb703baee685c8c827d5233dc5c2ace59fb56fac1b3fd9",
     "results/chua-hidden-boundary/basin-separator.json": "e07009c0e45f5d4860108738a8270dfe0b4d865442afc62486cf1f1e97a9c6c0",
     "results/chua-hidden-boundary/branches.json": "3c0594db759a1a8b40ee7ddfcbfb5898b060c5b2099d53701730b4a6e9b5f8ea",
+    "results/chua-hidden-boundary/browser-check.json": "d763c9746a20734c75712bc8960310bc2bf329ddd91711ea94769f3df022bea0",
     "results/chua-hidden-boundary/chua-basin-saddle.pdf": "bc5e30b7588e03b3401ad4c0611ff0b9c93759450d5c39320f371b57fdacc9f8",
     "results/chua-hidden-boundary/chua-global-sector.pdf": "994d1905f62297caaf88b90cbae83eb5cdb636e0e431537efc7668089ea49175",
     "results/chua-hidden-boundary/chua-linear-contact.pdf": "2bf8af1bfbfe6f37265e87de3a51e82273dfc9f9da7c2dba9e1c4d6f1b76e992",
@@ -238,7 +239,7 @@
     "results/chua-hidden-boundary/linear-contact-results.json": "072023f4d074158d0e3e269554ad5593053fe4a31e4976fae58e7fe086ee3d6b",
     "results/chua-hidden-boundary/numerical-audit.json": "59deb49705e63148e86841b76c27c6d047d69569f212a408c5a1fa92d9f7bd1a",
     "results/chua-hidden-boundary/outer-to-stability.json": "8d0f1aad7ee284dec048f0e55e98ed9368626da64491ad9abc71756794856ed6",
-    "results/chua-hidden-boundary/README.md": "73c430600569f2cc549b4c81e63a386b634756362fb49ae4987f4e203d6bc25d",
+    "results/chua-hidden-boundary/README.md": "c7332d9cb34b3e9f4d0963ee0e89f315bd92932813310c70e88555cf9cab990c",
     "results/chua-hidden-boundary/saddle-certificate-100.json": "4b701bc5f6b6978bd75130b03a44d6ef5e10e89b5f9ff80f37709caa0573f443",
     "results/chua-hidden-boundary/saddle-certificate-80.json": "74f64fb9a38902b308ee0da852fb0b6706e621195a4b7c8a3473f0b19ee06626",
     "results/chua-hidden-boundary/storage-formal-check.json": "47f55b922aebbd3d27a54f4146df2b7a668ff42db1ae24cd5ebcbd934a26b2e4",

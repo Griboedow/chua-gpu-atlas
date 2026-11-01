@@ -46,6 +46,7 @@ The numerical study includes sixteen integrations to time 700 and may take sever
 | `numerical-audit.json` | Repeated-precision overlap and numerical acceptance checks |
 | `storage-formal-check.json` | Three Lean declarations, standard axiom dependencies, input hashes and rejection of an altered balance |
 | `audit-corrections.json` | Export and plotting errors found and corrected before publication |
+| `browser-check.json` | Live GitHub checks: 17 rendered report formulas, three figures/tables and the README; one notation incompatibility corrected |
 
 The preliminary files `exploratory-roots.json`, `inner-lower.json`, `inner-upper.json` and `outer-to-stability.json` preserve the exploratory continuation that preceded the prediction. They do not constitute a second independent experiment or the interval evidence. The main study program reconstructs the roots and repeats the relevant branches.
 
