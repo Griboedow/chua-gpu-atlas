@@ -114,7 +114,7 @@ The [excitation study](docs/chua-excitation-robustness-prediction.md#1-excitatio
 
 ![Proved global-convergence sector in the slope plane and parameter volumes](docs/assets/chua-global-sector.png)
 
-**Proved absence in a specified sector.** At α = 8.4 and β = 12, a storage function establishes convergence to the origin for every initial state when **m₀ > m* and m₁ ≥ m***, with m* ≈ −0.181371900613. The darker m₀ face contains neutral periodic orbits and is excluded by the strict inequality. This distinguishes an empty region established analytically from a scan that found no oscillations. The [derivation](docs/chua-hidden-boundary.md#2-an-explicit-region-without-oscillatory-attractors) gives the general assumptions and the unclassified region.
+**Proved absence in a specified sector.** At α = 8.4 and β = 12, a storage function establishes convergence to the origin for every initial state when **m₀ > m∗ and m₁ ≥ m∗**, with m∗ ≈ −0.181371900613. The darker m₀ face contains neutral periodic orbits and is excluded by the strict inequality. This distinguishes an empty region established analytically from a scan that found no oscillations. The [derivation](docs/chua-hidden-boundary.md#2-an-explicit-region-without-oscillatory-attractors) gives the general assumptions and the unclassified region.
 
 ## Evidence and limitations
 
