@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-11-01T08:51:00.857489+00:00",
+  "content_commit": "653c47f",
+  "browser": "Chrome",
+  "report": {
+    "url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-accessibility.md",
+    "loaded_figures": 3,
+    "rendered_math_blocks": 7,
+    "math_render_errors": 0,
+    "visually_checked": [
+      "opening figure",
+      "four-cycle parameter equation and table",
+      "four-cycle portraits",
+      "component equation, table and figure"
+    ]
+  },
+  "readme": {
+    "url": "https://github.com/Griboedow/chua-gpu-atlas#hidden-periodic-attractors-and-equilibrium-accessibility",
+    "new_section_visible": true,
+    "new_figure_loaded": true,
+    "rendered_math_blocks": 2,
+    "math_render_errors": 0
+  },
+  "screenshot_evidence_retained_locally": true,
+  "passed": true,
+  "scope": "Published desktop browser preview after asset and math loading completed."
+}

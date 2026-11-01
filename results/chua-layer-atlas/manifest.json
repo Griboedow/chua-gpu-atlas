@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T08:48:03.250112+00:00",
-  "base_commit": "0cea42546de4ede639f184b9673a17c404225d59",
+  "created_utc": "2026-11-01T08:51:01.847016+00:00",
+  "base_commit": "653c47fa618eb59cd886c8998c5fff20254f969a",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -179,6 +179,7 @@
     "research/verify_four_chua_cycles.py": "bb3ca559634dc87b84e5e16c21a8b30ea37cfd64fb5367cf26bce3251f213e2c",
     "results/chua-accessibility/adaptive-prediction-check.json": "a556484db8b5e2ed61edc11e3f90eb77bd416e4d4b519e6ccffe688f3e322ceb",
     "results/chua-accessibility/adaptive-prediction-first-horizon.json": "d63eab2a6cff459325866bdb0c5ac65815cf046511dfbd63aeec2996fc9218a1",
+    "results/chua-accessibility/browser-check.json": "d06aec94450f256e03e86d259077694985e09adbc7ee7fd86038d64e1d03c9ee",
     "results/chua-accessibility/chua-accessibility.pdf": "49b02b37adcce199378e5b29f1a756f70a786fa4b65781ed0afdad6ca2123460",
     "results/chua-accessibility/chua-circuit-accessibility.pdf": "9476779c281ade6a112292b0312f6d18f5269eb1458a49c314ad1ff734c0be23",
     "results/chua-accessibility/chua-four-cycle-certificate.pdf": "05dc1cc7a628b2364ff7778ac33e652e300a8cc252980ba7961be4802f510737",
@@ -194,7 +195,7 @@
     "results/chua-accessibility/hidden-inner-continuation.json": "18d3784e578ab2483ae7d01a006a1f4bb1f9cf4c5c8918895cd68451c81e0b21",
     "results/chua-accessibility/hidden-slope-continuation.json": "0daf9d3083dbf3182ca49b1a5f8b4695732e0f636658f9821c226138899827e5",
     "results/chua-accessibility/independent-checks.json": "270f6a230e40571d17f3f95791549d42093222bbf03cb137821c0c1bf7c9ec99",
-    "results/chua-accessibility/README.md": "aa71f01824cdb76f167db6805ae6f38aeb40a0377d7a3ae5daf68a1220c73ea9",
+    "results/chua-accessibility/README.md": "fd4c818a21e80cea4d20ee01619cbf588a6dff8f1e846c69fedf0859fb319b33",
     "results/chua-accessibility/stability-basin-check-linear.json": "1e53a47559aed5c1b6d1d21341f790da1e7d186edcadd480e188a112cc0bf317",
     "results/chua-accessibility/stability-basin-check.json": "cc7024bef8118c169839a8dcd41605d6f447572f36b91bedc9c7f961caecfbe1",
     "results/chua-accessibility/stability-certificate-100.json": "4480837fff74d048a12228f21b0cb87abcdd17837687f799866e0a56b1dc508a",
