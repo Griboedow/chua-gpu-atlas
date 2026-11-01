@@ -12,12 +12,13 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 | Compare their motions | One complete orbit, signal and peak sequence per reference | [Family gallery](chua-family-gallery.md) | [Portrait data](../results/chua-layer-atlas/) |
 | Predict thinner windows | Published forecasts compared with 75/85-peak computations; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
 | Periodic-window accumulation | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
-| Audit infinite coexistence | Local hypotheses pass; localization remains open; Lean proves the tangency-box implication | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
+| Audit infinite coexistence | Local hypotheses pass; localization is now proved in the companion study; Lean proves only the stated general implications | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
 | Explain overlaps | Symmetry breaking, coexistence of 2–4 cycles, 18 contact curves | [Overlap geometry](chua-overlap-geometry.md) | [Continuation and checks](../results/chua-overlap-geometry/README.md) |
 | Certify finite coexistence and hiddenness | Four distinct periodic sinks; two hidden-cycle examples with excluded equilibrium neighborhoods; a global-convergence sector and circuit constraints | [Accessibility](chua-accessibility.md) | [Certificates and controls](../results/chua-accessibility/README.md) |
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
 | Refine two-slope families | 6,713 cross-sections; recovered P7 nodes; diode-contact curves and a tested duration law | [Slope refinement](chua-slope-refinement.md) | [Refinement data and controls](../results/chua-slope-refinement/README.md) |
+| Prove local separation and infinite coexistence | Uniform capture of both saddle exit strips; localized Newhouse–Robinson application | [Two local results](chua-basin-and-coexistence.md) | [Certificates and checks](../results/chua-basin-proof/README.md) |
 | Exclude oscillations and locate a basin separator | Explicit global-convergence sector; certified saddle beside a hidden sink; tested two-thirds/one-third contact laws | [Global stability and basins](chua-hidden-boundary.md) | [Storage identities, certificates and controls](../results/chua-hidden-boundary/README.md) |
 
 The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-family-gallery.md) describes the reference motions, the [prediction study](chua-layer-prediction.md) compares forecasts with subsequent computations, and the [certificate](chua-infinity-certificate.md) presents the mathematical argument and its scope.
@@ -26,7 +27,7 @@ The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-f
 
 **17** was an early census on one transect. **32** is the subsequent catalogue with sampled three-dimensional sheets. **34** includes two later reference cycles predicted before discovery. These are operational counts under a periodic-root and ancestry convention.
 
-**Infinitely many** refers to attracting periodic windows with unbounded return periods near a certified parameter on the fixed classical transect. It does not turn the finite mesh into an exhaustive atlas or prove that each visual sheet is globally disconnected from every other family.
+**Infinitely many** refers to attracting periodic windows with unbounded return periods near a certified parameter on the fixed classical transect. The localized parameter theorem also gives individual nearby parameters with infinitely many simultaneous periodic attractors. Neither result makes the finite mesh exhaustive or proves that every motion belongs to a globally disconnected family surface.
 
 A family can have multiple attracting descendants at the same parameters, particularly after symmetry breaking. A parameter projection can also merge distinct branches. Counts of families, individual attracting cycles, connected components and projected islands must therefore be kept separate.
 

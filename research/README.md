@@ -2,6 +2,10 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+## Local basin and coexistence results
+
+`certify_chua_basin_separator.py` covers both saddle exit strips, with fixed-time flow enclosures at diode contacts. `check_chua_basin_proof.py` checks event derivatives, a rejected root and independent flow integrations. `audit_chua_local_results.py` checks coverage and the finite premises of both theorem arguments; `plot_chua_local_results.py` draws the figures. [Report](../docs/chua-basin-and-coexistence.md) · [Reproduction](../results/chua-basin-proof/README.md).
+
 ## Periodic-attractor accessibility
 
 The follow-up [global-stability and basin study](../docs/chua-hidden-boundary.md) uses `derive_chua_global_sector.py`, `study_chua_hidden_boundary.py`, `certify_chua_basin_saddle.py`, `check_chua_hidden_boundary.py`, `check_chua_storage_formal.py` and `plot_chua_hidden_boundary.py`. These derive the storage identities, follow both cycles, certify saddle/sink roots, audit numerical evidence, check three Lean implications and draw the figures. [Commands and records](../results/chua-hidden-boundary/README.md).

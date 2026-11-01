@@ -1,6 +1,6 @@
 # Coexistence audit and partial formal proof
 
-The [report](../../docs/chua-coexistence-audit.md) separates reproduced numerical hypotheses, Lean-checked implications, and the outstanding localization step for infinite simultaneous coexistence.
+The [report](../../docs/chua-coexistence-audit.md) separates reproduced numerical hypotheses, Lean-checked implications, and the localization step for infinite simultaneous coexistence, now completed in the [companion proof](../../docs/chua-basin-and-coexistence.md).
 
 | File | Contents |
 |---|---|
@@ -22,6 +22,6 @@ python research/manifest_refined_chua_atlas.py --check
 
 Install the pinned Lean environment and Mathlib cache as described in [formal/README.md](../../formal/README.md) before running the formal checker. The numerical audit uses only CPU arithmetic. Existing forecast files and earlier certificates are not overwritten by the audit.
 
-The numerical record labels coexistence `conditional_on_localization_argument`. A successful formal check proves the statements in the Lean source under their stated hypotheses; it does not upgrade that coexistence status.
+The preserved numerical record labels coexistence `conditional_on_localization_argument`; that was the status of this numerical-only audit. The [later analytical proof and application audit](../chua-basin-proof/README.md) complete the localization. A successful Lean check still proves only the statements in its source under their stated hypotheses.
 
 Proof checks run locally. On the research workstation, `research/check_chua_formal_local.ps1` selects the installed tools and temporary directories on D:. The earlier completed Linux run remains in `validation-summary.json` as historical evidence; its hosted workflow has been removed.

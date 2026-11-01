@@ -42,11 +42,11 @@ def main():
                                 color=amber, linestyle="--"))
     box(.35, 1.7, 6.35, 2.12, "SCOPE OF THE FORMALIZATION",
         "The interval evaluator and exact invariant manifolds\nare not encoded in Lean. The general theorem checks\nthe logical implication once its hypotheses hold.\nThe Chua-specific hypotheses are checked separately.", amber, "#fcf0dc")
-    box(7.05, 1.7, 6.55, 2.12, "LOCALIZATION REQUIREMENT",
-        "Show that the theorem-generated sinks remain inside\nthe valid Chua return domain. A compact extension alone\nis insufficient without that confinement argument.\nInfinite coexistence remains conditional here.", amber, "#fcf0dc")
+    box(7.05, 1.7, 6.55, 2.12, "LOCALIZATION: ANALYTICAL PROOF",
+        "Local returns + the finite excursion stay inside\nthe domain where the extension agrees with Chua.\nThe parameter theorem gives infinitely many sinks.\nThis argument is not formalized in Lean.", green, "#e6f2eb")
     ax.text(.35, .99, "Existence theorem", color=green, fontsize=13, weight="bold")
     ax.text(3.1, .99, "Convexity is not needed for existence of the stationary zero.", color=ink, fontsize=13)
-    ax.text(.35, .43, "Dashed arrows indicate connections outside the present formal verification or requiring localization.", color="#52616a", fontsize=11)
+    ax.text(.35, .43, "Dashed arrows indicate connections outside Lean. See the companion basin and coexistence report for localization.", color="#52616a", fontsize=11)
     fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
     fig.savefig(ROOT/"docs/assets/chua-proof-audit.png", dpi=160, facecolor=fig.get_facecolor())
     fig.savefig(ROOT/"results/chua-proof-audit/chua-proof-audit.pdf", facecolor=fig.get_facecolor())

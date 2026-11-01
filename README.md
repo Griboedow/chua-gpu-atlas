@@ -4,7 +4,7 @@
 
 We study families of attracting periodic orbits in the continuous piecewise-linear Chua system. GPU parameter surveys identify candidate regions, periodic-orbit continuation resolves stability boundaries and coexistence, and interval arithmetic is used to verify a quadratic homoclinic tangency. The finite catalogue contains 34 reference identities under a stated continuation and normalization convention; 32 have sampled three-dimensional sheets.
 
-At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses the tangency parameter in 14.30635909996140 < β∗ < 14.30635909996152. Application of the classical sink-cascade theorem gives infinitely many attracting periodic windows accumulating at this parameter. This concerns windows at different parameter values. Infinite coexistence at a single parameter value remains conditional on the localization argument described in the [coexistence report](docs/chua-coexistence-audit.md).
+At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses the tangency parameter in 14.30635909996140 < β∗ < 14.30635909996152. Application of the classical sink-cascade theorem gives infinitely many attracting periodic windows accumulating at this parameter. A [localization argument](docs/chua-basin-and-coexistence.md#3-proof-of-theorem-b) also completes the stronger Newhouse–Robinson application: some individual β values arbitrarily near β∗ support infinitely many simultaneous attracting periodic orbits. No decimal value of such a β is identified.
 
 The repository contains the numerical data, continuation programs, interval certificates and a partial Lean formalization. Lean verifies a general stationary-zero existence argument, ten rational inequalities and three storage-algebra implications; it does not verify the complete Chua dynamical arguments.
 
@@ -12,7 +12,7 @@ The repository contains the numerical data, continuation programs, interval cert
 
 An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
 
-The [global-stability and basin study](docs/chua-hidden-boundary.md) addresses questions posed by Leonov, Kuznetsov, Chua and colleagues. It derives an explicit slope sector where all trajectories converge to the origin, certifies a saddle beside a hidden attracting cycle, and tests amplitude and flight-time predictions near two linear contacts. The maximum coexistence count and complete basin boundary remain open in this investigation.
+The [global-stability and basin study](docs/chua-hidden-boundary.md) addresses questions posed by Leonov, Kuznetsov, Chua and colleagues. It derives an explicit slope sector where all trajectories converge to the origin, certifies a saddle beside a hidden attracting cycle, and tests amplitude and flight-time predictions near two linear contacts. A [subsequent proof](docs/chua-basin-and-coexistence.md) certifies a local basin boundary by covering both exit strips and establishes infinite simultaneous periodic coexistence on the classical slice. The global basin boundary remains unclassified.
 
 ## Background
 
@@ -89,7 +89,11 @@ Figure 6. Periodic-attractor existence and accessibility from equilibria. The [r
 
 Figure 7. An explicit storage function proves convergence to the origin for every initial state in the stated green sector. At α = 8.4 and β = 12, the threshold is m* ≈ −0.181371900613: the result requires m₀ > m* and m₁ ≥ m*. The darker m₀ face contains neutral periodic orbits. Thus this part of the atlas can distinguish proved absence from a scan that found nothing. The [derivation](docs/chua-hidden-boundary.md#2-an-explicit-region-without-oscillatory-attractors) gives the general parameter assumptions and the unclassified region.
 
-Outside that sector, a [certified saddle cycle](docs/chua-hidden-boundary.md#3-a-certified-saddle-beside-a-hidden-periodic-attractor) coexists with the hidden cycle and stable origin at m₀ = −0.95, m₁ = −0.05. Its computed local stable manifold separates all sixteen tested trajectories into two destinations. The complete basin boundary is not certified. A [prediction comparison](docs/chua-hidden-boundary.md#4-predicting-the-two-linear-contacts) shows that the two investigated cycle contacts approach amplitude 1, with excess proportional to δ²ᐟ³ and outer-flight duration proportional to δ¹ᐟ³.
+Outside that sector, a [certified saddle cycle](docs/chua-hidden-boundary.md#3-a-certified-saddle-beside-a-hidden-periodic-attractor) coexists with the hidden cycle and stable origin at m₀ = −0.95, m₁ = −0.05. The [local basin proof](docs/chua-basin-and-coexistence.md#2-proof-of-theorem-a) covers all initial points in a section square: its stable graph separates convergence to the origin from convergence to the hidden cycle. Both exit strips are covered by 64 interval rectangles and checked at 80 and 100 digits. The complete global boundary is not certified. A [prediction comparison](docs/chua-hidden-boundary.md#4-predicting-the-two-linear-contacts) shows that the two investigated cycle contacts approach amplitude 1, with excess proportional to δ²ᐟ³ and outer-flight duration proportional to δ¹ᐟ³.
+
+![A certified local basin separator and complete coverage of its exit strips](docs/assets/chua-basin-proof.png)
+
+Figure 8. The exact separating graph lies in the narrow central wedge. Every point on one side converges to the equilibrium; every point on the other side converges to the hidden periodic attractor. The [report](docs/chua-basin-and-coexistence.md) gives the local domain, interval coverage, diode-contact checks and the separate infinite-coexistence argument.
 
 ## Model
 

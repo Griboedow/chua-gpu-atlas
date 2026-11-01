@@ -2,7 +2,7 @@
 
 This study connects the atlas to questions about coexistence and global stability posed in the Chua literature. For the ideal piecewise-linear model, it derives a sufficient global-convergence sector with an exact adjacent loss-of-convergence face, certifies a saddle periodic orbit beside an already certified hidden attractor, and tests quantitative predictions for two centre-to-cycle contacts.
 
-The general maximum number of coexisting attractors remains undetermined. Neither a complete basin boundary nor the complete global-stability region is established here.
+The [follow-up proof](chua-basin-and-coexistence.md) establishes infinite periodic coexistence on the classical slice and certifies the local separator introduced here. The complete global basin boundary and global-stability region remain unclassified.
 
 ## 1. Published questions and their atlas formulation
 
@@ -10,9 +10,9 @@ The relevant authors include **Gennady Leonov**, Nikolay Kuznetsov, Leon Chua an
 
 | Published question or mechanism | What the atlas can address | Present status |
 |---|---|---|
-| Maximum coexistence count, including hidden attractors: Kuznetsov and colleagues, 2023, §6 | Count distinct attracting motions at the same parameters; distinguish this from a family count across parameter space | The earlier interval result gives at least four periodic attractors at one point. No upper bound is proved. |
+| Maximum coexistence count, including hidden attractors: Kuznetsov and colleagues, 2023, §6 | Count distinct attracting motions at the same parameters; distinguish this from a family count across parameter space | Four periodic attractors are explicitly enclosed at one point. The [follow-up](chua-basin-and-coexistence.md) proves existence of parameters with infinitely many periodic attractors; their hiddenness is not classified. |
 | Exact global-stability boundary: the same paper, §6 | Separate parameters where every initial state converges to an equilibrium from parameters with another invariant motion | The explicit sector in §2 excludes all nonconstant recurrent motions and has an exact neutral face. The remainder of the slope plane is not classified. |
-| Birth of hidden attractors and a conjecture concerning a stable unique equilibrium and a subcritical Hopf bifurcation: Stankevich and colleagues, 2017 | Follow the attracting and saddle branches, and their relation to equilibrium accessibility | A saddle and a hidden periodic sink are certified together in §3. The local basin separator is computed, not globally certified. The general conjecture is not resolved. |
+| Birth of hidden attractors and a conjecture concerning a stable unique equilibrium and a subcritical Hopf bifurcation: Stankevich and colleagues, 2017 | Follow the attracting and saddle branches, and their relation to equilibrium accessibility | A saddle and a hidden periodic sink are certified together in §3. The [follow-up](chua-basin-and-coexistence.md) certifies a local separator; its global continuation remains unclassified. The general conjecture is not resolved. |
 
 Sources: [Kuznetsov et al., *Hidden attractors in Chua circuit: mathematical theory meets physical experiments* (2023)](https://link.springer.com/article/10.1007/s11071-022-08078-y), and [Stankevich, Kuznetsov, Leonov and Chua, *Scenario of the Birth of Hidden Attractors in the Chua Circuit* (2017)](https://arxiv.org/abs/1710.02677). The latter reports Chua's formulation of the conjecture in a 2012 private communication. These are questions as posed in those publications; this report does not claim an exhaustive survey of subsequent resolutions.
 
@@ -158,7 +158,7 @@ These are **two exhibited attractors and one saddle**, not three attractors. The
 
 To investigate the separator, we solve for 71 section points whose fourth or sixth return has zero unstable displacement from the saddle. The two approximations differ by at most 1.18 × 10⁻¹⁵. This agreement indicates numerical consistency, not a rigorous manifold-error bound. All eight trajectories on the inward side approach the origin; all eight on the outward side approach the hidden cycle, with integrations extending to time 700. Their endpoint tests and initial states are retained in [basin-separator.json](../results/chua-hidden-boundary/basin-separator.json).
 
-The interval certificate proves the saddle exists and has a stable manifold. The computed curve's position and its role in the complete basin boundary remain numerical. A global certificate would have to enclose that manifold and account for its continuations and possible other invariant sets.
+The interval certificate here proves the saddle exists and has a stable manifold. The [follow-up proof](chua-basin-and-coexistence.md#2-proof-of-theorem-a) certifies its basin-separating role in a section square of radius 10⁻⁷ by covering whole exit strips. The larger curve drawn here remains numerical. A global certificate would have to account for its continuations and possible other invariant sets.
 
 ## 4. Predicting the two linear contacts
 
@@ -210,12 +210,12 @@ The exponents concern this particular path through a centre contact. The earlier
 
 The atlas can now distinguish three pieces of evidence: a periodic-family continuation, a change in accessibility across a computed basin separator, and an analytical region where no oscillatory family can occur. Empty sampling and proved absence are different statements.
 
-This stage leaves the principal broader questions open:
+After the [follow-up proofs](chua-basin-and-coexistence.md), the remaining distinctions are:
 
-1. **Maximum coexistence at one parameter point.** Four certified periodic sinks remain a lower bound, not a maximum. The 32 sampled sheets and 34 reference identities count families across parameters.
+1. **Counts at prescribed parameters.** Infinite coexistence is established existentially nearby the classical tangency. Four certified periodic sinks remain a lower bound at the explicit four-cycle point. The 32 sampled sheets and 34 reference identities count families across parameters.
 2. **The full global-stability boundary.** The theorem settles the stated upper slope sector and its neutral m₀ face. Regions with one slope below m\*, nonzero γ, and the lower stable-equilibrium band require other arguments.
-3. **The complete hiddenness boundary.** A certified saddle and a numerically located local separator do not describe its entire global stable manifold or all possible basins.
-4. **Simultaneous infinite coexistence.** The previous infinite-window result concerns different nearby parameter values. The stronger coexistence claim still has the localization obligation identified in the [audit](chua-coexistence-audit.md).
+3. **The complete hiddenness boundary.** The certified local separator does not describe its entire global stable manifold or all possible basins.
+4. **Accessibility of infinitely many cycles.** The infinite-coexistence theorem does not identify their basins, classify them as hidden, or provide an explicit decimal parameter at which to sample them.
 
 The next numerical target is continuation of the saddle separator over the slope plane, coupled to interval bounds on local stable-manifold patches. That would test where the verified hidden-cycle example persists and where accessibility changes. An exhaustive count would additionally require exclusion arguments for every remaining return domain.
 

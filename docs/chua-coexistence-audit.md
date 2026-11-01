@@ -2,13 +2,13 @@
 
 ## Abstract
 
-We examine whether the quadratic homoclinic tangency certified near β = 14.30635909996146, at α = 9, m₀ = −8/7 and m₁ = −5/7, supports an application of the parameter version of the Newhouse–Robinson theorem. The local numerical hypotheses reproduce at 80 and 100 decimal working digits. Application to the Chua return map still requires a localization argument ensuring that the generated sinks remain within its valid domain. Infinite coexistence at a single parameter value is therefore conditional.
+We examine whether the quadratic homoclinic tangency certified near β = 14.30635909996146, at α = 9, m₀ = −8/7 and m₁ = −5/7, supports an application of the parameter version of the Newhouse–Robinson theorem. The local numerical hypotheses reproduce at 80 and 100 decimal working digits. The [subsequent localization proof](chua-basin-and-coexistence.md#3-proof-of-theorem-b) confines the generated sinks and all their intermediate returns to the Chua domain. Infinite simultaneous coexistence is now a theorem consequence of the interval hypotheses and that analytical argument. This audit continues to distinguish it from the smaller Lean-verified statements.
 
 A separate Lean formalization proves that four boundary-sign conditions imply an interior stationary zero of a continuous function with the stated derivatives. It also verifies ten rational graph-transform inequalities. The Chua interval evaluator, invariant-manifold construction and Newhouse–Robinson theorem remain outside this formalization.
 
 ![Components of the tangency and coexistence arguments](assets/chua-proof-audit.png)
 
-Figure 1. Dependencies of the numerical, formal and classical arguments. Dashed arrows indicate connections not verified in Lean or requiring the localization argument stated below.
+Figure 1. Dependencies of the numerical, formal and classical arguments. Dashed arrows indicate connections not verified in Lean. Localization is established analytically in the companion report.
 
 ## 1. Window accumulation and simultaneous coexistence
 
@@ -35,8 +35,8 @@ Write H for the sign-reduced half return and P = H² for the ordinary upward fir
 | Quadratic contact | Normal second derivative in [2.0956 × 10¹³, 2.1447 × 10¹³] | Interval checks pass |
 | Nonzero parameter unfolding | Normal parameter derivative in [3.3728, 3.3731] | Interval checks pass |
 | Contact for P, rather than only H | Append one local H iterate: H²⁸ = P¹⁴; a local diffeomorphism preserves contact order and nonzero unfolding | Analytical argument |
-| The theorem's domain and localization of its sinks | The implemented return is defined on certified neighborhoods, not on an entire compact surface | **Open obligation in this audit** |
-| Attracting map cycles correspond to attracting flow cycles | A periodic first-return sink gives a stable periodic flow orbit, provided every return stays in the valid domain | Conditional on the preceding localization |
+| The theorem's domain and localization of its sinks | The implemented return is defined on certified neighborhoods, not on an entire compact surface | [Analytical localization proof](chua-basin-and-coexistence.md#32-localization-and-extension-argument) |
+| Attracting map cycles correspond to attracting flow cycles | A periodic first-return sink gives a stable periodic flow orbit, provided every return stays in the valid domain | Follows with the completed localization argument |
 
 Both 80- and 100-digit runs pass all 15 final gates, all local gates and all graph-transform guards. Each global connection covers 135 flights and 12,534 accepted time cells. Shifting the box by +10⁻¹⁰ or −10⁻¹⁰ fails the required parameter-face sign, as expected. A rejected box is not a proof that no other tangency exists nearby.
 
@@ -46,16 +46,11 @@ The vector field is continuous and piecewise affine, with derivative jumps at x 
 
 On each flight, however, the solution is an analytic matrix-exponential expression. The crossing time is an analytic implicit function when the crossing speed is nonzero. Composition along a fixed transverse itinerary therefore gives an analytic event map on an open neighborhood. The certificate checks the itinerary for complete time intervals, including endpoint collars. Reversing the flights gives a local inverse. This supplies the needed local smoothness without claiming that the entire Chua flow is globally smooth.
 
-### The remaining localization obligation
+### Localization of the generated sinks
 
-Let K be the saddle together with the complete homoclinic orbit of P. Its two tails approach the saddle, so K is compact. The certified local box and finite excursion provide a neighborhood on which the relevant return branches are smooth.
+The earlier audit left this obligation open because its numerical checks concern local return branches. The [companion proof, §3](chua-basin-and-coexistence.md#3-proof-of-theorem-b), now supplies the missing argument. It constructs a compact extension of the return-map germ and tracks the local-return and finite-excursion domains used in the parameter theorem. Every intermediate iterate of every generated sink remains in the region of agreement. The extension therefore introduces no extra orbit into the Chua conclusion.
 
-To finish the stronger coexistence argument, one must supply either:
-
-1. A precise local version of Newhouse–Robinson whose generated periodic orbits stay in an arbitrarily small prescribed neighborhood of K, and verify its assumptions for these branches; or
-2. A parameter-dependent extension to compact-surface diffeomorphisms, agreeing with P on that neighborhood, **plus** a proof that the theorem-generated sinks stay in the agreement region.
-
-A compact-surface extension is insufficient unless the generated sinks remain in the region where it agrees with the Chua return map. The determinant bound establishes dissipation; it does not construct a thick horseshoe or identify a parameter with infinite coexistence. The localization step remains unproved here.
+This yields parameters arbitrarily close to the certified tangency with infinitely many simultaneous attracting flow cycles. The value need not equal the tangency parameter. Neither a specific decimal witness nor a probability under random sampling is supplied. The numerical audit files retain their earlier conditional status as historical records; the [current application audit](../results/chua-basin-proof/audit.json) states the completed argument's dependencies.
 
 This report assesses the application of established homoclinic-tangency theory to the explicit certificate in this repository. Historical priority for the parameter-specific result has not been established.
 
@@ -94,7 +89,7 @@ Strict convexity is not required for this existence argument. It can be used in 
 | Construction and smoothness of the exact Chua invariant manifolds | No |
 | Matrix-exponential enclosures, event times, jets and all-time itinerary checks | No; executable Python/FLINT certificate |
 | The connection between the interval output and the hypotheses of the Lean theorem | No |
-| Newhouse–Robinson and the localization obligation | No |
+| Newhouse–Robinson and the completed analytical localization | No |
 
 The [formal check record](../results/chua-proof-audit/formal-check.json) records the toolchain, source hashes, build result and transitive axiom dependencies. Accepted dependencies are Lean's standard `propext`, `Classical.choice` and `Quot.sound`. The checker rejects additional axioms and incomplete proof placeholders. The formalization is limited to the statements listed in the table; infinite coexistence is not a Lean-verified conclusion.
 

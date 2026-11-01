@@ -1,0 +1,14 @@
+{
+  "scope": "Development record. These attempts were not accepted as proofs; the complete certificates and their retained rejection records are authoritative.",
+  "attempts": [
+    {"method": "Whole upward return with a 1e-6 local square", "result": "Event interval inclusion failed."},
+    {"method": "Whole upward return with first-order centering", "result": "Derivative enclosure failed the stable graph guards."},
+    {"method": "Whole upward return with a 1e-9 square", "result": "Local guards passed, but the two pilot exit enclosures failed after 12 returns."},
+    {"method": "Half return with a 1e-7 square and first-order centering", "result": "Pilot exit enclosures failed after 20 and 21 returns."},
+    {"method": "Second-order jets with four exit subdivisions", "result": "Both pilot event inclusions failed; four subdivisions were insufficient."},
+    {"method": "Fixed-itinerary propagation with 64 subdivisions", "result": "All positive exit rectangles reached the cycle, but 32 negative rectangles encountered unverified diode itineraries."},
+    {"method": "Fixed-time integration with a freshly reboxed basis at every step", "result": "Interval overestimation grew beyond the capture scale."},
+    {"method": "Quadratic-norm fixed-time enclosure alone", "result": "Six negative rectangles remained unresolved near the diode contact."},
+    {"method": "Transported-basis fixed-time enclosure alone", "result": "Some rectangles passed but others remained unresolved; the methods were combined, with complete bisection where necessary."}
+  ]
+}

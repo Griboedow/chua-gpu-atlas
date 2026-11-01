@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "basin_certificates": [
+    {
+      "digits": 80,
+      "covered_rectangles": 128,
+      "event_returns": 16220,
+      "event_time_cells": 412284,
+      "continuous_rectangles": 32,
+      "continuous_leaves": 33,
+      "continuous_steps": 64047,
+      "continuous_methods": {
+        "transported_basis": 5,
+        "quadratic_norm": 28
+      },
+      "origin_returns": [
+        21,
+        28
+      ],
+      "cycle_returns": [
+        229,
+        230
+      ]
+    },
+    {
+      "digits": 100,
+      "covered_rectangles": 128,
+      "event_returns": 16220,
+      "event_time_cells": 412284,
+      "continuous_rectangles": 32,
+      "continuous_leaves": 33,
+      "continuous_steps": 64047,
+      "continuous_methods": {
+        "transported_basis": 5,
+        "quadratic_norm": 28
+      },
+      "origin_returns": [
+        21,
+        28
+      ],
+      "cycle_returns": [
+        229,
+        230
+      ]
+    }
+  ],
+  "tangency_certificates": [
+    {
+      "digits": 80,
+      "gates": 15,
+      "flights": 135,
+      "time_cells": 12534,
+      "contact_for_ordinary_return": "H^28 = P^14 after one local half return"
+    },
+    {
+      "digits": 100,
+      "gates": 15,
+      "flights": 135,
+      "time_cells": 12534,
+      "contact_for_ordinary_return": "H^28 = P^14 after one local half return"
+    }
+  ],
+  "theorem_A": "Computer-assisted local basin separation; graph-transform argument in the report.",
+  "theorem_B": "Theorem consequence: localized parameter Newhouse--Robinson, with the report's domain argument.",
+  "formal_scope": "Neither complete theorem is verified in Lean. This program checks finite premises and coverage only.",
+  "source_sha256": {
+    "results/chua-basin-proof/separator-80.json": "e89d309c0fd9ecfb362234789ca123e61aeb2db2aaeaa66c578d74196c6dabc4",
+    "results/chua-layer-infinity/tangency-certificate-80.json": "1e05ec37731c0499c2b4872f852586fec584f2c4e3df52f759c8b54113e115c8",
+    "results/chua-basin-proof/separator-100.json": "2f407c914b4616cf779dcd86dadc4d67d834bcde82811bc919cb607375e84025",
+    "results/chua-layer-infinity/tangency-certificate-100.json": "e09097e0451394897a6fe304b4a89fdf5bf73980a0928e5efc5a5315d0b2e304",
+    "research/certify_chua_basin_separator.py": "076bde470f37bda0a8a263c76c5ce85044d49113ed4f8162ed69bd1f65b4f6d1",
+    "research/check_chua_basin_proof.py": "e303ec855cff27fbfd8998542c7b4e59d18d6279f86f706462392d007a7fac46",
+    "research/certify_chua_homoclinic_tangency.py": "135f38397a506149df95ccd9003800d87de2decd792290eaed618473f8eb920b",
+    "research/chua_interval_map.py": "1e028f10751e300ded103e923b5fa3411b6968f643a860177119fa2b92b1230a",
+    "research/chua_interval_connection.py": "f5d4ecd891abfb4b567978e8b9aac5ec16220c13d6c6a440df91949d5d5be9d6",
+    "research/certify_chua_layer_organizer.py": "35489e5296c154f403810b32154e52035582142ffddf4ba968c9bb64968cfa42",
+    "docs/chua-basin-and-coexistence.md": "eefffb14ef363495251e7a3d4a525b61f3179f3d92d840d22ee2c27741fd6b7e",
+    "results/chua-basin-proof/independent-checks.json": "f2d145c4e0209f710fc614cf1a4d655ae4bc0dc27e2283154016551ba49f1e69"
+  }
+}
