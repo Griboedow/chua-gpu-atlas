@@ -1,0 +1,30 @@
+{
+  "checked_commit": "a82b906fb671d9088af4e5fc3f4c85ccd6705551",
+  "checked_utc": "2026-11-01T00:06:51.782811+00:00",
+  "browser": "Chrome, live GitHub pages",
+  "pages": [
+    {
+      "path": "docs/chua-coexistence-audit.md",
+      "rendered_equation_blocks": 2,
+      "tables_including_header_rows": [
+        12,
+        8
+      ],
+      "report_image": {
+        "loaded": true,
+        "natural_width": 2240,
+        "natural_height": 1328
+      },
+      "visual_review": "Both mathematical expressions, all four sign inequalities, table structure and figure legible; no truncation observed."
+    },
+    {
+      "path": "formal/README.md",
+      "visual_review": "Statements, pinned versions, commands, scope and links render; long command scrolls horizontally inside its code block."
+    },
+    {
+      "path": "README.md",
+      "visual_review": "New conditional coexistence status and Lean link visible; personal coursework introduction retained."
+    }
+  ],
+  "scope": "Publication rendering checks, not mathematical proof verification."
+}

@@ -1,0 +1,16 @@
+{
+  "checked_commit": "a82b906fb671d9088af4e5fc3f4c85ccd6705551",
+  "numerical_checks": "80 and 100 digits pass all 15 gates; shifted-box controls fail as expected",
+  "formal_checks": "Five Lean declarations, only three standard axioms; both rejection controls pass",
+  "linux_ci": {
+    "run_id": 41255122184,
+    "job_id": 124696543859,
+    "url": "https://github.com/Griboedow/chua-gpu-atlas/actions/runs/41255122184",
+    "conclusion": "success",
+    "formal_check_artifact": "formal-check"
+  },
+  "frozen_forecast_sha256": "503e4437a22389251f6a73cada1639bd126ce58949db4bf7bc9cc81268276dbf",
+  "personal_introduction_unchanged": true,
+  "browser_check": "browser-check.json",
+  "infinite_coexistence_status": "conditional_on_localization_argument"
+}

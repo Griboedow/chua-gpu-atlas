@@ -6,6 +6,8 @@ The [report](../../docs/chua-coexistence-audit.md) separates reproduced numerica
 |---|---|
 | [numerical-audit.json](numerical-audit.json) | Fresh 80/100-digit certificates and two expected shifted-box failures; source hashes and software versions |
 | [formal-check.json](formal-check.json) | Lean build, five transitive axiom reports, source hashes and two rejection controls |
+| [validation-summary.json](validation-summary.json) | Successful GitHub Actions run on Linux, preserved forecast hash and browser review |
+| [browser-check.json](browser-check.json) | Live Chrome review of the report, formulas, tables, figure, formal guide and main page |
 | [chua-proof-audit.pdf](chua-proof-audit.pdf) | Vector version of the argument map |
 
 From the repository root:
@@ -21,3 +23,5 @@ python research/manifest_refined_chua_atlas.py --check
 Install the pinned Lean environment and Mathlib cache as described in [formal/README.md](../../formal/README.md) before running the formal checker. The numerical audit uses only CPU arithmetic. Existing forecast files and earlier certificates are not overwritten by the audit.
 
 The numerical record labels coexistence `conditional_on_localization_argument`. A successful formal check proves the statements in the Lean source under their stated hypotheses; it does not upgrade that coexistence status.
+
+The same formal check also passed in a clean Linux environment in [GitHub Actions run 41255122184](https://github.com/Griboedow/chua-gpu-atlas/actions/runs/41255122184). Its `formal-check` artifact contains that run's source hashes and dependency report.

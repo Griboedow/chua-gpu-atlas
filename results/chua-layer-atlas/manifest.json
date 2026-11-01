@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T00:04:11.902739+00:00",
-  "base_commit": "e18059cf2cbb9a8173d6b3a5401eaa7b15fe75b2",
+  "created_utc": "2026-11-01T00:06:52.389115+00:00",
+  "base_commit": "a82b906fb671d9088af4e5fc3f4c85ccd6705551",
   "sha256": {
     ".github/workflows/formal-proof.yml": "845b2ceeb231076ef164afcc67850ec5d56ae9578a75c55da00452214a687891",
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
@@ -371,10 +371,12 @@
     "results/chua-overlap-geometry/turning-points.json": "a8d05de498b78bf35651707d77310671084ca43886dedf422ed08e45d334dd98",
     "results/chua-overlap-geometry/witness-traces.npz": "17304846ffc7eb224107f0dc56e42c70e171056d7b7efaa868acfa7fa774321c",
     "results/chua-overlap-geometry/witnesses.json": "337c598b2803c80fe5b0bed2ef031bd444e2c9987c01654da8982eee36488746",
+    "results/chua-proof-audit/browser-check.json": "209edc5ec2fc22e9bf8cbb102d1090b26555d7b716e7f59b524d1a6cde88ace8",
     "results/chua-proof-audit/chua-proof-audit.pdf": "20721abf65e94c72ecf1caf4f8958b52731b9fd6af5e63139ee69fb2f0aa1ff0",
     "results/chua-proof-audit/formal-check.json": "3917e8719bf9d33094feb1285d1a6fee612daaf591c63f7cba4a3558b0026a0a",
     "results/chua-proof-audit/numerical-audit.json": "347c1582fd073a6339f58c3e68d10bbb110b28b9b41b67fe355a5cb0455a3e18",
-    "results/chua-proof-audit/README.md": "8bd97f8ed3b31a38f6ebea64aad55d9f3e279054e8a0c58826e78e36b1ef286b",
+    "results/chua-proof-audit/README.md": "5b4841e720d9198b0b362d3467ead87259d9fce325d9a67a899a5b7af592831a",
+    "results/chua-proof-audit/validation-summary.json": "28f92c49202c42b48523ea2a6ce0edd645b9512f1153d87c6bb1ad022d0344b5",
     "results/chua-slope-families/anchors.json": "28e0c29b1b1f7cb16bc00c0b5e4516205657104857b8e0e0c667ef37b0d8acd6",
     "results/chua-slope-families/animation.json": "9a976f1dfce9f2eb4259737353b662479b4e2936821a0a49cf754f2d2f0a5346",
     "results/chua-slope-families/audit.json": "06c56137d006aeac44af7f917c81c9e11d9fb0be8de1203fdd95f1583a7820f0",
