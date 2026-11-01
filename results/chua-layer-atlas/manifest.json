@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-01T10:55:36.318657+00:00",
-  "base_commit": "f100c3a0af8bd9a493006a28d2286ce999685405",
+  "created_utc": "2026-11-01T10:57:42.275974+00:00",
+  "base_commit": "eb776d63e0ef20da2669ab380b03bcde097a3cf6",
   "sha256": {
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
     "detail_analysis.py": "d5eb0eed5317e1314eb90076486883c0e2a2e5bba6e1684e2972441694e28633",
@@ -81,7 +81,7 @@
     "docs/assets/chua-slope-volumes.gif": "ceae77919c3438e102b27bd135140eb3d1bd84b5e1ed4c4575d9c3e8967abf49",
     "docs/assets/chua-slope-volumes.png": "4f74584219270c7bdd3d9d830f5b382124cb9bff9496743227d646cd596019ba",
     "docs/chua-accessibility.md": "13284a74799c92a93159ca24daa308a4f7c7807fc48353ba35e66cd77f3586f8",
-    "docs/chua-basin-and-coexistence.md": "eefffb14ef363495251e7a3d4a525b61f3179f3d92d840d22ee2c27741fd6b7e",
+    "docs/chua-basin-and-coexistence.md": "342cad030e163772da07a92d44b60772104a0006e99e177acfe6226aeee63e7a",
     "docs/chua-coexistence-audit.md": "7f7a4f69a1eec136467e445dd07b02595a416765854790906792092d134915e1",
     "docs/chua-family-gallery.md": "21f754acc4b543cf6a634cd6a06fd40f695779f6bc41d84c248172f97c7ea5f9",
     "docs/chua-hidden-boundary.md": "29b78f01b244482318d205288a97d6ef5041efcb6783f4b013324b34ad25c5c3",
@@ -227,7 +227,7 @@
     "results/chua-accessibility/stability-basin-check.json": "cc7024bef8118c169839a8dcd41605d6f447572f36b91bedc9c7f961caecfbe1",
     "results/chua-accessibility/stability-certificate-100.json": "4480837fff74d048a12228f21b0cb87abcdd17837687f799866e0a56b1dc508a",
     "results/chua-accessibility/stability-certificate-80.json": "c3979330ad672222f15cd79344209768b8a8ab7796bc325be0e0dd8382e29682",
-    "results/chua-basin-proof/audit.json": "e7df327cd281d76f23321e811675cca4064cb9cc1e76f66431606a6f9d2594b4",
+    "results/chua-basin-proof/audit.json": "8975869e70e841a6f49e8ed1679f70f26a2ec09ef2d590f0b390928a241e4392",
     "results/chua-basin-proof/chua-basin-proof.pdf": "4866565af7d84fe6e9654588eb9464bc7ef4ccc89d754055b701f87c4826f978",
     "results/chua-basin-proof/chua-coexistence-localization.pdf": "dafca6f003ff83def3bccc50d090446c3aca989881bbdcce1e6ebef226df888a",
     "results/chua-basin-proof/independent-checks.json": "f2d145c4e0209f710fc614cf1a4d655ae4bc0dc27e2283154016551ba49f1e69",

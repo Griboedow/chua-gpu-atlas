@@ -74,7 +74,7 @@
     "research/chua_interval_map.py": "1e028f10751e300ded103e923b5fa3411b6968f643a860177119fa2b92b1230a",
     "research/chua_interval_connection.py": "f5d4ecd891abfb4b567978e8b9aac5ec16220c13d6c6a440df91949d5d5be9d6",
     "research/certify_chua_layer_organizer.py": "35489e5296c154f403810b32154e52035582142ffddf4ba968c9bb64968cfa42",
-    "docs/chua-basin-and-coexistence.md": "eefffb14ef363495251e7a3d4a525b61f3179f3d92d840d22ee2c27741fd6b7e",
+    "docs/chua-basin-and-coexistence.md": "342cad030e163772da07a92d44b60772104a0006e99e177acfe6226aeee63e7a",
     "results/chua-basin-proof/independent-checks.json": "f2d145c4e0209f710fc614cf1a4d655ae4bc0dc27e2283154016551ba49f1e69"
   }
 }

@@ -36,7 +36,7 @@ there is an invariant stable graph u = χ(s), with χ(0) = 0 and Lipschitz const
 **Theorem B — infinite simultaneous periodic coexistence.** Fix α = 9, m₀ = −8/7, m₁ = −5/7. There exists a tangency parameter β∗ satisfying
 
 ```math
-14.30635909996140<\beta_*<14.30635909996152.
+14.30635909996140\lt \beta_*\lt 14.30635909996152.
 ```
 
 For every ε > 0, there is a β∞ with |β∞ − β∗| < ε at which the Chua flow has infinitely many geometrically distinct asymptotically stable periodic orbits. In particular, some β∞ lies in the displayed interval. The assertion does not identify β∞ by a decimal expansion and does not assert infinite coexistence at β∗ itself.
@@ -69,8 +69,8 @@ The program uses the unrounded interval endpoints, not these presentation bounds
 Two independent capture sets terminate the propagation. Around p_c, a square of radius 0.01 in a fixed eigenvector coordinate system maps strictly into itself and has induced derivative norm below one. It contains the unique attracting fixed point, so every point in it converges to that cycle. Around the origin, a rational symmetric positive-definite matrix P satisfies
 
 ```math
-Q=-(A_0^TP+PA_0)>0,\qquad
-E_0=\{X:X^TPX<0.99/(P^{-1})_{11}\}.
+Q=-(A_0^TP+PA_0)\gt 0,\qquad
+E_0=\{X:X^TPX\lt 0.99/(P^{-1})_{11}\}.
 ```
 
 The ellipsoid lies strictly inside |x| < 1. There the system is exactly linear, and the positive definiteness of Q proves invariance and convergence to zero. Both matrix inequalities are checked by interval leading principal minors. The complete matrix and contraction bounds are included in the certificates.
@@ -80,9 +80,9 @@ The ellipsoid lies strictly inside |x| < 1. There the system is exactly linear, 
 Put a = inf Fᵤ, b = sup |Fₛ|, c = sup |Gᵤ| and d = sup |Gₛ| on the square. The certified inequalities are
 
 ```math
-a-b>1,\quad c+d<1,\quad
-\frac{b+Ld}{a-Lc}<L,\quad
-\frac1{a-Lc}<1,\quad cL+d<1.
+a-b\gt 1,\quad c+d\lt 1,\quad
+\frac{b+Ld}{a-Lc}\lt L,\quad
+\frac1{a-Lc}\lt 1,\quad cL+d\lt 1.
 ```
 
 Consider the complete space of graphs u = ψ(s) through zero with Lipschitz constant at most L. For each s, solve
