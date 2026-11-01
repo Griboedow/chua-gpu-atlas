@@ -1,0 +1,27 @@
+{
+  "parameters": 4096,
+  "seeds": [
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      3.0,
+      20.0
+    ],
+    [
+      5.0,
+      0.0,
+      -5.0
+    ],
+    [
+      0.0,
+      8.0,
+      40.0
+    ]
+  ],
+  "sampling": "Scrambled Sobol, seed 20261101, outer sector screen",
+  "scope": "Two stable outer equilibria and an unstable origin. Hiddenness still requires basin exclusion near the origin."
+}

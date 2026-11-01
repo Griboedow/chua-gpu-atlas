@@ -8,6 +8,8 @@ At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses th
 
 The repository contains the numerical data, continuation programs, interval certificates and a partial Lean formalization. Lean verifies a general stationary-zero existence argument, ten rational inequalities and three storage-algebra implications; it does not verify the complete Chua dynamical arguments.
 
+The [prediction and hidden-coexistence study](docs/chua-prediction-and-hidden-coexistence.md) extends these results: a calibrated model locates 48/48 held-out thin windows in two slope sections; seven impulse directions have certified local excitation thresholds; and a second certified tangency, combined with uniform equilibrium exclusion and the parameter theorem, gives **infinitely many simultaneous hidden attracting cycles** at some nearby individual parameters. The [complete hidden-coexistence argument](docs/chua-hidden-infinity-certificate.md) states the exact fixed slopes, interval bounds and verification limits. It does not identify a decimal parameter exhibiting infinite coexistence.
+
 [Study outline](docs/research-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
 An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
@@ -46,6 +48,10 @@ Figure 2. The 32 sampled families, highlighted individually with fixed camera an
 Peak counts and orbit silhouettes alone do not identify a family. The catalogue follows normalized periodic roots and their continuation ancestry. The [gallery](docs/chua-family-gallery.md) shows an orbit, complete signal and peak sequence for each original family; [two further portraits](docs/chua-layer-prediction.md) show the 75- and 85-peak motions. The [refined atlas](docs/chua-refined-atlas.md) documents the identity convention and numerical checks.
 
 ## Predicted and measured stability windows
+
+![Held-out slope-section forecasts and three resolved thin layer surfaces](docs/assets/chua-followup-sheets.png)
+
+The current cross-parameter test uses 48 held-out windows for the 65-, 75- and 85-peak families. The original model places 32 predicted midpoints inside the measured cores; transporting each family's calibrated central residual raises this to 48. The largest width error is 6.69%. The lower panels subtract the numerical organizing surface so the thin sheets can be distinguished. Nine solved folds per family support each displayed surface. The [report](docs/chua-prediction-and-hidden-coexistence.md#1-predicting-two-slope-sections) links forecasts published before the endpoint searches, measured roots and independent controls.
 
 A short unstable periodic orbit organizes the measured 15 → 25 → … sequence. Longer cycles spend additional returns near this saddle before making a global excursion. Its expansion factor predicts the rate at which window spacing and width decrease, while its period predicts the additional repetition time.
 
@@ -94,6 +100,14 @@ Outside that sector, a [certified saddle cycle](docs/chua-hidden-boundary.md#3-a
 ![A certified local basin separator and complete coverage of its exit strips](docs/assets/chua-basin-proof.png)
 
 Figure 8. The exact separating graph lies in the narrow central wedge. Every point on one side converges to the equilibrium; every point on the other side converges to the hidden periodic attractor. The [report](docs/chua-basin-and-coexistence.md) gives the local domain, interval coverage, diode-contact checks and the separate infinite-coexistence argument.
+
+## Excitation thresholds and infinite hidden coexistence
+
+![An impulse threshold and logarithmic delay near a hidden-cycle basin boundary](docs/assets/chua-followup-trigger.png)
+
+For initial states (0,A,0) at α = 8.4, β = 12, m₀ = −0.95 and m₁ = −0.05, the infimum excitation amplitude is near A = 0.340610116440. An invariant central segment and 662 adjoining interval enclosures exclude any smaller excitation along this ray. The saddle predicts 5.85255 additional time units near the boundary for each tenfold reduction in impulse distance; four measured slopes differ by at most 1.67%. Six other impulse directions also have certified local crossings. The [threshold study](docs/chua-prediction-and-hidden-coexistence.md#2-excitation-of-a-hidden-attracting-cycle) gives the brackets and scope.
+
+At different fixed slopes, a [second homoclinic certificate](docs/chua-hidden-infinity-certificate.md) encloses β* near 29.51661848408219. Its 72-flight connection passes at 140 and 160 working digits. Throughout a surrounding β interval, complete neighborhoods of all three equilibria are excluded from every periodic-attractor basin. The localized parameter theorem therefore gives infinitely many simultaneous **hidden** attracting cycles at some nearby individual β values. This conclusion concerns the ideal model; the exact value β∞, a complete Lean verification and historical priority are not established.
 
 ## Model
 

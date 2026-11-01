@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "angle": -1.2,
+      "side": -1,
+      "method": "DOP853",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 6.59252420640489e-18,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": -1.2,
+      "side": -1,
+      "method": "Radau",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 6.5925048187270556e-18,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": -1.2,
+      "side": 1,
+      "method": "DOP853",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 21.573265158598,
+      "last_section_cycle_distance": 1.940399307458537e-08
+    },
+    {
+      "angle": -1.2,
+      "side": 1,
+      "method": "Radau",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 21.57304137725074,
+      "last_section_cycle_distance": 5.297611346243476e-11
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "method": "DOP853",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 1.0731958149000422e-17,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "method": "Radau",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 1.0732007139382614e-17,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "method": "DOP853",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 21.264470727846284,
+      "last_section_cycle_distance": 2.312897644663808e-08
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "method": "Radau",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 21.264281184313425,
+      "last_section_cycle_distance": 3.923083412475091e-11
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "method": "DOP853",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 1.43447881839858e-17,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "method": "Radau",
+      "label": "origin",
+      "duration": 700,
+      "final_norm": 1.4344825223572178e-17,
+      "last_section_cycle_distance": 24.501763570122527
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "method": "DOP853",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 11.282910664530968,
+      "last_section_cycle_distance": 1.281862233604498e-09
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "method": "Radau",
+      "label": "cycle",
+      "duration": 700,
+      "final_norm": 11.278292232750795,
+      "last_section_cycle_distance": 4.7171969522319265e-11
+    }
+  ],
+  "scope": "Separate full-field ODE controls; the continuum and uniqueness claims come from the interval certificate."
+}

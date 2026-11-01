@@ -30,7 +30,7 @@ def saddle_center(f, beta):
     return p
 
 
-def enclose_saddle(f, center, beta, radius):
+def enclose_saddle(f, center, beta, radius, inflation_floor="1e-60"):
     box = col([arb(x, arb(radius)) for x in center.entries()])
     value0, J0, _, _ = f.evaluate(list(center.entries()), beta.mid())
     C = midpoint((submatrix(J0) - eye(2)).inv())
@@ -55,7 +55,7 @@ def enclose_saddle(f, center, beta, radius):
         box = col(
             [
                 box[i, 0].intersection(
-                    arb(K[i, 0].mid(), K[i, 0].rad() * arb("1.01") + arb("1e-60"))
+                    arb(K[i, 0].mid(), K[i, 0].rad() * arb("1.01") + arb(inflation_floor))
                 )
                 for i in range(2)
             ]

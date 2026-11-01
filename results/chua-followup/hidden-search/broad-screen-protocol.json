@@ -1,0 +1,27 @@
+{
+  "parameters": 16384,
+  "seeds": [
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      3.0,
+      20.0
+    ],
+    [
+      5.0,
+      0.0,
+      -5.0
+    ],
+    [
+      0.0,
+      8.0,
+      40.0
+    ]
+  ],
+  "sampling": "Scrambled Sobol, seed 20261101, broad sector screen",
+  "scope": "Stable unique equilibrium is checked at every sample. Four-window positive exponents select candidates only."
+}

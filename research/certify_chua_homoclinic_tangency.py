@@ -24,38 +24,51 @@ def all_bound(matrix, bound):
     return all(abs(x) < bound for x in matrix.entries())
 
 
-def certify(digits=100, beta_shift="0"):
+def certify(digits=100, beta_shift="0", configuration=None):
     started = time.monotonic()
-    f = IntervalHalfMap(digits)
-    source = OUT / "connection-center.json"
+    config=configuration or {}
+    f = config['map_factory'](digits) if configuration else IntervalHalfMap(digits)
+    source = config.get('source',OUT / "connection-center.json")
     center = json.loads(source.read_text())
-    local_source = json.loads((OUT / "local-certificate.json").read_text())
+    local_source = center if configuration else json.loads((OUT / "local-certificate.json").read_text())
     a0 = arb(center["a"])
     b0 = arb(center["beta"]) + arb(beta_shift)
     v0 = arb(0)
     V = arb_mat([[arb(x) for x in row] for row in local_source["coordinates"]])
     W = V.inv()
-    ra = arb("1e-14")
-    rb = arb("5e-14")
-    rv = arb("8e-11")
-    delta = arb("1e-7")
+    ra = arb(config.get('ra',"1e-14"))
+    rb = arb(config.get('rb',"5e-14"))
+    rv = arb(config.get('rv',"8e-11"))
+    delta = arb(config.get('delta',"1e-7"))
     A0 = arb(a0, ra)
     B0 = arb(b0, rb)
     V0 = arb(0, rv)
-    pcenter = saddle_center(f, b0)
-    p0, pb0, pbb0, point_cert = enclose_saddle(f, pcenter, b0, "1e-55")
-    pB, pbB, pbbB, branch_cert = enclose_saddle(f, pcenter, B0, "1e-8")
+    pcenter = config['saddle_center'](f,b0,center['parent_guess']) if configuration else saddle_center(f, b0)
+    floor=config.get('inflation_floor','1e-60')
+    p0, pb0, pbb0, point_cert = enclose_saddle(f, pcenter, b0, config.get('point_radius',"1e-55"),inflation_floor=floor)
+    pB, pbB, pbbB, branch_cert = enclose_saddle(f, pcenter, B0, "1e-8",inflation_floor=floor)
     D, H, local = local_coordinates(f, pB, B0, V, W, pbB, delta)
+    if config.get('centered_local_derivative',False):
+        # Mean-value enclosure at each fixed beta. H bounds the complete
+        # segment from z=0 to z in the local square; pB encloses p(beta).
+        _, Jcenter, _, _ = f.evaluate(list(pB.entries()), B0)
+        Dcenter = W * arb_mat([[Jcenter[i,j] for j in range(2)] for i in range(2)]) * V
+        for i in range(2):
+            for j in range(2):
+                enclosure=Dcenter[i,j]+sum(H[i][j,k]*arb(0,delta) for k in range(2))
+                D[i,j]=D[i,j].intersection(enclosure)
+        local['centered_derivative']=[[bounds(D[i,j]) for j in range(2)] for i in range(2)]
     # Exact decimal guard constants; every inequality is checked in Arb.
-    a = arb("1.6469")
-    b = arb(".00035")
-    c = arb(".00024")
-    d = arb(".00032")
-    M = arb(1500)
-    P = arb(".000041")
-    L = arb(".001")
-    K = arb(2000)
-    Gamma = arb(".0001")
+    guards=config.get('guards',{})
+    a = arb(guards.get('a',"1.6469"))
+    b = arb(guards.get('b',".00035"))
+    c = arb(guards.get('c',".00024"))
+    d = arb(guards.get('d',".00032"))
+    M = arb(guards.get('M','1500'))
+    P = arb(guards.get('P',".000041"))
+    L = arb(guards.get('L',".001"))
+    K = arb(guards.get('K','2000'))
+    Gamma = arb(guards.get('Gamma',".0001"))
     local_gates = dict(
         expansion=D[0, 0] < -a,
         cross_u=abs(D[0, 1]) < b,
@@ -91,7 +104,7 @@ def certify(digits=100, beta_shift="0"):
         stable_parameter=graph_bounds["stable_parameter"] < Gamma,
     )
     if not all(local_gates.values()) or not all(graph_gates.values()):
-        raise ValueError("Local invariant-graph certificate failed")
+        raise ValueError("Local invariant-graph certificate failed: "+str((local_gates,graph_gates,local)))
     g0, J0, H0, refs = connect(
         f, a0, v0, b0, b0, p0, pb0, pb0, pbb0, V, W, center["iterations"]
     )
@@ -158,21 +171,23 @@ def certify(digits=100, beta_shift="0"):
     root = (tr * tr - 4 * det).sqrt()
     mu = (tr - root) / 2
     nu = (tr + root) / 2
+    parameter_sign=arb(config.get('parameter_sign','1'))
+    curvature_sign=arb(config.get('curvature_sign','1'))
     gates = dict(
         local=all(local_gates.values()),
         graphs=all(graph_gates.values()),
         initial_on_graph_box=L * A0.abs_upper() < rv,
         initial_inside_local_box=A0.abs_upper() < delta,
         final_inside_stable_graph_domain=g[1, 0].abs_upper() < delta,
-        negative_lower_parameter=face_values["beta_lower"] < 0,
-        positive_upper_parameter=face_values["beta_upper"] > 0,
-        negative_left_derivative=face_values["a_lower"] < 0,
-        positive_right_derivative=face_values["a_upper"] > 0,
-        quadratic=Gaa > 0,
-        transverse_parameter=Gb > 0,
+        negative_lower_parameter=parameter_sign*face_values["beta_lower"] < 0,
+        positive_upper_parameter=parameter_sign*face_values["beta_upper"] > 0,
+        negative_left_derivative=curvature_sign*face_values["a_lower"] < 0,
+        positive_right_derivative=curvature_sign*face_values["a_upper"] > 0,
+        quadratic=curvature_sign*Gaa > 0,
+        transverse_parameter=parameter_sign*Gb > 0,
         nontrivial_excursion=bool(departure),
         saddle_unstable=mu < -1,
-        saddle_stable=nu > 0 and nu < 1,
+        saddle_stable=(abs(nu)<1 and not nu.contains(0)) if configuration else (nu > 0 and nu < 1),
         dissipative=abs(det) < 1,
     )
     result = dict(
@@ -196,7 +211,7 @@ def certify(digits=100, beta_shift="0"):
         local_map=local,
         local_gates=local_gates,
         graph_constants=dict(
-            domain="1e-7", slope=".001", curvature="2000", parameter_derivative=".0001"
+            domain=str(delta), slope=str(L), curvature=str(K), parameter_derivative=str(Gamma)
         ),
         graph_transform_bounds={k: bounds(v) for k, v in graph_bounds.items()},
         graph_gates=graph_gates,
@@ -225,6 +240,14 @@ def certify(digits=100, beta_shift="0"):
             else "At least one sufficient inequality failed; no tangency claim."
         ),
     )
+    if configuration:
+        result['moving_frame']=getattr(f,'moving_frame',False)
+        result['centered_local_derivative']=bool(config.get('centered_local_derivative',False))
+        result['claim']='The inequalities certify a quadratic homoclinic tangency of the configured return map, transverse in beta, subject to the documented graph-transform and event-map implementation.' if all(gates.values()) else 'At least one sufficient inequality failed; no tangency claim.'
+        result['map_description']=config.get('map_description','Configured transverse return')
+        result['sign_conventions']=dict(parameter=str(parameter_sign),curvature=str(curvature_sign),
+            note='Face gates use the displayed orientation signs. Recorded face bounds and derivatives retain their raw coordinate signs.')
+        result['parameters']=center.get('parameters')
     return result
 
 

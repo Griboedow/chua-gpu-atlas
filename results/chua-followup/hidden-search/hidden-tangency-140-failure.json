@@ -1,0 +1,26 @@
+{
+  "error": "Return 23/36, state [[0.2884 +/- 6.44e-5]]\n[[1.9824 +/- 7.35e-5]]: Itinerary interval unresolved: region 0, time [0.458 +/- 5.76e-4], x [+/- 1.10]",
+  "configuration": {
+    "point_radius": "1e-100",
+    "inflation_floor": "1e-115",
+    "ra": "1e-15",
+    "rb": "5e-12",
+    "rv": "8e-13",
+    "centered_local_derivative": true,
+    "moving_frame": false,
+    "guards": {
+      "a": "1.7",
+      "b": ".000012",
+      "c": ".000012",
+      "d": ".000223",
+      "M": "60",
+      "P": ".000001",
+      "L": ".00001",
+      "K": "100",
+      "Gamma": ".000002"
+    },
+    "parameter_sign": "1",
+    "curvature_sign": "1",
+    "map_description": "Ordinary positive-lobe first return to x=1 with positive x velocity; two flights (outer, central). Squaring gives positive saddle multipliers."
+  }
+}

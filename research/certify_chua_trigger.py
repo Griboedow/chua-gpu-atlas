@@ -2,6 +2,7 @@
 import argparse
 import json
 import time
+from decimal import Decimal
 from flint import arb,arb_mat,ctx
 from chua_research_followup import ROOT,OUT,dump
 from certify_chua_basin_separator import (refine_root,local_block,DynamicReturn,
@@ -81,7 +82,7 @@ def central_segment(digits,amplitude='.299',duration='30'):
         argument='All smaller nonnegative amplitudes scale this central trajectory. At T they enter the invariant origin ellipsoid.')
 
 
-def below(digits):
+def below(digits,start_band=0,end_band=None):
     f,p,pbox,V,W,d,cert=context(digits)
     seeds=json.loads((ROOT/'results/chua-hidden-boundary/cycle-seeds.json').read_text())['full_records']
     fc,pc,cbox,Jc=refine_root(seeds[1],digits);target,_=capture_cycle(fc,pc,Jc)
@@ -99,6 +100,8 @@ def below(digits):
     edges=[arb(x) for x in edges if arb(x)<=stop]
     if edges[-1]!=stop:edges.append(stop)
     rows=[];failures=[]
+    chunk=end_band is not None or start_band!=0
+    output=DIR/(f'below-part-{digits}-{start_band}-{end_band}.json' if chunk else f'below-certificate-{digits}.json')
     def capture(a,b,depth=0):
         interval=a.union(b);centre=col([interval.mid(),0]);basis=eye(2);radii=[interval.rad(),arb(0)]
         count=0;cells=0;elapsed=0.;label=None
@@ -124,18 +127,26 @@ def below(digits):
             if depth>=12:raise
             mid=(a+b)/2;capture(a,mid,depth+1);capture(mid,b,depth+1)
     for k,(a,b) in enumerate(zip(edges[:-1],edges[1:])):
+        if k<start_band or (end_band is not None and k>=end_band):continue
         capture(a,b)
-        dump(DIR/f'below-certificate-{digits}.json',dict(passed=False,partial=True,central=central,records=rows,rejected_enclosures=failures))
+        dump(output,dict(passed=False,partial=True,central=central,records=rows,rejected_enclosures=failures,
+            first_band=start_band,last_completed_band=k,total_bands=len(edges)-1,working_digits=digits))
         print('below',k,'/',len(edges)-1,'leaves',len(rows),'A',float(b.mid()),flush=True)
+    if chunk:
+        data=json.loads(output.read_text());data['chunk_complete']=True;dump(output,data);return
     ordered=sorted(rows,key=lambda r:float(r['lower']))
-    assert arb(ordered[0]['lower'])==start and arb(ordered[-1]['upper'])==stop
-    assert all(arb(a['upper'])==arb(b['lower']) for a,b in zip(ordered[:-1],ordered[1:]))
+    # These are serialized labels of shared endpoints. Arb equality would test
+    # equality of uncertain balls, not continuity of the subdivision tree.
+    assert Decimal(ordered[0]['lower'])==Decimal(start.mid().str(80,radius=False))
+    assert Decimal(ordered[-1]['upper'])==Decimal(stop.mid().str(80,radius=False))
+    assert all(Decimal(a['upper'])==Decimal(b['lower']) for a,b in zip(ordered[:-1],ordered[1:]))
     dump(DIR/f'below-certificate-{digits}.json',dict(passed=True,partial=False,working_digits=digits,
         central=central,records=ordered,rejected_enclosures=failures,
+        coverage=dict(adjoining_intervals=len(ordered),first=ordered[0]['lower'],last=ordered[-1]['upper']),
         threshold_bracket=row['bracket'],scope='Every amplitude from zero to the lower bracket endpoint converges to the origin; the upper endpoint converges to the hidden cycle by the local certificate.'))
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['local','below']);ap.add_argument('--digits',type=int,default=80);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('phase',choices=['local','below']);ap.add_argument('--digits',type=int,default=80);ap.add_argument('--start-band',type=int,default=0);ap.add_argument('--end-band',type=int);a=ap.parse_args()
     if a.phase=='local':local(a.digits)
-    else:below(a.digits)
+    else:below(a.digits,a.start_band,a.end_band)

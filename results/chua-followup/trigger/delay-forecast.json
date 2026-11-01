@@ -1,0 +1,10 @@
+{
+  "unstable_half_multiplier": 1.830852121058724,
+  "saddle_half_period": 1.5371905307324059,
+  "predicted_time_per_log_distance": 2.5417287645214617,
+  "predicted_time_per_decimal_digit": 5.852546763621292,
+  "neighborhood_unstable_radius": 0.002,
+  "neighborhood_stable_radius": 0.002,
+  "formula": "t_local = -T_half/log(abs(lambda_half))*log(abs(A-Astar)) + O(1)",
+  "scope": "Asymptotic local residence time, not the full capture time."
+}

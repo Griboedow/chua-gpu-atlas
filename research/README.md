@@ -2,6 +2,10 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+## Cross-parameter prediction, impulses and hidden coexistence
+
+`predict_chua_slope_sheets.py` separates calibration, frozen forecasts and endpoint searches. `study_chua_trigger.py` and `certify_chua_trigger.py` compute impulse crossings and verify their relation to the exact basin separator. `chua_interval_lobe.py` provides the second return geometry; `certify_chua_hidden_tangency.py` and `certify_chua_hidden_neighborhoods.py` verify the hypotheses for infinite hidden coexistence. `check_chua_followup.py` and `check_chua_hidden_tangency.py` use separate numerical implementations. The shared composition supports rational moving frames to reduce interval wrapping. [Reports and exact reproduction commands](../results/chua-followup/README.md).
+
 ## Local basin and coexistence results
 
 `certify_chua_basin_separator.py` covers both saddle exit strips, with fixed-time flow enclosures at diode contacts. `check_chua_basin_proof.py` checks event derivatives, a rejected root and independent flow integrations. `audit_chua_local_results.py` checks coverage and the finite premises of both theorem arguments; `plot_chua_local_results.py` draws the figures. [Report](../docs/chua-basin-and-coexistence.md) · [Reproduction](../results/chua-basin-proof/README.md).

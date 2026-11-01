@@ -42,6 +42,8 @@ def bounds(x):
 class IntervalHalfMap:
     regions = (0, 1, 0, 1, 0)
     targets = (1, 1, 1, 1, 0)
+    section_x = 0
+    return_sign = -1
 
     def __init__(self, digits=70):
         ctx.dps = digits
@@ -134,7 +136,7 @@ class IntervalHalfMap:
             center_arcs = self.evaluate(
                 [x.mid() for x in point], beta.mid(), order, False, False
             )[3]
-        state = col([0, *point])
+        state = col([self.section_x, *point])
         D = [col([0, 1, 0]), col([0, 0, 1]), col([0, 0, 0])]
         DD = [[col([0, 0, 0]) for j in range(3)] for i in range(3)]
         times = self.schedule(point, beta)
@@ -229,15 +231,15 @@ class IntervalHalfMap:
             if verify_path:
                 arc["path_certificate"] = self.verify_arc(A, c, arc)
             arcs.append(arc)
-        value = -col([state[1, 0], state[2, 0]])
+        value = self.return_sign*col([state[1, 0], state[2, 0]])
         jac = (
-            arb_mat([[-D[j][i, 0] for j in range(3)] for i in [1, 2]])
+            arb_mat([[self.return_sign*D[j][i, 0] for j in range(3)] for i in [1, 2]])
             if order
             else None
         )
         hess = (
             [
-                arb_mat([[-DD[j][k][i, 0] for k in range(3)] for j in range(3)])
+                arb_mat([[self.return_sign*DD[j][k][i, 0] for k in range(3)] for j in range(3)])
                 for i in [1, 2]
             ]
             if order > 1

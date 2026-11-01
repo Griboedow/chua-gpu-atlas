@@ -180,6 +180,8 @@ Each sink is a finite periodic first-return orbit with all its flights in the va
 
 There is **no finite upper bound on the number of simultaneous attracting periodic motions** in this ideal model, even on the stated fixed-slope, fixed-α slice. This closes the existence question that was conditional in the earlier coexistence audit. It does not determine the number at an arbitrary supplied decimal parameter, classify hiddenness of the infinitely many cycles, or give their basin volumes.
 
+A [subsequent study](chua-hidden-infinity-certificate.md) establishes infinite hidden periodic coexistence on a different parameter family by combining a second tangency certificate with uniform equilibrium exclusion. The hiddenness statement does not transfer automatically to the classical slice considered here.
+
 The 32 sampled sheets and 34 catalogue identities remain finite computational objects. Infinite coexistence does not prove that every motion belongs to a different globally disconnected continuation surface. Counting connected family sheets is a different question from counting simultaneous periodic attractors.
 
 There is also a direct sampling consequence. In a bounded section neighborhood Ω containing the localized sinks, their basin sections Bᵢ are disjoint open sets of positive area. Hence ∑ᵢ area(Bᵢ) ≤ area(Ω). For every a > 0, at most area(Ω)/a of them can have area at least a. Infinitely many coexisting cycles therefore entail arbitrarily small basin sections in this fixed observation domain. This is a measure argument, not a measured basin-size distribution; it explains why refining parameter resolution alone cannot make a finite initial-state survey exhaustive.

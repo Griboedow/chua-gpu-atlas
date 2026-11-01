@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "id": "beta_00_65",
+      "parameter_difference": "1.499722176158822e-39",
+      "refined_residual": "2.2090709979e-58",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 9.439582449033423e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 3.4781566515817985e-11,
+        "multiplier_error": 3.967504164092972e-07,
+        "dominant": 0.2500002967812699
+      },
+      "displaced_parameter_residual": "0.2244700208317385",
+      "core_sha256": "1476246fb3d55c35751493bf9a7b03d670403785a016e26d8102d85b383ab6f0",
+      "passed": true
+    },
+    {
+      "id": "beta_00_75",
+      "parameter_difference": "4.283283564054809e-32",
+      "refined_residual": "8.01369512353e-56",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 1.957403128471924e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 3.2913805014800346e-10,
+        "multiplier_error": 4.86554942558115e-07,
+        "dominant": 0.24999992906774296
+      },
+      "displaced_parameter_residual": "0.2266230724651302",
+      "core_sha256": "a88b6d408a461c347f8de1c13d87ec05486a9776be6c007a7254431bc0b99abe",
+      "passed": true
+    },
+    {
+      "id": "beta_00_85",
+      "parameter_difference": "5.462042800838732e-35",
+      "refined_residual": "2.29206396685e-57",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 7.66036123422964e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 7.846009397738385e-10,
+        "multiplier_error": 5.589995448199159e-05,
+        "dominant": 0.250055317690856
+      },
+      "displaced_parameter_residual": "0.2275223171624277",
+      "core_sha256": "42a77ec47c4c64efd543319206e6c60ec23286d7a82c48b0b519a8d808a27d08",
+      "passed": true
+    },
+    {
+      "id": "beta_22_65",
+      "parameter_difference": "4.984587900064926e-39",
+      "refined_residual": "1.65498902826e-58",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 3.612599108748782e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 4.8513915107406547e-11,
+        "multiplier_error": 2.2076027239581464e-07,
+        "dominant": 0.2500002582885263
+      },
+      "displaced_parameter_residual": "0.2235370310047196",
+      "core_sha256": "eb145bb889dbf23fac9b169e26ba20c567c6614695bda34a3dcf1684ce8245bc",
+      "passed": true
+    },
+    {
+      "id": "beta_22_75",
+      "parameter_difference": "4.259476955909176e-32",
+      "refined_residual": "8.3253309648e-56",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 3.907274503944791e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 5.767130106804075e-10,
+        "multiplier_error": 2.0875443280304884e-05,
+        "dominant": 0.250019779411507
+      },
+      "displaced_parameter_residual": "0.2257121428322137",
+      "core_sha256": "6d36bef4df670e31d7da337126e14d50c3f4c6c797a1629368a6843d302ac638",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_65",
+      "parameter_difference": "2.431265818052058e-40",
+      "refined_residual": "2.23701279347e-58",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 1.7969181698163084e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 5.238143252483951e-11,
+        "multiplier_error": 1.5685384769370536e-06,
+        "dominant": 0.250001588768368
+      },
+      "displaced_parameter_residual": "0.2297208648825909",
+      "core_sha256": "2ce84677ef8808f1aa2d550954da1c9e4f27d8284c6b4c5a09588161375533f8",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_75",
+      "parameter_difference": "2.031800965009241e-32",
+      "refined_residual": "8.24622086852e-56",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 8.016454167147913e-11,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 6.329520241266096e-11,
+        "multiplier_error": 2.073221630261024e-06,
+        "dominant": 0.2500022999923621
+      },
+      "displaced_parameter_residual": "0.2298601756373232",
+      "core_sha256": "9f33857e3418f6cd9e509d8a0b061f4625244017668777fee087ef45772e4ca9",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_65",
+      "parameter_difference": "3.152495022908322e-40",
+      "refined_residual": "4.13838459111e-59",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 65,
+        "extrema_region_violation": 1.2631717893896166e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 1.089403012244361e-10,
+        "multiplier_error": 1.0348422656569767e-06,
+        "dominant": 0.25000116464286526
+      },
+      "displaced_parameter_residual": "0.2289028234828213",
+      "core_sha256": "c1729cec9471ba0a7d735427ee03a5f8758a3b23e22f2af252474eff12bf62a7",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_75",
+      "parameter_difference": "2.027458665010338e-32",
+      "refined_residual": "8.23229278847e-56",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 75,
+        "extrema_region_violation": 2.45526932118878e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 1.5604545433589578e-10,
+        "multiplier_error": 3.700097837455729e-06,
+        "dominant": 0.2500043866649453
+      },
+      "displaced_parameter_residual": "0.2290478584511656",
+      "core_sha256": "66ae144fcd2c7a0bacdbdcd9e6a43e37b8a498a0765fb796d271c7cf5707e51f",
+      "passed": true
+    },
+    {
+      "id": "beta_22_85",
+      "parameter_difference": "5.453612911087754e-35",
+      "refined_residual": "1.358522256e-57",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 2.419469069536717e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 7.086087272512032e-10,
+        "multiplier_error": 3.532092183744506e-05,
+        "dominant": 0.25003348775131506
+      },
+      "displaced_parameter_residual": "0.226620393600806",
+      "core_sha256": "0fc89dad5c0ae21017c4262d5f11e747abb12bc1f8d045cfd5f20e6da40b28d3",
+      "passed": true
+    },
+    {
+      "id": "alpha_00_85",
+      "parameter_difference": "2.584845238740608e-35",
+      "refined_residual": "3.01248547272e-58",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 1.3513101748685585e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 4.704570066849101e-11,
+        "multiplier_error": 7.575193016667869e-06,
+        "dominant": 0.2500065365056714
+      },
+      "displaced_parameter_residual": "0.2299481000733793",
+      "core_sha256": "77162fbe645ec0e564e8eb0e107e2972fe047b0471566c02ec4662a22edcabb0",
+      "passed": true
+    },
+    {
+      "id": "alpha_22_85",
+      "parameter_difference": "2.589263364867217e-35",
+      "refined_residual": "2.13573916087e-57",
+      "working_digits": 65,
+      "method": "mpmath matrix exponential, independent of spectral flight evaluation",
+      "geometry": {
+        "full_cycle_peaks": 85,
+        "extrema_region_violation": 6.702691734972177e-10,
+        "derivative_bracket_max_step": 0.025
+      },
+      "ode": {
+        "method": "DOP853",
+        "success": true,
+        "closure": 1.5421941501614356e-11,
+        "multiplier_error": 9.828503151981804e-06,
+        "dominant": 0.2500047375615362
+      },
+      "displaced_parameter_residual": "0.2291381159220079",
+      "core_sha256": "192f7adca107305ac40775e2345d90bc4889e98123fbd030efd33a63e63dafe2",
+      "passed": true
+    }
+  ],
+  "scope": "Independent numerical controls, not interval certificates for these new sheets."
+}

@@ -1,0 +1,215 @@
+{
+  "records": [
+    {
+      "angle": -1.2,
+      "direction": [
+        0.3623577544766736,
+        -0.9320390859672263
+      ],
+      "bracket": [
+        0.530964653034811,
+        0.5309646730348111
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.5309646630347926,
+          "residual": -1.3656834962183987e-16
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.5309646630348084,
+          "residual": 2.5308654981593304e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.530964663034811,
+          "residual": -2.428833445607104e-15
+        }
+      ]
+    },
+    {
+      "angle": -0.8,
+      "direction": [
+        0.6967067093471654,
+        -0.7173560908995228
+      ],
+      "bracket": [
+        0.4144196309781278,
+        0.4144196509781278
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.4144196409781139,
+          "residual": 8.922894072556597e-16
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.4144196409781229,
+          "residual": -3.743958239668362e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.4144196409781278,
+          "residual": 3.7354508857668353e-17
+        }
+      ]
+    },
+    {
+      "angle": -0.4,
+      "direction": [
+        0.9210609940028851,
+        -0.3894183423086505
+      ],
+      "bracket": [
+        0.35431850704286166,
+        0.35431852704286165
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.3543185170428502,
+          "residual": -1.4729700570607713e-15
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.354318517042858,
+          "residual": -3.4156655297490245e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.35431851704286166,
+          "residual": -2.1188473218100855e-14
+        }
+      ]
+    },
+    {
+      "angle": 0.0,
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "bracket": [
+        0.34061010644046297,
+        0.34061012644046296
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.3406101164404521,
+          "residual": 1.388570878803064e-15
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.3406101164404595,
+          "residual": -2.3990642173228054e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.34061011644046296,
+          "residual": 1.7406577824893335e-14
+        }
+      ]
+    },
+    {
+      "angle": 0.4,
+      "direction": [
+        0.9210609940028851,
+        0.3894183423086505
+      ],
+      "bracket": [
+        0.3687785384168408,
+        0.36877855841684076
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.3687785484168291,
+          "residual": -2.518603387692221e-15
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.36877854841683727,
+          "residual": -2.9352780539893526e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.36877854841684077,
+          "residual": -3.463076647210095e-15
+        }
+      ]
+    },
+    {
+      "angle": 0.8,
+      "direction": [
+        0.6967067093471654,
+        0.7173560908995228
+      ],
+      "bracket": [
+        0.4207519816731032,
+        0.42075200167310317
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.4207519916730962,
+          "residual": 1.6819950639951729e-16
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.42075199167310146,
+          "residual": -5.550240304844909e-15
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.4207519916731032,
+          "residual": 7.693435725766226e-15
+        }
+      ]
+    },
+    {
+      "angle": 1.2,
+      "direction": [
+        0.3623577544766736,
+        0.9320390859672263
+      ],
+      "bracket": [
+        0.5305689661283968,
+        0.5305689861283969
+      ],
+      "left": "origin",
+      "right": "cycle",
+      "approximants": [
+        {
+          "returns": 4,
+          "amplitude": 0.5305689761283869,
+          "residual": -3.60169684426868e-15
+        },
+        {
+          "returns": 6,
+          "amplitude": 0.5305689761283932,
+          "residual": -5.2699605356152126e-14
+        },
+        {
+          "returns": 8,
+          "amplitude": 0.5305689761283968,
+          "residual": 6.7407101440229435e-15
+        }
+      ]
+    }
+  ],
+  "scope": "Numerical basin brackets and finite-iterate stable-manifold approximants."
+}

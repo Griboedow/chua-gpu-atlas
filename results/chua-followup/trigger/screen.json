@@ -1,0 +1,4043 @@
+{
+  "parameters": {
+    "alpha": 8.4,
+    "beta": 12.0,
+    "m0": -0.95,
+    "m1": -0.05
+  },
+  "records": [
+    {
+      "angle": -1.2,
+      "direction": [
+        0.3623577544766736,
+        -0.9320390859672263
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 1,
+          "time": 0.5818013540946118,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 2,
+          "time": 2.460281068878882,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 4,
+          "time": 5.633294961125989,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "origin",
+          "returns": 5,
+          "time": 7.230921915865899,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "origin",
+          "returns": 7,
+          "time": 10.41986166467644,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "origin",
+          "returns": 9,
+          "time": 13.544690784293262,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 385,
+          "time": 378.68009440722255,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 382,
+          "time": 374.58515312308276,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 381,
+          "time": 373.12659256411814,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 381,
+          "time": 372.8200828397297,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 380,
+          "time": 371.6259302204768,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 380,
+          "time": 371.45307062603683,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.34017421192596,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.2219988057567,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.120535067829,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.031917061017,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.98132093835125,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.9110995533806,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.8476702784097,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.78993352408173,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.7370310048512,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.7161372311024,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.67098769364185,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.6289882138785,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.58976522069116,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.55300597417255,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.5184461880286,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.51371742105357,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.48291268649336,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.45372153901326,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.42599846690433,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.39961612928147,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.37446249696745,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.3504385303114,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.35531306633743,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.3332940959773,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.312168192355,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.2918722673002,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.2723494436612,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.2535482803906,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.23542211367965,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.2457852825595,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.228885491564,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.2125441252795,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.1967287336602,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.1812867516871,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.16452685361537,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.1475829053605,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.13084624690407,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.14229580238737,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.12626870216764,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.11064213774165,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.0954212620545,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.0806028829839,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.0661790620964,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.05213914860826,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.0384709925979,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.05301848370107,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.04005487136845,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.02742379959574,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.01511234701405,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.00310793810104,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 372,
+          "time": 361.9913984182554,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 372,
+          "time": 361.979972096801,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 372,
+          "time": 361.9688177682427,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.9857815073062,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.9751395112428,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.96473882090345,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.95457015207575,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.9446246667459,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.9348939542613,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.92537001170547,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 371,
+          "time": 360.9160452240624,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 370,
+          "time": 359.93476913310917,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 370,
+          "time": 359.92582126401476,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 370,
+          "time": 359.917051837983,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": -0.8,
+      "direction": [
+        0.6967067093471654,
+        -0.7173560908995228
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 1,
+          "time": 0.9076426159698464,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 3,
+          "time": 4.2478745575956385,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 5,
+          "time": 7.446382096891222,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 7,
+          "time": 10.642716878858,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "origin",
+          "returns": 10,
+          "time": 15.34349445456829,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "cycle",
+          "returns": 383,
+          "time": 376.12230347629736,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "cycle",
+          "returns": 381,
+          "time": 373.3882683115719,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 381,
+          "time": 372.98598624704323,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 380,
+          "time": 371.7464351528363,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.57595737398526,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.4195528540954,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.29123406049905,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.210843268351,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.1078563479738,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 378,
+          "time": 368.98582220371463,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.9055590076455,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.8114524145111,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.7289964195627,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.6839002036123,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.6187409549514,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.56004369258255,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.5346240017766,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.48594577147486,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.44120804751986,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.39987843414065,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.38937780260096,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.3536318383788,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.320195882587,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.2888157795532,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.2871322841862,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.259246818322,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.2328566600608,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.20782341320574,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.1840263060377,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.18921617233065,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.1675860196104,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.14690989824965,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.1271142140231,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.10813324532813,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.11776487106783,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.10024252631376,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.0833751822072,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.0671195545543,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.05143634897814,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.0641465840944,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.04950403704106,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.0353356288166,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.02161397036116,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.008313890043,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0232689942109,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0107443132812,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 369,
+          "time": 358.9985768571621,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 358.98674830631575,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 369,
+          "time": 358.97524166323944,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 369,
+          "time": 358.9640411309487,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.9809887934977,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.9703573654057,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.95999083687644,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.94987724253707,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.94000538074584,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.95822153988615,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.94880228801946,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.9395951534234,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.93059142458236,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.9217828970995,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.94101862446354,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9325777294871,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9243101041756,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9162092270395,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9082689254599,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.928340140302,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9207037498206,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9132112806678,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9058577353119,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.898638363486,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.91940543502153,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9124410711973,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": -0.4,
+      "direction": [
+        0.9210609940028851,
+        -0.3894183423086505
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 1,
+          "time": 1.0944703392303488,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 2,
+          "time": 2.798280160392091,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 5,
+          "time": 7.581431249876182,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 7,
+          "time": 10.777753398383496,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 11,
+          "time": 16.999840138045005,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "cycle",
+          "returns": 382,
+          "time": 374.9033102563008,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "cycle",
+          "returns": 381,
+          "time": 373.27478392261605,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "cycle",
+          "returns": 380,
+          "time": 371.94142846978934,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.61114294255344,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.35629906537963,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.1504693268398,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.0192417312569,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.89086480665793,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.8118559118542,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.72080609789504,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.6418227751938,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.60017330894624,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.5382861684733,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.4826429974005,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.46005630382047,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.4140021796148,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.3716969440108,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.33262628728926,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.324228247492,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.2904441311269,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.2588432150305,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.2570404505967,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.2291170767857,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.20275443145044,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.17780142117147,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.18198387243524,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.1594740205525,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.13802854803504,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.11755925147315,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1258448405374,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1071023221246,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.0891265212319,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.07186191847444,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0831153815731,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.06712829833515,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0517167033448,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0368436091298,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.02247535394133,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.0364380114521,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.02298990936777,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.0099620772313,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 368,
+          "time": 357.99733084557977,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.01293120766894,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.0010294765412,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.9894638504828,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 367,
+          "time": 356.9782171126923,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.99513007911634,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9844743296174,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.97409283735925,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 366,
+          "time": 355.9639727238944,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.981958755129,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.97232611446316,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9629210688387,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9537337559953,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9726117087036,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9638326528089,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9552451952948,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9468416310294,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.9664714842999,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.95841432223335,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.95052045660753,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.9427837628359,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 362,
+          "time": 351.96305523248725,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 362,
+          "time": 351.9556157965104,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 362,
+          "time": 351.9483170359378,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.96901079733243,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.9619788098102,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.9550734000715,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.94829032366954,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.969482328422,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.9629319876394,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.95649241967044,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.9501601230611,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": 0.0,
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 1,
+          "time": 1.2344711858453705,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 3,
+          "time": 4.491116789007181,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 5,
+          "time": 7.6884541282399255,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 7,
+          "time": 10.88476709761309,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "cycle",
+          "returns": 385,
+          "time": 379.3316631446245,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "cycle",
+          "returns": 382,
+          "time": 374.7316046970735,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "cycle",
+          "returns": 380,
+          "time": 371.9595587986054,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.5605565654645,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.31502823573425,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.1172705721646,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.991953409878,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.86798511509676,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.79238055032454,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.7040451756227,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.6551421688625,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.58749827349783,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.5271998388659,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.5007894655175,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.4515530037496,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.4065690687884,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.39307818549923,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.35487105824024,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.31940026153256,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.2863322275554,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.2832455390826,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.25419237649277,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.2268306134485,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2288468164519,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2043807165814,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.18116187691794,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.159079306525,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.16589244204647,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.14580189103305,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1265884459406,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1081845172624,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1183865399602,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.10142684310523,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0851135620854,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.0694027936094,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.0821115867521,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.06749028924975,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.05336285099503,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.03969930204676,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.0543290119687,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.04151326006814,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.0290857268995,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.0170251307119,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.0331686210357,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.0217844630493,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.0107126266639,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.02779429507626,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.0173013876168,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.00707719161204,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 365,
+          "time": 354.9971091199651,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.0152422091739,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.00575189437967,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.9964846770032,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 364,
+          "time": 353.98743091353987,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 363,
+          "time": 353.0064383411224,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.99778487672063,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 363,
+          "time": 352.9893193063331,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.00889088121784,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.0007789176235,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 362,
+          "time": 351.9928334963193,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 362,
+          "time": 351.98504827986653,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 361,
+          "time": 351.00527406343963,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.99779159659545,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 361,
+          "time": 350.99045229259036,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.0111078426865,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.0040398320469,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.99710045385046,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 360,
+          "time": 349.99028533965134,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 359,
+          "time": 349.01144712204547,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 359,
+          "time": 349.0048682670455,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 359,
+          "time": 348.99840179317323,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 358,
+          "time": 348.01990089448896,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 358,
+          "time": 348.01364856432986,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 358,
+          "time": 348.0074983168376,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": 0.4,
+      "direction": [
+        0.9210609940028851,
+        0.3894183423086505
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 2,
+          "time": 3.0068666998471807,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 5,
+          "time": 7.796811208046292,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 7,
+          "time": 10.99311599543392,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 9,
+          "time": 14.153531160105244,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "cycle",
+          "returns": 382,
+          "time": 374.9075791462416,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "cycle",
+          "returns": 380,
+          "time": 372.0573674419938,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.6604280307069,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.41535347567674,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.21704381862776,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.0907523302608,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 367.9656543990414,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.88888632275484,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.79940958146943,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.7215558821839,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.6807326638438,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.6194587502885,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.564275832527,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.5420373967488,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.49624815979024,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.45414485139696,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.4152279809714,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.40694651977213,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.3732499561661,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.3417137681355,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.33995766067324,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3120665540088,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.28572466314216,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.26078316195674,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.26496967704776,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2424578825199,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2210056179227,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.20052561536727,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.2087973446635,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1900384330326,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1720442136906,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.1547595850269,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1659917592141,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.14998240874803,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1345478040143,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1196511531424,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.10525895682974,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.11919742374397,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.1057249937758,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.09267278966325,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.0800172192679,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.09559333988364,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.08366751744006,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.0720779937353,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.060807587585,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.0776971438906,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.067018265851,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.0566139452123,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.04647131808866,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.06443516154684,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.0547806672808,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.04535410808637,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.0361456255044,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.05500275436674,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.0462032211348,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.03759563216545,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.02917228067327,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 363,
+          "time": 353.0487826884255,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 363,
+          "time": 353.0407064193374,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 363,
+          "time": 353.0327937813613,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 363,
+          "time": 353.02503864560714,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.0452919989423,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.0378347673201,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.03051852650793,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 362,
+          "time": 352.0233383290764,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 361,
+          "time": 351.04414626415746,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 361,
+          "time": 351.03722428716213,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 361,
+          "time": 351.03042493641084,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.0516009539158,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.04503490720936,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.03857990883677,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 360,
+          "time": 350.0322324515848,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 359,
+          "time": 349.0538459755661,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": 0.8,
+      "direction": [
+        0.6967067093471654,
+        0.7173560908995228
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 3,
+          "time": 4.740587718597808,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 4,
+          "time": 6.338901312657186,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 6,
+          "time": 9.535175066920393,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "origin",
+          "returns": 8,
+          "time": 12.716661899539028,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "cycle",
+          "returns": 382,
+          "time": 375.16129027378844,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "cycle",
+          "returns": 380,
+          "time": 372.31693809540974,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.917661464116,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.64044771092705,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.4653605856181,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.30668385386696,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.2051625166236,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.0965426496437,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.0033541470725,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.94991229349216,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.8780330284703,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.81378376938545,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.78368548531006,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.73100226287704,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.68279200286213,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.6384192703211,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.62522765699265,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.58708356696974,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.55149598953847,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.518173928605,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.48687165138807,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.48523670408866,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.45737599502235,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.4309912471043,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.40594767641784,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.38212745666135,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3872838311849,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3656117848967,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3448869957797,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3250372129135,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.3059978260836,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.3155676356957,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.29798084222193,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2810470535567,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.2647235157743,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.24897137641136,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.2616120224657,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.24689953805677,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.2326610998601,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.21886953142484,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.2054998375569,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.22038577059936,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.20779248126206,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1955570780861,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.183661321826,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.172088279756,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.1608222065312,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.1777052267128,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.1670100858865,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.15658079733333,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.1464054119846,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 368,
+          "time": 358.1364727387722,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.1546290718047,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.1451509807874,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.1358859921962,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.1268253898264,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 367,
+          "time": 357.1179609621773,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.13714175361304,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.12864687618026,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.1203262097321,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.1121732195216,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 366,
+          "time": 356.1041817187807,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.1242026335103,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.1165168265828,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.1089758088358,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.1015745666396,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 365,
+          "time": 355.09430833344317,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.11502936267374,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.10801975921527,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.1011321971402,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.0943627533594,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 364,
+          "time": 354.08770768467735,
+          "trace": []
+        }
+      ]
+    },
+    {
+      "angle": 1.2,
+      "direction": [
+        0.3623577544766736,
+        0.9320390859672263
+      ],
+      "samples": [
+        {
+          "amplitude": 0.0,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.05,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.1,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.15000000000000002,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.2,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.25,
+          "label": "origin",
+          "returns": 0,
+          "time": 0.0,
+          "trace": []
+        },
+        {
+          "amplitude": 0.30000000000000004,
+          "label": "origin",
+          "returns": 1,
+          "time": 1.7908630345634307,
+          "trace": []
+        },
+        {
+          "amplitude": 0.35000000000000003,
+          "label": "origin",
+          "returns": 3,
+          "time": 4.969107441088278,
+          "trace": []
+        },
+        {
+          "amplitude": 0.4,
+          "label": "origin",
+          "returns": 4,
+          "time": 6.566853794041405,
+          "trace": []
+        },
+        {
+          "amplitude": 0.45,
+          "label": "origin",
+          "returns": 6,
+          "time": 9.763194553262567,
+          "trace": []
+        },
+        {
+          "amplitude": 0.5,
+          "label": "origin",
+          "returns": 8,
+          "time": 12.896761847745738,
+          "trace": []
+        },
+        {
+          "amplitude": 0.55,
+          "label": "cycle",
+          "returns": 383,
+          "time": 377.0044501105275,
+          "trace": []
+        },
+        {
+          "amplitude": 0.6000000000000001,
+          "label": "cycle",
+          "returns": 381,
+          "time": 373.89570094167584,
+          "trace": []
+        },
+        {
+          "amplitude": 0.65,
+          "label": "cycle",
+          "returns": 380,
+          "time": 372.43956981711153,
+          "trace": []
+        },
+        {
+          "amplitude": 0.7000000000000001,
+          "label": "cycle",
+          "returns": 380,
+          "time": 372.1341688114088,
+          "trace": []
+        },
+        {
+          "amplitude": 0.75,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.9407038602516,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8,
+          "label": "cycle",
+          "returns": 379,
+          "time": 370.76834264090274,
+          "trace": []
+        },
+        {
+          "amplitude": 0.8500000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.655842434589,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.5380013326516,
+          "trace": []
+        },
+        {
+          "amplitude": 0.9500000000000001,
+          "label": "cycle",
+          "returns": 378,
+          "time": 369.4368312105955,
+          "trace": []
+        },
+        {
+          "amplitude": 1.0,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.37633515831436,
+          "trace": []
+        },
+        {
+          "amplitude": 1.05,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.2981265075293,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.2281333706073,
+          "trace": []
+        },
+        {
+          "amplitude": 1.1500000000000001,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.16491963679977,
+          "trace": []
+        },
+        {
+          "amplitude": 1.2000000000000002,
+          "label": "cycle",
+          "returns": 377,
+          "time": 368.1073880260262,
+          "trace": []
+        },
+        {
+          "amplitude": 1.25,
+          "label": "cycle",
+          "returns": 376,
+          "time": 367.08253870179817,
+          "trace": []
+        },
+        {
+          "amplitude": 1.3,
+          "label": "cycle",
+          "returns": 376,
+          "time": 367.0339770336071,
+          "trace": []
+        },
+        {
+          "amplitude": 1.35,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.98900980221475,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4000000000000001,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.9471867531545,
+          "trace": []
+        },
+        {
+          "amplitude": 1.4500000000000002,
+          "label": "cycle",
+          "returns": 376,
+          "time": 366.9081348757796,
+          "trace": []
+        },
+        {
+          "amplitude": 1.5,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.8993986679145,
+          "trace": []
+        },
+        {
+          "amplitude": 1.55,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.8650006327473,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.83257263320235,
+          "trace": []
+        },
+        {
+          "amplitude": 1.6500000000000001,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.8019215161688,
+          "trace": []
+        },
+        {
+          "amplitude": 1.7000000000000002,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.7728802674676,
+          "trace": []
+        },
+        {
+          "amplitude": 1.75,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.7453035661469,
+          "trace": []
+        },
+        {
+          "amplitude": 1.8,
+          "label": "cycle",
+          "returns": 375,
+          "time": 365.7190642391253,
+          "trace": []
+        },
+        {
+          "amplitude": 1.85,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.72190719513776,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9000000000000001,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.69801995180626,
+          "trace": []
+        },
+        {
+          "amplitude": 1.9500000000000002,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.6751714681337,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.6532834238817,
+          "trace": []
+        },
+        {
+          "amplitude": 2.0500000000000003,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.6322857067346,
+          "trace": []
+        },
+        {
+          "amplitude": 2.1,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.6121153242429,
+          "trace": []
+        },
+        {
+          "amplitude": 2.15,
+          "label": "cycle",
+          "returns": 374,
+          "time": 364.59271548863705,
+          "trace": []
+        },
+        {
+          "amplitude": 2.2,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.60189163128825,
+          "trace": []
+        },
+        {
+          "amplitude": 2.25,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.58388359032773,
+          "trace": []
+        },
+        {
+          "amplitude": 2.3000000000000003,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.56650577949154,
+          "trace": []
+        },
+        {
+          "amplitude": 2.35,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.5497195512357,
+          "trace": []
+        },
+        {
+          "amplitude": 2.4000000000000004,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.5334895690437,
+          "trace": []
+        },
+        {
+          "amplitude": 2.45,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.5177834471284,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5,
+          "label": "cycle",
+          "returns": 373,
+          "time": 363.5025714373028,
+          "trace": []
+        },
+        {
+          "amplitude": 2.5500000000000003,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.51568294440125,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.5013791331116,
+          "trace": []
+        },
+        {
+          "amplitude": 2.6500000000000004,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.4874934491695,
+          "trace": []
+        },
+        {
+          "amplitude": 2.7,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.4740042803685,
+          "trace": []
+        },
+        {
+          "amplitude": 2.75,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.46089158166404,
+          "trace": []
+        },
+        {
+          "amplitude": 2.8000000000000003,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.44813673038453,
+          "trace": []
+        },
+        {
+          "amplitude": 2.85,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.43572239758123,
+          "trace": []
+        },
+        {
+          "amplitude": 2.9000000000000004,
+          "label": "cycle",
+          "returns": 372,
+          "time": 362.42363243343453,
+          "trace": []
+        },
+        {
+          "amplitude": 2.95,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.4397085534452,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.42822309270883,
+          "trace": []
+        },
+        {
+          "amplitude": 3.0500000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.41701965485856,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.40608588409947,
+          "trace": []
+        },
+        {
+          "amplitude": 3.1500000000000004,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.39541018712737,
+          "trace": []
+        },
+        {
+          "amplitude": 3.2,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.3849816730067,
+          "trace": []
+        },
+        {
+          "amplitude": 3.25,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.3747900987863,
+          "trace": []
+        },
+        {
+          "amplitude": 3.3000000000000003,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.364825820205,
+          "trace": []
+        },
+        {
+          "amplitude": 3.35,
+          "label": "cycle",
+          "returns": 371,
+          "time": 361.35507974694394,
+          "trace": []
+        },
+        {
+          "amplitude": 3.4000000000000004,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.3734000904798,
+          "trace": []
+        },
+        {
+          "amplitude": 3.45,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.3640651728025,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.35492412384286,
+          "trace": []
+        },
+        {
+          "amplitude": 3.5500000000000003,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.34596969640137,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.33719502637774,
+          "trace": []
+        },
+        {
+          "amplitude": 3.6500000000000004,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.3285936068281,
+          "trace": []
+        },
+        {
+          "amplitude": 3.7,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.3201592641506,
+          "trace": []
+        },
+        {
+          "amplitude": 3.75,
+          "label": "cycle",
+          "returns": 370,
+          "time": 360.3118861362007,
+          "trace": []
+        },
+        {
+          "amplitude": 3.8000000000000003,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.3316254406911,
+          "trace": []
+        },
+        {
+          "amplitude": 3.85,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.3236583024734,
+          "trace": []
+        },
+        {
+          "amplitude": 3.9000000000000004,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.3158364676012,
+          "trace": []
+        },
+        {
+          "amplitude": 3.95,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.30815513340707,
+          "trace": []
+        },
+        {
+          "amplitude": 4.0,
+          "label": "cycle",
+          "returns": 369,
+          "time": 359.300609722388,
+          "trace": []
+        }
+      ]
+    }
+  ],
+  "scope": "Finite ray samples; not exhaustive basin coverage."
+}

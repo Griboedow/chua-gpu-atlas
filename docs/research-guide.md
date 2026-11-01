@@ -8,6 +8,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
+| Predict slope layers, quantify excitation and prove hidden coexistence | 48 held-out windows; seven certified impulse crossings; a second tangency and uniform hiddenness imply infinite hidden coexistence | [Combined study](chua-prediction-and-hidden-coexistence.md), [hidden-infinity proof](chua-hidden-infinity-certificate.md) | [Forecasts, certificates and controls](../results/chua-followup/README.md) |
 | Identify the layers | 32 sampled family sheets; orbit ancestry, symmetry and behaviour | [Refined atlas](chua-refined-atlas.md) | [Atlas data](../results/chua-layer-atlas/) |
 | Compare their motions | One complete orbit, signal and peak sequence per reference | [Family gallery](chua-family-gallery.md) | [Portrait data](../results/chua-layer-atlas/) |
 | Predict thinner windows | Published forecasts compared with 75/85-peak computations; 34 reference identities | [Prediction study](chua-layer-prediction.md) | [Frozen forecasts and checks](../results/chua-layer-prediction/README.md) |
@@ -28,6 +29,8 @@ The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-f
 **17** was an early census on one transect. **32** is the subsequent catalogue with sampled three-dimensional sheets. **34** includes two later reference cycles predicted before discovery. These are operational counts under a periodic-root and ancestry convention.
 
 **Infinitely many** refers to attracting periodic windows with unbounded return periods near a certified parameter on the fixed classical transect. The localized parameter theorem also gives individual nearby parameters with infinitely many simultaneous periodic attractors. Neither result makes the finite mesh exhaustive or proves that every motion belongs to a globally disconnected family surface.
+
+The later hidden-region tangency supplies a separate fixed-α, fixed-slope family in which infinitely many simultaneous attracting cycles are all hidden. Its equilibrium-neighborhood certificate is uniform on an interval surrounding the tangency. The distinction between window count, simultaneous cycle count and connected family-sheet count remains necessary.
 
 A family can have multiple attracting descendants at the same parameters, particularly after symmetry breaking. A parameter projection can also merge distinct branches. Counts of families, individual attracting cycles, connected components and projected islands must therefore be kept separate.
 

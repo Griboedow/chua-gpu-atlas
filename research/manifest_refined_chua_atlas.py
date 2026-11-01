@@ -33,7 +33,11 @@ refine_chua_slope_atlases check_chua_slope_refinement study_chua_slope_grazing
 check_chua_slope_branches plot_chua_slope_refinement
 derive_chua_global_sector study_chua_hidden_boundary certify_chua_basin_saddle
 check_chua_hidden_boundary check_chua_storage_formal plot_chua_hidden_boundary
-certify_chua_basin_separator check_chua_basin_proof audit_chua_local_results plot_chua_local_results'''.split()
+certify_chua_basin_separator check_chua_basin_proof audit_chua_local_results plot_chua_local_results
+chua_research_followup predict_chua_slope_sheets study_chua_trigger certify_chua_trigger finalize_chua_trigger
+search_chua_hidden_tangencies check_chua_followup check_chua_hidden_candidates certify_chua_hidden_neighborhoods
+chua_lobe_map chua_interval_lobe study_chua_hidden_lobes locate_chua_hidden_connections refine_chua_hidden_connection
+certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup'''.split()
 
 
 def digest(path):
@@ -81,6 +85,9 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-slope-refinement').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-hidden-boundary').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-basin-proof').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-followup').rglob('*') if p.is_file())
+    paths.update((ROOT/'docs/assets').glob('chua-followup-*.png'))
+    paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md'])
     paths.update(ROOT/p for p in ['docs/chua-basin-and-coexistence.md',
         'docs/assets/chua-basin-proof.png','docs/assets/chua-coexistence-localization.png'])
     paths.add(ROOT/'docs/chua-hidden-boundary.md')

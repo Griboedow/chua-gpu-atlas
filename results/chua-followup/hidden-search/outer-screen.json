@@ -1,0 +1,213 @@
+{
+  "protocol": {
+    "parameters": 4096,
+    "seeds": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0,
+        20.0
+      ],
+      [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      [
+        0.0,
+        8.0,
+        40.0
+      ]
+    ],
+    "sampling": "Scrambled Sobol, seed 20261101, outer sector screen",
+    "scope": "Two stable outer equilibria and an unstable origin. Hiddenness still requires basin exclusion near the origin."
+  },
+  "settings": {
+    "dt": 0.005,
+    "transient": 400,
+    "duration": 1200,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0,
+        20.0
+      ],
+      [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      [
+        0.0,
+        8.0,
+        40.0
+      ]
+    ],
+    "initial_state_mode": "shared",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 5.99866910000128,
+    "gpu_seconds": 5.57429520000001,
+    "max_kernel_seconds": 0.0041687040000000005
+  },
+  "counts": {
+    "0": 1935,
+    "1": 9056,
+    "2": 5387,
+    "3": 0,
+    "4": 6,
+    "5": 0
+  },
+  "candidates": [
+    {
+      "parameter_index": 776,
+      "seed_index": 2,
+      "parameters": {
+        "alpha": 25.910331085324287,
+        "beta": 71.66763458926741,
+        "m0": -1.319480085382238,
+        "m1": -0.09298219447979773
+      },
+      "lle": 0.4806693468320784,
+      "initial": [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      "final": [
+        1.2113463358897716,
+        0.1950360720670065,
+        2.019284007661714
+      ]
+    },
+    {
+      "parameter_index": 818,
+      "seed_index": 0,
+      "parameters": {
+        "alpha": 13.803545907139778,
+        "beta": 29.469953476920928,
+        "m0": -1.5179789642291142,
+        "m1": -0.10174607415658823
+      },
+      "lle": 0.2784121072374236,
+      "initial": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "final": [
+        -0.7274022487109807,
+        -0.25878058174562646,
+        -2.0878283760139746
+      ]
+    },
+    {
+      "parameter_index": 1754,
+      "seed_index": 0,
+      "parameters": {
+        "alpha": 16.45255073904991,
+        "beta": 35.29594162157615,
+        "m0": -1.501056552012451,
+        "m1": -0.04816331798378318
+      },
+      "lle": 0.5207795795232173,
+      "initial": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "final": [
+        1.7146770205036344,
+        -0.02184710659534247,
+        -5.25242229607974
+      ]
+    },
+    {
+      "parameter_index": 2078,
+      "seed_index": 0,
+      "parameters": {
+        "alpha": 6.765454038977623,
+        "beta": 10.538017617534196,
+        "m0": -1.4781028385180979,
+        "m1": -0.22889168963554088
+      },
+      "lle": 0.15497175815537684,
+      "initial": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "final": [
+        0.4874392060440555,
+        0.012472907040242221,
+        0.996222109232829
+      ]
+    },
+    {
+      "parameter_index": 3464,
+      "seed_index": 0,
+      "parameters": {
+        "alpha": 26.130924984812737,
+        "beta": 92.59441436120377,
+        "m0": -1.5387766478396951,
+        "m1": -0.13349783825256828
+      },
+      "lle": 0.10034355406770964,
+      "initial": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "final": [
+        2.333347106924531,
+        0.618817338771071,
+        -4.284738604087553
+      ]
+    },
+    {
+      "parameter_index": 3618,
+      "seed_index": 2,
+      "parameters": {
+        "alpha": 13.317304775118828,
+        "beta": 26.53154560016729,
+        "m0": -1.4655984533112496,
+        "m1": -0.07527359630497374
+      },
+      "lle": 0.13811494145561046,
+      "initial": [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      "final": [
+        1.7934749970104404,
+        0.07583472061787003,
+        -4.620298891483995
+      ]
+    }
+  ],
+  "scope": "No finite-time classification proves a chaotic attractor, a tangency, infinite coexistence, or absence of hidden regimes."
+}

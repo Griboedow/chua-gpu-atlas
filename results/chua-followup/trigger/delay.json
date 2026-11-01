@@ -1,0 +1,944 @@
+{
+  "prediction": {
+    "unstable_half_multiplier": 1.830852121058724,
+    "saddle_half_period": 1.5371905307324059,
+    "predicted_time_per_log_distance": 2.5417287645214617,
+    "predicted_time_per_decimal_digit": 5.852546763621292,
+    "neighborhood_unstable_radius": 0.002,
+    "neighborhood_stable_radius": 0.002,
+    "formula": "t_local = -T_half/log(abs(lambda_half))*log(abs(A-Astar)) + O(1)",
+    "scope": "Asymptotic local residence time, not the full capture time."
+  },
+  "records": [
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 0.0001,
+      "amplitude": 0.340510116440463,
+      "residence": 6.153433717310555,
+      "entry_time": 2.7947761361082657,
+      "local_returns": 4
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.623413251903491e-05,
+      "amplitude": 0.3405538823079439,
+      "residence": 7.690983334214127,
+      "entry_time": 2.7946666056232337,
+      "local_returns": 5
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.1622776601683795e-05,
+      "amplitude": 0.3405784936638613,
+      "residence": 9.228448377654239,
+      "entry_time": 2.7946050264237696,
+      "local_returns": 6
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.778279410038923e-05,
+      "amplitude": 0.3405923336463626,
+      "residence": 10.765868030082622,
+      "entry_time": 2.79457040242276,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-05,
+      "amplitude": 0.34060011644046295,
+      "residence": 10.763397861825572,
+      "entry_time": 2.7945509333478498,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.623413251903491e-06,
+      "amplitude": 0.3406044930272111,
+      "residence": 12.300703823744973,
+      "entry_time": 2.794539985535197,
+      "local_returns": 8
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.162277660168379e-06,
+      "amplitude": 0.3406069541628028,
+      "residence": 13.838003696158719,
+      "entry_time": 2.794533829270887,
+      "local_returns": 9
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.778279410038923e-06,
+      "amplitude": 0.3406083381610529,
+      "residence": 15.375301463475603,
+      "entry_time": 2.7945303673943283,
+      "local_returns": 10
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-06,
+      "amplitude": 0.340609116440463,
+      "residence": 16.912599405640137,
+      "entry_time": 2.7945284206523944,
+      "local_returns": 11
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.62341325190349e-07,
+      "amplitude": 0.3406095540991378,
+      "residence": 18.449898845305103,
+      "entry_time": 2.7945273259234815,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.162277660168379e-07,
+      "amplitude": 0.34060980021269693,
+      "residence": 19.987200568022086,
+      "entry_time": 2.7945267103136056,
+      "local_returns": 13
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.7782794100389227e-07,
+      "amplitude": 0.340609938612522,
+      "residence": 21.52450505857349,
+      "entry_time": 2.794526364131186,
+      "local_returns": 14
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-07,
+      "amplitude": 0.34061001644046296,
+      "residence": 23.061812633873714,
+      "entry_time": 2.7945261694586474,
+      "local_returns": 15
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.6234132519034905e-08,
+      "amplitude": 0.34061006020633044,
+      "residence": 24.59912351779078,
+      "entry_time": 2.7945260599862793,
+      "local_returns": 16
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.162277660168379e-08,
+      "amplitude": 0.34061008481768634,
+      "residence": 26.136437883303778,
+      "entry_time": 2.794525998425458,
+      "local_returns": 17
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.7782794100389228e-08,
+      "amplitude": 0.34061009865766884,
+      "residence": 27.67375587605938,
+      "entry_time": 2.794525963807268,
+      "local_returns": 18
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-08,
+      "amplitude": 0.34061010644046297,
+      "residence": 29.211077628046027,
+      "entry_time": 2.794525944340031,
+      "local_returns": 19
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.623413251903491e-09,
+      "amplitude": 0.3406101108170497,
+      "residence": 30.748403264547605,
+      "entry_time": 2.7945259333927996,
+      "local_returns": 20
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.1622776601683795e-09,
+      "amplitude": 0.3406101132781853,
+      "residence": 32.285732909441904,
+      "entry_time": 2.7945259272367187,
+      "local_returns": 21
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.7782794100389228e-09,
+      "amplitude": 0.34061011466218355,
+      "residence": 33.82306668804563,
+      "entry_time": 2.7945259237749007,
+      "local_returns": 22
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-09,
+      "amplitude": 0.34061011544046293,
+      "residence": 35.360404724064935,
+      "entry_time": 2.7945259218281766,
+      "local_returns": 23
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 5.623413251903491e-10,
+      "amplitude": 0.3406101158781216,
+      "residence": 36.89774715149239,
+      "entry_time": 2.794525920733454,
+      "local_returns": 24
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 3.1622776601683795e-10,
+      "amplitude": 0.3406101161242352,
+      "residence": 38.4350940950708,
+      "entry_time": 2.7945259201178456,
+      "local_returns": 25
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1.778279410038923e-10,
+      "amplitude": 0.34061011626263504,
+      "residence": 39.97244570300021,
+      "entry_time": 2.7945259197716634,
+      "local_returns": 26
+    },
+    {
+      "angle": 0.0,
+      "side": -1,
+      "distance": 1e-10,
+      "amplitude": 0.34061011634046295,
+      "residence": 41.50980212714024,
+      "entry_time": 2.7945259195769916,
+      "local_returns": 27
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 0.0001,
+      "amplitude": 0.34071011644046295,
+      "residence": 6.1439260496355415,
+      "entry_time": 2.7942758726875683,
+      "local_returns": 4
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.623413251903491e-05,
+      "amplitude": 0.340666350572982,
+      "residence": 7.680760199240126,
+      "entry_time": 2.794385286834169,
+      "local_returns": 5
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.1622776601683795e-05,
+      "amplitude": 0.34064173921706464,
+      "residence": 9.217678735195614,
+      "entry_time": 2.7944468292441704,
+      "local_returns": 6
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.778279410038923e-05,
+      "amplitude": 0.3406278992345633,
+      "residence": 10.754642631107298,
+      "entry_time": 2.794481441611329,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-05,
+      "amplitude": 0.34062011644046297,
+      "residence": 10.757085357361689,
+      "entry_time": 2.7945009070072926,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.623413251903491e-06,
+      "amplitude": 0.34061573985371485,
+      "residence": 12.294161259326193,
+      "entry_time": 2.7945118536565587,
+      "local_returns": 8
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.162277660168379e-06,
+      "amplitude": 0.34061327871812314,
+      "residence": 13.831243281443317,
+      "entry_time": 2.7945180095529745,
+      "local_returns": 9
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.778279410038923e-06,
+      "amplitude": 0.340611894719873,
+      "residence": 15.368327448709978,
+      "entry_time": 2.7945214713131943,
+      "local_returns": 10
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-06,
+      "amplitude": 0.34061111644046294,
+      "residence": 16.905411487829873,
+      "entry_time": 2.79452341801834,
+      "local_returns": 11
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.62341325190349e-07,
+      "amplitude": 0.34061067878178813,
+      "residence": 18.44249408136519,
+      "entry_time": 2.7945245127356184,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.162277660168379e-07,
+      "amplitude": 0.340610432668229,
+      "residence": 19.979574448259573,
+      "entry_time": 2.7945251283418147,
+      "local_returns": 13
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.7782794100389227e-07,
+      "amplitude": 0.34061029426840395,
+      "residence": 21.516652107934352,
+      "entry_time": 2.7945254745230725,
+      "local_returns": 14
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-07,
+      "amplitude": 0.34061021644046297,
+      "residence": 23.053726747548538,
+      "entry_time": 2.7945256691952425,
+      "local_returns": 15
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.6234132519034905e-08,
+      "amplitude": 0.3406101726745955,
+      "residence": 24.59079814738474,
+      "entry_time": 2.7945257786674933,
+      "local_returns": 16
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.162277660168379e-08,
+      "amplitude": 0.3406101480632396,
+      "residence": 26.127866138798215,
+      "entry_time": 2.794525840228278,
+      "local_returns": 17
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.7782794100389228e-08,
+      "amplitude": 0.3406101342232571,
+      "residence": 27.66493058068459,
+      "entry_time": 2.7945258748464568,
+      "local_returns": 18
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-08,
+      "amplitude": 0.34061012644046296,
+      "residence": 29.201991345884558,
+      "entry_time": 2.79452589431369,
+      "local_returns": 19
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.623413251903491e-09,
+      "amplitude": 0.3406101220638762,
+      "residence": 30.73904831374991,
+      "entry_time": 2.7945259052609206,
+      "local_returns": 20
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.1622776601683795e-09,
+      "amplitude": 0.3406101196027406,
+      "residence": 32.276101366504975,
+      "entry_time": 2.794525911417001,
+      "local_returns": 21
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.7782794100389228e-09,
+      "amplitude": 0.3406101182187424,
+      "residence": 33.81315038513868,
+      "entry_time": 2.794525914878819,
+      "local_returns": 22
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-09,
+      "amplitude": 0.340610117440463,
+      "residence": 35.35019525108722,
+      "entry_time": 2.7945259168255427,
+      "local_returns": 23
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 5.623413251903491e-10,
+      "amplitude": 0.3406101170028043,
+      "residence": 36.88723584134064,
+      "entry_time": 2.794525917920266,
+      "local_returns": 24
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 3.1622776601683795e-10,
+      "amplitude": 0.34061011675669073,
+      "residence": 38.424272034432825,
+      "entry_time": 2.794525918535874,
+      "local_returns": 25
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1.778279410038923e-10,
+      "amplitude": 0.3406101166182909,
+      "residence": 39.96130369635373,
+      "entry_time": 2.794525918882056,
+      "local_returns": 26
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "distance": 1e-10,
+      "amplitude": 0.34061011654046297,
+      "residence": 41.49833069541281,
+      "entry_time": 2.7945259190767278,
+      "local_returns": 27
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 0.0001,
+      "amplitude": 0.4206519916731032,
+      "residence": 6.153247190061633,
+      "entry_time": 1.4774594439952953,
+      "local_returns": 4
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.623413251903491e-05,
+      "amplitude": 0.42069575754058414,
+      "residence": 7.6907451878632225,
+      "entry_time": 1.4773746261401712,
+      "local_returns": 5
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.1622776601683795e-05,
+      "amplitude": 0.4207203688965015,
+      "residence": 9.228170832630237,
+      "entry_time": 1.477326935329831,
+      "local_returns": 6
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.778279410038923e-05,
+      "amplitude": 0.4207342088790028,
+      "residence": 10.765557642512935,
+      "entry_time": 1.4773001186444286,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-05,
+      "amplitude": 0.42074199167310317,
+      "residence": 12.302924519873086,
+      "entry_time": 1.477285039092461,
+      "local_returns": 8
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.623413251903491e-06,
+      "amplitude": 0.4207463682598513,
+      "residence": 13.840282151067015,
+      "entry_time": 1.4772765594202037,
+      "local_returns": 9
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.162277660168379e-06,
+      "amplitude": 0.420748829395443,
+      "residence": 15.377636604319115,
+      "entry_time": 1.477271791007944,
+      "local_returns": 10
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.778279410038923e-06,
+      "amplitude": 0.4207502133936931,
+      "residence": 16.914991352720133,
+      "entry_time": 1.4772691095509782,
+      "local_returns": 11
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-06,
+      "amplitude": 0.4207509916731032,
+      "residence": 18.452348411832745,
+      "entry_time": 1.477267601662703,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.62341325190349e-07,
+      "amplitude": 0.420751429331778,
+      "residence": 18.44986284328893,
+      "entry_time": 1.4772667537166422,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.162277660168379e-07,
+      "amplitude": 0.42075167544533715,
+      "residence": 19.987148698077938,
+      "entry_time": 1.4772662768821103,
+      "local_returns": 13
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.7782794100389227e-07,
+      "amplitude": 0.4207518138451622,
+      "residence": 21.52443692469418,
+      "entry_time": 1.47726600873853,
+      "local_returns": 14
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-07,
+      "amplitude": 0.4207518916731032,
+      "residence": 23.061727794319378,
+      "entry_time": 1.4772658579503721,
+      "local_returns": 15
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.6234132519034905e-08,
+      "amplitude": 0.42075193543897066,
+      "residence": 24.599021498471195,
+      "entry_time": 1.477265773155978,
+      "local_returns": 16
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.162277660168379e-08,
+      "amplitude": 0.42075196005032656,
+      "residence": 26.136318185113474,
+      "entry_time": 1.4772657254725914,
+      "local_returns": 17
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.7782794100389228e-08,
+      "amplitude": 0.42075197389030905,
+      "residence": 27.673617978885055,
+      "entry_time": 1.4772656986582549,
+      "local_returns": 18
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-08,
+      "amplitude": 0.4207519816731032,
+      "residence": 29.210920992515717,
+      "entry_time": 1.4772656835794455,
+      "local_returns": 19
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.623413251903491e-09,
+      "amplitude": 0.42075198604968994,
+      "residence": 30.748227333506904,
+      "entry_time": 1.4772656751000084,
+      "local_returns": 20
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.1622776601683795e-09,
+      "amplitude": 0.4207519885108255,
+      "residence": 32.28553710765666,
+      "entry_time": 1.4772656703316702,
+      "local_returns": 21
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.7782794100389228e-09,
+      "amplitude": 0.42075198989482376,
+      "residence": 33.8228504213506,
+      "entry_time": 1.477265667650237,
+      "local_returns": 22
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-09,
+      "amplitude": 0.42075199067310315,
+      "residence": 35.360167381550575,
+      "entry_time": 1.477265666142356,
+      "local_returns": 23
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 5.623413251903491e-10,
+      "amplitude": 0.42075199111076184,
+      "residence": 36.89748810101395,
+      "entry_time": 1.4772656652944123,
+      "local_returns": 24
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 3.1622776601683795e-10,
+      "amplitude": 0.4207519913568754,
+      "residence": 38.4348126911837,
+      "entry_time": 1.4772656648175784,
+      "local_returns": 25
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1.778279410038923e-10,
+      "amplitude": 0.42075199149527526,
+      "residence": 39.97214126570171,
+      "entry_time": 1.477265664549435,
+      "local_returns": 26
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "distance": 1e-10,
+      "amplitude": 0.42075199157310317,
+      "residence": 41.50947396172646,
+      "entry_time": 1.477265664398647,
+      "local_returns": 27
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 0.0001,
+      "amplitude": 0.42085199167310317,
+      "residence": 6.145088489019441,
+      "entry_time": 1.47707195321207,
+      "local_returns": 4
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.623413251903491e-05,
+      "amplitude": 0.4208082258056222,
+      "residence": 7.68197370192131,
+      "entry_time": 1.4771567240253858,
+      "local_returns": 5
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.1622776601683795e-05,
+      "amplitude": 0.42078361444970486,
+      "residence": 9.218931071710925,
+      "entry_time": 1.477204399959751,
+      "local_returns": 6
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.778279410038923e-05,
+      "amplitude": 0.42076977446720354,
+      "residence": 10.755927214079481,
+      "entry_time": 1.477231211940952,
+      "local_returns": 7
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-05,
+      "amplitude": 0.4207619916731032,
+      "residence": 12.292943301253315,
+      "entry_time": 1.4772462900053207,
+      "local_returns": 8
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.623413251903491e-06,
+      "amplitude": 0.42075761508635506,
+      "residence": 13.829968691070594,
+      "entry_time": 1.4772547692071574,
+      "local_returns": 9
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.162277660168379e-06,
+      "amplitude": 0.42075515395076335,
+      "residence": 15.366997343257557,
+      "entry_time": 1.4772595374706567,
+      "local_returns": 10
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.778279410038923e-06,
+      "amplitude": 0.42075376995251323,
+      "residence": 16.90402580381867,
+      "entry_time": 1.4772622188805808,
+      "local_returns": 11
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-06,
+      "amplitude": 0.42075299167310315,
+      "residence": 18.441052071466558,
+      "entry_time": 1.4772637267539799,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.62341325190349e-07,
+      "amplitude": 0.42075255401442835,
+      "residence": 18.44351044616212,
+      "entry_time": 1.4772645746953366,
+      "local_returns": 12
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.162277660168379e-07,
+      "amplitude": 0.4207523079008692,
+      "residence": 19.98060641029161,
+      "entry_time": 1.4772650515283812,
+      "local_returns": 13
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.7782794100389227e-07,
+      "amplitude": 0.42075216950104416,
+      "residence": 21.517700046868125,
+      "entry_time": 1.4772653196714907,
+      "local_returns": 14
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-07,
+      "amplitude": 0.4207520916731032,
+      "residence": 23.054791087890564,
+      "entry_time": 1.4772654704595003,
+      "local_returns": 15
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.6234132519034905e-08,
+      "amplitude": 0.4207520479072357,
+      "residence": 24.591879344927033,
+      "entry_time": 1.4772655552538472,
+      "local_returns": 16
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.162277660168379e-08,
+      "amplitude": 0.4207520232958798,
+      "residence": 26.12896467328035,
+      "entry_time": 1.4772656029372184,
+      "local_returns": 17
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.7782794100389228e-08,
+      "amplitude": 0.4207520094558973,
+      "residence": 27.666046951644,
+      "entry_time": 1.4772656297515505,
+      "local_returns": 18
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-08,
+      "amplitude": 0.42075200167310317,
+      "residence": 29.20312607079395,
+      "entry_time": 1.4772656448303583,
+      "local_returns": 19
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.623413251903491e-09,
+      "amplitude": 0.4207519972965164,
+      "residence": 30.740201926864582,
+      "entry_time": 1.477265653309795,
+      "local_returns": 20
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.1622776601683795e-09,
+      "amplitude": 0.42075199483538084,
+      "residence": 32.27727441862291,
+      "entry_time": 1.4772656580781334,
+      "local_returns": 21
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.7782794100389228e-09,
+      "amplitude": 0.4207519934513826,
+      "residence": 33.81434344364043,
+      "entry_time": 1.4772656607595667,
+      "local_returns": 22
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-09,
+      "amplitude": 0.4207519926731032,
+      "residence": 35.35140889848766,
+      "entry_time": 1.4772656622674474,
+      "local_returns": 23
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 5.623413251903491e-10,
+      "amplitude": 0.4207519922354445,
+      "residence": 36.888470679677425,
+      "entry_time": 1.477265663115391,
+      "local_returns": 24
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 3.1622776601683795e-10,
+      "amplitude": 0.42075199198933094,
+      "residence": 38.42552867634759,
+      "entry_time": 1.4772656635922248,
+      "local_returns": 25
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1.778279410038923e-10,
+      "amplitude": 0.4207519918509311,
+      "residence": 39.96258278399368,
+      "entry_time": 1.477265663860368,
+      "local_returns": 26
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "distance": 1e-10,
+      "amplitude": 0.4207519917731032,
+      "residence": 41.49963289566828,
+      "entry_time": 1.477265664011156,
+      "local_returns": 27
+    }
+  ],
+  "fits": [
+    {
+      "angle": 0.0,
+      "side": -1,
+      "slope": 5.950304407834472,
+      "intercept": -18.343920919485917,
+      "relative_error": 0.016703436668089378
+    },
+    {
+      "angle": 0.0,
+      "side": 1,
+      "slope": 5.949916985596357,
+      "intercept": -18.350182593905295,
+      "relative_error": 0.01663723946305007
+    },
+    {
+      "angle": 0.8,
+      "side": -1,
+      "slope": 5.8081595501999335,
+      "intercept": -17.04113056852207,
+      "relative_error": 0.007584256087839192
+    },
+    {
+      "angle": 0.8,
+      "side": 1,
+      "slope": 5.808270130678178,
+      "intercept": -17.050571857036918,
+      "relative_error": 0.007565361667561832
+    }
+  ]
+}

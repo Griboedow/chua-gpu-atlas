@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "published_forecasts_unchanged": true,
+    "all_searches_use_frozen_forecasts": true,
+    "all_54_targets_solved": true,
+    "48_held_out_corrected_hits": true,
+    "16_uncorrected_misses_retained": true,
+    "sheets_12_independent_checks": true,
+    "trigger_12_independent_checks": true,
+    "pulse_local_80": true,
+    "hidden_neighborhoods_80": true,
+    "pulse_local_100": true,
+    "hidden_neighborhoods_100": true,
+    "whole_lower_amplitude_coverage": true,
+    "J_inside_uniform_exclusion": true,
+    "tangency_box_inside_interior_J": true,
+    "tangency_140": true,
+    "complete_path_140": true,
+    "tangency_160": true,
+    "complete_path_160": true,
+    "shifted_minus_rejected": true,
+    "shifted_plus_rejected": true,
+    "independent_hidden_controls": true,
+    "classical_regression": true
+  },
+  "scope": "Audit of finite records and parameter containment. The analytic localization, graph-transform implication and imported Newhouse\u2013Robinson theorem are stated in the proof report; this audit is not their formal verification."
+}

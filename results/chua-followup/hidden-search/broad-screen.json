@@ -1,0 +1,86 @@
+{
+  "protocol": {
+    "parameters": 16384,
+    "seeds": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0,
+        20.0
+      ],
+      [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      [
+        0.0,
+        8.0,
+        40.0
+      ]
+    ],
+    "sampling": "Scrambled Sobol, seed 20261101, broad sector screen",
+    "scope": "Stable unique equilibrium is checked at every sample. Four-window positive exponents select candidates only."
+  },
+  "settings": {
+    "dt": 0.005,
+    "transient": 400,
+    "duration": 1200,
+    "threshold": 0.01,
+    "escape": 100.0,
+    "seeds": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0,
+        20.0
+      ],
+      [
+        5.0,
+        0.0,
+        -5.0
+      ],
+      [
+        0.0,
+        8.0,
+        40.0
+      ]
+    ],
+    "initial_state_mode": "shared",
+    "renormalize_every_steps": 10,
+    "chunk_steps": 200
+  },
+  "device": {
+    "name": "NVIDIA GeForce GTX 1080",
+    "vendor": "NVIDIA Corporation",
+    "driver": "582.28",
+    "opencl": "OpenCL 3.0 CUDA",
+    "precision": "float64",
+    "global_memory_bytes": 8589672448,
+    "backend": "PyOpenCL",
+    "fast_math": false
+  },
+  "timing": {
+    "wall_seconds": 19.755350800005544,
+    "gpu_seconds": 19.273666048000017,
+    "max_kernel_seconds": 0.013659136
+  },
+  "counts": {
+    "0": 24000,
+    "1": 31591,
+    "2": 9944,
+    "3": 1,
+    "4": 0,
+    "5": 0
+  },
+  "candidates": [],
+  "scope": "No finite-time classification proves a chaotic attractor, a tangency, infinite coexistence, or absence of hidden regimes."
+}

@@ -28,6 +28,51 @@ def boundary_seed(seed,p,free,guess):
     return value,q,failures
 
 
+def continued_target_seed(peaks,p,free):
+    """Implicit parameter prediction initializes shooting, not the frozen forecast."""
+    calibration=json.loads((DIR/'central-residual-calibration.json').read_text())[free][str(peaks)]['fold']
+    seed=classical_templates()[peaks]
+    source={k:float(v) for k,v in calibration['parameters'].items()}
+    if all(source[k]==p[k] for k in BASE if k!=free):
+        return calibration['coordinate'],calibration['q'],[]
+    w=np.r_[np.array(calibration['q'],float),float(calibration['coordinate'])]
+    fraction=0.;step=.25;failures=[]
+    while fraction<1:
+        nxt=min(1.,fraction+step)
+        oldp={k:source[k]+fraction*(p[k]-source[k]) for k in BASE}
+        newp={k:source[k]+nxt*(p[k]-source[k]) for k in BASE}
+        old=CoordinateFlights(oldp,seed['regions'],seed['targets'],free=free)
+        new=CoordinateFlights(newp,seed['regions'],seed['targets'],free=free)
+        try:
+            forcing=np.zeros(len(w))
+            for key in BASE:
+                if key==free or newp[key]==oldp[key]:continue
+                h=1e-7;values=[]
+                for sign in [-1,1]:
+                    pp=oldp.copy();pp[key]+=sign*h
+                    ff=CoordinateFlights(pp,seed['regions'],seed['targets'],free=free)
+                    values.append(ff.boundary_system(w,1))
+                forcing+=(newp[key]-oldp[key])*(values[1]-values[0])/(2*h)
+            trial=w-np.linalg.solve(old.boundary_system(w,1,True),forcing)
+            # Double precision is only a preconditioner; stop at its practical
+            # cancellation floor and let arbitrary precision establish closure.
+            for _ in range(8):
+                residual=new.boundary_system(trial,1);error=max(abs(residual))
+                if error<2e-4:break
+                change=np.linalg.solve(new.boundary_system(trial,1,True),-residual)
+                for factor in [1.,.5,.25,.125,.0625]:
+                    candidate=trial+factor*change
+                    if min(candidate[2:-1])>0 and max(abs(new.boundary_system(candidate,1)))<error:
+                        trial=candidate;break
+                else:raise ValueError('Seed corrector stalled')
+            if max(abs(new.boundary_system(trial,1)))>2e-3:raise ValueError('Seed residual too large')
+            w=trial;fraction=nxt;step=min(.5,step*1.5)
+        except (ValueError,RuntimeError,np.linalg.LinAlgError) as exc:
+            failures.append(dict(fraction=fraction,step=step,error=str(exc)));step/=2
+            if step<1e-4:raise ValueError('Target seed continuation failed: '+str(failures[-1]))
+    return w[-1],w[:-1],failures
+
+
 def nodes():
     for free in ['beta','alpha']:
         for i in [-1,0,1]:
@@ -150,19 +195,20 @@ def search(only=None):
         name=node['node']
         if only and name!=only:continue
         result_path=DIR/(name+'-search.json')
-        if result_path.exists():continue
+        previous=json.loads(result_path.read_text()) if result_path.exists() else dict(records=[])
         records=[];free=node['free_parameter']
         for forecast in node['forecasts']:
+            oldrec=next((r for r in previous['records'] if r['peaks']==forecast['peaks']),None)
+            if oldrec and oldrec['status']=='numerical_root':
+                records.append(oldrec);continue
             seed=templates[forecast['peaks']]
             solver=ParameterPrecisionFlights(seed['regions'],seed['targets'],node['parameters'],free,digits=45)
             rec=dict(peaks=forecast['peaks'],forecast=forecast,status='unresolved')
+            if oldrec:rec['previous_failed_attempt']=oldrec
             try:
-                fast=CoordinateFlights(node['parameters'],seed['regions'],seed['targets'],free=free)
-                try:
-                    value,q=fast.boundary(float(forecast['fold']),np.array(seed['core']['q'],float),1)
-                    rec['initial_solver']='float64 boundary followed by arbitrary precision'
-                except (RuntimeError,ValueError,np.linalg.LinAlgError) as exc:
-                    value,q=forecast['fold'],seed['core']['q'];rec['float_seed_failure']=str(exc)
+                value,q,failures=continued_target_seed(forecast['peaks'],node['parameters'],free)
+                rec['initial_solver']='Implicit continuation from the central fold, followed by arbitrary precision'
+                rec['seed_rejected_steps']=failures
                 fold=solver.boundary(value,q,1)
                 symmetry=solver.boundary(fold['coordinate'],fold['q'],-1)
                 # A third root is useful for independent integration and phase portraits.
