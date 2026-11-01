@@ -1,0 +1,17 @@
+beta_02 training 35 14.31825185108617203817691229816799341729
+beta_02 training 45 14.31851131792069516937846261843083261937
+Traceback (most recent call last):
+  File "D:\_TMP\Матеша\chua-attractor\research\extend_chua_slope_predictions.py", line 72, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "D:\_TMP\Матеша\chua-attractor\research\extend_chua_slope_predictions.py", line 58, in main
+    getattr(study,args.phase)(args.only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\_TMP\Матеша\chua-attractor\research\predict_chua_slope_sheets.py", line 121, in calibrate
+    fold=solver.boundary(value,q,1)
+  File "D:\_TMP\Матеша\chua-attractor\research\chua_research_followup.py", line 69, in boundary
+    rec = super().boundary(value, q, target)
+  File "D:\_TMP\Матеша\chua-attractor\research\chua_precision_flights.py", line 91, in boundary
+    else:raise RuntimeError('High precision Newton line search stalled: '+str(history))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: High precision Newton line search stalled: ['144.772666934', '63.3765178585', '25.1371032174', '19.5399816895', '0.494855496207', '0.484437618642', '0.467589241727', '0.442791850918', '0.4336657278', '0.365833402059']
