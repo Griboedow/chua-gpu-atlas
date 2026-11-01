@@ -2,6 +2,18 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+## Periodic-attractor accessibility
+
+- `certify_chua_coexisting_cycles.py` validates four first-return sinks and distinguishes their orbits.
+- `certify_chua_hidden_cycle.py` encloses a periodic attractor and proves exclusion neighborhoods at all three equilibria.
+- `study_chua_stability.py` validates another hidden cycle, a common Lyapunov sector and local-stability predictions.
+- `check_chua_accessibility.py` independently checks all six cycles and repeated-precision enclosures.
+- `prepare_chua_accessibility.py`, `probe_chua_accessibility.py` and `check_chua_stability_prediction.py` reproduce the exploratory and finite-time numerical experiments.
+- `study_chua_circuit_constraints.py` constructs positive component values and tests nominal and perturbed lossy models.
+- `plot_chua_accessibility.py` produces the three figures from these records.
+
+[Report](../docs/chua-accessibility.md) · [Evidence and commands](../results/chua-accessibility/README.md)
+
 ## Interval proof
 
 | Program | Purpose |

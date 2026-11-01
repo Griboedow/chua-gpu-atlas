@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "orbits": [
+    {
+      "id": "F1a",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 8.124070305370878e-10
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 1.5020173993463004e-10
+        }
+      ],
+      "variational_radius": 0.07129734970472856,
+      "interval_radius_midpoint": 0.0712973660791989,
+      "multiplier_error": 1.6374470335200897e-08,
+      "passed": true
+    },
+    {
+      "id": "F1b",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 2.5798692071532514e-09
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 6.176297806526065e-10
+        }
+      ],
+      "variational_radius": 0.07129746014775118,
+      "interval_radius_midpoint": 0.0712973660791989,
+      "multiplier_error": 9.406855228100142e-08,
+      "passed": true
+    },
+    {
+      "id": "F2a",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 5.378058554050824e-10
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 1.0486056467584604e-11
+        }
+      ],
+      "variational_radius": 0.012528827950146312,
+      "interval_radius_midpoint": 0.012528753901892233,
+      "multiplier_error": 7.404825407876514e-08,
+      "passed": true
+    },
+    {
+      "id": "F2b",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 3.6296542993419223e-09
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 4.873726422438551e-10
+        }
+      ],
+      "variational_radius": 0.012528753428406453,
+      "interval_radius_midpoint": 0.012528753901892233,
+      "multiplier_error": 4.734857800975378e-10,
+      "passed": true
+    },
+    {
+      "id": "H1",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 1.2641596103257768e-11
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 6.5088091166787265e-12
+        }
+      ],
+      "variational_radius": 0.9242421095457288,
+      "interval_radius_midpoint": 0.9242421095495601,
+      "multiplier_error": 3.831268635678953e-12,
+      "passed": true
+    },
+    {
+      "id": "H2",
+      "checks": [
+        {
+          "method": "DOP853",
+          "step": 0.006,
+          "closure": 6.785683126508957e-13
+        },
+        {
+          "method": "Radau",
+          "step": 0.012,
+          "closure": 5.567379890436541e-12
+        }
+      ],
+      "variational_radius": 0.9236501074053121,
+      "interval_radius_midpoint": 0.9236501074047655,
+      "multiplier_error": 5.465627950229646e-13,
+      "passed": true
+    }
+  ],
+  "precision_repeats": [
+    {
+      "certificate": "four-cycle-certificate",
+      "intervals_overlap": true
+    },
+    {
+      "certificate": "hidden-cycle-certificate",
+      "intervals_overlap": true
+    },
+    {
+      "certificate": "stability-certificate",
+      "intervals_overlap": true
+    }
+  ],
+  "scope": "Independent numerical controls support the interval implementation; they do not replace its analytical justification."
+}

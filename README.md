@@ -10,6 +10,8 @@ The repository contains the numerical data, continuation programs, interval cert
 
 [Study outline](docs/research-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
+An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
+
 ## Background
 
 My university coursework involved studying the Chua system by scanning two parameters. I spent months running calculations. I did not understand the subject very well, and my computer was weak. Much of the experience was simply waiting for another calculation to finish.
@@ -68,6 +70,14 @@ The [m₀–m₁ section](docs/chua-slope-plane.md) and the two volumes below va
 ![Interior views of the m0-m1-alpha and m0-m1-beta parameter volumes](docs/assets/chua-slope-volumes-interior.png)
 
 Figure 5. Cropped views of the two parameter volumes. Each contains 152,561 sampled nodes with three initial states per node. These finite-time classifications can miss thin windows and small basins. [Continuation of five- and seven-peak families](docs/chua-slope-families.md) resolves selected stability intervals and coexistence examples. The [volume report](docs/chua-slope-volumes.md) gives sections, numerical limitations and an offline viewer. A [rotation animation](docs/assets/chua-slope-volumes.gif) shows the same volumes.
+
+## Hidden periodic attractors and equilibrium accessibility
+
+An attracting cycle can coexist with a stable equilibrium while its basin remains separated from that equilibrium. At α = 8.4, β = 12, m₀ = −0.95 and m₁ = −0.05, an interval certificate encloses such a cycle and an invariant neighborhood of the unique equilibrium. Every initial state within Euclidean distance 0.0305 of the origin returns to it, although a large periodic attractor exists at the same parameters.
+
+![Hidden cycles and certified neighborhoods excluded from their basins](docs/assets/chua-accessibility.png)
+
+Figure 6. Periodic-attractor existence and accessibility from equilibria. The [report](docs/chua-accessibility.md) proves hiddenness at two parameter points, certifies four distinct coexisting cycles at another point, and compares local-stability predictions with subsequent initial-condition tests. A [component study](docs/chua-accessibility.md#5-component-constraints) checks an ideal circuit realization and a finite set of component perturbations. These results establish neither an exhaustive attractor count nor an exact hiddenness boundary. The new interval arguments are not formalized in Lean.
 
 ## Model
 

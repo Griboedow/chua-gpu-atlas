@@ -1,0 +1,302 @@
+{
+  "parameters": {
+    "alpha": 9.06,
+    "beta": 14.3458,
+    "m0": -1.1368571428571428,
+    "m1": -0.7142857142857143
+  },
+  "duration": 600,
+  "directions": 64,
+  "radii": [
+    0.01,
+    0.0001,
+    1e-06,
+    1e-08
+  ],
+  "records": [
+    {
+      "step": 0.01,
+      "counts": [
+        {
+          "equilibrium": 0,
+          "radius": 0.01,
+          "counts": [
+            20,
+            22,
+            9,
+            1,
+            12
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 0.0001,
+          "counts": [
+            20,
+            22,
+            13,
+            3,
+            6
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 1e-06,
+          "counts": [
+            15,
+            27,
+            11,
+            4,
+            7
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 1e-08,
+          "counts": [
+            12,
+            26,
+            14,
+            2,
+            10
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 0.01,
+          "counts": [
+            21,
+            18,
+            11,
+            4,
+            10
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 0.0001,
+          "counts": [
+            23,
+            14,
+            10,
+            4,
+            13
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 1e-06,
+          "counts": [
+            16,
+            16,
+            14,
+            6,
+            12
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 1e-08,
+          "counts": [
+            17,
+            14,
+            17,
+            4,
+            12
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 0.01,
+          "counts": [
+            21,
+            18,
+            10,
+            4,
+            11
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 0.0001,
+          "counts": [
+            15,
+            16,
+            16,
+            5,
+            12
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 1e-06,
+          "counts": [
+            16,
+            21,
+            12,
+            6,
+            9
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 1e-08,
+          "counts": [
+            20,
+            15,
+            13,
+            4,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "step": 0.005,
+      "counts": [
+        {
+          "equilibrium": 0,
+          "radius": 0.01,
+          "counts": [
+            0,
+            25,
+            17,
+            11,
+            11
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 0.0001,
+          "counts": [
+            0,
+            16,
+            17,
+            20,
+            11
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 1e-06,
+          "counts": [
+            0,
+            17,
+            18,
+            12,
+            17
+          ]
+        },
+        {
+          "equilibrium": 0,
+          "radius": 1e-08,
+          "counts": [
+            0,
+            22,
+            23,
+            13,
+            6
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 0.01,
+          "counts": [
+            1,
+            27,
+            10,
+            13,
+            13
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 0.0001,
+          "counts": [
+            1,
+            13,
+            22,
+            14,
+            14
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 1e-06,
+          "counts": [
+            0,
+            13,
+            23,
+            12,
+            16
+          ]
+        },
+        {
+          "equilibrium": 1,
+          "radius": 1e-08,
+          "counts": [
+            0,
+            14,
+            18,
+            13,
+            19
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 0.01,
+          "counts": [
+            0,
+            21,
+            15,
+            8,
+            20
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 0.0001,
+          "counts": [
+            0,
+            23,
+            19,
+            8,
+            14
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 1e-06,
+          "counts": [
+            0,
+            20,
+            15,
+            17,
+            12
+          ]
+        },
+        {
+          "equilibrium": 2,
+          "radius": 1e-08,
+          "counts": [
+            0,
+            22,
+            19,
+            13,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "refinement_disagreements": 563,
+  "initial_count": 768,
+  "label_order": [
+    "unresolved",
+    "F1a",
+    "F1b",
+    "F2a",
+    "F2b"
+  ],
+  "scope": "Finite-radius finite-time numerical screen. Neither hiddenness nor self-excitation is certified."
+}

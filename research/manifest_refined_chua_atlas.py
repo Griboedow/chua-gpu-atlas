@@ -25,7 +25,10 @@ trace_chua_layer_organizer plot_chua_layer_predictions
 chua_interval_map chua_interval_connection certify_chua_layer_organizer
 certify_chua_homoclinic_tangency locate_chua_homoclinic_tangency
 check_chua_interval_derivatives check_chua_global_connection plot_chua_infinity
-audit_chua_coexistence check_chua_formal plot_chua_proof_audit'''.split()
+audit_chua_coexistence check_chua_formal plot_chua_proof_audit
+certify_chua_coexisting_cycles certify_chua_hidden_cycle study_chua_stability
+check_chua_accessibility prepare_chua_accessibility probe_chua_accessibility
+check_chua_stability_prediction study_chua_circuit_constraints plot_chua_accessibility'''.split()
 
 
 def digest(path):
@@ -69,6 +72,9 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-layer-prediction').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-infinity').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-proof-audit').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-accessibility').iterdir() if p.is_file())
+    paths.update(ROOT/p for p in ['docs/chua-accessibility.md','docs/assets/chua-accessibility.png',
+        'docs/assets/chua-four-cycle-certificate.png','docs/assets/chua-circuit-accessibility.png'])
     paths.update(p for p in (ROOT/'formal').glob('*') if p.is_file() and p.name != '.gitignore')
     paths.update((ROOT/'formal/ChuaProof').glob('*.lean'))
     paths.update(ROOT/p for p in ['docs/chua-coexistence-audit.md','docs/assets/chua-proof-audit.png','research/check_chua_formal_local.ps1'])

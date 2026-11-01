@@ -1,0 +1,812 @@
+{
+  "records": [
+    {
+      "m0": -0.93,
+      "initial": [
+        0.001,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.447851855834997,
+        23.721964674676418
+      ],
+      "distance": 6.89980651626867e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        0.001,
+        0.0
+      ],
+      "section": [
+        3.447851849240589,
+        23.721964606606566
+      ],
+      "distance": 6.492582583049821e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        0.0,
+        0.001
+      ],
+      "section": [
+        3.4478518489236363,
+        23.72196460070723
+      ],
+      "distance": 5.314773684806019e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0005773502691896259,
+        0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.447851846053717,
+        23.72196458425735
+      ],
+      "distance": 2.195750071596643e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0005773502691896259,
+        -0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.447851841204598,
+        23.721964526768545
+      ],
+      "distance": 7.963173200089259e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -0.0005773502691896259,
+        0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.4478518489816024,
+        23.721964606107502
+      ],
+      "distance": 8.87272195160682e-11,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 2.7015414165554183e-06,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0005773502691896259,
+        0.0005773502691896259,
+        -0.0005773502691896259
+      ],
+      "section": [
+        3.447851844571046,
+        23.721964570996647
+      ],
+      "distance": 3.529894739681361e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -0.0005773502691896259,
+        -0.0005773502691896259,
+        -0.0005773502691896259
+      ],
+      "section": [
+        3.447851848047995,
+        23.72196458007109
+      ],
+      "distance": 2.5966761232046552e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        1e-06,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.4478518664928353,
+        23.72196473846608
+      ],
+      "distance": 1.335998633360813e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        1e-06,
+        0.0
+      ],
+      "section": [
+        3.4478518503051965,
+        23.72196461634247
+      ],
+      "distance": 1.0408095678000526e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        0.0,
+        1e-06
+      ],
+      "section": [
+        3.447851846740147,
+        23.7219645896354
+      ],
+      "distance": 1.6535937336822165e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896258e-07,
+        5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.4478518468043564,
+        23.72196459308427
+      ],
+      "distance": 1.3115696863115116e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896258e-07,
+        -5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.447851748590367,
+        23.721963731807666
+      ],
+      "distance": 8.799569497372e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -5.773502691896258e-07,
+        5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.447851824781665,
+        23.721964400668117
+      ],
+      "distance": 2.06772053274537e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896258e-07,
+        5.773502691896258e-07,
+        -5.773502691896258e-07
+      ],
+      "section": [
+        3.447851879368555,
+        23.721964868798835
+      ],
+      "distance": 2.6453072823641547e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -5.773502691896258e-07,
+        -5.773502691896258e-07,
+        -5.773502691896258e-07
+      ],
+      "section": [
+        3.4478518476049556,
+        23.72196459222039
+      ],
+      "distance": 1.3867693591519321e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        1e-09,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.4478518490782433,
+        23.72196460709637
+      ],
+      "distance": 1.0811542035069739e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 0.00015307918676887492,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        1e-09,
+        0.0
+      ],
+      "section": [
+        3.4478518491235652,
+        23.7219646075849
+      ],
+      "distance": 1.5717232865585192e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 5.2619247834337165e-05,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        0.0,
+        0.0,
+        1e-09
+      ],
+      "section": [
+        3.4478518489520127,
+        23.72196460585407
+      ],
+      "distance": 1.679404263355089e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 0.00014678132493201843,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896259e-10,
+        5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.447851848956901,
+        23.72196460584799
+      ],
+      "distance": 1.7390732272700272e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 6.550512449066837e-05,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896259e-10,
+        -5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.447851848978124,
+        23.72196460613854
+      ],
+      "distance": 1.1832053463314084e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 8.598977374011014e-05,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -5.773502691896259e-10,
+        5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.447851848922048,
+        23.721964605676842
+      ],
+      "distance": 3.4694823067315483e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 0.00014395706233371732,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        5.773502691896259e-10,
+        5.773502691896259e-10,
+        -5.773502691896259e-10
+      ],
+      "section": [
+        3.447851873274421,
+        23.72196481420139
+      ],
+      "distance": 2.0959479271333208e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 9.812020284826457e-05,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.93,
+      "initial": [
+        -5.773502691896259e-10,
+        -5.773502691896259e-10,
+        -5.773502691896259e-10
+      ],
+      "section": [
+        3.4478518490305543,
+        23.721964606862887
+      ],
+      "distance": 8.440939006201142e-10,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000,
+      "first_horizon_distance": 6.816069356067173e-05,
+      "first_horizon_reached_cycle": false,
+      "additional_time_from_last_section": 400,
+      "refined_rtol": 2e-12
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.001,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.328636615706589,
+        22.934759002297355
+      ],
+      "distance": 8.08814746753209e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        0.001,
+        0.0
+      ],
+      "section": [
+        3.3286366161401513,
+        22.93475897560147
+      ],
+      "distance": 1.8696124117073387e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        0.0,
+        0.001
+      ],
+      "section": [
+        3.3286365822135133,
+        22.934758691291226
+      ],
+      "distance": 3.04963455156581e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0005773502691896259,
+        0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.328636619540755,
+        22.93475901591875
+      ],
+      "distance": 2.1804439776199224e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0005773502691896259,
+        -0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.328636616040067,
+        22.934758987618643
+      ],
+      "distance": 6.711604127678658e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -0.0005773502691896259,
+        0.0005773502691896259,
+        0.0005773502691896259
+      ],
+      "section": [
+        3.328636627685756,
+        22.934759089559016
+      ],
+      "distance": 9.589182782207073e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0005773502691896259,
+        0.0005773502691896259,
+        -0.0005773502691896259
+      ],
+      "section": [
+        3.328636771455873,
+        22.934758657045162
+      ],
+      "distance": 3.7100537641767205e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -0.0005773502691896259,
+        -0.0005773502691896259,
+        -0.0005773502691896259
+      ],
+      "section": [
+        3.3286366193514914,
+        22.93475901690134
+      ],
+      "distance": 2.275777181312791e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        1e-06,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.3286366173909325,
+        22.934758999749764
+      ],
+      "distance": 5.494664934607275e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        1e-06,
+        0.0
+      ],
+      "section": [
+        3.3286366051920453,
+        22.934758904664957
+      ],
+      "distance": 9.037094794760158e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        0.0,
+        1e-06
+      ],
+      "section": [
+        3.3286366118842374,
+        22.9347589523706
+      ],
+      "distance": 4.220378399013538e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896258e-07,
+        5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.328636615047384,
+        22.9347589678182
+      ],
+      "distance": 2.652614868060487e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896258e-07,
+        -5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.3286366193475336,
+        22.934759017806766
+      ],
+      "distance": 2.3657345757584136e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -5.773502691896258e-07,
+        5.773502691896258e-07,
+        5.773502691896258e-07
+      ],
+      "section": [
+        3.3286366277931845,
+        22.934759089459906
+      ],
+      "distance": 9.580560866828939e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896258e-07,
+        5.773502691896258e-07,
+        -5.773502691896258e-07
+      ],
+      "section": [
+        3.3286366757868575,
+        22.93475937837773
+      ],
+      "distance": 3.8859316382008856e-07,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -5.773502691896258e-07,
+        -5.773502691896258e-07,
+        -5.773502691896258e-07
+      ],
+      "section": [
+        3.328636613840032,
+        22.934758970898933
+      ],
+      "distance": 2.3574882052059866e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        1e-09,
+        0.0,
+        0.0
+      ],
+      "section": [
+        3.328636619971418,
+        22.934759020042055
+      ],
+      "distance": 2.5949383735002678e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        1e-09,
+        0.0
+      ],
+      "section": [
+        3.3286366154041036,
+        22.934758919701107
+      ],
+      "distance": 7.459765647891011e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        0.0,
+        0.0,
+        1e-09
+      ],
+      "section": [
+        3.3286366155945193,
+        22.934758984698107
+      ],
+      "distance": 9.664619288328277e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896259e-10,
+        5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.3286366084034036,
+        22.93475892568135
+      ],
+      "distance": 6.911775805315843e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896259e-10,
+        -5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.328636617455725,
+        22.934759000105604
+      ],
+      "distance": 5.855401715706186e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -5.773502691896259e-10,
+        5.773502691896259e-10,
+        5.773502691896259e-10
+      ],
+      "section": [
+        3.328636616587099,
+        22.934758992814537
+      ],
+      "distance": 1.4883511982656695e-09,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        5.773502691896259e-10,
+        5.773502691896259e-10,
+        -5.773502691896259e-10
+      ],
+      "section": [
+        3.328636616299885,
+        22.934758973360186
+      ],
+      "distance": 2.093156971051995e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    },
+    {
+      "m0": -0.9,
+      "initial": [
+        -5.773502691896259e-10,
+        -5.773502691896259e-10,
+        -5.773502691896259e-10
+      ],
+      "section": [
+        3.328636608573623,
+        22.93475892877671
+      ],
+      "distance": 6.602501652375389e-08,
+      "reached_cycle": true,
+      "method": "DOP853",
+      "duration": 1000
+    }
+  ],
+  "reached_cycle_count": 48,
+  "sample_count": 48,
+  "first_horizon_reached_cycle_count": 39,
+  "scope": "Adaptive checks of these finite-radius starts, not a proof of self-excitation at every parameter on the unstable side."
+}

@@ -14,6 +14,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 | Periodic-window accumulation | An exact quadratic tangency plus the sink-cascade theorem | [Proof report](chua-infinity-certificate.md) | [Interval certificate](../results/chua-layer-infinity/README.md) |
 | Audit infinite coexistence | Local hypotheses pass; localization remains open; Lean proves the tangency-box implication | [Coexistence audit](chua-coexistence-audit.md) | [Audit records](../results/chua-proof-audit/README.md), [formal source](../formal/README.md) |
 | Explain overlaps | Symmetry breaking, coexistence of 2–4 cycles, 18 contact curves | [Overlap geometry](chua-overlap-geometry.md) | [Continuation and checks](../results/chua-overlap-geometry/README.md) |
+| Certify finite coexistence and hiddenness | Four distinct periodic sinks; two hidden-cycle examples with excluded equilibrium neighborhoods; a global-convergence sector and circuit constraints | [Accessibility](chua-accessibility.md) | [Certificates and controls](../results/chua-accessibility/README.md) |
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
 
