@@ -6,11 +6,13 @@ We study families of attracting periodic orbits in the continuous piecewise-line
 
 At α = 9, m₀ = −8/7 and m₁ = −5/7, the interval calculation encloses the tangency parameter in 14.30635909996140 < β∗ < 14.30635909996152. Application of the classical sink-cascade theorem gives infinitely many attracting periodic windows accumulating at this parameter. This concerns windows at different parameter values. Infinite coexistence at a single parameter value remains conditional on the localization argument described in the [coexistence report](docs/chua-coexistence-audit.md).
 
-The repository contains the numerical data, continuation programs, interval certificate and a partial Lean formalization. Lean verifies a general stationary-zero existence argument and ten rational inequalities; it does not verify the complete Chua certificate.
+The repository contains the numerical data, continuation programs, interval certificates and a partial Lean formalization. Lean verifies a general stationary-zero existence argument, ten rational inequalities and three storage-algebra implications; it does not verify the complete Chua dynamical arguments.
 
 [Study outline](docs/research-guide.md) · [Interval certificate](docs/chua-infinity-certificate.md) · [Orbit catalogue](docs/chua-family-gallery.md) · [Data and reproduction](results/README.md)
 
 An [accessibility study](docs/chua-accessibility.md) adds interval certificates for four coexisting cycles and two hidden-cycle examples, explicit equilibrium neighborhoods excluded from their basins, a sufficient global-convergence sector and a numerical component-tolerance experiment.
+
+The [global-stability and basin study](docs/chua-hidden-boundary.md) addresses questions posed by Leonov, Kuznetsov, Chua and colleagues. It derives an explicit slope sector where all trajectories converge to the origin, certifies a saddle beside a hidden attracting cycle, and tests amplitude and flight-time predictions near two linear contacts. The maximum coexistence count and complete basin boundary remain open in this investigation.
 
 ## Background
 
@@ -80,6 +82,14 @@ An attracting cycle can coexist with a stable equilibrium while its basin remain
 ![Hidden cycles and certified neighborhoods excluded from their basins](docs/assets/chua-accessibility.png)
 
 Figure 6. Periodic-attractor existence and accessibility from equilibria. The [report](docs/chua-accessibility.md) proves hiddenness at two parameter points, certifies four distinct coexisting cycles at another point, and compares local-stability predictions with subsequent initial-condition tests. A [component study](docs/chua-accessibility.md#5-component-constraints) checks an ideal circuit realization and a finite set of component perturbations. These results establish neither an exhaustive attractor count nor an exact hiddenness boundary. The new interval arguments are not formalized in Lean.
+
+## A proved region without oscillatory layers
+
+![Global-convergence sector in the slope plane and the two parameter volumes](docs/assets/chua-global-sector.png)
+
+Figure 7. An explicit storage function proves convergence to the origin for every initial state in the stated green sector. At α = 8.4 and β = 12, the threshold is m* ≈ −0.181371900613: the result requires m₀ > m* and m₁ ≥ m*. The darker m₀ face contains neutral periodic orbits. Thus this part of the atlas can distinguish proved absence from a scan that found nothing. The [derivation](docs/chua-hidden-boundary.md#2-an-explicit-region-without-oscillatory-attractors) gives the general parameter assumptions and the unclassified region.
+
+Outside that sector, a [certified saddle cycle](docs/chua-hidden-boundary.md#3-a-certified-saddle-beside-a-hidden-periodic-attractor) coexists with the hidden cycle and stable origin at m₀ = −0.95, m₁ = −0.05. Its computed local stable manifold separates all sixteen tested trajectories into two destinations. The complete basin boundary is not certified. A [prediction comparison](docs/chua-hidden-boundary.md#4-predicting-the-two-linear-contacts) shows that the two investigated cycle contacts approach amplitude 1, with excess proportional to δ²ᐟ³ and outer-flight duration proportional to δ¹ᐟ³.
 
 ## Model
 

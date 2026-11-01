@@ -18,6 +18,7 @@ The investigation proceeds from sampled parameter maps to continued periodic orb
 | Vary both slopes | Two-dimensional sections and two three-dimensional volumes | [Slope plane](chua-slope-plane.md), [volumes](chua-slope-volumes.md) | [Slope-plane data](../results/chua-slope-plane/), [volume data](../results/chua-slope-volumes/) |
 | Resolve slope-family structure | Continued five-/seven-peak families and missed basins | [Slope families](chua-slope-families.md) | [Family data](../results/chua-slope-families/) |
 | Refine two-slope families | 6,713 cross-sections; recovered P7 nodes; diode-contact curves and a tested duration law | [Slope refinement](chua-slope-refinement.md) | [Refinement data and controls](../results/chua-slope-refinement/README.md) |
+| Exclude oscillations and locate a basin separator | Explicit global-convergence sector; certified saddle beside a hidden sink; tested two-thirds/one-third contact laws | [Global stability and basins](chua-hidden-boundary.md) | [Storage identities, certificates and controls](../results/chua-hidden-boundary/README.md) |
 
 The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-family-gallery.md) describes the reference motions, the [prediction study](chua-layer-prediction.md) compares forecasts with subsequent computations, and the [certificate](chua-infinity-certificate.md) presents the mathematical argument and its scope.
 
@@ -37,7 +38,7 @@ A family can have multiple attracting descendants at the same parameters, partic
 | Computed periodic cycle | Closed orbit, valid itinerary, attracting multipliers and independent controls | A global component count |
 | Interval certificate | Outward-rounded inclusions and inequalities for complete parameter boxes and flight intervals | A classification outside the certified neighborhoods |
 | Theorem consequence | Verified hypotheses plus the established sink-cascade theorem | Exact widths and peak labels for every uncomputed member |
-| Partial formal proof | Lean checks the general boundary-sign implication and rational guards | The Chua numerical implementation, invariant-manifold construction or infinite coexistence |
+| Partial formal proof | Lean checks the general boundary-sign implication, rational guards and three storage-algebra implications | The Chua numerical implementation, invariant-manifold construction, full global-convergence argument or infinite coexistence |
 
 The 85-peak forecast miss, failed whole-period multiplier checks and two rejected tangency boxes are retained. The independent checks and the interval proof are distinct forms of evidence.
 

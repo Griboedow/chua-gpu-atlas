@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "id": "Saddle",
+      "method": "DOP853",
+      "success": true,
+      "closure": 1.7235345095567567e-14,
+      "multiplier_error": 3.3863134518696825e-11,
+      "dominant": 3.352019489219533
+    },
+    {
+      "id": "Saddle",
+      "method": "Radau",
+      "success": true,
+      "closure": 3.2519126280661226e-14,
+      "multiplier_error": 1.8207657603852567e-14,
+      "dominant": 3.3520194891856883
+    },
+    {
+      "id": "HiddenCycle",
+      "method": "DOP853",
+      "success": true,
+      "closure": 4.973799150320701e-14,
+      "multiplier_error": 1.1952661083114435e-12,
+      "dominant": 0.9236501074059607
+    },
+    {
+      "id": "HiddenCycle",
+      "method": "Radau",
+      "success": true,
+      "closure": 3.892719480091955e-14,
+      "multiplier_error": 2.220446049250313e-16,
+      "dominant": 0.9236501074047656
+    }
+  ]
+}

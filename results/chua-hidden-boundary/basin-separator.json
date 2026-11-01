@@ -1,0 +1,2074 @@
+{
+  "cycle": {
+    "beta": 12.0,
+    "alpha": 8.4,
+    "m0": -0.95,
+    "m1": -0.05,
+    "symmetric": true,
+    "q": [
+      0.259191482881335,
+      0.3814035913725493,
+      0.5643511084469341,
+      0.3372595201074758,
+      0.635579902177996
+    ],
+    "period": 3.0743810614648117,
+    "residual": 2.233768725545815e-13,
+    "map_multipliers": [
+      [
+        1.830852121058749,
+        0.0
+      ],
+      [
+        -0.004808961973629952,
+        0.0
+      ]
+    ],
+    "full_multipliers": [
+      [
+        3.35201948918532,
+        0.0
+      ],
+      [
+        2.3126115263818887e-05,
+        0.0
+      ]
+    ],
+    "spectral_radius": 3.35201948918532,
+    "section_matrix": [
+      [
+        0.7858440508830862,
+        0.37921623377009744
+      ],
+      [
+        2.1788064580717235,
+        1.0401991082020328
+      ]
+    ],
+    "minimum_breakpoint_speed": 0.47577038283433326,
+    "map_determinant_liouville": -0.008804498229511265,
+    "map_trace": 1.826043159085119,
+    "full_logdet": -9.464985051305067,
+    "region_violation": 1.694200335577989e-13,
+    "arcs": [
+      {
+        "region": 0,
+        "duration": 0.5643511084469341,
+        "start": [
+          0.0,
+          0.259191482881335,
+          0.3814035913725493
+        ],
+        "end": [
+          0.9999999999998306,
+          0.16793809064517948,
+          -1.2358302607650877
+        ]
+      },
+      {
+        "region": 1,
+        "duration": 0.3372595201074758,
+        "start": [
+          0.9999999999998306,
+          0.16793809064517948,
+          -1.2358302607650877
+        ],
+        "end": [
+          0.9999999999999672,
+          -0.006639331289832642,
+          -1.5841691691588733
+        ]
+      },
+      {
+        "region": 0,
+        "duration": 0.635579902177996,
+        "start": [
+          0.9999999999999672,
+          -0.006639331289832642,
+          -1.5841691691588733
+        ],
+        "end": [
+          2.1804780203638074e-13,
+          -0.2591914828812878,
+          -0.3814035913727727
+        ]
+      }
+    ],
+    "full_cycle_peaks": 1,
+    "extrema_region_violation": 1.694200335577989e-13,
+    "derivative_bracket_max_step": 0.025,
+    "amplitude": 1.0576433213751575,
+    "regions": [
+      0,
+      1,
+      0
+    ],
+    "targets": [
+      1,
+      1
+    ]
+  },
+  "section_eigenvalues": [
+    3.3520194891852286,
+    2.3126115263449876e-05
+  ],
+  "basis": [
+    [
+      0.34111797012892103,
+      0.4324555768274624
+    ],
+    [
+      0.940020494699517,
+      -0.9016552412484646
+    ]
+  ],
+  "curve": [
+    {
+      "stable_coordinate": -0.035,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2437301044457275,
+            0.41206472679241685
+          ],
+          "unstable_coordinate": -0.0009540196505134865,
+          "residual": 1.1521476334220507e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24373010444572785,
+            0.4120647267924178
+          ],
+          "unstable_coordinate": -0.000954019650512512,
+          "residual": 2.8159675886117148e-14
+        }
+      ],
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "stable_coordinate": -0.034,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24418092098487598,
+            0.41121366894677797
+          ],
+          "unstable_coordinate": -0.0009001938074655299,
+          "residual": 2.4220248434627355e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2441809209848762,
+            0.4112136689467785
+          ],
+          "unstable_coordinate": -0.0009001938074649363,
+          "residual": 5.706466942419956e-15
+        }
+      ],
+      "difference": 5.978733960281817e-16
+    },
+    {
+      "stable_coordinate": -0.033,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2446312022811046,
+            0.41036113612955044
+          ],
+          "unstable_coordinate": -0.0008479370489182772,
+          "residual": 4.620365765076488e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2446312022811049,
+            0.41036113612955133
+          ],
+          "unstable_coordinate": -0.000847937048917359,
+          "residual": 1.7424811948025134e-14
+        }
+      ],
+      "difference": 9.39188966358397e-16
+    },
+    {
+      "stable_coordinate": -0.032,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24508094856208054,
+            0.409507128968118
+          ],
+          "unstable_coordinate": -0.0007972487074569559,
+          "residual": 5.105297696688703e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2450809485620808,
+            0.40950712896811864
+          ],
+          "unstable_coordinate": -0.0007972487074562522,
+          "residual": 4.431403934805223e-14
+        }
+      ],
+      "difference": 7.114312260401321e-16
+    },
+    {
+      "stable_coordinate": -0.031000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24553016005136363,
+            0.40865164807854526
+          ],
+          "unstable_coordinate": -0.0007481281277077569,
+          "residual": 2.696680478458123e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24553016005136385,
+            0.40865164807854587
+          ],
+          "unstable_coordinate": -0.0007481281277071045,
+          "residual": 6.483785024463734e-14
+        }
+      ],
+      "difference": 6.497413668604471e-16
+    },
+    {
+      "stable_coordinate": -0.030000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24597883696839065,
+            0.40779469406553565
+          ],
+          "unstable_coordinate": -0.0007005746663833635,
+          "residual": 8.447310531880115e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2459788369683909,
+            0.4077946940655363
+          ],
+          "unstable_coordinate": -0.0007005746663826261,
+          "residual": 4.431403934805223e-14
+        }
+      ],
+      "difference": 7.114312260401321e-16
+    },
+    {
+      "stable_coordinate": -0.029000000000000005,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24642697952845952,
+            0.4069362675223864
+          ],
+          "unstable_coordinate": -0.0006545876923301958,
+          "residual": 1.086164051060441e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24642697952845982,
+            0.4069362675223872
+          ],
+          "unstable_coordinate": -0.0006545876923292923,
+          "residual": 7.53931933718824e-14
+        }
+      ],
+      "difference": 8.868764227826485e-16
+    },
+    {
+      "stable_coordinate": -0.028000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24687458794271214,
+            0.40607636903094235
+          ],
+          "unstable_coordinate": -0.0006101665865777701,
+          "residual": 6.191398874032171e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2468745879427124,
+            0.4060763690309431
+          ],
+          "unstable_coordinate": -0.0006101665865770567,
+          "residual": 7.066538099907598e-14
+        }
+      ],
+      "difference": 7.63656720759043e-16
+    },
+    {
+      "stable_coordinate": -0.027000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2473216624181173,
+            0.40521499916154863
+          ],
+          "unstable_coordinate": -0.0005673107423893823,
+          "residual": 1.7686946220382442e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2473216624181176,
+            0.4052149991615495
+          ],
+          "unstable_coordinate": -0.0005673107423884625,
+          "residual": 2.2479137931567433e-14
+        }
+      ],
+      "difference": 9.39188966358397e-16
+    },
+    {
+      "stable_coordinate": -0.026000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2477682031574532,
+            0.40435215847300204
+          ],
+          "unstable_coordinate": -0.0005260195653132324,
+          "residual": 1.0441087917370756e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24776820315745346,
+            0.4043521584730027
+          ],
+          "unstable_coordinate": -0.0005260195653124783,
+          "residual": 3.8715019013362223e-14
+        }
+      ],
+      "difference": 7.114312260401321e-16
+    },
+    {
+      "stable_coordinate": -0.025,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24821421035928914,
+            0.40348784751250083
+          ],
+          "unstable_coordinate": -0.0004862924732361236,
+          "residual": 7.558964288515392e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24821421035928948,
+            0.4034878475125018
+          ],
+          "unstable_coordinate": -0.00048629247323514214,
+          "residual": 2.0917159010460678e-13
+        }
+      ],
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "stable_coordinate": -0.024000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24865968421796678,
+            0.4026220668155935
+          ],
+          "unstable_coordinate": -0.0004481288964381998,
+          "residual": 4.485894327825652e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24865968421796703,
+            0.4026220668155942
+          ],
+          "unstable_coordinate": -0.0004481288964374321,
+          "residual": 4.483045913073363e-13
+        }
+      ],
+      "difference": 7.63656720759043e-16
+    },
+    {
+      "stable_coordinate": -0.023000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24910462492358124,
+            0.401754816906126
+          ],
+          "unstable_coordinate": -0.0004115282776485025,
+          "residual": 6.191398874032171e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24910462492358157,
+            0.4017548169061269
+          ],
+          "unstable_coordinate": -0.00041152827764756204,
+          "residual": 1.483336064145322e-13
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": -0.022000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.24954903266196116,
+            0.4008860982961873
+          ],
+          "unstable_coordinate": -0.0003764900721035086,
+          "residual": 1.5290850364789943e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24954903266196135,
+            0.4008860982961879
+          ],
+          "unstable_coordinate": -0.00037649007210291483,
+          "residual": 1.416946301177455e-13
+        }
+      ],
+      "difference": 5.881301029635769e-16
+    },
+    {
+      "stable_coordinate": -0.021000000000000005,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2499929076146484,
+            0.40001591148605314
+          ],
+          "unstable_coordinate": -0.0003430137476065977,
+          "residual": 7.8551655447784155e-16
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.24999290761464868,
+            0.400015911486054
+          ],
+          "unstable_coordinate": -0.00034301374760574476,
+          "residual": 1.2609067376745182e-13
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": -0.020000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25043624995887764,
+            0.3991442569641301
+          ],
+          "unstable_coordinate": -0.0003110987845876739,
+          "residual": 3.727736150000672e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25043624995887803,
+            0.3991442569641312
+          ],
+          "unstable_coordinate": -0.00031109878458650454,
+          "residual": 1.1260244487726158e-13
+        }
+      ],
+      "difference": 1.1762602059271538e-15
+    },
+    {
+      "stable_coordinate": -0.019000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2508790598675549,
+            0.39827113520689605
+          ],
+          "unstable_coordinate": -0.00028074467616626716,
+          "residual": 7.558964288515392e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25087905986755515,
+            0.3982711352068968
+          ],
+          "unstable_coordinate": -0.00028074467616550833,
+          "residual": 4.958304896799784e-15
+        }
+      ],
+      "difference": 7.731808680624463e-16
+    },
+    {
+      "stable_coordinate": -0.018000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25132133750923535,
+            0.39739654667883967
+          ],
+          "unstable_coordinate": -0.0002519509282163926,
+          "residual": 2.4594865391670828e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2513213375092357,
+            0.3973965466788405
+          ],
+          "unstable_coordinate": -0.0002519509282154955,
+          "residual": 9.133618469555002e-14
+        }
+      ],
+      "difference": 8.968100940422724e-16
+    },
+    {
+      "stable_coordinate": -0.017,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25176308304810135,
+            0.3965204918323985
+          ],
+          "unstable_coordinate": -0.00022471705943197037,
+          "residual": 8.939051065636698e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25176308304810163,
+            0.3965204918323993
+          ],
+          "unstable_coordinate": -0.00022471705943115182,
+          "residual": 7.53931933718824e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": -0.016000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25220429664393906,
+            0.39564297110789665
+          ],
+          "unstable_coordinate": -0.00019904260139340155,
+          "residual": 3.520647383444286e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2522042966439394,
+            0.39564297110789753
+          ],
+          "unstable_coordinate": -0.0001990426013924061,
+          "residual": 6.722823333973612e-14
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": -0.015000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25264497845211503,
+            0.39476398493347803
+          ],
+          "unstable_coordinate": -0.00017492709863820344,
+          "residual": 1.2357964601844754e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25264497845211537,
+            0.39476398493347886
+          ],
+          "unstable_coordinate": -0.0001749270986373156,
+          "residual": 9.78281681924478e-14
+        }
+      ],
+      "difference": 8.968100940422724e-16
+    },
+    {
+      "stable_coordinate": -0.014000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25308512862355187,
+            0.39388353372504104
+          ],
+          "unstable_coordinate": -0.00015237010873104327,
+          "residual": 1.0172145042869085e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25308512862355215,
+            0.39388353372504176
+          ],
+          "unstable_coordinate": -0.0001523701087302495,
+          "residual": 1.7359313412771878e-13
+        }
+      ],
+      "difference": 7.731808680624463e-16
+    },
+    {
+      "stable_coordinate": -0.013000000000000005,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2535247473047035,
+            0.39300161788616966
+          ],
+          "unstable_coordinate": -0.0001313712023366014,
+          "residual": 4.198717330192181e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25352474730470376,
+            0.39300161788617044
+          ],
+          "unstable_coordinate": -0.00013137120233574793,
+          "residual": 2.2479137931567433e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": -0.012000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25396383463752964,
+            0.3921182378080627
+          ],
+          "unstable_coordinate": -0.00011192996329491526,
+          "residual": 6.051214676287619e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2539638346375299,
+            0.3921182378080635
+          ],
+          "unstable_coordinate": -0.00011192996329411328,
+          "residual": 6.320815055779681e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": -0.011000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25440239075946963,
+            0.39123339386946243
+          ],
+          "unstable_coordinate": -9.404598869756266e-05,
+          "residual": 8.868958966764421e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25440239075946997,
+            0.3912333938694635
+          ],
+          "unstable_coordinate": -9.404598869646449e-05,
+          "residual": 1.4067862103927432e-13
+        }
+      ],
+      "difference": 1.1060518526157679e-15
+    },
+    {
+      "stable_coordinate": -0.010000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2548404158034159,
+            0.3903470864365815
+          ],
+          "unstable_coordinate": -7.771888896512035e-05,
+          "residual": 4.4076882061017807e-16
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2548404158034162,
+            0.3903470864365824
+          ],
+          "unstable_coordinate": -7.77188889641661e-05,
+          "residual": 9.441606325838412e-14
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": -0.009000000000000001,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25527790989768623,
+            0.3894593158630256
+          ],
+          "unstable_coordinate": -6.294828792943327e-05,
+          "residual": 2.460738675430891e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25527790989768645,
+            0.3894593158630261
+          ],
+          "unstable_coordinate": -6.294828792885965e-05,
+          "residual": 5.6428990063265544e-14
+        }
+      ],
+      "difference": 5.4672143489065705e-16
+    },
+    {
+      "stable_coordinate": -0.008000000000000004,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2557148731659957,
+            0.3885700824897172
+          ],
+          "unstable_coordinate": -4.973382291496719e-05,
+          "residual": 6.051214676287619e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.255714873165996,
+            0.3885700824897179
+          ],
+          "unstable_coordinate": -4.973382291425174e-05,
+          "residual": 9.441606325838412e-14
+        }
+      ],
+      "difference": 7.731808680624463e-16
+    },
+    {
+      "stable_coordinate": -0.007000000000000003,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25615130572742834,
+            0.3876793866448164
+          ],
+          "unstable_coordinate": -3.8075144822941315e-05,
+          "residual": 4.076767255579428e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25615130572742867,
+            0.38767938664481727
+          ],
+          "unstable_coordinate": -3.807514482199477e-05,
+          "residual": 2.0254191338545947e-15
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": -0.006000000000000002,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2565872076964071,
+            0.3867872286436392
+          ],
+          "unstable_coordinate": -2.7971918217942494e-05,
+          "residual": 4.485894327825652e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25658720769640736,
+            0.38678722864364
+          ],
+          "unstable_coordinate": -2.7971918217074874e-05,
+          "residual": 2.684431576045687e-13
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": -0.0050000000000000044,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25702257918266336,
+            0.38589360878857315
+          ],
+          "unstable_coordinate": -1.9423821418187264e-05,
+          "residual": 1.6933071414268553e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25702257918266364,
+            0.385893608788574
+          ],
+          "unstable_coordinate": -1.942382141730166e-05,
+          "residual": 1.2403361288523329e-13
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": -0.0040000000000000036,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.257457420291207,
+            0.38499852736899437
+          ],
+          "unstable_coordinate": -1.2430546583522095e-05,
+          "residual": 2.901244014581235e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2574574202912073,
+            0.3849985273689952
+          ],
+          "unstable_coordinate": -1.2430546582593098e-05,
+          "residual": 3.3904593179045424e-14
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": -0.0030000000000000027,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2578917311222937,
+            0.38410198466117795
+          ],
+          "unstable_coordinate": -6.9917998105300415e-06,
+          "residual": 1.265831567246992e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.257891731122294,
+            0.3841019846611788
+          ],
+          "unstable_coordinate": -6.991799809656132e-06,
+          "residual": 7.039072536408059e-14
+        }
+      ],
+      "difference": 8.968100940422724e-16
+    },
+    {
+      "stable_coordinate": -0.0020000000000000018,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25832551177139296,
+            0.38320398092820973
+          ],
+          "unstable_coordinate": -3.10730122690726e-06,
+          "residual": 1.066980791617596e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2583255117713932,
+            0.3832039809282105
+          ],
+          "unstable_coordinate": -3.1073012261192913e-06,
+          "residual": 1.125505869015211e-13
+        }
+      ],
+      "difference": 8.08254562088053e-16
+    },
+    {
+      "stable_coordinate": -0.0010000000000000009,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25875876232915446,
+            0.3823045164198934
+          ],
+          "unstable_coordinate": -7.767850897794178e-07,
+          "residual": 3.789590257945958e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25875876232915473,
+            0.3823045164198942
+          ],
+          "unstable_coordinate": -7.767850889045702e-07,
+          "residual": 1.1604089795730866e-14
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": 0.0,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2591914828813744,
+            0.38140359137265795
+          ],
+          "unstable_coordinate": 1.1556720227922944e-13,
+          "residual": 1.7424811948025134e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25919148288137467,
+            0.3814035913726586
+          ],
+          "unstable_coordinate": 1.1629210755643275e-13,
+          "residual": 2.0217513513225775e-14
+        }
+      ],
+      "difference": 7.216449660063518e-16
+    },
+    {
+      "stable_coordinate": 0.0010000000000000009,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.25962367350896015,
+            0.38050120600946025
+          ],
+          "unstable_coordinate": -7.767084278761825e-07,
+          "residual": 1.6806713999869312e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.25962367350896043,
+            0.380501206009461
+          ],
+          "unstable_coordinate": -7.767084270358409e-07,
+          "residual": 4.8562632549740166e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.001999999999999995,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2600553342878948,
+            0.37959736053968723
+          ],
+          "unstable_coordinate": -3.106687972892148e-06,
+          "residual": 1.6806713999869312e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2600553342878951,
+            0.3795973605396882
+          ],
+          "unstable_coordinate": -3.1066879718811276e-06,
+          "residual": 1.8665400182253103e-13
+        }
+      ],
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "stable_coordinate": 0.0029999999999999957,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26048646528920044,
+            0.3786920551590551
+          ],
+          "unstable_coordinate": -6.9897303153047965e-06,
+          "residual": 2.7092018410962062e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2604864652892007,
+            0.3786920551590559
+          ],
+          "unstable_coordinate": -6.989730314452567e-06,
+          "residual": 1.263020459057193e-13
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": 0.003999999999999997,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2609170665789006,
+            0.37778529004950484
+          ],
+          "unstable_coordinate": -1.2425641905084508e-05,
+          "residual": 5.820488600053811e-16
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2609170665789009,
+            0.37778529004950573
+          ],
+          "unstable_coordinate": -1.2425641904192156e-05,
+          "residual": 6.81991930446112e-14
+        }
+      ],
+      "difference": 9.305364597889227e-16
+    },
+    {
+      "stable_coordinate": 0.0049999999999999975,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2613471382179822,
+            0.37687706537909865
+          ],
+          "unstable_coordinate": -1.941424395660082e-05,
+          "residual": 2.0254191338545947e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2613471382179825,
+            0.3768770653790995
+          ],
+          "unstable_coordinate": -1.9414243955732183e-05,
+          "residual": 4.8562632549740166e-14
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": 0.005999999999999998,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2617766802623558,
+            0.3759673813019093
+          ],
+          "unstable_coordinate": -2.7955372566216684e-05,
+          "residual": 4.532901832482605e-16
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2617766802623561,
+            0.3759673813019102
+          ],
+          "unstable_coordinate": -2.7955372565227905e-05,
+          "residual": 1.6017390149475015e-13
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": 0.006999999999999999,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2622056927628156,
+            0.37505623795791093
+          ],
+          "unstable_coordinate": -3.8048878828487995e-05,
+          "residual": 2.076682478321655e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26220569276281586,
+            0.3750562379579117
+          ],
+          "unstable_coordinate": -3.804887882766054e-05,
+          "residual": 6.403211746278299e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.008,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26263417576499815,
+            0.3741436354728645
+          ],
+          "unstable_coordinate": -4.969462895807441e-05,
+          "residual": 3.520647383444286e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2626341757649984,
+            0.37414363547286517
+          ],
+          "unstable_coordinate": -4.969462895738096e-05,
+          "residual": 6.424239375939981e-14
+        }
+      ],
+      "difference": 7.216449660063518e-16
+    },
+    {
+      "stable_coordinate": 0.008999999999999994,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2630621293093404,
+            0.37322957395820183
+          ],
+          "unstable_coordinate": -6.289250441310111e-05,
+          "residual": 4.4215149894470916e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2630621293093407,
+            0.3732295739582026
+          ],
+          "unstable_coordinate": -6.289250441224318e-05,
+          "residual": 2.851123222212918e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.009999999999999995,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26348955343103625,
+            0.3723140535109072
+          ],
+          "unstable_coordinate": -7.764240202101652e-05,
+          "residual": 9.066713900743166e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2634895534310366,
+            0.3723140535109081
+          ],
+          "unstable_coordinate": -7.764240202003402e-05,
+          "residual": 4.904756448135238e-14
+        }
+      ],
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "stable_coordinate": 0.010999999999999996,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26391644815999243,
+            0.3713970742133947
+          ],
+          "unstable_coordinate": -9.394423410922402e-05,
+          "residual": 3.1058075507043466e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2639164481599927,
+            0.37139707421339546
+          ],
+          "unstable_coordinate": -9.394423410843227e-05,
+          "residual": 4.4517507042524686e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.011999999999999997,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2643428135207832,
+            0.37047863613338383
+          ],
+          "unstable_coordinate": -0.0001117979286371843,
+          "residual": 1.7406577824893335e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26434281352078354,
+            0.3704786361333848
+          ],
+          "unstable_coordinate": -0.00011179792863619028,
+          "residual": 1.2403361288523329e-13
+        }
+      ],
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "stable_coordinate": 0.012999999999999998,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26476864953260404,
+            0.3695587393237716
+          ],
+          "unstable_coordinate": -0.0001312034293328332,
+          "residual": 1.265831567246992e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26476864953260426,
+            0.3695587393237722
+          ],
+          "unstable_coordinate": -0.00013120342933214298,
+          "residual": 4.958304896799784e-15
+        }
+      ],
+      "difference": 6.497413668604471e-16
+    },
+    {
+      "stable_coordinate": 0.013999999999999999,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2651939562092241,
+            0.3686373838225017
+          ],
+          "unstable_coordinate": -0.0001521606958312642,
+          "residual": 3.188421012214705e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26519395620922437,
+            0.3686373838225025
+          ],
+          "unstable_coordinate": -0.00015216069583039586,
+          "residual": 9.167521966892396e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.015,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2656187335589379,
+            0.36771456965243143
+          ],
+          "unstable_coordinate": -0.00017466970381686936,
+          "residual": 5.809530183547296e-16
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2656187335589381,
+            0.3677145696524321
+          ],
+          "unstable_coordinate": -0.0001746697038161351,
+          "residual": 2.778941654313385e-13
+        }
+      ],
+      "difference": 7.021666937153402e-16
+    },
+    {
+      "stable_coordinate": 0.016,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26604298158451517,
+            0.3667902968211934
+          ],
+          "unstable_coordinate": -0.0001987304451699392,
+          "residual": 1.2485627436951224e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26604298158451545,
+            0.3667902968211941
+          ],
+          "unstable_coordinate": -0.0001987304451692405,
+          "residual": 1.344487718147338e-13
+        }
+      ],
+      "difference": 7.216449660063518e-16
+    },
+    {
+      "stable_coordinate": 0.017,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2664667002831504,
+            0.3658645653210561
+          ],
+          "unstable_coordinate": -0.0002243429281153275,
+          "residual": 1.0581272115115307e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2664667002831507,
+            0.36586456532105716
+          ],
+          "unstable_coordinate": -0.0002243429281142312,
+          "residual": 2.9368445119462345e-13
+        }
+      ],
+      "difference": 1.1060518526157679e-15
+    },
+    {
+      "stable_coordinate": 0.017999999999999995,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2668898896464101,
+            0.3649373751287799
+          ],
+          "unstable_coordinate": -0.0002515071773756151,
+          "residual": 1.0172145042869085e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2668898896464104,
+            0.36493737512878066
+          ],
+          "unstable_coordinate": -0.00025150717737473327,
+          "residual": 1.247356297156067e-13
+        }
+      ],
+      "difference": 8.455206652451151e-16
+    },
+    {
+      "stable_coordinate": 0.018999999999999996,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26731254966017987,
+            0.3640087262054693
+          ],
+          "unstable_coordinate": -0.00028022323432788556,
+          "residual": 9.552741674006032e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26731254966018014,
+            0.36400872620547015
+          ],
+          "unstable_coordinate": -0.00028022323432698264,
+          "residual": 9.167521966892396e-14
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": 0.019999999999999997,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26773468030460984,
+            0.3630786184964239
+          ],
+          "unstable_coordinate": -0.00031049115716290057,
+          "residual": 7.571485651153474e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26773468030461006,
+            0.36307861849642453
+          ],
+          "unstable_coordinate": -0.0003104911571622814,
+          "residual": 1.247356297156067e-13
+        }
+      ],
+      "difference": 6.497413668604471e-16
+    },
+    {
+      "stable_coordinate": 0.020999999999999998,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2681562815540579,
+            0.3621470519309819
+          ],
+          "unstable_coordinate": -0.0003423110210512326,
+          "residual": 4.485894327825652e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2681562815540582,
+            0.3621470519309826
+          ],
+          "unstable_coordinate": -0.00034231102105043476,
+          "residual": 3.4975419005713854e-13
+        }
+      ],
+      "difference": 7.731808680624463e-16
+    },
+    {
+      "stable_coordinate": 0.022,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2685773533770335,
+            0.3612140264223641
+          ],
+          "unstable_coordinate": -0.0003756829183089935,
+          "residual": 4.485894327825652e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2685773533770338,
+            0.36121402642236494
+          ],
+          "unstable_coordinate": -0.0003756829183081223,
+          "residual": 1.3678048833194773e-13
+        }
+      ],
+      "difference": 8.968100940422724e-16
+    },
+    {
+      "stable_coordinate": 0.023,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.26899789573613814,
+            0.3602795418675118
+          ],
+          "unstable_coordinate": -0.00041060695857082584,
+          "residual": 7.827907163017064e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26899789573613836,
+            0.3602795418675124
+          ],
+          "unstable_coordinate": -0.0004106069585702184,
+          "residual": 6.25243678505552e-14
+        }
+      ],
+      "difference": 5.978733960281817e-16
+    },
+    {
+      "stable_coordinate": 0.024,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2694179085880052,
+            0.3593435981469192
+          ],
+          "unstable_coordinate": -0.00044708326896777484,
+          "residual": 9.82739730900142e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26941790858800546,
+            0.35934359814691996
+          ],
+          "unstable_coordinate": -0.0004470832689669432,
+          "residual": 3.375104806651681e-13
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.024999999999999994,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2698373918832392,
+            0.358406195124467
+          ],
+          "unstable_coordinate": -0.00048511199430441646,
+          "residual": 3.8450350508321457e-17
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.26983739188323946,
+            0.35840619512446775
+          ],
+          "unstable_coordinate": -0.0004851119943036311,
+          "residual": 9.947719784407078e-14
+        }
+      ],
+      "difference": 8.252325904466732e-16
+    },
+    {
+      "stable_coordinate": 0.025999999999999995,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27025634556635186,
+            0.3574673326472457
+          ],
+          "unstable_coordinate": -0.0005246932972468819,
+          "residual": 5.5845168678072026e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2702563455663521,
+            0.35746733264724617
+          ],
+          "unstable_coordinate": -0.0005246932972463752,
+          "residual": 1.6057246533541915e-14
+        }
+      ],
+      "difference": 5.4672143489065705e-16
+    },
+    {
+      "stable_coordinate": 0.026999999999999996,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27067476957569786,
+            0.35652701054537894
+          ],
+          "unstable_coordinate": -0.0005658273585107635,
+          "residual": 6.198207476176537e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.27067476957569814,
+            0.35652701054537966
+          ],
+          "unstable_coordinate": -0.0005658273585099826,
+          "residual": 3.164868152119748e-14
+        }
+      ],
+      "difference": 7.731808680624463e-16
+    },
+    {
+      "stable_coordinate": 0.027999999999999997,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27109266384340897,
+            0.35558522863184205
+          ],
+          "unstable_coordinate": -0.0006085143770542042,
+          "residual": 4.958304896799784e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.27109266384340924,
+            0.3555852286318429
+          ],
+          "unstable_coordinate": -0.0006085143770532761,
+          "residual": 1.4416081807221026e-13
+        }
+      ],
+      "difference": 8.777083671441752e-16
+    },
+    {
+      "stable_coordinate": 0.028999999999999998,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2715100282953259,
+            0.35464198670227404
+          ],
+          "unstable_coordinate": -0.0006527545702776801,
+          "residual": 1.4060157649915439e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.27151002829532617,
+            0.3546419867022749
+          ],
+          "unstable_coordinate": -0.0006527545702767301,
+          "residual": 3.2565195146181837e-13
+        }
+      ],
+      "difference": 9.305364597889227e-16
+    },
+    {
+      "stable_coordinate": 0.03,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27192686285092893,
+            0.3536972845347862
+          ],
+          "unstable_coordinate": -0.0006985481742279126,
+          "residual": 3.1058075507043466e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.27192686285092926,
+            0.353697284534787
+          ],
+          "unstable_coordinate": -0.000698548174227048,
+          "residual": 1.5791227707640848e-13
+        }
+      ],
+      "difference": 8.455206652451151e-16
+    },
+    {
+      "stable_coordinate": 0.031,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2723431674232672,
+            0.3527511218897673
+          ],
+          "unstable_coordinate": -0.000745895443804874,
+          "residual": 1.1335146921229195e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2723431674232675,
+            0.3527511218897682
+          ],
+          "unstable_coordinate": -0.0007458954438039315,
+          "residual": 3.968350019825212e-13
+        }
+      ],
+      "difference": 9.305364597889227e-16
+    },
+    {
+      "stable_coordinate": 0.032,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27275894191888556,
+            0.351803498509683
+          ],
+          "unstable_coordinate": -0.0007947966529753713,
+          "residual": 3.129754434329861e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2727589419188859,
+            0.3518034985096839
+          ],
+          "unstable_coordinate": -0.0007947966529743856,
+          "residual": 1.2389914144798245e-13
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": 0.033,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.27317418623774986,
+            0.3508544141188684
+          ],
+          "unstable_coordinate": -0.00084525209499345,
+          "residual": 9.949347383614174e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2731741862377502,
+            0.3508544141188693
+          ],
+          "unstable_coordinate": -0.0008452520949924727,
+          "residual": 2.2479137931567433e-14
+        }
+      ],
+      "difference": 9.485749680535094e-16
+    },
+    {
+      "stable_coordinate": 0.034,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2735889002731708,
+            0.34990386842331933
+          ],
+          "unstable_coordinate": -0.0008972620826227803,
+          "residual": 2.9713361134535106e-15
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.27358890027317107,
+            0.34990386842332
+          ],
+          "unstable_coordinate": -0.000897262082622065,
+          "residual": 8.762438140121478e-14
+        }
+      ],
+      "difference": 7.216449660063518e-16
+    },
+    {
+      "stable_coordinate": 0.035,
+      "approximations": [
+        {
+          "iterations": 4,
+          "point": [
+            0.2740030839117253,
+            0.34895186111047544
+          ],
+          "unstable_coordinate": -0.0009508269483670226,
+          "residual": 3.500321571902697e-14
+        },
+        {
+          "iterations": 6,
+          "point": [
+            0.2740030839117254,
+            0.3489518611104757
+          ],
+          "unstable_coordinate": -0.0009508269483666965,
+          "residual": 2.0217513513225775e-14
+        }
+      ],
+      "difference": 2.9893669801409083e-16
+    }
+  ],
+  "controls": [
+    {
+      "curve_index": 0,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.24369599264871494,
+        0.4119707247429478
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.284163524945371e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 0,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.24376421624274075,
+        0.41215872884188776
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.79172742356978,
+      "last_section_distance": 1.7055158086693223e-10,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 10,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.24818009856227657,
+        0.4033938454630318
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.3481872158678324e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 10,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.24824832215630238,
+        0.40358184956197174
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.664672153741753,
+      "last_section_distance": 7.0502604836200584e-09,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 20,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.25261086665510246,
+        0.3946699828840089
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.411065575419326e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 20,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.25267909024912827,
+        0.3948579869829488
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.592793907866675,
+      "last_section_distance": 5.623603317612299e-10,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 30,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.25698846738565073,
+        0.385799606739104
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.473049888511472e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 30,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.25705669097967654,
+        0.38598761083804395
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.572302103442995,
+      "last_section_distance": 6.470869243129239e-09,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 40,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.2613130264209696,
+        0.3767830633296295
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.534131410304262e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 40,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.2613812500149954,
+        0.37697106742856945
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.598337522206323,
+      "last_section_distance": 8.565160441936847e-08,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 50,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.2655846217619252,
+        0.36762056760296213
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.594359935094263e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 50,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.265652845355951,
+        0.36780857170190207
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.66514608242713,
+      "last_section_distance": 1.502569339088465e-09,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 60,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.26980328008622656,
+        0.3583121930749978
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.653804717659592e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 60,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.26987150368025237,
+        0.3585001971739377
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.766511908666518,
+      "last_section_distance": 8.090305323741487e-08,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 70,
+      "side": -1,
+      "initial": [
+        0.0,
+        0.2739689721147125,
+        0.34885785906100575
+      ],
+      "label": "origin",
+      "expected": "origin",
+      "final_norm": 6.712548263592594e-18,
+      "last_section_distance": 24.501763570122527,
+      "duration": 700,
+      "method": "DOP853"
+    },
+    {
+      "curve_index": 70,
+      "side": 1,
+      "initial": [
+        0.0,
+        0.2740371957087383,
+        0.3490458631599457
+      ],
+      "label": "outer_cycle",
+      "expected": "outer_cycle",
+      "final_norm": 10.895711496440851,
+      "last_section_distance": 2.9308222828928626e-10,
+      "duration": 700,
+      "method": "DOP853"
+    }
+  ],
+  "scope": "Numerical local stable-manifold approximation and sixteen two-sided trajectory outcomes. This does not prove the complete global basin boundary or exclude other attractors."
+}

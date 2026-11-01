@@ -135,6 +135,7 @@ def sample_orbit(r, times):
         starts.append(c+((V*np.exp(eig*duration))@W).real@(starts[-1]-c))
     result = np.empty((len(times), 3))
     for i, time in enumerate(times):
+        time = time % r['period']
         sign = 1 if time < r['period']/2 else -1
         time = time % (r['period']/2)
         k = min(np.searchsorted(limits, time, side='right')-1, len(durations)-1)

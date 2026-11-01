@@ -1,6 +1,8 @@
-# A formal tangency-box argument
+# Partial formal verification: tangency and storage algebra
 
 This Lean project checks a finite-dimensional step in the [Chua proof audit](../docs/chua-coexistence-audit.md). It does not formalize the Chua flow or prove infinitely many coexisting attractors.
+
+The separate [Storage.lean](ChuaProof/Storage.lean) file adds three real-algebra implications used by the [global-convergence argument](../docs/chua-hidden-boundary.md): `storage_balance`, `storage_dissipation` and `storage_nonincrease`. These assume the output relation and the coefficient/sector signs. Coordinate construction, properness, the Chua flow and LaSalle's theorem are not formalized. Run `python research/check_chua_storage_formal.py` from the repository root to check these declarations, audit their dependencies and reject an altered cross term. Its [record](../results/chua-hidden-boundary/storage-formal-check.json) is separate from the five-declaration tangency audit below; `Audit.lean` still reports only that earlier scope.
 
 ## Statements
 

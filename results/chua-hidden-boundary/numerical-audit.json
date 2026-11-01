@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "overlapping_80_100_digit_enclosures": 17,
+  "independent_periodic_controls": 4,
+  "independent_scaling_controls": 8,
+  "maximum_independent_closure": 4.973799150320701e-14,
+  "maximum_independent_multiplier_error": 6.464695445629332e-11,
+  "nearest_contact_maximum_relative_prediction_error": 6.074424371682596e-05,
+  "basin_two_sided_controls": 16,
+  "maximum_four_six_iterate_curve_difference": 1.1762602059271538e-15,
+  "exact_symbolic_identity_count": 9,
+  "scope": "Checks recorded computations. Floating-point controls do not certify a global basin boundary or asymptotic remainder."
+}

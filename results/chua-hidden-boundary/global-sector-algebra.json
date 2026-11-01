@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "identities": {
+    "characteristic": true,
+    "similarity": true,
+    "input": true,
+    "output": true,
+    "feedthrough": true,
+    "positive_real_decomposition": true,
+    "strict_dissipation_margin": true,
+    "physical_controllability": true,
+    "storage_derivative": true
+  },
+  "sympy_version": "1.14.0",
+  "wrong_feedthrough_rejected": true,
+  "parameterization": "beta=r*(alpha+1-r), r>1, alpha+1-r>0, 2*r-alpha-1>0, alpha>0",
+  "coordinate_matrix": [
+    [
+      "1/alpha",
+      "-1/alpha",
+      "1/(alpha*r)"
+    ],
+    [
+      "0",
+      "1/alpha",
+      "1/(alpha*(-alpha + r - 1))"
+    ],
+    [
+      "1/alpha",
+      "(r - 1)/alpha",
+      "1/alpha"
+    ]
+  ],
+  "scope": "Exact rational-function identities. Positivity assumptions and the global invariance argument are stated in the report."
+}

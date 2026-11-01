@@ -137,6 +137,8 @@ The fixed-step experiment integrates 24 starts per parameter to time 1000 at ste
 
 ### A separate sufficient sector for global convergence
 
+**Follow-up:** the [storage-function study](chua-hidden-boundary.md#2-an-explicit-region-without-oscillatory-attractors) extends the sufficient region to m₀ > m*, m₁ ≥ m*, with m* ≈ −0.181371900613 at these α and β. It proves global asymptotic convergence and identifies an exact adjacent neutral face. The smaller quadratic certificate below remains a separate exponential-convergence result. The same follow-up also certifies a saddle beside the H2 hidden cycle and computes a local basin separator.
+
 At α = 8.4, β = 12 and γ = 0, global exponential convergence to the origin is certified whenever both slopes belong to **[−0.055, −0.045]**. For x ≠ 0, h(x)/x lies between m₀ and m₁. The field can therefore be written as A(k)u with k in this sector. A common rational P gives P > 0 and −(A(k)ᵀP + PA(k)) > 0 at both endpoints. Affine dependence on k extends the inequality throughout the sector. The resulting radially unbounded quadratic function decreases uniformly away from the origin.
 
 The chosen P fails the same test at the unstable slope m = −0.5, providing a rejection control. The certified global sector and the hidden-cycle point are separated in parameter space. They do **not** enclose a unique first transition or establish an exact global-stability boundary. The Lyapunov method is established; the recorded bounds are specific to this study.

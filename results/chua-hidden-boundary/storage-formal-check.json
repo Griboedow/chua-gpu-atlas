@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source_sha256_lf": {
+    "ChuaProof/Storage.lean": "a6099a2090bd479866890218aca9a41201860d0c97e1ffcb0c2e17672106348e",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "6e97e925c4e59c83ac8e5413f23e165d205edd9338c3b7f271a58b33ff4fe167",
+    "lakefile.toml": "79971a808e69f76429c2b6ac05f5abbc7cdb77cc4909c3a3057fa312991df30e"
+  },
+  "theorem_axioms": {
+    "ChuaProof.storage_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.storage_dissipation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ChuaProof.storage_nonincrease": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "altered_cross_term_rejected": true,
+  "axiom_output": "'ChuaProof.storage_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.storage_dissipation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.storage_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "negative_control_output": "D:\\_TMP\\\u041c\u0430\u0442\u0435\u0448\u0430\\chua-attractor\\formal\\.lake\\build\\chua-rejection-controls\\WrongStorage.lean:18:2: error: ring failed, ring expressions not equal\np r k q D z v phi x xd : \u211d\nh : x + q * xd = -p * z + k * v - D * phi\nhh : (fun t => t * phi) (x + q * xd) = (fun t => t * phi) (-p * z + k * v - D * phi)\n\u22a2 p * z * phi = 0\n'ChuaProof.storage_balance' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'ChuaProof.storage_dissipation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ChuaProof.storage_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "scope": "Three real-algebra implications only. Coordinate construction, Chua flow, positivity of the nonlinear integral, properness and LaSalle convergence are not formalized."
+}

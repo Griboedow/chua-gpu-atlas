@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-01T09:55:47Z",
+  "forecasts": [
+    {
+      "branch": "saddle",
+      "mstar": -0.9376757184349664,
+      "omega": 2.030646193985127,
+      "amplitude_excess_coefficient": 0.9585347634637259,
+      "outer_duration_coefficient": 1.3636868923512913,
+      "amplitude_exponent": 0.6666666666666666,
+      "outer_duration_exponent": 0.3333333333333333
+    },
+    {
+      "branch": "attractor",
+      "mstar": -0.1813719006126526,
+      "omega": 3.236738487251282,
+      "amplitude_excess_coefficient": 3.4259086062268675,
+      "outer_duration_coefficient": 1.6174291581130629,
+      "amplitude_exponent": 0.6666666666666666,
+      "outer_duration_exponent": 0.3333333333333333
+    }
+  ],
+  "derivation": "First-harmonic balance: 1-N(1+eta) ~ 8*sqrt(2)/(3*pi)*eta^(3/2); mstar-m0 ~ (m1-mstar)*(1-N). This is a local asymptotic prediction, not a rigorous remainder bound.",
+  "protocol": "Analytic coefficients fixed after coarse exploratory continuation and before the fine-distance sweep; not an externally published blind forecast."
+}

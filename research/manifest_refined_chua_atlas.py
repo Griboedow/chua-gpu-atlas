@@ -30,7 +30,9 @@ certify_chua_coexisting_cycles certify_chua_hidden_cycle study_chua_stability
 check_chua_accessibility prepare_chua_accessibility probe_chua_accessibility
 check_chua_stability_prediction study_chua_circuit_constraints plot_chua_accessibility
 refine_chua_slope_atlases check_chua_slope_refinement study_chua_slope_grazing
-check_chua_slope_branches plot_chua_slope_refinement'''.split()
+check_chua_slope_branches plot_chua_slope_refinement
+derive_chua_global_sector study_chua_hidden_boundary certify_chua_basin_saddle
+check_chua_hidden_boundary check_chua_storage_formal plot_chua_hidden_boundary'''.split()
 
 
 def digest(path):
@@ -76,6 +78,10 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-proof-audit').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-accessibility').iterdir() if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-slope-refinement').iterdir() if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-hidden-boundary').iterdir() if p.is_file())
+    paths.add(ROOT/'docs/chua-hidden-boundary.md')
+    paths.update(ROOT/'docs/assets'/name for name in ['chua-global-sector.png',
+        'chua-basin-saddle.png','chua-linear-contact.png'])
     paths.add(ROOT/'docs/chua-slope-refinement.md')
     paths.update(ROOT/'docs/assets'/name for name in ['chua-slope-refined-volumes.png',
         'chua-slope-refined-sections.png','chua-slope-grazing-law.png'])

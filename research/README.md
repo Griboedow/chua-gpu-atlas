@@ -4,6 +4,8 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 ## Periodic-attractor accessibility
 
+The follow-up [global-stability and basin study](../docs/chua-hidden-boundary.md) uses `derive_chua_global_sector.py`, `study_chua_hidden_boundary.py`, `certify_chua_basin_saddle.py`, `check_chua_hidden_boundary.py`, `check_chua_storage_formal.py` and `plot_chua_hidden_boundary.py`. These derive the storage identities, follow both cycles, certify saddle/sink roots, audit numerical evidence, check three Lean implications and draw the figures. [Commands and records](../results/chua-hidden-boundary/README.md).
+
 - `certify_chua_coexisting_cycles.py` validates four first-return sinks and distinguishes their orbits.
 - `certify_chua_hidden_cycle.py` encloses a periodic attractor and proves exclusion neighborhoods at all three equilibria.
 - `study_chua_stability.py` validates another hidden cycle, a common Lyapunov sector and local-stability predictions.

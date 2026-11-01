@@ -1,0 +1,17 @@
+{
+  "scope": "Corrections found during pre-publication checking; neither changes the computed periodic roots nor the storage identities.",
+  "corrections": [
+    {
+      "check": "Repeated-precision comparison of exported storage constants",
+      "initial_result": "The p enclosures appeared disjoint when rebuilding an interval from separately rounded midpoint and radius display fields.",
+      "cause": "Decimal rounding of the displayed midpoint was not included in the displayed internal radius. The difference was 4.55e-79 for a displayed radius of 3.59e-79.",
+      "correction": "Export and compare Arb joint ball strings, which include decimal rounding; keep the other fields for display. The storage computation itself is unchanged."
+    },
+    {
+      "check": "Visual inspection of the saddle and attracting-cycle portrait",
+      "initial_result": "A spurious vertical line joined the last sample to the wrong half-cycle section point.",
+      "cause": "The plotting helper did not wrap a time exactly equal to the complete period before selecting its symmetry sign.",
+      "correction": "Reduce time modulo the full period before selecting the half-period. Orbit records and certificates are unchanged."
+    }
+  ]
+}

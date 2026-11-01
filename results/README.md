@@ -2,6 +2,8 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
+- [`chua-hidden-boundary/`](chua-hidden-boundary/README.md): exact storage identities and interval coefficients for a global-convergence sector; a saddle/sink certificate, numerical local basin separator, two centre-contact predictions and partial Lean verification. See [the report](../docs/chua-hidden-boundary.md).
+
 - [`chua-accessibility/`](chua-accessibility/README.md): interval certificates for four coexisting cycles, two hidden-cycle examples and a global-convergence sector; independent solver checks, preserved unresolved basin screens, prediction follow-ups and a component-tolerance experiment. See [the report](../docs/chua-accessibility.md).
 
 - [`chua-proof-audit/`](chua-proof-audit/README.md): recomputed tangency hypotheses, a Lean-checked stationary-zero existence statement, source hashes, axiom reports and rejection controls. The [coexistence audit](../docs/chua-coexistence-audit.md) keeps infinite simultaneous coexistence conditional on localization.
