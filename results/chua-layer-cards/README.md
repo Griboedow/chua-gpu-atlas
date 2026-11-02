@@ -1,17 +1,22 @@
 # Combined layer cards
 
-The [animation](../../docs/assets/chua-layer-cards.gif) and [34 static cards](../../docs/chua-layer-cards.md) associate the published parameter samples with reference motions and numerical knot types. This is a new presentation of existing results, with no new orbit or mesh calculation.
+The [lossless WebP animation](../../docs/assets/chua-layer-cards.webp) and [34 static cards](../../docs/chua-layer-cards.md) associate the published parameter samples with reference motions and numerical knot types. The [MP4](../../docs/assets/chua-layer-cards.mp4?raw=1) can be downloaded for pause and seeking in a video player. This is a presentation of existing results, with no new orbit or mesh calculation.
 
 ## Contents and sources
 
 | File | Contents |
 |---|---|
 | [cards.json](cards.json) | All displayed characteristics, exact reference β and period strings, source paths, mesh coverage, frame order and duration |
-| [cards.html](cards.html) | Family selector and optional playback; open from a local repository checkout, preserving relative paths to the card images |
+| [cards.html](cards.html) | Family selector and a video player with a timeline; open from a local repository checkout, preserving relative paths to the images and MP4 |
 | [Static cards](../../docs/assets/chua-layer-cards/) | One 1680 × 1278 PNG per reference entry, plus an introductory frame |
-| [GIF](../../docs/assets/chua-layer-cards.gif) | One twelve-second introduction, then 34 fixed-camera family cards at eight seconds each; A04 and A01 first, then remaining entries in identifier order |
+| [WebP](../../docs/assets/chua-layer-cards.webp) | 2,074,732 bytes; all 35 frames match the source PNG pixels exactly; 1680 × 1278 |
+| [MP4](../../docs/assets/chua-layer-cards.mp4?raw=1) | 6,579,895 bytes; H.264, 1280 × 974, 284 seconds; lossy video with native playback controls |
+| [media.json](media.json) | Source image hashes, encoding settings, size comparison and verification results |
+| [Original GIF](../../docs/assets/chua-layer-cards.gif) | Retained fallback, 5,036,517 bytes |
 
-The introductory frame and the banner on every family card distinguish the finite catalogue from the [proved infinite cascade of attracting windows](../../docs/chua-infinity-certificate.md). The statement concerns the fixed transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0 and the certified β* interval. It uses an interval certificate and the classical sink-cascade theorem; it does not count globally disconnected layer surfaces. This presentation reuses the established proof and does not introduce a new certificate. The viewer selects family cards directly, while the GIF begins with the introduction.
+Both animated formats show a twelve-second introduction, then 34 fixed-camera family cards at eight seconds each: A04 and A01 first, followed by the remaining entries in identifier order. WebP is **58.8% smaller than the GIF**, without changing the PNG pixels, dimensions or timing. It also avoids the GIF's palette quantization. An animated WebP has no native playback timeline; use the MP4 or select individual static cards to navigate directly. The MP4 is downloaded separately and is not loaded by the main README image.
+
+The introductory frame and the banner on every family card distinguish the finite catalogue from the [proved infinite cascade of attracting windows](../../docs/chua-infinity-certificate.md). The statement concerns the fixed transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0 and the certified β* interval. It uses an interval certificate and the classical sink-cascade theorem; it does not count globally disconnected layer surfaces. This presentation reuses the established proof and does not introduce a new certificate. The family selector opens individual cards directly; the WebP and video begin with the introduction.
 
 The original 32 representative surfaces come from the [README mesh refinement](../chua-layer-atlas/readme-layer-view/README.md). The two additional families, P75 and P85, use the representative roots in `../chua-followup/sheets/beta_01-search.json`, `beta_11-search.json` and `beta_21-search.json`: α = 9, m₁ = −5/7 and m₀ = −8/7 plus −0.0004, 0 and +0.0004. Lines connect these three samples only; no two-dimensional mesh is inferred for them.
 
@@ -25,14 +30,19 @@ Use the repository environment with the dependencies documented in the [knot rep
 
 ```bash
 python research/render_chua_layer_cards.py
+python research/encode_chua_layer_media.py --video
 ```
 
-For a layout check of selected cards without replacing the GIF, metadata or gallery:
+The renderer creates PNG cards, the GIF fallback and the lossless WebP. The media encoder also creates the MP4 when `--video` is supplied. It requires an FFmpeg build with libx264, discovered on PATH or passed with `--ffmpeg PATH`. No additional Python dependency is needed. If a matching lossless WebP already exists, its decoded pixels and timing are verified and reused; pass `--force` to repeat its compression. Reproduction uses existing numerical records. To convert already-rendered cards, run only the second command.
+
+The WebP uses lossless encoding with `quality=80`, `method=4` and `minimize_size=True`. In lossless mode the quality setting controls compression effort, not pixel fidelity. Every decoded frame, timestamp, duration and loop setting is checked. The video uses one frame per second, H.264 CRF 23, Lanczos resizing and keyframes at most eight seconds apart; its complete stream is decoded as a validity check. Library versions can affect encoded file sizes.
+
+For a layout check of selected cards without replacing animations, metadata or the gallery:
 
 ```bash
 python research/render_chua_layer_cards.py --preview overview A04 E06 S01 P85
 ```
 
-This writes only the selected PNGs. A full run is required to synchronize the GIF and gallery after a layout change. The original mesh data, trajectories, knot diagrams and earlier animations are unchanged.
+This writes only the selected PNGs. Run both reproduction commands to synchronize all media after a layout change. The original mesh data, trajectories and knot diagrams are unchanged.
 
 The [reading guide](../../docs/chua-layer-cards.md#reading-a-card) defines the catalogue groups, section, symmetry and knot interpretation. The [manifest](../chua-layer-atlas/manifest.json) covers the producer, data associations and figures. Knot topology of the ODE orbits remains numerical; this presentation adds no interval isotopy certificate.

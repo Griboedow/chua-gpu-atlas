@@ -19,6 +19,7 @@ from scipy.signal import find_peaks
 
 from plot_readme_layers import geometry, LOW, HIGH
 from plot_chua_knots import TYPES, NAMES, COLORS, knot_drawing, portrait
+from encode_chua_layer_media import encode_webp
 
 OUT = ROOT / 'results/chua-layer-cards'
 ASSETS = ROOT / 'docs/assets'
@@ -246,7 +247,7 @@ def write_gallery(records):
     ids = sorted(r['id'] for r in records)
     intro = '''# Layer, periodic orbit and knot type
 
-Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the slow animation](assets/chua-layer-cards.gif), or choose a static card below.
+Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the lossless WebP animation](assets/chua-layer-cards.webp), [download the MP4 for pause and seeking](assets/chua-layer-cards.mp4?raw=1), or choose a static card below. WebP is an animated image and has no native playback timeline; the MP4 provides video controls in a compatible player.
 
 **34 is the number of displayed examples, not the total number of periodic motions.** On the transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0, [infinitely many attracting periodic windows are proved](chua-infinity-certificate.md) to accumulate at β* in (14.30635909996140, 14.30635909996152). The result combines an interval certificate with the classical sink-cascade theorem. These windows have local extensions in parameter space, but their global connections have not been classified: the result is not a count of disconnected layer surfaces. The animation starts with this distinction and retains an infinity banner on every family card. Its [introductory frame](assets/chua-layer-cards/overview.png) is also available separately.
 
@@ -274,7 +275,7 @@ Facets and straight segments indicate sample adjacency. They neither certify the
 
     html = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chua layer cards</title>
 <style>body{margin:0;background:#fafaf7;color:#182d39;font:17px system-ui}main{max-width:1400px;margin:auto;padding:20px}h1{font-size:28px;margin:0 0 8px}p{line-height:1.5}select,button{font:inherit;padding:8px;margin:4px}img{width:100%;height:auto}nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}footer{font-size:15px}</style>
-<main><h1>Layer, periodic orbit and knot type</h1><p><strong>Infinitely many attracting periodic windows are proved; these 34 reference motions are selected examples.</strong> Global connections of the layer surfaces remain unclassified. <a href="https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-infinity-certificate.md">Proof and parameter transect</a>.</p><p>Select a family, or play one card every eight seconds. The camera remains fixed; each reference uses its own β.</p><nav><label for="family">Family</label><select id="family"></select><button id="previous">Previous</button><button id="next">Next</button><button id="play">Play</button></nav><img id="card" width="1680" height="1278" alt=""><footer><p>32 refined meshes; P75 and P85 have only three continuation samples each. Knot types are numerical. <a href="../../docs/chua-layer-cards.md">Reading guide and static cards</a> · <a href="../../docs/assets/chua-layer-cards.gif">GIF</a></p><p>This viewer uses the card images in the repository. Keep the relative folder structure when opening it offline.</p></footer></main>
+<main><h1>Layer, periodic orbit and knot type</h1><p><strong>Infinitely many attracting periodic windows are proved; these 34 reference motions are selected examples.</strong> Global connections of the layer surfaces remain unclassified. <a href="https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-infinity-certificate.md">Proof and parameter transect</a>.</p><p>Select a family, or play one card every eight seconds. The camera remains fixed; each reference uses its own β. The video below also provides pause and a timeline.</p><nav><label for="family">Family</label><select id="family"></select><button id="previous">Previous</button><button id="next">Next</button><button id="play">Play</button></nav><img id="card" width="1680" height="1278" alt=""><section><h2>Video with pause and seeking</h2><video aria-label="Layer atlas video" controls preload="none" poster="../../docs/assets/chua-layer-cards/overview.png" style="width:100%;height:auto"><source src="../../docs/assets/chua-layer-cards.mp4" type="video/mp4"></video></section><footer><p>32 refined meshes; P75 and P85 have only three continuation samples each. Knot types are numerical. <a href="../../docs/chua-layer-cards.md">Reading guide and static cards</a> · <a href="../../docs/assets/chua-layer-cards.webp">WebP</a> · <a href="../../docs/assets/chua-layer-cards.mp4">MP4</a></p><p>This viewer uses the card images and video in the repository. Keep the relative folder structure when opening it offline.</p></footer></main>
 <script>const cards=__DATA__;const select=document.getElementById('family'),picture=document.getElementById('card'),play=document.getElementById('play');let timer=null;
 cards.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=r.id+' · '+r.peaks+' peaks · '+r.knot_name;select.appendChild(o)});
 function draw(){const r=cards[+select.value];picture.src='../../docs/assets/chua-layer-cards/'+r.id+'.png';picture.alt=r.id+': '+r.catalogue_group+', '+r.peaks+' peaks, '+r.knot_name;}
@@ -287,7 +288,7 @@ select.addEventListener('change',()=>{stop();draw()});document.getElementById('p
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--preview', nargs='+', help='Render selected cards only, without publishing the GIF or metadata.')
+    parser.add_argument('--preview', nargs='+', help='Render selected cards only, without publishing animations or metadata.')
     args = parser.parse_args()
     OUT.mkdir(exist_ok=True); CARDS.mkdir(exist_ok=True)
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 13, 'text.color': INK,
@@ -320,6 +321,7 @@ def main():
                           '32 refined meshes and two three-point sections. Knot types remain numerical.')
     (OUT / 'cards.json').write_text(json.dumps(metadata, indent=2) + '\n', encoding='utf-8', newline='\n')
     write_gallery(records)
+    encode_webp()
     print('Published', len(frames), 'cards and the fixed-camera GIF', flush=True)
 
 

@@ -33,7 +33,9 @@ Background: [Chua circuit](https://doi.org/10.4249/scholarpedia.1488), [Kennedy'
 
 A **stability region** is a set of parameter values supporting an attracting periodic-orbit branch. We use **layer** as a visual shorthand for the region associated with a continued family. Moving along that family changes its repeating motion continuously. Different families can have different waveforms, periods, visits to the two scrolls and symmetries.
 
-![34 family cards: parameter layer, attracting cycle, knot type, waveform and reference characteristics](docs/assets/chua-layer-cards.gif)
+![34 family cards: parameter layer, attracting cycle, knot type, waveform and reference characteristics](docs/assets/chua-layer-cards.webp)
+
+[Download MP4 for pause and seeking](docs/assets/chua-layer-cards.mp4?raw=1) · [Choose a static family card](docs/chua-layer-cards.md#choose-a-family). The embedded WebP is lossless; native playback controls are available in the video version.
 
 **A finite catalogue within an infinite set of periodic motions.** The 34 displayed references are selected examples. On the fixed transect α = 9, m₀ = −8/7, m₁ = −5/7, [infinitely many attracting periodic windows are proved](docs/chua-infinity-certificate.md) to accumulate near β ≈ 14.30635910. The argument combines an interval certificate with a classical sink-cascade theorem. These windows have local extensions in parameter space; the number of globally disconnected layer surfaces remains unclassified. The introductory frame and the banner on every card make this distinction explicit.
 

@@ -10,6 +10,8 @@ The [extension programs](../results/chua-followup/extended-studies.md) add a pla
 
 `render_chua_layer_cards.py` joins the published mesh, reference motion and knot data into 34 static cards and the slow README animation. It checks the reference counts and data associations before rendering. [Fields and cards](../docs/chua-layer-cards.md) · [Reproduction](../results/chua-layer-cards/README.md).
 
+`encode_chua_layer_media.py` encodes the existing cards as lossless animated WebP and, with `--video`, an H.264 MP4 for pause and seeking. It verifies every WebP frame against its source PNG and decodes the complete video stream; the numerical records are unchanged.
+
 ## Cross-parameter prediction, impulses and hidden coexistence
 
 `predict_chua_slope_sheets.py` separates calibration, frozen forecasts and endpoint searches. `study_chua_trigger.py` and `certify_chua_trigger.py` compute impulse crossings and verify their relation to the exact basin separator. `chua_interval_lobe.py` provides the second return geometry; `certify_chua_hidden_tangency.py` and `certify_chua_hidden_neighborhoods.py` verify the hypotheses for infinite hidden coexistence. `check_chua_followup.py` and `check_chua_hidden_tangency.py` use separate numerical implementations. The shared composition supports rational moving frames to reduce interval wrapping. [Reports and exact reproduction commands](../results/chua-followup/README.md).
