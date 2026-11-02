@@ -990,6 +990,7 @@
     }
   ],
   "frame_order": [
+    "overview",
     "A04",
     "A01",
     "A02",
@@ -1025,11 +1026,50 @@
     "S10",
     "S11"
   ],
-  "frame_duration_ms": 8000,
-  "frame_count": 34,
+  "frame_durations_ms": [
+    12000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000
+  ],
+  "reference_count": 34,
+  "frame_count": 35,
   "image_size": [
     1680,
-    1200
+    1278
   ],
+  "infinity_statement": "Infinitely many attracting periodic windows accumulate at the certified tangency on alpha=9, m0=-8/7, m1=-5/7, gamma=0. The catalogue is finite; global layer connections remain unclassified.",
+  "infinity_source": "docs/chua-infinity-certificate.md",
   "scope": "Presentation of existing numerical results; no new orbit or mesh computation. 32 refined meshes and two three-point sections. Knot types remain numerical."
 }

@@ -2,6 +2,8 @@
 
 Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the slow animation](assets/chua-layer-cards.gif), or choose a static card below.
 
+**34 is the number of displayed examples, not the total number of periodic motions.** On the transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0, [infinitely many attracting periodic windows are proved](chua-infinity-certificate.md) to accumulate at β* in (14.30635909996140, 14.30635909996152). The result combines an interval certificate with the classical sink-cascade theorem. These windows have local extensions in parameter space, but their global connections have not been classified: the result is not a count of disconnected layer surfaces. The animation starts with this distinction and retains an infinity banner on every family card. Its [introductory frame](assets/chua-layer-cards/overview.png) is also available separately.
+
 The 32 original families have refined meshes. P75 and P85 show only three existing continuation samples at fixed α and m₁; no dense sheet is inferred for them. Grey points and lines retain the other families as context. The star marks the reference parameters when they lie in the displayed box. The orbit and waveform use the reference parameters printed on the card, not every point of the highlighted surface.
 
 ## Reading a card

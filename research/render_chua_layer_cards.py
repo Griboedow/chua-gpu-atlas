@@ -27,6 +27,8 @@ MESH = ROOT / 'results/chua-layer-atlas/readme-layer-view'
 KNOTS = ROOT / 'results/chua-knot-atlas'
 BG, INK, MUTED = '#fafaf7', '#182d39', '#53636b'
 DWELL = 8000
+INTRO_DWELL = 12000
+CARD_HEIGHT = 10.65
 GROUPS = {'S': 'Symmetric parent family', 'A': 'Asymmetric parent family',
           'E': 'Additional off-centre family', 'P': 'Period-adding family'}
 KNOT_GROUPS = ['Unknot', 'Prime torus knot', 'Prime torus knot',
@@ -35,6 +37,58 @@ KNOT_GROUPS = ['Unknot', 'Prime torus knot', 'Prime torus knot',
 
 def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
+
+
+def rasterize(fig):
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png', dpi=120, facecolor=BG)
+    plt.close(fig)
+    buf.seek(0)
+    return Image.open(buf).convert('RGB')
+
+
+def overview():
+    """State the established infinity result without counting global surfaces."""
+    fig = plt.figure(figsize=(14, CARD_HEIGHT), dpi=120, facecolor=BG)
+    fig.text(.055, .94, 'Finite catalogue and infinite accumulation', fontsize=29, weight='bold')
+    fig.text(.055, .895, 'The displayed reference motions are selected examples, not an exhaustive atlas.',
+             fontsize=18, color=MUTED)
+    fig.text(.25, .665, '34', fontsize=108, ha='center', color=INK)
+    fig.text(.745, .665, '∞', fontsize=120, ha='center', color='#287f9c')
+    fig.text(.25, .61, 'computed reference cycles', fontsize=23, ha='center', weight='bold')
+    fig.text(.745, .61, 'attracting windows proved', fontsize=23, ha='center', weight='bold', color='#287f9c')
+    fig.text(.25, .525, 'Explicit orbits, parameter samples,\nwaveforms and numerical knot types.',
+             fontsize=17, ha='center', color=MUTED, linespacing=1.6)
+    fig.text(.745, .525, 'Infinitely many stable periodic windows\naccumulate as β approaches β*.',
+             fontsize=17, ha='center', color=MUTED, linespacing=1.6)
+    for y in [.455, .135]:
+        fig.add_artist(Line2D([.055, .945], [y, y], transform=fig.transFigure, color='#d3dcde', lw=1))
+    fig.text(.07, .408, 'PROVED ON THIS PARAMETER TRANSECT', fontsize=14, weight='bold')
+    fig.text(.07, .355, 'α = 9,   m₀ = −8/7,   m₁ = −5/7,   γ = 0', fontsize=21)
+    fig.text(.07, .298, '14.30635909996140  <  β*  <  14.30635909996152', fontsize=20, color='#287f9c')
+    fig.text(.07, .204, 'Interval certificate of a quadratic homoclinic tangency\n'
+             '+ classical theorem on cascades of attracting periodic orbits.', fontsize=18, linespacing=1.6)
+    fig.text(.07, .088, 'These attracting windows have local extensions in parameter space.', fontsize=17)
+    fig.text(.07, .043, 'Global connections of the layer surfaces remain unclassified.', fontsize=17, color=MUTED)
+    return rasterize(fig)
+
+
+def add_scope_banner(fig):
+    # Add vertical space; preserve the original card's physical dimensions.
+    scale = 10 / CARD_HEIGHT
+    fig.set_size_inches(14, CARD_HEIGHT)
+    for ax in fig.axes:
+        x, y, width, height = ax.get_position(original=True).bounds
+        ax.set_position([x, y*scale, width, height*scale])
+    for label in fig.texts:
+        x, y = label.get_position()
+        label.set_position((x, y*scale))
+    for line in fig.artists:
+        if isinstance(line, Line2D):
+            line.set_ydata(np.asarray(line.get_ydata())*scale)
+    fig.text(.035, .962, '∞ attracting windows proved  ·  34 reference cycles shown',
+             fontsize=19, weight='bold', color='#287f9c')
+    fig.add_artist(Line2D([.035, .965], [.942, .942], transform=fig.transFigure, color='#d3dcde', lw=1))
 
 
 def load():
@@ -184,11 +238,8 @@ def frame(r, index, meshes, partial, shapes):
     fig.text(.535, .108, f"Attracting reference · ρ = {r['full_return_spectral_radius']:g} (full return)", fontsize=13, color=MUTED)
     fig.text(.035, .059, 'Reference: α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0.  Each family has its own β.', fontsize=13)
     fig.text(.035, .028, 'Facets guide the eye; thickness is not stability width. Knot type is numerical, not interval-certified.', fontsize=12, color=MUTED)
-    buf = io.BytesIO()
-    fig.savefig(buf, format='png', dpi=120, facecolor=BG)
-    plt.close(fig)
-    buf.seek(0)
-    return Image.open(buf).convert('RGB')
+    add_scope_banner(fig)
+    return rasterize(fig)
 
 
 def write_gallery(records):
@@ -196,6 +247,8 @@ def write_gallery(records):
     intro = '''# Layer, periodic orbit and knot type
 
 Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the slow animation](assets/chua-layer-cards.gif), or choose a static card below.
+
+**34 is the number of displayed examples, not the total number of periodic motions.** On the transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0, [infinitely many attracting periodic windows are proved](chua-infinity-certificate.md) to accumulate at β* in (14.30635909996140, 14.30635909996152). The result combines an interval certificate with the classical sink-cascade theorem. These windows have local extensions in parameter space, but their global connections have not been classified: the result is not a count of disconnected layer surfaces. The animation starts with this distinction and retains an infinity banner on every family card. Its [introductory frame](assets/chua-layer-cards/overview.png) is also available separately.
 
 The 32 original families have refined meshes. P75 and P85 show only three existing continuation samples at fixed α and m₁; no dense sheet is inferred for them. Grey points and lines retain the other families as context. The star marks the reference parameters when they lie in the displayed box. The orbit and waveform use the reference parameters printed on the card, not every point of the highlighted surface.
 
@@ -221,7 +274,7 @@ Facets and straight segments indicate sample adjacency. They neither certify the
 
     html = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chua layer cards</title>
 <style>body{margin:0;background:#fafaf7;color:#182d39;font:17px system-ui}main{max-width:1400px;margin:auto;padding:20px}h1{font-size:28px;margin:0 0 8px}p{line-height:1.5}select,button{font:inherit;padding:8px;margin:4px}img{width:100%;height:auto}nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}footer{font-size:15px}</style>
-<main><h1>Layer, periodic orbit and knot type</h1><p>34 reference motions at different β values. Select a family, or play one card every eight seconds. The camera remains fixed.</p><nav><label for="family">Family</label><select id="family"></select><button id="previous">Previous</button><button id="next">Next</button><button id="play">Play</button></nav><img id="card" width="1680" height="1200" alt=""><footer><p>32 refined meshes; P75 and P85 have only three continuation samples each. Knot types are numerical. <a href="../../docs/chua-layer-cards.md">Reading guide and static cards</a> · <a href="../../docs/assets/chua-layer-cards.gif">GIF</a></p><p>This viewer uses the card images in the repository. Keep the relative folder structure when opening it offline.</p></footer></main>
+<main><h1>Layer, periodic orbit and knot type</h1><p><strong>Infinitely many attracting periodic windows are proved; these 34 reference motions are selected examples.</strong> Global connections of the layer surfaces remain unclassified. <a href="https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-infinity-certificate.md">Proof and parameter transect</a>.</p><p>Select a family, or play one card every eight seconds. The camera remains fixed; each reference uses its own β.</p><nav><label for="family">Family</label><select id="family"></select><button id="previous">Previous</button><button id="next">Next</button><button id="play">Play</button></nav><img id="card" width="1680" height="1278" alt=""><footer><p>32 refined meshes; P75 and P85 have only three continuation samples each. Knot types are numerical. <a href="../../docs/chua-layer-cards.md">Reading guide and static cards</a> · <a href="../../docs/assets/chua-layer-cards.gif">GIF</a></p><p>This viewer uses the card images in the repository. Keep the relative folder structure when opening it offline.</p></footer></main>
 <script>const cards=__DATA__;const select=document.getElementById('family'),picture=document.getElementById('card'),play=document.getElementById('play');let timer=null;
 cards.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=r.id+' · '+r.peaks+' peaks · '+r.knot_name;select.appendChild(o)});
 function draw(){const r=cards[+select.value];picture.src='../../docs/assets/chua-layer-cards/'+r.id+'.png';picture.alt=r.id+': '+r.catalogue_group+', '+r.peaks+' peaks, '+r.knot_name;}
@@ -242,6 +295,10 @@ def main():
                          'axes.spines.top': False, 'axes.spines.right': False})
     records, meshes, partial, shapes = load()
     frames = []
+    if not args.preview or 'overview' in args.preview:
+        intro = overview()
+        intro.save(CARDS / 'overview.png')
+        frames.append(intro.quantize(colors=256))
     for index, r in enumerate(records, 1):
         if args.preview and r['id'] not in args.preview:
             continue
@@ -252,9 +309,13 @@ def main():
     if args.preview:
         return
     frames[0].save(ASSETS / 'chua-layer-cards.gif', save_all=True, append_images=frames[1:],
-                   duration=DWELL, loop=0, optimize=False, disposal=2)
-    metadata = dict(families=records, frame_order=[r['id'] for r in records],
-                    frame_duration_ms=DWELL, frame_count=len(records), image_size=list(frames[0].size),
+                   duration=[INTRO_DWELL] + [DWELL]*len(records), loop=0, optimize=False, disposal=2)
+    metadata = dict(families=records, frame_order=['overview'] + [r['id'] for r in records],
+                    frame_durations_ms=[INTRO_DWELL] + [DWELL]*len(records),
+                    reference_count=len(records), frame_count=len(frames), image_size=list(frames[0].size),
+                    infinity_statement='Infinitely many attracting periodic windows accumulate at the certified tangency '
+                        'on alpha=9, m0=-8/7, m1=-5/7, gamma=0. The catalogue is finite; global layer connections remain unclassified.',
+                    infinity_source='docs/chua-infinity-certificate.md',
                     scope='Presentation of existing numerical results; no new orbit or mesh computation. '
                           '32 refined meshes and two three-point sections. Knot types remain numerical.')
     (OUT / 'cards.json').write_text(json.dumps(metadata, indent=2) + '\n', encoding='utf-8', newline='\n')
