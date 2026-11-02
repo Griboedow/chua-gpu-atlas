@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-02T23:47:21.753322+00:00",
+  "targets": [
+    {
+      "id": "P95",
+      "n": 9,
+      "peaks": 95,
+      "width": "8.17229242110744041922830628326e-11",
+      "maximum_gain": 1681439.336609201,
+      "companion_section_distance": "2.73176672004620969832840504545e-11",
+      "companion_half_multiplier": 1.5,
+      "relative_gates": {
+        "width": 0.1,
+        "maximum_gain": 0.1,
+        "companion_section_distance": 0.15
+      },
+      "multiplier_absolute_gate": 0.001
+    },
+    {
+      "id": "P105",
+      "n": 10,
+      "peaks": 105,
+      "width": "1.10995681702715093546713544659e-11",
+      "maximum_gain": 4562470.9369736975,
+      "companion_section_distance": "3.71027239017017512752712135062e-12",
+      "companion_half_multiplier": 1.5,
+      "relative_gates": {
+        "width": 0.1,
+        "maximum_gain": 0.1,
+        "companion_section_distance": 0.15
+      },
+      "multiplier_absolute_gate": 0.001
+    }
+  ],
+  "expansion": "2.7134317829",
+  "source_sha256": {
+    "results/chua-layer-prediction/search-results.json": "cfcb1a8a28d893f1c27c3ccef89cf1c72bb5206fb595d3e9db876e9769012276",
+    "results/chua-return-geometry/P85-optimized.json": "569537b038ce2ec5e959f3e8ff85bc5ed071995991cf83994d0d4ada90b1ea49",
+    "results/chua-return-geometry/P85-companion-d70.json": "9716df55a3fe15af667842192559a18938a109f382703686a3726e1b665daa26",
+    "results/chua-return-geometry/protocol.md": "eeb5af936e981159a6589756806a2820bbdb4b16477d7004ece3d16e40bc55cd"
+  },
+  "scope": "New prospective tests of gain, width and companion separation at 95/105 peaks; existing 85-peak data calibrate the constants.",
+  "separation_rule": "Same initial normalized x=0 crossing inherited during return insertion from P85; predicts Lambda^(-2k), not the originally conjectured uniform Lambda^(-k) law at every phase.",
+  "limitation": "Root locations are corrected by shooting; this is not a prospective point-location or basin-escape forecast."
+}
