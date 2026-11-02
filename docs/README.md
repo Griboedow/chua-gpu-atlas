@@ -2,6 +2,8 @@
 
 The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
+The [34 layer cards](chua-layer-cards.md) connect parameter layers with reference attracting cycles, catalogue groups, waveforms, numerical knot types and motion characteristics. Each card can be viewed separately or in the slow README animation.
+
 The [knot atlas](chua-knot-atlas.md) adds the spatial topology of all 34 reference cycles: five numerical knot types, an unknotted eight-member thin sequence, explicit diagram identifications and a coarse-sampling counterexample. It includes a complete orbit gallery and an interactive 3D comparison.
 
 The [excitation, robustness and prediction extension](chua-excitation-robustness-prediction.md) compares energy-based initial directions and finite pulses, proves four-cycle persistence on a parameter box, and tests 24 forecasts on a larger slope square.

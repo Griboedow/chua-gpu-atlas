@@ -40,7 +40,8 @@ chua_lobe_map chua_interval_lobe study_chua_hidden_lobes locate_chua_hidden_conn
 certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup audit_chua_followup plot_chua_followup review_chua_followup check_chua_schema
 certify_chua_coexistence_box study_chua_excitation_plane extend_chua_slope_predictions
 check_chua_extended_predictions study_chua_coexistence_tolerances plot_chua_extended_studies review_chua_extended_studies check_chua_coexistence_box derive_chua_pulse_limit
-chua_knot_diagrams reconstruct_chua_knot_orbits analyze_chua_knots check_chua_knot_sampling review_chua_knots plot_chua_knots'''.split()
+chua_knot_diagrams reconstruct_chua_knot_orbits analyze_chua_knots check_chua_knot_sampling review_chua_knots plot_chua_knots
+render_chua_layer_cards'''.split()
 
 
 def digest(path):
@@ -93,6 +94,9 @@ def main():
     paths.update((ROOT/'docs/assets').glob('chua-extended-*.png'))
     paths.update((ROOT/'docs/assets').glob('chua-extended-*.pdf'))
     paths.update(p for p in (ROOT/'results/chua-knot-atlas').rglob('*') if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-layer-cards').rglob('*') if p.is_file())
+    paths.update((ROOT/'docs/assets/chua-layer-cards').glob('*.png'))
+    paths.update(ROOT/p for p in ['docs/assets/chua-layer-cards.gif','docs/chua-layer-cards.md'])
     paths.update((ROOT/'docs/assets').glob('chua-knots-*.png'))
     paths.update((ROOT/'docs/assets').glob('chua-knots-*.pdf'))
     paths.update(ROOT/p for p in ['docs/chua-knot-atlas.md','requirements-knots.txt'])

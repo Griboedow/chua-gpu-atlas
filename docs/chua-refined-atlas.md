@@ -12,11 +12,13 @@ The [interactive atlas](../results/chua-layer-atlas/atlas.html) lets readers rot
 
 ## Sampling and visualization of individual families
 
-The README animation displays each family in turn, using a **17 by 17 candidate mesh in (alpha, m0)** around the visible box. This targeted continuation closes **5,447 representatives**, including **3,975 new parameter locations**; **4,126** lie inside beta = 14.24–14.40. A small halo outside that interval allows the displayed facets to be clipped at the box boundary. All selected locations were recovered in the final run. This is a display refinement of the same 32 identities, not another family census.
+The original layer view uses a **17 by 17 candidate mesh in (alpha, m0)** around the visible box. This targeted continuation closes **5,447 representatives**, including **3,975 new parameter locations**; **4,126** lie inside beta = 14.24–14.40. A small halo outside that interval allows the displayed facets to be clipped at the box boundary. All selected locations were recovered in the final run. This is a display refinement of the same 32 identities, not another family census.
 
-![Each catalogued layer highlighted in fixed coordinates](assets/chua-readme-layers.gif)
+![Layer, reference periodic orbit, standard knot embedding and waveform for every extended catalogue entry](assets/chua-layer-cards.gif)
 
-The left panel shows a single family's representative surface; the right panel shows the alpha=9 slice in the same color. The camera and axes stay fixed. The reference peak count and period identify the family; they are not measurements of the period at every surface point. Facets interpolate neighboring checked vertices only to guide the eye. They neither certify attraction between vertices nor depict a physical window thickness. Nearby sheets can remain visually coincident at this scale, even with denser sampling.
+The new animation joins these meshes to the 34 reference motions in the [knot atlas](chua-knot-atlas.md). The left panels show a family's representative surface and its alpha=9 slice; the right panels show the reference orbit, a standard embedding of its numerical knot type, a full-period signal and the measured characteristics. P75 and P85 have three continuation points each on this section, with incomplete coverage labelled explicitly. The [static cards and field definitions](chua-layer-cards.md) allow direct selection; the [original 32-family geometry animation](assets/chua-readme-layers.gif) is retained.
+
+The camera and parameter axes stay fixed. Reference characteristics describe the printed reference parameters, not every point of the highlighted surface; reference beta may lie outside this display box. Facets interpolate neighboring checked vertices only to guide the eye. They neither certify attraction between vertices nor depict a physical window thickness. Nearby sheets can remain visually coincident at this scale, even with denser sampling.
 
 ![Dense family slice and magnified physical widths](assets/chua-readme-layer-zoom.png)
 

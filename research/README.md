@@ -8,6 +8,8 @@ The [extension programs](../results/chua-followup/extended-studies.md) add a pla
 
 `reconstruct_chua_knot_orbits.py` refines the reference roots and samples aligned affine flights. `chua_knot_diagrams.py` extracts planar diagrams, computes Alexander polynomials by two methods and identifies selected standard summands. `analyze_chua_knots.py`, `check_chua_knot_sampling.py` and `review_chua_knots.py` record and replay the numerical controls; `plot_chua_knots.py` produces the figures and offline viewer. [Report](../docs/chua-knot-atlas.md) · [Commands and data](../results/chua-knot-atlas/README.md).
 
+`render_chua_layer_cards.py` joins the published mesh, reference motion and knot data into 34 static cards and the slow README animation. It checks the reference counts and data associations before rendering. [Fields and cards](../docs/chua-layer-cards.md) · [Reproduction](../results/chua-layer-cards/README.md).
+
 ## Cross-parameter prediction, impulses and hidden coexistence
 
 `predict_chua_slope_sheets.py` separates calibration, frozen forecasts and endpoint searches. `study_chua_trigger.py` and `certify_chua_trigger.py` compute impulse crossings and verify their relation to the exact basin separator. `chua_interval_lobe.py` provides the second return geometry; `certify_chua_hidden_tangency.py` and `certify_chua_hidden_neighborhoods.py` verify the hypotheses for infinite hidden coexistence. `check_chua_followup.py` and `check_chua_hidden_tangency.py` use separate numerical implementations. The shared composition supports rational moving frames to reduce interval wrapping. [Reports and exact reproduction commands](../results/chua-followup/README.md).

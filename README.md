@@ -33,9 +33,11 @@ Background: [Chua circuit](https://doi.org/10.4249/scholarpedia.1488), [Kennedy'
 
 A **stability region** is a set of parameter values supporting an attracting periodic-orbit branch. We use **layer** as a visual shorthand for the region associated with a continued family. Moving along that family changes its repeating motion continuously. Different families can have different waveforms, periods, visits to the two scrolls and symmetries.
 
-![The 32 sampled families highlighted individually at a fixed camera angle](docs/assets/chua-readme-layers.gif)
+![34 family cards: parameter layer, attracting cycle, knot type, waveform and reference characteristics](docs/assets/chua-layer-cards.gif)
 
-**The original family atlas.** The fixed camera and coordinates allow each of the 32 sampled families to be followed separately. Dots represent closed attracting cycles; facets indicate sample adjacency. Their displayed thickness does not measure stability-window width. The view contains 5,447 checked samples, including 3,975 parameter locations added during refinement; 4,126 samples lie in the displayed box.
+**From a layer to its motion.** Each eight-second card connects a highlighted layer with its reference attracting cycle, catalogue group, symmetry, knot type and full-period waveform. It gives the reference parameters, period, peak count, section returns and transverse stability. The first two cards compare A04 and A01: both have 25 peaks, but their knots differ. [Choose any of the 34 static cards](docs/chua-layer-cards.md#choose-a-family) to inspect it without waiting for the animation.
+
+The camera and parameter axes stay fixed. The original 32 meshes contain 5,447 checked samples, of which 4,126 lie in the displayed box; P75 and P85 show three later continuation samples each, explicitly marked as partial coverage. Dots represent closed cycles and facets indicate sample adjacency, not stability-window width. Each portrait uses its own reference β. Knot types are numerical classifications of those reference orbits; the companion drawing is a standard knot embedding. The [card guide](docs/chua-layer-cards.md#reading-a-card) explains every field, and the [original geometry-only animation](docs/assets/chua-readme-layers.gif) remains available.
 
 | Difference in motion | Example |
 |---|---|

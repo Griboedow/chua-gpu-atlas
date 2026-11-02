@@ -6,6 +6,8 @@ This add-on makes the existing 32-family catalogue easier to see. It does not di
 
 The [animation](../../../docs/assets/chua-readme-layers.gif) highlights all 32 families once, with an overview before and after. The camera, coordinates and alpha=9 slice stay fixed. The [static overview](../../../docs/assets/chua-readme-layers-poster.png) and [width zoom](../../../docs/assets/chua-readme-layer-zoom.png) are available separately; [the zoom PDF](readme-layer-zoom.pdf) retains vector lines and text.
 
+The main README now uses [combined layer cards](../../../docs/chua-layer-cards.md), which reuse these unchanged meshes and add the reference orbit, motion characteristics and numerical knot type. P75 and P85 use three later continuation samples each. The original geometry-only animation and its render summary remain reproducible here.
+
 Dots are numerically closed attracting cycles. Colored facets locate a representative surface at a selected transverse multiplier; they do not measure the full window's physical thickness. Triangles connect adjacent accepted mesh vertices and are geometrically clipped at beta = 14.24 and 14.40. Neither the facets nor straight slice segments certify attraction between their vertices.
 
 The width zoom uses a categorical row for each of six period-adding families, then physical beta offsets for P55 and P65. Its open circles mark the earlier boundary estimates. The 25 newly solved interior points per stability interval run from 2% to 98% of that interval; endpoints are excluded. No vertical separation of categorical rows represents a parameter distance.

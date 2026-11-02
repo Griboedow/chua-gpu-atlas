@@ -10,6 +10,8 @@ The 34 reference cycles in the extended atlas have **five numerically identified
 
 Download the HTML and open it locally to rotate the actual orbit beside a standard embedding. It contains its data and plotting library. Nothing rotates automatically.
 
+The [combined layer cards](chua-layer-cards.md) place every reference orbit and knot beside its parameter layer, group, full-period waveform and basic characteristics. The README plays these cards at eight seconds per frame; individual static cards are available for direct comparison.
+
 ## 1. What is being classified?
 
 A nonstationary periodic orbit of a three-dimensional autonomous ODE is a closed curve. At its least period, uniqueness of solutions prevents a self-intersection. Its knot type records which closed curves can be obtained by continuously deforming the surrounding space without cutting the curve or passing one strand through another. An **unknot** can be deformed into a circle, even when its original projection looks complicated.

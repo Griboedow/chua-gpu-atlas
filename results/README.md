@@ -2,6 +2,8 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
+- [`chua-layer-cards/`](chua-layer-cards/README.md): the data associations and reproduction instructions for the 34 combined layer, orbit, knot and waveform cards. This presentation reuses the existing numerical records.
+
 - [`chua-knot-atlas/`](chua-knot-atlas/README.md): 34 reconstructed periodic representatives, 108 projection/resolution checks, five numerical knot types, explicit summand identifications, exact Alexander calculations and a retained sampling failure. See the [knot report](../docs/chua-knot-atlas.md).
 
 - [`chua-followup/`](chua-followup/README.md): 48 held-out slope-window tests, impulse-boundary certificates and delay predictions, hidden-region searches, a 140/160-digit tangency certificate and parameter-uniform equilibrium exclusion. See the [combined study](../docs/chua-prediction-and-hidden-coexistence.md) and [infinite hidden-coexistence proof](../docs/chua-hidden-infinity-certificate.md).
