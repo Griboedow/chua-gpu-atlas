@@ -1,0 +1,24 @@
+{
+  "attachment_url": "https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122",
+  "gallery_url": "https://github.com/Griboedow/chua-gpu-atlas/blob/main/docs/chua-layer-cards.md#video",
+  "publication_commit": "886d851",
+  "anonymous_request": {
+    "method": "GET",
+    "range": "bytes=0-0",
+    "status_before_web_editor_commit": 404,
+    "status_after_web_editor_commit": 206,
+    "content_type": "video/mp4",
+    "returned_bytes": 1
+  },
+  "browser_check": {
+    "browser": "Chrome",
+    "duration_seconds": 284,
+    "controls": true,
+    "seeked_time_seconds": 17.04,
+    "displayed_card": "A04",
+    "paused": true,
+    "ready_state": 4,
+    "media_error": null
+  },
+  "scope": "Public attachment availability and visible playback controls; the encoded source and frame checks remain in media.json. No signed delivery URL or authentication data is retained."
+}
