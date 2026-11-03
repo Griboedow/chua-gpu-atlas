@@ -1,0 +1,76 @@
+{
+  "id": "P95",
+  "source": "P95-d70-s8.json",
+  "source_sha256": "5ab1962f4881be8f81112a8842121912d48761c398f26bd1dd0108097662c707",
+  "checks": [
+    {
+      "method": "DOP853 full field and variation; transverse projection at each mesh point",
+      "max_step": 0.025,
+      "relative_gain_error": 5.97644156385968e-12,
+      "gain": 1172633.9250776505,
+      "maximum_local_state_error": 1.8207225187158665e-13,
+      "endpoint_matrix": [
+        [
+          -35392.1442076414,
+          -298253.7120919275
+        ],
+        [
+          133571.23829112528,
+          1125620.3471402617
+        ]
+      ],
+      "closure_scope": "Maximum separate subinterval state error; not a full-period closure error"
+    },
+    {
+      "method": "DOP853 full field and variation; transverse projection at each mesh point",
+      "max_step": 0.0125,
+      "relative_gain_error": 5.307088102313173e-12,
+      "gain": 1172633.9250784353,
+      "maximum_local_state_error": 1.8226840310164255e-13,
+      "endpoint_matrix": [
+        [
+          -35392.144207665355,
+          -298253.7120921271
+        ],
+        [
+          133571.23829121568,
+          1125620.347141015
+        ]
+      ],
+      "closure_scope": "Maximum separate subinterval state error; not a full-period closure error"
+    }
+  ],
+  "finite_perturbations": {
+    "method": "DOP853 full-field integrations of two perturbed initial states",
+    "max_step": 0.0125,
+    "results": [
+      {
+        "amplitude": 1e-08,
+        "central_difference_gain": 1165128.4747959545,
+        "relative_error": 0.006400505842573345,
+        "final_transverse_separation": 0.02330256949591909
+      },
+      {
+        "amplitude": 1e-09,
+        "central_difference_gain": 1155337.3735299623,
+        "relative_error": 0.01475017154517999,
+        "final_transverse_separation": 0.0023106747470599247
+      },
+      {
+        "amplitude": 1e-10,
+        "central_difference_gain": 1169525.9857177853,
+        "relative_error": 0.002650391823389331,
+        "final_transverse_separation": 0.00023390519714355709
+      },
+      {
+        "amplitude": 1e-11,
+        "central_difference_gain": 1207470.711645017,
+        "relative_error": 0.029708151721640874,
+        "final_transverse_separation": 2.4149414232900333e-05
+      }
+    ],
+    "scope": "Small finite-displacement check over the maximizing interval, not a basin-escape test"
+  },
+  "passed": true,
+  "elapsed_seconds": 22.322297299979255
+}

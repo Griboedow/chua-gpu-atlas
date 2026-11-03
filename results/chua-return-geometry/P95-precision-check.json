@@ -1,0 +1,16 @@
+{
+  "id": "P95",
+  "working_digits": 95,
+  "beta_change": 3.6189950023136946e-70,
+  "maximum_shooting_coordinate_change": 4.890066702566425e-70,
+  "eigen_flow_half_closure": "9.4717074285509e-66",
+  "maximum_target_error": "9.1135946282065e-66",
+  "sampled_region_violation": "9.1135946282065e-66",
+  "signed_half_trace": "0.5",
+  "full_dominant_multiplier_error": 1.8807670110014912e-61,
+  "sampled_full_period_peak_count": 95,
+  "half_period_normalized_section_count": 19,
+  "minimum_distinct_normalized_section_distance": 2.6795278646374814e-06,
+  "scope": "Numerical high-precision eigen-flow reconstruction independent of mp.expm; path checks are sampled, not interval enclosures",
+  "passed": true
+}

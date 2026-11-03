@@ -75,10 +75,10 @@ class PrecisionFlights:
         for i in range(size):J[i,size-1]=deriv[i]
         return f,J
 
-    def boundary(self,beta,q,target):
+    def boundary(self,beta,q,target,max_iterations=18):
         w=mp.matrix([mp.mpf(str(v)) for v in q]+[mp.mpf(str(beta))]);target=mp.mpf(str(target))
         history=[];gate=mp.mpf(10)**(-(self.dps-20))
-        for iteration in range(18):
+        for iteration in range(max_iterations):
             f,J=self.system(w,target,True);err=max(abs(v) for v in f)
             history.append(mp.nstr(err,12))
             if err<gate:break

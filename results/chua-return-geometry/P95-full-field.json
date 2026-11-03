@@ -1,0 +1,11 @@
+{
+  "method": "DOP853",
+  "max_step": 0.005,
+  "rtol": 2.5e-14,
+  "success": true,
+  "closure": 1.2208412301650817e-06,
+  "peaks": 95,
+  "section_returns": 19,
+  "minimum_distinct_section_distance": 2.6795053434522545e-06,
+  "half_inversion_error": 1.792670912603711e-06
+}

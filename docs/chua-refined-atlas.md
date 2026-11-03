@@ -16,7 +16,7 @@ The original layer view uses a **17 by 17 candidate mesh in (alpha, m0)** around
 
 ![Layer, reference periodic orbit, standard knot embedding and waveform for every extended catalogue entry](assets/chua-layer-cards.webp)
 
-[Download the MP4 for pause and seeking](assets/chua-layer-cards.mp4?raw=1). The embedded WebP preserves the source pixels and timing, but an animated image has no native playback timeline.
+[Watch the video with pause and seeking](chua-layer-cards.md#video). The embedded WebP preserves the source pixels and timing, but an animated image has no native playback timeline.
 
 The new animation joins these meshes to the 34 reference motions in the [knot atlas](chua-knot-atlas.md). The left panels show a family's representative surface and its alpha=9 slice; the right panels show the reference orbit, a standard embedding of its numerical knot type, a full-period signal and the measured characteristics. P75 and P85 have three continuation points each on this section, with incomplete coverage labelled explicitly. The [static cards and field definitions](chua-layer-cards.md) allow direct selection; the [original 32-family geometry animation](assets/chua-readme-layers.gif) is retained.
 

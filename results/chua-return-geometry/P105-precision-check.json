@@ -1,0 +1,16 @@
+{
+  "id": "P105",
+  "working_digits": 95,
+  "beta_change": 9.839076636127466e-70,
+  "maximum_shooting_coordinate_change": 4.890066702566425e-70,
+  "eigen_flow_half_closure": "9.9060221361412e-65",
+  "maximum_target_error": "9.5409029624124e-65",
+  "sampled_region_violation": "1.6225209545822e-65",
+  "signed_half_trace": "0.5",
+  "full_dominant_multiplier_error": 5.363659730164971e-60,
+  "sampled_full_period_peak_count": 105,
+  "half_period_normalized_section_count": 21,
+  "minimum_distinct_normalized_section_distance": 1.150417971679942e-06,
+  "scope": "Numerical high-precision eigen-flow reconstruction independent of mp.expm; path checks are sampled, not interval enclosures",
+  "passed": true
+}

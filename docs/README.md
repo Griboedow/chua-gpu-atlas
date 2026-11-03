@@ -2,6 +2,8 @@
 
 The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
+The [return-geometry study](chua-return-geometry.md) relates extra residence near a saddle to shrinking parameter windows and increasing transient amplification in one period-adding sequence. It compares all 34 displayed references, samples the actual quadratic return, and tests published forecasts against new 95- and 105-peak cycles. The six width, gain and section-separation predictions agree within 0.5%; these are numerical results, not new interval certificates.
+
 The [34 layer cards](chua-layer-cards.md) connect parameter layers with reference attracting cycles, catalogue groups, waveforms, numerical knot types and motion characteristics. Each card can be viewed separately or in the slow README animation.
 
 The [knot atlas](chua-knot-atlas.md) adds the spatial topology of all 34 reference cycles: five numerical knot types, an unknotted eight-member thin sequence, explicit diagram identifications and a coarse-sampling counterexample. It includes a complete orbit gallery and an interactive 3D comparison.

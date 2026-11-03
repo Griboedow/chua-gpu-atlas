@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "id": "S04",
+      "euclidean_gain": 714.3231188611218,
+      "energy_norm_gain": 452.19490970933026
+    },
+    {
+      "id": "S05",
+      "euclidean_gain": 1436.3697601986607,
+      "energy_norm_gain": 910.1841443306346
+    },
+    {
+      "id": "S06",
+      "euclidean_gain": 4680.869245104263,
+      "energy_norm_gain": 2376.794713518259
+    },
+    {
+      "id": "S07",
+      "euclidean_gain": 8491.318285476607,
+      "energy_norm_gain": 5383.023432549336
+    },
+    {
+      "id": "P55",
+      "euclidean_gain": 22230.504604983726,
+      "energy_norm_gain": 14093.528413709499
+    },
+    {
+      "id": "P65",
+      "euclidean_gain": 59353.87075402097,
+      "energy_norm_gain": 37629.349181262754
+    },
+    {
+      "id": "P75",
+      "euclidean_gain": 159930.3827728398,
+      "energy_norm_gain": 101393.785528936
+    },
+    {
+      "id": "P85",
+      "euclidean_gain": 432684.8477048854,
+      "energy_norm_gain": 274317.20595592825
+    }
+  ],
+  "norm": "sqrt(dx^2/alpha + dy^2 + dz^2/beta)",
+  "meaning": "Amplitude in the quadratic stored-energy metric; the energy ratio is the square of this gain",
+  "scope": "Same coarse phase mesh in both metrics; no continuous maximum or noise model"
+}

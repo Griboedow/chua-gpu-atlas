@@ -247,11 +247,17 @@ def write_gallery(records):
     ids = sorted(r['id'] for r in records)
     intro = '''# Layer, periodic orbit and knot type
 
-Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the lossless WebP animation](assets/chua-layer-cards.webp), [download the MP4 for pause and seeking](assets/chua-layer-cards.mp4?raw=1), or choose a static card below. WebP is an animated image and has no native playback timeline; the MP4 provides video controls in a compatible player.
+Each card joins a sampled parameter layer to one reference attracting cycle, its waveform and its numerically identified knot type. The **34 reference cycles use different β values**; they are not 34 simultaneous attractors. [Play the lossless WebP animation](assets/chua-layer-cards.webp), [watch the video with pause and seeking](#video), or choose a static card below. WebP is an animated image and has no native playback timeline; the video below provides playback controls.
 
 **34 is the number of displayed examples, not the total number of periodic motions.** On the transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0, [infinitely many attracting periodic windows are proved](chua-infinity-certificate.md) to accumulate at β* in (14.30635909996140, 14.30635909996152). The result combines an interval certificate with the classical sink-cascade theorem. These windows have local extensions in parameter space, but their global connections have not been classified: the result is not a count of disconnected layer surfaces. The animation starts with this distinction and retains an infinity banner on every family card. Its [introductory frame](assets/chua-layer-cards/overview.png) is also available separately.
 
 The 32 original families have refined meshes. P75 and P85 show only three existing continuation samples at fixed α and m₁; no dense sheet is inferred for them. Grey points and lines retain the other families as context. The star marks the reference parameters when they lie in the displayed box. The orbit and waveform use the reference parameters printed on the card, not every point of the highlighted surface.
+
+## Video
+
+Use the player's timeline to move between cards. The introduction lasts 12 seconds; each of the 34 family cards lasts 8 seconds, for a total of 4:44. A04 starts at 0:12 and A01 at 0:20; the remaining entries follow in identifier order. [Open the MP4 directly](https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122).
+
+https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122
 
 ## Reading a card
 

@@ -1,0 +1,44 @@
+{
+  "id": "P105",
+  "beta": "14.30635865832974352490551602599106403939820688070785871012809576960474",
+  "period": "226.908018836447960161059600620284624914857381932900660633366320916148",
+  "symmetric": true,
+  "source": "results/chua-return-geometry/P105-reference.json",
+  "source_sha256": "ab85c57942b9b9640a9136c46206dc6db58d682f5cea5be632949e6e1b58c3fa",
+  "digits": 85,
+  "subdivisions_per_affine_flight": 128,
+  "samples": 21760,
+  "diagnostics": {
+    "closure": 9.906022136141244e-65,
+    "dominant_multiplier": "0.25",
+    "multiplier_error": 5.942197264523587e-59,
+    "tangent_transport_error": 1.3777131745839854e-85,
+    "determinant": "2.7415573350689e-180",
+    "full_product": [
+      [
+        0.1019666497559409,
+        -0.17632923598167638
+      ],
+      [
+        -0.08560386876571663,
+        0.14803335024405911
+      ]
+    ]
+  },
+  "maximum_gain": 4553863.008286625,
+  "minimum_phase_gain": 32.27636299644282,
+  "phase_gain_ratio": 141089.7197056715,
+  "maximizing_start_index": 10154,
+  "maximizing_steps": 10558,
+  "maximizing_phase": 0.4702987723231253,
+  "maximizing_duration": 110.5157081028808,
+  "input_direction": [
+    0.16674952752732616,
+    0.985058484891683,
+    0.043062471042837974
+  ],
+  "predicted_output_gain": 4553863.008286624,
+  "float64_full_multiplier": 0.24999999990606908,
+  "elapsed_seconds": 118.15261339998688,
+  "passed": true
+}

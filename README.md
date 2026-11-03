@@ -4,7 +4,13 @@ An atlas of attracting periodic motions in the continuous piecewise-linear Chua 
 
 The central question is how the visible layers in parameter space relate to the system's motions: **what distinguishes the layers, where they appear, how thin they become, and how many attracting motions can coexist**. The study starts with GPU surveys, follows individual periodic orbits, and uses interval arithmetic and analytic arguments to establish selected existence and basin results.
 
-[The system](#the-system-and-the-question) · [Reading the atlas](#reading-the-atlas) · [Results](#main-results) · [Verification](#evidence-and-limitations) · [Reproduction](#reproducibility) · [Background](#background)
+**One sequence now has a quantitative explanation.** Its longer cycles spend additional turns near the same short unstable orbit before making a large excursion and returning. Nearby trajectories separate during that passage, but a sufficiently precise return makes the complete motion attracting. Each additional step eventually gives about **2.71 times more temporary amplification** and a parameter window about **7.36 times narrower**. Longer repetition, thinner layers and greater short-time sensitivity are linked by the same return geometry.
+
+![One organizing saddle relates longer cycles, thinner parameter windows, transient amplification and a quadratic return](docs/assets/chua-return-explanation.png)
+
+The [return-geometry study](docs/chua-return-geometry.md) tests this relation on eight existing cycles, then predicts three properties of new **95- and 105-peak cycles before searching for them**. All six numerical predictions agree within **0.5%**. The new cycles remain attracting despite very large temporary *linear* amplification; this does not measure a finite disturbance that would make them escape. The study explains one sequence and compares sensitivity across the 34 illustrated references. A complete classification of the atlas remains open.
+
+[The system](#the-system-and-the-question) · [Reading the atlas](#reading-the-atlas) · [Return mechanism](docs/chua-return-geometry.md) · [Results](#main-results) · [Verification](#evidence-and-limitations) · [Reproduction](#reproducibility) · [Background](#background)
 
 ## The system and the question
 
@@ -35,7 +41,7 @@ A **stability region** is a set of parameter values supporting an attracting per
 
 ![34 family cards: parameter layer, attracting cycle, knot type, waveform and reference characteristics](docs/assets/chua-layer-cards.webp)
 
-[Download MP4 for pause and seeking](docs/assets/chua-layer-cards.mp4?raw=1) · [Choose a static family card](docs/chua-layer-cards.md#choose-a-family). The embedded WebP is lossless; native playback controls are available in the video version.
+[Watch the video with pause and seeking](docs/chua-layer-cards.md#video) · [Choose a static family card](docs/chua-layer-cards.md#choose-a-family). The embedded WebP is lossless; the video page provides playback controls.
 
 **A finite catalogue within an infinite set of periodic motions.** The 34 displayed references are selected examples. On the fixed transect α = 9, m₀ = −8/7, m₁ = −5/7, [infinitely many attracting periodic windows are proved](docs/chua-infinity-certificate.md) to accumulate near β ≈ 14.30635910. The argument combines an interval certificate with a classical sink-cascade theorem. These windows have local extensions in parameter space; the number of globally disconnected layer surfaces remains unclassified. The introductory frame and the banner on every card make this distinction explicit.
 
@@ -46,12 +52,12 @@ The camera and parameter axes stay fixed. The original 32 meshes contain 5,447 c
 | Difference in motion | Example |
 |---|---|
 | Repetition time and waveform | [S08 and S11](docs/chua-family-gallery.md#s08) both have five peaks but periods of about 10.89 and 14.50. |
-| Number of peaks before repetition | The measured thin sequence has 15, 25, …, 85 peaks per full cycle. |
+| Number of peaks before repetition | The illustrated thin sequence has 15, 25, …, 85 peaks per full cycle; the [return study](docs/chua-return-geometry.md) adds 95- and 105-peak test cycles. |
 | Scroll visits | [E06](docs/chua-family-gallery.md#e06) stays near one outer scroll; the other mesh representatives visit both. |
 | Symmetry | A symmetric cycle can lose symmetry and produce two inversion-related attracting cycles. |
 | Knot type in state space | [A04 and A01](docs/chua-knot-atlas.md) both have 25 peaks; A04 is a torus knot and A01 is an unknot. |
 
-The finite catalogue contains **34 reference entries** under a stated continuation and normalization convention: the 32 original entries plus the later 75- and 85-peak motions. Those two are absent from the original mesh and have small slope patches in the later study. These are catalogue counts, not 34 simultaneous attractors or an exhaustive count of globally disconnected surfaces. Peak counts and orbit silhouettes alone do not identify a family.
+The illustrated catalogue contains **34 reference entries** under a stated continuation and normalization convention: the 32 original entries plus the later 75- and 85-peak motions. Those two are absent from the original mesh and have small slope patches in the later study. The subsequent 95- and 105-peak test cycles have numerical roots but no family meshes or knot classifications. These are catalogue counts, not 34 simultaneous attractors or an exhaustive count of globally disconnected surfaces. Peak counts and orbit silhouettes alone do not identify a family.
 
 The [orbit gallery](docs/chua-family-gallery.md) shows each original representative's orbit, complete signal and peak sequence. The [refined atlas](docs/chua-refined-atlas.md) explains branch matching and numerical checks; the [terminology guide](docs/terminology.md) distinguishes families, stability regions, windows and individual cycles.
 
@@ -61,6 +67,7 @@ The results below move from the geometry of the atlas to the dynamics within it.
 
 | Question | Result | Evidence |
 |---|---|---|
+| Why are longer-cycle layers thinner and more sensitive? | In one ten-member sequence, width × transient gain² approaches a constant; the same return model predicts a saddle companion. | Direct nonlinear return samples, independent integrations and six prospective 95/105-peak predictions within 0.5% |
 | Are different motions tied into different knots? | The 34 references realize five numerical knot types; the eight tested thin-sequence members are all unknots. | Refined periodic roots, diagram reductions and exact knot invariants |
 | How do layers change with the diode slopes? | Two families are followed through 6,713 accepted cross-sections; diode crossings can change within one attracting family. | Continuation and independent orbit checks |
 | Can thin windows be predicted before searching? | A calibrated rule locates 48/48 held-out windows, then 24/24 on a larger slope square. | Frozen forecasts followed by independent searches |
@@ -89,6 +96,8 @@ The [refinement study](docs/chua-slope-refinement.md) contains four 41 × 41 mes
 ### Predicting thin windows
 
 A short unstable periodic orbit organizes the measured 15 → 25 → … sequence. Longer cycles spend additional returns near this saddle before making a global excursion. Its expansion factor predicts the rate at which window spacing and width decrease; its period predicts the additional repetition time.
+
+The [return-geometry study](docs/chua-return-geometry.md) extends this explanation to temporary transverse amplification and same-parameter saddle companions. After rescaling, directly computed local returns approach the same quadratic curve. The 95/105-peak tests predict width, gain and section separation; their absolute window locations are corrected by shooting and are not part of that forecast.
 
 ![Held-out slope-section forecasts and three resolved thin family surfaces](docs/assets/chua-followup-sheets.png)
 
@@ -154,6 +163,7 @@ The [research guide](docs/research-guide.md) provides the full study map; the [r
 
 | To inspect or reproduce | Start here |
 |---|---|
+| Return geometry, transient response and 95/105-peak predictions | [Report and figures](docs/chua-return-geometry.md), [data and reproduction](results/chua-return-geometry/README.md) |
 | Family catalogue, meshes and numerical audits | [Atlas report](docs/chua-refined-atlas.md), [orbit gallery](docs/chua-family-gallery.md) |
 | Knot types, orbit diagrams and sampling controls | [Knot atlas](docs/chua-knot-atlas.md), [reproduction](results/chua-knot-atlas/README.md) |
 | First forecasts and the classical interval certificate | [Prediction data](results/chua-layer-prediction/README.md), [certificate reproduction](results/chua-layer-infinity/README.md) |

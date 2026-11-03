@@ -1,0 +1,8 @@
+{
+  "id": "P105",
+  "stage": "Initial fold solve before increasing the iteration budget",
+  "outcome": "Newton exhausted its default 18 iterations",
+  "residual_history": ["12957.7662589", "4084.55206381", "2683.65381607", "626.03320848", "0.172286953571", "0.169849743707", "0.166554118615", "0.162576459434", "0.158067203895", "0.153154284306", "0.151474022176", "0.145903166968", "0.137891569667", "0.134742481056", "0.118653621947", "0.0989080648749", "0.0394761399919", "1.39134638592e-8"],
+  "follow_up": "Repeat with at most 36 iterations and the unchanged residual gate; keep the 18-iteration default for existing callers",
+  "interpretation": "Solver budget exhaustion, not an absent orbit or a failed quantitative forecast"
+}

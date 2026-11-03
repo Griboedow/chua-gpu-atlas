@@ -1,0 +1,289 @@
+{
+  "checks": {
+    "forecast_sources_unchanged": true,
+    "all_36_roots_and_gain_records": true,
+    "fine_mesh_agrees_with_local_refinement": true,
+    "independent_variation": true,
+    "held_out_forecasts": true,
+    "new_orbit_counts_and_section_variation": true,
+    "new_orbit_eigen_flow_and_precision": true,
+    "new_window_endpoint_precision": true,
+    "initial_gain_ratio_gate": true,
+    "initial_product_gate": true,
+    "all_10_fixed_parameter_companions": true,
+    "companion_precision_repeat": true,
+    "normal_form_precision_repeat": true,
+    "normal_form_sample_paths": true
+  },
+  "passed": true,
+  "reference_count": 36,
+  "forecast_scores": [
+    {
+      "id": "P95",
+      "predicted": {
+        "id": "P95",
+        "n": 9,
+        "peaks": 95,
+        "width": "8.17229242110744041922830628326e-11",
+        "maximum_gain": 1681439.336609201,
+        "companion_section_distance": "2.73176672004620969832840504545e-11",
+        "companion_half_multiplier": 1.5,
+        "relative_gates": {
+          "width": 0.1,
+          "maximum_gain": 0.1,
+          "companion_section_distance": 0.15
+        },
+        "multiplier_absolute_gate": 0.001
+      },
+      "observed": {
+        "width": 8.199615201540061e-11,
+        "maximum_gain": 1679393.747162761,
+        "companion_section_distance": 2.738192236514989e-11,
+        "companion_half_multiplier": 1.500003327960987
+      },
+      "signed_relative_errors": {
+        "width": 0.003343343461627901,
+        "maximum_gain": -0.001216570471442191,
+        "companion_section_distance": 0.0023521468438822968
+      },
+      "passed": true
+    },
+    {
+      "id": "P105",
+      "predicted": {
+        "id": "P105",
+        "n": 10,
+        "peaks": 105,
+        "width": "1.10995681702715093546713544659e-11",
+        "maximum_gain": 4562470.9369736975,
+        "companion_section_distance": "3.71027239017017512752712135062e-12",
+        "companion_half_multiplier": 1.5,
+        "relative_gates": {
+          "width": 0.1,
+          "maximum_gain": 0.1,
+          "companion_section_distance": 0.15
+        },
+        "multiplier_absolute_gate": 0.001
+      },
+      "observed": {
+        "width": 1.1151983339113871e-11,
+        "maximum_gain": 4554658.929854789,
+        "companion_section_distance": 3.722538291718171e-12,
+        "companion_half_multiplier": 1.5000012281378525
+      },
+      "signed_relative_errors": {
+        "width": 0.004722270996339262,
+        "maximum_gain": -0.0017122316452694575,
+        "companion_section_distance": 0.003305930200837137
+      },
+      "passed": true
+    }
+  ],
+  "mesh_comparisons": [
+    {
+      "id": "S04",
+      "sampled_gain": 1023.8906531967258,
+      "refined_gain": 1024.153220854725,
+      "relative_difference": 0.0002563753671351865
+    },
+    {
+      "id": "S05",
+      "sampled_gain": 2057.8436266190006,
+      "refined_gain": 2058.282305411978,
+      "relative_difference": 0.00021312858387989575
+    },
+    {
+      "id": "S06",
+      "sampled_gain": 4823.672480858747,
+      "refined_gain": 4829.452227507949,
+      "relative_difference": 0.0011967706433209102
+    },
+    {
+      "id": "S07",
+      "sampled_gain": 12159.876037885735,
+      "refined_gain": 12162.075414074552,
+      "relative_difference": 0.00018083888760234146
+    },
+    {
+      "id": "P55",
+      "sampled_gain": 31833.073259633104,
+      "refined_gain": 31838.71016155499,
+      "relative_difference": 0.0001770455490591738
+    },
+    {
+      "id": "P65",
+      "sampled_gain": 84990.16733928841,
+      "refined_gain": 85005.09390840393,
+      "relative_difference": 0.00017559617229057078
+    },
+    {
+      "id": "P75",
+      "sampled_gain": 229006.06835770115,
+      "refined_gain": 229046.1635342174,
+      "relative_difference": 0.00017505281860030752
+    },
+    {
+      "id": "P85",
+      "sampled_gain": 619564.2528411638,
+      "refined_gain": 619672.6032346206,
+      "relative_difference": 0.00017485103083680897
+    },
+    {
+      "id": "P95",
+      "sampled_gain": 1679100.228740892,
+      "refined_gain": 1679393.747162761,
+      "relative_difference": 0.00017477641700458513
+    },
+    {
+      "id": "P105",
+      "sampled_gain": 4553863.008286625,
+      "refined_gain": 4554658.929854789,
+      "relative_difference": 0.00017474888469615202
+    }
+  ],
+  "independent_gain_checks": [
+    {
+      "file": "P105-d70-s8-check.json",
+      "maximum_relative_gain_error": 1.486166745223727e-11
+    },
+    {
+      "file": "P85-d85-s32-check.json",
+      "maximum_relative_gain_error": 6.43762820828897e-12
+    },
+    {
+      "file": "P95-d70-s8-check.json",
+      "maximum_relative_gain_error": 5.97644156385968e-12
+    },
+    {
+      "file": "S04-d85-s32-check.json",
+      "maximum_relative_gain_error": 1.0020873020266663e-12
+    }
+  ],
+  "new_orbit_checks": [
+    {
+      "id": "P95",
+      "whole_period": {
+        "method": "DOP853",
+        "max_step": 0.00125,
+        "rtol": 2.5e-14,
+        "success": true,
+        "closure": 1.577741820524281e-07,
+        "peaks": 95,
+        "section_returns": 19,
+        "minimum_distinct_section_distance": 2.67952350207853e-06,
+        "half_inversion_error": 3.1618495621721365e-07
+      },
+      "section_checks": {
+        "method": "DOP853 section-by-section full-field variational integration",
+        "max_step": 0.005,
+        "rtol": 2.5e-14,
+        "variational": true,
+        "success": true,
+        "closure": 1.970645868709653e-14,
+        "closure_meaning": "Maximum independent next-section error, not full-period drift",
+        "dominant_multiplier": 0.24999950988817662,
+        "expected": 0.25,
+        "multiplier_error": 4.901118233757717e-07,
+        "signed_half_multiplier": 0.4999995098879364,
+        "half_determinant": "-5.9388401657545e-82",
+        "period_difference": 1.3642420526593924e-12
+      },
+      "passed": true
+    },
+    {
+      "id": "P105",
+      "whole_period": {
+        "method": "DOP853",
+        "max_step": 0.00125,
+        "rtol": 2.5e-14,
+        "success": true,
+        "closure": 4.907223728978227e-06,
+        "peaks": 105,
+        "section_returns": 21,
+        "minimum_distinct_section_distance": 1.1504482931485363e-06,
+        "half_inversion_error": 8.155726450187473e-06
+      },
+      "section_checks": {
+        "method": "DOP853 section-by-section full-field variational integration",
+        "max_step": 0.005,
+        "rtol": 2.5e-14,
+        "variational": true,
+        "success": true,
+        "closure": 8.271161533457416e-15,
+        "closure_meaning": "Maximum independent next-section error, not full-period drift",
+        "dominant_multiplier": 0.25000000019004953,
+        "expected": 0.25,
+        "multiplier_error": 1.9004953166756877e-10,
+        "signed_half_multiplier": 0.5000000001900495,
+        "half_determinant": "-1.65576343238103e-90",
+        "period_difference": 4.831690603168681e-13
+      },
+      "passed": true
+    }
+  ],
+  "new_orbit_precision_checks": [
+    {
+      "id": "P95",
+      "working_digits": 95,
+      "beta_change": 3.6189950023136946e-70,
+      "maximum_shooting_coordinate_change": 4.890066702566425e-70,
+      "eigen_flow_half_closure": "9.4717074285509e-66",
+      "maximum_target_error": "9.1135946282065e-66",
+      "sampled_region_violation": "9.1135946282065e-66",
+      "signed_half_trace": "0.5",
+      "full_dominant_multiplier_error": 1.8807670110014912e-61,
+      "sampled_full_period_peak_count": 95,
+      "half_period_normalized_section_count": 19,
+      "minimum_distinct_normalized_section_distance": 2.6795278646374814e-06,
+      "scope": "Numerical high-precision eigen-flow reconstruction independent of mp.expm; path checks are sampled, not interval enclosures",
+      "passed": true
+    },
+    {
+      "id": "P105",
+      "working_digits": 95,
+      "beta_change": 9.839076636127466e-70,
+      "maximum_shooting_coordinate_change": 4.890066702566425e-70,
+      "eigen_flow_half_closure": "9.9060221361412e-65",
+      "maximum_target_error": "9.5409029624124e-65",
+      "sampled_region_violation": "1.6225209545822e-65",
+      "signed_half_trace": "0.5",
+      "full_dominant_multiplier_error": 5.363659730164971e-60,
+      "sampled_full_period_peak_count": 105,
+      "half_period_normalized_section_count": 21,
+      "minimum_distinct_normalized_section_distance": 1.150417971679942e-06,
+      "scope": "Numerical high-precision eigen-flow reconstruction independent of mp.expm; path checks are sampled, not interval enclosures",
+      "passed": true
+    }
+  ],
+  "endpoint_precision_checks": [
+    {
+      "id": "P95",
+      "relative_width_change": "4.4275389456901616917e-52"
+    },
+    {
+      "id": "P105",
+      "relative_width_change": "6.0533550652116786711e-57"
+    }
+  ],
+  "sequence_width_gain_squared": [
+    200.45415205693223,
+    206.4203785801874,
+    215.55910096203561,
+    222.8089868999874,
+    227.2037109598402,
+    229.48683543445532,
+    230.56675095421954,
+    231.05017663456096
+  ],
+  "last_gain_ratios": [
+    2.694499270608688,
+    2.7054485160239206
+  ],
+  "companion_precision_difference": "2.83796217811906e-54",
+  "normal_form_repeat_difference": 2.5273400562035052e-64,
+  "normal_form_maximum_errors": {
+    "P55": 0.00018330231057491142,
+    "P85": 1.1079891083695458e-05
+  },
+  "scope": "Numerical consistency, prediction and independent implementation audit; no interval certificate of gain maxima, basin boundaries or global atlas completeness"
+}

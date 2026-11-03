@@ -1,6 +1,6 @@
 # Combined layer cards
 
-The [lossless WebP animation](../../docs/assets/chua-layer-cards.webp) and [34 static cards](../../docs/chua-layer-cards.md) associate the published parameter samples with reference motions and numerical knot types. The [MP4](../../docs/assets/chua-layer-cards.mp4?raw=1) can be downloaded for pause and seeking in a video player. This is a presentation of existing results, with no new orbit or mesh calculation.
+The [lossless WebP animation](../../docs/assets/chua-layer-cards.webp) and [34 static cards](../../docs/chua-layer-cards.md) associate the published parameter samples with reference motions and numerical knot types. The [video page](../../docs/chua-layer-cards.md#video) provides pause and seeking in an embedded GitHub player. This is a presentation of existing results, with no new orbit or mesh calculation.
 
 ## Contents and sources
 
@@ -10,11 +10,13 @@ The [lossless WebP animation](../../docs/assets/chua-layer-cards.webp) and [34 s
 | [cards.html](cards.html) | Family selector and a video player with a timeline; open from a local repository checkout, preserving relative paths to the images and MP4 |
 | [Static cards](../../docs/assets/chua-layer-cards/) | One 1680 × 1278 PNG per reference entry, plus an introductory frame |
 | [WebP](../../docs/assets/chua-layer-cards.webp) | 2,074,732 bytes; all 35 frames match the source PNG pixels exactly; 1680 × 1278 |
-| [MP4](../../docs/assets/chua-layer-cards.mp4?raw=1) | 6,579,895 bytes; H.264, 1280 × 974, 284 seconds; lossy video with native playback controls |
+| [MP4 source](../../docs/assets/chua-layer-cards.mp4) · [video player](../../docs/chua-layer-cards.md#video) | 6,579,895 bytes; H.264, 1280 × 974, 284 seconds; lossy video with native playback controls |
 | [media.json](media.json) | Source image hashes, encoding settings, size comparison and verification results |
 | [Original GIF](../../docs/assets/chua-layer-cards.gif) | Retained fallback, 5,036,517 bytes |
 
-Both animated formats show a twelve-second introduction, then 34 fixed-camera family cards at eight seconds each: A04 and A01 first, followed by the remaining entries in identifier order. WebP is **58.8% smaller than the GIF**, without changing the PNG pixels, dimensions or timing. It also avoids the GIF's palette quantization. An animated WebP has no native playback timeline; use the MP4 or select individual static cards to navigate directly. The MP4 is downloaded separately and is not loaded by the main README image.
+Both animated formats show a twelve-second introduction, then 34 fixed-camera family cards at eight seconds each: A04 and A01 first, followed by the remaining entries in identifier order. WebP is **58.8% smaller than the GIF**, without changing the PNG pixels, dimensions or timing. It also avoids the GIF's palette quantization. An animated WebP has no native playback timeline; use the MP4 or select individual static cards to navigate directly. The video opens on a separate page and is not loaded by the main README image.
+
+The published player uses a GitHub video attachment of the repository MP4. After changing the video, upload the new MP4 and replace both attachment URLs in `research/render_chua_layer_cards.py`, then regenerate the guide. The offline HTML viewer continues to use the MP4 in the local checkout.
 
 The introductory frame and the banner on every family card distinguish the finite catalogue from the [proved infinite cascade of attracting windows](../../docs/chua-infinity-certificate.md). The statement concerns the fixed transect α = 9, m₀ = −8/7, m₁ = −5/7, γ = 0 and the certified β* interval. It uses an interval certificate and the classical sink-cascade theorem; it does not count globally disconnected layer surfaces. This presentation reuses the established proof and does not introduce a new certificate. The family selector opens individual cards directly; the WebP and video begin with the introduction.
 

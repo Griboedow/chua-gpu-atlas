@@ -1,0 +1,119 @@
+{
+  "id": "P55",
+  "digits": 75,
+  "rows": [
+    {
+      "s": -0.5,
+      "return_coordinate": "-0.125061518917068877050330759402",
+      "predicted": -0.125,
+      "absolute_error": 6.151891706887704e-05,
+      "transverse_line_error_in_root_separations": 4.536875966875475e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243610396410326,
+        "minimum_duration": 0.41613499306451296,
+        "maximum_flight_time_change": 5.111635640139958e-05
+      }
+    },
+    {
+      "s": -0.25,
+      "return_coordinate": "-0.0937627908991073350530669512008",
+      "predicted": -0.09375,
+      "absolute_error": 1.2790899107335053e-05,
+      "transverse_line_error_in_root_separations": 2.0075924726285366e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243610445780663,
+        "minimum_duration": 0.41613499203705834,
+        "maximum_flight_time_change": 2.5559171109120837e-05
+      }
+    },
+    {
+      "s": 0.0,
+      "return_coordinate": "2.69292386975609021901114495547e-57",
+      "predicted": 0.0,
+      "absolute_error": 2.69292386975609e-57,
+      "transverse_line_error_in_root_separations": 2.610935299866328e-58,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243610593696551,
+        "minimum_duration": 0.4161349889590791,
+        "maximum_flight_time_change": 7.345878368977139e-62
+      }
+    },
+    {
+      "s": 0.25,
+      "return_coordinate": "0.156242310871652645409851595907",
+      "predicted": 0.15625,
+      "absolute_error": 7.68912834735459e-06,
+      "transverse_line_error_in_root_separations": 1.3920958243674596e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.124361084018239,
+        "minimum_duration": 0.4161349838300679,
+        "maximum_flight_time_change": 2.556115378707883e-05
+      }
+    },
+    {
+      "s": 0.5,
+      "return_coordinate": "0.374979536538297048108798913214",
+      "predicted": 0.375,
+      "absolute_error": 2.0463461702951892e-05,
+      "transverse_line_error_in_root_separations": 2.0124199468302093e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243611185262485,
+        "minimum_duration": 0.41613497664951965,
+        "maximum_flight_time_change": 5.112428711329284e-05
+      }
+    },
+    {
+      "s": 0.75,
+      "return_coordinate": "0.65622700951981502772159364",
+      "predicted": 0.65625,
+      "absolute_error": 2.2990480184972278e-05,
+      "transverse_line_error_in_root_separations": 1.6421768798912127e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243611628961057,
+        "minimum_duration": 0.41613496741693123,
+        "maximum_flight_time_change": 7.668939683988104e-05
+      }
+    },
+    {
+      "s": 1.0,
+      "return_coordinate": "1.0",
+      "predicted": 1.0,
+      "absolute_error": 1.3699789453447882e-58,
+      "transverse_line_error_in_root_separations": 8.303558796046014e-59,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243612171302226,
+        "minimum_duration": 0.4161349561318016,
+        "maximum_flight_time_change": 0.00010225647982814476
+      }
+    },
+    {
+      "s": 1.25,
+      "return_coordinate": "1.40631371579312104840267963611",
+      "predicted": 1.40625,
+      "absolute_error": 6.37157931210484e-05,
+      "transverse_line_error_in_root_separations": 3.2580988495732155e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243612812310035,
+        "minimum_duration": 0.41613494279363206,
+        "maximum_flight_time_change": 0.00012782553293944827
+      }
+    },
+    {
+      "s": 1.5,
+      "return_coordinate": "1.87518330231057491141515102442",
+      "predicted": 1.875,
+      "absolute_error": 0.00018330231057491142,
+      "transverse_line_error_in_root_separations": 8.538779450369006e-08,
+      "event_checks": {
+        "minimum_crossing_speed": 1.1243613552008425,
+        "minimum_duration": 0.41613492740192576,
+        "maximum_flight_time_change": 0.00015339655303521916
+      }
+    }
+  ],
+  "elapsed_seconds": 36.0639010000159,
+  "definition": "s=0 attracting fixed point; s=1 companion saddle; project the signed half-cycle return along their section secant",
+  "predicted_curve": "(s+s^2)/2",
+  "maximum_absolute_error": 0.00018330231057491142,
+  "scope": "Local secant samples of the actual event map; not a global conjugacy or an interval normal-form bound"
+}

@@ -4,6 +4,10 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 The [extension programs](../results/chua-followup/extended-studies.md) add a plane and finite-pulse excitation scan, interval multiple shooting for four-cycle parameter boxes, correlated component images, and prospective slope predictions at new nodes. Their independent checks and retained failures are described with the data.
 
+## Return geometry and transient amplification
+
+`study_chua_return_geometry.py` reconstructs transverse propagators for the reference cycles; `refine_chua_transient_maxima.py` locally refines the sampled gain maxima. `study_chua_companion_saddles.py`, `analyze_chua_return_geometry.py` and `sample_chua_return_normal_form.py` test the same-parameter companion and the actual nonlinear return. `extend_chua_return_tests.py` retains frozen forecasts and solves the new 95/105-peak cycles. The independent checks, metric comparison, audit and plotting commands are listed in the [reproduction guide](../results/chua-return-geometry/README.md). [Report](../docs/chua-return-geometry.md).
+
 ## Knot types of the reference cycles
 
 `reconstruct_chua_knot_orbits.py` refines the reference roots and samples aligned affine flights. `chua_knot_diagrams.py` extracts planar diagrams, computes Alexander polynomials by two methods and identifies selected standard summands. `analyze_chua_knots.py`, `check_chua_knot_sampling.py` and `review_chua_knots.py` record and replay the numerical controls; `plot_chua_knots.py` produces the figures and offline viewer. [Report](../docs/chua-knot-atlas.md) · [Commands and data](../results/chua-knot-atlas/README.md).

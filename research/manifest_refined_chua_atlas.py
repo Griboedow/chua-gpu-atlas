@@ -41,7 +41,11 @@ certify_chua_hidden_tangency check_chua_hidden_tangency analyze_chua_followup au
 certify_chua_coexistence_box study_chua_excitation_plane extend_chua_slope_predictions
 check_chua_extended_predictions study_chua_coexistence_tolerances plot_chua_extended_studies review_chua_extended_studies check_chua_coexistence_box derive_chua_pulse_limit
 chua_knot_diagrams reconstruct_chua_knot_orbits analyze_chua_knots check_chua_knot_sampling review_chua_knots plot_chua_knots
-render_chua_layer_cards encode_chua_layer_media'''.split()
+render_chua_layer_cards encode_chua_layer_media
+study_chua_return_geometry refine_chua_transient_maxima study_chua_companion_saddles
+analyze_chua_return_geometry check_chua_return_geometry check_chua_gain_metric
+extend_chua_return_tests sample_chua_return_normal_form check_chua_new_return_orbits
+review_chua_return_geometry plot_chua_return_geometry'''.split()
 
 
 def digest(path):
@@ -95,6 +99,9 @@ def main():
     paths.update((ROOT/'docs/assets').glob('chua-extended-*.pdf'))
     paths.update(p for p in (ROOT/'results/chua-knot-atlas').rglob('*') if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-cards').rglob('*') if p.is_file())
+    paths.update(p for p in (ROOT/'results/chua-return-geometry').rglob('*') if p.is_file())
+    paths.update((ROOT/'docs/assets').glob('chua-return-*.png'))
+    paths.add(ROOT/'docs/chua-return-geometry.md')
     paths.update((ROOT/'docs/assets/chua-layer-cards').glob('*.png'))
     paths.update(ROOT/p for p in ['docs/assets/chua-layer-cards.gif','docs/assets/chua-layer-cards.webp',
                                 'docs/assets/chua-layer-cards.mp4','docs/chua-layer-cards.md'])

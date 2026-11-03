@@ -1,0 +1,44 @@
+{
+  "id": "E06",
+  "beta": "14.227785194541591324791219937372003262417790286734732373590187807",
+  "period": "9.5654402233142753407504526324787619776688608193804798668213228358",
+  "symmetric": false,
+  "source": "results/chua-knot-atlas/E06-d70-n192.json",
+  "source_sha256": "558891b8fb35d23cf351d311112bd7973b79e83ad11a290565c2b15fba0dd8df",
+  "digits": 70,
+  "subdivisions_per_affine_flight": 8,
+  "samples": 40,
+  "diagnostics": {
+    "closure": 1.2901798711916284e-55,
+    "dominant_multiplier": "-0.5",
+    "multiplier_error": 8.471363966657958e-54,
+    "tangent_transport_error": 9.055679078826712e-71,
+    "determinant": "1.5387175345656e-11",
+    "full_product": [
+      [
+        0.802475148205231,
+        1.4126242482867164
+      ],
+      [
+        -0.7399023051581963,
+        -1.3024751482360053
+      ]
+    ]
+  },
+  "maximum_gain": 56.596434912952,
+  "minimum_phase_gain": 4.248860730093093,
+  "phase_gain_ratio": 13.320378922307478,
+  "maximizing_start_index": 10,
+  "maximizing_steps": 36,
+  "maximizing_phase": 0.30039478439882716,
+  "maximizing_duration": 7.783213592524026,
+  "input_direction": [
+    0.20465788072591568,
+    0.9735204537889114,
+    0.10184830833847554
+  ],
+  "predicted_output_gain": 56.59643491295199,
+  "float64_full_multiplier": -0.499999999999996,
+  "elapsed_seconds": 0.12758320002467372,
+  "passed": true
+}

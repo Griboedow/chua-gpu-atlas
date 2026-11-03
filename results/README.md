@@ -2,6 +2,8 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
+- [`chua-return-geometry/`](chua-return-geometry/README.md): transverse response of all 34 displayed references and two longer test cycles, same-parameter saddle companions, nonlinear return samples, six prospective forecasts, precision repeats, independent integrations and retained failures. See the [return-geometry report](../docs/chua-return-geometry.md).
+
 - [`chua-layer-cards/`](chua-layer-cards/README.md): the data associations and reproduction instructions for the 34 combined layer, orbit, knot and waveform cards. This presentation reuses the existing numerical records.
 
 - [`chua-knot-atlas/`](chua-knot-atlas/README.md): 34 reconstructed periodic representatives, 108 projection/resolution checks, five numerical knot types, explicit summand identifications, exact Alexander calculations and a retained sampling failure. See the [knot report](../docs/chua-knot-atlas.md).

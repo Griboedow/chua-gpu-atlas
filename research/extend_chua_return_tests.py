@@ -54,7 +54,7 @@ def main():
         # correction is allowed and the location is explicitly not a forecast.
         limit=mp.mpf('14.30635909996146')
         beta=limit+(mp.mpf(edge['beta'])-limit)/mp.mpf(forecast['expansion'])
-        fold=f.boundary(beta,guess,1)
+        fold=f.boundary(beta,guess,1,max_iterations=36)
         symmetry=f.boundary(fold['beta'],fold['q'],-1)
         representative=f.boundary(fold['beta'],fold['q'],'.5')
         width=mp.mpf(fold['beta'])-mp.mpf(symmetry['beta'])

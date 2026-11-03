@@ -12,6 +12,7 @@ The [terminology guide](terminology.md) distinguishes periodic orbits, their sta
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
+| Relate width and transient response | One ten-member sequence links saddle residence, window width, transient amplification and companion separation; six prospective predictions agree within 0.5% | [Return geometry](chua-return-geometry.md) | [Forecasts, roots, returns and controls](../results/chua-return-geometry/README.md) |
 | Classify spatial knot types | Five numerical knot types among 34 references; all eight tested thin-sequence cycles are unknots; a coarse sampling failure is retained | [Knot atlas](chua-knot-atlas.md) | [Diagrams, refinements and controls](../results/chua-knot-atlas/README.md) |
 | Extend excitation, robustness and prediction | Energy-based basin section; nonmonotone pulse excitation; four cycles throughout a parameter box; 24 new prospective window tests | [Extension report](chua-excitation-robustness-prediction.md) | [Data and checks](../results/chua-followup/extended-studies.md) |
 | Predict slope layers, quantify excitation and prove hidden coexistence | 48 held-out windows; seven certified impulse crossings; a second tangency and uniform hiddenness imply infinite hidden coexistence | [Combined study](chua-prediction-and-hidden-coexistence.md), [hidden-infinity proof](chua-hidden-infinity-certificate.md) | [Forecasts, certificates and controls](../results/chua-followup/README.md) |
@@ -33,6 +34,8 @@ The [main page](../README.md) summarizes the study. The [orbit catalogue](chua-f
 ## Counts and terminology
 
 **17** was an early census on one transect. **32** is the subsequent catalogue with sampled three-dimensional sheets. **34** includes two later reference cycles predicted before discovery. These are operational counts under a periodic-root and branch-matching convention.
+
+The return-geometry study subsequently computes **two additional test cycles**, with 95 and 105 peaks. They have numerical roots and independent checks but no three-dimensional family meshes or knot classifications. The illustrated catalogue remains 34 entries; it is not the complete set of computed periodic motions.
 
 **Infinitely many** refers to attracting periodic windows with unbounded return periods near a certified parameter on the fixed classical transect. The localized parameter theorem also gives individual nearby parameters with infinitely many simultaneous periodic attractors. Neither result makes the finite mesh exhaustive or proves that every motion belongs to a globally disconnected family surface.
 
