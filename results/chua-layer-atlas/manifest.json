@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-03T00:20:10.866053+00:00",
-  "base_commit": "8df8da8ef236552ecb74187ac0e41bbd4742cbe3",
+  "created_utc": "2026-11-03T00:23:40.641238+00:00",
+  "base_commit": "5e4649330df3646e4c36deed7969be841db11f39",
   "sha256": {
     "AGENTS.md": "ae55a80214d2684b60579653a0c04e46430b4c509275fb399410b70cbd69b51f",
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
@@ -159,7 +159,7 @@
     "docs/chua-overlap-geometry.md": "6f6827a15e0b1c0a3730af914b5fa3f5aaa2ec8345583703448a19a7a2b883fb",
     "docs/chua-prediction-and-hidden-coexistence.md": "4f10ecb5c007739393df17cabbf9115b9a4e3275739d307b65c68fc2b7f1df68",
     "docs/chua-refined-atlas.md": "0498555cdb7c189deda83d6b8269a82306d1f9116547491e9fb03b5b485e5dfc",
-    "docs/chua-return-geometry.md": "d735895b29ba7c0f28414971ba65c1e9d4fc24204939e4600409dbe5bf2a50c6",
+    "docs/chua-return-geometry.md": "d4fadfa79fff3b3612c6a33a6389817ef7103dc6bba8ffd835e5ad7a5d0b2a78",
     "docs/chua-review-guide.md": "5696e2ccabc41eba67e579f51c5b4514d416fd6bc57cae04468700da63d26acc",
     "docs/chua-slope-families.md": "ff48b741a8e71da7a1681070185d5dc32aa3f092d9ff0e87bb59eccad3428cfa",
     "docs/chua-slope-plane.md": "e69e1e962fd77f21ee5652ca0bf1dbab4d18afc6d3e6e213c588af47a863772e",

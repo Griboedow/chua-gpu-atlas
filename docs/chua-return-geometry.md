@@ -27,9 +27,12 @@ All 34 original reference cycles are also compared at their own published refere
 A displacement along the orbit mainly changes its phase. We remove that direction and measure displacement transverse to the flow. Let Φ(t+s,t) be the variational propagator, and let the columns of B(t) form an orthonormal basis perpendicular to the vector field. In the Euclidean norm of the dimensionless coordinates, define
 
 ```math
-K(t,s)=B(t+s)^{\mathsf T}\Phi(t+s,t)B(t),\qquad
-G(t)=\sup_{0\le s\le T}\|K(t,s)\|_2,\qquad
-G_{\max}=\sup_{0\le t<T}G(t).
+K(t,s)=B(t+s)^{\mathsf{T}}\Phi(t+s,t)B(t).
+```
+
+```math
+G(t)=\sup_{0\le s\le T}\lVert K(t,s)\rVert_2,\qquad
+G_{\max}=\sup_{0\le t\lt T}G(t).
 ```
 
 The calculations sample both times and then locally refine the largest sampled value. Reported gains are numerical lower estimates of the continuous supremum, not certified global maxima. The initial perturbation direction is optimized as part of the singular-value calculation. A curve of this operator norm need not follow the same initial direction at every elapsed time.
