@@ -133,7 +133,6 @@
   "parent_diagnostics": {
     "closure": 1.4894284980717617e-51,
     "dominant_multiplier": "2.796699652024001363611",
-    "multiplier_error": 2.5466996520240013,
     "tangent_transport_error": 9.31919474336346e-86,
     "determinant": "1.2460381083093e-23",
     "full_product": [
@@ -145,6 +144,10 @@
         -1.2526733394187508,
         1.0505052958271575
       ]
-    ]
+    ],
+    "distance_from_attracting_reference_multiplier": 2.5466996520240013,
+    "expected_multiplier": "2.79669965202400136361104201164",
+    "multiplier_error": 4.201164e-23,
+    "reference_type": "continued short saddle"
   }
 }

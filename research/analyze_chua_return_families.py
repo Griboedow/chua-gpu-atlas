@@ -1,8 +1,20 @@
 """Compare frozen forecasts, short saddles and transported perturbations."""
+import mpmath as mp
 import numpy as np
 from test_chua_return_families import OUT,ROOT,read,save,parent_at,digest
 from analyze_chua_return_geometry import sections
 from study_chua_return_geometry import mesh
+
+
+def parent_mesh(parent):
+    data,diag=mesh(parent,128,85)
+    # The shared mesh routine defaults to the attracting reference multiplier
+    # 1/4. A continued short saddle must instead be compared with its own root.
+    diag['distance_from_attracting_reference_multiplier']=diag.pop('multiplier_error')
+    diag['expected_multiplier']=parent['full_multiplier']
+    diag['multiplier_error']=float(abs(mp.mpf(diag['dominant_multiplier'])-mp.mpf(parent['full_multiplier'])))
+    diag['reference_type']='continued short saddle'
+    return data,diag
 
 
 def direction_curves(data,record):
@@ -49,14 +61,14 @@ def main():
                 excursion_anchor=anchor,aligned_distance_to_parent=d[order].tolist(),
                 minimum_distance=float(d.min()),section_count=len(p))
             if r['n']==5:
-                data,diag=mesh(parent,128,85);np.savez_compressed(OUT/f"{r['id']}-parent.npz",**data)
+                data,diag=parent_mesh(parent);np.savez_compressed(OUT/f"{r['id']}-parent.npz",**data)
                 result['parent_diagnostics']=diag
             save(path,result);geometry.append(result)
             print(r['id'],'parent expansion',parent['full_multiplier'],'nearest',d.min(),flush=True)
     save(OUT/'geometry-summary.json',dict(rows=geometry))
     if not (OUT/'P55-parent.npz').exists():
         old=read(ROOT/'results/chua-knot-atlas/P55-d70-n192.json')
-        parent=parent_at('S08',old['beta']);data,diag=mesh(parent,128,85)
+        parent=parent_at('S08',old['beta']);data,diag=parent_mesh(parent)
         np.savez_compressed(OUT/'P55-parent.npz',**data)
         save(OUT/'P55-parent.json',dict(parent=parent,diagnostics=diag))
     for id,stem in [('P55',ROOT/'results/chua-return-geometry/P55-d85-s128'),

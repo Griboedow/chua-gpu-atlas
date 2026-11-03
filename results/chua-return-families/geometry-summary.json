@@ -527,7 +527,6 @@
       "parent_diagnostics": {
         "closure": 2.237506992921564e-53,
         "dominant_multiplier": "2.80565717695688688974",
-        "multiplier_error": 2.555657176956887,
         "tangent_transport_error": 9.135158673536727e-86,
         "determinant": "2.9793760283112e-16",
         "full_product": [
@@ -539,7 +538,11 @@
             -1.275425764909485,
             1.0933355202898598
           ]
-        ]
+        ],
+        "distance_from_attracting_reference_multiplier": 2.555657176956887,
+        "expected_multiplier": "2.80565717695688688973983444802",
+        "multiplier_error": 1.6555198e-22,
+        "reference_type": "continued short saddle"
       }
     },
     {
@@ -1069,7 +1072,6 @@
       "parent_diagnostics": {
         "closure": 1.4894284980717617e-51,
         "dominant_multiplier": "2.796699652024001363611",
-        "multiplier_error": 2.5466996520240013,
         "tangent_transport_error": 9.31919474336346e-86,
         "determinant": "1.2460381083093e-23",
         "full_product": [
@@ -1081,7 +1083,11 @@
             -1.2526733394187508,
             1.0505052958271575
           ]
-        ]
+        ],
+        "distance_from_attracting_reference_multiplier": 2.5466996520240013,
+        "expected_multiplier": "2.79669965202400136361104201164",
+        "multiplier_error": 4.201164e-23,
+        "reference_type": "continued short saddle"
       }
     }
   ]
