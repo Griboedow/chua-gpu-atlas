@@ -1,0 +1,38 @@
+{
+  "id": "E05-n5",
+  "source": "E05-n5-reference.json",
+  "source_sha256": "ed2f86a407ac80f75537fcbb6b5074720a598f6ebb1b1ae15fbd9dd992ca31a2",
+  "diagnostics": {
+    "closure": 2.0879515513746754e-61,
+    "dominant_multiplier": "0.25",
+    "multiplier_error": 2.630234449866928e-60,
+    "tangent_transport_error": 1.335040242207637e-85,
+    "determinant": "1.3815382740068e-252",
+    "full_product": [
+      [
+        0.15446801562095852,
+        -0.13003447328891396
+      ],
+      [
+        -0.11348249185103607,
+        0.09553198437904147
+      ]
+    ]
+  },
+  "maximum_gain": 67949.32759499864,
+  "minimum_phase_gain": 5.785634904671399,
+  "phase_gain_ratio": 11744.489362807088,
+  "maximizing_start_index": 422,
+  "maximizing_steps": 5678,
+  "maximizing_phase": 0.03893811165373415,
+  "maximizing_duration": 101.57473275428768,
+  "input_direction": [
+    0.17000526361124071,
+    0.984289799962829,
+    0.04766340350422546
+  ],
+  "predicted_output_gain": 67949.32759499863,
+  "float64_full_multiplier": 0.24999999999573597,
+  "refined": null,
+  "passed": true
+}

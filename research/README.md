@@ -6,6 +6,8 @@ The [extension programs](../results/chua-followup/extended-studies.md) add a pla
 
 ## Return geometry and transient amplification
 
+`test_chua_return_families.py` calibrates and freezes forecasts for two further sequences before searching. `audit_chua_return_families.py` supplies independent orbit, gain and nonlinear-return controls; `analyze_chua_return_families.py`, `review_chua_return_families.py` and `plot_chua_return_families.py` score all outcomes and produce the figures. [Comparison report](../docs/chua-return-families.md) · [Commands and review targets](../results/chua-return-families/README.md).
+
 `study_chua_return_geometry.py` reconstructs transverse propagators for the reference cycles; `refine_chua_transient_maxima.py` locally refines the sampled gain maxima. `study_chua_companion_saddles.py`, `analyze_chua_return_geometry.py` and `sample_chua_return_normal_form.py` test the same-parameter companion and the actual nonlinear return. `extend_chua_return_tests.py` retains frozen forecasts and solves the new 95/105-peak cycles. The independent checks, metric comparison, audit and plotting commands are listed in the [reproduction guide](../results/chua-return-geometry/README.md). [Report](../docs/chua-return-geometry.md).
 
 ## Knot types of the reference cycles

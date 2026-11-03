@@ -1,5 +1,7 @@
 # Return geometry, thin windows and transient amplification
 
+The subsequent [comparison of three return sequences](chua-return-families.md) tests this mechanism on six additional cycles near two other short saddles. It retains both the successful period forecasts and the failed early-calibration width forecasts. The original measurements and forecasts below are unchanged.
+
 **In the tested sequence, a longer attracting motion spends more time near the same short unstable motion.** It follows that motion for several turns, leaves its neighborhood, and returns. The next member adds one turn near the saddle in each symmetric half of the cycle. Much of the apparent complexity is therefore additional residence time near an existing orbit.
 
 That extra time has a measurable cost. Nearby trajectories separate while passing the saddle; a sufficiently precise return can still make the complete cycle attracting. In this sequence, each additional step eventually multiplies the largest temporary amplification by about **2.71**, while dividing the parameter-window width by about **7.36**. Longer repetition, narrower layers and stronger transient amplification are related consequences of the same return geometry.

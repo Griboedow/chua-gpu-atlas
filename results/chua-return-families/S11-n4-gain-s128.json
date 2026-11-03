@@ -1,0 +1,38 @@
+{
+  "id": "S11-n4",
+  "source": "S11-n4-reference.json",
+  "source_sha256": "53cb838b89fc6ef0483dcfa3fd4d8aea529bfc98ebd84fec10290283081864e1",
+  "diagnostics": {
+    "closure": 1.4202533673129148e-62,
+    "dominant_multiplier": "0.25",
+    "multiplier_error": 5.931889272217051e-59,
+    "tangent_transport_error": 1.3289314017287417e-85,
+    "determinant": "2.4127990524228e-140",
+    "full_product": [
+      [
+        0.14489786761098725,
+        -0.12420143388481024
+      ],
+      [
+        -0.12261593435917757,
+        0.10510213238901277
+      ]
+    ]
+  },
+  "maximum_gain": 22819.270645687633,
+  "minimum_phase_gain": 5.566045041174382,
+  "phase_gain_ratio": 4099.7279894222675,
+  "maximizing_start_index": 3494,
+  "maximizing_steps": 4654,
+  "maximizing_phase": 0.37850166472164604,
+  "maximizing_duration": 64.46253015765039,
+  "input_direction": [
+    0.16772858849156,
+    0.9848121708262677,
+    0.04485653570087038
+  ],
+  "predicted_output_gain": 22819.270645687637,
+  "float64_full_multiplier": 0.24999999999865968,
+  "refined": null,
+  "passed": true
+}

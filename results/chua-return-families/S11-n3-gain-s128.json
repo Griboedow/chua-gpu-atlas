@@ -1,0 +1,38 @@
+{
+  "id": "S11-n3",
+  "source": "S11-n3-reference.json",
+  "source_sha256": "451b48f99c47c3a8f055e88007deb825534cbbb7c3f28a7d7f42e3db4a3ff735",
+  "diagnostics": {
+    "closure": 1.3169665297503853e-62,
+    "dominant_multiplier": "0.25",
+    "multiplier_error": 2.0690705707221902e-59,
+    "tangent_transport_error": 1.326495228457907e-85,
+    "determinant": "2.7204502153148e-109",
+    "full_product": [
+      [
+        0.14507845745442502,
+        -0.12433980260283392
+      ],
+      [
+        -0.12242142280756614,
+        0.10492154254557498
+      ]
+    ]
+  },
+  "maximum_gain": 8757.689977956727,
+  "minimum_phase_gain": 5.565770102793712,
+  "phase_gain_ratio": 1573.4911460968979,
+  "maximizing_start_index": 2470,
+  "maximizing_steps": 3630,
+  "maximizing_phase": 0.3438010210740271,
+  "maximizing_duration": 49.99500153809426,
+  "input_direction": [
+    0.16773971494274298,
+    0.9848094148266207,
+    0.044875433143052354
+  ],
+  "predicted_output_gain": 8757.689977956728,
+  "float64_full_multiplier": 0.2500000000000919,
+  "refined": null,
+  "passed": true
+}

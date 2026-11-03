@@ -143,7 +143,21 @@ def search():
                 parent=parent_at(seq['id'],prior['beta'])
                 regions,targets,guess,t=insert_parent(prior,parent)
                 f=PrecisionFlights(regions,targets,True,70)
-                fold=f.boundary(str(target['seed_beta']),guess,1,max_iterations=40)
+                # Predictor retries affect the search only; the published
+                # width, gain and period forecasts remain untouched.
+                attempts=[];fold=None
+                fast=FastFlights(Chua(),regions,targets,True)
+                for scale in [1.,.5,1.5,0.,2.]:
+                    seed=float(prior['beta'])+scale*(target['seed_beta']-float(prior['beta']))
+                    try:
+                        b,q=fast.boundary(seed,guess,1)
+                        trial=f.boundary(str(b),q,1,max_iterations=40)
+                        attempts.append(dict(seed_scale=scale,status='converged',beta=trial['beta']))
+                        fold=trial;break
+                    except Exception as exc:
+                        attempts.append(dict(seed_scale=scale,status='failed',error=str(exc)))
+                save(OUT/f'{id}-search-retries.json',dict(attempts=attempts))
+                if fold is None:raise RuntimeError('All predictor retries failed')
                 symmetry=f.boundary(fold['beta'],fold['q'],-1,max_iterations=40)
                 rep=f.boundary(fold['beta'],fold['q'],'.5',max_iterations=40)
                 rep.update(id=id,symmetric=True,regions=regions,targets=targets,organizer=seq['id'],
@@ -155,7 +169,8 @@ def search():
                 prior=dict(fold,regions=regions)
                 print(id,'width',mp.nstr(width,12),'T',rep['period'],'seconds',time.monotonic()-started,flush=True)
             except Exception as exc:
-                save(OUT/f'{id}-search-failure.json',dict(id=id,error=str(exc),elapsed_seconds=time.monotonic()-started))
+                failure=OUT/f'{id}-search-failure.json'
+                if not failure.exists():save(failure,dict(id=id,error=str(exc),elapsed_seconds=time.monotonic()-started))
                 print('FAILED',id,str(exc),flush=True);break
 
 

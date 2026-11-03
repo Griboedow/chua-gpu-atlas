@@ -10,6 +10,8 @@ The later [return-geometry study](chua-return-geometry.md) relates parameter wid
 
 ## 1. Questions, quantities and evidence
 
+The [three-sequence comparison](chua-return-families.md) adds six new cycle roots and tests how far the same return mechanism transfers. Its [review targets](../results/chua-return-families/README.md#review-targets) require checking the frozen forecast commit, transporting a fixed perturbation direction, and retaining the failed width predictions. Numerical audit success is separate from forecast success. No new infinity theorem is claimed for the two added sequences.
+
 | Result | Quantity being determined | Evidence | What remains undetermined |
 |---|---|---|---|
 | R1: prediction of thin windows | Location and width of three specified periodic families on two small slope patches | Forecasts published before 48 held-out searches; refined roots and independent orbit controls | A global predictor, a rigorous remainder bound and completeness of the atlas |

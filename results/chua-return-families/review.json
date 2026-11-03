@@ -1,0 +1,189 @@
+{
+  "gates": {
+    "forecast_unchanged": true,
+    "calibration_sources": true,
+    "protocol_sources": true,
+    "S11-n3": true,
+    "S11-n4": true,
+    "S11-n5": true,
+    "E05-n3": true,
+    "E05-n4": true,
+    "E05-n5": true,
+    "S11-n5_nonlinear_repeat": true,
+    "S11-n5_independent_gain": true,
+    "E05-n5_nonlinear_repeat": true,
+    "E05-n5_independent_gain": true,
+    "P55_fixed_direction": true,
+    "S11-n5_fixed_direction": true,
+    "E05-n5_fixed_direction": true
+  },
+  "passed": true,
+  "observations": [
+    {
+      "id": "S11-n3",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 8.929701351989561e-05,
+      "relative_width_precision_change": 1.1352389246027138e-58,
+      "eigen_closure": 1.3169665297503853e-62,
+      "full_field_maximum_closure": 1.4162045086640873e-07,
+      "full_field_maximum_symmetry_error": 2.0508198139701506e-07,
+      "section_error": 6.827871601444713e-15,
+      "independent_multiplier_error": 1.416811178362424e-10,
+      "companion_half_multiplier": 1.5008858063388861
+    },
+    {
+      "id": "S11-n4",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 9.230377573010706e-05,
+      "relative_width_precision_change": 7.833517642589509e-56,
+      "eigen_closure": 1.3317987267953165e-62,
+      "full_field_maximum_closure": 3.1539092004706504e-08,
+      "full_field_maximum_symmetry_error": 4.6528662700495715e-08,
+      "section_error": 5.773159728050814e-15,
+      "independent_multiplier_error": 1.1936422551920612e-09,
+      "companion_half_multiplier": 1.5004608569209386
+    },
+    {
+      "id": "S11-n5",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 9.349849369655328e-05,
+      "relative_width_precision_change": 2.2768606333368717e-57,
+      "eigen_closure": 6.970088754958087e-62,
+      "full_field_maximum_closure": 1.355147670190071e-07,
+      "full_field_maximum_symmetry_error": 2.025546852468807e-07,
+      "section_error": 7.93809462606987e-15,
+      "independent_multiplier_error": 1.8595228280348396e-11,
+      "companion_half_multiplier": 1.5001879240422167
+    },
+    {
+      "id": "E05-n3",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 3.52758220917293e-05,
+      "relative_width_precision_change": 6.0668837392136485e-59,
+      "eigen_closure": 4.152640538542809e-63,
+      "full_field_maximum_closure": 7.125550283149096e-08,
+      "full_field_maximum_symmetry_error": 1.0262737859534354e-07,
+      "section_error": 7.105427357601002e-15,
+      "independent_multiplier_error": 1.3838647642402177e-09,
+      "companion_half_multiplier": 1.5008553290071085
+    },
+    {
+      "id": "E05-n4",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 3.6993797264406325e-05,
+      "relative_width_precision_change": 7.865101953682245e-58,
+      "eigen_closure": 1.180774593375094e-62,
+      "full_field_maximum_closure": 5.607920794403753e-10,
+      "full_field_maximum_symmetry_error": 1.644281377721768e-09,
+      "section_error": 5.551115123125783e-15,
+      "independent_multiplier_error": 1.2675066463899812e-09,
+      "companion_half_multiplier": 1.5004517613096018
+    },
+    {
+      "id": "E05-n5",
+      "checks": {
+        "orbit_audit": true,
+        "references": true,
+        "forecast_digest": true,
+        "interior_reference": true,
+        "score": true,
+        "gain_reconstruction": true,
+        "gain_refinement": true,
+        "companion": true,
+        "section_count": true,
+        "score_width": true,
+        "score_gain": true
+      },
+      "fine_gain_relative_difference": 3.768229169853754e-05,
+      "relative_width_precision_change": 6.714400806868028e-59,
+      "eigen_closure": 5.2938776357817225e-62,
+      "full_field_maximum_closure": 1.2522945697091004e-07,
+      "full_field_maximum_symmetry_error": 2.0372062836671034e-07,
+      "section_error": 7.16093850883226e-15,
+      "independent_multiplier_error": 1.3909560403785371e-08,
+      "companion_half_multiplier": 1.5001854516084419
+    }
+  ],
+  "normal_form": [
+    {
+      "id": "S11-n5",
+      "precision_difference": "3.91228105579403e-67",
+      "maximum_return_error": 0.00020981816618085834,
+      "maximum_off_secant": 2.598023175639955e-07,
+      "maximum_gain_control_error": 3.133493464702042e-12
+    },
+    {
+      "id": "E05-n5",
+      "precision_difference": "6.55780263062565e-68",
+      "maximum_return_error": 0.00024207629888227977,
+      "maximum_off_secant": 6.3259383631403044e-06,
+      "maximum_gain_control_error": 7.811085112052751e-12
+    }
+  ],
+  "forecast_passes": {
+    "width": 0,
+    "gain": 4,
+    "period": 6
+  },
+  "scope": "Numerical record audit. Failed forecast gates remain scientific results; no interval certification or global classification."
+}

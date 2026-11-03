@@ -1,0 +1,125 @@
+{
+  "id": "S11-n5",
+  "digits": 75,
+  "samples": [
+    {
+      "s": -0.5,
+      "coordinate": "-0.125071910026399203541245987035",
+      "predicted": -0.125,
+      "error": 7.191002639920354e-05,
+      "off_secant": 2.2274448834995615e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836464343134371,
+        "minimum_duration": 0.38943881767506466,
+        "maximum_sampled_region_violation": 1.0225223569231822e-74,
+        "maximum_flight_time_change": 1.6384295856840157e-05
+      }
+    },
+    {
+      "s": -0.25,
+      "coordinate": "-0.0937649394635994735123304771373",
+      "predicted": -0.09375,
+      "error": 1.4939463599473513e-05,
+      "off_secant": 1.623422638919479e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836463599810359,
+        "minimum_duration": 0.3894388173203415,
+        "maximum_sampled_region_violation": 1.49232992632032e-74,
+        "maximum_flight_time_change": 8.192572768467684e-06
+      }
+    },
+    {
+      "s": 0.0,
+      "coordinate": "-5.78078406884445171113949102264e-57",
+      "predicted": 0.0,
+      "error": 5.780784068844452e-57,
+      "off_secant": 3.508017579606246e-58,
+      "checks": {
+        "minimum_crossing_speed": 0.8836462908662426,
+        "minimum_duration": 0.38943881625793947,
+        "maximum_sampled_region_violation": 1.2436082719336e-74,
+        "maximum_flight_time_change": 3.3647291087658716e-62
+      }
+    },
+    {
+      "s": 0.25,
+      "coordinate": "0.156241115703406881053450165738",
+      "predicted": 0.15625,
+      "error": 8.884296593118946e-06,
+      "off_secant": 2.0868083744456644e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836462269706158,
+        "minimum_duration": 0.38943881448765183,
+        "maximum_sampled_region_violation": 1.1607010538046934e-74,
+        "maximum_flight_time_change": 8.193421606259093e-06
+      }
+    },
+    {
+      "s": 0.5,
+      "coordinate": "0.374976375498043324913376328265",
+      "predicted": 0.375,
+      "error": 2.3624501956675087e-05,
+      "off_secant": 3.709973085817143e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836461682957121,
+        "minimum_duration": 0.3894388120092748,
+        "maximum_sampled_region_violation": 7.738007025364622e-75,
+        "maximum_flight_time_change": 1.6387691207876845e-05
+      }
+    },
+    {
+      "s": 0.75,
+      "coordinate": "0.656223507526140794021405923724",
+      "predicted": 0.65625,
+      "error": 2.649247385920598e-05,
+      "off_secant": 3.571086396481023e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836461148430865,
+        "minimum_duration": 0.38943880882260706,
+        "maximum_sampled_region_violation": 8.014364419127645e-75,
+        "maximum_flight_time_change": 2.458280796229167e-05
+      }
+    },
+    {
+      "s": 1.0,
+      "coordinate": "1.0",
+      "predicted": 1.0,
+      "error": 7.251685374456433e-68,
+      "off_secant": 1.0986207837207827e-68,
+      "checks": {
+        "minimum_crossing_speed": 0.8836460666142922,
+        "minimum_duration": 0.38943880492744987,
+        "maximum_sampled_region_violation": 1.962137495717458e-74,
+        "maximum_flight_time_change": 3.277877102681327e-05
+      }
+    },
+    {
+      "s": 1.25,
+      "coordinate": "1.40632310098211754824532112421",
+      "predicted": 1.40625,
+      "error": 7.310098211754825e-05,
+      "off_secant": 9.045535836654475e-08,
+      "checks": {
+        "minimum_crossing_speed": 0.8836460236108806,
+        "minimum_duration": 0.38943880032360706,
+        "maximum_sampled_region_violation": 9.119793994179734e-75,
+        "maximum_flight_time_change": 4.097557955862276e-05
+      }
+    },
+    {
+      "s": 1.5,
+      "coordinate": "1.8752098181661808583399399911",
+      "predicted": 1.875,
+      "error": 0.00020981816618085834,
+      "off_secant": 2.598023175639955e-07,
+      "checks": {
+        "minimum_crossing_speed": 0.8836459858344013,
+        "minimum_duration": 0.38943879501088513,
+        "maximum_sampled_region_violation": 5.527147875260445e-75,
+        "maximum_flight_time_change": 4.9173232714772784e-05
+      }
+    }
+  ],
+  "maximum_error": 0.00020981816618085834,
+  "maximum_off_secant": 2.598023175639955e-07
+}

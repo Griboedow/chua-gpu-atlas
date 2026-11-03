@@ -1,0 +1,149 @@
+{
+  "forecast_sha256": "cac88df8edc008cdd9bc82ee331662faf73e1416740f2d51c9c93b82875552be",
+  "rows": [
+    {
+      "id": "S11-n3",
+      "peaks": 35,
+      "measured": {
+        "width": 3.376135912892163e-06,
+        "gain": 8758.472083356768,
+        "period": 101.3243487439978
+      },
+      "corrected_error": {
+        "width": 0.3468945649706545,
+        "gain": -0.05852442820094983,
+        "period": -0.0017851073284020913
+      },
+      "leading_error": {
+        "width": 0.573912580716355,
+        "gain": -0.18506091516646916
+      },
+      "passed": {
+        "width": false,
+        "gain": true,
+        "period": true
+      }
+    },
+    {
+      "id": "S11-n4",
+      "peaks": 45,
+      "measured": {
+        "width": 5.141928432732843e-07,
+        "gain": 22821.377144965474,
+        "period": 130.259435205158
+      },
+      "corrected_error": {
+        "width": 0.7553201599533079,
+        "gain": -0.1360845472930472,
+        "period": -0.0012900396934583114
+      },
+      "leading_error": {
+        "width": 1.1499674176457915,
+        "gain": -0.2909676302977098
+      },
+      "passed": {
+        "width": false,
+        "gain": true,
+        "period": true
+      }
+    },
+    {
+      "id": "S11-n5",
+      "peaks": 55,
+      "measured": {
+        "width": 7.17339367065073e-08,
+        "gain": 61692.6472783333,
+        "period": 159.19517467193464
+      },
+      "corrected_error": {
+        "width": 1.1631539514246274,
+        "gain": -0.20568438811111656,
+        "period": -0.00014196644212916
+      },
+      "leading_error": {
+        "width": 1.6901449509367188,
+        "gain": -0.3599925369371565
+      },
+      "passed": {
+        "width": false,
+        "gain": false,
+        "period": true
+      }
+    },
+    {
+      "id": "E05-n3",
+      "peaks": 49,
+      "measured": {
+        "width": 2.6546085532847843e-06,
+        "gain": 9715.43700951914,
+        "period": 130.1438894544183
+      },
+      "corrected_error": {
+        "width": 0.34627113387442,
+        "gain": -0.057120018941665185,
+        "period": -0.0015215301994544461
+      },
+      "leading_error": {
+        "width": 0.575227500027429,
+        "gain": -0.1854639427768845
+      },
+      "passed": {
+        "width": false,
+        "gain": true,
+        "period": true
+      }
+    },
+    {
+      "id": "E05-n4",
+      "peaks": 63,
+      "measured": {
+        "width": 4.0721098688459095e-07,
+        "gain": 25223.566705487192,
+        "period": 167.31760958240926
+      },
+      "corrected_error": {
+        "width": 0.753555823192231,
+        "gain": -0.13393853852544235,
+        "period": -0.0014197726068232441
+      },
+      "leading_error": {
+        "width": 1.151715403978021,
+        "gain": -0.2913313873354235
+      },
+      "passed": {
+        "width": false,
+        "gain": true,
+        "period": true
+      }
+    },
+    {
+      "id": "E05-n5",
+      "peaks": 77,
+      "measured": {
+        "width": 5.7203090441313776e-08,
+        "gain": 67951.88817787042,
+        "period": 204.49182595922244
+      },
+      "corrected_error": {
+        "width": 1.1599051429597695,
+        "gain": -0.20324958634307355,
+        "period": -0.0008217661919616148
+      },
+      "leading_error": {
+        "width": 1.691580545348812,
+        "gain": -0.36022545520217275
+      },
+      "passed": {
+        "width": false,
+        "gain": false,
+        "period": true
+      }
+    }
+  ],
+  "passed_by_quantity": {
+    "width": 0,
+    "gain": 4,
+    "period": 6
+  },
+  "error_convention": "measured / forecast - 1 for width and gain; measured - forecast for period"
+}

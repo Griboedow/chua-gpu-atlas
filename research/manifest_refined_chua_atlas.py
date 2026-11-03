@@ -45,7 +45,9 @@ render_chua_layer_cards encode_chua_layer_media
 study_chua_return_geometry refine_chua_transient_maxima study_chua_companion_saddles
 analyze_chua_return_geometry check_chua_return_geometry check_chua_gain_metric
 extend_chua_return_tests sample_chua_return_normal_form check_chua_new_return_orbits
-review_chua_return_geometry plot_chua_return_geometry'''.split()
+review_chua_return_geometry plot_chua_return_geometry
+test_chua_return_families audit_chua_return_families analyze_chua_return_families
+review_chua_return_families plot_chua_return_families'''.split()
 
 
 def digest(path):
@@ -102,6 +104,8 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-return-geometry').rglob('*') if p.is_file())
     paths.update((ROOT/'docs/assets').glob('chua-return-*.png'))
     paths.add(ROOT/'docs/chua-return-geometry.md')
+    paths.update(p for p in (ROOT/'results/chua-return-families').rglob('*') if p.is_file())
+    paths.add(ROOT/'docs/chua-return-families.md')
     paths.update((ROOT/'docs/assets/chua-layer-cards').glob('*.png'))
     paths.update(ROOT/p for p in ['docs/assets/chua-layer-cards.gif','docs/assets/chua-layer-cards.webp',
                                 'docs/assets/chua-layer-cards.mp4','docs/chua-layer-cards.md'])

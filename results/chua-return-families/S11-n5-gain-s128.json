@@ -1,0 +1,38 @@
+{
+  "id": "S11-n5",
+  "source": "S11-n5-reference.json",
+  "source_sha256": "2387c5ce3224cebcf1d666bbfcb18d3069aecda7ebad760507e4e3fca84f9757",
+  "diagnostics": {
+    "closure": 8.089668841327509e-62,
+    "dominant_multiplier": "0.25",
+    "multiplier_error": 8.873710422067916e-58,
+    "tangent_transport_error": 1.3362132721381304e-85,
+    "determinant": "2.1444514409824e-171",
+    "full_product": [
+      [
+        0.14482554147902485,
+        -0.12414525233737343
+      ],
+      [
+        -0.12269456639122678,
+        0.10517445852097515
+      ]
+    ]
+  },
+  "maximum_gain": 61686.87910874062,
+  "minimum_phase_gain": 5.566153860045516,
+  "phase_gain_ratio": 11082.496219074366,
+  "maximizing_start_index": 4518,
+  "maximizing_steps": 5678,
+  "maximizing_phase": 0.4005865922879599,
+  "maximizing_duration": 78.93039412796689,
+  "input_direction": [
+    0.16772424095459207,
+    0.9848132480125651,
+    0.04484914196668337
+  ],
+  "predicted_output_gain": 61686.87910874064,
+  "float64_full_multiplier": 0.25000000000364814,
+  "refined": null,
+  "passed": true
+}

@@ -1,0 +1,42 @@
+{
+  "id": "E05-n5",
+  "checks": [
+    {
+      "method": "DOP853 full field and variation; transverse projection at each mesh point",
+      "max_step": 0.025,
+      "relative_gain_error": 7.811085112052751e-12,
+      "gain": 63916.23825055348,
+      "maximum_local_state_error": 7.258551615879934e-14,
+      "endpoint_matrix": [
+        [
+          -7882.352454306263,
+          33010.018799635036
+        ],
+        [
+          -12579.43605062492,
+          52680.646155714414
+        ]
+      ],
+      "closure_scope": "Maximum separate subinterval state error; not a full-period closure error"
+    },
+    {
+      "method": "DOP853 full field and variation; transverse projection at each mesh point",
+      "max_step": 0.0125,
+      "relative_gain_error": 7.551292924290465e-12,
+      "gain": 63916.23825053686,
+      "maximum_local_state_error": 7.253878135967798e-14,
+      "endpoint_matrix": [
+        [
+          -7882.352454304088,
+          33010.018799626465
+        ],
+        [
+          -12579.436050621454,
+          52680.646155700764
+        ]
+      ],
+      "closure_scope": "Maximum separate subinterval state error; not a full-period closure error"
+    }
+  ],
+  "passed": true
+}
