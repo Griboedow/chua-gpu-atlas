@@ -82,14 +82,17 @@ def search(digits,ids):
     for t in forecasts['targets']:
         id=t['id'];path=OUT/f'{id}-reference.json'
         if ids and id not in ids:continue
-        if path.exists():continue
+        if path.exists() and (OUT/f'{id}-edges.json').exists():continue
         parent=next(c for c in cal['parents'] if c['id']==t['parent']);shoot=BlockShooting(parent,t['block_count'],digits)
         guess=[]
         for X in t['quadratic']['orbit']:guess.extend([-.5-2*mp.mpf(X),0])
         guess.append(mp.mpf(t['quadratic']['representative']));start=time.monotonic()
         try:
-            rep=shoot.solve(guess,'.5');rep.update(id=id,parent=t['parent'],forecast_peaks=t['peaks'],forecast_sha256=digest(OUT/'forecasts-frozen.json'))
-            save(path,rep);print(id,'representative',rep['beta'],'T',rep['period'],'seconds',time.monotonic()-start,flush=True)
+            if path.exists():rep=read(path)
+            else:
+                rep=shoot.solve(guess,'.5');rep.update(id=id,parent=t['parent'],forecast_peaks=t['peaks'],forecast_sha256=digest(OUT/'forecasts-frozen.json'))
+                save(path,rep)
+            print(id,'representative',rep['beta'],'T',rep['period'],'seconds',time.monotonic()-start,flush=True)
             w=[mp.mpf(v) for p in rep['block_coordinates'] for v in p]+[mp.mpf(rep['normalized_coordinate'])]
             fold=shoot.solve(w,1);flip=shoot.solve(w,-1)
             width=abs(mp.mpf(fold['beta'])-mp.mpf(flip['beta']))

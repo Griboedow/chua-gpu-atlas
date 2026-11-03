@@ -12,6 +12,7 @@ The [terminology guide](terminology.md) distinguishes periodic orbits, their sta
 
 | Stage | Question and result | Report | Evidence |
 |---|---|---|---|
+| Test an additional level of return organization | Two 35-peak families organize six new 105/175/245-peak cycles; widths and periods pass, four locations miss | [Nested returns](chua-nested-returns.md) | [Forecasts, branch connections, negative controls and audits](../results/chua-nested-returns/README.md) |
 | Compare organizing returns | Two further sequences share period adding, concentrated contraction and a local quadratic return; six new peak counts agree, while the early width forecasts fail | [Three-sequence comparison](chua-return-families.md) | [Frozen forecasts, roots and independent controls](../results/chua-return-families/README.md) |
 | Relate width and transient response | One ten-member sequence links saddle residence, window width, transient amplification and companion separation; six prospective predictions agree within 0.5% | [Return geometry](chua-return-geometry.md) | [Forecasts, roots, returns and controls](../results/chua-return-geometry/README.md) |
 | Classify spatial knot types | Five numerical knot types among 34 references; all eight tested thin-sequence cycles are unknots; a coarse sampling failure is retained | [Knot atlas](chua-knot-atlas.md) | [Diagrams, refinements and controls](../results/chua-knot-atlas/README.md) |

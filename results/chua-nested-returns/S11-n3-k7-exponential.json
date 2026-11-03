@@ -1,0 +1,13 @@
+{
+  "method": "mpmath matrix-exponential flights, independent of eigen-flow event shooting",
+  "working_digits": 90,
+  "half_closure": "7.977638818196913409009064e-44",
+  "maximum_target_error": "7.524839913426326487443491e-44",
+  "sampled_region_violation": "7.524839913426326487443491e-44",
+  "minimum_crossing_speed": 0.8830703967688628,
+  "signed_half_multiplier": "0.5",
+  "full_multiplier_error": 2.2231377490536485e-41,
+  "full_peak_count": 245,
+  "path_samples_per_flight": 128,
+  "scope": "Numerical fixed-duration reconstruction and sampled region checks; not interval arithmetic"
+}

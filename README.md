@@ -4,15 +4,17 @@ An atlas of attracting periodic motions in the continuous piecewise-linear Chua 
 
 The central question is how the visible layers in parameter space relate to the system's motions: **what distinguishes the layers, where they appear, how thin they become, and how many attracting motions can coexist**. The study starts with GPU surveys, follows individual periodic orbits, and uses interval arithmetic and analytic arguments to establish selected existence and basin results.
 
-**A layer is a range of settings that stabilizes one repeating motion.** In three tested sequences, that motion has a simple structure: several turns close to a short unstable cycle, followed by an excursion and a return. Add another circuit near the short cycle and another, longer repeating motion becomes possible in a thinner parameter interval. Its outline can look almost unchanged because it repeatedly follows nearly the same path.
+**A layer is a range of settings that stabilizes one repeating motion.** In the tested sequences, longer motions repeatedly follow an unstable cycle, make an excursion and return. Their outlines can look almost unchanged because they revisit nearly the same path; their repetition times and stability widths can differ greatly.
 
-**The return makes the difference between temporary growth and lasting attraction.** In the two longest new examples, nine section transitions amplify a transported perturbation, while two contract it strongly enough to leave half its initial amplitude after a half-period. Repetition, contraction on return and narrow parameter windows are parts of the same mechanism.
+**A long motion can itself organize a further sequence.** Two 35-peak families, already formed by repeated passages near five-peak cycles, were continued to long saddle cycles. Near each, we predicted and found attracting motions with **105, 175 and 245 peaks**. They revisit the whole 35-peak parent's return pattern, with increasingly close passages near it. This supports one additional level of organization in two families; arbitrary recursive depth remains unproved.
 
-![Three tested sequences connect repeated motion, contraction on return and thinner parameter windows](docs/assets/chua-return-families-explanation.png)
+![A long cycle organizes new motions; equal peak counts can conceal different return patterns](docs/assets/chua-nested-returns-explanation.png)
 
-The [three-sequence comparison](docs/chua-return-families.md) tests this description with **six new cycles predicted before searching**. All peak counts agree and period errors are below 0.002. Width forecasts fail their stated tolerance; the report retains those misses and identifies the changing saddle expansion as a limitation of the early calibration. The [earlier ten-member study](docs/chua-return-geometry.md) gives a more mature calibration, with six 95/105-peak predictions agreeing within 0.5%. These are numerical mechanism tests, not a complete classification of the atlas. Infinitesimal amplification is not a finite escape threshold.
+The [nested-return experiment](docs/chua-nested-returns.md) includes frozen forecasts, all six new roots, independent numerical checks and two negative controls. Period and width forecasts pass in all six cases; parameter-location forecasts pass only twice. The comparison above shows why **105 peaks alone do not identify a motion**: the new cycle repeats a seven-crossing motif three times, whereas the earlier 105-peak example follows one longer sequence. These numerical results do not prove that every layer has this organization.
 
-[The system](#the-system-and-the-question) · [Reading the atlas](#reading-the-atlas) · [Return mechanism](docs/chua-return-families.md) · [Results](#main-results) · [Verification](#evidence-and-limitations) · [Reproduction](#reproducibility) · [Background](#background)
+The [earlier three-sequence comparison](docs/chua-return-families.md) explains how contraction during a return can overcome temporary expansion and retains its failed width forecasts. The [ten-member study](docs/chua-return-geometry.md) relates that mechanism to window width and transient response, with six 95/105-peak forecasts agreeing within 0.5%. Infinitesimal amplification is distinct from a finite escape threshold.
+
+[The system](#the-system-and-the-question) · [Reading the atlas](#reading-the-atlas) · [Nested returns](docs/chua-nested-returns.md) · [Results](#main-results) · [Verification](#evidence-and-limitations) · [Reproduction](#reproducibility) · [Background](#background)
 
 ## The system and the question
 
@@ -166,6 +168,7 @@ The [research guide](docs/research-guide.md) provides the full study map; the [r
 
 | To inspect or reproduce | Start here |
 |---|---|
+| One additional level of return organization; six 105/175/245-peak cycles | [Nested-return experiment](docs/chua-nested-returns.md), [forecasts, controls and reproduction](results/chua-nested-returns/README.md) |
 | Return geometry, transient response and 95/105-peak predictions | [Report and figures](docs/chua-return-geometry.md), [data and reproduction](results/chua-return-geometry/README.md) |
 | Family catalogue, meshes and numerical audits | [Atlas report](docs/chua-refined-atlas.md), [orbit gallery](docs/chua-family-gallery.md) |
 | Knot types, orbit diagrams and sampling controls | [Knot atlas](docs/chua-knot-atlas.md), [reproduction](results/chua-knot-atlas/README.md) |

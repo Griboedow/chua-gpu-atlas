@@ -2,6 +2,8 @@
 
 This guide identifies what must be checked to accept each conclusion of the [combined study](chua-prediction-and-hidden-coexistence.md). It separates arithmetic that can be replayed from mathematical implications that require reading. It also identifies failures that would invalidate a conclusion. A file containing `passed: true` is a record of an execution, not an independent proof object.
 
+The subsequent [nested-return experiment](chua-nested-returns.md) has separate [review targets](../results/chua-nested-returns/README.md#review-targets): reject multiple traversals, distinguish identical peak counts, identify the fold-connected long saddle at the child's exact parameter, and test complete-block shadowing. All six new cycles pass numerical controls; only two location forecasts pass. Moving-coordinate return comparisons are post-search diagnostics. One additional level does not establish arbitrary recursive depth or extend an earlier infinity theorem.
+
 For the subsequent plane/pulse excitation calculations, uniform four-cycle box and 24 additional forecasts, see the [extension report](chua-excitation-robustness-prediction.md) and its [reproduction and review instructions](../results/chua-followup/extended-studies.md). The box proof uses multiple shooting, a determinant bound and exclusion of ±1; the new excitation minima remain numerical.
 
 The separate [knot atlas](chua-knot-atlas.md) classifies the reference orbit curves. Its [review instructions](../results/chua-knot-atlas/README.md#review-targets) distinguish exact diagram algebra from numerical polygon extraction and the still missing certified isotopy to the ODE orbit. The infinity arguments reviewed below do not imply infinitely many different knot types.
