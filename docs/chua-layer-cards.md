@@ -8,7 +8,7 @@ The 32 original families have refined meshes. P75 and P85 show only three existi
 
 ## Video
 
-Use the player's timeline to move between cards. The introduction lasts 12 seconds; each of the 34 family cards lasts 8 seconds, for a total of 4:44. A04 starts at 0:12 and A01 at 0:20; the remaining entries follow in identifier order. [Open the MP4 directly](https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122).
+Use the player's timeline to move between cards; playback is initially paused. The introduction lasts 12 seconds; each of the 34 family cards lasts 8 seconds, for a total of 4:44. A04 starts at 0:12 and A01 at 0:20; the remaining entries follow in identifier order. [Open the MP4 directly](https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122).
 
 https://github.com/user-attachments/assets/ecbd0449-a11e-487e-b4fa-a719d9e6d122
 
