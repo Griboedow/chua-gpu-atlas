@@ -1,0 +1,196 @@
+{
+  "created_utc": "2026-11-03T00:45:28.066827+00:00",
+  "targets": [
+    {
+      "id": "S11-n3",
+      "organizer": "S11",
+      "n": 3,
+      "peaks": 35,
+      "section_returns": 7,
+      "expansion": 2.9948328122805856,
+      "parent_period": 14.467295696762637,
+      "leading": {
+        "width": 2.1450593598759715e-06,
+        "gain": 10747.394800859107
+      },
+      "corrected": {
+        "width": 2.506607421766321e-06,
+        "gain": 9302.920166712714
+      },
+      "period": 101.3261338513262,
+      "seed_beta": 14.350719557210102,
+      "coefficients": {
+        "A_width": 2.410738740362543e-05,
+        "B_width": -4.868299438314334e-06,
+        "A_gain": 2864.5378844431493,
+        "B_gain": 724.1081183615588
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    },
+    {
+      "id": "S11-n4",
+      "organizer": "S11",
+      "n": 4,
+      "peaks": 45,
+      "section_returns": 9,
+      "expansion": 2.9948328122805856,
+      "parent_period": 14.467295696762637,
+      "leading": {
+        "width": 2.3916308640450196e-07,
+        "gain": 32186.650596146625
+      },
+      "corrected": {
+        "width": 2.92933935930504e-07,
+        "gain": 26416.215931151622
+      },
+      "period": 130.26072524485147,
+      "seed_beta": 14.350786433217584,
+      "coefficients": {
+        "A_width": 2.410738740362543e-05,
+        "B_width": -4.868299438314334e-06,
+        "A_gain": 2864.5378844431493,
+        "B_gain": 724.1081183615588
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    },
+    {
+      "id": "S11-n5",
+      "organizer": "S11",
+      "n": 5,
+      "peaks": 55,
+      "section_returns": 11,
+      "expansion": 2.9948328122805856,
+      "parent_period": 14.467295696762637,
+      "leading": {
+        "width": 2.6665454098125554e-08,
+        "gain": 96393.63732275038
+      },
+      "corrected": {
+        "width": 3.316173435518271e-08,
+        "gain": 77667.67561275563
+      },
+      "period": 159.19531663837677,
+      "seed_beta": 14.350808763681979,
+      "coefficients": {
+        "A_width": 2.410738740362543e-05,
+        "B_width": -4.868299438314334e-06,
+        "A_gain": 2864.5378844431493,
+        "B_gain": 724.1081183615588
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    },
+    {
+      "id": "E05-n3",
+      "organizer": "E05",
+      "n": 3,
+      "peaks": 49,
+      "section_returns": 7,
+      "expansion": 2.984085573653308,
+      "parent_period": 18.58680918519917,
+      "leading": {
+        "width": 1.6852223270851738e-06,
+        "gain": 11927.571435745434
+      },
+      "corrected": {
+        "width": 1.971823124250695e-06,
+        "gain": 10304.00178675345
+      },
+      "period": 130.14541098461774,
+      "seed_beta": 14.203414716592295,
+      "coefficients": {
+        "A_width": 1.8844916834533126e-05,
+        "B_width": -3.8384051558635845e-06,
+        "A_gain": 3178.764606769674,
+        "B_gain": 818.2961816523352
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    },
+    {
+      "id": "E05-n4",
+      "organizer": "E05",
+      "n": 4,
+      "peaks": 63,
+      "section_returns": 9,
+      "expansion": 2.984085573653308,
+      "parent_period": 18.58680918519917,
+      "leading": {
+        "width": 1.8924946400056094e-07,
+        "gain": 35592.89385012722
+      },
+      "corrected": {
+        "width": 2.322201446334857e-07,
+        "gain": 29124.45343375689
+      },
+      "period": 167.31902935501608,
+      "seed_beta": 14.203467313319353,
+      "coefficients": {
+        "A_width": 1.8844916834533126e-05,
+        "B_width": -3.8384051558635845e-06,
+        "A_gain": 3178.764606769674,
+        "B_gain": 818.2961816523352
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    },
+    {
+      "id": "E05-n5",
+      "organizer": "E05",
+      "n": 5,
+      "peaks": 77,
+      "section_returns": 11,
+      "expansion": 2.984085573653308,
+      "parent_period": 18.58680918519917,
+      "leading": {
+        "width": 2.1252602133777354e-08,
+        "gain": 106212.24106273819
+      },
+      "corrected": {
+        "width": 2.6484075297365612e-08,
+        "gain": 85286.2916832195
+      },
+      "period": 204.4926477254144,
+      "seed_beta": 14.203484939062905,
+      "coefficients": {
+        "A_width": 1.8844916834533126e-05,
+        "B_width": -3.8384051558635845e-06,
+        "A_gain": 3178.764606769674,
+        "B_gain": 818.2961816523352
+      },
+      "gates": {
+        "width_relative": 0.25,
+        "gain_relative": 0.2,
+        "period_absolute": 0.5
+      },
+      "companion_half_multiplier": 1.5
+    }
+  ],
+  "source_sha256": {
+    "results/chua-return-families/protocol.md": "135444f99a1ab01a2171543488a431c317b1b74eb7939f9cbcf0ae707a1174b1",
+    "results/chua-return-families/calibration.json": "d5d794198c9a5d9b8d74202d7510e027a39f3493b3b358e2709c1983cedbd6c3"
+  },
+  "scope": "Forecasts for new long orbits, using two existing members per sequence. Locations are corrected by shooting, not scored as predictions."
+}
