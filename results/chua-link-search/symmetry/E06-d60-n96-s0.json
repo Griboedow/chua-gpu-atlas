@@ -1,0 +1,170 @@
+{
+  "seed": 0,
+  "components": 2,
+  "initial_free_components": 0,
+  "pd_code": [
+    [
+      19,
+      34,
+      0,
+      35
+    ],
+    [
+      0,
+      27,
+      1,
+      28
+    ],
+    [
+      1,
+      30,
+      2,
+      31
+    ],
+    [
+      2,
+      30,
+      3,
+      29
+    ],
+    [
+      3,
+      33,
+      4,
+      32
+    ],
+    [
+      4,
+      36,
+      5,
+      35
+    ],
+    [
+      16,
+      6,
+      17,
+      5
+    ],
+    [
+      13,
+      7,
+      14,
+      6
+    ],
+    [
+      7,
+      21,
+      8,
+      20
+    ],
+    [
+      11,
+      9,
+      12,
+      8
+    ],
+    [
+      9,
+      22,
+      10,
+      23
+    ],
+    [
+      10,
+      22,
+      11,
+      21
+    ],
+    [
+      12,
+      23,
+      13,
+      24
+    ],
+    [
+      14,
+      20,
+      15,
+      39
+    ],
+    [
+      15,
+      24,
+      16,
+      25
+    ],
+    [
+      17,
+      39,
+      18,
+      38
+    ],
+    [
+      18,
+      37,
+      19,
+      38
+    ],
+    [
+      25,
+      36,
+      26,
+      37
+    ],
+    [
+      26,
+      33,
+      27,
+      34
+    ],
+    [
+      28,
+      31,
+      29,
+      32
+    ]
+  ],
+  "crossings": 20,
+  "oriented_linking_matrix": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "minimum_crossing_height": 0.0735810260063261,
+  "minimum_vertex_fraction": 0.011170984037777942,
+  "minimum_event_spacing": 0.9291588041172929,
+  "reductions": [
+    {
+      "mode": "basic",
+      "crossings": 0,
+      "free": 2,
+      "components": 0
+    },
+    {
+      "mode": "global",
+      "crossings": 0,
+      "free": 2,
+      "components": 0
+    }
+  ],
+  "simplified_pd_code": [],
+  "simplified_crossings": 0,
+  "final_free_components": 2,
+  "split_piece_component_counts": [
+    1,
+    1
+  ],
+  "status": "split_union",
+  "scope": "Numerical polygons; split components may themselves be knots.",
+  "id": "E06",
+  "source": "results/chua-knot-atlas/E06-d60-n96.npz",
+  "source_sha256": "95ac3386519c21aa62aacdecc569d3a6f06437abf59a78becec66063a8c79c62",
+  "digits": 60,
+  "subdivisions": 96,
+  "elapsed_seconds": 0.0372055999469012
+}

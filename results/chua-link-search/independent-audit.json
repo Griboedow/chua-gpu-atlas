@@ -1,0 +1,643 @@
+{
+  "passed": true,
+  "polynomial_control_count": 14,
+  "polynomial_controls": [
+    {
+      "name": "free_unlink_1",
+      "pd_code": [],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "0": 1
+      },
+      "exhaustive_polynomial": {
+        "0": 1
+      },
+      "expected_polynomial": {
+        "0": 1
+      },
+      "diagnostic": {
+        "crossings": 0,
+        "maximum_frontier": 0,
+        "maximum_states": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "free_unlink_2",
+      "pd_code": [],
+      "free_components": 2,
+      "frontier_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "exhaustive_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "diagnostic": {
+        "crossings": 0,
+        "maximum_frontier": 0,
+        "maximum_states": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "free_unlink_3",
+      "pd_code": [],
+      "free_components": 3,
+      "frontier_polynomial": {
+        "4": 1,
+        "0": 2,
+        "-4": 1
+      },
+      "exhaustive_polynomial": {
+        "4": 1,
+        "0": 2,
+        "-4": 1
+      },
+      "expected_polynomial": {
+        "4": 1,
+        "0": 2,
+        "-4": 1
+      },
+      "diagnostic": {
+        "crossings": 0,
+        "maximum_frontier": 0,
+        "maximum_states": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "trefoil_with_1_free_components",
+      "pd_code": [
+        [
+          5,
+          2,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          2,
+          5
+        ]
+      ],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "2": -1,
+        "6": -1,
+        "10": -1,
+        "18": 1
+      },
+      "exhaustive_polynomial": {
+        "2": -1,
+        "6": -1,
+        "10": -1,
+        "18": 1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "6": -1,
+        "10": -1,
+        "18": 1
+      },
+      "diagnostic": {
+        "crossings": 3,
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "maximum_frontier": 4,
+        "maximum_states": 2,
+        "states_per_step": [
+          2,
+          2,
+          1
+        ],
+        "elapsed_seconds": 0.00020060001406818628
+      },
+      "passed": true
+    },
+    {
+      "name": "trefoil_with_2_free_components",
+      "pd_code": [
+        [
+          5,
+          2,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          2,
+          5
+        ]
+      ],
+      "free_components": 2,
+      "frontier_polynomial": {
+        "0": 1,
+        "4": 2,
+        "8": 2,
+        "12": 1,
+        "16": -1,
+        "20": -1
+      },
+      "exhaustive_polynomial": {
+        "0": 1,
+        "4": 2,
+        "8": 2,
+        "12": 1,
+        "16": -1,
+        "20": -1
+      },
+      "expected_polynomial": {
+        "0": 1,
+        "4": 2,
+        "8": 2,
+        "12": 1,
+        "16": -1,
+        "20": -1
+      },
+      "diagnostic": {
+        "crossings": 3,
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "maximum_frontier": 4,
+        "maximum_states": 2,
+        "states_per_step": [
+          2,
+          2,
+          1
+        ],
+        "elapsed_seconds": 0.00016769999638199806
+      },
+      "passed": true
+    },
+    {
+      "name": "split_trefoil_and_mirror",
+      "pd_code": [
+        [
+          5,
+          2,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          2,
+          5
+        ],
+        [
+          8,
+          6,
+          9,
+          11
+        ],
+        [
+          6,
+          10,
+          7,
+          9
+        ],
+        [
+          10,
+          8,
+          11,
+          7
+        ]
+      ],
+      "free_components": 0,
+      "frontier_polynomial": {
+        "-14": 1,
+        "-2": -2,
+        "2": -2,
+        "14": 1
+      },
+      "exhaustive_polynomial": {
+        "-14": 1,
+        "-2": -2,
+        "2": -2,
+        "14": 1
+      },
+      "expected_polynomial": {
+        "-14": 1,
+        "-2": -2,
+        "2": -2,
+        "14": 1
+      },
+      "diagnostic": {
+        "crossings": 6,
+        "order": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "maximum_frontier": 4,
+        "maximum_states": 3,
+        "states_per_step": [
+          2,
+          3,
+          1,
+          2,
+          2,
+          1
+        ],
+        "elapsed_seconds": 0.0003241999656893313
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_0_free_0",
+      "pd_code": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "free_components": 0,
+      "frontier_polynomial": {
+        "0": 1
+      },
+      "exhaustive_polynomial": {
+        "0": 1
+      },
+      "expected_polynomial": {
+        "0": 1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 2.9499991796910763e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_0_free_1",
+      "pd_code": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "exhaustive_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 3.520003519952297e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_1_free_0",
+      "pd_code": [
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "free_components": 0,
+      "frontier_polynomial": {
+        "0": 1
+      },
+      "exhaustive_polynomial": {
+        "0": 1
+      },
+      "expected_polynomial": {
+        "0": 1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 2.7799978852272034e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_1_free_1",
+      "pd_code": [
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "exhaustive_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 3.430002834647894e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_2_free_0",
+      "pd_code": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "free_components": 0,
+      "frontier_polynomial": {
+        "0": 1
+      },
+      "exhaustive_polynomial": {
+        "0": 1
+      },
+      "expected_polynomial": {
+        "0": 1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 2.8800044674426317e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_2_free_1",
+      "pd_code": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "exhaustive_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 3.450002986937761e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_3_free_0",
+      "pd_code": [
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "free_components": 0,
+      "frontier_polynomial": {
+        "0": 1
+      },
+      "exhaustive_polynomial": {
+        "0": 1
+      },
+      "expected_polynomial": {
+        "0": 1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 2.74000340141356e-05
+      },
+      "passed": true
+    },
+    {
+      "name": "Reidemeister_I_3_free_1",
+      "pd_code": [
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "free_components": 1,
+      "frontier_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "exhaustive_polynomial": {
+        "-2": -1,
+        "2": -1
+      },
+      "expected_polynomial": {
+        "2": -1,
+        "-2": -1
+      },
+      "diagnostic": {
+        "crossings": 1,
+        "order": [
+          0
+        ],
+        "maximum_frontier": 0,
+        "maximum_states": 1,
+        "states_per_step": [
+          1
+        ],
+        "elapsed_seconds": 3.409996861591935e-05
+      },
+      "passed": true
+    }
+  ],
+  "interval_pair_checks": [
+    {
+      "digits": 140,
+      "pair": "S02-S08",
+      "second_orbit_upward_crossings": 1,
+      "separating_coordinate_gap_lower_bounds": [
+        "[0.899889854937906049919063882155555999996805290464918976189759462912728436914528755093990730618003226481960155069828033447265625000000000000000000000000000000000000000000000000000000 +/- 8.77e-182]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    },
+    {
+      "digits": 140,
+      "pair": "S01-daughters",
+      "second_orbit_upward_crossings": 1,
+      "separating_coordinate_gap_lower_bounds": [
+        "[4.88120132759320857747413592138453877884781948944104669569647926590698697180137344275863142684102058410644531250000000000000000000000000000000000000000000000000000000000000000003329e-6 +/- 3.80e-186]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    },
+    {
+      "digits": 140,
+      "pair": "S02-daughters",
+      "second_orbit_upward_crossings": 3,
+      "separating_coordinate_gap_lower_bounds": [
+        "[0.988408431561289287784227070676368999997140939630936996719140470268170652474059678137068528369635345143251470290124416351318359375000000000000000000000000000000000000000000000000000 +/- 5.25e-182]",
+        "[0.801183916704362219595082693524257999997811630185694600151541256667880568799965198856531320426022091396589530631899833679199218750000000000000000000000000000000000000000000000000000 +/- 1.23e-182]",
+        "[0.000240088557222342107646948187615790113616408729233121251281569312821528860979469754965975880622863769531249999999999999999999999999999999999999999999999999999999999999999999999999994 +/- 2.68e-184]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    },
+    {
+      "digits": 160,
+      "pair": "S02-S08",
+      "second_orbit_upward_crossings": 1,
+      "separating_coordinate_gap_lower_bounds": [
+        "[0.899889854937906049919063882155555999996805290464918976189759462912728436914528755093990730618003226481960155069828033447265625000000000000000000000000000000000000000000000000000000 +/- 8.77e-182]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    },
+    {
+      "digits": 160,
+      "pair": "S01-daughters",
+      "second_orbit_upward_crossings": 1,
+      "separating_coordinate_gap_lower_bounds": [
+        "[4.88120132759320857747413592138453877884781948944104669569647926590698697180137344275863142684102058410644531250000000000000000000000000000000000000000000000000000000000000000003329e-6 +/- 3.80e-186]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    },
+    {
+      "digits": 160,
+      "pair": "S02-daughters",
+      "second_orbit_upward_crossings": 3,
+      "separating_coordinate_gap_lower_bounds": [
+        "[0.988408431561289287784227070676368999997140939630936996719140470268170652474059678137068528369635345143251470290124416351318359375000000000000000000000000000000000000000000000000000 +/- 5.25e-182]",
+        "[0.801183916704362219595082693524257999997811630185694600151541256667880568799965198856531320426022091396589530631899833679199218750000000000000000000000000000000000000000000000000000 +/- 1.23e-182]",
+        "[0.000240088557222342107646948187615790113616408729233121251281569312821528860979469754965975880622863769531249999999999999999999999999999999999999999999999999999999999999999999999999994 +/- 2.68e-184]"
+      ],
+      "enclosure_source": "Outward-rounded serialized ball strings",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "research/audit_chua_link_algorithms.py": "6ef9d290b3fc3e70765cf1c30045dadba60fee491643c8569754611b7ba98bc5",
+    "research/chua_link_bracket.py": "13b4d486947c3d2ccb0c9aa5ed8d90f9838faa89a88a8ef102f4ba43d86e407b",
+    "research/chua_link_diagrams.py": "2da5fe32c685d2dcb5d18608164ab16db61525d6a208431f98db2f261a7d8124",
+    "research/chua_link_invariants.py": "87ba4eb4d5dfc5bd0221a60dd87d222c285e14bba62dd09fd878aece99cb7d8a",
+    "research/certify_chua_link_witnesses.py": "cd27fbc48e42e18562aed78756e86adc79ba40d7fea14fa91bed68548ac57509",
+    "results/chua-link-search/certificates-d140.json": "c2f305002e59ab37de31bbe5b5f56095526e4cdb04654ca7a285c0c836b2d276",
+    "results/chua-link-search/certificates-d160.json": "81c1d4622c11e203aa64463820933b1d6ebcde1174c22c23ac30131ac9d2a9ef"
+  },
+  "hash_normalization": "CRLF converted to LF for Python and JSON files.",
+  "scope": "Exact state-sum edge cases and pair separation from saved outward-rounded balls. No new orbit existence calculation and no ambient-isotopy certification."
+}

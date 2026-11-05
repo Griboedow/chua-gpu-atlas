@@ -2,7 +2,7 @@
 
 The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
-The [joint-link experiment](chua-linked-attractors.md) tests all sublinks of four coexisting attracting cycles at identical parameters. All 105 extracted diagrams reduce to unlinks, while a Borromean control has nontrivial triple linking. The report includes the negative result, numerical limitations and an interactive component viewer.
+The [linked-pair search](chua-link-search.md) finds three non-split numerical pairs with zero linking number, using overlaps and symmetry-breaking continuations. Exact Jones polynomials distinguish them from split unions; interval certificates establish the six cycles' existence and attraction. The [earlier joint-link experiment](chua-linked-attractors.md) remains a negative result for one four-cycle configuration, with 105 diagrams reducing to unlinks. Both reports include interactive viewers and the limitations of polygonal reconstruction.
 
 The [nested-return experiment](chua-nested-returns.md) tests whether a long periodic family can organize a further sequence. Six 105/175/245-peak cycles near two 35-peak saddles support one additional level. Frozen width and period forecasts pass; four location forecasts miss. Distinct-point checks and an ordinary 105-peak control separate nested return patterns from repeated traversal and identical peak counts.
 

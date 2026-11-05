@@ -2,6 +2,8 @@
 
 The 34 reference cycles in the extended atlas have **five numerically identified knot types**. Twenty-three are unknots; eleven are nontrivial knots. The tested 15 → 25 → … → 85 peak sequence consists entirely of unknots. Thus, the mechanism that increases the period and creates progressively thinner stability windows does not, in these eight examples, increase knot complexity.
 
+The [linked-pair study](chua-link-search.md) subsequently tests how different attracting cycles sit together at identical parameters. It finds three non-split numerical pairs, including two pairs near symmetry breaking of knotted cycles. Individual knot types alone do not determine this mutual arrangement.
+
 ![Actual Chua cycles and standard embeddings of their five knot types](assets/chua-knots-overview.png)
 
 **How to read the figure.** The upper row shows actual periodic trajectories, with each coordinate rescaled by its range. The lower row shows standard embeddings of the identified knots. A gap indicates the strand passing underneath at a crossing. These standard curves illustrate the topology; they are not additional solutions of Chua's equations. The very similar upper outlines of P85, A04 and A05 conceal three different knot types.

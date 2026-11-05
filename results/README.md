@@ -2,7 +2,8 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
-- [`chua-linked-attractors/`](chua-linked-attractors/README.md): four simultaneous cycles, all 15 sublinks, 105 numerical diagrams, analytic link controls, independent integrations and an interactive 3D viewer. All tested Chua configurations are unlinks; see the [joint-link report](../docs/chua-linked-attractors.md).
+- [`chua-link-search/`](chua-link-search/README.md): three non-split numerical attracting pairs with zero linking number, 20 diagram checks, interval certificates for all six cycles, retained negative searches and a common-coordinate viewer. See the [linked-pair report](../docs/chua-link-search.md).
+- [`chua-linked-attractors/`](chua-linked-attractors/README.md): four simultaneous cycles, all 15 sublinks, 105 numerical diagrams, analytic link controls, independent integrations and an interactive 3D viewer. All configurations at this tested parameter point are unlinks; see the [joint-link report](../docs/chua-linked-attractors.md).
 
 - [`chua-nested-returns/`](chua-nested-returns/README.md): six 105/175/245-peak cycles near two continued 35-peak saddles, frozen forecasts, independent reconstruction, negative controls, block shadowing and retained fixed-coordinate model errors. See the [nested-return report](../docs/chua-nested-returns.md).
 

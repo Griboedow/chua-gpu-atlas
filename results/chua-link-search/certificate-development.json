@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "stage": "reuse_first_return_certificate",
+      "outcome": "rejected",
+      "reason": "S02 crosses x=0 within central affine flights and has intermediate upward returns. The earlier four-cycle verifier requires a single upward return and correctly rejected the itinerary.",
+      "correction": "Split every central flight at all numerical zero-crossing candidates; interval signed-half-space covers subsequently verify that no crossing is omitted. Retain all upward section images and check primitive periods and inter-orbit separation against all of them."
+    },
+    {
+      "working_digits": 90,
+      "root_radius": "1e-32",
+      "outcome": "unresolved_interval_path",
+      "reason": "Interval wrapping prevented a signed outer-flight enclosure at the subdivision limit.",
+      "correction": "Use a narrower root box and higher precision. A failure of this enclosure is not evidence that the numerical periodic orbit is absent."
+    }
+  ]
+}

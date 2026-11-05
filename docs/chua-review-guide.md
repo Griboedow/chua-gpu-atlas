@@ -10,6 +10,8 @@ The separate [knot atlas](chua-knot-atlas.md) classifies the reference orbit cur
 
 The [joint-link experiment](chua-linked-attractors.md) instead uses four cycles at identical parameters. Its [review targets](../results/chua-linked-attractors/README.md#review-targets) require common coordinate transformations, preservation of all components and nontrivial Borromean controls. All 105 extracted Chua diagrams reduce to unlinks. The existing interval roots certify coexistence; they do not certify the new polygons' isotopy to the ODE curves.
 
+The subsequent [linked-pair search](chua-link-search.md) has three positive numerical witnesses. Check the joint Jones polynomial against the split product of the **actual component knots**, exact common parameters, zero-linking symmetry argument and 20 reconstruction/projection comparisons. The interval verifier retains every upward section crossing to establish primitive periods and exclude phase duplicates. The [data guide](../results/chua-link-search/README.md) separates those interval results from the unproved ambient isotopy and proposed normal-annulus explanation.
+
 The later [return-geometry study](chua-return-geometry.md) relates parameter width, transient response and saddle companions in one sequence. Its [review targets](../results/chua-return-geometry/README.md#review-targets) distinguish Floquet spectral radius from finite-time operator norms, require matched section phases, and separate six prospective 95/105-peak predictions from corrected root locations. The new results are numerical; no interval bound for the gain law or basin escape is claimed.
 
 ## 1. Questions, quantities and evidence

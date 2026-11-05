@@ -2,6 +2,8 @@
 
 **The four tested attracting cycles are numerically unlinked, jointly as well as pairwise.** We searched for a more restrictive possibility: three cycles that are unlinked in every pair but linked as a triple, as in the Borromean rings. None of the four triples has this property. The full four-component configuration also reduces to an unlink.
 
+The subsequent [linked-pair search](chua-link-search.md) finds three non-split numerical pairs at other parameter points, with interval-certified attracting cycles. Those two-component witnesses do not change the negative result here and do not establish a Borromean triple.
+
 In physical terms, imagine making a closed wire along each periodic trajectory. The question is whether the wires can be separated without cutting or passing through one another. This concerns their spatial arrangement; it does not ask whether one attractor can transfer energy to another. The cycles are alternative motions of one autonomous system.
 
 ![Four coexisting Chua cycles and a Borromean control](assets/chua-linked-attractors-overview.png)

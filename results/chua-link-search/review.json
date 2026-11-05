@@ -1,0 +1,311 @@
+{
+  "passed": true,
+  "witnesses": [
+    {
+      "name": "S02-S08",
+      "parameters": {
+        "alpha": "8.94",
+        "beta": "14.26071457889439",
+        "m0": "-1.1473571428571427",
+        "m1": "-0.7142857142857143",
+        "gamma": "0"
+      },
+      "root_files": [
+        "results/chua-link-search/overlaps/S02-S08/S02-d90-n384.json",
+        "results/chua-link-search/overlaps/S02-S08/S08-d90-n384.json"
+      ],
+      "root_sha256": {
+        "S02-d90-n384.json": "035d1407b457c9b3dc2413ffa8fa58d181725bbcca01afadf884c60f56f2991b",
+        "S08-d90-n384.json": "7a19515adcfbe132dac702ff3c91adf30ddd4c71a62866554d5275066e8d0425"
+      },
+      "joint_polynomial": {
+        "-30": 1,
+        "-26": -1,
+        "-22": 1,
+        "-14": -1,
+        "-10": 1,
+        "-6": -1,
+        "-2": -1,
+        "2": -1,
+        "6": -1,
+        "10": 1,
+        "14": -1,
+        "22": 1,
+        "26": -1,
+        "30": 1
+      },
+      "split_union_polynomial": {
+        "-22": 1,
+        "-14": 1,
+        "-10": -1,
+        "-2": -2,
+        "2": -2,
+        "10": -1,
+        "14": 1,
+        "22": 1
+      },
+      "jones_checks": 6,
+      "gauss_integral": 4.1212913169220335e-13,
+      "minimum_polygon_segment_distance": 0.012826485595437637,
+      "integrations": [
+        {
+          "id": "S02",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 7.943717713900753e-09,
+              "closure_error": 2.347208468036832e-09,
+              "x_maxima": 11
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 2.0362556962449636e-09,
+              "closure_error": 2.0362556976230196e-09,
+              "x_maxima": 11
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 1.8720156709546506e-10,
+              "closure_error": 4.384308532056796e-11,
+              "x_maxima": 5
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 1.0962546086275468e-10,
+              "closure_error": 7.171565217485533e-11,
+              "x_maxima": 5
+            }
+          ]
+        }
+      ],
+      "certified_distinct_attractors": true,
+      "primitive_return_counts": [
+        3,
+        1
+      ]
+    },
+    {
+      "name": "S01-daughters",
+      "parameters": {
+        "alpha": "9",
+        "beta": "14.25984090319409",
+        "m0": "-8/7",
+        "m1": "-5/7",
+        "gamma": "0"
+      },
+      "root_files": [
+        "results/chua-link-search/daughters/S01-a1e-03-d90-n384.json"
+      ],
+      "root_sha256": {
+        "S01-a1e-03-d90-n384.json": "d75c74ce210774c0e95a9102b006247b57677cfcd9574cb9d59396589a2d5376"
+      },
+      "joint_polynomial": {
+        "-38": -1,
+        "-34": 1,
+        "-22": 1,
+        "-18": 1,
+        "-14": -1,
+        "-10": 1,
+        "-6": -1,
+        "-2": -2,
+        "2": -2,
+        "6": -1,
+        "10": 1,
+        "14": -1,
+        "18": 1,
+        "22": 1,
+        "34": 1,
+        "38": -1
+      },
+      "split_union_polynomial": {
+        "-26": -1,
+        "-22": 1,
+        "-18": -1,
+        "-14": 5,
+        "-10": -1,
+        "-6": 1,
+        "-2": -5,
+        "2": -5,
+        "6": 1,
+        "10": -1,
+        "14": 5,
+        "18": -1,
+        "22": 1,
+        "26": -1
+      },
+      "jones_checks": 7,
+      "gauss_integral": 1.0664400528007563e-12,
+      "minimum_polygon_segment_distance": 2.9701212645740967e-06,
+      "integrations": [
+        {
+          "id": "S01-a1e-03",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 5.535139771534084e-10,
+              "closure_error": 6.639863728507551e-11,
+              "x_maxima": 9
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 2.6491696444675e-10,
+              "closure_error": 8.268909506056464e-11,
+              "x_maxima": 9
+            }
+          ]
+        },
+        {
+          "id": "S01-a1e-03-inverted",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 5.535139771534084e-10,
+              "closure_error": 6.639863728507551e-11,
+              "x_maxima": 9
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 2.6491696444675e-10,
+              "closure_error": 8.268909506056464e-11,
+              "x_maxima": 9
+            }
+          ]
+        }
+      ],
+      "certified_distinct_attractors": true,
+      "primitive_return_counts": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "S02-daughters",
+      "parameters": {
+        "alpha": "9",
+        "beta": "14.290802548649257",
+        "m0": "-8/7",
+        "m1": "-5/7",
+        "gamma": "0"
+      },
+      "root_files": [
+        "results/chua-link-search/daughters/S02-a1e-03-d90-n384.json"
+      ],
+      "root_sha256": {
+        "S02-a1e-03-d90-n384.json": "76cadce70f39977d689e46005d7736aee2fe4ee497e9d0a515adaea334917528"
+      },
+      "joint_polynomial": {
+        "-62": -1,
+        "-58": 1,
+        "-54": -1,
+        "-46": 1,
+        "-42": 1,
+        "-38": -1,
+        "-34": 2,
+        "-26": -1,
+        "-22": 1,
+        "-18": 1,
+        "-14": -2,
+        "-10": 1,
+        "-6": -1,
+        "-2": -2,
+        "2": -2,
+        "6": -1,
+        "10": 1,
+        "14": -2,
+        "18": 1,
+        "22": 1,
+        "26": -1,
+        "34": 2,
+        "38": -1,
+        "42": 1,
+        "46": 1,
+        "54": -1,
+        "58": 1,
+        "62": -1
+      },
+      "split_union_polynomial": {
+        "-42": -1,
+        "-38": 1,
+        "-34": -3,
+        "-30": 5,
+        "-26": -6,
+        "-22": 12,
+        "-18": -9,
+        "-14": 13,
+        "-10": -11,
+        "-6": 5,
+        "-2": -7,
+        "2": -7,
+        "6": 5,
+        "10": -11,
+        "14": 13,
+        "18": -9,
+        "22": 12,
+        "26": -6,
+        "30": 5,
+        "34": -3,
+        "38": 1,
+        "42": -1
+      },
+      "jones_checks": 7,
+      "gauss_integral": -3.3267861652999255e-13,
+      "minimum_polygon_segment_distance": 2.034549770959122e-06,
+      "integrations": [
+        {
+          "id": "S02-a1e-03",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 2.920625323043604e-09,
+              "closure_error": 1.3133803889193693e-09,
+              "x_maxima": 11
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 2.4909612852180847e-10,
+              "closure_error": 2.490961282107312e-10,
+              "x_maxima": 11
+            }
+          ]
+        },
+        {
+          "id": "S02-a1e-03-inverted",
+          "checks": [
+            {
+              "method": "DOP853",
+              "maximum_sampled_trajectory_error": 2.920625323043604e-09,
+              "closure_error": 1.3133803889193693e-09,
+              "x_maxima": 11
+            },
+            {
+              "method": "Radau",
+              "maximum_sampled_trajectory_error": 2.4909612852180847e-10,
+              "closure_error": 2.490961282107312e-10,
+              "x_maxima": 11
+            }
+          ]
+        }
+      ],
+      "certified_distinct_attractors": true,
+      "primitive_return_counts": [
+        3,
+        3
+      ]
+    }
+  ],
+  "protocol_commit": "36ed4c5",
+  "protocol_unchanged": true,
+  "negative_symmetry_pairs": 9,
+  "interval_precision_repeats": [
+    140,
+    160
+  ],
+  "jones_diagram_replays": 20,
+  "independent_ODE_integrations": 12,
+  "scope": "Certified attracting periodic cycles and primitive periods; numerical non-split link types supported by exact diagram polynomials, density/precision/projection repeats. No certified ambient isotopy or Brunnian triple."
+}

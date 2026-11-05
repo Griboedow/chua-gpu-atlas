@@ -1,0 +1,204 @@
+{
+  "joint_polynomial": {
+    "-30": 1,
+    "-26": -1,
+    "-22": 1,
+    "-14": -1,
+    "-10": 1,
+    "-6": -1,
+    "-2": -1,
+    "2": -1,
+    "6": -1,
+    "10": 1,
+    "14": -1,
+    "22": 1,
+    "26": -1,
+    "30": 1
+  },
+  "split_union_polynomial": {
+    "-22": 1,
+    "-14": 1,
+    "-10": -1,
+    "-2": -2,
+    "2": -2,
+    "10": -1,
+    "14": 1,
+    "22": 1
+  },
+  "distinct": true,
+  "components": [
+    {
+      "polynomial": {
+        "-20": -1,
+        "-16": 1,
+        "-12": -2,
+        "-8": 3,
+        "-4": -3,
+        "0": 5,
+        "4": -3,
+        "8": 3,
+        "12": -2,
+        "16": 1,
+        "20": -1
+      },
+      "pd_code": [
+        [
+          0,
+          5,
+          1,
+          6
+        ],
+        [
+          4,
+          19,
+          5,
+          0
+        ],
+        [
+          16,
+          1,
+          17,
+          2
+        ],
+        [
+          2,
+          17,
+          3,
+          18
+        ],
+        [
+          18,
+          3,
+          19,
+          4
+        ],
+        [
+          11,
+          7,
+          12,
+          6
+        ],
+        [
+          13,
+          9,
+          14,
+          8
+        ],
+        [
+          7,
+          13,
+          8,
+          12
+        ],
+        [
+          9,
+          15,
+          10,
+          14
+        ],
+        [
+          15,
+          11,
+          16,
+          10
+        ]
+      ],
+      "free_components": 0,
+      "diagnostic": {
+        "crossings": 10,
+        "order": [
+          1,
+          0,
+          4,
+          3,
+          2,
+          5,
+          9,
+          7,
+          6,
+          8
+        ],
+        "maximum_frontier": 4,
+        "maximum_states": 4,
+        "states_per_step": [
+          2,
+          3,
+          3,
+          3,
+          2,
+          4,
+          4,
+          4,
+          4,
+          1
+        ],
+        "elapsed_seconds": 0.0008733000140637159
+      }
+    },
+    {
+      "polynomial": {
+        "0": 1
+      },
+      "pd_code": [],
+      "free_components": 1,
+      "diagnostic": {
+        "crossings": 0,
+        "maximum_frontier": 0,
+        "maximum_states": 1
+      }
+    }
+  ],
+  "joint_diagnostic": {
+    "crossings": 18,
+    "order": [
+      10,
+      11,
+      8,
+      17,
+      16,
+      9,
+      15,
+      14,
+      13,
+      0,
+      12,
+      6,
+      1,
+      7,
+      2,
+      4,
+      5,
+      3
+    ],
+    "maximum_frontier": 6,
+    "maximum_states": 10,
+    "states_per_step": [
+      2,
+      3,
+      3,
+      6,
+      7,
+      9,
+      9,
+      9,
+      4,
+      8,
+      8,
+      8,
+      10,
+      10,
+      10,
+      4,
+      4,
+      1
+    ],
+    "elapsed_seconds": 0.0035687999916262925
+  },
+  "conclusion": "non_split_pair",
+  "scope": "Exact polynomial comparison conditional on numerical diagram extraction; equality is inconclusive.",
+  "ids": [
+    "S02",
+    "S08"
+  ],
+  "joint_record": "joint-d60-n96-s0.json"
+}
