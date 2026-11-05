@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-11-05T19:31:23.041446+00:00",
-  "base_commit": "36ed4c5de789662cfdf176d9fc1c8a9eb36c0d4d",
+  "created_utc": "2026-11-05T19:32:40.640350+00:00",
+  "base_commit": "53317019a038cdc1987b84108794b6e137d195b0",
   "sha256": {
     "AGENTS.md": "ae55a80214d2684b60579653a0c04e46430b4c509275fb399410b70cbd69b51f",
     "chua_gpu.py": "cc18f2b043f7b7d7140d4ea77e2ea69f92f36c8d191afee369291c9077815ca6",
@@ -172,7 +172,7 @@
     "docs/chua-layer-cards.md": "97a9e3620827c4e3f006cff1d598df6a326c34f9d75a14431d597045865b68b1",
     "docs/chua-layer-census.md": "32ed57f8621793318114697e4fb79659c798a2a06fd1c7d2a95f45d599f7bfb5",
     "docs/chua-layer-prediction.md": "a8b683a0f3fdcf3fbfdaf49552c3492a89d14b2d9fca187132e4c6e46041f7c6",
-    "docs/chua-link-search.md": "1dc8c92bff9fab2cb1c00ae4527e6599f8aaedcb61382d229d3e3f06a6c89739",
+    "docs/chua-link-search.md": "f6ad73d4ac11f75daa9377ac34168cfb1fba0f303b623221ea888e1c5235e3ea",
     "docs/chua-linked-attractors.md": "1cb193deea42e3f045b849540dd8424f93ab44ee007d119b3dc5ec62109554d3",
     "docs/chua-nested-returns.md": "1a166d030f4b6c7bf7c33b44e0922df0484e6fb49c26a6b5d8f2ac8966da3418",
     "docs/chua-overlap-geometry.md": "6f6827a15e0b1c0a3730af914b5fa3f5aaa2ec8345583703448a19a7a2b883fb",

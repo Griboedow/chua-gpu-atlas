@@ -54,9 +54,9 @@ The vector field is odd: F(−u) = −F(u). Consequently inversion I(u) = −u s
 For an inversion-related pair C and I(C), the symmetry exchanges the components. Linking number is symmetric in its arguments and changes sign under ambient orientation reversal. Hence
 
 ```math
-\operatorname{lk}(C,I(C))
-=\operatorname{lk}(I(C),C)
-=-\operatorname{lk}(C,I(C))=0.
+\mathrm{lk}(C,I(C))
+=\mathrm{lk}(I(C),C)
+=-\mathrm{lk}(C,I(C))=0.
 ```
 
 The same conclusion applies when inversion preserves each component individually, as for the symmetric S02/S08 pair. A nonzero-linking-number filter would therefore discard precisely these candidates before testing whether they can be separated.
