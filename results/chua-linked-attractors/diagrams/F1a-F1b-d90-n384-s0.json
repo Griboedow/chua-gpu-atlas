@@ -1,0 +1,215 @@
+{
+  "seed": 0,
+  "components": 2,
+  "initial_free_components": 0,
+  "pd_code": [
+    [
+      25,
+      29,
+      0,
+      30
+    ],
+    [
+      0,
+      3,
+      1,
+      4
+    ],
+    [
+      27,
+      2,
+      28,
+      1
+    ],
+    [
+      26,
+      2,
+      27,
+      3
+    ],
+    [
+      19,
+      5,
+      20,
+      4
+    ],
+    [
+      45,
+      6,
+      46,
+      5
+    ],
+    [
+      44,
+      6,
+      45,
+      7
+    ],
+    [
+      18,
+      7,
+      19,
+      8
+    ],
+    [
+      24,
+      9,
+      25,
+      10
+    ],
+    [
+      50,
+      8,
+      51,
+      9
+    ],
+    [
+      21,
+      11,
+      22,
+      10
+    ],
+    [
+      47,
+      12,
+      48,
+      11
+    ],
+    [
+      15,
+      13,
+      16,
+      12
+    ],
+    [
+      41,
+      14,
+      42,
+      13
+    ],
+    [
+      40,
+      14,
+      41,
+      15
+    ],
+    [
+      16,
+      39,
+      17,
+      38
+    ],
+    [
+      17,
+      33,
+      18,
+      34
+    ],
+    [
+      20,
+      31,
+      21,
+      30
+    ],
+    [
+      22,
+      37,
+      23,
+      36
+    ],
+    [
+      23,
+      35,
+      24,
+      36
+    ],
+    [
+      51,
+      28,
+      26,
+      29
+    ],
+    [
+      46,
+      32,
+      47,
+      31
+    ],
+    [
+      43,
+      32,
+      44,
+      33
+    ],
+    [
+      49,
+      34,
+      50,
+      35
+    ],
+    [
+      48,
+      38,
+      49,
+      37
+    ],
+    [
+      42,
+      40,
+      43,
+      39
+    ]
+  ],
+  "crossings": 26,
+  "oriented_linking_matrix": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "minimum_crossing_height": 0.006348418724102973,
+  "minimum_vertex_fraction": 0.0077517906997062735,
+  "minimum_event_spacing": 0.48298249839785967,
+  "library_initial_linking_matrix": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "reductions": [
+    {
+      "mode": "basic",
+      "crossings": 0,
+      "free_components": 2,
+      "remaining_components": 0
+    }
+  ],
+  "simplified_pd_code": [],
+  "simplified_crossings": 0,
+  "final_free_components": 2,
+  "jones_A": {
+    "2": -1,
+    "-2": -1
+  },
+  "status": "unlink",
+  "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+  "ids": [
+    "F1a",
+    "F1b"
+  ],
+  "digits": 90,
+  "subdivisions": 384,
+  "source_sha256": {
+    "F1a": "d32b1ea6848e32e777c42ae2e710c7ed67ea60c2b50b17c72506944f0ed1df73",
+    "F1b": "f8696141e80b1b1a715c346526006a508de3d7b1f5fcb4a37226db62fc166cac"
+  },
+  "elapsed_seconds": 2.1778806000365876
+}

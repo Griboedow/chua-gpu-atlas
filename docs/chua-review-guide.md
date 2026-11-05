@@ -8,6 +8,8 @@ For the subsequent plane/pulse excitation calculations, uniform four-cycle box a
 
 The separate [knot atlas](chua-knot-atlas.md) classifies the reference orbit curves. Its [review instructions](../results/chua-knot-atlas/README.md#review-targets) distinguish exact diagram algebra from numerical polygon extraction and the still missing certified isotopy to the ODE orbit. The infinity arguments reviewed below do not imply infinitely many different knot types.
 
+The [joint-link experiment](chua-linked-attractors.md) instead uses four cycles at identical parameters. Its [review targets](../results/chua-linked-attractors/README.md#review-targets) require common coordinate transformations, preservation of all components and nontrivial Borromean controls. All 105 extracted Chua diagrams reduce to unlinks. The existing interval roots certify coexistence; they do not certify the new polygons' isotopy to the ODE curves.
+
 The later [return-geometry study](chua-return-geometry.md) relates parameter width, transient response and saddle companions in one sequence. Its [review targets](../results/chua-return-geometry/README.md#review-targets) distinguish Floquet spectral radius from finite-time operator norms, require matched section phases, and separate six prospective 95/105-peak predictions from corrected root locations. The new results are numerical; no interval bound for the gain law or basin escape is claimed.
 
 ## 1. Questions, quantities and evidence

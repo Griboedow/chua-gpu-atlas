@@ -1,0 +1,179 @@
+{
+  "seed": 2,
+  "components": 2,
+  "initial_free_components": 0,
+  "pd_code": [
+    [
+      27,
+      19,
+      28,
+      0
+    ],
+    [
+      9,
+      0,
+      10,
+      1
+    ],
+    [
+      4,
+      1,
+      5,
+      2
+    ],
+    [
+      7,
+      3,
+      8,
+      2
+    ],
+    [
+      8,
+      3,
+      9,
+      4
+    ],
+    [
+      5,
+      21,
+      6,
+      22
+    ],
+    [
+      26,
+      6,
+      27,
+      7
+    ],
+    [
+      10,
+      20,
+      11,
+      21
+    ],
+    [
+      11,
+      38,
+      12,
+      37
+    ],
+    [
+      12,
+      18,
+      13,
+      17
+    ],
+    [
+      13,
+      15,
+      14,
+      14
+    ],
+    [
+      31,
+      16,
+      32,
+      15
+    ],
+    [
+      16,
+      37,
+      17,
+      36
+    ],
+    [
+      30,
+      19,
+      31,
+      18
+    ],
+    [
+      28,
+      39,
+      29,
+      20
+    ],
+    [
+      25,
+      22,
+      26,
+      23
+    ],
+    [
+      24,
+      23,
+      25,
+      24
+    ],
+    [
+      29,
+      39,
+      30,
+      38
+    ],
+    [
+      32,
+      36,
+      33,
+      35
+    ],
+    [
+      33,
+      35,
+      34,
+      34
+    ]
+  ],
+  "crossings": 20,
+  "oriented_linking_matrix": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "minimum_crossing_height": 0.014257708876568496,
+  "minimum_vertex_fraction": 0.024518640290915005,
+  "minimum_event_spacing": 2.5604607076102184,
+  "library_initial_linking_matrix": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "reductions": [
+    {
+      "mode": "basic",
+      "crossings": 0,
+      "free_components": 2,
+      "remaining_components": 0
+    }
+  ],
+  "simplified_pd_code": [],
+  "simplified_crossings": 0,
+  "final_free_components": 2,
+  "jones_A": {
+    "2": -1,
+    "-2": -1
+  },
+  "status": "unlink",
+  "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+  "ids": [
+    "F1b",
+    "F2a"
+  ],
+  "digits": 80,
+  "subdivisions": 192,
+  "source_sha256": {
+    "F1b": "0cc97e16d168b0cc627999de87e7a96c3171dc777d7deb7e82e5cb27714de02e",
+    "F2a": "0ac2bd06bf632343c8a1cfb86728ffeb0e982017d7283251d055c0045c703ed3"
+  },
+  "elapsed_seconds": 0.5391409000148997
+}

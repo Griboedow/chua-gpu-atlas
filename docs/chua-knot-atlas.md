@@ -107,3 +107,5 @@ The first unresolved question is whether the entire measured period-adding seque
 The second is whether additional attracting families realize an unbounded sequence of distinct knot types. A search can now distinguish that question from an unbounded peak count. It can also test whether the observed connected sums arise from a common geometric construction and whether that construction persists when both diode slopes vary.
 
 Finally, at parameters supporting several attractors, the individual knots can be studied jointly as a link. Two individually unknotted cycles can still be linked. That requires reconstructing distinct cycles at the **same** parameters; combining the different-β reference portraits would not answer it.
+
+The subsequent [joint-link experiment](chua-linked-attractors.md) performs this test for four certified coexisting cycles. Their six pairs, four triples and full configuration are numerically unlinked at three reconstruction levels. The positive Borromean control detects collective linking despite unlinked pairs. This first negative configuration leaves other coexisting branch combinations open.

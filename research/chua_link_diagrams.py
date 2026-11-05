@@ -5,6 +5,8 @@ an independent solid-angle Gauss integral. Diagram reductions are combinatorial;
 they do not certify ambient isotopy to an exact ODE trajectory.
 """
 import random
+import itertools,math
+from collections import Counter
 import numpy as np
 from numba import njit
 from spherogram import Link
@@ -37,7 +39,9 @@ def crossings(points,ends,components,local,sizes):
 
 def diagram(curves,seed=0):
     curves=[clean(c) for c in curves];sizes=np.array([len(p) for p in curves]);starts=np.r_[0,np.cumsum(sizes)[:-1]]
-    p=np.vstack(curves);p=(p-p.mean(axis=0))/np.ptp(p,axis=0)@camera(seed)
+    p=np.vstack(curves);scale=np.ptp(p,axis=0);scale[scale==0]=1
+    p=(p-p.mean(axis=0))/scale@camera(seed)
+    assert np.isfinite(p).all()
     components=np.repeat(np.arange(len(curves)),sizes);local=np.concatenate([np.arange(n) for n in sizes])
     ends=np.concatenate([s+(np.arange(n)+1)%n for s,n in zip(starts,sizes)])
     rows=crossings(p,ends,components,local,sizes);labels={};previous={};free=0;offset=0;spacings=[];matrix=np.zeros((len(curves),len(curves)),int)
@@ -80,11 +84,41 @@ def classify(curves,seed=0):
         if not link.crossings:break
     assert len(link.link_components)+link.unlinked_unknot_components==len(curves),'A component was lost'
     zero=not link.crossings;nonzero=bool(np.any(np.array(r['oriented_linking_matrix'])))
+    assert not (zero and nonzero),'Unlink reduction contradicts a nonzero linking number'
+    polynomial=jones_A(link) if len(link.crossings)<=16 else None
+    nontrivial_polynomial=polynomial is not None and polynomial!=unlink_jones(len(curves))
     r.update(reductions=stages,simplified_pd_code=link.PD_code(),simplified_crossings=len(link.crossings),
         final_free_components=link.unlinked_unknot_components,
-        status='unlink' if zero else 'nontrivial_by_linking_number' if nonzero else 'unresolved',
+        jones_A=polynomial,status='unlink' if zero else 'nontrivial_by_linking_number' if nonzero else 'nontrivial_by_jones' if nontrivial_polynomial else 'unresolved',
         scope='Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself')
     return r,link
+
+
+def unlink_jones(components):
+    k=components-1
+    return {str(2*k-4*j):(-1)**k*math.comb(k,j) for j in range(k+1)}
+
+
+def jones_A(link):
+    """Exact Kauffman state sum, normalized by writhe; t=A^-4.
+
+    Polynomial inequality proves nontriviality of the extracted diagram.
+    Equality with a named link's polynomial does not identify that link.
+    """
+    pd=link.PD_code();n=len(pd);free=link.unlinked_unknot_components
+    if not n:return unlink_jones(free)
+    out=Counter()
+    for state in itertools.product([0,1],repeat=n):
+        parents=list(range(2*n))
+        def find(a):
+            while parents[a]!=a:a=parents[a]
+            return a
+        for (a,b,c,d),s in zip(pd,state):
+            for u,v in ([(a,b),(c,d)] if s==0 else [(a,d),(b,c)]):parents[find(u)]=find(v)
+        loops=len(set(find(a) for a in range(2*n)));base=n-2*sum(state);k=loops-1+free
+        for j in range(k+1):out[base+2*k-4*j]+=(-1)**k*math.comb(k,j)
+    w=link.writhe()
+    return {str(e-3*w):v*(-1 if w%2 else 1) for e,v in sorted(out.items()) if v}
 
 
 @njit(cache=True)
@@ -103,32 +137,3 @@ def polygon_gauss(a,b):
             u=b[j];v=b[(j+1)%len(b)]
             total+=triangle(p-u,p-v,q-v)+triangle(p-u,q-v,q-u)
     return total/(4*np.pi)
-
-
-def canonical_unoriented(link):
-    """Finite diagram equivalence under component permutation, phase and reversal.
-
-    Used only on small control diagrams. It is not a general link recognizer.
-    Crossing sign is omitted; under/over encounter data retains the diagram.
-    """
-    from itertools import permutations,product
-    components=[[(c.crossing.label,bool(c.is_over_crossing())) for c in row] for row in link.link_components]
-    variants=[]
-    for row in components:
-        options=[]
-        for rev in [row,row[::-1]]:
-            options.extend(rev[i:]+rev[:i] for i in range(len(row)))
-        variants.append(options)
-    best=None
-    for order in permutations(range(len(components))):
-        for seqs in product(*(variants[i] for i in order)):
-            names={};result=[]
-            for seq in seqs:
-                component=[]
-                for crossing,over in seq:
-                    if crossing not in names:names[crossing]=len(names)
-                    component.append((names[crossing],over))
-                result.append(tuple(component))
-            code=tuple(result)
-            if best is None or code<best:best=code
-    return best

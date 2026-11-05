@@ -1,0 +1,487 @@
+{
+  "protocol_commit": "39a84c8",
+  "protocol_unchanged": true,
+  "source_sha256": "70059f633e5e4eaeb3300088838c95dde76ac89c21327298a402e2b081262526",
+  "certificate_sha256": "5368b1f79e1f4a03f31be92e11b966b2d82f9b41ff0fe3d70803bc2c40746ec4",
+  "reconstruction_checks": [
+    {
+      "id": "F1a",
+      "period": "10.85279185521683214265657311471445512135283305340774722843924566513210349469267855753",
+      "spectral_radius": 0.0712973660791989,
+      "certificate_box_relative_offsets": [
+        2.1305063923208526e-51,
+        2.2241059892907466e-52
+      ],
+      "refinements": [
+        {
+          "from_digits": 60,
+          "to_digits": 80,
+          "root_max_difference": "3.57501548106673e-46",
+          "common_vertex_max_distance": 7.801946179774539e-62,
+          "maximum_midpoint_chord_deviation": 0.00043569182293438913
+        },
+        {
+          "from_digits": 80,
+          "to_digits": 90,
+          "root_max_difference": "4.310498024e-75",
+          "common_vertex_max_distance": 6.966458907237035e-82,
+          "maximum_midpoint_chord_deviation": 0.00010894431907882851
+        }
+      ],
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "maximum_trajectory_difference": 5.374911658150308e-09,
+          "closure_error": 3.687077039890261e-09,
+          "x_maxima": 5,
+          "nfev": 18233
+        },
+        {
+          "method": "Radau",
+          "maximum_trajectory_difference": 2.633032439307126e-10,
+          "closure_error": 1.799092112210328e-10,
+          "x_maxima": 5,
+          "nfev": 57985
+        }
+      ]
+    },
+    {
+      "id": "F1b",
+      "period": "10.85279185521683214265657311471445512135283305340774722843924566513210349469267855753",
+      "spectral_radius": 0.0712973660791989,
+      "certificate_box_relative_offsets": [
+        4.855461321018247e-51,
+        1.6118609565629072e-51
+      ],
+      "refinements": [
+        {
+          "from_digits": 60,
+          "to_digits": 80,
+          "root_max_difference": "9.3728527143072e-48",
+          "common_vertex_max_distance": 1.7957727178190138e-61,
+          "maximum_midpoint_chord_deviation": 0.00043569182293438913
+        },
+        {
+          "from_digits": 80,
+          "to_digits": 90,
+          "root_max_difference": "4.390858553e-75",
+          "common_vertex_max_distance": 2.456462371132781e-81,
+          "maximum_midpoint_chord_deviation": 0.00010894431907882851
+        }
+      ],
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "maximum_trajectory_difference": 4.480532066804426e-10,
+          "closure_error": 2.663029718036358e-10,
+          "x_maxima": 5,
+          "nfev": 18530
+        },
+        {
+          "method": "Radau",
+          "maximum_trajectory_difference": 1.0963574641067654e-09,
+          "closure_error": 7.380949483371319e-10,
+          "x_maxima": 5,
+          "nfev": 58568
+        }
+      ]
+    },
+    {
+      "id": "F2a",
+      "period": "14.49925111805004299632247006186605867705893432648805547140282992995496286467761600934",
+      "spectral_radius": 0.012528753901892233,
+      "certificate_box_relative_offsets": [
+        1.0997344207691546e-51,
+        2.5664468280503026e-51
+      ],
+      "refinements": [
+        {
+          "from_digits": 60,
+          "to_digits": 80,
+          "root_max_difference": "7.58009814650617e-46",
+          "common_vertex_max_distance": 1.9809104442788577e-61,
+          "maximum_midpoint_chord_deviation": 0.002401023479394608
+        },
+        {
+          "from_digits": 80,
+          "to_digits": 90,
+          "root_max_difference": "4.313942799e-75",
+          "common_vertex_max_distance": 4.95444122841129e-82,
+          "maximum_midpoint_chord_deviation": 0.0006006349606345907
+        }
+      ],
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "maximum_trajectory_difference": 4.5940308746575807e-10,
+          "closure_error": 3.321080855359698e-10,
+          "x_maxima": 5,
+          "nfev": 24008
+        },
+        {
+          "method": "Radau",
+          "maximum_trajectory_difference": 1.957324437156074e-11,
+          "closure_error": 1.2231246013486522e-11,
+          "x_maxima": 5,
+          "nfev": 75446
+        }
+      ]
+    },
+    {
+      "id": "F2b",
+      "period": "14.49925111805004299632247006186605867705893432648805547140282992995496286467761600934",
+      "spectral_radius": 0.012528753901892233,
+      "certificate_box_relative_offsets": [
+        2.4114410679018133e-51,
+        2.4985623788496766e-51
+      ],
+      "refinements": [
+        {
+          "from_digits": 60,
+          "to_digits": 80,
+          "root_max_difference": "1.22795679505506e-44",
+          "common_vertex_max_distance": 1.517165310092031e-61,
+          "maximum_midpoint_chord_deviation": 0.002401023479394608
+        },
+        {
+          "from_digits": 80,
+          "to_digits": 90,
+          "root_max_difference": "4.313942799e-75",
+          "common_vertex_max_distance": 1.4524031025811106e-81,
+          "maximum_midpoint_chord_deviation": 0.0006006349606345907
+        }
+      ],
+      "independent_integrations": [
+        {
+          "method": "DOP853",
+          "maximum_trajectory_difference": 2.6095425805226706e-09,
+          "closure_error": 1.8182957290412144e-09,
+          "x_maxima": 5,
+          "nfev": 23570
+        },
+        {
+          "method": "Radau",
+          "maximum_trajectory_difference": 7.897189473163674e-10,
+          "closure_error": 5.812563024758499e-10,
+          "x_maxima": 5,
+          "nfev": 75451
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "vertices_per_cycle": 960,
+      "diagram_tests": 30,
+      "maximum_raw_crossings": 196
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "vertices_per_cycle": 1920,
+      "diagram_tests": 30,
+      "maximum_raw_crossings": 160
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "vertices_per_cycle": 3840,
+      "diagram_tests": 45,
+      "maximum_raw_crossings": 324
+    }
+  ],
+  "diagram_replays": 105,
+  "control_polynomial_replays": 34,
+  "gauss_integrals": [
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F1a",
+        "F1b"
+      ],
+      "value": -7.02220642757672e-14,
+      "nearest_integer": 0,
+      "integer_error": 7.02220642757672e-14
+    },
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F1a",
+        "F2a"
+      ],
+      "value": -1.3764699360217875e-14,
+      "nearest_integer": 0,
+      "integer_error": 1.3764699360217875e-14
+    },
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F1a",
+        "F2b"
+      ],
+      "value": -6.339184380406051e-14,
+      "nearest_integer": 0,
+      "integer_error": 6.339184380406051e-14
+    },
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F1b",
+        "F2a"
+      ],
+      "value": -2.0224062186449233e-14,
+      "nearest_integer": 0,
+      "integer_error": 2.0224062186449233e-14
+    },
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F1b",
+        "F2b"
+      ],
+      "value": -4.7063650501360974e-14,
+      "nearest_integer": 0,
+      "integer_error": 4.7063650501360974e-14
+    },
+    {
+      "digits": 60,
+      "subdivisions": 96,
+      "ids": [
+        "F2a",
+        "F2b"
+      ],
+      "value": -5.084221572449549e-14,
+      "nearest_integer": 0,
+      "integer_error": 5.084221572449549e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F1a",
+        "F1b"
+      ],
+      "value": 2.5754693382549682e-14,
+      "nearest_integer": 0,
+      "integer_error": 2.5754693382549682e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F1a",
+        "F2a"
+      ],
+      "value": 8.917900362342211e-14,
+      "nearest_integer": 0,
+      "integer_error": 8.917900362342211e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F1a",
+        "F2b"
+      ],
+      "value": 6.474224223363577e-14,
+      "nearest_integer": 0,
+      "integer_error": 6.474224223363577e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F1b",
+        "F2a"
+      ],
+      "value": 4.432851928523647e-14,
+      "nearest_integer": 0,
+      "integer_error": 4.432851928523647e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F1b",
+        "F2b"
+      ],
+      "value": 7.818048048497808e-14,
+      "nearest_integer": 0,
+      "integer_error": 7.818048048497808e-14
+    },
+    {
+      "digits": 80,
+      "subdivisions": 192,
+      "ids": [
+        "F2a",
+        "F2b"
+      ],
+      "value": 2.0908889170792653e-13,
+      "nearest_integer": 0,
+      "integer_error": 2.0908889170792653e-13
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F1a",
+        "F1b"
+      ],
+      "value": -2.1404261597767405e-13,
+      "nearest_integer": 0,
+      "integer_error": 2.1404261597767405e-13
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F1a",
+        "F2a"
+      ],
+      "value": 2.942418490208323e-13,
+      "nearest_integer": 0,
+      "integer_error": 2.942418490208323e-13
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F1a",
+        "F2b"
+      ],
+      "value": 1.925894709524049e-14,
+      "nearest_integer": 0,
+      "integer_error": 1.925894709524049e-14
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F1b",
+        "F2a"
+      ],
+      "value": -4.1748421128658467e-13,
+      "nearest_integer": 0,
+      "integer_error": 4.1748421128658467e-13
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F1b",
+        "F2b"
+      ],
+      "value": 2.3874156185526324e-13,
+      "nearest_integer": 0,
+      "integer_error": 2.3874156185526324e-13
+    },
+    {
+      "digits": 90,
+      "subdivisions": 384,
+      "ids": [
+        "F2a",
+        "F2b"
+      ],
+      "value": 2.216297884470574e-13,
+      "nearest_integer": 0,
+      "integer_error": 2.216297884470574e-13
+    }
+  ],
+  "polygon_separations": [
+    {
+      "ids": [
+        "F1a",
+        "F1b"
+      ],
+      "minimum_polygon_segment_distance": 0.0010351944609520137,
+      "segment_pair_and_fractions": [
+        1279,
+        1279,
+        1.0,
+        0.3156387085164307
+      ]
+    },
+    {
+      "ids": [
+        "F1a",
+        "F2a"
+      ],
+      "minimum_polygon_segment_distance": 0.009143997057676424,
+      "segment_pair_and_fractions": [
+        3227,
+        3219,
+        1.0,
+        0.8475689134424209
+      ]
+    },
+    {
+      "ids": [
+        "F1a",
+        "F2b"
+      ],
+      "minimum_polygon_segment_distance": 0.009688167226036668,
+      "segment_pair_and_fractions": [
+        3235,
+        3226,
+        1.0,
+        0.6583050755135396
+      ]
+    },
+    {
+      "ids": [
+        "F1b",
+        "F2a"
+      ],
+      "minimum_polygon_segment_distance": 0.009688167226036668,
+      "segment_pair_and_fractions": [
+        1315,
+        1306,
+        1.0,
+        0.6583050755135396
+      ]
+    },
+    {
+      "ids": [
+        "F1b",
+        "F2b"
+      ],
+      "minimum_polygon_segment_distance": 0.009143997057676424,
+      "segment_pair_and_fractions": [
+        1307,
+        1299,
+        1.0,
+        0.8475689134424209
+      ]
+    },
+    {
+      "ids": [
+        "F2a",
+        "F2b"
+      ],
+      "minimum_polygon_segment_distance": 0.0003503477104085295,
+      "segment_pair_and_fractions": [
+        1535,
+        1534,
+        0.031521377205625076,
+        1.0
+      ]
+    }
+  ],
+  "versions": {
+    "spherogram": "2.4.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "mpmath": "1.3.0",
+    "numba": "0.68.1"
+  },
+  "conclusion": "All 15 nonempty sublinks of the four numerical cycles reduce to unlinks at all tested resolutions and projections.",
+  "passed": true,
+  "scope": "Numerical reconstruction and replay of extracted diagrams; no interval ambient-isotopy certificate, no global nonexistence theorem."
+}

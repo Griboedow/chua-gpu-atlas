@@ -2,6 +2,10 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+## Joint topology of coexisting cycles
+
+`study_chua_linked_attractors.py` reconstructs four cycles at fixed exact parameters, generates analytic link controls and classifies every nonempty sublink. `chua_link_diagrams.py` extracts multi-component diagrams, tracks components, calculates exact Jones polynomials and independent Gauss integrals. `review_chua_linked_attractors.py` checks certified-root correspondence, independent ODE integration and all saved reductions. `plot_chua_linked_attractors.py` supplies static figures and an interactive component viewer. [Report](../docs/chua-linked-attractors.md) · [Reproduction and review](../results/chua-linked-attractors/README.md).
+
 The [extension programs](../results/chua-followup/extended-studies.md) add a plane and finite-pulse excitation scan, interval multiple shooting for four-cycle parameter boxes, correlated component images, and prospective slope predictions at new nodes. Their independent checks and retained failures are described with the data.
 
 ## Return geometry and transient amplification

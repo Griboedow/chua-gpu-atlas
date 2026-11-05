@@ -10,7 +10,7 @@ import mpmath as mp
 import numpy as np
 from chua_precision_flights import PrecisionFlights
 from reconstruct_chua_knot_orbits import sample
-from chua_link_diagrams import classify,clean,polygon_gauss,canonical_unoriented
+from chua_link_diagrams import classify,clean,polygon_gauss,jones_A
 from spherogram import Link
 OUT=ROOT/'results/chua-linked-attractors'
 
@@ -54,35 +54,36 @@ def control_curves(n=800):
 
 
 def controls():
-    rows=[];standard=canonical_unoriented(Link('L6a4'))
+    rows=[];standard=Link('L6a4');standard_polynomial=jones_A(standard)
     for name,curves in control_curves().items():
         for size in range(1,len(curves)+1):
             for subset in itertools.combinations(range(len(curves)),size):
                 for seed in [0,2]:
                     r,link=classify([curves[i] for i in subset],seed)
                     expected='borromean' if name=='borromean' and size==3 else 'hopf' if name=='hopf' and size==2 else 'unlink'
-                    passed=(r['status']=='unlink') if expected=='unlink' else (abs(r['oriented_linking_matrix'][0][1])==1) if expected=='hopf' else canonical_unoriented(link)==standard
+                    passed=(r['status']=='unlink') if expected=='unlink' else (abs(r['oriented_linking_matrix'][0][1])==1) if expected=='hopf' else r['status']=='nontrivial_by_jones' and r['jones_A']==standard_polynomial
                     r.update(control=name,subset=list(subset),expected=expected,passed=passed)
-                    if expected=='borromean' and passed:r['status']='borromean_by_standard_diagram'
+                    if expected=='borromean':r['control_scope']='Known geometric control: detects nontrivial triple linking and matches the standard polynomial; polynomial equality is not a general identification test.'
                     assert passed,(name,subset,seed,r['simplified_crossings']);rows.append(r)
     curves=control_curves()['hopf'];tests=[]
     for name,cc in [('original',curves),('reflected',[c*np.array([-1,1,1]) for c in curves]),('one_reversed',[curves[0][::-1],curves[1]])]:
         r,_=classify(cc);value=polygon_gauss(clean(cc[0]),clean(cc[1]));tests.append(dict(name=name,diagram=r['oriented_linking_matrix'][0][1],solid_angle=float(value)))
     sign=tests[0]['diagram'];assert sign!=0 and tests[1]['diagram']==tests[2]['diagram']==-sign
-    # With the projection convention above, the solid-angle integral has the opposite sign.
+    # Determine the convention once, rather than assume the sign from a drawing.
     convention=round(tests[0]['solid_angle'])/sign
     assert all(abs(t['solid_angle']-convention*t['diagram'])<1e-8 for t in tests)
-    save(OUT/'controls.json',dict(rows=rows,orientation_controls=tests,gauss_to_diagram_sign=convention,passed=all(r['passed'] for r in rows)))
+    save(OUT/'controls.json',dict(rows=rows,standard_borromean_pd=standard.PD_code(),standard_borromean_jones_A=standard_polynomial,
+        orientation_controls=tests,gauss_to_diagram_sign=convention,passed=all(r['passed'] for r in rows)))
     np.savez_compressed(OUT/'standard-link-curves.npz',**{f'{k}_{i}':c for k,v in control_curves().items() for i,c in enumerate(v)})
     print('Controls passed',len(rows),'orientation',tests,flush=True)
 
 
-def analyze(digits,subdivisions):
+def analyze(digits,subdivisions,seeds=(0,2)):
     ids=['F1a','F1b','F2a','F2b'];curves={id:np.load(OUT/f'{id}-d{digits}-n{subdivisions}.npz')['xyz'] for id in ids};records=[]
     dest=OUT/'diagrams';dest.mkdir(exist_ok=True)
     for size in [1,2,3,4]:
         for subset in itertools.combinations(ids,size):
-            for seed in [0,2]:
+            for seed in seeds:
                 label='-'.join(subset)+f'-d{digits}-n{subdivisions}-s{seed}';path=dest/(label+'.json')
                 if path.exists():records.append(read(path));continue
                 started=time.monotonic();r,link=classify([curves[id] for id in subset],seed)
@@ -96,10 +97,10 @@ def analyze(digits,subdivisions):
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['reconstruct','controls','analyze']);p.add_argument('--digits',type=int,default=60);p.add_argument('--subdivisions',type=int,default=96);args=p.parse_args();OUT.mkdir(exist_ok=True)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['reconstruct','controls','analyze']);p.add_argument('--digits',type=int,default=60);p.add_argument('--subdivisions',type=int,default=96);p.add_argument('--seeds',type=int,nargs='+',default=[0,2]);args=p.parse_args();OUT.mkdir(exist_ok=True)
     if args.stage=='controls':controls()
     elif args.stage=='reconstruct':reconstruct(args.digits,args.subdivisions)
-    else:analyze(args.digits,args.subdivisions)
+    else:analyze(args.digits,args.subdivisions,args.seeds)
 
 
 if __name__=='__main__':main()

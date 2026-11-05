@@ -1,0 +1,118 @@
+{
+  "seed": 5,
+  "components": 1,
+  "initial_free_components": 0,
+  "pd_code": [
+    [
+      23,
+      18,
+      0,
+      19
+    ],
+    [
+      0,
+      16,
+      1,
+      15
+    ],
+    [
+      1,
+      20,
+      2,
+      21
+    ],
+    [
+      9,
+      2,
+      10,
+      3
+    ],
+    [
+      3,
+      12,
+      4,
+      13
+    ],
+    [
+      5,
+      4,
+      6,
+      5
+    ],
+    [
+      6,
+      12,
+      7,
+      11
+    ],
+    [
+      7,
+      10,
+      8,
+      11
+    ],
+    [
+      8,
+      14,
+      9,
+      13
+    ],
+    [
+      14,
+      22,
+      15,
+      21
+    ],
+    [
+      16,
+      18,
+      17,
+      17
+    ],
+    [
+      22,
+      20,
+      23,
+      19
+    ]
+  ],
+  "crossings": 12,
+  "oriented_linking_matrix": [
+    [
+      0
+    ]
+  ],
+  "minimum_crossing_height": 0.2865026397050759,
+  "minimum_vertex_fraction": 0.020500276518908844,
+  "minimum_event_spacing": 5.427388555553051,
+  "library_initial_linking_matrix": [
+    [
+      0
+    ]
+  ],
+  "reductions": [
+    {
+      "mode": "basic",
+      "crossings": 0,
+      "free_components": 1,
+      "remaining_components": 0
+    }
+  ],
+  "simplified_pd_code": [],
+  "simplified_crossings": 0,
+  "final_free_components": 1,
+  "jones_A": {
+    "0": 1
+  },
+  "status": "unlink",
+  "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+  "ids": [
+    "F1a"
+  ],
+  "digits": 90,
+  "subdivisions": 384,
+  "source_sha256": {
+    "F1a": "d32b1ea6848e32e777c42ae2e710c7ed67ea60c2b50b17c72506944f0ed1df73"
+  },
+  "elapsed_seconds": 0.570495399995707
+}

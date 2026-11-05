@@ -1,0 +1,2040 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          3,
+          4,
+          0,
+          5
+        ],
+        [
+          0,
+          6,
+          1,
+          5
+        ],
+        [
+          6,
+          2,
+          7,
+          1
+        ],
+        [
+          7,
+          2,
+          4,
+          3
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.2583982580975993,
+      "minimum_vertex_fraction": 0.1364718130995991,
+      "minimum_event_spacing": 15.803683970770976,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          7,
+          3,
+          4,
+          0
+        ],
+        [
+          6,
+          1,
+          7,
+          0
+        ],
+        [
+          1,
+          6,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.3317581809076216,
+      "minimum_vertex_fraction": 0.13175852565264148,
+      "minimum_event_spacing": 1.6142173120649659,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          3,
+          7,
+          0,
+          4
+        ],
+        [
+          6,
+          0,
+          7,
+          1
+        ],
+        [
+          5,
+          2,
+          6,
+          1
+        ],
+        [
+          2,
+          5,
+          3,
+          4
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.45151308153873565,
+      "minimum_vertex_fraction": 0.014653306344890012,
+      "minimum_event_spacing": 83.23873466055628,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          7,
+          3,
+          4,
+          0
+        ],
+        [
+          0,
+          6,
+          1,
+          7
+        ],
+        [
+          1,
+          6,
+          2,
+          5
+        ],
+        [
+          4,
+          3,
+          5,
+          2
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.3111299422512087,
+      "minimum_vertex_fraction": 0.049324668805799776,
+      "minimum_event_spacing": 3.454594127292239,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 3,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          3,
+          9,
+          0,
+          10
+        ],
+        [
+          0,
+          13,
+          1,
+          12
+        ],
+        [
+          13,
+          2,
+          14,
+          1
+        ],
+        [
+          8,
+          2,
+          9,
+          3
+        ],
+        [
+          7,
+          15,
+          4,
+          8
+        ],
+        [
+          14,
+          4,
+          15,
+          5
+        ],
+        [
+          11,
+          6,
+          12,
+          5
+        ],
+        [
+          6,
+          11,
+          7,
+          10
+        ]
+      ],
+      "crossings": 8,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.22737819711449275,
+      "minimum_vertex_fraction": 0.0019509852397890937,
+      "minimum_event_spacing": 13.178985619862658,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 8,
+          "free_components": 0,
+          "remaining_components": 3
+        },
+        {
+          "mode": "global",
+          "crossings": 8,
+          "free_components": 0,
+          "remaining_components": 3
+        }
+      ],
+      "simplified_pd_code": [
+        [
+          2,
+          9,
+          3,
+          10
+        ],
+        [
+          3,
+          13,
+          0,
+          12
+        ],
+        [
+          13,
+          1,
+          14,
+          0
+        ],
+        [
+          8,
+          1,
+          9,
+          2
+        ],
+        [
+          6,
+          15,
+          7,
+          8
+        ],
+        [
+          14,
+          7,
+          15,
+          4
+        ],
+        [
+          11,
+          5,
+          12,
+          4
+        ],
+        [
+          5,
+          11,
+          6,
+          10
+        ]
+      ],
+      "simplified_crossings": 8,
+      "final_free_components": 0,
+      "jones_A": {
+        "-12": -1,
+        "-8": 3,
+        "-4": -2,
+        "0": 4,
+        "4": -2,
+        "8": 3,
+        "12": -1
+      },
+      "status": "nontrivial_by_jones",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        1,
+        2
+      ],
+      "expected": "borromean",
+      "passed": true,
+      "control_scope": "Known geometric control: detects nontrivial triple linking and matches the standard polynomial; polynomial equality is not a general identification test."
+    },
+    {
+      "seed": 2,
+      "components": 3,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          7,
+          14,
+          0,
+          15
+        ],
+        [
+          15,
+          0,
+          8,
+          1
+        ],
+        [
+          23,
+          1,
+          16,
+          2
+        ],
+        [
+          22,
+          3,
+          23,
+          2
+        ],
+        [
+          10,
+          4,
+          11,
+          3
+        ],
+        [
+          4,
+          12,
+          5,
+          11
+        ],
+        [
+          5,
+          20,
+          6,
+          19
+        ],
+        [
+          6,
+          18,
+          7,
+          19
+        ],
+        [
+          16,
+          8,
+          17,
+          9
+        ],
+        [
+          9,
+          21,
+          10,
+          22
+        ],
+        [
+          12,
+          21,
+          13,
+          20
+        ],
+        [
+          17,
+          14,
+          18,
+          13
+        ]
+      ],
+      "crossings": 12,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.20667435862849903,
+      "minimum_vertex_fraction": 0.14000438620886635,
+      "minimum_event_spacing": 1.932439851725917,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 8,
+          "free_components": 0,
+          "remaining_components": 3
+        },
+        {
+          "mode": "global",
+          "crossings": 8,
+          "free_components": 0,
+          "remaining_components": 3
+        }
+      ],
+      "simplified_pd_code": [
+        [
+          2,
+          9,
+          3,
+          10
+        ],
+        [
+          10,
+          3,
+          11,
+          0
+        ],
+        [
+          5,
+          1,
+          6,
+          0
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          12,
+          11,
+          13,
+          4
+        ],
+        [
+          4,
+          15,
+          5,
+          12
+        ],
+        [
+          7,
+          15,
+          8,
+          14
+        ],
+        [
+          13,
+          9,
+          14,
+          8
+        ]
+      ],
+      "simplified_crossings": 8,
+      "final_free_components": 0,
+      "jones_A": {
+        "-12": -1,
+        "-8": 3,
+        "-4": -2,
+        "0": 4,
+        "4": -2,
+        "8": 3,
+        "12": -1
+      },
+      "status": "nontrivial_by_jones",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "borromean",
+      "subset": [
+        0,
+        1,
+        2
+      ],
+      "expected": "borromean",
+      "passed": true,
+      "control_scope": "Known geometric control: detects nontrivial triple linking and matches the standard polynomial; polynomial equality is not a general identification test."
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          3,
+          6,
+          0,
+          7
+        ],
+        [
+          0,
+          6,
+          1,
+          5
+        ],
+        [
+          1,
+          4,
+          2,
+          5
+        ],
+        [
+          7,
+          2,
+          4,
+          3
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.3451535467254342,
+      "minimum_vertex_fraction": 0.11349772709101574,
+      "minimum_event_spacing": 9.75161542239141,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 2,
+          "free_components": 0,
+          "remaining_components": 2
+        },
+        {
+          "mode": "global",
+          "crossings": 2,
+          "free_components": 0,
+          "remaining_components": 2
+        }
+      ],
+      "simplified_pd_code": [
+        [
+          1,
+          2,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          2,
+          1
+        ]
+      ],
+      "simplified_crossings": 2,
+      "final_free_components": 0,
+      "jones_A": {
+        "2": -1,
+        "10": -1
+      },
+      "status": "nontrivial_by_linking_number",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "hopf",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 0,
+      "pd_code": [
+        [
+          7,
+          3,
+          4,
+          0
+        ],
+        [
+          4,
+          1,
+          5,
+          0
+        ],
+        [
+          5,
+          1,
+          6,
+          2
+        ],
+        [
+          2,
+          6,
+          3,
+          7
+        ]
+      ],
+      "crossings": 4,
+      "oriented_linking_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "minimum_crossing_height": 0.3701585531534982,
+      "minimum_vertex_fraction": 0.1473479169459148,
+      "minimum_event_spacing": 1.4115254092957343,
+      "library_initial_linking_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 2,
+          "free_components": 0,
+          "remaining_components": 2
+        },
+        {
+          "mode": "global",
+          "crossings": 2,
+          "free_components": 0,
+          "remaining_components": 2
+        }
+      ],
+      "simplified_pd_code": [
+        [
+          3,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          0,
+          3
+        ]
+      ],
+      "simplified_crossings": 2,
+      "final_free_components": 0,
+      "jones_A": {
+        "2": -1,
+        "10": -1
+      },
+      "status": "nontrivial_by_linking_number",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "hopf",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "hopf",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 1,
+      "initial_free_components": 1,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 1,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 1,
+      "jones_A": {
+        "0": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        1
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 2,
+      "initial_free_components": 2,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 2,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 2,
+      "jones_A": {
+        "2": -1,
+        "-2": -1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "components": 3,
+      "initial_free_components": 3,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 3,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 3,
+      "jones_A": {
+        "4": 1,
+        "0": 2,
+        "-4": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "components": 3,
+      "initial_free_components": 3,
+      "pd_code": [],
+      "crossings": 0,
+      "oriented_linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_crossing_height": null,
+      "minimum_vertex_fraction": null,
+      "minimum_event_spacing": null,
+      "library_initial_linking_matrix": [],
+      "reductions": [
+        {
+          "mode": "basic",
+          "crossings": 0,
+          "free_components": 3,
+          "remaining_components": 0
+        }
+      ],
+      "simplified_pd_code": [],
+      "simplified_crossings": 0,
+      "final_free_components": 3,
+      "jones_A": {
+        "4": 1,
+        "0": 2,
+        "-4": 1
+      },
+      "status": "unlink",
+      "scope": "Numerical polygon diagram; a retained diagram is not evidence of nontrivial topology by itself",
+      "control": "unlink",
+      "subset": [
+        0,
+        1,
+        2
+      ],
+      "expected": "unlink",
+      "passed": true
+    }
+  ],
+  "standard_borromean_pd": [
+    [
+      4,
+      0,
+      5,
+      3
+    ],
+    [
+      0,
+      8,
+      1,
+      11
+    ],
+    [
+      6,
+      1,
+      7,
+      2
+    ],
+    [
+      2,
+      9,
+      3,
+      10
+    ],
+    [
+      8,
+      4,
+      9,
+      7
+    ],
+    [
+      10,
+      5,
+      11,
+      6
+    ]
+  ],
+  "standard_borromean_jones_A": {
+    "-12": -1,
+    "-8": 3,
+    "-4": -2,
+    "0": 4,
+    "4": -2,
+    "8": 3,
+    "12": -1
+  },
+  "orientation_controls": [
+    {
+      "name": "original",
+      "diagram": -1,
+      "solid_angle": -1.0000000000000429
+    },
+    {
+      "name": "reflected",
+      "diagram": 1,
+      "solid_angle": 1.0000000000000429
+    },
+    {
+      "name": "one_reversed",
+      "diagram": 1,
+      "solid_angle": 1.0000000000000318
+    }
+  ],
+  "gauss_to_diagram_sign": 1.0,
+  "passed": true
+}

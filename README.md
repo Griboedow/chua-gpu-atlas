@@ -74,6 +74,7 @@ The results below move from the geometry of the atlas to the dynamics within it.
 | Can different sequences share a simple description? | Three sequences combine extra circuits near a short saddle with contraction on return; six new cycles have the predicted peak counts and periods within 0.002. | Frozen forecasts, independent orbit checks and nonlinear return samples; all six early-calibration width forecasts miss their tolerance |
 | Why are longer-cycle layers thinner and more sensitive? | In one ten-member sequence, width × transient gain² approaches a constant; the same return model predicts a saddle companion. | Direct nonlinear return samples, independent integrations and six prospective 95/105-peak predictions within 0.5% |
 | Are different motions tied into different knots? | The 34 references realize five numerical knot types; the eight tested thin-sequence members are all unknots. | Refined periodic roots, diagram reductions and exact knot invariants |
+| Can coexisting attracting cycles be collectively linked? | All six pairs, four triples and the full tested four-cycle configuration are numerically unlinked. The Borromean control is nontrivial. | 105 diagrams, three reconstruction levels and independent orbit checks |
 | How do layers change with the diode slopes? | Two families are followed through 6,713 accepted cross-sections; diode crossings can change within one attracting family. | Continuation and independent orbit checks |
 | Can thin windows be predicted before searching? | A calibrated rule locates 48/48 held-out windows, then 24/24 on a larger slope square. | Frozen forecasts followed by independent searches |
 | How many attracting motions can coexist? | Four cycles persist in an explicit parameter box. In another specified family, some parameters support infinitely many simultaneous hidden cycles. | Interval certificates, analytic arguments and a classical parameter theorem |
@@ -87,6 +88,10 @@ The results below move from the geometry of the atlas to the dynamics within it.
 **Similar outlines can conceal different knots.** The [knot atlas](docs/chua-knot-atlas.md) identifies 23 unknotted reference cycles, two torus-knot representatives and nine composite-knot representatives. The lower row makes their topology visible using standard embeddings; these are not additional circuit trajectories. An [interactive 3D comparison](results/chua-knot-atlas/knot-atlas.html), downloaded and opened locally, covers every reference entry.
 
 All eight tested cycles in the 15 → 25 → … → 85 peak sequence are unknots. Increasing period therefore does not establish increasing knot complexity, and the infinite-window result below does not prove infinitely many knot types. The classification uses 108 projection/resolution checks and exact diagram calculations; a certified isotopy from the sampled polygons to the exact ODE orbits remains open. The report also retains a [sampling counterexample](docs/chua-knot-atlas.md#5-a-sampling-error-that-changes-the-knot) in which a coarse trajectory produces the wrong knot polynomial.
+
+**Can several attractors be linked together?** Three closed curves can be unlinked in every pair yet inseparable as a triple: the Borromean rings provide a control. The [joint-link experiment](docs/chua-linked-attractors.md) reconstructs four certified coexisting Chua cycles at identical parameters. All their pairs and triples, and the complete four-component configuration, reduce numerically to unlinks in 105 projection/resolution checks. This is a negative result for one specified configuration; other coexistence regions remain unclassified.
+
+![Coexisting Chua cycles are unlinked in this test; the Borromean control detects collective linking](docs/assets/chua-linked-attractors-overview.png)
 
 ### Parameter changes and family structure
 
@@ -172,6 +177,7 @@ The [research guide](docs/research-guide.md) provides the full study map; the [r
 | Return geometry, transient response and 95/105-peak predictions | [Report and figures](docs/chua-return-geometry.md), [data and reproduction](results/chua-return-geometry/README.md) |
 | Family catalogue, meshes and numerical audits | [Atlas report](docs/chua-refined-atlas.md), [orbit gallery](docs/chua-family-gallery.md) |
 | Knot types, orbit diagrams and sampling controls | [Knot atlas](docs/chua-knot-atlas.md), [reproduction](results/chua-knot-atlas/README.md) |
+| Joint topology of coexisting cycles | [Link experiment](docs/chua-linked-attractors.md), [reproduction and interactive viewer](results/chua-linked-attractors/README.md) |
 | First forecasts and the classical interval certificate | [Prediction data](results/chua-layer-prediction/README.md), [certificate reproduction](results/chua-layer-infinity/README.md) |
 | Slope predictions, excitation thresholds and hidden coexistence | [Follow-up data](results/chua-followup/README.md) |
 | Energy, finite pulses, robust coexistence and larger-square forecasts | [Extended-study reproduction](results/chua-followup/extended-studies.md) |

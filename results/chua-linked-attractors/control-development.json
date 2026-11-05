@@ -1,0 +1,8 @@
+{
+  "stage": "Before any Chua joint-link classification",
+  "issues": [
+    "Planar control subsets had a zero coordinate range. Common scaling now uses one on zero-range axes and rejects nonfinite coordinates.",
+    "The Borromean ellipse control simplified to eight crossings, not the standard six; diagram equivalence was not established by the bounded simplifier. All proper sublinks reduce to unlinks. An independent exact Kauffman state sum matches the standard Borromean polynomial and distinguishes the triple from the three-component unlink. The retained eight crossings are not a failure or success criterion by themselves."
+  ],
+  "scope": "Implementation and control-development record, not a failed Chua target search."
+}

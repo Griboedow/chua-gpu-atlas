@@ -2,6 +2,8 @@
 
 The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
 
+The [joint-link experiment](chua-linked-attractors.md) tests all sublinks of four coexisting attracting cycles at identical parameters. All 105 extracted diagrams reduce to unlinks, while a Borromean control has nontrivial triple linking. The report includes the negative result, numerical limitations and an interactive component viewer.
+
 The [nested-return experiment](chua-nested-returns.md) tests whether a long periodic family can organize a further sequence. Six 105/175/245-peak cycles near two 35-peak saddles support one additional level. Frozen width and period forecasts pass; four location forecasts miss. Distinct-point checks and an ordinary 105-peak control separate nested return patterns from repeated traversal and identical peak counts.
 
 The [return-geometry study](chua-return-geometry.md) relates extra residence near a saddle to shrinking parameter windows and increasing transient amplification in one period-adding sequence. It compares all 34 displayed references, samples the actual quadratic return, and tests published forecasts against new 95- and 105-peak cycles. The six width, gain and section-separation predictions agree within 0.5%; these are numerical results, not new interval certificates.

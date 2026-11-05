@@ -49,7 +49,8 @@ review_chua_return_geometry plot_chua_return_geometry
 test_chua_return_families audit_chua_return_families analyze_chua_return_families
 review_chua_return_families plot_chua_return_families
 chua_block_return test_chua_nested_returns audit_chua_nested_returns analyze_chua_nested_returns
-sample_chua_nested_returns review_chua_nested_returns plot_chua_nested_returns'''.split()
+sample_chua_nested_returns review_chua_nested_returns plot_chua_nested_returns
+chua_link_diagrams study_chua_linked_attractors review_chua_linked_attractors plot_chua_linked_attractors'''.split()
 
 
 def digest(path):
@@ -111,6 +112,10 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-nested-returns').rglob('*') if p.is_file())
     paths.add(ROOT/'docs/chua-nested-returns.md')
     paths.update((ROOT/'docs/assets').glob('chua-nested-returns-*.png'))
+    paths.update(p for p in (ROOT/'results/chua-linked-attractors').rglob('*') if p.is_file())
+    paths.add(ROOT/'docs/chua-linked-attractors.md')
+    paths.update((ROOT/'docs/assets').glob('chua-linked-attractors-*.png'))
+    paths.update((ROOT/'docs/assets').glob('chua-linked-attractors-*.pdf'))
     paths.update((ROOT/'docs/assets/chua-layer-cards').glob('*.png'))
     paths.update(ROOT/p for p in ['docs/assets/chua-layer-cards.gif','docs/assets/chua-layer-cards.webp',
                                 'docs/assets/chua-layer-cards.mp4','docs/chua-layer-cards.md'])
