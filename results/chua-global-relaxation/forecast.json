@@ -1,0 +1,36 @@
+{
+  "method": "Consequences of the storage identity and a linear central-branch solution, recorded before numerical validation.",
+  "piecewise_linear": {
+    "alpha": 9,
+    "m0": "-3/2",
+    "m1": "-1/2",
+    "parameter_pairs_beta_gamma": [[26, 0], [19, 0.25]],
+    "initial_x": [-1.65, -0.9, -0.1, 0.1, 0.9, 1.65],
+    "initial_yz": [0, 0],
+    "prediction": "The first capacitor voltage retains its initial sign and converges to the equilibrium of that sign. Its limiting absolute value is (m1-m0)/(beta/(beta+gamma)+m1).",
+    "test_duration": 3000,
+    "test_terminal_max_norm": 0.001
+  },
+  "sharpness": {
+    "alpha": 9,
+    "gamma": 0,
+    "beta": 25,
+    "m0": "-5/9",
+    "m1": "-5/7",
+    "x_amplitude": 0.5,
+    "prediction": "x(t)=(1/2) cos(sqrt(20) t) stays on the inner segment. Its full period is pi/sqrt(5). The other starting coordinates follow from the harmonic response at phase zero.",
+    "test_periods": 12,
+    "test_waveform_max_error": 0.0000001
+  },
+  "quadratic_path": {
+    "gamma": 0,
+    "kappa": "13/50",
+    "exclusion": "All bounded solutions approach the equilibrium set when alpha > 1/(2 sqrt(kappa)-1), for any locally Lipschitz memoryless diode with this classical normalization.",
+    "bistable_atlas_diode": {"m0":"-8/7","m1":"-5/7"},
+    "test_alpha": 64,
+    "test_initial_states": [[0.7,0,0],[-0.2,0.1,0],[1.5,0.02,-1.5]],
+    "prediction": "All three starts converge to an equilibrium. No sign of the final equilibrium is specified.",
+    "test_duration": 1500,
+    "test_terminal_max_norm": 0.001
+  }
+}
