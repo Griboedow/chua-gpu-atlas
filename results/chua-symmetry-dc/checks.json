@@ -1,0 +1,465 @@
+{
+  "forecast_sha256": "d4dc9f58a4d030856f19846dfece7c81d8b780cbcd000ff63b987d7223896810",
+  "records": {
+    "S01": [
+      {
+        "offset_fraction": "0.01",
+        "beta": 14.259841418135863,
+        "measured": {
+          "section_gap": 5.585397328734473e-06,
+          "positive_section_mean_x": -5.236474129055722e-06,
+          "daughter_minus_parent_period": -4.886825781837156e-06,
+          "one_minus_daughter_multiplier": 0.039995443773258595
+        },
+        "relative_errors": {
+          "section_gap": 1.1892678670744061e-06,
+          "positive_section_mean_x": 8.589715267959264e-07,
+          "daughter_minus_parent_period": 0.0024863298411645918,
+          "one_minus_daughter_multiplier": 2.513309224960736e-06
+        },
+        "plus": [
+          0.27475862797540557,
+          -0.37043651717620785
+        ],
+        "minus": [
+          0.2747548208110352,
+          -0.3704406040041682
+        ],
+        "full_field": {
+          "plus": {
+            "period": 23.6763979180786,
+            "mean_x": -5.236474144480958e-06,
+            "multiplier": 0.9600045581278563,
+            "closure": 4.496403249731884e-15
+          },
+          "minus": {
+            "period": 23.67639791807867,
+            "mean_x": 5.2364741174427515e-06,
+            "multiplier": 0.9600045604674738,
+            "closure": 7.882583474838611e-15
+          },
+          "parent": {
+            "period": 23.676402804904352,
+            "mean_x": -1.5798982990639812e-14,
+            "multiplier": 1.0200474110142355,
+            "closure": 1.6028844918025698e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.5425235687285127e-14,
+          "opposite_dc": 1.1612970784655174e-14,
+          "period_difference": 2.888941307179057e-14,
+          "daughter_multiplier": 1.901114932145731e-09
+        }
+      },
+      {
+        "offset_fraction": "0.001",
+        "beta": 14.259842504686555,
+        "measured": {
+          "section_gap": 1.766259610099421e-06,
+          "positive_section_mean_x": -1.6559172355051506e-06,
+          "daughter_minus_parent_period": -4.897782801307304e-07,
+          "one_minus_daughter_multiplier": 0.003999535330464854
+        },
+        "relative_errors": {
+          "section_gap": 1.189172408322392e-07,
+          "positive_section_mean_x": 8.590679256847977e-08,
+          "daughter_minus_parent_period": 0.00024974986192904947,
+          "one_minus_daughter_multiplier": 2.513306369689161e-07
+        },
+        "plus": [
+          0.2747573533275347,
+          -0.37043797610360085
+        ],
+        "minus": [
+          0.2747561493953491,
+          -0.3704392684736341
+        ],
+        "full_field": {
+          "plus": {
+            "period": 23.676396701568684,
+            "mean_x": -1.6559172469384172e-06,
+            "multiplier": 0.9960004646119944,
+            "closure": 2.886579864025407e-14
+          },
+          "minus": {
+            "period": 23.676396701568667,
+            "mean_x": 1.6559172237361394e-06,
+            "multiplier": 0.9960004675304068,
+            "closure": 4.170275236248244e-15
+          },
+          "parent": {
+            "period": 23.67639719134693,
+            "mean_x": -1.2612077233830874e-14,
+            "multiplier": 1.0020002662667338,
+            "closure": 1.1546319456101628e-14
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.1433266603906307e-14,
+          "opposite_dc": 1.1769011194198362e-14,
+          "period_difference": 3.550291609263651e-14,
+          "daughter_multiplier": 5.7540749942575076e-11
+        }
+      },
+      {
+        "offset_fraction": "0.0001",
+        "beta": 14.259842613341624,
+        "measured": {
+          "section_gap": 5.585403904909548e-07,
+          "positive_section_mean_x": -5.23646967611258e-07,
+          "daughter_minus_parent_period": -4.898883919916162e-08,
+          "one_minus_daughter_multiplier": 0.0003999534425779884
+        },
+        "relative_errors": {
+          "section_gap": 1.188211151692542e-08,
+          "positive_section_mean_x": 8.600292700222667e-09,
+          "daughter_minus_parent_period": 2.498619859470086e-05,
+          "one_minus_daughter_multiplier": 2.513306096574297e-08
+        },
+        "plus": [
+          0.2747569444166743,
+          -0.3704384241167915
+        ],
+        "minus": [
+          0.274756563699854,
+          -0.37043883280012924
+        ],
+        "full_field": {
+          "plus": {
+            "period": 23.6763965799177,
+            "mean_x": -5.236469779446712e-07,
+            "multiplier": 0.9996000473342261,
+            "closure": 2.9976021664879227e-15
+          },
+          "minus": {
+            "period": 23.676396579917675,
+            "mean_x": 5.236469556795522e-07,
+            "multiplier": 0.9996000511277774,
+            "closure": 3.83026943495679e-15
+          },
+          "parent": {
+            "period": 23.67639662890654,
+            "mean_x": -1.1553808206771572e-14,
+            "multiplier": 1.0001999785031455,
+            "closure": 7.271960811294775e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.0333413168379674e-14,
+          "opposite_dc": 1.193170578869606e-14,
+          "period_difference": 2.2287377672675487e-15,
+          "daughter_multiplier": 7.768041765388034e-10
+        }
+      }
+    ],
+    "S08": [
+      {
+        "offset_fraction": "0.01",
+        "beta": 14.317141237930818,
+        "measured": {
+          "section_gap": 0.0010985630196348295,
+          "positive_section_mean_x": 0.0005499580284209835,
+          "daughter_minus_parent_period": 0.0004887847774765387,
+          "one_minus_daughter_multiplier": 0.03761790205534949
+        },
+        "relative_errors": {
+          "section_gap": 7.089594318610004e-05,
+          "positive_section_mean_x": 0.00010249124525352205,
+          "daughter_minus_parent_period": 0.002388471056726127,
+          "one_minus_daughter_multiplier": 0.0005119663729404866
+        },
+        "plus": [
+          0.2387731607479958,
+          -0.44063271856206754
+        ],
+        "minus": [
+          0.2382136950040984,
+          -0.44157814904048176
+        ],
+        "full_field": {
+          "plus": {
+            "period": 10.82534036439873,
+            "mean_x": 0.0005499580284322214,
+            "multiplier": 0.9623820987352018,
+            "closure": 5.10702591327572e-15
+          },
+          "minus": {
+            "period": 10.825340364398722,
+            "mean_x": -0.0005499580284097583,
+            "multiplier": 0.9623820973327563,
+            "closure": 4.884981308350689e-15
+          },
+          "parent": {
+            "period": 10.824851579621269,
+            "mean_x": 1.2930367388038221e-14,
+            "multiplier": 1.0188370920116194,
+            "closure": 1.0103029524088925e-14
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.123797235824675e-14,
+          "opposite_dc": 1.1225178772611422e-14,
+          "period_difference": 1.503473994607374e-14,
+          "daughter_multiplier": 7.905512910966195e-10
+        }
+      },
+      {
+        "offset_fraction": "0.001",
+        "beta": 14.31726163058063,
+        "measured": {
+          "section_gap": 0.00034741829671301895,
+          "positive_section_mean_x": 0.00017392804204602354,
+          "daughter_minus_parent_period": 4.8983747237463605e-05,
+          "one_minus_daughter_multiplier": 0.00376005776478111
+        },
+        "relative_errors": {
+          "section_gap": 7.090932888975665e-06,
+          "positive_section_mean_x": 1.0251082130929845e-05,
+          "daughter_minus_parent_period": 0.0002399168971151111,
+          "one_minus_daughter_multiplier": 5.119434405442824e-05
+        },
+        "plus": [
+          0.2385856576379586,
+          -0.4409618483045356
+        ],
+        "minus": [
+          0.2384087289953925,
+          -0.44126083948890515
+        ],
+        "full_field": {
+          "plus": {
+            "period": 10.825270040288514,
+            "mean_x": 0.00017392804205846463,
+            "multiplier": 0.9962399422238055,
+            "closure": 1.6653345369377348e-15
+          },
+          "minus": {
+            "period": 10.82527004028849,
+            "mean_x": -0.00017392804203555595,
+            "multiplier": 0.9962399430700613,
+            "closure": 1.2101430968414206e-14
+          },
+          "parent": {
+            "period": 10.825221056541267,
+            "mean_x": 1.160537855700996e-14,
+            "multiplier": 1.0018803128202718,
+            "closure": 2.7755575615628914e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.2441084403999603e-14,
+          "opposite_dc": 1.0467592504587175e-14,
+          "period_difference": 9.35881282410414e-15,
+          "daughter_multiplier": 1.1413425760053997e-11
+        }
+      },
+      {
+        "offset_fraction": "0.0001",
+        "beta": 14.31727366984561,
+        "measured": {
+          "section_gap": 0.00010986401297646776,
+          "positive_section_mean_x": 5.500138362467058e-05,
+          "daughter_minus_parent_period": 4.899432607402363e-06,
+          "one_minus_daughter_multiplier": 0.0003759884529241749
+        },
+        "relative_errors": {
+          "section_gap": 7.091066780429145e-07,
+          "positive_section_mean_x": 1.0251277954287374e-06,
+          "daughter_minus_parent_period": 2.4002453756777342e-05,
+          "one_minus_daughter_multiplier": 5.119411466081303e-06
+        },
+        "plus": [
+          0.23852554490520203,
+          -0.44106465991710375
+        ],
+        "minus": [
+          0.23846959483825214,
+          -0.4411592098581698
+        ],
+        "full_field": {
+          "plus": {
+            "period": 10.825263007873978,
+            "mean_x": 5.500138363509197e-05,
+            "multiplier": 0.9996240114060094,
+            "closure": 1.3322676295501878e-15
+          },
+          "minus": {
+            "period": 10.825263007873993,
+            "mean_x": -5.5001383612413717e-05,
+            "multiplier": 0.9996240118567501,
+            "closure": 7.93809462606987e-15
+          },
+          "parent": {
+            "period": 10.825258108441389,
+            "mean_x": 1.1609988524184002e-14,
+            "multiplier": 1.0001879978711696,
+            "closure": 1.700029006457271e-16
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.0421391939512137e-14,
+          "opposite_dc": 1.225686490236716e-14,
+          "period_difference": 1.799097302341776e-14,
+          "daughter_multiplier": 1.410663807988044e-10
+        }
+      }
+    ],
+    "S11": [
+      {
+        "offset_fraction": "0.01",
+        "beta": 14.354721195262018,
+        "measured": {
+          "section_gap": 0.00026383376872527755,
+          "positive_section_mean_x": 0.00019207759825382828,
+          "daughter_minus_parent_period": 0.00014496388648856776,
+          "one_minus_daughter_multiplier": 0.039184007768282354
+        },
+        "relative_errors": {
+          "section_gap": 1.2178976568133493e-05,
+          "positive_section_mean_x": 8.858458370730737e-06,
+          "daughter_minus_parent_period": 0.002479427570283521,
+          "one_minus_daughter_multiplier": 3.011823435650207e-05
+        },
+        "plus": [
+          0.26683256833922286,
+          -0.39478199951767445
+        ],
+        "minus": [
+          0.2667133986068452,
+          -0.395017386077199
+        ],
+        "full_field": {
+          "plus": {
+            "period": 14.475877677045675,
+            "mean_x": 0.00019207759826787109,
+            "multiplier": 0.9608159915615229,
+            "closure": 5.051514762044462e-15
+          },
+          "minus": {
+            "period": 14.475877677045622,
+            "mean_x": -0.00019207759824327005,
+            "multiplier": 0.9608159955683755,
+            "closure": 1.404432126150823e-14
+          },
+          "parent": {
+            "period": 14.475732713159159,
+            "mean_x": 1.1651396034018859e-14,
+            "multiplier": 1.0196362614818995,
+            "closure": 2.886579864025407e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.404280337846675e-14,
+          "opposite_dc": 1.0558231806206964e-14,
+          "period_difference": 2.751295827448097e-14,
+          "daughter_multiplier": 6.701947885545678e-10
+        }
+      },
+      {
+        "offset_fraction": "0.001",
+        "beta": 14.354764079559239,
+        "measured": {
+          "section_gap": 8.343247779346087e-05,
+          "positive_section_mean_x": 6.074075406050882e-05,
+          "daughter_minus_parent_period": 1.452880134060621e-05,
+          "one_minus_daughter_multiplier": 0.003918294566030838
+        },
+        "relative_errors": {
+          "section_gap": 1.2179147172997062e-06,
+          "positive_section_mean_x": 8.858475674111688e-07,
+          "daughter_minus_parent_period": 0.00024905643364658836,
+          "one_minus_daughter_multiplier": 3.0117686506958563e-06
+        },
+        "plus": [
+          0.266792944383188,
+          -0.3948648591459696
+        ],
+        "minus": [
+          0.26675525927314575,
+          -0.3949392957688904
+        ],
+        "full_field": {
+          "plus": {
+            "period": 14.475853806936971,
+            "mean_x": 6.074075407127667e-05,
+            "multiplier": 0.9960817071295698,
+            "closure": 5.551115123125783e-16
+          },
+          "minus": {
+            "period": 14.475853806936977,
+            "mean_x": -6.074075404892018e-05,
+            "multiplier": 0.9960817051111954,
+            "closure": 4.829470157119431e-15
+          },
+          "parent": {
+            "period": 14.475839278135657,
+            "mean_x": 1.1648187509512529e-14,
+            "multiplier": 1.0019595928930625,
+            "closure": 9.270362255620057e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.076784874372988e-14,
+          "opposite_dc": 1.1588643998410031e-14,
+          "period_difference": 2.657742732489754e-14,
+          "daughter_multiplier": 1.6956006598789486e-09
+        }
+      },
+      {
+        "offset_fraction": "0.0001",
+        "beta": 14.35476836798896,
+        "measured": {
+          "section_gap": 2.638369498565597e-05,
+          "positive_section_mean_x": 1.9207928276500793e-05,
+          "daughter_minus_parent_period": 1.4532058631353644e-06,
+          "one_minus_daughter_multiplier": 0.0003918283945163614
+        },
+        "relative_errors": {
+          "section_gap": 1.217916423268406e-07,
+          "positive_section_mean_x": 8.858477396067599e-08,
+          "daughter_minus_parent_period": 2.4916848977762918e-05,
+          "one_minus_daughter_multiplier": 3.011763172189319e-07
+        },
+        "plus": [
+          0.26678017220839106,
+          -0.3948905464459206
+        ],
+        "minus": [
+          0.26676825511973784,
+          -0.39491408539999945
+        ],
+        "full_field": {
+          "plus": {
+            "period": 14.475851419927372,
+            "mean_x": 1.9207928289588882e-05,
+            "multiplier": 0.9996081697309558,
+            "closure": 2.220446049250313e-15
+          },
+          "minus": {
+            "period": 14.475851419927395,
+            "mean_x": -1.9207928263307923e-05,
+            "multiplier": 0.9996081721489861,
+            "closure": 5.495603971894525e-15
+          },
+          "parent": {
+            "period": 14.475849966721505,
+            "mean_x": 1.257355760037786e-14,
+            "multiplier": 1.0001959175060247,
+            "closure": 2.6645352591003757e-15
+          }
+        },
+        "full_field_absolute_differences": {
+          "mean_x": 1.3088088826693905e-14,
+          "opposite_dc": 1.3192870190401051e-14,
+          "period_difference": 3.617318152237007e-15,
+          "daughter_multiplier": 1.87452786626352e-09
+        }
+      }
+    ]
+  },
+  "worst_relative_error": 0.0024863298411645918,
+  "worst_at_smallest_offset": 2.498619859470086e-05,
+  "smallest_offset_target": 0.01,
+  "all_smallest_offset_targets_met": true
+}

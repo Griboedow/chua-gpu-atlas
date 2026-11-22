@@ -4,6 +4,10 @@ Run programs from the repository root. The [research guide](../docs/research-gui
 
 | Reproduce | Program |
 |---|---|
+| [Global convergence for every diode law](../docs/chua-global-relaxation.md) | [Classify parameters or replay the boundary and basin tests](chua_global_relaxation.py) |
+| [DC voltage at symmetry breaking](../docs/chua-symmetry-dc.md) | [Predict from the parent](predict_chua_symmetry_dc.py) · [Measure the daughters](check_chua_symmetry_dc.py) |
+| [Voltage spectrum from diode crossings](../docs/chua-diode-spectrum.md) | [Predict harmonics](predict_chua_diode_spectrum.py) · [Integrate the waveform](check_chua_diode_spectrum.py) |
+| [Finite-rate delay at the one-well fold](../docs/chua-dynamic-fold.md) | [Compute the section correction](predict_chua_section_delay.py) · [Check five new settings](check_chua_section_delay.py) |
 | [Long transients outside three periodic windows](../docs/chua-fold-passage.md) | [Measure fold passages](chua_fold_passage.py) |
 | [Exact link of two attracting cycles](../docs/chua-link-certificate.md) | [Certify the S02/S08 link](certify_chua_knot.py) |
 | [Well switching at large α](../docs/chua-fiber-switching.md) | [Compare frozen and observed thresholds](chua_fiber_switching.py) |

@@ -1,5 +1,14 @@
 # Research reports
 
+## Analytical predictions
+
+| Question | Result |
+|---|---|
+| Which circuit parameters exclude sustained oscillations for any diode law? | [Exact convergence criterion, boundary sinusoid and a basin bound](chua-global-relaxation.md) |
+| Can the parent cycle predict the sign and size of a daughter’s mean voltage? | [Flip coefficients and tests on three families](chua-symmetry-dc.md) |
+| Which voltage harmonics follow from the diode crossings alone? | [Exact Fourier coefficients and a high-frequency power law](chua-diode-spectrum.md) |
+| At what amplitude does a slowly swept orbit reach the fold coordinate? | [Five tests of a finite-rate correction](chua-dynamic-fold.md) |
+
 ## Hidden attractors and circuit experiments
 
 | Question | Analysis | Data |

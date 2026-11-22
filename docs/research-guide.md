@@ -2,6 +2,8 @@
 
 The central question is how the periodic layers of the Chua atlas are organized: which motions they represent, how they appear and overlap, and whether a finite catalogue can exhaust them.
 
+The [analytical reports](README.md#analytical-predictions) derive a diode-independent convergence criterion, branch-specific mean voltages, Fourier harmonics and a finite-rate fold correction.
+
 The [positive-loss circuit studies](README.md#hidden-attractors-and-circuit-experiments) use published component and model settings to test startup voltages, saddle residence and simultaneous hidden cycles.
 
 The investigation proceeds from sampled parameter maps to continued periodic orbits, forecasts tested against new searches, and an interval proof of one organizing homoclinic tangency. These stages support different kinds of claims.

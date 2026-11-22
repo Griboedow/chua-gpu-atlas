@@ -15,7 +15,7 @@ D(s)=(s+1)(s+\gamma)+\beta,\qquad
 Y_k=\frac{s+\gamma}{D(s)}X_k,\qquad Z_k=-\frac{\beta}{D(s)}X_k .
 ```
 
-For $\beta>0$ and $\gamma\ge0$ both roots of $D$ have negative real part, so the periodic response is unique. The formula includes the DC component. On the classical slice $\gamma=0$, the mean of $y$ vanishes and the mean of $z$ equals minus the mean of $x$. No diode slopes enter the reconstruction.
+For $\beta>0$ and $\gamma\ge0$ both roots of $D$ have negative real part, so the periodic response is unique. The formula includes the DC component. On the classical slice $\gamma=0$, the mean of $y$ vanishes and the mean of $z$ equals minus the mean of $x$. No diode slopes enter the reconstruction. The complementary [diode-crossing calculation](chua-diode-spectrum.md) obtains the input spectrum $X_k$ directly from the periodic orbit’s crossing times and velocities.
 
 ## Sampling and calibration
 

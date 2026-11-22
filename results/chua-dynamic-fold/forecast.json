@@ -1,0 +1,83 @@
+{
+  "parameters": {
+    "kappa": "0.1425",
+    "m0": "-2",
+    "m1": "-5/7"
+  },
+  "fold": {
+    "R": 1.7342185438764806,
+    "x_at_y0_rising": 0.1432485733807201,
+    "R_second_derivative": -0.019470890905913793,
+    "normal_form_product": 42.4495528344756,
+    "radial_drift_per_turn_times_alpha": 0.4613098726309212,
+    "scale_prefactor": 0.17114759190629736
+  },
+  "initialization": "Positive stable frozen orbit at R=R_fold-8*scale, y=0 rising; initial state (x0,0,Z0) in fast variables.",
+  "markers": {
+    "section": "First downward passage of x through the frozen fold coordinate at rising y=0 sections. Interpolate R linearly between bracketing sections.",
+    "two_well": "R at the first rising y=0 section starting a complete turn with x below -1 and above +1."
+  },
+  "scaled_initial_amplitude": -8,
+  "airy_section_zero": 1.0187929716474708,
+  "airy_departure_zero": 2.338107410459767,
+  "checks": {
+    "section": "Relative excess over the fold agrees within 20% at both largest alphas.",
+    "two_well": "Relative excess agrees within 25% at the largest alpha."
+  },
+  "runs": [
+    {
+      "alpha": 2048,
+      "R0": 1.7257285480191717,
+      "x0": 0.7605782396125049,
+      "Z0": 0.6514482408882467,
+      "scale": 0.0010612494821635957,
+      "section_prediction": 1.7352997373900731,
+      "two_well_prediction": 1.7366998591550737
+    },
+    {
+      "alpha": 8192,
+      "R0": 1.730849286787706,
+      "x0": 0.5010061352527702,
+      "Z0": 0.653381277382682,
+      "scale": 0.00042115713609679976,
+      "section_prediction": 1.734647615806695,
+      "two_well_prediction": 1.7352032544973564
+    },
+    {
+      "alpha": 32768,
+      "R0": 1.7328814533147125,
+      "x0": 0.3563363202377357,
+      "Z0": 0.6541484034238719,
+      "scale": 0.00016713632022099351,
+      "section_prediction": 1.7343888211848286,
+      "two_well_prediction": 1.7346093265453462
+    },
+    {
+      "alpha": 131072,
+      "R0": 1.7336879191353987,
+      "x0": 0.27267024548049185,
+      "Z0": 0.6544528375950662,
+      "scale": 6.632809263522473e-05,
+      "section_prediction": 1.73428611847108,
+      "two_well_prediction": 1.7343736260813924
+    },
+    {
+      "alpha": 524288,
+      "R0": 1.7340079653084322,
+      "x0": 0.22288906807937345,
+      "Z0": 0.6545736523759684,
+      "scale": 2.6322321006049985e-05,
+      "section_prediction": 1.734245360872119,
+      "two_well_prediction": 1.7342800882902851
+    },
+    {
+      "alpha": 2097152,
+      "R0": 1.73413497571637,
+      "x0": 0.19267491539655018,
+      "Z0": 0.6546215977535428,
+      "scale": 1.0446020013812095e-05,
+      "section_prediction": 1.7342291862082522,
+      "two_well_prediction": 1.7342429677932845
+    }
+  ]
+}

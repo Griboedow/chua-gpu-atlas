@@ -1,0 +1,128 @@
+{
+  "forecast_sha256": "6f8d3d5f01ca4b9d325c2c4578ce80f4d1c650d4b0698b9d45063e717164b9b3",
+  "records": [
+    {
+      "family": "S08",
+      "waveform_samples": 32768,
+      "dop853_closure": 3.359768019350895e-11,
+      "radau_closure": 1.058209075921468e-12,
+      "low_band_error": 7.930118787577996e-12,
+      "bands": [
+        {
+          "first_mode": 20,
+          "last_mode": 39,
+          "per_peak": 4,
+          "full_error": 6.283253178197985e-10,
+          "leading_error": 0.1171044237488808,
+          "independent_solver_difference": 5.229015471622965e-09,
+          "band_power_ratio": 1.0404097958409273
+        },
+        {
+          "first_mode": 80,
+          "last_mode": 159,
+          "per_peak": 16,
+          "full_error": 4.499812201534518e-08,
+          "leading_error": 0.027068173387209793,
+          "independent_solver_difference": 3.7726970026642184e-07,
+          "band_power_ratio": 0.9726569859057604
+        },
+        {
+          "first_mode": 320,
+          "last_mode": 639,
+          "per_peak": 64,
+          "full_error": 2.8127880308404875e-06,
+          "leading_error": 0.006017871202355315,
+          "independent_solver_difference": 2.340599469377768e-05,
+          "band_power_ratio": 1.0069022553146925
+        }
+      ],
+      "tests": {
+        "low_band": true,
+        "tail_band": true,
+        "tail_power": true
+      }
+    },
+    {
+      "family": "E06",
+      "waveform_samples": 16384,
+      "dop853_closure": 7.374623915007428e-14,
+      "radau_closure": 7.938181362243668e-14,
+      "low_band_error": 1.1818762685689165e-11,
+      "bands": [
+        {
+          "first_mode": 16,
+          "last_mode": 31,
+          "per_peak": 4,
+          "full_error": 2.2801990797440377e-09,
+          "leading_error": 0.17607633447831078,
+          "independent_solver_difference": 2.7264976615641928e-08,
+          "band_power_ratio": 0.8752583322571427
+        },
+        {
+          "first_mode": 64,
+          "last_mode": 127,
+          "per_peak": 16,
+          "full_error": 1.3726367136172105e-07,
+          "leading_error": 0.042122827958329126,
+          "independent_solver_difference": 1.4901245797256343e-06,
+          "band_power_ratio": 0.9920246671944517
+        },
+        {
+          "first_mode": 256,
+          "last_mode": 511,
+          "per_peak": 64,
+          "full_error": 8.810404689208394e-06,
+          "leading_error": 0.009627642486390803,
+          "independent_solver_difference": 9.952639542925821e-05,
+          "band_power_ratio": 0.9999305820264855
+        }
+      ],
+      "tests": {
+        "low_band": true,
+        "tail_band": true,
+        "tail_power": true
+      }
+    },
+    {
+      "family": "A04",
+      "waveform_samples": 131072,
+      "dop853_closure": 6.19258810896639e-10,
+      "radau_closure": 3.7317304801831597e-10,
+      "low_band_error": 4.4629565240337023e-10,
+      "bands": [
+        {
+          "first_mode": 100,
+          "last_mode": 199,
+          "per_peak": 4,
+          "full_error": 5.304008742869507e-09,
+          "leading_error": 0.11348611497122038,
+          "independent_solver_difference": 9.830346870156636e-09,
+          "band_power_ratio": 1.0519488496305243
+        },
+        {
+          "first_mode": 400,
+          "last_mode": 799,
+          "per_peak": 16,
+          "full_error": 9.444613045931994e-08,
+          "leading_error": 0.028274399264940575,
+          "independent_solver_difference": 6.830961497959417e-07,
+          "band_power_ratio": 0.9997138036545403
+        },
+        {
+          "first_mode": 1600,
+          "last_mode": 3199,
+          "per_peak": 64,
+          "full_error": 6.025324217807567e-06,
+          "leading_error": 0.006389787605976207,
+          "independent_solver_difference": 4.472446326237504e-05,
+          "band_power_ratio": 0.9982712972152364
+        }
+      ],
+      "tests": {
+        "low_band": true,
+        "tail_band": true,
+        "tail_power": true
+      }
+    }
+  ]
+}

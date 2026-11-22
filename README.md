@@ -16,8 +16,9 @@ A **layer** is a region of parameter space in which a continued periodic motion 
 | Coexistence and basin boundaries | [Overlap of attracting branches](docs/chua-overlap-geometry.md) · [A certified local separator](docs/chua-basin-and-coexistence.md) |
 | Infinitely many periodic attractors | [Window accumulation](docs/chua-infinity-certificate.md) · [Hidden periodic coexistence at nearby parameters](docs/chua-hidden-infinity-certificate.md) |
 | Geometry and topology | [Certified non-split pair](docs/chua-link-certificate.md) · [Knot catalogue](docs/chua-knot-atlas.md) · [Diode slope continuation](docs/chua-slope-refinement.md) |
-| Large-parameter dynamics | [Quadratic scaling limit](docs/chua-scaling-structure.md) · [Switching between oscillation regimes](docs/chua-fiber-switching.md) |
-| Measurement | [Recover the other two coordinates from one capacitor voltage](docs/chua-voltage-reconstruction.md) |
+| Global convergence | [Exact convergence region for every memoryless diode](docs/chua-global-relaxation.md) |
+| Large-parameter dynamics | [Quadratic scaling limit](docs/chua-scaling-structure.md) · [Frozen switching thresholds](docs/chua-fiber-switching.md) · [Finite-rate correction at a fold](docs/chua-dynamic-fold.md) |
+| Voltage measurements | [DC voltage at symmetry breaking](docs/chua-symmetry-dc.md) · [Spectrum from diode crossings](docs/chua-diode-spectrum.md) · [Reconstruct two coordinates from one voltage](docs/chua-voltage-reconstruction.md) |
 
 ## Hidden attractors in a lossy circuit
 
@@ -45,6 +46,8 @@ h(x)=m_1x+\tfrac12(m_0-m_1)(|x+1|-|x-1|).
 ```
 
 The component study includes the second pair of diode breakpoints reached by the large outer cycle. [Five-segment model and waveform comparison](docs/chua-precharge.md)
+
+For $\gamma=0$ and $\alpha>1$, every bounded trajectory approaches the equilibrium set for every locally Lipschitz diode law exactly when $4\beta>(\alpha+1)^2$. At $\alpha=9$, $\beta=25$, a diode with inner slope $-5/9$ admits an exact sinusoid on the boundary. [Proof, lossy criterion and parameter check](docs/chua-global-relaxation.md)
 
 ## Reproducibility
 

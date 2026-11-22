@@ -1,0 +1,64 @@
+{
+  "status": "Follow-up to the failed leading-order forecast. No measured values enter its coefficients.",
+  "markers": "Only the interpolated x section marker from forecast.json is scored.",
+  "coefficients": {
+    "R_fold": 1.7342185438764806,
+    "x_fold": 0.1432485733807201,
+    "critical_inner_duration": 3.698792108797791,
+    "A": -34.33262647952719,
+    "B": -1.2364201981397662,
+    "C": 5.4189836415867205,
+    "D": 1.5238608866290357,
+    "E": -335.72334656804753,
+    "radial_drift": 0.4613098726309212,
+    "radial_drift_x": 6.333999597828919,
+    "Airy_marker": 1.0187929716474713,
+    "leading_coefficient": 0.1743639637485254,
+    "correction_coefficient": -8.111454953931213,
+    "initial_value_U1": -3.4766188184068882,
+    "marker_value_U1": 17.9139745043173
+  },
+  "runs": [
+    {
+      "alpha": 16384,
+      "R0": 1.7320960449121534,
+      "x0": 0.418548805965316,
+      "Z0": 0.6538519182537023,
+      "leading_excess": 0.0002702983783981976,
+      "corrected_excess": -0.00022478554212983058
+    },
+    {
+      "alpha": 65536,
+      "R0": 1.733376229604287,
+      "x0": 0.3089850174846969,
+      "Z0": 0.6543351773773111,
+      "leading_excess": 0.00010726798255364931,
+      "corrected_excess": -1.6502997578357728e-05
+    },
+    {
+      "alpha": 262144,
+      "R0": 1.7338842712360385,
+      "x0": 0.24464024877161816,
+      "Z0": 0.6545269588876086,
+      "leading_excess": 4.256932708704235e-05,
+      "corrected_excess": 1.1626582054040592e-05
+    },
+    {
+      "alpha": 1048576,
+      "R0": 1.7340858876912102,
+      "x0": 0.20593589638447324,
+      "Z0": 0.6546030674304072,
+      "leading_excess": 1.689364864988735e-05,
+      "corrected_excess": 9.157962391636909e-06
+    },
+    {
+      "alpha": 4194304,
+      "R0": 1.7341658992344684,
+      "x0": 0.18227183155459764,
+      "Z0": 0.6546332711256326,
+      "leading_excess": 6.704248909603084e-06,
+      "corrected_excess": 4.770327345040473e-06
+    }
+  ],
+  "check": "At the three largest unseen alphas the corrected error must be below 10% of the positive Airy leading excess and smaller than the leading-only error."
+}
