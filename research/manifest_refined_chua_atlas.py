@@ -58,7 +58,7 @@ plot_chua_link_search audit_chua_link_algorithms'''.split()
 
 def digest(path):
     raw=path.read_bytes()
-    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg','.lean','.toml','.yml','.ps1','.log'] or path.name == 'lean-toolchain':
+    if path.suffix in ['.py','.cl','.txt','.md','.json','.html','.csv','.js','.cjs','.svg','.lean','.toml','.yml','.ps1','.log','.cff'] or path.name == 'lean-toolchain':
         raw=raw.replace(b'\r\n',b'\n')
     return hashlib.sha256(raw).hexdigest()
 
@@ -171,10 +171,17 @@ def main():
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])
     paths.add(ROOT/'results/chua-layers/extended.json')
+    circuit_reports = ['chua-saddle-residence', 'chua-precharge', 'chua-explicit-hidden']
+    paths.update(ROOT/'docs'/(name + '.md') for name in circuit_reports)
+    for name in [*circuit_reports, 'chua-residence-noise']:
+        paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
+    for pattern in ['observed_saddle*.py', 'chua_precharge*.py', 'explicit_hidden*.py', 'chua_residence_noise.py']:
+        paths.update((ROOT/'research').glob(pattern))
+    paths.add(ROOT/'CITATION.cff')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
-        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs, .svg, .lean, .toml, .yml, .ps1, .log and lean-toolchain; binary files are unchanged.',
-        scope='Hashes identify the finite catalogue, forecasts, interval certificate and partial formal proof. Integrity checks do not themselves prove mathematical claims; see docs/chua-infinity-certificate.md and docs/chua-coexistence-audit.md for the arguments and remaining obligations.')
+        text_hash_normalization='CRLF is converted to LF for .py, .cl, .txt, .md, .json, .html, .csv, .js, .cjs, .svg, .lean, .toml, .yml, .ps1, .log, .cff and lean-toolchain; binary files are unchanged.',
+        scope='File integrity for the periodic-orbit atlas, voltage-start experiments, interval certificates and partial formal proofs. The reports specify the mathematical assumptions and numerical checks.')
     manifest.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('Hashed',len(paths),'files')
 

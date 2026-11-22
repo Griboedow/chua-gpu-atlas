@@ -1,0 +1,33 @@
+{
+  "seed": 11222026,
+  "trials_per_row": 65536,
+  "saddle_section_yz": [
+    0.6945742937491413,
+    3.40794063154097
+  ],
+  "full_return_multiplier": 2.212841184193972,
+  "left_unit": [
+    0.8832734469876409,
+    0.4688582065471084
+  ],
+  "right_normalized": [
+    0.21710844808335097,
+    1.7238343307318738
+  ],
+  "section_exit_radius": 0.02,
+  "rms_initial_over_radius": 0.0001,
+  "rms_kick_over_radius": 0.00019739974940371583,
+  "max_preparation_cdf_discrepancy": 0.004401119868135295,
+  "paired_full_minus_linear_exit_counts": {
+    "-1": 1,
+    "0": 285,
+    "1": 2
+  },
+  "paired_offsets": [
+    0.0,
+    0.0001,
+    0.001
+  ],
+  "pairs_per_offset": 96,
+  "cap_returns": 64
+}
