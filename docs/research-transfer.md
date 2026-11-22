@@ -6,4 +6,4 @@ The final removal was a forward commit after publication and verification of 934
 
 All 38 files of the Chua parameter-scaling study, the original atlas and the MIT attribution remain here. No Git history was rewritten. Historical source links continue to resolve at their original commit revisions.
 
-See the new project's [findings](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), [reproduction instructions](https://github.com/Griboedow/chaos-attractor-lab#run-locally), and [results index](https://github.com/Griboedow/chaos-attractor-lab/blob/main/results/README.md).
+See the new project's [findings](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/research-findings.md), [reproduction instructions](https://github.com/Griboedow/chaos-attractor-lab/blob/main/docs/reproduction.md), and [results index](https://github.com/Griboedow/chaos-attractor-lab/blob/main/results/README.md).
