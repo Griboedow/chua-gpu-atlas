@@ -2,6 +2,17 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
+## Positive-loss circuit
+
+| Data | Contents |
+|---|---|
+| [Saddle residence](chua-saddle-residence/) | Forecasts recorded before integration, measured exit counts and full-field checks |
+| [Capacitor precharge](chua-precharge/) | Component settings, launch voltages and finite-time outcomes |
+| [Hidden periodic coexistence](chua-explicit-hidden/) | Common parameter interval, enclosed cycles and exclusion of equilibrium neighborhoods |
+| [Residence with noise](chua-residence-noise/README.md) | Exit distributions for preparation jitter and per-return disturbances |
+
+## Parameter atlas
+
 - [`chua-link-search/`](chua-link-search/README.md): three non-split numerical attracting pairs with zero linking number, 20 diagram checks, interval certificates for all six cycles, retained negative searches and a common-coordinate viewer. See the [linked-pair report](../docs/chua-link-search.md).
 - [`chua-linked-attractors/`](chua-linked-attractors/README.md): four simultaneous cycles, all 15 sublinks, 105 numerical diagrams, analytic link controls, independent integrations and an interactive 3D viewer. All configurations at this tested parameter point are unlinks; see the [joint-link report](../docs/chua-linked-attractors.md).
 

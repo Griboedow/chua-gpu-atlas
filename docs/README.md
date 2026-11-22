@@ -1,31 +1,27 @@
-# Chua research reports
+# Research reports
 
-The [research guide](research-guide.md) summarizes the research questions, verification methods and links to all studies. The [terminology guide](terminology.md) defines the mathematical objects used in the reports.
+## Hidden attractors and circuit experiments
 
-The [linked-pair search](chua-link-search.md) finds three non-split numerical pairs with zero linking number, using overlaps and symmetry-breaking continuations. Exact Jones polynomials distinguish them from split unions; interval certificates establish the six cycles' existence and attraction. The [earlier joint-link experiment](chua-linked-attractors.md) remains a negative result for one four-cycle configuration, with 105 diagrams reducing to unlinks. Both reports include interactive viewers and the limitations of polygonal reconstruction.
+| Question | Analysis | Data |
+|---|---|---|
+| How does precharge set the time spent near a saddle? | [Residence near a saddle cycle](chua-saddle-residence.md) | [Voltage forecasts and checks](../results/chua-saddle-residence/) |
+| Which starts tolerate component variation? | [Capacitor precharge](chua-precharge.md) | [Settings and outcomes](../results/chua-precharge/) |
+| Which periodic attractors coexist at a given setting? | [Three hidden cycles at positive loss](chua-explicit-hidden.md) | [Interval certificates](../results/chua-explicit-hidden/) |
+| Can startup jitter be distinguished from continuing noise? | [Residence distributions](../results/chua-residence-noise/README.md) | [Exit counts](../results/chua-residence-noise/counts.csv) |
 
-The [nested-return experiment](chua-nested-returns.md) tests whether a long periodic family can organize a further sequence. Six 105/175/245-peak cycles near two 35-peak saddles support one additional level. Frozen width and period forecasts pass; four location forecasts miss. Distinct-point checks and an ordinary 105-peak control separate nested return patterns from repeated traversal and identical peak counts.
+## Periodic windows and parameter space
 
-The [return-geometry study](chua-return-geometry.md) relates extra residence near a saddle to shrinking parameter windows and increasing transient amplification in one period-adding sequence. It compares all 34 displayed references, samples the actual quadratic return, and tests published forecasts against new 95- and 105-peak cycles. The six width, gain and section-separation predictions agree within 0.5%; these are numerical results, not new interval certificates.
+- [Atlas and family catalogue](chua-refined-atlas.md), [34 illustrated family cards](chua-layer-cards.md), [orbit and waveform gallery](chua-family-gallery.md).
+- [Branch bifurcations](chua-layer-bifurcations.md), [early census](chua-layer-census.md), [overlapping families](chua-overlap-geometry.md).
+- [Thin-window forecasts](chua-layer-prediction.md), [return geometry](chua-return-geometry.md), [comparison across three families](chua-return-families.md), [nested returns](chua-nested-returns.md).
+- Diode slopes: [plane](chua-slope-plane.md), [sampled volumes](chua-slope-volumes.md), [continued families](chua-slope-families.md), [refined sheets and contacts](chua-slope-refinement.md).
+- [Knot atlas](chua-knot-atlas.md), [linked attracting pairs](chua-link-search.md), [four-cycle unlink](chua-linked-attractors.md).
+- [Original parameter surveys](experiment-notes.md), [large-parameter scaling experiments](chua-scaling-research.md), [scaling equations](chua-scaling-structure.md).
 
-The [34 layer cards](chua-layer-cards.md) connect parameter layers with reference attracting cycles, catalogue groups, waveforms, numerical knot types and motion characteristics. Each card can be viewed separately or in the slow README animation.
+## Basins, excitation and proofs
 
-The [knot atlas](chua-knot-atlas.md) adds the spatial topology of all 34 reference cycles: five numerical knot types, an unknotted eight-member thin sequence, explicit diagram identifications and a coarse-sampling counterexample. It includes a complete orbit gallery and an interactive 3D comparison.
+- [Equilibrium exclusion and cycle accessibility](chua-accessibility.md), [global convergence sector](chua-hidden-boundary.md), [local basin separator](chua-basin-and-coexistence.md).
+- [Window accumulation](chua-infinity-certificate.md), [coexistence proof audit](chua-coexistence-audit.md), [infinite hidden periodic coexistence](chua-hidden-infinity-certificate.md).
+- [Excitation thresholds and slope forecasts](chua-prediction-and-hidden-coexistence.md), [pulses, component robustness and further forecasts](chua-excitation-robustness-prediction.md).
 
-The [excitation, robustness and prediction extension](chua-excitation-robustness-prediction.md) compares energy-based initial directions and finite pulses, proves four-cycle persistence on a parameter box, and tests 24 forecasts on a larger slope square.
-
-The current [prediction, excitation and hidden-coexistence study](chua-prediction-and-hidden-coexistence.md) connects 48 held-out slope-window tests, certified impulse thresholds and a [computer-assisted argument for infinite hidden periodic coexistence](chua-hidden-infinity-certificate.md).
-
-The [review guide](chua-review-guide.md) connects each conclusion to its precise assumptions, certificate fields, executable checks and possible failure points. It includes commands that preserve the published evidence and a record of the revision checks.
-
-The reports cover the [family atlas](chua-refined-atlas.md), [reference periodic orbits](chua-family-gallery.md), [predictions and search results](chua-layer-prediction.md), and the [interval argument for an infinite cascade](chua-infinity-certificate.md).
-
-The [coexistence audit and Lean proof](chua-coexistence-audit.md) examine the stronger claim of infinitely many simultaneous cycles and formally check one step of the tangency argument. The [localization proof](chua-basin-and-coexistence.md) now completes that application and also certifies a local basin boundary near a hidden cycle.
-
-The [accessibility study](chua-accessibility.md) certifies four coexisting periodic orbits, two hidden-cycle examples and equilibrium neighborhoods excluded from their basins. It also gives a sufficient global-convergence sector, prediction checks and a component-tolerance experiment.
-
-The [global-stability and basin study](chua-hidden-boundary.md) derives a larger explicit convergence sector, certifies a saddle cycle beside a hidden attractor, computes a local basin separator and tests coefficients at two centre contacts. It links these results to published questions of Leonov, Kuznetsov, Chua and colleagues, while distinguishing the subsequent infinite-coexistence result from the still unclassified global basin boundary.
-
-Related studies cover [coexistence geometry](chua-overlap-geometry.md), [both diode slopes](chua-slope-volumes.md) and [large-parameter scaling](chua-scaling-structure.md). [Methods and reproduction](methods.md) document the original GPU surveys.
-
-The [refined slope atlases](chua-slope-refinement.md) follow P5/P7 through 6,713 cross-sections in the two slope volumes, locate diode-contact curves, compare a square-root duration prediction with numerical cycles and repeat fold/symmetry branch controls.
+[Study outline](research-guide.md) · [Definitions](terminology.md) · [Methods](methods.md) · [Reviewing the proofs](chua-review-guide.md) · [Data index](../results/README.md)

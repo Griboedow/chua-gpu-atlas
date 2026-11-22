@@ -2,6 +2,16 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+## Experiments with inductor loss
+
+| Program | Calculation |
+|---|---|
+| [observed_saddle_validate.py](observed_saddle_validate.py) | Replay the fixed voltage forecasts and check full-field integration. Pass `--figure` for the residence plot. |
+| [chua_precharge.py](chua_precharge.py) | Sweep precharge voltage and component settings in the diode model. |
+| [explicit_hidden_cycles.py](explicit_hidden_cycles.py) | Enclose the coexisting cycles and exclude neighborhoods of all three equilibria. |
+| [explicit_hidden_starts.py](explicit_hidden_starts.py) | Validate capture of capacitor-only initial states at the nominal setting. |
+| [chua_residence_noise.py](chua_residence_noise.py) | Compare first-exit counts for two sources of random displacement. |
+
 ## Joint topology of coexisting cycles
 
 `study_chua_linked_attractors.py` reconstructs four cycles at fixed exact parameters, generates analytic link controls and classifies every nonempty sublink. `chua_link_diagrams.py` extracts multi-component diagrams, tracks components, calculates exact Jones polynomials and independent Gauss integrals. `review_chua_linked_attractors.py` checks certified-root correspondence, independent ODE integration and all saved reductions. `plot_chua_linked_attractors.py` supplies static figures and an interactive component viewer. [Report](../docs/chua-linked-attractors.md) · [Reproduction and review](../results/chua-linked-attractors/README.md).
