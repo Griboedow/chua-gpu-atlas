@@ -2,11 +2,19 @@
 
 Run programs from the repository root. The [research guide](../docs/research-guide.md) connects their scientific questions to reports and datasets.
 
+| Reproduce | Program |
+|---|---|
+| [Long transients outside three periodic windows](../docs/chua-fold-passage.md) | [Measure fold passages](chua_fold_passage.py) |
+| [Exact link of two attracting cycles](../docs/chua-link-certificate.md) | [Certify the S02/S08 link](certify_chua_knot.py) |
+| [Well switching at large α](../docs/chua-fiber-switching.md) | [Compare frozen and observed thresholds](chua_fiber_switching.py) |
+| [One-voltage reconstruction](../docs/chua-voltage-reconstruction.md) | [Recover the state or replay the 34-family benchmark](chua_voltage_reconstruction.py) |
+
 ## Experiments with inductor loss
 
 | Program | Calculation |
 |---|---|
 | [observed_saddle_validate.py](observed_saddle_validate.py) | Replay the fixed voltage forecasts and check full-field integration. Pass `--figure` for the residence plot. |
+| [chua_saddle_period_bound.py](chua_saddle_period_bound.py) | Enclose the physical saddle period across the [measured component ranges](../docs/chua-saddle-period.md). |
 | [chua_precharge.py](chua_precharge.py) | Sweep precharge voltage and component settings in the diode model. |
 | [explicit_hidden_cycles.py](explicit_hidden_cycles.py) | Enclose the coexisting cycles and exclude neighborhoods of all three equilibria. |
 | [explicit_hidden_starts.py](explicit_hidden_starts.py) | Validate capture of capacitor-only initial states at the nominal setting. |

@@ -12,12 +12,13 @@
 
 ## Periodic windows and parameter space
 
+- [Local passage times outside three periodic windows](chua-fold-passage.md) · [Recovering the state from one voltage channel](chua-voltage-reconstruction.md).
 - [Atlas and family catalogue](chua-refined-atlas.md), [34 illustrated family cards](chua-layer-cards.md), [orbit and waveform gallery](chua-family-gallery.md).
 - [Branch bifurcations](chua-layer-bifurcations.md), [early census](chua-layer-census.md), [overlapping families](chua-overlap-geometry.md).
 - [Thin-window forecasts](chua-layer-prediction.md), [return geometry](chua-return-geometry.md), [comparison across three families](chua-return-families.md), [nested returns](chua-nested-returns.md).
 - Diode slopes: [plane](chua-slope-plane.md), [sampled volumes](chua-slope-volumes.md), [continued families](chua-slope-families.md), [refined sheets and contacts](chua-slope-refinement.md).
-- [Knot atlas](chua-knot-atlas.md), [linked attracting pairs](chua-link-search.md), [four-cycle unlink](chua-linked-attractors.md).
-- [Original parameter surveys](experiment-notes.md), [large-parameter scaling experiments](chua-scaling-research.md), [scaling equations](chua-scaling-structure.md).
+- [Knot atlas](chua-knot-atlas.md), [linked attracting pairs](chua-link-search.md), [proof for the S02/S08 pair](chua-link-certificate.md), [four-cycle unlink](chua-linked-attractors.md).
+- [Original parameter surveys](experiment-notes.md), [large-parameter scaling experiments](chua-scaling-research.md), [scaling equations](chua-scaling-structure.md), [switching thresholds on the large-α trace](chua-fiber-switching.md).
 
 ## Basins, excitation and proofs
 

@@ -212,6 +212,8 @@ All 20 periodic integrations/shooting controls have independent Radau closure re
 
 ## Numerical checks and literature scope
 
+The [switching study](chua-fiber-switching.md) locates the two frozen thresholds and compares them with all 32 changes of itinerary on the archived finite-$\alpha$ trajectory.
+
 `python research/audit_chua_scaling.py` computes 256 seeded identity checks, six small eigenvalue problems, two one-period affine controls, one center-ellipse control, and seven scalar return-map values. It runs no finite $\alpha$ chaos survey. Errors are below $2.9\times10^{-16}$ for the scaled field, $7.2\times10^{-15}$ for the action identity, and $4.0\times10^{-15}$ for the characteristic polynomial. Settings, values, access limits, and qualifications are in [structure-audit.json](../results/chua-scaling/structure-audit.json).
 
 The primary literature establishes that these methods and mechanisms are longstanding. Chua, Komuro, and Matsumoto develop the piecewise-linear family and return maps [1]. Rossetto explicitly applies singular perturbation to Chua [2]; only the publisher abstract was recovered in this pass, so coverage of this exact quadratic parameter path was not verified. Euzébio and Llibre use averaging for a different six-parameter **cubic** Chua model and zero–Hopf scaling [3]. Their stated smoothness hypotheses cannot automatically be transferred to our piecewise-linear limit. Nonsmooth averaging has its own theory [4]. None of these bounded source checks establishes novelty or an absence of earlier results on our exact path.

@@ -1,0 +1,672 @@
+{
+  "gate": 0.2,
+  "families": {
+    "S01": {
+      "fold": {
+        "beta": 14.259963353270562,
+        "width": 0.00012072785615835357,
+        "point": [
+          0.27474842503820296,
+          -0.3704814185783485
+        ],
+        "right": [
+          -0.3006153275118315,
+          -0.9537454717402091
+        ],
+        "left": [
+          -1.2909291353062422,
+          -0.6416040058138609
+        ],
+        "a": 0.31211813117177917,
+        "b": 26551.17975175296,
+        "ab_step_check": [
+          8287.104413596775,
+          8287.104604523118,
+          8287.108022923774
+        ],
+        "ab_48_digit_check": 8287.104361393793,
+        "half_period": 11.837640890703014,
+        "itinerary": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "fold_defect": 1.63202784619898e-14,
+        "transverse_multiplier": -3.161915174132446e-13
+      },
+      "width_scaled_runs": [
+        {
+          "delta_beta": 1.2072785615835357e-06,
+          "delta_over_width": 0.01,
+          "gate": 0.2,
+          "returns": 23,
+          "elapsed": 272.26564486371404,
+          "inside_multiplier": 0.7999586806229237,
+          "leading_returns": 31.408320790782074,
+          "finite_gate_returns": 22.135676884237295,
+          "multiplier_product": 4.600950345672754,
+          "last_coordinate": 0.24977669437786698
+        },
+        {
+          "delta_beta": 1.2072785615835358e-07,
+          "delta_over_width": 0.001,
+          "gate": 0.2,
+          "returns": 90,
+          "elapsed": 1065.3875516055423,
+          "inside_multiplier": 0.9367398762783232,
+          "leading_returns": 99.32183118009219,
+          "finite_gate_returns": 89.40397559431493,
+          "multiplier_product": 5.69341113495091,
+          "last_coordinate": 0.2304011009752484
+        },
+        {
+          "delta_beta": 1.2072785615835358e-08,
+          "delta_over_width": 0.0001,
+          "gate": 0.2,
+          "returns": 304,
+          "elapsed": 3598.6427413258575,
+          "inside_multiplier": 0.9799953039375,
+          "leading_returns": 314.0832079078207,
+          "finite_gate_returns": 304.09153278779115,
+          "multiplier_product": 6.081427602999998,
+          "last_coordinate": 0.20362880694484958
+        },
+        {
+          "delta_beta": 1.207278561583536e-09,
+          "delta_over_width": 1e-05,
+          "gate": 0.2,
+          "returns": 983,
+          "elapsed": 11636.400905383822,
+          "inside_multiplier": 0.9936740950291725,
+          "leading_returns": 993.2183118009218,
+          "finite_gate_returns": 983.2191454128003,
+          "multiplier_product": 6.218364586323455,
+          "last_coordinate": 0.20058258503649357
+        }
+      ],
+      "common_detuning": {
+        "delta_beta": 1e-06,
+        "delta_over_width": 0.008283092500941478,
+        "gate": 0.2,
+        "returns": 25,
+        "elapsed": 295.9410173131742,
+        "inside_multiplier": 0.8179388403595276,
+        "leading_returns": 34.51027835789826,
+        "finite_gate_returns": 25.125977336082304,
+        "multiplier_product": 4.551528991011811,
+        "last_coordinate": 0.20045250366949996
+      },
+      "gate_checks": [
+        {
+          "delta_beta": 1.2072785615835358e-08,
+          "delta_over_width": 0.0001,
+          "gate": 0.1,
+          "returns": 295,
+          "elapsed": 3492.1039833385253,
+          "inside_multiplier": 0.9799953039375,
+          "leading_returns": 314.0832079078207,
+          "finite_gate_returns": 294.1495093176184,
+          "multiplier_product": 5.901385338437498,
+          "last_coordinate": 0.10946529423265956
+        },
+        {
+          "delta_beta": 1.2072785615835358e-08,
+          "delta_over_width": 0.0001,
+          "gate": 0.3,
+          "returns": 308,
+          "elapsed": 3645.993137367914,
+          "inside_multiplier": 0.9799953039375,
+          "leading_returns": 314.0832079078207,
+          "finite_gate_returns": 307.41900992656,
+          "multiplier_product": 6.161446387249998,
+          "last_coordinate": 0.3784563853815666
+        }
+      ],
+      "full_field_check": {
+        "delta_beta": 1.2072785615835358e-07,
+        "half_returns": 90,
+        "max_section_error": 1.3957862010638422e-07,
+        "max_time_error": 1.008227968668507e-05
+      },
+      "survey_starts": [
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 196,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 223,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 221,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 210,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-09,
+          "crossings": 118,
+          "passages": 1,
+          "longest_span": [
+            301.93458149637104,
+            1095.0554983681322
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 793.1209168717612
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-11,
+          "crossings": 209,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        }
+      ]
+    },
+    "S08": {
+      "fold": {
+        "beta": 14.330651968634388,
+        "width": 0.013376961089972994,
+        "point": [
+          0.23627215633055815,
+          -0.4462015943942988
+        ],
+        "right": [
+          -0.5120150693954179,
+          -0.858976465749793
+        ],
+        "left": [
+          -1.8987529756464991,
+          -0.03237558247341118
+        ],
+        "a": 0.4099329159826458,
+        "b": 215.61388902719926,
+        "ab_step_check": [
+          88.3872400050724,
+          88.3872302552784,
+          88.38728786923552
+        ],
+        "ab_48_digit_check": 88.38724280740756,
+        "half_period": 5.456699846965607,
+        "itinerary": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "fold_defect": 6.106226635438361e-15,
+        "transverse_multiplier": -5.946156310959391e-05
+      },
+      "width_scaled_runs": [
+        {
+          "delta_beta": 0.00013376961089972994,
+          "delta_over_width": 0.01,
+          "gate": 0.2,
+          "returns": 20,
+          "elapsed": 109.1361170786629,
+          "inside_multiplier": 0.7847983100064262,
+          "leading_returns": 28.891918317018135,
+          "finite_gate_returns": 19.73252248315781,
+          "multiplier_product": 4.304033799871476,
+          "last_coordinate": 0.21823477030723107
+        },
+        {
+          "delta_beta": 1.3376961089972994e-05,
+          "delta_over_width": 0.001,
+          "gate": 0.2,
+          "returns": 82,
+          "elapsed": 447.4595948395098,
+          "inside_multiplier": 0.9314603532042389,
+          "leading_returns": 91.36426785331605,
+          "finite_gate_returns": 81.461085851148,
+          "multiplier_product": 5.620251037252409,
+          "last_coordinate": 0.22775557583940717
+        },
+        {
+          "delta_beta": 1.3376961089972995e-06,
+          "delta_over_width": 0.0001,
+          "gate": 0.2,
+          "returns": 279,
+          "elapsed": 1522.4281514508173,
+          "inside_multiplier": 0.9782760258945913,
+          "leading_returns": 288.9191831701813,
+          "finite_gate_returns": 278.92901867035533,
+          "multiplier_product": 6.060988775409032,
+          "last_coordinate": 0.20899555727860333
+        },
+        {
+          "delta_beta": 1.3376961089972994e-07,
+          "delta_over_width": 9.999999999999999e-06,
+          "gate": 0.2,
+          "returns": 904,
+          "elapsed": 4932.868989532974,
+          "inside_multiplier": 0.9931252564592913,
+          "leading_returns": 913.6426785331605,
+          "finite_gate_returns": 903.6436636522361,
+          "multiplier_product": 6.21476816080068,
+          "last_coordinate": 0.22045397664399155
+        }
+      ],
+      "common_detuning": {
+        "delta_beta": 1e-06,
+        "delta_over_width": 7.47553942389481e-05,
+        "gate": 0.2,
+        "returns": 324,
+        "elapsed": 1767.9778736481378,
+        "inside_multiplier": 0.9812144769975301,
+        "leading_returns": 334.1604986008336,
+        "finite_gate_returns": 324.1678544533635,
+        "multiplier_product": 6.086509452800261,
+        "last_coordinate": 0.20046173505191361
+      },
+      "gate_checks": [
+        {
+          "delta_beta": 1.3376961089972995e-06,
+          "delta_over_width": 0.0001,
+          "gate": 0.1,
+          "returns": 269,
+          "elapsed": 1467.8553774389145,
+          "inside_multiplier": 0.9782760258945913,
+          "leading_returns": 288.9191831701813,
+          "finite_gate_returns": 268.99745216933263,
+          "multiplier_product": 5.8437490343549445,
+          "last_coordinate": 0.10080118998919121
+        },
+        {
+          "delta_beta": 1.3376961089972995e-06,
+          "delta_over_width": 0.0001,
+          "gate": 0.3,
+          "returns": 282,
+          "elapsed": 1538.8008042668785,
+          "inside_multiplier": 0.9782760258945913,
+          "leading_returns": 288.9191831701813,
+          "finite_gate_returns": 282.2554335934948,
+          "multiplier_product": 6.126160697725258,
+          "last_coordinate": 0.30222342448047196
+        }
+      ],
+      "full_field_check": {
+        "delta_beta": 1.3376961089972994e-05,
+        "half_returns": 82,
+        "max_section_error": 4.906650602487517e-08,
+        "max_time_error": 2.642281970111071e-06
+      },
+      "survey_starts": [
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 210,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 214,
+          "passages": 2,
+          "longest_span": [
+            150.0686714234874,
+            395.71600532685784
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 292.11638814250637
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 212,
+          "passages": 2,
+          "longest_span": [
+            329.730895982889,
+            1099.022052477102
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 769.291156494213
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 204,
+          "passages": 1,
+          "longest_span": [
+            254.5813568127732,
+            1094.796402982234
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 794.796402982234
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-09,
+          "crossings": 211,
+          "passages": 1,
+          "longest_span": [
+            811.27046222772,
+            1094.9327010537459
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 283.6622388260258
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-11,
+          "crossings": 210,
+          "passages": 1,
+          "longest_span": [
+            208.26941189106853,
+            224.6578408234085
+          ],
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        }
+      ]
+    },
+    "S11": {
+      "fold": {
+        "beta": 14.359533766393898,
+        "width": 0.004764921911789344,
+        "point": [
+          0.26626472908412063,
+          -0.3962203084497364
+        ],
+        "right": [
+          -0.5155835579948657,
+          -0.8568393050773027
+        ],
+        "left": [
+          -1.0546891823627567,
+          -0.5324447607332333
+        ],
+        "a": 0.26335221039556916,
+        "b": 832.5258461937278,
+        "ab_step_check": [
+          219.247519714553,
+          219.24752180655986,
+          219.24751367684115
+        ],
+        "ab_48_digit_check": 219.24752400927935,
+        "half_period": 7.251108222477705,
+        "itinerary": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "fold_defect": 1.5154544286133387e-14,
+        "transverse_multiplier": -1.94652373664006e-08
+      },
+      "width_scaled_runs": [
+        {
+          "delta_beta": 4.764921911789344e-05,
+          "delta_over_width": 0.01,
+          "gate": 0.2,
+          "returns": 22,
+          "elapsed": 159.52579713271453,
+          "inside_multiplier": 0.7960531910606176,
+          "leading_returns": 30.736515560416883,
+          "finite_gate_returns": 21.49185859557809,
+          "multiplier_product": 4.486829796666414,
+          "last_coordinate": 0.23011319609124953
+        },
+        {
+          "delta_beta": 4.7649219117893435e-06,
+          "delta_over_width": 0.001,
+          "gate": 0.2,
+          "returns": 88,
+          "elapsed": 638.1017500985604,
+          "inside_multiplier": 0.9354041092958044,
+          "leading_returns": 97.19739650812409,
+          "finite_gate_returns": 87.28311532172503,
+          "multiplier_product": 5.684438381969211,
+          "last_coordinate": 0.2358718199972759
+        },
+        {
+          "delta_beta": 4.764921911789344e-07,
+          "delta_over_width": 0.0001,
+          "gate": 0.2,
+          "returns": 298,
+          "elapsed": 2160.835173299971,
+          "inside_multiplier": 0.9795626891238155,
+          "leading_returns": 307.3651556041688,
+          "finite_gate_returns": 297.3738477981678,
+          "multiplier_product": 6.090318641102981,
+          "last_coordinate": 0.23186199251315112
+        },
+        {
+          "delta_beta": 4.764921911789344e-08,
+          "delta_over_width": 1e-05,
+          "gate": 0.2,
+          "returns": 962,
+          "elapsed": 6975.569645594227,
+          "inside_multiplier": 0.9935361273412273,
+          "leading_returns": 971.9739650812407,
+          "finite_gate_returns": 961.9748355259428,
+          "multiplier_product": 6.218245497739323,
+          "last_coordinate": 0.2078876175735275
+        }
+      ],
+      "common_detuning": {
+        "delta_beta": 1e-06,
+        "delta_over_width": 0.0002098670279413825,
+        "gate": 0.2,
+        "returns": 203,
+        "elapsed": 1471.980251228635,
+        "inside_multiplier": 0.9703959997621369,
+        "leading_returns": 212.1692914884684,
+        "finite_gate_returns": 202.18750226269051,
+        "multiplier_product": 6.0096120482862165,
+        "last_coordinate": 0.2403695656999766
+      },
+      "gate_checks": [
+        {
+          "delta_beta": 4.764921911789344e-07,
+          "delta_over_width": 0.0001,
+          "gate": 0.1,
+          "returns": 288,
+          "elapsed": 2088.3211625926238,
+          "inside_multiplier": 0.9795626891238155,
+          "leading_returns": 307.3651556041688,
+          "finite_gate_returns": 287.4343687666197,
+          "multiplier_product": 5.885945532341136,
+          "last_coordinate": 0.1064129439235829
+        },
+        {
+          "delta_beta": 4.764921911789344e-07,
+          "delta_over_width": 0.0001,
+          "gate": 0.3,
+          "returns": 301,
+          "elapsed": 2182.590283282738,
+          "inside_multiplier": 0.9795626891238155,
+          "leading_returns": 307.3651556041688,
+          "finite_gate_returns": 300.70106664201694,
+          "multiplier_product": 6.151630573731534,
+          "last_coordinate": 0.34955142727021193
+        }
+      ],
+      "full_field_check": {
+        "delta_beta": 4.7649219117893435e-06,
+        "half_returns": 88,
+        "max_section_error": 1.4127817249409702e-09,
+        "max_time_error": 8.416520813625539e-08
+      },
+      "survey_starts": [
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 199,
+          "passages": 1,
+          "longest_span": [
+            700.9214757619679,
+            1099.7207953816037
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 398.79931961963575
+        },
+        {
+          "seed": [
+            0.7,
+            0.0,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 175,
+          "passages": 1,
+          "longest_span": [
+            305.8668098101444,
+            1096.217082533113
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 790.3502727229686
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-09,
+          "crossings": 156,
+          "passages": 1,
+          "longest_span": [
+            80.34088087901044,
+            1095.4556514987094
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 795.4556514987094
+        },
+        {
+          "seed": [
+            -0.2,
+            0.1,
+            0.0
+          ],
+          "rtol": 1e-11,
+          "crossings": 223,
+          "passages": 0,
+          "longest_span": null,
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 0.0
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-09,
+          "crossings": 192,
+          "passages": 1,
+          "longest_span": [
+            733.6201648895402,
+            1096.1505911151112
+          ],
+          "last_crossing_inside": true,
+          "observation_time_in_gate": 362.530426225571
+        },
+        {
+          "seed": [
+            1.5,
+            0.02,
+            -1.5
+          ],
+          "rtol": 1e-11,
+          "crossings": 177,
+          "passages": 1,
+          "longest_span": [
+            466.5178061379004,
+            1039.3924426343442
+          ],
+          "last_crossing_inside": false,
+          "observation_time_in_gate": 572.8746364964438
+        }
+      ]
+    }
+  }
+}

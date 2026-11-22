@@ -53,7 +53,8 @@ sample_chua_nested_returns review_chua_nested_returns plot_chua_nested_returns
 chua_link_diagrams study_chua_linked_attractors review_chua_linked_attractors plot_chua_linked_attractors
 search_chua_links chua_link_invariants chua_link_bracket compare_chua_joint_jones
 probe_chua_knotted_daughters certify_chua_link_witnesses review_chua_link_search
-plot_chua_link_search audit_chua_link_algorithms'''.split()
+plot_chua_link_search audit_chua_link_algorithms
+certify_chua_knot chua_fold_passage chua_fiber_switching chua_voltage_reconstruction'''.split()
 
 
 def digest(path):
@@ -173,6 +174,12 @@ def main():
         paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
     for pattern in ['observed_saddle*.py', 'chua_saddle_period*.py', 'chua_precharge*.py', 'explicit_hidden*.py', 'chua_residence_noise.py']:
         paths.update((ROOT/'research').glob(pattern))
+    for name in ['chua-link-certificate', 'chua-fold-passage', 'chua-fiber-switching', 'chua-voltage-reconstruction']:
+        paths.add(ROOT/'docs'/(name + '.md'))
+        paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
+    paths.update(ROOT/p for p in ['results/chua-scaling/cpu-2198-aligned.npz', 'results/chua-scaling/fiber-probe.json',
+                                  'results/original/classic_scan.json',
+                                  'docs/chua-scaling-structure.md', 'docs/chua-layer-bifurcations.md'])
     paths.add(ROOT/'CITATION.cff')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},

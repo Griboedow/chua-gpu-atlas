@@ -1,0 +1,101 @@
+{
+  "phases": [
+    0.0,
+    0.0625,
+    0.125,
+    0.1875,
+    0.25,
+    0.3125,
+    0.375,
+    0.4375,
+    0.5,
+    0.5625,
+    0.625,
+    0.6875,
+    0.75,
+    0.8125,
+    0.875,
+    0.9375
+  ],
+  "time_domain_max_error": {
+    "0.0": 2.1174173525650986e-12,
+    "0.08": 1.766142787573699e-12
+  },
+  "coarse_reference_max_change": 3.4347177659386444e-05,
+  "rates": {
+    "2": {
+      "worst_family": "E08",
+      "worst_error": 1.0307980384678064,
+      "families_below_one_percent": 0
+    },
+    "3": {
+      "worst_family": "E10",
+      "worst_error": 0.25348790153563916,
+      "families_below_one_percent": 0
+    },
+    "4": {
+      "worst_family": "E08",
+      "worst_error": 0.21802018057340652,
+      "families_below_one_percent": 0
+    },
+    "5": {
+      "worst_family": "S11",
+      "worst_error": 0.07527566923894329,
+      "families_below_one_percent": 0
+    },
+    "6": {
+      "worst_family": "E10",
+      "worst_error": 0.03976666164728935,
+      "families_below_one_percent": 0
+    },
+    "7": {
+      "worst_family": "E10",
+      "worst_error": 0.01796919830648951,
+      "families_below_one_percent": 18
+    },
+    "8": {
+      "worst_family": "E08",
+      "worst_error": 0.013457236347796268,
+      "families_below_one_percent": 25
+    },
+    "9": {
+      "worst_family": "S11",
+      "worst_error": 0.007846659173251799,
+      "families_below_one_percent": 34
+    },
+    "10": {
+      "worst_family": "A06",
+      "worst_error": 0.005655885101965297,
+      "families_below_one_percent": 34
+    },
+    "11": {
+      "worst_family": "E10",
+      "worst_error": 0.003680328546211616,
+      "families_below_one_percent": 34
+    },
+    "12": {
+      "worst_family": "E08",
+      "worst_error": 0.003255165010615721,
+      "families_below_one_percent": 34
+    },
+    "16": {
+      "worst_family": "E10",
+      "worst_error": 0.0011614314445209505,
+      "families_below_one_percent": 34
+    },
+    "24": {
+      "worst_family": "S11",
+      "worst_error": 0.0003580529864754684,
+      "families_below_one_percent": 34
+    },
+    "32": {
+      "worst_family": "S11",
+      "worst_error": 0.0001643496937338895,
+      "families_below_one_percent": 34
+    }
+  },
+  "one_percent_beta_error": {
+    "minimum": 0.019844215222584404,
+    "maximum": 0.022374966629582358
+  }
+}

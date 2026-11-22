@@ -1,6 +1,6 @@
 # Linked attracting-cycle witnesses
 
-This directory contains a finite search for non-split unions of coexisting attracting periodic orbits in the piecewise-linear Chua system. Three principal pairs pass exact joint-Jones versus split-product tests at 20 precision/resolution/projection combinations: six for S02/S08 and seven for each daughter pair. Interval calculations certify all six cycles' existence, distinctness, attraction and primitive periods. Link classification concerns numerical polygons; an ambient-isotopy certificate for the exact trajectories is absent.
+This directory contains a finite search for non-split unions of coexisting attracting periodic orbits in the piecewise-linear Chua system. Three principal pairs pass exact joint-Jones versus split-product tests at 20 precision/resolution/projection combinations: six for S02/S08 and seven for each daughter pair. Interval calculations certify all six cycles' existence, distinctness, attraction and primitive periods. The original classifications use numerical polygons. A later [interval isotopy certificate](../../docs/chua-link-certificate.md) establishes non-splitness for the exact S02/S08 pair.
 
 [Report](../../docs/chua-link-search.md) · [Offline 3D viewer](linked-pairs.html) · [Review record](review.json) · [Frozen protocol](protocol.md)
 
@@ -95,4 +95,4 @@ The small decimal β offsets and the amplitude constraint select numerical branc
 
 ## Scope
 
-These data support three non-split two-component polygonal links made from coexisting attracting-cycle approximations. They do not establish an exact link type for the ODE curves, a Borromean or Brunnian triple, a complete inventory of attracting links, or historical novelty. The earlier negative four-cycle experiment remains valid at its own parameter point.
+These data support three non-split two-component polygonal links made from coexisting attracting-cycle approximations. The subsequent S02/S08 certificate establishes its non-splitness. The precise link types of the daughter pairs and the search for Borromean or Brunnian triples remain open. The earlier negative four-cycle experiment remains valid at its own parameter point.
