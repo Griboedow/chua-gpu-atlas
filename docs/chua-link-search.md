@@ -1,6 +1,6 @@
 # Linked pairs of coexisting Chua attractors
 
-**Three tested pairs of attracting periodic motions have non-split joint diagrams, although every pair has linking number zero.** Their existence, distinctness and attraction are certified by interval arithmetic. Their link types are numerical results: exact polynomial calculations classify reconstructed polygons, and a certified isotopy from the exact trajectories to those polygons remains to be established.
+**Three tested pairs of attracting periodic motions have non-split joint diagrams, although every pair has linking number zero.** Their existence, distinctness and attraction are certified by interval arithmetic. A subsequent interval calculation proves that the exact S02/S08 cycles form a non-split link. For the two daughter pairs, the topological evidence comes from reconstructed polygons. [S02/S08 isotopy certificate](chua-link-certificate.md)
 
 Imagine making a closed wire along each of two possible long-term motions. Each wire may already be knotted. The new question is whether the two wires can be separated from each other without cutting them. For the three configurations below, the reconstructed wires cannot be separated. These are alternative motions of the same autonomous system at the same parameters, not interacting oscillators.
 
@@ -136,7 +136,7 @@ The atlas records stability regions of periodic-orbit families. The joint link a
 
 The present result supplies three explicit parameter-specific witnesses and reproducible diagram obstructions. It does not establish that every symmetry-breaking branch is linked, that all attracting links have been found, or that a Borromean or Brunnian triple occurs. Nor does it establish historical priority. Knotted Chua orbits and knot/link structures in double-scroll templates are established subjects; a template result and a certified attracting pair at specified parameters answer different questions.
 
-The most direct next step is a certified isotopy from one pair of exact trajectories to its polygonal approximation. A second is to verify or refute the normal-annulus mechanism along the daughter continuation. Both would strengthen a specific statement already supported by the retained data.
+The S02/S08 isotopy has since been certified. Whether the two daughter pairs have the proposed annulus along their continuation remains open. [Exact link at the S02/S08 overlap](chua-link-certificate.md)
 
 ## Sources
 

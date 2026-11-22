@@ -1,0 +1,308 @@
+{
+  "parameters": {
+    "alpha": 2048,
+    "kappa": 0.1425,
+    "m0": -2,
+    "m1": "-5/7"
+  },
+  "trajectory": "results/chua-scaling/cpu-2198-aligned.npz",
+  "section": "y=0 increasing; amplitude at the start of the first turn with the new itinerary",
+  "frozen": {
+    "central": {
+      "amplitude": 1.5452775035311195,
+      "inner_duration_per_segment": 1.8493960543988954,
+      "forcing_cos": 1.516098562138375,
+      "forcing_sin": -0.2988774210296282,
+      "dR_dd": -0.31593334511508087,
+      "d2R_dd2": 0.45071436752652844,
+      "full_field_check": {
+        "closure": 1.2199352639186145e-11,
+        "log_multiplier": -4.5635495382612135e-11,
+        "inner_time": 3.698792108762296,
+        "interior_crossings": [
+          [
+            1.8493960543989052,
+            1
+          ],
+          [
+            8.322282244792166,
+            1
+          ],
+          [
+            10.171678299155557,
+            -1
+          ]
+        ],
+        "minimum_crossing_speed": 0.5160985621383749
+      }
+    },
+    "well": {
+      "amplitude": 1.7342185438764806,
+      "inner_duration_per_segment": 3.698792108797791,
+      "forcing_cos": -1.4444646020294905,
+      "forcing_sin": 0.9597061901482379,
+      "dR_dd": 1.5544948786750258e-62,
+      "d2R_dd2": -0.019470890905913793,
+      "return_derivative_wrt_R": -2.5305978189428484,
+      "full_field_check": {
+        "closure": 2.1738166822160565e-13,
+        "log_multiplier": -8.526512829121202e-13,
+        "inner_time": 3.6987921087971274,
+        "interior_crossings": [
+          [
+            3.6987921087971274,
+            1
+          ]
+        ],
+        "minimum_crossing_speed": 0.4444646020294907
+      }
+    }
+  },
+  "max_amplitude_error_from_five_archived_multipliers": 3.525579828078662e-11,
+  "finite_alpha": {
+    "complete_turns": 3686,
+    "counts": {
+      "both": 433,
+      "negative": 3253
+    },
+    "transitions": {
+      "both_to_negative": {
+        "count": 16,
+        "minimum": 1.408768854591326,
+        "maximum": 1.4167862307845107
+      },
+      "negative_to_both": {
+        "count": 16,
+        "minimum": 1.733353514139508,
+        "maximum": 1.738742659513321
+      }
+    },
+    "events": [
+      {
+        "turn": 190,
+        "time": 1.5482039128090106,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.738111996638573
+      },
+      {
+        "turn": 217,
+        "time": 1.767893220209076,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4161510217021256
+      },
+      {
+        "turn": 415,
+        "time": 3.3788670510033527,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7371489049416817
+      },
+      {
+        "turn": 442,
+        "time": 3.5985558042441443,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4145503815288998
+      },
+      {
+        "turn": 640,
+        "time": 5.209529191299558,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7351471822132587
+      },
+      {
+        "turn": 667,
+        "time": 5.42921709580176,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4119769505386925
+      },
+      {
+        "turn": 866,
+        "time": 7.048324956599613,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7371861951717784
+      },
+      {
+        "turn": 893,
+        "time": 7.2680137286502395,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.414605999508564
+      },
+      {
+        "turn": 1091,
+        "time": 8.878987182018037,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7349934672072262
+      },
+      {
+        "turn": 1118,
+        "time": 9.09867503097677,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.41180554554698
+      },
+      {
+        "turn": 1317,
+        "time": 10.71778258372019,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7377187440920843
+      },
+      {
+        "turn": 1344,
+        "time": 10.93747164442958,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4154488465630484
+      },
+      {
+        "turn": 1542,
+        "time": 12.548445800006862,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7341572550606736
+      },
+      {
+        "turn": 1569,
+        "time": 12.76813336562658,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4109291095369543
+      },
+      {
+        "turn": 1769,
+        "time": 14.395377966889217,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7348882166934048
+      },
+      {
+        "turn": 1796,
+        "time": 14.615065778454289,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4116900451308494
+      },
+      {
+        "turn": 1995,
+        "time": 16.23417312664337,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7380324020533793
+      },
+      {
+        "turn": 2022,
+        "time": 16.453862380957013,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4160014844716613
+      },
+      {
+        "turn": 2220,
+        "time": 18.064836427741298,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7363437687481744
+      },
+      {
+        "turn": 2247,
+        "time": 18.284524806869655,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4134294346735161
+      },
+      {
+        "turn": 2445,
+        "time": 19.89549654118727,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7379663410811559
+      },
+      {
+        "turn": 2472,
+        "time": 20.115185752795924,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.415880546955987
+      },
+      {
+        "turn": 2670,
+        "time": 21.726159904082863,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7357297647493697
+      },
+      {
+        "turn": 2697,
+        "time": 21.945848029690463,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4126567906444663
+      },
+      {
+        "turn": 2896,
+        "time": 23.564957029725377,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.733353514139508
+      },
+      {
+        "turn": 2923,
+        "time": 23.784644352085,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.410176724364074
+      },
+      {
+        "turn": 3123,
+        "time": 25.411887577356786,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.7382293391128023
+      },
+      {
+        "turn": 3150,
+        "time": 25.63157696675206,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4163801858817457
+      },
+      {
+        "turn": 3348,
+        "time": 27.242550232477353,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.738422694314431
+      },
+      {
+        "turn": 3375,
+        "time": 27.46223976923553,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.4167862307845107
+      },
+      {
+        "turn": 3574,
+        "time": 29.081349004531805,
+        "previous": "negative",
+        "current": "both",
+        "amplitude": 1.738742659513321
+      },
+      {
+        "turn": 3602,
+        "time": 29.309174055856207,
+        "previous": "both",
+        "current": "negative",
+        "amplitude": 1.408768854591326
+      }
+    ],
+    "max_two_turn_radau_endpoint_error": 8.837956944063308e-08
+  }
+}

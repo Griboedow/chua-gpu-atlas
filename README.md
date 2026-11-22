@@ -1,8 +1,23 @@
 # Chua GPU Atlas
 
-Periodic windows, hidden attractors and multistability in Chua's circuit. The atlas follows attracting periodic orbits as circuit parameters change. Each launch starts with prescribed capacitor voltages. Repeating it at different component settings measures how the outcome shifts.
+An atlas of periodic windows, coexisting attractors and basin boundaries in Chua’s circuit. GPU scans locate candidate regimes and continuation follows the periodic orbits. At one parameter setting, an interval calculation proves that two attracting orbits form a non-split link. The circuit experiments examine inductor loss and capacitor precharge.
 
 [Research reports](docs/README.md) · [Data and reproduction](results/README.md) · [Model and conventions](#the-system-and-the-question)
+
+## Reading the atlas
+
+A **layer** is a region of parameter space in which a continued periodic motion attracts nearby trajectories. The 34 illustrated families are sampled at their own reference settings. For instance, A04 and A01 each have 25 peaks in one period, but their trajectories have different numerical knot types. [Browse the 34 cards or play the animation](docs/chua-layer-cards.md)
+
+![Family A04 with its parameter layer, periodic orbit and voltage waveform](docs/assets/chua-layer-cards/A04.png)
+
+| Explore | Start here |
+|---|---|
+| Periodic windows and observation time | [Slow passage outside three folds](docs/chua-fold-passage.md) · [Return geometry](docs/chua-return-geometry.md) · [Nested returns through 245 peaks](docs/chua-nested-returns.md) |
+| Coexistence and basin boundaries | [Overlap of attracting branches](docs/chua-overlap-geometry.md) · [A certified local separator](docs/chua-basin-and-coexistence.md) |
+| Infinitely many periodic attractors | [Window accumulation](docs/chua-infinity-certificate.md) · [Hidden periodic coexistence at nearby parameters](docs/chua-hidden-infinity-certificate.md) |
+| Geometry and topology | [Certified non-split pair](docs/chua-link-certificate.md) · [Knot catalogue](docs/chua-knot-atlas.md) · [Diode slope continuation](docs/chua-slope-refinement.md) |
+| Large-parameter dynamics | [Quadratic scaling limit](docs/chua-scaling-structure.md) · [Switching between oscillation regimes](docs/chua-fiber-switching.md) |
+| Measurement | [Recover the other two coordinates from one capacitor voltage](docs/chua-voltage-reconstruction.md) |
 
 ## Hidden attractors in a lossy circuit
 
@@ -16,19 +31,6 @@ How precisely must a capacitor be charged to keep a trajectory near a saddle cyc
 | Which precharges reach each regime as components vary? | [Launch voltages and component tolerances](docs/chua-precharge.md) |
 | Which hidden cycles coexist at the same parameter settings? | [Three attracting cycles throughout 12.21775 ≤ β ≤ 12.24225 on the separate m₁ = −0.12 slice](docs/chua-explicit-hidden.md) |
 | Can a short residence distinguish startup jitter from continuing noise? | [First-exit counts under two disturbance models](results/chua-residence-noise/README.md) |
-
-## Reading the atlas
-
-A **layer** is a region of parameter space in which a continued periodic motion attracts nearby trajectories. The 34 illustrated families are sampled at their own reference settings. For instance, A04 and A01 each have 25 peaks in one period, but their trajectories have different numerical knot types. [Browse the 34 cards or play the animation](docs/chua-layer-cards.md)
-
-![Family A04 with its parameter layer, periodic orbit and voltage waveform](docs/assets/chua-layer-cards/A04.png)
-
-| Explore | Start here |
-|---|---|
-| Period adding and narrow windows | [Return geometry](docs/chua-return-geometry.md) · [Three sequences](docs/chua-return-families.md) · [Nested returns through 245 peaks](docs/chua-nested-returns.md) |
-| Coexistence and basin boundaries | [Overlap of attracting branches](docs/chua-overlap-geometry.md) · [A certified local separator](docs/chua-basin-and-coexistence.md) |
-| Infinitely many periodic attractors | [Window accumulation](docs/chua-infinity-certificate.md) · [Hidden periodic coexistence at nearby parameters](docs/chua-hidden-infinity-certificate.md) |
-| Geometry and topology | [Diode slope continuation](docs/chua-slope-refinement.md) · [Knots](docs/chua-knot-atlas.md) · [Linked attracting pairs](docs/chua-link-search.md) |
 
 ## The system and the question
 
@@ -46,10 +48,11 @@ The component study includes the second pair of diode breakpoints reached by the
 
 ## Reproducibility
 
-To regenerate the voltage-start figure and check all 24 predictions, run these commands from the repository root. Results go to `outputs/chua-saddle-residence/`.
+From the repository root, reconstruct the 34 reference waveforms on a CPU or replay the 24 voltage-start forecasts. Both commands write to `outputs/`.
 
 ```bash
 python -m pip install -r requirements-certificate.txt
+python research/chua_voltage_reconstruction.py atlas
 python research/observed_saddle_validate.py --figure
 ```
 

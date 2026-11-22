@@ -1,0 +1,167 @@
+{
+  "parameter_source": "results/chua-link-search/certificate-S02-S08-d140.json",
+  "digits": 140,
+  "steps_per_unit_time": 128,
+  "dyadic_grid": 4294967296,
+  "components": [
+    {
+      "id": "S02",
+      "vertices": 3624,
+      "max_coordinate_tube_units": 534884,
+      "polygon_sha256": "2003fd393efb22e84c79715ff9ff7f453477557e2320e9b9d82a6aabdd3eb257",
+      "segment_pairs": {
+        "coordinate_separation": 6561252,
+        "adjacent_monotonicity": 3624
+      }
+    },
+    {
+      "id": "S08",
+      "vertices": 1392,
+      "max_coordinate_tube_units": 522348,
+      "polygon_sha256": "fbc2fc3ba5ac425fd7103a9be616f0fef77aef65a5d1d18428fa2ac54791fd4c",
+      "segment_pairs": {
+        "coordinate_separation": 966744,
+        "adjacent_monotonicity": 1392
+      }
+    }
+  ],
+  "separated_cross_component_pairs": 5044608,
+  "diagrams": [
+    {
+      "projection": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          1,
+          -2,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "components": [
+        {
+          "crossings": 28,
+          "determinant": 25,
+          "jones": {
+            "-20": -1,
+            "-16": 1,
+            "-12": -2,
+            "-8": 3,
+            "-4": -3,
+            "0": 5,
+            "4": -3,
+            "8": 3,
+            "12": -2,
+            "16": 1,
+            "20": -1
+          },
+          "max_bracket_states": 10
+        },
+        {
+          "crossings": 8,
+          "determinant": 1,
+          "jones": {
+            "0": 1
+          },
+          "max_bracket_states": 4
+        }
+      ],
+      "joint_crossings": 68,
+      "joint_jones": {
+        "-30": 1,
+        "-26": -1,
+        "-22": 1,
+        "-14": -1,
+        "-10": 1,
+        "-6": -1,
+        "-2": -1,
+        "2": -1,
+        "6": -1,
+        "10": 1,
+        "14": -1,
+        "22": 1,
+        "26": -1,
+        "30": 1
+      },
+      "span": 60,
+      "split_span": 44,
+      "linking_number": 0,
+      "max_bracket_states": 486
+    },
+    {
+      "projection": [
+        [
+          2,
+          1,
+          -3
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "components": [
+        {
+          "crossings": 24,
+          "determinant": 25,
+          "jones": {
+            "-20": -1,
+            "-16": 1,
+            "-12": -2,
+            "-8": 3,
+            "-4": -3,
+            "0": 5,
+            "4": -3,
+            "8": 3,
+            "12": -2,
+            "16": 1,
+            "20": -1
+          },
+          "max_bracket_states": 10
+        },
+        {
+          "crossings": 8,
+          "determinant": 1,
+          "jones": {
+            "0": 1
+          },
+          "max_bracket_states": 4
+        }
+      ],
+      "joint_crossings": 52,
+      "joint_jones": {
+        "-30": 1,
+        "-26": -1,
+        "-22": 1,
+        "-14": -1,
+        "-10": 1,
+        "-6": -1,
+        "-2": -1,
+        "2": -1,
+        "6": -1,
+        "10": 1,
+        "14": -1,
+        "22": 1,
+        "26": -1,
+        "30": 1
+      },
+      "span": 60,
+      "split_span": 44,
+      "linking_number": 0,
+      "max_bracket_states": 36
+    }
+  ]
+}

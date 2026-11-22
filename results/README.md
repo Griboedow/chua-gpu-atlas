@@ -14,6 +14,8 @@ The directories below contain the settings, data, certificates and numerical con
 
 ## Parameter atlas
 
+- [Fold passages](chua-fold-passage/) measure transient durations outside three periodic windows. [Waveform sampling](chua-voltage-reconstruction/) compares one-voltage reconstruction errors for all 34 reference families.
+- [S02/S08 link certificate](chua-link-certificate/) connects two exact periodic orbits to their polygonal link. [Large-α switching](chua-fiber-switching/) compares frozen response thresholds with the recorded finite-α trajectory.
 - [`chua-link-search/`](chua-link-search/README.md): three non-split numerical attracting pairs with zero linking number, 20 diagram checks, interval certificates for all six cycles, retained negative searches and a common-coordinate viewer. See the [linked-pair report](../docs/chua-link-search.md).
 - [`chua-linked-attractors/`](chua-linked-attractors/README.md): four simultaneous cycles, all 15 sublinks, 105 numerical diagrams, analytic link controls, independent integrations and an interactive 3D viewer. All configurations at this tested parameter point are unlinks; see the [joint-link report](../docs/chua-linked-attractors.md).
 
