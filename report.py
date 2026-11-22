@@ -1,4 +1,4 @@
-"""Offline Plotly report and publication-friendly Matplotlib PNG/PDF figures."""
+"""Offline Plotly report and publication-friendly Matplotlib PNG figures."""
 from __future__ import annotations
 
 import html
@@ -151,7 +151,6 @@ def static_overview(records,directory):
         fig.colorbar(dots,ax=ax,shrink=.55,pad=.02,label="Largest finite-time Lyapunov exponent")
     fig.suptitle("CHUA  /  GPU PARAMETER ATLAS\nBounded positive-Lyapunov candidates from three initial conditions",fontsize=19)
     fig.savefig(directory/"overview.png",dpi=170)
-    fig.savefig(directory/"overview.pdf")
     plt.close(fig)
     # Unsmoothed categorical slices show periodic windows and uncertain cells.
     for name,scan,sm,traj,tm in records:
@@ -254,7 +253,7 @@ def build_report(directory):
     <p>“Any seed” requires one successful start; “All seeds” requires all three.
     “LLE points” colors nodes by λ₁; “Uncertain” adds unresolved nodes.
     A negative or near-zero exponent alone does not establish periodicity.</p>
-    {''.join(sections)}<footer><a href="overview.png">Overview PNG</a> · <a href="overview.pdf">Overview PDF</a>
+    {''.join(sections)}<footer><a href="overview.png">Overview PNG</a>
     {validation}<p>RK4 jointly advances the state and variational equation; the tangent vector is normalized every ten steps.
     No fast-math flags or silent CPU fallback. Boundary accuracy is limited by the grid, integrator and observation time.</p></footer>
     </main><script>window.addEventListener('load',()=>{{

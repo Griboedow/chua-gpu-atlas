@@ -15,7 +15,7 @@ BG='#fafaf7';INK='#182d39';GREY='#75878c';COLORS=['#167c9d','#9a4f98','#cb6e30']
 
 def save(fig,name):
     fig.savefig(ROOT/f'docs/assets/{name}.png',dpi=160,facecolor=BG)
-    fig.savefig(OUT/f'{name}.pdf',facecolor=BG);plt.close(fig)
+    plt.close(fig)
 
 
 def sequences():

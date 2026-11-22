@@ -33,12 +33,6 @@ def save(fig, name):
     fig.savefig(
         ASSETS / (name + ".png"), dpi=180, facecolor="white", bbox_inches="tight"
     )
-    fig.savefig(
-        OUT / (name + ".pdf"),
-        facecolor="white",
-        bbox_inches="tight",
-        metadata={"CreationDate": None, "ModDate": None},
-    )
     plt.close(fig)
 
 
@@ -347,7 +341,7 @@ def main():
         raise ValueError("Refusing to plot a successful certificate from failed data")
     overview(cert)
     signs(cert)
-    print("Rendered two certificate figures as PNG and PDF.")
+    print("Rendered two certificate figures as PNG.")
 
 
 if __name__ == "__main__":

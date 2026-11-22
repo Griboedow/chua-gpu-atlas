@@ -178,7 +178,7 @@ The distinction matters because the first 85-peak whole-period multiplier check 
 
 An initial high-precision implementation trial also failed because of negative matrix indexing. That record is preserved and labeled as an implementation failure, not evidence against a physical orbit. After correction, [checks on two known roots and finite-difference Jacobians](../results/chua-layer-prediction/precision-implementation-checks.json) passed before the accepted high-precision search. All independent numerical gates now pass. None is an interval-arithmetic existence proof.
 
-The [evidence directory and reproduction commands](../results/chua-layer-prediction/README.md) include the frozen file, roots, rejected trials, checks, motion descriptions, extended registry and vector PDF versions of all five figures. The [atlas manifest](../results/chua-layer-atlas/manifest.json) hashes this study and its code alongside the earlier evidence.
+The [evidence directory and reproduction commands](../results/chua-layer-prediction/README.md) include the frozen file, roots, rejected trials, checks, motion descriptions, extended registry and links to all five figures. The [atlas manifest](../results/chua-layer-atlas/manifest.json) hashes this study and its code alongside the earlier evidence.
 
 ## Relation to prior work
 

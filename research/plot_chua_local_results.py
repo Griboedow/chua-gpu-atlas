@@ -15,7 +15,6 @@ def read(path):return json.loads((ROOT/path).read_text())
 def number(v):return float(v['midpoint'])
 def save(fig,name):
     fig.savefig(ROOT/'docs/assets'/f'{name}.png',dpi=180,bbox_inches='tight',facecolor='white')
-    fig.savefig(OUT/f'{name}.pdf',bbox_inches='tight',facecolor='white',metadata={'CreationDate':None,'ModDate':None})
     plt.close(fig)
 
 
@@ -93,5 +92,5 @@ def coexistence():
 
 
 if __name__=='__main__':
-    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'pdf.fonttype':42})
+    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11})
     basin();coexistence()

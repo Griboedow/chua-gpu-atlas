@@ -1,0 +1,66 @@
+{
+  "source": "https://doi.org/10.1007/s11071-022-08078-y",
+  "figure": "10b",
+  "published_samples": 218,
+  "sample_interval_us": 2.5,
+  "sample_derived_period_us": 545.0,
+  "rounded_published_period_us": 550,
+  "coupled_settings": 64,
+  "coupled_sample_ranges": {
+    "clock_us": [
+      244.5027514164557,
+      245.66909712613835
+    ],
+    "period_dimensionless": [
+      2.3990390471312084,
+      2.417246860931104
+    ],
+    "period_us": [
+      588.3858989794037,
+      591.4754163772493
+    ],
+    "lambda_unstable": [
+      2.1858548937900064,
+      2.241421861213137
+    ],
+    "turns_per_decade": [
+      2.8528749284261212,
+      2.944455829841743
+    ],
+    "max_abs_x": [
+      2.3181907773730224,
+      2.341970680168882
+    ],
+    "outer_break": [
+      12.268340012841488,
+      12.545642102694263
+    ]
+  },
+  "min_and_max_period_settings": [
+    30,
+    47
+  ],
+  "nearest_gap_us": 43.38589897940369,
+  "nearest_gap_in_sample_spacings": 17.354359591761476,
+  "gap_from_rounded_period_us": 38.38589897940369,
+  "independent_DOP853_returns": [
+    {
+      "settings_index": 0,
+      "ivp_period_dimensionless": 2.407506540106531,
+      "absolute_period_difference": 1.4477308241112041e-13,
+      "section_closure_inf": 1.3322676295501878e-12
+    },
+    {
+      "settings_index": 30,
+      "ivp_period_dimensionless": 2.4000564396262525,
+      "absolute_period_difference": 4.1744385725905886e-14,
+      "section_closure_inf": 2.4491519923230953e-13
+    },
+    {
+      "settings_index": 47,
+      "ivp_period_dimensionless": 2.415229930563919,
+      "absolute_period_difference": 1.4166445794216997e-13,
+      "section_closure_inf": 1.219468970248272e-12
+    }
+  ]
+}

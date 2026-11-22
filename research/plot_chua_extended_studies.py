@@ -24,7 +24,6 @@ def style():
 
 def save(fig,name):
     fig.savefig(ASSETS/(name+'.png'),dpi=180,bbox_inches='tight')
-    fig.savefig(ASSETS/(name+'.pdf'),bbox_inches='tight')
     plt.close(fig)
 
 

@@ -57,7 +57,7 @@ To replay the published evidence without repeating the exploratory continuation:
 .\.venv\Scripts\python.exe -X utf8 research/plot_chua_link_search.py
 ```
 
-The review replays 20 joint polynomials and performs 12 independent ODE integrations. It checks the frozen protocol against Git commit `36ed4c5`, so that commit must be available locally. The certificate checks use exact parameter strings and refine numerical starting guesses anew. The plot program regenerates both PNG/PDF figures and the offline viewer from the retained records.
+The review replays 20 joint polynomials and performs 12 independent ODE integrations. It checks the frozen protocol against Git commit `36ed4c5`, so that commit must be available locally. The certificate checks use exact parameter strings and refine numerical starting guesses anew. The plot program regenerates both figures and the offline viewer from the retained records.
 
 The exploratory selection was generated with:
 

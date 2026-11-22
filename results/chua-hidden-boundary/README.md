@@ -56,8 +56,8 @@ The global theorem applies to every initial state under its stated sector assump
 
 ## Figures
 
-- [Global sector, PDF](chua-global-sector.pdf)
-- [Saddle and local separator, PDF](chua-basin-saddle.pdf)
-- [Linear contacts and prediction comparison, PDF](chua-linear-contact.pdf)
+- [Global sector](../../docs/assets/chua-global-sector.png)
+- [Saddle and local separator](../../docs/assets/chua-basin-saddle.png)
+- [Linear contacts and prediction comparison](../../docs/assets/chua-linear-contact.png)
 
-The corresponding PNGs are displayed in the report and generated from the same records. Computation and proof checking are local; no GitHub Actions workflow is used.
+Computation and proof checking run locally.

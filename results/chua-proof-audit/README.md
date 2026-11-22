@@ -8,7 +8,7 @@ The [report](../../docs/chua-coexistence-audit.md) separates reproduced numerica
 | [formal-check.json](formal-check.json) | Lean build, five transitive axiom reports, source hashes and two rejection controls |
 | [validation-summary.json](validation-summary.json) | Local verification record, preserved forecast hash, browser review and historical Linux check |
 | [browser-check.json](browser-check.json) | Live Chrome review of the report, formulas, tables, figure, formal guide and main page |
-| [chua-proof-audit.pdf](chua-proof-audit.pdf) | Vector version of the argument map |
+| [Argument map](../../docs/assets/chua-proof-audit.png) | Proof dependencies |
 
 From the repository root:
 

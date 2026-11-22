@@ -1,6 +1,6 @@
 # Symmetry-resolved coexistence geometry
 
-Read the [research note](../../docs/chua-overlap-geometry.md) or download the self-contained [visual guide](guide.html). Figures are available as PNG files in `docs/assets/` and as PDF files here, with vector lines/text and rasterized dense color fields. The four selectable SVG sections are bundled in the guide; no network connection is required after download.
+Read the [research note](../../docs/chua-overlap-geometry.md) or download the self-contained [visual guide](guide.html). The guide includes four selectable sections and works offline.
 
 This dataset follows the specific P5 and P7 families from `results/chua-slope-families/anchors.json`. It is not an exhaustive attractor count. Primary branches are included only up to the first period doubling of their asymmetric pair.
 
@@ -17,14 +17,14 @@ This dataset follows the specific P5 and P7 families from `results/chua-slope-fa
 | `independent-checks.json` | 180 full-field cycle controls; 90 surface-transversality and Jacobian-rank controls |
 | `branch-controls.json` | 2,340 interior samples on 36 selected stable branch segments, signed-multiplier monotonicity and 36 independent midpoint checks |
 | `audit.json` | Executable evidence gates and numerical summary |
-| `chua-overlap-*.pdf` | Six scientific figures in PDF format |
+| [Overview](../../docs/assets/chua-overlap-story.png), [Volumes](../../docs/assets/chua-overlap-volumes.png), [Slices](../../docs/assets/chua-overlap-slices.png), [Sections](../../docs/assets/chua-overlap-sections.png), [Orbits](../../docs/assets/chua-overlap-orbits.png), [Predictions](../../docs/assets/chua-overlap-prediction.png) | Coexistence geometry and orbit checks |
 | `slice-*.svg`, `guide.html` | Four selectable sections and the standalone visual explanation |
 
 The two-letter contact code selects one edge of P5 followed by one edge of P7. F denotes the symmetric-cycle fold, S the symmetry-breaking edge, and D the first period-doubling edge of an asymmetric cycle. For example, DF means `D5 = F7` at the same m0 and alpha/beta, on two distinct trajectories. Tangents store derivatives of `w` with respect to m1. The vector `w` concatenates P5 flight unknowns, P7 flight unknowns, common m0, and the free control (alpha or beta). Each flight vector consists of initial y, initial z and positive region-flight durations.
 
 P5 and P7 symmetric itineraries each have five half-orbit arcs. Their full asymmetric itineraries have nine arcs after joining the two central flights. F and S use half-return targets +1 and -1; D uses a full-return target -1. Physical peak counts account for the difference between half and full flights. The signed half-return target must not be confused with a full-return period-doubling multiplier.
 
-The displayed quantity `1000(m0-C5)` subtracts the local midpoint of the P5 symmetric interval. It does not multiply physical widths by an undisclosed exaggeration factor. The PDF/PNG color maps interpolate the 101 corrected boundary samples to a finer display mesh; those interpolated cells are not independent solves.
+The displayed quantity `1000(m0-C5)` subtracts the local midpoint of the P5 symmetric interval. It does not multiply physical widths by an undisclosed exaggeration factor. The color maps interpolate 101 corrected boundary samples onto a finer display mesh.
 
 ## Reproduce
 

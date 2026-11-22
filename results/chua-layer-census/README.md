@@ -15,10 +15,10 @@ See the [research report](../../docs/chua-layer-census.md) for interpretation, l
 | `atlas-comparison.npz` | Original 41³ regular mask and masks for the two interpolated stability regions of the five-maximum parent cycles. |
 | `coexistence.json/.npz` | Two attracting cycles at identical parameters, independent state/multiplier checks, perturbed-start checks, and sampled trajectories. |
 | `audit.json` | Executable numerical acceptance gates, independent boundary integrations, fold controls, and the second fold's stable/saddle partners. |
-| `chua-layer-*.pdf` | Exportable figures; PNG versions are in `docs/assets`. |
+| [Census](../../docs/assets/chua-layer-census.png), [Atlas comparison](../../docs/assets/chua-layer-atlas-comparison.png), [Coexisting cycles](../../docs/assets/chua-layer-coexistence.png) | Figures for the window census and coexistence study |
 | `raw-provenance.json` | SHA-256 hashes and sizes of the complete raw GPU scans and details of compact export. |
-| `manifest.json` | Hashes of published code and artifacts, environment versions, and source commit. |
+| [manifest.json](manifest.json) | Hashes of the original code and figures, environment versions, and source commit. |
 
 The NPZ files can be read with `numpy.load`. For the survey files, `parameters` has columns `(alpha, beta, m0, m1)`. `classes`, `lle_windows`, and `final_states` retain a start axis (three starts in line/tight, one in adding). `period` is the candidate peak recurrence for the first start. The existing [methods guide](../../docs/methods.md) defines the finite-time class codes. The published compact scans can seed CPU verification, but recurrence reanalysis requires regenerating the omitted raw `peaks` arrays.
 
-The current scripts include stricter solver-success gating and the corrected candidate tolerance. Original per-run hashes in the reports identify earlier script revisions; they are preserved as provenance, not asserted to equal the final script hashes in `manifest.json`.
+The current scripts include stricter solver-success gating and the corrected candidate tolerance. Individual runs identify their own script revisions. The three original figure files and the plotting script match the hashes in `manifest.json` at the [census publication commit](https://github.com/Griboedow/chua-gpu-atlas/tree/9f2aa8239d7d5f865863f90496db263375b0d11a/results/chua-layer-census).

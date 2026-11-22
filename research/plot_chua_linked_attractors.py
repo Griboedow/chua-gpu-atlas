@@ -32,7 +32,6 @@ def load():
 
 def save(fig,stem):
     fig.savefig(ASSETS/f'{stem}.png',dpi=180,facecolor=BG)
-    fig.savefig(ASSETS/f'{stem}.pdf',facecolor=BG)
     plt.close(fig)
 
 

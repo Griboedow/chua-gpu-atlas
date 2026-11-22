@@ -19,7 +19,7 @@ The [report](../../docs/chua-accessibility.md) gives the analytical arguments, p
 | `equilibrium-screen.json`, `.npz` | 768-start four-cycle basin screen; 557 step-refinement disagreements |
 | `*-linear.json` | Superseded section classifications using linear event interpolation |
 | `circuit-constraints.json` | Component map, nominal lossy model, 128 random perturbations and three independent five-segment-diode checks |
-| `*.pdf` | Exportable versions of the three report figures |
+| [Equilibrium and cycle access](../../docs/assets/chua-accessibility.png), [Circuit constraints](../../docs/assets/chua-circuit-accessibility.png), [Four cycles](../../docs/assets/chua-four-cycle-certificate.png) | Report figures |
 | `browser-check.json` | Published Chrome preview: three loaded figures, seven rendered report formulas, and the new README section |
 
 The `ball` representation of an Arb enclosure includes decimal serialization error. Separate `midpoint` and `radius` strings are diagnostic and must not be interpreted as a lossless interval pair. A floating-point plot or a `passed` field alone is not the proof; reproduce the executable inequalities and read the analytical reduction in the report.

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the repository and identify the commit used for your calculation."
 title: Chua GPU Atlas
-version: 1.2.0
+version: 1.3.0
 date-released: 2026-11-22
 type: software
 authors:

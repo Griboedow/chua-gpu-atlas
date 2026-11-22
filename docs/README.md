@@ -4,6 +4,7 @@
 
 | Question | Analysis | Data |
 |---|---|---|
+| Can component tolerances explain the measured saddle period? | [Saddle-cycle period in Chua’s circuit](chua-saddle-period.md) | [Interval bounds and voltage traces](../results/chua-saddle-period/) |
 | How does precharge set the time spent near a saddle? | [Residence near a saddle cycle](chua-saddle-residence.md) | [Voltage forecasts and checks](../results/chua-saddle-residence/) |
 | Which starts tolerate component variation? | [Capacitor precharge](chua-precharge.md) | [Settings and outcomes](../results/chua-precharge/) |
 | Which periodic attractors coexist at a given setting? | [Three hidden cycles at positive loss](chua-explicit-hidden.md) | [Interval certificates](../results/chua-explicit-hidden/) |

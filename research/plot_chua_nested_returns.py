@@ -15,7 +15,7 @@ COLORS=[BLUE,PURPLE,ORANGE]
 
 def save(fig,name):
     fig.savefig(ROOT/f'docs/assets/{name}.png',dpi=165,facecolor=BG)
-    fig.savefig(OUT/f'{name}.pdf',facecolor=BG);plt.close(fig)
+    plt.close(fig)
 
 
 def profile(ax,u,blocks=None):

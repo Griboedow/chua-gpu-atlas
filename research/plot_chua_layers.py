@@ -77,7 +77,7 @@ def main():
         axs[1].text(r['beta'],1.76,label,ha='center',va='center',fontsize=9)
     fig.suptitle('Chua atlas: alpha = 9, m0 = −8/7, m1 = −5/7',fontsize=14)
     fig.savefig(assets/'chua-layer-bifurcations.png',dpi=180)
-    fig.savefig(out/'bifurcations.pdf');plt.close(fig)
+    plt.close(fig)
     fig=plt.figure(figsize=(11,7),layout='constrained');ax=fig.add_subplot(projection='3d')
     rows=b['surfaces'];aa=np.array([r['alpha'] for r in rows]).reshape(7,7);mm=np.array([r['m0'] for r in rows]).reshape(7,7)
     for key,col in [('fold',orange),('symmetry',blue),('period_doubling',green)]:
@@ -87,7 +87,7 @@ def main():
     ax.set_title('The layer is bounded and subdivided by inclined bifurcation surfaces\n49 continuation points on each surface; m1 = −5/7',pad=15)
     ax.view_init(elev=24,azim=-53);ax.ticklabel_format(useOffset=False)
     ax.legend(handles=[Patch(color=orange,label='Fold'),Patch(color=blue,label='Symmetry breaking'),Patch(color=green,label='First period doubling')],loc='upper left',frameon=False)
-    fig.savefig(assets/'chua-layer-surfaces.png',dpi=180);fig.savefig(out/'surfaces.pdf');plt.close(fig)
+    fig.savefig(assets/'chua-layer-surfaces.png',dpi=180);plt.close(fig)
     print('saved chua-layer-bifurcations.png and chua-layer-surfaces.png',flush=True)
 
 

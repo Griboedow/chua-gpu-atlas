@@ -20,15 +20,14 @@ COLORS=['#f5f7f9','#b6dce5','#edc3d0',PURPLE,GOLD,GREEN]
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.labelcolor':INK,
     'text.color':INK,'axes.edgecolor':'#b1bec8','xtick.color':MUTED,'ytick.color':MUTED,
     'axes.spines.top':False,'axes.spines.right':False,'figure.facecolor':'white',
-    'savefig.facecolor':'white','pdf.fonttype':42,'svg.fonttype':'none'})
+    'savefig.facecolor':'white','svg.fonttype':'none'})
 
 
 def read(out,name):return json.loads((out/name).read_text())
 
 
-def save(fig,out,assets,name):
+def save(fig,assets,name):
     fig.savefig(assets/(name+'.png'),dpi=170)
-    fig.savefig(out/(name+'.pdf'))
     plt.close(fig)
 
 
@@ -117,7 +116,7 @@ def story(out,assets):
     fig.text(.5,.035,'Right: subtracting C5 = (fold5 + symmetry5)/2 straightens P5; vertical interval widths are preserved.\n'
         'Counts include these primary cycles before their first period doubling. White does not mean chaos or absence of other attractors.',
         ha='center',fontsize=9,color=MUTED)
-    save(fig,out,assets,'chua-overlap-story')
+    save(fig,assets,'chua-overlap-story')
 
 
 def all_slices(out,assets):
@@ -132,7 +131,7 @@ def all_slices(out,assets):
     phase_legend(fig,.095)
     fig.text(.5,.035,'Vertical coordinate: 1000(m0 - C5), with C5 the midpoint of the P5 symmetric interval.  beta = 100/7.\n'
         'Solid = fold; dashed = symmetry loss; dotted = first period doubling. Filled cells interpolate the 101 corrected cross-sections.',ha='center',fontsize=9,color=MUTED)
-    save(fig,out,assets,'chua-overlap-slices')
+    save(fig,assets,'chua-overlap-slices')
     # Individual views for the offline guide use the same checked data.
     for alpha in [8.84,8.85,8.86,8.865]:
         fig,ax=plt.subplots(figsize=(10,5.3));fig.subplots_adjust(left=.11,right=.97,bottom=.19,top=.88)
@@ -169,7 +168,7 @@ def orbits(out,assets):
     fig.text(.5,.89,'Blue: five peaks. Rose: seven peaks. Dashed traces are the inversion partners of solid asymmetric traces.',ha='center',fontsize=11)
     fig.text(.5,.065,'Within each column all orbits use identical parameters.  beta = 100/7; m1 = -0.7521.\n'
         'Every displayed orbit passes independent closure and stability checks. Counts are lower bounds; other families are not excluded.',ha='center',fontsize=10,color=MUTED)
-    save(fig,out,assets,'chua-overlap-orbits')
+    save(fig,assets,'chua-overlap-orbits')
 
 
 def sections(out,assets):
@@ -193,7 +192,7 @@ def sections(out,assets):
     fig.text(.5,.902,'Recorded upward crossings of x = 0. Each panel is centered on its own family; all panels use the same scale.',ha='center',fontsize=11)
     fig.text(.5,.055,'The nearly overlapping 3D curves separate into distinct points on the section. A and B are related by state inversion and a phase shift.\n'
         'Centers are printed so the original section coordinates can be recovered. These are orbit points, not basin samples.',ha='center',fontsize=10,color=MUTED)
-    save(fig,out,assets,'chua-overlap-sections')
+    save(fig,assets,'chua-overlap-sections')
 
 
 def prediction(out,assets):
@@ -229,7 +228,7 @@ def prediction(out,assets):
     fig.text(.5,.855,r'$\Delta m_1 \simeq 2\sqrt{2\delta/|a^{\prime\prime}(m_1^*)|}$'+'     |     curvature is measured at the tip, not fitted to the cut roots',ha='center',fontsize=12)
     fig.text(.5,.07,'32 held-out horizontal cuts; maximum measured separation error below 0.004%. F = fold; S = symmetry loss.\n'
         'This is a standard local geometric square-root law, verified here for these contact curves; the estimates are not interval-certified.',ha='center',fontsize=10,color=MUTED)
-    save(fig,out,assets,'chua-overlap-prediction')
+    save(fig,assets,'chua-overlap-prediction')
 
 
 def volumes(out,assets):
@@ -257,7 +256,7 @@ def volumes(out,assets):
     fig.subplots_adjust(left=.02,right=.96,bottom=.16,top=.81,wspace=.1)
     fig.text(.5,.045,'The plotted lines are solved simultaneous events on two distinct cycles. Translucent ruled ribbons only connect those lines visually.\n'
         'F = fold; S = symmetry loss; D = first period doubling of an asymmetric cycle. The ribbons are not measured stability volumes.',ha='center',fontsize=10,color=MUTED)
-    save(fig,out,assets,'chua-overlap-volumes')
+    save(fig,assets,'chua-overlap-volumes')
 
 
 def guide(out,assets):

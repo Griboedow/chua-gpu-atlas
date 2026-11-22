@@ -14,9 +14,8 @@ import plotly.graph_objects as go
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def save(fig, name, assets, out):
+def save(fig, name, assets):
     fig.savefig(assets / (name + '.png'), dpi=190, facecolor='white')
-    fig.savefig(out / (name + '.pdf'), facecolor='white')
     plt.close(fig)
 
 
@@ -60,7 +59,7 @@ def main():
     fig.suptitle('The refined atlas: 32 catalogued window families', fontsize=17)
     fig.legend(*axes[0].get_legend_handles_labels(),loc='outside lower center',ncol=11,fontsize=8,frameon=False)
     axes[1].set_title('Representatives inside the beta box\n* = some family samples unresolved',fontsize=11)
-    save(fig, 'chua-refined-atlas', assets, out)
+    save(fig, 'chua-refined-atlas', assets)
 
     interactive = go.Figure()
     for k, family in enumerate(families):
@@ -111,7 +110,7 @@ Hover shows the full period and, where continued, the stability width of the sym
     axes[1].plot(peaks,duration,'o-',color='#197b89',lw=2)
     axes[1].set(xlabel='Maxima per full cycle',ylabel='Full period',title='Approximately 21.6 extra time units per member');axes[1].grid(alpha=.15)
     fig.suptitle('15 → 25 → 35 → 45 → 55 → 65',fontsize=17)
-    save(fig,'chua-refined-adding',assets,out)
+    save(fig,'chua-refined-adding',assets)
 
     orbit = np.load(out/'four-cycles.npz'); baseline = np.load(out/'overlap-basins.npz'); fine = np.load(out/'basin-capture-full.npz')
     palette=['#177e89','#82b5ba','#b04c7b','#e5a5bd']; names=['F1a','F1b','F2a','F2b']
@@ -130,7 +129,7 @@ Hover shows the full period and, where continued, the stability width of the sym
     ax.set_title(f'Similar fractions; only {np.mean(baseline["labels"]==fine["labels"])*100:.2f}% pointwise agreement',fontsize=10)
     fig.suptitle('Four attracting cycles at the same parameters',fontsize=17)
     fig.supxlabel('alpha = 9.06, beta = 14.3458, m0 = −8/7 + 0.006.  The computed basin image is not pointwise converged.',fontsize=10)
-    save(fig,'chua-four-cycle-overlap',assets,out)
+    save(fig,'chua-four-cycle-overlap',assets)
 
     behavior=json.loads((out/'family-behavior.json').read_text()); features={r['id']:r for r in behavior}
     with (out/'family-catalog.csv').open('w',encoding='utf-8',newline='') as handle:

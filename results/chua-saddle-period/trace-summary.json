@@ -1,0 +1,151 @@
+{
+  "source": "https://doi.org/10.1007/s11071-022-08078-y",
+  "scope": "Synthetic U1 at nominal parameters for voltage precharges and the printed Fig. 10(a) start. Periods in samples per turn.",
+  "reference": "Affine return times from results/chua-saddle-residence/measurements.json.",
+  "eligibility": "Both endpoints and all intermediate crossings satisfy |u| < 0.02. At most eight turns from entry.",
+  "clock_phases_in_samples": [
+    0.0,
+    0.0625,
+    0.125,
+    0.1875,
+    0.25,
+    0.3125,
+    0.375,
+    0.4375,
+    0.5,
+    0.5625,
+    0.625,
+    0.6875,
+    0.75,
+    0.8125,
+    0.875,
+    0.9375
+  ],
+  "hypothetical_quanta_mV": [
+    0,
+    1,
+    5
+  ],
+  "R_ohm": 788,
+  "C2_nF": 311,
+  "tau_us": 245.068,
+  "sample_us": 2.5,
+  "breakpoint_V": 1.1606,
+  "published_samples_per_turn": 218,
+  "nominal_orbit_samples": 236.02741603377424,
+  "starts": 8,
+  "eligible_single_turns": 57,
+  "eligible_eight_turn_starts": 5,
+  "max_affine_vs_ivp_event_error_samples": 2.9153303881344076e-06,
+  "continuous_single": [
+    235.59894885124316,
+    236.43627464326505
+  ],
+  "continuous_eight": [
+    235.92935414357677,
+    236.0373621085806
+  ],
+  "by_quantum": [
+    {
+      "quantum_mV": 0,
+      "single_index": [
+        235.0,
+        237.0
+      ],
+      "single_linear": [
+        235.59398110199663,
+        236.4414624362737
+      ],
+      "eight_index": [
+        235.875,
+        236.125
+      ],
+      "eight_linear": [
+        235.92862703046887,
+        236.0378560453255
+      ],
+      "single_max_abs_linear_error": 0.005882512698519804,
+      "eight_max_abs_linear_error": 0.0007271131078994131
+    },
+    {
+      "quantum_mV": 1,
+      "single_index": [
+        235.0,
+        237.0
+      ],
+      "single_linear": [
+        235.5757575757575,
+        236.45397727272734
+      ],
+      "eight_index": [
+        235.875,
+        236.125
+      ],
+      "eight_linear": [
+        235.92676024955438,
+        236.03848039215688
+      ],
+      "single_max_abs_linear_error": 0.028473679170218702,
+      "eight_max_abs_linear_error": 0.0038696952959185182
+    },
+    {
+      "quantum_mV": 5,
+      "single_index": [
+        235.0,
+        237.0
+      ],
+      "single_linear": [
+        235.57142857142844,
+        236.5209523809524
+      ],
+      "eight_index": [
+        235.875,
+        236.125
+      ],
+      "eight_linear": [
+        235.91666666666669,
+        236.0442857142857
+      ],
+      "single_max_abs_linear_error": 0.12675697505102335,
+      "eight_max_abs_linear_error": 0.017155956664538508
+    }
+  ],
+  "rounded_seed_peaks": {
+    "start": [
+      -2.321,
+      -0.787,
+      3.129
+    ],
+    "first_exit_section": 3,
+    "first_exit_us": 1914.947043177699,
+    "first_positive_maximum_us": 302.0936989154432,
+    "first_rising_crossing_interval_samples": 235.91640926990712,
+    "first_peak_interval_samples": 235.8835016053277,
+    "eighth_peak_interval_samples": 219.8975955683128,
+    "ninth_peak_interval_samples": 214.06987728275814,
+    "first_eight_mean_samples": 231.25366243465916,
+    "first_eight_index_mean_ranges": [
+      {
+        "quantum_mV": 0,
+        "samples": [
+          231.25,
+          231.25
+        ]
+      },
+      {
+        "quantum_mV": 1,
+        "samples": [
+          231.25,
+          231.375
+        ]
+      },
+      {
+        "quantum_mV": 5,
+        "samples": [
+          231.25,
+          231.375
+        ]
+      }
+    ]
+  }
+}

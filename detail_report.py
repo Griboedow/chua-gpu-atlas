@@ -208,7 +208,6 @@ def static_findings(classic,reference,basin,items):
     ax.set(xlabel="Initial x₀",ylabel="Initial y₀ (z₀=0)",title="Initial conditions choose the left or right attractor")
     fig.suptitle("CHUA / WHAT THE REFINED MAP REVEALS",fontsize=20)
     fig.savefig(OUT/"findings.png",dpi=180)
-    fig.savefig(OUT/"findings.pdf")
     plt.close(fig)
 
 def build():
@@ -289,7 +288,7 @@ def build():
     this project measures their locations in the selected sections.
     <a href="https://people.eecs.berkeley.edu/~chua/papers/Kennedy93b.pdf">Kennedy: Chua’s circuit primer</a> ·
     <a href="https://www.scholarpedia.org/article/Chua_circuit">Leon Chua’s survey</a>.</p>
-    <p><a href="findings.png">Findings PNG</a> · <a href="findings.pdf">PDF</a> ·
+    <p><a href="findings.png">Findings PNG</a> ·
     <a href="analysis_summary.json">Numerical summaries</a> · <a href="../index.html">Original atlas</a></p></section>
     </main><script>window.addEventListener('load',()=>requestAnimationFrame(()=>document.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p))));</script></body></html>"""
     shutil.copyfile(ROOT/'outputs'/'plotly.min.js',OUT/'plotly.min.js')

@@ -128,7 +128,7 @@ def main():
     fig.suptitle('More points reveal the branches; magnification reveals their width',fontsize=17,weight='bold')
     fig.supxlabel(f'{audit["total_nodes"]:,} closed surface samples, including {audit["new_parameter_locations"]:,} new parameter locations. '
         f'The width zooms contain {thin_counts[0]} and {thin_counts[1]} newly closed cycles.\nThe old beta spacing was 0.004: about 126,000 times the P65 stability width. Connecting lines are visual guides.',fontsize=10)
-    fig.savefig(assets/'chua-readme-layer-zoom.png',dpi=170,facecolor='white');fig.savefig(source/'readme-layer-zoom.pdf',facecolor='white');plt.close(fig)
+    fig.savefig(assets/'chua-readme-layer-zoom.png',dpi=170,facecolor='white');plt.close(fig)
     report=dict(families=32,gif_frames=len(frames),frame_order=[r['id'] for r in ordered],
         surface_samples=audit['total_nodes'],new_parameter_locations=audit['new_parameter_locations'],thin_interval_samples=sum(thin_counts),
         face_counts={id:len(geo[id]['faces']) for id in ids},

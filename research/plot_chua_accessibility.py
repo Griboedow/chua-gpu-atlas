@@ -38,7 +38,6 @@ def trace(cycle,pars,count=2200):
 
 def save(fig,name):
     fig.savefig(ASSETS/(name+'.png'),dpi=180,bbox_inches='tight')
-    fig.savefig(OUT/(name+'.pdf'),bbox_inches='tight')
     plt.close(fig)
 
 

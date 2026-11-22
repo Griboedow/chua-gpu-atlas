@@ -27,7 +27,6 @@ def read(name):
 
 def save(fig, name):
     fig.savefig(ASSETS/(name+'.png'), dpi=185)
-    fig.savefig(OUT/(name+'.pdf'))
     plt.close(fig)
 
 

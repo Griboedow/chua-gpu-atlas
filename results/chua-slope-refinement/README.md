@@ -32,7 +32,7 @@ The four mesh jobs are independent. They reuse and recheck the previous 21 × 21
 | `grazing-constraint-control.json` | Actual outcomes of the unsuccessful first protocol, including a failed smallest point |
 | `grazing-linear-prediction.json` | Fixed smooth path, Taylor coefficients and their step checks; formulated after preliminary exploration, not a blind prediction |
 | `grazing-results.json` | Three central contact points, six sampled contact curves, nine cycle witnesses, DOP853/Radau controls and acceptance gates |
-| `chua-slope-*.pdf` | Vector versions of the three report figures |
+| [Volumes](../../docs/assets/chua-slope-refined-volumes.png), [Sections](../../docs/assets/chua-slope-refined-sections.png), [Grazing law](../../docs/assets/chua-slope-grazing-law.png) | Family sheets, stability intervals and flight times |
 
 `q` stores the two initial section coordinates followed by affine-flight durations. Mesh records are symmetric half-period solutions; the period is twice the duration sum. `regions` and `targets` belong to that particular root. They must not be replaced by a single family-wide itinerary. Branch-control records explicitly state whether they are symmetric or full-period.
 

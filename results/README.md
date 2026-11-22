@@ -6,6 +6,7 @@ The directories below contain the settings, data, certificates and numerical con
 
 | Data | Contents |
 |---|---|
+| [Saddle-cycle period](chua-saddle-period/) | Full tolerance-box enclosure, sampled voltage returns and relative peak spacing in the published traces |
 | [Saddle residence](chua-saddle-residence/) | Forecasts recorded before integration, measured exit counts and full-field checks |
 | [Capacitor precharge](chua-precharge/) | Component settings, launch voltages and finite-time outcomes |
 | [Hidden periodic coexistence](chua-explicit-hidden/) | Common parameter interval, enclosed cycles and exclusion of equilibrium neighborhoods |

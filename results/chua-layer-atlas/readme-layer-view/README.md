@@ -4,7 +4,7 @@ This add-on makes the existing 32-family catalogue easier to see. It does not di
 
 ## What the figures show
 
-The [animation](../../../docs/assets/chua-readme-layers.gif) highlights all 32 families once, with an overview before and after. The camera, coordinates and alpha=9 slice stay fixed. The [static overview](../../../docs/assets/chua-readme-layers-poster.png) and [width zoom](../../../docs/assets/chua-readme-layer-zoom.png) are available separately; [the zoom PDF](readme-layer-zoom.pdf) retains vector lines and text.
+The [animation](../../../docs/assets/chua-readme-layers.gif) highlights all 32 families once, with an overview before and after. The camera, coordinates and alpha=9 slice stay fixed. The [static overview](../../../docs/assets/chua-readme-layers-poster.png) and [width zoom](../../../docs/assets/chua-readme-layer-zoom.png) are available separately.
 
 The main README now uses [combined layer cards](../../../docs/chua-layer-cards.md), which reuse these unchanged meshes and add the reference orbit, motion characteristics and numerical knot type. P75 and P85 use three later continuation samples each. The original geometry-only animation and its render summary remain reproducible here.
 
@@ -21,7 +21,6 @@ The width zoom uses a categorical row for each of six period-adding families, th
 | `thin-intervals.json` | 25 fresh interior cycles each for P55 and P65, plus full-field midpoint controls |
 | `P65-positive-half-multiplier-attempt.json` | Retained preliminary display attempt, with 35 unresolved locations; excluded from the figures and final totals |
 | `render-summary.json` | Frame order, face counts and plotted sample totals |
-| `readme-layer-zoom.pdf` | Vector version of the multiscale figure |
 
 There are **5,447 checked surface samples**, including **3,975 new parameter locations** relative to the old mesh; **4,126** fall inside the displayed beta box. The total includes 1,321 halo samples used to clip adjacent facets. This set overlaps the original 2,587 representatives and must not be added to it as a distinct-sample count. There are a further **50 samples across narrow stability intervals** at alpha = 9 and m0 = -8/7.
 

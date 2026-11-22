@@ -190,4 +190,4 @@ All cards fix alpha = 9, m0 = -8/7, m1 = -5/7 and use the family-specific refere
 
 Source: [family behaviour data](../results/chua-layer-atlas/family-behavior.json), [sampled orbits](../results/chua-layer-atlas/family-orbits.npz), and [display checks](../results/chua-layer-atlas/gallery-checks.json). Scientific interpretation and numerical limitations are in the [refined atlas report](chua-refined-atlas.md).
 
-Regenerate with `python research/plot_chua_family_gallery.py`. The PNGs and PDFs use the full stored arrays; the interactive paths use every second sample for display.
+Regenerate with `python research/plot_chua_family_gallery.py`. The PNGs use every stored sample. The interactive paths use every second sample.

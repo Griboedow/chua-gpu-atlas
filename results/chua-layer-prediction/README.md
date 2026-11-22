@@ -19,7 +19,7 @@ The 75-peak forecast overlaps the measured stability interval. The 85-peak forec
 | [extended-family-registry.json](extended-family-registry.json) | Original 32 entries plus P75/P85. Compatible float64 interior-orbit fields are accompanied by the high-precision representative and evidence links. The original reference orbits and catalogue assignments are unchanged. |
 | [predicted-orbits.npz](predicted-orbits.npz) | Sampled trajectories for the two new portraits. These illustrate the checked solutions; the independent solvers count peaks and section returns. |
 
-All five figures are available as vector PDFs: [forecast comparison](chua-layer-prediction-proof.pdf), [scaling](chua-layer-prediction-scales.pdf), [motion descriptions](chua-layer-motion-description.pdf), [new motions](chua-layer-predicted-motions.pdf), and [homoclinic-tangency estimates](chua-layer-prediction-tangency.pdf). Their PNG versions appear in the report and under `docs/assets/`. The [atlas manifest](../chua-layer-atlas/manifest.json) covers the study, code and input evidence.
+The five figures show [forecast comparison](../../docs/assets/chua-layer-prediction-proof.png), [scaling](../../docs/assets/chua-layer-prediction-scales.png), [motion descriptions](../../docs/assets/chua-layer-motion-description.png), [new motions](../../docs/assets/chua-layer-predicted-motions.png), and [homoclinic-tangency estimates](../../docs/assets/chua-layer-prediction-tangency.png). The [atlas manifest](../chua-layer-atlas/manifest.json) covers the study, code and input evidence.
 
 ## Numerical checks and forecast errors
 

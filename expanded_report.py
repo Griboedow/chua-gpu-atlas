@@ -87,7 +87,7 @@ def static(p,old):
         ax.view_init(23,-55);ax.set_box_aspect((1,1,1))
     fig.colorbar(points,ax=fig.axes,shrink=.6,label='Inner diode slope m₀')
     fig.suptitle(f'CHUA / FOUR TIMES FARTHER\n{len(p):,} repeated adaptive GPU candidates; gold = previous search limits',fontsize=18)
-    fig.savefig(OUT/'expanded_extent.png',dpi=170);fig.savefig(OUT/'expanded_extent.pdf');plt.close(fig)
+    fig.savefig(OUT/'expanded_extent.png',dpi=170);plt.close(fig)
 
 def build():
     summary=json.loads((OUT/'summary.json').read_text());data=dict(np.load(OUT/'verified.npz'))
@@ -150,7 +150,7 @@ def build():
     Earlier v1.0 event-reference values are retained as historical records, but should not be treated as definitive reference measurements.</p>
     <p>A finite search still cannot settle whether the complete parameter family terminates or extends indefinitely, or whether all distant candidates connect.
     Bounded motion of one attractor in state space does not imply a bounded set of parameters supporting attractors.</p>
-    <p><a href="../extent/index.html">Previous wide survey</a> · <a href="expanded_extent.png">Comparison PNG</a> · <a href="expanded_extent.pdf">PDF</a> ·
+    <p><a href="../extent/index.html">Previous wide survey</a> · <a href="expanded_extent.png">Comparison PNG</a> ·
     <a href="verified.npz">Repeated data</a> · <a href="summary.json">Exact settings and counts</a></p></section>
     </main><script>window.addEventListener('load',()=>requestAnimationFrame(()=>document.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p))));</script></body></html>'''
     shutil.copy2(ROOT/'outputs/plotly.min.js',OUT/'plotly.min.js');(OUT/'index.html').write_text(body,encoding='utf-8')

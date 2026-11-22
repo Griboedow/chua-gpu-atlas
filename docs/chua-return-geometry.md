@@ -12,7 +12,7 @@ This explains one organized sequence within the atlas. It does not classify ever
 
 ![Four tests of the return mechanism: residence near a saddle, transient amplification, inverse-square-root width scaling, and a normalized quadratic return](assets/chua-return-explanation.png)
 
-The first panel aligns section crossings by the large excursion. The longer cycles acquire more crossings close to the short saddle. The second follows the largest transverse linear gain from one sensitive initial phase of the 85-peak cycle. The third compares widths and locally refined gain maxima; the two orange points were computed after their forecasts. The fourth evaluates the actual nonlinear return at nine initial states for each of two cycles. [Vector figure](../results/chua-return-geometry/chua-return-explanation.pdf).
+The first panel aligns section crossings by the large excursion. The longer cycles acquire more crossings close to the short saddle. The second follows the largest transverse linear gain from one sensitive initial phase of the 85-peak cycle. The third compares widths and locally refined gain maxima; the two orange points were computed after their forecasts. The fourth evaluates the actual nonlinear return at nine initial states for each of two cycles.
 
 ## 1. Objects, parameters and scope
 
@@ -45,7 +45,7 @@ These are infinitesimal amplitude gains in a stated norm. They are not finite es
 
 ![Phase-dependent amplification along the 15- and 85-peak attracting cycles](assets/chua-return-phase-sensitivity.png)
 
-The orbit color records the largest gain available during the next period when starting at that phase. The lower panels use the same vertical scale. Projected orbit crossings are not intersections in three-dimensional state space. [Vector figure](../results/chua-return-geometry/chua-return-phase-sensitivity.pdf).
+The orbit color records the largest gain available during the next period when starting at that phase. The lower panels use the same vertical scale. Projected orbit crossings are not intersections in three-dimensional state space.
 
 The quotient propagators can be composed with transverse projections at intermediate points: the discarded tangent direction is carried into the next tangent direction by the exact variational flow. This avoids contamination by the neutral phase mode in long matrix products. The vector field is continuous at diode breakpoints, so there is no saltation jump there; the Jacobian changes between affine regions.
 
@@ -128,7 +128,7 @@ The exploratory [protocol was committed first](https://github.com/Griboedow/chua
 
 Relative error is measured/predicted − 1. The frozen acceptance gates were 10% for W and G, 15% for d, and 0.001 absolute error for the predicted companion half multiplier 1.5. The observed errors are much smaller; they are not confidence intervals. The two multiplier discrepancies are 3.33 × 10⁻⁶ and 1.23 × 10⁻⁶.
 
-The search inserts a saddle return into the preceding itinerary and corrects the root by high-precision shooting. It does **not** test a forecast of the window's absolute location. The [forecast file](../results/chua-return-geometry/forecasts-frozen.json), all roots, endpoint solves and scores remain available in the [data directory](../results/chua-return-geometry/README.md). [Vector comparison](../results/chua-return-geometry/chua-return-forecast-check.pdf).
+The search inserts a saddle return into the preceding itinerary and corrects the root by high-precision shooting. It does **not** test a forecast of the window's absolute location. The [forecast file](../results/chua-return-geometry/forecasts-frozen.json), all roots, endpoint solves and scores remain available in the [data directory](../results/chua-return-geometry/README.md).
 
 ## 5. What carries over to the other reference families?
 
@@ -136,7 +136,7 @@ The search inserts a saddle return into the preceding itinerary and corrects the
 
 All 34 displayed references admit transient transverse growth in the stated norm. Their locally refined gains range over several orders of magnitude. This establishes that Floquet attraction alone is an incomplete description of their short-time response.
 
-The orange entries belong to the tested period-adding sequence. The blue entries have not been assigned to this same organizing return. Their gains do not establish the product law, identify an organizing saddle, or explain their knot types. The numerical [knot study](chua-knot-atlas.md) found that the eight earlier sequence members are unknots; the present study does not classify P95 or P105 topologically. [Vector catalogue](../results/chua-return-geometry/chua-return-catalogue.pdf).
+The orange entries belong to the tested period-adding sequence. The blue entries have not been assigned to this same organizing return. Their gains do not establish the product law, identify an organizing saddle, or explain their knot types. The numerical [knot study](chua-knot-atlas.md) found that the eight earlier sequence members are unknots; the present study does not classify P95 or P105 topologically.
 
 ## 6. Numerical checks and retained limitations
 

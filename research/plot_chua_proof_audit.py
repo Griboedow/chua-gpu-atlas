@@ -15,7 +15,7 @@ def main():
     assert evidence["status"] == "local_numerical_hypotheses_reproduced"
     assert formal["status"] == "passed"
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 12,
-                         "svg.fonttype": "none", "pdf.fonttype": 42})
+                         "svg.fonttype": "none"})
     fig, ax = plt.subplots(figsize=(14, 8.3))
     fig.patch.set_facecolor("#f5f3ee")
     ax.set(xlim=(0, 14), ylim=(0, 8.3))
@@ -49,7 +49,6 @@ def main():
     ax.text(.35, .43, "Dashed arrows indicate connections outside Lean. See the companion basin and coexistence report for localization.", color="#52616a", fontsize=11)
     fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
     fig.savefig(ROOT/"docs/assets/chua-proof-audit.png", dpi=160, facecolor=fig.get_facecolor())
-    fig.savefig(ROOT/"results/chua-proof-audit/chua-proof-audit.pdf", facecolor=fig.get_facecolor())
     plt.close(fig)
 
 
