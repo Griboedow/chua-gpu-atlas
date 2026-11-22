@@ -8,7 +8,7 @@ Python code, actual GPU results, and an offline interactive report for two stand
 
 Open `outputs/index.html` in a modern browser. Keep `outputs/plotly.min.js` next to it. Everything is local; no CDN or server is needed. Rotate the phase portrait and parameter surface, switch between the three-seed intersection and union, inspect Lyapunov-colored points, and view categorical slices.
 
-- `outputs/overview.png` / `overview.pdf`: static overview.
+- `outputs/overview.png` contains the static overview.
 - `outputs/*_scan.npz`: every sampled parameter, per-seed classification and Lyapunov diagnostics.
 - `outputs/*_scan.json`: GPU identity, precise settings, timings, and class definitions.
 - `outputs/*_trajectory.npz`: trajectory and relative time.

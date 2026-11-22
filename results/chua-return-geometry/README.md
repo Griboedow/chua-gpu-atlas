@@ -23,7 +23,7 @@ This directory supports the [return-geometry report](../../docs/chua-return-geom
 | [`energy-metric-check.json`](energy-metric-check.json) | Coarse-mesh amplitude gains in Euclidean and stored-energy norms |
 | [`review.json`](review.json) | Recomputed forecast scores, source checks and aggregate numerical controls |
 | [`environment.json`](environment.json) | Python and numerical-library versions used for the local computations |
-| `chua-return-*.pdf` | Four vector figures; corresponding PNGs are displayed in the report |
+| [Overview](../../docs/assets/chua-return-explanation.png), [Phase sensitivity](../../docs/assets/chua-return-phase-sensitivity.png), [Forecast checks](../../docs/assets/chua-return-forecast-check.png), [Catalogue](../../docs/assets/chua-return-catalogue.png) | Return geometry and transverse gains |
 
 The NPZ arrays store physical time `t`, reference states `xyz`, velocity, orthonormal normal frames `basis`, and the local 2 × 2 quotient propagators `local`. `gain` is the best sampled gain for each initial phase; `maximizing_steps` and `maximizing_duration` identify its endpoint. `worst_history` contains operator norms along the period starting at the largest sampled phase. Its optimal initial direction can change with the displayed endpoint time.
 

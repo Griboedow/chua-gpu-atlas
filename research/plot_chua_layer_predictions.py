@@ -21,7 +21,6 @@ def style():
 
 def save(fig,name):
     fig.savefig(ASSETS/(name+'.png'),dpi=170,facecolor='white',bbox_inches='tight')
-    fig.savefig(OUT/(name+'.pdf'),facecolor='white',bbox_inches='tight',metadata={'CreationDate':None,'ModDate':None})
     plt.close(fig)
 
 
@@ -112,7 +111,7 @@ def new_motions(data):
 
 def main():
     style();data=json.loads((OUT/'analysis.json').read_text());forecasts(data);scaling(data);descriptions();new_motions(data);tangency_estimate(data)
-    print('Rendered five PNG/PDF figures.')
+    print('Rendered five PNG figures.')
 
 
 def tangency_estimate(data):

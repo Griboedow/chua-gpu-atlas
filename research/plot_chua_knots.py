@@ -62,7 +62,6 @@ def knot_drawing(ax,xyz,color):
 
 def save(fig,name):
     fig.savefig(ASSET/f'chua-knots-{name}.png',dpi=190,facecolor=fig.get_facecolor())
-    fig.savefig(ASSET/f'chua-knots-{name}.pdf',facecolor=fig.get_facecolor())
     plt.close(fig)
 
 
@@ -151,7 +150,7 @@ sel.value=data.findIndex(r=>r.id==='A04');sel.addEventListener('change',draw);do
     body=body.replace('__SHAPES__',json.dumps({k:np.vstack((v,v[0])).tolist() for k,v in shapes.items()},separators=(',',':')))
     body=body.replace('__COLORS__',json.dumps(COLORS)).replace('__NAMES__',json.dumps(NAMES))
     (OUT/'knot-atlas.html').write_text(body,encoding='utf-8')
-    print('Wrote four PNG/PDF figures and the offline viewer')
+    print('Wrote four PNG figures and the offline viewer')
 
 
 if __name__=='__main__':main()

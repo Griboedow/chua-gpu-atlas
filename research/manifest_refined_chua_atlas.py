@@ -104,7 +104,6 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-followup').rglob('*') if p.is_file())
     paths.update((ROOT/'docs/assets').glob('chua-followup-*.png'))
     paths.update((ROOT/'docs/assets').glob('chua-extended-*.png'))
-    paths.update((ROOT/'docs/assets').glob('chua-extended-*.pdf'))
     paths.update(p for p in (ROOT/'results/chua-knot-atlas').rglob('*') if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-layer-cards').rglob('*') if p.is_file())
     paths.update(p for p in (ROOT/'results/chua-return-geometry').rglob('*') if p.is_file())
@@ -118,17 +117,14 @@ def main():
     paths.update(p for p in (ROOT/'results/chua-linked-attractors').rglob('*') if p.is_file())
     paths.add(ROOT/'docs/chua-linked-attractors.md')
     paths.update((ROOT/'docs/assets').glob('chua-linked-attractors-*.png'))
-    paths.update((ROOT/'docs/assets').glob('chua-linked-attractors-*.pdf'))
     paths.update(p for p in (ROOT/'results/chua-link-search').rglob('*') if p.is_file())
     paths.add(ROOT/'docs/chua-link-search.md')
     paths.add(ROOT/'research/chua_link_search_viewer.html')
     paths.update((ROOT/'docs/assets').glob('chua-link-search-*.png'))
-    paths.update((ROOT/'docs/assets').glob('chua-link-search-*.pdf'))
     paths.update((ROOT/'docs/assets/chua-layer-cards').glob('*.png'))
     paths.update(ROOT/p for p in ['docs/assets/chua-layer-cards.gif','docs/assets/chua-layer-cards.webp',
                                 'docs/assets/chua-layer-cards.mp4','docs/chua-layer-cards.md'])
     paths.update((ROOT/'docs/assets').glob('chua-knots-*.png'))
-    paths.update((ROOT/'docs/assets').glob('chua-knots-*.pdf'))
     paths.update(ROOT/p for p in ['docs/chua-knot-atlas.md','requirements-knots.txt'])
     paths.update(ROOT/p for p in ['docs/chua-excitation-robustness-prediction.md','requirements-excitation.txt'])
     paths.update(ROOT/p for p in ['docs/chua-prediction-and-hidden-coexistence.md','docs/chua-hidden-infinity-certificate.md','docs/chua-review-guide.md','docs/terminology.md','AGENTS.md'])
@@ -171,11 +167,11 @@ def main():
     paths.update(ROOT/'results/chua-layer-census'/name for name in ['family-edges.json','census-analysis.json','cycles.json','cycles-extra.json',
         'adding-cycles.json','second-surfaces.json','second-boundaries.json','atlas-comparison.npz'])
     paths.add(ROOT/'results/chua-layers/extended.json')
-    circuit_reports = ['chua-saddle-residence', 'chua-precharge', 'chua-explicit-hidden']
+    circuit_reports = ['chua-saddle-residence', 'chua-saddle-period', 'chua-precharge', 'chua-explicit-hidden']
     paths.update(ROOT/'docs'/(name + '.md') for name in circuit_reports)
     for name in [*circuit_reports, 'chua-residence-noise']:
         paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
-    for pattern in ['observed_saddle*.py', 'chua_precharge*.py', 'explicit_hidden*.py', 'chua_residence_noise.py']:
+    for pattern in ['observed_saddle*.py', 'chua_saddle_period*.py', 'chua_precharge*.py', 'explicit_hidden*.py', 'chua_residence_noise.py']:
         paths.update((ROOT/'research').glob(pattern))
     paths.add(ROOT/'CITATION.cff')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),

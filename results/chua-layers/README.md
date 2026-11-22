@@ -13,9 +13,8 @@ parameter conventions, reproduction commands, and limitations.
 - `audit.json`: executable gates, independent variational checks, sensitivities,
   and source hashes. Read the measured errors, not only the final status.
 - `plot-data.json`: additional saddle continuation and symmetry-partner sections.
-- `bifurcations.pdf`, `surfaces.pdf`: standalone figures; PNG versions are in
-  `docs/assets`.
-- `manifest.json`: provenance, dependency versions, and artifact hashes.
+- [Cycle bifurcations](../../docs/assets/chua-layer-bifurcations.png) and [bifurcation surfaces](../../docs/assets/chua-layer-surfaces.png).
+- [manifest.json](manifest.json) records dependency versions and artifact hashes. The two original figures and plotting script can be verified against [release v1.2.0](https://github.com/Griboedow/chua-gpu-atlas/tree/v1.2.0/results/chua-layers).
 
 All values are floating-point numerical results. This is a local study of one
 window, not an interval proof, exhaustive basin survey, or a complete account

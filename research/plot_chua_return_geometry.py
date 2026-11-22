@@ -24,7 +24,6 @@ def setup():
 
 def save(fig,name):
     fig.savefig(FIGURES/f'{name}.png',dpi=150,facecolor=BG)
-    fig.savefig(OUT/f'{name}.pdf',facecolor=BG)
     plt.close(fig)
 
 
@@ -149,7 +148,7 @@ def catalogue():
 
 def main():
     setup();rows=sequence();overview(rows);phase();forecasts(rows);catalogue()
-    print('Rendered four PNG/PDF figures',flush=True)
+    print('Rendered four PNG figures',flush=True)
 
 
 if __name__=='__main__':main()

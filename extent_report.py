@@ -95,7 +95,6 @@ def static_figure(data):
     fig.colorbar(dots,ax=fig.axes,shrink=.65,label='Inner diode slope m₀')
     fig.suptitle('CHUA / THE REGION EXTENDS FAR BEYOND THE ORIGINAL BOX\n32,768 scouting points; refined candidates; fixed m₁ = −5/7',fontsize=17)
     fig.savefig(OUT/'wide_extent.png',dpi=180)
-    fig.savefig(OUT/'wide_extent.pdf')
     plt.close(fig)
 
 def build():
@@ -169,7 +168,7 @@ def build():
     Continuous connection of all distant points to the original region, global closure, and unboundedness remain unresolved.</p>
     <p>Boundedness of an individual attractor in state space does not require boundedness of the parameter set supporting attractors.</p>
     <p><a href="../detailed/index.html">Refined atlas: thin windows and coexisting attractors</a> ·
-    <a href="wide_extent.png">Overview PNG</a> · <a href="wide_extent.pdf">PDF</a> · <a href="verified.npz">Repeated candidate calculations</a></p></section>
+    <a href="wide_extent.png">Overview PNG</a> · <a href="verified.npz">Repeated candidate calculations</a></p></section>
     </main><script>window.addEventListener('load',()=>requestAnimationFrame(()=>document.querySelectorAll('.js-plotly-plot').forEach(p=>Plotly.Plots.resize(p))));</script></body></html>"""
     shutil.copyfile(ROOT/'outputs'/'plotly.min.js',OUT/'plotly.min.js')
     (OUT/'index.html').write_text(body,encoding='utf-8')

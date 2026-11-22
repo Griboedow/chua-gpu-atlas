@@ -72,9 +72,9 @@ Exploratory scans can be rerun with `search_chua_hidden_tangencies.py` phases `c
 
 The [browser check](browser-check.json) records inspection of the rendered GitHub reports and README, including the displayed equations and figures. The local screenshots accompany the working copy; their hashes are retained in the record.
 
-- [Slope-sheet comparison, PDF](chua-followup-sheets.pdf)
-- [Impulse and delay comparison, PDF](chua-followup-trigger.pdf)
-- [Hidden-connection certificate, PDF](chua-followup-hidden.pdf)
+- [Slope-sheet comparison](../../docs/assets/chua-followup-sheets.png)
+- [Impulse and delay comparison](../../docs/assets/chua-followup-trigger.png)
+- [Hidden-connection certificate](../../docs/assets/chua-followup-hidden.png)
 
 ```bash
 python research/analyze_chua_followup.py

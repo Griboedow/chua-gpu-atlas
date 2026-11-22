@@ -46,6 +46,8 @@ The largest absolute fractional error was 0.01540 return, below the declared tol
 
 ## Independent checks and circuit interpretation
 
+For the duration of one turn in microseconds and how it appears on an oscilloscope, see the [saddle-period comparison](chua-saddle-period.md).
+
 An unsplit DOP853 integration of the absolute-value field reproduced all eight preselected integer counts. Its largest fractional difference from the affine-flight solver was 0.000047 return. It located the two-hit threshold within 4.4 × 10⁻¹¹ in x₀ of the affine result. Centered finite differences of the independent return gave λᵤ = 2.2128411 and 2.2128394 at two step sizes. Halving the flight event-bracketing step preserved all 24 integer counts. These comparisons report numerical agreement. They provide no interval error bound. [Independent integration and scoring](../research/observed_saddle_validate.py)
 
 The largest absolute x during any scored launch through its exit was 7.156 or less, from endpoints and numerical extrema on each affine flight. The physical diode's second breakpoint is near |x| = 14.408/1.1606 ≈ 12.41. Its extra saturation segment therefore lies outside the observed residence paths. It matters for later dynamics. For δx = +0.001, a direct trajectory approached an attracting outer cycle of the three-segment model, with the last return at t ≤ 750 within 8.5 × 10⁻⁷ of its refined section point. The calculated outer cycle reaches |x| ≈ 19.43. For δx = −0.001 the trajectory approached the positive stable equilibrium and was inside its local quadratic capture ellipsoid at t = 250. These are two selected post-exit outcomes. [Numerical post-exit records](../results/chua-saddle-residence/measurements.json)

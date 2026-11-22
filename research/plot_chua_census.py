@@ -24,7 +24,7 @@ def main():
     atlas=np.load(out/'atlas-comparison.npz')
     def save(fig,name):
         fig.savefig(args.assets/(name+'.png'),dpi=180,bbox_inches='tight')
-        fig.savefig(out/(name+'.pdf'),bbox_inches='tight');plt.close(fig)
+        plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(12,5),layout='constrained',sharey=True)
     xx=np.linspace(8.94,9.06,301);aa=np.linspace(8.94,9.06,7);mm=np.linspace(-8/7-.006,-8/7+.006,7)
     for ax,k in zip(axes,[20,33]):

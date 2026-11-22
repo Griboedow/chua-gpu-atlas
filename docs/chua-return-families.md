@@ -6,7 +6,7 @@ The return is essential. The trajectory can separate from its neighbors during m
 
 ![Three sequences connect repeated short motion, localized contraction and thinner parameter windows](assets/chua-return-families-explanation.png)
 
-The first panel deliberately overlays the short saddle and the long attracting cycle: their similar outlines hide the repeated passages. The distance panel resolves those passages on a section. The lower-left panel transports one fixed direction throughout a period, rather than optimizing a new direction at every time. [Vector figure](../results/chua-return-families/chua-return-families-explanation.pdf).
+The first panel deliberately overlays the short saddle and the long attracting cycle: their similar outlines hide the repeated passages. The distance panel resolves those passages on a section. The lower-left panel transports one fixed direction throughout a period, rather than optimizing a new direction at every time.
 
 **What was tested prospectively.** Starting from two previously known long cycles per sequence, we published forecasts and then found six further cycles: **35, 45 and 55 peaks** near the S11 branch, and **49, 63 and 77 peaks** near E05. All peak counts agree and all period errors are below 0.002. The width forecasts fail their stated tolerance in all six cases; four of six gain forecasts pass. The shared mechanism is better supported than the early-member extrapolation of its coefficients.
 
@@ -45,7 +45,7 @@ We reconstruct the normalized section points and independently integrate the ful
 | S11-n5, 55 peaks | 0.00440700 | 113.45581 | 0.50000000 |
 | E05-n5, 77 peaks | 0.00441527 | 113.24336 | 0.50000001 |
 
-The last displayed discrepancy is numerical integration error. The shooting normalization is exactly +1/2 to the working precision. The two curves are aligned by cyclically moving the first contracting transition to the start; no amplitudes or horizontal scales are fitted. Their close agreement is an observation for these two examples, not a theorem of universal dynamics. [Vector figure](../results/chua-return-families/chua-return-families-contraction.pdf).
+The last displayed discrepancy is numerical integration error. The shooting normalization is exactly +1/2 to the working precision. The two curves are aligned by cyclically moving the first contracting transition to the start; no amplitudes or horizontal scales are fitted. Their close agreement is an observation for these two examples, not a theorem of universal dynamics.
 
 The section calculation uses the Euclidean norm of (δy, δz). The overview instead uses the Euclidean transverse quotient norm in the three-dimensional state. Both transport a fixed Floquet direction, but their intermediate amplitudes need not coincide. The return-step contraction count also depends on the section: “two contracting transitions” is not a universal count of physical events. The earlier suggestion of a single contracting section transition was too restrictive.
 
@@ -69,7 +69,7 @@ F(s)=\frac{s+s^2}{2},\qquad F'(0)=\frac12,\qquad F'(1)=\frac32.
 | S11-n5 | 1.50018792 | 0.000210 |
 | E05-n5 | 1.50018545 | 0.000242 |
 
-The samples span −0.5 to 1.5. No curve coefficients are fitted after fixing the two roots. Repeating the two new samples at 75 and 90 digits reproduces their reported coordinates. The maximum off-secant output is 2.60 × 10⁻⁷ and 6.33 × 10⁻⁶ root separations, respectively. These are local samples of a two-dimensional return; they do not establish a global one-dimensional conjugacy, locate a basin boundary, or determine knot type. [Vector figure](../results/chua-return-families/chua-return-families-comparison.pdf).
+The samples span −0.5 to 1.5. No curve coefficients are fitted after fixing the two roots. Repeating the two new samples at 75 and 90 digits reproduces their reported coordinates. The maximum off-secant output is 2.60 × 10⁻⁷ and 6.33 × 10⁻⁶ root separations, respectively. These are local samples of a two-dimensional return; they do not establish a global one-dimensional conjugacy, locate a basin boundary, or determine knot type.
 
 The data support a useful description of these sequences: **identify the short saddle, identify the global return, then count the extra circuits near the saddle**. This is more informative than a peak count or a silhouette alone. We have not shown that finitely many such descriptions cover the atlas.
 
@@ -106,8 +106,6 @@ All coefficients use only the two known members. Both leading and corrected erro
 Relative error means computed / predicted − 1. The prescribed gates were 25% for width, 20% for gain and 0.5 time units for period. These are numerical tolerances, not confidence intervals. The outcomes are **0/6 widths, 4/6 gains and 6/6 periods** within those gates. Peak counts agree in all six independently integrated cycles.
 
 ![All six frozen forecast outcomes, including the failed width predictions](assets/chua-return-families-forecasts.png)
-
-[Vector figure](../results/chua-return-families/chua-return-families-forecasts.pdf).
 
 ### Why the width extrapolation is insufficient
 

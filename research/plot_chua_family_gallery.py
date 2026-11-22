@@ -78,7 +78,7 @@ def main():
         fig.supxlabel('Same x-z scales in every panel. Blue = first half of the cycle; orange = second half.\n'
             'An outline can hide repeated passes. Individual cards show the full signal and ordered peaks.',fontsize=10)
         fig.savefig(assets/f'overview-{page+1}.png',dpi=165,facecolor='white')
-        fig.savefig(out/f'family-portraits-{page+1}.pdf',facecolor='white');plt.close(fig)
+        plt.close(fig)
     html=HTML.replace('__PLOTLY__',get_plotlyjs()).replace('__DATA__',json.dumps(payload,separators=(',',':')))
     html='\n'.join(line.rstrip() for line in html.splitlines())+'\n'
     (out/'family-gallery.html').write_text(html,encoding='utf-8',newline='\n')
@@ -106,9 +106,9 @@ def main():
     for r in records:
         lines.extend(['',f'## {r["id"]}','',f'![{r["id"]}: orbit, complete signal and peak sequence](assets/chua-families/{r["id"]}.png)'])
     lines.extend(['','Source: [family behaviour data](../results/chua-layer-atlas/family-behavior.json), [sampled orbits](../results/chua-layer-atlas/family-orbits.npz), and [display checks](../results/chua-layer-atlas/gallery-checks.json). Scientific interpretation and numerical limitations are in the [refined atlas report](chua-refined-atlas.md).','',
-        'Regenerate with `python research/plot_chua_family_gallery.py`. The PNGs and PDFs use the full stored arrays; the interactive paths use every second sample for display.',''])
+        'Regenerate with `python research/plot_chua_family_gallery.py`. The PNGs use every stored sample. The interactive paths use every second sample.',''])
     (ROOT/'docs/chua-family-gallery.md').write_text('\n'.join(lines),encoding='utf-8',newline='\n')
-    print('Rendered 32 cards, two overview PNG/PDF sheets and the offline comparison; all sampled peak counts agree.')
+    print('Rendered 32 cards, two overview PNG sheets and the offline comparison; all sampled peak counts agree.')
 
 
 HTML='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">

@@ -18,7 +18,7 @@ The protocol was published in commit [bd9e698](https://github.com/Griboedow/chua
 | `*-geometry.json`, `geometry-summary.json`, `*-parent.*` | Continued short saddles, section distances and plotting arrays |
 | `*-directions.json` | One transported Floquet direction and the sampled maximizing input direction; not a new optimum at every elapsed time |
 | `scores.json`, `review.json` | All forecast outcomes and numerical record audit |
-| `*.pdf` | Vector versions of the four publication figures |
+| [Sequences](../../docs/assets/chua-return-families-explanation.png), [Contraction](../../docs/assets/chua-return-families-contraction.png), [Return comparison](../../docs/assets/chua-return-families-comparison.png), [Forecasts](../../docs/assets/chua-return-families-forecasts.png) | Return geometry and forecast checks |
 
 `S11-n3` through `S11-n5` have 35, 45 and 55 peaks. `E05-n3` through `E05-n5` have 49, 63 and 77. These identifiers distinguish the sequences even when their peak counts coincide with other atlas entries. The short reference branch label does not imply that its original reference orbit was a saddle.
 

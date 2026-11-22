@@ -148,7 +148,7 @@ The contribution here is the reproducible identification, continuation, coexiste
 
 ## Data and reproduction
 
-The [data directory](../results/chua-layer-census/README.md) contains the compact surveys, every cycle check including unsuccessful candidates, sampled orbits, continued surfaces, gap witnesses, audit, and PDF figures. Full GPU peak matrices are omitted from Git; their hashes and the retained array names are recorded in [raw provenance](../results/chua-layer-census/raw-provenance.json). The scan commands regenerate them. Published compact files suffice to repeat CPU verification, continuation, the analysis, and plotting.
+The [data directory](../results/chua-layer-census/README.md) contains the compact surveys, every cycle check including unsuccessful candidates, sampled orbits, continued surfaces, gap witnesses and the audit. Full GPU peak matrices are omitted from Git; their hashes and the retained array names are recorded in [raw provenance](../results/chua-layer-census/raw-provenance.json). The scan commands regenerate them. Published compact files suffice to repeat CPU verification, continuation, the analysis, and plotting.
 
 From the repository root, with `requirements.txt` installed and an FP64 OpenCL device for the survey:
 

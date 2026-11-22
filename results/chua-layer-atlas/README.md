@@ -7,7 +7,7 @@ Read the [research report](../../docs/chua-refined-atlas.md) for interpretation.
 | Files | Contents |
 |---|---|
 | `atlas.html` | Offline interactive atlas; download and open in a browser |
-| `family-gallery.html`, `family-portraits-*.pdf` | Offline two-family comparison and two overview portrait sheets; all 32 individual PNG cards are in `docs/assets/chua-families` |
+| [Offline comparison](family-gallery.html), [portrait gallery](../../docs/chua-family-gallery.md) | Two overview sheets and all 32 individual family portraits |
 | `gallery-checks.json` | Checks on the plotted arrays: finite samples, period duration, expected peak counts and small endpoint gaps; not a new stability certificate |
 | [`readme-layer-view/`](readme-layer-view/README.md) | Denser 5,447-sample view of the same 32 families, 50 interior samples in narrow stability intervals, numerical checks, retained P65 normalization attempt, and reproduction commands for the main-page animation and zoom |
 | `family-registry.json` | 32 normalized roots, catalogue labels, source candidates, and branch relationships |
@@ -109,6 +109,6 @@ python research/export_refined_chua_atlas.py --source D:/tmp/chua-atlas-new --ou
 python research/plot_refined_chua_atlas.py --output D:/tmp/chua-atlas-publication --assets D:/tmp/chua-atlas-figures
 ```
 
-The plotting script rebuilds the CSV, display arrays, three PNG/PDF scientific figures, and self-contained interactive HTML from the compact evidence. It uses the earlier original-atlas regular mask for comparison. Numeric results and wall-clock-limited coverage can differ slightly by platform; compare tolerances and branch identities, not binary file equality.
+The plotting script rebuilds the CSV, display arrays, three figures, and self-contained interactive HTML from the compact evidence. It uses the earlier original-atlas regular mask for comparison. Numeric results and wall-clock-limited coverage can differ slightly by platform; compare tolerances and branch identities, not binary file equality.
 
-Regenerate the separate per-family gallery with `python research/plot_chua_family_gallery.py`. This writes 32 PNG cards, two overview PNG/PDF sheets, the offline comparison HTML, display checks, and `docs/chua-family-gallery.md`. It reads the already published reference orbits; it does not rerun discovery or change catalogue entries. All 32 sampled peak counts agree with the independent counts. The largest stored plotting-orbit endpoint gap is about 4.4e-6, below the plot scale; existence and attraction checks remain those in the earlier numerical audit.
+Regenerate the separate per-family gallery with `python research/plot_chua_family_gallery.py`. This writes 32 PNG cards, two overview sheets, the offline comparison HTML, display checks, and `docs/chua-family-gallery.md`. It reads the already published reference orbits; it does not rerun discovery or change catalogue entries. All 32 sampled peak counts agree with the independent counts. The largest stored plotting-orbit endpoint gap is about 4.4e-6, below the plot scale; existence and attraction checks remain those in the earlier numerical audit.

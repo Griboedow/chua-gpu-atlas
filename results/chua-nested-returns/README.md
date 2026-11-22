@@ -19,7 +19,7 @@ The protocol was published in `bd7429b`; calibration and forecasts were frozen i
 | `parent-block-map.json` | Fixed-coordinate return samples and independent exponential checks |
 | `moving-coordinate-map.json` | Explicitly post-search secant normalization; not a replacement forecast |
 | `scores.json`, `review.json` | All forecast errors and recomputed record checks |
-| `*.pdf` | Vector versions of the four report figures |
+| [Overview](../../docs/assets/chua-nested-returns-explanation.png), [Motifs](../../docs/assets/chua-nested-returns-motifs.png), [Forecasts](../../docs/assets/chua-nested-returns-predictions.png), [Return maps](../../docs/assets/chua-nested-returns-maps.png) | Nested cycles, forecasts and sampled maps |
 
 The `block-map-control.json` record checks the new return implementation's Jacobian against a central difference at the old S06 root. The independent orbit audits provide broader controls. Region membership is sampled, not enclosed by interval arithmetic.
 
@@ -47,7 +47,7 @@ python research/review_chua_nested_returns.py
 python research/plot_chua_nested_returns.py
 ```
 
-`--ids S06-k3 S06-k5 S06-k7` selects a subset for search or audit. The independent audit integrates entire orbits and individual section transitions; the latter errors must not be reported as whole-period drift. The plotting program places its cache in `.publication/matplotlib` and writes PNGs under `docs/assets` and PDFs here.
+`--ids S06-k3 S06-k5 S06-k7` selects a subset for search or audit. The independent audit integrates entire orbits and individual section transitions; the latter errors must not be reported as whole-period drift. The plotting program places its cache in `.publication/matplotlib` and writes the figures under `docs/assets`.
 
 ## Review targets
 

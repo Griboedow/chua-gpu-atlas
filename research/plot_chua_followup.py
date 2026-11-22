@@ -20,7 +20,6 @@ plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.labelcolor
 def read(p):return json.loads((OUT/p).read_text())
 def save(fig,name):
     fig.savefig(ROOT/'docs/assets'/f'{name}.png',dpi=180,bbox_inches='tight',facecolor='white')
-    fig.savefig(OUT/f'{name}.pdf',bbox_inches='tight',metadata={'CreationDate':None,'ModDate':None})
     plt.close(fig)
 
 

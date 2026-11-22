@@ -6,7 +6,7 @@ This is numerical evidence for **one additional level of return organization in 
 
 ![Two levels of repeated motion, a same-peak-count control, and increasing proximity to the long parent](assets/chua-nested-returns-explanation.png)
 
-The upper plots distinguish two 105-peak motions that an outline or peak count would not distinguish. The lower plots compare complete seven-crossing blocks with a same-parameter 35-peak saddle. A decreasing value means that the entire block follows that saddle more closely. [Vector figure](../results/chua-nested-returns/chua-nested-returns-explanation.pdf).
+The upper plots distinguish two 105-peak motions that an outline or peak count would not distinguish. The lower plots compare complete seven-crossing blocks with a same-parameter 35-peak saddle. A decreasing value means that the entire block follows that saddle more closely.
 
 **Predictions and searches.** All six predicted peak counts were found. All six period and width forecasts pass the tolerances published before searching; only two of six parameter-location forecasts pass. The largest period error is 0.01304, the largest relative width error is 6.62%, and the largest location error is about 35,819 measured window widths. These different outcomes are part of the result.
 
@@ -35,7 +35,7 @@ S06 is an existing atlas reference. S11-n3 is the 35-peak cycle found in the [pr
 
 ![The 35-peak parent motif, its new 105-peak child, and the earlier ordinary 105-peak cycle](assets/chua-nested-returns-motifs.png)
 
-The plotted scalar is the section displacement from the original short saddle, projected onto its left unstable eigenvector. Its sign indicates the side of that saddle in this coordinate, not left/right scroll occupancy. The parent and new child are compared at identical β. The earlier 105-peak control uses its own same-parameter short saddle. [Vector figure](../results/chua-nested-returns/chua-nested-returns-motifs.pdf).
+The plotted scalar is the section displacement from the original short saddle, projected onto its left unstable eigenvector. Its sign indicates the side of that saddle in this coordinate, not left/right scroll occupancy. The parent and new child are compared at identical β. The earlier 105-peak control uses its own same-parameter short saddle.
 
 The S06 parent's seven-symbol word is `-+--+-+`; the new children repeat it three, five and seven times. The S11-n3 word is `-+-+-+-`, with the same repetition counts. The earlier ordinary 105-peak S08-sequence cycle instead has a word of minimal length 21, `--+-+-+-+-+-+-+-+-+-+`. It does not pass the seven-symbol repetition diagnostic merely by having 105 peaks.
 
@@ -82,7 +82,7 @@ The initial state scale uses the secant from the old attracting root to its comp
 
 ![All six prospective forecast errors, including the four parameter-location misses](assets/chua-nested-returns-predictions.png)
 
-Widths here are the computed β separations of the child's saddle-node and symmetry-breaking endpoints. They exclude any attracting descendants beyond symmetry breaking. The stated engineering tolerances were one measured width for location, 30% relative width error and 0.5 time units for period; they are not confidence bounds. [Vector figure](../results/chua-nested-returns/chua-nested-returns-predictions.pdf).
+Widths here are the computed β separations of the child's saddle-node and symmetry-breaking endpoints. They exclude any attracting descendants beyond symmetry breaking. The stated engineering tolerances were one measured width for location, 30% relative width error and 0.5 time units for period; they are not confidence bounds.
 
 | Target | Computed β, rounded | Computed width | Computed period | Location error, in widths | Width error | Period error |
 |---|---:|---:|---:|---:|---:|---:|
@@ -99,7 +99,7 @@ Width error means computed width / predicted width − 1; period and location er
 
 ![Actual long-parent return maps in the original coordinates and in a separately calibrated moving frame](assets/chua-nested-returns-maps.png)
 
-The original attracting-to-companion secant is held fixed in the upper panels. At M = 1.75, 1.95 and 2, each curve samples 83 initial points over −2.05 ≤ X ≤ 2.05, solving every event time anew. The maximum scalar discrepancy from the original quadratic formula reaches **0.436 for S06 and 1.758 for S11-n3**. The output also leaves the original secant, by up to 0.0198 and 0.269 original root separations. Thus the frozen scalar formula is not an accurate description throughout this larger state and parameter range. Twelve matrix-exponential control evaluations agree with the eigen-flow implementation below 5.5 × 10⁻⁵³ in physical section coordinates. [Vector figure](../results/chua-nested-returns/chua-nested-returns-maps.pdf).
+The original attracting-to-companion secant is held fixed in the upper panels. At M = 1.75, 1.95 and 2, each curve samples 83 initial points over −2.05 ≤ X ≤ 2.05, solving every event time anew. The maximum scalar discrepancy from the original quadratic formula reaches **0.436 for S06 and 1.758 for S11-n3**. The output also leaves the original secant, by up to 0.0198 and 0.269 original root separations. Thus the frozen scalar formula is not an accurate description throughout this larger state and parameter range. Twelve matrix-exponential control evaluations agree with the eigen-flow implementation below 5.5 × 10⁻⁵³ in physical section coordinates.
 
 The lower panels are explicitly **post-search diagnostics**. At each 245-peak child's β, use the two continued parent fixed points C and A, and the companion's signed half multiplier μ_C, to define
 

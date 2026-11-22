@@ -12,6 +12,7 @@ How precisely must a capacitor be charged to keep a trajectory near a saddle cyc
 
 | Question | Report |
 |---|---|
+| Can component tolerances explain the 218-sample saddle period in the published trace? | [545 µs on the oscilloscope, 586.70–593.35 µs for the model orbit](docs/chua-saddle-period.md) |
 | Which precharges reach each regime as components vary? | [Launch voltages and component tolerances](docs/chua-precharge.md) |
 | Which hidden cycles coexist at the same parameter settings? | [Three attracting cycles throughout 12.21775 ≤ β ≤ 12.24225 on the separate m₁ = −0.12 slice](docs/chua-explicit-hidden.md) |
 | Can a short residence distinguish startup jitter from continuing noise? | [First-exit counts under two disturbance models](results/chua-residence-noise/README.md) |

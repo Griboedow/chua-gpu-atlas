@@ -1,0 +1,152 @@
+{
+  "source": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs11071-022-08078-y/MediaObjects/11071_2022_8078_Fig10_HTML.png",
+  "source_sha256": "a3c79cd7dda92071297d069293a23c5dfe9173b930f2b1d6d2eb44ca6d5246b0",
+  "primary_cutoff": 110,
+  "primary_intervals": 4,
+  "checks": [
+    {
+      "panel": "a",
+      "cutoff": 60,
+      "intervals": 3,
+      "first_spacing_px": 41.365508365508376,
+      "last_spacing_px": 34.50852598786688,
+      "ratio": 0.834234301750803
+    },
+    {
+      "panel": "a",
+      "cutoff": 60,
+      "intervals": 4,
+      "first_spacing_px": 41.32770270270271,
+      "last_spacing_px": 34.57303286101899,
+      "ratio": 0.8365583035119446
+    },
+    {
+      "panel": "a",
+      "cutoff": 60,
+      "intervals": 5,
+      "first_spacing_px": 41.16216216216217,
+      "last_spacing_px": 34.64839044652128,
+      "ratio": 0.8417534120297355
+    },
+    {
+      "panel": "a",
+      "cutoff": 110,
+      "intervals": 3,
+      "first_spacing_px": 41.393333333333324,
+      "last_spacing_px": 34.36761904761905,
+      "ratio": 0.8302694245680237
+    },
+    {
+      "panel": "a",
+      "cutoff": 110,
+      "intervals": 4,
+      "first_spacing_px": 41.26999999999999,
+      "last_spacing_px": 34.517532467532476,
+      "ratio": 0.8363831467781072
+    },
+    {
+      "panel": "a",
+      "cutoff": 110,
+      "intervals": 5,
+      "first_spacing_px": 41.096,
+      "last_spacing_px": 34.66857142857143,
+      "ratio": 0.8435996551628245
+    },
+    {
+      "panel": "a",
+      "cutoff": 160,
+      "intervals": 3,
+      "first_spacing_px": 41.466666666666676,
+      "last_spacing_px": 34.35748792270533,
+      "ratio": 0.8285567827018969
+    },
+    {
+      "panel": "a",
+      "cutoff": 160,
+      "intervals": 4,
+      "first_spacing_px": 41.30500000000001,
+      "last_spacing_px": 34.44010175763182,
+      "ratio": 0.833799824661223
+    },
+    {
+      "panel": "a",
+      "cutoff": 160,
+      "intervals": 5,
+      "first_spacing_px": 41.161818181818184,
+      "last_spacing_px": 34.610326086956526,
+      "ratio": 0.8408356971520866
+    },
+    {
+      "panel": "b",
+      "cutoff": 60,
+      "intervals": 3,
+      "first_spacing_px": 34.202127659574444,
+      "last_spacing_px": 29.186290066645483,
+      "ratio": 0.8533472056810816
+    },
+    {
+      "panel": "b",
+      "cutoff": 60,
+      "intervals": 4,
+      "first_spacing_px": 34.12096774193547,
+      "last_spacing_px": 29.28777865456695,
+      "ratio": 0.8583513479476017
+    },
+    {
+      "panel": "b",
+      "cutoff": 60,
+      "intervals": 5,
+      "first_spacing_px": 33.95333333333333,
+      "last_spacing_px": 29.404256770584606,
+      "ratio": 0.866019736027428
+    },
+    {
+      "panel": "b",
+      "cutoff": 110,
+      "intervals": 3,
+      "first_spacing_px": 34.476190476190446,
+      "last_spacing_px": 29.048067632850234,
+      "ratio": 0.842554447914165
+    },
+    {
+      "panel": "b",
+      "cutoff": 110,
+      "intervals": 4,
+      "first_spacing_px": 34.34121621621618,
+      "last_spacing_px": 29.272829131652657,
+      "ratio": 0.8524109614332706
+    },
+    {
+      "panel": "b",
+      "cutoff": 110,
+      "intervals": 5,
+      "first_spacing_px": 34.13999999999998,
+      "last_spacing_px": 29.461801801801812,
+      "ratio": 0.8629701757997021
+    },
+    {
+      "panel": "b",
+      "cutoff": 160,
+      "intervals": 3,
+      "first_spacing_px": 34.39592760180992,
+      "last_spacing_px": 29.08320220298977,
+      "ratio": 0.8455420228718996
+    },
+    {
+      "panel": "b",
+      "cutoff": 160,
+      "intervals": 4,
+      "first_spacing_px": 34.330769230769214,
+      "last_spacing_px": 29.342453917050676,
+      "ratio": 0.8546984112069437
+    },
+    {
+      "panel": "b",
+      "cutoff": 160,
+      "intervals": 5,
+      "first_spacing_px": 34.161538461538456,
+      "last_spacing_px": 29.501344086021504,
+      "ratio": 0.863583591799774
+    }
+  ]
+}

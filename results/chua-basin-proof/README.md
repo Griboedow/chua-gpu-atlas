@@ -8,8 +8,8 @@ The [report](../../docs/chua-basin-and-coexistence.md) contains two completed ma
 | `independent-checks.json` | mpmath value/Jacobian/Hessian checks at two difference scales; rejection of a shifted fixed-point box; five independent DOP853 checks across a diode contact |
 | `audit.json` | Coverage, adjacency, destinations, capture inequalities, repeated-precision summaries, tangency premises and source hashes |
 | `preliminary-failures.json` | Unsuccessful enclosure strategies and the reasons for replacing or refining them |
-| `chua-basin-proof.pdf` | Vector version of the local basin and coverage figure |
-| `chua-coexistence-localization.pdf` | Labelled schematic of the localized return and nested parameter construction |
+| [Local basin separation](../../docs/assets/chua-basin-proof.png) | Coverage of both exit strips |
+| [Localized return](../../docs/assets/chua-coexistence-localization.png) | Nested parameter construction |
 | `browser-check.json` | Live browser review of the published report and main page |
 
 From the repository root, using the existing CPU certificate dependencies:
