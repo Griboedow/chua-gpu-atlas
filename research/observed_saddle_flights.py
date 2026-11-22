@@ -39,11 +39,13 @@ class Section:
         end[0] = wall
         return dt, end, flow
 
-    def next_section(self, state, region):
+    def next_section(self, state, region, arcs=None):
         time = 0.
         derivative = np.eye(3)
         for _ in range(80):
             dt, end, flow = self.flight(state, region)
+            if arcs is not None:
+                arcs.append((region, state.copy(), dt))
             time += dt
             derivative = flow @ derivative
             if region == -1:
@@ -53,12 +55,29 @@ class Section:
             state, region = end, int(end[0]) if region == 0 else 0
         raise ValueError("Positive x=-1 crossing not reached in 80 flights")
 
-    def launch(self, x):
-        return self.next_section(np.array([x, 0., 0.]), int(np.sign(x)) if abs(x)>1 else 0)
+    def launch(self, x, arcs=None):
+        return self.next_section(np.array([x, 0., 0.]), int(np.sign(x)) if abs(x)>1 else 0, arcs)
 
-    def full_return(self, yz):
-        time, end, jacobian = self.next_section(np.r_[-1., yz], 0)
+    def full_return(self, yz, arcs=None):
+        time, end, jacobian = self.next_section(np.r_[-1., yz], 0, arcs)
         return time, end[1:], jacobian[1:, 1:]
+
+    def absolute_x_peak(self, arcs):
+        """Numerical within-flight extrema, checking both endpoints of every arc."""
+        peak = 0.
+        for region, state, duration in arcs:
+            _, center, eig, V, W = self.matrices[region]
+            coeff = V[0]*(W @ (state-center))
+            def coordinate(t):
+                return float(center[0] + (np.exp(eig*t) @ coeff).real)
+            def speed(t):
+                return float((np.exp(eig*t) @ (eig*coeff)).real)
+            grid = np.linspace(0., duration, max(4, int(np.ceil(duration/.025))+1))
+            rates = np.einsum("ij,j->i", np.exp(grid[:,None]*eig), eig*coeff).real
+            indices = np.flatnonzero(rates[:-1]*rates[1:] < 0.)
+            times = [0., duration] + [brentq(speed, grid[k], grid[k+1]) for k in indices]
+            peak = max(peak, max(abs(coordinate(t)) for t in times))
+        return peak
 
     def saddle(self):
         # The article's rounded point first travels from the left outer region.
