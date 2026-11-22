@@ -2,6 +2,15 @@
 
 The directories below contain the settings, data, certificates and numerical controls supporting the reports. Recent layer studies are included directly in this repository; the historical release supplies the larger survey arrays. The [research guide](../docs/research-guide.md) connects the studies and explains their different evidence standards.
 
+## Analytical predictions and tests
+
+| Data | Comparison |
+|---|---|
+| [Global convergence](chua-global-relaxation/) | Predicted wells, a neutral sinusoid on the boundary and the fraction of the scaling scan covered by the theorem |
+| [DC voltage](chua-symmetry-dc/) | Parent-cycle forecasts against the means, periods, section gaps and multipliers of the daughter cycles |
+| [Voltage spectra](chua-diode-spectrum/) | Fourier coefficients from affine flights against two independent integrations of the waveform |
+| [Finite-rate fold passage](chua-dynamic-fold/) | The leading Airy forecasts, their misses and five held-out tests of a section-specific correction |
+
 ## Positive-loss circuit
 
 | Data | Contents |

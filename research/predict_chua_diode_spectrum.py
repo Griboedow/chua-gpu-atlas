@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from itertools import pairwise
 from pathlib import Path
 
 import mpmath as mp
@@ -24,7 +25,7 @@ def crossing_data(family, peaks):
     period = mp.mpf(row["period"])
     time = mp.mpf(0)
     hits = []
-    for arc, following in zip(arcs[:-1], arcs[1:]):
+    for arc, following in pairwise(arcs):
         time += arc["duration"]
         x, y, z = arc["end"]
         wall = int(mp.nint(x))

@@ -27,4 +27,6 @@ We took each complete interval between rising $y=0$ crossings in the 30-unit CPU
 
 Berkolaiko and Grinfeld studied coexisting responses in periodically forced bistable equations, including a three-segment example. Here the comparison is between the two thresholds for the atlas slopes and the switching amplitudes of one finite-$\alpha$ trajectory. [Earlier scalar bifurcation study, §4 and concluding remarks](https://arxiv.org/abs/cond-mat/0310735) · [All switch times, thresholds and controls](../results/chua-fiber-switching/switching.json)
 
+For controlled positive-well starts at eleven values of $\alpha$, the [finite-rate fold study](chua-dynamic-fold.md) compares the section crossing and the first turn spanning both wells with two distinct delay predictions.
+
 Regenerate the records and plot from the repository root with `python research/chua_fiber_switching.py`. Output goes to `outputs/chua-fiber-switching/`. [Analysis script](../research/chua_fiber_switching.py)

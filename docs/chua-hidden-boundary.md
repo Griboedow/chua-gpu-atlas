@@ -4,6 +4,8 @@ This study connects the atlas to questions about coexistence and global stabilit
 
 The [follow-up proof](chua-basin-and-coexistence.md) establishes infinite periodic coexistence on the classical slice and certifies the local separator introduced here. The complete global basin boundary and global-stability region remain unclassified.
 
+A [diode-independent convergence criterion](chua-global-relaxation.md) treats arbitrary locally Lipschitz diode laws at fixed circuit parameters. It also covers systems with multiple equilibria.
+
 ## 1. Published questions and their atlas formulation
 
 The relevant authors include **Gennady Leonov**, Nikolay Kuznetsov, Leon Chua and Natalia Stankevich. Lyapunov's methods enter through stability analysis; these modern Chua questions are not attributed to Lyapunov himself.

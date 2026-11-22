@@ -1,6 +1,6 @@
 # Numerical continuation of Chua dynamics along beta = kappa alpha squared
 
-We investigate the path β = κα² at fixed diode slopes using exactly rescaled equations and independent numerical controls. The finite calculation extends to α = 2048. Persistence of chaotic attractors as α tends to infinity remains open.
+We investigate the path β = κα² at fixed diode slopes using exactly rescaled equations and independent numerical controls. The grid extends to α = 2048. A [diode-independent bound](chua-global-relaxation.md) excludes bounded oscillations at 160 of its 1,890 parameter tuples. At κ = 0.1425, persistence of chaotic attractors as α tends to infinity remains open.
 
 The zero-epsilon model has regular periodic fibers. Coexisting fibers can produce opposite signs of slow amplitude drift, suggesting a mechanism for further analysis at finite epsilon. These observations do not establish a limiting chaotic attractor. The [structural analysis](chua-scaling-structure.md) gives the derivations and primary references.
 

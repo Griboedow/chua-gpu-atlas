@@ -25,7 +25,7 @@ u(t+T/2)=-u(t),\qquad u=(x,y,z).
 
 At the fold, its period is approximately 10.913400. At the symmetry transition it is approximately 10.825262. An asymmetric orbit at beta = 14.315 has period 10.826591 and a leading transverse multiplier about 0.354991. The doubled orbit at beta = 14.3097 has period 21.657472 and ten maxima.
 
-The two asymmetric cycles are exchanged by `u -> -u`; this does not mean that each individually obeys half-period symmetry. Their distinct upward `x=0` section points were constructed and closed independently. Both still have five maxima per cycle. **A peak-count plot alone therefore misses this symmetry-breaking boundary.**
+The two asymmetric cycles are exchanged by `u -> -u`; this does not mean that each individually obeys half-period symmetry. Their distinct upward `x=0` section points were constructed and closed independently. Both still have five maxima per cycle. **A peak-count plot alone therefore misses this symmetry-breaking boundary.** The [mean-voltage calculation](chua-symmetry-dc.md) predicts the sign and size of the DC signal from the parent cycle.
 
 The regular layer does not disappear at the first doubling: its attracting orbit changes period. Nor does an unstable continuation disappear merely because a direct trajectory no longer converges to it. The calculation establishes the beginning of a period-doubling route, but does not locate the final loss of periodic attraction, prove a subsequent chaotic attractor, or exclude other coexisting attractors.
 

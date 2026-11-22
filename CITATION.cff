@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "Please cite the repository and identify the commit used for your calculation."
 title: Chua GPU Atlas
-version: 1.4.0
+version: 1.5.0
 date-released: 2026-11-22
 type: software
 authors:
   - name: Griboedow
     website: https://github.com/Griboedow
 repository-code: https://github.com/Griboedow/chua-gpu-atlas
-abstract: "Numerical continuation, interval certificates and reproducible experiments on periodic windows, hidden attractors and basins of attraction in Chua's circuit."
+abstract: "Analytical and numerical results for Chua's circuit, including a global convergence criterion, periodic windows, hidden attractors, basins of attraction and voltage spectra."
 keywords:
   - Chua circuit
   - hidden attractors
@@ -16,4 +16,6 @@ keywords:
   - periodic orbits
   - basins of attraction
   - interval arithmetic
+  - global convergence
+  - symmetry breaking
 license: MIT

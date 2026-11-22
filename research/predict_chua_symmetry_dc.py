@@ -5,7 +5,6 @@ import json
 from pathlib import Path
 
 import mpmath as mp
-
 from chua_block_return import BlockReturn
 from chua_fold_passage import inputs
 from chua_precision_flights import PrecisionFlights

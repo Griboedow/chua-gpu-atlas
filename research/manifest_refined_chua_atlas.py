@@ -54,7 +54,10 @@ chua_link_diagrams study_chua_linked_attractors review_chua_linked_attractors pl
 search_chua_links chua_link_invariants chua_link_bracket compare_chua_joint_jones
 probe_chua_knotted_daughters certify_chua_link_witnesses review_chua_link_search
 plot_chua_link_search audit_chua_link_algorithms
-certify_chua_knot chua_fold_passage chua_fiber_switching chua_voltage_reconstruction'''.split()
+certify_chua_knot chua_fold_passage chua_fiber_switching chua_voltage_reconstruction
+chua_global_relaxation predict_chua_symmetry_dc check_chua_symmetry_dc
+predict_chua_diode_spectrum check_chua_diode_spectrum predict_chua_fold_delay check_chua_fold_delay
+predict_chua_section_delay check_chua_section_delay'''.split()
 
 
 def digest(path):
@@ -174,12 +177,13 @@ def main():
         paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
     for pattern in ['observed_saddle*.py', 'chua_saddle_period*.py', 'chua_precharge*.py', 'explicit_hidden*.py', 'chua_residence_noise.py']:
         paths.update((ROOT/'research').glob(pattern))
-    for name in ['chua-link-certificate', 'chua-fold-passage', 'chua-fiber-switching', 'chua-voltage-reconstruction']:
+    for name in ['chua-link-certificate', 'chua-fold-passage', 'chua-fiber-switching', 'chua-voltage-reconstruction',
+                 'chua-global-relaxation', 'chua-symmetry-dc', 'chua-diode-spectrum', 'chua-dynamic-fold']:
         paths.add(ROOT/'docs'/(name + '.md'))
         paths.update(p for p in (ROOT/'results'/name).rglob('*') if p.is_file())
     paths.update(ROOT/p for p in ['results/chua-scaling/cpu-2198-aligned.npz', 'results/chua-scaling/fiber-probe.json',
-                                  'results/original/classic_scan.json',
-                                  'docs/chua-scaling-structure.md', 'docs/chua-layer-bifurcations.md'])
+                                  'results/chua-scaling/scout.npz', 'results/original/classic_scan.json',
+                                  'docs/chua-scaling-structure.md', 'docs/chua-scaling-research.md', 'docs/chua-layer-bifurcations.md'])
     paths.add(ROOT/'CITATION.cff')
     data=dict(created_utc=datetime.now(timezone.utc).isoformat(),base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         sha256={p.relative_to(ROOT).as_posix():digest(p) for p in sorted(paths)},
