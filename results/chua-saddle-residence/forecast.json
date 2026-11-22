@@ -1,0 +1,219 @@
+{
+  "source": "https://doi.org/10.1007/s11071-022-08078-y",
+  "parameters": {
+    "alpha": 8.41,
+    "beta": 12.23,
+    "gamma": 0.0435,
+    "m0": -1.366,
+    "m1": -0.17
+  },
+  "published_seed": [
+    -2.321,
+    -0.787,
+    3.129
+  ],
+  "section": "x=-1 with increasing x; one crossing per full saddle period",
+  "point": [
+    0.6945742937491413,
+    3.40794063154097
+  ],
+  "period": 2.4077747404166825,
+  "multipliers": [
+    8.425831254932348e-07,
+    2.212841184193972
+  ],
+  "left_unstable_unit": [
+    0.8832734469876409,
+    0.4688582065471084
+  ],
+  "crossings": [
+    {
+      "depth": 0,
+      "x": 7.147684638811838,
+      "projected_displacement": 5.085526523008511e-16,
+      "section_distance": 4.512515437781049e-06,
+      "projected_launch_derivative": 0.34416985141318807
+    },
+    {
+      "depth": 1,
+      "x": 7.147684638806896,
+      "projected_displacement": -6.041535799629601e-16,
+      "section_distance": 3.800808971991093e-12,
+      "projected_launch_derivative": 0.7615937107141095
+    },
+    {
+      "depth": 2,
+      "x": 7.147684638806898,
+      "projected_displacement": 8.597428488848915e-17,
+      "section_distance": 5.551115123125783e-16,
+      "projected_launch_derivative": 1.6852859286922028
+    },
+    {
+      "depth": 3,
+      "x": 7.147684638806901,
+      "projected_displacement": 6.468102668281908e-15,
+      "section_distance": 1.0787460751805465e-14,
+      "projected_launch_derivative": 3.7292701101526653
+    }
+  ],
+  "crossing_x": 7.147684638806898,
+  "breakpoint_V": 1.1606,
+  "crossing_V": 8.295602791799286,
+  "entry_gain_per_x": 0.3441700724636197,
+  "projected_exit_radius": 0.02,
+  "count_definition": "First section index with absolute projected displacement >= radius; first hit has index zero.",
+  "interpolation": "Linear in log absolute displacement between the last two section returns.",
+  "prediction": "log(radius/(abs(offset_x)*entry_gain_per_x))/log(unstable_multiplier); round upward for the integer first exit.",
+  "tests": {
+    "main": "All 24 integer forecasts within one full return, and maximum fractional error below 0.35 return.",
+    "independent": "Full unsplit DOP853 at the eight offsets of magnitude 0.008, 0.001, 0.0001 and 0.00001: same integer counts.",
+    "negative_control": "Replace unstable multiplier with 1.5 at unchanged gain and exit radius; compare fractional errors.",
+    "slope_control": "The increase from 0.001 to 0.0001 and from 0.0001 to 0.00001 should differ from log(10)/log(lambda) by <0.20 turn on each side."
+  },
+  "predictions": [
+    {
+      "offset_x": -0.008,
+      "launch_x": 7.139684638806898,
+      "predicted_fractional_return": 2.4964959908162,
+      "predicted_first_exit": 3
+    },
+    {
+      "offset_x": 0.008,
+      "launch_x": 7.155684638806898,
+      "predicted_fractional_return": 2.4964959908162,
+      "predicted_first_exit": 3
+    },
+    {
+      "offset_x": -0.004,
+      "launch_x": 7.143684638806898,
+      "predicted_fractional_return": 3.369172556271426,
+      "predicted_first_exit": 4
+    },
+    {
+      "offset_x": 0.004,
+      "launch_x": 7.1516846388068975,
+      "predicted_fractional_return": 3.369172556271426,
+      "predicted_first_exit": 4
+    },
+    {
+      "offset_x": -0.002,
+      "launch_x": 7.145684638806898,
+      "predicted_fractional_return": 4.241849121726653,
+      "predicted_first_exit": 5
+    },
+    {
+      "offset_x": 0.002,
+      "launch_x": 7.149684638806898,
+      "predicted_fractional_return": 4.241849121726653,
+      "predicted_first_exit": 5
+    },
+    {
+      "offset_x": -0.001,
+      "launch_x": 7.146684638806898,
+      "predicted_fractional_return": 5.114525687181879,
+      "predicted_first_exit": 6
+    },
+    {
+      "offset_x": 0.001,
+      "launch_x": 7.148684638806898,
+      "predicted_fractional_return": 5.114525687181879,
+      "predicted_first_exit": 6
+    },
+    {
+      "offset_x": -0.0003,
+      "launch_x": 7.147384638806898,
+      "predicted_fractional_return": 6.630334856212739,
+      "predicted_first_exit": 7
+    },
+    {
+      "offset_x": 0.0003,
+      "launch_x": 7.147984638806898,
+      "predicted_fractional_return": 6.630334856212739,
+      "predicted_first_exit": 7
+    },
+    {
+      "offset_x": -0.0001,
+      "launch_x": 7.147584638806898,
+      "predicted_fractional_return": 8.013494487717406,
+      "predicted_first_exit": 9
+    },
+    {
+      "offset_x": 0.0001,
+      "launch_x": 7.147784638806898,
+      "predicted_fractional_return": 8.013494487717406,
+      "predicted_first_exit": 9
+    },
+    {
+      "offset_x": -3e-05,
+      "launch_x": 7.147654638806898,
+      "predicted_fractional_return": 9.529303656748267,
+      "predicted_first_exit": 10
+    },
+    {
+      "offset_x": 3e-05,
+      "launch_x": 7.147714638806898,
+      "predicted_fractional_return": 9.529303656748267,
+      "predicted_first_exit": 10
+    },
+    {
+      "offset_x": -1e-05,
+      "launch_x": 7.147674638806898,
+      "predicted_fractional_return": 10.912463288252932,
+      "predicted_first_exit": 11
+    },
+    {
+      "offset_x": 1e-05,
+      "launch_x": 7.147694638806898,
+      "predicted_fractional_return": 10.912463288252932,
+      "predicted_first_exit": 11
+    },
+    {
+      "offset_x": -3e-06,
+      "launch_x": 7.1476816388068976,
+      "predicted_fractional_return": 12.428272457283793,
+      "predicted_first_exit": 13
+    },
+    {
+      "offset_x": 3e-06,
+      "launch_x": 7.147687638806898,
+      "predicted_fractional_return": 12.428272457283793,
+      "predicted_first_exit": 13
+    },
+    {
+      "offset_x": -1e-06,
+      "launch_x": 7.147683638806898,
+      "predicted_fractional_return": 13.811432088788457,
+      "predicted_first_exit": 14
+    },
+    {
+      "offset_x": 1e-06,
+      "launch_x": 7.147685638806898,
+      "predicted_fractional_return": 13.811432088788457,
+      "predicted_first_exit": 14
+    },
+    {
+      "offset_x": -3e-07,
+      "launch_x": 7.147684338806898,
+      "predicted_fractional_return": 15.327241257819319,
+      "predicted_first_exit": 16
+    },
+    {
+      "offset_x": 3e-07,
+      "launch_x": 7.147684938806898,
+      "predicted_fractional_return": 15.327241257819319,
+      "predicted_first_exit": 16
+    },
+    {
+      "offset_x": -1e-07,
+      "launch_x": 7.147684538806898,
+      "predicted_fractional_return": 16.710400889323985,
+      "predicted_first_exit": 17
+    },
+    {
+      "offset_x": 1e-07,
+      "launch_x": 7.147684738806898,
+      "predicted_fractional_return": 16.710400889323985,
+      "predicted_first_exit": 17
+    }
+  ]
+}
